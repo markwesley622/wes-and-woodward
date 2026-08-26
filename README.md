@@ -1,7 +1,8 @@
-# Red Wings Analytics (working title)
+# Wes & Woodward
 
-Data warehouse + (eventually) Astro site for a Detroit Red Wings advanced-analytics
-publication. Personal project. Hosting: GitHub -> Astro (GitHub Actions/Pages), NOT Vercel.
+wesandwoodward.com — a Detroit Red Wings advanced-analytics publication. "Woodward" is
+Woodward Avenue, where Little Caesars Arena sits. Professional-publication register.
+Personal project. Hosting: GitHub -> Astro (GitHub Actions/Pages), NOT Vercel.
 GitHub account: markwesley622.
 
 ## Layout

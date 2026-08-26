@@ -1,0 +1,148 @@
+---
+const { title = 'Wes & Woodward', description = 'Detroit hockey, by the numbers.' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="masthead">
+      <a class="wordmark" href={base}>Wes <span class="amp">&amp;</span> Woodward</a>
+      <p class="tagline">Detroit hockey, by the numbers.</p>
+      <nav>
+        <a href={base}>Latest</a>
+        <a href={`${base}about/`}>About</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>
+        Wes &amp; Woodward is an independent publication and is not affiliated with the
+        Detroit Red Wings or the NHL. Data: <a href="https://api-web.nhle.com">NHL API</a>
+        and <a href="https://moneypuck.com">MoneyPuck</a>.
+      </p>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --paper: #faf9f7;
+    --ink: #1b1b1d;
+    --muted: #6b6b70;
+    --rule: #d9d6d0;
+    --red: #ce1126;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+  .masthead {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 0;
+    text-align: center;
+    border-bottom: 3px double var(--rule);
+  }
+  .wordmark {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .wordmark .amp { color: var(--red); font-style: italic; }
+  .tagline {
+    margin: 0.35rem 0 1.1rem;
+    color: var(--muted);
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+  .masthead nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.6rem 0;
+    border-top: 1px solid var(--rule);
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .masthead nav a { color: var(--ink); text-decoration: none; }
+  .masthead nav a:hover { color: var(--red); }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.25rem 1.25rem 3rem;
+  }
+  h1, h2, h3 { line-height: 1.25; }
+  h2 {
+    font-size: 1.5rem;
+    margin: 2.2rem 0 0.6rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+  }
+  a { color: var(--red); }
+  .kicker {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin: 0 0 0.3rem;
+  }
+  .deck { color: var(--muted); font-size: 1.05rem; margin-top: 0; }
+  .table-scroll { overflow-x: auto; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0.8rem 0 0.4rem;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.82rem;
+    font-variant-numeric: tabular-nums;
+  }
+  th {
+    text-align: left;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 2px solid var(--ink);
+    padding: 0.35rem 0.6rem 0.35rem 0;
+    white-space: nowrap;
+  }
+  td {
+    border-bottom: 1px solid var(--rule);
+    padding: 0.42rem 0.6rem 0.42rem 0;
+    white-space: nowrap;
+  }
+  th.num, td.num { text-align: right; }
+  .table-note {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 0.2rem;
+  }
+  footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1.2rem 1.25rem 2.5rem;
+    border-top: 3px double var(--rule);
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  footer a { color: var(--muted); }
+</style>

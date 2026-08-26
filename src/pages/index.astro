@@ -1,0 +1,120 @@
+---
+import Base from '../layouts/Base.astro';
+import team from '../../data/site/team.json';
+import skaters from '../../data/site/skaters.json';
+import goalies from '../../data/site/goalies.json';
+import lines from '../../data/site/lines.json';
+
+const seasonLabel = `${team.season.slice(0, 4)}–${team.season.slice(6)}`;
+const r = team.record;
+const s5 = team.situations['5on5'];
+
+const pct = (v) => (v * 100).toFixed(1);
+const toi = (secs) => `${Math.floor(secs / 60)}:${String(Math.round(secs % 60)).padStart(2, '0')}`;
+const signed = (v) => (v > 0 ? `+${v.toFixed(1)}` : v.toFixed(1));
+
+const topSkaters = skaters.slice(0, 10);
+const topLines = lines.forwardLines.slice(0, 5);
+const topPairs = lines.defensePairs.slice(0, 3);
+---
+<Base title="Wes & Woodward — Detroit hockey, by the numbers">
+  <p class="kicker">Season in review</p>
+  <h1>The {seasonLabel} Red Wings, by the numbers</h1>
+  <p class="deck">
+    Detroit finished {r.wins}&ndash;{r.losses}&ndash;{r.otLosses} for {r.points} points,
+    scoring {r.goalFor} and allowing {r.goalAgainst}. At five-on-five they controlled
+    {pct(s5.xGoalsPct)}% of expected goals ({team.leagueRanks.xGoalsPct_5on5}th in the
+    league) — but the power play generated the {team.leagueRanks.xGoalsFor_5on4}rd-most
+    expected goals in the NHL. This page is the standing dashboard; the writing lives above it.
+  </p>
+
+  <h2>Skaters</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Player</th><th>Pos</th>
+          <th class="num">GP</th><th class="num">G</th><th class="num">A</th><th class="num">P</th>
+          <th class="num">ixG</th><th class="num">G&minus;ixG</th>
+          <th class="num">5v5 xG%</th><th class="num">Pctl</th>
+        </tr>
+      </thead>
+      <tbody>
+        {topSkaters.map((p) => (
+          <tr>
+            <td>{p.name}</td><td>{p.position}</td>
+            <td class="num">{p.gamesPlayed}</td>
+            <td class="num">{p.goals}</td>
+            <td class="num">{p.assists}</td>
+            <td class="num">{p.points}</td>
+            <td class="num">{p.ixG?.toFixed(1) ?? '—'}</td>
+            <td class="num">{p.goalsAboveExpected != null ? signed(p.goalsAboveExpected) : '—'}</td>
+            <td class="num">{p.fiveOnFive ? pct(p.fiveOnFive.onIceXgPct) : '—'}</td>
+            <td class="num">{p.fiveOnFive?.qualifiesForPercentiles ? p.fiveOnFive.pctl_onIceXgPct : '—'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="table-note">
+    Top ten by points. ixG: individual expected goals, all situations. G&minus;ixG: goals
+    above expected. Pctl: league percentile of on-ice 5v5 xG% among regulars at the same
+    position (min. 300 minutes). Sources: NHL API, MoneyPuck.
+  </p>
+
+  <h2>Goaltending</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Goalie</th>
+          <th class="num">GP</th><th class="num">Record</th>
+          <th class="num">SV%</th><th class="num">GAA</th>
+          <th class="num">GSAx</th><th class="num">Pctl</th>
+        </tr>
+      </thead>
+      <tbody>
+        {goalies.map((g) => (
+          <tr>
+            <td>{g.name}</td>
+            <td class="num">{g.gamesPlayed}</td>
+            <td class="num">{g.wins}&ndash;{g.losses}&ndash;{g.otLosses}</td>
+            <td class="num">{g.savePct ? `.${Math.round(g.savePct * 1000)}` : '—'}</td>
+            <td class="num">{g.gaa?.toFixed(2) ?? '—'}</td>
+            <td class="num">{g.gsax != null ? signed(g.gsax) : '—'}</td>
+            <td class="num">{g.qualifiesForPercentiles ? g.pctl_gsax : '—'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="table-note">
+    GSAx: goals saved above expected, all situations, per MoneyPuck's expected-goals model.
+  </p>
+
+  <h2>Lines &amp; pairs, five-on-five</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Unit</th><th class="num">TOI</th>
+          <th class="num">xG%</th><th class="num">CF%</th><th class="num">GF&ndash;GA</th>
+        </tr>
+      </thead>
+      <tbody>
+        {[...topLines, ...topPairs].map((l) => (
+          <tr>
+            <td>{l.players.join(' – ')}</td>
+            <td class="num">{Math.round(l.icetimeMinutes)}</td>
+            <td class="num">{pct(l.xGoalsPct)}</td>
+            <td class="num">{pct(l.corsiPct)}</td>
+            <td class="num">{l.goalsFor.toFixed(0)}&ndash;{l.goalsAgainst.toFixed(0)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="table-note">
+    Five most-used forward lines and three most-used defense pairs by 5v5 ice time.
+  </p>
+</Base>
