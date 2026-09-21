@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; background: #d7d6d3; color: #141414;
+           font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+           -webkit-font-smoothing: antialiased; }
+    a { color: #141414; text-decoration: none; }
+    a:hover { color: #5f5e5b; }
+    .mono { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+            font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1; }
+    .dot  { font-family: 'Doto', 'IBM Plex Mono', monospace; font-weight: 800;
+            letter-spacing: 0.06em; text-transform: uppercase; line-height: 1; margin: 0; }
+    .lbl  { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10px;
+            font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase;
+            color: #91908d; }
+    .hed  { font-family: 'Space Grotesk', ui-sans-serif, sans-serif; font-weight: 600;
+            line-height: 1.06; letter-spacing: -0.025em; text-wrap: balance; margin: 0; }
+    .panel { background: #e7e6e3; border-radius: 22px; }
+    .track { background: #cbcac7; border-radius: 999px; position: relative; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; background: #d7d6d3;">
+  <div style="display: flex; justify-content: space-between; align-items: center; gap: 36px; padding: 22px 64px 18px;">
+    <a href="#" style="display: flex; align-items: center; gap: 16px;"><svg style="height: 46px; width: auto; display: block;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551.5 751.5" role="img" aria-label="Wes and Woodward"><title>Wes and Woodward</title><path class="ww-shadow" fill="#ce1126" fill-rule="nonzero" d="M63.0 62.0Q62.0 62.0 62.0 62.0Q62.0 62.0 62.0 63.0V128.5Q62.0 129.5 62.0 129.5Q62.0 129.5 63.0 129.5H128.5Q129.5 129.5 129.5 129.5Q129.5 129.5 129.5 128.5V63.0Q129.5 62.0 129.5 62.0Q129.5 62.0 128.5 62.0ZM463.0 62.0Q462.0 62.0 462.0 62.0Q462.0 62.0 462.0 63.0V128.5Q462.0 129.5 462.0 129.5Q462.0 129.5 463.0 129.5H528.5Q529.5 129.5 529.5 129.5Q529.5 129.5 529.5 128.5V63.0Q529.5 62.0 529.5 62.0Q529.5 62.0 528.5 62.0ZM63.0 162.0Q62.0 162.0 62.0 162.0Q62.0 162.0 62.0 163.0V228.5Q62.0 229.5 62.0 229.5Q62.0 229.5 63.0 229.5H128.5Q129.5 229.5 129.5 229.5Q129.5 229.5 129.5 228.5V163.0Q129.5 162.0 129.5 162.0Q129.5 162.0 128.5 162.0ZM463.0 162.0Q462.0 162.0 462.0 162.0Q462.0 162.0 462.0 163.0V228.5Q462.0 229.5 462.0 229.5Q462.0 229.5 463.0 229.5H528.5Q529.5 229.5 529.5 229.5Q529.5 229.5 529.5 228.5V163.0Q529.5 162.0 529.5 162.0Q529.5 162.0 528.5 162.0ZM63.0 262.0Q62.0 262.0 62.0 262.0Q62.0 262.0 62.0 263.0V328.5Q62.0 329.5 62.0 329.5Q62.0 329.5 63.0 329.5H128.5Q129.5 329.5 129.5 329.5Q129.5 329.5 129.5 328.5V263.0Q129.5 262.0 129.5 262.0Q129.5 262.0 128.5 262.0ZM463.0 262.0Q462.0 262.0 462.0 262.0Q462.0 262.0 462.0 263.0V328.5Q462.0 329.5 462.0 329.5Q462.0 329.5 463.0 329.5H528.5Q529.5 329.5 529.5 329.5Q529.5 329.5 529.5 328.5V263.0Q529.5 262.0 529.5 262.0Q529.5 262.0 528.5 262.0ZM63.0 362.0Q62.0 362.0 62.0 362.0Q62.0 362.0 62.0 363.0V428.5Q62.0 429.5 62.0 429.5Q62.0 429.5 63.0 429.5H128.5Q129.5 429.5 129.5 429.5Q129.5 429.5 129.5 428.5V363.0Q129.5 362.0 129.5 362.0Q129.5 362.0 128.5 362.0ZM263.0 362.0Q262.0 362.0 262.0 362.0Q262.0 362.0 262.0 363.0V428.5Q262.0 429.5 262.0 429.5Q262.0 429.5 263.0 429.5H328.5Q329.5 429.5 329.5 429.5Q329.5 429.5 329.5 428.5V363.0Q329.5 362.0 329.5 362.0Q329.5 362.0 328.5 362.0ZM463.0 362.0Q462.0 362.0 462.0 362.0Q462.0 362.0 462.0 363.0V428.5Q462.0 429.5 462.0 429.5Q462.0 429.5 463.0 429.5H528.5Q529.5 429.5 529.5 429.5Q529.5 429.5 529.5 428.5V363.0Q529.5 362.0 529.5 362.0Q529.5 362.0 528.5 362.0ZM63.0 462.0Q62.0 462.0 62.0 462.0Q62.0 462.0 62.0 463.0V528.5Q62.0 529.5 62.0 529.5Q62.0 529.5 63.0 529.5H128.5Q129.5 529.5 129.5 529.5Q129.5 529.5 129.5 528.5V463.0Q129.5 462.0 129.5 462.0Q129.5 462.0 128.5 462.0ZM263.0 462.0Q262.0 462.0 262.0 462.0Q262.0 462.0 262.0 463.0V528.5Q262.0 529.5 262.0 529.5Q262.0 529.5 263.0 529.5H328.5Q329.5 529.5 329.5 529.5Q329.5 529.5 329.5 528.5V463.0Q329.5 462.0 329.5 462.0Q329.5 462.0 328.5 462.0ZM463.0 462.0Q462.0 462.0 462.0 462.0Q462.0 462.0 462.0 463.0V528.5Q462.0 529.5 462.0 529.5Q462.0 529.5 463.0 529.5H528.5Q529.5 529.5 529.5 529.5Q529.5 529.5 529.5 528.5V463.0Q529.5 462.0 529.5 462.0Q529.5 462.0 528.5 462.0ZM63.0 562.0Q62.0 562.0 62.0 562.0Q62.0 562.0 62.0 563.0V628.5Q62.0 629.5 62.0 629.5Q62.0 629.5 63.0 629.5H128.5Q129.5 629.5 129.5 629.5Q129.5 629.5 129.5 628.5V563.0Q129.5 562.0 129.5 562.0Q129.5 562.0 128.5 562.0ZM163.0 562.0Q162.0 562.0 162.0 562.0Q162.0 562.0 162.0 563.0V628.5Q162.0 629.5 162.0 629.5Q162.0 629.5 163.0 629.5H228.5Q229.5 629.5 229.5 629.5Q229.5 629.5 229.5 628.5V563.0Q229.5 562.0 229.5 562.0Q229.5 562.0 228.5 562.0ZM363.0 562.0Q362.0 562.0 362.0 562.0Q362.0 562.0 362.0 563.0V628.5Q362.0 629.5 362.0 629.5Q362.0 629.5 363.0 629.5H428.5Q429.5 629.5 429.5 629.5Q429.5 629.5 429.5 628.5V563.0Q429.5 562.0 429.5 562.0Q429.5 562.0 428.5 562.0ZM463.0 562.0Q462.0 562.0 462.0 562.0Q462.0 562.0 462.0 563.0V628.5Q462.0 629.5 462.0 629.5Q462.0 629.5 463.0 629.5H528.5Q529.5 629.5 529.5 629.5Q529.5 629.5 529.5 628.5V563.0Q529.5 562.0 529.5 562.0Q529.5 562.0 528.5 562.0ZM63.0 662.0Q62.0 662.0 62.0 662.0Q62.0 662.0 62.0 663.0V728.5Q62.0 729.5 62.0 729.5Q62.0 729.5 63.0 729.5H128.5Q129.5 729.5 129.5 729.5Q129.5 729.5 129.5 728.5V663.0Q129.5 662.0 129.5 662.0Q129.5 662.0 128.5 662.0ZM463.0 662.0Q462.0 662.0 462.0 662.0Q462.0 662.0 462.0 663.0V728.5Q462.0 729.5 462.0 729.5Q462.0 729.5 463.0 729.5H528.5Q529.5 729.5 529.5 729.5Q529.5 729.5 529.5 728.5V663.0Q529.5 662.0 529.5 662.0Q529.5 662.0 528.5 662.0Z"/><path class="ww-face" fill="#000000" fill-rule="nonzero" d="M23.0 22.0Q22.0 22.0 22.0 22.0Q22.0 22.0 22.0 23.0V88.5Q22.0 89.5 22.0 89.5Q22.0 89.5 23.0 89.5H88.5Q89.5 89.5 89.5 89.5Q89.5 89.5 89.5 88.5V23.0Q89.5 22.0 89.5 22.0Q89.5 22.0 88.5 22.0ZM423.0 22.0Q422.0 22.0 422.0 22.0Q422.0 22.0 422.0 23.0V88.5Q422.0 89.5 422.0 89.5Q422.0 89.5 423.0 89.5H488.5Q489.5 89.5 489.5 89.5Q489.5 89.5 489.5 88.5V23.0Q489.5 22.0 489.5 22.0Q489.5 22.0 488.5 22.0ZM23.0 122.0Q22.0 122.0 22.0 122.0Q22.0 122.0 22.0 123.0V188.5Q22.0 189.5 22.0 189.5Q22.0 189.5 23.0 189.5H88.5Q89.5 189.5 89.5 189.5Q89.5 189.5 89.5 188.5V123.0Q89.5 122.0 89.5 122.0Q89.5 122.0 88.5 122.0ZM423.0 122.0Q422.0 122.0 422.0 122.0Q422.0 122.0 422.0 123.0V188.5Q422.0 189.5 422.0 189.5Q422.0 189.5 423.0 189.5H488.5Q489.5 189.5 489.5 189.5Q489.5 189.5 489.5 188.5V123.0Q489.5 122.0 489.5 122.0Q489.5 122.0 488.5 122.0ZM23.0 222.0Q22.0 222.0 22.0 222.0Q22.0 222.0 22.0 223.0V288.5Q22.0 289.5 22.0 289.5Q22.0 289.5 23.0 289.5H88.5Q89.5 289.5 89.5 289.5Q89.5 289.5 89.5 288.5V223.0Q89.5 222.0 89.5 222.0Q89.5 222.0 88.5 222.0ZM423.0 222.0Q422.0 222.0 422.0 222.0Q422.0 222.0 422.0 223.0V288.5Q422.0 289.5 422.0 289.5Q422.0 289.5 423.0 289.5H488.5Q489.5 289.5 489.5 289.5Q489.5 289.5 489.5 288.5V223.0Q489.5 222.0 489.5 222.0Q489.5 222.0 488.5 222.0ZM23.0 322.0Q22.0 322.0 22.0 322.0Q22.0 322.0 22.0 323.0V388.5Q22.0 389.5 22.0 389.5Q22.0 389.5 23.0 389.5H88.5Q89.5 389.5 89.5 389.5Q89.5 389.5 89.5 388.5V323.0Q89.5 322.0 89.5 322.0Q89.5 322.0 88.5 322.0ZM223.0 322.0Q222.0 322.0 222.0 322.0Q222.0 322.0 222.0 323.0V388.5Q222.0 389.5 222.0 389.5Q222.0 389.5 223.0 389.5H288.5Q289.5 389.5 289.5 389.5Q289.5 389.5 289.5 388.5V323.0Q289.5 322.0 289.5 322.0Q289.5 322.0 288.5 322.0ZM423.0 322.0Q422.0 322.0 422.0 322.0Q422.0 322.0 422.0 323.0V388.5Q422.0 389.5 422.0 389.5Q422.0 389.5 423.0 389.5H488.5Q489.5 389.5 489.5 389.5Q489.5 389.5 489.5 388.5V323.0Q489.5 322.0 489.5 322.0Q489.5 322.0 488.5 322.0ZM23.0 422.0Q22.0 422.0 22.0 422.0Q22.0 422.0 22.0 423.0V488.5Q22.0 489.5 22.0 489.5Q22.0 489.5 23.0 489.5H88.5Q89.5 489.5 89.5 489.5Q89.5 489.5 89.5 488.5V423.0Q89.5 422.0 89.5 422.0Q89.5 422.0 88.5 422.0ZM223.0 422.0Q222.0 422.0 222.0 422.0Q222.0 422.0 222.0 423.0V488.5Q222.0 489.5 222.0 489.5Q222.0 489.5 223.0 489.5H288.5Q289.5 489.5 289.5 489.5Q289.5 489.5 289.5 488.5V423.0Q289.5 422.0 289.5 422.0Q289.5 422.0 288.5 422.0ZM423.0 422.0Q422.0 422.0 422.0 422.0Q422.0 422.0 422.0 423.0V488.5Q422.0 489.5 422.0 489.5Q422.0 489.5 423.0 489.5H488.5Q489.5 489.5 489.5 489.5Q489.5 489.5 489.5 488.5V423.0Q489.5 422.0 489.5 422.0Q489.5 422.0 488.5 422.0ZM23.0 522.0Q22.0 522.0 22.0 522.0Q22.0 522.0 22.0 523.0V588.5Q22.0 589.5 22.0 589.5Q22.0 589.5 23.0 589.5H88.5Q89.5 589.5 89.5 589.5Q89.5 589.5 89.5 588.5V523.0Q89.5 522.0 89.5 522.0Q89.5 522.0 88.5 522.0ZM123.0 522.0Q122.0 522.0 122.0 522.0Q122.0 522.0 122.0 523.0V588.5Q122.0 589.5 122.0 589.5Q122.0 589.5 123.0 589.5H188.5Q189.5 589.5 189.5 589.5Q189.5 589.5 189.5 588.5V523.0Q189.5 522.0 189.5 522.0Q189.5 522.0 188.5 522.0ZM323.0 522.0Q322.0 522.0 322.0 522.0Q322.0 522.0 322.0 523.0V588.5Q322.0 589.5 322.0 589.5Q322.0 589.5 323.0 589.5H388.5Q389.5 589.5 389.5 589.5Q389.5 589.5 389.5 588.5V523.0Q389.5 522.0 389.5 522.0Q389.5 522.0 388.5 522.0ZM423.0 522.0Q422.0 522.0 422.0 522.0Q422.0 522.0 422.0 523.0V588.5Q422.0 589.5 422.0 589.5Q422.0 589.5 423.0 589.5H488.5Q489.5 589.5 489.5 589.5Q489.5 589.5 489.5 588.5V523.0Q489.5 522.0 489.5 522.0Q489.5 522.0 488.5 522.0ZM23.0 622.0Q22.0 622.0 22.0 622.0Q22.0 622.0 22.0 623.0V688.5Q22.0 689.5 22.0 689.5Q22.0 689.5 23.0 689.5H88.5Q89.5 689.5 89.5 689.5Q89.5 689.5 89.5 688.5V623.0Q89.5 622.0 89.5 622.0Q89.5 622.0 88.5 622.0ZM423.0 622.0Q422.0 622.0 422.0 622.0Q422.0 622.0 422.0 623.0V688.5Q422.0 689.5 422.0 689.5Q422.0 689.5 423.0 689.5H488.5Q489.5 689.5 489.5 689.5Q489.5 689.5 489.5 688.5V623.0Q489.5 622.0 489.5 622.0Q489.5 622.0 488.5 622.0Z"/></svg><span style="display: flex; flex-direction: column; gap: 4px;"><span class="dot" style="font-size: 22px;">Wes <span style="color: #ce1126;">&amp;</span> Woodward</span><span class="lbl" style="font-size: 9px; color: #91908d;">Detroit Red Wings analytics</span></span></a>
+    <div style="display: flex; gap: 7px;">
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Team</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Players</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Articles</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Glossary</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">About</a>
+    </div>
+  </div>
+  <!-- the glance block: one standalone preview of the Team dashboard, above the fold -->
+  <div style="padding: 10px 64px 0;">
+    <div style="background: #141414; border-radius: 22px; padding: 22px 26px 22px; display: flex; flex-direction: column; gap: 10px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 0 4px 4px;">
+        <span class="lbl" style="font-size: 11px; color: #b9b8b5;"><span style="color: #ce1126;">Detroit Red Wings</span> &nbsp;&middot;&nbsp; 2025&ndash;26 final &nbsp;&middot;&nbsp; 2026&ndash;27 opens Oct 2 vs NYR</span>
+        <a href="#" class="lbl" style="font-size: 10px; color: #ce1126; white-space: nowrap;">Full team dashboard &rarr;</a>
+      </div>
+      <div style="display: grid; grid-template-columns: 600px minmax(0, 1fr); gap: 10px; align-items: stretch;">
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="background: #222120; border-radius: 16px; padding: 18px 22px 16px; display: flex; flex: 1;">
+        <div style="display: flex; flex-direction: column; justify-content: space-between; min-width: 0;">
+          <div>
+            <span class="lbl" style="font-size: 11px; color: #ce1126;">Record</span>
+            <p class="mono" style="margin: 10px 0 0; font-size: 116px; font-weight: 500; letter-spacing: -0.06em; line-height: 0.9; color: #f2f1ef; white-space: nowrap;">41&ndash;31&ndash;10</p>
+            <p class="mono" style="margin: 14px 0 0; font-size: 17px; color: #b9b8b5;"><span style="color: #ce1126; font-weight: 600; font-size: 24px;">92 pts</span> &nbsp;&middot;&nbsp; .561 &nbsp;&middot;&nbsp; 241&ndash;258 (−17)</p>
+          </div>
+          <p class="mono" style="margin: 16px 0 0; font-size: 12px; color: #8a8986;">82 gp &nbsp;&middot;&nbsp; 30 rw &nbsp;&middot;&nbsp; streak L1 &nbsp;&middot;&nbsp; last ten 2-6-2</p>
+        </div></div>
+          
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; align-content: stretch;">
+          
+          <div style="background: #222120; border-radius: 16px; padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 7px; min-width: 0;">
+            <span class="lbl" style="font-size: 10px; color: #8a8986;">xG win share</span>
+            <span class="mono" style="font-size: 40px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #f2f1ef;">50.8%</span>
+            <span class="mono" style="font-size: 12.5px; font-weight: 600; color: #ce1126;">actual 50.0%</span><span class="mono" style="font-size: 11px; color: #8a8986; line-height: 1.4;">xG-pythagorean, all situations</span>
+          </div>
+          
+          <div style="background: #222120; border-radius: 16px; padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 7px; min-width: 0;">
+            <span class="lbl" style="font-size: 10px; color: #8a8986;">xG points</span>
+            <span class="mono" style="font-size: 40px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #f2f1ef;">93.5</span>
+            <span class="mono" style="font-size: 12.5px; font-weight: 600; color: #ce1126;">actual 92 &nbsp;&middot;&nbsp; −1.5</span><span class="mono" style="font-size: 11px; color: #8a8986; line-height: 1.4;">loser points at the league rate</span>
+          </div>
+          
+          <div style="background: #222120; border-radius: 16px; padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 7px; min-width: 0;">
+            <span class="lbl" style="font-size: 10px; color: #8a8986;">xG place</span>
+            <span class="mono" style="font-size: 30px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #f2f1ef;"><span style="display: flex; flex-direction: column; gap: 6px;"><span style="display: flex; align-items: baseline; gap: 8px;"><span class="mono" style="font-size: 30px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #f2f1ef;">3rd</span><span class="lbl" style="font-size: 9px; color: #8a8986;">Atlantic</span></span><span style="display: flex; align-items: baseline; gap: 8px;"><span class="mono" style="font-size: 30px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #f2f1ef;">8th</span><span class="lbl" style="font-size: 9px; color: #8a8986;">Eastern</span></span></span></span>
+            <span class="mono" style="font-size: 12.5px; font-weight: 600; color: #ce1126;">actual 6th &nbsp;&middot;&nbsp; 10th</span><span class="mono" style="font-size: 11px; color: #8a8986; line-height: 1.4;">all 32 teams on xG points &nbsp;&middot;&nbsp; 16th in the nhl</span>
+          </div>
+        </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          
+        <div style="background: #222120; border-radius: 16px; padding: 14px 18px 14px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px;">
+            <span class="lbl" style="font-size: 10px; color: #8a8986;">Progress toward MoneyPuck&rsquo;s projected points</span>
+            <div style="display: flex; gap: 14px;">
+              <span class="lbl" style="font-size: 9px; color: #8a8986;"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#ce1126;margin-right:5px;vertical-align:middle;"></span>banked</span>
+              <span class="lbl" style="font-size: 9px; color: #8a8986;"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#ce1126;opacity:.35;margin-right:5px;vertical-align:middle;"></span>on pace for</span>
+              <span class="lbl" style="font-size: 9px; color: #8a8986;"><span style="display:inline-block;width:2px;height:10px;background:#f2f1ef;margin-right:5px;vertical-align:middle;"></span>projection</span>
+            </div>
+          </div>
+          <div style="margin-top: 10px;"><div style="height: 26px; width: 200px; border-radius: 999px; background: #8a8986; opacity: 0.25;"></div></div><div style="height: 16px; border-radius: 999px; background: #3a3936; margin: 16px 0 6px;"></div><div style="height: 14px;"></div><p class="mono" style="margin: 8px 0 0; font-size: 12px; color: #8a8986;">moneypuck publishes its projection before the opener Oct 2 &nbsp;&middot;&nbsp; pace and verdict render from game one</p>
+        </div>
+          
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;">
+          
+          <div style="background: #222120; border-radius: 16px; padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 7px; min-width: 0;">
+            <span class="lbl" style="font-size: 10px; color: #8a8986;">Atlantic Division</span>
+            <span class="mono" style="font-size: 40px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #f2f1ef;">6th</span>
+            <span class="mono" style="font-size: 11px; color: #8a8986; line-height: 1.4;">of 8</span>
+          </div>
+          
+          <div style="background: #222120; border-radius: 16px; padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 7px; min-width: 0;">
+            <span class="lbl" style="font-size: 10px; color: #8a8986;">Eastern Conference</span>
+            <span class="mono" style="font-size: 40px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #f2f1ef;">10th</span>
+            <span class="mono" style="font-size: 11px; color: #8a8986; line-height: 1.4;">of 16</span>
+          </div>
+        </div>
+          
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin: 0 2px 8px;">
+            <span class="lbl" style="font-size: 10px; color: #b9b8b5;">The numbers behind a paywall elsewhere</span>
+            <span class="lbl" style="font-size: 9px; color: #8a8986;">league rank, 1 is best &nbsp;&middot;&nbsp; red = top ten</span>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px;">
+          <div style="background: #222120; border-radius: 16px; padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 7px; min-width: 0;">
+            <span class="lbl" style="font-size: 10px; color: #8a8986;">5v5 xG share</span>
+            <span class="mono" style="font-size: 34px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #f2f1ef;">49.0%</span>
+            <span class="mono" style="font-size: 12.5px; font-weight: 600; color: #b9b8b5;">18th of 32</span><span class="mono" style="font-size: 11px; color: #8a8986; line-height: 1.4;">moneypuck, five-on-five</span>
+          </div>
+          <div style="background: #222120; border-radius: 16px; padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 7px; min-width: 0;">
+            <span class="lbl" style="font-size: 10px; color: #8a8986;">Finishing</span>
+            <span class="mono" style="font-size: 34px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #f2f1ef;">−17.4</span>
+            <span class="mono" style="font-size: 12.5px; font-weight: 600; color: #b9b8b5;">24th of 32</span><span class="mono" style="font-size: 11px; color: #8a8986; line-height: 1.4;">G minus xG, all situations</span>
+          </div>
+          <div style="background: #222120; border-radius: 16px; padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 7px; min-width: 0;">
+            <span class="lbl" style="font-size: 10px; color: #8a8986;">PP xG per 60</span>
+            <span class="mono" style="font-size: 34px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #f2f1ef;">8.18</span>
+            <span class="mono" style="font-size: 12.5px; font-weight: 600; color: #ce1126;">7th of 32</span><span class="mono" style="font-size: 11px; color: #8a8986; line-height: 1.4;">5v4, xG generated</span>
+          </div>
+          <div style="background: #222120; border-radius: 16px; padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 7px; min-width: 0;">
+            <span class="lbl" style="font-size: 10px; color: #8a8986;">PK xGA per 60</span>
+            <span class="mono" style="font-size: 34px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #f2f1ef;">8.00</span>
+            <span class="mono" style="font-size: 12.5px; font-weight: 600; color: #b9b8b5;">28th of 32</span><span class="mono" style="font-size: 11px; color: #8a8986; line-height: 1.4;">4v5, lower is better</span>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 2px 4px 0;">
+        <span class="lbl" style="font-size: 9px; color: #8a8986;">rebuilt sep 21, 15:46 &nbsp;&middot;&nbsp; nhl api &middot; moneypuck</span>
+        <span class="lbl" style="font-size: 9px; color: #8a8986;">xg-pythagorean (exponent 2) on moneypuck all-situations xgf/xga</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 34px 64px 0;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin: 0 0 14px;">
+      <h2 class="hed" style="font-size: 30px;">Top Red Wings</h2>
+      <span style="display: flex; align-items: baseline; gap: 16px;"><span class="dc-note mono" style="font-size: 11px; color: #5f5e5b; border: 1px dashed #91908d; border-radius: 999px; padding: 3px 10px;"><span class="lbl" style="font-size: 8px; color: #ce1126; margin-right: 6px;">design note</span>value score out of 100, proprietary, in development; cards ordered by game score until it ships</span><a href="#" class="lbl" style="font-size: 9px; color: #ce1126; white-space: nowrap;">Entire roster &rarr;</a></span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px;">
+      <a href="#" style="background: #f2f1ef; border-radius: 22px; padding: 26px 28px 24px; display: flex; flex-direction: column; gap: 20px; min-width: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;">
+          <div style="min-width: 0;">
+            <h3 class="dot" style="font-size: 26px; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Alex DeBrincat</h3>
+            <p class="lbl" style="margin: 8px 0 0; font-size: 9px; color: #5f5e5b;">Right wing &nbsp;&middot;&nbsp; 2025&ndash;26</p>
+          </div>
+          <div style="flex: none; width: 74px; height: 74px; border-radius: 50%; border: 2px solid #ce1126; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;">
+            <div style="height: 16px; width: 30px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+            <span class="lbl" style="font-size: 7.5px; color: #ce1126;">/ 100</span>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;"><span class="lbl" style="font-size: 8px; color: #5f5e5b;">Scored &nbsp;41</span><div style="display: grid; grid-template-columns: repeat(14, 9px); gap: 3px;"><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span></div><span class="lbl" style="font-size: 8px; color: #5f5e5b;">Expected &nbsp;37</span><div style="display: grid; grid-template-columns: repeat(14, 9px); gap: 3px;"><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span></div></div>
+        <div style="margin-top: auto; border-top: 1px solid #c1c0bd; padding-top: 16px; display: flex; justify-content: space-between; gap: 10px;"><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">GP</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">82</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">G</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">41</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">A</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">44</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">P</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">85</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">ixG</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">36.9</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">5v5 xG%</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">53</span></div></div>
+        <span class="lbl" style="font-size: 9px; color: #ce1126;">Full player page &rarr;</span>
+      </a>
+      <a href="#" style="background: #f2f1ef; border-radius: 22px; padding: 26px 28px 24px; display: flex; flex-direction: column; gap: 20px; min-width: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;">
+          <div style="min-width: 0;">
+            <h3 class="dot" style="font-size: 26px; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Moritz Seider</h3>
+            <p class="lbl" style="margin: 8px 0 0; font-size: 9px; color: #5f5e5b;">Defence &nbsp;&middot;&nbsp; 2025&ndash;26</p>
+          </div>
+          <div style="flex: none; width: 74px; height: 74px; border-radius: 50%; border: 2px solid #ce1126; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;">
+            <div style="height: 16px; width: 30px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+            <span class="lbl" style="font-size: 7.5px; color: #ce1126;">/ 100</span>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;"><span class="lbl" style="font-size: 8px; color: #5f5e5b;">Scored &nbsp;10</span><div style="display: grid; grid-template-columns: repeat(14, 9px); gap: 3px;"><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span></div><span class="lbl" style="font-size: 8px; color: #5f5e5b;">Expected &nbsp;8</span><div style="display: grid; grid-template-columns: repeat(14, 9px); gap: 3px;"><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span></div></div>
+        <div style="margin-top: auto; border-top: 1px solid #c1c0bd; padding-top: 16px; display: flex; justify-content: space-between; gap: 10px;"><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">GP</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">82</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">G</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">10</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">A</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">50</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">P</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">60</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">ixG</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">7.5</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">5v5 xG%</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">55</span></div></div>
+        <span class="lbl" style="font-size: 9px; color: #ce1126;">Full player page &rarr;</span>
+      </a>
+      <a href="#" style="background: #f2f1ef; border-radius: 22px; padding: 26px 28px 24px; display: flex; flex-direction: column; gap: 20px; min-width: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;">
+          <div style="min-width: 0;">
+            <h3 class="dot" style="font-size: 26px; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Lucas Raymond</h3>
+            <p class="lbl" style="margin: 8px 0 0; font-size: 9px; color: #5f5e5b;">Left wing &nbsp;&middot;&nbsp; 2025&ndash;26</p>
+          </div>
+          <div style="flex: none; width: 74px; height: 74px; border-radius: 50%; border: 2px solid #ce1126; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;">
+            <div style="height: 16px; width: 30px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+            <span class="lbl" style="font-size: 7.5px; color: #ce1126;">/ 100</span>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;"><span class="lbl" style="font-size: 8px; color: #5f5e5b;">Scored &nbsp;25</span><div style="display: grid; grid-template-columns: repeat(14, 9px); gap: 3px;"><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #ce1126;"></span></div><span class="lbl" style="font-size: 8px; color: #5f5e5b;">Expected &nbsp;19</span><div style="display: grid; grid-template-columns: repeat(14, 9px); gap: 3px;"><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span><span style="width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid #91908d; box-sizing: border-box;"></span></div></div>
+        <div style="margin-top: auto; border-top: 1px solid #c1c0bd; padding-top: 16px; display: flex; justify-content: space-between; gap: 10px;"><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">GP</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">80</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">G</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">25</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">A</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">51</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">P</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">76</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">ixG</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">19.5</span></div><div style="display: flex; flex-direction: column; gap: 5px;"><span class="lbl" style="font-size: 8px; color: #91908d;">5v5 xG%</span><span class="mono" style="font-size: 17px; font-weight: 600; color: #141414;">49</span></div></div>
+        <span class="lbl" style="font-size: 9px; color: #ce1126;">Full player page &rarr;</span>
+      </a>
+    </div>
+  </div>
+
+  <div style="padding: 34px 64px 0;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin: 0 0 14px;">
+      <h2 class="hed" style="font-size: 30px;">Analysis</h2>
+      <span style="display: flex; align-items: baseline; gap: 16px;"><span class="dc-note mono" style="font-size: 11px; color: #5f5e5b; border: 1px dashed #91908d; border-radius: 999px; padding: 3px 10px;"><span class="lbl" style="font-size: 8px; color: #ce1126; margin-right: 6px;">design note</span>one pinned, two most recent</span><a href="#" class="lbl" style="font-size: 9px; color: #ce1126;">All articles &rarr;</a></span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px;">
+      <a href="#" style="background: #f2f1ef; border-radius: 22px; padding: 26px 28px 24px; display: flex; flex-direction: column; gap: 16px; min-height: 250px; border: 1px solid #ce1126;">
+        <span class="lbl" style="font-size: 8px; color: #ce1126;">&#9679; Pinned</span>
+        <div style="display: flex; flex-direction: column; gap: 9px;">
+            <div style="height: 19px; width: 92%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+            <div style="height: 19px; width: 70%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          </div>
+        <div style="display: flex; flex-direction: column; gap: 7px;">
+            <div style="height: 8px; width: 100%; border-radius: 999px; background: #91908d; opacity: 0.22;"></div>
+            <div style="height: 8px; width: 84%; border-radius: 999px; background: #91908d; opacity: 0.22;"></div>
+            <div style="height: 8px; width: 58%; border-radius: 999px; background: #91908d; opacity: 0.22;"></div>
+          </div>
+        <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: baseline;">
+          <div style="height: 8px; width: 110px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          <span class="lbl" style="font-size: 9px; color: #ce1126;">Read &rarr;</span>
+        </div>
+      </a>
+      <a href="#" style="background: #f2f1ef; border-radius: 22px; padding: 26px 28px 24px; display: flex; flex-direction: column; gap: 16px; min-height: 250px; ">
+        <span class="lbl" style="font-size: 8px; color: #5f5e5b;">Latest</span>
+        <div style="display: flex; flex-direction: column; gap: 9px;">
+            <div style="height: 19px; width: 92%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+            <div style="height: 19px; width: 70%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          </div>
+        <div style="display: flex; flex-direction: column; gap: 7px;">
+            <div style="height: 8px; width: 100%; border-radius: 999px; background: #91908d; opacity: 0.22;"></div>
+            <div style="height: 8px; width: 84%; border-radius: 999px; background: #91908d; opacity: 0.22;"></div>
+            <div style="height: 8px; width: 58%; border-radius: 999px; background: #91908d; opacity: 0.22;"></div>
+          </div>
+        <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: baseline;">
+          <div style="height: 8px; width: 110px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          <span class="lbl" style="font-size: 9px; color: #ce1126;">Read &rarr;</span>
+        </div>
+      </a>
+      <a href="#" style="background: #f2f1ef; border-radius: 22px; padding: 26px 28px 24px; display: flex; flex-direction: column; gap: 16px; min-height: 250px; ">
+        <span class="lbl" style="font-size: 8px; color: #5f5e5b;">Latest</span>
+        <div style="display: flex; flex-direction: column; gap: 9px;">
+            <div style="height: 19px; width: 92%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+            <div style="height: 19px; width: 70%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          </div>
+        <div style="display: flex; flex-direction: column; gap: 7px;">
+            <div style="height: 8px; width: 100%; border-radius: 999px; background: #91908d; opacity: 0.22;"></div>
+            <div style="height: 8px; width: 84%; border-radius: 999px; background: #91908d; opacity: 0.22;"></div>
+            <div style="height: 8px; width: 58%; border-radius: 999px; background: #91908d; opacity: 0.22;"></div>
+          </div>
+        <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: baseline;">
+          <div style="height: 8px; width: 110px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          <span class="lbl" style="font-size: 9px; color: #ce1126;">Read &rarr;</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div style="padding: 34px 64px 0;">
+    <div style="background: #f2f1ef; border-radius: 22px; padding: 28px 34px 22px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin: 0 0 18px;">
+        <div>
+          <h2 class="hed" style="font-size: 30px;">Top Prospects</h2>
+          <p style="margin: 10px 0 0;"><span class="dc-note mono" style="font-size: 11px; color: #5f5e5b; border: 1px dashed #91908d; border-radius: 999px; padding: 3px 10px;"><span class="lbl" style="font-size: 8px; color: #ce1126; margin-right: 6px;">design note</span>prospect ranking in development; counting stats in the league they were produced in, no cross-league xG</span></p>
+        </div>
+        <a href="#" class="lbl" style="font-size: 9px; color: #ce1126; white-space: nowrap;">In the System &rarr;</a>
+      </div>
+      <div style="display: grid; grid-template-columns: 56px minmax(0, 1fr) 160px 120px 90px; gap: 18px; padding: 0 0 10px;">
+        <span class="lbl" style="font-size: 8px; color: #91908d;">Rank</span><span class="lbl" style="font-size: 8px; color: #91908d;">Player</span><span class="lbl" style="font-size: 8px; color: #91908d;">Club &nbsp;&middot;&nbsp; league</span><span class="lbl" style="font-size: 8px; color: #91908d;">Age &nbsp;&middot;&nbsp; drafted</span><span style="text-align: right;"><span class="lbl" style="font-size: 8px; color: #91908d;">Score</span></span>
+      </div>
+      <div style="display: grid; grid-template-columns: 56px minmax(0, 1fr) 160px 120px 90px; align-items: center; gap: 18px; padding: 16px 0; border-top: 1px solid #c1c0bd;">
+        <span class="dot" style="font-size: 26px; color: #ce1126;">01</span>
+        <div style="display: flex; flex-direction: column; gap: 0px;">
+            <div style="height: 14px; width: 48%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          </div>
+        <div style="height: 8px; width: 72%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+        <div style="height: 8px; width: 60%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+        <div style="display: flex; justify-content: flex-end;"><div style="height: 14px; width: 42px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 56px minmax(0, 1fr) 160px 120px 90px; align-items: center; gap: 18px; padding: 16px 0; border-top: 1px solid #c1c0bd;">
+        <span class="dot" style="font-size: 26px; color: #141414;">02</span>
+        <div style="display: flex; flex-direction: column; gap: 0px;">
+            <div style="height: 14px; width: 62%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          </div>
+        <div style="height: 8px; width: 72%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+        <div style="height: 8px; width: 60%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+        <div style="display: flex; justify-content: flex-end;"><div style="height: 14px; width: 42px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 56px minmax(0, 1fr) 160px 120px 90px; align-items: center; gap: 18px; padding: 16px 0; border-top: 1px solid #c1c0bd;">
+        <span class="dot" style="font-size: 26px; color: #141414;">03</span>
+        <div style="display: flex; flex-direction: column; gap: 0px;">
+            <div style="height: 14px; width: 48%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          </div>
+        <div style="height: 8px; width: 72%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+        <div style="height: 8px; width: 60%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+        <div style="display: flex; justify-content: flex-end;"><div style="height: 14px; width: 42px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 56px minmax(0, 1fr) 160px 120px 90px; align-items: center; gap: 18px; padding: 16px 0; border-top: 1px solid #c1c0bd;">
+        <span class="dot" style="font-size: 26px; color: #141414;">04</span>
+        <div style="display: flex; flex-direction: column; gap: 0px;">
+            <div style="height: 14px; width: 62%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          </div>
+        <div style="height: 8px; width: 72%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+        <div style="height: 8px; width: 60%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+        <div style="display: flex; justify-content: flex-end;"><div style="height: 14px; width: 42px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 56px minmax(0, 1fr) 160px 120px 90px; align-items: center; gap: 18px; padding: 16px 0; border-top: 1px solid #c1c0bd;">
+        <span class="dot" style="font-size: 26px; color: #141414;">05</span>
+        <div style="display: flex; flex-direction: column; gap: 0px;">
+            <div style="height: 14px; width: 48%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          </div>
+        <div style="height: 8px; width: 72%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+        <div style="height: 8px; width: 60%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+        <div style="display: flex; justify-content: flex-end;"><div style="height: 14px; width: 42px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="padding: 30px 64px 44px;">
+    <div class="panel" style="padding: 24px 28px; display: flex; justify-content: space-between; gap: 40px; align-items: center;">
+      <p style="margin: 0; font-size: 13px; color: #5f5e5b; line-height: 1.6; max-width: 62em;">
+        Wes &amp; Woodward is an independent publication and is not affiliated with the Detroit Red Wings or
+        the National Hockey League. Data from the NHL API, MoneyPuck, HockeyStatCards and Natural Stat Trick, Evolving-Hockey and Elite Prospects; dashboards rebuild nightly.
+      </p>
+      <span class="lbl" style="white-space: nowrap;">&copy; 2026</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+
+<script data-dc-script data-props='{"$preview":{"width":1440,"height":2150}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

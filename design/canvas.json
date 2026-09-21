@@ -1,0 +1,102 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 2150,
+      "title": "Home (navigation shell)"
+    },
+    {
+      "file": "Team.dc.html",
+      "x": 1600,
+      "y": 0,
+      "w": 1440,
+      "h": 2900,
+      "title": "Team dashboard"
+    },
+    {
+      "file": "Players.dc.html",
+      "x": 3200,
+      "y": 0,
+      "w": 1440,
+      "h": 2050,
+      "title": "Player database",
+      "is_interactive": true
+    },
+    {
+      "file": "Player.dc.html",
+      "x": 0,
+      "y": 3100,
+      "w": 1440,
+      "h": 1760,
+      "title": "Player page"
+    },
+    {
+      "file": "Articles.dc.html",
+      "x": 1600,
+      "y": 3100,
+      "w": 1440,
+      "h": 2260,
+      "title": "Articles",
+      "is_interactive": true
+    },
+    {
+      "file": "Glossary.dc.html",
+      "x": 3200,
+      "y": 3100,
+      "w": 1440,
+      "h": 3600,
+      "title": "Glossary"
+    },
+    {
+      "file": "Column.dc.html",
+      "x": 0,
+      "y": 6900,
+      "w": 1440,
+      "h": 3900,
+      "title": "Article page"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "ia",
+      "x": 0,
+      "y": -300,
+      "w": 1080,
+      "text": "SITE STRUCTURE \u2014 five doors\n\n/            Home\n/team        Team dashboard, rebuilt nightly\n/players     Player database \u2014 Red Wings / In the system\n/players/\u2026   Player page, with the data portrait\n/articles    One feed, filtered by subject, newest first\n/articles/\u2026  Article page\n/glossary    Every number defined, with a worked example\n/about\n\nNo news/analysis split: nothing here expires on a news cycle. Subject tags do the sorting, and the featured slot is curation rather than a category \u2014 it stands only while the feed is unfiltered.\n\nThe trade tree and the redraft are internal tools, not site features. They can be SUBJECTS of an article; nothing embeds.\n\nSystem: greyscale interface, Doto for page titles, Space Grotesk for reading, IBM Plex Mono for anything numeric. Wings red appears ONLY inside a data visualisation."
+    },
+    {
+      "id": "interactive",
+      "x": 3200,
+      "y": -180,
+      "w": 700,
+      "text": "Working: switch between Red Wings and In the system, filter by position, sort any column. The Articles index filters by subject too. Everything else is a static mockup."
+    },
+    {
+      "id": "system-gap",
+      "x": 3200,
+      "y": 2130,
+      "w": 780,
+      "text": "THE SYSTEM TAB IS BLOCKED ON DATA, NOT DESIGN.\n\nNHL API /v1/prospects/DET returns empty, and where it does return players it carries bio only \u2014 no league, no club, no stats. No public expected-goals model covers the AHL, CHL, NCAA or Europe, so that table can never show xG or percentiles the way the roster table does.\n\nRather than invent numbers, the tab ships the real column set, ghost rows for density, and a panel naming the three candidate sources and what each costs you."
+    },
+    {
+      "id": "portrait",
+      "x": 0,
+      "y": 4940,
+      "w": 720,
+      "text": "DATA PORTRAIT, replacing the headshot: one solid dot per goal scored, one hollow dot per expected goal. Unique to each player, generated from the pipeline, no image rights. DeBrincat reads 41 solid against 37 hollow."
+    },
+    {
+      "id": "voice",
+      "x": 1600,
+      "y": 6900,
+      "w": 860,
+      "text": "THE ARTICLE TEMPLATE CARRIES THE ARGUMENT, NOT JUST THE NUMBER.\n\nThe Copp piece now runs past the gap into where it came from: a dumbbell chart of expected against actual shooting percentage, then three findings that point in different directions \u2014 the sample is tiny, two teammates missed the same way, and a residue that might be real \u2014 closing on a stated verdict and a panel naming what would actually settle it.\n\nEvery figure in it is computed from data/site/skaters.json. Copp: 115 shots, 9 goals, 7.8% actual against 17.2% expected \u2014 the highest expected rate on the roster."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}

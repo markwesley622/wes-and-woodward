@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; background: #d7d6d3; color: #141414;
+           font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+           -webkit-font-smoothing: antialiased; }
+    a { color: #141414; text-decoration: none; }
+    a:hover { color: #5f5e5b; }
+    .mono { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+            font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1; }
+    .dot  { font-family: 'Doto', 'IBM Plex Mono', monospace; font-weight: 800;
+            letter-spacing: 0.06em; text-transform: uppercase; line-height: 1; margin: 0; }
+    .lbl  { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10px;
+            font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase;
+            color: #91908d; }
+    .hed  { font-family: 'Space Grotesk', ui-sans-serif, sans-serif; font-weight: 600;
+            line-height: 1.06; letter-spacing: -0.025em; text-wrap: balance; margin: 0; }
+    .panel { background: #e7e6e3; border-radius: 22px; }
+    .track { background: #cbcac7; border-radius: 999px; position: relative; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; background: #d7d6d3;">
+  <div style="display: flex; justify-content: space-between; align-items: center; gap: 36px; padding: 26px 64px 22px;">
+    <a href="#" style="display: block;"><img src="wordmark.svg" alt="Wes &amp; Woodward" style="width: 196px; height: auto; display: block;"></a>
+    <div style="display: flex; gap: 7px;">
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Team</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Players</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Articles</a>
+      <a class="lbl" href="#" style="background: #141414; color: #f2f1ef; border: 1px solid #141414; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Glossary</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">About</a>
+    </div>
+  </div>
+
+  <div style="padding: 20px 64px 0;">
+    <div style="display: grid; grid-template-columns: minmax(0, 1fr) 440px; gap: 12px; align-items: stretch;">
+      <div class="panel" style="padding: 40px 44px 38px;">
+        <h1 class="dot" style="font-size: 62px;">Glossary</h1>
+        <p style="font-size: 18px; line-height: 1.55; color: #5f5e5b; margin: 28px 0 0; max-width: 40em;">
+          Every number this publication uses, defined once, with a worked example from the roster and an
+          honest note on what it cannot tell you. If a chart here ever uses a term that is not on this page,
+          that is a mistake &mdash; tell us.
+        </p>
+      </div>
+      <div style="background: #141414; border-radius: 22px; padding: 34px 36px 32px; display: flex; flex-direction: column; justify-content: center;">
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #a8a7a4;">
+          None of this is proprietary. Expected goals come from
+          <a href="#" style="color: #f2f1ef; border-bottom: 1px solid #4a4845;">MoneyPuck&rsquo;s public model</a>;
+          counting stats come from the
+          <a href="#" style="color: #f2f1ef; border-bottom: 1px solid #4a4845;">NHL&rsquo;s own API</a>.
+          You can rebuild every table on this site from those two sources.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 12px 64px 0;">
+    <div style="display: grid; grid-template-columns: 236px minmax(0, 1fr); gap: 12px; align-items: start;">
+
+      <div class="panel" style="padding: 24px 26px 20px;">
+        <p class="lbl" style="margin: 0 0 16px; color: #141414;">On this page</p>
+        <sc-for list="{{index}}" as="i" hint-placeholder-count="8">
+          <a href="#" style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 10px 0; border-bottom: 1px solid #c1c0bd;">
+            <span style="font-size: 14px;">{{i.name}}</span>
+            <span class="mono" style="font-size: 10.5px; color: #91908d;">{{i.abbr}}</span>
+          </a>
+        </sc-for>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <sc-for list="{{entries}}" as="e" hint-placeholder-count="8">
+          <div class="panel" style="padding: 30px 34px 28px;">
+            <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 14px;">
+              <h2 class="hed" style="font-size: 28px;">{{e.term}}</h2>
+              <span class="mono" style="font-size: 13px; color: #91908d; font-weight: 500;">{{e.abbr}}</span>
+            </div>
+            <p style="margin: 0 0 22px; font-size: 17.5px; line-height: 1.6; max-width: 44em;">{{e.plain}}</p>
+            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
+              <div style="background: #cbcac7; border-radius: 16px; padding: 18px 20px 17px;">
+                <p class="lbl" style="margin: 0 0 10px; font-size: 8px;">In practice</p>
+                <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #141414;">{{e.example}}</p>
+              </div>
+              <div style="background: #cbcac7; border-radius: 16px; padding: 18px 20px 17px;">
+                <p class="lbl" style="margin: 0 0 10px; font-size: 8px;">What it cannot tell you</p>
+                <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #141414;">{{e.caveat}}</p>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 30px 64px 44px;">
+    <div class="panel" style="padding: 24px 28px; display: flex; justify-content: space-between; gap: 40px; align-items: center;">
+      <p style="margin: 0; font-size: 13px; color: #5f5e5b; line-height: 1.6; max-width: 62em;">
+        Wes &amp; Woodward is an independent publication and is not affiliated with the Detroit Red Wings or
+        the National Hockey League. Data from the NHL API and MoneyPuck; dashboards rebuild nightly.
+      </p>
+      <span class="lbl" style="white-space: nowrap;">&copy; 2026</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+
+<script data-dc-script data-props='{"$preview":{"width":1440,"height":3480}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var entries = [
+      { term: 'Expected goals', abbr: 'xG',
+        plain: 'A number attached to every shot, describing how often a shot like that one goes in. Feed a model the distance, the angle, the shot type and what happened just before it, and it returns a probability. Add them up and you have what an average team would have scored from the same chances.',
+        example: 'Detroit generated 256.45 expected goals in all situations this season and scored 239. That seventeen-and-a-half goal shortfall is the finishing story of the year.',
+        caveat: 'It does not know who was shooting. A model is deliberately blind to skill, so an elite finisher will beat it year after year and that is not the model being wrong.' },
+      { term: 'Individual expected goals', abbr: 'ixG',
+        plain: 'The same idea, but only counting a single player’s own shots. It measures how many good looks a skater generated for himself, independent of whether the puck went in.',
+        example: 'Alex DeBrincat put 287 shots on goal worth 36.87 expected goals — the heaviest individual load on the roster — and scored 41.',
+        caveat: 'It rewards volume. A player who takes many mediocre shots can out-total a player who takes fewer, better ones.' },
+      { term: 'Goals above expected', abbr: 'G−ixG',
+        plain: 'Goals scored minus individual expected goals. Positive means a skater finished better than his chances implied; negative means worse.',
+        example: 'Andrew Copp shot 19.83 expected goals and scored nine — a shortfall of 10.83, the largest on the team by four goals.',
+        caveat: 'One season is a noisy sample. Finishing talent is real but takes several years of data to separate from luck, so treat a single-season figure as a flag rather than a verdict.' },
+      { term: 'On-ice expected-goal share', abbr: '5v5 xG%',
+        plain: 'Of all the expected goals created while a skater was on the ice at even strength, the percentage that belonged to his team. Fifty percent is break-even.',
+        example: 'Simon Edvinsson and Moritz Seider played 1,087.9 minutes together and controlled 55 percent — 48.81 expected goals for against 40.27 against.',
+        caveat: 'It is a team result credited to an individual. Linemates, deployment and zone starts all move it, so it says less about a player alone than it appears to.' },
+      { term: 'Corsi', abbr: 'CF%',
+        plain: 'Share of all shot attempts — goals, saves, misses and blocks alike — while a player was on the ice. A blunt, high-volume proxy for which team had the puck.',
+        example: 'Detroit finished at 49 percent at five-on-five, nineteenth in the league, roughly where their expected-goal share put them. Shot quality was not hiding anything.',
+        caveat: 'It counts a point shot into a shin pad the same as a backdoor tap-in. Use it for stability, not for quality — that is what expected goals are for.' },
+      { term: 'Goals saved above expected', abbr: 'GSAx',
+        plain: 'For goaltenders: the expected goals of every shot faced, minus the goals actually allowed. It asks whether a goalie beat the shots he saw, rather than comparing him to goalies who saw different ones.',
+        example: 'John Gibson finished at +11.73 across 57 starts; Cam Talbot at −13.11 across 25. Save percentage had them .901 and .883, a gap that understates what actually happened.',
+        caveat: 'It inherits the shot model’s blind spots — screens, deflections and pre-shot movement are only partly captured — and rebounds can be charged to a goalie who created them.' },
+      { term: 'Percentile', abbr: 'pct',
+        plain: 'Where a skater sits against everyone else in the league, from 0 to 100. The fiftieth percentile is exactly average; the eighty-fifth means only fifteen percent of comparable players did better.',
+        example: 'DeBrincat’s expected goals per sixty put him in the 87th percentile among league forwards. Seider’s on-ice share put him in the 84th among defencemen.',
+        caveat: 'The comparison group decides the answer. Ours is league regulars with 300+ five-on-five minutes, forwards and defencemen ranked separately; a different cut gives a different number.' },
+      { term: 'Five-on-five', abbr: '5v5',
+        plain: 'Even strength with both goaltenders on the ice — most of a hockey game, and the state where team quality shows up most clearly.',
+        example: 'Detroit spent 243,923 seconds at five-on-five this season and was outshot on expectation by roughly eight goals.',
+        caveat: 'It deliberately excludes special teams, which is why a team can look mediocre here and still have the league’s third-best power play. Both facts are true at once.' }
+    ];
+    return { entries: entries, index: entries.map(function (e) { return { name: e.term, abbr: e.abbr }; }) };
+  }
+}
+</script>
+</body>
+</html>

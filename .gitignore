@@ -3,3 +3,7 @@ __pycache__/
 node_modules/
 dist/
 .astro/
+# research packages: large shot files and Evolving Hockey subscriber CSVs stay local
+research/*/raw/shots_*.csv
+research/*/raw/mp/shots_*.csv
+research/*/raw/eh/*.csv

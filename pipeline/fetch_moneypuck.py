@@ -24,6 +24,10 @@ SEASON = CFG["mp_season"]
 TEAM = CFG["team"]
 FILES = ["skaters", "goalies", "lines", "teams"]
 BASE = f"https://moneypuck.com/moneypuck/playerData/seasonSummary/{SEASON}/regular/"
+# Season simulations: one row per team per scenario (ALL, WINREG, WINOT, LOSSOT, LOSSREG).
+# `points` is the projected season total; the odds columns are probabilities 0-1.
+# Between seasons the file holds final standings with every probability at 0.
+SIMS_URL = "https://moneypuck.com/moneypuck/simulations/simulations_recent.csv"
 
 
 def fetch_text(url):
@@ -46,6 +50,11 @@ def main():
             writer.writeheader()
             writer.writerows(det)
         print(f"moneypuck/{name}.csv: {len(rows):,} league rows, {len(det):,} DET rows")
+
+    sims = fetch_text(SIMS_URL)
+    (OUT / "simulations.csv").write_text(sims)
+    n = sum(1 for r in csv.DictReader(io.StringIO(sims)) if r.get("teamCode") == TEAM)
+    print(f"moneypuck/simulations.csv: {n} {TEAM} scenario rows")
 
 
 if __name__ == "__main__":

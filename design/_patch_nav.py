@@ -1,0 +1,28 @@
+s = open('_kit.py').read()
+start = s.index("def topbar(active):")
+end   = s.index("FOOTER = (")
+
+L = []
+A = L.append
+A('def topbar(active):')
+A('    """Wordmark left, pill nav right. Active pill is solid black."""')
+A("    items = ['Team', 'Players', 'Analysis', 'News', 'Glossary', 'About']")
+A('    pills = []')
+A('    for it in items:')
+A('        if it == active:')
+A("            st = 'background: ' + INK + '; color: ' + WHITE + '; border: 1px solid ' + INK + ';'")
+A('        else:')
+A("            st = 'background: transparent; color: ' + INK2 + '; border: 1px solid ' + HAIR + ';'")
+A('        pills.append(')
+A("            '<a class=\"lbl\" href=\"#\" style=\"' + st +")
+A("            ' font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;\">' + it + '</a>')")
+A("    head = ('  <div style=\"display: flex; justify-content: space-between; align-items: center; gap: 36px; padding: 26px 64px 22px;\">\\n'")
+A("            '    <a href=\"#\" style=\"display: block;\"><img src=\"wordmark.svg\" alt=\"Wes &amp; Woodward\" style=\"width: 196px; height: auto; display: block;\"></a>\\n'")
+A("            '    <div style=\"display: flex; gap: 7px;\">\\n')")
+A("    tail = '\\n    </div>\\n  </div>'")
+A("    return head + '\\n'.join('      ' + p for p in pills) + tail")
+A('')
+A('')
+
+open('_kit.py','w').write(s[:start] + '\n'.join(L) + s[end:])
+print('nav replaced')

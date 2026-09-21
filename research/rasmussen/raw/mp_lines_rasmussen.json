@@ -1,0 +1,778 @@
+{
+ "2022": {
+  "ras_lines": [
+   {
+    "line": "Perron-Copp-Rasmussen",
+    "toi": 83.7,
+    "gp": "12",
+    "xGF%": 0.603,
+    "xGF60": 3.07,
+    "xGA60": 2.02,
+    "GF": 7.0,
+    "GA": 0.0,
+    "ras": true
+   },
+   {
+    "line": "Perron-Larkin-Rasmussen",
+    "toi": 73.7,
+    "gp": "9",
+    "xGF%": 0.638,
+    "xGF60": 3.35,
+    "xGA60": 1.9,
+    "GF": 4.0,
+    "GA": 5.0,
+    "ras": true
+   },
+   {
+    "line": "Fabbri-Copp-Rasmussen",
+    "toi": 62.3,
+    "gp": "11",
+    "xGF%": 0.398,
+    "xGF60": 1.29,
+    "xGA60": 1.96,
+    "GF": 4.0,
+    "GA": 0.0,
+    "ras": true
+   },
+   {
+    "line": "Erne-Rasmussen-Sundqvist",
+    "toi": 56.9,
+    "gp": "10",
+    "xGF%": 0.481,
+    "xGF60": 1.75,
+    "xGA60": 1.89,
+    "GF": 2.0,
+    "GA": 4.0,
+    "ras": true
+   },
+   {
+    "line": "Kubalik-Rasmussen-Suter",
+    "toi": 51.5,
+    "gp": "6",
+    "xGF%": 0.502,
+    "xGF60": 3.13,
+    "xGA60": 3.1,
+    "GF": 1.0,
+    "GA": 2.0,
+    "ras": true
+   },
+   {
+    "line": "Soderblom-Rasmussen-Sundqvist",
+    "toi": 48.8,
+    "gp": "6",
+    "xGF%": 0.596,
+    "xGF60": 3.6,
+    "xGA60": 2.45,
+    "GF": 2.0,
+    "GA": 4.0,
+    "ras": true
+   },
+   {
+    "line": "Erne-Suter-Rasmussen",
+    "toi": 30.1,
+    "gp": "23",
+    "xGF%": 0.607,
+    "xGF60": 3.9,
+    "xGA60": 2.53,
+    "GF": 1.0,
+    "GA": 1.0,
+    "ras": true
+   },
+   {
+    "line": "Rasmussen-Copp-Berggren",
+    "toi": 29.9,
+    "gp": "7",
+    "xGF%": 0.409,
+    "xGF60": 2.11,
+    "xGA60": 3.05,
+    "GF": 3.0,
+    "GA": 1.0,
+    "ras": true
+   }
+  ],
+  "team_top_lines": [
+   {
+    "line": "Kubalik-Larkin-Perron",
+    "toi": 180.2,
+    "gp": "41",
+    "xGF%": 0.54,
+    "xGF60": 2.98,
+    "xGA60": 2.54,
+    "GF": 15.0,
+    "GA": 12.0,
+    "ras": false
+   },
+   {
+    "line": "Kubalik-Copp-Perron",
+    "toi": 129.2,
+    "gp": "26",
+    "xGF%": 0.391,
+    "xGF60": 1.75,
+    "xGA60": 2.73,
+    "GF": 4.0,
+    "GA": 6.0,
+    "ras": false
+   },
+   {
+    "line": "Raymond-Larkin-Perron",
+    "toi": 122.3,
+    "gp": "29",
+    "xGF%": 0.501,
+    "xGF60": 3.32,
+    "xGA60": 3.31,
+    "GF": 2.0,
+    "GA": 6.0,
+    "ras": false
+   },
+   {
+    "line": "Raymond-Larkin-Bertuzzi",
+    "toi": 116.5,
+    "gp": "18",
+    "xGF%": 0.497,
+    "xGF60": 2.46,
+    "xGA60": 2.48,
+    "GF": 3.0,
+    "GA": 5.0,
+    "ras": false
+   },
+   {
+    "line": "Raymond-Larkin-Suter",
+    "toi": 108.8,
+    "gp": "19",
+    "xGF%": 0.512,
+    "xGF60": 2.06,
+    "xGA60": 1.97,
+    "GF": 4.0,
+    "GA": 4.0,
+    "ras": false
+   },
+   {
+    "line": "Kubalik-Larkin-Raymond",
+    "toi": 88.8,
+    "gp": "24",
+    "xGF%": 0.439,
+    "xGF60": 1.94,
+    "xGA60": 2.48,
+    "GF": 2.0,
+    "GA": 5.0,
+    "ras": false
+   },
+   {
+    "line": "Veleno-Czarnik-Berggren",
+    "toi": 84.5,
+    "gp": "12",
+    "xGF%": 0.486,
+    "xGF60": 2.3,
+    "xGA60": 2.43,
+    "GF": 3.0,
+    "GA": 1.0,
+    "ras": false
+   },
+   {
+    "line": "Raymond-Copp-Suter",
+    "toi": 78.7,
+    "gp": "11",
+    "xGF%": 0.349,
+    "xGF60": 1.43,
+    "xGA60": 2.67,
+    "GF": 2.0,
+    "GA": 2.0,
+    "ras": false
+   }
+  ],
+  "with": [
+   508,
+   0.536,
+   2.65,
+   2.3
+  ],
+  "without": [
+   2509,
+   0.458,
+   2.2,
+   2.61
+  ]
+ },
+ "2023": {
+  "ras_lines": [
+   {
+    "line": "Rasmussen-Copp-Fischer",
+    "toi": 244.2,
+    "gp": "45",
+    "xGF%": 0.518,
+    "xGF60": 2.3,
+    "xGA60": 2.14,
+    "GF": 11.0,
+    "GA": 10.0,
+    "ras": true
+   },
+   {
+    "line": "Rasmussen-Compher-Copp",
+    "toi": 71.3,
+    "gp": "14",
+    "xGF%": 0.372,
+    "xGF60": 1.79,
+    "xGA60": 3.02,
+    "GF": 3.0,
+    "GA": 4.0,
+    "ras": true
+   },
+   {
+    "line": "Raymond-Compher-Rasmussen",
+    "toi": 64.6,
+    "gp": "15",
+    "xGF%": 0.426,
+    "xGF60": 1.86,
+    "xGA60": 2.51,
+    "GF": 3.0,
+    "GA": 2.0,
+    "ras": true
+   },
+   {
+    "line": "Perron-Copp-Rasmussen",
+    "toi": 62.6,
+    "gp": "17",
+    "xGF%": 0.403,
+    "xGF60": 2.02,
+    "xGA60": 2.99,
+    "GF": 3.0,
+    "GA": 5.0,
+    "ras": true
+   },
+   {
+    "line": "Rasmussen-Compher-Debrincat",
+    "toi": 47.0,
+    "gp": "10",
+    "xGF%": 0.423,
+    "xGF60": 2.0,
+    "xGA60": 2.73,
+    "GF": 1.0,
+    "GA": 1.0,
+    "ras": true
+   },
+   {
+    "line": "Veleno-Rasmussen-Sprong",
+    "toi": 36.4,
+    "gp": "15",
+    "xGF%": 0.372,
+    "xGF60": 2.19,
+    "xGA60": 3.71,
+    "GF": 2.0,
+    "GA": 1.0,
+    "ras": true
+   },
+   {
+    "line": "Rasmussen-Larkin-Kane",
+    "toi": 35.0,
+    "gp": "8",
+    "xGF%": 0.35,
+    "xGF60": 1.46,
+    "xGA60": 2.71,
+    "GF": 0.0,
+    "GA": 0.0,
+    "ras": true
+   },
+   {
+    "line": "Kostin-Rasmussen-Sprong",
+    "toi": 27.8,
+    "gp": "7",
+    "xGF%": 0.559,
+    "xGF60": 2.46,
+    "xGA60": 1.95,
+    "GF": 1.0,
+    "GA": 0.0,
+    "ras": true
+   }
+  ],
+  "team_top_lines": [
+   {
+    "line": "Raymond-Larkin-Debrincat",
+    "toi": 307.1,
+    "gp": "47",
+    "xGF%": 0.505,
+    "xGF60": 2.82,
+    "xGA60": 2.76,
+    "GF": 24.0,
+    "GA": 17.0,
+    "ras": false
+   },
+   {
+    "line": "Perron-Larkin-Raymond",
+    "toi": 205.9,
+    "gp": "30",
+    "xGF%": 0.447,
+    "xGF60": 1.85,
+    "xGA60": 2.29,
+    "GF": 7.0,
+    "GA": 12.0,
+    "ras": false
+   },
+   {
+    "line": "Debrincat-Compher-Kane",
+    "toi": 182.2,
+    "gp": "35",
+    "xGF%": 0.515,
+    "xGF60": 2.6,
+    "xGA60": 2.45,
+    "GF": 8.0,
+    "GA": 8.0,
+    "ras": false
+   },
+   {
+    "line": "Kane-Larkin-Debrincat",
+    "toi": 152.2,
+    "gp": "28",
+    "xGF%": 0.473,
+    "xGF60": 2.57,
+    "xGA60": 2.85,
+    "GF": 14.0,
+    "GA": 6.0,
+    "ras": false
+   },
+   {
+    "line": "Fabbri-Fischer-Sprong",
+    "toi": 99.3,
+    "gp": "27",
+    "xGF%": 0.424,
+    "xGF60": 2.77,
+    "xGA60": 3.77,
+    "GF": 7.0,
+    "GA": 5.0,
+    "ras": false
+   },
+   {
+    "line": "Perron-Copp-Veleno",
+    "toi": 78.9,
+    "gp": "12",
+    "xGF%": 0.42,
+    "xGF60": 1.96,
+    "xGA60": 2.72,
+    "GF": 4.0,
+    "GA": 1.0,
+    "ras": false
+   },
+   {
+    "line": "Perron-Compher-Kane",
+    "toi": 75.8,
+    "gp": "14",
+    "xGF%": 0.317,
+    "xGF60": 1.27,
+    "xGA60": 2.73,
+    "GF": 5.0,
+    "GA": 8.0,
+    "ras": false
+   },
+   {
+    "line": "Kane-Veleno-Debrincat",
+    "toi": 72.4,
+    "gp": "26",
+    "xGF%": 0.525,
+    "xGF60": 2.49,
+    "xGA60": 2.25,
+    "GF": 0.0,
+    "GA": 3.0,
+    "ras": false
+   }
+  ],
+  "with": [
+   799,
+   0.444,
+   2.1,
+   2.63
+  ],
+  "without": [
+   2436,
+   0.459,
+   2.28,
+   2.69
+  ]
+ },
+ "2024": {
+  "ras_lines": [
+   {
+    "line": "Rasmussen-Copp-Fischer",
+    "toi": 95.8,
+    "gp": "18",
+    "xGF%": 0.331,
+    "xGF60": 1.52,
+    "xGA60": 3.08,
+    "GF": 1.0,
+    "GA": 4.0,
+    "ras": true
+   },
+   {
+    "line": "Raymond-Larkin-Rasmussen",
+    "toi": 83.6,
+    "gp": "24",
+    "xGF%": 0.541,
+    "xGF60": 2.8,
+    "xGA60": 2.38,
+    "GF": 3.0,
+    "GA": 5.0,
+    "ras": true
+   },
+   {
+    "line": "Rasmussen-Veleno-Fischer",
+    "toi": 75.1,
+    "gp": "15",
+    "xGF%": 0.574,
+    "xGF60": 2.26,
+    "xGA60": 1.68,
+    "GF": 3.0,
+    "GA": 3.0,
+    "ras": true
+   },
+   {
+    "line": "Rasmussen-Compher-Tarasenko",
+    "toi": 55.9,
+    "gp": "13",
+    "xGF%": 0.632,
+    "xGF60": 2.51,
+    "xGA60": 1.46,
+    "GF": 1.0,
+    "GA": 0.0,
+    "ras": true
+   },
+   {
+    "line": "Rasmussen-Motte-Smith",
+    "toi": 38.9,
+    "gp": "8",
+    "xGF%": 0.52,
+    "xGF60": 2.77,
+    "xGA60": 2.56,
+    "GF": 1.0,
+    "GA": 2.0,
+    "ras": true
+   },
+   {
+    "line": "Raymond-Kasper-Rasmussen",
+    "toi": 36.5,
+    "gp": "8",
+    "xGF%": 0.5,
+    "xGF60": 2.61,
+    "xGA60": 2.61,
+    "GF": 1.0,
+    "GA": 0.0,
+    "ras": true
+   },
+   {
+    "line": "Rasmussen-Kasper-Motte",
+    "toi": 34.2,
+    "gp": "6",
+    "xGF%": 0.484,
+    "xGF60": 1.6,
+    "xGA60": 1.7,
+    "GF": 1.0,
+    "GA": 4.0,
+    "ras": true
+   },
+   {
+    "line": "Soderblom-Rasmussen-Fischer",
+    "toi": 32.6,
+    "gp": "4",
+    "xGF%": 0.546,
+    "xGF60": 4.24,
+    "xGA60": 3.52,
+    "GF": 1.0,
+    "GA": 0.0,
+    "ras": true
+   }
+  ],
+  "team_top_lines": [
+   {
+    "line": "Raymond-Kasper-Larkin",
+    "toi": 272.7,
+    "gp": "26",
+    "xGF%": 0.54,
+    "xGF60": 3.31,
+    "xGA60": 2.82,
+    "GF": 11.0,
+    "GA": 11.0,
+    "ras": false
+   },
+   {
+    "line": "Tarasenko-Compher-Berggren",
+    "toi": 242.4,
+    "gp": "35",
+    "xGF%": 0.466,
+    "xGF60": 2.02,
+    "xGA60": 2.32,
+    "GF": 7.0,
+    "GA": 4.0,
+    "ras": false
+   },
+   {
+    "line": "Raymond-Larkin-Debrincat",
+    "toi": 196.2,
+    "gp": "51",
+    "xGF%": 0.525,
+    "xGF60": 2.65,
+    "xGA60": 2.4,
+    "GF": 9.0,
+    "GA": 13.0,
+    "ras": false
+   },
+   {
+    "line": "Kane-Kasper-Debrincat",
+    "toi": 192.2,
+    "gp": "30",
+    "xGF%": 0.547,
+    "xGF60": 3.2,
+    "xGA60": 2.64,
+    "GF": 8.0,
+    "GA": 4.0,
+    "ras": false
+   },
+   {
+    "line": "Debrincat-Larkin-Kane",
+    "toi": 176.3,
+    "gp": "44",
+    "xGF%": 0.512,
+    "xGF60": 2.54,
+    "xGA60": 2.42,
+    "GF": 7.0,
+    "GA": 4.0,
+    "ras": false
+   },
+   {
+    "line": "Kane-Copp-Debrincat",
+    "toi": 175.4,
+    "gp": "25",
+    "xGF%": 0.493,
+    "xGF60": 2.87,
+    "xGA60": 2.95,
+    "GF": 10.0,
+    "GA": 10.0,
+    "ras": false
+   },
+   {
+    "line": "Berggren-Kasper-Tarasenko",
+    "toi": 136.1,
+    "gp": "21",
+    "xGF%": 0.5,
+    "xGF60": 2.24,
+    "xGA60": 2.24,
+    "GF": 3.0,
+    "GA": 6.0,
+    "ras": false
+   },
+   {
+    "line": "Kane-Compher-Debrincat",
+    "toi": 115.4,
+    "gp": "25",
+    "xGF%": 0.4,
+    "xGF60": 2.69,
+    "xGA60": 4.03,
+    "GF": 3.0,
+    "GA": 6.0,
+    "ras": false
+   }
+  ],
+  "with": [
+   702,
+   0.498,
+   2.36,
+   2.38
+  ],
+  "without": [
+   2671,
+   0.479,
+   2.48,
+   2.7
+  ]
+ },
+ "2025": {
+  "ras_lines": [
+   {
+    "line": "Soderblom-Rasmussen-Appleton",
+    "toi": 115.2,
+    "gp": "19",
+    "xGF%": 0.604,
+    "xGF60": 2.52,
+    "xGA60": 1.65,
+    "GF": 0.0,
+    "GA": 4.0,
+    "ras": true
+   },
+   {
+    "line": "Van Riemsdyk-Compher-Rasmussen",
+    "toi": 98.2,
+    "gp": "13",
+    "xGF%": 0.488,
+    "xGF60": 2.39,
+    "xGA60": 2.5,
+    "GF": 3.0,
+    "GA": 3.0,
+    "ras": true
+   },
+   {
+    "line": "Soderblom-Rasmussen-Van Riemsdyk",
+    "toi": 90.6,
+    "gp": "14",
+    "xGF%": 0.646,
+    "xGF60": 2.81,
+    "xGA60": 1.54,
+    "GF": 1.0,
+    "GA": 0.0,
+    "ras": true
+   },
+   {
+    "line": "Rasmussen-Compher-Appleton",
+    "toi": 82.2,
+    "gp": "16",
+    "xGF%": 0.472,
+    "xGF60": 2.61,
+    "xGA60": 2.92,
+    "GF": 5.0,
+    "GA": 2.0,
+    "ras": true
+   },
+   {
+    "line": "Van Riemsdyk-Copp-Rasmussen",
+    "toi": 32.6,
+    "gp": "8",
+    "xGF%": 0.731,
+    "xGF60": 4.34,
+    "xGA60": 1.6,
+    "GF": 1.0,
+    "GA": 1.0,
+    "ras": true
+   },
+   {
+    "line": "Rasmussen-Larkin-Kane",
+    "toi": 29.1,
+    "gp": "3",
+    "xGF%": 0.483,
+    "xGF60": 3.27,
+    "xGA60": 3.5,
+    "GF": 0.0,
+    "GA": 1.0,
+    "ras": true
+   },
+   {
+    "line": "Van Riemsdyk-Rasmussen-Shine",
+    "toi": 20.6,
+    "gp": "6",
+    "xGF%": 0.418,
+    "xGF60": 2.21,
+    "xGA60": 3.08,
+    "GF": 1.0,
+    "GA": 1.0,
+    "ras": true
+   },
+   {
+    "line": "Rasmussen-Copp-Berggren",
+    "toi": 16.5,
+    "gp": "3",
+    "xGF%": 0.532,
+    "xGF60": 2.11,
+    "xGA60": 1.85,
+    "GF": 1.0,
+    "GA": 0.0,
+    "ras": true
+   }
+  ],
+  "team_top_lines": [
+   {
+    "line": "Debrincat-Copp-Kane",
+    "toi": 500.1,
+    "gp": "47",
+    "xGF%": 0.523,
+    "xGF60": 2.55,
+    "xGA60": 2.33,
+    "GF": 30.0,
+    "GA": 14.0,
+    "ras": false
+   },
+   {
+    "line": "Raymond-Larkin-Finnie",
+    "toi": 490.8,
+    "gp": "48",
+    "xGF%": 0.482,
+    "xGF60": 2.33,
+    "xGA60": 2.5,
+    "GF": 18.0,
+    "GA": 22.0,
+    "ras": false
+   },
+   {
+    "line": "Raymond-Larkin-Kasper",
+    "toi": 132.6,
+    "gp": "21",
+    "xGF%": 0.414,
+    "xGF60": 1.82,
+    "xGA60": 2.58,
+    "GF": 6.0,
+    "GA": 4.0,
+    "ras": false
+   },
+   {
+    "line": "Debrincat-Compher-Kane",
+    "toi": 120.7,
+    "gp": "32",
+    "xGF%": 0.577,
+    "xGF60": 3.75,
+    "xGA60": 2.75,
+    "GF": 8.0,
+    "GA": 8.0,
+    "ras": false
+   },
+   {
+    "line": "Soderblom-Danielson-Kasper",
+    "toi": 92.2,
+    "gp": "12",
+    "xGF%": 0.573,
+    "xGF60": 3.49,
+    "xGA60": 2.6,
+    "GF": 3.0,
+    "GA": 2.0,
+    "ras": false
+   },
+   {
+    "line": "Debrincat-Kasper-Kane",
+    "toi": 83.0,
+    "gp": "20",
+    "xGF%": 0.423,
+    "xGF60": 2.1,
+    "xGA60": 2.85,
+    "GF": 2.0,
+    "GA": 4.0,
+    "ras": false
+   },
+   {
+    "line": "Raymond-Larkin-Debrincat",
+    "toi": 75.3,
+    "gp": "35",
+    "xGF%": 0.713,
+    "xGF60": 3.84,
+    "xGA60": 1.55,
+    "GF": 6.0,
+    "GA": 3.0,
+    "ras": false
+   },
+   {
+    "line": "Finnie-Compher-Appleton",
+    "toi": 56.2,
+    "gp": "16",
+    "xGF%": 0.489,
+    "xGF60": 1.81,
+    "xGA60": 1.9,
+    "GF": 0.0,
+    "GA": 4.0,
+    "ras": false
+   }
+  ],
+  "with": [
+   537,
+   0.523,
+   2.52,
+   2.3
+  ],
+  "without": [
+   2645,
+   0.496,
+   2.49,
+   2.53
+  ]
+ }
+}

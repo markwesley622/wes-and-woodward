@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; background: #d7d6d3; color: #141414;
+           font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+           -webkit-font-smoothing: antialiased; }
+    a { color: #141414; text-decoration: none; }
+    a:hover { color: #5f5e5b; }
+    .mono { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+            font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1; }
+    .dot  { font-family: 'Doto', 'IBM Plex Mono', monospace; font-weight: 800;
+            letter-spacing: 0.06em; text-transform: uppercase; line-height: 1; margin: 0; }
+    .lbl  { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10px;
+            font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase;
+            color: #91908d; }
+    .hed  { font-family: 'Space Grotesk', ui-sans-serif, sans-serif; font-weight: 600;
+            line-height: 1.06; letter-spacing: -0.025em; text-wrap: balance; margin: 0; }
+    .panel { background: #e7e6e3; border-radius: 22px; }
+    .track { background: #cbcac7; border-radius: 999px; position: relative; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; background: #d7d6d3;">
+  <div style="display: flex; justify-content: space-between; align-items: center; gap: 36px; padding: 26px 64px 22px;">
+    <a href="#" style="display: block;"><img src="wordmark.svg" alt="Wes &amp; Woodward" style="width: 196px; height: auto; display: block;"></a>
+    <div style="display: flex; gap: 7px;">
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Team</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Players</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Articles</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Glossary</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">About</a>
+    </div>
+  </div>
+
+  <!-- what this is -->
+  <div style="padding: 14px 64px 0;">
+    <div style="background: #141414; border-radius: 22px; padding: 46px 48px 42px;">
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 64px; align-items: end;">
+        <div>
+          <h1 class="dot" style="font-size: 60px; color: #f2f1ef;">Detroit Red Wings,<br>by the numbers</h1>
+          <p style="margin: 30px 0 0; font-size: 18.5px; line-height: 1.6; color: #a8a7a4; max-width: 44em;">
+            Every figure is cited to its original source. This is meant for Red Wings fans who not only want to
+            see what transpires on the ice, but also seek to understand how or why it happened. Articles come
+            out regularly, and player and team dashboards are rebuilt nightly.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px solid #2e2d2b;">
+            <span class="lbl" style="font-size: 8px; color: #7c7b78;">Open</span>
+            <span class="mono" style="font-size: 12.5px; color: #f2f1ef;">NHL API · MoneyPuck</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px solid #2e2d2b;">
+            <span class="lbl" style="font-size: 8px; color: #7c7b78;">Licensed</span>
+            <span class="mono" style="font-size: 12.5px; color: #f2f1ef;">Evolving-Hockey · Elite Prospects</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 0; border-bottom: 1px solid #2e2d2b;">
+            <span class="lbl" style="font-size: 8px; color: #7c7b78;">Last rebuilt</span>
+            <div style="height: 9px; width: 120px; border-radius: 999px; background: #91908d; opacity: 0.45;"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 0; border-bottom: 1px solid #2e2d2b;">
+            <span class="lbl" style="font-size: 8px; color: #7c7b78;">Season</span>
+            <div style="height: 9px; width: 86px; border-radius: 999px; background: #91908d; opacity: 0.45;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- the three standing sections -->
+  <div style="padding: 12px 64px 0;">
+    <h2 class="hed" style="font-size: 36px; margin: 30px 0 18px;">Dive Deeper</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px;">
+      <sc-for list="{{pillars}}" as="c" hint-placeholder-count="3">
+        <a href="#" class="panel" style="padding: 34px 36px 30px; display: flex; flex-direction: column;">
+          <h3 class="dot" style="font-size: 34px; margin: 0;">{{c.title}}</h3>
+          <p style="margin: 16px 0 0; font-size: 15.5px; line-height: 1.55; color: #5f5e5b;">{{c.blurb}}</p>
+          <p style="margin: 14px 0 0; font-size: 14px; line-height: 1.55; color: #91908d;">{{c.detail}}</p>
+
+          <div style="margin: 24px 0 0; padding: 20px 22px; border: 1px dashed #91908d; border-radius: 16px;">
+            <p class="lbl" style="margin: 0 0 14px; font-size: 8px;">{{c.slot}}</p>
+            <div style="display: flex; gap: 26px;">
+              <sc-for list="{{c.stats}}" as="s" hint-placeholder-count="2">
+                <div style="display: flex; flex-direction: column; gap: 7px;">
+                  <span class="lbl" style="font-size: 8px;">{{s}}</span>
+                  <div style="height: 15px; width: 62px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+
+          <span class="lbl" style="color: #141414; margin-top: 22px;">{{c.cta}} &rarr;</span>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- season figure slot -->
+  <div style="padding: 12px 64px 0;">
+    <div style="background: #141414; border-radius: 22px; padding: 30px 34px 26px;">
+      <p style="margin: 0 0 3px; font-size: 15px; font-weight: 600; color: #f2f1ef;">The season, game by game</p>
+      <p class="mono" style="margin: 0 0 24px; font-size: 11px; color: #91908d;">the signature figure &mdash; renders once a season is loaded</p>
+      <div style="border: 1px dashed #3a3936; border-radius: 16px; height: 150px; display: flex; align-items: center; justify-content: center;">
+        <span class="lbl" style="font-size: 8px; color: #7c7b78;">[ Season barcode ]</span>
+      </div>
+      <p class="lbl" style="margin: 18px 0 0; font-size: 8px; color: #4a4845;">Season barcode &nbsp;·&nbsp; nhl api &nbsp;·&nbsp; rebuilt nightly</p>
+    </div>
+  </div>
+
+  <!-- articles -->
+  <div style="padding: 12px 64px 0;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin: 22px 0 14px;">
+      <h2 class="hed" style="font-size: 36px; margin: 0;">Latest Analysis</h2>
+      <a class="lbl" href="#" style="color: #141414; border-bottom: 1px solid #141414; padding-bottom: 4px;">All articles &rarr;</a>
+    </div>
+
+    <a href="#" class="panel" style="padding: 38px 42px 36px; display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 48px; align-items: end; margin-bottom: 12px; border: 1px dashed #91908d;">
+      <div>
+        <span class="lbl" style="font-size: 8px;">[ Featured article ]</span>
+        <div style="margin: 20px 0 0;"><div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="height: 24px; width: 86%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+            <div style="height: 24px; width: 62%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          </div></div>
+        <div style="margin: 24px 0 0;"><div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="height: 9px; width: 74%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+            <div style="height: 9px; width: 68%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          </div></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 9px; align-items: flex-end;">
+        <div style="height: 9px; width: 116px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+        <div style="height: 9px; width: 92px; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+      </div>
+    </a>
+
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px;">
+      <sc-for list="{{stubs}}" as="s" hint-placeholder-count="3">
+        <div class="panel" style="padding: 28px 30px 26px; border: 1px dashed #91908d; display: flex; flex-direction: column; gap: 16px;">
+          <span class="lbl" style="font-size: 8px;">{{s}}</span>
+          <div style="display: flex; flex-direction: column; gap: 9px;">
+            <div style="height: 17px; width: 92%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+            <div style="height: 17px; width: 64%; border-radius: 999px; background: #91908d; opacity: 0.30;"></div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 7px;">
+            <div style="height: 8px; width: 100%; border-radius: 999px; background: #91908d; opacity: 0.22;"></div>
+            <div style="height: 8px; width: 78%; border-radius: 999px; background: #91908d; opacity: 0.22;"></div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- reference row -->
+  <div style="padding: 12px 64px 0;">
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
+      <a href="#" class="panel" style="padding: 30px 34px 28px; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px;">
+        <div>
+          <h3 class="dot" style="font-size: 30px; margin: 0;">Glossary</h3>
+          <p style="margin: 14px 0 0; font-size: 14.5px; line-height: 1.55; color: #5f5e5b; max-width: 34em;">
+            Every number used on this site, defined in plain English, with a worked example and a note on what
+            it cannot tell you.
+          </p>
+        </div>
+        <span class="lbl" style="color: #141414; white-space: nowrap;">Open &rarr;</span>
+      </a>
+      <a href="#" class="panel" style="padding: 30px 34px 28px; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px;">
+        <div>
+          <h3 class="dot" style="font-size: 30px; margin: 0;">About</h3>
+          <p style="margin: 14px 0 0; font-size: 14.5px; line-height: 1.55; color: #5f5e5b; max-width: 34em;">
+            Who publishes this, how the data is built, and the standards every figure is held to before it
+            appears on the site.
+          </p>
+        </div>
+        <span class="lbl" style="color: #141414; white-space: nowrap;">Open &rarr;</span>
+      </a>
+    </div>
+  </div>
+
+  <div style="padding: 30px 64px 44px;">
+    <div class="panel" style="padding: 24px 28px; display: flex; justify-content: space-between; gap: 40px; align-items: center;">
+      <p style="margin: 0; font-size: 13px; color: #5f5e5b; line-height: 1.6; max-width: 62em;">
+        Wes &amp; Woodward is an independent publication and is not affiliated with the Detroit Red Wings or
+        the National Hockey League. Data from the NHL API and MoneyPuck; dashboards rebuild nightly.
+      </p>
+      <span class="lbl" style="white-space: nowrap;">&copy; 2026</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+
+<script data-dc-script data-props='{"$preview":{"width":1440,"height":2260}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      pillars: [
+        { title: 'Roster',
+          blurb: 'The professional roster with individual expected goals, finishing, on-ice shares and league percentiles.',
+          detail: 'Sortable on every column, and a page for each player.',
+          slot: '[ live counts ]', stats: ['Skaters', 'Goaltenders'], cta: 'Open the roster' },
+        { title: 'System',
+          blurb: 'Every player in the organisation developing below the professional roster — which league, which club, and how they are producing against it.',
+          detail: 'Counting stats only: no public expected-goals model covers these leagues.',
+          slot: '[ live counts ]', stats: ['Players', 'Leagues'], cta: 'Open the system' },
+        { title: 'Team',
+          blurb: 'Record, goal differential and share of expected goals in all four game states, against the league distribution.',
+          detail: 'With a league rank wherever the league publishes one.',
+          slot: '[ live counts ]', stats: ['Record', '5v5 xG share'], cta: 'Open the dashboard' }
+      ],
+      stubs: ['[ Article ]', '[ Article ]', '[ Article ]']
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; background: #d7d6d3; color: #141414;
+           font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+           -webkit-font-smoothing: antialiased; }
+    a { color: #141414; text-decoration: none; }
+    a:hover { color: #5f5e5b; }
+    .mono { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+            font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1; }
+    .dot  { font-family: 'Doto', 'IBM Plex Mono', monospace; font-weight: 800;
+            letter-spacing: 0.06em; text-transform: uppercase; line-height: 1; margin: 0; }
+    .lbl  { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10px;
+            font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase;
+            color: #91908d; }
+    .hed  { font-family: 'Space Grotesk', ui-sans-serif, sans-serif; font-weight: 600;
+            line-height: 1.06; letter-spacing: -0.025em; text-wrap: balance; margin: 0; }
+    .panel { background: #e7e6e3; border-radius: 22px; }
+    .track { background: #cbcac7; border-radius: 999px; position: relative; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; background: #d7d6d3;">
+  <div style="display: flex; justify-content: space-between; align-items: center; gap: 36px; padding: 26px 64px 22px;">
+    <a href="#" style="display: block;"><img src="wordmark.svg" alt="Wes &amp; Woodward" style="width: 196px; height: auto; display: block;"></a>
+    <div style="display: flex; gap: 7px;">
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Team</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Players</a>
+      <a class="lbl" href="#" style="background: #141414; color: #f2f1ef; border: 1px solid #141414; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Articles</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">Glossary</a>
+      <a class="lbl" href="#" style="background: transparent; color: #5f5e5b; border: 1px solid #c1c0bd; font-size: 9px; padding: 10px 15px; border-radius: 999px; white-space: nowrap;">About</a>
+    </div>
+  </div>
+
+  <div style="padding: 14px 64px 0;">
+    <div class="panel" style="padding: 44px 48px 40px;">
+      <h1 class="hed" style="font-size: 50px; max-width: 20ch;">Andrew Copp shot 19.8 expected goals and scored nine.</h1>
+      <p style="font-size: 19px; line-height: 1.5; color: #5f5e5b; margin: 24px 0 0; max-width: 44em;">
+        The largest finishing shortfall on the roster, by a margin of four goals. Whether that is variance or
+        something a coaching staff can act on decides how Detroit should use him next season.
+      </p>
+      <div style="display: flex; align-items: center; gap: 10px; margin: 30px 0 0;">
+        <span class="lbl" style="color: #141414;">Mark Wesley</span>
+        <span style="width: 3px; height: 3px; background: #91908d; border-radius: 50%;"></span>
+        <span class="lbl">Forwards &nbsp;·&nbsp; Finishing</span>
+        <span style="width: 3px; height: 3px; background: #91908d; border-radius: 50%;"></span>
+        <span class="lbl">April 14, 2026</span>
+        <span style="width: 3px; height: 3px; background: #91908d; border-radius: 50%;"></span>
+        <span class="lbl">8 min</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 12px 64px 0;">
+    <div style="display: grid; grid-template-columns: 196px minmax(0, 1fr) 320px; gap: 12px; align-items: start;">
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div class="panel" style="padding: 22px 22px 20px;">
+          <p class="lbl" style="margin: 0 0 16px; color: #141414;">Copp, 2025&ndash;26</p>
+          <sc-for list="{{facts}}" as="f" hint-placeholder-count="6">
+            <div style="display: flex; justify-content: space-between; gap: 10px; align-items: baseline; padding: 8px 0; border-bottom: 1px solid #c1c0bd;">
+              <span class="mono" style="font-size: 10.5px; color: #5f5e5b;">{{f.k}}</span>
+              <span class="mono" style="font-size: 13px; font-weight: 500;">{{f.v}}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div class="panel" style="padding: 34px 40px 32px;">
+          <p style="margin: 0 0 20px; font-size: 17.5px; line-height: 1.65;">
+            Expected goals are a claim about the shots a player took, not the goals he scored. Feed a model the
+            distance, the angle, the shot type and whether the puck moved across the slot first, and it returns
+            a number: given these attempts, this is roughly what a league-average finisher puts in. Andrew Copp
+            took shots worth 19.83 of them this season. He scored nine.
+          </p>
+          <p style="margin: 0 0 20px; font-size: 17.5px; line-height: 1.65;">
+            That is a shortfall of 10.83 goals &mdash; the largest on the roster, and larger than the next-worst by
+            four. In the minutes Copp plays, it is the single most consequential number on his page.
+          </p>
+          <div style="margin: 30px 0; padding: 26px 30px; background: #141414; border-radius: 18px;">
+            <p class="hed" style="font-size: 24px; font-weight: 500; color: #f2f1ef; line-height: 1.32;">
+              Nine goals on 19.8 expected is not simply bad luck. It is bad luck plus something else, and one
+              season cannot tell you how much of each.
+            </p>
+          </div>
+          <p style="margin: 0; font-size: 17.5px; line-height: 1.65;">
+            Here is the roster, sorted by that gap. The stems run from a zero line: to the right, a player
+            scored more than his shots implied; to the left, fewer.
+          </p>
+        </div>
+
+      <div style="background: #e7e6e3; border-radius: 22px; padding: 30px 34px 24px;">
+        <p style="margin: 0 0 3px; font-size: 15px; font-weight: 600; color: #141414; letter-spacing: -0.01em;">Goals above expected, 2025&ndash;26</p>
+        <p class="mono" style="margin: 0 0 22px; font-size: 11px; color: #5f5e5b;">goals scored minus individual expected goals &nbsp;·&nbsp; skaters with 60+ games</p>
+        <div style="display: flex; flex-direction: column; gap: 7px;">
+          <sc-for list="{{gax}}" as="p" hint-placeholder-count="17">
+            <div style="display: grid; grid-template-columns: 168px minmax(0, 1fr) 50px; gap: 14px; align-items: center;">
+              <span class="mono" style="font-size: 11px; text-align: right; color: {{p.nameColor}};">{{p.name}}</span>
+              <div title="{{p.title}}" style="position: relative; height: 18px;">
+                <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: #c1c0bd;"></div>
+                <div style="{{p.stem}}"></div>
+                <div style="{{p.dot}}"></div>
+              </div>
+              <span class="mono" style="font-size: 11.5px; text-align: right; color: #5f5e5b;">{{p.val}}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 14px; padding-top: 12px; border-top: 1px solid #c1c0bd;">
+          <span class="lbl" style="font-size: 8px;">&minus;12 goals</span>
+          <span class="lbl" style="font-size: 8px;">Exactly as expected</span>
+          <span class="lbl" style="font-size: 8px;">+12 goals</span>
+        </div>
+        <div style="display: flex; gap: 18px; margin-top: 13px;">
+          <span class="lbl" style="font-size: 8px; display: flex; align-items: center; gap: 6px;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #ce1126; display: inline-block;"></span>Scored more than his shots implied</span>
+          <span class="lbl" style="font-size: 8px; display: flex; align-items: center; gap: 6px;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #141414; display: inline-block;"></span>Fewer</span>
+        </div>
+        <p class="lbl" style="margin: 18px 0 0; font-size: 8px; color: #a8a7a4;">Lollipop &nbsp;·&nbsp; moneypuck &nbsp;·&nbsp; all situations</p>
+      </div>
+
+        <div class="panel" style="padding: 34px 40px 32px;">
+          <p style="margin: 0 0 20px; font-size: 17.5px; line-height: 1.65;">
+            Copp&rsquo;s underlying play was not the problem. He finished the season at 51 percent of on-ice
+            expected goals at five-on-five &mdash; the 56th percentile among league regulars, comfortably above the
+            team&rsquo;s own 49.0. He drove play, and he generated 19.83 expected goals, a top-six volume of
+            chances.
+          </p>
+          <p style="margin: 0; font-size: 17.5px; line-height: 1.65;">
+            He simply did not score them. So the question worth eight minutes of your time is not whether the
+            gap exists &mdash; it plainly does &mdash; but where it came from.
+          </p>
+        </div>
+
+        <div class="panel" style="padding: 34px 40px 32px;">
+          <h2 class="hed" style="font-size: 32px; margin-bottom: 20px;">Skill, or luck?</h2>
+          <p style="margin: 0 0 20px; font-size: 17.5px; line-height: 1.65;">
+            Start with the shape of his shooting. Copp took 115 shots on goal this season &mdash; the fewest of any
+            forward who played a regular shift. Those 115 shots were worth 19.83 expected goals, which works out
+            to 17.2 percent per shot. That is the highest figure on the roster, and it is not close: DeBrincat
+            sat at 12.9, Larkin at 14.7.
+          </p>
+          <p style="margin: 0 0 20px; font-size: 17.5px; line-height: 1.65;">
+            So the story is not a player firing pucks from the perimeter and hoping. It is the opposite. Copp
+            shot rarely and almost exclusively from dangerous places, and converted 7.8 percent of them.
+          </p>
+        </div>
+
+      <div style="background: #e7e6e3; border-radius: 22px; padding: 30px 34px 24px;">
+        <p style="margin: 0 0 3px; font-size: 15px; font-weight: 600; color: #141414; letter-spacing: -0.01em;">What the shots were worth, against what he shot</p>
+        <p class="mono" style="margin: 0 0 22px; font-size: 11px; color: #5f5e5b;">expected and actual shooting percentage &nbsp;·&nbsp; skaters with 100+ shots on goal</p>
+        <div style="display: flex; flex-direction: column; gap: 11px;">
+          <sc-for list="{{dumbbell}}" as="d" hint-placeholder-count="9">
+            <div style="display: grid; grid-template-columns: 150px minmax(0, 1fr) 108px; gap: 16px; align-items: center;">
+              <span class="mono" style="font-size: 11px; text-align: right; color: {{d.nameColor}};">{{d.name}}</span>
+              <div title="{{d.title}}" style="position: relative; height: 18px;">
+                <div class="track" style="position: absolute; left: 0; right: 0; top: 8px; height: 2px;"></div>
+                <div style="{{d.link}}"></div>
+                <div style="{{d.expDot}}"></div>
+                <div style="{{d.actDot}}"></div>
+              </div>
+              <span class="mono" style="font-size: 11px; text-align: right; color: #5f5e5b;">{{d.readout}}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 14px; padding-top: 12px; border-top: 1px solid #c1c0bd;">
+          <span class="lbl" style="font-size: 8px;">0%</span>
+          <span class="lbl" style="font-size: 8px;">10%</span>
+          <span class="lbl" style="font-size: 8px;">20%</span>
+        </div>
+        <div style="display: flex; gap: 20px; margin-top: 13px;">
+          <span class="lbl" style="font-size: 8px; display: flex; align-items: center; gap: 6px;"><span style="width: 9px; height: 9px; border-radius: 50%; background: transparent; border: 1.5px solid #91908d; display: inline-block; box-sizing: border-box;"></span>What the shots were worth</span>
+          <span class="lbl" style="font-size: 8px; display: flex; align-items: center; gap: 6px;"><span style="width: 9px; height: 9px; border-radius: 50%; background: #141414; display: inline-block;"></span>What he actually shot</span>
+        </div>
+        <p class="lbl" style="margin: 18px 0 0; font-size: 8px; color: #a8a7a4;">Dumbbell &nbsp;·&nbsp; moneypuck + nhl api &nbsp;·&nbsp; all situations</p>
+      </div>
+
+        <div class="panel" style="padding: 34px 40px 32px;">
+          <p style="margin: 0 0 20px; font-size: 17.5px; line-height: 1.65;">
+            Three things fall out of that chart, and they point in different directions.
+          </p>
+          <p style="margin: 0 0 20px; font-size: 17.5px; line-height: 1.65;">
+            <span style="font-weight: 600;">The sample is small enough to be nearly meaningless.</span> One
+            hundred and fifteen shots is not a finishing sample; it is a rumour of one. Individual shooting
+            talent takes something on the order of five hundred shots before the signal outruns the noise, which
+            is to say two or three full seasons of Copp&rsquo;s volume. On sample size alone, the honest prior is
+            that most of this reverses.
+          </p>
+          <p style="margin: 0 0 20px; font-size: 17.5px; line-height: 1.65;">
+            <span style="font-weight: 600;">He is not alone, and that is the interesting part.</span> Finnie and
+            Kasper sit immediately behind him, both underperforming by roughly five points of shooting
+            percentage, and both with expected rates well above the roster median. Three players missing the
+            same way is either a coincidence across three small samples, or it is telling you something about
+            the kind of chance Detroit generates &mdash; scrambles, deflections and second efforts in tight, which
+            a shot model tends to value generously and a shooter converts less often than the model implies.
+          </p>
+          <p style="margin: 0; font-size: 17.5px; line-height: 1.65;">
+            <span style="font-weight: 600;">Which leaves a residue that might be real.</span> Copp&rsquo;s career
+            shooting percentage is the number that would settle this, and one season of data cannot supply it.
+            My read: perhaps three of the ten and a half goals are a genuine finishing deficiency, the rest is
+            sample and model generosity. That is a guess with a direction, not a measurement &mdash; and I would
+            rather say so than dress it up.
+          </p>
+        </div>
+
+        <div style="background: #141414; border-radius: 22px; padding: 30px 34px 28px;">
+          <p class="lbl" style="margin: 0 0 16px; color: #f2f1ef;">What would actually settle it</p>
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+            <sc-for list="{{settle}}" as="x" hint-placeholder-count="3">
+              <div>
+                <p class="mono" style="margin: 0 0 8px; font-size: 12px; font-weight: 600; color: #f2f1ef;">{{x.k}}</p>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #a8a7a4;">{{x.v}}</p>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+
+        <div class="panel" style="padding: 26px 30px 24px;">
+          <p class="lbl" style="margin: 0 0 12px; color: #141414;">How this was calculated</p>
+          <p style="margin: 0; font-size: 14px; line-height: 1.65; color: #5f5e5b;">
+            Individual expected goals and on-ice shares are MoneyPuck&rsquo;s, pulled from the public season files
+            on April 14, 2026. Percentiles are computed among league skaters with at least three hundred
+            five-on-five minutes, forwards and defencemen ranked separately. Games played, goals and assists
+            come from the NHL API. Every figure on this page regenerates from the same nightly pull that feeds
+            the <a href="#" style="border-bottom: 1px solid #91908d;">dashboards</a>.
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="background: #141414; border-radius: 22px; padding: 24px 26px 22px;">
+          <p class="lbl" style="margin: 0 0 16px; color: #f2f1ef;">What the numbers say</p>
+          <sc-for list="{{machine}}" as="m" hint-placeholder-count="3">
+            <p style="margin: 0 0 14px; font-size: 13px; line-height: 1.55; color: #a8a7a4;">{{m}}</p>
+          </sc-for>
+        </div>
+        <div class="panel" style="padding: 24px 26px 20px;">
+          <p class="lbl" style="margin: 0 0 16px; color: #141414;">Terms used here</p>
+          <sc-for list="{{terms}}" as="t" hint-placeholder-count="3">
+            <div style="padding: 12px 0; border-bottom: 1px solid #c1c0bd;">
+              <p class="mono" style="margin: 0 0 5px; font-size: 12px; font-weight: 600;">{{t.term}}</p>
+              <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #5f5e5b;">{{t.def}}</p>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 30px 64px 44px;">
+    <div class="panel" style="padding: 24px 28px; display: flex; justify-content: space-between; gap: 40px; align-items: center;">
+      <p style="margin: 0; font-size: 13px; color: #5f5e5b; line-height: 1.6; max-width: 62em;">
+        Wes &amp; Woodward is an independent publication and is not affiliated with the Detroit Red Wings or
+        the National Hockey League. Data from the NHL API and MoneyPuck; dashboards rebuild nightly.
+      </p>
+      <span class="lbl" style="white-space: nowrap;">&copy; 2026</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+
+<script data-dc-script data-props='{"$preview":{"width":1440,"height":3760}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var RED = '#ce1126', DOWN = '#4a4845';
+    // Diverging fill around a centre line. Sign is carried by SIDE as well as
+    // colour, so the pair stays readable without relying on hue alone.
+    function diverge(value, scale, thickness) {
+      var half = Math.min(Math.abs(value) / scale, 1) * 50;
+      var css = 'position: absolute; top: 0; bottom: 0; border-radius: 999px; ';
+      return value >= 0
+        ? css + 'left: 50%; width: ' + half + '%; background: ' + RED + ';'
+        : css + 'right: 50%; width: ' + half + '%; background: ' + DOWN + ';';
+    }
+
+    // Lollipop: a hairline out from the centre line with a dot terminal.
+    // Side encodes sign, so the red/graphite pair never carries meaning alone.
+    function lollipop(value, scale, opts) {
+      opts = opts || {};
+      var h = Math.min(Math.abs(value) / scale, 1) * 50;
+      var up = value >= 0;
+      var col = up ? (opts.up || '#ce1126') : (opts.down || '#141414');
+      var side = up ? 'left: 50%;' : 'right: 50%;';
+      var stem = 'position: absolute; top: 50%; transform: translateY(-50%); height: 2px; '
+        + side + ' width: ' + h + '%; background: ' + col + '; opacity: 0.55;';
+      var dotSide = up ? 'left: calc(50% + ' + h + '%);' : 'right: calc(50% + ' + h + '%);';
+      var d = opts.dot || 9;
+      var dot = 'position: absolute; top: 50%; ' + dotSide
+        + ' width: ' + d + 'px; height: ' + d + 'px; border-radius: 50%; background: ' + col
+        + '; transform: translate(' + (up ? '-50%' : '50%') + ', -50%);';
+      return { stem: stem, dot: dot, color: col };
+    }
+
+    // Barcode: one hairline per observation, height scaled, dot at the tip.
+    function barcode(value, scale, height, opts) {
+      opts = opts || {};
+      var h = Math.min(Math.abs(value) / scale, 1) * (height / 2 - 5);
+      var up = value >= 0;
+      var col = opts.color || (up ? '#ce1126' : '#141414');
+      var stem = 'position: absolute; left: 50%; transform: translateX(-50%); width: 1.5px; '
+        + 'background: ' + col + '; opacity: 0.5; height: ' + h + 'px; '
+        + (up ? 'bottom: 50%;' : 'top: 50%;');
+      var dot = 'position: absolute; left: 50%; transform: translateX(-50%); '
+        + 'width: 5px; height: 5px; border-radius: 50%; background: ' + col + '; '
+        + (up ? 'bottom: calc(50% + ' + h + 'px - 2.5px);' : 'top: calc(50% + ' + h + 'px - 2.5px);');
+      return { stem: stem, dot: dot };
+    }
+
+    var rows = [
+      ['Lucas Raymond', 5.51], ['Alex DeBrincat', 4.13], ['Axel Sandin-Pellikka', 3.49],
+      ['Simon Edvinsson', 2.63], ['Moritz Seider', 2.50], ['Ben Chiarot', 0.67],
+      ['Dylan Larkin', 0.24], ['Albert Johansson', 0.10], ['Mason Appleton', -0.06],
+      ['Patrick Kane', -0.50], ['Jacob Bernard-Docker', -0.61], ['J.T. Compher', -1.07],
+      ['Michael Rasmussen', -3.88], ['James van Riemsdyk', -4.23], ['Emmitt Finnie', -6.20],
+      ['Marco Kasper', -6.41], ['Andrew Copp', -10.83]
+    ];
+    var gax = rows.map(function (r) {
+      var name = r[0], v = r[1];
+      var l = lollipop(v, 12, { up: RED, down: '#141414', dot: 9 });
+      var focus = name === 'Andrew Copp';
+      return {
+        name: name,
+        val: (v > 0 ? '+' : '−') + Math.abs(v).toFixed(1),
+        stem: l.stem, dot: l.dot,
+        nameColor: focus ? '#141414' : '#5f5e5b',
+        title: name + ' — ' + (v > 0 ? '+' : '−') + Math.abs(v).toFixed(2) + ' goals vs expected'
+      };
+    });
+
+    // Dumbbell: expected shooting % (hollow) against actual (solid), 0-20% scale.
+    var shooters = [
+      ['Andrew Copp', 115, 7.83, 17.24], ['Emmitt Finnie', 120, 10.83, 16.00],
+      ['Marco Kasper', 131, 6.87, 11.76], ['Patrick Kane', 169, 9.47, 9.76],
+      ['Dylan Larkin', 229, 14.85, 14.74], ['Ben Chiarot', 103, 4.85, 4.20],
+      ['Moritz Seider', 187, 5.35, 4.01], ['Alex DeBrincat', 287, 14.29, 12.85],
+      ['Lucas Raymond', 173, 14.45, 11.27]
+    ];
+    var dumbbell = shooters.map(function (r) {
+      var name = r[0], shots = r[1], act = r[2], exp = r[3];
+      var px = function (v) { return Math.min(v / 20, 1) * 100; };
+      var a = px(act), e = px(exp);
+      var lo = Math.min(a, e), hi = Math.max(a, e);
+      var over = act >= exp;
+      var focus = name === 'Andrew Copp';
+      var dot = function (pos, style) {
+        return 'position: absolute; top: 50%; left: ' + pos + '%; transform: translate(-50%, -50%);'
+          + ' width: 10px; height: 10px; border-radius: 50%; box-sizing: border-box; ' + style;
+      };
+      return {
+        name: name,
+        nameColor: focus ? '#141414' : '#5f5e5b',
+        link: 'position: absolute; top: 50%; transform: translateY(-50%); height: 2px; left: ' + lo
+          + '%; width: ' + (hi - lo) + '%; background: ' + (over ? RED : '#141414') + '; opacity: 0.45;',
+        expDot: dot(e, 'background: #e7e6e3; border: 1.5px solid #91908d;'),
+        actDot: dot(a, 'background: ' + (over ? RED : '#141414') + ';'),
+        readout: act.toFixed(1) + ' / ' + exp.toFixed(1) + '%',
+        title: name + ' — ' + shots + ' shots · shot ' + act.toFixed(1)
+          + '%, worth ' + exp.toFixed(1) + '%'
+      };
+    });
+
+    return {
+      gax: gax,
+      dumbbell: dumbbell,
+      settle: [
+        { k: 'A career baseline', v: 'Several seasons of Copp’s own shooting percentage, which one year of data cannot supply.' },
+        { k: 'Shot location detail', v: 'Where each of the 115 attempts came from, to test whether the model is over-crediting chances in tight.' },
+        { k: 'A teammate control', v: 'Whether Finnie and Kasper regress next season too. If all three do, it was the chances, not the shooters.' }
+      ],
+      facts: [
+        { k: 'games', v: '79' }, { k: 'goals', v: '9' }, { k: 'expected goals', v: '19.83' },
+        { k: 'above expected', v: '−10.83' }, { k: '5v5 xG share', v: '51%' }, { k: 'percentile', v: '56th' }
+      ],
+      machine: [
+        'Copp has the roster’s largest negative gap between goals and individual expected goals (−10.83).',
+        'His on-ice five-on-five expected-goal share (51%) is above the team rate (49.0%), so the gap is not a usage artefact.',
+        'Sample caution: one season of individual finishing is a noisy estimate. Treat the direction as real and the magnitude as provisional.'
+      ],
+      terms: [
+        { term: 'ixG', def: 'Individual expected goals — what a league-average finisher scores on the same attempts.' },
+        { term: 'G−ixG', def: 'Goals above expected. Positive means finishing better than the shots implied.' },
+        { term: 'Percentile', def: 'Rank among league regulars with 300+ five-on-five minutes, forwards and defencemen separately.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

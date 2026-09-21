@@ -1,0 +1,914 @@
+{
+ "target": {
+  "name": "Chris Kreider",
+  "team": "ANA",
+  "age": 34,
+  "gp": 75.0,
+  "toi_gm": 17.04888888888889,
+  "ev_toi_gm": 12.662222222222221,
+  "p60": 1.5163215163215165,
+  "g60": 0.5054405054405054,
+  "ixg60": 0.7632151632151631,
+  "xgf": 0.5448307410795975,
+  "xgf60": 3.00989820989821,
+  "xga60": 2.514566514566514,
+  "gax": -3.129999999999999,
+  "gs_gp": 0.7408,
+  "pts": 50.0,
+  "goals": 22.0
+ },
+ "comps": [
+  {
+   "name": "Jordan Eberle",
+   "season": 2023,
+   "age": 33,
+   "dist": 0.154,
+   "base": {
+    "gp": 78.0,
+    "goals": 17.0,
+    "pts": 44.0,
+    "g60": 0.49,
+    "p60": 1.52,
+    "ixg60": 0.72,
+    "toi": 17.4
+   },
+   "next": {
+    "gp": 42.0,
+    "goals": 9.0,
+    "pts": 26.0,
+    "g60": 0.65,
+    "p60": 1.75,
+    "ixg60": 0.77,
+    "toi": 16.3
+   }
+  },
+  {
+   "name": "Daniel Briere",
+   "season": 2011,
+   "age": 33,
+   "dist": 0.165,
+   "base": {
+    "gp": 70.0,
+    "goals": 16.0,
+    "pts": 49.0,
+    "g60": 0.51,
+    "p60": 1.47,
+    "ixg60": 0.78,
+    "toi": 17.4
+   },
+   "next": {
+    "gp": 34.0,
+    "goals": 6.0,
+    "pts": 16.0,
+    "g60": 0.28,
+    "p60": 1.26,
+    "ixg60": 0.71,
+    "toi": 16.1
+   }
+  },
+  {
+   "name": "Alexander Radulov",
+   "season": 2019,
+   "age": 33,
+   "dist": 0.31,
+   "base": {
+    "gp": 60.0,
+    "goals": 15.0,
+    "pts": 33.0,
+    "g60": 0.58,
+    "p60": 1.39,
+    "ixg60": 0.82,
+    "toi": 16.7
+   },
+   "next": null
+  },
+  {
+   "name": "Ryan Smyth",
+   "season": 2010,
+   "age": 34,
+   "dist": 0.314,
+   "base": {
+    "gp": 82.0,
+    "goals": 23.0,
+    "pts": 47.0,
+    "g60": 0.61,
+    "p60": 1.58,
+    "ixg60": 0.74,
+    "toi": 18.0
+   },
+   "next": {
+    "gp": 82.0,
+    "goals": 19.0,
+    "pts": 46.0,
+    "g60": 0.74,
+    "p60": 1.69,
+    "ixg60": 0.83,
+    "toi": 19.1
+   }
+  },
+  {
+   "name": "Justin Williams",
+   "season": 2017,
+   "age": 35,
+   "dist": 0.345,
+   "base": {
+    "gp": 82.0,
+    "goals": 16.0,
+    "pts": 51.0,
+    "g60": 0.62,
+    "p60": 1.76,
+    "ixg60": 0.71,
+    "toi": 16.6
+   },
+   "next": {
+    "gp": 82.0,
+    "goals": 23.0,
+    "pts": 53.0,
+    "g60": 0.62,
+    "p60": 1.76,
+    "ixg60": 0.89,
+    "toi": 17.4
+   }
+  },
+  {
+   "name": "Zach Parise",
+   "season": 2019,
+   "age": 35,
+   "dist": 0.362,
+   "base": {
+    "gp": 69.0,
+    "goals": 25.0,
+    "pts": 45.0,
+    "g60": 0.68,
+    "p60": 1.56,
+    "ixg60": 0.84,
+    "toi": 17.2
+   },
+   "next": {
+    "gp": 45.0,
+    "goals": 7.0,
+    "pts": 19.0,
+    "g60": 0.81,
+    "p60": 1.73,
+    "ixg60": 0.8,
+    "toi": 14.0
+   }
+  },
+  {
+   "name": "Paul Stastny",
+   "season": 2019,
+   "age": 33,
+   "dist": 0.376,
+   "base": {
+    "gp": 71.0,
+    "goals": 17.0,
+    "pts": 38.0,
+    "g60": 0.64,
+    "p60": 1.48,
+    "ixg60": 0.88,
+    "toi": 17.1
+   },
+   "next": {
+    "gp": 56.0,
+    "goals": 13.0,
+    "pts": 29.0,
+    "g60": 0.7,
+    "p60": 1.48,
+    "ixg60": 0.78,
+    "toi": 17.4
+   }
+  },
+  {
+   "name": "Joel Ward",
+   "season": 2015,
+   "age": 34,
+   "dist": 0.407,
+   "base": {
+    "gp": 79.0,
+    "goals": 21.0,
+    "pts": 43.0,
+    "g60": 0.7,
+    "p60": 1.51,
+    "ixg60": 0.79,
+    "toi": 17.0
+   },
+   "next": {
+    "gp": 77.0,
+    "goals": 9.0,
+    "pts": 28.0,
+    "g60": 0.42,
+    "p60": 1.32,
+    "ixg60": 0.64,
+    "toi": 16.0
+   }
+  },
+  {
+   "name": "Patrick Sharp",
+   "season": 2015,
+   "age": 33,
+   "dist": 0.468,
+   "base": {
+    "gp": 76.0,
+    "goals": 20.0,
+    "pts": 55.0,
+    "g60": 0.68,
+    "p60": 1.52,
+    "ixg60": 0.77,
+    "toi": 17.6
+   },
+   "next": {
+    "gp": 48.0,
+    "goals": 8.0,
+    "pts": 18.0,
+    "g60": 0.38,
+    "p60": 1.34,
+    "ixg60": 0.76,
+    "toi": 15.9
+   }
+  },
+  {
+   "name": "Jochen Hecht",
+   "season": 2010,
+   "age": 33,
+   "dist": 0.49,
+   "base": {
+    "gp": 67.0,
+    "goals": 12.0,
+    "pts": 29.0,
+    "g60": 0.74,
+    "p60": 1.76,
+    "ixg60": 0.81,
+    "toi": 17.1
+   },
+   "next": {
+    "gp": 22.0,
+    "goals": 4.0,
+    "pts": 8.0,
+    "g60": 0.59,
+    "p60": 1.38,
+    "ixg60": 0.45,
+    "toi": 16.8
+   }
+  },
+  {
+   "name": "Ryan O'Reilly",
+   "season": 2024,
+   "age": 33,
+   "dist": 0.528,
+   "base": {
+    "gp": 79.0,
+    "goals": 21.0,
+    "pts": 53.0,
+    "g60": 0.43,
+    "p60": 1.51,
+    "ixg60": 0.76,
+    "toi": 19.0
+   },
+   "next": {
+    "gp": 81.0,
+    "goals": 25.0,
+    "pts": 74.0,
+    "g60": 0.86,
+    "p60": 2.13,
+    "ixg60": 0.77,
+    "toi": 20.4
+   }
+  },
+  {
+   "name": "David Backes",
+   "season": 2017,
+   "age": 33,
+   "dist": 0.53,
+   "base": {
+    "gp": 57.0,
+    "goals": 14.0,
+    "pts": 33.0,
+    "g60": 0.65,
+    "p60": 1.39,
+    "ixg60": 0.8,
+    "toi": 15.4
+   },
+   "next": {
+    "gp": 70.0,
+    "goals": 7.0,
+    "pts": 20.0,
+    "g60": 0.39,
+    "p60": 0.94,
+    "ixg60": 0.61,
+    "toi": 13.1
+   }
+  },
+  {
+   "name": "Reilly Smith",
+   "season": 2024,
+   "age": 33,
+   "dist": 0.581,
+   "base": {
+    "gp": 79.0,
+    "goals": 13.0,
+    "pts": 40.0,
+    "g60": 0.42,
+    "p60": 1.58,
+    "ixg60": 0.75,
+    "toi": 15.4
+   },
+   "next": {
+    "gp": 69.0,
+    "goals": 16.0,
+    "pts": 26.0,
+    "g60": 0.79,
+    "p60": 1.5,
+    "ixg60": 0.56,
+    "toi": 13.7
+   }
+  },
+  {
+   "name": "Eric Staal",
+   "season": 2018,
+   "age": 33,
+   "dist": 0.602,
+   "base": {
+    "gp": 81.0,
+    "goals": 22.0,
+    "pts": 51.0,
+    "g60": 0.73,
+    "p60": 1.68,
+    "ixg60": 0.9,
+    "toi": 18.0
+   },
+   "next": {
+    "gp": 66.0,
+    "goals": 19.0,
+    "pts": 47.0,
+    "g60": 0.88,
+    "p60": 1.96,
+    "ixg60": 0.63,
+    "toi": 17.1
+   }
+  },
+  {
+   "name": "James van Riemsdyk",
+   "season": 2022,
+   "age": 33,
+   "dist": 0.604,
+   "base": {
+    "gp": 61.0,
+    "goals": 12.0,
+    "pts": 29.0,
+    "g60": 0.62,
+    "p60": 1.63,
+    "ixg60": 0.76,
+    "toi": 15.4
+   },
+   "next": {
+    "gp": 71.0,
+    "goals": 11.0,
+    "pts": 38.0,
+    "g60": 0.31,
+    "p60": 1.95,
+    "ixg60": 0.92,
+    "toi": 13.5
+   }
+  },
+  {
+   "name": "Marian Hossa",
+   "season": 2014,
+   "age": 35,
+   "dist": 0.615,
+   "base": {
+    "gp": 82.0,
+    "goals": 22.0,
+    "pts": 61.0,
+    "g60": 0.58,
+    "p60": 1.94,
+    "ixg60": 0.82,
+    "toi": 18.6
+   },
+   "next": {
+    "gp": 64.0,
+    "goals": 13.0,
+    "pts": 33.0,
+    "g60": 0.43,
+    "p60": 1.21,
+    "ixg60": 0.91,
+    "toi": 17.3
+   }
+  },
+  {
+   "name": "Mikael Backlund",
+   "season": 2023,
+   "age": 34,
+   "dist": 0.622,
+   "base": {
+    "gp": 82.0,
+    "goals": 15.0,
+    "pts": 39.0,
+    "g60": 0.51,
+    "p60": 1.39,
+    "ixg60": 0.69,
+    "toi": 19.2
+   },
+   "next": {
+    "gp": 76.0,
+    "goals": 15.0,
+    "pts": 32.0,
+    "g60": 0.67,
+    "p60": 1.12,
+    "ixg60": 0.76,
+    "toi": 18.7
+   }
+  },
+  {
+   "name": "Paul Stastny",
+   "season": 2020,
+   "age": 34,
+   "dist": 0.64,
+   "base": {
+    "gp": 56.0,
+    "goals": 13.0,
+    "pts": 29.0,
+    "g60": 0.7,
+    "p60": 1.48,
+    "ixg60": 0.78,
+    "toi": 17.4
+   },
+   "next": {
+    "gp": 71.0,
+    "goals": 21.0,
+    "pts": 45.0,
+    "g60": 0.84,
+    "p60": 1.92,
+    "ixg60": 0.9,
+    "toi": 17.8
+   }
+  },
+  {
+   "name": "Chris Kunitz",
+   "season": 2014,
+   "age": 34,
+   "dist": 0.645,
+   "base": {
+    "gp": 74.0,
+    "goals": 17.0,
+    "pts": 40.0,
+    "g60": 0.4,
+    "p60": 1.27,
+    "ixg60": 0.54,
+    "toi": 17.9
+   },
+   "next": {
+    "gp": 80.0,
+    "goals": 17.0,
+    "pts": 40.0,
+    "g60": 0.81,
+    "p60": 1.68,
+    "ixg60": 0.58,
+    "toi": 16.8
+   }
+  },
+  {
+   "name": "T.J. Oshie",
+   "season": 2020,
+   "age": 33,
+   "dist": 0.651,
+   "base": {
+    "gp": 53.0,
+    "goals": 22.0,
+    "pts": 43.0,
+    "g60": 0.66,
+    "p60": 1.97,
+    "ixg60": 0.65,
+    "toi": 18.1
+   },
+   "next": {
+    "gp": 44.0,
+    "goals": 11.0,
+    "pts": 25.0,
+    "g60": 0.62,
+    "p60": 1.35,
+    "ixg60": 0.49,
+    "toi": 17.5
+   }
+  },
+  {
+   "name": "Michael Ryder",
+   "season": 2013,
+   "age": 33,
+   "dist": 0.654,
+   "base": {
+    "gp": 82.0,
+    "goals": 18.0,
+    "pts": 34.0,
+    "g60": 0.67,
+    "p60": 1.29,
+    "ixg60": 0.65,
+    "toi": 15.8
+   },
+   "next": {
+    "gp": 47.0,
+    "goals": 6.0,
+    "pts": 19.0,
+    "g60": 0.51,
+    "p60": 1.62,
+    "ixg60": 0.8,
+    "toi": 14.5
+   }
+  },
+  {
+   "name": "Alexander Steen",
+   "season": 2017,
+   "age": 33,
+   "dist": 0.663,
+   "base": {
+    "gp": 76.0,
+    "goals": 15.0,
+    "pts": 46.0,
+    "g60": 0.4,
+    "p60": 1.38,
+    "ixg60": 0.56,
+    "toi": 18.6
+   },
+   "next": {
+    "gp": 65.0,
+    "goals": 11.0,
+    "pts": 27.0,
+    "g60": 0.54,
+    "p60": 1.39,
+    "ixg60": 0.56,
+    "toi": 15.8
+   }
+  },
+  {
+   "name": "Johan Franzen",
+   "season": 2013,
+   "age": 33,
+   "dist": 0.664,
+   "base": {
+    "gp": 54.0,
+    "goals": 16.0,
+    "pts": 41.0,
+    "g60": 0.73,
+    "p60": 1.62,
+    "ixg60": 0.63,
+    "toi": 17.7
+   },
+   "next": {
+    "gp": 33.0,
+    "goals": 7.0,
+    "pts": 22.0,
+    "g60": 0.45,
+    "p60": 1.51,
+    "ixg60": 0.48,
+    "toi": 16.1
+   }
+  },
+  {
+   "name": "Joe Pavelski",
+   "season": 2017,
+   "age": 33,
+   "dist": 0.669,
+   "base": {
+    "gp": 82.0,
+    "goals": 22.0,
+    "pts": 66.0,
+    "g60": 0.69,
+    "p60": 1.77,
+    "ixg60": 0.77,
+    "toi": 19.2
+   },
+   "next": {
+    "gp": 75.0,
+    "goals": 38.0,
+    "pts": 64.0,
+    "g60": 1.17,
+    "p60": 2.06,
+    "ixg60": 0.97,
+    "toi": 19.0
+   }
+  },
+  {
+   "name": "Alexander Steen",
+   "season": 2018,
+   "age": 34,
+   "dist": 0.676,
+   "base": {
+    "gp": 65.0,
+    "goals": 11.0,
+    "pts": 27.0,
+    "g60": 0.54,
+    "p60": 1.39,
+    "ixg60": 0.56,
+    "toi": 15.8
+   },
+   "next": {
+    "gp": 55.0,
+    "goals": 6.0,
+    "pts": 16.0,
+    "g60": 0.5,
+    "p60": 1.31,
+    "ixg60": 0.6,
+    "toi": 13.8
+   }
+  },
+  {
+   "name": "Daymond Langkow",
+   "season": 2011,
+   "age": 34,
+   "dist": 0.678,
+   "base": {
+    "gp": 73.0,
+    "goals": 11.0,
+    "pts": 30.0,
+    "g60": 0.57,
+    "p60": 1.59,
+    "ixg60": 0.67,
+    "toi": 15.8
+   },
+   "next": null
+  },
+  {
+   "name": "Jason Arnott",
+   "season": 2010,
+   "age": 35,
+   "dist": 0.681,
+   "base": {
+    "gp": 73.0,
+    "goals": 17.0,
+    "pts": 31.0,
+    "g60": 0.7,
+    "p60": 1.28,
+    "ixg60": 0.67,
+    "toi": 15.5
+   },
+   "next": {
+    "gp": 72.0,
+    "goals": 17.0,
+    "pts": 34.0,
+    "g60": 0.73,
+    "p60": 1.38,
+    "ixg60": 0.74,
+    "toi": 14.1
+   }
+  },
+  {
+   "name": "Mikael Backlund",
+   "season": 2024,
+   "age": 35,
+   "dist": 0.684,
+   "base": {
+    "gp": 76.0,
+    "goals": 15.0,
+    "pts": 32.0,
+    "g60": 0.67,
+    "p60": 1.12,
+    "ixg60": 0.76,
+    "toi": 18.7
+   },
+   "next": {
+    "gp": 82.0,
+    "goals": 17.0,
+    "pts": 43.0,
+    "g60": 0.59,
+    "p60": 1.55,
+    "ixg60": 0.72,
+    "toi": 17.9
+   }
+  },
+  {
+   "name": "Chris Kunitz",
+   "season": 2015,
+   "age": 35,
+   "dist": 0.692,
+   "base": {
+    "gp": 80.0,
+    "goals": 17.0,
+    "pts": 40.0,
+    "g60": 0.81,
+    "p60": 1.68,
+    "ixg60": 0.58,
+    "toi": 16.8
+   },
+   "next": {
+    "gp": 71.0,
+    "goals": 9.0,
+    "pts": 29.0,
+    "g60": 0.52,
+    "p60": 1.43,
+    "ixg60": 0.69,
+    "toi": 15.5
+   }
+  },
+  {
+   "name": "Joel Ward",
+   "season": 2014,
+   "age": 33,
+   "dist": 0.71,
+   "base": {
+    "gp": 82.0,
+    "goals": 19.0,
+    "pts": 34.0,
+    "g60": 0.57,
+    "p60": 1.02,
+    "ixg60": 0.66,
+    "toi": 16.9
+   },
+   "next": {
+    "gp": 79.0,
+    "goals": 21.0,
+    "pts": 43.0,
+    "g60": 0.7,
+    "p60": 1.51,
+    "ixg60": 0.79,
+    "toi": 17.0
+   }
+  }
+ ],
+ "base_rate": {
+  "n": 26,
+  "gone": 1,
+  "next": [
+   {
+    "name": "Chris Kunitz",
+    "season": 2014,
+    "goals": 17.0,
+    "next_goals": 17.0,
+    "next_gp": 80.0
+   },
+   {
+    "name": "Daniel Sedin",
+    "season": 2015,
+    "goals": 27.0,
+    "next_goals": 15.0,
+    "next_gp": 82.0
+   },
+   {
+    "name": "Brian Gionta",
+    "season": 2013,
+    "goals": 18.0,
+    "next_goals": 13.0,
+    "next_gp": 69.0
+   },
+   {
+    "name": "Jordan Staal",
+    "season": 2022,
+    "goals": 17.0,
+    "next_goals": 10.0,
+    "next_gp": 80.0
+   },
+   {
+    "name": "Ryan Smyth",
+    "season": 2010,
+    "goals": 23.0,
+    "next_goals": 19.0,
+    "next_gp": 82.0
+   },
+   {
+    "name": "Steven Stamkos",
+    "season": 2024,
+    "goals": 27.0,
+    "next_goals": 42.0,
+    "next_gp": 82.0
+   },
+   {
+    "name": "Joel Ward",
+    "season": 2015,
+    "goals": 21.0,
+    "next_goals": 9.0,
+    "next_gp": 77.0
+   },
+   {
+    "name": "Alex Tanguay",
+    "season": 2014,
+    "goals": 22.0,
+    "next_goals": 8.0,
+    "next_gp": 70.0
+   },
+   {
+    "name": "Shane Doan",
+    "season": 2011,
+    "goals": 22.0,
+    "next_goals": 13.0,
+    "next_gp": 48.0
+   },
+   {
+    "name": "Patrick Kane",
+    "season": 2023,
+    "goals": 20.0,
+    "next_goals": 21.0,
+    "next_gp": 72.0
+   },
+   {
+    "name": "Mats Zuccarello",
+    "season": 2021,
+    "goals": 24.0,
+    "next_goals": 22.0,
+    "next_gp": 78.0
+   },
+   {
+    "name": "Eric Staal",
+    "season": 2019,
+    "goals": 19.0,
+    "next_goals": 5.0,
+    "next_gp": 53.0
+   },
+   {
+    "name": "Dustin Brown",
+    "season": 2019,
+    "goals": 17.0,
+    "next_goals": 16.0,
+    "next_gp": 49.0
+   },
+   {
+    "name": "Brad Marchand",
+    "season": 2022,
+    "goals": 21.0,
+    "next_goals": 29.0,
+    "next_gp": 82.0
+   },
+   {
+    "name": "Mike Fisher",
+    "season": 2014,
+    "goals": 19.0,
+    "next_goals": 13.0,
+    "next_gp": 70.0
+   },
+   {
+    "name": "Patrik Elias",
+    "season": 2010,
+    "goals": 21.0,
+    "next_goals": 26.0,
+    "next_gp": 81.0
+   },
+   {
+    "name": "Milan Hejduk",
+    "season": 2010,
+    "goals": 22.0,
+    "next_goals": 14.0,
+    "next_gp": 81.0
+   },
+   {
+    "name": "Jamie Benn",
+    "season": 2023,
+    "goals": 21.0,
+    "next_goals": 16.0,
+    "next_gp": 80.0
+   },
+   {
+    "name": "Justin Williams",
+    "season": 2016,
+    "goals": 23.0,
+    "next_goals": 16.0,
+    "next_gp": 82.0
+   },
+   {
+    "name": "Valtteri Filppula",
+    "season": 2018,
+    "goals": 17.0,
+    "next_goals": 6.0,
+    "next_gp": 70.0
+   },
+   {
+    "name": "Olli Jokinen",
+    "season": 2013,
+    "goals": 18.0,
+    "next_goals": 4.0,
+    "next_gp": 62.0
+   },
+   {
+    "name": "Anze Kopitar",
+    "season": 2021,
+    "goals": 19.0,
+    "next_goals": 28.0,
+    "next_gp": 82.0
+   },
+   {
+    "name": "Petr Sykora",
+    "season": 2011,
+    "goals": 21.0,
+    "next_goals": null,
+    "next_gp": null
+   },
+   {
+    "name": "David Perron",
+    "season": 2022,
+    "goals": 24.0,
+    "next_goals": 17.0,
+    "next_gp": 76.0
+   },
+   {
+    "name": "Alex Killorn",
+    "season": 2023,
+    "goals": 18.0,
+    "next_goals": 19.0,
+    "next_gp": 82.0
+   },
+   {
+    "name": "Gustav Nyquist",
+    "season": 2023,
+    "goals": 23.0,
+    "next_goals": 11.0,
+    "next_gp": 79.0
+   }
+  ]
+ }
+}

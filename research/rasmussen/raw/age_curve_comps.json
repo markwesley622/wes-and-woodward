@@ -1,0 +1,1937 @@
+{
+ "target": {
+  "p60": 1.129,
+  "g60": 0.476,
+  "ixg60": 0.725,
+  "xgf": 0.474,
+  "toi_gm": 13.751,
+  "gs_gp": 0.232,
+  "gax": -12.5
+ },
+ "dims": [
+  "p60",
+  "g60",
+  "ixg60",
+  "xgf",
+  "toi_gm",
+  "gs_gp"
+ ],
+ "comps": [
+  {
+   "pid": "8474642",
+   "name": "Lance Bouma",
+   "window": "2014-2016",
+   "dist": 0.311,
+   "base": {
+    "p60": 1.073,
+    "g60": 0.474,
+    "ixg60": 0.661,
+    "xgf": 0.463,
+    "toi_gm": 12.464,
+    "gs_gp": 0.191,
+    "gax": -4.1
+   },
+   "future": [
+    {
+     "name": "Lance Bouma",
+     "age": 27,
+     "gp": 53.0,
+     "toi_gm": 10.65,
+     "ev_toi_gm": 9.37,
+     "p60": 0.846,
+     "g60": 0.362,
+     "ixg60": 0.854,
+     "xgf": 0.543,
+     "xgf60": 2.399,
+     "xga60": 2.02,
+     "gax": -4.52,
+     "gs_gp": 0.224,
+     "pts": 9.0,
+     "goals": 3.0
+    },
+    null,
+    null
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8471390",
+   "name": "Mike Santorelli",
+   "window": "2010-2012",
+   "dist": 0.348,
+   "base": {
+    "p60": 0.962,
+    "g60": 0.571,
+    "ixg60": 0.658,
+    "xgf": 0.483,
+    "toi_gm": 13.649,
+    "gs_gp": 0.303,
+    "gax": -5.5
+   },
+   "future": [
+    {
+     "name": "Mike Santorelli",
+     "age": 27,
+     "gp": 49.0,
+     "toi_gm": 18.565,
+     "ev_toi_gm": 15.071,
+     "p60": 1.869,
+     "g60": 0.65,
+     "ixg60": 0.685,
+     "xgf": 0.507,
+     "xgf60": 2.253,
+     "xga60": 2.187,
+     "gax": 0.08,
+     "gs_gp": 0.637,
+     "pts": 28.0,
+     "goals": 10.0
+    },
+    {
+     "name": "Mike Santorelli",
+     "age": 28,
+     "gp": 79.0,
+     "toi_gm": 14.388,
+     "ev_toi_gm": 13.131,
+     "p60": 1.446,
+     "g60": 0.521,
+     "ixg60": 0.745,
+     "xgf": 0.474,
+     "xgf60": 2.102,
+     "xga60": 2.333,
+     "gax": -3.79,
+     "gs_gp": 0.373,
+     "pts": 33.0,
+     "goals": 12.0
+    },
+    {
+     "name": "Mike Santorelli",
+     "age": 29,
+     "gp": 70.0,
+     "toi_gm": 10.093,
+     "ev_toi_gm": 9.463,
+     "p60": 1.359,
+     "g60": 0.725,
+     "ixg60": 0.547,
+     "xgf": 0.475,
+     "xgf60": 1.752,
+     "xga60": 1.937,
+     "gax": 2.0,
+     "gs_gp": 0.284,
+     "pts": 18.0,
+     "goals": 9.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8475178",
+   "name": "Zack Kassian",
+   "window": "2015-2017",
+   "dist": 0.41,
+   "base": {
+    "p60": 1.367,
+    "g60": 0.493,
+    "ixg60": 0.655,
+    "xgf": 0.469,
+    "toi_gm": 12.141,
+    "gs_gp": 0.172,
+    "gax": -7.5
+   },
+   "future": [
+    {
+     "name": "Zack Kassian",
+     "age": 27,
+     "gp": 79.0,
+     "toi_gm": 14.776,
+     "ev_toi_gm": 13.218,
+     "p60": 1.322,
+     "g60": 0.69,
+     "ixg60": 0.625,
+     "xgf": 0.461,
+     "xgf60": 2.439,
+     "xga60": 2.855,
+     "gax": 0.42,
+     "gs_gp": 0.26,
+     "pts": 26.0,
+     "goals": 15.0
+    },
+    {
+     "name": "Zack Kassian",
+     "age": 28,
+     "gp": 59.0,
+     "toi_gm": 15.599,
+     "ev_toi_gm": 14.845,
+     "p60": 2.192,
+     "g60": 1.028,
+     "ixg60": 0.722,
+     "xgf": 0.501,
+     "xgf60": 2.669,
+     "xga60": 2.655,
+     "gax": 3.38,
+     "gs_gp": 0.488,
+     "pts": 34.0,
+     "goals": 15.0
+    },
+    {
+     "name": "Zack Kassian",
+     "age": 29,
+     "gp": 27.0,
+     "toi_gm": 11.855,
+     "ev_toi_gm": 11.544,
+     "p60": 0.962,
+     "g60": 0.385,
+     "ixg60": 0.5,
+     "xgf": 0.455,
+     "xgf60": 2.002,
+     "xga60": 2.4,
+     "gax": -0.6,
+     "gs_gp": 0.06,
+     "pts": 5.0,
+     "goals": 2.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8475758",
+   "name": "Devante Smith-Pelly",
+   "window": "2016-2018",
+   "dist": 0.426,
+   "base": {
+    "p60": 0.923,
+    "g60": 0.443,
+    "ixg60": 0.701,
+    "xgf": 0.457,
+    "toi_gm": 12.226,
+    "gs_gp": 0.103,
+    "gax": -12.6
+   },
+   "future": [
+    null,
+    null,
+    null
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8476975",
+   "name": "Cedric Paquette",
+   "window": "2017-2019",
+   "dist": 0.429,
+   "base": {
+    "p60": 1.107,
+    "g60": 0.59,
+    "ixg60": 0.719,
+    "xgf": 0.489,
+    "toi_gm": 11.675,
+    "gs_gp": 0.232,
+    "gax": -2.4
+   },
+   "future": [
+    {
+     "name": "Cedric Paquette",
+     "age": 27,
+     "gp": 47.0,
+     "toi_gm": 9.346,
+     "ev_toi_gm": 8.49,
+     "p60": 1.203,
+     "g60": 0.601,
+     "ixg60": 0.669,
+     "xgf": 0.536,
+     "xgf60": 2.403,
+     "xga60": 2.081,
+     "gax": -0.45,
+     "gs_gp": 0.157,
+     "pts": 8.0,
+     "goals": 4.0
+    },
+    null,
+    null
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8475766",
+   "name": "Austin Watson",
+   "window": "2016-2018",
+   "dist": 0.433,
+   "base": {
+    "p60": 1.24,
+    "g60": 0.548,
+    "ixg60": 0.609,
+    "xgf": 0.461,
+    "toi_gm": 13.069,
+    "gs_gp": 0.277,
+    "gax": -1.1
+   },
+   "future": [
+    {
+     "name": "Austin Watson",
+     "age": 27,
+     "gp": 53.0,
+     "toi_gm": 11.638,
+     "ev_toi_gm": 10.238,
+     "p60": 1.106,
+     "g60": 0.663,
+     "ixg60": 0.44,
+     "xgf": 0.375,
+     "xgf60": 1.509,
+     "xga60": 2.517,
+     "gax": 0.74,
+     "gs_gp": 0.099,
+     "pts": 14.0,
+     "goals": 6.0
+    },
+    {
+     "name": "Austin Watson",
+     "age": 28,
+     "gp": 34.0,
+     "toi_gm": 12.002,
+     "ev_toi_gm": 9.685,
+     "p60": 1.64,
+     "g60": 0.547,
+     "ixg60": 0.556,
+     "xgf": 0.461,
+     "xgf60": 2.141,
+     "xga60": 2.502,
+     "gax": -0.5,
+     "gs_gp": 0.22,
+     "pts": 10.0,
+     "goals": 3.0
+    },
+    {
+     "name": "Austin Watson",
+     "age": 29,
+     "gp": 67.0,
+     "toi_gm": 11.992,
+     "ev_toi_gm": 10.426,
+     "p60": 0.945,
+     "g60": 0.601,
+     "ixg60": 0.617,
+     "xgf": 0.438,
+     "xgf60": 2.064,
+     "xga60": 2.652,
+     "gax": 1.15,
+     "gs_gp": 0.169,
+     "pts": 16.0,
+     "goals": 10.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8474685",
+   "name": "Matt Calvert",
+   "window": "2014-2016",
+   "dist": 0.446,
+   "base": {
+    "p60": 1.25,
+    "g60": 0.637,
+    "ixg60": 0.666,
+    "xgf": 0.487,
+    "toi_gm": 14.823,
+    "gs_gp": 0.294,
+    "gax": -1.8
+   },
+   "future": [
+    {
+     "name": "Matt Calvert",
+     "age": 27,
+     "gp": 69.0,
+     "toi_gm": 13.376,
+     "ev_toi_gm": 11.397,
+     "p60": 1.602,
+     "g60": 0.458,
+     "ixg60": 0.767,
+     "xgf": 0.475,
+     "xgf60": 2.457,
+     "xga60": 2.719,
+     "gax": -2.87,
+     "gs_gp": 0.294,
+     "pts": 24.0,
+     "goals": 9.0
+    },
+    {
+     "name": "Matt Calvert",
+     "age": 28,
+     "gp": 82.0,
+     "toi_gm": 14.182,
+     "ev_toi_gm": 11.306,
+     "p60": 1.424,
+     "g60": 0.647,
+     "ixg60": 0.692,
+     "xgf": 0.54,
+     "xgf60": 2.621,
+     "xga60": 2.235,
+     "gax": -2.12,
+     "gs_gp": 0.368,
+     "pts": 26.0,
+     "goals": 11.0
+    },
+    {
+     "name": "Matt Calvert",
+     "age": 29,
+     "gp": 50.0,
+     "toi_gm": 14.022,
+     "ev_toi_gm": 11.324,
+     "p60": 2.013,
+     "g60": 0.848,
+     "ixg60": 0.712,
+     "xgf": 0.538,
+     "xgf60": 2.694,
+     "xga60": 2.313,
+     "gax": 4.05,
+     "gs_gp": 0.633,
+     "pts": 25.0,
+     "goals": 12.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8475772",
+   "name": "Riley Sheahan",
+   "window": "2016-2018",
+   "dist": 0.449,
+   "base": {
+    "p60": 1.117,
+    "g60": 0.366,
+    "ixg60": 0.591,
+    "xgf": 0.475,
+    "toi_gm": 14.035,
+    "gs_gp": 0.233,
+    "gax": -13.6
+   },
+   "future": [
+    {
+     "name": "Riley Sheahan",
+     "age": 27,
+     "gp": 66.0,
+     "toi_gm": 12.709,
+     "ev_toi_gm": 10.183,
+     "p60": 0.982,
+     "g60": 0.446,
+     "ixg60": 0.658,
+     "xgf": 0.462,
+     "xgf60": 1.944,
+     "xga60": 2.268,
+     "gax": -1.92,
+     "gs_gp": 0.13,
+     "pts": 16.0,
+     "goals": 8.0
+    },
+    {
+     "name": "Riley Sheahan",
+     "age": 28,
+     "gp": 53.0,
+     "toi_gm": 13.301,
+     "ev_toi_gm": 10.684,
+     "p60": 1.166,
+     "g60": 0.318,
+     "ixg60": 0.356,
+     "xgf": 0.438,
+     "xgf60": 2.137,
+     "xga60": 2.739,
+     "gax": 0.13,
+     "gs_gp": 0.112,
+     "pts": 13.0,
+     "goals": 4.0
+    },
+    {
+     "name": "Riley Sheahan",
+     "age": 29,
+     "gp": 69.0,
+     "toi_gm": 12.045,
+     "ev_toi_gm": 9.86,
+     "p60": 1.147,
+     "g60": 0.353,
+     "ixg60": 0.516,
+     "xgf": 0.502,
+     "xgf60": 2.231,
+     "xga60": 2.209,
+     "gax": -2.54,
+     "gs_gp": 0.297,
+     "pts": 17.0,
+     "goals": 4.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8479293",
+   "name": "Brandon Tanev",
+   "window": "2016-2018",
+   "dist": 0.473,
+   "base": {
+    "p60": 1.156,
+    "g60": 0.479,
+    "ixg60": 0.616,
+    "xgf": 0.495,
+    "toi_gm": 12.479,
+    "gs_gp": 0.31,
+    "gax": -0.4
+   },
+   "future": [
+    {
+     "name": "Brandon Tanev",
+     "age": 27,
+     "gp": 68.0,
+     "toi_gm": 14.771,
+     "ev_toi_gm": 12.284,
+     "p60": 1.221,
+     "g60": 0.431,
+     "ixg60": 0.428,
+     "xgf": 0.488,
+     "xgf60": 1.72,
+     "xga60": 1.802,
+     "gax": 1.65,
+     "gs_gp": 0.413,
+     "pts": 25.0,
+     "goals": 11.0
+    },
+    {
+     "name": "Brandon Tanev",
+     "age": 28,
+     "gp": 32.0,
+     "toi_gm": 14.435,
+     "ev_toi_gm": 11.771,
+     "p60": 1.912,
+     "g60": 0.956,
+     "ixg60": 0.691,
+     "xgf": 0.549,
+     "xgf60": 2.467,
+     "xga60": 2.029,
+     "gax": 1.02,
+     "gs_gp": 0.488,
+     "pts": 16.0,
+     "goals": 7.0
+    },
+    {
+     "name": "Brandon Tanev",
+     "age": 29,
+     "gp": 30.0,
+     "toi_gm": 14.568,
+     "ev_toi_gm": 12.678,
+     "p60": 1.262,
+     "g60": 0.631,
+     "ixg60": 0.688,
+     "xgf": 0.52,
+     "xgf60": 2.191,
+     "xga60": 2.019,
+     "gax": 0.53,
+     "gs_gp": 0.489,
+     "pts": 15.0,
+     "goals": 9.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8474625",
+   "name": "Jimmy Hayes",
+   "window": "2014-2016",
+   "dist": 0.473,
+   "base": {
+    "p60": 1.169,
+    "g60": 0.597,
+    "ixg60": 0.822,
+    "xgf": 0.49,
+    "toi_gm": 12.732,
+    "gs_gp": 0.341,
+    "gax": -8.6
+   },
+   "future": [
+    {
+     "name": "Jimmy Hayes",
+     "age": 27,
+     "gp": 33.0,
+     "toi_gm": 11.928,
+     "ev_toi_gm": 10.36,
+     "p60": 1.404,
+     "g60": 0.351,
+     "ixg60": 0.549,
+     "xgf": 0.475,
+     "xgf60": 1.899,
+     "xga60": 2.099,
+     "gax": -1.28,
+     "gs_gp": 0.155,
+     "pts": 9.0,
+     "goals": 3.0
+    },
+    null,
+    null
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8476356",
+   "name": "Tobias Rieder",
+   "window": "2017-2019",
+   "dist": 0.475,
+   "base": {
+    "p60": 0.947,
+    "g60": 0.258,
+    "ixg60": 0.724,
+    "xgf": 0.47,
+    "toi_gm": 12.778,
+    "gs_gp": 0.21,
+    "gax": -16.0
+   },
+   "future": [
+    {
+     "name": "Tobias Rieder",
+     "age": 27,
+     "gp": 44.0,
+     "toi_gm": 12.249,
+     "ev_toi_gm": 10.489,
+     "p60": 0.91,
+     "g60": 0.65,
+     "ixg60": 0.645,
+     "xgf": 0.383,
+     "xgf60": 1.66,
+     "xga60": 2.67,
+     "gax": -0.35,
+     "gs_gp": 0.085,
+     "pts": 7.0,
+     "goals": 5.0
+    },
+    null,
+    null
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8473432",
+   "name": "Derek Dorsett",
+   "window": "2011-2013",
+   "dist": 0.481,
+   "base": {
+    "p60": 1.216,
+    "g60": 0.538,
+    "ixg60": 0.58,
+    "xgf": 0.487,
+    "toi_gm": 13.9,
+    "gs_gp": 0.24,
+    "gax": -3.0
+   },
+   "future": [
+    {
+     "name": "Derek Dorsett",
+     "age": 27,
+     "gp": 79.0,
+     "toi_gm": 12.045,
+     "ev_toi_gm": 11.0,
+     "p60": 1.45,
+     "g60": 0.345,
+     "ixg60": 0.581,
+     "xgf": 0.432,
+     "xgf60": 1.833,
+     "xga60": 2.411,
+     "gax": -2.19,
+     "gs_gp": 0.173,
+     "pts": 25.0,
+     "goals": 7.0
+    },
+    {
+     "name": "Derek Dorsett",
+     "age": 28,
+     "gp": 71.0,
+     "toi_gm": 12.59,
+     "ev_toi_gm": 11.506,
+     "p60": 0.955,
+     "g60": 0.294,
+     "ixg60": 0.52,
+     "xgf": 0.417,
+     "xgf60": 1.711,
+     "xga60": 2.394,
+     "gax": -2.97,
+     "gs_gp": 0.163,
+     "pts": 16.0,
+     "goals": 5.0
+    },
+    null
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8477591",
+   "name": "Josh Jooris",
+   "window": "2014-2016",
+   "dist": 0.489,
+   "base": {
+    "p60": 1.158,
+    "g60": 0.439,
+    "ixg60": 0.569,
+    "xgf": 0.481,
+    "toi_gm": 13.011,
+    "gs_gp": 0.228,
+    "gax": -2.0
+   },
+   "future": [
+    {
+     "name": "Josh Jooris",
+     "age": 27,
+     "gp": 40.0,
+     "toi_gm": 9.765,
+     "ev_toi_gm": 8.737,
+     "p60": 1.03,
+     "g60": 0.515,
+     "ixg60": 0.7,
+     "xgf": 0.484,
+     "xgf60": 2.168,
+     "xga60": 2.313,
+     "gax": -1.11,
+     "gs_gp": 0.204,
+     "pts": 6.0,
+     "goals": 3.0
+    },
+    null,
+    null
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8474709",
+   "name": "Matt Martin",
+   "window": "2013-2015",
+   "dist": 0.508,
+   "base": {
+    "p60": 1.069,
+    "g60": 0.594,
+    "ixg60": 0.679,
+    "xgf": 0.49,
+    "toi_gm": 11.241,
+    "gs_gp": 0.219,
+    "gax": -5.2
+   },
+   "future": [
+    {
+     "name": "Matt Martin",
+     "age": 27,
+     "gp": 82.0,
+     "toi_gm": 8.898,
+     "ev_toi_gm": 8.549,
+     "p60": 0.77,
+     "g60": 0.428,
+     "ixg60": 0.579,
+     "xgf": 0.473,
+     "xgf60": 2.096,
+     "xga60": 2.339,
+     "gax": -2.22,
+     "gs_gp": 0.119,
+     "pts": 9.0,
+     "goals": 5.0
+    },
+    {
+     "name": "Matt Martin",
+     "age": 28,
+     "gp": 50.0,
+     "toi_gm": 7.988,
+     "ev_toi_gm": 7.865,
+     "p60": 1.831,
+     "g60": 0.458,
+     "ixg60": 0.565,
+     "xgf": 0.482,
+     "xgf60": 2.254,
+     "xga60": 2.418,
+     "gax": -0.7,
+     "gs_gp": 0.206,
+     "pts": 12.0,
+     "goals": 3.0
+    },
+    {
+     "name": "Matt Martin",
+     "age": 29,
+     "gp": 67.0,
+     "toi_gm": 11.421,
+     "ev_toi_gm": 10.932,
+     "p60": 0.983,
+     "g60": 0.41,
+     "ixg60": 0.493,
+     "xgf": 0.512,
+     "xgf60": 2.057,
+     "xga60": 1.96,
+     "gax": -0.51,
+     "gs_gp": 0.172,
+     "pts": 13.0,
+     "goals": 6.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8476889",
+   "name": "Radek Faksa",
+   "window": "2018-2020",
+   "dist": 0.51,
+   "base": {
+    "p60": 1.061,
+    "g60": 0.484,
+    "ixg60": 0.648,
+    "xgf": 0.483,
+    "toi_gm": 16.576,
+    "gs_gp": 0.271,
+    "gax": -9.7
+   },
+   "future": [
+    {
+     "name": "Radek Faksa",
+     "age": 27,
+     "gp": 77.0,
+     "toi_gm": 15.769,
+     "ev_toi_gm": 13.266,
+     "p60": 0.822,
+     "g60": 0.117,
+     "ixg60": 0.527,
+     "xgf": 0.459,
+     "xgf60": 1.938,
+     "xga60": 2.281,
+     "gax": -6.9,
+     "gs_gp": 0.134,
+     "pts": 19.0,
+     "goals": 5.0
+    },
+    {
+     "name": "Radek Faksa",
+     "age": 28,
+     "gp": 81.0,
+     "toi_gm": 13.721,
+     "ev_toi_gm": 11.385,
+     "p60": 1.171,
+     "g60": 0.651,
+     "ixg60": 0.635,
+     "xgf": 0.528,
+     "xgf60": 2.235,
+     "xga60": 1.997,
+     "gax": -0.97,
+     "gs_gp": 0.335,
+     "pts": 20.0,
+     "goals": 11.0
+    },
+    {
+     "name": "Radek Faksa",
+     "age": 29,
+     "gp": 74.0,
+     "toi_gm": 12.516,
+     "ev_toi_gm": 10.252,
+     "p60": 1.186,
+     "g60": 0.395,
+     "ixg60": 0.672,
+     "xgf": 0.512,
+     "xgf60": 2.198,
+     "xga60": 2.091,
+     "gax": -4.25,
+     "gs_gp": 0.368,
+     "pts": 19.0,
+     "goals": 7.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8471804",
+   "name": "Nathan Gerbe",
+   "window": "2011-2013",
+   "dist": 0.511,
+   "base": {
+    "p60": 1.29,
+    "g60": 0.476,
+    "ixg60": 0.625,
+    "xgf": 0.447,
+    "toi_gm": 14.371,
+    "gs_gp": 0.352,
+    "gax": -5.3
+   },
+   "future": [
+    {
+     "name": "Nathan Gerbe",
+     "age": 27,
+     "gp": 78.0,
+     "toi_gm": 16.44,
+     "ev_toi_gm": 13.349,
+     "p60": 1.095,
+     "g60": 0.403,
+     "ixg60": 0.667,
+     "xgf": 0.513,
+     "xgf60": 2.272,
+     "xga60": 2.158,
+     "gax": -5.93,
+     "gs_gp": 0.577,
+     "pts": 28.0,
+     "goals": 10.0
+    },
+    {
+     "name": "Nathan Gerbe",
+     "age": 28,
+     "gp": 47.0,
+     "toi_gm": 13.455,
+     "ev_toi_gm": 11.215,
+     "p60": 0.569,
+     "g60": 0.228,
+     "ixg60": 0.54,
+     "xgf": 0.425,
+     "xgf60": 1.861,
+     "xga60": 2.518,
+     "gax": -3.48,
+     "gs_gp": 0.174,
+     "pts": 7.0,
+     "goals": 3.0
+    },
+    null
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8478067",
+   "name": "Oskar Lindblom",
+   "window": "2020-2022",
+   "dist": 0.526,
+   "base": {
+    "p60": 1.379,
+    "g60": 0.658,
+    "ixg60": 0.643,
+    "xgf": 0.469,
+    "toi_gm": 12.519,
+    "gs_gp": 0.203,
+    "gax": -1.8
+   },
+   "future": [
+    null,
+    null,
+    null
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8477426",
+   "name": "Nick Paul",
+   "window": "2019-2021",
+   "dist": 0.527,
+   "base": {
+    "p60": 1.309,
+    "g60": 0.592,
+    "ixg60": 0.653,
+    "xgf": 0.469,
+    "toi_gm": 15.672,
+    "gs_gp": 0.402,
+    "gax": -7.1
+   },
+   "future": [
+    {
+     "name": "Nicholas Paul",
+     "age": 27,
+     "gp": 80.0,
+     "toi_gm": 16.159,
+     "ev_toi_gm": 13.115,
+     "p60": 1.315,
+     "g60": 0.515,
+     "ixg60": 0.615,
+     "xgf": 0.478,
+     "xgf60": 2.452,
+     "xga60": 2.683,
+     "gax": -0.48,
+     "gs_gp": 0.472,
+     "pts": 32.0,
+     "goals": 17.0
+    },
+    {
+     "name": "Nicholas Paul",
+     "age": 28,
+     "gp": 82.0,
+     "toi_gm": 17.26,
+     "ev_toi_gm": 13.062,
+     "p60": 1.512,
+     "g60": 0.784,
+     "ixg60": 0.722,
+     "xgf": 0.499,
+     "xgf60": 2.44,
+     "xga60": 2.451,
+     "gax": 1.17,
+     "gs_gp": 0.562,
+     "pts": 46.0,
+     "goals": 24.0
+    },
+    {
+     "name": "Nick Paul",
+     "age": 29,
+     "gp": 76.0,
+     "toi_gm": 16.443,
+     "ev_toi_gm": 14.291,
+     "p60": 1.602,
+     "g60": 0.829,
+     "ixg60": 0.705,
+     "xgf": 0.487,
+     "xgf60": 2.303,
+     "xga60": 2.431,
+     "gax": 3.16,
+     "gs_gp": 0.548,
+     "pts": 41.0,
+     "goals": 22.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8476480",
+   "name": "Vladislav Namestnikov",
+   "window": "2017-2019",
+   "dist": 0.53,
+   "base": {
+    "p60": 1.278,
+    "g60": 0.576,
+    "ixg60": 0.7,
+    "xgf": 0.484,
+    "toi_gm": 15.981,
+    "gs_gp": 0.432,
+    "gax": -2.2
+   },
+   "future": [
+    {
+     "name": "Vladislav Namestnikov",
+     "age": 27,
+     "gp": 53.0,
+     "toi_gm": 16.203,
+     "ev_toi_gm": 13.205,
+     "p60": 0.943,
+     "g60": 0.257,
+     "ixg60": 0.543,
+     "xgf": 0.466,
+     "xgf60": 1.808,
+     "xga60": 2.073,
+     "gax": -4.68,
+     "gs_gp": 0.227,
+     "pts": 17.0,
+     "goals": 8.0
+    },
+    {
+     "name": "Vladislav Namestnikov",
+     "age": 28,
+     "gp": 75.0,
+     "toi_gm": 14.651,
+     "ev_toi_gm": 12.451,
+     "p60": 1.478,
+     "g60": 0.771,
+     "ixg60": 0.736,
+     "xgf": 0.483,
+     "xgf60": 2.356,
+     "xga60": 2.518,
+     "gax": 1.55,
+     "gs_gp": 0.321,
+     "pts": 30.0,
+     "goals": 16.0
+    },
+    {
+     "name": "Vladislav Namestnikov",
+     "age": 29,
+     "gp": 77.0,
+     "toi_gm": 12.624,
+     "ev_toi_gm": 10.778,
+     "p60": 1.518,
+     "g60": 0.506,
+     "ixg60": 0.844,
+     "xgf": 0.547,
+     "xgf60": 2.837,
+     "xga60": 2.353,
+     "gax": -6.56,
+     "gs_gp": 0.411,
+     "pts": 25.0,
+     "goals": 8.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8476921",
+   "name": "Jordan Martinook",
+   "window": "2016-2018",
+   "dist": 0.533,
+   "base": {
+    "p60": 1.08,
+    "g60": 0.506,
+    "ixg60": 0.747,
+    "xgf": 0.514,
+    "toi_gm": 14.721,
+    "gs_gp": 0.315,
+    "gax": -14.3
+   },
+   "future": [
+    {
+     "name": "Jordan Martinook",
+     "age": 27,
+     "gp": 45.0,
+     "toi_gm": 11.253,
+     "ev_toi_gm": 9.646,
+     "p60": 1.382,
+     "g60": 0.276,
+     "ixg60": 0.557,
+     "xgf": 0.512,
+     "xgf60": 2.289,
+     "xga60": 2.181,
+     "gax": -2.66,
+     "gs_gp": 0.339,
+     "pts": 14.0,
+     "goals": 2.0
+    },
+    {
+     "name": "Jordan Martinook",
+     "age": 28,
+     "gp": 44.0,
+     "toi_gm": 12.757,
+     "ev_toi_gm": 11.143,
+     "p60": 1.346,
+     "g60": 0.367,
+     "ixg60": 0.673,
+     "xgf": 0.504,
+     "xgf60": 2.242,
+     "xga60": 2.21,
+     "gax": -3.6,
+     "gs_gp": 0.349,
+     "pts": 13.0,
+     "goals": 4.0
+    },
+    {
+     "name": "Jordan Martinook",
+     "age": 29,
+     "gp": 59.0,
+     "toi_gm": 11.201,
+     "ev_toi_gm": 10.598,
+     "p60": 1.439,
+     "g60": 0.576,
+     "ixg60": 0.723,
+     "xgf": 0.53,
+     "xgf60": 2.619,
+     "xga60": 2.322,
+     "gax": -1.95,
+     "gs_gp": 0.443,
+     "pts": 15.0,
+     "goals": 6.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8473504",
+   "name": "Cal Clutterbuck",
+   "window": "2012-2014",
+   "dist": 0.534,
+   "base": {
+    "p60": 0.868,
+    "g60": 0.435,
+    "ixg60": 0.647,
+    "xgf": 0.506,
+    "toi_gm": 13.598,
+    "gs_gp": 0.311,
+    "gax": -10.2
+   },
+   "future": [
+    {
+     "name": "Cal Clutterbuck",
+     "age": 27,
+     "gp": 77.0,
+     "toi_gm": 11.914,
+     "ev_toi_gm": 9.755,
+     "p60": 1.438,
+     "g60": 0.879,
+     "ixg60": 0.399,
+     "xgf": 0.474,
+     "xgf60": 1.828,
+     "xga60": 2.027,
+     "gax": 8.54,
+     "gs_gp": 0.299,
+     "pts": 23.0,
+     "goals": 15.0
+    },
+    {
+     "name": "Cal Clutterbuck",
+     "age": 28,
+     "gp": 66.0,
+     "toi_gm": 13.997,
+     "ev_toi_gm": 11.25,
+     "p60": 1.455,
+     "g60": 0.404,
+     "ixg60": 0.738,
+     "xgf": 0.515,
+     "xgf60": 2.329,
+     "xga60": 2.191,
+     "gax": -8.15,
+     "gs_gp": 0.323,
+     "pts": 20.0,
+     "goals": 5.0
+    },
+    {
+     "name": "Cal Clutterbuck",
+     "age": 29,
+     "gp": 76.0,
+     "toi_gm": 12.774,
+     "ev_toi_gm": 10.381,
+     "p60": 1.217,
+     "g60": 0.456,
+     "ixg60": 0.512,
+     "xgf": 0.439,
+     "xgf60": 1.918,
+     "xga60": 2.453,
+     "gax": -0.23,
+     "gs_gp": 0.107,
+     "pts": 18.0,
+     "goals": 8.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8477508",
+   "name": "Curtis Lazar",
+   "window": "2019-2021",
+   "dist": 0.541,
+   "base": {
+    "p60": 1.226,
+    "g60": 0.6,
+    "ixg60": 0.753,
+    "xgf": 0.508,
+    "toi_gm": 12.379,
+    "gs_gp": 0.249,
+    "gax": -4.6
+   },
+   "future": [
+    {
+     "name": "Curtis Lazar",
+     "age": 27,
+     "gp": 49.0,
+     "toi_gm": 11.93,
+     "ev_toi_gm": 10.64,
+     "p60": 0.575,
+     "g60": 0.345,
+     "ixg60": 0.666,
+     "xgf": 0.461,
+     "xgf60": 2.33,
+     "xga60": 2.723,
+     "gax": -3.63,
+     "gs_gp": 0.077,
+     "pts": 5.0,
+     "goals": 3.0
+    },
+    {
+     "name": "Curtis Lazar",
+     "age": 28,
+     "gp": 71.0,
+     "toi_gm": 12.39,
+     "ev_toi_gm": 11.014,
+     "p60": 1.611,
+     "g60": 0.46,
+     "ixg60": 0.683,
+     "xgf": 0.511,
+     "xgf60": 2.553,
+     "xga60": 2.441,
+     "gax": -2.29,
+     "gs_gp": 0.344,
+     "pts": 25.0,
+     "goals": 7.0
+    },
+    {
+     "name": "Curtis Lazar",
+     "age": 29,
+     "gp": 48.0,
+     "toi_gm": 10.567,
+     "ev_toi_gm": 9.399,
+     "p60": 0.665,
+     "g60": 0.266,
+     "ixg60": 0.348,
+     "xgf": 0.421,
+     "xgf60": 1.761,
+     "xga60": 2.418,
+     "gax": -0.84,
+     "gs_gp": -0.006,
+     "pts": 5.0,
+     "goals": 2.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8475855",
+   "name": "Jesper Fast",
+   "window": "2016-2018",
+   "dist": 0.546,
+   "base": {
+    "p60": 1.508,
+    "g60": 0.62,
+    "ixg60": 0.648,
+    "xgf": 0.48,
+    "toi_gm": 14.815,
+    "gs_gp": 0.287,
+    "gax": -3.7
+   },
+   "future": [
+    {
+     "name": "Jesper Fast",
+     "age": 27,
+     "gp": 69.0,
+     "toi_gm": 16.607,
+     "ev_toi_gm": 13.839,
+     "p60": 1.634,
+     "g60": 0.628,
+     "ixg60": 0.615,
+     "xgf": 0.506,
+     "xgf60": 2.436,
+     "xga60": 2.38,
+     "gax": 1.41,
+     "gs_gp": 0.403,
+     "pts": 30.0,
+     "goals": 12.0
+    },
+    {
+     "name": "Jesper Fast",
+     "age": 28,
+     "gp": 46.0,
+     "toi_gm": 15.297,
+     "ev_toi_gm": 12.614,
+     "p60": 1.137,
+     "g60": 0.414,
+     "ixg60": 0.519,
+     "xgf": 0.533,
+     "xgf60": 2.299,
+     "xga60": 2.017,
+     "gax": -0.44,
+     "gs_gp": 0.393,
+     "pts": 18.0,
+     "goals": 6.0
+    },
+    {
+     "name": "Jesper Fast",
+     "age": 29,
+     "gp": 82.0,
+     "toi_gm": 14.811,
+     "ev_toi_gm": 12.611,
+     "p60": 1.509,
+     "g60": 0.696,
+     "ixg60": 0.744,
+     "xgf": 0.596,
+     "xgf60": 3.142,
+     "xga60": 2.132,
+     "gax": -1.65,
+     "gs_gp": 0.628,
+     "pts": 34.0,
+     "goals": 14.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8475231",
+   "name": "Casey Cizikas",
+   "window": "2015-2017",
+   "dist": 0.548,
+   "base": {
+    "p60": 1.597,
+    "g60": 0.558,
+    "ixg60": 0.645,
+    "xgf": 0.474,
+    "toi_gm": 13.263,
+    "gs_gp": 0.305,
+    "gax": -5.7
+   },
+   "future": [
+    {
+     "name": "Casey Cizikas",
+     "age": 27,
+     "gp": 73.0,
+     "toi_gm": 13.981,
+     "ev_toi_gm": 11.335,
+     "p60": 1.885,
+     "g60": 1.16,
+     "ixg60": 0.806,
+     "xgf": 0.534,
+     "xgf60": 2.312,
+     "xga60": 2.016,
+     "gax": 6.78,
+     "gs_gp": 0.464,
+     "pts": 34.0,
+     "goals": 21.0
+    },
+    {
+     "name": "Casey Cizikas",
+     "age": 28,
+     "gp": 48.0,
+     "toi_gm": 14.269,
+     "ev_toi_gm": 11.435,
+     "p60": 1.093,
+     "g60": 0.765,
+     "ixg60": 0.699,
+     "xgf": 0.565,
+     "xgf60": 2.24,
+     "xga60": 1.723,
+     "gax": 1.65,
+     "gs_gp": 0.348,
+     "pts": 15.0,
+     "goals": 10.0
+    },
+    {
+     "name": "Casey Cizikas",
+     "age": 29,
+     "gp": 56.0,
+     "toi_gm": 13.838,
+     "ev_toi_gm": 11.715,
+     "p60": 1.28,
+     "g60": 0.64,
+     "ixg60": 0.608,
+     "xgf": 0.499,
+     "xgf60": 1.818,
+     "xga60": 1.825,
+     "gax": -0.43,
+     "gs_gp": 0.18,
+     "pts": 14.0,
+     "goals": 7.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8474250",
+   "name": "Zack Smith",
+   "window": "2012-2014",
+   "dist": 0.557,
+   "base": {
+    "p60": 0.787,
+    "g60": 0.447,
+    "ixg60": 0.581,
+    "xgf": 0.466,
+    "toi_gm": 14.238,
+    "gs_gp": 0.275,
+    "gax": -5.3
+   },
+   "future": [
+    {
+     "name": "Zack Smith",
+     "age": 27,
+     "gp": 81.0,
+     "toi_gm": 15.4,
+     "ev_toi_gm": 12.033,
+     "p60": 1.539,
+     "g60": 1.046,
+     "ixg60": 0.599,
+     "xgf": 0.497,
+     "xgf60": 2.193,
+     "xga60": 2.223,
+     "gax": 7.49,
+     "gs_gp": 0.497,
+     "pts": 36.0,
+     "goals": 25.0
+    },
+    {
+     "name": "Zack Smith",
+     "age": 28,
+     "gp": 74.0,
+     "toi_gm": 16.379,
+     "ev_toi_gm": 12.64,
+     "p60": 1.411,
+     "g60": 0.641,
+     "ixg60": 0.609,
+     "xgf": 0.521,
+     "xgf60": 2.419,
+     "xga60": 2.227,
+     "gax": 0.56,
+     "gs_gp": 0.462,
+     "pts": 32.0,
+     "goals": 16.0
+    },
+    {
+     "name": "Zack Smith",
+     "age": 29,
+     "gp": 68.0,
+     "toi_gm": 16.72,
+     "ev_toi_gm": 13.519,
+     "p60": 0.914,
+     "g60": 0.326,
+     "ixg60": 0.658,
+     "xgf": 0.441,
+     "xgf60": 2.166,
+     "xga60": 2.748,
+     "gax": -7.12,
+     "gs_gp": 0.166,
+     "pts": 19.0,
+     "goals": 5.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8475236",
+   "name": "Cody Eakin",
+   "window": "2015-2017",
+   "dist": 0.561,
+   "base": {
+    "p60": 1.15,
+    "g60": 0.431,
+    "ixg60": 0.582,
+    "xgf": 0.479,
+    "toi_gm": 15.906,
+    "gs_gp": 0.314,
+    "gax": -6.7
+   },
+   "future": [
+    {
+     "name": "Cody Eakin",
+     "age": 27,
+     "gp": 78.0,
+     "toi_gm": 15.353,
+     "ev_toi_gm": 12.315,
+     "p60": 1.999,
+     "g60": 1.062,
+     "ixg60": 0.636,
+     "xgf": 0.49,
+     "xgf60": 2.566,
+     "xga60": 2.672,
+     "gax": 7.08,
+     "gs_gp": 0.539,
+     "pts": 41.0,
+     "goals": 22.0
+    },
+    {
+     "name": "Cody Eakin",
+     "age": 28,
+     "gp": 49.0,
+     "toi_gm": 14.572,
+     "ev_toi_gm": 11.919,
+     "p60": 1.336,
+     "g60": 0.411,
+     "ixg60": 0.594,
+     "xgf": 0.482,
+     "xgf60": 2.363,
+     "xga60": 2.537,
+     "gax": -2.54,
+     "gs_gp": 0.323,
+     "pts": 15.0,
+     "goals": 5.0
+    },
+    {
+     "name": "Cody Eakin",
+     "age": 29,
+     "gp": 46.0,
+     "toi_gm": 12.934,
+     "ev_toi_gm": 11.191,
+     "p60": 0.699,
+     "g60": 0.233,
+     "ixg60": 0.337,
+     "xgf": 0.348,
+     "xgf60": 1.512,
+     "xga60": 2.833,
+     "gax": -0.68,
+     "gs_gp": -0.05,
+     "pts": 7.0,
+     "goals": 3.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8473453",
+   "name": "Trevor Lewis",
+   "window": "2011-2013",
+   "dist": 0.566,
+   "base": {
+    "p60": 0.788,
+    "g60": 0.338,
+    "ixg60": 0.724,
+    "xgf": 0.501,
+    "toi_gm": 13.896,
+    "gs_gp": 0.35,
+    "gax": -15.2
+   },
+   "future": [
+    {
+     "name": "Trevor Lewis",
+     "age": 27,
+     "gp": 73.0,
+     "toi_gm": 14.107,
+     "ev_toi_gm": 12.121,
+     "p60": 1.56,
+     "g60": 0.542,
+     "ixg60": 0.715,
+     "xgf": 0.56,
+     "xgf60": 2.218,
+     "xga60": 1.745,
+     "gax": -2.85,
+     "gs_gp": 0.552,
+     "pts": 25.0,
+     "goals": 9.0
+    },
+    {
+     "name": "Trevor Lewis",
+     "age": 28,
+     "gp": 75.0,
+     "toi_gm": 14.56,
+     "ev_toi_gm": 12.297,
+     "p60": 0.716,
+     "g60": 0.325,
+     "ixg60": 0.816,
+     "xgf": 0.553,
+     "xgf60": 2.381,
+     "xga60": 1.923,
+     "gax": -8.49,
+     "gs_gp": 0.424,
+     "pts": 16.0,
+     "goals": 8.0
+    },
+    {
+     "name": "Trevor Lewis",
+     "age": 29,
+     "gp": 82.0,
+     "toi_gm": 14.273,
+     "ev_toi_gm": 12.547,
+     "p60": 1.283,
+     "g60": 0.642,
+     "ixg60": 0.742,
+     "xgf": 0.563,
+     "xgf60": 2.343,
+     "xga60": 1.822,
+     "gax": -1.76,
+     "gs_gp": 0.471,
+     "pts": 24.0,
+     "goals": 12.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8480144",
+   "name": "David Kampf",
+   "window": "2019-2021",
+   "dist": 0.574,
+   "base": {
+    "p60": 1.001,
+    "g60": 0.365,
+    "ixg60": 0.555,
+    "xgf": 0.477,
+    "toi_gm": 14.54,
+    "gs_gp": 0.258,
+    "gax": -10.6
+   },
+   "future": [
+    {
+     "name": "David Kampf",
+     "age": 27,
+     "gp": 82.0,
+     "toi_gm": 15.308,
+     "ev_toi_gm": 12.292,
+     "p60": 1.369,
+     "g60": 0.417,
+     "ixg60": 0.67,
+     "xgf": 0.497,
+     "xgf60": 2.491,
+     "xga60": 2.519,
+     "gax": -6.86,
+     "gs_gp": 0.294,
+     "pts": 27.0,
+     "goals": 7.0
+    },
+    {
+     "name": "David Kampf",
+     "age": 28,
+     "gp": 78.0,
+     "toi_gm": 13.487,
+     "ev_toi_gm": 10.748,
+     "p60": 1.074,
+     "g60": 0.501,
+     "ixg60": 0.459,
+     "xgf": 0.422,
+     "xgf60": 2.01,
+     "xga60": 2.758,
+     "gax": -0.18,
+     "gs_gp": 0.176,
+     "pts": 19.0,
+     "goals": 8.0
+    },
+    {
+     "name": "David Kampf",
+     "age": 29,
+     "gp": 59.0,
+     "toi_gm": 12.393,
+     "ev_toi_gm": 10.1,
+     "p60": 1.108,
+     "g60": 0.403,
+     "ixg60": 0.443,
+     "xgf": 0.444,
+     "xgf60": 1.699,
+     "xga60": 2.126,
+     "gax": -0.81,
+     "gs_gp": 0.151,
+     "pts": 13.0,
+     "goals": 5.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8478542",
+   "name": "Evan Rodrigues",
+   "window": "2017-2019",
+   "dist": 0.58,
+   "base": {
+    "p60": 1.492,
+    "g60": 0.52,
+    "ixg60": 0.618,
+    "xgf": 0.485,
+    "toi_gm": 13.665,
+    "gs_gp": 0.432,
+    "gax": -2.8
+   },
+   "future": [
+    {
+     "name": "Evan Rodrigues",
+     "age": 27,
+     "gp": 35.0,
+     "toi_gm": 14.105,
+     "ev_toi_gm": 12.236,
+     "p60": 1.681,
+     "g60": 0.701,
+     "ixg60": 0.621,
+     "xgf": 0.505,
+     "xgf60": 2.317,
+     "xga60": 2.268,
+     "gax": 0.86,
+     "gs_gp": 0.438,
+     "pts": 14.0,
+     "goals": 7.0
+    },
+    {
+     "name": "Evan Rodrigues",
+     "age": 28,
+     "gp": 82.0,
+     "toi_gm": 15.837,
+     "ev_toi_gm": 13.1,
+     "p60": 1.62,
+     "g60": 0.503,
+     "ixg60": 0.895,
+     "xgf": 0.583,
+     "xgf60": 2.959,
+     "xga60": 2.12,
+     "gax": -3.84,
+     "gs_gp": 0.795,
+     "pts": 43.0,
+     "goals": 19.0
+    },
+    {
+     "name": "Evan Rodrigues",
+     "age": 29,
+     "gp": 69.0,
+     "toi_gm": 17.856,
+     "ev_toi_gm": 14.984,
+     "p60": 1.393,
+     "g60": 0.464,
+     "ixg60": 0.851,
+     "xgf": 0.557,
+     "xgf60": 3.08,
+     "xga60": 2.454,
+     "gax": -5.34,
+     "gs_gp": 0.805,
+     "pts": 39.0,
+     "goals": 16.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "pid": "8476442",
+   "name": "Matt Nieto",
+   "window": "2017-2019",
+   "dist": 0.584,
+   "base": {
+    "p60": 1.378,
+    "g60": 0.443,
+    "ixg60": 0.58,
+    "xgf": 0.495,
+    "toi_gm": 14.042,
+    "gs_gp": 0.347,
+    "gax": -2.8
+   },
+   "future": [
+    {
+     "name": "Matt Nieto",
+     "age": 27,
+     "gp": 28.0,
+     "toi_gm": 13.994,
+     "ev_toi_gm": 10.826,
+     "p60": 1.188,
+     "g60": 0.792,
+     "ixg60": 0.734,
+     "xgf": 0.451,
+     "xgf60": 2.213,
+     "xga60": 2.692,
+     "gax": 0.34,
+     "gs_gp": 0.206,
+     "pts": 7.0,
+     "goals": 5.0
+    },
+    {
+     "name": "Matt Nieto",
+     "age": 28,
+     "gp": 70.0,
+     "toi_gm": 14.404,
+     "ev_toi_gm": 12.329,
+     "p60": 1.182,
+     "g60": 0.417,
+     "ixg60": 0.483,
+     "xgf": 0.462,
+     "xgf60": 1.881,
+     "xga60": 2.193,
+     "gax": -1.95,
+     "gs_gp": 0.134,
+     "pts": 17.0,
+     "goals": 6.0
+    },
+    {
+     "name": "Matt Nieto",
+     "age": 29,
+     "gp": 81.0,
+     "toi_gm": 13.525,
+     "ev_toi_gm": 11.138,
+     "p60": 1.463,
+     "g60": 0.732,
+     "ixg60": 0.804,
+     "xgf": 0.515,
+     "xgf60": 2.725,
+     "xga60": 2.562,
+     "gax": -2.32,
+     "gs_gp": 0.284,
+     "pts": 24.0,
+     "goals": 12.0
+    }
+   ],
+   "future_observable": [
+    true,
+    true,
+    true
+   ]
+  }
+ ],
+ "summary": {
+  "n": 30,
+  "gone_by_27_28": 2,
+  "median_p60_change": 0.119,
+  "share_improved": 0.571,
+  "median_toi_change": -0.54,
+  "same_bin": {
+   "n": 39,
+   "gone": 3,
+   "median_p60_change": 0.11,
+   "share_improved": 0.583,
+   "share_plus_half": 0.083
+  }
+ }
+}
