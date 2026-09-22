@@ -1,10 +1,9 @@
 import { defineConfig } from 'astro/config';
 
-// Until the custom domain is wired up, the site lives at
-// markwesley622.github.io/wes-and-woodward (project pages), so `base` is set.
-// When wesandwoodward.com lands: site -> 'https://wesandwoodward.com',
-// base -> '/', and add public/CNAME containing "wesandwoodward.com".
+// Custom domain live since 2026-09-21: DNS (four A records + www CNAME, DNS-only) is on
+// Cloudflare; GitHub Pages has the domain set and public/CNAME keeps it pinned per deploy.
+// markwesley622.github.io/wes-and-woodward now redirects here.
 export default defineConfig({
-  site: 'https://markwesley622.github.io',
-  base: '/wes-and-woodward',
+  site: 'https://wesandwoodward.com',
+  base: '/',
 });
