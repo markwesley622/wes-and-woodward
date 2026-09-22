@@ -1,8 +1,29 @@
 ---
-import monogram from '../../brand/ww-monogram-shadow.svg?raw';
+import '../styles/global.css';
+import wordmarkRaw from '../../brand/wes-and-woodward-wordmark-black.svg?raw';
+import D from '../../data/site/dashboard.json';
 
 const { title = 'Wes & Woodward', description = 'Detroit hockey, by the numbers.' } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const wordmark = wordmarkRaw.replace('<svg ', '<svg class="wm" role="img" aria-label="Wes and Woodward" ').replace('fill="#000000"', 'fill="currentColor"');
+
+// season banner
+const S = D.standings, NG = D.nextGame;
+const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
+const mdy = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+const season = `${D.seasonLabel.slice(0, 4)}–${D.seasonLabel.slice(5)}`;
+const vs = (g) => (g.home ? 'vs' : 'at');
+const record = `${S.wins}–${S.losses}–${S.otLosses} · ${S.points} pts · ${ordinal(S.division.place)} in the ${S.division.name}`;
+let banner = `${season} · ${record}`;
+if (D.seasonState === 'offseason') {
+  banner = `${season} final · ${record}`;
+  if (NG) banner += ` · ${NG.season.slice(0, 4)}–${NG.season.slice(6)} opens ${mdy(NG.date)} ${vs(NG)} ${NG.opponent}`;
+} else if (D.seasonState === 'preseason' && NG) {
+  banner = `${season} opens ${mdy(NG.date)} ${vs(NG)} ${NG.opponent}`;
+} else if (NG) {
+  banner += ` · next ${vs(NG)} ${NG.opponent} ${mdy(NG.date)}`;
+}
+const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['Analysis', `${base}#analysis`], ['Prospects', `${base}#prospects`], ['About', `${base}about/`]];
 ---
 <!doctype html>
 <html lang="en">
@@ -13,239 +34,61 @@ const base = import.meta.env.BASE_URL;
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Doto:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" />
   </head>
   <body>
-    <header class="masthead">
-      <div class="masthead-inner">
-        <a class="lockup" href={base} aria-label="Wes and Woodward, home">
-          <span class="mark" aria-hidden="true" set:html={monogram} />
-          <span class="lockup-type">
-            <span class="wordmark">Wes <span class="amp">&amp;</span> Woodward</span>
-            <span class="tagline">Detroit Red Wings analytics</span>
-          </span>
-        </a>
+    <div class="banner mono lc">{banner}</div>
+    <header class="hdr">
+      <div class="shell">
+        <div class="top">
+          <a class="home" href={base} aria-label="Wes and Woodward, home" set:html={wordmark} />
+          <div class="right">
+            <nav class="nav mono" aria-label="Primary">
+              {nav.map(([label, href]) => <a href={href}>{label}</a>)}
+            </nav>
+            <a class="cta mono" href="#">Subscribe</a>
+          </div>
+        </div>
       </div>
     </header>
-    <nav class="topnav">
-      <div class="nav-inner">
-        <a href={base}>Latest</a>
-        <a href={`${base}about/`}>About</a>
-      </div>
-    </nav>
     <main>
       <slot />
     </main>
     <footer>
-      <p>
-        Wes &amp; Woodward is an independent publication and is not affiliated with the
-        Detroit Red Wings or the NHL. Data: <a href="https://api-web.nhle.com">NHL API</a>,
-        <a href="https://moneypuck.com">MoneyPuck</a>,
-        <a href="https://hockeystatcards.com">HockeyStatCards</a> and
-        <a href="https://www.naturalstattrick.com">Natural Stat Trick</a>,
-        <a href="https://evolving-hockey.com">Evolving-Hockey</a> and
-        <a href="https://www.eliteprospects.com">Elite Prospects</a>.
-      </p>
+      <div class="shell">
+        <p>
+          Wes &amp; Woodward is an independent publication and is not affiliated with the
+          Detroit Red Wings or the NHL. Data: <a href="https://api-web.nhle.com">NHL API</a>,
+          <a href="https://moneypuck.com">MoneyPuck</a>,
+          <a href="https://hockeystatcards.com">HockeyStatCards</a>,
+          <a href="https://www.naturalstattrick.com">Natural Stat Trick</a>,
+          <a href="https://evolving-hockey.com">Evolving-Hockey</a> and
+          <a href="https://www.eliteprospects.com">Elite Prospects</a>.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
 
-<style is:global>
-  :root {
-    --paper: #d7d6d3;
-    --panel: #e7e6e3;
-    --rule: #c4c3bf;
-    --ink: #141414;
-    --ink-soft: #575653;
-    --muted: #86857f;
-    --red: #ce1126;
-    --dark: #141414;
-    --dark-type: #f2f1ef;
-    --measure: 68ch;
-    --shell: 1312px;
+<style>
+  .banner { background: var(--red); color: #fff; text-align: center; padding: 7px 12px; font-size: 12px; }
+  .hdr { position: relative; z-index: 6; background: var(--paper); }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 18px; height: 64px; border-bottom: 1px solid var(--rule); }
+  .home { color: var(--ink); display: block; }
+  .home :global(.wm) { height: 30px; width: auto; }
+  .right { display: flex; align-items: center; gap: 28px; }
+  .nav { display: flex; gap: 24px; }
+  .cta { background: var(--ink); color: #fff; padding: 9px 14px; border-radius: 3px; font-size: 11px; }
+  .cta:hover { background: var(--red); color: #fff; }
+  footer { padding: 36px 0 60px; color: var(--mute); font-size: 12px; line-height: 1.6; }
+  footer a { color: var(--mute); text-decoration: underline; }
+  footer a:hover { color: var(--red); }
+  @media (max-width: 900px) {
+    .right { gap: 14px; }
+    .nav { gap: 14px; font-size: 10px; }
+    .home :global(.wm) { height: 24px; }
   }
-
-  * { box-sizing: border-box; }
-
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
-    font-size: 17px;
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  /* ---- Masthead ---------------------------------------------------- */
-  .masthead {
-    background: var(--dark);
-    color: var(--dark-type);
-  }
-  .masthead-inner {
-    max-width: var(--shell);
-    margin: 0 auto;
-    padding: 22px 24px;
-  }
-  .lockup {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    text-decoration: none;
-    color: inherit;
-    min-width: 0;
-  }
-  .mark { flex: none; display: block; }
-  .mark svg { height: 54px; width: auto; display: block; }
-  .mark .ww-face { fill: var(--dark-type); }
-  .mark .ww-shadow { fill: var(--red); }
-
-  .lockup-type {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    min-width: 0;
-  }
-  .wordmark {
-    font-family: 'Doto', 'IBM Plex Mono', monospace;
-    font-weight: 800;
-    font-size: clamp(19px, 4.4vw, 25px);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    line-height: 1;
-  }
-  .wordmark .amp { color: var(--red); }
-  .tagline {
-    font-family: 'IBM Plex Mono', ui-monospace, monospace;
-    font-size: 9.5px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #91908d;
-  }
-
-  /* ---- Nav ---------------------------------------------------------- */
-  .topnav { border-bottom: 1px solid var(--rule); }
-  .nav-inner {
-    max-width: var(--shell);
-    margin: 0 auto;
-    padding: 13px 24px;
-    display: flex;
-    gap: 26px;
-    font-family: 'IBM Plex Mono', ui-monospace, monospace;
-    font-size: 10.5px;
-    font-weight: 500;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-  }
-  .nav-inner a { color: var(--ink-soft); text-decoration: none; }
-  .nav-inner a:hover { color: var(--red); }
-
-  /* ---- Body --------------------------------------------------------- */
-  main {
-    max-width: var(--shell);
-    margin: 0 auto;
-    padding: 40px 24px 56px;
-  }
-
-  h1 {
-    font-family: 'Doto', 'IBM Plex Mono', monospace;
-    font-weight: 800;
-    font-size: clamp(26px, 5.2vw, 42px);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    line-height: 1.12;
-    margin: 0 0 18px;
-    text-wrap: balance;
-  }
-  h2 {
-    font-family: 'Space Grotesk', ui-sans-serif, sans-serif;
-    font-weight: 600;
-    font-size: 21px;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
-    margin: 44px 0 12px;
-    padding-top: 22px;
-    border-top: 1px solid var(--rule);
-    text-wrap: balance;
-  }
-  p { max-width: var(--measure); }
-  a { color: var(--red); }
-
-  .kicker {
-    font-family: 'IBM Plex Mono', ui-monospace, monospace;
-    font-size: 10.5px;
-    font-weight: 500;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--red);
-    margin: 0 0 10px;
-  }
-  .deck {
-    font-size: 18.5px;
-    line-height: 1.6;
-    color: var(--ink-soft);
-    margin: 0 0 8px;
-  }
-
-  /* ---- Tables ------------------------------------------------------- */
-  .table-scroll { overflow-x: auto; }
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 14px 0 6px;
-    font-family: 'IBM Plex Mono', ui-monospace, monospace;
-    font-size: 12.5px;
-    font-variant-numeric: tabular-nums;
-    font-feature-settings: 'tnum' 1;
-  }
-  th {
-    text-align: left;
-    font-size: 9.5px;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--muted);
-    border-bottom: 1px solid var(--ink);
-    padding: 0 14px 7px 0;
-    white-space: nowrap;
-  }
-  td {
-    border-bottom: 1px solid var(--rule);
-    padding: 7px 14px 7px 0;
-    white-space: nowrap;
-  }
-  th.num, td.num { text-align: right; }
-  tbody tr:hover td { background: var(--panel); }
-  .table-note {
-    font-family: 'IBM Plex Mono', ui-monospace, monospace;
-    font-size: 11px;
-    line-height: 1.5;
-    color: var(--muted);
-    margin-top: 8px;
-    max-width: var(--measure);
-  }
-
-  /* ---- Footer ------------------------------------------------------- */
-  footer {
-    border-top: 1px solid var(--rule);
-    margin-top: 20px;
-  }
-  footer p {
-    max-width: var(--shell);
-    margin: 0 auto;
-    padding: 22px 24px 44px;
-    font-family: 'IBM Plex Mono', ui-monospace, monospace;
-    font-size: 11px;
-    line-height: 1.6;
-    color: var(--muted);
-  }
-  footer a { color: var(--muted); }
-
-  :where(a):focus-visible {
-    outline: 2px solid var(--red);
-    outline-offset: 3px;
+  @media (max-width: 560px) {
+    .nav { display: none; }
   }
 </style>

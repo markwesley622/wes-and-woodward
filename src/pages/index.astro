@@ -1,27 +1,16 @@
 ---
 import Base from '../layouts/Base.astro';
+import Wheel from '../components/Wheel.astro';
 import D from '../../data/site/dashboard.json';
 import skaters from '../../data/site/skaters.json';
 
 const S = D.standings, X = D.deserved, P = D.projected, NG = D.nextGame;
-const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({1:'st',2:'nd',3:'rd'}[n % 10] || 'th'); return `${n}${s}`; };
+const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
 const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
 const pct3 = (v) => `.${String(Math.round(v * 1000)).padStart(3, '0')}`;
 const mdy = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
 const season = `${D.seasonLabel.slice(0, 4)}–${D.seasonLabel.slice(5)}`;
 const rebuilt = new Date(D.generatedAt).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/Detroit' }).toLowerCase();
-const vs = (g) => (g.home ? 'vs' : 'at');
-let nxt = season;
-if (D.seasonState === 'offseason') {
-  nxt = `${season} final`;
-  if (NG) nxt += ` · ${NG.season.slice(0, 4)}–${NG.season.slice(6)} opens ${mdy(NG.date)} ${vs(NG)} ${NG.opponent}`;
-} else if (D.seasonState === 'preseason' && NG) {
-  nxt = `${season} · opens ${mdy(NG.date)} ${vs(NG)} ${NG.opponent}`;
-} else if (NG) {
-  nxt = `${season} · next: ${vs(NG)} ${NG.opponent} ${mdy(NG.date)}`;
-}
-const wc = S.wildcard;
-const wcNote = D.seasonState === 'offseason' ? 'season complete' : (!wc ? 'division spot' : wc <= 2 ? 'in a playoff spot' : `${wc - 2} out`);
 
 // progress toward MoneyPuck's projection
 const live = P.available && P.points;
@@ -47,257 +36,169 @@ const POS = { C: 'Centre', L: 'Left wing', R: 'Right wing', D: 'Defence' };
 const top3 = skaters.filter((p) => p.gameScore != null).sort((a, b) => b.gameScore - a.gameScore).slice(0, 3);
 const dots = (n) => Array.from({ length: Math.max(0, n) });
 ---
-<Base title="Wes & Woodward — Detroit Red Wings, by the numbers" description="A glance dashboard for the Detroit Red Wings: record, expected-goals standings, and the numbers behind a paywall elsewhere.">
-  <section class="hero" aria-label="Red Wings dashboard">
-    <div class="hero-kicker">
-      <span class="lbl"><span class="red" style="font-weight: 700;">Detroit Red Wings</span> &nbsp;&middot;&nbsp; {nxt}</span>
-      <a class="lbl red" href="#">Full team dashboard &rarr;</a>
+<Base title="Wes & Woodward — Detroit hockey, by the numbers" description="Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.">
+  <section class="hero" aria-label="Detroit hockey, by the numbers">
+    <div class="shell">
+      <div class="stamp mono"><i></i><span id="clock">&nbsp;</span><br />Detroit, MI</div>
+      <h1><span class="l1">Detroit</span><span class="l2">hockey,</span><span class="l3">by the numbers<span class="red">*</span></span></h1>
+      <Wheel />
+      <div class="foot mono"><span>*expected goals, not vibes</span><span>nhl api · moneypuck · rebuilt {rebuilt} et</span></div>
     </div>
-    <div class="hero-grid">
-      <div class="col">
-        <div class="cell record">
-          <div>
-            <span class="lbl red">Record</span>
-            <p class="rec">{S.wins}&ndash;{S.losses}&ndash;{S.otLosses}</p>
-            <p class="rec-line"><span class="pts">{S.points} pts</span> &nbsp;&middot;&nbsp; {pct3(S.pointPctg)} &nbsp;&middot;&nbsp; {S.goalFor}&ndash;{S.goalAgainst} ({signed(S.goalDifferential, 0)})</p>
-          </div>
-          <p class="rec-foot">{S.gamesPlayed} gp &nbsp;&middot;&nbsp; {S.regulationWins} rw &nbsp;&middot;&nbsp; streak {S.streak ?? '—'} &nbsp;&middot;&nbsp; last ten {S.lastTen ?? '—'}</p>
+  </section>
+
+  <section class="sec" id="dashboard">
+    <div class="shell">
+      <h2>Team dashboard</h2>
+      <div class="grid">
+        <div class="tile wide">
+          <span class="eb mono">Record · {season}</span>
+          <span class="num big">{S.wins}–{S.losses}–{S.otLosses}</span>
+          <span class="sub"><span class="red">{S.points} pts</span> · {pct3(S.pointPctg)} · {S.goalFor}–{S.goalAgainst} ({signed(S.goalDifferential, 0)}) · {S.gamesPlayed} gp · last ten {S.lastTen ?? '—'}</span>
         </div>
-        <div class="cells-3">
-          <div class="cell">
-            <span class="lbl">xG win share</span>
-            <span class="val">{(X.xgWinPct * 100).toFixed(1)}%</span>
-            <span class="sub">actual {(S.wins / Math.max(1, S.gamesPlayed) * 100).toFixed(1)}%</span>
-            <span class="note">xG-pythagorean, all situations</span>
-          </div>
-          <div class="cell">
-            <span class="lbl">xG points</span>
-            <span class="val">{X.xgPoints.toFixed(1)}</span>
-            <span class="sub">actual {S.points} &nbsp;&middot;&nbsp; {signed(X.pointsAboveExpected)}</span>
-            <span class="note">loser points at the league rate</span>
-          </div>
-          <div class="cell">
-            <span class="lbl">xG place</span>
-            <span class="places">
-              <span class="place"><span class="val sm">{ordinal(X.divisionPlace)}</span><span class="lbl">{S.division.name}</span></span>
-              <span class="place"><span class="val sm">{ordinal(X.conferencePlace)}</span><span class="lbl">{S.conference.name}</span></span>
-            </span>
-            <span class="sub">actual {ordinal(S.division.place)} &nbsp;&middot;&nbsp; {ordinal(S.conference.place)}</span>
-            <span class="note">all 32 teams on xG points &nbsp;&middot;&nbsp; {ordinal(X.leaguePlace)} in the nhl</span>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="cell progress">
-          <div class="prog-head">
-            <span class="lbl">Progress toward MoneyPuck&rsquo;s projected points</span>
-            {prog && <span class="legend"><span class="lbl"><i class="sw"></i>banked</span><span class="lbl"><i class="sw faint"></i>on pace for</span><span class="lbl"><i class="sw tick"></i>projection</span></span>}
-          </div>
+        <div class="tile"><span class="eb mono">{S.division.name} Division</span><span class="num">{ordinal(S.division.place)}</span><span class="sub">of {S.division.teams} · {ordinal(X.divisionPlace)} by expected goals</span></div>
+        <div class="tile"><span class="eb mono">{S.conference.name} Conference</span><span class="num">{ordinal(S.conference.place)}</span><span class="sub">of {S.conference.teams} · {ordinal(X.conferencePlace)} by expected goals</span></div>
+
+        <div class="tile wide progress">
+          <span class="eb mono">Progress toward MoneyPuck's projected points</span>
           {prog ? (
             <>
-              <p class="prog-line"><span class="val red">{S.points}</span><span class="of">of {prog.proj.toFixed(0)} projected &nbsp;&middot;&nbsp; {S.gamesPlayed} of 82 gp</span></p>
+              <span class="num"><span class="red">{S.points}</span> <span class="of">of {prog.proj.toFixed(0)}</span></span>
               <div class="track">
                 <div class="fill" style={`width:${prog.fill.toFixed(2)}%`}></div>
                 <div class="fill faint" style={`left:${prog.fill.toFixed(2)}%;width:${prog.paceW.toFixed(2)}%`}></div>
                 <div class="tickmark" style={`left:${prog.tick.toFixed(2)}%`}></div>
               </div>
-              <div class="tick-label"><span class="lbl" style={`left:${prog.tick.toFixed(2)}%`}>projection {prog.proj.toFixed(0)}</span></div>
-              <p class="pace">pacing to <strong>{prog.pace.toFixed(0)} pts</strong> &nbsp;&middot;&nbsp; <strong class="red">{signed(prog.delta, 1)}</strong> &nbsp;&middot;&nbsp; {prog.verdict}</p>
+              <span class="sub">pacing to {prog.pace.toFixed(0)} pts · <span class="red">{signed(prog.delta, 1)}</span> · {prog.verdict}</span>
             </>
           ) : (
             <>
-              <div class="ghost" style="width:200px;height:26px;margin-top:10px"></div>
+              <span class="num mute">—</span>
               <div class="track"></div>
-              <div class="tick-label"></div>
-              <p class="note">moneypuck publishes its projection {projWhen} &nbsp;&middot;&nbsp; pace and verdict render from game one</p>
+              <span class="sub">moneypuck publishes its projection {projWhen} · pace and verdict render from game one</span>
             </>
           )}
         </div>
-        <div class="cells-2">
-          <div class="cell"><span class="lbl">{S.division.name} Division</span><span class="val lg">{ordinal(S.division.place)}</span><span class="note">of {S.division.teams}</span></div>
-          <div class="cell"><span class="lbl">{S.conference.name} Conference</span><span class="val lg">{ordinal(S.conference.place)}</span><span class="note">of {S.conference.teams}</span></div>
-        </div>
-        <div>
-          <div class="ranked-head"><span class="lbl light">The numbers behind a paywall elsewhere</span><span class="lbl">league rank, 1 is best &nbsp;&middot;&nbsp; red = top ten</span></div>
-          <div class="cells-4">
-            {tiles.map((t) => (
-              <div class="cell tight">
-                <span class="lbl">{t.label}</span>
-                <span class="val md">{t.value}</span>
-                <span class:list={['sub', { red: t.rank <= 10, light: t.rank > 10 }]}>{t.rankLabel}</span>
-                <span class="note">{t.note}</span>
-              </div>
-            ))}
+        <div class="tile"><span class="eb mono">xG win share</span><span class="num">{(X.xgWinPct * 100).toFixed(1)}%</span><span class="sub">actual {(S.wins / Math.max(1, S.gamesPlayed) * 100).toFixed(1)}% · xG-pythagorean</span></div>
+        <div class="tile"><span class="eb mono">xG points</span><span class="num">{X.xgPoints.toFixed(1)}</span><span class="sub">actual {S.points} · {signed(X.pointsAboveExpected)}</span></div>
+
+        <div class="tile"><span class="eb mono">xG place, NHL</span><span class="num">{ordinal(X.leaguePlace)}</span><span class="sub">actual {ordinal(S.league.place)} of 32</span></div>
+        <div class="tile"><span class="eb mono">Regulation wins</span><span class="num">{S.regulationWins}</span><span class="sub">{S.gamesPlayed} gp · streak {S.streak ?? '—'}</span></div>
+        {tiles.map((t, i) => (
+          <div class:list={['tile', { wide: i >= 2 }]}>
+            <span class="eb mono">{t.label}</span>
+            <span class="num">{t.value}</span>
+            <span class:list={['sub', { red: t.rank <= 10 }]}>{t.rankLabel} · {t.note}</span>
           </div>
-        </div>
+        ))}
       </div>
-    </div>
-    <div class="hero-foot">
-      <span class="lbl">rebuilt {rebuilt} et &nbsp;&middot;&nbsp; nhl api &middot; moneypuck</span>
-      <span class="lbl">{X.method.split(';')[0].toLowerCase()}</span>
+      <div class="viewall mono"><a href="#">View all team stats &rarr;</a></div>
     </div>
   </section>
 
-  <section class="block">
-    <div class="block-head"><h2>Analysis</h2><a class="lbl red" href="#">All articles &rarr;</a></div>
-    <div class="cards-3">
-      {['Pinned', 'Latest', 'Latest'].map((kind) => (
-        <a class:list={['card', 'article', { pinned: kind === 'Pinned' }]} href="#">
-          <span class:list={['lbl', { red: kind === 'Pinned' }]}>{kind === 'Pinned' ? '● Pinned' : 'Latest'}</span>
-          <div class="ghost" style="width:92%;height:19px"></div><div class="ghost" style="width:70%;height:19px"></div>
-          <div class="ghost thin" style="width:100%"></div><div class="ghost thin" style="width:84%"></div><div class="ghost thin" style="width:58%"></div>
-          <div class="card-foot"><span class="ghost" style="width:110px;height:8px"></span><span class="lbl red">Read &rarr;</span></div>
-        </a>
-      ))}
+  <section class="sec" id="analysis">
+    <div class="shell">
+      <h2>Analysis</h2>
+      <div class="row3">
+        {['Pinned', 'Latest', 'Latest'].map((kind) => (
+          <a class:list={['card', { pin: kind === 'Pinned' }]} href="#">
+            <span class:list={['eb', 'mono', { red: kind === 'Pinned' }]}>{kind}</span>
+            <div><div class="ghost" style="width:92%;height:19px;margin-bottom:8px"></div><div class="ghost" style="width:70%;height:19px"></div></div>
+            <div class="ghost thin" style="width:100%"></div>
+            <span class="mono" style="margin-top:auto">Read &rarr;</span>
+          </a>
+        ))}
+      </div>
+      <div class="viewall mono"><a href="#">View all analysis &rarr;</a></div>
     </div>
   </section>
 
-  <section class="block">
-    <div class="block-head"><h2>Top Red Wings</h2><a class="lbl red" href="#">Entire roster &rarr;</a></div>
-    <div class="cards-3">
-      {top3.map((p) => (
-        <a class="card player" href="#">
-          <div class="card-top">
-            <div class="who"><h3 class="dot">{p.name}</h3><span class="lbl">{POS[p.position] ?? p.position} &nbsp;&middot;&nbsp; {season}</span></div>
-            <div class="score"><span class="ghost" style="width:30px;height:16px"></span><span class="lbl red">/ 100</span></div>
-          </div>
-          <div class="portrait">
-            <span class="lbl">Scored &nbsp;{p.goals}</span>
-            <div class="grid">{dots(p.goals).map(() => <i class="d solid"></i>)}</div>
-            <span class="lbl">Expected &nbsp;{Math.round(p.ixG ?? 0)}</span>
-            <div class="grid">{dots(Math.round(p.ixG ?? 0)).map(() => <i class="d"></i>)}</div>
-          </div>
-          <div class="stats">
-            {[['GP', p.gamesPlayed], ['G', p.goals], ['A', p.assists], ['P', p.points], ['ixG', p.ixG != null ? p.ixG.toFixed(1) : '—'], ['5v5 xG%', p.fiveOnFive ? Math.round(p.fiveOnFive.onIceXgPct * 100) : '—']].map(([k, v]) => (
-              <div><span class="lbl">{k}</span><span class="n">{v}</span></div>
-            ))}
-          </div>
-          <span class="lbl red">Full player page &rarr;</span>
-        </a>
-      ))}
+  <section class="sec" id="players">
+    <div class="shell">
+      <h2>Top Red Wings</h2>
+      <div class="row3">
+        {top3.map((p) => (
+          <a class="card player" href="#">
+            <div class="card-top">
+              <div><h3>{p.name}</h3><span class="mono mute">{POS[p.position] ?? p.position} · {season}</span></div>
+              <div class="score"><span class="ghost" style="width:30px;height:16px"></span><span class="mono red">/ 100</span></div>
+            </div>
+            <div class="portrait">
+              <span class="mono mute">Scored {p.goals}</span>
+              <div class="dots">{dots(p.goals).map(() => <i class="d solid"></i>)}</div>
+              <span class="mono mute">Expected {Math.round(p.ixG ?? 0)}</span>
+              <div class="dots">{dots(Math.round(p.ixG ?? 0)).map(() => <i class="d"></i>)}</div>
+            </div>
+            <div class="stats">
+              {[['GP', p.gamesPlayed], ['G', p.goals], ['A', p.assists], ['P', p.points], ['ixG', p.ixG != null ? p.ixG.toFixed(1) : '—'], ['5v5 xG%', p.fiveOnFive ? Math.round(p.fiveOnFive.onIceXgPct * 100) : '—']].map(([k, v]) => (
+                <div><span class="mono mute">{k}</span><span class="n">{v}</span></div>
+              ))}
+            </div>
+            <span class="mono">Full player page &rarr;</span>
+          </a>
+        ))}
+      </div>
+      <div class="viewall mono"><a href="#">View all players &rarr;</a></div>
     </div>
   </section>
 
-  <section class="block">
-    <div class="card prospects">
-      <div class="block-head"><h2>Top Prospects</h2><a class="lbl red" href="#">In the System &rarr;</a></div>
-      <div class="prow head"><span class="lbl">Rank</span><span class="lbl">Player</span><span class="lbl">Club &nbsp;&middot;&nbsp; league</span><span class="lbl">Age &nbsp;&middot;&nbsp; drafted</span><span class="lbl r">Score</span></div>
-      {[1, 2, 3, 4, 5].map((i) => (
-        <div class="prow">
-          <span class:list={['dot', 'rank', { red: i === 1 }]}>{String(i).padStart(2, '0')}</span>
-          <span class="ghost" style={`width:${i % 2 ? 62 : 48}%;height:14px`}></span>
-          <span class="ghost thin" style="width:72%"></span>
-          <span class="ghost thin" style="width:60%"></span>
-          <span class="r"><span class="ghost" style="width:42px;height:14px"></span></span>
-        </div>
-      ))}
+  <section class="sec" id="prospects">
+    <div class="shell">
+      <h2>Top Prospects</h2>
+      <div class="plist">
+        <div class="prow head mono"><span>Rank</span><span>Player</span><span>Club · league</span><span class="r">Score</span></div>
+        {[1, 2, 3, 4, 5].map((i) => (
+          <div class="prow">
+            <span class:list={['rk', { red: i === 1 }]}>{i}</span>
+            <span class="ghost" style={`width:${i % 2 ? 62 : 48}%`}></span>
+            <span class="ghost thin" style="width:60%"></span>
+            <span class="r"><span class="ghost" style="width:42px;margin-left:auto"></span></span>
+          </div>
+        ))}
+      </div>
+      <div class="viewall mono"><a href="#">View all prospects &rarr;</a></div>
     </div>
   </section>
 </Base>
 
-<style>
-  /* shared bits */
-  .lbl { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #c9c8c4; }
-  .lbl.light { color: #e2e1de; }
-  .red { color: var(--red) !important; }
-  .dot { font-family: 'Doto', 'IBM Plex Mono', monospace; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1; margin: 0; }
-  .mono, .val, .sub, .note, .rec, .rec-line, .rec-foot, .prog-line, .pace, .n { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
-  .ghost { display: block; border-radius: 999px; background: #91908d; opacity: 0.3; height: 9px; }
-  .ghost.thin { height: 8px; opacity: 0.22; }
-  h2 { font-family: 'Space Grotesk', ui-sans-serif, sans-serif; font-weight: 600; font-size: 32px; letter-spacing: -0.025em; line-height: 1.06; margin: 0; border: 0; padding: 0; }
-  a { text-decoration: none; }
-
-  /* hero */
-  .hero { background: var(--dark); color: var(--dark-type); border-radius: 22px; padding: 22px 26px; display: flex; flex-direction: column; gap: 10px; }
-  .hero-kicker, .hero-foot { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 0 4px; flex-wrap: wrap; }
-  .hero-kicker .lbl { font-size: 13px; color: #e2e1de; }
-  .hero-foot .lbl { font-size: 11px; color: #b9b8b5; }
-  .hero-grid { display: grid; grid-template-columns: minmax(0, 600fr) minmax(0, 700fr); gap: 10px; align-items: stretch; }
-  .col { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
-  .cell { background: #1f1e1d; border-radius: 16px; padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 7px; min-width: 0; }
-  .cell.tight { padding: 14px 16px 12px; }
-  .cell.record { flex: 1; justify-content: space-between; padding: 18px 22px 16px; }
-  .rec { margin: 10px 0 0; font-size: clamp(64px, 8vw, 116px); font-weight: 500; letter-spacing: -0.06em; line-height: 0.9; color: var(--dark-type); white-space: nowrap; }
-  .rec-line { margin: 14px 0 0; font-size: 19px; color: #e2e1de; }
-  .rec-line .pts { color: var(--red); font-weight: 600; font-size: 26px; }
-  .rec-foot { margin: 16px 0 0; font-size: 14px; color: #c9c8c4; }
-  .val { font-size: 40px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: var(--dark-type); }
-  .val.sm { font-size: 30px; } .val.md { font-size: 34px; } .val.lg { font-size: 40px; }
-  .sub { font-size: 14.5px; font-weight: 600; color: var(--red); }
-  .sub.light { color: #e2e1de; }
-  .note { font-size: 13px; color: #c9c8c4; line-height: 1.45; margin: 0; }
-  .places { display: flex; flex-direction: column; gap: 6px; }
-  .place { display: flex; align-items: baseline; gap: 8px; }
-  .place .lbl { font-size: 11px; }
-  .cells-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-  .cells-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
-  .cells-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
-  .ranked-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: 0 2px 8px; flex-wrap: wrap; }
-  .ranked-head .lbl:last-child { font-size: 11px; }
-  .progress { padding: 14px 18px; justify-content: space-between; }
-  .prog-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
-  .legend { display: flex; gap: 14px; } .legend .lbl { font-size: 11px; }
-  .sw { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--red); margin-right: 5px; vertical-align: middle; }
-  .sw.faint { opacity: 0.35; } .sw.tick { width: 2px; height: 10px; border-radius: 0; background: var(--dark-type); }
-  .prog-line { margin: 10px 0 0; display: flex; align-items: baseline; gap: 10px; }
-  .prog-line .val { font-size: 36px; } .prog-line .of { font-size: 17px; color: #e2e1de; }
-  .track { position: relative; height: 12px; border-radius: 999px; background: #3a3936; margin: 12px 0 4px; }
-  .fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 999px; background: var(--red); }
-  .fill.faint { border-radius: 0 999px 999px 0; opacity: 0.35; }
-  .tickmark { position: absolute; top: -6px; bottom: -6px; width: 2px; background: var(--dark-type); }
-  .tick-label { position: relative; height: 14px; }
-  .tick-label .lbl { position: absolute; transform: translateX(-50%); font-size: 11px; color: #e2e1de; white-space: nowrap; }
-  .pace { margin: 6px 0 0; font-size: 15px; color: var(--dark-type); }
-
-  /* sections */
-  .block { margin-top: 34px; }
-  .block-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin: 0 0 14px; flex-wrap: wrap; }
-  .block-head .lbl { font-size: 11px; white-space: nowrap; }
-  .cards-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-  .card { background: var(--dark-type); border-radius: 22px; padding: 26px 28px 24px; display: flex; flex-direction: column; gap: 16px; min-width: 0; color: var(--ink); }
-  .card .lbl { font-size: 11px; color: var(--ink-soft); }
-  .player { gap: 20px; }
-  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
-  .who { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
-  .who h3 { font-size: 26px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .who .lbl { color: var(--ink-soft); font-size: 11px; }
-  .score { flex: none; width: 74px; height: 74px; border-radius: 50%; border: 2px solid var(--red); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; }
-  .score .lbl { font-size: 9px; }
-  .portrait { display: flex; flex-direction: column; gap: 10px; }
-  .portrait .lbl { font-size: 10px; color: var(--ink-soft); }
-  .portrait .grid { display: grid; grid-template-columns: repeat(14, 9px); gap: 3px; }
-  .d { width: 9px; height: 9px; border-radius: 50%; border: 1.2px solid var(--muted); box-sizing: border-box; display: block; }
-  .d.solid { background: var(--red); border-color: var(--red); }
-  .stats { margin-top: auto; border-top: 1px solid var(--rule); padding-top: 16px; display: flex; justify-content: space-between; gap: 10px; }
-  .stats div { display: flex; flex-direction: column; gap: 5px; }
-  .stats .lbl { font-size: 10px; } .stats .n { font-size: 19px; font-weight: 600; }
-  .article { min-height: 250px; }
-  .article.pinned { border: 1px solid var(--red); }
-  .card-foot { margin-top: auto; display: flex; justify-content: space-between; align-items: baseline; }
-  .prospects { padding: 28px 34px 22px; gap: 0; }
-  .prospects .block-head { margin-bottom: 18px; }
-  .prow { display: grid; grid-template-columns: 56px minmax(0, 1fr) 160px 120px 90px; align-items: center; gap: 18px; padding: 16px 0; border-top: 1px solid var(--rule); }
-  .prow.head { border: 0; padding: 0 0 10px; } .prow .lbl { font-size: 10px; }
-  .prow .r { display: flex; justify-content: flex-end; } .prow .lbl.r { text-align: right; display: block; }
-  .rank { font-size: 26px; color: var(--ink); }
-
-  @media (max-width: 1000px) {
-    .hero-grid { grid-template-columns: 1fr; }
-    .cards-3 { grid-template-columns: 1fr; }
-    .prow { grid-template-columns: 44px minmax(0, 1fr) 90px; } .prow > :nth-child(4), .prow > :nth-child(5) { display: none; }
+<script>
+  const clock = document.getElementById('clock');
+  if (clock) {
+    const tick = () => { clock.textContent = new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Detroit' }); };
+    tick(); setInterval(tick, 30000);
   }
-  @media (max-width: 640px) {
-    .hero { padding: 14px 12px; border-radius: 16px; overflow: hidden; }
-    .cell { padding: 14px 14px 12px; }
-    .cell.record { padding: 16px 16px 14px; }
-    .cells-3, .cells-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .rec { font-size: clamp(40px, 13.5vw, 60px); letter-spacing: -0.05em; }
-    .rec-line { font-size: 14px; } .rec-line .pts { font-size: 19px; }
-    .val { font-size: 32px; } .val.lg { font-size: 34px; } .val.md { font-size: 28px; }
-    .hero-kicker .lbl, .hero-foot .lbl, .note, .rec-foot, .prog-line .of { overflow-wrap: anywhere; }
-    .card { padding: 20px 18px; }
-    .stats { flex-wrap: wrap; gap: 12px 18px; }
-    .prospects { padding: 20px 18px 14px; }
-    .track { margin-right: 8px; }
+</script>
+
+<style>
+  /* hero */
+  .hero { position: relative; height: calc(100vh - 94px); min-height: 640px; border-bottom: 1px solid var(--rule); }
+  .hero .shell { position: relative; height: 100%; }
+  .stamp { position: absolute; left: var(--gutter); top: 22px; color: var(--mute); z-index: 3; }
+  .stamp i { display: block; width: 5px; height: 5px; background: var(--red); margin-bottom: 8px; }
+  h1 { position: absolute; left: var(--gutter); top: 96px; z-index: 3; pointer-events: none; }
+  h1 span { display: block; }
+  h1 .l2 { padding-left: .12em; }
+  h1 .l3 { padding-left: 1.05em; }
+  h1 .red { display: inline; }
+  .foot { position: absolute; left: var(--gutter); right: var(--gutter); bottom: 18px; display: flex; justify-content: space-between; gap: 16px; color: var(--mute); z-index: 3; }
+
+  /* dashboard extras */
+  .progress .num { font-size: 44px; }
+  .progress .num .of { font-size: 16px; font-weight: 500; color: var(--mute); letter-spacing: 0; }
+
+  /* player cards */
+  .card.player { gap: 14px; }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .score { display: flex; align-items: baseline; gap: 6px; }
+  .portrait { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; align-items: center; }
+  .dots { display: flex; flex-wrap: wrap; gap: 3px; }
+  .d { width: 7px; height: 7px; border: 1px solid var(--ink); border-radius: 50%; }
+  .d.solid { background: var(--ink); }
+  .stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; border-top: 1px solid var(--rule); padding-top: 10px; }
+  .stats div { display: flex; flex-direction: column; gap: 2px; }
+  .stats .n { font-family: var(--mono); font-size: 15px; font-variant-numeric: tabular-nums; }
+
+  @media (max-width: 900px) {
+    .hero { height: 100vh; }
+    .foot { flex-direction: column; gap: 4px; background: var(--paper); padding: 8px 0 0; }
   }
 </style>
