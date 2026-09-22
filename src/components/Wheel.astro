@@ -10,7 +10,7 @@ const depth = N * STEP;
 ---
 <div class="stage" id="wheel-stage" aria-hidden="true">
   <div class="wheel" id="wheel">
-    <div class="back" style={`transform:translateZ(${-depth}px)`}>
+    <div class="back" style={`transform:translateZ(${-depth - 6}px)`}>
       <svg viewBox={parts.viewBox}><path class="tire" d={parts.tire} /><path class="spin" d={parts.spokes} /></svg>
     </div>
     <div class="tread">
@@ -22,7 +22,7 @@ const depth = N * STEP;
       ))}
       <svg class="tl" viewBox="0 0 840 840" style={`transform:translateZ(${-depth - 1}px)`}><circle cx="420" cy="420" r="415" class="edge" /></svg>
     </div>
-    <div class="face" style="transform:translateZ(0.5px)">
+    <div class="face" style="transform:translateZ(6px)">
       <svg viewBox={parts.viewBox}><path class="tire" d={parts.tire} /><path class="spin" d={parts.spokes} /></svg>
     </div>
   </div>
@@ -39,7 +39,7 @@ const depth = N * STEP;
   .spin { transform-box: fill-box; transform-origin: center; transform: rotate(var(--spin, 0deg)); }
   .tread { transform: rotate(var(--spin, 0deg)); opacity: var(--tread, 0.35); }
   /* phones: the wheel's left edge sits on the gutter, in line with the wordmark; the rest runs off the right edge (page wrapper clips it) */
-  @media (max-width: 900px) { .stage { left: var(--gutter); right: auto; top: 44vh; width: 124vw; } }
+  @media (max-width: 640px) { .stage { left: var(--gutter); right: auto; top: 44vh; width: 124vw; } }
   @media (prefers-reduced-motion: reduce) { .wheel { transform: rotateX(28deg) !important; } .tread { opacity: 1; } }
 </style>
 

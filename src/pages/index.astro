@@ -198,7 +198,8 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   .stats div { display: flex; flex-direction: column; gap: 2px; }
   .stats .n { font-family: var(--mono); font-size: 15px; font-variant-numeric: tabular-nums; }
 
-  @media (max-width: 900px) {
+  /* phone layout only below 640px; a narrow desktop window keeps the desktop hero so resizing never snaps */
+  @media (max-width: 640px) {
     .hero { height: 100svh; }
     h1 { font-size: clamp(40px, 14.5vw, 64px); }
     h1 .l3 { padding-left: .5em; }
