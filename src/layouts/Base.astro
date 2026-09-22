@@ -48,9 +48,17 @@ const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['Pr
               {nav.map(([label, href]) => <a href={href}>{label}</a>)}
             </nav>
             <a class="cta mono" href="#">Subscribe</a>
+            <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+              <span></span><span></span><span></span>
+            </button>
           </div>
         </div>
       </div>
+      <nav class="menu mono" id="mobile-menu" aria-label="Primary, mobile" hidden>
+        <div class="shell">
+          {nav.map(([label, href]) => <a href={href}>{label}</a>)}
+        </div>
+      </nav>
     </header>
     <main>
       <slot />
@@ -77,11 +85,21 @@ const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['Pr
         let last = window.scrollY, queued = false;
         const update = () => {
           const y = window.scrollY;
-          if (y <= 8 || y < last) hdr.classList.remove('is-hidden');
+          if (y <= 8 || y < last || hdr.classList.contains('menu-open')) hdr.classList.remove('is-hidden');
           else if (y > last && y > hdr.offsetHeight + 40) hdr.classList.add('is-hidden');
           last = y; queued = false;
         };
         addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(update); } }, { passive: true });
+      })();
+      // Mobile burger menu.
+      (() => {
+        const hdr = document.querySelector('.hdr'), btn = document.querySelector('.burger'), menu = document.getElementById('mobile-menu');
+        if (!hdr || !btn || !menu) return;
+        const set = (open) => { hdr.classList.toggle('menu-open', open); menu.hidden = !open; btn.setAttribute('aria-expanded', String(open)); btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); };
+        btn.addEventListener('click', () => set(!hdr.classList.contains('menu-open')));
+        menu.addEventListener('click', (e) => { if (e.target.closest('a')) set(false); });
+        addEventListener('keydown', (e) => { if (e.key === 'Escape') set(false); });
+        addEventListener('resize', () => { if (innerWidth > 560) set(false); });
       })();
       // Section headings: the text slides out from behind the red "//" when the heading scrolls into view.
       (() => {
@@ -126,7 +144,20 @@ const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['Pr
     .nav { gap: 14px; font-size: 10px; }
     .home :global(.wm) { height: 24px; }
   }
+  /* burger + dropdown menu, phones only */
+  .burger { display: none; width: 40px; height: 40px; margin-right: -8px; padding: 0; border: 0; background: none; cursor: pointer; flex-direction: column; justify-content: center; align-items: center; gap: 5px; }
+  .burger span { display: block; width: 20px; height: 2px; background: var(--ink); transition: transform 200ms ease, opacity 200ms ease; }
+  .hdr.menu-open .burger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hdr.menu-open .burger span:nth-child(2) { opacity: 0; }
+  .hdr.menu-open .burger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .menu { display: none; border-bottom: 1px solid var(--rule); background: var(--paper); }
+  .menu .shell { display: flex; flex-direction: column; }
+  .menu a { padding: 16px 0; border-top: 1px solid var(--rule); font-size: 13px; }
+  .menu a:first-child { border-top: 0; }
   @media (max-width: 560px) {
     .nav { display: none; }
+    .burger { display: flex; }
+    .hdr.menu-open .menu { display: block; }
+    .hdr.menu-open .top { border-bottom-color: transparent; }
   }
 </style>
