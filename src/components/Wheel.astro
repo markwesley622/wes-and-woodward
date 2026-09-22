@@ -57,7 +57,8 @@ const depth = N * STEP;
     function frame(now) {
       queued = false;
       const h = hero.offsetHeight;
-      const range = h - innerHeight * 0.35;
+      // layout-viewport height: innerHeight shrinks under pinch zoom and would make the wheel jump
+      const range = h - document.documentElement.clientHeight * 0.35;
       const sy = fixedSy !== null ? fixedSy : scrollY;
       const p = Math.min(1, Math.max(0, sy / range));
       const tilt = TILT_MIN + p * (TILT_MAX - TILT_MIN);

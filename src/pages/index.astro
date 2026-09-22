@@ -170,11 +170,12 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
 
 <style>
   /* hero */
-  .hero { position: relative; height: calc(100vh - 94px); min-height: 640px; border-bottom: 1px solid var(--rule); }
+  /* overflow-x clip (not hidden) keeps the wheel free to parallax down past the hero's bottom edge while clipping its sides */
+  .hero { position: relative; height: calc(100vh - 94px); min-height: 640px; border-bottom: 1px solid var(--rule); overflow-x: clip; }
   .hero .shell { position: relative; height: 100%; }
   .stamp { position: absolute; left: var(--gutter); top: 22px; color: var(--mute); z-index: 3; }
   .stamp i { display: block; width: 5px; height: 5px; background: var(--red); margin-bottom: 8px; }
-  h1 { position: absolute; left: var(--gutter); top: 96px; z-index: 3; pointer-events: none; }
+  h1 { position: absolute; left: var(--gutter); right: var(--gutter); top: 96px; z-index: 3; pointer-events: none; }
   h1 span { display: block; }
   h1 .l2 { padding-left: .12em; }
   h1 .l3 { padding-left: 1.05em; }
@@ -198,7 +199,9 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   .stats .n { font-family: var(--mono); font-size: 15px; font-variant-numeric: tabular-nums; }
 
   @media (max-width: 900px) {
-    .hero { height: 100vh; }
+    .hero { height: 100svh; }
+    h1 { font-size: clamp(40px, 14.5vw, 64px); }
+    h1 .l3 { padding-left: .5em; }
     .foot { flex-direction: column; gap: 4px; background: var(--paper); padding: 8px 0 0; }
   }
 </style>
