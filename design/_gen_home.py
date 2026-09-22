@@ -173,7 +173,7 @@ hero = f"""
   <div style="padding: 10px 64px 0;">
     <div style="background: {GREY1}; border-radius: 22px; padding: 22px 26px 22px; display: flex; flex-direction: column; gap: 10px;">
       <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 0 4px 4px;">
-        <span class="lbl" style="font-size: 11px; color: {TXT2};"><span style="color: {RED};">Detroit Red Wings</span> &nbsp;&middot;&nbsp; {nxt}</span>
+        <span class="lbl" style="font-size: 11px; color: {TXT2};"><span style="color: {RED}; font-weight: 700;">Detroit Red Wings</span> &nbsp;&middot;&nbsp; {nxt}</span>
         <a href="#" class="lbl" style="font-size: 10px; color: {RED}; white-space: nowrap;">Full team dashboard &rarr;</a>
       </div>
       <div style="display: grid; grid-template-columns: 600px minmax(0, 1fr); gap: 10px; align-items: stretch;">
@@ -298,7 +298,7 @@ prospects = f"""
   </div>
 """
 
-body = topbar(None) + hero + players + articles + prospects + '\n\n' + FOOTER
+body = topbar(None) + hero + articles + players + prospects + '\n\n' + FOOTER
 
 script = '''class Component extends DCLogic {
   renderVals() { return {}; }

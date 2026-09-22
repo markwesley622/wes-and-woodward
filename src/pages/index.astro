@@ -50,7 +50,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
 <Base title="Wes & Woodward — Detroit Red Wings, by the numbers" description="A glance dashboard for the Detroit Red Wings: record, expected-goals standings, and the numbers behind a paywall elsewhere.">
   <section class="hero" aria-label="Red Wings dashboard">
     <div class="hero-kicker">
-      <span class="lbl"><span class="red">Detroit Red Wings</span> &nbsp;&middot;&nbsp; {nxt}</span>
+      <span class="lbl"><span class="red" style="font-weight: 700;">Detroit Red Wings</span> &nbsp;&middot;&nbsp; {nxt}</span>
       <a class="lbl red" href="#">Full team dashboard &rarr;</a>
     </div>
     <div class="hero-grid">
@@ -139,6 +139,20 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   </section>
 
   <section class="block">
+    <div class="block-head"><h2>Analysis</h2><a class="lbl red" href="#">All articles &rarr;</a></div>
+    <div class="cards-3">
+      {['Pinned', 'Latest', 'Latest'].map((kind) => (
+        <a class:list={['card', 'article', { pinned: kind === 'Pinned' }]} href="#">
+          <span class:list={['lbl', { red: kind === 'Pinned' }]}>{kind === 'Pinned' ? '● Pinned' : 'Latest'}</span>
+          <div class="ghost" style="width:92%;height:19px"></div><div class="ghost" style="width:70%;height:19px"></div>
+          <div class="ghost thin" style="width:100%"></div><div class="ghost thin" style="width:84%"></div><div class="ghost thin" style="width:58%"></div>
+          <div class="card-foot"><span class="ghost" style="width:110px;height:8px"></span><span class="lbl red">Read &rarr;</span></div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="block">
     <div class="block-head"><h2>Top Red Wings</h2><a class="lbl red" href="#">Entire roster &rarr;</a></div>
     <div class="cards-3">
       {top3.map((p) => (
@@ -159,20 +173,6 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
             ))}
           </div>
           <span class="lbl red">Full player page &rarr;</span>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="block">
-    <div class="block-head"><h2>Analysis</h2><a class="lbl red" href="#">All articles &rarr;</a></div>
-    <div class="cards-3">
-      {['Pinned', 'Latest', 'Latest'].map((kind) => (
-        <a class:list={['card', 'article', { pinned: kind === 'Pinned' }]} href="#">
-          <span class:list={['lbl', { red: kind === 'Pinned' }]}>{kind === 'Pinned' ? '● Pinned' : 'Latest'}</span>
-          <div class="ghost" style="width:92%;height:19px"></div><div class="ghost" style="width:70%;height:19px"></div>
-          <div class="ghost thin" style="width:100%"></div><div class="ghost thin" style="width:84%"></div><div class="ghost thin" style="width:58%"></div>
-          <div class="card-foot"><span class="ghost" style="width:110px;height:8px"></span><span class="lbl red">Read &rarr;</span></div>
         </a>
       ))}
     </div>
