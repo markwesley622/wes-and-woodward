@@ -37,6 +37,7 @@ const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['Pr
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" />
   </head>
   <body>
+    <div class="page">
     <div class="banner mono lc">{banner}</div>
     <header class="hdr">
       <div class="shell">
@@ -67,6 +68,7 @@ const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['Pr
         </p>
       </div>
     </footer>
+    </div>
     <script>
       // Header: hide on scroll down, show on scroll up.
       (() => {
@@ -102,6 +104,8 @@ const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['Pr
 </html>
 
 <style>
+  /* iOS ignores overflow-x on html/body for pinch-pan; an inner wrapper with clip is the reliable fence. clip (not hidden) keeps the sticky header working. */
+  .page { overflow-x: clip; position: relative; }
   .banner { background: var(--red); color: #fff; text-align: center; padding: 7px 12px; font-size: 12px; }
   /* Sticky header: hides on scroll down, returns on any scroll up. Banner scrolls away normally. */
   .hdr { position: sticky; top: 0; z-index: 6; background: var(--paper); transform: translateY(0); transition: transform 240ms ease; will-change: transform; }
