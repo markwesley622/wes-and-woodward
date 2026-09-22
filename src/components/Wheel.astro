@@ -38,7 +38,8 @@ const depth = N * STEP;
   circle.edge { stroke-width: 1.6; }
   .spin { transform-box: fill-box; transform-origin: center; transform: rotate(var(--spin, 0deg)); }
   .tread { transform: rotate(var(--spin, 0deg)); opacity: var(--tread, 0.35); }
-  @media (max-width: 900px) { .stage { right: -22vw; top: 44vh; width: 124vw; } }
+  /* phones: the wheel's left edge sits on the gutter, in line with the wordmark; the rest runs off the right edge (page wrapper clips it) */
+  @media (max-width: 900px) { .stage { left: var(--gutter); right: auto; top: 44vh; width: 124vw; } }
   @media (prefers-reduced-motion: reduce) { .wheel { transform: rotateX(28deg) !important; } .tread { opacity: 1; } }
 </style>
 
