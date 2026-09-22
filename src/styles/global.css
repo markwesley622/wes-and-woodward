@@ -27,7 +27,12 @@ img, svg { display: block; }
 .mute { color: var(--mute); }
 h1 { margin: 0; font-weight: 600; font-size: clamp(64px, 9.6vw, 146px); line-height: .86; letter-spacing: -.035em; text-transform: uppercase; }
 h2 { margin: 0 0 28px; font-weight: 600; font-size: clamp(34px, 4.4vw, 56px); line-height: .95; letter-spacing: -.03em; text-transform: uppercase; }
-h2::before { content: "// "; color: var(--red); }
+h2::before { content: "// "; color: var(--red); position: relative; z-index: 1; }
+/* heading reveal: text slides out from behind the "//" once the heading is in view (script in Base.astro) */
+.h2-reveal .h2-wrap { display: inline-block; overflow: hidden; vertical-align: top; }
+.h2-reveal .h2-txt { display: inline-block; transform: translateX(-104%); transition: transform 640ms cubic-bezier(.2, .8, .2, 1); will-change: transform; }
+.h2-reveal.in .h2-txt { transform: translateX(0); }
+@media (prefers-reduced-motion: reduce) { .h2-reveal .h2-txt { transform: none; transition: none; } }
 h3 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -.02em; line-height: 1.1; }
 
 /* layout */

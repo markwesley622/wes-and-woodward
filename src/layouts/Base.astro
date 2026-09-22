@@ -23,7 +23,7 @@ if (D.seasonState === 'offseason') {
 } else if (NG) {
   banner += ` · next ${vs(NG)} ${NG.opponent} ${mdy(NG.date)}`;
 }
-const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['Analysis', `${base}#analysis`], ['Prospects', `${base}#prospects`], ['About', `${base}about/`]];
+const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['Prospects', `${base}#prospects`], ['Analysis', `${base}#analysis`], ['About', `${base}about/`]];
 ---
 <!doctype html>
 <html lang="en">
@@ -67,12 +67,46 @@ const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['An
         </p>
       </div>
     </footer>
+    <script>
+      // Header: hide on scroll down, show on scroll up.
+      (() => {
+        const hdr = document.querySelector('.hdr');
+        if (!hdr) return;
+        let last = window.scrollY, queued = false;
+        const update = () => {
+          const y = window.scrollY;
+          if (y <= 8 || y < last) hdr.classList.remove('is-hidden');
+          else if (y > last && y > hdr.offsetHeight + 40) hdr.classList.add('is-hidden');
+          last = y; queued = false;
+        };
+        addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(update); } }, { passive: true });
+      })();
+      // Section headings: the text slides out from behind the red "//" when the heading scrolls into view.
+      (() => {
+        const heads = document.querySelectorAll('.sec h2');
+        if (!heads.length) return;
+        heads.forEach((h) => {
+          const wrap = document.createElement('span'); wrap.className = 'h2-wrap';
+          const txt = document.createElement('span'); txt.className = 'h2-txt';
+          while (h.firstChild) txt.appendChild(h.firstChild);
+          wrap.appendChild(txt); h.appendChild(wrap); h.classList.add('h2-reveal');
+        });
+        if (!('IntersectionObserver' in window)) { heads.forEach((h) => h.classList.add('in')); return; }
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+        }, { threshold: 0.6 });
+        heads.forEach((h) => io.observe(h));
+      })();
+    </script>
   </body>
 </html>
 
 <style>
   .banner { background: var(--red); color: #fff; text-align: center; padding: 7px 12px; font-size: 12px; }
-  .hdr { position: relative; z-index: 6; background: var(--paper); }
+  /* Sticky header: hides on scroll down, returns on any scroll up. Banner scrolls away normally. */
+  .hdr { position: sticky; top: 0; z-index: 6; background: var(--paper); transform: translateY(0); transition: transform 240ms ease; will-change: transform; }
+  .hdr.is-hidden { transform: translateY(-100%); }
+  @media (prefers-reduced-motion: reduce) { .hdr { transition: none; } }
   .top { display: flex; align-items: center; justify-content: space-between; gap: 18px; height: 64px; border-bottom: 1px solid var(--rule); }
   .home { color: var(--ink); display: block; }
   .home :global(.wm) { height: 30px; width: auto; }
