@@ -8,7 +8,7 @@ const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).to
 const mdy = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
 const age = Math.floor((Date.now() - new Date(B.birthDate)) / (365.25 * 24 * 3600 * 1000));
 const ht = B.heightIn ? `${Math.floor(B.heightIn / 12)}′${B.heightIn % 12}″` : '';
-const POS = { C: 'Centre', L: 'Left wing', R: 'Right wing', D: 'Defence' };
+const POS = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense' };
 const f5 = MP.fiveOnFive || {};
 const tier = SC.value >= 88 ? 'elite' : SC.value >= 73 ? 'top-line' : SC.value >= 50 ? 'above average' : SC.value >= 27 ? 'below average' : 'replacement level';
 
@@ -42,7 +42,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
         <div class="tile"><span class="eb mono">Games</span><span class="num">{L.gp}</span><span class="sub">{season}</span></div>
         <div class="tile"><span class="eb mono">Goals · assists · points</span><span class="num">{L.goals}–{L.assists}–{L.points}</span><span class="sub">{L.ppPoints} on the power play · {signed(L.plusMinus, 0)}</span></div>
         <div class="tile"><span class="eb mono">Individual xG</span><span class="num">{MP.ixG?.toFixed(1) ?? '—'}</span><span class="sub">{MP.goalsAboveExpected != null ? `${signed(MP.goalsAboveExpected)} goals vs expected` : ''}</span></div>
-        <div class="tile"><span class="eb mono">5v5 xG share</span><span class="num">{f5.onIceXgPct != null ? `${Math.round(f5.onIceXgPct * 100)}%` : '—'}</span><span class:list={['sub', { red: (f5.pctl_onIceXgPct ?? 0) >= 75 }]}>{f5.qualifiesForPercentiles ? `${f5.pctl_onIceXgPct}th percentile among ${SC.position === 'D' ? 'defencemen' : 'forwards'} · ${Math.round(f5.icetimeMinutes)} min` : ''}</span></div>
+        <div class="tile"><span class="eb mono">5v5 xG share</span><span class="num">{f5.onIceXgPct != null ? `${Math.round(f5.onIceXgPct * 100)}%` : '—'}</span><span class:list={['sub', { red: (f5.pctl_onIceXgPct ?? 0) >= 75 }]}>{f5.qualifiesForPercentiles ? `${f5.pctl_onIceXgPct}th percentile among ${SC.position === 'D' ? 'defensemen' : 'forwards'} · ${Math.round(f5.icetimeMinutes)} min` : ''}</span></div>
       </div>
     </div>
   </section>
@@ -79,7 +79,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
 
         </div>
         <div class="prose-sm">
-          <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with twenty or more games this season, forwards and defencemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {P.name.split(' ')[1]} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} skaters, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how much of that is noise given how well each component repeats at his minutes; the number itself is this season's delivered value, not a projection.</p>
+          <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with twenty or more games this season, forwards and defensemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {P.name.split(' ')[1]} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} skaters, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how much of that is noise given how well each component repeats at his minutes; the number itself is this season's delivered value, not a projection.</p>
           <p>Two outside checks. HockeyStatCards' Luszczyszyn model puts his net rating in the {HS.Net?.percentile}th percentile ({HS.Net?.value}) and his game score in the {HS['Game score']?.percentile}th. Evolving-Hockey's own headline number is {SC.raw.WAR} wins above replacement.</p>
         </div>
       </div>

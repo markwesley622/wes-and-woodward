@@ -36,7 +36,7 @@ const tile = (key) => tiles[D.tiles.filter((t) => KEEP[t.key]).findIndex((t) => 
 const T5 = tile('xg_share_5v5'), TPP = tile('pp_xgf60'), TPK = tile('pk_xga60');
 
 // top three, ordered by game score until the value score ships
-const POS = { C: 'Centre', L: 'Left wing', R: 'Right wing', D: 'Defence' };
+const POS = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense' };
 const top3 = skaters.filter((p) => p.gameScore != null).sort((a, b) => b.gameScore - a.gameScore).slice(0, 3);
 const dots = (n) => Array.from({ length: Math.max(0, n) });
 ---

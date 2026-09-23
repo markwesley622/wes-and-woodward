@@ -162,7 +162,7 @@ def build(pid, fetch=False):
         "neighbours": [
             {"rank": i + 1, "name": t[1], "team": t[2], "gp": t[3], "pos": t[4], "value": qbr(x_pool, t[0]), "goals": round(t[0], 1), "isMe": t[1] == name}
             for i, t in enumerate(ranked) if abs(i - next(j for j, u in enumerate(ranked) if u[1] == name)) <= 2],
-        "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defencemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
+        "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
     }
 
     # ---- MoneyPuck (from the site's skaters.json, already percentiled)
