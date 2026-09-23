@@ -2,7 +2,11 @@
 import Base from '../../layouts/Base.astro';
 import P from '../../../data/site/players/8481542.json';
 
-const B = P.bio, L = P.seasonLine, SC = P.score, MP = P.moneypuck, G = P.gameLog, GS = P.gameScore, HS = P.hsc;
+const B = P.bio, L = P.seasonLine, SC = P.score, MP = P.moneypuck, G = P.gameLog, GS = P.gameScore, HS = P.hsc, TG = P.teamGameScore;
+const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
+const last = (n) => n.split(' ').slice(-1)[0];
+const gameLink = (r) => r.gameId ? `#g-${r.gameId}` : '#gamelog';
+const gameText = (r) => r.opponent ? `${mdy(r.date)} ${r.home ? 'vs' : 'at'} ${r.opponent}` : r.date;
 const season = `${P.seasonLabel.slice(0, 4)}–${P.seasonLabel.slice(5)}`;
 const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
 const mdy = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
@@ -182,10 +186,14 @@ const RECENT = 10;
     <div class="shell">
       <h2>Game log</h2>
       <div class="gs-tiles">
-        <div class="tile"><span class="eb mono">Game score, average</span><span class="num">{GS.average.toFixed(2)}</span><span class="sub">{GS.games} games · Luszczyszyn game score via HockeyStatCards</span></div>
-        <div class="tile"><span class="eb mono">Best game</span><span class="num">{GS.best.value.toFixed(2)}</span><span class="sub">{mdy(GS.best.date)} vs {GS.best.opponent}</span></div>
-        <div class="tile"><span class="eb mono">Worst game</span><span class="num">{GS.worst.value.toFixed(2)}</span><span class="sub">{mdy(GS.worst.date)} vs {GS.worst.opponent}</span></div>
-        <div class="tile"><span class="eb mono">Games at 2.0 or better</span><span class="num">{GS.above2}</span><span class="sub">{GS.below0} below zero</span></div>
+        <div class="tile"><span class="eb mono">Game score, average</span><span class="num">{GS.average.toFixed(2)}</span><span class="sub">{GS.games} games · Luszczyszyn game score via HockeyStatCards</span>
+          {TG && <span class="fn mono">{ordinal(TG.avgRank)} of {TG.players} Red Wings with {TG.minGames}+ games</span>}</div>
+        <div class="tile"><span class="eb mono">Best game</span><span class="num">{GS.best.value.toFixed(2)}</span><span class="sub">{mdy(GS.best.date)} {G.find((g) => g.date === GS.best.date)?.home ? 'vs' : 'at'} {GS.best.opponent}</span>
+          {TG && <span class="fn mono">Team best: {TG.best.name === P.name ? 'his' : last(TG.best.name) + ','} {TG.best.value.toFixed(2)} <a href={gameLink(TG.best)} class="glink">{gameText(TG.best)}</a></span>}</div>
+        <div class="tile"><span class="eb mono">Worst game</span><span class="num">{GS.worst.value.toFixed(2)}</span><span class="sub">{mdy(GS.worst.date)} {G.find((g) => g.date === GS.worst.date)?.home ? 'vs' : 'at'} {GS.worst.opponent}</span>
+          {TG && <span class="fn mono">Team worst: {TG.worst.name === P.name ? 'his' : last(TG.worst.name) + ','} {TG.worst.value.toFixed(2)} <a href={gameLink(TG.worst)} class="glink">{gameText(TG.worst)}</a></span>}</div>
+        <div class="tile"><span class="eb mono">Games at 2.0 or better</span><span class="num">{GS.above2}</span><span class="sub">{GS.below0} below zero</span>
+          {TG && <span class="fn mono">{TG.most2.name === P.name ? `Most on the team${TG.next2 ? ` · ${last(TG.next2.name)} next with ${TG.next2.above2}` : ''}` : `Most: ${last(TG.most2.name)}, ${TG.most2.above2} · ${TG.most2.below0} below zero`}</span>}</div>
       </div>
       <p class="eb mono chart-eb">Game score by game · red above zero, black below · line is the ten-game average</p>
       <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Game score in every game this season">
@@ -205,7 +213,7 @@ const RECENT = 10;
           <thead><tr><th>Date</th><th>Opp</th><th class="num">TOI</th><th class="num">G</th><th class="num">A</th><th class="num">P</th><th class="num">+/−</th><th class="num">S</th><th class="num">Blk</th><th class="num">ixG</th><th class="num">xGF</th><th class="num">xGA</th><th class="num">GF–GA</th><th class="num">Game score</th></tr></thead>
           <tbody>
             {[...G].reverse().map((g, i) => (
-              <tr class:list={{ more: i >= RECENT }}>
+              <tr id={`g-${g.gameId}`} class:list={{ more: i >= RECENT }}>
                 <td>{mdy(g.date)}</td><td>{g.home ? 'vs' : 'at'} {g.opponent}</td><td class="num">{g.toi.toFixed(1)}</td>
                 <td class="num">{g.goals}</td><td class="num">{g.assists}</td><td class:list={['num', { red: g.points >= 2 }]}>{g.points}</td><td class="num">{signed(g.plusMinus, 0)}</td><td class="num">{g.shots}</td>
                 <td class="num">{g.blocks != null ? g.blocks.toFixed(0) : '—'}</td><td class="num">{g.ixg != null ? g.ixg.toFixed(2) : '—'}</td>
@@ -247,6 +255,9 @@ const RECENT = 10;
     });
     imp.addEventListener('mouseleave', () => { if (hot) hot.classList.remove('hot'); hot = null; hideTip(); });
   }
+  const openRow = () => { const id = location.hash.slice(1); const row = id && document.getElementById(id); if (row && row.classList.contains('more')) { const lg = document.getElementById('log'), sa = document.getElementById('showall'); if (lg && !lg.classList.contains('open')) { lg.classList.add('open'); if (sa) { sa.setAttribute('aria-expanded', 'true'); sa.textContent = 'Show the last 10 games ↑'; } } row.scrollIntoView({ block: 'center' }); } };
+  document.querySelectorAll('a.glink').forEach((a) => a.addEventListener('click', () => setTimeout(openRow, 0)));
+  addEventListener('hashchange', openRow); openRow();
   const showall = document.getElementById('showall'), log = document.getElementById('log');
   if (showall) showall.dataset.all = showall.textContent;
   if (showall && log) showall.addEventListener('click', () => { const open = log.classList.toggle('open'); showall.setAttribute('aria-expanded', String(open)); showall.textContent = open ? 'Show the last 10 games ↑' : showall.dataset.all; });
@@ -288,6 +299,9 @@ const RECENT = 10;
   .chart .roll { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 5 4; }
   .axis-labels { display: flex; justify-content: space-between; color: var(--mute); margin: 6px 0 28px; }
   .log td.gs.neg { color: var(--mute); }
+  .fn { display: block; margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--rule); font-size: 10.5px; color: var(--mute); text-transform: none; letter-spacing: 0; }
+  .fn .glink { color: var(--red); text-decoration: underline; text-underline-offset: 2px; }
+  .log tr:target td { background: rgba(206, 17, 38, .10); }
   .log:not(.open) tr.more { display: none; }
   .showall { margin-top: 14px; background: none; border: 1px solid var(--ink); border-radius: 3px; padding: 9px 14px; cursor: pointer; font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
   .showall:hover { color: var(--red); border-color: var(--red); }

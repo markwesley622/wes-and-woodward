@@ -62,8 +62,11 @@ def card(pid):
             "text": text, "tables": _tables(soup)}
 
 
-def logs(pid):
-    soup = BeautifulSoup(_html(f"https://hockeystatcards.com/players/{pid}?tab=logs"), "html.parser")
+def logs(pid, season=None, gtype=2):
+    """Game log. HSC defaults to the CURRENT season (preseason once camps open) and, for a past
+    season, to its playoffs (type 3); always pass the season and type=2 for a regular-season log."""
+    q = f"?tab=logs&year={season}&type={gtype}" if season else "?tab=logs"
+    soup = BeautifulSoup(_html(f"https://hockeystatcards.com/players/{pid}{q}"), "html.parser")
     for t in _tables(soup):
         if "Date" in t["header"] and "Game Score" in " ".join(t["header"]):
             return [dict(zip(t["header"], r)) for r in t["rows"]]

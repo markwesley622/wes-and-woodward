@@ -113,7 +113,7 @@ def build(pid, fetch=False):
         (raw / "gamelog_nhl.json").write_text(json.dumps(get(f"https://api-web.nhle.com/v1/player/{pid}/game-log/{SEASON}/2"), indent=1))
     if fetch or not (raw / "hsc_logs.json").exists():
         sys.path.insert(0, str(ROOT / "research" / "sandin-pellikka" / "raw" / "hsc")); import fetch_hsc as h
-        (raw / "hsc_logs.json").write_text(json.dumps(h.logs(pid), indent=1))
+        (raw / "hsc_logs.json").write_text(json.dumps(h.logs(pid, season=SEASON, gtype=2), indent=1))
         (raw / "hsc_card.json").write_text(json.dumps(h.card(pid), indent=1))
     land = json.load((raw / "landing.json").open())
     nhl_log = json.load((raw / "gamelog_nhl.json").open())["gameLog"]
@@ -222,6 +222,23 @@ def build(pid, fetch=False):
             "gf": f(hx.get("GF")) if hx else None, "ga": f(hx.get("GA")) if hx else None, "blocks": f(hx.get("Blk")) if hx else None,
             "gameScore": f(hx.get("Game Score")) if hx else None,
         })
+    # team context for the game-score tiles (data/site/team_gamescores.json, 20+ GP skaters)
+    tg_path = ROOT / "data" / "site" / "team_gamescores.json"
+    team_gs = None
+    if tg_path.exists():
+        tp = json.load(tg_path.open())["players"]
+        by_date = {g["date"][5:]: g for g in games}
+        def game_ref(mmdd):
+            g = by_date.get(mmdd); return {"date": g["date"], "gameId": g["gameId"], "opponent": g["opponent"], "home": g["home"]} if g else {"date": mmdd}
+        ordered = sorted(tp, key=lambda r: -r["average"])
+        best = max(tp, key=lambda r: r["best"]["value"]); worst = min(tp, key=lambda r: r["worst"]["value"])
+        most2 = sorted(tp, key=lambda r: -r["above2"])
+        team_gs = {"players": len(tp), "minGames": json.load(tg_path.open())["minGames"],
+                   "avgRank": 1 + [r["name"] for r in ordered].index(name),
+                   "best": {"name": best["name"], "value": best["best"]["value"], **game_ref(best["best"]["date"])},
+                   "worst": {"name": worst["name"], "value": worst["worst"]["value"], **game_ref(worst["worst"]["date"])},
+                   "most2": {"name": most2[0]["name"], "above2": most2[0]["above2"], "below0": most2[0]["below0"]},
+                   "next2": {"name": most2[1]["name"], "above2": most2[1]["above2"]} if len(most2) > 1 else None}
     gs = [g["gameScore"] for g in games if g["gameScore"] is not None]
     best = max(games, key=lambda g: g["gameScore"] or -99); worst = min(games, key=lambda g: g["gameScore"] if g["gameScore"] is not None else 99)
     fs = land.get("featuredStats", {}).get("regularSeason", {}).get("subSeason", {})
@@ -235,6 +252,7 @@ def build(pid, fetch=False):
         "moneypuck": sk, "hsc": hsc_card.get("ratings", {}), "score": score,
         "impact": impact, "career": career, "comps": comps, "myComponents": my_components,
         "gameLog": games,
+        "teamGameScore": team_gs,
         "gameScore": {"average": round(sum(gs) / max(1, len(gs)), 2), "games": len(gs), "best": {"date": best["date"], "opponent": best["opponent"], "value": best["gameScore"]},
                       "worst": {"date": worst["date"], "opponent": worst["opponent"], "value": worst["gameScore"]}, "above2": sum(1 for v in gs if v >= 2), "below0": sum(1 for v in gs if v < 0)},
     }
