@@ -150,6 +150,54 @@
    "CF/60": 3.67,
    "CA/60": -5.34
   },
+  "rank": 3,
+  "neighbours": [
+   {
+    "rank": 1,
+    "name": "Zach Werenski",
+    "team": "CBJ",
+    "gp": 75,
+    "value": 97.8,
+    "goals": 21.0,
+    "isMe": false
+   },
+   {
+    "rank": 2,
+    "name": "Matthew Schaefer",
+    "team": "NYI",
+    "gp": 82,
+    "value": 97.3,
+    "goals": 19.9,
+    "isMe": false
+   },
+   {
+    "rank": 3,
+    "name": "Moritz Seider",
+    "team": "DET",
+    "gp": 82,
+    "value": 96.6,
+    "goals": 18.8,
+    "isMe": true
+   },
+   {
+    "rank": 4,
+    "name": "Jakob Chychrun",
+    "team": "WSH",
+    "gp": 80,
+    "value": 96.1,
+    "goals": 18.1,
+    "isMe": false
+   },
+   {
+    "rank": 5,
+    "name": "Lane Hutson",
+    "team": "MTL",
+    "gp": 82,
+    "value": 95.5,
+    "goals": 17.3,
+    "isMe": false
+   }
+  ],
   "method": "A 0-100 rating, not a percentile: 50 is the average NHL player at the position (20+ GP) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. Each is multiplied by TOI/(TOI+k) with k = 500/1000/700/700/300 minutes, so the least repeatable components count least until the minutes are there. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
  },
  "gameLog": [

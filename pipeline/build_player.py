@@ -89,7 +89,8 @@ def build(pid, fetch=False):
     grp = lambda r: ("D" if r["Position"] == "D" else "F") == group and int(r["GP"]) >= 20
     XK = {"EVO": "xEVO_GAR", "EVD": "xEVD_GAR", "PPO": "xPPO_GAR", "SHD": "xSHD_GAR", "Pens": "Pens_GAR"}
     GK = {"EVO": "EVO_GAR", "EVD": "EVD_GAR", "PPO": "PPO_GAR", "SHD": "SHD_GAR", "Pens": "Pens_GAR"}
-    x_pool = [composite(r, XK, f(r["TOI_All"]))[0] for r in xg_rows if grp(r)]
+    ranked = sorted(((composite(r, XK, f(r["TOI_All"]))[0], r["Player"], r["Team"], int(r["GP"])) for r in xg_rows if grp(r)), key=lambda t: -t[0])
+    x_pool = [t[0] for t in ranked]
     g_pool = [composite(r, GK, f(r["TOI_All"]))[0] for r in g_rows if grp(r)]
     me_x = next(r for r in xg_rows if r["Player"] == name); me_g = next(r for r in g_rows if r["Player"] == name)
     toi = f(me_x["TOI_All"])
@@ -106,6 +107,10 @@ def build(pid, fetch=False):
              "counted": round(shrink(toi, K[c]) * f(me_x[XK[c]]), 1)} for c in XK],
         "raw": {"xGAR": f(me_x["xGAR"]), "GAR": f(me_g["GAR"]), "WAR": f(me_g["WAR"]), "xWAR": f(me_x["xWAR"]), "toiAll": toi},
         "rapm": {k: f(v) for k, v in rapm.get(name, {}).items() if k not in ("Player", "Season", "Team", "Position")},
+        "rank": next(i + 1 for i, t in enumerate(ranked) if t[1] == name),
+        "neighbours": [
+            {"rank": i + 1, "name": t[1], "team": t[2], "gp": t[3], "value": qbr(x_pool, t[0]), "goals": round(t[0], 1), "isMe": t[1] == name}
+            for i, t in enumerate(ranked) if abs(i - next(j for j, u in enumerate(ranked) if u[1] == name)) <= 2],
         "method": "A 0-100 rating, not a percentile: 50 is the average NHL player at the position (20+ GP) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. Each is multiplied by TOI/(TOI+k) with k = 500/1000/700/700/300 minutes, so the least repeatable components count least until the minutes are there. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
     }
 

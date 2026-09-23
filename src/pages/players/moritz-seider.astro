@@ -69,6 +69,18 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
           <p class="mono mute">{SC.method}</p>
         </div>
       </div>
+      <div class="rankwrap">
+        <p class="eb mono">Where he ranks · NHL {SC.group === 'D' ? 'defencemen' : 'forwards'}, {SC.pool} with 20+ games</p>
+        <table class="rank">
+          <thead><tr><th>Rank</th><th>Player</th><th>Team</th><th class="num">GP</th><th class="num">Value</th><th class="num">Goals counted</th></tr></thead>
+          <tbody>
+            {SC.neighbours.map((n) => (
+              <tr class:list={{ me: n.isMe }}><td class="rk">{n.rank}</td><td>{n.name}</td><td>{n.team}</td><td class="num">{n.gp}</td><td class:list={['num', { red: n.isMe }]}>{n.value.toFixed(1)}</td><td class="num">{n.goals > 0 ? '+' : ''}{n.goals.toFixed(1)}</td></tr>
+            ))}
+          </tbody>
+        </table>
+        <p class="note mono">Two above and two below on the same score. Rank {SC.rank} of {SC.pool}.</p>
+      </div>
     </div>
   </section>
 
@@ -134,6 +146,11 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   .prose-sm .mono { font-size: 11px; text-transform: none; letter-spacing: 0; line-height: 1.5; }
   .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 90ch; }
   tr.total td { border-top: 1px solid var(--ink); font-weight: 600; }
+  .rankwrap { margin-top: 36px; max-width: 760px; }
+  .rankwrap .eb { margin: 0 0 8px; color: var(--mute); }
+  .rankwrap .eb::before { content: "// "; }
+  .rank tr.me td { background: rgba(206, 17, 38, .08); font-weight: 600; }
+  .rank .rk { font-weight: 600; }
   td.red { color: var(--red); font-weight: 600; }
   th.num, td.num { text-align: right; }
   .gs-tiles { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); margin-bottom: 28px; }
