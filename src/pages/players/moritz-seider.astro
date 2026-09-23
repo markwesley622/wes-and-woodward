@@ -304,7 +304,7 @@ const RECENT = 10;
   .impact .pt.me { fill: var(--red); stroke: var(--paper); stroke-width: 2; }
   .impact .pt.hot { stroke: var(--ink); stroke-width: 2; r: 7; opacity: 1 !important; }
   .impact .pt.me.hot { stroke: var(--ink); r: 10; }
-  .chart .hit { fill: transparent; }
+  .chart .bar rect.hit, .chart .bar.pos rect.hit, .chart .bar.otl rect.hit { fill: transparent; }
   .impact .tag { font-family: var(--mono); font-size: 11px; fill: var(--ink); display: none; pointer-events: none; }
   .impact .tag.me { fill: var(--red); font-weight: 600; display: block; }
   .impact[data-scope="nhl"] .tag.nhl { display: block; }
