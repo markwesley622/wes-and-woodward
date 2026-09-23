@@ -100,7 +100,10 @@ def qbr(pool, value):
     return round(100 / (1 + math.exp(-z)), 1)
 
 
-K, BLEND, REPEAT = reliability_constants()
+K, BLEND_MEASURED, REPEAT = reliability_constants()
+# Editorial weighting (Mark, 9/23): sustainable a bit above results. The measured
+# repeatability split (BLEND_MEASURED, ~53/47) is kept for reference in the JSON.
+BLEND = {"sustainable": 0.60, "results": 0.40}
 
 
 def build(pid, fetch=False):
@@ -147,7 +150,7 @@ def build(pid, fetch=False):
         "value": qbr(x_pool, vb), "low": qbr(x_pool, vb - Z80 * se), "high": qbr(x_pool, vb + Z80 * se),
         "sustainable": qbr(xs_pool, vx), "results": qbr(g_pool, vg), "percentile": percentile(x_pool, vb),
         "goalsBlended": round(vb, 1), "goalsSustainable": round(vx, 1), "goalsResults": round(vg, 1),
-        "blend": {k: round(v, 2) for k, v in BLEND.items()}, "k": K, "repeatability": REPEAT,
+        "blend": {k: round(v, 2) for k, v in BLEND.items()}, "blendMeasured": {k: round(v, 2) for k, v in BLEND_MEASURED.items()}, "k": K, "repeatability": REPEAT,
         "reliability": round(rel, 3), "pool": len(x_pool), "group": "skaters", "position": group,
         "components": [
             {"key": c, "label": {"EVO": "Even-strength offense", "EVD": "Even-strength defense", "PPO": "Power play", "SHD": "Penalty kill", "Pens": "Penalties drawn minus taken"}[c],

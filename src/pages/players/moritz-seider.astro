@@ -62,7 +62,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
               <tr class="total"><td>Total, goals above replacement</td><td class="num">{signed(SC.raw.xGAR)}</td><td class="num">{signed(SC.raw.GAR)}</td><td class="num">{Math.round(SC.reliability * 100)}%</td><td class="num red">{signed(SC.goalsBlended)}</td></tr>
             </tbody>
           </table>
-          <p class="note mono">Sustainable = Evolving-Hockey xGAR (chances). Results = GAR (goals). Counted = a {Math.round(SC.blend.sustainable * 100)}/{Math.round(SC.blend.results * 100)} blend of the two, weighted by how well each repeats year to year across every NHL season since 2007; this season only, nothing regressed. Repeats = that component's year-to-year repeatability, which sets the likely range, not the number.</p>
+          <p class="note mono">Sustainable = Evolving-Hockey xGAR (chances). Results = GAR (goals). Counted = a {Math.round(SC.blend.sustainable * 100)}/{Math.round(SC.blend.results * 100)} blend of the two, leaning toward chances because they repeat better year to year; this season only, nothing regressed. Repeats = that component's year-to-year repeatability, which sets the likely range, not the number.</p>
         </div>
         <div class="rankwrap">
         <p class="eb mono">Where he ranks · all NHL skaters, {SC.pool} with 20+ games</p>

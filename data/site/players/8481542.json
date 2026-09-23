@@ -78,16 +78,20 @@
   }
  },
  "score": {
-  "value": 96.8,
-  "low": 92.4,
-  "high": 98.7,
+  "value": 96.7,
+  "low": 92.2,
+  "high": 98.6,
   "sustainable": 95.6,
   "results": 96.6,
-  "percentile": 99.3,
-  "goalsBlended": 25.8,
+  "percentile": 99.5,
+  "goalsBlended": 25.7,
   "goalsSustainable": 25.3,
   "goalsResults": 26.3,
   "blend": {
+   "sustainable": 0.6,
+   "results": 0.4
+  },
+  "blendMeasured": {
    "sustainable": 0.53,
    "results": 0.47
   },
@@ -117,7 +121,7 @@
     "results": 10.9,
     "shrink": 0.58,
     "repeat": 0.465,
-    "counted": 10.3
+    "counted": 10.2
    },
    {
     "key": "EVD",
@@ -126,7 +130,7 @@
     "results": 10.4,
     "shrink": 0.55,
     "repeat": 0.432,
-    "counted": 11.5
+    "counted": 11.7
    },
    {
     "key": "PPO",
@@ -135,7 +139,7 @@
     "results": 4.4,
     "shrink": 0.48,
     "repeat": 0.371,
-    "counted": 3.3
+    "counted": 3.1
    },
    {
     "key": "SHD",
@@ -176,56 +180,56 @@
    "CF/60": 3.67,
    "CA/60": -5.34
   },
-  "rank": 5,
+  "rank": 4,
   "neighbours": [
+   {
+    "rank": 2,
+    "name": "Cole Caufield",
+    "team": "MTL",
+    "gp": 81,
+    "pos": "R",
+    "value": 98.2,
+    "goals": 29.7,
+    "isMe": false
+   },
    {
     "rank": 3,
     "name": "Nathan MacKinnon",
     "team": "COL",
     "gp": 80,
     "pos": "C",
-    "value": 97.4,
-    "goals": 27.3,
+    "value": 97.6,
+    "goals": 27.8,
     "isMe": false
    },
    {
     "rank": 4,
-    "name": "Lane Hutson",
-    "team": "MTL",
-    "gp": 82,
-    "pos": "D",
-    "value": 96.9,
-    "goals": 26.1,
-    "isMe": false
-   },
-   {
-    "rank": 5,
     "name": "Moritz Seider",
     "team": "DET",
     "gp": 82,
     "pos": "D",
-    "value": 96.8,
-    "goals": 25.8,
+    "value": 96.7,
+    "goals": 25.7,
     "isMe": true
    },
    {
-    "rank": 6,
-    "name": "Nikita Kucherov",
-    "team": "T.B",
-    "gp": 76,
-    "pos": "R",
-    "value": 96.4,
-    "goals": 25.1,
+    "rank": 5,
+    "name": "Lane Hutson",
+    "team": "MTL",
+    "gp": 82,
+    "pos": "D",
+    "value": 96.6,
+    "goals": 25.5,
     "isMe": false
    },
    {
-    "rank": 7,
+    "rank": 6,
     "name": "Zach Werenski",
     "team": "CBJ",
     "gp": 75,
     "pos": "D",
     "value": 96.4,
-    "goals": 25.0,
+    "goals": 25.3,
     "isMe": false
    }
   ],
