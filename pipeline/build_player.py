@@ -7,7 +7,8 @@ Sources (all cached under data/raw/players/<playerId>/):
   MoneyPuck skaters.csv           individual + on-ice xG, league percentiles (via build_site_data pools)
   Evolving-Hockey exports         GAR / xGAR components + RAPM (research/rasmussen/raw/eh, subscriber export)
 
-The W&W value score (0-100) is a league percentile, within position, of a shrunken
+The W&W value score is a QBR-style 0-100 rating (50 = average at the position, ~23
+points per standard deviation, one decimal), NOT a percentile, of a shrunken
 goals-above-replacement composite. Each component is pulled toward zero by a reliability
 factor TOI/(TOI+k) whose k reflects how repeatable that component is; the likely range is
 the reliability standard error mapped back to percentiles. Two versions: sustainable
@@ -55,6 +56,15 @@ def percentile(pool, value):
     return round(100 * sum(1 for v in pool if v < value) / max(1, len(pool)), 1)
 
 
+def qbr(pool, value):
+    """QBR-style 0-100 rating, not a percentile: 50 is the average player at the position,
+    each standard deviation is about 23 points (logistic on the z-score), one decimal."""
+    mean = sum(pool) / len(pool)
+    sd = (sum((v - mean) ** 2 for v in pool) / max(1, len(pool) - 1)) ** 0.5
+    z = (value - mean) / sd if sd else 0.0
+    return round(100 / (1 + math.exp(-z)), 1)
+
+
 def build(pid, fetch=False):
     raw = ROOT / "data" / "raw" / "players" / str(pid); raw.mkdir(parents=True, exist_ok=True)
     if fetch or not (raw / "landing.json").exists():
@@ -87,8 +97,8 @@ def build(pid, fetch=False):
     sd = (sum((v - sum(x_pool) / len(x_pool)) ** 2 for v in x_pool) / max(1, len(x_pool) - 1)) ** 0.5
     se = sd * math.sqrt(max(0.0, 1 - rel))
     score = {
-        "value": percentile(x_pool, vx), "low": percentile(x_pool, vx - Z80 * se), "high": percentile(x_pool, vx + Z80 * se),
-        "results": percentile(g_pool, vg), "goalsSustainable": round(vx, 1), "goalsResults": round(vg, 1),
+        "value": qbr(x_pool, vx), "low": qbr(x_pool, vx - Z80 * se), "high": qbr(x_pool, vx + Z80 * se),
+        "results": qbr(g_pool, vg), "percentile": percentile(x_pool, vx), "goalsSustainable": round(vx, 1), "goalsResults": round(vg, 1),
         "reliability": round(rel, 3), "pool": len(x_pool), "group": group,
         "components": [
             {"key": c, "label": {"EVO": "Even-strength offense", "EVD": "Even-strength defense", "PPO": "Power play", "SHD": "Penalty kill", "Pens": "Penalties drawn minus taken"}[c],
@@ -96,7 +106,7 @@ def build(pid, fetch=False):
              "counted": round(shrink(toi, K[c]) * f(me_x[XK[c]]), 1)} for c in XK],
         "raw": {"xGAR": f(me_x["xGAR"]), "GAR": f(me_g["GAR"]), "WAR": f(me_g["WAR"]), "xWAR": f(me_x["xWAR"]), "toiAll": toi},
         "rapm": {k: f(v) for k, v in rapm.get(name, {}).items() if k not in ("Player", "Season", "Team", "Position")},
-        "method": "League percentile within position (20+ GP) of a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. Each is multiplied by TOI/(TOI+k) with k = 500/1000/700/700/300 minutes, so the least repeatable components count least until the minutes are there. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped back to percentiles.",
+        "method": "A 0-100 rating, not a percentile: 50 is the average NHL player at the position (20+ GP) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. Each is multiplied by TOI/(TOI+k) with k = 500/1000/700/700/300 minutes, so the least repeatable components count least until the minutes are there. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
     }
 
     # ---- MoneyPuck (from the site's skaters.json, already percentiled)

@@ -10,7 +10,7 @@ const age = Math.floor((Date.now() - new Date(B.birthDate)) / (365.25 * 24 * 360
 const ht = B.heightIn ? `${Math.floor(B.heightIn / 12)}′${B.heightIn % 12}″` : '';
 const POS = { C: 'Centre', L: 'Left wing', R: 'Right wing', D: 'Defence' };
 const f5 = MP.fiveOnFive || {};
-const tier = SC.value >= 90 ? 'elite' : SC.value >= 75 ? 'top-line' : SC.value >= 50 ? 'above average' : SC.value >= 25 ? 'below average' : 'replacement level';
+const tier = SC.value >= 88 ? 'elite' : SC.value >= 73 ? 'top-line' : SC.value >= 50 ? 'above average' : SC.value >= 27 ? 'below average' : 'replacement level';
 
 // game score chart
 const W = 1000, H = 220, PAD = 8, MID = H / 2;
@@ -33,9 +33,9 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
         </div>
         <div class="scorebox">
           <span class="eb mono">W&amp;W value</span>
-          <span class="score">{Math.round(SC.value)}</span>
-          <span class="mono range">likely {Math.round(SC.low)}–{Math.round(SC.high)} · {tier}</span>
-          <span class="mono split"><span class="red">sustainable {Math.round(SC.value)}</span> · results {Math.round(SC.results)}</span>
+          <span class="score">{SC.value.toFixed(1)}</span>
+          <span class="mono range">likely {SC.low.toFixed(1)}–{SC.high.toFixed(1)} · {tier}</span>
+          <span class="mono split"><span class="red">sustainable {SC.value.toFixed(1)}</span> · results {SC.results.toFixed(1)}</span>
         </div>
       </div>
       <div class="grid">
@@ -64,7 +64,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
           <p class="note mono">Sustainable = Evolving-Hockey xGAR (chances). Results = GAR (goals). Trust = the share of each component counted at {Math.round(SC.raw.toiAll)} minutes; the least repeatable components count least. Counted = sustainable × trust, the number the score is built on.</p>
         </div>
         <div class="prose-sm">
-          <p><strong>Score {Math.round(SC.value)}</strong> means {P.name.split(' ')[1]}'s counted value ranks in the {Math.round(SC.value)}th percentile of the {SC.pool} NHL {SC.group === 'D' ? 'defencemen' : 'forwards'} with twenty or more games this season. The likely range, {Math.round(SC.low)} to {Math.round(SC.high)}, is how far the score could move if the least repeatable components regress; it narrows as the minutes pile up.</p>
+          <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL {SC.group === 'D' ? 'defenceman' : 'forward'} with twenty or more games this season. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {P.name.split(' ')[1]} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} peers, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how far the score could move if the least repeatable components regress; it narrows as the minutes pile up.</p>
           <p>Two outside checks. HockeyStatCards' Luszczyszyn model puts his net rating in the {HS.Net?.percentile}th percentile ({HS.Net?.value}) and his game score in the {HS['Game score']?.percentile}th. Evolving-Hockey's own headline number is {SC.raw.WAR} wins above replacement.</p>
           <p class="mono mute">{SC.method}</p>
         </div>
@@ -127,7 +127,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   .scorebox { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; text-align: right; border-left: 1px solid var(--rule); padding-left: 32px; }
   .scorebox .eb::before { content: "// "; }
   .scorebox .eb { color: var(--mute); }
-  .score { font-size: 120px; font-weight: 600; line-height: .9; letter-spacing: -.05em; color: var(--red); font-variant-numeric: tabular-nums; }
+  .score { font-size: 104px; font-weight: 600; line-height: .9; letter-spacing: -.05em; color: var(--red); font-variant-numeric: tabular-nums; }
   .range, .split { color: var(--mute); }
   .two { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 40px; align-items: start; }
   .prose-sm p { margin: 0 0 14px; font-size: 16px; line-height: 1.55; max-width: 52ch; }
