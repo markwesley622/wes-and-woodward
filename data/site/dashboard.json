@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-23T18:36+00:00",
+ "generatedAt": "2026-09-23T19:04+00:00",
  "season": "20252026",
  "seasonLabel": "2025-26",
  "seasonState": "offseason",
@@ -441,5 +441,77 @@
    "note": "4v5, lower is better",
    "rankLabel": "28th of 32"
   }
- ]
+ ],
+ "radar": {
+  "top3": [
+   "COL",
+   "CAR",
+   "DAL"
+  ],
+  "dimensions": [
+   {
+    "key": "finishing",
+    "label": "Finishing",
+    "note": "goals above expected, all situations",
+    "det": 25.8,
+    "detRaw": "-17.4",
+    "top3": 55.9,
+    "top3Raw": "+0.3"
+   },
+   {
+    "key": "goaltending",
+    "label": "Goaltending",
+    "note": "goals saved above expected, all situations",
+    "det": 35.5,
+    "detRaw": "-1.6",
+    "top3": 71.0,
+    "top3Raw": "+16.5"
+   },
+   {
+    "key": "attacking",
+    "label": "Attacking",
+    "note": "5v5 expected goals for per 60",
+    "det": 35.5,
+    "detRaw": "2.38",
+    "top3": 76.4,
+    "top3Raw": "2.79"
+   },
+   {
+    "key": "defending",
+    "label": "Defending",
+    "note": "5v5 expected goals against per 60 (lower is better)",
+    "det": 54.8,
+    "detRaw": "2.50",
+    "top3": 80.6,
+    "top3Raw": "2.30"
+   },
+   {
+    "key": "possession",
+    "label": "Possession",
+    "note": "5v5 shot-attempt share",
+    "det": 29.0,
+    "detRaw": "49.0%",
+    "top3": 69.9,
+    "top3Raw": "54.7%"
+   },
+   {
+    "key": "powerplay",
+    "label": "Power play",
+    "note": "5v4 expected goals for per 60",
+    "det": 80.6,
+    "detRaw": "8.18",
+    "top3": 66.7,
+    "top3Raw": "7.89"
+   },
+   {
+    "key": "penaltykill",
+    "label": "Penalty kill",
+    "note": "4v5 expected goals against per 60 (lower is better)",
+    "det": 12.9,
+    "detRaw": "8.00",
+    "top3": 71.0,
+    "top3Raw": "6.91"
+   }
+  ]
+ }
 }

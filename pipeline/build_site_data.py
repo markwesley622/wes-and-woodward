@@ -457,6 +457,36 @@ def build_dashboard():
     for t in tiles:
         t["rankLabel"] = f'{ordinal(t["rank"])} of {t["of"]}'
 
+    # ---- radar: seven dimensions of winning, as league percentiles, Detroit vs the average of
+    # the top three teams in the standings right now (rank-based, 0 = worst team, 100 = best)
+    def pct_rank(values, higher_is_better=True):
+        teams = list(values)
+        out = {}
+        for a in teams:
+            below = sum(1 for b in teams if b != a and ((values[b] < values[a]) if higher_is_better else (values[b] > values[a])))
+            out[a] = round(100 * below / max(1, len(teams) - 1), 1)
+        return out
+
+    dims = [
+        ("finishing", "Finishing", "goals above expected, all situations", {a: f(r, "goalsFor") - f(r, "xGoalsFor") for a, r in mp_all.items()}, True, "{:+.1f}"),
+        ("goaltending", "Goaltending", "goals saved above expected, all situations", {a: f(r, "xGoalsAgainst") - f(r, "goalsAgainst") for a, r in mp_all.items()}, True, "{:+.1f}"),
+        ("attacking", "Attacking", "5v5 expected goals for per 60", {a: per60(r, "xGoalsFor") for a, r in mp_5v5.items()}, True, "{:.2f}"),
+        ("defending", "Defending", "5v5 expected goals against per 60 (lower is better)", {a: per60(r, "xGoalsAgainst") for a, r in mp_5v5.items()}, False, "{:.2f}"),
+        ("possession", "Possession", "5v5 shot-attempt share", {a: f(r, "corsiPercentage") * 100 for a, r in mp_5v5.items()}, True, "{:.1f}%"),
+        ("powerplay", "Power play", "5v4 expected goals for per 60", {a: per60(r, "xGoalsFor") for a, r in mp_pp.items()}, True, "{:.2f}"),
+        ("penaltykill", "Penalty kill", "4v5 expected goals against per 60 (lower is better)", {a: per60(r, "xGoalsAgainst") for a, r in mp_pk.items()}, False, "{:.2f}"),
+    ]
+    top3 = [r["teamAbbrev"]["default"] for r in sorted(standings, key=lambda r: (-r["points"], -r.get("regulationWins", 0)))[:3]]
+    radar = {"top3": top3, "dimensions": []}
+    for key, label, note, values, hib, fmt in dims:
+        pcts = pct_rank(values, hib)
+        radar["dimensions"].append({
+            "key": key, "label": label, "note": note,
+            "det": pcts.get(TEAM), "detRaw": fmt.format(values.get(TEAM, 0)),
+            "top3": round(sum(pcts.get(t, 0) for t in top3) / max(1, len(top3)), 1),
+            "top3Raw": fmt.format(sum(values.get(t, 0) for t in top3) / max(1, len(top3))),
+        })
+
     write("dashboard.json", {
         "generatedAt": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
         "season": CFG["nhl_season"],
@@ -467,6 +497,7 @@ def build_dashboard():
         "projected": projected,
         "nextGame": next_game,
         "tiles": tiles,
+        "radar": radar,
     })
 
 

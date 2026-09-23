@@ -1,0 +1,47 @@
+---
+// Seven dimensions of winning as league percentiles: Detroit (red) against the average of the
+// top three teams in the standings (black). Data from dashboard.json (pipeline/build_site_data.py).
+import D from '../../data/site/dashboard.json';
+const R = D.radar;
+const N = R.dimensions.length, SIZE = 600, C = SIZE / 2, RAD = 205, LABEL = 250;
+const ang = (i) => -Math.PI / 2 + (2 * Math.PI * i) / N;
+const pt = (i, v) => [C + Math.cos(ang(i)) * RAD * (v / 100), C + Math.sin(ang(i)) * RAD * (v / 100)];
+const poly = (key) => R.dimensions.map((d, i) => pt(i, d[key] ?? 0).map((n) => n.toFixed(1)).join(',')).join(' ');
+const rings = [25, 50, 75, 100];
+const NAMES = { ANA:'Anaheim', BOS:'Boston', BUF:'Buffalo', CGY:'Calgary', CAR:'Carolina', CHI:'Chicago', COL:'Colorado', CBJ:'Columbus', DAL:'Dallas', DET:'Detroit', EDM:'Edmonton', FLA:'Florida', LAK:'Los Angeles', MIN:'Minnesota', MTL:'Montréal', NSH:'Nashville', NJD:'New Jersey', NYI:'NY Islanders', NYR:'NY Rangers', OTT:'Ottawa', PHI:'Philadelphia', PIT:'Pittsburgh', SJS:'San Jose', SEA:'Seattle', STL:'St. Louis', TBL:'Tampa Bay', TOR:'Toronto', UTA:'Utah', VAN:'Vancouver', VGK:'Vegas', WSH:'Washington', WPG:'Winnipeg' };
+const top3 = R.top3.map((t) => NAMES[t] ?? t).join(', ');
+const anchor = (i) => { const c = Math.cos(ang(i)); return c > 0.2 ? 'start' : c < -0.2 ? 'end' : 'middle'; };
+---
+<figure class="radar" aria-label={`Detroit against the average of ${top3} across seven dimensions of winning, as league percentiles`}>
+  <svg viewBox={`0 0 ${SIZE} ${SIZE}`}>
+    {rings.map((r) => <circle cx={C} cy={C} r={RAD * r / 100} class="ring" />)}
+    {R.dimensions.map((d, i) => { const [x, y] = pt(i, 100); return <line x1={C} y1={C} x2={x} y2={y} class="spoke" />; })}
+    <polygon points={poly('top3')} class="top3" />
+    <polygon points={poly('det')} class="det" />
+    {R.dimensions.map((d, i) => { const [x, y] = pt(i, d.top3 ?? 0); return <circle cx={x} cy={y} r="5" class="dot top3"><title>{`Top three average · ${d.label}: ${d.top3} percentile (${d.top3Raw})`}</title></circle>; })}
+    {R.dimensions.map((d, i) => { const [x, y] = pt(i, d.det ?? 0); return <circle cx={x} cy={y} r="6" class="dot det"><title>{`Detroit · ${d.label}: ${d.det} percentile (${d.detRaw}) · ${d.note}`}</title></circle>; })}
+    {R.dimensions.map((d, i) => { const x = C + Math.cos(ang(i)) * LABEL, y = C + Math.sin(ang(i)) * LABEL; return <text x={x} y={y} text-anchor={anchor(i)} dominant-baseline="middle" class="lbl">{d.label}</text>; })}
+  </svg>
+  <figcaption class="mono">
+    <span><i class="sw det"></i>Detroit</span>
+    <span><i class="sw top3"></i>top three, average · {top3}</span>
+    <span class="mute">league percentiles · {D.seasonLabel}</span>
+  </figcaption>
+</figure>
+
+<style>
+  .radar { margin: 0; width: 100%; }
+  .radar svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .ring { fill: none; stroke: var(--rule); stroke-width: 1; }
+  .spoke { stroke: var(--rule); stroke-width: 1; }
+  .top3 { fill: rgba(20, 20, 20, .06); stroke: var(--ink); stroke-width: 1.6; stroke-dasharray: 6 5; }
+  .det { fill: rgba(206, 17, 38, .18); stroke: var(--red); stroke-width: 2.4; transform-origin: 50% 50%; transform-box: fill-box; animation: bloom 900ms cubic-bezier(.2, .8, .2, 1) both; }
+  .dot.det { fill: var(--red); }
+  .dot.top3 { fill: var(--paper); stroke: var(--ink); stroke-width: 1.6; }
+  .lbl { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; fill: var(--ink); }
+  figcaption { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 10px; color: var(--ink); }
+  .sw { display: inline-block; width: 16px; height: 3px; vertical-align: middle; margin-right: 7px; }
+  .sw.det { background: var(--red); } .sw.top3 { background: var(--ink); }
+  @keyframes bloom { from { transform: scale(.2); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .det { animation: none; } }
+</style>

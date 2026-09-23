@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import Wheel from '../components/Wheel.astro';
+import Radar from '../components/Radar.astro';
 import D from '../../data/site/dashboard.json';
 import skaters from '../../data/site/skaters.json';
 
@@ -39,13 +39,33 @@ const T5 = tile('xg_share_5v5'), TPP = tile('pp_xgf60'), TPK = tile('pk_xga60');
 const POS = { C: 'Centre', L: 'Left wing', R: 'Right wing', D: 'Defence' };
 const top3 = skaters.filter((p) => p.gameScore != null).sort((a, b) => b.gameScore - a.gameScore).slice(0, 3);
 const dots = (n) => Array.from({ length: Math.max(0, n) });
+const RD = D.radar;
+const NAMES3 = { COL:'Colorado', CAR:'Carolina', DAL:'Dallas', TBL:'Tampa Bay', OTT:'Ottawa', WPG:'Winnipeg', VGK:'Vegas', EDM:'Edmonton', FLA:'Florida', TOR:'Toronto', WSH:'Washington', BUF:'Buffalo', MTL:'Montréal', BOS:'Boston', PIT:'Pittsburgh', NJD:'New Jersey', PHI:'Philadelphia', NYR:'NY Rangers', NYI:'NY Islanders', CBJ:'Columbus', MIN:'Minnesota', STL:'St. Louis', NSH:'Nashville', CHI:'Chicago', UTA:'Utah', LAK:'Los Angeles', ANA:'Anaheim', SJS:'San Jose', SEA:'Seattle', VAN:'Vancouver', CGY:'Calgary', DET:'Detroit' };
+const top3Names = RD.top3.map((t) => NAMES3[t] ?? t).join(', ');
 ---
 <Base title="Wes & Woodward — Detroit hockey, by the numbers" description="Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.">
-  <section class="hero" aria-label="Detroit hockey, by the numbers">
+  <section class="hero" aria-label="Detroit Red Wings, by the numbers">
     <div class="shell">
       <div class="stamp mono"><i></i><span id="clock">&nbsp;</span><br />Detroit, MI</div>
-      <h1><span class="l1">Detroit</span><span class="l2">Red Wings,</span><span class="l3">by the numbers</span></h1>
-      <Wheel />
+      <div class="hero-grid">
+        <div class="left">
+          <h1><span class="l1">Detroit</span><span class="l2">Red Wings,</span><span class="l3">by the numbers</span></h1>
+          <table class="dims">
+            <thead><tr><th>Percentiles</th><th class="num red">Detroit</th><th class="num">Top three</th></tr></thead>
+            <tbody>
+              {RD.dimensions.map((d) => (
+                <tr>
+                  <td><span class="tip" title={d.note}>{d.label}</span></td>
+                  <td class="num red" title={`${d.detRaw} · ${d.note}`}>{d.det.toFixed(1)}</td>
+                  <td class="num" title={`${d.top3Raw} · average of ${top3Names}`}>{d.top3.toFixed(1)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p class="mono mute dims-note">league percentiles, {season} · top three = {top3Names}</p>
+        </div>
+        <div class="right"><Radar /></div>
+      </div>
       <div class="foot mono"><span></span><span>nhl api · moneypuck · rebuilt {rebuilt} et</span></div>
     </div>
   </section>
@@ -168,17 +188,24 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
 </script>
 
 <style>
-  /* hero */
-  /* overflow-x clip (not hidden) keeps the wheel free to parallax down past the hero's bottom edge while clipping its sides */
-  .hero { position: relative; height: calc(100vh - 94px); min-height: 640px; border-bottom: 1px solid var(--rule); overflow-x: clip; }
-  .hero .shell { position: relative; height: 100%; }
+  /* hero: table left, radar right */
+  .hero { position: relative; min-height: calc(100vh - 94px); border-bottom: 1px solid var(--rule); overflow-x: clip; }
+  .hero .shell { position: relative; padding-top: 96px; padding-bottom: 64px; }
   .stamp { position: absolute; left: var(--gutter); top: 22px; color: var(--mute); z-index: 3; }
   .stamp i { display: block; width: 5px; height: 5px; background: var(--red); margin-bottom: 8px; }
-  h1 { position: absolute; left: var(--gutter); right: var(--gutter); top: 96px; z-index: 3; pointer-events: none; }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 560px); gap: 56px; align-items: center; }
+  h1 { font-size: clamp(44px, 5.4vw, 84px); margin: 0 0 26px; }
   h1 span { display: block; }
   h1 .l2 { padding-left: .12em; }
-  h1 .l3 { padding-left: 1.05em; }
-  h1 .red { display: inline; }
+  h1 .l3 { padding-left: .6em; }
+  .dims { width: 100%; max-width: 520px; border-collapse: collapse; font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; }
+  .dims th { text-align: left; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--mute); font-weight: 500; border-bottom: 1px solid var(--ink); padding: 0 12px 8px 0; }
+  .dims th.red { color: var(--red); }
+  .dims td { border-bottom: 1px solid var(--rule); padding: 9px 12px 9px 0; }
+  .dims th.num, .dims td.num { text-align: right; padding-right: 0; font-weight: 600; font-size: 15px; }
+  .dims td.num.red { color: var(--red); }
+  .dims .tip { border-bottom: 1px dotted var(--mute); cursor: help; }
+  .dims-note { margin: 10px 0 0; text-transform: none; letter-spacing: 0; }
   .foot { position: absolute; left: var(--gutter); right: var(--gutter); bottom: 18px; display: flex; justify-content: space-between; gap: 16px; color: var(--mute); z-index: 3; }
 
   /* dashboard extras */
@@ -206,10 +233,15 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   .stats .n { font-family: var(--mono); font-size: 15px; font-variant-numeric: tabular-nums; }
 
   /* phone layout only below 640px; a narrow desktop window keeps the desktop hero so resizing never snaps */
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+    .hero .shell { padding-bottom: 72px; }
+    .right { max-width: 520px; }
+  }
   @media (max-width: 640px) {
-    .hero { height: 100svh; }
-    h1 { font-size: clamp(40px, 14.5vw, 64px); }
-    h1 .l3 { padding-left: .5em; }
+    .hero { min-height: 0; }
+    h1 { font-size: clamp(40px, 12vw, 56px); }
+    h1 .l3 { padding-left: .3em; }
     .foot { flex-direction: column; gap: 4px; background: var(--paper); padding: 8px 0 0; }
   }
 </style>
