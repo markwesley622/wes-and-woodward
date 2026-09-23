@@ -116,7 +116,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
       <h2>Top Red Wings</h2>
       <div class="row3">
         {top3.map((p) => (
-          <a class="card player" href="#">
+          <a class="card player" href={p.playerId === 8481542 ? '/players/moritz-seider/' : '#'}>
             <div class="card-top">
               <div><h3>{p.name}</h3><span class="mono mute">{POS[p.position] ?? p.position} · {season}</span></div>
               <div class="score"><span class="ghost" style="width:30px;height:16px"></span><span class="mono red">/ 100</span></div>

@@ -1,0 +1,155 @@
+---
+import Base from '../../layouts/Base.astro';
+import P from '../../../data/site/players/8481542.json';
+
+const B = P.bio, L = P.seasonLine, SC = P.score, MP = P.moneypuck, G = P.gameLog, GS = P.gameScore, HS = P.hsc;
+const season = `${P.seasonLabel.slice(0, 4)}–${P.seasonLabel.slice(5)}`;
+const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
+const mdy = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+const age = Math.floor((Date.now() - new Date(B.birthDate)) / (365.25 * 24 * 3600 * 1000));
+const ht = B.heightIn ? `${Math.floor(B.heightIn / 12)}′${B.heightIn % 12}″` : '';
+const POS = { C: 'Centre', L: 'Left wing', R: 'Right wing', D: 'Defence' };
+const f5 = MP.fiveOnFive || {};
+const tier = SC.value >= 90 ? 'elite' : SC.value >= 75 ? 'top-line' : SC.value >= 50 ? 'above average' : SC.value >= 25 ? 'below average' : 'replacement level';
+
+// game score chart
+const W = 1000, H = 220, PAD = 8, MID = H / 2;
+const maxGS = Math.max(3, ...G.map((g) => Math.abs(g.gameScore ?? 0)));
+const bx = (i) => PAD + (i + 0.5) * ((W - 2 * PAD) / Math.max(1, G.length));
+const bh = (v) => Math.abs(v) / maxGS * (MID - PAD);
+const roll = G.map((g, i) => { const win = G.slice(Math.max(0, i - 9), i + 1).map((x) => x.gameScore).filter((v) => v != null); return win.length ? win.reduce((a, b) => a + b, 0) / win.length : 0; });
+const rollPath = roll.map((v, i) => `${i === 0 ? 'M' : 'L'}${bx(i).toFixed(1)},${(MID - v / maxGS * (MID - PAD)).toFixed(1)}`).join(' ');
+const dots = (n) => Array.from({ length: Math.max(0, n) });
+---
+<Base title={`${P.name} — Wes & Woodward`} description={`${P.name}, ${season}: value score, where it comes from, and a game-by-game log with game score.`}>
+  <section class="sec">
+    <div class="shell">
+      <p class="kicker"><a href="/">Players</a> · Red Wings · {season}</p>
+      <div class="head">
+        <img class="sil" src={B.silhouette} alt="" width="336" height="336" />
+        <div class="who">
+          <h1 class="page-title">{P.name}</h1>
+          <p class="mono bio">#{B.number} · {POS[B.position] ?? B.position} · shoots {B.shoots} · {ht}, {B.weightLb} lb · age {age} · {B.birthplace}{B.draft ? ` · drafted ${B.draft.year}, ${B.draft.overallPick}${B.draft.overallPick === 6 ? 'th' : 'th'} overall` : ''}</p>
+        </div>
+        <div class="scorebox">
+          <span class="eb mono">W&amp;W value</span>
+          <span class="score">{Math.round(SC.value)}</span>
+          <span class="mono range">likely {Math.round(SC.low)}–{Math.round(SC.high)} · {tier}</span>
+          <span class="mono split"><span class="red">sustainable {Math.round(SC.value)}</span> · results {Math.round(SC.results)}</span>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="tile"><span class="eb mono">Games</span><span class="num">{L.gp}</span><span class="sub">{season}</span></div>
+        <div class="tile"><span class="eb mono">Goals · assists · points</span><span class="num">{L.goals}–{L.assists}–{L.points}</span><span class="sub">{L.ppPoints} on the power play · {signed(L.plusMinus, 0)}</span></div>
+        <div class="tile"><span class="eb mono">Individual xG</span><span class="num">{MP.ixG?.toFixed(1) ?? '—'}</span><span class="sub">{MP.goalsAboveExpected != null ? `${signed(MP.goalsAboveExpected)} goals vs expected` : ''}</span></div>
+        <div class="tile"><span class="eb mono">5v5 xG share</span><span class="num">{f5.onIceXgPct != null ? `${Math.round(f5.onIceXgPct * 100)}%` : '—'}</span><span class:list={['sub', { red: (f5.pctl_onIceXgPct ?? 0) >= 75 }]}>{f5.qualifiesForPercentiles ? `${f5.pctl_onIceXgPct}th percentile among ${SC.group === 'D' ? 'defencemen' : 'forwards'} · ${Math.round(f5.icetimeMinutes)} min` : ''}</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="value">
+    <div class="shell">
+      <h2>Where the value comes from</h2>
+      <div class="two">
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Component</th><th class="num">Sustainable</th><th class="num">Results</th><th class="num">Trust</th><th class="num">Counted</th></tr></thead>
+            <tbody>
+              {SC.components.map((c) => (
+                <tr><td>{c.label}</td><td class="num">{signed(c.sustainable)}</td><td class="num">{signed(c.results)}</td><td class="num">{Math.round(c.shrink * 100)}%</td><td class:list={['num', { red: c.counted >= 3 }]}>{signed(c.counted)}</td></tr>
+              ))}
+              <tr class="total"><td>Total, goals above replacement</td><td class="num">{signed(SC.raw.xGAR)}</td><td class="num">{signed(SC.raw.GAR)}</td><td class="num">{Math.round(SC.reliability * 100)}%</td><td class="num red">{signed(SC.goalsSustainable)}</td></tr>
+            </tbody>
+          </table>
+          <p class="note mono">Sustainable = Evolving-Hockey xGAR (chances). Results = GAR (goals). Trust = the share of each component counted at {Math.round(SC.raw.toiAll)} minutes; the least repeatable components count least. Counted = sustainable × trust, the number the score is built on.</p>
+        </div>
+        <div class="prose-sm">
+          <p><strong>Score {Math.round(SC.value)}</strong> means {P.name.split(' ')[1]}'s counted value ranks in the {Math.round(SC.value)}th percentile of the {SC.pool} NHL {SC.group === 'D' ? 'defencemen' : 'forwards'} with twenty or more games this season. The likely range, {Math.round(SC.low)} to {Math.round(SC.high)}, is how far the score could move if the least repeatable components regress; it narrows as the minutes pile up.</p>
+          <p>Two outside checks. HockeyStatCards' Luszczyszyn model puts his net rating in the {HS.Net?.percentile}th percentile ({HS.Net?.value}) and his game score in the {HS['Game score']?.percentile}th. Evolving-Hockey's own headline number is {SC.raw.WAR} wins above replacement.</p>
+          <p class="mono mute">{SC.method}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="gamelog">
+    <div class="shell">
+      <h2>Game log</h2>
+      <div class="gs-tiles">
+        <div class="tile"><span class="eb mono">Game score, average</span><span class="num">{GS.average.toFixed(2)}</span><span class="sub">{GS.games} games · Luszczyszyn game score via HockeyStatCards</span></div>
+        <div class="tile"><span class="eb mono">Best game</span><span class="num">{GS.best.value.toFixed(2)}</span><span class="sub">{mdy(GS.best.date)} vs {GS.best.opponent}</span></div>
+        <div class="tile"><span class="eb mono">Worst game</span><span class="num">{GS.worst.value.toFixed(2)}</span><span class="sub">{mdy(GS.worst.date)} vs {GS.worst.opponent}</span></div>
+        <div class="tile"><span class="eb mono">Games at 2.0 or better</span><span class="num">{GS.above2}</span><span class="sub">{GS.below0} below zero</span></div>
+      </div>
+      <p class="eb mono chart-eb">Game score by game · red above zero, black below · line is the ten-game average</p>
+      <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Game score in every game this season">
+        <line x1={PAD} x2={W - PAD} y1={MID} y2={MID} class="axis" />
+        {G.map((g, i) => g.gameScore == null ? null : (
+          <g class:list={['bar', { pos: g.gameScore >= 0 }]}>
+            <rect x={bx(i) - 3} y={g.gameScore >= 0 ? MID - bh(g.gameScore) : MID} width={6} height={Math.max(1.5, bh(g.gameScore))} />
+            <title>{`${mdy(g.date)} ${g.home ? 'vs' : 'at'} ${g.opponent} · game score ${g.gameScore.toFixed(2)} · ${g.goals}G ${g.assists}A · ${g.toi} min`}</title>
+          </g>
+        ))}
+        <path d={rollPath} class="roll" />
+      </svg>
+      <div class="axis-labels mono"><span>{mdy(G[0].date)}</span><span>{mdy(G[G.length - 1].date)}</span></div>
+
+      <div class="table-scroll log">
+        <table>
+          <thead><tr><th>Date</th><th>Opp</th><th class="num">TOI</th><th class="num">G</th><th class="num">A</th><th class="num">P</th><th class="num">+/−</th><th class="num">S</th><th class="num">Blk</th><th class="num">ixG</th><th class="num">xGF</th><th class="num">xGA</th><th class="num">GF–GA</th><th class="num">Game score</th></tr></thead>
+          <tbody>
+            {[...G].reverse().map((g) => (
+              <tr>
+                <td>{mdy(g.date)}</td><td>{g.home ? 'vs' : 'at'} {g.opponent}</td><td class="num">{g.toi.toFixed(1)}</td>
+                <td class="num">{g.goals}</td><td class="num">{g.assists}</td><td class:list={['num', { red: g.points >= 2 }]}>{g.points}</td><td class="num">{signed(g.plusMinus, 0)}</td><td class="num">{g.shots}</td>
+                <td class="num">{g.blocks != null ? g.blocks.toFixed(0) : '—'}</td><td class="num">{g.ixg != null ? g.ixg.toFixed(2) : '—'}</td>
+                <td class="num">{g.xgf != null ? g.xgf.toFixed(2) : '—'}</td><td class="num">{g.xga != null ? g.xga.toFixed(2) : '—'}</td>
+                <td class="num">{g.gf != null ? `${g.gf.toFixed(0)}–${g.ga.toFixed(0)}` : '—'}</td>
+                <td class:list={['num', 'gs', { red: (g.gameScore ?? 0) >= 2, neg: (g.gameScore ?? 0) < 0 }]}>{g.gameScore != null ? g.gameScore.toFixed(2) : '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="note mono">Most recent first. Box score from the NHL API. ixG, on-ice xGF/xGA and GF–GA are five-on-five, per HockeyStatCards (Natural Stat Trick data); TOI is all situations. Game score is Dom Luszczyszyn's formula, where 2.0 is a strong night and below zero is a poor one.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .kicker a { color: var(--mute); }
+  .head { display: grid; grid-template-columns: 200px minmax(0, 1fr) auto; gap: 32px; align-items: end; margin: 0 0 28px; }
+  .sil { width: 200px; height: 200px; display: block; }
+  .who .page-title { margin-bottom: 10px; }
+  .bio { color: var(--mute); text-transform: none; letter-spacing: 0; font-size: 12.5px; }
+  .scorebox { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; text-align: right; border-left: 1px solid var(--rule); padding-left: 32px; }
+  .scorebox .eb::before { content: "// "; }
+  .scorebox .eb { color: var(--mute); }
+  .score { font-size: 120px; font-weight: 600; line-height: .9; letter-spacing: -.05em; color: var(--red); font-variant-numeric: tabular-nums; }
+  .range, .split { color: var(--mute); }
+  .two { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+  .prose-sm p { margin: 0 0 14px; font-size: 16px; line-height: 1.55; max-width: 52ch; }
+  .prose-sm .mono { font-size: 11px; text-transform: none; letter-spacing: 0; line-height: 1.5; }
+  .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 90ch; }
+  tr.total td { border-top: 1px solid var(--ink); font-weight: 600; }
+  td.red { color: var(--red); font-weight: 600; }
+  th.num, td.num { text-align: right; }
+  .gs-tiles { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); margin-bottom: 28px; }
+  .chart-eb { margin: 0 0 8px; color: var(--mute); }
+  .chart-eb::before { content: "// "; }
+  .chart { width: 100%; height: auto; display: block; }
+  .chart .axis { stroke: var(--ink); stroke-width: 1; }
+  .chart .bar rect { fill: var(--ink); }
+  .chart .bar.pos rect { fill: var(--red); }
+  .chart .roll { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 5 4; }
+  .axis-labels { display: flex; justify-content: space-between; color: var(--mute); margin: 6px 0 28px; }
+  .log td.gs.neg { color: var(--mute); }
+  @media (max-width: 900px) {
+    .head { grid-template-columns: 120px minmax(0, 1fr); }
+    .sil { width: 120px; height: 120px; }
+    .scorebox { grid-column: 1 / -1; align-items: flex-start; text-align: left; border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 16px; }
+    .score { font-size: 88px; }
+    .two { grid-template-columns: 1fr; }
+    .gs-tiles { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
