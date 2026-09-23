@@ -128,14 +128,16 @@ def build(pid, fetch=False):
     grp = lambda r: int(r["GP"]) >= 20
     g_by = {r["Player"]: r for r in g_rows}
     def blended(rx):
-        """Shrunken composite on a reliability-weighted blend of sustainable (xGAR) and results (GAR)."""
+        """This season only, no regression: the point estimate is the reliability-weighted blend of
+        sustainable (xGAR) and results (GAR) as delivered. Shrinkage sets only the likely range."""
         toi = f(rx["TOI_All"]); rg = g_by.get(rx["Player"])
-        vx, rel = composite(rx, XK, toi); vg = composite(rg, GK, toi)[0] if rg else vx
+        vx = sum(f(rx[c]) for c in XK.values()); vg = sum(f(rg[c]) for c in GK.values()) if rg else vx
+        rel = composite(rx, XK, toi)[1]
         return BLEND["sustainable"] * vx + BLEND["results"] * vg, vx, vg, rel
     ranked = sorted(((blended(r)[0], r["Player"], r["Team"], int(r["GP"]), r["Position"]) for r in xg_rows if grp(r)), key=lambda t: -t[0])
     x_pool = [t[0] for t in ranked]
-    xs_pool = [composite(r, XK, f(r["TOI_All"]))[0] for r in xg_rows if grp(r)]
-    g_pool = [composite(r, GK, f(r["TOI_All"]))[0] for r in g_rows if grp(r)]
+    xs_pool = [sum(f(r[c]) for c in XK.values()) for r in xg_rows if grp(r)]
+    g_pool = [sum(f(r[c]) for c in GK.values()) for r in g_rows if grp(r)]
     me_x = next(r for r in xg_rows if r["Player"] == name); me_g = g_by[name]
     toi = f(me_x["TOI_All"])
     vb, vx, vg, rel = blended(me_x)
@@ -150,14 +152,14 @@ def build(pid, fetch=False):
         "components": [
             {"key": c, "label": {"EVO": "Even-strength offense", "EVD": "Even-strength defense", "PPO": "Power play", "SHD": "Penalty kill", "Pens": "Penalties drawn minus taken"}[c],
              "sustainable": f(me_x[XK[c]]), "results": f(me_g[GK[c]]), "shrink": round(shrink(toi, K[c]), 2), "repeat": REPEAT[c],
-             "counted": round(shrink(toi, K[c]) * (BLEND["sustainable"] * f(me_x[XK[c]]) + BLEND["results"] * f(me_g[GK[c]])), 1)} for c in XK],
+             "counted": round(BLEND["sustainable"] * f(me_x[XK[c]]) + BLEND["results"] * f(me_g[GK[c]]), 1)} for c in XK],
         "raw": {"xGAR": f(me_x["xGAR"]), "GAR": f(me_g["GAR"]), "WAR": f(me_g["WAR"]), "xWAR": f(me_x["xWAR"]), "toiAll": toi},
         "rapm": {k: f(v) for k, v in rapm.get(name, {}).items() if k not in ("Player", "Season", "Team", "Position")},
         "rank": next(i + 1 for i, t in enumerate(ranked) if t[1] == name),
         "neighbours": [
             {"rank": i + 1, "name": t[1], "team": t[2], "gp": t[3], "pos": t[4], "value": qbr(x_pool, t[0]), "goals": round(t[0], 1), "isMe": t[1] == name}
             for i, t in enumerate(ranked) if abs(i - next(j for j, u in enumerate(ranked) if u[1] == name)) <= 2],
-        "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defencemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. Each is multiplied by TOI/(TOI+k), where k is set so that the factor equals the component's measured year-over-year repeatability at the league-average workload, so the least repeatable components count least until the minutes are there. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
+        "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defencemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
     }
 
     # ---- MoneyPuck (from the site's skaters.json, already percentiled)

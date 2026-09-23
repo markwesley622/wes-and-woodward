@@ -78,15 +78,15 @@
   }
  },
  "score": {
-  "value": 98.5,
-  "low": 96.4,
-  "high": 99.4,
-  "sustainable": 97.8,
-  "results": 98.5,
-  "percentile": 99.5,
-  "goalsBlended": 14.3,
-  "goalsSustainable": 14.1,
-  "goalsResults": 14.6,
+  "value": 96.8,
+  "low": 92.4,
+  "high": 98.7,
+  "sustainable": 95.6,
+  "results": 96.6,
+  "percentile": 99.3,
+  "goalsBlended": 25.8,
+  "goalsSustainable": 25.3,
+  "goalsResults": 26.3,
   "blend": {
    "sustainable": 0.53,
    "results": 0.47
@@ -117,7 +117,7 @@
     "results": 10.9,
     "shrink": 0.58,
     "repeat": 0.465,
-    "counted": 5.9
+    "counted": 10.3
    },
    {
     "key": "EVD",
@@ -126,7 +126,7 @@
     "results": 10.4,
     "shrink": 0.55,
     "repeat": 0.432,
-    "counted": 6.3
+    "counted": 11.5
    },
    {
     "key": "PPO",
@@ -135,7 +135,7 @@
     "results": 4.4,
     "shrink": 0.48,
     "repeat": 0.371,
-    "counted": 1.6
+    "counted": 3.3
    },
    {
     "key": "SHD",
@@ -144,7 +144,7 @@
     "results": -0.3,
     "shrink": 0.28,
     "repeat": 0.201,
-    "counted": -0.1
+    "counted": -0.2
    },
    {
     "key": "Pens",
@@ -153,7 +153,7 @@
     "results": 0.9,
     "shrink": 0.65,
     "repeat": 0.536,
-    "counted": 0.6
+    "counted": 0.9
    }
   ],
   "raw": {
@@ -176,60 +176,60 @@
    "CF/60": 3.67,
    "CA/60": -5.34
   },
-  "rank": 4,
+  "rank": 5,
   "neighbours": [
    {
-    "rank": 2,
+    "rank": 3,
     "name": "Nathan MacKinnon",
     "team": "COL",
     "gp": 80,
     "pos": "C",
-    "value": 98.7,
-    "goals": 14.7,
-    "isMe": false
-   },
-   {
-    "rank": 3,
-    "name": "Lane Hutson",
-    "team": "MTL",
-    "gp": 82,
-    "pos": "D",
-    "value": 98.5,
-    "goals": 14.4,
+    "value": 97.4,
+    "goals": 27.3,
     "isMe": false
    },
    {
     "rank": 4,
+    "name": "Lane Hutson",
+    "team": "MTL",
+    "gp": 82,
+    "pos": "D",
+    "value": 96.9,
+    "goals": 26.1,
+    "isMe": false
+   },
+   {
+    "rank": 5,
     "name": "Moritz Seider",
     "team": "DET",
     "gp": 82,
     "pos": "D",
-    "value": 98.5,
-    "goals": 14.3,
+    "value": 96.8,
+    "goals": 25.8,
     "isMe": true
    },
    {
-    "rank": 5,
+    "rank": 6,
+    "name": "Nikita Kucherov",
+    "team": "T.B",
+    "gp": 76,
+    "pos": "R",
+    "value": 96.4,
+    "goals": 25.1,
+    "isMe": false
+   },
+   {
+    "rank": 7,
     "name": "Zach Werenski",
     "team": "CBJ",
     "gp": 75,
     "pos": "D",
-    "value": 98.4,
-    "goals": 14.1,
-    "isMe": false
-   },
-   {
-    "rank": 6,
-    "name": "Cole Caufield",
-    "team": "MTL",
-    "gp": 81,
-    "pos": "R",
-    "value": 98.2,
-    "goals": 13.9,
+    "value": 96.4,
+    "goals": 25.0,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defencemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. Each is multiplied by TOI/(TOI+k), where k is set so that the factor equals the component's measured year-over-year repeatability at the league-average workload, so the least repeatable components count least until the minutes are there. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defencemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
  },
  "gameLog": [
   {
