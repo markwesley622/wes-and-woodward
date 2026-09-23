@@ -1,0 +1,228 @@
+---
+import Base from '../layouts/Base.astro';
+import D from '../../data/site/dashboard.json';
+import team from '../../data/site/team.json';
+import results from '../../data/site/results.json';
+import lines from '../../data/site/lines.json';
+import goalies from '../../data/site/goalies.json';
+
+const S = D.standings, X = D.deserved, P = D.projected, NG = D.nextGame;
+const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
+const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
+const pct = (v, d = 1) => `${(v * 100).toFixed(d)}%`;
+const pct3 = (v) => `.${String(Math.round(v * 1000)).padStart(3, '0')}`;
+const mdy = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+const season = `${D.seasonLabel.slice(0, 4)}–${D.seasonLabel.slice(5)}`;
+const rebuilt = new Date(D.generatedAt).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/Detroit' }).toLowerCase();
+const wc = S.wildcard;
+const wcNote = D.seasonState === 'offseason' ? 'season complete' : (!wc ? 'division spot' : wc <= 2 ? 'in a playoff spot' : `${wc - 2} out`);
+
+// xG standings (every team scored the same way)
+const NAMES = { ANA:'Anaheim', BOS:'Boston', BUF:'Buffalo', CGY:'Calgary', CAR:'Carolina', CHI:'Chicago', COL:'Colorado', CBJ:'Columbus', DAL:'Dallas', DET:'Detroit', EDM:'Edmonton', FLA:'Florida', LAK:'Los Angeles', MIN:'Minnesota', MTL:'Montréal', NSH:'Nashville', NJD:'New Jersey', NYI:'NY Islanders', NYR:'NY Rangers', OTT:'Ottawa', PHI:'Philadelphia', PIT:'Pittsburgh', SJS:'San Jose', SEA:'Seattle', STL:'St. Louis', TBL:'Tampa Bay', TOR:'Toronto', UTA:'Utah', VAN:'Vancouver', VGK:'Vegas', WSH:'Washington', WPG:'Winnipeg' };
+const xgTable = X.table;
+const division = xgTable.filter((t) => t.division === xgTable.find((d) => d.team === 'DET').division);
+const conference = xgTable.filter((t) => t.conference === xgTable.find((d) => d.team === 'DET').conference);
+const actualRank = (pool, key) => { const sorted = [...pool].sort((a, b) => b.actualPoints - a.actualPoints); return Object.fromEntries(sorted.map((t, i) => [t.team, i + 1])); };
+const divActual = actualRank(division), confActual = actualRank(conference);
+
+// situations
+const SIT = [['all', 'All situations'], ['5on5', 'Five-on-five'], ['5on4', 'Power play (5v4)'], ['4on5', 'Penalty kill (4v5)']];
+const sits = SIT.map(([k, label]) => ({ key: k, label, ...team.situations[k] }));
+const rankNote = { '5on5': `${ordinal(team.leagueRanks.xGoalsPct_5on5)} xGF% · ${ordinal(team.leagueRanks.corsiPct_5on5)} CF%`, '5on4': `${ordinal(team.leagueRanks.xGoalsFor_5on4)} in expected goals generated` };
+
+// season barcode + points pace
+const games = results.map((g, i) => ({ ...g, n: i + 1, diff: g.goalsFor - g.goalsAgainst, pts: g.result === 'W' ? 2 : g.result === 'OTL' ? 1 : 0 }));
+let cum = 0; const pace = games.map((g) => { cum += g.pts; return cum; });
+const W = 1000, H = 220, PAD = 8;
+const maxDiff = Math.max(4, ...games.map((g) => Math.abs(g.diff)));
+const bx = (i) => PAD + (i + 0.5) * ((W - 2 * PAD) / Math.max(1, games.length));
+const H2 = 260, maxPts = Math.max(100, ...pace, X.xgPoints || 0);
+const px = (i) => PAD + i * ((W - 2 * PAD) / Math.max(1, games.length));
+const TOP = 22;
+const py = (p) => H2 - PAD - (p / maxPts) * (H2 - PAD - TOP);
+const pacePath = pace.map((p, i) => `${i === 0 ? 'M' : 'L'}${px(i + 1).toFixed(1)},${py(p).toFixed(1)}`).join(' ');
+const xgPace = games.length ? `M${px(0)},${py(0)} L${px(games.length).toFixed(1)},${py(X.xgPoints).toFixed(1)}` : '';
+const projLine = P.available && P.points ? `M${px(0)},${py(0)} L${px(82).toFixed(1)},${py(P.points).toFixed(1)}` : '';
+const gridPts = [20, 40, 60, 80, 100].filter((v) => v <= maxPts);
+
+// tiles
+const tiles = D.tiles.map((t) => ({ ...t, display: t.signed ? signed(t.value, 1) : t.unit === '%' ? `${t.value.toFixed(1)}%` : (Math.abs(t.value) < 20 ? t.value.toFixed(2) : t.value.toFixed(1)) }));
+const topLines = lines.forwardLines.slice(0, 5), topPairs = lines.defensePairs.slice(0, 3);
+const toi = (m) => Math.round(m);
+---
+<Base title="Team — Wes & Woodward" description="The Detroit Red Wings season in every game state: record, expected-goals standings, the season as a barcode, lines, pairs and goaltending.">
+  <section class="sec">
+    <div class="shell">
+      <p class="kicker">Team · {season}{D.seasonState === 'offseason' ? ' final' : ''}</p>
+      <h1 class="page-title">Detroit Red Wings</h1>
+      <p class="lede">Where the season went, in every game state. Rebuilt nightly from the NHL API and MoneyPuck, with a league rank wherever one can be computed and no smoothing.</p>
+      <div class="grid">
+        <div class="tile">
+          <span class="eb mono">Record</span>
+          <span class="num big red">{S.points} <span class="of">pts</span></span>
+          <span class="sub"><span class="tip" title="Wins, losses, overtime losses">{S.wins}–{S.losses}–{S.otLosses}</span> · <span class="tip" title="Points percentage">{pct3(S.pointPctg)}</span> · <span class="tip" title="Goals for, goals against, differential">{S.goalFor}–{S.goalAgainst} ({signed(S.goalDifferential, 0)})</span></span>
+        </div>
+        <div class="tile"><span class="eb mono">{S.division.name} Division</span><span class="num">{ordinal(S.division.place)}</span><span class="sub">of {S.division.teams} · {ordinal(X.divisionPlace)} by expected goals</span></div>
+        <div class="tile"><span class="eb mono">{S.conference.name} Conference</span><span class="num">{ordinal(S.conference.place)}</span><span class="sub">of {S.conference.teams} · {ordinal(X.conferencePlace)} by expected goals</span></div>
+        <div class="tile"><span class="eb mono">League</span><span class="num">{ordinal(S.league.place)}</span><span class="sub">of {S.league.teams} · {ordinal(X.leaguePlace)} by expected goals</span></div>
+        <div class="tile"><span class="eb mono">Regulation wins</span><span class="num">{S.regulationWins}</span><span class="sub">{S.gamesPlayed} games played</span></div>
+        <div class="tile"><span class="eb mono">Streak · last ten</span><span class="num">{S.streak ?? '—'}</span><span class="sub">last ten {S.lastTen ?? '—'}</span></div>
+        <div class="tile"><span class="eb mono">Wild card</span><span class="num">{wc ? ordinal(wc) : '—'}</span><span class="sub">{wcNote}</span></div>
+        <div class="tile"><span class="eb mono">Next game</span><span class="num sm">{NG ? `${NG.home ? 'vs' : 'at'} ${NG.opponent}` : '—'}</span><span class="sub">{NG ? mdy(NG.date) : 'schedule pending'}</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="xg-standings">
+    <div class="shell">
+      <h2>Standings by expected goals</h2>
+      <p class="lede">The same games, scored on the chances each team created and allowed instead of the goals that went in. Every team gets the same treatment: an xG-Pythagorean win share on MoneyPuck's all-situations expected goals, converted to points with loser points at the league rate.</p>
+      <div class="two">
+        {[['Atlantic Division', division, divActual], ['Eastern Conference', conference, confActual]].map(([label, pool, act]) => (
+          <div class="table-scroll">
+            <p class="eb mono">{label}</p>
+            <table>
+              <thead><tr><th>xG</th><th>Team</th><th class="num">xG pts</th><th class="num">Actual</th><th class="num">Gap</th><th class="num">Place</th></tr></thead>
+              <tbody>
+                {pool.map((t, i) => (
+                  <tr class:list={{ det: t.team === 'DET' }}>
+                    <td>{i + 1}</td><td>{NAMES[t.team] ?? t.team}</td>
+                    <td class="num">{t.xgPoints.toFixed(1)}</td><td class="num">{t.actualPoints}</td>
+                    <td class:list={['num', { red: t.actualPoints - t.xgPoints >= 8 }]}>{signed(t.actualPoints - t.xgPoints, 1)}</td>
+                    <td class="num">{ordinal(act[t.team])}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))}
+      </div>
+      <p class="note mono">Gap: actual points minus xG points. Red marks a team that beat its chances by eight points or more. Place: actual standings place within the group.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="situations">
+    <div class="shell">
+      <h2>Every situation</h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Situation</th><th class="num">xGF%</th><th class="num">CF%</th><th class="num">xGF</th><th class="num">xGA</th><th class="num">GF</th><th class="num">GA</th><th class="num">Minutes</th></tr></thead>
+          <tbody>
+            {sits.map((s) => (
+              <tr>
+                <td><strong>{s.label}</strong>{rankNote[s.key] && <span class="rk mono">{rankNote[s.key]}</span>}</td>
+                <td class="num"><strong>{pct(s.xGoalsPct)}</strong></td><td class="num">{pct(s.corsiPct)}</td>
+                <td class="num">{s.xGoalsFor.toFixed(1)}</td><td class="num">{s.xGoalsAgainst.toFixed(1)}</td>
+                <td class="num">{s.goalsFor.toFixed(0)}</td><td class="num">{s.goalsAgainst.toFixed(0)}</td>
+                <td class="num">{Math.round(s.iceTime / 60).toLocaleString()}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="grid six">
+        {tiles.map((t) => (
+          <div class="tile"><span class="eb mono">{t.label}</span><span class="num md">{t.display}</span><span class:list={['sub', { red: t.rank <= 10 }]}>{t.rankLabel} · {t.note}</span></div>
+        ))}
+      </div>
+      <p class="note mono">Rank 1 is best in every tile; red marks a top-ten rank. Source: MoneyPuck, {season}.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="season">
+    <div class="shell">
+      <h2>The season, game by game</h2>
+      <p class="eb mono">Goal differential per game · in order · red won, black lost</p>
+      <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Goal differential in every game of the season">
+        <line x1={PAD} x2={W - PAD} y1={H / 2} y2={H / 2} class="axis" />
+        {games.map((g, i) => { const h = Math.abs(g.diff) / maxDiff * (H / 2 - PAD); const y = g.diff >= 0 ? H / 2 - h : H / 2; return (
+          <g class:list={['bar', { win: g.result === 'W', otl: g.result === 'OTL' }]}>
+            <rect x={bx(i) - 3} y={y} width={6} height={Math.max(2, h)} />
+            <title>{`Game ${g.n} · ${mdy(g.date)} · ${g.home ? 'vs' : 'at'} ${g.opponent} · ${g.goalsFor}–${g.goalsAgainst} ${g.result}${g.lastPeriodType !== 'REG' ? ` (${g.lastPeriodType})` : ''}`}</title>
+          </g>
+        ); })}
+      </svg>
+      <div class="axis-labels mono"><span>{games.length ? mdy(games[0].date) : ''}</span><span>{games.length ? mdy(games[games.length - 1].date) : ''}</span></div>
+
+      <p class="eb mono" style="margin-top:34px">Points pace · cumulative points by game</p>
+      <svg class="chart" viewBox={`0 0 ${W} ${H2}`} role="img" aria-label="Cumulative points through the season against the expected-goals pace">
+        {gridPts.map((v) => (<g><line x1={PAD} x2={W - PAD} y1={py(v)} y2={py(v)} class="grid" /><text x={PAD + 4} y={py(v) - 4} class="lbl">{v}</text></g>))}
+        {xgPace && <path d={xgPace} class="xg" />}
+        {projLine && <path d={projLine} class="proj" />}
+        {pacePath && <path d={pacePath} class="pts" />}
+        {games.length > 0 && <circle cx={px(games.length)} cy={py(pace[pace.length - 1])} r="5" class="dot" />}
+      </svg>
+      <div class="legend mono"><span><i class="sw pts"></i>points</span><span><i class="sw xg"></i>xG points pace ({X.xgPoints.toFixed(1)})</span>{projLine && <span><i class="sw proj"></i>MoneyPuck projection ({P.points.toFixed(0)})</span>}</div>
+    </div>
+  </section>
+
+  <section class="sec" id="lines">
+    <div class="shell">
+      <h2>Lines, pairs and goaltending</h2>
+      <div class="two">
+        <div class="table-scroll">
+          <p class="eb mono">Five-on-five units by ice time</p>
+          <table>
+            <thead><tr><th>Unit</th><th class="num">TOI</th><th class="num">xG%</th><th class="num">CF%</th><th class="num">GF–GA</th></tr></thead>
+            <tbody>
+              {[...topLines, ...topPairs].map((l) => (
+                <tr><td>{l.players.join(' – ')}</td><td class="num">{toi(l.icetimeMinutes)}</td><td class:list={['num', { red: l.xGoalsPct >= 0.55 }]}>{pct(l.xGoalsPct)}</td><td class="num">{pct(l.corsiPct)}</td><td class="num">{l.goalsFor.toFixed(0)}–{l.goalsAgainst.toFixed(0)}</td></tr>
+              ))}
+            </tbody>
+          </table>
+          <p class="note mono">Five most-used forward lines and three most-used pairs. Red marks a unit at 55% expected goals or better.</p>
+        </div>
+        <div class="table-scroll">
+          <p class="eb mono">Goaltending</p>
+          <table>
+            <thead><tr><th>Goalie</th><th class="num">GP</th><th class="num">Record</th><th class="num">SV%</th><th class="num">GAA</th><th class="num">GSAx</th><th class="num">Pctl</th></tr></thead>
+            <tbody>
+              {goalies.map((g) => (
+                <tr><td>{g.name}</td><td class="num">{g.gamesPlayed}</td><td class="num">{g.wins}–{g.losses}–{g.otLosses}</td><td class="num">{g.savePct ? `.${Math.round(g.savePct * 1000)}` : '—'}</td><td class="num">{g.gaa?.toFixed(2) ?? '—'}</td><td class:list={['num', { red: (g.gsax ?? 0) >= 5 }]}>{g.gsax != null ? signed(g.gsax) : '—'}</td><td class="num">{g.qualifiesForPercentiles ? g.pctl_gsax : '—'}</td></tr>
+              ))}
+            </tbody>
+          </table>
+          <p class="note mono">GSAx: goals saved above expected, all situations, MoneyPuck. Pctl: league percentile among goalies with 600+ minutes.</p>
+        </div>
+      </div>
+      <p class="note mono" style="margin-top:28px">Rebuilt {rebuilt} et · NHL API · MoneyPuck · {X.method}</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .lede { max-width: 66ch; font-size: 18px; line-height: 1.55; margin: 0 0 26px; }
+  .page-title { margin-bottom: 14px; }
+  .tile .num .of { font-size: 18px; font-weight: 500; color: var(--mute); letter-spacing: 0; }
+  .tile .num.sm { font-size: 32px; }
+  .tile .num.md { font-size: 34px; }
+  .tip { border-bottom: 1px dotted var(--mute); cursor: help; }
+  .grid.six { grid-template-columns: repeat(6, 1fr); margin-top: 28px; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+  p.eb { margin: 0 0 8px; color: var(--mute); }
+  p.eb::before { content: "// "; }
+  .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; }
+  tr.det td { background: rgba(206, 17, 38, .08); font-weight: 600; }
+  td.red { color: var(--red); font-weight: 600; }
+  .rk { display: block; font-size: 10px; color: var(--mute); }
+  th.num, td.num { text-align: right; }
+  .chart { width: 100%; height: auto; display: block; }
+  .chart .axis { stroke: var(--ink); stroke-width: 1; }
+  .chart .grid { stroke: var(--rule); stroke-width: 1; }
+  .chart .lbl { font-family: var(--mono); font-size: 11px; fill: var(--mute); }
+  .chart .bar rect { fill: var(--ink); }
+  .chart .bar.win rect { fill: var(--red); }
+  .chart .bar.otl rect { fill: var(--mute); }
+  .chart .pts { fill: none; stroke: var(--red); stroke-width: 2.5; }
+  .chart .xg { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 6 5; }
+  .chart .proj { fill: none; stroke: var(--mute); stroke-width: 1.5; stroke-dasharray: 2 4; }
+  .chart .dot { fill: var(--red); }
+  .axis-labels { display: flex; justify-content: space-between; color: var(--mute); margin-top: 6px; }
+  .legend { display: flex; gap: 22px; margin-top: 10px; color: var(--mute); }
+  .sw { display: inline-block; width: 18px; height: 3px; vertical-align: middle; margin-right: 7px; }
+  .sw.pts { background: var(--red); } .sw.xg { background: var(--ink); } .sw.proj { background: var(--mute); }
+  @media (max-width: 900px) {
+    .grid.six { grid-template-columns: repeat(2, 1fr); }
+    .two { grid-template-columns: 1fr; }
+  }
+</style>
