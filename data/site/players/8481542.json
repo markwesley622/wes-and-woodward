@@ -78,14 +78,34 @@
   }
  },
  "score": {
-  "value": 96.2,
-  "low": 93.3,
-  "high": 97.9,
-  "results": 97.4,
-  "percentile": 99.1,
-  "goalsSustainable": 18.8,
-  "goalsResults": 19.7,
-  "reliability": 0.772,
+  "value": 98.5,
+  "low": 96.4,
+  "high": 99.4,
+  "sustainable": 97.8,
+  "results": 98.5,
+  "percentile": 99.5,
+  "goalsBlended": 14.3,
+  "goalsSustainable": 14.1,
+  "goalsResults": 14.6,
+  "blend": {
+   "sustainable": 0.53,
+   "results": 0.47
+  },
+  "k": {
+   "EVO": 1531,
+   "EVD": 1746,
+   "PPO": 2256,
+   "SHD": 5292,
+   "Pens": 1149
+  },
+  "repeatability": {
+   "EVO": 0.465,
+   "EVD": 0.432,
+   "PPO": 0.371,
+   "SHD": 0.201,
+   "Pens": 0.536
+  },
+  "reliability": 0.508,
   "pool": 740,
   "group": "skaters",
   "position": "D",
@@ -95,31 +115,35 @@
     "label": "Even-strength offense",
     "sustainable": 9.7,
     "results": 10.9,
-    "shrink": 0.81,
-    "counted": 7.8
+    "shrink": 0.58,
+    "repeat": 0.465,
+    "counted": 5.9
    },
    {
     "key": "EVD",
     "label": "Even-strength defense",
     "sustainable": 12.5,
     "results": 10.4,
-    "shrink": 0.68,
-    "counted": 8.5
+    "shrink": 0.55,
+    "repeat": 0.432,
+    "counted": 6.3
    },
    {
     "key": "PPO",
     "label": "Power play",
     "sustainable": 2.3,
     "results": 4.4,
-    "shrink": 0.75,
-    "counted": 1.7
+    "shrink": 0.48,
+    "repeat": 0.371,
+    "counted": 1.6
    },
    {
     "key": "SHD",
     "label": "Penalty kill",
     "sustainable": -0.1,
     "results": -0.3,
-    "shrink": 0.75,
+    "shrink": 0.28,
+    "repeat": 0.201,
     "counted": -0.1
    },
    {
@@ -127,8 +151,9 @@
     "label": "Penalties drawn minus taken",
     "sustainable": 0.9,
     "results": 0.9,
-    "shrink": 0.88,
-    "counted": 0.8
+    "shrink": 0.65,
+    "repeat": 0.536,
+    "counted": 0.6
    }
   ],
   "raw": {
@@ -151,60 +176,60 @@
    "CF/60": 3.67,
    "CA/60": -5.34
   },
-  "rank": 7,
+  "rank": 4,
   "neighbours": [
    {
-    "rank": 5,
-    "name": "Matthew Schaefer",
-    "team": "NYI",
+    "rank": 2,
+    "name": "Nathan MacKinnon",
+    "team": "COL",
+    "gp": 80,
+    "pos": "C",
+    "value": 98.7,
+    "goals": 14.7,
+    "isMe": false
+   },
+   {
+    "rank": 3,
+    "name": "Lane Hutson",
+    "team": "MTL",
     "gp": 82,
     "pos": "D",
-    "value": 97.0,
-    "goals": 19.9,
+    "value": 98.5,
+    "goals": 14.4,
     "isMe": false
    },
    {
-    "rank": 6,
-    "name": "Jason Robertson",
-    "team": "DAL",
-    "gp": 82,
-    "pos": "L",
-    "value": 96.3,
-    "goals": 18.9,
-    "isMe": false
-   },
-   {
-    "rank": 7,
+    "rank": 4,
     "name": "Moritz Seider",
     "team": "DET",
     "gp": 82,
     "pos": "D",
-    "value": 96.2,
-    "goals": 18.8,
+    "value": 98.5,
+    "goals": 14.3,
     "isMe": true
    },
    {
-    "rank": 8,
-    "name": "Nikita Kucherov",
-    "team": "T.B",
-    "gp": 76,
-    "pos": "R",
-    "value": 96.1,
-    "goals": 18.6,
+    "rank": 5,
+    "name": "Zach Werenski",
+    "team": "CBJ",
+    "gp": 75,
+    "pos": "D",
+    "value": 98.4,
+    "goals": 14.1,
     "isMe": false
    },
    {
-    "rank": 9,
-    "name": "Brock Nelson",
-    "team": "COL",
+    "rank": 6,
+    "name": "Cole Caufield",
+    "team": "MTL",
     "gp": 81,
-    "pos": "C",
-    "value": 96.0,
-    "goals": 18.4,
+    "pos": "R",
+    "value": 98.2,
+    "goals": 13.9,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defencemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. Each is multiplied by TOI/(TOI+k) with k = 500/1000/700/700/300 minutes, so the least repeatable components count least until the minutes are there. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defencemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. Each is multiplied by TOI/(TOI+k), where k is set so that the factor equals the component's measured year-over-year repeatability at the league-average workload, so the least repeatable components count least until the minutes are there. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
  },
  "gameLog": [
   {

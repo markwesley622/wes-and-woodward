@@ -25,9 +25,44 @@ SEASON = CFG["nhl_season"]; EH_SEASON = f"{SEASON[2:4]}-{SEASON[6:8]}"
 EH = ROOT / "research" / "rasmussen" / "raw" / "eh"
 CTX = ssl.create_default_context(cafile=certifi.where())
 
-# reliability constants (minutes of all-situations TOI at which a component is half-trusted)
-K = {"EVO": 500, "EVD": 1000, "PPO": 700, "SHD": 700, "Pens": 300}
 Z80 = 1.2816
+XK = {"EVO": "xEVO_GAR", "EVD": "xEVD_GAR", "PPO": "xPPO_GAR", "SHD": "xSHD_GAR", "Pens": "Pens_GAR"}
+GK = {"EVO": "EVO_GAR", "EVD": "EVD_GAR", "PPO": "PPO_GAR", "SHD": "SHD_GAR", "Pens": "Pens_GAR"}
+
+
+def _corr(a, b):
+    n = len(a); ma = sum(a) / n; mb = sum(b) / n
+    sa = math.sqrt(sum((x - ma) ** 2 for x in a)); sb = math.sqrt(sum((y - mb) ** 2 for y in b))
+    return sum((x - ma) * (y - mb) for x, y in zip(a, b)) / (sa * sb) if sa and sb else 0.0
+
+
+def reliability_constants(min_toi=800):
+    """Measure each component's year-over-year repeatability across every season in the
+    Evolving-Hockey exports (players with min_toi+ minutes in both years), and turn it into a
+    shrink constant k such that TOI/(TOI+k) equals that repeatability at the mean TOI.
+    Also returns the weights for blending sustainable (xGAR) and results (GAR): each
+    proportional to its own repeatability. Nothing here is guessed."""
+    def nxt(season):
+        a, b = season.split("-"); return f"{int(a) + 1:02d}-{int(b) + 1:02d}"
+    def yoy(fn, cols):
+        by = {}
+        for r in csv.DictReader((EH / fn).open()):
+            if f(r["TOI_All"]) >= min_toi: by.setdefault(r["Player"], {})[r["Season"]] = r
+        out = {}
+        for c in cols:
+            a, b, toi = [], [], []
+            for seas in by.values():
+                for sn, r in seas.items():
+                    t = nxt(sn)
+                    if t in seas: a.append(f(r[c])); b.append(f(seas[t][c])); toi.append(f(r["TOI_All"]))
+            out[c] = (_corr(a, b), sum(toi) / len(toi))
+        return out
+    x = yoy("xgar_all_seasons.csv", list(XK.values()) + ["xGAR"])
+    g = yoy("gar_all_seasons.csv", ["GAR"])
+    K = {comp: round(x[col][1] * (1 - x[col][0]) / max(0.05, x[col][0])) for comp, col in XK.items()}
+    rx, rg = x["xGAR"][0], g["GAR"][0]
+    return K, {"sustainable": rx / (rx + rg), "results": rg / (rx + rg)}, {comp: round(x[col][0], 3) for comp, col in XK.items()}
+
 
 
 def get(url):
@@ -65,6 +100,9 @@ def qbr(pool, value):
     return round(100 / (1 + math.exp(-z)), 1)
 
 
+K, BLEND, REPEAT = reliability_constants()
+
+
 def build(pid, fetch=False):
     raw = ROOT / "data" / "raw" / "players" / str(pid); raw.mkdir(parents=True, exist_ok=True)
     if fetch or not (raw / "landing.json").exists():
@@ -88,31 +126,38 @@ def build(pid, fetch=False):
     rapm = {r["Player"]: r for r in eh_rows("rapm_ev_rates_all_seasons.csv")}
     # positionless: every NHL skater with 20+ GP is in the same pool (Mark, 9/23)
     grp = lambda r: int(r["GP"]) >= 20
-    XK = {"EVO": "xEVO_GAR", "EVD": "xEVD_GAR", "PPO": "xPPO_GAR", "SHD": "xSHD_GAR", "Pens": "Pens_GAR"}
-    GK = {"EVO": "EVO_GAR", "EVD": "EVD_GAR", "PPO": "PPO_GAR", "SHD": "SHD_GAR", "Pens": "Pens_GAR"}
-    ranked = sorted(((composite(r, XK, f(r["TOI_All"]))[0], r["Player"], r["Team"], int(r["GP"]), r["Position"]) for r in xg_rows if grp(r)), key=lambda t: -t[0])
+    g_by = {r["Player"]: r for r in g_rows}
+    def blended(rx):
+        """Shrunken composite on a reliability-weighted blend of sustainable (xGAR) and results (GAR)."""
+        toi = f(rx["TOI_All"]); rg = g_by.get(rx["Player"])
+        vx, rel = composite(rx, XK, toi); vg = composite(rg, GK, toi)[0] if rg else vx
+        return BLEND["sustainable"] * vx + BLEND["results"] * vg, vx, vg, rel
+    ranked = sorted(((blended(r)[0], r["Player"], r["Team"], int(r["GP"]), r["Position"]) for r in xg_rows if grp(r)), key=lambda t: -t[0])
     x_pool = [t[0] for t in ranked]
+    xs_pool = [composite(r, XK, f(r["TOI_All"]))[0] for r in xg_rows if grp(r)]
     g_pool = [composite(r, GK, f(r["TOI_All"]))[0] for r in g_rows if grp(r)]
-    me_x = next(r for r in xg_rows if r["Player"] == name); me_g = next(r for r in g_rows if r["Player"] == name)
+    me_x = next(r for r in xg_rows if r["Player"] == name); me_g = g_by[name]
     toi = f(me_x["TOI_All"])
-    vx, rel = composite(me_x, XK, toi); vg, _ = composite(me_g, GK, toi)
+    vb, vx, vg, rel = blended(me_x)
     sd = (sum((v - sum(x_pool) / len(x_pool)) ** 2 for v in x_pool) / max(1, len(x_pool) - 1)) ** 0.5
     se = sd * math.sqrt(max(0.0, 1 - rel))
     score = {
-        "value": qbr(x_pool, vx), "low": qbr(x_pool, vx - Z80 * se), "high": qbr(x_pool, vx + Z80 * se),
-        "results": qbr(g_pool, vg), "percentile": percentile(x_pool, vx), "goalsSustainable": round(vx, 1), "goalsResults": round(vg, 1),
+        "value": qbr(x_pool, vb), "low": qbr(x_pool, vb - Z80 * se), "high": qbr(x_pool, vb + Z80 * se),
+        "sustainable": qbr(xs_pool, vx), "results": qbr(g_pool, vg), "percentile": percentile(x_pool, vb),
+        "goalsBlended": round(vb, 1), "goalsSustainable": round(vx, 1), "goalsResults": round(vg, 1),
+        "blend": {k: round(v, 2) for k, v in BLEND.items()}, "k": K, "repeatability": REPEAT,
         "reliability": round(rel, 3), "pool": len(x_pool), "group": "skaters", "position": group,
         "components": [
             {"key": c, "label": {"EVO": "Even-strength offense", "EVD": "Even-strength defense", "PPO": "Power play", "SHD": "Penalty kill", "Pens": "Penalties drawn minus taken"}[c],
-             "sustainable": f(me_x[XK[c]]), "results": f(me_g[GK[c]]), "shrink": round(shrink(toi, K[c]), 2),
-             "counted": round(shrink(toi, K[c]) * f(me_x[XK[c]]), 1)} for c in XK],
+             "sustainable": f(me_x[XK[c]]), "results": f(me_g[GK[c]]), "shrink": round(shrink(toi, K[c]), 2), "repeat": REPEAT[c],
+             "counted": round(shrink(toi, K[c]) * (BLEND["sustainable"] * f(me_x[XK[c]]) + BLEND["results"] * f(me_g[GK[c]])), 1)} for c in XK],
         "raw": {"xGAR": f(me_x["xGAR"]), "GAR": f(me_g["GAR"]), "WAR": f(me_g["WAR"]), "xWAR": f(me_x["xWAR"]), "toiAll": toi},
         "rapm": {k: f(v) for k, v in rapm.get(name, {}).items() if k not in ("Player", "Season", "Team", "Position")},
         "rank": next(i + 1 for i, t in enumerate(ranked) if t[1] == name),
         "neighbours": [
             {"rank": i + 1, "name": t[1], "team": t[2], "gp": t[3], "pos": t[4], "value": qbr(x_pool, t[0]), "goals": round(t[0], 1), "isMe": t[1] == name}
             for i, t in enumerate(ranked) if abs(i - next(j for j, u in enumerate(ranked) if u[1] == name)) <= 2],
-        "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defencemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. Each is multiplied by TOI/(TOI+k) with k = 500/1000/700/700/300 minutes, so the least repeatable components count least until the minutes are there. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
+        "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defencemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. Each is multiplied by TOI/(TOI+k), where k is set so that the factor equals the component's measured year-over-year repeatability at the league-average workload, so the least repeatable components count least until the minutes are there. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
     }
 
     # ---- MoneyPuck (from the site's skaters.json, already percentiled)
@@ -151,7 +196,7 @@ def build(pid, fetch=False):
     }
     dest = ROOT / "data" / "site" / "players"; dest.mkdir(parents=True, exist_ok=True)
     (dest / f"{pid}.json").write_text(json.dumps(out, indent=1))
-    print(f"site/players/{pid}.json written: {name} value {score['value']} ({score['low']}-{score['high']}) results {score['results']} · {len(games)} games, GS avg {out['gameScore']['average']}")
+    print(f"site/players/{pid}.json written: {name} value {score['value']} ({score['low']}-{score['high']}) sustainable {score['sustainable']} results {score['results']} rank {score['rank']}/{score['pool']} · K={K} blend={score['blend']}")
 
 
 if __name__ == "__main__":

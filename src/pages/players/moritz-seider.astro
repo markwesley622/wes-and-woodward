@@ -35,7 +35,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
           <span class="eb mono">W&amp;W value</span>
           <span class="score">{SC.value.toFixed(1)}</span>
           <span class="mono range">likely {SC.low.toFixed(1)}–{SC.high.toFixed(1)} · {tier}</span>
-          <span class="mono split"><span class="red">sustainable {SC.value.toFixed(1)}</span> · results {SC.results.toFixed(1)}</span>
+          <span class="mono split">sustainable {SC.sustainable.toFixed(1)} · results {SC.results.toFixed(1)}</span>
         </div>
       </div>
       <div class="grid">
@@ -58,10 +58,10 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
               {SC.components.map((c) => (
                 <tr><td>{c.label}</td><td class="num">{signed(c.sustainable)}</td><td class="num">{signed(c.results)}</td><td class="num">{Math.round(c.shrink * 100)}%</td><td class:list={['num', { red: c.counted >= 3 }]}>{signed(c.counted)}</td></tr>
               ))}
-              <tr class="total"><td>Total, goals above replacement</td><td class="num">{signed(SC.raw.xGAR)}</td><td class="num">{signed(SC.raw.GAR)}</td><td class="num">{Math.round(SC.reliability * 100)}%</td><td class="num red">{signed(SC.goalsSustainable)}</td></tr>
+              <tr class="total"><td>Total, goals above replacement</td><td class="num">{signed(SC.raw.xGAR)}</td><td class="num">{signed(SC.raw.GAR)}</td><td class="num">{Math.round(SC.reliability * 100)}%</td><td class="num red">{signed(SC.goalsBlended)}</td></tr>
             </tbody>
           </table>
-          <p class="note mono">Sustainable = Evolving-Hockey xGAR (chances). Results = GAR (goals). Trust = the share of each component counted at {Math.round(SC.raw.toiAll)} minutes; the least repeatable components count least. Counted = sustainable × trust, the number the score is built on.</p>
+          <p class="note mono">Sustainable = Evolving-Hockey xGAR (chances). Results = GAR (goals). Trust = the share of each component counted at {Math.round(SC.raw.toiAll)} minutes, set by how well that component repeats year to year across every NHL season since 2007. Counted = trust × a blend of sustainable and results ({Math.round(SC.blend.sustainable * 100)}/{Math.round(SC.blend.results * 100)}, weighted by their own repeatability), the number the score is built on.</p>
         </div>
         <div class="prose-sm">
           <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with twenty or more games this season, forwards and defencemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {P.name.split(' ')[1]} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} skaters, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how far the score could move if the least repeatable components regress; it narrows as the minutes pile up.</p>
