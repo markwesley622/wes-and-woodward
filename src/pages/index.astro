@@ -70,8 +70,8 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   <section class="sec" id="dashboard">
     <div class="shell">
       <h2>Team dashboard</h2>
-      <div class="grid three">
-        <div class="tile wide">
+      <div class="grid">
+        <div class="tile">
           <span class="eb mono">Record · {season}</span>
           <span class="num big red">{S.points} <span class="of">pts</span></span>
           <span class="sub"><span class="tip" title="Wins, losses, overtime losses">{S.wins}–{S.losses}–{S.otLosses}</span> · <span class="tip" title="Points percentage: points earned of points available">{pct3(S.pointPctg)}</span> · <span class="tip" title="Goals for, goals against, and the goal differential">{S.goalFor}–{S.goalAgainst} ({signed(S.goalDifferential, 0)})</span></span>
@@ -81,10 +81,10 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
         <div class="tile"><span class="eb mono tip" title="Place in the conference on the NHL's own standings">{S.conference.name} Conference</span><span class="num">{ordinal(S.conference.place)}</span><span class="sub">of {S.conference.teams} · actual</span></div>
 
         <div class="tile"><span class="eb mono tip" title="Expected goals generated per 60 minutes on the power play (5v4)">{TPP.label}</span><span class="num">{TPP.value}</span><span class:list={['sub', { red: TPP.rank <= 10 }]}>{TPP.rankLabel}</span></div>
-        <div class="tile"><span class="eb mono tip" title="Where the same games place Detroit when every team is scored on expected goals instead of actual goals">{S.division.name} Division</span><span class="num">{ordinal(X.divisionPlace)}</span><span class="sub">of {S.division.teams} · expected results</span></div>
-        <div class="tile"><span class="eb mono tip" title="Where the same games place Detroit when every team is scored on expected goals instead of actual goals">{S.conference.name} Conference</span><span class="num">{ordinal(X.conferencePlace)}</span><span class="sub">of {S.conference.teams} · expected results</span></div>
         <div class="tile"><span class="eb mono tip" title="Expected goals allowed per 60 minutes on the penalty kill (4v5); lower is better">{TPK.label}</span><span class="num">{TPK.value}</span><span class:list={['sub', { red: TPK.rank <= 10 }]}>{TPK.rankLabel}</span></div>
 
+        <div class="tile"><span class="eb mono tip" title="Where the same games place Detroit when every team is scored on expected goals instead of actual goals">{S.division.name} Division</span><span class="num">{ordinal(X.divisionPlace)}</span><span class="sub">of {S.division.teams} · expected results</span></div>
+        <div class="tile"><span class="eb mono tip" title="Where the same games place Detroit when every team is scored on expected goals instead of actual goals">{S.conference.name} Conference</span><span class="num">{ordinal(X.conferencePlace)}</span><span class="sub">of {S.conference.teams} · expected results</span></div>
         <div class="tile full progress">
           <span class="eb mono tip" title="Points banked against MoneyPuck's season simulation. The pre-season projection is frozen on opening night; the updated projection is re-run after every result.">Progress toward MoneyPuck&rsquo;s projected points</span>
           {prog ? (
@@ -182,8 +182,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   .foot { position: absolute; left: var(--gutter); right: var(--gutter); bottom: 18px; display: flex; justify-content: space-between; gap: 16px; color: var(--mute); z-index: 3; }
 
   /* dashboard extras */
-  /* dashboard grid follows Mark's doc: 3 columns; record spans two, progress spans all */
-  .grid.three { grid-template-columns: repeat(3, 1fr); }
+  /* dashboard grid: 4 columns; Atlantic and Eastern actual sit over their expected-results tiles on the right */
   .tile.full { grid-column: 1 / -1; }
   .tile .num .of { font-size: 18px; font-weight: 500; color: var(--mute); letter-spacing: 0; }
   .tip { border-bottom: 1px dotted var(--mute); cursor: help; }
