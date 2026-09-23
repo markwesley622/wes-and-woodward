@@ -18,11 +18,8 @@ let banner = `${season} · ${record}`;
 if (D.seasonState === 'offseason') {
   banner = `${season} final · ${record}`;
   if (NG) banner += ` · ${NG.season.slice(0, 4)}–${NG.season.slice(6)} opens ${mdy(NG.date)} ${vs(NG)} ${NG.opponent}`;
-} else if (D.seasonState === 'preseason' && NG) {
-  banner = `${season} opens ${mdy(NG.date)} ${vs(NG)} ${NG.opponent}`;
-} else if (NG) {
-  banner += ` · next ${vs(NG)} ${NG.opponent} ${mdy(NG.date)}`;
 }
+// preseason and in-season: just `season · record` (Mark's copy, 9/23)
 const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['Prospects', `${base}#prospects`], ['Analysis', `${base}#analysis`], ['About', `${base}about/`]];
 ---
 <!doctype html>
