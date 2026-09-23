@@ -26,11 +26,10 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
     <div class="shell">
       <p class="kicker"><a href="/">Players</a> · Red Wings · {season}</p>
       <div class="head">
-        <img class="sil" src="/players/8481542-photo.png" alt={`${P.name} in warmups, 2023-24`} width="487" height="863" />
+        <picture class="art"><source srcset="/players/8481542-art.webp" type="image/webp" /><img src="/players/8481542-art.png" alt={`${P.name}, illustrated`} width="1100" height="745" /></picture>
         <div class="who">
           <h1 class="page-title">{P.name}</h1>
           <p class="mono bio">#{B.number} · {POS[B.position] ?? B.position} · shoots {B.shoots} · {ht}, {B.weightLb} lb · age {age} · {B.birthplace}{B.draft ? ` · drafted ${B.draft.year}, ${B.draft.overallPick}th overall` : ''}</p>
-          <p class="mono credit">Photo: Ryan Tanner, warmups, Jan 2024 · CC0 via Wikimedia Commons</p>
         </div>
         <div class="scorebox">
           <span class="eb mono">W&amp;W value</span>
@@ -119,8 +118,9 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
 
 <style>
   .kicker a { color: var(--mute); }
-  .head { display: grid; grid-template-columns: 220px minmax(0, 1fr) auto; gap: 32px; align-items: end; margin: 0 0 28px; }
-  .sil { width: 220px; height: auto; display: block; }
+  .head { display: grid; grid-template-columns: 380px minmax(0, 1fr) auto; gap: 36px; align-items: end; margin: 0 0 28px; }
+  .art { display: block; width: 380px; }
+  .art img { width: 100%; height: auto; display: block; }
   .credit { color: var(--mute); text-transform: none; letter-spacing: 0; font-size: 11px; margin: 6px 0 0; }
   .who .page-title { margin-bottom: 10px; }
   .bio { color: var(--mute); text-transform: none; letter-spacing: 0; font-size: 12.5px; }
@@ -147,8 +147,8 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   .axis-labels { display: flex; justify-content: space-between; color: var(--mute); margin: 6px 0 28px; }
   .log td.gs.neg { color: var(--mute); }
   @media (max-width: 900px) {
-    .head { grid-template-columns: 120px minmax(0, 1fr); }
-    .sil { width: 140px; }
+    .head { grid-template-columns: 1fr; }
+    .art { width: min(100%, 420px); }
     .scorebox { grid-column: 1 / -1; align-items: flex-start; text-align: left; border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 16px; }
     .score { font-size: 88px; }
     .two { grid-template-columns: 1fr; }
