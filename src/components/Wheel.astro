@@ -11,7 +11,8 @@ const depth = N * STEP;
 <div class="stage" id="wheel-stage" aria-hidden="true">
   <div class="wheel" id="wheel">
     <div class="back" style={`transform:translateZ(${-depth - 6}px)`}>
-      <svg viewBox={parts.viewBox}><path class="tire" d={parts.tire} /><path class="spin" d={parts.spokes} /></svg>
+      <svg viewBox={parts.viewBox}><path class="tire" d={parts.tire} /></svg>
+      <svg class="spokes" viewBox={parts.viewBox}><path d={parts.spokes} /></svg>
     </div>
     <div class="tread">
       <svg class="tl" viewBox="0 0 840 840" style="transform:translateZ(-1px)"><circle cx="420" cy="420" r="415" class="edge" /></svg>
@@ -23,7 +24,8 @@ const depth = N * STEP;
       <svg class="tl" viewBox="0 0 840 840" style={`transform:translateZ(${-depth - 1}px)`}><circle cx="420" cy="420" r="415" class="edge" /></svg>
     </div>
     <div class="face" style="transform:translateZ(6px)">
-      <svg viewBox={parts.viewBox}><path class="tire" d={parts.tire} /><path class="spin" d={parts.spokes} /></svg>
+      <svg viewBox={parts.viewBox}><path class="tire" d={parts.tire} /></svg>
+      <svg class="spokes" viewBox={parts.viewBox}><path d={parts.spokes} /></svg>
     </div>
   </div>
 </div>
@@ -33,11 +35,15 @@ const depth = N * STEP;
   .wheel { position: absolute; inset: 0; transform-style: preserve-3d; transform: rotateX(var(--tilt, 6deg)); will-change: transform; }
   .face, .back, .tread { position: absolute; inset: 0; transform-style: preserve-3d; }
   .face svg, .back svg, .tl { position: absolute; inset: 0; width: 100%; height: 100%; }
-  path { fill: none; stroke: var(--ink); stroke-width: 1.6; vector-effect: non-scaling-stroke; }
-  circle { fill: none; stroke: var(--ink); stroke-width: 1.2; vector-effect: non-scaling-stroke; }
-  circle.edge { stroke-width: 1.6; }
-  .spin { transform-box: fill-box; transform-origin: center; transform: rotate(var(--spin, 0deg)); }
-  .tread { transform: rotate(var(--spin, 0deg)); opacity: var(--tread, 0.35); }
+  /* No non-scaling strokes and no SVG-internal transforms: every per-frame change is an element-level
+     CSS transform, so the compositor moves the rasterized layers instead of re-drawing 32 SVGs each frame.
+     Re-rastering was what made layers drop out for a frame at a time (the "flicker"). */
+  path { fill: none; stroke: var(--ink); stroke-width: 1.5; }
+  circle { fill: none; stroke: var(--ink); stroke-width: 1.1; }
+  circle.edge { stroke-width: 1.5; }
+  .spokes { transform-origin: 50.1% 50.1%; transform: rotate(var(--spin, 0deg)); will-change: transform; backface-visibility: hidden; }
+  .tread { transform: rotate(var(--spin, 0deg)); opacity: var(--tread, 0.35); will-change: transform; }
+  .tl { backface-visibility: hidden; }
   /* phones: the wheel's left edge sits on the gutter, in line with the wordmark; the rest runs off the right edge (page wrapper clips it) */
   @media (max-width: 640px) { .stage { left: var(--gutter); right: auto; top: 44vh; width: 124vw; } }
   @media (prefers-reduced-motion: reduce) { .wheel { transform: rotateX(28deg) !important; } .tread { opacity: 1; } }
