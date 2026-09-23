@@ -51,6 +51,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
     <div class="shell">
       <h2>Where the value comes from</h2>
       <div class="two">
+        <div class="left">
         <div class="table-scroll">
           <table>
             <thead><tr><th>Component</th><th class="num">Sustainable</th><th class="num">Results</th><th class="num">Repeats</th><th class="num">Counted</th></tr></thead>
@@ -63,12 +64,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
           </table>
           <p class="note mono">Sustainable = Evolving-Hockey xGAR (chances). Results = GAR (goals). Counted = a {Math.round(SC.blend.sustainable * 100)}/{Math.round(SC.blend.results * 100)} blend of the two, weighted by how well each repeats year to year across every NHL season since 2007; this season only, nothing regressed. Repeats = that component's year-to-year repeatability, which sets the likely range, not the number.</p>
         </div>
-        <div class="prose-sm">
-          <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with twenty or more games this season, forwards and defencemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {P.name.split(' ')[1]} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} skaters, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how much of that is noise given how well each component repeats at his minutes; the number itself is this season's delivered value, not a projection.</p>
-          <p>Two outside checks. HockeyStatCards' Luszczyszyn model puts his net rating in the {HS.Net?.percentile}th percentile ({HS.Net?.value}) and his game score in the {HS['Game score']?.percentile}th. Evolving-Hockey's own headline number is {SC.raw.WAR} wins above replacement.</p>
-        </div>
-      </div>
-      <div class="rankwrap">
+        <div class="rankwrap">
         <p class="eb mono">Where he ranks · all NHL skaters, {SC.pool} with 20+ games</p>
         <table class="rank">
           <thead><tr><th>Rank</th><th>Player</th><th>Team</th><th>Pos</th><th class="num">GP</th><th class="num">Value</th><th class="num">Goals counted</th></tr></thead>
@@ -79,6 +75,13 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
           </tbody>
         </table>
         <p class="note mono">Two above and two below on the same score. Rank {SC.rank} of {SC.pool}.</p>
+        </div>
+
+        </div>
+        <div class="prose-sm">
+          <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with twenty or more games this season, forwards and defencemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {P.name.split(' ')[1]} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} skaters, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how much of that is noise given how well each component repeats at his minutes; the number itself is this season's delivered value, not a projection.</p>
+          <p>Two outside checks. HockeyStatCards' Luszczyszyn model puts his net rating in the {HS.Net?.percentile}th percentile ({HS.Net?.value}) and his game score in the {HS['Game score']?.percentile}th. Evolving-Hockey's own headline number is {SC.raw.WAR} wins above replacement.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -140,12 +143,13 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   .scorebox .eb { color: var(--mute); }
   .score { font-size: 104px; font-weight: 600; line-height: .9; letter-spacing: -.05em; color: var(--red); font-variant-numeric: tabular-nums; }
   .range, .split { color: var(--mute); }
-  .two { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+  .two { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 44px; align-items: start; }
+  .two .left table { width: 100%; }
   .prose-sm p { margin: 0 0 14px; font-size: 16px; line-height: 1.55; max-width: 52ch; }
   .prose-sm .mono { font-size: 11px; text-transform: none; letter-spacing: 0; line-height: 1.5; }
   .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 90ch; }
   tr.total td { border-top: 1px solid var(--ink); font-weight: 600; }
-  .rankwrap { margin-top: 36px; max-width: 760px; }
+  .rankwrap { margin-top: 32px; }
   .rankwrap .eb { margin: 0 0 8px; color: var(--mute); }
   .rankwrap .eb::before { content: "// "; }
   .rank tr.me td { background: rgba(206, 17, 38, .08); font-weight: 600; }
