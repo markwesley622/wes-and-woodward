@@ -7,8 +7,8 @@ Sources (all cached under data/raw/players/<playerId>/):
   MoneyPuck skaters.csv           individual + on-ice xG, league percentiles (via build_site_data pools)
   Evolving-Hockey exports         GAR / xGAR components + RAPM (research/rasmussen/raw/eh, subscriber export)
 
-The W&W value score is a QBR-style 0-100 rating (50 = average at the position, ~23
-points per standard deviation, one decimal), NOT a percentile, of a shrunken
+The W&W value score is a QBR-style 0-100 rating (positionless: 50 = the average NHL
+skater, ~23 points per standard deviation, one decimal), NOT a percentile, of a shrunken
 goals-above-replacement composite. Each component is pulled toward zero by a reliability
 factor TOI/(TOI+k) whose k reflects how repeatable that component is; the likely range is
 the reliability standard error mapped back to percentiles. Two versions: sustainable
@@ -86,10 +86,11 @@ def build(pid, fetch=False):
         return [r for r in csv.DictReader((EH / fn).open()) if r["Season"] == EH_SEASON]
     xg_rows, g_rows = eh_rows("xgar_all_seasons.csv"), eh_rows("gar_all_seasons.csv")
     rapm = {r["Player"]: r for r in eh_rows("rapm_ev_rates_all_seasons.csv")}
-    grp = lambda r: ("D" if r["Position"] == "D" else "F") == group and int(r["GP"]) >= 20
+    # positionless: every NHL skater with 20+ GP is in the same pool (Mark, 9/23)
+    grp = lambda r: int(r["GP"]) >= 20
     XK = {"EVO": "xEVO_GAR", "EVD": "xEVD_GAR", "PPO": "xPPO_GAR", "SHD": "xSHD_GAR", "Pens": "Pens_GAR"}
     GK = {"EVO": "EVO_GAR", "EVD": "EVD_GAR", "PPO": "PPO_GAR", "SHD": "SHD_GAR", "Pens": "Pens_GAR"}
-    ranked = sorted(((composite(r, XK, f(r["TOI_All"]))[0], r["Player"], r["Team"], int(r["GP"])) for r in xg_rows if grp(r)), key=lambda t: -t[0])
+    ranked = sorted(((composite(r, XK, f(r["TOI_All"]))[0], r["Player"], r["Team"], int(r["GP"]), r["Position"]) for r in xg_rows if grp(r)), key=lambda t: -t[0])
     x_pool = [t[0] for t in ranked]
     g_pool = [composite(r, GK, f(r["TOI_All"]))[0] for r in g_rows if grp(r)]
     me_x = next(r for r in xg_rows if r["Player"] == name); me_g = next(r for r in g_rows if r["Player"] == name)
@@ -100,7 +101,7 @@ def build(pid, fetch=False):
     score = {
         "value": qbr(x_pool, vx), "low": qbr(x_pool, vx - Z80 * se), "high": qbr(x_pool, vx + Z80 * se),
         "results": qbr(g_pool, vg), "percentile": percentile(x_pool, vx), "goalsSustainable": round(vx, 1), "goalsResults": round(vg, 1),
-        "reliability": round(rel, 3), "pool": len(x_pool), "group": group,
+        "reliability": round(rel, 3), "pool": len(x_pool), "group": "skaters", "position": group,
         "components": [
             {"key": c, "label": {"EVO": "Even-strength offense", "EVD": "Even-strength defense", "PPO": "Power play", "SHD": "Penalty kill", "Pens": "Penalties drawn minus taken"}[c],
              "sustainable": f(me_x[XK[c]]), "results": f(me_g[GK[c]]), "shrink": round(shrink(toi, K[c]), 2),
@@ -109,9 +110,9 @@ def build(pid, fetch=False):
         "rapm": {k: f(v) for k, v in rapm.get(name, {}).items() if k not in ("Player", "Season", "Team", "Position")},
         "rank": next(i + 1 for i, t in enumerate(ranked) if t[1] == name),
         "neighbours": [
-            {"rank": i + 1, "name": t[1], "team": t[2], "gp": t[3], "value": qbr(x_pool, t[0]), "goals": round(t[0], 1), "isMe": t[1] == name}
+            {"rank": i + 1, "name": t[1], "team": t[2], "gp": t[3], "pos": t[4], "value": qbr(x_pool, t[0]), "goals": round(t[0], 1), "isMe": t[1] == name}
             for i, t in enumerate(ranked) if abs(i - next(j for j, u in enumerate(ranked) if u[1] == name)) <= 2],
-        "method": "A 0-100 rating, not a percentile: 50 is the average NHL player at the position (20+ GP) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. Each is multiplied by TOI/(TOI+k) with k = 500/1000/700/700/300 minutes, so the least repeatable components count least until the minutes are there. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
+        "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defencemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. Each is multiplied by TOI/(TOI+k) with k = 500/1000/700/700/300 minutes, so the least repeatable components count least until the minutes are there. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
     }
 
     # ---- MoneyPuck (from the site's skaters.json, already percentiled)

@@ -42,7 +42,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
         <div class="tile"><span class="eb mono">Games</span><span class="num">{L.gp}</span><span class="sub">{season}</span></div>
         <div class="tile"><span class="eb mono">Goals · assists · points</span><span class="num">{L.goals}–{L.assists}–{L.points}</span><span class="sub">{L.ppPoints} on the power play · {signed(L.plusMinus, 0)}</span></div>
         <div class="tile"><span class="eb mono">Individual xG</span><span class="num">{MP.ixG?.toFixed(1) ?? '—'}</span><span class="sub">{MP.goalsAboveExpected != null ? `${signed(MP.goalsAboveExpected)} goals vs expected` : ''}</span></div>
-        <div class="tile"><span class="eb mono">5v5 xG share</span><span class="num">{f5.onIceXgPct != null ? `${Math.round(f5.onIceXgPct * 100)}%` : '—'}</span><span class:list={['sub', { red: (f5.pctl_onIceXgPct ?? 0) >= 75 }]}>{f5.qualifiesForPercentiles ? `${f5.pctl_onIceXgPct}th percentile among ${SC.group === 'D' ? 'defencemen' : 'forwards'} · ${Math.round(f5.icetimeMinutes)} min` : ''}</span></div>
+        <div class="tile"><span class="eb mono">5v5 xG share</span><span class="num">{f5.onIceXgPct != null ? `${Math.round(f5.onIceXgPct * 100)}%` : '—'}</span><span class:list={['sub', { red: (f5.pctl_onIceXgPct ?? 0) >= 75 }]}>{f5.qualifiesForPercentiles ? `${f5.pctl_onIceXgPct}th percentile among ${SC.position === 'D' ? 'defencemen' : 'forwards'} · ${Math.round(f5.icetimeMinutes)} min` : ''}</span></div>
       </div>
     </div>
   </section>
@@ -64,18 +64,18 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
           <p class="note mono">Sustainable = Evolving-Hockey xGAR (chances). Results = GAR (goals). Trust = the share of each component counted at {Math.round(SC.raw.toiAll)} minutes; the least repeatable components count least. Counted = sustainable × trust, the number the score is built on.</p>
         </div>
         <div class="prose-sm">
-          <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL {SC.group === 'D' ? 'defenceman' : 'forward'} with twenty or more games this season. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {P.name.split(' ')[1]} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} peers, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how far the score could move if the least repeatable components regress; it narrows as the minutes pile up.</p>
+          <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with twenty or more games this season, forwards and defencemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {P.name.split(' ')[1]} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} skaters, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how far the score could move if the least repeatable components regress; it narrows as the minutes pile up.</p>
           <p>Two outside checks. HockeyStatCards' Luszczyszyn model puts his net rating in the {HS.Net?.percentile}th percentile ({HS.Net?.value}) and his game score in the {HS['Game score']?.percentile}th. Evolving-Hockey's own headline number is {SC.raw.WAR} wins above replacement.</p>
           <p class="mono mute">{SC.method}</p>
         </div>
       </div>
       <div class="rankwrap">
-        <p class="eb mono">Where he ranks · NHL {SC.group === 'D' ? 'defencemen' : 'forwards'}, {SC.pool} with 20+ games</p>
+        <p class="eb mono">Where he ranks · all NHL skaters, {SC.pool} with 20+ games</p>
         <table class="rank">
-          <thead><tr><th>Rank</th><th>Player</th><th>Team</th><th class="num">GP</th><th class="num">Value</th><th class="num">Goals counted</th></tr></thead>
+          <thead><tr><th>Rank</th><th>Player</th><th>Team</th><th>Pos</th><th class="num">GP</th><th class="num">Value</th><th class="num">Goals counted</th></tr></thead>
           <tbody>
             {SC.neighbours.map((n) => (
-              <tr class:list={{ me: n.isMe }}><td class="rk">{n.rank}</td><td>{n.name}</td><td>{n.team}</td><td class="num">{n.gp}</td><td class:list={['num', { red: n.isMe }]}>{n.value.toFixed(1)}</td><td class="num">{n.goals > 0 ? '+' : ''}{n.goals.toFixed(1)}</td></tr>
+              <tr class:list={{ me: n.isMe }}><td class="rk">{n.rank}</td><td>{n.name}</td><td>{n.team}</td><td>{n.pos}</td><td class="num">{n.gp}</td><td class:list={['num', { red: n.isMe }]}>{n.value.toFixed(1)}</td><td class="num">{n.goals > 0 ? '+' : ''}{n.goals.toFixed(1)}</td></tr>
             ))}
           </tbody>
         </table>
