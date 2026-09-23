@@ -379,6 +379,16 @@ def build_dashboard():
                 "cupOdds": f(base, "wonCup"),
                 "lotteryOdds": f(base, "draftLottery"),
             })
+            # Pre-season projection: MoneyPuck overwrites its file after every result, so the
+            # first projection seen for a season is persisted and shown as the static baseline.
+            snap_path = RAW_MP / "preseason_projection.json"
+            snaps = json.load(snap_path.open()) if snap_path.exists() else {}
+            if CFG["nhl_season"] not in snaps:
+                snaps[CFG["nhl_season"]] = {"points": f(base, "points"), "playoffOdds": f(base, "madePlayoffs"),
+                                            "capturedAt": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes")}
+                snap_path.write_text(json.dumps(snaps, indent=1))
+            projected["preseasonPoints"] = snaps[CFG["nhl_season"]]["points"]
+            projected["preseasonPlayoffOdds"] = snaps[CFG["nhl_season"]]["playoffOdds"]
             if "WINREG" in rows and "LOSSREG" in rows:
                 projected["nextGame"] = {
                     k: {"points": round(f(rows[k], "points") - f(base, "points"), 1),

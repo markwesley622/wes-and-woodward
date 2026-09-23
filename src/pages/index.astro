@@ -18,7 +18,9 @@ let prog = null;
 if (live) {
   const proj = P.points, pace = S.gamesPlayed ? S.points / S.gamesPlayed * 82 : 0, delta = pace - proj;
   const scale = Math.max(proj, pace) * 1.06;
-  prog = { proj, pace, delta, fill: S.points / scale * 100, paceW: Math.max(0, pace - S.points) / scale * 100, tick: proj / scale * 100,
+  const pre = P.preseasonPoints ?? proj;
+  const scale2 = Math.max(proj, pace, pre) * 1.06;
+  prog = { proj, pre, pace, delta, fill: S.points / scale2 * 100, paceW: Math.max(0, pace - S.points) / scale2 * 100, tick: proj / scale2 * 100, preTick: pre / scale2 * 100,
     verdict: delta >= 0.5 ? 'outperforming the projection' : delta <= -0.5 ? 'underperforming the projection' : 'tracking the projection' };
 }
 const projWhen = NG ? `before the opener ${mdy(NG.date)}` : 'once the season opens';
@@ -30,6 +32,8 @@ const tiles = D.tiles.filter((t) => KEEP[t.key]).map((t) => ({
   label: KEEP[t.key][0], note: KEEP[t.key][1], rank: t.rank, rankLabel: t.rankLabel,
   value: t.signed ? signed(t.value, 1) : t.unit === '%' ? `${t.value.toFixed(1)}%` : (Math.abs(t.value) < 20 ? t.value.toFixed(2) : t.value.toFixed(1)),
 }));
+const tile = (key) => tiles[D.tiles.filter((t) => KEEP[t.key]).findIndex((t) => t.key === key)];
+const T5 = tile('xg_share_5v5'), TPP = tile('pp_xgf60'), TPK = tile('pk_xga60');
 
 // top three, ordered by game score until the value score ships
 const POS = { C: 'Centre', L: 'Left wing', R: 'Right wing', D: 'Defence' };
@@ -40,58 +44,9 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   <section class="hero" aria-label="Detroit hockey, by the numbers">
     <div class="shell">
       <div class="stamp mono"><i></i><span id="clock">&nbsp;</span><br />Detroit, MI</div>
-      <h1><span class="l1">Detroit</span><span class="l2">hockey,</span><span class="l3">by the numbers<span class="red">*</span></span></h1>
+      <h1><span class="l1">Detroit</span><span class="l2">Red Wings,</span><span class="l3">by the numbers<span class="red">*</span></span></h1>
       <Wheel />
       <div class="foot mono"><span>*expected goals, not vibes</span><span>nhl api · moneypuck · rebuilt {rebuilt} et</span></div>
-    </div>
-  </section>
-
-  <section class="sec" id="dashboard">
-    <div class="shell">
-      <h2>Team dashboard</h2>
-      <div class="grid">
-        <div class="tile wide">
-          <span class="eb mono">Record · {season}</span>
-          <span class="num big">{S.wins}–{S.losses}–{S.otLosses}</span>
-          <span class="sub"><span class="red">{S.points} pts</span> · {pct3(S.pointPctg)} · {S.goalFor}–{S.goalAgainst} ({signed(S.goalDifferential, 0)}) · {S.gamesPlayed} gp · last ten {S.lastTen ?? '—'}</span>
-        </div>
-        <div class="tile"><span class="eb mono">{S.division.name} Division</span><span class="num">{ordinal(S.division.place)}</span><span class="sub">of {S.division.teams} · {ordinal(X.divisionPlace)} by expected goals</span></div>
-        <div class="tile"><span class="eb mono">{S.conference.name} Conference</span><span class="num">{ordinal(S.conference.place)}</span><span class="sub">of {S.conference.teams} · {ordinal(X.conferencePlace)} by expected goals</span></div>
-
-        <div class="tile wide progress">
-          <span class="eb mono">Progress toward MoneyPuck's projected points</span>
-          {prog ? (
-            <>
-              <span class="num"><span class="red">{S.points}</span> <span class="of">of {prog.proj.toFixed(0)}</span></span>
-              <div class="track">
-                <div class="fill" style={`width:${prog.fill.toFixed(2)}%`}></div>
-                <div class="fill faint" style={`left:${prog.fill.toFixed(2)}%;width:${prog.paceW.toFixed(2)}%`}></div>
-                <div class="tickmark" style={`left:${prog.tick.toFixed(2)}%`}></div>
-              </div>
-              <span class="sub">pacing to {prog.pace.toFixed(0)} pts · <span class="red">{signed(prog.delta, 1)}</span> · {prog.verdict}</span>
-            </>
-          ) : (
-            <>
-              <span class="num mute">—</span>
-              <div class="track"></div>
-              <span class="sub">moneypuck publishes its projection {projWhen} · pace and verdict render from game one</span>
-            </>
-          )}
-        </div>
-        <div class="tile"><span class="eb mono">xG win share</span><span class="num">{(X.xgWinPct * 100).toFixed(1)}%</span><span class="sub">actual {(S.wins / Math.max(1, S.gamesPlayed) * 100).toFixed(1)}% · xG-pythagorean</span></div>
-        <div class="tile"><span class="eb mono">xG points</span><span class="num">{X.xgPoints.toFixed(1)}</span><span class="sub">actual {S.points} · {signed(X.pointsAboveExpected)}</span></div>
-
-        <div class="tile"><span class="eb mono">xG place, NHL</span><span class="num">{ordinal(X.leaguePlace)}</span><span class="sub">actual {ordinal(S.league.place)} of 32</span></div>
-        <div class="tile"><span class="eb mono">Regulation wins</span><span class="num">{S.regulationWins}</span><span class="sub">{S.gamesPlayed} gp · streak {S.streak ?? '—'}</span></div>
-        {tiles.map((t, i) => (
-          <div class:list={['tile', { wide: i >= 2 }]}>
-            <span class="eb mono">{t.label}</span>
-            <span class="num">{t.value}</span>
-            <span class:list={['sub', { red: t.rank <= 10 }]}>{t.rankLabel} · {t.note}</span>
-          </div>
-        ))}
-      </div>
-      <div class="viewall mono"><a href="#">View all team stats &rarr;</a></div>
     </div>
   </section>
 
@@ -99,16 +54,60 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
     <div class="shell">
       <h2>Analysis</h2>
       <div class="row3">
-        {['Pinned', 'Latest', 'Latest'].map((kind) => (
-          <a class:list={['card', { pin: kind === 'Pinned' }]} href="#">
-            <span class:list={['eb', 'mono', { red: kind === 'Pinned' }]}>{kind}</span>
-            <div><div class="ghost" style="width:92%;height:19px;margin-bottom:8px"></div><div class="ghost" style="width:70%;height:19px"></div></div>
-            <div class="ghost thin" style="width:100%"></div>
+        {[['Featured', '2026–2027 Detroit Red Wings predictions'], ['Latest', 'Do the Red Wings have a type?'], ['Latest', 'Is Michael Rasmussen really as bad as fans think he is?']].map(([kind, title]) => (
+          <a class:list={['card', 'article', { pin: kind === 'Featured' }]} href="#">
+            <span class:list={['eb', 'mono', { red: kind === 'Featured' }]}>{kind}</span>
+            <div class="thumb" aria-hidden="true"></div>
+            <h3>{title}</h3>
             <span class="mono" style="margin-top:auto">Read &rarr;</span>
           </a>
         ))}
       </div>
-      <div class="viewall mono"><a href="#">View all analysis &rarr;</a></div>
+      <div class="viewall mono"><a href="#">View all articles &rarr;</a></div>
+    </div>
+  </section>
+
+  <section class="sec" id="dashboard">
+    <div class="shell">
+      <h2>Team dashboard</h2>
+      <div class="grid">
+        <div class="tile">
+          <span class="eb mono">Record · {season}</span>
+          <span class="num big red">{S.points} <span class="of">pts</span></span>
+          <span class="sub"><span class="tip" title="Wins, losses, overtime losses">{S.wins}–{S.losses}–{S.otLosses}</span> · <span class="tip" title="Points percentage: points earned of points available">{pct3(S.pointPctg)}</span> · <span class="tip" title="Goals for, goals against, and the goal differential">{S.goalFor}–{S.goalAgainst} ({signed(S.goalDifferential, 0)})</span></span>
+        </div>
+        <div class="tile"><span class="eb mono tip" title="Share of expected goals at five-on-five: the chances Detroit creates against the chances it allows, per MoneyPuck">{T5.label}</span><span class="num">{T5.value}</span><span class:list={['sub', { red: T5.rank <= 10 }]}>{T5.rankLabel}</span></div>
+        <div class="tile"><span class="eb mono tip" title="Place in the division on the NHL's own standings">{S.division.name} Division</span><span class="num">{ordinal(S.division.place)}</span><span class="sub">of {S.division.teams} · actual</span></div>
+        <div class="tile"><span class="eb mono tip" title="Place in the conference on the NHL's own standings">{S.conference.name} Conference</span><span class="num">{ordinal(S.conference.place)}</span><span class="sub">of {S.conference.teams} · actual</span></div>
+
+        <div class="tile"><span class="eb mono tip" title="Expected goals generated per 60 minutes on the power play (5v4)">{TPP.label}</span><span class="num">{TPP.value}</span><span class:list={['sub', { red: TPP.rank <= 10 }]}>{TPP.rankLabel}</span></div>
+        <div class="tile"><span class="eb mono tip" title="Where the same games place Detroit when every team is scored on expected goals instead of actual goals">{S.division.name} Division</span><span class="num">{ordinal(X.divisionPlace)}</span><span class="sub">of {S.division.teams} · expected results</span></div>
+        <div class="tile"><span class="eb mono tip" title="Where the same games place Detroit when every team is scored on expected goals instead of actual goals">{S.conference.name} Conference</span><span class="num">{ordinal(X.conferencePlace)}</span><span class="sub">of {S.conference.teams} · expected results</span></div>
+        <div class="tile"><span class="eb mono tip" title="Expected goals allowed per 60 minutes on the penalty kill (4v5); lower is better">{TPK.label}</span><span class="num">{TPK.value}</span><span class:list={['sub', { red: TPK.rank <= 10 }]}>{TPK.rankLabel}</span></div>
+
+        <div class="tile full progress">
+          <span class="eb mono tip" title="Points banked against MoneyPuck's season simulation. The pre-season projection is frozen on opening night; the updated projection is re-run after every result.">Progress toward MoneyPuck&rsquo;s projected points</span>
+          {prog ? (
+            <>
+              <span class="num"><span class="red">{S.points}</span> <span class="of">of {prog.proj.toFixed(0)} · pacing to {prog.pace.toFixed(0)}</span></span>
+              <div class="track">
+                <div class="fill" style={`width:${prog.fill.toFixed(2)}%`}></div>
+                <div class="fill faint" style={`left:${prog.fill.toFixed(2)}%;width:${prog.paceW.toFixed(2)}%`}></div>
+                <div class="tickmark pre" style={`left:${prog.preTick.toFixed(2)}%`} title={`Pre-season projection: ${prog.pre.toFixed(0)}`}></div>
+                <div class="tickmark" style={`left:${prog.tick.toFixed(2)}%`} title={`Updated projection: ${prog.proj.toFixed(0)}`}></div>
+              </div>
+              <span class="sub"><span class="tip" title="MoneyPuck's projection as of opening night, frozen for the season">pre-season projection {prog.pre.toFixed(0)}</span> · <span class="tip" title="MoneyPuck's projection re-run after every result">updated projection {prog.proj.toFixed(0)}</span> · <span class="red">{signed(prog.delta, 1)}</span> · {prog.verdict}</span>
+            </>
+          ) : (
+            <>
+              <span class="num mute">&mdash;</span>
+              <div class="track"></div>
+              <span class="sub"><span class="tip" title="MoneyPuck's projection as of opening night, frozen for the season">pre-season projection: &mdash;</span> · <span class="tip" title="MoneyPuck's projection re-run after every result">updated projection: TBD</span> · publishes {projWhen}</span>
+            </>
+          )}
+        </div>
+      </div>
+      <div class="viewall mono"><a href="#">View all team stats &rarr;</a></div>
     </div>
   </section>
 
@@ -183,6 +182,13 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   .foot { position: absolute; left: var(--gutter); right: var(--gutter); bottom: 18px; display: flex; justify-content: space-between; gap: 16px; color: var(--mute); z-index: 3; }
 
   /* dashboard extras */
+  .tile.full { grid-column: 1 / -1; }
+  .tile .num .of { font-size: 18px; font-weight: 500; color: var(--mute); letter-spacing: 0; }
+  .tip { border-bottom: 1px dotted var(--mute); cursor: help; }
+  .tile .eb.tip, .card .eb.tip { display: inline-block; align-self: flex-start; width: auto; }
+  .track .tickmark.pre { background: var(--mute); }
+  .card.article .thumb { aspect-ratio: 16 / 9; background: var(--ghost); border-radius: 3px; }
+  .card.article h3 { font-size: 20px; line-height: 1.2; }
   .progress .num { font-size: 44px; }
   .progress .num .of { font-size: 16px; font-weight: 500; color: var(--mute); letter-spacing: 0; }
 
