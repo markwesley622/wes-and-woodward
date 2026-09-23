@@ -165,6 +165,44 @@ def build(pid, fetch=False):
         "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
     }
 
+    # ---- isolated impact map: every skater's even-strength RAPM impact this season
+    rapm_rows = eh_rows("rapm_ev_rates_all_seasons.csv")
+    gp_by = {r["Player"]: int(r["GP"]) for r in xg_rows}
+    impact = [{"name": r["Player"], "team": r["Team"], "pos": r["Position"], "off": f(r["xGF/60"]), "def": -f(r["xGA/60"]),
+               "toi": round(f(r["TOI"])), "det": r["Team"] == "DET", "me": r["Player"] == name}
+              for r in rapm_rows if gp_by.get(r["Player"], 0) >= 20]
+
+    # ---- career arc: this player's value by season, blended per component
+    def season_rows(fn):
+        return {r["Season"]: r for r in csv.DictReader((EH / fn).open()) if r["Player"] == name}
+    cx, cg = season_rows("xgar_all_seasons.csv"), season_rows("gar_all_seasons.csv")
+    career = []
+    for sn in sorted(cx):
+        rx, rg = cx[sn], cg.get(sn)
+        comps = {c: round(BLEND["sustainable"] * f(rx[XK[c]]) + BLEND["results"] * f(rg[GK[c]]) if rg else f(rx[XK[c]]), 1) for c in XK}
+        career.append({"season": sn, "gp": int(rx["GP"]), "toi": round(f(rx["TOI_All"])), "components": comps,
+                       "total": round(sum(comps.values()), 1), "xGAR": f(rx["xGAR"]), "GAR": f(rg["GAR"]) if rg else None})
+
+    # ---- player comps: nearest three same-position skaters on the standardized component profile
+    def profile(rx):
+        rg = g_by.get(rx["Player"])
+        return [BLEND["sustainable"] * f(rx[XK[c]]) + BLEND["results"] * f(rg[GK[c]]) if rg else f(rx[XK[c]]) for c in XK]
+    pool_rows = [r for r in xg_rows if grp(r) and (("D" if r["Position"] == "D" else "F") == group)]
+    profs = {r["Player"]: profile(r) for r in pool_rows}
+    n = len(XK); means = [sum(v[i] for v in profs.values()) / len(profs) for i in range(n)]
+    sds = [max(1e-6, (sum((v[i] - means[i]) ** 2 for v in profs.values()) / max(1, len(profs) - 1)) ** 0.5) for i in range(n)]
+    mine = profs[name]
+    def dist(v): return sum(((v[i] - mine[i]) / sds[i]) ** 2 for i in range(n)) ** 0.5
+    near = sorted((dist(v), pn) for pn, v in profs.items() if pn != name)[:3]
+    by_name = {r["Player"]: r for r in pool_rows}
+    comps = []
+    for d, pn in near:
+        r = by_name[pn]; v = profs[pn]
+        comps.append({"name": pn, "team": r["Team"], "pos": r["Position"], "gp": int(r["GP"]), "distance": round(d, 2),
+                      "value": qbr(x_pool, sum(v)), "goals": round(sum(v), 1),
+                      "components": {c: round(v[i], 1) for i, c in enumerate(XK)}})
+    my_components = {c: round(mine[i], 1) for i, c in enumerate(XK)}
+
     # ---- MoneyPuck (from the site's skaters.json, already percentiled)
     sk = next((p for p in json.load((ROOT / "data" / "site" / "skaters.json").open()) if p["playerId"] == pid), {})
 
@@ -195,6 +233,7 @@ def build(pid, fetch=False):
         "seasonLine": {"gp": fs.get("gamesPlayed"), "goals": fs.get("goals"), "assists": fs.get("assists"), "points": fs.get("points"), "plusMinus": fs.get("plusMinus"),
                        "pim": fs.get("pim"), "shots": fs.get("shots"), "shootingPct": fs.get("shootingPctg"), "toiPerGame": fs.get("avgToi"), "ppPoints": fs.get("powerPlayPoints")},
         "moneypuck": sk, "hsc": hsc_card.get("ratings", {}), "score": score,
+        "impact": impact, "career": career, "comps": comps, "myComponents": my_components,
         "gameLog": games,
         "gameScore": {"average": round(sum(gs) / max(1, len(gs)), 2), "games": len(gs), "best": {"date": best["date"], "opponent": best["opponent"], "value": best["gameScore"]},
                       "worst": {"date": worst["date"], "opponent": worst["opponent"], "value": worst["gameScore"]}, "above2": sum(1 for v in gs if v >= 2), "below0": sum(1 for v in gs if v < 0)},

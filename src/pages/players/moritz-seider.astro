@@ -20,6 +20,30 @@ const bh = (v) => Math.abs(v) / maxGS * (MID - PAD);
 const roll = G.map((g, i) => { const win = G.slice(Math.max(0, i - 9), i + 1).map((x) => x.gameScore).filter((v) => v != null); return win.length ? win.reduce((a, b) => a + b, 0) / win.length : 0; });
 const rollPath = roll.map((v, i) => `${i === 0 ? 'M' : 'L'}${bx(i).toFixed(1)},${(MID - v / maxGS * (MID - PAD)).toFixed(1)}`).join(' ');
 const dots = (n) => Array.from({ length: Math.max(0, n) });
+// impact map
+const IM = P.impact, CA = P.career, CO = P.comps, MY = P.myComponents;
+const IW = 1000, IH = 620, IP = { l: 56, r: 24, t: 24, b: 48 };
+const offs = IM.map((d) => d.off), defs = IM.map((d) => d.def);
+const xMin = Math.min(...offs), xMax = Math.max(...offs), yMin = Math.min(...defs), yMax = Math.max(...defs);
+const padX = (xMax - xMin) * 0.06, padY = (yMax - yMin) * 0.06;
+const ix = (v) => IP.l + (v - (xMin - padX)) / ((xMax + padX) - (xMin - padX)) * (IW - IP.l - IP.r);
+const iy = (v) => IH - IP.b - (v - (yMin - padY)) / ((yMax + padY) - (yMin - padY)) * (IH - IP.t - IP.b);
+const topNHL = [...IM].sort((a, b) => (b.off + b.def) - (a.off + a.def)).slice(0, 10).map((d) => d.name);
+const detNames = IM.filter((d) => d.det).map((d) => d.name);
+const xTicks = [-0.4, -0.2, 0, 0.2, 0.4].filter((v) => v >= xMin - padX && v <= xMax + padX);
+const yTicks = [-0.4, -0.2, 0, 0.2, 0.4].filter((v) => v >= yMin - padY && v <= yMax + padY);
+// career arc
+const COMP = [['EVO', 'EV offense'], ['EVD', 'EV defense'], ['PPO', 'Power play'], ['SHD', 'Penalty kill'], ['Pens', 'Penalties']];
+const CW = 1000, CH = 300, CP = { l: 48, r: 16, t: 28, b: 40 };
+const posMax = Math.max(4, ...CA.map((c) => Object.values(c.components).filter((v) => v > 0).reduce((a, b) => a + b, 0)));
+const negMax = Math.max(1, ...CA.map((c) => -Object.values(c.components).filter((v) => v < 0).reduce((a, b) => a + b, 0)));
+const cy = (v) => CP.t + (posMax - v) / (posMax + negMax) * (CH - CP.t - CP.b);
+const slot = (CW - CP.l - CP.r) / Math.max(1, CA.length), barW = Math.min(90, slot * 0.56);
+const cx = (i) => CP.l + slot * (i + 0.5);
+const seasonLabel = (sn) => `20${sn.slice(0, 2)}–${sn.slice(3)}`;
+const careerBars = CA.map((c, i) => { let up = 0, down = 0; return COMP.map(([k]) => { const v = c.components[k] ?? 0; let y0, y1; if (v >= 0) { y0 = cy(up + v); y1 = cy(up); up += v; } else { y0 = cy(down); y1 = cy(down + v); down += v; } return { k, v, x: cx(i) - barW / 2, y: y0, h: Math.max(0, y1 - y0) }; }); });
+const cTicks = [-5, 0, 5, 10, 15, 20, 25, 30].filter((v) => v >= -negMax && v <= posMax);
+const RECENT = 10;
 ---
 <Base title={`${P.name} — Wes & Woodward`} description={`${P.name}, ${season}: value score, where it comes from, and a game-by-game log with game score.`}>
   <section class="sec">
@@ -86,6 +110,76 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
     </div>
   </section>
 
+  <section class="sec" id="impact">
+    <div class="shell">
+      <div class="sec-head">
+        <h2>Isolated impact</h2>
+        <div class="toggle mono" role="tablist" aria-label="Scope">
+          <button type="button" class="on" data-scope="nhl" role="tab" aria-selected="true">NHL</button>
+          <button type="button" data-scope="det" role="tab" aria-selected="false">Detroit</button>
+        </div>
+      </div>
+      <p class="lede">Even-strength impact on chances for and chances against, isolated from teammates, opponents and zone starts by Evolving-Hockey's RAPM. Up and right is good at both ends. One dot per skater with twenty games; hover for names.</p>
+      <svg class="chart impact" viewBox={`0 0 ${IW} ${IH}`} role="img" aria-label="Isolated even-strength impact, offense against defense, every NHL skater" data-scope="nhl">
+        {xTicks.map((v) => <g><line x1={ix(v)} x2={ix(v)} y1={IP.t} y2={IH - IP.b} class:list={['grid', { zero: v === 0 }]} /><text x={ix(v)} y={IH - IP.b + 18} text-anchor="middle" class="lbl">{v > 0 ? '+' : ''}{v.toFixed(1)}</text></g>)}
+        {yTicks.map((v) => <g><line x1={IP.l} x2={IW - IP.r} y1={iy(v)} y2={iy(v)} class:list={['grid', { zero: v === 0 }]} /><text x={IP.l - 8} y={iy(v) + 4} text-anchor="end" class="lbl">{v > 0 ? '+' : ''}{v.toFixed(1)}</text></g>)}
+        <text x={IW - IP.r} y={IH - 6} text-anchor="end" class="axis-name">offense · expected goals for per 60, impact</text>
+        <text x={IP.l - 40} y={IP.t + 4} class="axis-name" transform={`rotate(-90 ${IP.l - 40} ${IP.t + 4})`} text-anchor="end">defense · expected goals against per 60 suppressed</text>
+        {IM.filter((d) => !d.me).map((d) => (
+          <circle cx={ix(d.off)} cy={iy(d.def)} r="4.5" class:list={['pt', { det: d.det }]} data-det={d.det ? '1' : '0'}>
+            <title>{`${d.name} · ${d.team} · ${d.pos} · offense ${d.off >= 0 ? '+' : ''}${d.off.toFixed(2)} · defense ${d.def >= 0 ? '+' : ''}${d.def.toFixed(2)} · ${d.toi} EV min`}</title>
+          </circle>
+        ))}
+        {IM.filter((d) => d.me).map((d) => (
+          <circle cx={ix(d.off)} cy={iy(d.def)} r="8" class="pt me"><title>{`${d.name} · offense ${d.off >= 0 ? '+' : ''}${d.off.toFixed(2)} · defense ${d.def >= 0 ? '+' : ''}${d.def.toFixed(2)}`}</title></circle>
+        ))}
+        {IM.filter((d) => topNHL.includes(d.name) || d.det).map((d) => (
+          <text x={ix(d.off) + (d.me ? 12 : 8)} y={iy(d.def) + 4} class:list={['tag', { nhl: topNHL.includes(d.name), det: d.det, me: d.me }]}>{d.me ? d.name : d.name.split(' ').slice(-1)[0]}</text>
+        ))}
+      </svg>
+      <div class="legend mono"><span><i class="dot me"></i>Seider</span><span class="det-only"><i class="dot det"></i>Red Wings</span><span><i class="dot other"></i>every other skater</span><span class="mute">Evolving-Hockey RAPM, 5v5, {season}</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="career">
+    <div class="shell">
+      <h2>Career arc</h2>
+      <p class="lede">Value by season, split into the five components, on the same 60/40 blend of chances and results. Bars above the line add value; below the line cost it.</p>
+      <svg class="chart career" viewBox={`0 0 ${CW} ${CH}`} role="img" aria-label="Value by season, stacked by component">
+        {cTicks.map((v) => <g><line x1={CP.l} x2={CW - CP.r} y1={cy(v)} y2={cy(v)} class:list={['grid', { zero: v === 0 }]} /><text x={CP.l - 8} y={cy(v) + 4} text-anchor="end" class="lbl">{v > 0 ? '+' : ''}{v}</text></g>)}
+        {careerBars.map((bars, i) => (
+          <g>
+            {bars.map((b) => b.h > 0.5 && (
+              <rect x={b.x} y={b.y} width={barW} height={Math.max(0, b.h - 2)} class={`seg ${b.k}`}><title>{`${seasonLabel(CA[i].season)} · ${COMP.find(([k]) => k === b.k)[1]} ${b.v >= 0 ? '+' : ''}${b.v.toFixed(1)}`}</title></rect>
+            ))}
+            <text x={cx(i)} y={cy(Math.max(0, Object.values(CA[i].components).filter((v) => v > 0).reduce((a, b) => a + b, 0))) - 8} text-anchor="middle" class="total">{CA[i].total >= 0 ? '+' : ''}{CA[i].total.toFixed(1)}</text>
+            <text x={cx(i)} y={CH - CP.b + 18} text-anchor="middle" class="lbl">{seasonLabel(CA[i].season)}</text>
+            <text x={cx(i)} y={CH - CP.b + 32} text-anchor="middle" class="lbl mute">{CA[i].gp} gp</text>
+          </g>
+        ))}
+      </svg>
+      <div class="legend mono">{COMP.map(([k, label]) => <span><i class={`sw ${k}`}></i>{label}</span>)}</div>
+    </div>
+  </section>
+
+  <section class="sec" id="comps">
+    <div class="shell">
+      <h2>Player comps</h2>
+      <p class="lede">The three {SC.position === 'D' ? 'defensemen' : 'forwards'} whose value profile this season sits closest to his, component for component. A comp is a shape match, not a value match, so the score is shown beside each.</p>
+      <div class="row3">
+        {CO.map((c) => (
+          <div class="card comp">
+            <div class="comp-head"><div><h3>{c.name}</h3><span class="mono mute">{c.team} · {c.pos} · {c.gp} gp</span></div><span class="comp-val">{c.value.toFixed(1)}</span></div>
+            <table class="mini">
+              <thead><tr><th></th><th class="num">{c.name.split(' ').slice(-1)[0]}</th><th class="num red">Seider</th></tr></thead>
+              <tbody>{COMP.map(([k, label]) => <tr><td>{label}</td><td class="num">{signed(c.components[k])}</td><td class="num">{signed(MY[k])}</td></tr>)}<tr class="total"><td>Total</td><td class="num">{signed(c.goals)}</td><td class="num red">{signed(SC.goalsBlended)}</td></tr></tbody>
+            </table>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <section class="sec" id="gamelog">
     <div class="shell">
       <h2>Game log</h2>
@@ -108,12 +202,12 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
       </svg>
       <div class="axis-labels mono"><span>{mdy(G[0].date)}</span><span>{mdy(G[G.length - 1].date)}</span></div>
 
-      <div class="table-scroll log">
+      <div class="table-scroll log" id="log">
         <table>
           <thead><tr><th>Date</th><th>Opp</th><th class="num">TOI</th><th class="num">G</th><th class="num">A</th><th class="num">P</th><th class="num">+/−</th><th class="num">S</th><th class="num">Blk</th><th class="num">ixG</th><th class="num">xGF</th><th class="num">xGA</th><th class="num">GF–GA</th><th class="num">Game score</th></tr></thead>
           <tbody>
-            {[...G].reverse().map((g) => (
-              <tr>
+            {[...G].reverse().map((g, i) => (
+              <tr class:list={{ more: i >= RECENT }}>
                 <td>{mdy(g.date)}</td><td>{g.home ? 'vs' : 'at'} {g.opponent}</td><td class="num">{g.toi.toFixed(1)}</td>
                 <td class="num">{g.goals}</td><td class="num">{g.assists}</td><td class:list={['num', { red: g.points >= 2 }]}>{g.points}</td><td class="num">{signed(g.plusMinus, 0)}</td><td class="num">{g.shots}</td>
                 <td class="num">{g.blocks != null ? g.blocks.toFixed(0) : '—'}</td><td class="num">{g.ixg != null ? g.ixg.toFixed(2) : '—'}</td>
@@ -125,10 +219,21 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
           </tbody>
         </table>
       </div>
+      <button type="button" class="showall mono" id="showall" aria-expanded="false">Show all {G.length} games &darr;</button>
       <p class="note mono">Most recent first. Box score from the NHL API. ixG, on-ice xGF/xGA and GF–GA are five-on-five, per HockeyStatCards (Natural Stat Trick data); TOI is all situations. Game score is Dom Luszczyszyn's formula, where 2.0 is a strong night and below zero is a poor one.</p>
     </div>
   </section>
 </Base>
+
+<script>
+  document.querySelectorAll('.toggle button').forEach((b) => b.addEventListener('click', () => {
+    document.querySelectorAll('.toggle button').forEach((o) => { o.classList.toggle('on', o === b); o.setAttribute('aria-selected', String(o === b)); });
+    document.querySelector('.impact').dataset.scope = b.dataset.scope;
+  }));
+  const showall = document.getElementById('showall'), log = document.getElementById('log');
+  if (showall) showall.dataset.all = showall.textContent;
+  if (showall && log) showall.addEventListener('click', () => { const open = log.classList.toggle('open'); showall.setAttribute('aria-expanded', String(open)); showall.textContent = open ? 'Show the last 10 games ↑' : showall.dataset.all; });
+</script>
 
 <style>
   .kicker a { color: var(--mute); }
@@ -166,6 +271,44 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   .chart .roll { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 5 4; }
   .axis-labels { display: flex; justify-content: space-between; color: var(--mute); margin: 6px 0 28px; }
   .log td.gs.neg { color: var(--mute); }
+  .log:not(.open) tr.more { display: none; }
+  .showall { margin-top: 14px; background: none; border: 1px solid var(--ink); border-radius: 3px; padding: 9px 14px; cursor: pointer; font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
+  .showall:hover { color: var(--red); border-color: var(--red); }
+  /* impact map */
+  .sec-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
+  .toggle { display: inline-flex; border: 1px solid var(--ink); border-radius: 3px; overflow: hidden; }
+  .toggle button { background: none; border: 0; padding: 9px 16px; cursor: pointer; font: inherit; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
+  .toggle button.on { background: var(--ink); color: #fff; }
+  .impact .grid { stroke: var(--rule); stroke-width: 1; } .impact .grid.zero { stroke: var(--ink); }
+  .impact .lbl, .career .lbl { font-family: var(--mono); font-size: 11px; fill: var(--mute); }
+  .impact .axis-name { font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; fill: var(--mute); }
+  .impact .pt { fill: #a3a29e; stroke: var(--paper); stroke-width: 1.5; transition: opacity 200ms; }
+  .impact .pt.det { fill: var(--ink); }
+  .impact .pt.me { fill: var(--red); stroke: var(--paper); stroke-width: 2; }
+  .impact .tag { font-family: var(--mono); font-size: 11px; fill: var(--ink); display: none; pointer-events: none; }
+  .impact .tag.me { fill: var(--red); font-weight: 600; display: block; }
+  .impact[data-scope="nhl"] .tag.nhl { display: block; }
+  .impact[data-scope="nhl"] .pt.det { fill: #a3a29e; }
+  .impact[data-scope="det"] .pt:not(.det):not(.me) { opacity: .18; }
+  .impact[data-scope="det"] .tag.det { display: block; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 10px; color: var(--ink); }
+  .legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: middle; margin-right: 7px; }
+  .legend .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; margin-right: 7px; }
+  .legend .dot.me { background: var(--red); } .legend .dot.det { background: var(--ink); } .legend .dot.other { background: #a3a29e; }
+  /* career arc */
+  .career .grid { stroke: var(--rule); } .career .grid.zero { stroke: var(--ink); }
+  .career .total { font-family: var(--mono); font-size: 12px; font-weight: 600; fill: var(--ink); }
+  .seg.EVO, .sw.EVO { fill: var(--ink); background: var(--ink); }
+  .seg.EVD, .sw.EVD { fill: var(--red); background: var(--red); }
+  .seg.PPO, .sw.PPO { fill: #4a4845; background: #4a4845; }
+  .seg.SHD, .sw.SHD { fill: #a3a29e; background: #a3a29e; }
+  .seg.Pens, .sw.Pens { fill: #c9c8c4; background: #c9c8c4; }
+  /* comps */
+  .comp-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .comp-val { font-size: 34px; font-weight: 600; letter-spacing: -.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+  .mini { width: 100%; font-size: 12px; }
+  .mini th { font-size: 9px; } .mini td, .mini th { padding: 6px 8px 6px 0; }
+  .mini tr.total td { border-top: 1px solid var(--ink); font-weight: 600; }
   @media (max-width: 900px) {
     .head { grid-template-columns: 1fr; }
     .art { width: min(100%, 420px); }
