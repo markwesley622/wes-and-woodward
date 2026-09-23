@@ -74,18 +74,25 @@ const nav = [['Team', `${base}team/`], ['Players', `${base}#players`], ['Prospec
     </footer>
     </div>
     <script>
-      // Header: hide on scroll down, show on scroll up.
+      // Header: hides on a deliberate scroll down, returns on any scroll up, and also
+      // whenever the pointer comes to the top of the window or focus lands in the header,
+      // so it is never a guess where the nav went.
       (() => {
         const hdr = document.querySelector('.hdr');
         if (!hdr) return;
-        let last = window.scrollY, queued = false;
+        let last = window.scrollY, downRun = 0, queued = false;
+        const show = () => hdr.classList.remove('is-hidden');
         const update = () => {
-          const y = window.scrollY;
-          if (y <= 8 || y < last || hdr.classList.contains('menu-open')) hdr.classList.remove('is-hidden');
-          else if (y > last && y > hdr.offsetHeight + 40) hdr.classList.add('is-hidden');
+          const y = window.scrollY, dy = y - last;
+          if (y <= 8 || hdr.classList.contains('menu-open')) { show(); downRun = 0; }
+          else if (dy < -2) { show(); downRun = 0; }
+          else if (dy > 0) { downRun += dy; if (downRun > 24 && y > hdr.offsetHeight + 40) hdr.classList.add('is-hidden'); }
           last = y; queued = false;
         };
         addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(update); } }, { passive: true });
+        addEventListener('mousemove', (e) => { if (e.clientY < 72) { show(); downRun = 0; } }, { passive: true });
+        hdr.addEventListener('focusin', show);
+        hdr.addEventListener('mouseenter', show);
       })();
       // Mobile burger menu.
       (() => {
