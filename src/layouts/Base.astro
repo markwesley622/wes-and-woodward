@@ -44,7 +44,6 @@ const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['Pr
             <nav class="nav mono" aria-label="Primary">
               {nav.map(([label, href]) => <a href={href}>{label}</a>)}
             </nav>
-            <a class="cta mono" href="#">Subscribe</a>
             <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
               <span></span><span></span><span></span>
             </button>
@@ -131,8 +130,6 @@ const nav = [['Team', `${base}#dashboard`], ['Players', `${base}#players`], ['Pr
   .home :global(.wm) { height: 30px; width: auto; }
   .right { display: flex; align-items: center; gap: 28px; }
   .nav { display: flex; gap: 24px; }
-  .cta { background: var(--ink); color: #fff; padding: 9px 14px; border-radius: 3px; font-size: 11px; }
-  .cta:hover { background: var(--red); color: #fff; }
   footer { padding: 36px 0 60px; color: var(--mute); font-size: 12px; line-height: 1.6; }
   footer a { color: var(--mute); text-decoration: underline; }
   footer a:hover { color: var(--red); }
