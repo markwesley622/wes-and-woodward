@@ -5,6 +5,7 @@ import team from '../../data/site/team.json';
 import results from '../../data/site/results.json';
 import lines from '../../data/site/lines.json';
 import goalies from '../../data/site/goalies.json';
+import Radar from '../components/Radar.astro';
 
 const S = D.standings, X = D.deserved, P = D.projected, NG = D.nextGame;
 const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
@@ -49,13 +50,39 @@ const gridPts = [20, 40, 60, 80, 100].filter((v) => v <= maxPts);
 const tiles = D.tiles.map((t) => ({ ...t, display: t.signed ? signed(t.value, 1) : t.unit === '%' ? `${t.value.toFixed(1)}%` : (Math.abs(t.value) < 20 ? t.value.toFixed(2) : t.value.toFixed(1)) }));
 const topLines = lines.forwardLines.slice(0, 5), topPairs = lines.defensePairs.slice(0, 3);
 const toi = (m) => Math.round(m);
+const RD = D.radar;
+const top3Names = RD.top3.map((t) => NAMES[t] ?? t).join(', ');
 ---
 <Base title="Team — Wes & Woodward" description="The Detroit Red Wings season in every game state: record, expected-goals standings, the season as a barcode, lines, pairs and goaltending.">
   <section class="sec">
     <div class="shell">
       <p class="kicker">Team · {season}{D.seasonState === 'offseason' ? ' final' : ''}</p>
-      <h1 class="page-title">Detroit Red Wings</h1>
-      <p class="lede">Where the season went, in every game state. Rebuilt nightly from the NHL API and MoneyPuck, with a league rank wherever one can be computed and no smoothing.</p>
+      <div class="hero-grid">
+        <div class="left">
+          <h1 class="page-title">Detroit Red Wings</h1>
+          <p class="lede">Seven dimensions of winning, as league percentiles, against the average of the top three teams in the standings right now.</p>
+          <table class="dims">
+            <thead><tr><th>Percentiles</th><th class="num red">Detroit</th><th class="num">Top three</th></tr></thead>
+            <tbody>
+              {RD.dimensions.map((d) => (
+                <tr>
+                  <td><span class="tip" title={d.note}>{d.label}</span></td>
+                  <td class="num red" title={`${d.detRaw} · ${d.note}`}>{d.det.toFixed(1)}</td>
+                  <td class="num" title={`${d.top3Raw} · average of ${top3Names}`}>{d.top3.toFixed(1)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p class="mono mute dims-note">league percentiles, {season} · top three = {top3Names}</p>
+        </div>
+        <div class="right"><Radar /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="record">
+    <div class="shell">
+      <h2>Record</h2>
       <div class="grid">
         <div class="tile">
           <span class="eb mono">Record</span>
@@ -192,6 +219,14 @@ const toi = (m) => Math.round(m);
 
 <style>
   .lede { max-width: 66ch; font-size: 18px; line-height: 1.55; margin: 0 0 26px; }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 560px); gap: 56px; align-items: center; }
+  .dims { width: 100%; max-width: 520px; border-collapse: collapse; font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; margin: 0; }
+  .dims th { text-align: left; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--mute); font-weight: 500; border-bottom: 1px solid var(--ink); padding: 0 12px 8px 0; white-space: nowrap; }
+  .dims th.red { color: var(--red); }
+  .dims td { border-bottom: 1px solid var(--rule); padding: 9px 12px 9px 0; white-space: nowrap; }
+  .dims th.num, .dims td.num { text-align: right; padding-right: 0; font-weight: 600; font-size: 15px; }
+  .dims td.num.red { color: var(--red); }
+  .dims-note { margin: 10px 0 0; text-transform: none; letter-spacing: 0; }
   .page-title { margin-bottom: 14px; }
   .tile .num .of { font-size: 18px; font-weight: 500; color: var(--mute); letter-spacing: 0; }
   .tile .num.sm { font-size: 32px; }
@@ -222,6 +257,8 @@ const toi = (m) => Math.round(m);
   .sw { display: inline-block; width: 18px; height: 3px; vertical-align: middle; margin-right: 7px; }
   .sw.pts { background: var(--red); } .sw.xg { background: var(--ink); } .sw.proj { background: var(--mute); }
   @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+    .right { max-width: 520px; }
     .grid.six { grid-template-columns: repeat(2, 1fr); }
     .two { grid-template-columns: 1fr; }
   }
