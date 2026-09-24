@@ -47,6 +47,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
       <h1><span class="l1">Detroit</span><span class="l2">Red Wings,</span><span class="l3">by the numbers</span></h1>
       <Wheel />
       <div class="foot mono"><span></span><span>nhl api · moneypuck · rebuilt {rebuilt} et</span></div>
+      <a class="cue" href="#analysis" aria-label="Scroll down"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M4 8l8 8 8-8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </section>
 
@@ -160,6 +161,8 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
 </Base>
 
 <script>
+  const cue = document.querySelector('.cue');
+  if (cue) { const check = () => cue.classList.toggle('gone', window.scrollY > 40); addEventListener('scroll', check, { passive: true }); check(); }
   const clock = document.getElementById('clock');
   if (clock) {
     const tick = () => { clock.textContent = new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Detroit' }); };
@@ -179,6 +182,12 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   h1 .l2 { padding-left: .12em; }
   h1 .l3 { padding-left: 1.05em; }
   h1 .red { display: inline; }
+  /* scroll cue: a pulsing chevron at the bottom of the hero, gone once the reader scrolls */
+  .cue { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); z-index: 4; color: var(--red); display: block; line-height: 0; padding: 6px; border-radius: 50%; animation: cue 1.6s ease-in-out infinite; transition: opacity 300ms; }
+  .cue svg { display: block; }
+  .cue.gone { opacity: 0; pointer-events: none; }
+  @keyframes cue { 0%, 100% { transform: translate(-50%, 0); opacity: .45; } 50% { transform: translate(-50%, 8px); opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .cue { animation: none; opacity: .8; } }
   .foot { position: absolute; left: var(--gutter); right: var(--gutter); bottom: 18px; display: flex; justify-content: space-between; gap: 16px; color: var(--mute); z-index: 3; }
 
   /* dashboard extras */
