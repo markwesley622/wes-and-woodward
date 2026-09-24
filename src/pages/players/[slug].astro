@@ -14,7 +14,9 @@ export async function getStaticPaths() {
 }
 const { P, art } = Astro.props;
 
-const B = P.bio, L = P.seasonLine, SC = P.score, MP = P.moneypuck, G = P.gameLog, GS = P.gameScore, HS = P.hsc, TG = P.teamGameScore;
+const B = P.bio, L = P.seasonLine || {}, SC = P.score, MP = P.moneypuck || {}, G = P.gameLog || [], GS = P.gameScore, HS = P.hsc || {}, TG = P.teamGameScore;
+const isG = P.kind === 'G', hasScore = !!SC, hasLog = G.length > 0;
+const POSN = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense', G: 'Goalie' };
 const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
 const last = (n) => n.split(' ').slice(-1)[0];
 const gameLink = (r) => r.gameId ? `#g-${r.gameId}` : '#gamelog';
@@ -26,20 +28,20 @@ const age = Math.floor((Date.now() - new Date(B.birthDate)) / (365.25 * 24 * 360
 const ht = B.heightIn ? `${Math.floor(B.heightIn / 12)}′${B.heightIn % 12}″` : '';
 const POS = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense' };
 const f5 = MP.fiveOnFive || {};
-const tier = SC.value >= 88 ? 'elite' : SC.value >= 73 ? 'top-line' : SC.value >= 50 ? 'above average' : SC.value >= 27 ? 'below average' : 'replacement level';
+const tier = !SC ? '' : SC.value >= 88 ? 'elite' : SC.value >= 73 ? 'top-line' : SC.value >= 50 ? 'above average' : SC.value >= 27 ? 'below average' : 'replacement level';
 
 // game score chart
 const W = 1000, H = 220, PAD = 8, MID = H / 2;
-const maxGS = Math.max(3, ...G.map((g) => Math.abs(g.gameScore ?? 0)));
+const maxGS = Math.max(3, ...G.map((g) => Math.abs(g.gameScore ?? 0)), 0);
 const bx = (i) => PAD + (i + 0.5) * ((W - 2 * PAD) / Math.max(1, G.length));
 const bh = (v) => Math.abs(v) / maxGS * (MID - PAD);
 const roll = G.map((g, i) => { const win = G.slice(Math.max(0, i - 9), i + 1).map((x) => x.gameScore).filter((v) => v != null); return win.length ? win.reduce((a, b) => a + b, 0) / win.length : 0; });
-const rollPath = roll.map((v, i) => `${i === 0 ? 'M' : 'L'}${bx(i).toFixed(1)},${(MID - v / maxGS * (MID - PAD)).toFixed(1)}`).join(' ');
+const rollPath = !G.length ? '' : roll.map((v, i) => `${i === 0 ? 'M' : 'L'}${bx(i).toFixed(1)},${(MID - v / maxGS * (MID - PAD)).toFixed(1)}`).join(' ');
 const dots = (n) => Array.from({ length: Math.max(0, n) });
 // impact map
-const IM = P.impact, CA = P.career, CO = P.comps, MY = P.myComponents;
+const IM = P.impact || [], CA = P.career || [], CO = P.comps || [], MY = P.myComponents || {};
 const IW = 1000, IH = 620, IP = { l: 56, r: 24, t: 24, b: 48 };
-const offs = IM.map((d) => d.off), defs = IM.map((d) => d.def);
+const offs = IM.length ? IM.map((d) => d.off) : [0], defs = IM.length ? IM.map((d) => d.def) : [0];
 const xMin = Math.min(...offs), xMax = Math.max(...offs), yMin = Math.min(...defs), yMax = Math.max(...defs);
 const padX = (xMax - xMin) * 0.06, padY = (yMax - yMin) * 0.06;
 const ix = (v) => IP.l + (v - (xMin - padX)) / ((xMax + padX) - (xMin - padX)) * (IW - IP.l - IP.r);
@@ -73,24 +75,65 @@ const RECENT = 10;
         )}
         <div class="who">
           <h1 class="page-title">{P.name}</h1>
-          <p class="mono bio">#{B.number} · {POS[B.position] ?? B.position} · shoots {B.shoots} · {ht}, {B.weightLb} lb · age {age} · {B.birthplace}{B.draft ? ` · drafted ${B.draft.year}, ${B.draft.overallPick}th overall` : ''}</p>
+          <p class="mono bio">#{B.number ?? '—'} · {POSN[B.position] ?? B.position} · {isG ? 'catches' : 'shoots'} {B.shoots} · {ht}, {B.weightLb} lb · age {age} · {B.birthplace}{B.draft ? ` · drafted ${B.draft.year}, ${B.draft.overallPick}th overall` : ''}</p>
         </div>
         <div class="scorebox">
           <span class="eb mono">W&amp;W value</span>
-          <span class="score">{SC.value.toFixed(1)}</span>
-          <span class="mono range">likely {SC.low.toFixed(1)}–{SC.high.toFixed(1)} · {tier}{L.gp < 20 ? ' · under 20 games' : ''}</span>
-          <span class="mono split">sustainable {SC.sustainable.toFixed(1)} · results {SC.results.toFixed(1)}</span>
+          {hasScore ? (
+            <>
+              <span class="score">{SC.value.toFixed(1)}</span>
+              <span class="mono range">likely {SC.low.toFixed(1)}–{SC.high.toFixed(1)}{tier ? ` · ${tier}` : ''}{!isG && (L.gp ?? 0) < 20 ? ' · under 20 games' : ''}</span>
+              {isG ? <span class="mono split">{SC.gsax >= 0 ? '+' : ''}{SC.gsax} goals saved above expected · {SC.minutes} min</span> : <span class="mono split">sustainable {SC.sustainable.toFixed(1)} · results {SC.results.toFixed(1)}</span>}
+            </>
+          ) : (
+            <>
+              <span class="score mute">&mdash;</span>
+              <span class="mono range">no NHL season on record</span>
+            </>
+          )}
         </div>
       </div>
+      {P.note && <p class="mono note-line">{P.note}</p>}
       <div class="grid">
-        <div class="tile"><span class="eb mono">Games</span><span class="num">{L.gp}</span><span class="sub">{season}</span></div>
-        <div class="tile"><span class="eb mono">Goals · assists · points</span><span class="num">{L.goals}–{L.assists}–{L.points}</span><span class="sub">{L.ppPoints} on the power play · {signed(L.plusMinus, 0)}</span></div>
-        <div class="tile"><span class="eb mono">Individual xG</span><span class="num">{MP.ixG?.toFixed(1) ?? '—'}</span><span class="sub">{MP.goalsAboveExpected != null ? `${signed(MP.goalsAboveExpected)} goals vs expected` : ''}</span></div>
-        <div class="tile"><span class="eb mono">5v5 xG share</span><span class="num">{f5.onIceXgPct != null ? `${Math.round(f5.onIceXgPct * 100)}%` : '—'}</span><span class:list={['sub', { red: (f5.pctl_onIceXgPct ?? 0) >= 75 }]}>{f5.qualifiesForPercentiles ? `${f5.pctl_onIceXgPct}th percentile among ${SC.position === 'D' ? 'defensemen' : 'forwards'} · ${Math.round(f5.icetimeMinutes)} min` : ''}</span></div>
+        <div class="tile"><span class="eb mono">Games{L.league && L.league !== 'NHL' ? ` · ${L.league}` : ''}</span><span class="num">{L.gp ?? '—'}</span><span class="sub">{season}{L.team ? ` · ${L.team}` : ''}</span></div>
+        {isG ? (
+          <>
+            <div class="tile"><span class="eb mono">Record</span><span class="num">{L.wins ?? '—'}–{L.losses ?? '—'}–{L.otLosses ?? '—'}</span><span class="sub">{L.shutouts ?? 0} shutouts</span></div>
+            <div class="tile"><span class="eb mono">Save percentage</span><span class="num">{L.savePct != null ? `.${Math.round(L.savePct * 1000)}` : '—'}</span><span class="sub">{L.gaa != null ? `${L.gaa.toFixed(2)} goals against average` : ''}</span></div>
+            <div class="tile"><span class="eb mono">Goals saved above expected</span><span class="num">{hasScore ? `${SC.gsax >= 0 ? '+' : ''}${SC.gsax}` : '—'}</span><span class:list={['sub', { red: hasScore && SC.rank && SC.rank <= 10 }]}>{hasScore && SC.rank ? `${ordinal(SC.rank)} of ${SC.pool} NHL goalies with 600+ minutes` : ''}</span></div>
+          </>
+        ) : (
+          <>
+            <div class="tile"><span class="eb mono">Goals · assists · points</span><span class="num">{L.goals ?? '—'}–{L.assists ?? '—'}–{L.points ?? '—'}</span><span class="sub">{L.ppPoints != null ? `${L.ppPoints} on the power play · ` : ''}{L.plusMinus != null ? signed(L.plusMinus, 0) : ''}</span></div>
+            <div class="tile"><span class="eb mono">Individual xG</span><span class="num">{MP.ixG?.toFixed(1) ?? '—'}</span><span class="sub">{MP.goalsAboveExpected != null ? `${signed(MP.goalsAboveExpected)} goals vs expected` : ''}</span></div>
+            <div class="tile"><span class="eb mono">5v5 xG share</span><span class="num">{f5.onIceXgPct != null ? `${Math.round(f5.onIceXgPct * 100)}%` : '—'}</span><span class:list={['sub', { red: (f5.pctl_onIceXgPct ?? 0) >= 75 }]}>{f5.qualifiesForPercentiles ? `${f5.pctl_onIceXgPct}th percentile among ${SC && SC.position === 'D' ? 'defensemen' : 'forwards'} · ${Math.round(f5.icetimeMinutes)} min` : ''}</span></div>
+          </>
+        )}
       </div>
     </div>
   </section>
 
+  {hasScore && isG && (
+  <section class="sec" id="value">
+    <div class="shell">
+      <h2>Where he ranks</h2>
+      <div class="two">
+        <div class="left">
+          <p class="eb mono">NHL goalies with 600+ minutes, {SC.pool} of them</p>
+          <table class="rank">
+            <thead><tr><th>Rank</th><th>Goalie</th><th class="num">GSAx</th><th class="num">Value</th></tr></thead>
+            <tbody>{SC.neighbours.map((n) => <tr class:list={{ me: n.isMe }}><td class="rk">{n.rank}</td><td>{n.name}</td><td class="num">{n.gsax > 0 ? '+' : ''}{n.gsax}</td><td class:list={['num', { red: n.isMe }]}>{n.value.toFixed(1)}</td></tr>)}</tbody>
+          </table>
+        </div>
+        <div class="prose-sm">
+          <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL goalie with 600 or more minutes this season. It is built on goals saved above expected: {SC.goals.toFixed(0)} goals allowed against {SC.xGoals} expected from the shots he faced, per MoneyPuck. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is wide by design: goaltending is the least repeatable thing in the sport, so the range only closes with a lot of minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  )}
+
+  {hasScore && !isG && (
   <section class="sec" id="value">
     <div class="shell">
       <h2>Where the value comes from</h2>
@@ -113,12 +156,12 @@ const RECENT = 10;
         <table class="rank">
           <thead><tr><th>Rank</th><th>Player</th><th>Team</th><th>Pos</th><th class="num">GP</th><th class="num">Value</th><th class="num">Goals counted</th></tr></thead>
           <tbody>
-            {SC.neighbours.map((n) => (
+            {(SC.neighbours || []).map((n) => (
               <tr class:list={{ me: n.isMe }}><td class="rk">{n.rank}</td><td>{n.name}</td><td>{n.team}</td><td>{n.pos}</td><td class="num">{n.gp}</td><td class:list={['num', { red: n.isMe }]}>{n.value.toFixed(1)}</td><td class="num">{n.goals > 0 ? '+' : ''}{n.goals.toFixed(1)}</td></tr>
             ))}
           </tbody>
         </table>
-        <p class="note mono">Two above and two below on the same score. Rank {SC.rank} of {SC.pool}.</p>
+        <p class="note mono">Two above and two below on the same score.{SC.rank ? ` Rank ${SC.rank} of ${SC.pool}.` : ' Under 20 games, so rated but not ranked.'}</p>
         </div>
 
         </div>
@@ -129,7 +172,9 @@ const RECENT = 10;
       </div>
     </div>
   </section>
+  )}
 
+  {hasScore && !isG && IM.length > 0 && (
   <section class="sec" id="impact">
     <div class="shell">
       <div class="sec-head">
@@ -158,7 +203,9 @@ const RECENT = 10;
       <div class="legend mono"><span><i class="dot me"></i>{last(P.name)}</span><span class="det-only"><i class="dot det"></i>Red Wings</span><span><i class="dot other"></i>every other skater</span><span class="mute">Evolving-Hockey RAPM, 5v5, {season}</span></div>
     </div>
   </section>
+  )}
 
+  {hasScore && !isG && CA.length > 0 && (
   <section class="sec" id="career">
     <div class="shell">
       <h2>Career arc</h2>
@@ -179,7 +226,9 @@ const RECENT = 10;
       <div class="legend mono">{COMP.map(([k, label]) => <span><i class={`sw ${k}`}></i>{label}</span>)}</div>
     </div>
   </section>
+  )}
 
+  {hasScore && !isG && CO.length > 0 && (
   <section class="sec" id="comps">
     <div class="shell">
       <h2>Player comps</h2>
@@ -197,13 +246,39 @@ const RECENT = 10;
       </div>
     </div>
   </section>
+  )}
 
+  {hasLog && isG && (
+  <section class="sec" id="gamelog">
+    <div class="shell">
+      <h2>Game log</h2>
+      <div class="table-scroll log" id="log">
+        <table>
+          <thead><tr><th>Date</th><th>Opp</th><th>Result</th><th class="num">TOI</th><th class="num">Shots</th><th class="num">GA</th><th class="num">SV%</th></tr></thead>
+          <tbody>
+            {[...G].reverse().map((g, i) => (
+              <tr id={`g-${g.gameId}`} class:list={{ more: i >= RECENT }}>
+                <td>{mdy(g.date)}</td><td>{g.home ? 'vs' : 'at'} {g.opponent}</td><td>{g.decision ?? (g.started ? '—' : 'relief')}{g.shutout ? ' · SO' : ''}</td>
+                <td class="num">{g.toi.toFixed(1)}</td><td class="num">{g.shotsAgainst ?? '—'}</td><td class="num">{g.goalsAgainst ?? '—'}</td>
+                <td class:list={['num', { red: (g.savePct ?? 0) >= 0.93 }]}>{g.savePct != null ? `.${Math.round(g.savePct * 1000)}` : '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <button type="button" class="showall mono" id="showall" aria-expanded="false">Show all {G.length} games &darr;</button>
+      <p class="note mono">Most recent first. NHL API. Red marks a .930 night or better.</p>
+    </div>
+  </section>
+  )}
+
+  {hasLog && !isG && GS && (
   <section class="sec" id="gamelog">
     <div class="shell">
       <h2>Game log</h2>
       <div class="gs-tiles">
         <div class="tile"><span class="eb mono">Game score, average</span><span class="num">{GS.average.toFixed(2)}</span><span class="sub">{GS.games} games · Luszczyszyn game score via HockeyStatCards</span>
-          {TG && <span class="fn mono">{ordinal(TG.avgRank)} of {TG.players} Red Wings with {TG.minGames}+ games</span>}</div>
+          {TG && TG.avgRank && <span class="fn mono">{ordinal(TG.avgRank)} of {TG.players} Red Wings with {TG.minGames}+ games</span>}</div>
         <div class="tile"><span class="eb mono">Best game</span><span class="num">{GS.best.value.toFixed(2)}</span><span class="sub">{mdy(GS.best.date)} {G.find((g) => g.date === GS.best.date)?.home ? 'vs' : 'at'} {GS.best.opponent}</span>
           {TG && <span class="fn mono">Team best: {TG.best.name === P.name ? 'his' : last(TG.best.name) + ','} {TG.best.value.toFixed(2)} <a href={gameLink(TG.best)} class="glink">{gameText(TG.best)}</a></span>}</div>
         <div class="tile"><span class="eb mono">Worst game</span><span class="num">{GS.worst.value.toFixed(2)}</span><span class="sub">{mdy(GS.worst.date)} {G.find((g) => g.date === GS.worst.date)?.home ? 'vs' : 'at'} {GS.worst.opponent}</span>
@@ -245,6 +320,7 @@ const RECENT = 10;
       <p class="note mono">Most recent first. Box score from the NHL API. ixG, on-ice xGF/xGA and GF–GA are five-on-five, per HockeyStatCards (Natural Stat Trick data); TOI is all situations. Game score is Dom Luszczyszyn's formula, where 2.0 is a strong night and below zero is a poor one.</p>
     </div>
   </section>
+  )}
 </Base>
 
 <script>
@@ -293,6 +369,8 @@ const RECENT = 10;
   .scorebox .eb { color: var(--mute); }
   .score { font-size: 104px; font-weight: 600; line-height: .9; letter-spacing: -.05em; color: var(--red); font-variant-numeric: tabular-nums; }
   .range, .split { color: var(--mute); }
+  .score.mute { color: var(--mute); }
+  .note-line { text-transform: none; letter-spacing: 0; color: var(--mute); margin: 0 0 14px; }
   .two { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 44px; align-items: start; }
   .two .left table { width: 100%; }
   .prose-sm p { margin: 0 0 14px; font-size: 16px; line-height: 1.55; max-width: 52ch; }

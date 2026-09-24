@@ -3,44 +3,121 @@ import Base from '../../layouts/Base.astro';
 import fs from 'node:fs';
 import path from 'node:path';
 const dir = path.resolve('data/site/players');
-const players = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')))
-  .sort((a, b) => b.score.value - a.score.value);
-const season = players.length ? `${players[0].seasonLabel.slice(0, 4)}–${players[0].seasonLabel.slice(5)}` : '';
-const POS = { C: 'C', L: 'LW', R: 'RW', D: 'D' };
+const all = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
+const skaters = all.filter((p) => p.kind !== 'G').sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
+const goalies = all.filter((p) => p.kind === 'G').sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
+const season = all.length ? `${all[0].seasonLabel.slice(0, 4)}–${all[0].seasonLabel.slice(5)}` : '';
+const POS = { C: 'C', L: 'LW', R: 'RW', D: 'D', G: 'G' };
 const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
+const toiMin = (s) => { if (!s) return null; const [m, sec] = String(s).split(':').map(Number); return isNaN(m) ? null : m + (sec || 0) / 60; };
+const num = (v, d = 1) => (v == null ? '—' : Number(v).toFixed(d));
+const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
 ---
-<Base title="Players — Wes & Woodward" description="Every returning Red Wing with a page: value score, rank in the NHL, and this season's numbers.">
+<Base title="Players — Wes & Woodward" description="Every Red Wing on the roster: value score, NHL rank, and this season's numbers, sortable.">
   <section class="sec">
     <div class="shell">
       <p class="kicker">Players · {season}</p>
       <h1 class="page-title">Red Wings</h1>
-      <p class="lede">Every skater who played for Detroit last season and is on the roster now, ranked on the W&amp;W value score. Click through for the full page.</p>
-      <div class="table-scroll">
-        <table class="roster">
-          <thead><tr><th>#</th><th>Player</th><th>Pos</th><th class="num">GP</th><th class="num">G</th><th class="num">A</th><th class="num">P</th><th class="num">Goals of value</th><th class="num">NHL rank</th><th class="num">Value</th></tr></thead>
+      <p class="lede">Everyone on the roster, on last season's numbers. Click a column to sort, a name to open the page.</p>
+
+      <div class="controls mono">
+        <div class="toggle" role="tablist" aria-label="Skaters or goalies">
+          <button type="button" class="on" data-group="skaters" role="tab" aria-selected="true">Skaters</button>
+          <button type="button" data-group="goalies" role="tab" aria-selected="false">Goalies</button>
+        </div>
+        <div class="toggle" id="posfilter" role="tablist" aria-label="Position">
+          <button type="button" class="on" data-pos="all" role="tab" aria-selected="true">All</button>
+          <button type="button" data-pos="F" role="tab" aria-selected="false">Forwards</button>
+          <button type="button" data-pos="D" role="tab" aria-selected="false">Defense</button>
+        </div>
+      </div>
+
+      <div class="table-scroll" id="skaters">
+        <table class="sortable">
+          <thead><tr>
+            <th data-sort="text">Player</th><th data-sort="text">Pos</th><th data-sort="text">League</th>
+            <th class="num" data-sort="num">GP</th><th class="num" data-sort="num">G</th><th class="num" data-sort="num">A</th><th class="num" data-sort="num">P</th>
+            <th class="num" data-sort="num">+/−</th><th class="num" data-sort="num">TOI</th><th class="num" data-sort="num">ixG</th><th class="num" data-sort="num">5v5 xG%</th>
+            <th class="num" data-sort="num">Goals of value</th><th class="num" data-sort="num">NHL rank</th><th class="num on desc" data-sort="num">Value</th>
+          </tr></thead>
           <tbody>
-            {players.map((p, i) => (
-              <tr>
-                <td>{i + 1}</td><td><a href={`/players/${p.slug}/`}>{p.name}</a></td><td>{POS[p.bio.position] ?? p.bio.position}</td>
-                <td class="num">{p.seasonLine.gp ?? '—'}</td><td class="num">{p.seasonLine.goals ?? '—'}</td><td class="num">{p.seasonLine.assists ?? '—'}</td><td class="num">{p.seasonLine.points ?? '—'}</td>
-                <td class="num">{signed(p.score.goalsBlended)}</td><td class="num">{p.score.rank ? `${p.score.rank} of ${p.score.pool}` : '—'}</td>
-                <td class:list={['num', 'val', { red: p.score.value >= 73 }]}>{p.score.value.toFixed(1)}</td>
+            {skaters.map((p) => { const L = p.seasonLine || {}, S = p.score, f5 = (p.moneypuck || {}).fiveOnFive || {}; const grp = p.bio.position === 'D' ? 'D' : 'F'; const toi = toiMin(L.toiPerGame); return (
+              <tr data-pos={grp}>
+                <td data-v={p.name.split(' ').slice(-1)[0]}><a href={`/players/${p.slug}/`}>{p.name}</a></td>
+                <td data-v={POS[p.bio.position] ?? p.bio.position}>{POS[p.bio.position] ?? p.bio.position}</td>
+                <td data-v={L.league ?? ''} class:list={{ mute: L.league && L.league !== 'NHL' }}>{L.league ?? '—'}</td>
+                <td class="num" data-v={L.gp ?? -1}>{L.gp ?? '—'}</td><td class="num" data-v={L.goals ?? -1}>{L.goals ?? '—'}</td><td class="num" data-v={L.assists ?? -1}>{L.assists ?? '—'}</td><td class="num" data-v={L.points ?? -1}>{L.points ?? '—'}</td>
+                <td class="num" data-v={L.plusMinus ?? -99}>{L.plusMinus != null ? signed(L.plusMinus, 0) : '—'}</td>
+                <td class="num" data-v={toi ?? -1}>{L.league === 'NHL' && L.toiPerGame ? L.toiPerGame : '—'}</td>
+                <td class="num" data-v={p.moneypuck?.ixG ?? -1}>{num(p.moneypuck?.ixG)}</td>
+                <td class="num" data-v={f5.onIceXgPct ?? -1}>{f5.onIceXgPct != null ? `${Math.round(f5.onIceXgPct * 100)}%` : '—'}</td>
+                <td class="num" data-v={S?.goalsBlended ?? -99}>{S ? signed(S.goalsBlended) : '—'}</td>
+                <td class="num" data-v={S?.rank ?? 9999}>{S?.rank ? `${S.rank} of ${S.pool}` : '—'}</td>
+                <td class:list={['num', 'val', { red: (S?.value ?? 0) >= 73 }]} data-v={S?.value ?? -1}>{S ? S.value.toFixed(1) : '—'}</td>
               </tr>
-            ))}
+            ); })}
           </tbody>
         </table>
       </div>
-      <p class="note mono">Value: a 0–100 rating where 50 is the average NHL skater with 20+ games; this season only. NHL rank is among all skaters with 20+ games; players under 20 games are rated but not ranked.</p>
+
+      <div class="table-scroll" id="goalies" hidden>
+        <table class="sortable">
+          <thead><tr>
+            <th data-sort="text">Goalie</th><th data-sort="text">League</th><th class="num" data-sort="num">GP</th><th class="num" data-sort="num">W</th><th class="num" data-sort="num">L</th><th class="num" data-sort="num">OTL</th>
+            <th class="num" data-sort="num">SV%</th><th class="num" data-sort="num">GAA</th><th class="num" data-sort="num">SO</th><th class="num" data-sort="num">GSAx</th><th class="num" data-sort="num">NHL rank</th><th class="num on desc" data-sort="num">Value</th>
+          </tr></thead>
+          <tbody>
+            {goalies.map((p) => { const L = p.seasonLine || {}, S = p.score; return (
+              <tr>
+                <td data-v={p.name.split(' ').slice(-1)[0]}><a href={`/players/${p.slug}/`}>{p.name}</a></td>
+                <td data-v={L.league ?? ''} class:list={{ mute: L.league && L.league !== 'NHL' }}>{L.league ?? '—'}</td>
+                <td class="num" data-v={L.gp ?? -1}>{L.gp ?? '—'}</td><td class="num" data-v={L.wins ?? -1}>{L.wins ?? '—'}</td><td class="num" data-v={L.losses ?? -1}>{L.losses ?? '—'}</td><td class="num" data-v={L.otLosses ?? -1}>{L.otLosses ?? '—'}</td>
+                <td class="num" data-v={L.savePct ?? -1}>{sv(L.savePct)}</td><td class="num" data-v={L.gaa ?? 99}>{num(L.gaa, 2)}</td><td class="num" data-v={L.shutouts ?? -1}>{L.shutouts ?? '—'}</td>
+                <td class="num" data-v={S?.gsax ?? -99}>{S ? signed(S.gsax) : '—'}</td>
+                <td class="num" data-v={S?.rank ?? 9999}>{S?.rank ? `${S.rank} of ${S.pool}` : '—'}</td>
+                <td class:list={['num', 'val', { red: (S?.value ?? 0) >= 73 }]} data-v={S?.value ?? -1}>{S ? S.value.toFixed(1) : '—'}</td>
+              </tr>
+            ); })}
+          </tbody>
+        </table>
+      </div>
+      <p class="note mono">Value: a 0–100 rating where 50 is the average NHL player at the position group (skaters positionless, goalies on goals saved above expected), this season only. NHL rank counts skaters with 20+ games and goalies with 600+ minutes. A league other than NHL means the player spent last season there; his line is from that league and he carries no value score yet.</p>
     </div>
   </section>
 </Base>
 
+<script>
+  const groups = document.querySelectorAll('[data-group]'), posBtns = document.querySelectorAll('#posfilter button');
+  const show = (g) => { document.getElementById('skaters').hidden = g !== 'skaters'; document.getElementById('goalies').hidden = g !== 'goalies'; document.getElementById('posfilter').style.visibility = g === 'skaters' ? 'visible' : 'hidden'; groups.forEach((b) => { b.classList.toggle('on', b.dataset.group === g); b.setAttribute('aria-selected', String(b.dataset.group === g)); }); };
+  groups.forEach((b) => b.addEventListener('click', () => show(b.dataset.group)));
+  posBtns.forEach((b) => b.addEventListener('click', () => { posBtns.forEach((o) => { o.classList.toggle('on', o === b); o.setAttribute('aria-selected', String(o === b)); }); document.querySelectorAll('#skaters tbody tr').forEach((r) => { r.hidden = b.dataset.pos !== 'all' && r.dataset.pos !== b.dataset.pos; }); }));
+  document.querySelectorAll('table.sortable').forEach((table) => {
+    const ths = [...table.querySelectorAll('th')];
+    ths.forEach((th, idx) => th.addEventListener('click', () => {
+      const wasOn = th.classList.contains('on'), desc = wasOn ? !th.classList.contains('desc') : th.dataset.sort === 'num';
+      ths.forEach((o) => o.classList.remove('on', 'desc')); th.classList.add('on'); if (desc) th.classList.add('desc');
+      const rows = [...table.tBodies[0].rows];
+      rows.sort((a, b) => { const va = a.cells[idx].dataset.v, vb = b.cells[idx].dataset.v; const cmp = th.dataset.sort === 'num' ? Number(va) - Number(vb) : String(va).localeCompare(String(vb)); return desc ? -cmp : cmp; });
+      rows.forEach((r) => table.tBodies[0].appendChild(r));
+    }));
+  });
+</script>
+
 <style>
-  .lede { max-width: 66ch; font-size: 18px; line-height: 1.55; margin: 0 0 26px; }
+  .lede { max-width: 66ch; font-size: 18px; line-height: 1.55; margin: 0 0 22px; }
   .page-title { margin-bottom: 14px; }
+  .controls { display: flex; gap: 14px; flex-wrap: wrap; margin: 0 0 18px; }
+  .toggle { display: inline-flex; border: 1px solid var(--ink); border-radius: 3px; overflow: hidden; }
+  .toggle button { background: none; border: 0; padding: 9px 16px; cursor: pointer; font: inherit; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
+  .toggle button.on { background: var(--ink); color: #fff; }
   th.num, td.num { text-align: right; }
-  .roster a { text-decoration: underline; text-underline-offset: 2px; }
-  .roster .val { font-weight: 600; font-size: 15px; }
-  .roster td.red { color: var(--red); }
-  .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 90ch; }
+  th { cursor: pointer; user-select: none; white-space: nowrap; }
+  th:hover { color: var(--ink); }
+  th.on { color: var(--ink); border-bottom-color: var(--red); }
+  th.on::after { content: " ↑"; color: var(--red); } th.on.desc::after { content: " ↓"; }
+  .sortable a { text-decoration: underline; text-underline-offset: 2px; }
+  .sortable .val { font-weight: 600; font-size: 15px; }
+  .sortable td.red { color: var(--red); }
+  .sortable td.mute { color: var(--mute); }
+  .note { color: var(--mute); font-size: 11px; margin: 12px 0 0; text-transform: none; letter-spacing: 0; max-width: 100ch; }
 </style>
