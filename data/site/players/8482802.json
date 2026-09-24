@@ -22,7 +22,7 @@
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482802.png",
   "silhouette": "/players/8482802.png"
  },
- "kind": "S",
+ "kind": "P",
  "seasonLine": {
   "league": "NHL",
   "team": null,
@@ -43,6 +43,28 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 8,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -3,
+   "pim": 0
+  },
+  {
+   "league": "AHL",
+   "team": "Grand Rapids Griffins",
+   "gp": 16,
+   "goals": 11,
+   "assists": 5,
+   "points": 16,
+   "plusMinus": 4,
+   "pim": 14
+  }
+ ],
  "moneypuck": {
   "playerId": 8482802,
   "name": "Carter Mazur",
@@ -7981,5 +8003,7 @@
   },
   "above2": 0,
   "below0": 5
- }
+ },
+ "prospect": true,
+ "art": true
 }

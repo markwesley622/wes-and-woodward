@@ -16,7 +16,7 @@ the reliability standard error mapped back to percentiles. Two versions: sustain
 
 Usage: python3 pipeline/build_player.py 8481542 [--fetch]
 """
-import csv, json, math, pathlib, re, ssl, sys, time, unicodedata, urllib.request
+import csv, datetime as dt, json, math, pathlib, re, ssl, sys, time, unicodedata, urllib.request
 import certifi
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -157,16 +157,46 @@ def season_line(land):
             "otLosses": t.get("otLosses"), "gaa": t.get("goalsAgainstAvg"), "savePct": t.get("savePctg"), "shutouts": t.get("shutouts")}
 
 
+def rookie_eligible(land):
+    """NHL rookie rule: under 26 on Sept 15 of the coming season, no prior season of 25+ NHL games,
+    and no more than one prior season above 6 games."""
+    yr = int(SEASON[:4]) + 1
+    age = (dt.date(yr, 9, 15) - dt.date.fromisoformat(land["birthDate"])).days / 365.25
+    gp = {}
+    for t in land.get("seasonTotals", []):
+        if t.get("leagueAbbrev") == "NHL" and t.get("gameTypeId") == 2 and t.get("season", 0) <= int(SEASON):
+            gp[t["season"]] = gp.get(t["season"], 0) + (t.get("gamesPlayed") or 0)
+    return age < 26 and all(v < 25 for v in gp.values()) and sum(1 for v in gp.values() if v > 6) < 2
+
+
+def has_art(pid):
+    return (ROOT / "public" / "players" / f"{pid}-art.webp").exists()
+
+
 def write_player(pid, out):
-    dest = ROOT / "data" / "site" / "players"; dest.mkdir(parents=True, exist_ok=True)
+    """A page exists only for a player with art (Mark, 9/24). Everyone else is archived, unpublished
+    and out of the sitemap, ready to promote if he plays."""
+    out["prospect"] = out.get("kind") != "G" and rookie_eligible(json.load((ROOT / "data" / "raw" / "players" / str(pid) / "landing.json").open()))
+    if out["prospect"] and out.get("kind") == "S": out["kind"] = "P"
+    out["art"] = has_art(pid)
+    live = ROOT / "data" / "site" / "players"; arch = ROOT / "data" / "archive" / "players"
+    live.mkdir(parents=True, exist_ok=True); arch.mkdir(parents=True, exist_ok=True)
+    dest = live if out["art"] else arch
     (dest / f"{pid}.json").write_text(json.dumps(out, indent=1))
+    other = (arch if out["art"] else live) / f"{pid}.json"
+    if other.exists(): other.unlink()
+    if not out["art"]: print(f"  archived (no art): {out['name']}")
 
 
 def build_no_nhl(pid, raw, land, name, nhl_log=None):
     """A roster player with no NHL season on record last year: bio + the line he did play."""
     fs = season_line(land)
+    lines = [{"league": t.get("leagueAbbrev"), "team": t.get("teamName", {}).get("default"), "gp": t.get("gamesPlayed"), "goals": t.get("goals"), "assists": t.get("assists"),
+              "points": t.get("points"), "plusMinus": t.get("plusMinus"), "pim": t.get("pim")} for t in land.get("seasonTotals", []) if t.get("season") == int(SEASON) and t.get("gameTypeId") == 2]
+    lines = [{"league": t.get("leagueAbbrev"), "team": t.get("teamName", {}).get("default"), "gp": t.get("gamesPlayed"), "goals": t.get("goals"), "assists": t.get("assists"),
+              "points": t.get("points"), "plusMinus": t.get("plusMinus"), "pim": t.get("pim")} for t in land.get("seasonTotals", []) if t.get("season") == int(SEASON) and t.get("gameTypeId") == 2]
     out = {"playerId": pid, "name": name, "slug": slug_of(name), "season": SEASON, "seasonLabel": f"{SEASON[:4]}-{SEASON[6:]}", "kind": "S",
-           "bio": bio_block(land, pid), "seasonLine": fs, "score": None, "gameLog": [], "gameScore": None, "teamGameScore": None, "impact": [], "career": [], "comps": [],
+           "bio": bio_block(land, pid), "seasonLine": fs, "seasonLines": lines, "score": None, "gameLog": [], "gameScore": None, "teamGameScore": None, "impact": [], "career": [], "comps": [],
            "myComponents": None, "moneypuck": {}, "hsc": {}, "note": f"No NHL games in {SEASON[:4]}-{SEASON[6:]}; the line shown is his {fs.get('league') or 'most recent'} season."}
     write_player(pid, out); print(f"site/players/{pid}.json written: {name} (no NHL season; {fs.get('league')} {fs.get('gp')} GP)")
 
@@ -372,10 +402,12 @@ def build(pid, fetch=False):
     scored = [g for g in games if g["gameScore"] is not None] or games
     best = max(scored, key=lambda g: g["gameScore"] if g["gameScore"] is not None else -99); worst = min(scored, key=lambda g: g["gameScore"] if g["gameScore"] is not None else 99)
     fs = season_line(land)
+    lines = [{"league": t.get("leagueAbbrev"), "team": t.get("teamName", {}).get("default"), "gp": t.get("gamesPlayed"), "goals": t.get("goals"), "assists": t.get("assists"),
+              "points": t.get("points"), "plusMinus": t.get("plusMinus"), "pim": t.get("pim")} for t in land.get("seasonTotals", []) if t.get("season") == int(SEASON) and t.get("gameTypeId") == 2]
     out = {
         "playerId": pid, "name": name, "slug": slug_of(name), "season": SEASON, "seasonLabel": f"{SEASON[:4]}-{SEASON[6:]}",
         "bio": bio_block(land, pid),
-        "kind": "S", "seasonLine": fs,
+        "kind": "S", "seasonLine": fs, "seasonLines": lines,
         "moneypuck": sk, "hsc": hsc_card.get("ratings", {}), "score": score,
         "impact": impact, "career": career, "comps": comps, "myComponents": my_components,
         "gameLog": games,

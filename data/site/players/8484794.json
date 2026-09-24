@@ -22,7 +22,7 @@
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484794.png",
   "silhouette": "/players/8484794.png"
  },
- "kind": "S",
+ "kind": "P",
  "seasonLine": {
   "league": "NHL",
   "team": null,
@@ -43,6 +43,28 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 14,
+   "goals": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": -5,
+   "pim": 2
+  },
+  {
+   "league": "AHL",
+   "team": "Grand Rapids Griffins",
+   "gp": 60,
+   "goals": 20,
+   "assists": 24,
+   "points": 44,
+   "plusMinus": 17,
+   "pim": 42
+  }
+ ],
  "moneypuck": {
   "playerId": 8484794,
   "name": "Michael Brandsegg-Nyg\u00e5rd",
@@ -8086,5 +8108,7 @@
   },
   "above2": 1,
   "below0": 5
- }
+ },
+ "prospect": true,
+ "art": true
 }

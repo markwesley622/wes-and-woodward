@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Prospect from './_prospect.astro';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -15,7 +16,7 @@ export async function getStaticPaths() {
 const { P, art } = Astro.props;
 
 const B = P.bio, L = P.seasonLine || {}, SC = P.score, MP = P.moneypuck || {}, G = P.gameLog || [], GS = P.gameScore, HS = P.hsc || {}, TG = P.teamGameScore;
-const isG = P.kind === 'G', hasScore = !!SC, hasLog = G.length > 0;
+const isG = P.kind === 'G', isP = P.kind === 'P', hasScore = !!SC && !isP, hasLog = G.length > 0 && !isP;
 const POSN = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense', G: 'Goalie' };
 const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
 const last = (n) => n.split(' ').slice(-1)[0];
@@ -63,7 +64,9 @@ const careerBars = CA.map((c, i) => { let up = 0, down = 0; return COMP.map(([k]
 const cTicks = [-5, 0, 5, 10, 15, 20, 25, 30].filter((v) => v >= -negMax && v <= posMax);
 const RECENT = 10;
 ---
-<Base title={`${P.name} — Wes & Woodward`} description={`${P.name}, ${season}: value score, where it comes from, and a game-by-game log with game score.`}>
+<Base title={`${P.name} — Wes & Woodward`} description={isP ? `${P.name}, Red Wings prospect: draft pedigree and every line he played in ${season}.` : `${P.name}, ${season}: value score, where it comes from, and a game-by-game log with game score.`}>
+  {isP && <Prospect P={P} art={art} />}
+  {!isP && (<>
   <section class="sec">
     <div class="shell">
       <p class="kicker"><a href="/players/">Players</a> · Red Wings · {season}</p>
@@ -321,6 +324,7 @@ const RECENT = 10;
     </div>
   </section>
   )}
+  </>)}
 </Base>
 
 <script>

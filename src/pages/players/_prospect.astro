@@ -1,0 +1,104 @@
+---
+// Prospect page: a player still eligible for NHL rookie status. No value score (the NHL sample is
+// too small to rate), so the page is bio, draft pedigree, every line he played last season across
+// leagues, and the NHL game log if there is one.
+const { P, art } = Astro.props;
+const B = P.bio, L = P.seasonLine || {}, G = P.gameLog || [], LINES = P.seasonLines || [];
+const season = `${P.seasonLabel.slice(0, 4)}–${P.seasonLabel.slice(5)}`;
+const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
+const mdy = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+const age = Math.floor((Date.now() - new Date(B.birthDate)) / (365.25 * 24 * 3600 * 1000));
+const ht = B.heightIn ? `${Math.floor(B.heightIn / 12)}′${B.heightIn % 12}″` : '';
+const POSN = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense', G: 'Goalie' };
+const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
+const nhlGp = LINES.filter((l) => l.league === 'NHL').reduce((a, l) => a + (l.gp || 0), 0);
+const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OHL: 'Ontario Hockey League', QMJHL: 'Quebec Maritimes Junior Hockey League', NCAA: 'NCAA', SHL: 'Swedish Hockey League', Liiga: 'Liiga', NL: 'Swiss National League', ECHL: 'ECHL', USHL: 'USHL', KHL: 'KHL', 'WJC-20': 'World Juniors' };
+---
+<section class="sec">
+  <div class="shell">
+    <p class="kicker"><a href="/players/">Players</a> · Prospect · {season}</p>
+    <div class="head">
+      {art ? (
+        <picture class="art"><source srcset={`/players/${P.playerId}-art.webp`} type="image/webp" /><img src={`/players/${P.playerId}-art.png`} alt={`${P.name}, illustrated`} width="1100" height="745" /></picture>
+      ) : (
+        <div class="art placeholder" aria-hidden="true"><span class="mono">#{B.number}</span></div>
+      )}
+      <div class="who">
+        <h1 class="page-title">{P.name}</h1>
+        <p class="mono bio">#{B.number ?? '—'} · {POSN[B.position] ?? B.position} · shoots {B.shoots} · {ht}, {B.weightLb} lb · age {age} · {B.birthplace}</p>
+      </div>
+      <div class="scorebox">
+        <span class="eb mono">Status</span>
+        <span class="status">Prospect</span>
+        <span class="mono range">rookie-eligible · {nhlGp} NHL game{nhlGp === 1 ? '' : 's'} so far</span>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="tile"><span class="eb mono">Drafted</span><span class="num">{B.draft ? `${B.draft.year}` : '—'}</span><span class="sub">{B.draft ? `${ordinal(B.draft.overallPick)} overall · round ${B.draft.round} · ${B.draft.teamAbbrev}` : 'undrafted'}</span></div>
+      <div class="tile"><span class="eb mono">Age</span><span class="num">{age}</span><span class="sub">born {mdy(B.birthDate)}, {B.birthDate.slice(0, 4)}</span></div>
+      <div class="tile"><span class="eb mono">Last season{L.league ? ` · ${L.league}` : ''}</span><span class="num">{L.gp ?? '—'}</span><span class="sub">games{L.team ? ` · ${L.team}` : ''}</span></div>
+      <div class="tile"><span class="eb mono">Goals · assists · points</span><span class="num">{L.goals ?? '—'}–{L.assists ?? '—'}–{L.points ?? '—'}</span><span class="sub">{L.plusMinus != null ? `${signed(L.plusMinus, 0)} · ` : ''}{L.pim != null ? `${L.pim} pim` : ''}</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="lines">
+  <div class="shell">
+    <h2>Where he played</h2>
+    <p class="lede">Every line from {season}, by league. Counting stats only: no public expected-goals model covers the leagues below the NHL, so nothing here is presented as comparable across them.</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>League</th><th>Team</th><th class="num">GP</th><th class="num">G</th><th class="num">A</th><th class="num">P</th><th class="num">+/−</th><th class="num">PIM</th></tr></thead>
+        <tbody>
+          {LINES.sort((a, b) => (b.league === 'NHL') - (a.league === 'NHL') || (b.gp || 0) - (a.gp || 0)).map((l) => (
+            <tr class:list={{ nhl: l.league === 'NHL' }}><td><span class="tip" title={LEAGUE[l.league] ?? l.league}>{l.league}</span></td><td>{l.team}</td><td class="num">{l.gp ?? '—'}</td><td class="num">{l.goals ?? '—'}</td><td class="num">{l.assists ?? '—'}</td><td class="num">{l.points ?? '—'}</td><td class="num">{l.plusMinus != null ? signed(l.plusMinus, 0) : '—'}</td><td class="num">{l.pim ?? '—'}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="note mono">A value score arrives once he has an NHL season large enough to rate; until then he is listed with the prospects.</p>
+  </div>
+</section>
+
+{G.length > 0 && (
+<section class="sec" id="gamelog">
+  <div class="shell">
+    <h2>NHL game log</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Date</th><th>Opp</th><th class="num">TOI</th><th class="num">G</th><th class="num">A</th><th class="num">P</th><th class="num">+/−</th><th class="num">S</th><th class="num">Game score</th></tr></thead>
+        <tbody>
+          {[...G].reverse().map((g) => (
+            <tr id={`g-${g.gameId}`}><td>{mdy(g.date)}</td><td>{g.home ? 'vs' : 'at'} {g.opponent}</td><td class="num">{g.toi.toFixed(1)}</td><td class="num">{g.goals}</td><td class="num">{g.assists}</td><td class:list={['num', { red: g.points >= 2 }]}>{g.points}</td><td class="num">{signed(g.plusMinus, 0)}</td><td class="num">{g.shots}</td><td class="num">{g.gameScore != null ? g.gameScore.toFixed(2) : '—'}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="note mono">Every NHL game last season, most recent first. Game score is Dom Luszczyszyn's formula via HockeyStatCards.</p>
+  </div>
+</section>
+)}
+
+<style>
+  .kicker a { color: var(--mute); }
+  .head { display: grid; grid-template-columns: 380px minmax(0, 1fr) auto; gap: 36px; align-items: end; margin: 0 0 28px; }
+  .art { display: block; width: 380px; } .art img { width: 100%; height: auto; display: block; }
+  .art.placeholder { aspect-ratio: 4 / 3; background: var(--ghost); border-radius: 3px; display: flex; align-items: flex-end; justify-content: flex-end; padding: 14px; color: var(--mute); font-size: 28px; }
+  .who .page-title { margin-bottom: 10px; }
+  .bio { color: var(--mute); text-transform: none; letter-spacing: 0; font-size: 12.5px; }
+  .scorebox { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; text-align: right; border-left: 1px solid var(--rule); padding-left: 32px; }
+  .scorebox .eb::before { content: "// "; } .scorebox .eb { color: var(--mute); }
+  .status { font-size: 44px; font-weight: 600; letter-spacing: -.03em; line-height: 1; color: var(--red); text-transform: uppercase; }
+  .range { color: var(--mute); }
+  .lede { max-width: 66ch; font-size: 18px; line-height: 1.55; margin: 0 0 22px; }
+  .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 90ch; }
+  .tip { border-bottom: 1px dotted var(--mute); cursor: help; }
+  th.num, td.num { text-align: right; }
+  tr.nhl td { font-weight: 600; }
+  td.red { color: var(--red); font-weight: 600; }
+  @media (max-width: 900px) {
+    .head { grid-template-columns: 1fr; }
+    .art { width: min(100%, 420px); }
+    .scorebox { align-items: flex-start; text-align: left; border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 16px; }
+  }
+</style>

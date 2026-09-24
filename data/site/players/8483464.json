@@ -43,6 +43,18 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 81,
+   "goals": 9,
+   "assists": 10,
+   "points": 19,
+   "plusMinus": -20,
+   "pim": 33
+  }
+ ],
  "moneypuck": {
   "playerId": 8483464,
   "name": "Marco Kasper",
@@ -9500,5 +9512,7 @@
   },
   "above2": 8,
   "below0": 36
- }
+ },
+ "prospect": false,
+ "art": true
 }

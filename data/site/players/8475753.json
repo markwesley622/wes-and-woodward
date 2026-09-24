@@ -43,6 +43,28 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "St. Louis Blues",
+   "gp": 61,
+   "goals": 11,
+   "assists": 21,
+   "points": 32,
+   "plusMinus": -3,
+   "pim": 32
+  },
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 17,
+   "goals": 5,
+   "assists": 3,
+   "points": 8,
+   "plusMinus": -5,
+   "pim": 10
+  }
+ ],
  "moneypuck": {
   "playerId": 8475753,
   "name": "Justin Faulk",
@@ -9620,5 +9642,7 @@
   },
   "above2": 11,
   "below0": 35
- }
+ },
+ "prospect": false,
+ "art": true
 }

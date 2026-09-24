@@ -4,7 +4,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 const dir = path.resolve('data/site/players');
 const all = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
-const skaters = all.filter((p) => p.kind !== 'G').sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
+const skaters = all.filter((p) => p.kind === 'S').sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
+const prospects = all.filter((p) => p.kind === 'P').sort((a, b) => (a.bio.draft?.overallPick ?? 999) - (b.bio.draft?.overallPick ?? 999));
 const goalies = all.filter((p) => p.kind === 'G').sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
 const season = all.length ? `${all[0].seasonLabel.slice(0, 4)}–${all[0].seasonLabel.slice(5)}` : '';
 const POS = { C: 'C', L: 'LW', R: 'RW', D: 'D', G: 'G' };
@@ -17,13 +18,14 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
   <section class="sec">
     <div class="shell">
       <p class="kicker">Players · {season}</p>
-      <h1 class="page-title">Red Wings</h1>
+      <h1 class="page-title">Advanced Player Stats</h1>
       <p class="lede">Everyone on the roster, on last season's numbers. Click a column to sort, a name to open the page.</p>
 
       <div class="controls mono">
         <div class="toggle" role="tablist" aria-label="Skaters or goalies">
           <button type="button" class="on" data-group="skaters" role="tab" aria-selected="true">Skaters</button>
           <button type="button" data-group="goalies" role="tab" aria-selected="false">Goalies</button>
+          <button type="button" data-group="prospects" role="tab" aria-selected="false">Prospects</button>
         </div>
         <div class="toggle" id="posfilter" role="tablist" aria-label="Position">
           <button type="button" class="on" data-pos="all" role="tab" aria-selected="true">All</button>
@@ -81,14 +83,35 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
           </tbody>
         </table>
       </div>
-      <p class="note mono">Value: a 0–100 rating where 50 is the average NHL player at the position group (skaters positionless, goalies on goals saved above expected), this season only. NHL rank counts skaters with 20+ games and goalies with 600+ minutes. A league other than NHL means the player spent last season there; his line is from that league and he carries no value score yet.</p>
+      <div class="table-scroll" id="prospects" hidden>
+        <table class="sortable">
+          <thead><tr>
+            <th data-sort="text">Player</th><th data-sort="text">Pos</th><th class="num" data-sort="num">Age</th><th class="num on" data-sort="num">Drafted</th><th data-sort="text">League</th><th data-sort="text">Team</th>
+            <th class="num" data-sort="num">GP</th><th class="num" data-sort="num">G</th><th class="num" data-sort="num">A</th><th class="num" data-sort="num">P</th><th class="num" data-sort="num">NHL GP</th>
+          </tr></thead>
+          <tbody>
+            {prospects.map((p) => { const L = p.seasonLine || {}, d = p.bio.draft; const age = Math.floor((Date.now() - new Date(p.bio.birthDate)) / (365.25 * 24 * 3600 * 1000)); const nhl = (p.seasonLines || []).filter((l) => l.league === 'NHL').reduce((a, l) => a + (l.gp || 0), 0); return (
+              <tr>
+                <td data-v={p.name.split(' ').slice(-1)[0]}><a href={`/players/${p.slug}/`}>{p.name}</a></td>
+                <td data-v={POS[p.bio.position] ?? p.bio.position}>{POS[p.bio.position] ?? p.bio.position}</td>
+                <td class="num" data-v={age}>{age}</td>
+                <td class="num" data-v={d?.overallPick ?? 999}>{d ? `${d.year} · ${d.overallPick}` : 'undrafted'}</td>
+                <td data-v={L.league ?? ''}>{L.league ?? '—'}</td><td data-v={L.team ?? ''}>{L.team ?? '—'}</td>
+                <td class="num" data-v={L.gp ?? -1}>{L.gp ?? '—'}</td><td class="num" data-v={L.goals ?? -1}>{L.goals ?? '—'}</td><td class="num" data-v={L.assists ?? -1}>{L.assists ?? '—'}</td><td class="num" data-v={L.points ?? -1}>{L.points ?? '—'}</td>
+                <td class="num" data-v={nhl}>{nhl}</td>
+              </tr>
+            ); })}
+          </tbody>
+        </table>
+      </div>
+      <p class="note mono">Value: a 0–100 rating where 50 is the average NHL player at the position group (skaters positionless, goalies on goals saved above expected), this season only. NHL rank counts skaters with 20+ games and goalies with 600+ minutes. Prospects are players still eligible for NHL rookie status; they are listed on last season's line in whichever league they played and carry no value score yet.</p>
     </div>
   </section>
 </Base>
 
 <script>
   const groups = document.querySelectorAll('[data-group]'), posBtns = document.querySelectorAll('#posfilter button');
-  const show = (g) => { document.getElementById('skaters').hidden = g !== 'skaters'; document.getElementById('goalies').hidden = g !== 'goalies'; document.getElementById('posfilter').style.visibility = g === 'skaters' ? 'visible' : 'hidden'; groups.forEach((b) => { b.classList.toggle('on', b.dataset.group === g); b.setAttribute('aria-selected', String(b.dataset.group === g)); }); };
+  const show = (g) => { document.getElementById('skaters').hidden = g !== 'skaters'; document.getElementById('goalies').hidden = g !== 'goalies'; document.getElementById('prospects').hidden = g !== 'prospects'; document.getElementById('posfilter').style.visibility = g === 'skaters' ? 'visible' : 'hidden'; groups.forEach((b) => { b.classList.toggle('on', b.dataset.group === g); b.setAttribute('aria-selected', String(b.dataset.group === g)); }); };
   groups.forEach((b) => b.addEventListener('click', () => show(b.dataset.group)));
   posBtns.forEach((b) => b.addEventListener('click', () => { posBtns.forEach((o) => { o.classList.toggle('on', o === b); o.setAttribute('aria-selected', String(o === b)); }); document.querySelectorAll('#skaters tbody tr').forEach((r) => { r.hidden = b.dataset.pos !== 'all' && r.dataset.pos !== b.dataset.pos; }); }));
   document.querySelectorAll('table.sortable').forEach((table) => {

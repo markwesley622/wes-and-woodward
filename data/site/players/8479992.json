@@ -43,6 +43,18 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 64,
+   "goals": 6,
+   "assists": 8,
+   "points": 14,
+   "plusMinus": -10,
+   "pim": 8
+  }
+ ],
  "moneypuck": {
   "playerId": 8479992,
   "name": "Michael Rasmussen",
@@ -9217,5 +9229,7 @@
   },
   "above2": 4,
   "below0": 27
- }
+ },
+ "prospect": false,
+ "art": true
 }

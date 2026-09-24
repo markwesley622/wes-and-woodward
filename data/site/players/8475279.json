@@ -43,6 +43,18 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 82,
+   "goals": 5,
+   "assists": 10,
+   "points": 15,
+   "plusMinus": -9,
+   "pim": 75
+  }
+ ],
  "moneypuck": {
   "playerId": 8475279,
   "name": "Ben Chiarot",
@@ -9670,5 +9682,7 @@
   },
   "above2": 7,
   "below0": 47
- }
+ },
+ "prospect": false,
+ "art": true
 }

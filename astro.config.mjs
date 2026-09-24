@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 
 // Custom domain live since 2026-09-21: DNS (four A records + www CNAME, DNS-only) is on
 // Cloudflare; GitHub Pages has the domain set and public/CNAME keeps it pinned per deploy.
@@ -6,4 +7,5 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://wesandwoodward.com',
   base: '/',
+  integrations: [sitemap()],
 });

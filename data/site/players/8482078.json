@@ -43,6 +43,28 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 80,
+   "goals": 25,
+   "assists": 51,
+   "points": 76,
+   "plusMinus": 1,
+   "pim": 22
+  },
+  {
+   "league": "OG",
+   "team": "Sweden",
+   "gp": 5,
+   "goals": 1,
+   "assists": 8,
+   "points": 9,
+   "plusMinus": 4,
+   "pim": 6
+  }
+ ],
  "moneypuck": {
   "playerId": 8482078,
   "name": "Lucas Raymond",
@@ -9510,5 +9532,7 @@
   },
   "above2": 15,
   "below0": 21
- }
+ },
+ "prospect": false,
+ "art": true
 }

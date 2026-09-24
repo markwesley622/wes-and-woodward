@@ -43,6 +43,28 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 28,
+   "goals": 2,
+   "assists": 5,
+   "points": 7,
+   "plusMinus": -7,
+   "pim": 4
+  },
+  {
+   "league": "AHL",
+   "team": "Grand Rapids Griffins",
+   "gp": 18,
+   "goals": 3,
+   "assists": 12,
+   "points": 15,
+   "plusMinus": 7,
+   "pim": 4
+  }
+ ],
  "moneypuck": {
   "playerId": 8484160,
   "name": "Nate Danielson",
@@ -8407,5 +8429,7 @@
   },
   "above2": 3,
   "below0": 12
- }
+ },
+ "prospect": false,
+ "art": true
 }

@@ -43,6 +43,18 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 63,
+   "goals": 1,
+   "assists": 4,
+   "points": 5,
+   "plusMinus": 0,
+   "pim": 25
+  }
+ ],
  "moneypuck": {
   "playerId": 8480879,
   "name": "Jacob Bernard-Docker",
@@ -9182,5 +9194,7 @@
   },
   "above2": 5,
   "below0": 31
- }
+ },
+ "prospect": false,
+ "art": true
 }

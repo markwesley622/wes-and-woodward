@@ -43,6 +43,18 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 82,
+   "goals": 3,
+   "assists": 8,
+   "points": 11,
+   "plusMinus": -18,
+   "pim": 16
+  }
+ ],
  "moneypuck": {
   "playerId": 8481607,
   "name": "Albert Johansson",
@@ -9505,5 +9517,7 @@
   },
   "above2": 4,
   "below0": 44
- }
+ },
+ "prospect": false,
+ "art": true
 }

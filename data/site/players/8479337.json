@@ -43,6 +43,18 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 82,
+   "goals": 41,
+   "assists": 44,
+   "points": 85,
+   "plusMinus": 8,
+   "pim": 19
+  }
+ ],
  "moneypuck": {
   "playerId": 8479337,
   "name": "Alex DeBrincat",
@@ -9598,5 +9610,7 @@
   },
   "above2": 23,
   "below0": 19
- }
+ },
+ "prospect": false,
+ "art": true
 }

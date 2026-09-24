@@ -43,6 +43,28 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 82,
+   "goals": 10,
+   "assists": 50,
+   "points": 60,
+   "plusMinus": 15,
+   "pim": 57
+  },
+  {
+   "league": "OG",
+   "team": "Germany",
+   "gp": 5,
+   "goals": 0,
+   "assists": 2,
+   "points": 2,
+   "plusMinus": 2,
+   "pim": 0
+  }
+ ],
  "moneypuck": {
   "playerId": 8481542,
   "name": "Moritz Seider",
@@ -9550,5 +9572,7 @@
   },
   "above2": 28,
   "below0": 23
- }
+ },
+ "prospect": false,
+ "art": true
 }

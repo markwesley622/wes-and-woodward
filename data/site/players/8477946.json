@@ -43,6 +43,28 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 74,
+   "goals": 34,
+   "assists": 33,
+   "points": 67,
+   "plusMinus": 3,
+   "pim": 48
+  },
+  {
+   "league": "OG",
+   "team": "USA",
+   "gp": 6,
+   "goals": 2,
+   "assists": 1,
+   "points": 3,
+   "plusMinus": 3,
+   "pim": 4
+  }
+ ],
  "moneypuck": {
   "playerId": 8477946,
   "name": "Dylan Larkin",
@@ -9477,5 +9499,7 @@
   },
   "above2": 12,
   "below0": 22
- }
+ },
+ "prospect": false,
+ "art": true
 }

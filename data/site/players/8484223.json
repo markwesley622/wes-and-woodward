@@ -43,6 +43,28 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 68,
+   "goals": 7,
+   "assists": 14,
+   "points": 21,
+   "plusMinus": -20,
+   "pim": 18
+  },
+  {
+   "league": "AHL",
+   "team": "Grand Rapids Griffins",
+   "gp": 6,
+   "goals": 2,
+   "assists": 1,
+   "points": 3,
+   "plusMinus": 0,
+   "pim": 0
+  }
+ ],
  "moneypuck": {
   "playerId": 8484223,
   "name": "Axel Sandin-Pellikka",
@@ -9210,5 +9232,7 @@
   },
   "above2": 7,
   "below0": 34
- }
+ },
+ "prospect": false,
+ "art": true
 }

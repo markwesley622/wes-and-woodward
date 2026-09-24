@@ -43,6 +43,18 @@
   "savePct": null,
   "shutouts": null
  },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 79,
+   "goals": 9,
+   "assists": 34,
+   "points": 43,
+   "plusMinus": 3,
+   "pim": 24
+  }
+ ],
  "moneypuck": {
   "playerId": 8477429,
   "name": "Andrew Copp",
@@ -9595,5 +9607,7 @@
   },
   "above2": 10,
   "below0": 28
- }
+ },
+ "prospect": false,
+ "art": true
 }
