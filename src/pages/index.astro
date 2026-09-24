@@ -35,9 +35,14 @@ const tiles = D.tiles.filter((t) => KEEP[t.key]).map((t) => ({
 const tile = (key) => tiles[D.tiles.filter((t) => KEEP[t.key]).findIndex((t) => t.key === key)];
 const T5 = tile('xg_share_5v5'), TPP = tile('pp_xgf60'), TPK = tile('pk_xga60');
 
-// top three, ordered by game score until the value score ships
-const POS = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense' };
-const top3 = skaters.filter((p) => p.gameScore != null).sort((a, b) => b.gameScore - a.gameScore).slice(0, 3);
+// top three Red Wings on the W&W value score (data/site/players/*.json)
+import fs from 'node:fs';
+import path from 'node:path';
+const POS = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense', G: 'Goalie' };
+const pdir = path.resolve('data/site/players');
+const allPlayers = fs.readdirSync(pdir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(pdir, f), 'utf8')));
+const top3 = allPlayers.filter((p) => p.score && p.kind !== 'G').sort((a, b) => b.score.value - a.score.value).slice(0, 3)
+  .map((p) => ({ ...p, art: fs.existsSync(path.resolve(`public/players/${p.playerId}-art.webp`)) }));
 const dots = (n) => Array.from({ length: Math.max(0, n) });
 ---
 <Base title="Wes & Woodward — Detroit hockey, by the numbers" description="Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.">
@@ -116,26 +121,30 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
     <div class="shell">
       <h2>Top Red Wings</h2>
       <div class="row3">
-        {top3.map((p) => (
-          <a class="card player" href={`/players/${p.name.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}/`}>
+        {top3.map((p) => { const L = p.seasonLine || {}, f5 = (p.moneypuck || {}).fiveOnFive || {}; return (
+          <a class="card player" href={`/players/${p.slug}/`}>
             <div class="card-top">
-              <div><h3>{p.name}</h3><span class="mono mute">{POS[p.position] ?? p.position} · {season}</span></div>
-              <div class="score"><span class="ghost" style="width:30px;height:16px"></span><span class="mono red">/ 100</span></div>
+              <div><h3>{p.name}</h3><span class="mono mute">{POS[p.bio.position] ?? p.bio.position} · {season}{p.score.rank ? ` · ${ordinal(p.score.rank)} in the NHL` : ''}</span></div>
+              <div class="score"><span class="val">{p.score.value.toFixed(1)}</span><span class="mono red">/ 100</span></div>
             </div>
-            <div class="portrait">
-              <span class="mono mute">Scored {p.goals}</span>
-              <div class="dots">{dots(p.goals).map(() => <i class="d solid"></i>)}</div>
-              <span class="mono mute">Expected {Math.round(p.ixG ?? 0)}</span>
-              <div class="dots">{dots(Math.round(p.ixG ?? 0)).map(() => <i class="d"></i>)}</div>
-            </div>
+            {p.art ? (
+              <picture class="card-art"><source srcset={`/players/${p.playerId}-art.webp`} type="image/webp" /><img src={`/players/${p.playerId}-art.png`} alt="" loading="lazy" /></picture>
+            ) : (
+              <div class="portrait">
+                <span class="mono mute">Scored {L.goals ?? 0}</span>
+                <div class="dots">{dots(L.goals ?? 0).map(() => <i class="d solid"></i>)}</div>
+                <span class="mono mute">Expected {Math.round(p.moneypuck?.ixG ?? 0)}</span>
+                <div class="dots">{dots(Math.round(p.moneypuck?.ixG ?? 0)).map(() => <i class="d"></i>)}</div>
+              </div>
+            )}
             <div class="stats">
-              {[['GP', p.gamesPlayed], ['G', p.goals], ['A', p.assists], ['P', p.points], ['ixG', p.ixG != null ? p.ixG.toFixed(1) : '—'], ['5v5 xG%', p.fiveOnFive ? Math.round(p.fiveOnFive.onIceXgPct * 100) : '—']].map(([k, v]) => (
-                <div><span class="mono mute">{k}</span><span class="n">{v}</span></div>
+              {[['GP', L.gp], ['G', L.goals], ['A', L.assists], ['P', L.points], ['ixG', p.moneypuck?.ixG != null ? p.moneypuck.ixG.toFixed(1) : '—'], ['5v5 xG%', f5.onIceXgPct != null ? Math.round(f5.onIceXgPct * 100) : '—']].map(([k, v]) => (
+                <div><span class="mono mute">{k}</span><span class="n">{v ?? '—'}</span></div>
               ))}
             </div>
             <span class="mono">Full player page &rarr;</span>
           </a>
-        ))}
+        ); })}
       </div>
       <div class="viewall mono"><a href="/players/">View all players &rarr;</a></div>
     </div>
@@ -205,7 +214,9 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   /* player cards */
   .card.player { gap: 14px; }
   .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
-  .score { display: flex; align-items: baseline; gap: 6px; }
+  .score { display: flex; align-items: baseline; gap: 6px; white-space: nowrap; flex: none; }
+  .score .val { font-size: 34px; font-weight: 600; letter-spacing: -.03em; line-height: 1; color: var(--red); font-variant-numeric: tabular-nums; }
+  .card-art { display: block; margin: 4px 0; } .card-art img { width: 100%; height: auto; display: block; max-height: 220px; object-fit: contain; object-position: left bottom; }
   .portrait { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; align-items: center; }
   .dots { display: flex; flex-wrap: wrap; gap: 3px; }
   .d { width: 7px; height: 7px; border: 1px solid var(--ink); border-radius: 50%; }
