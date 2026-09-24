@@ -372,6 +372,10 @@ const RECENT = 10;
   .score.mute { color: var(--mute); }
   .note-line { text-transform: none; letter-spacing: 0; color: var(--mute); margin: 0 0 14px; }
   .two { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 44px; align-items: start; }
+  .two .left, .two .prose-sm { min-width: 0; }
+  .rankwrap { overflow-x: auto; }
+  .card.comp { min-width: 0; }
+  .card.comp .mini { display: block; overflow-x: auto; }
   .two .left table { width: 100%; }
   .prose-sm p { margin: 0 0 14px; font-size: 16px; line-height: 1.55; max-width: 52ch; }
   .prose-sm .mono { font-size: 11px; text-transform: none; letter-spacing: 0; line-height: 1.5; }
@@ -443,7 +447,9 @@ const RECENT = 10;
     .art { width: min(100%, 420px); }
     .scorebox { grid-column: 1 / -1; align-items: flex-start; text-align: left; border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 16px; }
     .score { font-size: 88px; }
-    .two { grid-template-columns: 1fr; }
+    .two { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+    .row3 { grid-template-columns: minmax(0, 1fr); }
+    .sec-head { flex-direction: column; align-items: flex-start; gap: 12px; }
     .gs-tiles { grid-template-columns: repeat(2, 1fr); }
   }
   :global(.tt) { position: fixed; z-index: 50; display: none; pointer-events: none; background: var(--ink); color: #fff; font-family: var(--mono); font-size: 11.5px; line-height: 1.5; padding: 8px 10px; border-radius: 3px; white-space: pre; max-width: 320px; box-shadow: 0 2px 10px rgba(0,0,0,.18); }
