@@ -1,6 +1,18 @@
 ---
 import Base from '../../layouts/Base.astro';
-import P from '../../../data/site/players/8481542.json';
+import fs from 'node:fs';
+import path from 'node:path';
+
+export async function getStaticPaths() {
+  const dir = path.resolve('data/site/players');
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'));
+  return files.map((f) => {
+    const P = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+    const art = fs.existsSync(path.resolve(`public/players/${P.playerId}-art.webp`));
+    return { params: { slug: P.slug }, props: { P, art } };
+  });
+}
+const { P, art } = Astro.props;
 
 const B = P.bio, L = P.seasonLine, SC = P.score, MP = P.moneypuck, G = P.gameLog, GS = P.gameScore, HS = P.hsc, TG = P.teamGameScore;
 const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
@@ -52,9 +64,13 @@ const RECENT = 10;
 <Base title={`${P.name} — Wes & Woodward`} description={`${P.name}, ${season}: value score, where it comes from, and a game-by-game log with game score.`}>
   <section class="sec">
     <div class="shell">
-      <p class="kicker"><a href="/">Players</a> · Red Wings · {season}</p>
+      <p class="kicker"><a href="/players/">Players</a> · Red Wings · {season}</p>
       <div class="head">
-        <picture class="art"><source srcset="/players/8481542-art.webp" type="image/webp" /><img src="/players/8481542-art.png" alt={`${P.name}, illustrated`} width="1100" height="745" /></picture>
+        {art ? (
+          <picture class="art"><source srcset={`/players/${P.playerId}-art.webp`} type="image/webp" /><img src={`/players/${P.playerId}-art.png`} alt={`${P.name}, illustrated`} width="1100" height="745" /></picture>
+        ) : (
+          <div class="art placeholder" aria-hidden="true"><span class="mono">#{B.number}</span></div>
+        )}
         <div class="who">
           <h1 class="page-title">{P.name}</h1>
           <p class="mono bio">#{B.number} · {POS[B.position] ?? B.position} · shoots {B.shoots} · {ht}, {B.weightLb} lb · age {age} · {B.birthplace}{B.draft ? ` · drafted ${B.draft.year}, ${B.draft.overallPick}th overall` : ''}</p>
@@ -62,7 +78,7 @@ const RECENT = 10;
         <div class="scorebox">
           <span class="eb mono">W&amp;W value</span>
           <span class="score">{SC.value.toFixed(1)}</span>
-          <span class="mono range">likely {SC.low.toFixed(1)}–{SC.high.toFixed(1)} · {tier}</span>
+          <span class="mono range">likely {SC.low.toFixed(1)}–{SC.high.toFixed(1)} · {tier}{L.gp < 20 ? ' · under 20 games' : ''}</span>
           <span class="mono split">sustainable {SC.sustainable.toFixed(1)} · results {SC.results.toFixed(1)}</span>
         </div>
       </div>
@@ -107,7 +123,7 @@ const RECENT = 10;
 
         </div>
         <div class="prose-sm">
-          <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with twenty or more games this season, forwards and defensemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {P.name.split(' ')[1]} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} skaters, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how much of that is noise given how well each component repeats at his minutes; the number itself is this season's delivered value, not a projection.</p>
+          <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with twenty or more games this season, forwards and defensemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {last(P.name)} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} skaters, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how much of that is noise given how well each component repeats at his minutes; the number itself is this season's delivered value, not a projection.</p>
           <p>Two outside checks. HockeyStatCards' Luszczyszyn model puts his net rating in the {HS.Net?.percentile}th percentile ({HS.Net?.value}) and his game score in the {HS['Game score']?.percentile}th. Evolving-Hockey's own headline number is {SC.raw.WAR} wins above replacement.</p>
         </div>
       </div>
@@ -139,7 +155,7 @@ const RECENT = 10;
           <text x={ix(d.off) + (d.me ? 12 : 8)} y={iy(d.def) + 4} class:list={['tag', { nhl: topNHL.includes(d.name), det: d.det, me: d.me }]}>{d.me ? d.name : d.name.split(' ').slice(-1)[0]}</text>
         ))}
       </svg>
-      <div class="legend mono"><span><i class="dot me"></i>Seider</span><span class="det-only"><i class="dot det"></i>Red Wings</span><span><i class="dot other"></i>every other skater</span><span class="mute">Evolving-Hockey RAPM, 5v5, {season}</span></div>
+      <div class="legend mono"><span><i class="dot me"></i>{last(P.name)}</span><span class="det-only"><i class="dot det"></i>Red Wings</span><span><i class="dot other"></i>every other skater</span><span class="mute">Evolving-Hockey RAPM, 5v5, {season}</span></div>
     </div>
   </section>
 
@@ -173,7 +189,7 @@ const RECENT = 10;
           <div class="card comp">
             <div class="comp-head"><div><h3>{c.name}</h3><span class="mono mute">{c.team} · {c.pos} · {c.gp} gp</span></div><span class="comp-val">{c.value.toFixed(1)}</span></div>
             <table class="mini">
-              <thead><tr><th></th><th class="num">{c.name.split(' ').slice(-1)[0]}</th><th class="num red">Seider</th></tr></thead>
+              <thead><tr><th></th><th class="num">{c.name.split(' ').slice(-1)[0]}</th><th class="num red">{last(P.name)}</th></tr></thead>
               <tbody>{COMP.map(([k, label]) => <tr><td>{label}</td><td class="num">{signed(c.components[k])}</td><td class="num">{signed(MY[k])}</td></tr>)}<tr class="total"><td>Total</td><td class="num">{signed(c.goals)}</td><td class="num red">{signed(SC.goalsBlended)}</td></tr></tbody>
             </table>
           </div>
@@ -268,6 +284,7 @@ const RECENT = 10;
   .head { display: grid; grid-template-columns: 380px minmax(0, 1fr) auto; gap: 36px; align-items: end; margin: 0 0 28px; }
   .art { display: block; width: 380px; }
   .art img { width: 100%; height: auto; display: block; }
+  .art.placeholder { aspect-ratio: 4 / 3; background: var(--ghost); border-radius: 3px; display: flex; align-items: flex-end; justify-content: flex-end; padding: 14px; color: var(--mute); font-size: 28px; }
   .credit { color: var(--mute); text-transform: none; letter-spacing: 0; font-size: 11px; margin: 6px 0 0; }
   .who .page-title { margin-bottom: 10px; }
   .bio { color: var(--mute); text-transform: none; letter-spacing: 0; font-size: 12.5px; }

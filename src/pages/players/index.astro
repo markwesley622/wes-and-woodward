@@ -1,0 +1,46 @@
+---
+import Base from '../../layouts/Base.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+const dir = path.resolve('data/site/players');
+const players = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')))
+  .sort((a, b) => b.score.value - a.score.value);
+const season = players.length ? `${players[0].seasonLabel.slice(0, 4)}–${players[0].seasonLabel.slice(5)}` : '';
+const POS = { C: 'C', L: 'LW', R: 'RW', D: 'D' };
+const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
+---
+<Base title="Players — Wes & Woodward" description="Every returning Red Wing with a page: value score, rank in the NHL, and this season's numbers.">
+  <section class="sec">
+    <div class="shell">
+      <p class="kicker">Players · {season}</p>
+      <h1 class="page-title">Red Wings</h1>
+      <p class="lede">Every skater who played for Detroit last season and is on the roster now, ranked on the W&amp;W value score. Click through for the full page.</p>
+      <div class="table-scroll">
+        <table class="roster">
+          <thead><tr><th>#</th><th>Player</th><th>Pos</th><th class="num">GP</th><th class="num">G</th><th class="num">A</th><th class="num">P</th><th class="num">Goals of value</th><th class="num">NHL rank</th><th class="num">Value</th></tr></thead>
+          <tbody>
+            {players.map((p, i) => (
+              <tr>
+                <td>{i + 1}</td><td><a href={`/players/${p.slug}/`}>{p.name}</a></td><td>{POS[p.bio.position] ?? p.bio.position}</td>
+                <td class="num">{p.seasonLine.gp ?? '—'}</td><td class="num">{p.seasonLine.goals ?? '—'}</td><td class="num">{p.seasonLine.assists ?? '—'}</td><td class="num">{p.seasonLine.points ?? '—'}</td>
+                <td class="num">{signed(p.score.goalsBlended)}</td><td class="num">{p.score.rank ? `${p.score.rank} of ${p.score.pool}` : '—'}</td>
+                <td class:list={['num', 'val', { red: p.score.value >= 73 }]}>{p.score.value.toFixed(1)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="note mono">Value: a 0–100 rating where 50 is the average NHL skater with 20+ games; this season only. NHL rank is among all skaters with 20+ games; players under 20 games are rated but not ranked.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .lede { max-width: 66ch; font-size: 18px; line-height: 1.55; margin: 0 0 26px; }
+  .page-title { margin-bottom: 14px; }
+  th.num, td.num { text-align: right; }
+  .roster a { text-decoration: underline; text-underline-offset: 2px; }
+  .roster .val { font-weight: 600; font-size: 15px; }
+  .roster td.red { color: var(--red); }
+  .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 90ch; }
+</style>
