@@ -216,7 +216,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
   .score { display: flex; align-items: baseline; gap: 6px; white-space: nowrap; flex: none; }
   .score .val { font-size: 34px; font-weight: 600; letter-spacing: -.03em; line-height: 1; color: var(--red); font-variant-numeric: tabular-nums; }
-  .card-art { display: block; margin: 4px 0; } .card-art img { width: 100%; height: auto; display: block; max-height: 220px; object-fit: contain; object-position: left bottom; }
+  .card-art { display: block; margin: 4px 0; } .card-art img { width: 100%; height: auto; display: block; aspect-ratio: 4 / 3; object-fit: contain; }
   .portrait { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; align-items: center; }
   .dots { display: flex; flex-wrap: wrap; gap: 3px; }
   .d { width: 7px; height: 7px; border: 1px solid var(--ink); border-radius: 50%; }

@@ -72,7 +72,7 @@ const RECENT = 10;
       <p class="kicker"><a href="/players/">Players</a> · Red Wings · {season}</p>
       <div class="head">
         {art ? (
-          <picture class="art"><source srcset={`/players/${P.playerId}-art.webp`} type="image/webp" /><img src={`/players/${P.playerId}-art.png`} alt={`${P.name}, illustrated`} width="1100" height="745" /></picture>
+          <picture class="art"><source srcset={`/players/${P.playerId}-art.webp`} type="image/webp" /><img src={`/players/${P.playerId}-art.png`} alt={`${P.name}, illustrated`} width="1100" height="825" /></picture>
         ) : (
           <div class="art placeholder" aria-hidden="true"><span class="mono">#{B.number}</span></div>
         )}
