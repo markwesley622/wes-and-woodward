@@ -61,7 +61,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
       <h2>Analysis</h2>
       <div class="row3">
         {[['Featured', '2026–2027 Detroit Red Wings predictions'], ['Latest', 'Do the Red Wings have a type?'], ['Latest', 'Is Michael Rasmussen really as bad as fans think he is?']].map(([kind, title]) => (
-          <a class:list={['card', 'article', { pin: kind === 'Featured' }]} href="#">
+          <a class:list={['card', 'article', { pin: kind === 'Featured' }]} href={kind === 'Featured' ? '/analysis/2026-27-predictions/' : '#'}>
             <span class:list={['eb', 'mono', { red: kind === 'Featured' }]}>{kind}</span>
             <div class="thumb" aria-hidden="true"></div>
             <h3>{title}</h3>

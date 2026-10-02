@@ -1,0 +1,156 @@
+---
+import Base from '../../layouts/Base.astro';
+import A from '../../../data/site/articles/predictions-2026-27.json';
+import C from '../../../data/site/articles/predictions-2026-27-copy.json';
+
+const W = A.with_larkin, O = A.without_larkin;
+const parts = C.parts, idx = C.idx;
+
+// ---- chart 1: points across 500 seasons, both scenarios
+const PW = 1000, PH = 260, PAD = 8, TOP = 22;
+const keys = [...new Set([...Object.keys(W.hist), ...Object.keys(O.hist)].map(Number))].sort((a, b) => a - b);
+const lo = Math.min(...keys), hi = Math.max(...keys);
+const hx = (p) => PAD + (p - lo + 0.5) * ((PW - 2 * PAD) / (hi - lo + 1));
+const bw = (PW - 2 * PAD) / (hi - lo + 1);
+const maxN = Math.max(...keys.map((k) => Math.max(W.hist[k] || 0, O.hist[k] || 0)));
+const hy = (n) => PH - PAD - (n / maxN) * (PH - PAD - TOP);
+const gridN = [10, 20, 30].filter((v) => v <= maxN);
+const ticks = [60, 70, 80, 90, 100, 110].filter((v) => v >= lo && v <= hi);
+
+// ---- chart 2: points pace, the two picked seasons
+const G = 84, H2 = 260;
+const px = (i) => PAD + i * ((PW - 2 * PAD) / G);
+const maxPts = 100;
+const py = (p) => H2 - PAD - (p / maxPts) * (H2 - PAD - TOP);
+const path = (cum) => cum.map((p, i) => `${i === 0 ? 'M' : 'L'}${px(i + 1).toFixed(1)},${py(p).toFixed(1)}`).join(' ');
+const projPath = (p) => `M${px(0)},${py(0)} L${px(G).toFixed(1)},${py(p).toFixed(1)}`;
+const gridPts = [20, 40, 60, 80, 100];
+
+// ---- chart 3: W&W value, every Red Wing with 20+ games in either season
+const names = [...new Set([...W.values.map((v) => v.name), ...O.values.map((v) => v.name)])];
+const byW = Object.fromEntries(W.values.map((v) => [v.name, v])), byO = Object.fromEntries(O.values.map((v) => [v.name, v]));
+const rows = names.map((n) => ({ name: n, w: byW[n]?.value ?? null, o: byO[n]?.value ?? null })).sort((a, b) => Math.max(b.w ?? -1, b.o ?? -1) - Math.max(a.w ?? -1, a.o ?? -1));
+const VW = 1000, RH = 26, LAB = 230, VH = rows.length * RH + 36;
+const vx = (v) => LAB + (v / 100) * (VW - LAB - PAD);
+
+// ---- chart 4: where the pick lands without Larkin
+const picks = Object.entries(O.picks).map(([k, v]) => ({ pick: Number(k), p: v })).sort((a, b) => a.pick - b.pick);
+const KW = 1000, KH = 220, KPAD = 8, nK = picks.length;
+const kx = (i) => KPAD + i * ((KW - 2 * KPAD) / nK);
+const kw = (KW - 2 * KPAD) / nK;
+const maxP = Math.max(...picks.map((p) => p.p));
+const ky = (p) => KH - 28 - (p / maxP) * (KH - 28 - TOP);
+
+const fmt1 = (v) => v.toFixed(1);
+const rec = (R) => `${R.record[0]}-${R.record[1]}-${R.record[2]}, ${R.record[3]} points`;
+const slice = (a, b) => parts.slice(a, b);
+---
+<Base title="2026-27 Red Wings predictions — Wes & Woodward" description="Five hundred simulated seasons with Dylan Larkin and five hundred without, one of each played out game by game, and a prediction.">
+  <section class="sec">
+    <div class="shell">
+      <p class="kicker mono">Analysis · October 2, 2026</p>
+      <h1 class="page-title">{C.title}</h1>
+      <div class="prose" set:html={slice(0, idx.method + 1).join('')} />
+
+      <figure class="fig">
+        <p class="eb mono">Points across 500 simulated seasons · red with Larkin, black without</p>
+        <svg class="chart" viewBox={`0 0 ${PW} ${PH}`} role="img" aria-label="Distribution of Detroit's points across 500 simulated seasons, with and without Larkin">
+          {gridN.map((v) => (<g><line x1={PAD} x2={PW - PAD} y1={hy(v)} y2={hy(v)} class="grid" /><text x={PAD + 4} y={hy(v) - 4} class="lbl">{v} seasons</text></g>))}
+          {keys.map((k) => (<g>
+            <rect x={hx(k) - bw / 2 + 1} y={hy(W.hist[k] || 0)} width={Math.max(1, bw / 2 - 1)} height={PH - PAD - hy(W.hist[k] || 0)} class="with"><title>{`${k} points · with Larkin: ${W.hist[k] || 0} of 500`}</title></rect>
+            <rect x={hx(k)} y={hy(O.hist[k] || 0)} width={Math.max(1, bw / 2 - 1)} height={PH - PAD - hy(O.hist[k] || 0)} class="without"><title>{`${k} points · without Larkin: ${O.hist[k] || 0} of 500`}</title></rect>
+          </g>))}
+          <line x1={hx(W.target)} x2={hx(W.target)} y1={TOP} y2={PH - PAD} class="mark with" />
+          <line x1={hx(O.target)} x2={hx(O.target)} y1={TOP} y2={PH - PAD} class="mark without" />
+          {ticks.map((v) => (<text x={hx(v)} y={PH - PAD + 0} class="lbl tick" text-anchor="middle" dy="-2">{v}</text>))}
+        </svg>
+        <div class="legend mono"><span><i class="sw with"></i>with Larkin · mean {fmt1(W.mean)}, {Math.round(W.playoffs * 100)}% playoffs</span><span><i class="sw without"></i>without · mean {fmt1(O.mean)}, {Math.round(O.playoffs * 100)}% playoffs</span><span>vertical lines mark the two seasons written up below ({W.target} and {O.target})</span></div>
+      </figure>
+
+      <div class="prose" set:html={slice(idx.method + 1, idx.with + 1).join('')} />
+
+      <figure class="fig">
+        <p class="eb mono">Points pace in the two seasons · cumulative points by game</p>
+        <svg class="chart" viewBox={`0 0 ${PW} ${H2}`} role="img" aria-label="Cumulative points through the two simulated seasons against each scenario's projection">
+          {gridPts.map((v) => (<g><line x1={PAD} x2={PW - PAD} y1={py(v)} y2={py(v)} class="grid" /><text x={PAD + 4} y={py(v) - 4} class="lbl">{v}</text></g>))}
+          <path d={projPath(W.proj)} class="proj with" />
+          <path d={projPath(O.proj)} class="proj without" />
+          <line x1={PAD} x2={PW - PAD} y1={py(W.cut)} y2={py(W.cut)} class="cut" />
+          <text x={PW - PAD - 4} y={py(W.cut) - 5} class="lbl" text-anchor="end">last East playoff spot, {W.cut}</text>
+          <path d={path(O.cum)} class="pts without" />
+          <path d={path(W.cum)} class="pts with" />
+          <circle cx={px(G)} cy={py(W.cum[G - 1])} r="5" class="dot with" />
+          <circle cx={px(G)} cy={py(O.cum[G - 1])} r="5" class="dot without" />
+        </svg>
+        <div class="legend mono"><span><i class="sw with"></i>with Larkin, {rec(W)}</span><span><i class="sw without"></i>without, {rec(O)}</span><span><i class="sw dash"></i>each scenario's projected pace</span></div>
+      </figure>
+
+      <div class="prose" set:html={slice(idx.with + 1, idx.without + 1).join('')} />
+
+      <figure class="fig">
+        <p class="eb mono">Where the pick lands without Larkin · share of 500 seasons after the lottery</p>
+        <svg class="chart" viewBox={`0 0 ${KW} ${KH}`} role="img" aria-label="Probability of each draft position for Detroit across the no-Larkin seasons">
+          {picks.map((p, i) => (<g class="bar">
+            <rect x={kx(i) + 3} y={ky(p.p)} width={Math.max(2, kw - 6)} height={KH - 28 - ky(p.p)} class={p.pick <= 5 ? 'top' : ''} />
+            <title>{`${p.pick >= 17 ? 'made the playoffs (pick 17 or later)' : 'pick ' + p.pick}: ${(p.p * 100).toFixed(1)}% of seasons`}</title>
+            <text x={kx(i) + kw / 2} y={KH - 10} class="lbl" text-anchor="middle">{p.pick >= 17 ? '17+' : p.pick}</text>
+            {p.p >= 0.03 && <text x={kx(i) + kw / 2} y={ky(p.p) - 5} class="lbl" text-anchor="middle">{Math.round(p.p * 100)}%</text>}
+          </g>))}
+        </svg>
+        <p class="note mono">Current lottery format: two draws, 25.5% for the worst record down to 0.5%, no team moves up more than ten spots. Red marks a top-five pick.</p>
+      </figure>
+
+      <div class="prose" set:html={slice(idx.without + 1, idx.pred).join('')} />
+
+      <figure class="fig">
+        <p class="eb mono">W&amp;W value in the two seasons · every Red Wing with 20 games · red with Larkin, black without</p>
+        <svg class="chart" viewBox={`0 0 ${VW} ${VH}`} role="img" aria-label="W and W value score for each Red Wing in the two simulated seasons">
+          {[25, 50, 75, 100].map((v) => (<g><line x1={vx(v)} x2={vx(v)} y1={TOP - 6} y2={VH - 12} class="grid" /><text x={vx(v)} y={TOP - 10} class="lbl" text-anchor="middle">{v}</text></g>))}
+          {rows.map((r, i) => { const y = TOP + i * RH; return (<g>
+            <text x={LAB - 10} y={y + 14} class="name" text-anchor="end">{r.name}</text>
+            {r.w !== null && <rect x={vx(0)} y={y + 2} width={vx(r.w) - vx(0)} height={9} class="with"><title>{`${r.name} · with Larkin: ${r.w}`}</title></rect>}
+            {r.o !== null && <rect x={vx(0)} y={y + 13} width={vx(r.o) - vx(0)} height={9} class="without"><title>{`${r.name} · without Larkin: ${r.o}`}</title></rect>}
+          </g>); })}
+        </svg>
+        <p class="note mono">50 is the average NHL skater with 20 or more games; the scale is the same one on every player page. A missing bar means fewer than 20 games in that season.</p>
+      </figure>
+
+      <div class="prose" set:html={slice(idx.pred).join('')} />
+      <p class="note mono" style="margin-top:28px">Method: the simulation plays every game shift by shift on the real 84-game schedule. Lineups, matchups, minutes, shots, goals, penalties and injuries are generated together, with player ratings from Evolving-Hockey and MoneyPuck. Across the 500 seasons Larkin is worth {A.paired.mean.toFixed(1)} points (standard error {A.paired.se.toFixed(1)}). The two seasons written up are random draws at each scenario's rounded mean. Award votes are stat-based stand-ins for a ballot.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .kicker { color: var(--mute); margin: 0 0 18px; }
+  .page-title { font-size: clamp(36px, 5.2vw, 72px); line-height: .94; margin-bottom: 30px; max-width: 18ch; text-wrap: balance; }
+  .prose { max-width: 68ch; font-size: 18px; line-height: 1.65; }
+  .prose :global(p) { margin: 0 0 18px; }
+  .prose :global(ul) { margin: 0 0 18px 22px; padding: 0; }
+  .prose :global(li) { margin: 0 0 6px; }
+  .prose :global(h3.art) { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.1; letter-spacing: -.02em; text-transform: none; margin: 40px 0 16px; }
+  .prose :global(h3.art::before) { content: "// "; color: var(--red); }
+  .fig { margin: 34px 0 38px; max-width: 980px; }
+  p.eb { margin: 0 0 8px; color: var(--mute); }
+  p.eb::before { content: "// "; }
+  .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 68ch; }
+  .chart { width: 100%; height: auto; display: block; }
+  .chart .grid { stroke: var(--rule); stroke-width: 1; }
+  .chart .lbl { font-family: var(--mono); font-size: 11px; fill: var(--mute); }
+  .chart .lbl.tick { fill: var(--ink); }
+  .chart .name { font-family: var(--mono); font-size: 11px; fill: var(--ink); }
+  .chart rect.with { fill: var(--red); }
+  .chart rect.without { fill: var(--ink); }
+  .chart .mark { stroke-width: 1.5; stroke-dasharray: 4 4; }
+  .chart .mark.with { stroke: var(--red); } .chart .mark.without { stroke: var(--ink); }
+  .chart .pts { fill: none; stroke-width: 2.5; }
+  .chart .pts.with { stroke: var(--red); } .chart .pts.without { stroke: var(--ink); }
+  .chart .proj { fill: none; stroke-width: 1.5; stroke-dasharray: 2 4; }
+  .chart .proj.with { stroke: var(--red); } .chart .proj.without { stroke: var(--mute); }
+  .chart .cut { stroke: var(--mute); stroke-width: 1; stroke-dasharray: 6 5; }
+  .chart .dot.with { fill: var(--red); } .chart .dot.without { fill: var(--ink); }
+  .chart .bar rect { fill: var(--ink); } .chart .bar rect.top { fill: var(--red); }
+  .legend { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 10px; color: var(--mute); text-transform: none; letter-spacing: 0; }
+  .sw { display: inline-block; width: 18px; height: 3px; vertical-align: middle; margin-right: 7px; }
+  .sw.with { background: var(--red); } .sw.without { background: var(--ink); } .sw.dash { background: repeating-linear-gradient(90deg, var(--mute) 0 3px, transparent 3px 6px); }
+</style>
