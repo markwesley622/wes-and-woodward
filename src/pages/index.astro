@@ -4,7 +4,9 @@ import Wheel from '../components/Wheel.astro';
 import D from '../../data/site/dashboard.json';
 import skaters from '../../data/site/skaters.json';
 
-const S = D.standings, X = D.deserved, P = D.projected, NG = D.nextGame;
+const S = D.standings, P = D.projected, NG = D.nextGame;
+const X = D.deserved ?? { divisionPlace: null, conferencePlace: null, leaguePlace: null, xgPoints: 0, table: [] };
+const ord0 = (n) => (n ? ordinal(n) : '—');
 const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
 const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
 const pct3 = (v) => `.${String(Math.round(v * 1000)).padStart(3, '0')}`;
@@ -41,8 +43,11 @@ import path from 'node:path';
 const POS = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense', G: 'Goalie' };
 const pdir = path.resolve('data/site/players');
 const allPlayers = fs.readdirSync(pdir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(pdir, f), 'utf8')));
-const top3 = allPlayers.filter((p) => p.score && p.kind !== 'G').sort((a, b) => b.score.value - a.score.value).slice(0, 3)
-  .map((p) => ({ ...p, art: fs.existsSync(path.resolve(`public/players/${p.playerId}-art.webp`)) }));
+const prev = JSON.parse(fs.readFileSync(path.resolve('data/site/players_prev.json'), 'utf8'));
+const scoreOf = (p) => p.score?.value ?? 0;
+const prevOf = (p) => prev[String(p.playerId)]?.value ?? 0;
+const top3 = allPlayers.filter((p) => p.kind !== 'G' && p.kind !== 'P').sort((a, b) => (scoreOf(b) - scoreOf(a)) || (prevOf(b) - prevOf(a))).slice(0, 3)
+  .map((p) => ({ ...p, score: p.score ?? { value: 0, rank: null, prevValue: prevOf(p) }, art: fs.existsSync(path.resolve(`public/players/${p.playerId}-art.webp`)) }));
 const dots = (n) => Array.from({ length: Math.max(0, n) });
 ---
 <Base title="Wes & Woodward — Detroit hockey, by the numbers" description="Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.">
@@ -60,7 +65,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
     <div class="shell">
       <h2>Analysis</h2>
       <div class="row3">
-        {[['Featured', '2026–2027 Detroit Red Wings predictions'], ['Latest', 'Do the Red Wings have a type?'], ['Latest', 'Is Michael Rasmussen really as bad as fans think he is?']].map(([kind, title]) => (
+        {[['Featured', '2026–2027 Detroit Red Wings predictions']].map(([kind, title]) => (
           <a class:list={['card', 'article', { pin: kind === 'Featured' }]} href={kind === 'Featured' ? '/analysis/2026-27-predictions/' : '#'}>
             <span class:list={['eb', 'mono', { red: kind === 'Featured' }]}>{kind}</span>
             <div class="thumb" aria-hidden="true"></div>
@@ -82,15 +87,15 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
           <span class="num big red">{S.points} <span class="of">pts</span></span>
           <span class="sub"><span class="tip" title="Wins, losses, overtime losses">{S.wins}–{S.losses}–{S.otLosses}</span> · <span class="tip" title="Points percentage: points earned of points available">{pct3(S.pointPctg)}</span> · <span class="tip" title="Goals for, goals against, and the goal differential">{S.goalFor}–{S.goalAgainst} ({signed(S.goalDifferential, 0)})</span></span>
         </div>
-        <div class="tile"><span class="eb mono tip" title="Share of expected goals at five-on-five: the chances Detroit creates against the chances it allows, per MoneyPuck">{T5.label}</span><span class="num">{T5.value}</span><span class:list={['sub', { red: T5.rank <= 10 }]}>{T5.rankLabel}</span></div>
+        <div class="tile"><span class="eb mono tip" title="Share of expected goals at five-on-five: the chances Detroit creates against the chances it allows, per MoneyPuck">{T5.label}</span><span class="num">{T5.value}</span><span class:list={['sub', { red: T5.rank && T5.rank <= 10 }]}>{T5.rankLabel}</span></div>
         <div class="tile"><span class="eb mono tip" title="Place in the division on the NHL's own standings">{S.division.name} Division</span><span class="num">{ordinal(S.division.place)}</span><span class="sub">of {S.division.teams} · actual</span></div>
         <div class="tile"><span class="eb mono tip" title="Place in the conference on the NHL's own standings">{S.conference.name} Conference</span><span class="num">{ordinal(S.conference.place)}</span><span class="sub">of {S.conference.teams} · actual</span></div>
 
-        <div class="tile"><span class="eb mono tip" title="Expected goals generated per 60 minutes on the power play (5v4)">{TPP.label}</span><span class="num">{TPP.value}</span><span class:list={['sub', { red: TPP.rank <= 10 }]}>{TPP.rankLabel}</span></div>
-        <div class="tile"><span class="eb mono tip" title="Expected goals allowed per 60 minutes on the penalty kill (4v5); lower is better">{TPK.label}</span><span class="num">{TPK.value}</span><span class:list={['sub', { red: TPK.rank <= 10 }]}>{TPK.rankLabel}</span></div>
+        <div class="tile"><span class="eb mono tip" title="Expected goals generated per 60 minutes on the power play (5v4)">{TPP.label}</span><span class="num">{TPP.value}</span><span class:list={['sub', { red: TPP.rank && TPP.rank <= 10 }]}>{TPP.rankLabel}</span></div>
+        <div class="tile"><span class="eb mono tip" title="Expected goals allowed per 60 minutes on the penalty kill (4v5); lower is better">{TPK.label}</span><span class="num">{TPK.value}</span><span class:list={['sub', { red: TPK.rank && TPK.rank <= 10 }]}>{TPK.rankLabel}</span></div>
 
-        <div class="tile"><span class="eb mono tip" title="Where the same games place Detroit when every team is scored on expected goals instead of actual goals">{S.division.name} Division</span><span class="num">{ordinal(X.divisionPlace)}</span><span class="sub">of {S.division.teams} · expected results</span></div>
-        <div class="tile"><span class="eb mono tip" title="Where the same games place Detroit when every team is scored on expected goals instead of actual goals">{S.conference.name} Conference</span><span class="num">{ordinal(X.conferencePlace)}</span><span class="sub">of {S.conference.teams} · expected results</span></div>
+        <div class="tile"><span class="eb mono tip" title="Where the same games place Detroit when every team is scored on expected goals instead of actual goals">{S.division.name} Division</span><span class="num">{ord0(X.divisionPlace)}</span><span class="sub">of {S.division.teams} · expected results</span></div>
+        <div class="tile"><span class="eb mono tip" title="Where the same games place Detroit when every team is scored on expected goals instead of actual goals">{S.conference.name} Conference</span><span class="num">{ord0(X.conferencePlace)}</span><span class="sub">of {S.conference.teams} · expected results</span></div>
         <div class="tile full progress">
           <span class="eb mono tip" title="Points banked against MoneyPuck's season simulation. The pre-season projection is frozen on opening night; the updated projection is re-run after every result.">Progress toward MoneyPuck&rsquo;s projected points</span>
           {prog ? (
@@ -124,7 +129,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
         {top3.map((p) => { const L = p.seasonLine || {}, f5 = (p.moneypuck || {}).fiveOnFive || {}; return (
           <a class="card player" href={`/players/${p.slug}/`}>
             <div class="card-top">
-              <div><h3>{p.name}</h3><span class="mono mute">{POS[p.bio.position] ?? p.bio.position} · {season}{p.score.rank ? ` · ${ordinal(p.score.rank)} in the NHL` : ''}</span></div>
+              <div><h3>{p.name}</h3><span class="mono mute">{POS[p.bio.position] ?? p.bio.position} · {season}{p.score.rank ? ` · ${ordinal(p.score.rank)} in the NHL` : p.score.prevValue ? ` · ${p.score.prevValue.toFixed(1)} last season` : ''}</span></div>
               <div class="score"><span class="val">{p.score.value.toFixed(1)}</span><span class="mono red">/ 100</span></div>
             </div>
             {p.art ? (

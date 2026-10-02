@@ -68,7 +68,7 @@ def build_team():
     def team_rank(metric, situation):
         rows = [r for r in mp_teams if r["situation"] == situation]
         ordered = sorted(rows, key=lambda r: f(r, metric), reverse=True)
-        return next(i + 1 for i, r in enumerate(ordered) if r["team"] == TEAM)
+        return next((i + 1 for i, r in enumerate(ordered) if r["team"] == TEAM), None)   # None until the first game
 
     det_situ = {r["situation"]: r for r in mp_teams if r["team"] == TEAM}
 
@@ -301,7 +301,8 @@ def build_dashboard():
 
     gp = det["gamesPlayed"]
     max_gp = max(r["gamesPlayed"] for r in standings)
-    state = "offseason" if max_gp >= 82 else ("preseason" if gp == 0 else "in_season")
+    # the season is on once any team has played (Detroit may still be at 0-0-0 on opening night)
+    state = "offseason" if max_gp >= 82 else ("preseason" if max_gp == 0 else "in_season")
 
     div_teams = [r for r in standings if r["divisionAbbrev"] == det["divisionAbbrev"]]
     conf_teams = [r for r in standings if r["conferenceAbbrev"] == det["conferenceAbbrev"]]
@@ -423,6 +424,8 @@ def build_dashboard():
     def ranked(pool, value_fn, higher_is_better=True):
         vals = {abbr: value_fn(r) for abbr, r in pool.items()}
         order = sorted(vals, key=lambda a: vals[a], reverse=higher_is_better)
+        if TEAM not in vals:                      # no games yet: zero, unranked
+            return 0.0, None, len(order)
         return vals[TEAM], order.index(TEAM) + 1, len(order)
 
     tiles = []
@@ -455,7 +458,7 @@ def build_dashboard():
                   "unit": "", "rank": rk, "of": n, "note": "4v5, lower is better"})
 
     for t in tiles:
-        t["rankLabel"] = f'{ordinal(t["rank"])} of {t["of"]}'
+        t["rankLabel"] = f'{ordinal(t["rank"])} of {t["of"]}' if t["rank"] else "no games yet"
 
     # ---- radar: seven dimensions of winning, as league percentiles, Detroit vs the average of
     # the top three teams in the standings right now (rank-based, 0 = worst team, 100 = best)
@@ -477,12 +480,12 @@ def build_dashboard():
         ("penaltykill", "Penalty kill", "4v5 expected goals against per 60 (lower is better)", {a: per60(r, "xGoalsAgainst") for a, r in mp_pk.items()}, False, "{:.2f}"),
     ]
     top3 = [r["teamAbbrev"]["default"] for r in sorted(standings, key=lambda r: (-r["points"], -r.get("regulationWins", 0)))[:3]]
-    radar = {"top3": top3, "dimensions": []}
+    radar = {"top3": top3, "dimensions": [], "available": TEAM in mp_all}
     for key, label, note, values, hib, fmt in dims:
         pcts = pct_rank(values, hib)
         radar["dimensions"].append({
             "key": key, "label": label, "note": note,
-            "det": pcts.get(TEAM), "detRaw": fmt.format(values.get(TEAM, 0)),
+            "det": pcts.get(TEAM, 0.0), "detRaw": fmt.format(values.get(TEAM, 0)),
             "top3": round(sum(pcts.get(t, 0) for t in top3) / max(1, len(top3)), 1),
             "top3Raw": fmt.format(sum(values.get(t, 0) for t in top3) / max(1, len(top3))),
         })

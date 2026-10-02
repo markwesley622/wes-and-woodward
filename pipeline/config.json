@@ -1,7 +1,7 @@
 {
   "team": "DET",
-  "nhl_season": "20252026",
-  "mp_season": "2025",
+  "nhl_season": "20262027",
+  "mp_season": "2026",
   "game_type": 2,
   "standings_date": "now",
   "_notes": "nhl_season/mp_season: bump to 20262027 / 2026 when the new season starts. standings_date: 'now' is safe year-round (the API redirects to the most recent standings date); pin a date only to freeze a snapshot. game_type: 2=regular, 3=playoffs."

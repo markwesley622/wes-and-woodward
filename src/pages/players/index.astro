@@ -55,7 +55,7 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
                 <td class="num" data-v={f5.onIceXgPct ?? -1}>{f5.onIceXgPct != null ? `${Math.round(f5.onIceXgPct * 100)}%` : '—'}</td>
                 <td class="num" data-v={S?.goalsBlended ?? -99}>{S ? signed(S.goalsBlended) : '—'}</td>
                 <td class="num" data-v={S?.rank ?? 9999}>{S?.rank ? `${S.rank} of ${S.pool}` : '—'}</td>
-                <td class:list={['num', 'val', { red: (S?.value ?? 0) >= 73 }]} data-v={S?.value ?? -1}>{S ? S.value.toFixed(1) : '—'}</td>
+                <td class:list={['num', 'val', { red: (S?.value ?? 0) >= 73 }]} data-v={S?.value ?? -1}>{S ? S.value.toFixed(1) : '0.0'}</td>
               </tr>
             ); })}
           </tbody>
@@ -77,7 +77,7 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
                 <td class="num" data-v={L.savePct ?? -1}>{sv(L.savePct)}</td><td class="num" data-v={L.gaa ?? 99}>{num(L.gaa, 2)}</td><td class="num" data-v={L.shutouts ?? -1}>{L.shutouts ?? '—'}</td>
                 <td class="num" data-v={S?.gsax ?? -99}>{S ? signed(S.gsax) : '—'}</td>
                 <td class="num" data-v={S?.rank ?? 9999}>{S?.rank ? `${S.rank} of ${S.pool}` : '—'}</td>
-                <td class:list={['num', 'val', { red: (S?.value ?? 0) >= 73 }]} data-v={S?.value ?? -1}>{S ? S.value.toFixed(1) : '—'}</td>
+                <td class:list={['num', 'val', { red: (S?.value ?? 0) >= 73 }]} data-v={S?.value ?? -1}>{S ? S.value.toFixed(1) : '0.0'}</td>
               </tr>
             ); })}
           </tbody>
