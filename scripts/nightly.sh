@@ -9,6 +9,7 @@ LOG="logs/nightly-$(date +%Y-%m-%d).log"
 {
   echo "=== nightly start $(date)"
   ./refresh.sh
+  python3 pipeline/fetch_eh.py || echo "EH pull failed, continuing with the files on disk"
   python3 pipeline/build_player.py --roster --fetch
   npm run build --silent >/dev/null
   git add -A data/site data/archive data/raw/nhl data/raw/moneypuck data/raw/players
