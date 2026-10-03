@@ -4,7 +4,6 @@
  "slug": "mason-appleton",
  "season": "20262027",
  "seasonLabel": "2026-27",
- "kind": "S",
  "bio": {
   "number": 22,
   "position": "C",
@@ -23,21 +22,247 @@
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478891.png",
   "silhouette": "/players/8478891.png"
  },
+ "kind": "S",
  "seasonLine": {
-  "league": null
+  "league": "NHL",
+  "team": null,
+  "gp": 1,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "plusMinus": 0,
+  "pim": 0,
+  "shots": 1,
+  "shootingPct": 0.0,
+  "toiPerGame": "10:18",
+  "ppPoints": 0,
+  "wins": null,
+  "losses": null,
+  "otLosses": null,
+  "gaa": null,
+  "savePct": null,
+  "shutouts": null
  },
- "seasonLines": [],
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 1,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "pim": 0
+  }
+ ],
+ "moneypuck": {
+  "playerId": 8478891,
+  "name": "Mason Appleton",
+  "position": "C",
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478891.png",
+  "gamesPlayed": 1,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "shots": 1,
+  "shootingPct": 0.0,
+  "toiPerGame": 618.0,
+  "ixG": 0.01,
+  "goalsAboveExpected": -0.01,
+  "gameScore": 0.53,
+  "fiveOnFive": {
+   "icetimeMinutes": 7.2,
+   "onIceXgPct": 0.89,
+   "onIceCorsiPct": 0.88,
+   "ixgPer60": 0.083,
+   "pctl_onIceXgPct": null,
+   "pctl_ixgPer60": null,
+   "qualifiesForPercentiles": false
+  }
+ },
+ "hsc": {
+  "Game score": {
+   "value": 0.68,
+   "percentile": 59
+  },
+  "Offense": {
+   "value": -0.1,
+   "percentile": 44
+  },
+  "Defense": {
+   "value": 0.1,
+   "percentile": 62
+  },
+  "Net": {
+   "value": -0.0,
+   "percentile": 49
+  }
+ },
  "score": null,
- "gameLog": [],
- "gameScore": null,
- "teamGameScore": null,
  "impact": [],
- "career": [],
+ "career": [
+  {
+   "season": "18-19",
+   "gp": 36,
+   "toi": 295,
+   "components": {
+    "EVO": 2.9,
+    "EVD": 0.5,
+    "PPO": 0.0,
+    "SHD": 0.0,
+    "Pens": -0.4
+   },
+   "total": 3.0,
+   "xGAR": 2.5,
+   "GAR": 3.9
+  },
+  {
+   "season": "19-20",
+   "gp": 46,
+   "toi": 514,
+   "components": {
+    "EVO": -0.2,
+    "EVD": 1.1,
+    "PPO": -0.0,
+    "SHD": -0.4,
+    "Pens": 1.0
+   },
+   "total": 1.5,
+   "xGAR": 2.6,
+   "GAR": -0.3
+  },
+  {
+   "season": "20-21",
+   "gp": 56,
+   "toi": 806,
+   "components": {
+    "EVO": 3.7,
+    "EVD": 1.6,
+    "PPO": -0.2,
+    "SHD": 0.1,
+    "Pens": 0.6
+   },
+   "total": 5.8,
+   "xGAR": 7.4,
+   "GAR": 3.6
+  },
+  {
+   "season": "21-22",
+   "gp": 49,
+   "toi": 701,
+   "components": {
+    "EVO": -0.1,
+    "EVD": 0.5,
+    "PPO": -0.4,
+    "SHD": -0.0,
+    "Pens": 0.2
+   },
+   "total": 0.2,
+   "xGAR": -0.8,
+   "GAR": 1.7
+  },
+  {
+   "season": "22-23",
+   "gp": 41,
+   "toi": 657,
+   "components": {
+    "EVO": 2.5,
+    "EVD": -0.1,
+    "PPO": 0.0,
+    "SHD": -1.2,
+    "Pens": 1.4
+   },
+   "total": 2.6,
+   "xGAR": 2.9,
+   "GAR": 2.0
+  },
+  {
+   "season": "23-24",
+   "gp": 82,
+   "toi": 1316,
+   "components": {
+    "EVO": 1.6,
+    "EVD": -3.7,
+    "PPO": 0.4,
+    "SHD": 0.1,
+    "Pens": 0.2
+   },
+   "total": -1.4,
+   "xGAR": -0.7,
+   "GAR": -2.2
+  },
+  {
+   "season": "24-25",
+   "gp": 71,
+   "toi": 1053,
+   "components": {
+    "EVO": 2.3,
+    "EVD": -2.3,
+    "PPO": 0.1,
+    "SHD": 0.4,
+    "Pens": 0.1
+   },
+   "total": 0.6,
+   "xGAR": 2.2,
+   "GAR": -1.6
+  },
+  {
+   "season": "25-26",
+   "gp": 65,
+   "toi": 879,
+   "components": {
+    "EVO": -2.0,
+    "EVD": -1.0,
+    "PPO": 0.0,
+    "SHD": -0.1,
+    "Pens": 0.1
+   },
+   "total": -3.0,
+   "xGAR": -3.6,
+   "GAR": -1.9
+  }
+ ],
  "comps": [],
  "myComponents": null,
- "moneypuck": {},
- "hsc": {},
- "note": "No NHL games in 2026-27; the line shown is his most recent season.",
+ "gameLog": [
+  {
+   "gameId": 2026020017,
+   "date": "2026-10-02",
+   "opponent": "NYR",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 0,
+   "toi": 10.3,
+   "ixg": 0.03,
+   "xgf": 0.34,
+   "xga": 0.05,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 0.68
+  }
+ ],
+ "teamGameScore": null,
+ "gameScore": {
+  "average": 0.68,
+  "games": 1,
+  "best": {
+   "date": "2026-10-02",
+   "opponent": "NYR",
+   "value": 0.68
+  },
+  "worst": {
+   "date": "2026-10-02",
+   "opponent": "NYR",
+   "value": 0.68
+  },
+  "above2": 0,
+  "below0": 0
+ },
  "prospect": false,
  "art": true
 }

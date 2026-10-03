@@ -376,7 +376,7 @@
    "easternUTCOffset": "-04:00",
    "venueUTCOffset": "-04:00",
    "venueTimezone": "America/Detroit",
-   "gameState": "LIVE",
+   "gameState": "OFF",
    "gameScheduleState": "OK",
    "tvBroadcasts": [
     {
@@ -424,8 +424,7 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/NYR_dark.svg",
     "awaySplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/NYR/20262027/NYR-radio.m3u8",
-    "score": 1
+    "score": 2
    },
    "homeTeam": {
     "id": 17,
@@ -443,14 +442,37 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/DET_dark.svg",
     "homeSplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/DET/20262027/DET-radio.m3u8",
     "score": 0
    },
    "periodDescriptor": {
-    "number": 1,
+    "number": 3,
     "periodType": "REG",
     "maxRegulationPeriods": 3
    },
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   },
+   "winningGoalie": {
+    "playerId": 8482193,
+    "firstInitial": {
+     "default": "D."
+    },
+    "lastName": {
+     "default": "Garand"
+    }
+   },
+   "winningGoalScorer": {
+    "playerId": 8480434,
+    "firstInitial": {
+     "default": "S."
+    },
+    "lastName": {
+     "default": "Durzi"
+    }
+   },
+   "threeMinRecap": "/video/nyr-at-det-recap-6406146433112",
+   "threeMinRecapFr": "/fr/video/nyr-vs-det-02-10-2026-resume-6406147419112",
+   "condensedGame": "/video/nyr-at-det-condensed-game-6406147517112",
    "gameCenterLink": "/gamecenter/nyr-vs-det/2026/10/02/2026020017"
   },
   {

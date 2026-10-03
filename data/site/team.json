@@ -2,19 +2,56 @@
  "season": "20262027",
  "record": {
   "wins": 0,
-  "losses": 0,
+  "losses": 1,
   "otLosses": 0,
   "points": 0,
-  "pointPctg": null,
+  "pointPctg": 0.0,
   "goalFor": 0,
-  "goalAgainst": 0,
-  "divisionSequence": 5,
-  "wildcardSequence": 5
+  "goalAgainst": 2,
+  "divisionSequence": 6,
+  "wildcardSequence": 8
  },
- "situations": {},
+ "situations": {
+  "all": {
+   "xGoalsPct": 0.36,
+   "corsiPct": 0.51,
+   "xGoalsFor": 1.71,
+   "xGoalsAgainst": 3.05,
+   "goalsFor": 0.0,
+   "goalsAgainst": 2.0,
+   "iceTime": 3600.0
+  },
+  "5on5": {
+   "xGoalsPct": 0.5,
+   "corsiPct": 0.57,
+   "xGoalsFor": 1.36,
+   "xGoalsAgainst": 1.38,
+   "goalsFor": 0.0,
+   "goalsAgainst": 0.0,
+   "iceTime": 2841.0
+  },
+  "5on4": {
+   "xGoalsPct": 1.0,
+   "corsiPct": 1.0,
+   "xGoalsFor": 0.18,
+   "xGoalsAgainst": 0.0,
+   "goalsFor": 0.0,
+   "goalsAgainst": 0.0,
+   "iceTime": 240.0
+  },
+  "4on5": {
+   "xGoalsPct": 0.18,
+   "corsiPct": 0.08,
+   "xGoalsFor": 0.17,
+   "xGoalsAgainst": 0.74,
+   "goalsFor": 0.0,
+   "goalsAgainst": 1.0,
+   "iceTime": 461.0
+  }
+ },
  "leagueRanks": {
-  "xGoalsPct_5on5": null,
-  "corsiPct_5on5": null,
-  "xGoalsFor_5on4": null
+  "xGoalsPct_5on5": 16,
+  "corsiPct_5on5": 9,
+  "xGoalsFor_5on4": 29
  }
 }

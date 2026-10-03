@@ -24,11 +24,57 @@
   "silhouette": "/players/8476434.png"
  },
  "seasonLine": {
-  "league": null
+  "league": "NHL",
+  "team": null,
+  "gp": 1,
+  "goals": null,
+  "assists": null,
+  "points": null,
+  "plusMinus": null,
+  "pim": null,
+  "shots": null,
+  "shootingPct": null,
+  "toiPerGame": null,
+  "ppPoints": null,
+  "wins": 0,
+  "losses": 1,
+  "otLosses": 0,
+  "gaa": 1.016375,
+  "savePct": 0.95,
+  "shutouts": 0
  },
  "score": null,
- "moneypuck": {},
- "gameLog": [],
+ "moneypuck": {
+  "playerId": 8476434,
+  "name": "John Gibson",
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8476434.png",
+  "gamesPlayed": 1,
+  "gamesStarted": 1,
+  "wins": 0,
+  "losses": 1,
+  "otLosses": 0,
+  "savePct": 0.95,
+  "gaa": 1.016375,
+  "shutouts": 0,
+  "gsax": 1.12,
+  "pctl_gsax": null,
+  "qualifiesForPercentiles": false
+ },
+ "gameLog": [
+  {
+   "gameId": 2026020017,
+   "date": "2026-10-02",
+   "opponent": "NYR",
+   "home": true,
+   "started": 1,
+   "decision": "L",
+   "shotsAgainst": 20,
+   "goalsAgainst": 1,
+   "savePct": 0.95,
+   "shutout": 0,
+   "toi": 59.0
+  }
+ ],
  "gameScore": null,
  "teamGameScore": null,
  "impact": [],
@@ -36,7 +82,7 @@
  "comps": [],
  "myComponents": null,
  "hsc": {},
- "note": "No NHL games in 2026-27.",
+ "note": null,
  "prospect": false,
  "art": true
 }

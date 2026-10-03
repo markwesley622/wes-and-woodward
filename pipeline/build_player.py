@@ -179,13 +179,16 @@ def write_player(pid, out):
     out["prospect"] = out.get("kind") != "G" and rookie_eligible(json.load((ROOT / "data" / "raw" / "players" / str(pid) / "landing.json").open()))
     if out["prospect"] and out.get("kind") == "S": out["kind"] = "P"
     out["art"] = has_art(pid)
+    # a page exists for anyone with art, or anyone who has played an NHL game this season (Mark, 10/3)
+    played = bool(out.get("gameLog")) or any((l.get("league") == "NHL" and (l.get("gp") or 0) > 0) for l in out.get("seasonLines") or [])
+    publish = out["art"] or played
     live = ROOT / "data" / "site" / "players"; arch = ROOT / "data" / "archive" / "players"
     live.mkdir(parents=True, exist_ok=True); arch.mkdir(parents=True, exist_ok=True)
-    dest = live if out["art"] else arch
+    dest = live if publish else arch
     (dest / f"{pid}.json").write_text(json.dumps(out, indent=1))
-    other = (arch if out["art"] else live) / f"{pid}.json"
+    other = (arch if publish else live) / f"{pid}.json"
     if other.exists(): other.unlink()
-    if not out["art"]: print(f"  archived (no art): {out['name']}")
+    if not publish: print(f"  archived (no art, no games): {out['name']}")
 
 
 def build_no_nhl(pid, raw, land, name, nhl_log=None):
@@ -209,7 +212,7 @@ def build_goalie(pid, raw, land, nhl_log, name):
     gsax = {r["name"]: f(r["xGoals"]) - f(r["goals"]) for r in pool_rows}
     mine = next((r for r in mp if r["situation"] == "all" and str(r.get("playerId")) == str(pid)), None)
     score = None
-    if mine and f(mine["icetime"]) > 0:
+    if mine and f(mine["icetime"]) > 0 and len(gsax) >= 2:        # no 600-minute pool yet early in the season: no score
         my = f(mine["xGoals"]) - f(mine["goals"]); pool = list(gsax.values())
         ranked = sorted(gsax.items(), key=lambda t: -t[1]); names = [n for n, _ in ranked]
         my_name = mine["name"]; idx = names.index(my_name) if my_name in names else None
@@ -280,31 +283,35 @@ def build(pid, fetch=False):
     x_pool = [t[0] for t in ranked]
     xs_pool = [sum(f(r[c]) for c in XK.values()) for r in xg_rows if grp(r)]
     g_pool = [sum(f(r[c]) for c in GK.values()) for r in g_rows if grp(r)]
-    me_x = eh_row(xg_rows, name, "DET"); me_g = g_for(me_x)
-    if me_x is None: return build_no_nhl(pid, raw, land, name, nhl_log)
-    if me_g is None: me_g = me_x
-    toi = f(me_x["TOI_All"])
-    vb, vx, vg, rel = blended(me_x)
-    sd = (sum((v - sum(x_pool) / len(x_pool)) ** 2 for v in x_pool) / max(1, len(x_pool) - 1)) ** 0.5
-    se = sd * math.sqrt(max(0.0, 1 - rel))
-    score = {
-        "value": qbr(x_pool, vb), "low": qbr(x_pool, vb - Z80 * se), "high": qbr(x_pool, vb + Z80 * se),
-        "sustainable": qbr(xs_pool, vx), "results": qbr(g_pool, vg), "percentile": percentile(x_pool, vb),
-        "goalsBlended": round(vb, 1), "goalsSustainable": round(vx, 1), "goalsResults": round(vg, 1),
-        "blend": {k: round(v, 2) for k, v in BLEND.items()}, "blendMeasured": {k: round(v, 2) for k, v in BLEND_MEASURED.items()}, "k": K, "repeatability": REPEAT,
-        "reliability": round(rel, 3), "pool": len(x_pool), "group": "skaters", "position": group,
-        "components": [
-            {"key": c, "label": {"EVO": "Even-strength offense", "EVD": "Even-strength defense", "PPO": "Power play", "SHD": "Penalty kill", "Pens": "Penalties drawn minus taken"}[c],
-             "sustainable": f(me_x[XK[c]]), "results": f(me_g[GK[c]]), "shrink": round(shrink(toi, K[c]), 2), "repeat": REPEAT[c],
-             "counted": round(BLEND["sustainable"] * f(me_x[XK[c]]) + BLEND["results"] * f(me_g[GK[c]]), 1)} for c in XK],
-        "raw": {"xGAR": f(me_x["xGAR"]), "GAR": f(me_g["GAR"]), "WAR": f(me_g["WAR"]), "xWAR": f(me_x["xWAR"]), "toiAll": toi},
-        "rapm": {k: f(v) for k, v in rapm.get(name, {}).items() if k not in ("Player", "Season", "Team", "Position")},
-        "rank": (next((i + 1 for i, t in enumerate(ranked) if norm(t[1]) == norm(name)), None)),
-        "neighbours": (lambda mi: [
-            {"rank": i + 1, "name": t[1], "team": t[2], "gp": t[3], "pos": t[4], "value": qbr(x_pool, t[0]), "goals": round(t[0], 1), "isMe": norm(t[1]) == norm(name)}
-            for i, t in enumerate(ranked) if abs(i - mi) <= 2] if mi is not None else [])(next((j for j, u in enumerate(ranked) if norm(u[1]) == norm(name)), None)),
-        "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
-    }
+    me_x = eh_row(xg_rows, name, "DET"); has_eh = me_x is not None
+    # no Evolving-Hockey row yet (early season, or EH hasn't published): keep the page, skip the value score
+    if not has_eh and not nhl_log: return build_no_nhl(pid, raw, land, name, nhl_log)
+    me_g = g_for(me_x) if has_eh else None
+    if has_eh and me_g is None: me_g = me_x
+    score = None
+    if has_eh:
+      toi = f(me_x["TOI_All"])
+      vb, vx, vg, rel = blended(me_x)
+      sd = (sum((v - sum(x_pool) / len(x_pool)) ** 2 for v in x_pool) / max(1, len(x_pool) - 1)) ** 0.5
+      se = sd * math.sqrt(max(0.0, 1 - rel))
+      score = {
+          "value": qbr(x_pool, vb), "low": qbr(x_pool, vb - Z80 * se), "high": qbr(x_pool, vb + Z80 * se),
+          "sustainable": qbr(xs_pool, vx), "results": qbr(g_pool, vg), "percentile": percentile(x_pool, vb),
+          "goalsBlended": round(vb, 1), "goalsSustainable": round(vx, 1), "goalsResults": round(vg, 1),
+          "blend": {k: round(v, 2) for k, v in BLEND.items()}, "blendMeasured": {k: round(v, 2) for k, v in BLEND_MEASURED.items()}, "k": K, "repeatability": REPEAT,
+          "reliability": round(rel, 3), "pool": len(x_pool), "group": "skaters", "position": group,
+          "components": [
+              {"key": c, "label": {"EVO": "Even-strength offense", "EVD": "Even-strength defense", "PPO": "Power play", "SHD": "Penalty kill", "Pens": "Penalties drawn minus taken"}[c],
+               "sustainable": f(me_x[XK[c]]), "results": f(me_g[GK[c]]), "shrink": round(shrink(toi, K[c]), 2), "repeat": REPEAT[c],
+               "counted": round(BLEND["sustainable"] * f(me_x[XK[c]]) + BLEND["results"] * f(me_g[GK[c]]), 1)} for c in XK],
+          "raw": {"xGAR": f(me_x["xGAR"]), "GAR": f(me_g["GAR"]), "WAR": f(me_g["WAR"]), "xWAR": f(me_x["xWAR"]), "toiAll": toi},
+          "rapm": {k: f(v) for k, v in rapm.get(name, {}).items() if k not in ("Player", "Season", "Team", "Position")},
+          "rank": (next((i + 1 for i, t in enumerate(ranked) if norm(t[1]) == norm(name)), None)),
+          "neighbours": (lambda mi: [
+              {"rank": i + 1, "name": t[1], "team": t[2], "gp": t[3], "pos": t[4], "value": qbr(x_pool, t[0]), "goals": round(t[0], 1), "isMe": norm(t[1]) == norm(name)}
+              for i, t in enumerate(ranked) if abs(i - mi) <= 2] if mi is not None else [])(next((j for j, u in enumerate(ranked) if norm(u[1]) == norm(name)), None)),
+          "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
+      }
 
     # ---- isolated impact map: every skater's even-strength RAPM impact this season
     rapm_rows = eh_rows("rapm_ev_rates_all_seasons.csv")
@@ -336,19 +343,20 @@ def build(pid, fetch=False):
         return [BLEND["sustainable"] * f(rx[XK[c]]) + BLEND["results"] * f(rg[GK[c]]) if rg else f(rx[XK[c]]) for c in XK]
     pool_rows = [r for r in xg_rows if grp(r) and (("D" if r["Position"] == "D" else "F") == group)]
     profs = {r["Player"]: profile(r) for r in pool_rows}
-    n = len(XK); means = [sum(v[i] for v in profs.values()) / len(profs) for i in range(n)]
-    sds = [max(1e-6, (sum((v[i] - means[i]) ** 2 for v in profs.values()) / max(1, len(profs) - 1)) ** 0.5) for i in range(n)]
-    mine = profs.get(me_x["Player"]) or profile(me_x)
-    def dist(v): return sum(((v[i] - mine[i]) / sds[i]) ** 2 for i in range(n)) ** 0.5
-    near = sorted((dist(v), pn) for pn, v in profs.items() if norm(pn) != norm(name))[:3]
-    by_name = {r["Player"]: r for r in pool_rows}
-    comps = []
-    for d, pn in near:
-        r = by_name[pn]; v = profs[pn]
-        comps.append({"name": pn, "team": r["Team"], "pos": r["Position"], "gp": int(r["GP"]), "distance": round(d, 2),
-                      "value": qbr(x_pool, sum(v)), "goals": round(sum(v), 1),
-                      "components": {c: round(v[i], 1) for i, c in enumerate(XK)}})
-    my_components = {c: round(mine[i], 1) for i, c in enumerate(XK)}
+    comps = []; my_components = None
+    if has_eh and profs:
+        n = len(XK); means = [sum(v[i] for v in profs.values()) / len(profs) for i in range(n)]
+        sds = [max(1e-6, (sum((v[i] - means[i]) ** 2 for v in profs.values()) / max(1, len(profs) - 1)) ** 0.5) for i in range(n)]
+        mine = profs.get(me_x["Player"]) or profile(me_x)
+        def dist(v): return sum(((v[i] - mine[i]) / sds[i]) ** 2 for i in range(n)) ** 0.5
+        near = sorted((dist(v), pn) for pn, v in profs.items() if norm(pn) != norm(name))[:3]
+        by_name = {r["Player"]: r for r in pool_rows}
+        for d, pn in near:
+            r = by_name[pn]; v = profs[pn]
+            comps.append({"name": pn, "team": r["Team"], "pos": r["Position"], "gp": int(r["GP"]), "distance": round(d, 2),
+                          "value": qbr(x_pool, sum(v)), "goals": round(sum(v), 1),
+                          "components": {c: round(v[i], 1) for i, c in enumerate(XK)}})
+        my_components = {c: round(mine[i], 1) for i, c in enumerate(XK)}
 
     # ---- MoneyPuck (from the site's skaters.json, already percentiled); non-Red-Wings computed from the league file
     sk = next((p for p in json.load((ROOT / "data" / "site" / "skaters.json").open()) if p["playerId"] == pid), {})
@@ -416,7 +424,7 @@ def build(pid, fetch=False):
                       "worst": {"date": worst["date"], "opponent": worst["opponent"], "value": worst["gameScore"] or 0}, "above2": sum(1 for v in gs if v >= 2), "below0": sum(1 for v in gs if v < 0)},
     }
     write_player(pid, out)
-    print(f"site/players/{pid}.json written: {name} value {score['value']} ({score['low']}-{score['high']}) sustainable {score['sustainable']} results {score['results']} rank {score['rank']}/{score['pool']} · K={K} blend={score['blend']}")
+    print(f"site/players/{pid}.json written: {name} " + (f"value {score['value']} rank {score['rank']}/{score['pool']}" if score else f"no EH row yet · {len(games)} NHL games"))
 
 
 if __name__ == "__main__":

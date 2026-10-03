@@ -4,7 +4,6 @@
  "slug": "michael-rasmussen",
  "season": "20262027",
  "seasonLabel": "2026-27",
- "kind": "S",
  "bio": {
   "number": 27,
   "position": "C",
@@ -23,21 +22,232 @@
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479992.png",
   "silhouette": "/players/8479992.png"
  },
+ "kind": "S",
  "seasonLine": {
-  "league": null
+  "league": "NHL",
+  "team": null,
+  "gp": 1,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "plusMinus": -1,
+  "pim": 2,
+  "shots": 0,
+  "shootingPct": 0.0,
+  "toiPerGame": "14:54",
+  "ppPoints": 0,
+  "wins": null,
+  "losses": null,
+  "otLosses": null,
+  "gaa": null,
+  "savePct": null,
+  "shutouts": null
  },
- "seasonLines": [],
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 1,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "pim": 2
+  }
+ ],
+ "moneypuck": {
+  "playerId": 8479992,
+  "name": "Michael Rasmussen",
+  "position": "C",
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479992.png",
+  "gamesPlayed": 1,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "shots": 0,
+  "shootingPct": 0.0,
+  "toiPerGame": 894.0,
+  "ixG": 0.08,
+  "goalsAboveExpected": -0.08,
+  "gameScore": 0.35,
+  "fiveOnFive": {
+   "icetimeMinutes": 10.8,
+   "onIceXgPct": 0.76,
+   "onIceCorsiPct": 0.75,
+   "ixgPer60": 0.389,
+   "pctl_onIceXgPct": null,
+   "pctl_ixgPer60": null,
+   "qualifiesForPercentiles": false
+  }
+ },
+ "hsc": {
+  "Game score": {
+   "value": 0.36,
+   "percentile": 50
+  },
+  "Offense": {
+   "value": -0.2,
+   "percentile": 37
+  },
+  "Defense": {
+   "value": 0.1,
+   "percentile": 57
+  },
+  "Net": {
+   "value": -0.1,
+   "percentile": 44
+  }
+ },
  "score": null,
- "gameLog": [],
- "gameScore": null,
- "teamGameScore": null,
  "impact": [],
- "career": [],
+ "career": [
+  {
+   "season": "18-19",
+   "gp": 62,
+   "toi": 749,
+   "components": {
+    "EVO": -2.4,
+    "EVD": 1.8,
+    "PPO": -0.1,
+    "SHD": 0.0,
+    "Pens": -0.1
+   },
+   "total": -0.8,
+   "xGAR": -1.2,
+   "GAR": -0.2
+  },
+  {
+   "season": "20-21",
+   "gp": 40,
+   "toi": 592,
+   "components": {
+    "EVO": -1.2,
+    "EVD": -0.8,
+    "PPO": -0.5,
+    "SHD": -0.2,
+    "Pens": -0.2
+   },
+   "total": -2.9,
+   "xGAR": -5.5,
+   "GAR": 0.9
+  },
+  {
+   "season": "21-22",
+   "gp": 80,
+   "toi": 1162,
+   "components": {
+    "EVO": 1.7,
+    "EVD": -0.7,
+    "PPO": -0.5,
+    "SHD": -0.6,
+    "Pens": 0.5
+   },
+   "total": 0.4,
+   "xGAR": 0.5,
+   "GAR": 0.7
+  },
+  {
+   "season": "22-23",
+   "gp": 56,
+   "toi": 845,
+   "components": {
+    "EVO": 3.2,
+    "EVD": 1.6,
+    "PPO": -0.2,
+    "SHD": 0.2,
+    "Pens": 1.2
+   },
+   "total": 6.0,
+   "xGAR": 3.7,
+   "GAR": 9.3
+  },
+  {
+   "season": "23-24",
+   "gp": 75,
+   "toi": 1139,
+   "components": {
+    "EVO": 2.2,
+    "EVD": 0.1,
+    "PPO": -0.1,
+    "SHD": -0.1,
+    "Pens": -0.3
+   },
+   "total": 1.8,
+   "xGAR": 1.7,
+   "GAR": 2.0
+  },
+  {
+   "season": "24-25",
+   "gp": 77,
+   "toi": 1033,
+   "components": {
+    "EVO": -0.2,
+    "EVD": 1.6,
+    "PPO": -0.2,
+    "SHD": -2.2,
+    "Pens": 0.8
+   },
+   "total": -0.2,
+   "xGAR": -1.2,
+   "GAR": 1.2
+  },
+  {
+   "season": "25-26",
+   "gp": 64,
+   "toi": 810,
+   "components": {
+    "EVO": -2.8,
+    "EVD": 0.6,
+    "PPO": -0.3,
+    "SHD": 1.7,
+    "Pens": 0.6
+   },
+   "total": -0.2,
+   "xGAR": 0.1,
+   "GAR": -0.7
+  }
+ ],
  "comps": [],
  "myComponents": null,
- "moneypuck": {},
- "hsc": {},
- "note": "No NHL games in 2026-27; the line shown is his most recent season.",
+ "gameLog": [
+  {
+   "gameId": 2026020017,
+   "date": "2026-10-02",
+   "opponent": "NYR",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "shots": 0,
+   "pim": 2,
+   "toi": 14.9,
+   "ixg": 0.15,
+   "xgf": 0.45,
+   "xga": 0.19,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 0.36
+  }
+ ],
+ "teamGameScore": null,
+ "gameScore": {
+  "average": 0.36,
+  "games": 1,
+  "best": {
+   "date": "2026-10-02",
+   "opponent": "NYR",
+   "value": 0.36
+  },
+  "worst": {
+   "date": "2026-10-02",
+   "opponent": "NYR",
+   "value": 0.36
+  },
+  "above2": 0,
+  "below0": 0
+ },
  "prospect": false,
  "art": true
 }

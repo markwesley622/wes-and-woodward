@@ -4,7 +4,6 @@
  "slug": "moritz-seider",
  "season": "20262027",
  "seasonLabel": "2026-27",
- "kind": "S",
  "bio": {
   "number": 53,
   "position": "D",
@@ -23,21 +22,202 @@
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481542.png",
   "silhouette": "/players/8481542.png"
  },
+ "kind": "S",
  "seasonLine": {
-  "league": null
+  "league": "NHL",
+  "team": null,
+  "gp": 1,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "plusMinus": -1,
+  "pim": 0,
+  "shots": 2,
+  "shootingPct": 0.0,
+  "toiPerGame": "25:16",
+  "ppPoints": 0,
+  "wins": null,
+  "losses": null,
+  "otLosses": null,
+  "gaa": null,
+  "savePct": null,
+  "shutouts": null
  },
- "seasonLines": [],
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 1,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "pim": 0
+  }
+ ],
+ "moneypuck": {
+  "playerId": 8481542,
+  "name": "Moritz Seider",
+  "position": "D",
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481542.png",
+  "gamesPlayed": 1,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "shots": 2,
+  "shootingPct": 0.0,
+  "toiPerGame": 1516.0,
+  "ixG": 0.01,
+  "goalsAboveExpected": -0.01,
+  "gameScore": 0.4,
+  "fiveOnFive": {
+   "icetimeMinutes": 17.7,
+   "onIceXgPct": 0.4,
+   "onIceCorsiPct": 0.54,
+   "ixgPer60": 0.034,
+   "pctl_onIceXgPct": null,
+   "pctl_ixgPer60": null,
+   "qualifiesForPercentiles": false
+  }
+ },
+ "hsc": {
+  "Game score": {
+   "value": 0.2,
+   "percentile": 43
+  },
+  "Offense": {
+   "value": -0.3,
+   "percentile": 13
+  },
+  "Defense": {
+   "value": 0.4,
+   "percentile": 90
+  },
+  "Net": {
+   "value": 0.0,
+   "percentile": 52
+  }
+ },
  "score": null,
- "gameLog": [],
- "gameScore": null,
- "teamGameScore": null,
  "impact": [],
- "career": [],
+ "career": [
+  {
+   "season": "21-22",
+   "gp": 82,
+   "toi": 1889,
+   "components": {
+    "EVO": 4.6,
+    "EVD": 2.2,
+    "PPO": 1.9,
+    "SHD": -1.1,
+    "Pens": 2.5
+   },
+   "total": 10.1,
+   "xGAR": 8.5,
+   "GAR": 12.7
+  },
+  {
+   "season": "22-23",
+   "gp": 82,
+   "toi": 1898,
+   "components": {
+    "EVO": -0.9,
+    "EVD": 3.2,
+    "PPO": -0.7,
+    "SHD": -3.7,
+    "Pens": 1.8
+   },
+   "total": -0.3,
+   "xGAR": -1.3,
+   "GAR": 1.2
+  },
+  {
+   "season": "23-24",
+   "gp": 82,
+   "toi": 1834,
+   "components": {
+    "EVO": 3.4,
+    "EVD": -2.6,
+    "PPO": 2.8,
+    "SHD": -5.0,
+    "Pens": 1.7
+   },
+   "total": 0.3,
+   "xGAR": 1.0,
+   "GAR": -0.4
+  },
+  {
+   "season": "24-25",
+   "gp": 82,
+   "toi": 2056,
+   "components": {
+    "EVO": 2.9,
+    "EVD": 7.8,
+    "PPO": 2.8,
+    "SHD": 0.9,
+    "Pens": 3.1
+   },
+   "total": 17.5,
+   "xGAR": 19.1,
+   "GAR": 14.9
+  },
+  {
+   "season": "25-26",
+   "gp": 82,
+   "toi": 2105,
+   "components": {
+    "EVO": 10.2,
+    "EVD": 11.7,
+    "PPO": 3.1,
+    "SHD": -0.2,
+    "Pens": 0.9
+   },
+   "total": 25.7,
+   "xGAR": 25.4,
+   "GAR": 26.3
+  }
+ ],
  "comps": [],
  "myComponents": null,
- "moneypuck": {},
- "hsc": {},
- "note": "No NHL games in 2026-27; the line shown is his most recent season.",
+ "gameLog": [
+  {
+   "gameId": 2026020017,
+   "date": "2026-10-02",
+   "opponent": "NYR",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "shots": 2,
+   "pim": 0,
+   "toi": 25.3,
+   "ixg": 0.06,
+   "xgf": 0.38,
+   "xga": 0.48,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 3.0,
+   "gameScore": 0.2
+  }
+ ],
+ "teamGameScore": null,
+ "gameScore": {
+  "average": 0.2,
+  "games": 1,
+  "best": {
+   "date": "2026-10-02",
+   "opponent": "NYR",
+   "value": 0.2
+  },
+  "worst": {
+   "date": "2026-10-02",
+   "opponent": "NYR",
+   "value": 0.2
+  },
+  "above2": 0,
+  "below0": 0
+ },
  "prospect": false,
  "art": true
 }
