@@ -331,11 +331,13 @@ def build_dashboard():
     def deserved_for(abbr):
         r = mp_all.get(abbr)
         s = by_abbr.get(abbr)
-        if not r or not s or s["gamesPlayed"] == 0:
+        if not s:
             return None
+        if not r or s["gamesPlayed"] == 0 or f(r, "xGoalsFor") + f(r, "xGoalsAgainst") == 0:
+            # no games yet: keep the team in the table (every division lists all its teams), at the bottom
+            return {"team": abbr, "xgWinPct": 0.0, "xgPoints": 0.0, "xgPointsPer82": 0.0, "actualPoints": s["points"],
+                    "division": s["divisionAbbrev"], "conference": s["conferenceAbbrev"], "noGames": True}
         xf, xa = f(r, "xGoalsFor"), f(r, "xGoalsAgainst")
-        if xf + xa == 0:
-            return None
         w = xf ** 2 / (xf ** 2 + xa ** 2)
         g = s["gamesPlayed"]
         pts = w * 2 * g + otl_rate * g
