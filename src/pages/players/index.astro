@@ -4,8 +4,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 const dir = path.resolve('data/site/players');
 const all = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
-const skaters = all.filter((p) => p.kind === 'S' || p.kind === 'P')   // prospects sit with the skaters for now (Mark, 10/3).sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
-const prospects = all.filter((p) => p.kind === 'P').sort((a, b) => (a.bio.draft?.overallPick ?? 999) - (b.bio.draft?.overallPick ?? 999));
+// prospects sit with the skaters for now (Mark, 10/3)
+const skaters = all.filter((p) => p.kind === 'S' || p.kind === 'P').sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
 const goalies = all.filter((p) => p.kind === 'G').sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
 const season = all.length ? `${all[0].seasonLabel.slice(0, 4)}–${all[0].seasonLabel.slice(5)}` : '';
 const POS = { C: 'C', L: 'LW', R: 'RW', D: 'D', G: 'G' };
@@ -91,7 +91,7 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
 
 <script>
   const groups = document.querySelectorAll('[data-group]'), posBtns = document.querySelectorAll('#posfilter button');
-  const show = (g) => { document.getElementById('skaters').hidden = g !== 'skaters'; document.getElementById('goalies').hidden = g !== 'goalies'; document.getElementById('prospects').hidden = g !== 'prospects'; document.getElementById('posfilter').style.visibility = g === 'skaters' ? 'visible' : 'hidden'; groups.forEach((b) => { b.classList.toggle('on', b.dataset.group === g); b.setAttribute('aria-selected', String(b.dataset.group === g)); }); };
+  const show = (g) => { document.getElementById('skaters').hidden = g !== 'skaters'; document.getElementById('goalies').hidden = g !== 'goalies'; document.getElementById('posfilter').style.visibility = g === 'skaters' ? 'visible' : 'hidden'; groups.forEach((b) => { b.classList.toggle('on', b.dataset.group === g); b.setAttribute('aria-selected', String(b.dataset.group === g)); }); };
   groups.forEach((b) => b.addEventListener('click', () => show(b.dataset.group)));
   posBtns.forEach((b) => b.addEventListener('click', () => { posBtns.forEach((o) => { o.classList.toggle('on', o === b); o.setAttribute('aria-selected', String(o === b)); }); document.querySelectorAll('#skaters tbody tr').forEach((r) => { r.hidden = b.dataset.pos !== 'all' && r.dataset.pos !== b.dataset.pos; }); }));
   document.querySelectorAll('table.sortable').forEach((table) => {
