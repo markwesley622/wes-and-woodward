@@ -52,7 +52,7 @@ const top3 = allPlayers.filter((p) => p.kind !== 'G' && p.kind !== 'P').sort((a,
   .map((p) => ({ ...p, score: p.score ?? { value: 0, rank: null, prevValue: prevOf(p) }, art: fs.existsSync(path.resolve(`public/players/${p.playerId}-art.webp`)) }));
 const dots = (n) => Array.from({ length: Math.max(0, n) });
 ---
-<Base title="Wes & Woodward — Detroit hockey, by the numbers" description="Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.">
+<Base schema={[{ '@type': 'WebPage', '@id': 'https://wesandwoodward.com/', url: 'https://wesandwoodward.com/', name: 'Wes & Woodward', description: 'Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.', isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, about: { '@id': 'https://wesandwoodward.com/team/#team' } }]} title="Wes & Woodward — Detroit hockey, by the numbers" description="Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.">
   <section class="hero" aria-label="Detroit hockey, by the numbers">
     <div class="shell">
       <div class="stamp mono"><i></i><span id="clock">&nbsp;</span><br />Detroit, MI</div>

@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base title="About — Wes & Woodward">
+<Base schema={[{ '@type': 'AboutPage', '@id': 'https://wesandwoodward.com/about/', url: 'https://wesandwoodward.com/about/', name: 'About Wes & Woodward', isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, mainEntity: { '@id': 'https://wesandwoodward.com/#org' } }]} title="About — Wes & Woodward">
   <section class="sec">
     <div class="shell prose">
       <p class="kicker">About</p>

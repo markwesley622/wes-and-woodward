@@ -14,7 +14,8 @@ const toiMin = (s) => { if (!s) return null; const [m, sec] = String(s).split(':
 const num = (v, d = 1) => (v == null ? '—' : Number(v).toFixed(d));
 const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
 ---
-<Base title="Players — Wes & Woodward" description="Every Red Wing on the roster: value score, NHL rank, and this season's numbers, sortable.">
+<Base schema={[{ '@type': 'CollectionPage', '@id': 'https://wesandwoodward.com/players/', url: 'https://wesandwoodward.com/players/', name: 'Advanced Player Stats', description: "Every Red Wing on the roster: value score, NHL rank, and this season's numbers.", isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, about: { '@id': 'https://wesandwoodward.com/team/#team' },
+  mainEntity: { '@type': 'ItemList', itemListOrder: 'https://schema.org/ItemListOrderDescending', numberOfItems: all.length, itemListElement: all.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: `https://wesandwoodward.com/players/${p.slug}/` })) } }]} title="Players — Wes & Woodward" description="Every Red Wing on the roster: value score, NHL rank, and this season's numbers, sortable.">
   <section class="sec">
     <div class="shell">
       <p class="kicker">Players · {season}</p>

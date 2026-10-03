@@ -58,7 +58,8 @@ const toi = (m) => Math.round(m);
 const RD = D.radar;
 const top3Names = RD.top3.map((t) => NAMES[t] ?? t).join(', ');
 ---
-<Base title="Team — Wes & Woodward" description="The Detroit Red Wings season in every game state: record, expected-goals standings, the season as a barcode, lines, pairs and goaltending.">
+<Base schema={[{ '@type': 'SportsTeam', '@id': 'https://wesandwoodward.com/team/#team', name: 'Detroit Red Wings', sport: 'Ice hockey', url: 'https://wesandwoodward.com/team/', memberOf: { '@type': 'SportsOrganization', name: 'National Hockey League', alternateName: 'NHL' }, location: { '@type': 'Place', name: 'Little Caesars Arena', address: { '@type': 'PostalAddress', streetAddress: '2645 Woodward Ave', addressLocality: 'Detroit', addressRegion: 'MI', postalCode: '48201', addressCountry: 'US' } } },
+  { '@type': 'WebPage', '@id': 'https://wesandwoodward.com/team/', url: 'https://wesandwoodward.com/team/', name: 'Red Wings Advanced Stats', description: 'The Detroit Red Wings season in every game state: record, expected-goals standings, the season as a barcode, lines, pairs and goaltending.', isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, about: { '@id': 'https://wesandwoodward.com/team/#team' } }]} title="Team — Wes & Woodward" description="The Detroit Red Wings season in every game state: record, expected-goals standings, the season as a barcode, lines, pairs and goaltending.">
   <section class="sec">
     <div class="shell">
       <p class="kicker">Team · {season}{D.seasonState === 'offseason' ? ' final' : ''}</p>

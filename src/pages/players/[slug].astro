@@ -64,7 +64,10 @@ const careerBars = CA.map((c, i) => { let up = 0, down = 0; return COMP.map(([k]
 const cTicks = [-5, 0, 5, 10, 15, 20, 25, 30].filter((v) => v >= -negMax && v <= posMax);
 const RECENT = 10;
 ---
-<Base title={`${P.name} — Wes & Woodward`} description={isP ? `${P.name}, Red Wings prospect: draft pedigree and every line he played in ${season}.` : `${P.name}, ${season}: value score, where it comes from, and a game-by-game log with game score.`}>
+<Base ogType="profile" schema={[{ '@type': 'ProfilePage', '@id': `https://wesandwoodward.com/players/${P.slug}/`, url: `https://wesandwoodward.com/players/${P.slug}/`, name: P.name, isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, dateModified: new Date().toISOString().slice(0, 10),
+  mainEntity: { '@type': 'Person', '@id': `https://wesandwoodward.com/players/${P.slug}/#person`, name: P.name, jobTitle: isG ? 'Professional hockey goaltender' : 'Professional hockey player', birthDate: B.birthDate, birthPlace: B.birthplace ? { '@type': 'Place', name: B.birthplace } : undefined,
+    height: B.heightIn ? { '@type': 'QuantitativeValue', value: B.heightIn, unitCode: 'INH' } : undefined, weight: B.weightLb ? { '@type': 'QuantitativeValue', value: B.weightLb, unitCode: 'LBR' } : undefined,
+    memberOf: { '@id': 'https://wesandwoodward.com/team/#team' }, image: P.art ? `https://wesandwoodward.com/players/${P.playerId}-art.webp` : undefined, sameAs: [`https://www.nhl.com/player/${P.playerId}`] } }]} title={`${P.name} — Wes & Woodward`} description={isP ? `${P.name}, Red Wings prospect: draft pedigree and every line he played in ${season}.` : `${P.name}, ${season}: value score, where it comes from, and a game-by-game log with game score.`}>
   {isP && <Prospect P={P} art={art} />}
   {!isP && (<>
   <section class="sec">
