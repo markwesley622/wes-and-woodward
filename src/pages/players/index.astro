@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 const dir = path.resolve('data/site/players');
 const all = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
-const skaters = all.filter((p) => p.kind === 'S').sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
+const skaters = all.filter((p) => p.kind === 'S' || p.kind === 'P')   // prospects sit with the skaters for now (Mark, 10/3).sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
 const prospects = all.filter((p) => p.kind === 'P').sort((a, b) => (a.bio.draft?.overallPick ?? 999) - (b.bio.draft?.overallPick ?? 999));
 const goalies = all.filter((p) => p.kind === 'G').sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
 const season = all.length ? `${all[0].seasonLabel.slice(0, 4)}–${all[0].seasonLabel.slice(5)}` : '';
@@ -26,7 +26,6 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
         <div class="toggle" role="tablist" aria-label="Skaters or goalies">
           <button type="button" class="on" data-group="skaters" role="tab" aria-selected="true">Skaters</button>
           <button type="button" data-group="goalies" role="tab" aria-selected="false">Goalies</button>
-          <button type="button" data-group="prospects" role="tab" aria-selected="false">Prospects</button>
         </div>
         <div class="toggle" id="posfilter" role="tablist" aria-label="Position">
           <button type="button" class="on" data-pos="all" role="tab" aria-selected="true">All</button>
@@ -84,27 +83,7 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
           </tbody>
         </table>
       </div>
-      <div class="table-scroll" id="prospects" hidden>
-        <table class="sortable">
-          <thead><tr>
-            <th data-sort="text">Player</th><th data-sort="text">Pos</th><th class="num" data-sort="num">Age</th><th class="num on" data-sort="num">Drafted</th><th data-sort="text">League</th><th data-sort="text">Team</th>
-            <th class="num" data-sort="num">GP</th><th class="num" data-sort="num">G</th><th class="num" data-sort="num">A</th><th class="num" data-sort="num">P</th><th class="num" data-sort="num">NHL GP</th>
-          </tr></thead>
-          <tbody>
-            {prospects.map((p) => { const L = p.seasonLine || {}, d = p.bio.draft; const age = Math.floor((Date.now() - new Date(p.bio.birthDate)) / (365.25 * 24 * 3600 * 1000)); const nhl = (p.seasonLines || []).filter((l) => l.league === 'NHL').reduce((a, l) => a + (l.gp || 0), 0); return (
-              <tr>
-                <td data-v={p.name.split(' ').slice(-1)[0]}><a href={`/players/${p.slug}/`}>{p.name}</a></td>
-                <td data-v={POS[p.bio.position] ?? p.bio.position}>{POS[p.bio.position] ?? p.bio.position}</td>
-                <td class="num" data-v={age}>{age}</td>
-                <td class="num" data-v={d?.overallPick ?? 999}>{d ? `${d.year} · ${d.overallPick}` : 'undrafted'}</td>
-                <td data-v={L.league ?? ''}>{L.league ?? '—'}</td><td data-v={L.team ?? ''}>{L.team ?? '—'}</td>
-                <td class="num" data-v={L.gp ?? -1}>{L.gp ?? '—'}</td><td class="num" data-v={L.goals ?? -1}>{L.goals ?? '—'}</td><td class="num" data-v={L.assists ?? -1}>{L.assists ?? '—'}</td><td class="num" data-v={L.points ?? -1}>{L.points ?? '—'}</td>
-                <td class="num" data-v={nhl}>{nhl}</td>
-              </tr>
-            ); })}
-          </tbody>
-        </table>
-      </div>
+
       <p class="note mono">Value: a 0–100 rating where 50 is the average NHL player at the position group (skaters positionless, goalies on goals saved above expected), this season only. NHL rank counts skaters with 20+ games and goalies with 600+ minutes. Prospects are players still eligible for NHL rookie status; they are listed on last season's line in whichever league they played and carry no value score yet.</p>
     </div>
   </section>
