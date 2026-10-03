@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Wheel from '../components/Wheel.astro';
+import PuckDrop from '../components/PuckDrop.astro';
 import D from '../../data/site/dashboard.json';
 import skaters from '../../data/site/skaters.json';
 
@@ -22,8 +23,9 @@ if (live) {
   const scale = Math.max(proj, pace) * 1.06;
   const pre = P.preseasonPoints ?? proj;
   const scale2 = Math.max(proj, pace, pre) * 1.06;
-  prog = { proj, pre, pace, delta, fill: S.points / scale2 * 100, paceW: Math.max(0, pace - S.points) / scale2 * 100, tick: proj / scale2 * 100, preTick: pre / scale2 * 100,
-    verdict: delta >= 0.5 ? 'outperforming the projection' : delta <= -0.5 ? 'underperforming the projection' : 'tracking the projection' };
+  const opened = S.gamesPlayed > 0;
+  prog = { proj, pre, pace, delta: opened ? delta : 0, fill: S.points / scale2 * 100, paceW: opened ? Math.max(0, pace - S.points) / scale2 * 100 : 0, tick: proj / scale2 * 100, preTick: pre / scale2 * 100,
+    verdict: !opened ? 'no games yet' : delta >= 0.5 ? 'outperforming the projection' : delta <= -0.5 ? 'underperforming the projection' : 'tracking the projection' };
 }
 const projWhen = NG ? `before the opener ${mdy(NG.date)}` : 'once the season opens';
 
@@ -68,7 +70,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
         {[['Featured', '2026–2027 Detroit Red Wings predictions']].map(([kind, title]) => (
           <a class:list={['card', 'article', { pin: kind === 'Featured' }]} href={kind === 'Featured' ? '/analysis/2026-27-predictions/' : '#'}>
             <span class:list={['eb', 'mono', { red: kind === 'Featured' }]}>{kind}</span>
-            <div class="thumb" aria-hidden="true"></div>
+            {kind === 'Featured' ? <PuckDrop id="thumb-predictions" /> : <div class="thumb" aria-hidden="true"></div>}
             <h3>{title}</h3>
             <span class="mono" style="margin-top:auto">Read &rarr;</span>
           </a>
@@ -100,7 +102,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
           <span class="eb mono tip" title="Points banked against MoneyPuck's season simulation. The pre-season projection is frozen on opening night; the updated projection is re-run after every result.">Progress toward MoneyPuck&rsquo;s projected points</span>
           {prog ? (
             <>
-              <span class="num"><span class="red">{S.points}</span> <span class="of">of {prog.proj.toFixed(0)} · pacing to {prog.pace.toFixed(0)}</span></span>
+              <span class="num"><span class="red">{S.points}</span> <span class="of">of {prog.proj.toFixed(0)}{S.gamesPlayed > 0 ? ` · pacing to ${prog.pace.toFixed(0)}` : ''}</span></span>
               <div class="track">
                 <div class="fill" style={`width:${prog.fill.toFixed(2)}%`}></div>
                 <div class="fill faint" style={`left:${prog.fill.toFixed(2)}%;width:${prog.paceW.toFixed(2)}%`}></div>

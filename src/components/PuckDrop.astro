@@ -1,0 +1,74 @@
+---
+// Line-art puck drop that plays with scroll, in the same ink-stroke language as the wheel hero.
+// Scene: a faceoff circle in perspective, two stick blades closing in, a puck falling from the
+// official's hand to the dot. Progress is how far the thumbnail has climbed through the viewport,
+// so the puck lands as the card settles into view. Every per-frame change is an element-level CSS
+// transform driven by custom properties (the wheel's lesson: no SVG-internal attribute updates).
+const { id = 'puckdrop' } = Astro.props;
+// faceoff circle in perspective (viewBox 640 x 360): centre, radii, hash marks
+const CX = 320, CY = 262, RX = 230, RY = 72;
+const hashes = [-1, 1].flatMap((sx) => [-1, 1].map((sy) => ({ x: CX + sx * 54, y: CY + sy * 22 * 0.8, sy })));
+---
+<div class="pd" id={id} aria-hidden="true">
+  <svg viewBox="0 0 640 360" class="scene">
+    <!-- ice -->
+    <ellipse cx={CX} cy={CY} rx={RX} ry={RY} class="line" />
+    <ellipse cx={CX} cy={CY} rx={RX * 0.78} ry={RY * 0.78} class="line faint" />
+    <line x1={CX - RX - 60} x2={CX + RX + 60} y1={CY} y2={CY} class="line faint" />
+    {hashes.map((h) => <line x1={h.x} y1={h.y} x2={h.x} y2={h.y + h.sy * 12} class="line" />)}
+    <!-- the dot and the puck's shadow -->
+    <ellipse cx={CX} cy={CY} rx="20" ry="6.5" class="dot" />
+    <g class="shadow"><ellipse cx={CX} cy={CY} rx="46" ry="15" class="line dashed" /></g>
+    <!-- stick blades, closing in from both sides -->
+    <g class="stick left"><path d="M20,354 L150,296 Q188,282 214,292 L232,300 L224,312 L198,306 Q176,300 150,312 L34,360" class="line" /></g>
+    <g class="stick right"><path d="M620,354 L490,296 Q452,282 426,292 L408,300 L416,312 L442,306 Q464,300 490,312 L606,360" class="line" /></g>
+    <!-- the puck: top face + side wall, in perspective -->
+    <g class="puck">
+      <path d="M276,0 a44,15 0 1,0 88,0" class="line" />
+      <line x1="276" y1="0" x2="276" y2="-18" class="line" /><line x1="364" y1="0" x2="364" y2="-18" class="line" />
+      <ellipse cx="320" cy="-18" rx="44" ry="15" class="line" />
+      <ellipse cx="320" cy="-18" rx="30" ry="10" class="line faint" />
+    </g>
+    <!-- the official's hand opening: two short strokes that part as the puck leaves -->
+    <g class="hand"><path d="M296,-120 q-14,22 -4,44" class="line" /><path d="M344,-120 q14,22 4,44" class="line" /></g>
+  </svg>
+</div>
+
+<style>
+  .pd { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--ghost); border-radius: 3px; }
+  .scene { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .line { fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .line.faint { stroke-width: 1; opacity: .45; }
+  .line.dashed { stroke-dasharray: 5 5; stroke-width: 1.1; }
+  .dot { fill: var(--red); stroke: none; }
+  /* --p is the drop progress 0..1 set by the script; everything else derives from it */
+  .puck { transform: translateY(calc(70px + (var(--p, 1)) * (var(--p, 1)) * 174px)) rotate(calc((1 - var(--p, 1)) * -9deg)); transform-origin: 320px 0; will-change: transform; }
+  .shadow { transform-origin: 320px 262px; transform: scale(calc(0.35 + 0.65 * var(--p, 1))); opacity: calc(0.25 + 0.6 * var(--p, 1)); will-change: transform, opacity; }
+  .stick.left { transform: translateX(calc((1 - var(--p, 1)) * -70px)); }
+  .stick.right { transform: translateX(calc((1 - var(--p, 1)) * 70px)); }
+  .hand { transform: translateY(calc(70px + var(--p, 1) * 34px)); opacity: calc(1 - var(--p, 1) * 1.6); }
+  @media (prefers-reduced-motion: reduce) { .pd { --p: 1 !important; } }
+</style>
+
+<script define:vars={{ id }}>
+  const el = document.getElementById(id);
+  if (el) {
+    const q = new URLSearchParams(location.search);
+    const fixedSy = q.has('sy') ? parseFloat(q.get('sy')) : null;
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let queued = false;
+    const frame = () => {
+      queued = false;
+      const r = el.getBoundingClientRect();
+      const vh = innerHeight;
+      // the thumbnail climbs from the bottom of the viewport (p = 0) to its upper third (p = 1)
+      const top = fixedSy !== null ? r.top + fixedSy - (fixedSy) : r.top;
+      const start = vh * 0.95, end = vh * 0.42;
+      const p = Math.min(1, Math.max(0, (start - top) / (start - end)));
+      el.style.setProperty('--p', (reduce ? 1 : p).toFixed(3));
+    };
+    frame();
+    addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(frame); } }, { passive: true });
+    addEventListener('resize', frame);
+  }
+</script>
