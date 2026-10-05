@@ -95,7 +95,7 @@ const RECENT = 10;
           ) : SI ? (
             <>
               <span class="score">{SI.value.toFixed(1)}</span>
-              <span class="mono range">stand-in · {isG ? `${SI.gsax60 >= 0 ? '+' : ''}${SI.gsax60} saved above expected per 60` : `game score ${SI.gs60} per 60`} · {ordinal(SI.rank)} of {SI.pool}</span>
+              <span class="mono range">{isG ? `${SI.gsax >= 0 ? '+' : ''}${SI.gsax} goals saved above expected` : `game score ${SI.gs}`} · {ordinal(SI.rank)} of {SI.pool}</span>
               <span class="mono split">until the W&amp;W value is computable · {SI.gp} gp, {SI.minutes} min</span>
             </>
           ) : (

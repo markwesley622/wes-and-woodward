@@ -125,36 +125,36 @@ BLEND = {"sustainable": 0.60, "results": 0.40}
 
 
 def stand_in_skater(pid, name):
-    """Until Evolving-Hockey publishes the season (so the W&W value can be computed): game score per 60
-    minutes (MoneyPuck, all situations) on the same 0-100 QBR scale, every NHL skater with 10+ minutes,
-    forwards and defensemen together like the real score."""
+    """Until Evolving-Hockey publishes the season (so the W&W value can be computed): cumulative game
+    score (MoneyPuck, all situations; a counting stat, so ice time is already in it) on the same 0-100
+    QBR scale, every NHL skater who has played, forwards and defensemen together like the real score."""
     mp = read_csv(ROOT / "data" / "raw" / "moneypuck" / "skaters.csv")
-    rows = [r for r in mp if r["situation"] == "all" and f(r["icetime"]) >= 600]
+    rows = [r for r in mp if r["situation"] == "all" and f(r["games_played"]) > 0]
     if not rows: return None
-    gs60 = {r["playerId"]: f(r["gameScore"]) / (f(r["icetime"]) / 3600) for r in rows}
+    gs60 = {r["playerId"]: f(r["gameScore"]) for r in rows}                 # season total (name kept for the neighbours payload)
     mine = next((r for r in rows if str(r["playerId"]) == str(pid)), None)
     if not mine: return None
     pool = list(gs60.values()); my = gs60[mine["playerId"]]
     ranked = sorted(rows, key=lambda r: -gs60[r["playerId"]]); ids = [r["playerId"] for r in ranked]; idx = ids.index(mine["playerId"])
-    return {"value": qbr(pool, my), "gs60": round(my, 2), "gameScore": round(f(mine["gameScore"]), 2), "minutes": round(f(mine["icetime"]) / 60), "gp": int(f(mine["games_played"])),
+    return {"value": qbr(pool, my), "gs": round(my, 2), "gs60": round(my / max(f(mine["icetime"]) / 3600, 1e-9), 2), "gameScore": round(f(mine["gameScore"]), 2), "minutes": round(f(mine["icetime"]) / 60), "gp": int(f(mine["games_played"])),
             "rank": idx + 1, "pool": len(pool), "percentile": percentile(pool, my), "group": "skaters", "standIn": True,
             "neighbours": [{"rank": i + 1, "name": r["name"], "team": r["team"], "pos": r["position"], "gp": int(f(r["games_played"])), "value": qbr(pool, gs60[r["playerId"]]), "gs60": round(gs60[r["playerId"]], 2), "isMe": r["playerId"] == mine["playerId"]} for i, r in enumerate(ranked) if abs(i - idx) <= 2],
-            "method": "Stand-in until the W&W value is computable: game score per 60 minutes (MoneyPuck, all situations), scaled 0-100 the same way, among every NHL skater with 10 or more minutes this season."}
+            "method": "Stand-in until the W&W value is computable: season game score (MoneyPuck, all situations; a counting stat, so ice time is already in it), scaled 0-100 the same way, among every NHL skater who has played this season."}
 
 
 def stand_in_goalie(pid):
     """Goalie stand-in: goals saved above expected per 60 (MoneyPuck), every NHL goalie with 30+ minutes."""
     mp = read_csv(ROOT / "data" / "raw" / "moneypuck" / "goalies.csv")
-    rows = [r for r in mp if r["situation"] == "all" and f(r["icetime"]) >= 1800]
+    rows = [r for r in mp if r["situation"] == "all" and f(r["games_played"]) > 0]
     mine = next((r for r in rows if str(r["playerId"]) == str(pid)), None)
     if not rows or not mine: return None
-    g60 = {r["playerId"]: (f(r["xGoals"]) - f(r["goals"])) / (f(r["icetime"]) / 3600) for r in rows}
+    g60 = {r["playerId"]: f(r["xGoals"]) - f(r["goals"]) for r in rows}      # season GSAx total
     pool = list(g60.values()); my = g60[mine["playerId"]]
     ranked = sorted(rows, key=lambda r: -g60[r["playerId"]]); ids = [r["playerId"] for r in ranked]; idx = ids.index(mine["playerId"])
     return {"value": qbr(pool, my), "gsax60": round(my, 2), "gsax": round(f(mine["xGoals"]) - f(mine["goals"]), 2), "minutes": round(f(mine["icetime"]) / 60), "gp": int(f(mine["games_played"])),
             "rank": idx + 1, "pool": len(pool), "percentile": percentile(pool, my), "group": "goalies", "standIn": True,
             "neighbours": [{"rank": i + 1, "name": r["name"], "team": r["team"], "gp": int(f(r["games_played"])), "value": qbr(pool, g60[r["playerId"]]), "gsax60": round(g60[r["playerId"]], 2), "isMe": r["playerId"] == mine["playerId"]} for i, r in enumerate(ranked) if abs(i - idx) <= 2],
-            "method": "Stand-in until the W&W value is computable: goals saved above expected per 60 (MoneyPuck), scaled 0-100 the same way, among every NHL goalie with 30 or more minutes this season."}
+            "method": "Stand-in until the W&W value is computable: season goals saved above expected (MoneyPuck), scaled 0-100 the same way, among every NHL goalie who has played this season."}
 
 
 def bio_block(land, pid):
