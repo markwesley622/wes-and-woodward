@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 1,
+  "gp": 2,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "plusMinus": -1,
-  "pim": 0,
-  "shots": 2,
+  "pim": 2,
+  "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": "20:01",
+  "toiPerGame": "21:58",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 1,
+   "gp": 2,
    "goals": 0,
    "assists": 0,
    "points": 0,
    "plusMinus": -1,
-   "pim": 0
+   "pim": 2
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Lucas Raymond",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482078.png",
-  "gamesPlayed": 1,
+  "gamesPlayed": 2,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "shots": 2,
+  "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": 1201.0,
-  "ixG": 0.04,
-  "goalsAboveExpected": -0.04,
-  "gameScore": 0.15,
+  "toiPerGame": 1318.0,
+  "ixG": 0.36,
+  "goalsAboveExpected": -0.36,
+  "gameScore": 0.4,
   "fiveOnFive": {
-   "icetimeMinutes": 16.4,
-   "onIceXgPct": 0.24,
-   "onIceCorsiPct": 0.5,
-   "ixgPer60": 0.146,
+   "icetimeMinutes": 29.9,
+   "onIceXgPct": 0.35,
+   "onIceCorsiPct": 0.55,
+   "ixgPer60": 0.08,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,20 +82,20 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.85,
-   "percentile": 15
+   "value": -1.0,
+   "percentile": 6
   },
   "Offense": {
-   "value": -0.3,
-   "percentile": 15
+   "value": -0.5,
+   "percentile": 7
   },
   "Defense": {
-   "value": -0.0,
-   "percentile": 39
+   "value": -0.2,
+   "percentile": 28
   },
   "Net": {
-   "value": -0.3,
-   "percentile": 24
+   "value": -0.7,
+   "percentile": 10
   }
  },
  "score": null,
@@ -199,24 +199,44 @@
    "ga": 0.0,
    "blocks": 0.0,
    "gameScore": -0.85
+  },
+  {
+   "gameId": 2026020035,
+   "date": "2026-10-04",
+   "opponent": "WPG",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 2,
+   "pim": 2,
+   "toi": 23.9,
+   "ixg": 0.1,
+   "xgf": 0.37,
+   "xga": 0.98,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": -1.16
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.85,
-  "games": 1,
+  "average": -1.0,
+  "games": 2,
   "best": {
    "date": "2026-10-02",
    "opponent": "NYR",
    "value": -0.85
   },
   "worst": {
-   "date": "2026-10-02",
-   "opponent": "NYR",
-   "value": -0.85
+   "date": "2026-10-04",
+   "opponent": "WPG",
+   "value": -1.16
   },
   "above2": 0,
-  "below0": 1
+  "below0": 2
  },
  "prospect": false,
  "art": true

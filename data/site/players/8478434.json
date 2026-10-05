@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 1,
+  "gp": 2,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "plusMinus": 0,
-  "pim": 2,
+  "pim": 9,
   "shots": 0,
   "shootingPct": 0.0,
-  "toiPerGame": "10:23",
+  "toiPerGame": "10:36",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 1,
+   "gp": 2,
    "goals": 0,
    "assists": 0,
    "points": 0,
    "plusMinus": 0,
-   "pim": 2
+   "pim": 9
   }
  ],
  "moneypuck": {
@@ -60,20 +60,20 @@
   "name": "Keegan Kolesar",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478434.png",
-  "gamesPlayed": 1,
+  "gamesPlayed": 2,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 0,
   "shootingPct": 0.0,
-  "toiPerGame": 623.0,
+  "toiPerGame": 636.0,
   "ixG": 0.0,
   "goalsAboveExpected": 0.0,
-  "gameScore": 0.5,
+  "gameScore": 0.75,
   "fiveOnFive": {
-   "icetimeMinutes": 9.7,
-   "onIceXgPct": 0.89,
-   "onIceCorsiPct": 0.8,
+   "icetimeMinutes": 18.2,
+   "onIceXgPct": 0.82,
+   "onIceCorsiPct": 0.77,
    "ixgPer60": 0.0,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
@@ -82,20 +82,20 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.73,
-   "percentile": 61
+   "value": 0.48,
+   "percentile": 56
   },
   "Offense": {
-   "value": -0.1,
-   "percentile": 41
+   "value": -0.3,
+   "percentile": 27
   },
   "Defense": {
-   "value": 0.2,
-   "percentile": 71
+   "value": 0.3,
+   "percentile": 76
   },
   "Net": {
    "value": 0.0,
-   "percentile": 51
+   "percentile": 54
   }
  },
  "score": null,
@@ -229,21 +229,41 @@
    "ga": 0.0,
    "blocks": 1.0,
    "gameScore": 0.73
+  },
+  {
+   "gameId": 2026020035,
+   "date": "2026-10-04",
+   "opponent": "WPG",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 7,
+   "toi": 10.8,
+   "ixg": 0.0,
+   "xgf": 0.24,
+   "xga": 0.09,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 0.23
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.73,
-  "games": 1,
+  "average": 0.48,
+  "games": 2,
   "best": {
    "date": "2026-10-02",
    "opponent": "NYR",
    "value": 0.73
   },
   "worst": {
-   "date": "2026-10-02",
-   "opponent": "NYR",
-   "value": 0.73
+   "date": "2026-10-04",
+   "opponent": "WPG",
+   "value": 0.23
   },
   "above2": 0,
   "below0": 0

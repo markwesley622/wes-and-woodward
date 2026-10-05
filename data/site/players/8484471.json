@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 1,
-  "goals": 0,
+  "gp": 2,
+  "goals": 1,
   "assists": 0,
-  "points": 0,
-  "plusMinus": 0,
+  "points": 1,
+  "plusMinus": 1,
   "pim": 0,
-  "shots": 1,
-  "shootingPct": 0.0,
-  "toiPerGame": "14:24",
+  "shots": 3,
+  "shootingPct": 0.333333,
+  "toiPerGame": "15:40",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 1,
-   "goals": 0,
+   "gp": 2,
+   "goals": 1,
    "assists": 0,
-   "points": 0,
-   "plusMinus": 0,
+   "points": 1,
+   "plusMinus": 1,
    "pim": 0
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Emmitt Finnie",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484471.png",
-  "gamesPlayed": 1,
-  "goals": 0,
+  "gamesPlayed": 2,
+  "goals": 1,
   "assists": 0,
-  "points": 0,
-  "shots": 1,
-  "shootingPct": 0.0,
-  "toiPerGame": 864.0,
-  "ixG": 0.17,
-  "goalsAboveExpected": -0.17,
-  "gameScore": -0.14,
+  "points": 1,
+  "shots": 3,
+  "shootingPct": 0.333333,
+  "toiPerGame": 940.0,
+  "ixG": 0.88,
+  "goalsAboveExpected": 0.12,
+  "gameScore": 1.39,
   "fiveOnFive": {
-   "icetimeMinutes": 11.6,
-   "onIceXgPct": 0.23,
-   "onIceCorsiPct": 0.36,
-   "ixgPer60": 0.0,
+   "icetimeMinutes": 24.5,
+   "onIceXgPct": 0.73,
+   "onIceCorsiPct": 0.56,
+   "ixgPer60": 1.74,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,20 +82,20 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.12,
-   "percentile": 40
+   "value": 1.44,
+   "percentile": 85
   },
   "Offense": {
-   "value": -0.2,
-   "percentile": 28
+   "value": 0.1,
+   "percentile": 67
   },
   "Defense": {
-   "value": 0.1,
-   "percentile": 59
+   "value": 0.4,
+   "percentile": 84
   },
   "Net": {
-   "value": -0.1,
-   "percentile": 40
+   "value": 0.5,
+   "percentile": 81
   }
  },
  "score": null,
@@ -139,23 +139,43 @@
    "ga": 0.0,
    "blocks": 0.0,
    "gameScore": 0.12
+  },
+  {
+   "gameId": 2026020035,
+   "date": "2026-10-04",
+   "opponent": "WPG",
+   "home": true,
+   "goals": 1,
+   "assists": 0,
+   "points": 1,
+   "plusMinus": 1,
+   "shots": 2,
+   "pim": 0,
+   "toi": 16.9,
+   "ixg": 0.35,
+   "xgf": 1.42,
+   "xga": 0.25,
+   "gf": 1.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 2.76
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.12,
-  "games": 1,
+  "average": 1.44,
+  "games": 2,
   "best": {
-   "date": "2026-10-02",
-   "opponent": "NYR",
-   "value": 0.12
+   "date": "2026-10-04",
+   "opponent": "WPG",
+   "value": 2.76
   },
   "worst": {
    "date": "2026-10-02",
    "opponent": "NYR",
    "value": 0.12
   },
-  "above2": 0,
+  "above2": 1,
   "below0": 0
  },
  "prospect": false,

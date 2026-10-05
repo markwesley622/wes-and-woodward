@@ -54,20 +54,20 @@
   "season": 20262027,
   "regularSeason": {
    "subSeason": {
-    "gamesPlayed": 1,
-    "goalsAgainstAvg": 1.016375,
-    "losses": 1,
+    "gamesPlayed": 2,
+    "goalsAgainstAvg": 2.065108,
+    "losses": 2,
     "otLosses": 0,
-    "savePctg": 0.95,
+    "savePctg": 0.914894,
     "shutouts": 0,
     "wins": 0
    },
    "career": {
-    "gamesPlayed": 564,
-    "goalsAgainstAvg": 2.868577,
-    "losses": 240,
+    "gamesPlayed": 565,
+    "goalsAgainstAvg": 2.869074,
+    "losses": 241,
     "otLosses": 67,
-    "savePctg": 0.909414,
+    "savePctg": 0.909381,
     "shutouts": 28,
     "wins": 233
    }
@@ -76,18 +76,18 @@
  "careerTotals": {
   "regularSeason": {
    "assists": 8,
-   "gamesPlayed": 564,
-   "gamesStarted": 552,
+   "gamesPlayed": 565,
+   "gamesStarted": 553,
    "goals": 0,
-   "goalsAgainst": 1532,
-   "goalsAgainstAvg": 2.868577,
-   "losses": 240,
+   "goalsAgainst": 1535,
+   "goalsAgainstAvg": 2.869074,
+   "losses": 241,
    "otLosses": 67,
    "pim": 76,
-   "savePctg": 0.909414,
-   "shotsAgainst": 16901,
+   "savePctg": 0.909381,
+   "shotsAgainst": 16928,
    "shutouts": 28,
-   "timeOnIce": "32043:45",
+   "timeOnIce": "32100:56",
    "wins": 233
   },
   "playoffs": {
@@ -109,6 +109,21 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "decision": "L",
+   "gameDate": "2026-10-04",
+   "gameId": 2026020035,
+   "gameTypeId": 2,
+   "gamesStarted": 1,
+   "goalsAgainst": 3,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "WPG",
+   "penaltyMins": 0,
+   "savePctg": 0.888889,
+   "shotsAgainst": 27,
+   "teamAbbrev": "DET",
+   "toi": "57:11"
+  },
   {
    "decision": "L",
    "gameDate": "2026-10-02",
@@ -1040,19 +1055,19 @@
   {
    "assists": 0,
    "gameTypeId": 2,
-   "gamesPlayed": 1,
-   "gamesStarted": 1,
+   "gamesPlayed": 2,
+   "gamesStarted": 2,
    "goals": 0,
-   "goalsAgainst": 1,
-   "goalsAgainstAvg": 1.016375,
+   "goalsAgainst": 4,
+   "goalsAgainstAvg": 2.065108,
    "leagueAbbrev": "NHL",
-   "losses": 1,
+   "losses": 2,
    "otLosses": 0,
    "pim": 0,
-   "savePctg": 0.95,
+   "savePctg": 0.914894,
    "season": 20262027,
    "sequence": 1,
-   "shotsAgainst": 20,
+   "shotsAgainst": 47,
    "shutouts": 0,
    "teamCommonName": {
     "default": "Red Wings"
@@ -1065,7 +1080,7 @@
     "default": "Detroit",
     "fr": "de Detroit"
    },
-   "timeOnIce": "59:02",
+   "timeOnIce": "116:13",
    "wins": 0
   }
  ],

@@ -26,7 +26,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 1,
+  "gp": 2,
   "goals": 0,
   "assists": 0,
   "points": 0,
@@ -34,7 +34,7 @@
   "pim": 2,
   "shots": 1,
   "shootingPct": 0.0,
-  "toiPerGame": "9:41",
+  "toiPerGame": "8:55",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 1,
+   "gp": 2,
    "goals": 0,
    "assists": 0,
    "points": 0,
@@ -60,21 +60,21 @@
   "name": "Nate Danielson",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484160.png",
-  "gamesPlayed": 1,
+  "gamesPlayed": 2,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 1,
   "shootingPct": 0.0,
-  "toiPerGame": 581.0,
-  "ixG": 0.06,
-  "goalsAboveExpected": -0.06,
-  "gameScore": 0.07,
+  "toiPerGame": 535.0,
+  "ixG": 0.08,
+  "goalsAboveExpected": -0.08,
+  "gameScore": -0.01,
   "fiveOnFive": {
-   "icetimeMinutes": 8.7,
-   "onIceXgPct": 0.64,
-   "onIceCorsiPct": 0.71,
-   "ixgPer60": 0.414,
+   "icetimeMinutes": 16.4,
+   "onIceXgPct": 0.54,
+   "onIceCorsiPct": 0.53,
+   "ixgPer60": 0.293,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,20 +82,20 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.25,
-   "percentile": 46
+   "value": 0.04,
+   "percentile": 36
   },
   "Offense": {
-   "value": -0.2,
-   "percentile": 29
+   "value": -0.4,
+   "percentile": 19
   },
   "Defense": {
-   "value": 0.1,
-   "percentile": 61
+   "value": -0.0,
+   "percentile": 45
   },
   "Net": {
-   "value": -0.1,
-   "percentile": 43
+   "value": -0.4,
+   "percentile": 28
   }
  },
  "score": null,
@@ -139,24 +139,44 @@
    "ga": 0.0,
    "blocks": 0.0,
    "gameScore": 0.25
+  },
+  {
+   "gameId": 2026020035,
+   "date": "2026-10-04",
+   "opponent": "WPG",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 8.2,
+   "ixg": 0.17,
+   "xgf": 0.33,
+   "xga": 0.51,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": -0.18
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.25,
-  "games": 1,
+  "average": 0.04,
+  "games": 2,
   "best": {
    "date": "2026-10-02",
    "opponent": "NYR",
    "value": 0.25
   },
   "worst": {
-   "date": "2026-10-02",
-   "opponent": "NYR",
-   "value": 0.25
+   "date": "2026-10-04",
+   "opponent": "WPG",
+   "value": -0.18
   },
   "above2": 0,
-  "below0": 0
+  "below0": 1
  },
  "prospect": false,
  "art": true
