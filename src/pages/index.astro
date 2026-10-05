@@ -43,6 +43,7 @@ const T5 = tile('xg_share_5v5'), TPP = tile('pp_xgf60'), TPK = tile('pk_xga60');
 import fs from 'node:fs';
 import path from 'node:path';
 const POS = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense', G: 'Goalie' };
+const POSA = { C: 'C', L: 'LW', R: 'RW', D: 'D', G: 'G' };
 const pdir = path.resolve('data/site/players');
 const allPlayers = fs.readdirSync(pdir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(pdir, f), 'utf8')));
 const prev = JSON.parse(fs.readFileSync(path.resolve('data/site/players_prev.json'), 'utf8'));
@@ -132,7 +133,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
         {top3.map((p) => { const L = p.seasonLine || {}, f5 = (p.moneypuck || {}).fiveOnFive || {}; return (
           <a class="card player" href={`/players/${p.slug}/`}>
             <div class="card-top">
-              <div><h3>{p.name}</h3><span class="mono mute">{POS[p.bio.position] ?? p.bio.position} · {season}{p.score.rank ? ` · ${ordinal(p.score.rank)} in the NHL` : p.score.prevValue ? ` · ${p.score.prevValue.toFixed(1)} last season` : ''}{p.score.standIn ? ' · game score per 60, stand-in' : ''}</span></div>
+              <div><h3>{p.name}</h3><span class="mono mute">{POSA[p.bio.position] ?? p.bio.position} · {season}{p.score.rank ? ` · ${ordinal(p.score.rank)} in the NHL` : p.score.prevValue ? ` · ${p.score.prevValue.toFixed(1)} last season` : ''}{p.score.standIn ? <><br />Game score per 60</> : null}</span></div>
               <div class="score"><span class="val">{p.score.value.toFixed(1)}</span><span class="mono red">/ 100</span></div>
             </div>
             {p.art ? (
