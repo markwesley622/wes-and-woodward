@@ -99,6 +99,71 @@
   }
  },
  "score": null,
+ "standIn": {
+  "value": 48.2,
+  "gs60": 1.46,
+  "gameScore": 1.12,
+  "minutes": 46,
+  "gp": 2,
+  "rank": 304,
+  "pool": 593,
+  "percentile": 48.7,
+  "group": "skaters",
+  "standIn": true,
+  "neighbours": [
+   {
+    "rank": 302,
+    "name": "Jesperi Kotkaniemi",
+    "team": "CAR",
+    "pos": "C",
+    "gp": 1,
+    "value": 48.5,
+    "gs60": 1.48,
+    "isMe": false
+   },
+   {
+    "rank": 303,
+    "name": "Brady Tkachuk",
+    "team": "FLA",
+    "pos": "L",
+    "gp": 3,
+    "value": 48.5,
+    "gs60": 1.48,
+    "isMe": false
+   },
+   {
+    "rank": 304,
+    "name": "Andrew Copp",
+    "team": "DET",
+    "pos": "C",
+    "gp": 2,
+    "value": 48.2,
+    "gs60": 1.46,
+    "isMe": true
+   },
+   {
+    "rank": 305,
+    "name": "Aleksander Barkov",
+    "team": "FLA",
+    "pos": "C",
+    "gp": 2,
+    "value": 48.1,
+    "gs60": 1.45,
+    "isMe": false
+   },
+   {
+    "rank": 306,
+    "name": "Jonas Brodin",
+    "team": "MIN",
+    "pos": "D",
+    "gp": 2,
+    "value": 47.8,
+    "gs60": 1.42,
+    "isMe": false
+   }
+  ],
+  "method": "Stand-in until the W&W value is computable: game score per 60 minutes (MoneyPuck, all situations), scaled 0-100 the same way, among every NHL skater with 10 or more minutes this season."
+ },
  "impact": [],
  "career": [
   {

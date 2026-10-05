@@ -99,6 +99,71 @@
   }
  },
  "score": null,
+ "standIn": {
+  "value": 57.1,
+  "gs60": 2.21,
+  "gameScore": 1.18,
+  "minutes": 32,
+  "gp": 2,
+  "rank": 203,
+  "pool": 593,
+  "percentile": 65.8,
+  "group": "skaters",
+  "standIn": true,
+  "neighbours": [
+   {
+    "rank": 201,
+    "name": "Adam Fantilli",
+    "team": "CBJ",
+    "pos": "C",
+    "gp": 2,
+    "value": 57.1,
+    "gs60": 2.21,
+    "isMe": false
+   },
+   {
+    "rank": 202,
+    "name": "Kirill Marchenko",
+    "team": "TOR",
+    "pos": "R",
+    "gp": 3,
+    "value": 57.1,
+    "gs60": 2.21,
+    "isMe": false
+   },
+   {
+    "rank": 203,
+    "name": "Axel Sandin-Pellikka",
+    "team": "DET",
+    "pos": "D",
+    "gp": 2,
+    "value": 57.1,
+    "gs60": 2.21,
+    "isMe": true
+   },
+   {
+    "rank": 204,
+    "name": "Mackie Samoskevich",
+    "team": "SEA",
+    "pos": "R",
+    "gp": 2,
+    "value": 57.1,
+    "gs60": 2.21,
+    "isMe": false
+   },
+   {
+    "rank": 205,
+    "name": "Kasperi Kapanen",
+    "team": "EDM",
+    "pos": "R",
+    "gp": 3,
+    "value": 56.9,
+    "gs60": 2.19,
+    "isMe": false
+   }
+  ],
+  "method": "Stand-in until the W&W value is computable: game score per 60 minutes (MoneyPuck, all situations), scaled 0-100 the same way, among every NHL skater with 10 or more minutes this season."
+ },
  "impact": [],
  "career": [
   {

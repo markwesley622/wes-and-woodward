@@ -99,6 +99,71 @@
   }
  },
  "score": null,
+ "standIn": {
+  "value": 50.4,
+  "gs60": 1.64,
+  "gameScore": 1.03,
+  "minutes": 38,
+  "gp": 2,
+  "rank": 285,
+  "pool": 593,
+  "percentile": 51.9,
+  "group": "skaters",
+  "standIn": true,
+  "neighbours": [
+   {
+    "rank": 283,
+    "name": "Mika Zibanejad",
+    "team": "NYR",
+    "pos": "C",
+    "gp": 4,
+    "value": 50.7,
+    "gs60": 1.66,
+    "isMe": false
+   },
+   {
+    "rank": 284,
+    "name": "Evan Rodrigues",
+    "team": "NJD",
+    "pos": "C",
+    "gp": 2,
+    "value": 50.5,
+    "gs60": 1.65,
+    "isMe": false
+   },
+   {
+    "rank": 285,
+    "name": "Viktor Arvidsson",
+    "team": "DET",
+    "pos": "L",
+    "gp": 2,
+    "value": 50.4,
+    "gs60": 1.64,
+    "isMe": true
+   },
+   {
+    "rank": 286,
+    "name": "Drew O'Connor",
+    "team": "VAN",
+    "pos": "L",
+    "gp": 4,
+    "value": 50.2,
+    "gs60": 1.62,
+    "isMe": false
+   },
+   {
+    "rank": 287,
+    "name": "Olen Zellweger",
+    "team": "BUF",
+    "pos": "D",
+    "gp": 1,
+    "value": 50.2,
+    "gs60": 1.62,
+    "isMe": false
+   }
+  ],
+  "method": "Stand-in until the W&W value is computable: game score per 60 minutes (MoneyPuck, all situations), scaled 0-100 the same way, among every NHL skater with 10 or more minutes this season."
+ },
  "impact": [],
  "career": [
   {

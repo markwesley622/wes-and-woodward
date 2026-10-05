@@ -5,8 +5,9 @@ import path from 'node:path';
 const dir = path.resolve('data/site/players');
 const all = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
 // prospects sit with the skaters for now (Mark, 10/3)
-const skaters = all.filter((p) => p.kind === 'S' || p.kind === 'P').sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
-const goalies = all.filter((p) => p.kind === 'G').sort((a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1));
+const val = (p) => p.score?.value ?? p.standIn?.value ?? -1;
+const skaters = all.filter((p) => p.kind === 'S' || p.kind === 'P').sort((a, b) => val(b) - val(a));
+const goalies = all.filter((p) => p.kind === 'G').sort((a, b) => val(b) - val(a));
 const season = all.length ? `${all[0].seasonLabel.slice(0, 4)}–${all[0].seasonLabel.slice(5)}` : '';
 const POS = { C: 'C', L: 'LW', R: 'RW', D: 'D', G: 'G' };
 const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
@@ -43,7 +44,7 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
             <th class="num" data-sort="num">Goals of value</th><th class="num" data-sort="num">NHL rank</th><th class="num on desc" data-sort="num">Value</th>
           </tr></thead>
           <tbody>
-            {skaters.map((p) => { const L = p.seasonLine || {}, S = p.score, f5 = (p.moneypuck || {}).fiveOnFive || {}; const grp = p.bio.position === 'D' ? 'D' : 'F'; const toi = toiMin(L.toiPerGame); return (
+            {skaters.map((p) => { const L = p.seasonLine || {}, S = p.score ?? p.standIn, f5 = (p.moneypuck || {}).fiveOnFive || {}; const grp = p.bio.position === 'D' ? 'D' : 'F'; const toi = toiMin(L.toiPerGame); return (
               <tr data-pos={grp}>
                 <td data-v={p.name.split(' ').slice(-1)[0]}><a href={`/players/${p.slug}/`}>{p.name}</a></td>
                 <td data-v={POS[p.bio.position] ?? p.bio.position}>{POS[p.bio.position] ?? p.bio.position}</td>
@@ -69,7 +70,7 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
             <th class="num" data-sort="num">SV%</th><th class="num" data-sort="num">GAA</th><th class="num" data-sort="num">SO</th><th class="num" data-sort="num">GSAx</th><th class="num" data-sort="num">NHL rank</th><th class="num on desc" data-sort="num">Value</th>
           </tr></thead>
           <tbody>
-            {goalies.map((p) => { const L = p.seasonLine || {}, S = p.score; return (
+            {goalies.map((p) => { const L = p.seasonLine || {}, S = p.score ?? p.standIn; return (
               <tr>
                 <td data-v={p.name.split(' ').slice(-1)[0]}><a href={`/players/${p.slug}/`}>{p.name}</a></td>
                 <td data-v={L.league ?? ''} class:list={{ mute: L.league && L.league !== 'NHL' }}>{L.league ?? '—'}</td>

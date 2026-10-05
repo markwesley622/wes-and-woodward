@@ -46,10 +46,11 @@ const POS = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense', G: 'Go
 const pdir = path.resolve('data/site/players');
 const allPlayers = fs.readdirSync(pdir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(pdir, f), 'utf8')));
 const prev = JSON.parse(fs.readFileSync(path.resolve('data/site/players_prev.json'), 'utf8'));
-const scoreOf = (p) => p.score?.value ?? 0;
+const scoreOf = (p) => p.score?.value ?? p.standIn?.value ?? 0;
 const prevOf = (p) => prev[String(p.playerId)]?.value ?? 0;
-const top3 = allPlayers.filter((p) => p.kind !== 'G' && p.kind !== 'P').sort((a, b) => (scoreOf(b) - scoreOf(a)) || (prevOf(b) - prevOf(a))).slice(0, 3)
-  .map((p) => ({ ...p, score: p.score ?? { value: 0, rank: null, prevValue: prevOf(p) }, art: fs.existsSync(path.resolve(`public/players/${p.playerId}-art.webp`)) }));
+// until Evolving-Hockey publishes the season, the stand-in (game score per 60, same 0-100 scale) ranks the cards
+const top3 = allPlayers.filter((p) => p.kind !== 'G').sort((a, b) => (scoreOf(b) - scoreOf(a)) || (prevOf(b) - prevOf(a))).slice(0, 3)
+  .map((p) => ({ ...p, score: p.score ?? (p.standIn ? { ...p.standIn } : { value: 0, rank: null, prevValue: prevOf(p) }), art: fs.existsSync(path.resolve(`public/players/${p.playerId}-art.webp`)) }));
 const dots = (n) => Array.from({ length: Math.max(0, n) });
 ---
 <Base schema={[{ '@type': 'WebPage', '@id': 'https://wesandwoodward.com/', url: 'https://wesandwoodward.com/', name: 'Wes & Woodward', description: 'Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.', isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, about: { '@id': 'https://wesandwoodward.com/team/#team' } }]} title="Wes & Woodward — Detroit hockey, by the numbers" description="Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.">
@@ -131,7 +132,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
         {top3.map((p) => { const L = p.seasonLine || {}, f5 = (p.moneypuck || {}).fiveOnFive || {}; return (
           <a class="card player" href={`/players/${p.slug}/`}>
             <div class="card-top">
-              <div><h3>{p.name}</h3><span class="mono mute">{POS[p.bio.position] ?? p.bio.position} · {season}{p.score.rank ? ` · ${ordinal(p.score.rank)} in the NHL` : p.score.prevValue ? ` · ${p.score.prevValue.toFixed(1)} last season` : ''}</span></div>
+              <div><h3>{p.name}</h3><span class="mono mute">{POS[p.bio.position] ?? p.bio.position} · {season}{p.score.rank ? ` · ${ordinal(p.score.rank)} in the NHL` : p.score.prevValue ? ` · ${p.score.prevValue.toFixed(1)} last season` : ''}{p.score.standIn ? ' · game score per 60, stand-in' : ''}</span></div>
               <div class="score"><span class="val">{p.score.value.toFixed(1)}</span><span class="mono red">/ 100</span></div>
             </div>
             {p.art ? (

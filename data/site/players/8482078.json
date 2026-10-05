@@ -99,6 +99,71 @@
   }
  },
  "score": null,
+ "standIn": {
+  "value": 37.6,
+  "gs60": 0.55,
+  "gameScore": 0.4,
+  "minutes": 44,
+  "gp": 2,
+  "rank": 399,
+  "pool": 593,
+  "percentile": 32.7,
+  "group": "skaters",
+  "standIn": true,
+  "neighbours": [
+   {
+    "rank": 397,
+    "name": "Jake Walman",
+    "team": "EDM",
+    "pos": "D",
+    "gp": 3,
+    "value": 37.7,
+    "gs60": 0.55,
+    "isMe": false
+   },
+   {
+    "rank": 398,
+    "name": "Mikey Anderson",
+    "team": "LAK",
+    "pos": "D",
+    "gp": 2,
+    "value": 37.7,
+    "gs60": 0.55,
+    "isMe": false
+   },
+   {
+    "rank": 399,
+    "name": "Lucas Raymond",
+    "team": "DET",
+    "pos": "L",
+    "gp": 2,
+    "value": 37.6,
+    "gs60": 0.55,
+    "isMe": true
+   },
+   {
+    "rank": 400,
+    "name": "Jonathan Aspirot",
+    "team": "BOS",
+    "pos": "D",
+    "gp": 3,
+    "value": 37.5,
+    "gs60": 0.54,
+    "isMe": false
+   },
+   {
+    "rank": 401,
+    "name": "A.J. Greer",
+    "team": "ANA",
+    "pos": "L",
+    "gp": 2,
+    "value": 37.4,
+    "gs60": 0.53,
+    "isMe": false
+   }
+  ],
+  "method": "Stand-in until the W&W value is computable: game score per 60 minutes (MoneyPuck, all situations), scaled 0-100 the same way, among every NHL skater with 10 or more minutes this season."
+ },
  "impact": [],
  "career": [
   {

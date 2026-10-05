@@ -99,6 +99,71 @@
   }
  },
  "score": null,
+ "standIn": {
+  "value": 45.0,
+  "gs60": 1.19,
+  "gameScore": 0.58,
+  "minutes": 29,
+  "gp": 2,
+  "rank": 335,
+  "pool": 593,
+  "percentile": 43.5,
+  "group": "skaters",
+  "standIn": true,
+  "neighbours": [
+   {
+    "rank": 333,
+    "name": "Aliaksei Protas",
+    "team": "WSH",
+    "pos": "L",
+    "gp": 2,
+    "value": 45.2,
+    "gs60": 1.2,
+    "isMe": false
+   },
+   {
+    "rank": 334,
+    "name": "Cody Glass",
+    "team": "NJD",
+    "pos": "C",
+    "gp": 2,
+    "value": 45.1,
+    "gs60": 1.19,
+    "isMe": false
+   },
+   {
+    "rank": 335,
+    "name": "J.T. Compher",
+    "team": "DET",
+    "pos": "L",
+    "gp": 2,
+    "value": 45.0,
+    "gs60": 1.19,
+    "isMe": true
+   },
+   {
+    "rank": 336,
+    "name": "Adam Klapka",
+    "team": "CGY",
+    "pos": "R",
+    "gp": 3,
+    "value": 45.0,
+    "gs60": 1.19,
+    "isMe": false
+   },
+   {
+    "rank": 337,
+    "name": "Sam Reinhart",
+    "team": "FLA",
+    "pos": "C",
+    "gp": 3,
+    "value": 44.9,
+    "gs60": 1.18,
+    "isMe": false
+   }
+  ],
+  "method": "Stand-in until the W&W value is computable: game score per 60 minutes (MoneyPuck, all situations), scaled 0-100 the same way, among every NHL skater with 10 or more minutes this season."
+ },
  "impact": [],
  "career": [
   {

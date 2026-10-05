@@ -124,6 +124,39 @@ K, BLEND_MEASURED, REPEAT = reliability_constants()
 BLEND = {"sustainable": 0.60, "results": 0.40}
 
 
+def stand_in_skater(pid, name):
+    """Until Evolving-Hockey publishes the season (so the W&W value can be computed): game score per 60
+    minutes (MoneyPuck, all situations) on the same 0-100 QBR scale, every NHL skater with 10+ minutes,
+    forwards and defensemen together like the real score."""
+    mp = read_csv(ROOT / "data" / "raw" / "moneypuck" / "skaters.csv")
+    rows = [r for r in mp if r["situation"] == "all" and f(r["icetime"]) >= 600]
+    if not rows: return None
+    gs60 = {r["playerId"]: f(r["gameScore"]) / (f(r["icetime"]) / 3600) for r in rows}
+    mine = next((r for r in rows if str(r["playerId"]) == str(pid)), None)
+    if not mine: return None
+    pool = list(gs60.values()); my = gs60[mine["playerId"]]
+    ranked = sorted(rows, key=lambda r: -gs60[r["playerId"]]); ids = [r["playerId"] for r in ranked]; idx = ids.index(mine["playerId"])
+    return {"value": qbr(pool, my), "gs60": round(my, 2), "gameScore": round(f(mine["gameScore"]), 2), "minutes": round(f(mine["icetime"]) / 60), "gp": int(f(mine["games_played"])),
+            "rank": idx + 1, "pool": len(pool), "percentile": percentile(pool, my), "group": "skaters", "standIn": True,
+            "neighbours": [{"rank": i + 1, "name": r["name"], "team": r["team"], "pos": r["position"], "gp": int(f(r["games_played"])), "value": qbr(pool, gs60[r["playerId"]]), "gs60": round(gs60[r["playerId"]], 2), "isMe": r["playerId"] == mine["playerId"]} for i, r in enumerate(ranked) if abs(i - idx) <= 2],
+            "method": "Stand-in until the W&W value is computable: game score per 60 minutes (MoneyPuck, all situations), scaled 0-100 the same way, among every NHL skater with 10 or more minutes this season."}
+
+
+def stand_in_goalie(pid):
+    """Goalie stand-in: goals saved above expected per 60 (MoneyPuck), every NHL goalie with 30+ minutes."""
+    mp = read_csv(ROOT / "data" / "raw" / "moneypuck" / "goalies.csv")
+    rows = [r for r in mp if r["situation"] == "all" and f(r["icetime"]) >= 1800]
+    mine = next((r for r in rows if str(r["playerId"]) == str(pid)), None)
+    if not rows or not mine: return None
+    g60 = {r["playerId"]: (f(r["xGoals"]) - f(r["goals"])) / (f(r["icetime"]) / 3600) for r in rows}
+    pool = list(g60.values()); my = g60[mine["playerId"]]
+    ranked = sorted(rows, key=lambda r: -g60[r["playerId"]]); ids = [r["playerId"] for r in ranked]; idx = ids.index(mine["playerId"])
+    return {"value": qbr(pool, my), "gsax60": round(my, 2), "gsax": round(f(mine["xGoals"]) - f(mine["goals"]), 2), "minutes": round(f(mine["icetime"]) / 60), "gp": int(f(mine["games_played"])),
+            "rank": idx + 1, "pool": len(pool), "percentile": percentile(pool, my), "group": "goalies", "standIn": True,
+            "neighbours": [{"rank": i + 1, "name": r["name"], "team": r["team"], "gp": int(f(r["games_played"])), "value": qbr(pool, g60[r["playerId"]]), "gsax60": round(g60[r["playerId"]], 2), "isMe": r["playerId"] == mine["playerId"]} for i, r in enumerate(ranked) if abs(i - idx) <= 2],
+            "method": "Stand-in until the W&W value is computable: goals saved above expected per 60 (MoneyPuck), scaled 0-100 the same way, among every NHL goalie with 30 or more minutes this season."}
+
+
 def bio_block(land, pid):
     return {"number": land.get("sweaterNumber"), "position": land.get("position"), "shoots": land.get("shootsCatches"), "heightIn": land.get("heightInInches"),
             "weightLb": land.get("weightInPounds"), "birthDate": land.get("birthDate"), "birthplace": f"{land.get('birthCity', {}).get('default', '')}, {land.get('birthCountry', '')}",
@@ -231,6 +264,7 @@ def build_goalie(pid, raw, land, nhl_log, name):
                       "shutout": g.get("shutouts"), "toi": round(int(m) + int(s_) / 60, 1)})
     sk = next((p for p in json.load((ROOT / "data" / "site" / "goalies.json").open()) if p["playerId"] == pid), {})
     out = {"playerId": pid, "name": name, "slug": slug_of(name), "season": SEASON, "seasonLabel": f"{SEASON[:4]}-{SEASON[6:]}", "kind": "G",
+           "standIn": stand_in_goalie(pid) if score is None else None,
            "bio": bio_block(land, pid), "seasonLine": season_line(land), "score": score, "moneypuck": sk, "gameLog": games, "gameScore": None, "teamGameScore": None,
            "impact": [], "career": [], "comps": [], "myComponents": None, "hsc": {},
            "note": None if games else f"No NHL games in {SEASON[:4]}-{SEASON[6:]}."}
@@ -416,7 +450,7 @@ def build(pid, fetch=False):
         "playerId": pid, "name": name, "slug": slug_of(name), "season": SEASON, "seasonLabel": f"{SEASON[:4]}-{SEASON[6:]}",
         "bio": bio_block(land, pid),
         "kind": "S", "seasonLine": fs, "seasonLines": lines,
-        "moneypuck": sk, "hsc": hsc_card.get("ratings", {}), "score": score,
+        "moneypuck": sk, "hsc": hsc_card.get("ratings", {}), "score": score, "standIn": stand_in_skater(pid, name) if score is None else None,
         "impact": impact, "career": career, "comps": comps, "myComponents": my_components,
         "gameLog": games,
         "teamGameScore": team_gs,

@@ -99,6 +99,71 @@
   }
  },
  "score": null,
+ "standIn": {
+  "value": 38.8,
+  "gs60": 0.66,
+  "gameScore": 0.45,
+  "minutes": 41,
+  "gp": 2,
+  "rank": 388,
+  "pool": 593,
+  "percentile": 34.6,
+  "group": "skaters",
+  "standIn": true,
+  "neighbours": [
+   {
+    "rank": 386,
+    "name": "Radek Faksa",
+    "team": "DAL",
+    "pos": "C",
+    "gp": 2,
+    "value": 39.3,
+    "gs60": 0.69,
+    "isMe": false
+   },
+   {
+    "rank": 387,
+    "name": "Sam Rinzel",
+    "team": "CHI",
+    "pos": "D",
+    "gp": 2,
+    "value": 39.0,
+    "gs60": 0.67,
+    "isMe": false
+   },
+   {
+    "rank": 388,
+    "name": "Justin Faulk",
+    "team": "DET",
+    "pos": "D",
+    "gp": 2,
+    "value": 38.8,
+    "gs60": 0.66,
+    "isMe": true
+   },
+   {
+    "rank": 389,
+    "name": "Jake DeBrusk",
+    "team": "VAN",
+    "pos": "L",
+    "gp": 2,
+    "value": 38.8,
+    "gs60": 0.65,
+    "isMe": false
+   },
+   {
+    "rank": 390,
+    "name": "Aaron Ekblad",
+    "team": "FLA",
+    "pos": "D",
+    "gp": 2,
+    "value": 38.7,
+    "gs60": 0.65,
+    "isMe": false
+   }
+  ],
+  "method": "Stand-in until the W&W value is computable: game score per 60 minutes (MoneyPuck, all situations), scaled 0-100 the same way, among every NHL skater with 10 or more minutes this season."
+ },
  "impact": [],
  "career": [
   {

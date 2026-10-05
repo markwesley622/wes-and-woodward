@@ -5,6 +5,66 @@
  "season": "20262027",
  "seasonLabel": "2026-27",
  "kind": "G",
+ "standIn": {
+  "value": 57.0,
+  "gsax60": 0.39,
+  "gsax": 0.75,
+  "minutes": 116,
+  "gp": 2,
+  "rank": 25,
+  "pool": 50,
+  "percentile": 50.0,
+  "group": "goalies",
+  "standIn": true,
+  "neighbours": [
+   {
+    "rank": 23,
+    "name": "Jake Oettinger",
+    "team": "DAL",
+    "gp": 1,
+    "value": 57.3,
+    "gsax60": 0.41,
+    "isMe": false
+   },
+   {
+    "rank": 24,
+    "name": "Yaroslav Askarov",
+    "team": "SJS",
+    "gp": 2,
+    "value": 57.3,
+    "gsax60": 0.41,
+    "isMe": false
+   },
+   {
+    "rank": 25,
+    "name": "John Gibson",
+    "team": "DET",
+    "gp": 2,
+    "value": 57.0,
+    "gsax60": 0.39,
+    "isMe": true
+   },
+   {
+    "rank": 26,
+    "name": "Casey DeSmith",
+    "team": "DAL",
+    "gp": 1,
+    "value": 54.0,
+    "gsax60": 0.18,
+    "isMe": false
+   },
+   {
+    "rank": 27,
+    "name": "Andrei Vasilevskiy",
+    "team": "TBL",
+    "gp": 2,
+    "value": 51.8,
+    "gsax60": 0.04,
+    "isMe": false
+   }
+  ],
+  "method": "Stand-in until the W&W value is computable: goals saved above expected per 60 (MoneyPuck), scaled 0-100 the same way, among every NHL goalie with 30 or more minutes this season."
+ },
  "bio": {
   "number": 36,
   "position": "G",
