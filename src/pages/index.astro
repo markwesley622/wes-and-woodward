@@ -133,8 +133,8 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
         {top3.map((p) => { const L = p.seasonLine || {}, f5 = (p.moneypuck || {}).fiveOnFive || {}; return (
           <a class="card player" href={`/players/${p.slug}/`}>
             <div class="card-top">
-              <div><h3>{p.name}</h3><span class="mono mute">{POSA[p.bio.position] ?? p.bio.position} · {season}{p.score.rank ? ` · ${ordinal(p.score.rank)} in the NHL` : p.score.prevValue ? ` · ${p.score.prevValue.toFixed(1)} last season` : ''}{p.score.standIn ? <><br />Game score per 60</> : null}</span></div>
-              <div class="score"><span class="val">{p.score.value.toFixed(1)}</span><span class="mono red">/ 100</span></div>
+              <div><h3>{p.name}</h3><span class="mono mute">{POSA[p.bio.position] ?? p.bio.position} · {season}{p.score.rank ? ` · ${ordinal(p.score.rank)} in the NHL` : p.score.prevValue ? ` · ${p.score.prevValue.toFixed(1)} last season` : ''}</span></div>
+              <div class="score"><div class="score-row"><span class="val">{p.score.value.toFixed(1)}</span><span class="mono red">/ 100</span></div>{p.score.standIn ? <span class="mono red basis">GS/60</span> : null}</div>
             </div>
             {p.art ? (
               <picture class="card-art"><source srcset={`/players/${p.playerId}-art.webp`} type="image/webp" /><img src={`/players/${p.playerId}-art.png`} alt="" loading="lazy" /></picture>
@@ -223,7 +223,9 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
   /* player cards */
   .card.player { gap: 14px; }
   .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
-  .score { display: flex; align-items: baseline; gap: 6px; white-space: nowrap; flex: none; }
+  .score { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; white-space: nowrap; flex: none; }
+  .score .score-row { display: flex; align-items: baseline; gap: 6px; }
+  .score .basis { font-size: 10px; letter-spacing: .08em; }
   .score .val { font-size: 34px; font-weight: 600; letter-spacing: -.03em; line-height: 1; color: var(--red); font-variant-numeric: tabular-nums; }
   .card-art { display: block; margin: 4px 0; } .card-art img { width: 100%; height: auto; display: block; aspect-ratio: 4 / 3; object-fit: contain; }
   .portrait { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; align-items: center; }
