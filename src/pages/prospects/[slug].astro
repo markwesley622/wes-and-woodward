@@ -1,0 +1,28 @@
+---
+// Prospect page: one for every prospect, always on the initials line art. When the same player also
+// has an NHL-level page (/players/<slug>/) the canonical link follows his current status (src/lib/pages.js).
+import Base from '../../layouts/Base.astro';
+import Prospect from '../players/_prospect.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+import { hasProspectPage, hasNhlPage, nhlPageIsCanonical } from '../../lib/pages.js';
+
+export async function getStaticPaths() {
+  const dir = path.resolve('data/site/players');
+  return fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'))).filter(hasProspectPage).map((P) => {
+    const pf = path.resolve(`data/site/prospects/${P.playerId}.json`);
+    const prospect = fs.existsSync(pf) ? JSON.parse(fs.readFileSync(pf, 'utf8')) : null;
+    return { params: { slug: P.slug }, props: { P, prospect } };
+  });
+}
+const { P, prospect } = Astro.props;
+const season = `${P.seasonLabel.slice(0, 4)}–${P.seasonLabel.slice(5)}`;
+const POSN = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense', G: 'Goalie' };
+const twin = hasNhlPage(P) ? `/players/${P.slug}/` : null;
+const canonical = twin && nhlPageIsCanonical(P) ? twin : undefined;
+---
+<Base canonical={canonical} schema={[{ '@type': 'ProfilePage', '@id': `https://wesandwoodward.com/prospects/${P.slug}/`, url: `https://wesandwoodward.com/prospects/${P.slug}/`, name: `${P.name} — Prospect`, isPartOf: { '@id': 'https://wesandwoodward.com/#website' },
+  mainEntity: { '@type': 'Person', '@id': `https://wesandwoodward.com/prospects/${P.slug}/#person`, name: P.name, jobTitle: `Hockey player (${POSN[P.bio.position] ?? P.bio.position})`, birthDate: P.bio.birthDate, memberOf: { '@id': 'https://wesandwoodward.com/team/#team' }, sameAs: [`https://www.nhl.com/player/${P.playerId}`] } }]}
+  title={`${P.name} — Prospect — Wes & Woodward`} description={`${P.name}, Red Wings prospect: where he projects as an NHL ${P.bio.position === 'G' ? 'goalie' : P.bio.position === 'D' ? 'defenseman' : 'forward'}, draft pedigree and every line since his draft year.`}>
+  <Prospect P={P} art={false} prospect={prospect} twin={twin} />
+</Base>

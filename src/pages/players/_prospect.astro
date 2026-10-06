@@ -3,7 +3,7 @@
 // too small to rate), so the page is bio, draft pedigree, every line he played last season across
 // leagues, and the NHL game log if there is one.
 import Initials from '../../components/Initials.astro';
-const { P, art, prospect } = Astro.props;
+const { P, prospect, twin = null } = Astro.props;   // twin: the player's NHL-level page, when he has one
 const B = P.bio, L = P.seasonLine || {}, G = P.gameLog || [], LINES = P.seasonLines || [];
 // prospect-system block (build_prospects.py): league strength, age-relative performance, cohort ceiling, trajectory
 const R = prospect || null, A = R?.anchor || null, C = R?.ceiling || null, PF = R?.performance?.last || null, PC = R?.performance?.current || null, TR = R?.trajectory || null, PD = R?.pedigree || null, DP = R?.deployment || null;
@@ -29,13 +29,9 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
 ---
 <section class="sec">
   <div class="shell">
-    <p class="kicker"><a href="/players/">Players</a> · Prospect · {season}</p>
+    <p class="kicker"><a href="/prospects/">Prospects</a> · {season}{twin ? <> · <a href={twin}>{P.prospectStatus?.onNhlRoster ? 'On the NHL roster: his NHL page' : 'His NHL page'}</a></> : null}</p>
     <div class="head">
-      {art ? (
-        <picture class="art"><source srcset={`/players/${P.playerId}-art.webp`} type="image/webp" /><img src={`/players/${P.playerId}-art.png`} alt={`${P.name}, illustrated`} width="1100" height="825" /></picture>
-      ) : (
-        <div class="art"><Initials name={P.name} label={B.number != null ? `#${B.number}` : ''} /></div>
-      )}
+      <div class="art"><Initials name={P.name} label={B.number != null ? `#${B.number}` : ''} /></div>
       <div class="who">
         <h1 class="page-title">{P.name}</h1>
         <p class="mono bio">#{B.number ?? '—'} · {POSN[B.position] ?? B.position} · shoots {B.shoots} · {ht}, {B.weightLb} lb · age {age} · {B.birthplace}</p>

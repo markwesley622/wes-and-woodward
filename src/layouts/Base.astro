@@ -7,7 +7,8 @@ const { title = 'Wes & Woodward', description = 'Detroit hockey, by the numbers.
 const base = import.meta.env.BASE_URL;
 // structured data: the site and its publisher on every page, plus whatever the page passes in
 const SITE = 'https://wesandwoodward.com';
-const canonical = new URL(Astro.url.pathname, SITE).href;
+// a page may name another page as canonical (a prospect's NHL page and prospect page point at whichever matches his current status)
+const canonical = new URL(Astro.props.canonical ?? Astro.url.pathname, SITE).href;
 const ORG = { '@type': 'Organization', '@id': `${SITE}/#org`, name: 'Wes & Woodward', url: `${SITE}/`, description: 'Independent Detroit Red Wings analytics: expected goals, player value and season simulations, written in Detroit.',
   logo: { '@type': 'ImageObject', '@id': `${SITE}/#logo`, url: `${SITE}/icon-512.png`, contentUrl: `${SITE}/icon-512.png`, width: 512, height: 512, caption: 'Wes & Woodward W' },
   image: { '@id': `${SITE}/#logo` }, knowsAbout: ['Detroit Red Wings', 'National Hockey League', 'hockey analytics', 'expected goals'] };

@@ -1,15 +1,15 @@
 ---
 import Base from '../../layouts/Base.astro';
-import Prospect from './_prospect.astro';
 import Initials from '../../components/Initials.astro';
 import fs from 'node:fs';
 import path from 'node:path';
 
+import { hasNhlPage, hasProspectPage, nhlPageIsCanonical } from '../../lib/pages.js';
+
 export async function getStaticPaths() {
   const dir = path.resolve('data/site/players');
   const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'));
-  return files.map((f) => {
-    const P = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+  return files.map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'))).filter(hasNhlPage).map((P) => {
     const art = fs.existsSync(path.resolve(`public/players/${P.playerId}-art.webp`));
     const pf = path.resolve(`data/site/prospects/${P.playerId}.json`);
     const prospect = fs.existsSync(pf) ? JSON.parse(fs.readFileSync(pf, 'utf8')) : null;   // the prospect-system block (build_prospects.py)
@@ -20,7 +20,10 @@ const { P, art, prospect } = Astro.props;
 
 const B = P.bio, L = P.seasonLine || {}, SC = P.score, MP = P.moneypuck || {}, G = P.gameLog || [], GS = P.gameScore, HS = P.hsc || {}, TG = P.teamGameScore;
 const SI = P.standIn || null;
-const isG = P.kind === 'G', isP = P.kind === 'P', hasScore = !!SC && !isP, hasLog = G.length > 0 && !isP;
+// this is always the NHL-level page; the prospect read lives at /prospects/<slug>/ (src/lib/pages.js)
+const isG = P.bio.position === 'G', isP = false, hasScore = !!SC, hasLog = G.length > 0;
+const prospectPage = hasProspectPage(P) ? `/prospects/${P.slug}/` : null;
+const canonical = prospectPage && !nhlPageIsCanonical(P) ? prospectPage : undefined;
 const POSN = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense', G: 'Goalie' };
 const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
 const last = (n) => n.split(' ').slice(-1)[0];
@@ -68,15 +71,14 @@ const careerBars = CA.map((c, i) => { let up = 0, down = 0; return COMP.map(([k]
 const cTicks = [-5, 0, 5, 10, 15, 20, 25, 30].filter((v) => v >= -negMax && v <= posMax);
 const RECENT = 10;
 ---
-<Base ogType="profile" schema={[{ '@type': 'ProfilePage', '@id': `https://wesandwoodward.com/players/${P.slug}/`, url: `https://wesandwoodward.com/players/${P.slug}/`, name: P.name, isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, dateModified: new Date().toISOString().slice(0, 10),
+<Base ogType="profile" canonical={canonical} schema={[{ '@type': 'ProfilePage', '@id': `https://wesandwoodward.com/players/${P.slug}/`, url: `https://wesandwoodward.com/players/${P.slug}/`, name: P.name, isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, dateModified: new Date().toISOString().slice(0, 10),
   mainEntity: { '@type': 'Person', '@id': `https://wesandwoodward.com/players/${P.slug}/#person`, name: P.name, jobTitle: isG ? 'Professional hockey goaltender' : 'Professional hockey player', birthDate: B.birthDate, birthPlace: B.birthplace ? { '@type': 'Place', name: B.birthplace } : undefined,
     height: B.heightIn ? { '@type': 'QuantitativeValue', value: B.heightIn, unitCode: 'INH' } : undefined, weight: B.weightLb ? { '@type': 'QuantitativeValue', value: B.weightLb, unitCode: 'LBR' } : undefined,
     memberOf: { '@id': 'https://wesandwoodward.com/team/#team' }, image: P.art ? `https://wesandwoodward.com/players/${P.playerId}-art.webp` : undefined, sameAs: [`https://www.nhl.com/player/${P.playerId}`] } }]} title={`${P.name} — Wes & Woodward`} description={isP ? `${P.name}, Red Wings prospect: draft pedigree and every line he played in ${season}.` : `${P.name}, ${season}: value score, where it comes from, and a game-by-game log with game score.`}>
-  {isP && <Prospect P={P} art={art} prospect={prospect} />}
   {!isP && (<>
   <section class="sec">
     <div class="shell">
-      <p class="kicker"><a href="/players/">Players</a> · Red Wings · {season}{P.prospectStatus?.prospect && prospect?.rank ? <> · <a href="/prospects/">Prospect</a> · pipeline rank {prospect.rank} · {P.prospectStatus.window}</> : null}</p>
+      <p class="kicker"><a href="/players/">Players</a> · Red Wings · {season}{prospectPage ? <> · <a href={prospectPage}>Prospect page</a>{prospect?.rank ? ` · pipeline rank ${prospect.rank}` : ''} · {P.prospectStatus.window}</> : null}</p>
       <div class="head">
         {art ? (
           <picture class="art"><source srcset={`/players/${P.playerId}-art.webp`} type="image/webp" /><img src={`/players/${P.playerId}-art.png`} alt={`${P.name}, illustrated`} width="1100" height="825" /></picture>

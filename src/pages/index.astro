@@ -57,7 +57,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
 const prospectsFile = path.resolve('data/site/prospects.json');
 const PR = fs.existsSync(prospectsFile) ? JSON.parse(fs.readFileSync(prospectsFile, 'utf8')) : { prospects: [] };
 const liveIds = new Set(allPlayers.map((p) => String(p.playerId)));
-const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveIds.has(String(p.nhlId)) ? `/players/${p.slug}/` : null, now: (p.currentLines && p.currentLines[0]) || (p.lastLines && p.lastLines[0]) || null }));
+const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveIds.has(String(p.nhlId)) ? `/prospects/${p.slug}/` : null, now: (p.currentLines && p.currentLines[0]) || (p.lastLines && p.lastLines[0]) || null }));
 ---
 <Base schema={[{ '@type': 'WebPage', '@id': 'https://wesandwoodward.com/', url: 'https://wesandwoodward.com/', name: 'Wes & Woodward', description: 'Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.', isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, about: { '@id': 'https://wesandwoodward.com/team/#team' } }]} title="Wes & Woodward — Detroit hockey, by the numbers" description="Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.">
   <section class="hero" aria-label="Detroit hockey, by the numbers">
