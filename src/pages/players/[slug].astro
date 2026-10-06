@@ -374,7 +374,9 @@ const RECENT = 10;
 
 <style>
   .kicker a { color: var(--mute); }
-  .head { display: grid; grid-template-columns: 380px minmax(0, 1fr) auto; gap: 36px; align-items: end; margin: 0 0 28px; }
+  /* the score box is capped so a long stand-in note wraps inside it instead of starving the bio column */
+  .head { display: grid; grid-template-columns: 380px minmax(220px, 1fr) minmax(0, 340px); gap: 36px; align-items: end; margin: 0 0 28px; }
+  .scorebox .range, .scorebox .split { white-space: normal; }
   .art { display: block; width: 380px; }
   .art img { width: 100%; height: auto; display: block; }
   .art.placeholder { aspect-ratio: 4 / 3; background: var(--ghost); border-radius: 3px; display: flex; align-items: flex-end; justify-content: flex-end; padding: 14px; color: var(--mute); font-size: 28px; }
