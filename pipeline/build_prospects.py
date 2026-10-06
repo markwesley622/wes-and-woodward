@@ -296,7 +296,7 @@ def summarise(nbrs):
     q = lambda f: ps[min(len(ps) - 1, int(f * len(ps)))]
     return {"n": len(nbrs), "expected": round(sum(peaks) / len(peaks), 1), "median": round(q(0.5), 1), "p75": round(q(0.75), 1), "p90": round(q(0.9), 1),
             "pRegular": round(sum(1 for n in nbrs if n["regular"]) / len(nbrs), 2), "pTopLine": round(sum(1 for n in nbrs if (n["peak"] or 0) >= 73) / len(nbrs), 2),
-            "pAboveAvg": round(sum(1 for n in nbrs if (n["peak"] or 0) >= 50) / len(nbrs), 2)}
+            "pAboveAvg": round(sum(1 for n in nbrs if (n["peak"] or 0) >= 50) / len(nbrs), 2), "pElite": round(sum(1 for n in nbrs if (n["peak"] or 0) >= 88) / len(nbrs), 2)}
 
 
 def ceiling(cohort, group, age, feature, coef, pick, pick_w):
@@ -315,7 +315,10 @@ def ceiling(cohort, group, age, feature, coef, pick, pick_w):
     pool.sort(key=lambda r: r["_d"])
     nbrs = pool[:K_NEIGHBOURS]
     s = summarise(nbrs)
-    s.update({"poolN": len(pool), "group": group, "age": age, "pickWeight": pick_w, "tier": tier(s["p75"]),
+    t = tier(s["p75"])
+    # share of the comparables who reached the ceiling tier or better, so "elite" never reads as the forecast
+    s.update({"poolN": len(pool), "group": group, "age": age, "pickWeight": pick_w, "tier": t,
+              "pCeiling": {"elite": s["pElite"], "top-line": s["pTopLine"], "above average": s["pAboveAvg"], "below average": round(sum(1 for n in nbrs if (n["peak"] or 0) >= 27) / len(nbrs), 2), "replacement level": s["pRegular"], "did not stick": 1.0}[t],
               "featureBand": [round(min(n["feature"] for n in nbrs), 3), round(max(n["feature"] for n in nbrs), 3)],
               "examples": [{"name": n["name"], "year": n["year"], "pick": n["pick"], "league": n["league"], "feature": n["feature"], "peak": n["peak"], "tier": tier(n["peak"]), "nhlGp": n["nhlGp"]} for n in nbrs[:8]]})
     return s

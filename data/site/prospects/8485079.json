@@ -278,11 +278,13 @@
   "pRegular": 0.1,
   "pTopLine": 0.02,
   "pAboveAvg": 0.02,
+  "pElite": 0.02,
   "poolN": 1305,
   "group": "F",
   "age": 19,
   "pickWeight": 0.5,
   "tier": "replacement level",
+  "pCeiling": 0.1,
   "featureBand": [
    0.081,
    0.104
@@ -379,6 +381,7 @@
   "pRegular": 0.16,
   "pTopLine": 0.04,
   "pAboveAvg": 0.07,
+  "pElite": 0.02,
   "band": "121-300",
   "group": "F"
  },

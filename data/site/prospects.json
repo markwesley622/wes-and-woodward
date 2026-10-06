@@ -172,11 +172,13 @@
     "pRegular": 0.8,
     "pTopLine": 0.36,
     "pAboveAvg": 0.56,
+    "pElite": 0.2,
     "poolN": 1362,
     "group": "F",
     "age": 18,
     "pickWeight": 1.0,
     "tier": "top-line",
+    "pCeiling": 0.36,
     "featureBand": [
      0.144,
      0.242
@@ -273,6 +275,7 @@
     "pRegular": 0.89,
     "pTopLine": 0.53,
     "pAboveAvg": 0.71,
+    "pElite": 0.35,
     "band": "6-15",
     "group": "F"
    },
@@ -696,11 +699,13 @@
     "pRegular": 0.86,
     "pTopLine": 0.3,
     "pAboveAvg": 0.54,
+    "pElite": 0.14,
     "poolN": 1305,
     "group": "F",
     "age": 19,
     "pickWeight": 0.5,
     "tier": "top-line",
+    "pCeiling": 0.3,
     "featureBand": [
      0.194,
      0.286
@@ -797,6 +802,7 @@
     "pRegular": 0.89,
     "pTopLine": 0.53,
     "pAboveAvg": 0.71,
+    "pElite": 0.35,
     "band": "6-15",
     "group": "F"
    },
@@ -992,11 +998,13 @@
     "pRegular": 0.8,
     "pTopLine": 0.42,
     "pAboveAvg": 0.62,
+    "pElite": 0.32,
     "poolN": 1374,
     "group": "F",
     "age": 17,
     "pickWeight": 1.0,
     "tier": "elite",
+    "pCeiling": 0.32,
     "featureBand": [
      0.151,
      0.226
@@ -1093,6 +1101,7 @@
     "pRegular": 0.72,
     "pTopLine": 0.28,
     "pAboveAvg": 0.44,
+    "pElite": 0.14,
     "band": "16-32",
     "group": "F"
    },
@@ -1436,11 +1445,13 @@
     "pRegular": 0.42,
     "pTopLine": 0.32,
     "pAboveAvg": 0.38,
+    "pElite": 0.28,
     "poolN": 225,
     "group": "G",
     "age": 20,
     "pickWeight": 0.5,
     "tier": "elite",
+    "pCeiling": 0.28,
     "featureBand": [
      -0.013,
      0.02
@@ -1537,6 +1548,7 @@
     "pRegular": 0.61,
     "pTopLine": 0.45,
     "pAboveAvg": 0.5,
+    "pElite": 0.29,
     "band": "33-64",
     "group": "G"
    },
@@ -1847,11 +1859,13 @@
     "pRegular": 0.7,
     "pTopLine": 0.24,
     "pAboveAvg": 0.44,
+    "pElite": 0.12,
     "poolN": 1362,
     "group": "F",
     "age": 18,
     "pickWeight": 1.0,
     "tier": "above average",
+    "pCeiling": 0.44,
     "featureBand": [
      0.204,
      0.328
@@ -1948,6 +1962,7 @@
     "pRegular": 0.5,
     "pTopLine": 0.09,
     "pAboveAvg": 0.23,
+    "pElite": 0.06,
     "band": "33-64",
     "group": "F"
    },
@@ -2260,11 +2275,13 @@
     "pRegular": 0.76,
     "pTopLine": 0.14,
     "pAboveAvg": 0.26,
+    "pElite": 0.06,
     "poolN": 1305,
     "group": "F",
     "age": 19,
     "pickWeight": 0.5,
     "tier": "above average",
+    "pCeiling": 0.26,
     "featureBand": [
      0.199,
      0.271
@@ -2361,6 +2378,7 @@
     "pRegular": 0.5,
     "pTopLine": 0.09,
     "pAboveAvg": 0.23,
+    "pElite": 0.06,
     "band": "33-64",
     "group": "F"
    },
@@ -2586,11 +2604,13 @@
     "pRegular": 0.42,
     "pTopLine": 0.28,
     "pAboveAvg": 0.36,
+    "pElite": 0.14,
     "poolN": 219,
     "group": "G",
     "age": 18,
     "pickWeight": 1.0,
     "tier": "top-line",
+    "pCeiling": 0.28,
     "featureBand": [
      -0.02,
      0.025
@@ -2687,6 +2707,7 @@
     "pRegular": 0.37,
     "pTopLine": 0.23,
     "pAboveAvg": 0.32,
+    "pElite": 0.16,
     "band": "65-120",
     "group": "G"
    },
@@ -2916,11 +2937,13 @@
     "pRegular": 0.4,
     "pTopLine": 0.24,
     "pAboveAvg": 0.34,
+    "pElite": 0.14,
     "poolN": 219,
     "group": "G",
     "age": 18,
     "pickWeight": 1.0,
     "tier": "above average",
+    "pCeiling": 0.34,
     "featureBand": [
      -0.02,
      0.024
@@ -3017,6 +3040,7 @@
     "pRegular": 0.37,
     "pTopLine": 0.23,
     "pAboveAvg": 0.32,
+    "pElite": 0.16,
     "band": "65-120",
     "group": "G"
    },
@@ -3388,11 +3412,13 @@
     "pRegular": 0.5,
     "pTopLine": 0.16,
     "pAboveAvg": 0.28,
+    "pElite": 0.06,
     "poolN": 1236,
     "group": "F",
     "age": 20,
     "pickWeight": 0.0,
     "tier": "above average",
+    "pCeiling": 0.28,
     "featureBand": [
      0.221,
      0.238
@@ -3489,6 +3515,7 @@
     "pRegular": 0.29,
     "pTopLine": 0.07,
     "pAboveAvg": 0.13,
+    "pElite": 0.02,
     "band": "65-120",
     "group": "F"
    },
@@ -3903,11 +3930,13 @@
     "pRegular": 0.46,
     "pTopLine": 0.12,
     "pAboveAvg": 0.28,
+    "pElite": 0.06,
     "poolN": 694,
     "group": "D",
     "age": 21,
     "pickWeight": 0.0,
     "tier": "above average",
+    "pCeiling": 0.28,
     "featureBand": [
      0.199,
      0.27
@@ -4004,6 +4033,7 @@
     "pRegular": 0.22,
     "pTopLine": 0.07,
     "pAboveAvg": 0.13,
+    "pElite": 0.03,
     "band": "65-120",
     "group": "D"
    },
@@ -4224,11 +4254,13 @@
     "pRegular": 0.46,
     "pTopLine": 0.04,
     "pAboveAvg": 0.16,
+    "pElite": 0.02,
     "poolN": 1374,
     "group": "F",
     "age": 17,
     "pickWeight": 1.0,
     "tier": "below average",
+    "pCeiling": 0.3,
     "featureBand": [
      0.092,
      0.126
@@ -4325,6 +4357,7 @@
     "pRegular": 0.5,
     "pTopLine": 0.09,
     "pAboveAvg": 0.23,
+    "pElite": 0.06,
     "band": "33-64",
     "group": "F"
    },
@@ -4641,11 +4674,13 @@
     "pRegular": 0.3,
     "pTopLine": 0.12,
     "pAboveAvg": 0.22,
+    "pElite": 0.06,
     "poolN": 1236,
     "group": "F",
     "age": 20,
     "pickWeight": 0.0,
     "tier": "below average",
+    "pCeiling": 0.28,
     "featureBand": [
      0.184,
      0.194
@@ -4742,6 +4777,7 @@
     "pRegular": 0.29,
     "pTopLine": 0.07,
     "pAboveAvg": 0.13,
+    "pElite": 0.02,
     "band": "65-120",
     "group": "F"
    },
@@ -4990,11 +5026,13 @@
     "pRegular": 0.34,
     "pTopLine": 0.06,
     "pAboveAvg": 0.16,
+    "pElite": 0.0,
     "poolN": 756,
     "group": "D",
     "age": 20,
     "pickWeight": 0.0,
     "tier": "below average",
+    "pCeiling": 0.26,
     "featureBand": [
      0.097,
      0.107
@@ -5091,6 +5129,7 @@
     "pRegular": 0.22,
     "pTopLine": 0.07,
     "pAboveAvg": 0.13,
+    "pElite": 0.03,
     "band": "65-120",
     "group": "D"
    },
@@ -5295,11 +5334,13 @@
     "pRegular": 0.34,
     "pTopLine": 0.04,
     "pAboveAvg": 0.1,
+    "pElite": 0.0,
     "poolN": 1362,
     "group": "F",
     "age": 18,
     "pickWeight": 1.0,
     "tier": "below average",
+    "pCeiling": 0.28,
     "featureBand": [
      0.129,
      0.16
@@ -5396,6 +5437,7 @@
     "pRegular": 0.29,
     "pTopLine": 0.07,
     "pAboveAvg": 0.13,
+    "pElite": 0.02,
     "band": "65-120",
     "group": "F"
    },
@@ -5612,11 +5654,13 @@
     "pRegular": 0.16,
     "pTopLine": 0.12,
     "pAboveAvg": 0.14,
+    "pElite": 0.12,
     "poolN": 225,
     "group": "G",
     "age": 20,
     "pickWeight": 0.5,
     "tier": "replacement level",
+    "pCeiling": 0.16,
     "featureBand": [
      -0.011,
      0.037
@@ -5713,6 +5757,7 @@
     "pRegular": 0.16,
     "pTopLine": 0.06,
     "pAboveAvg": 0.09,
+    "pElite": 0.05,
     "band": "121-300",
     "group": "G"
    },
@@ -5939,11 +5984,13 @@
     "pRegular": 0.28,
     "pTopLine": 0.04,
     "pAboveAvg": 0.08,
+    "pElite": 0.02,
     "poolN": 1122,
     "group": "F",
     "age": 21,
     "pickWeight": 0.5,
     "tier": "replacement level",
+    "pCeiling": 0.28,
     "featureBand": [
      0.152,
      0.204
@@ -6040,6 +6087,7 @@
     "pRegular": 0.29,
     "pTopLine": 0.07,
     "pAboveAvg": 0.13,
+    "pElite": 0.02,
     "band": "65-120",
     "group": "F"
    },
@@ -6173,11 +6221,13 @@
     "pRegular": 0.24,
     "pTopLine": 0.06,
     "pAboveAvg": 0.14,
+    "pElite": 0.04,
     "poolN": 1374,
     "group": "F",
     "age": 17,
     "pickWeight": 1.0,
     "tier": "replacement level",
+    "pCeiling": 0.24,
     "featureBand": [
      0.087,
      0.114
@@ -6274,6 +6324,7 @@
     "pRegular": 0.16,
     "pTopLine": 0.04,
     "pAboveAvg": 0.07,
+    "pElite": 0.02,
     "band": "121-300",
     "group": "F"
    },
@@ -6458,11 +6509,13 @@
     "pRegular": 0.22,
     "pTopLine": 0.0,
     "pAboveAvg": 0.02,
+    "pElite": 0.0,
     "poolN": 1374,
     "group": "F",
     "age": 17,
     "pickWeight": 1.0,
     "tier": "replacement level",
+    "pCeiling": 0.22,
     "featureBand": [
      0.091,
      0.117
@@ -6559,6 +6612,7 @@
     "pRegular": 0.29,
     "pTopLine": 0.07,
     "pAboveAvg": 0.13,
+    "pElite": 0.02,
     "band": "65-120",
     "group": "F"
    },
@@ -6904,11 +6958,13 @@
     "pRegular": 0.2,
     "pTopLine": 0.02,
     "pAboveAvg": 0.04,
+    "pElite": 0.0,
     "poolN": 1362,
     "group": "F",
     "age": 18,
     "pickWeight": 1.0,
     "tier": "replacement level",
+    "pCeiling": 0.2,
     "featureBand": [
      0.04,
      0.075
@@ -7005,6 +7061,7 @@
     "pRegular": 0.29,
     "pTopLine": 0.07,
     "pAboveAvg": 0.13,
+    "pElite": 0.02,
     "band": "65-120",
     "group": "F"
    },
@@ -7310,11 +7367,13 @@
     "pRegular": 0.26,
     "pTopLine": 0.06,
     "pAboveAvg": 0.06,
+    "pElite": 0.02,
     "poolN": 1122,
     "group": "F",
     "age": 21,
     "pickWeight": 0.0,
     "tier": "replacement level",
+    "pCeiling": 0.26,
     "featureBand": [
      0.16,
      0.172
@@ -7411,6 +7470,7 @@
     "pRegular": 0.5,
     "pTopLine": 0.09,
     "pAboveAvg": 0.23,
+    "pElite": 0.06,
     "band": "33-64",
     "group": "F"
    },
@@ -7654,11 +7714,13 @@
     "pRegular": 0.2,
     "pTopLine": 0.06,
     "pAboveAvg": 0.06,
+    "pElite": 0.02,
     "poolN": 1374,
     "group": "F",
     "age": 17,
     "pickWeight": 1.0,
     "tier": "replacement level",
+    "pCeiling": 0.2,
     "featureBand": [
      0.046,
      0.06
@@ -7755,6 +7817,7 @@
     "pRegular": 0.16,
     "pTopLine": 0.04,
     "pAboveAvg": 0.07,
+    "pElite": 0.02,
     "band": "121-300",
     "group": "F"
    },
@@ -8000,11 +8063,13 @@
     "pRegular": 0.1,
     "pTopLine": 0.04,
     "pAboveAvg": 0.1,
+    "pElite": 0.0,
     "poolN": 835,
     "group": "D",
     "age": 17,
     "pickWeight": 1.0,
     "tier": "replacement level",
+    "pCeiling": 0.1,
     "featureBand": [
      0.029,
      0.044
@@ -8101,6 +8166,7 @@
     "pRegular": 0.15,
     "pTopLine": 0.03,
     "pAboveAvg": 0.07,
+    "pElite": 0.01,
     "band": "121-300",
     "group": "D"
    },
@@ -8409,11 +8475,13 @@
     "pRegular": 0.14,
     "pTopLine": 0.0,
     "pAboveAvg": 0.06,
+    "pElite": 0.0,
     "poolN": 794,
     "group": "D",
     "age": 19,
     "pickWeight": 0.5,
     "tier": "replacement level",
+    "pCeiling": 0.14,
     "featureBand": [
      0.022,
      0.044
@@ -8510,6 +8578,7 @@
     "pRegular": 0.15,
     "pTopLine": 0.03,
     "pAboveAvg": 0.07,
+    "pElite": 0.01,
     "band": "121-300",
     "group": "D"
    },
@@ -8666,11 +8735,13 @@
     "pRegular": 0.08,
     "pTopLine": 0.0,
     "pAboveAvg": 0.06,
+    "pElite": 0.0,
     "poolN": 837,
     "group": "D",
     "age": 18,
     "pickWeight": 1.0,
     "tier": "replacement level",
+    "pCeiling": 0.08,
     "featureBand": [
      0.014,
      0.033
@@ -8767,6 +8838,7 @@
     "pRegular": 0.15,
     "pTopLine": 0.03,
     "pAboveAvg": 0.07,
+    "pElite": 0.01,
     "band": "121-300",
     "group": "D"
    },
@@ -8993,11 +9065,13 @@
     "pRegular": 0.1,
     "pTopLine": 0.02,
     "pAboveAvg": 0.06,
+    "pElite": 0.0,
     "poolN": 794,
     "group": "D",
     "age": 19,
     "pickWeight": 0.5,
     "tier": "replacement level",
+    "pCeiling": 0.1,
     "featureBand": [
      0.005,
      0.03
@@ -9094,6 +9168,7 @@
     "pRegular": 0.15,
     "pTopLine": 0.03,
     "pAboveAvg": 0.07,
+    "pElite": 0.01,
     "band": "121-300",
     "group": "D"
    },
@@ -9250,11 +9325,13 @@
     "pRegular": 0.06,
     "pTopLine": 0.0,
     "pAboveAvg": 0.0,
+    "pElite": 0.0,
     "poolN": 1362,
     "group": "F",
     "age": 18,
     "pickWeight": 1.0,
     "tier": "replacement level",
+    "pCeiling": 0.06,
     "featureBand": [
      0.007,
      0.059
@@ -9351,6 +9428,7 @@
     "pRegular": 0.16,
     "pTopLine": 0.04,
     "pAboveAvg": 0.07,
+    "pElite": 0.02,
     "band": "121-300",
     "group": "F"
    },
@@ -9665,11 +9743,13 @@
     "pRegular": 0.1,
     "pTopLine": 0.02,
     "pAboveAvg": 0.02,
+    "pElite": 0.02,
     "poolN": 1305,
     "group": "F",
     "age": 19,
     "pickWeight": 0.5,
     "tier": "replacement level",
+    "pCeiling": 0.1,
     "featureBand": [
      0.081,
      0.104
@@ -9766,6 +9846,7 @@
     "pRegular": 0.16,
     "pTopLine": 0.04,
     "pAboveAvg": 0.07,
+    "pElite": 0.02,
     "band": "121-300",
     "group": "F"
    },
@@ -9992,11 +10073,13 @@
     "pRegular": 0.08,
     "pTopLine": 0.0,
     "pAboveAvg": 0.04,
+    "pElite": 0.0,
     "poolN": 756,
     "group": "D",
     "age": 20,
     "pickWeight": 0.5,
     "tier": "replacement level",
+    "pCeiling": 0.08,
     "featureBand": [
      0.056,
      0.092
@@ -10093,6 +10176,7 @@
     "pRegular": 0.15,
     "pTopLine": 0.03,
     "pAboveAvg": 0.07,
+    "pElite": 0.01,
     "band": "121-300",
     "group": "D"
    },
@@ -10341,11 +10425,13 @@
     "pRegular": 0.16,
     "pTopLine": 0.0,
     "pAboveAvg": 0.0,
+    "pElite": 0.0,
     "poolN": 1006,
     "group": "F",
     "age": 22,
     "pickWeight": 0.0,
     "tier": "replacement level",
+    "pCeiling": 0.16,
     "featureBand": [
      0.161,
      0.175
@@ -10442,6 +10528,7 @@
     "pRegular": 0.16,
     "pTopLine": 0.04,
     "pAboveAvg": 0.07,
+    "pElite": 0.02,
     "band": "121-300",
     "group": "F"
    },
@@ -10668,11 +10755,13 @@
     "pRegular": 0.02,
     "pTopLine": 0.0,
     "pAboveAvg": 0.0,
+    "pElite": 0.0,
     "poolN": 1305,
     "group": "F",
     "age": 19,
     "pickWeight": 0.5,
     "tier": "replacement level",
+    "pCeiling": 0.02,
     "featureBand": [
      0.0,
      0.055
@@ -10769,6 +10858,7 @@
     "pRegular": 0.16,
     "pTopLine": 0.04,
     "pAboveAvg": 0.07,
+    "pElite": 0.02,
     "band": "121-300",
     "group": "F"
    },
@@ -11121,11 +11211,13 @@
     "pRegular": 0.04,
     "pTopLine": 0.02,
     "pAboveAvg": 0.02,
+    "pElite": 0.02,
     "poolN": 1236,
     "group": "F",
     "age": 20,
     "pickWeight": 0.0,
     "tier": "replacement level",
+    "pCeiling": 0.04,
     "featureBand": [
      0.042,
      0.057
@@ -11222,6 +11314,7 @@
     "pRegular": 0.16,
     "pTopLine": 0.04,
     "pAboveAvg": 0.07,
+    "pElite": 0.02,
     "band": "121-300",
     "group": "F"
    },
@@ -11444,11 +11537,13 @@
     "pRegular": 0.04,
     "pTopLine": 0.0,
     "pAboveAvg": 0.0,
+    "pElite": 0.0,
     "poolN": 1122,
     "group": "F",
     "age": 21,
     "pickWeight": 0.0,
     "tier": "replacement level",
+    "pCeiling": 0.04,
     "featureBand": [
      0.079,
      0.087
@@ -11545,6 +11640,7 @@
     "pRegular": 0.16,
     "pTopLine": 0.04,
     "pAboveAvg": 0.07,
+    "pElite": 0.02,
     "band": "121-300",
     "group": "F"
    },
@@ -11832,11 +11928,13 @@
     "pRegular": 0.02,
     "pTopLine": 0.0,
     "pAboveAvg": 0.0,
+    "pElite": 0.0,
     "poolN": 1122,
     "group": "F",
     "age": 21,
     "pickWeight": 0.0,
     "tier": "replacement level",
+    "pCeiling": 0.02,
     "featureBand": [
      0.048,
      0.062
@@ -11933,6 +12031,7 @@
     "pRegular": 0.16,
     "pTopLine": 0.04,
     "pAboveAvg": 0.07,
+    "pElite": 0.02,
     "band": "121-300",
     "group": "F"
    },
@@ -12181,11 +12280,13 @@
     "pRegular": 0.02,
     "pTopLine": 0.0,
     "pAboveAvg": 0.0,
+    "pElite": 0.0,
     "poolN": 756,
     "group": "D",
     "age": 20,
     "pickWeight": 0.0,
     "tier": "replacement level",
+    "pCeiling": 0.02,
     "featureBand": [
      0.0,
      0.023
@@ -12282,6 +12383,7 @@
     "pRegular": 0.48,
     "pTopLine": 0.13,
     "pAboveAvg": 0.27,
+    "pElite": 0.08,
     "band": "33-64",
     "group": "D"
    },
@@ -12530,11 +12632,13 @@
     "pRegular": 0.0,
     "pTopLine": 0.0,
     "pAboveAvg": 0.0,
+    "pElite": 0.0,
     "poolN": 694,
     "group": "D",
     "age": 21,
     "pickWeight": 0.0,
     "tier": "replacement level",
+    "pCeiling": 0.0,
     "featureBand": [
      0.042,
      0.052
@@ -12631,6 +12735,7 @@
     "pRegular": 0.15,
     "pTopLine": 0.03,
     "pAboveAvg": 0.07,
+    "pElite": 0.01,
     "band": "121-300",
     "group": "D"
    },
