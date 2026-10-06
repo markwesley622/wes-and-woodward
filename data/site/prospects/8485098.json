@@ -10,6 +10,7 @@
  "height": "6'0\"",
  "weight": 190,
  "shoots": "L",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 2,
    "pm": 0,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
   }
@@ -50,8 +56,81 @@
    "pts": 1,
    "pm": 0,
    "pim": 15,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Miami Univ. (Ohio)",
+     "gp": 2,
+     "g": 1,
+     "a": 1,
+     "pts": 2,
+     "pm": 0,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Michigan State Univ.",
+     "gp": 14,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": 0,
+     "pim": 15,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "USHL",
+     "team": "Sioux Falls Stampede",
+     "gp": 56,
+     "g": 10,
+     "a": 21,
+     "pts": 31,
+     "pm": 11,
+     "pim": 19,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.143,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -71,7 +150,8 @@
   "nhle82": 1.1,
   "lines": [
    "NCAA"
-  ]
+  ],
+  "feature": 0.014
  },
  "league": {
   "name": "NCAA",
@@ -84,10 +164,9 @@
    "league": "ncaa",
    "season": "2025-2026",
    "ageBucket": "U20",
-   "exactAge": 19,
    "cohortN": 49,
    "gp": 14,
-   "pgp": 0.071,
+   "value": 0.0714,
    "percentile": 0.0,
    "percentileAllAges": 4.0,
    "allAgesN": 3059
@@ -111,14 +190,14 @@
   "pRegular": 0.02,
   "pTopLine": 0.0,
   "pAboveAvg": 0.0,
-  "poolN": 1308,
+  "poolN": 1305,
   "group": "F",
   "age": 19,
+  "pickWeight": 0.5,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
+  "featureBand": [
    0.0,
-   0.06
+   0.055
   ],
   "examples": [
    {
@@ -126,7 +205,7 @@
     "year": 2012,
     "pick": 200,
     "league": "J20 SuperElit",
-    "nhle": 0.013,
+    "feature": 0.013,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -136,7 +215,7 @@
     "year": 2014,
     "pick": 191,
     "league": "NCAA",
-    "nhle": 0.013,
+    "feature": 0.013,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -146,7 +225,7 @@
     "year": 2009,
     "pick": 202,
     "league": "NCAA",
-    "nhle": 0.022,
+    "feature": 0.022,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -156,7 +235,7 @@
     "year": 2011,
     "pick": 176,
     "league": "NCAA",
-    "nhle": 0.013,
+    "feature": 0.013,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -166,7 +245,7 @@
     "year": 2018,
     "pick": 216,
     "league": "NCAA",
-    "nhle": 0.023,
+    "feature": 0.023,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -176,7 +255,7 @@
     "year": 2009,
     "pick": 174,
     "league": "QMJHL",
-    "nhle": 0.019,
+    "feature": 0.019,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -186,7 +265,7 @@
     "year": 2012,
     "pick": 178,
     "league": "NCAA",
-    "nhle": 0.007,
+    "feature": 0.007,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -196,7 +275,7 @@
     "year": 2010,
     "pick": 203,
     "league": "NCAA",
-    "nhle": 0.0,
+    "feature": 0.0,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -215,27 +294,34 @@
   "band": "121-300",
   "group": "F"
  },
+ "blend": {
+  "w": 0.25,
+  "sinceDraft": 1,
+  "pedigreeExpected": 7.5,
+  "cohortExpected": 0.1,
+  "expected": 1.9,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "USHL",
-   "nhle": 0.079,
+   "feature": 0.079,
    "gp": 56
   },
   "to": {
    "season": "2025-2026",
    "league": "NCAA",
-   "nhle": 0.014,
+   "feature": 0.014,
    "gp": 14
   },
   "delta": -0.065
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
   "gp": 14,
   "season": "2025-2026"
  },
- "rank": 29,
- "score": 0.1
+ "rank": 30,
+ "score": 1.9
 }

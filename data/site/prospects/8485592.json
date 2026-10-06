@@ -10,6 +10,7 @@
  "height": "5'11\"",
  "weight": 190,
  "shoots": "L",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 3,
    "pm": 0,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.144,
    "status": "rostered"
   }
@@ -50,6 +56,11 @@
    "pts": 0,
    "pm": -2,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.566,
    "status": "rostered"
   },
@@ -62,6 +73,11 @@
    "pts": 18,
    "pm": 8,
    "pim": 31,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.091,
    "status": "rostered"
   },
@@ -74,6 +90,11 @@
    "pts": 0,
    "pm": -4,
    "pim": 4,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.351,
    "status": "rostered"
   },
@@ -86,6 +107,11 @@
    "pts": 4,
    "pm": null,
    "pim": 2,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": null,
    "status": "rostered"
   },
@@ -98,8 +124,127 @@
    "pts": 2,
    "pm": -2,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.269,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "OHL",
+     "team": "Windsor Spitfires",
+     "gp": 7,
+     "g": 1,
+     "a": 2,
+     "pts": 3,
+     "pm": 0,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.144,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "SHL",
+     "team": "Bryn\u00e4s IF",
+     "gp": 12,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -2,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.566,
+     "status": "rostered"
+    },
+    {
+     "league": "U20 Nationell",
+     "team": "Bryn\u00e4s IF U20",
+     "gp": 11,
+     "g": 6,
+     "a": 12,
+     "pts": 18,
+     "pm": 8,
+     "pim": 31,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.091,
+     "status": "rostered"
+    },
+    {
+     "league": "HockeyAllsvenskan",
+     "team": "V\u00e4ster\u00e5s IK",
+     "gp": 10,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -4,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.351,
+     "status": "rostered"
+    },
+    {
+     "league": "International-Jr",
+     "team": "Slovakia U20 (all)",
+     "gp": 10,
+     "g": 2,
+     "a": 2,
+     "pts": 4,
+     "pm": null,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
+     "status": "rostered"
+    },
+    {
+     "league": "WJC-20",
+     "team": "Slovakia U20",
+     "gp": 5,
+     "g": 1,
+     "a": 1,
+     "pts": 2,
+     "pm": -2,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.269,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -122,7 +267,8 @@
    "SHL",
    "HockeyAllsvenskan",
    "WJC-20"
-  ]
+  ],
+  "feature": 0.057
  },
  "league": {
   "name": "SHL",
@@ -135,10 +281,9 @@
    "league": "shl",
    "season": "2025-2026",
    "ageBucket": "U19",
-   "exactAge": 18,
    "cohortN": 17,
    "gp": 12,
-   "pgp": 0.0,
+   "value": 0.0,
    "percentile": 0.0,
    "percentileAllAges": 0.0,
    "allAgesN": 378
@@ -147,10 +292,9 @@
    "league": "ohl",
    "season": "2026-2027",
    "ageBucket": "U20",
-   "exactAge": 19,
    "cohortN": 71,
    "gp": 7,
-   "pgp": 0.429,
+   "value": 0.4286,
    "percentile": 32.4,
    "percentileAllAges": 42.3,
    "allAgesN": 1774
@@ -158,21 +302,21 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 7.5,
+  "expected": 5.9,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 37.6,
-  "pRegular": 0.22,
-  "pTopLine": 0.04,
-  "pAboveAvg": 0.06,
-  "poolN": 1364,
+  "p90": 37.3,
+  "pRegular": 0.2,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.04,
+  "poolN": 1362,
   "group": "F",
   "age": 18,
+  "pickWeight": 1.0,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.05,
-   0.07
+  "featureBand": [
+   0.04,
+   0.075
   ],
   "examples": [
    {
@@ -180,17 +324,7 @@
     "year": 2011,
     "pick": 120,
     "league": "J20 SuperElit",
-    "nhle": 0.057,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Luke Stevens",
-    "year": 2015,
-    "pick": 126,
-    "league": "USHS-Prep",
-    "nhle": 0.055,
+    "feature": 0.057,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -200,7 +334,17 @@
     "year": 2019,
     "pick": 116,
     "league": "J20 SuperElit",
-    "nhle": 0.061,
+    "feature": 0.061,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Luke Stevens",
+    "year": 2015,
+    "pick": 126,
+    "league": "USHS-Prep",
+    "feature": 0.055,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -210,47 +354,47 @@
     "year": 2016,
     "pick": 116,
     "league": "AJHL",
-    "nhle": 0.062,
+    "feature": 0.062,
     "peak": 0.3,
     "tier": "replacement level",
     "nhlGp": 41
    },
    {
-    "name": "Thomas Di Pauli",
-    "year": 2012,
-    "pick": 100,
-    "league": "NCAA",
-    "nhle": 0.057,
+    "name": "Nick Petersen",
+    "year": 2009,
+    "pick": 121,
+    "league": "QMJHL",
+    "feature": 0.064,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 2
+    "nhlGp": 0
    },
    {
     "name": "Sam Lafferty",
     "year": 2014,
     "pick": 113,
     "league": "USHS-Prep",
-    "nhle": 0.062,
+    "feature": 0.062,
     "peak": 41.6,
     "tier": "below average",
     "nhlGp": 378
    },
    {
-    "name": "Jasper Weatherby",
-    "year": 2018,
-    "pick": 102,
-    "league": "BCHL",
-    "nhle": 0.056,
-    "peak": 10.6,
+    "name": "Max Willman",
+    "year": 2014,
+    "pick": 121,
+    "league": "USHS-Prep",
+    "feature": 0.049,
+    "peak": 3.7,
     "tier": "replacement level",
-    "nhlGp": 50
+    "nhlGp": 68
    },
    {
     "name": "Lane MacDermid",
     "year": 2009,
     "pick": 112,
     "league": "OHL",
-    "nhle": 0.052,
+    "feature": 0.052,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 21
@@ -269,27 +413,34 @@
   "band": "65-120",
   "group": "F"
  },
+ "blend": {
+  "w": 0.5,
+  "sinceDraft": 0,
+  "pedigreeExpected": 13.4,
+  "cohortExpected": 5.9,
+  "expected": 9.7,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "J20 Nationell",
-   "nhle": 0.092,
-   "gp": 54
+   "feature": 0.092,
+   "gp": 30
   },
   "to": {
    "season": "2025-2026",
    "league": "SHL",
-   "nhle": 0.057,
-   "gp": 38
+   "feature": 0.057,
+   "gp": 12
   },
   "delta": -0.035
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
-  "gp": 38,
+  "gp": 12,
   "season": "2025-2026"
  },
- "rank": 14,
- "score": 7.5
+ "rank": 19,
+ "score": 9.7
 }

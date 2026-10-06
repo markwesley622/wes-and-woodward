@@ -1,0 +1,330 @@
+{
+ "epId": "878267",
+ "nhlId": 8486080,
+ "name": "Michal Orsulak",
+ "slug": "michal-orsulak",
+ "group": "G",
+ "position": "G",
+ "birthDate": "2007-08-26",
+ "age": 19,
+ "height": "6'4\"",
+ "weight": 220,
+ "shoots": null,
+ "catches": "R",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2026,
+  "overall": 79,
+  "round": 3
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+0",
+  "draftYear": 2026,
+  "onNhlRoster": false
+ },
+ "scouting": null,
+ "currentLines": [
+  {
+   "league": "WHL",
+   "team": "Prince Albert Raiders",
+   "gp": 5,
+   "g": null,
+   "a": null,
+   "pts": null,
+   "pm": null,
+   "pim": null,
+   "gaa": "3.26",
+   "svp": ".889",
+   "w": 2,
+   "l": 3,
+   "so": 0,
+   "coef": 0.141,
+   "status": "rostered"
+  },
+  {
+   "league": "International-Jr",
+   "team": "Czechia U20 (all)",
+   "gp": 2,
+   "g": null,
+   "a": null,
+   "pts": null,
+   "pm": null,
+   "pim": null,
+   "gaa": "2.52",
+   "svp": ".889",
+   "w": 1,
+   "l": 1,
+   "so": 0,
+   "coef": null,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "WHL",
+   "team": "Prince Albert Raiders",
+   "gp": 36,
+   "g": null,
+   "a": null,
+   "pts": null,
+   "pm": null,
+   "pim": null,
+   "gaa": "2.22",
+   "svp": ".907",
+   "w": 28,
+   "l": 4,
+   "so": 4,
+   "coef": 0.141,
+   "status": "rostered"
+  },
+  {
+   "league": "International-Jr",
+   "team": "Czechia U20 (all)",
+   "gp": 6,
+   "g": null,
+   "a": null,
+   "pts": null,
+   "pm": null,
+   "pim": null,
+   "gaa": "2.82",
+   "svp": ".887",
+   "w": 4,
+   "l": 2,
+   "so": 0,
+   "coef": null,
+   "status": "rostered"
+  },
+  {
+   "league": "WJC-20",
+   "team": "Czechia U20",
+   "gp": 5,
+   "g": null,
+   "a": null,
+   "pts": null,
+   "pm": null,
+   "pim": null,
+   "gaa": "3.19",
+   "svp": ".874",
+   "w": 3,
+   "l": 2,
+   "so": 0,
+   "coef": 0.269,
+   "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "WHL",
+     "team": "Prince Albert Raiders",
+     "gp": 5,
+     "g": null,
+     "a": null,
+     "pts": null,
+     "pm": null,
+     "pim": null,
+     "gaa": "3.26",
+     "svp": ".889",
+     "w": 2,
+     "l": 3,
+     "so": 0,
+     "coef": 0.141,
+     "status": "rostered"
+    },
+    {
+     "league": "International-Jr",
+     "team": "Czechia U20 (all)",
+     "gp": 2,
+     "g": null,
+     "a": null,
+     "pts": null,
+     "pm": null,
+     "pim": null,
+     "gaa": "2.52",
+     "svp": ".889",
+     "w": 1,
+     "l": 1,
+     "so": 0,
+     "coef": null,
+     "status": "rostered"
+    }
+   ]
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "WHL",
+  "leagueSlug": "whl",
+  "table": "WHL",
+  "coef": 0.141,
+  "team": "Prince Albert Raiders",
+  "gp": 36,
+  "lineGp": 36,
+  "svp": 0.9068,
+  "gaa": "2.22",
+  "w": 28,
+  "l": 4,
+  "so": 4,
+  "leagueSvp": 0.8939,
+  "leagueN": 49,
+  "svDelta": 0.0129,
+  "feature": 0.0129,
+  "feature1": 0.0129,
+  "featureSeasons": 1
+ },
+ "league": {
+  "name": "WHL",
+  "table": "WHL",
+  "coef": 0.141,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "whl",
+   "season": "2025-2026",
+   "ageBucket": "U19",
+   "cohortN": 18,
+   "gp": 36,
+   "value": 0.9068,
+   "percentile": 83.3,
+   "percentileAllAges": 87.8,
+   "allAgesN": 335
+  },
+  "current": null
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 28.2,
+  "median": 0.0,
+  "p75": 68.6,
+  "p90": 92.2,
+  "pRegular": 0.4,
+  "pTopLine": 0.24,
+  "pAboveAvg": 0.34,
+  "poolN": 219,
+  "group": "G",
+  "age": 18,
+  "pickWeight": 1.0,
+  "tier": "above average",
+  "featureBand": [
+   -0.02,
+   0.024
+  ],
+  "examples": [
+   {
+    "name": "Adin Hill",
+    "year": 2015,
+    "pick": 76,
+    "league": "WHL",
+    "feature": 0.0112,
+    "peak": 75.0,
+    "tier": "top-line",
+    "nhlGp": 214
+   },
+   {
+    "name": "Dan Vlada\u0159",
+    "year": 2015,
+    "pick": 75,
+    "league": "USHL",
+    "feature": 0.0125,
+    "peak": 74.3,
+    "tier": "top-line",
+    "nhlGp": 159
+   },
+   {
+    "name": "Michael Hutchinson",
+    "year": 2008,
+    "pick": 77,
+    "league": "OHL",
+    "feature": 0.0095,
+    "peak": 46.4,
+    "tier": "below average",
+    "nhlGp": 154
+   },
+   {
+    "name": "Stuart Skinner",
+    "year": 2017,
+    "pick": 78,
+    "league": "WHL",
+    "feature": 0.0024,
+    "peak": 73.6,
+    "tier": "top-line",
+    "nhlGp": 226
+   },
+   {
+    "name": "Lukas Parik",
+    "year": 2019,
+    "pick": 87,
+    "league": "WHL",
+    "feature": 0.0145,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ilya Konovalov",
+    "year": 2019,
+    "pick": 85,
+    "league": "MHL",
+    "feature": 0.0098,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Scott Wedgewood",
+    "year": 2010,
+    "pick": 84,
+    "league": "OHL",
+    "feature": 0.0086,
+    "peak": 100.0,
+    "tier": "elite",
+    "nhlGp": 199
+   },
+   {
+    "name": "Chris Driedger",
+    "year": 2012,
+    "pick": 76,
+    "league": "WHL",
+    "feature": 0.0039,
+    "peak": 93.8,
+    "tier": "elite",
+    "nhlGp": 67
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 73,
+  "expected": 27.2,
+  "median": 0.0,
+  "p75": 65.7,
+  "p90": 94.4,
+  "pRegular": 0.37,
+  "pTopLine": 0.23,
+  "pAboveAvg": 0.32,
+  "band": "65-120",
+  "group": "G"
+ },
+ "blend": {
+  "w": 0.5,
+  "sinceDraft": -1,
+  "pedigreeExpected": 27.2,
+  "cohortExpected": 28.2,
+  "expected": 27.7,
+  "tier": "below average"
+ },
+ "trajectory": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 36,
+  "season": "2025-2026"
+ },
+ "rank": 8,
+ "score": 27.7
+}

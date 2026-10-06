@@ -13,9 +13,13 @@ ROOT = Path(__file__).resolve().parent.parent
 EP = ROOT / "data" / "raw" / "ep"
 SERVER = "http://127.0.0.1:8765"
 LEAGUES = ["ahl", "ncaa", "shl", "ushl", "whl", "ohl", "qmjhl", "hockeyallsvenskan", "del", "liiga", "khl", "mhl", "nl", "vhl", "u20-nationell", "echl", "del2"]
-SEASONS = sys.argv[1:] or ["2025-2026", "2026-2027"]
-POS = ["F", "D"]
-AGES = [f"U{a}" for a in range(17, 26)]
+ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
+GOALIES = "--goalies" in sys.argv            # goalie tab instead of skaters (pos key "G"); --all-ages skips the age split
+ALL_AGES = "--all-ages" in sys.argv
+if "--leagues" in sys.argv: LEAGUES = sys.argv[sys.argv.index("--leagues") + 1].split(",")
+SEASONS = ARGS or ["2025-2026", "2026-2027"]
+POS = ["G"] if GOALIES else ["F", "D"]
+AGES = ["all"] if ALL_AGES else [f"U{a}" for a in range(17, 26)]
 
 
 def key(lg, se, pos, age, page):
@@ -23,7 +27,8 @@ def key(lg, se, pos, age, page):
 
 
 def url(lg, se, pos, age, page):
-    return f"https://www.eliteprospects.com/league/{lg}/stats/{se}?position={pos}&age={age}" + (f"&page={page}" if page > 1 else "")
+    q = ("tab=goalies" if pos == "G" else f"position={pos}") + ("" if age == "all" else f"&age={age}") + (f"&page={page}" if page > 1 else "")
+    return f"https://www.eliteprospects.com/league/{lg}/stats/{se}?{q}"
 
 
 def enqueue(tasks):

@@ -10,6 +10,7 @@
  "height": "6'1\"",
  "weight": 190,
  "shoots": "L",
+ "catches": null,
  "contract": "28/29",
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 1,
    "pm": -1,
    "pim": 2,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.328,
    "status": "rostered"
   }
@@ -50,6 +56,11 @@
    "pts": 29,
    "pm": 15,
    "pim": 40,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.143,
    "status": "rostered"
   },
@@ -62,6 +73,11 @@
    "pts": 0,
    "pm": -1,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.772,
    "status": "rostered"
   },
@@ -74,6 +90,11 @@
    "pts": 1,
    "pm": -2,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.143,
    "status": "rostered"
   },
@@ -86,8 +107,110 @@
    "pts": 0,
    "pm": 0,
    "pim": 2,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.328,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "VHL",
+     "team": "Khimik Voskresensk",
+     "gp": 10,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": -1,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.328,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "MHL",
+     "team": "MHK Spartak Moskva",
+     "gp": 48,
+     "g": 4,
+     "a": 25,
+     "pts": 29,
+     "pm": 15,
+     "pim": 40,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.143,
+     "status": "rostered"
+    },
+    {
+     "league": "KHL",
+     "team": "Spartak Moskva",
+     "gp": 7,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.772,
+     "status": "rostered"
+    },
+    {
+     "league": "MHL",
+     "team": "MHK Spartak-MAH Moskva",
+     "gp": 4,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": -2,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.143,
+     "status": "rostered"
+    },
+    {
+     "league": "VHL",
+     "team": "Khimik Voskresensk",
+     "gp": 1,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": 0,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.328,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -107,7 +230,8 @@
   "nhle82": 2.7,
   "lines": [
    "VHL"
-  ]
+  ],
+  "feature": 0.033
  },
  "league": {
   "name": "VHL",
@@ -120,10 +244,9 @@
    "league": "mhl",
    "season": "2025-2026",
    "ageBucket": "U19",
-   "exactAge": 18,
    "cohortN": 125,
    "gp": 52,
-   "pgp": 0.577,
+   "value": 0.5769,
    "percentile": 94.4,
    "percentileAllAges": 96.7,
    "allAgesN": 2781
@@ -132,10 +255,9 @@
    "league": "vhl",
    "season": "2026-2027",
    "ageBucket": "U20",
-   "exactAge": 19,
    "cohortN": 12,
    "gp": 10,
-   "pgp": 0.1,
+   "value": 0.1,
    "percentile": 50.0,
    "percentileAllAges": 40.9,
    "allAgesN": 516
@@ -150,14 +272,14 @@
   "pRegular": 0.14,
   "pTopLine": 0.0,
   "pAboveAvg": 0.06,
-  "poolN": 795,
+  "poolN": 794,
   "group": "D",
   "age": 19,
+  "pickWeight": 0.5,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.02,
-   0.04
+  "featureBand": [
+   0.022,
+   0.044
   ],
   "examples": [
    {
@@ -165,7 +287,7 @@
     "year": 2013,
     "pick": 137,
     "league": "NCAA",
-    "nhle": 0.034,
+    "feature": 0.034,
     "peak": 61.3,
     "tier": "above average",
     "nhlGp": 443
@@ -175,7 +297,7 @@
     "year": 2011,
     "pick": 142,
     "league": "OHL",
-    "nhle": 0.035,
+    "feature": 0.035,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -185,7 +307,7 @@
     "year": 2011,
     "pick": 147,
     "league": "USHL",
-    "nhle": 0.034,
+    "feature": 0.034,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -195,7 +317,7 @@
     "year": 2012,
     "pick": 143,
     "league": "OHL",
-    "nhle": 0.03,
+    "feature": 0.03,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -205,7 +327,7 @@
     "year": 2013,
     "pick": 152,
     "league": "OHL",
-    "nhle": 0.031,
+    "feature": 0.031,
     "peak": 22.4,
     "tier": "replacement level",
     "nhlGp": 300
@@ -215,7 +337,7 @@
     "year": 2009,
     "pick": 122,
     "league": "AHL",
-    "nhle": 0.033,
+    "feature": 0.033,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 1
@@ -225,7 +347,7 @@
     "year": 2016,
     "pick": 161,
     "league": "USHL",
-    "nhle": 0.033,
+    "feature": 0.033,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 1
@@ -235,7 +357,7 @@
     "year": 2008,
     "pick": 128,
     "league": "NCAA",
-    "nhle": 0.035,
+    "feature": 0.035,
     "peak": 19.0,
     "tier": "replacement level",
     "nhlGp": 290
@@ -254,27 +376,34 @@
   "band": "121-300",
   "group": "D"
  },
+ "blend": {
+  "w": 0.25,
+  "sinceDraft": 1,
+  "pedigreeExpected": 7.0,
+  "cohortExpected": 5.0,
+  "expected": 5.5,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "MHL",
-   "nhle": 0.055,
-   "gp": 52
+   "feature": 0.055,
+   "gp": 50
   },
   "to": {
    "season": "2025-2026",
    "league": "MHL",
-   "nhle": 0.071,
-   "gp": 60
+   "feature": 0.071,
+   "gp": 48
   },
   "delta": 0.016
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
   "gp": 10,
   "season": "2026-2027"
  },
- "rank": 17,
- "score": 5.0
+ "rank": 23,
+ "score": 5.5
 }

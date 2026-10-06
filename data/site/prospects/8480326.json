@@ -10,6 +10,7 @@
  "height": "5'9\"",
  "weight": 185,
  "shoots": "L",
+ "catches": null,
  "contract": "27/28",
  "rights": "signed",
  "draft": null,
@@ -32,6 +33,11 @@
    "pts": 4,
    "pm": 0,
    "pim": 4,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.389,
    "status": "rostered"
   }
@@ -46,6 +52,11 @@
    "pts": 45,
    "pm": 20,
    "pim": 13,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.389,
    "status": "rostered"
   },
@@ -58,8 +69,98 @@
    "pts": 0,
    "pm": 0,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 1.0,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 2,
+     "g": 3,
+     "a": 1,
+     "pts": 4,
+     "pm": 0,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 57,
+     "g": 23,
+     "a": 22,
+     "pts": 45,
+     "pm": 20,
+     "pim": 13,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    },
+    {
+     "league": "NHL",
+     "team": "Detroit Red Wings",
+     "gp": 5,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": 0,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 65,
+     "g": 25,
+     "a": 15,
+     "pts": 40,
+     "pm": 1,
+     "pim": 35,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "reason": "lost rookie eligibility"

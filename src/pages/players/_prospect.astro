@@ -10,6 +10,13 @@ const R = prospect || null, A = R?.anchor || null, C = R?.ceiling || null, PF = 
 const pctWord = (v) => (v == null ? '—' : `${Math.round(v)}th`);
 const tierClass = (t) => ({ 'elite': 'elite', 'top-line': 'top', 'above average': 'above' }[t] || '');
 const sgn = (v, d = 0) => (v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d));
+const isGoalie = R?.group === 'G';
+const posWord = R ? (R.group === 'D' ? 'defensemen' : R.group === 'G' ? 'goalies' : 'forwards') : 'skaters';
+const seasonLabel = (s) => `${s.slice(0, 4)}–${s.slice(7)}`;
+const sv3 = (v) => (v == null ? '—' : Number(v).toFixed(3).replace(/^0/, ''));
+// the production feature in display units: skaters NHLe points per 82, goalies thousandths of save percentage above the league average
+const featText = (v) => (v == null ? '—' : isGoalie ? sgn(v * 1000, 0) : (v * 82).toFixed(1));
+const SEASONS = R?.seasons && R.seasons.length ? R.seasons : null;
 const season = `${P.seasonLabel.slice(0, 4)}–${P.seasonLabel.slice(5)}`;
 const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
 const mdy = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
@@ -44,7 +51,11 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
       <div class="tile"><span class="eb mono">Drafted</span><span class="num">{B.draft ? `${B.draft.year}` : '—'}</span><span class="sub">{B.draft ? `${ordinal(B.draft.overallPick)} overall · round ${B.draft.round} · ${B.draft.teamAbbrev}` : 'undrafted'}</span></div>
       <div class="tile"><span class="eb mono">Age</span><span class="num">{age}</span><span class="sub">born {mdy(B.birthDate)}, {B.birthDate.slice(0, 4)}</span></div>
       <div class="tile"><span class="eb mono">Last season{L.league ? ` · ${L.league}` : ''}</span><span class="num">{L.gp ?? '—'}</span><span class="sub">games{L.team ? ` · ${L.team}` : ''}</span></div>
-      <div class="tile"><span class="eb mono">Goals · assists · points</span><span class="num">{L.goals ?? '—'}–{L.assists ?? '—'}–{L.points ?? '—'}</span><span class="sub">{L.plusMinus != null ? `${signed(L.plusMinus, 0)} · ` : ''}{L.pim != null ? `${L.pim} pim` : ''}</span></div>
+      {B.position === 'G' ? (
+        <div class="tile"><span class="eb mono">Save percentage</span><span class="num">{L.savePct != null ? sv3(L.savePct) : '—'}</span><span class="sub">{L.gaa != null ? `${Number(L.gaa).toFixed(2)} goals against average` : ''}{L.wins != null ? ` · ${L.wins}–${L.losses ?? 0}–${L.otLosses ?? 0}` : ''}</span></div>
+      ) : (
+        <div class="tile"><span class="eb mono">Goals · assists · points</span><span class="num">{L.goals ?? '—'}–{L.assists ?? '—'}–{L.points ?? '—'}</span><span class="sub">{L.plusMinus != null ? `${signed(L.plusMinus, 0)} · ` : ''}{L.pim != null ? `${L.pim} pim` : ''}</span></div>
+      )}
     </div>
   </div>
 </section>
@@ -53,31 +64,31 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
 <section class="sec" id="projection">
   <div class="shell">
     <h2>Where he projects</h2>
-    <p class="lede">Four reads, every one measured against {R.group === 'D' ? 'defensemen' : 'forwards'} only, built on his {A.season.slice(0, 4)}–{A.season.slice(7)} season{A.lines && A.lines.length > 1 ? ` across the ${A.lines.join(' and ')}` : ` in the ${A.league}`}.</p>
+    <p class="lede">Four reads, every one measured against {posWord} only, built on his {A.season.slice(0, 4)}–{A.season.slice(7)} season{A.lines && A.lines.length > 1 ? ` across the ${A.lines.join(' and ')}` : ` in the ${A.league}`}.</p>
     <div class="grid layers">
       <div class="tile"><span class="eb mono">League strength</span><span class="num">{A.coef.toFixed(3)}</span><span class="sub">{A.league} coefficient · a point there is worth {Math.round(A.coef * 100)}% of an NHL point</span></div>
-      <div class="tile"><span class="eb mono">Production, age-relative</span><span class="num">{pctWord(PF?.percentile)}</span><span class="sub">{PF && PF.percentile != null ? `percentile among ${PF.league.toUpperCase()} ${R.group === 'D' ? 'defensemen' : 'forwards'} born ${R.birthDate.slice(0, 4)}, ${PF.season.slice(0, 4)}–${PF.season.slice(7)} (${PF.cohortN} skaters) · NHLe ${A.nhle82.toFixed(1)} per 82` : `no same-age table for this league yet · NHLe ${A.nhle82.toFixed(1)} per 82`}</span></div>
-      <div class="tile"><span class="eb mono">Ceiling</span><span class:list={['num', 'word', tierClass(C?.tier)]}>{C ? C.tier : '—'}</span><span class="sub">{C ? `75th percentile of ${C.n} comparable paths lands at the ${Math.round(C.p75)}th percentile of NHL ${R.group === 'D' ? 'defensemen' : 'forwards'} · expected ${C.expected.toFixed(0)} · ${Math.round(C.pRegular * 100)}% became NHL regulars` : 'not enough same-age comparables'}</span></div>
-      <div class="tile"><span class="eb mono">Trajectory</span><span class="num">{TR ? sgn(TR.delta * 82) : '—'}</span><span class="sub">{TR ? `NHLe per 82, ${TR.from.league} ${TR.from.season} to ${TR.to.league} ${TR.to.season}` : 'needs two full seasons'}</span></div>
+      <div class="tile"><span class="eb mono">{isGoalie ? 'Save percentage, age-relative' : 'Production, age-relative'}</span><span class="num">{pctWord(PF?.percentile)}</span><span class="sub">{PF && PF.percentile != null ? `percentile among ${PF.league.toUpperCase()} ${posWord} born ${R.birthDate.slice(0, 4)}, ${seasonLabel(PF.season)} (${PF.cohortN} of them)` : 'no same-year table for this league yet'}{isGoalie ? ` · ${sv3(A.svp)} against a league ${sv3(A.leagueSvp)}` : ` · NHLe ${A.nhle82.toFixed(1)} per 82`}</span></div>
+      <div class="tile"><span class="eb mono">Ceiling</span><span class:list={['num', 'word', tierClass(C?.tier)]}>{C ? C.tier : '—'}</span><span class="sub">{C ? `75th percentile of ${C.n} comparable paths lands at the ${Math.round(C.p75)}th percentile of NHL ${posWord} · expected peak ${R.score != null ? R.score.toFixed(0) : C.expected.toFixed(0)}${R.blend && R.blend.w > 0 ? ` (cohort ${C.expected.toFixed(0)}, draft slot weighted ${R.blend.w})` : ''} · ${Math.round(C.pRegular * 100)}% became NHL regulars` : 'not enough same-age comparables'}</span></div>
+      <div class="tile"><span class="eb mono">Trajectory</span><span class="num">{TR ? (isGoalie ? featText(TR.delta) : sgn(TR.delta * 82, 1)) : '—'}</span><span class="sub">{TR ? `${isGoalie ? 'save percentage above league, in thousandths' : 'NHLe per 82'}: ${featText(TR.from.feature)} in the ${TR.from.league}, ${seasonLabel(TR.from.season)} to ${featText(TR.to.feature)} in the ${TR.to.league}, ${seasonLabel(TR.to.season)}` : 'needs two full seasons'}</span></div>
     </div>
     {C && C.examples && C.examples.length > 0 && (
       <div class="table-scroll comps">
         <table>
-          <thead><tr><th>Closest paths at age {C.age}</th><th>Draft</th><th>League then</th><th class="num">NHLe / 82</th><th>NHL outcome</th><th class="num">NHL GP</th></tr></thead>
+          <thead><tr><th>Closest paths at age {C.age}</th><th>Draft</th><th>League then</th><th class="num">{isGoalie ? 'SV% vs league' : 'NHLe / 82'}</th><th>NHL outcome</th><th class="num">NHL GP</th></tr></thead>
           <tbody>
             {C.examples.map((e) => (
-              <tr><td>{e.name}</td><td>{e.year} · {e.pick}</td><td>{e.league}</td><td class="num">{(e.nhle * 82).toFixed(1)}</td><td class:list={[tierClass(e.tier)]}>{e.tier}{e.peak != null ? <span class="mute"> · {Math.round(e.peak)}th</span> : null}</td><td class="num">{e.nhlGp}</td></tr>
+              <tr><td>{e.name}</td><td>{e.year} · {e.pick}</td><td>{e.league}</td><td class="num">{featText(e.feature)}</td><td class:list={[tierClass(e.tier)]}>{e.tier}{e.peak != null ? <span class="mute"> · {Math.round(e.peak)}th</span> : null}</td><td class="num">{e.nhlGp}</td></tr>
             ))}
           </tbody>
         </table>
       </div>
     )}
     <div class="facts mono">
-      {PD && <p><b>Draft pedigree.</b> Picks {PD.band} at the position, {PD.n} of them since 2008: {Math.round(PD.pRegular * 100)}% became NHL regulars, {Math.round(PD.pTopLine * 100)}% reached top-line production, expected peak {PD.expected.toFixed(0)}.</p>}
-      {PC && PC.percentile != null && <p><b>This season so far.</b> {pctWord(PC.percentile)} percentile among {PC.league.toUpperCase()} {R.group === 'D' ? 'defensemen' : 'forwards'} born {R.birthDate.slice(0, 4)} after {PC.gp} games ({PC.cohortN} skaters).</p>}
+      {PD && <p><b>Draft pedigree.</b> Picks {PD.band} at the position, {PD.n} of them since 2008: {Math.round(PD.pRegular * 100)}% became NHL regulars, {Math.round(PD.pTopLine * 100)}% reached top-line production, expected peak {PD.expected.toFixed(0)}. {R.blend && R.blend.w > 0 ? `It carries weight ${R.blend.w} this season (${R.blend.sinceDraft <= 0 ? 'the draft year' : `draft+${R.blend.sinceDraft}`}); pedigree counts most in the draft year and nothing from draft+2.` : 'From draft+2 on it no longer moves the number.'}</p>}
+      {PC && PC.percentile != null && <p><b>This season so far.</b> {pctWord(PC.percentile)} percentile among {PC.league.toUpperCase()} {posWord} born {R.birthDate.slice(0, 4)} after {PC.gp} games ({PC.cohortN} of them).</p>}
       {DP && DP.toiPerGame != null && <p><b>Deployment.</b> {DP.toiPerGame} minutes a game over {DP.games} logged games{DP.ppGoals ? `, ${DP.ppGoals} of ${DP.goals} goals on the power play` : ''}.</p>}
-      {R.nhlSample && R.nhlSample.gp > 0 && <p><b>NHL sample.</b> {R.nhlSample.gp} games, {R.nhlSample.pts} points{R.nhlSample.thisSeason?.gp ? ` · ${R.nhlSample.thisSeason.gp} this season at ${R.nhlSample.thisSeason.toi} a night` : ''}. Small until it is not; it will outweigh the cohort once it is a full season.</p>}
-      <p><b>Games behind the numbers.</b> {A.gp} in {A.season}{PF && PF.percentile != null ? `, ${PF.cohortN} same-age skaters in the table` : ''}{C ? `, ${C.n} comparable paths from a pool of ${C.poolN}` : ''}.</p>
+      {R.nhlSample && R.nhlSample.gp > 0 && <p><b>NHL sample.</b> {R.nhlSample.gp} games{isGoalie ? '' : `, ${R.nhlSample.pts} points`}{R.nhlSample.thisSeason?.gp ? ` · ${R.nhlSample.thisSeason.gp} this season${R.nhlSample.thisSeason.toi ? ` at ${R.nhlSample.thisSeason.toi} a night` : ''}` : ''}. Small until it is not; it will outweigh the cohort once it is a full season.</p>}
+      <p><b>Games behind the numbers.</b> {A.lineGp} in {seasonLabel(A.season)}{PF && PF.percentile != null ? `, ${PF.cohortN} same-year ${posWord} in the table` : ''}{C ? `, ${C.n} comparable paths from a pool of ${C.poolN}` : ''}.</p>
     </div>
     <p class="note mono">League strength is the Network NHLe points coefficient from hockeystats.com (Patrick Bacon). Production is points per game among skaters of the same position and the same age in the same league and season (EliteProspects tables). Ceiling: the nearest 50 drafted skaters of the 2008–2019 classes at the same position and age, matched on NHLe and draft slot, and where each one's best NHL season landed as a points-per-game percentile among regulars at the position; a player who never had a half-season in the NHL counts as zero. Tiers follow the value score on the NHL pages: elite 88+, top-line 73+, above average 50+, below average 27+.</p>
   </div>
@@ -87,13 +98,23 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
 <section class="sec" id="lines">
   <div class="shell">
     <h2>Where he played</h2>
-    <p class="lede">Every line from {season}, by league. Counting stats only: no public expected-goals model covers the leagues below the NHL, so nothing here is presented as comparable across them.</p>
+    <p class="lede">{SEASONS ? `Every line since ${R.draft ? `his draft year, ${R.draft.year}` : 'three seasons ago'}, newest first.` : `Every line from ${season}, by league.`} Counting stats only: no public expected-goals model covers the leagues below the NHL, so nothing here is presented as comparable across them.</p>
     <div class="table-scroll">
       <table>
-        <thead><tr><th>League</th><th>Team</th><th class="num">GP</th><th class="num">G</th><th class="num">A</th><th class="num">P</th><th class="num">+/−</th><th class="num">PIM</th></tr></thead>
+        {isGoalie ? (
+          <thead><tr><th>Season</th><th>League</th><th>Team</th><th class="num">GP</th><th class="num">W</th><th class="num">L</th><th class="num">GAA</th><th class="num">SV%</th><th class="num">SO</th></tr></thead>
+        ) : (
+          <thead><tr><th>Season</th><th>League</th><th>Team</th><th class="num">GP</th><th class="num">G</th><th class="num">A</th><th class="num">P</th><th class="num">+/−</th><th class="num">PIM</th></tr></thead>
+        )}
         <tbody>
-          {LINES.sort((a, b) => (b.league === 'NHL') - (a.league === 'NHL') || (b.gp || 0) - (a.gp || 0)).map((l) => (
-            <tr class:list={{ nhl: l.league === 'NHL' }}><td><span class="tip" title={LEAGUE[l.league] ?? l.league}>{l.league}</span></td><td>{l.team}</td><td class="num">{l.gp ?? '—'}</td><td class="num">{l.goals ?? '—'}</td><td class="num">{l.assists ?? '—'}</td><td class="num">{l.points ?? '—'}</td><td class="num">{l.plusMinus != null ? signed(l.plusMinus, 0) : '—'}</td><td class="num">{l.pim ?? '—'}</td></tr>
+          {SEASONS ? SEASONS.flatMap((s) => s.lines.map((l, i) => (
+            isGoalie ? (
+              <tr class:list={{ nhl: l.league === 'NHL', first: i === 0 }}><td class="mono">{i === 0 ? seasonLabel(s.season) : ''}</td><td><span class="tip" title={LEAGUE[l.league] ?? l.league}>{l.league}</span></td><td>{l.team}</td><td class="num">{l.gp ?? '—'}</td><td class="num">{l.w ?? '—'}</td><td class="num">{l.l ?? '—'}</td><td class="num">{l.gaa ?? '—'}</td><td class="num">{l.svp ?? '—'}</td><td class="num">{l.so ?? '—'}</td></tr>
+            ) : (
+              <tr class:list={{ nhl: l.league === 'NHL', first: i === 0 }}><td class="mono">{i === 0 ? seasonLabel(s.season) : ''}</td><td><span class="tip" title={LEAGUE[l.league] ?? l.league}>{l.league}</span></td><td>{l.team}</td><td class="num">{l.gp ?? '—'}</td><td class="num">{l.g ?? '—'}</td><td class="num">{l.a ?? '—'}</td><td class="num">{l.pts ?? '—'}</td><td class="num">{l.pm != null ? signed(l.pm, 0) : '—'}</td><td class="num">{l.pim ?? '—'}</td></tr>
+            )
+          ))) : LINES.sort((a, b) => (b.league === 'NHL') - (a.league === 'NHL') || (b.gp || 0) - (a.gp || 0)).map((l) => (
+            <tr class:list={{ nhl: l.league === 'NHL' }}><td class="mono">{season}</td><td><span class="tip" title={LEAGUE[l.league] ?? l.league}>{l.league}</span></td><td>{l.team}</td><td class="num">{l.gp ?? '—'}</td><td class="num">{l.goals ?? '—'}</td><td class="num">{l.assists ?? '—'}</td><td class="num">{l.points ?? '—'}</td><td class="num">{l.plusMinus != null ? signed(l.plusMinus, 0) : '—'}</td><td class="num">{l.pim ?? '—'}</td></tr>
           ))}
         </tbody>
       </table>

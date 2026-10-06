@@ -10,6 +10,7 @@
  "height": "6'0\"",
  "weight": 194,
  "shoots": "R",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 4,
    "pm": -1,
    "pim": 4,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.113,
    "status": "rostered"
   }
@@ -50,6 +56,11 @@
    "pts": 51,
    "pm": null,
    "pim": null,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.028,
    "status": "rostered"
   },
@@ -62,6 +73,11 @@
    "pts": 16,
    "pm": 0,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.031,
    "status": "rostered"
   },
@@ -74,6 +90,11 @@
    "pts": 2,
    "pm": null,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": null,
    "status": "rostered"
   },
@@ -86,6 +107,11 @@
    "pts": 0,
    "pm": -1,
    "pim": 2,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.121,
    "status": "rostered"
   },
@@ -98,8 +124,37 @@
    "pts": 0,
    "pm": 0,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.143,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "QMJHL",
+     "team": "Moncton Wildcats",
+     "gp": 6,
+     "g": 3,
+     "a": 1,
+     "pts": 4,
+     "pm": -1,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.113,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -122,7 +177,8 @@
    "NTDP",
    "USHL",
    "USHS-Prep"
-  ]
+  ],
+  "feature": 0.037
  },
  "league": {
   "name": "USHS-Prep",
@@ -136,10 +192,9 @@
    "league": "qmjhl",
    "season": "2026-2027",
    "ageBucket": "U20",
-   "exactAge": 19,
    "cohortN": 34,
    "gp": 6,
-   "pgp": 0.667,
+   "value": 0.6667,
    "percentile": 73.5,
    "percentileAllAges": 80.2,
    "allAgesN": 848
@@ -154,32 +209,22 @@
   "pRegular": 0.1,
   "pTopLine": 0.04,
   "pAboveAvg": 0.1,
-  "poolN": 837,
+  "poolN": 835,
   "group": "D",
   "age": 17,
+  "pickWeight": 1.0,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.03,
-   0.04
+  "featureBand": [
+   0.029,
+   0.044
   ],
   "examples": [
-   {
-    "name": "Xavier Bouchard",
-    "year": 2018,
-    "pick": 185,
-    "league": "QMJHL",
-    "nhle": 0.037,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
    {
     "name": "Nolan De Jong",
     "year": 2013,
     "pick": 197,
     "league": "BCHL",
-    "nhle": 0.038,
+    "feature": 0.038,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -189,7 +234,7 @@
     "year": 2014,
     "pick": 198,
     "league": "J20 SuperElit",
-    "nhle": 0.036,
+    "feature": 0.036,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -199,37 +244,7 @@
     "year": 2008,
     "pick": 194,
     "league": "USHS-Prep",
-    "nhle": 0.038,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Ziyat Paigin",
-    "year": 2015,
-    "pick": 209,
-    "league": "MHL",
-    "nhle": 0.037,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Gianluca Curcuruto",
-    "year": 2012,
-    "pick": 182,
-    "league": "OHL",
-    "nhle": 0.037,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Nicolas Mattinen",
-    "year": 2016,
-    "pick": 179,
-    "league": "OHL",
-    "nhle": 0.037,
+    "feature": 0.038,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -239,10 +254,50 @@
     "year": 2017,
     "pick": 196,
     "league": "USHL",
-    "nhle": 0.039,
+    "feature": 0.039,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 26
+   },
+   {
+    "name": "Xavier Bouchard",
+    "year": 2018,
+    "pick": 185,
+    "league": "QMJHL",
+    "feature": 0.037,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matt Roy",
+    "year": 2015,
+    "pick": 194,
+    "league": "T1EHL 18U",
+    "feature": 0.035,
+    "peak": 61.1,
+    "tier": "above average",
+    "nhlGp": 519
+   },
+   {
+    "name": "Ziyat Paigin",
+    "year": 2015,
+    "pick": 209,
+    "league": "MHL",
+    "feature": 0.037,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Gianluca Curcuruto",
+    "year": 2012,
+    "pick": 182,
+    "league": "OHL",
+    "feature": 0.037,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -258,27 +313,34 @@
   "band": "121-300",
   "group": "D"
  },
+ "blend": {
+  "w": 0.5,
+  "sinceDraft": -1,
+  "pedigreeExpected": 7.0,
+  "cohortExpected": 7.1,
+  "expected": 7.0,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "USHS-Prep",
-   "nhle": 0.036,
+   "feature": 0.036,
    "gp": 28
   },
   "to": {
    "season": "2025-2026",
    "league": "USHS-Prep",
-   "nhle": 0.037,
-   "gp": 52
+   "feature": 0.037,
+   "gp": 30
   },
   "delta": 0.001
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
-  "gp": 52,
+  "gp": 30,
   "season": "2025-2026"
  },
- "rank": 16,
- "score": 7.1
+ "rank": 22,
+ "score": 7.0
 }

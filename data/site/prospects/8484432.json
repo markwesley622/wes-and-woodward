@@ -10,6 +10,7 @@
  "height": "6'1\"",
  "weight": 176,
  "shoots": "L",
+ "catches": null,
  "contract": "26/27",
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 0,
    "pm": -2,
    "pim": 4,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.352,
    "status": "rostered"
   }
@@ -50,6 +56,11 @@
    "pts": 4,
    "pm": 2,
    "pim": 4,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.352,
    "status": "rostered"
   },
@@ -62,6 +73,11 @@
    "pts": 0,
    "pm": -1,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.352,
    "status": "rostered"
   },
@@ -74,8 +90,171 @@
    "pts": 0,
    "pm": -1,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.205,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "DEL",
+     "team": "Iserlohn Roosters",
+     "gp": 6,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -2,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.352,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "DEL",
+     "team": "L\u00f6wen Frankfurt",
+     "gp": 21,
+     "g": 2,
+     "a": 2,
+     "pts": 4,
+     "pm": 2,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.352,
+     "status": "rostered"
+    },
+    {
+     "league": "DEL",
+     "team": "Adler Mannheim",
+     "gp": 6,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.352,
+     "status": "rostered"
+    },
+    {
+     "league": "DEL2",
+     "team": "EC Bad Nauheim",
+     "gp": 2,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.205,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "DEL",
+     "team": "L\u00f6wen Frankfurt",
+     "gp": 20,
+     "g": 0,
+     "a": 5,
+     "pts": 5,
+     "pm": 3,
+     "pim": 15,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.352,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2023-2024",
+   "lines": [
+    {
+     "league": "DEL",
+     "team": "L\u00f6wen Frankfurt",
+     "gp": 41,
+     "g": 1,
+     "a": 2,
+     "pts": 3,
+     "pm": -5,
+     "pim": 18,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.352,
+     "status": "rostered"
+    },
+    {
+     "league": "WJC-20",
+     "team": "Germany U20",
+     "gp": 5,
+     "g": 1,
+     "a": 3,
+     "pts": 4,
+     "pm": -2,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.269,
+     "status": "rostered"
+    },
+    {
+     "league": "International-Jr",
+     "team": "Germany U20 (all)",
+     "gp": 3,
+     "g": 4,
+     "a": 4,
+     "pts": 8,
+     "pm": null,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -97,7 +276,8 @@
    "DEL",
    "DEL",
    "DEL2"
-  ]
+  ],
+  "feature": 0.049
  },
  "league": {
   "name": "DEL",
@@ -121,27 +301,29 @@
    "ageBucket": "U22",
    "cohortN": 7,
    "gp": 6,
-   "percentile": null,
-   "note": "sample too small"
+   "value": 0.0,
+   "percentile": 0.0,
+   "percentileAllAges": 0.0,
+   "allAgesN": 136
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 2.1,
+  "expected": 1.9,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
   "pRegular": 0.04,
   "pTopLine": 0.02,
   "pAboveAvg": 0.02,
-  "poolN": 1240,
+  "poolN": 1236,
   "group": "F",
   "age": 20,
+  "pickWeight": 0.0,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.04,
-   0.07
+  "featureBand": [
+   0.042,
+   0.057
   ],
   "examples": [
    {
@@ -149,77 +331,77 @@
     "year": 2010,
     "pick": 150,
     "league": "QMJHL",
-    "nhle": 0.049,
+    "feature": 0.049,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Kory Nagy",
-    "year": 2008,
-    "pick": 142,
-    "league": "ECHL",
-    "nhle": 0.052,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Derek Rodwell",
-    "year": 2009,
-    "pick": 144,
-    "league": "NCAA",
-    "nhle": 0.045,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kyle DeCoste",
-    "year": 2008,
-    "pick": 147,
-    "league": "OHL",
-    "nhle": 0.055,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Julien Cayer",
-    "year": 2008,
-    "pick": 151,
-    "league": "NCAA",
-    "nhle": 0.044,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Darren Kramer",
-    "year": 2011,
-    "pick": 156,
+    "name": "Ben Johnson",
+    "year": 2012,
+    "pick": 90,
     "league": "AHL",
-    "nhle": 0.046,
+    "feature": 0.049,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Corey Durocher",
-    "year": 2010,
-    "pick": 153,
-    "league": "CCHL",
-    "nhle": 0.044,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Nick Campoli",
-    "year": 2017,
-    "pick": 158,
+    "name": "Dwyer Tschantz",
+    "year": 2014,
+    "pick": 202,
     "league": "NCAA",
-    "nhle": 0.054,
+    "feature": 0.049,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jack Gorniak",
+    "year": 2018,
+    "pick": 123,
+    "league": "NCAA",
+    "feature": 0.049,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Danick Paquette",
+    "year": 2008,
+    "pick": 64,
+    "league": "ECHL",
+    "feature": 0.05,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Wes Myron",
+    "year": 2012,
+    "pick": 177,
+    "league": "NCAA",
+    "feature": 0.05,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Connor Crisp",
+    "year": 2013,
+    "pick": 71,
+    "league": "AHL",
+    "feature": 0.05,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "David Pope",
+    "year": 2013,
+    "pick": 109,
+    "league": "NCAA",
+    "feature": 0.05,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -238,27 +420,34 @@
   "band": "121-300",
   "group": "F"
  },
+ "blend": {
+  "w": 0.0,
+  "sinceDraft": 2,
+  "pedigreeExpected": 7.5,
+  "cohortExpected": 1.9,
+  "expected": 1.9,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "DEL",
-   "nhle": 0.088,
+   "feature": 0.088,
    "gp": 20
   },
   "to": {
    "season": "2025-2026",
    "league": "DEL",
-   "nhle": 0.049,
-   "gp": 29
+   "feature": 0.049,
+   "gp": 21
   },
   "delta": -0.039
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
-  "gp": 29,
+  "gp": 21,
   "season": "2025-2026"
  },
- "rank": 25,
- "score": 2.1
+ "rank": 31,
+ "score": 1.9
 }

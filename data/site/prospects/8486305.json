@@ -10,6 +10,7 @@
  "height": "6'3\"",
  "weight": 212,
  "shoots": "L",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 2,
    "pm": 0,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.144,
    "status": "rostered"
   },
@@ -48,6 +54,11 @@
    "pts": 1,
    "pm": null,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": null,
    "status": "not-active-on-team"
   }
@@ -62,6 +73,11 @@
    "pts": 25,
    "pm": 3,
    "pim": 10,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.083,
    "status": "rostered"
   },
@@ -74,6 +90,11 @@
    "pts": 11,
    "pm": null,
    "pim": 6,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": null,
    "status": "rostered"
   },
@@ -86,8 +107,54 @@
    "pts": 8,
    "pm": null,
    "pim": 4,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.04,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "OHL",
+     "team": "Erie Otters",
+     "gp": 3,
+     "g": 1,
+     "a": 1,
+     "pts": 2,
+     "pm": 0,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.144,
+     "status": "rostered"
+    },
+    {
+     "league": "International-Jr",
+     "team": "Finland U20 (all)",
+     "gp": 1,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": null,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
+     "status": "not-active-on-team"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -108,7 +175,8 @@
   "lines": [
    "U18 SM-sarja",
    "U20 SM-sarja"
-  ]
+  ],
+  "feature": 0.052
  },
  "league": {
   "name": "U20 SM-sarja",
@@ -122,10 +190,9 @@
    "league": "ohl",
    "season": "2026-2027",
    "ageBucket": "U19",
-   "exactAge": 18,
    "cohortN": 82,
    "gp": 3,
-   "pgp": 0.667,
+   "value": 0.6667,
    "percentile": 63.4,
    "percentileAllAges": 61.5,
    "allAgesN": 1774
@@ -133,20 +200,20 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 10.3,
+  "expected": 8.7,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 48.6,
-  "pRegular": 0.24,
+  "p90": 38.0,
+  "pRegular": 0.2,
   "pTopLine": 0.06,
-  "pAboveAvg": 0.08,
-  "poolN": 1378,
+  "pAboveAvg": 0.06,
+  "poolN": 1374,
   "group": "F",
   "age": 17,
+  "pickWeight": 1.0,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.05,
+  "featureBand": [
+   0.046,
    0.06
   ],
   "examples": [
@@ -155,17 +222,37 @@
     "year": 2015,
     "pick": 175,
     "league": "USHL",
-    "nhle": 0.051,
+    "feature": 0.051,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Nikita Nesterenko",
+    "year": 2019,
+    "pick": 172,
+    "league": "USHS-Prep",
+    "feature": 0.053,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 63
+   },
+   {
+    "name": "Chase Balisy",
+    "year": 2011,
+    "pick": 170,
+    "league": "NTDP",
+    "feature": 0.051,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 8
    },
    {
     "name": "Chase Lang",
     "year": 2014,
     "pick": 167,
     "league": "WHL",
-    "nhle": 0.052,
+    "feature": 0.052,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -175,47 +262,17 @@
     "year": 2016,
     "pick": 184,
     "league": "MHL",
-    "nhle": 0.052,
+    "feature": 0.052,
     "peak": 16.7,
     "tier": "replacement level",
     "nhlGp": 64
-   },
-   {
-    "name": "Nikita Nesterenko",
-    "year": 2019,
-    "pick": 172,
-    "league": "USHS-Prep",
-    "nhle": 0.053,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 63
    },
    {
     "name": "Matej Stransky",
     "year": 2011,
     "pick": 165,
     "league": "WHL",
-    "nhle": 0.052,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Chase Balisy",
-    "year": 2011,
-    "pick": 170,
-    "league": "NTDP",
-    "nhle": 0.051,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 8
-   },
-   {
-    "name": "Johan S\u00f6dergran",
-    "year": 2018,
-    "pick": 165,
-    "league": "J20 SuperElit",
-    "nhle": 0.053,
+    "feature": 0.052,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -225,10 +282,20 @@
     "year": 2013,
     "pick": 180,
     "league": "J20 SuperElit",
-    "nhle": 0.05,
+    "feature": 0.05,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 89
+   },
+   {
+    "name": "Mitch Callahan",
+    "year": 2009,
+    "pick": 180,
+    "league": "WHL",
+    "feature": 0.054,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 5
    }
   ]
  },
@@ -244,27 +311,34 @@
   "band": "121-300",
   "group": "F"
  },
+ "blend": {
+  "w": 0.5,
+  "sinceDraft": -1,
+  "pedigreeExpected": 7.5,
+  "cohortExpected": 8.7,
+  "expected": 8.1,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "U18 SM-sarja",
-   "nhle": 0.042,
-   "gp": 43
+   "feature": 0.042,
+   "gp": 38
   },
   "to": {
    "season": "2025-2026",
    "league": "U20 SM-sarja",
-   "nhle": 0.052,
-   "gp": 46
+   "feature": 0.052,
+   "gp": 42
   },
   "delta": 0.01
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
-  "gp": 46,
+  "gp": 42,
   "season": "2025-2026"
  },
- "rank": 13,
- "score": 10.3
+ "rank": 21,
+ "score": 8.1
 }

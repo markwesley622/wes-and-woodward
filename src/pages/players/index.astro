@@ -6,8 +6,8 @@ const dir = path.resolve('data/site/players');
 const all = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
 // prospects sit with the skaters for now (Mark, 10/3)
 const val = (p) => p.score?.value ?? p.standIn?.value ?? -1;
-const skaters = all.filter((p) => p.kind === 'S' || p.kind === 'P').sort((a, b) => val(b) - val(a));
-const goalies = all.filter((p) => p.kind === 'G').sort((a, b) => val(b) - val(a));
+const skaters = all.filter((p) => (p.kind === 'S' || p.kind === 'P') && p.bio.position !== 'G').sort((a, b) => val(b) - val(a));
+const goalies = all.filter((p) => p.kind === 'G' || (p.kind === 'P' && p.bio.position === 'G')).sort((a, b) => val(b) - val(a));
 const season = all.length ? `${all[0].seasonLabel.slice(0, 4)}–${all[0].seasonLabel.slice(5)}` : '';
 const POS = { C: 'C', L: 'LW', R: 'RW', D: 'D', G: 'G' };
 const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);

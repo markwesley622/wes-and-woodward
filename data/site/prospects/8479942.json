@@ -10,6 +10,7 @@
  "height": "5'11\"",
  "weight": 181,
  "shoots": "R",
+ "catches": null,
  "contract": "27/28",
  "rights": "signed",
  "draft": null,
@@ -32,6 +33,11 @@
    "pts": 1,
    "pm": 0,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.389,
    "status": "rostered"
   }
@@ -46,6 +52,11 @@
    "pts": 39,
    "pm": 25,
    "pim": 41,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.389,
    "status": "rostered"
   },
@@ -58,8 +69,115 @@
    "pts": 3,
    "pm": 0,
    "pim": 7,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 1.0,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 2,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": 0,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 40,
+     "g": 21,
+     "a": 18,
+     "pts": 39,
+     "pm": 25,
+     "pim": 41,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    },
+    {
+     "league": "NHL",
+     "team": "Detroit Red Wings",
+     "gp": 18,
+     "g": 3,
+     "a": 0,
+     "pts": 3,
+     "pm": 0,
+     "pim": 7,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 61,
+     "g": 14,
+     "a": 32,
+     "pts": 46,
+     "pm": -13,
+     "pim": 76,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    },
+    {
+     "league": "NHL",
+     "team": "Detroit Red Wings",
+     "gp": 9,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": -1,
+     "pim": 15,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "reason": "lost rookie eligibility"

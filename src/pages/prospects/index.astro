@@ -4,30 +4,36 @@ import fs from 'node:fs';
 import path from 'node:path';
 const D = JSON.parse(fs.readFileSync(path.resolve('data/site/prospects.json'), 'utf8'));
 const live = new Set(fs.readdirSync(path.resolve('data/site/players')).filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', '')));
-const P = D.prospects, X = D.excluded, GK = D.goalies;
+const P = D.prospects, X = D.excluded;
 const season = `${D.season.slice(0, 4)}–${D.season.slice(6)}`;
 const lastSeason = `${Number(D.season.slice(0, 4)) - 1}–${D.season.slice(2, 4)}`;
-const signed = (v, d = 2) => (v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d));
+const signed = (v, d = 0) => (v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d));
 const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
 const link = (p) => (p.nhlId && live.has(String(p.nhlId)) ? `/players/${p.slug}/` : null);
 const lineOf = (ls) => (ls && ls.length ? ls[0] : null);
-const lineText = (l) => (l ? `${l.league} · ${l.gp ?? 0} gp, ${l.g ?? 0}–${l.a ?? 0}–${l.pts ?? 0}` : '—');
+const lineText = (l, g) => (l ? (g === 'G' ? `${l.league} · ${l.gp ?? 0} gp${l.svp ? `, ${l.svp}` : ''}` : `${l.league} · ${l.gp ?? 0} gp, ${l.g ?? 0}–${l.a ?? 0}–${l.pts ?? 0}`) : '—');
+const anchorText = (p) => { const A = p.anchor; if (!A) return '—'; return p.group === 'G' ? `${A.league} · ${A.lineGp} gp, ${A.svp.toFixed(3).slice(1)}` : `${A.league} · ${A.lineGp} gp, ${A.g}–${A.a}–${A.pts}`; };
+const featureText = (p) => { const A = p.anchor; if (!A) return '—'; return p.group === 'G' ? signed(A.svDelta * 1000, 0) : A.nhle82.toFixed(1); };
+const featureVal = (p) => (p.anchor ? (p.group === 'G' ? p.anchor.svDelta * 1000 : p.anchor.nhle82) : -99);
+const trajText = (p) => (p.trajectory ? signed(p.trajectory.delta * (p.group === 'G' ? 1000 : 82), 0) : '—');
 const tierClass = (t) => ({ 'elite': 'elite', 'top-line': 'top', 'above average': 'above' }[t] || '');
 const pctText = (pf) => (pf && pf.percentile != null ? `${Math.round(pf.percentile)}th` : '—');
+const posWord = (g) => (g === 'D' ? 'defensemen' : g === 'G' ? 'goalies' : 'forwards');
 ---
-<Base title="Prospects — Wes & Woodward" description="The Red Wings pipeline, ranked on what each prospect projects to as an NHL player at his position: league strength, age-relative production, cohort ceiling and trajectory." schema={[{ '@type': 'CollectionPage', '@id': 'https://wesandwoodward.com/prospects/', url: 'https://wesandwoodward.com/prospects/', name: 'Prospect Pipeline', description: 'Every Red Wings prospect, ranked on projected NHL ceiling within position.', isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, about: { '@id': 'https://wesandwoodward.com/team/#team' },
+<Base title="Prospects — Wes & Woodward" description="The Red Wings pipeline, ranked on what each prospect projects to as an NHL player at his position: league strength, age-relative production, cohort ceiling, draft pedigree and trajectory." schema={[{ '@type': 'CollectionPage', '@id': 'https://wesandwoodward.com/prospects/', url: 'https://wesandwoodward.com/prospects/', name: 'Prospect Pipeline', description: 'Every Red Wings prospect, ranked on projected NHL peak within position.', isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, about: { '@id': 'https://wesandwoodward.com/team/#team' },
   mainEntity: { '@type': 'ItemList', itemListOrder: 'https://schema.org/ItemListOrderAscending', numberOfItems: P.length, itemListElement: P.map((p) => ({ '@type': 'ListItem', position: p.rank, name: p.name, url: link(p) ? `https://wesandwoodward.com${link(p)}` : undefined })) } }]}>
   <section class="sec">
     <div class="shell">
       <p class="kicker">Prospects · {season}</p>
       <h1 class="page-title">Prospect Pipeline</h1>
-      <p class="lede">Every skater whose rights Detroit holds who is still a prospect: rookie-eligible and inside draft+4. Ranked on expected NHL peak, measured within his position, so a defenseman is judged against defensemen at every step.</p>
+      <p class="lede">Every player whose rights Detroit holds who is still a prospect: rookie-eligible and inside draft+4. Ranked on expected NHL peak, measured within his position, so a defenseman is judged against defensemen and a goalie against goalies at every step.</p>
 
       <div class="controls mono">
         <div class="toggle" id="posfilter" role="tablist" aria-label="Position">
           <button type="button" class="on" data-pos="all" role="tab" aria-selected="true">All</button>
           <button type="button" data-pos="F" role="tab" aria-selected="false">Forwards</button>
           <button type="button" data-pos="D" role="tab" aria-selected="false">Defense</button>
+          <button type="button" data-pos="G" role="tab" aria-selected="false">Goalies</button>
         </div>
       </div>
 
@@ -35,33 +41,33 @@ const pctText = (pf) => (pf && pf.percentile != null ? `${Math.round(pf.percenti
         <table class="sortable">
           <thead><tr>
             <th class="num on" data-sort="num">#</th><th data-sort="text">Player</th><th data-sort="text">Pos</th><th class="num" data-sort="num">Age</th><th data-sort="num">Draft</th>
-            <th data-sort="text">{lastSeason} line</th><th class="num" data-sort="num">League coef.</th><th class="num" data-sort="num">NHLe / 82</th>
-            <th class="num" data-sort="num">Age-relative pct.</th><th class="num" data-sort="num">Expected peak</th><th data-sort="num">Ceiling</th><th class="num" data-sort="num">P(NHL regular)</th>
+            <th data-sort="text">{lastSeason} line</th><th class="num" data-sort="num">League coef.</th><th class="num" data-sort="num">NHLe / 82 · SV% vs lg</th>
+            <th class="num" data-sort="num">Same-year pct.</th><th class="num" data-sort="num">Expected peak</th><th data-sort="num">Ceiling</th><th class="num" data-sort="num">P(NHL regular)</th>
             <th class="num" data-sort="num">Trajectory</th><th data-sort="text">Now</th>
           </tr></thead>
           <tbody>
-            {P.map((p) => { const A = p.anchor, C = p.ceiling || {}, pf = p.performance.last, href = link(p), now = lineOf(p.currentLines); return (
+            {P.map((p) => { const A = p.anchor, C = p.ceiling || {}, pf = p.performance.last, href = link(p), now = lineOf(p.currentLines), up = p.status.onNhlRoster; return (
               <tr data-pos={p.group}>
                 <td class="num" data-v={p.rank}><span class:list={['rk', { red: p.rank <= 3 }]}>{p.rank}</span></td>
-                <td data-v={p.name.split(' ').slice(-1)[0]}>{href ? <a href={href}>{p.name}</a> : <span>{p.name}</span>}</td>
+                <td data-v={p.name.split(' ').slice(-1)[0]}>{href ? <a href={href}>{p.name}</a> : <span>{p.name}</span>}{up ? <span class="mono up"> NHL</span> : null}</td>
                 <td data-v={p.position}>{p.position}</td>
                 <td class="num" data-v={p.age ?? -1}>{p.age ?? '—'}</td>
                 <td data-v={p.draft?.overall ?? 999} class:list={{ mute: !p.draft }}>{p.draft ? `${p.draft.year} · ${ordinal(p.draft.overall)}` : 'undrafted'}</td>
-                <td data-v={A?.league ?? ''}>{A ? `${A.league} · ${A.lineGp} gp, ${A.g}–${A.a}–${A.pts}` : '—'}</td>
+                <td data-v={A?.league ?? ''}>{anchorText(p)}</td>
                 <td class="num" data-v={A?.coef ?? -1}>{A ? A.coef.toFixed(3) : '—'}</td>
-                <td class="num" data-v={A?.nhle82 ?? -1}>{A ? A.nhle82.toFixed(1) : '—'}</td>
-                <td class="num" data-v={pf?.percentile ?? -1} title={pf && pf.percentile != null ? `${pf.league.toUpperCase()} ${pf.season}, ${p.group === 'D' ? 'defensemen' : 'forwards'} born ${p.birthDate.slice(0, 4)}, ${pf.cohortN} skaters` : ''}>{pctText(pf)}{pf && pf.percentile != null ? <span class="mute"> · n {pf.cohortN}</span> : null}</td>
-                <td class="num val" data-v={C.expected ?? -1}>{C.expected != null ? C.expected.toFixed(0) : '—'}</td>
+                <td class="num" data-v={featureVal(p)}>{featureText(p)}</td>
+                <td class="num" data-v={pf?.percentile ?? -1} title={pf && pf.percentile != null ? `${pf.league.toUpperCase()} ${pf.season}, ${posWord(p.group)} born ${p.birthDate.slice(0, 4)}, ${pf.cohortN} of them` : ''}>{pctText(pf)}{pf && pf.percentile != null ? <span class="mute"> · n {pf.cohortN}</span> : null}</td>
+                <td class="num val" data-v={p.score ?? -1} title={p.blend ? `cohort ${p.blend.cohortExpected} · pick-band prior ${p.blend.pedigreeExpected ?? '—'} at weight ${p.blend.w}` : ''}>{p.score != null ? p.score.toFixed(0) : '—'}</td>
                 <td data-v={C.p75 ?? -1} class:list={[tierClass(C.tier)]}>{C.tier ?? '—'}{C.p75 != null ? <span class="mute"> · {Math.round(C.p75)}th</span> : null}</td>
                 <td class="num" data-v={C.pRegular ?? -1}>{C.pRegular != null ? `${Math.round(C.pRegular * 100)}%` : '—'}</td>
-                <td class="num" data-v={p.trajectory?.delta ?? -99} title={p.trajectory ? `${p.trajectory.from.league} ${p.trajectory.from.season} → ${p.trajectory.to.league} ${p.trajectory.to.season}` : ''}>{p.trajectory ? signed(p.trajectory.delta * 82, 0) : '—'}</td>
-                <td data-v={now?.league ?? ''} class:list={{ mute: !now }}>{lineText(now)}</td>
+                <td class="num" data-v={p.trajectory?.delta ?? -99} title={p.trajectory ? `${p.trajectory.from.league} ${p.trajectory.from.season} → ${p.trajectory.to.league} ${p.trajectory.to.season}` : ''}>{trajText(p)}</td>
+                <td data-v={now?.league ?? ''} class:list={{ mute: !now }}>{lineText(now, p.group)}</td>
               </tr>
             ); })}
           </tbody>
         </table>
       </div>
-      <p class="note mono">Rank: by expected NHL peak, the mean of the cohort outcome where a bust counts as zero. League coef.: Network NHLe points coefficient (hockeystats.com, Patrick Bacon), the share of a point in that league worth an NHL point. NHLe / 82: last full season's points per game blended across every league he played, times the coefficient, times 82. Age-relative pct.: points-per-game percentile among skaters of the same position born the same year in that league, that season (EliteProspects). Expected peak and ceiling: the nearest {D.cohort.k} drafted skaters of the {D.cohort.years[0]}–{D.cohort.years[1]} classes at the same position, age, NHLe and draft slot, and where their best NHL season landed as a points-per-game percentile among regulars at the position; expected is the mean, ceiling the 75th percentile of that group. P(NHL regular): share of the group with at least one half-season or more in the NHL. Trajectory: change in NHLe / 82 between the two most recent full seasons. Now: this season's line to date.</p>
+      <p class="note mono">Rank: by expected NHL peak. League coef.: Network NHLe points coefficient (hockeystats.com, Patrick Bacon), the share of a point in that league worth an NHL point. NHLe / 82: last full season's points per game blended across every league he played, times the coefficient, times 82. For goalies the same column is save percentage above that league's average, in thousandths. Same-year pct.: percentile among players of the same position born the same year in that league and season (EliteProspects), on points per game for skaters and save percentage for goalies. Expected peak: the nearest {D.cohort.k} drafted players of the {D.cohort.years[0]}–{D.cohort.years[1]} classes at the same position and age, matched on production (and on draft slot while pedigree still counts), and where their best NHL season landed as a percentile among regulars at the position, with busts as zero; the mean of that group, blended with the pick-band prior at weight 0.5 in the draft year, 0.25 at draft+1 and 0 from draft+2. Ceiling: the group's 75th percentile. P(NHL regular): share of the group with at least one qualifying NHL season. Trajectory: change between the two most recent full seasons, in NHLe / 82 for skaters and thousandths of save percentage above league for goalies. NHL marks a prospect currently on the Red Wings roster; his page is the full NHL page while he is up. Now: this season's line to date.</p>
     </div>
   </section>
 
@@ -74,24 +80,7 @@ const pctText = (pf) => (pf && pf.percentile != null ? `${Math.round(pf.percenti
           <thead><tr><th>Player</th><th>Pos</th><th class="num">Age</th><th>Draft</th><th>Why</th><th>Now</th></tr></thead>
           <tbody>
             {X.map((p) => { const href = link(p), now = lineOf(p.currentLines); return (
-              <tr><td>{href ? <a href={href}>{p.name}</a> : p.name}</td><td>{p.position}</td><td class="num">{p.age ?? '—'}</td><td class:list={{ mute: !p.draft }}>{p.draft ? `${p.draft.year} · ${ordinal(p.draft.overall)}` : 'undrafted'}</td><td>{p.reason}</td><td class:list={{ mute: !now }}>{lineText(now)}</td></tr>
-            ); })}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="goalies">
-    <div class="shell">
-      <h2>Goalies</h2>
-      <p class="lede">Goalies are not in the model. Save percentage does not translate across leagues the way scoring does, so they are listed on their lines until there is a goalie-specific method.</p>
-      <div class="table-scroll">
-        <table>
-          <thead><tr><th>Goalie</th><th class="num">Age</th><th>Draft</th><th>{lastSeason}</th><th>Now</th></tr></thead>
-          <tbody>
-            {GK.map((g) => { const href = link(g), last = lineOf(g.lastLines), now = lineOf(g.currentLines); return (
-              <tr><td>{href ? <a href={href}>{g.name}</a> : g.name}</td><td class="num">{g.age ?? '—'}</td><td class:list={{ mute: !g.draft }}>{g.draft ? `${g.draft.year} · ${ordinal(g.draft.overall)}` : 'undrafted'}</td><td class:list={{ mute: !last }}>{last ? `${last.league} · ${last.gp ?? 0} gp` : '—'}</td><td class:list={{ mute: !now }}>{now ? `${now.league} · ${now.gp ?? 0} gp` : '—'}</td></tr>
+              <tr><td>{href ? <a href={href}>{p.name}</a> : p.name}</td><td>{p.position}</td><td class="num">{p.age ?? '—'}</td><td class:list={{ mute: !p.draft }}>{p.draft ? `${p.draft.year} · ${ordinal(p.draft.overall)}` : 'undrafted'}</td><td>{p.reason}</td><td class:list={{ mute: !now }}>{lineText(now, p.group)}</td></tr>
             ); })}
           </tbody>
         </table>
@@ -130,6 +119,7 @@ const pctText = (pf) => (pf && pf.percentile != null ? `${Math.round(pf.percenti
   td { white-space: nowrap; }
   .val { font-weight: 600; font-size: 15px; }
   .rk { font-weight: 600; } .rk.red { color: var(--red); }
+  .up { color: var(--red); font-size: 10px; margin-left: 6px; }
   td.elite, td.top { color: var(--red); font-weight: 600; } td.above { font-weight: 600; }
   .mute, td.mute { color: var(--mute); font-weight: 400; }
   .note { color: var(--mute); font-size: 11px; margin: 12px 0 0; text-transform: none; letter-spacing: 0; max-width: 110ch; }

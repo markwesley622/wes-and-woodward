@@ -1,0 +1,312 @@
+{
+ "epId": "874040",
+ "nhlId": 8485568,
+ "name": "Michal Pradel",
+ "slug": "michal-pradel",
+ "group": "G",
+ "position": "G",
+ "birthDate": "2007-03-10",
+ "age": 19,
+ "height": "6'5\"",
+ "weight": 198,
+ "shoots": null,
+ "catches": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2025,
+  "overall": 75,
+  "round": 3
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+1",
+  "draftYear": 2025,
+  "onNhlRoster": false
+ },
+ "scouting": "The 6-foot-4.25 goalie is really smooth in his movement and tracks pucks extremely well, he looks both above and around screens, and does a really nice job tracking plays even when he has to go into scramble mode. His rebound control could use some work, but it doesn\u2019t seem to bother him or shake his confidence, especially in big games and high-pressure moments. -EliteProspects 2025 NHL Draft Guide",
+ "currentLines": [],
+ "lastLines": [
+  {
+   "league": "USHL",
+   "team": "Tri-City Storm",
+   "gp": 38,
+   "g": null,
+   "a": null,
+   "pts": null,
+   "pm": null,
+   "pim": null,
+   "gaa": "2.75",
+   "svp": ".911",
+   "w": 16,
+   "l": 16,
+   "so": 4,
+   "coef": 0.143,
+   "status": "rostered"
+  },
+  {
+   "league": "WJC-20",
+   "team": "Slovakia U20",
+   "gp": 4,
+   "g": null,
+   "a": null,
+   "pts": null,
+   "pm": null,
+   "pim": null,
+   "gaa": "4.11",
+   "svp": ".877",
+   "w": 1,
+   "l": 3,
+   "so": 0,
+   "coef": 0.269,
+   "status": "rostered"
+  },
+  {
+   "league": "International-Jr",
+   "team": "Slovakia U20 (all)",
+   "gp": 4,
+   "g": null,
+   "a": null,
+   "pts": null,
+   "pm": null,
+   "pim": null,
+   "gaa": "4.11",
+   "svp": ".877",
+   "w": 1,
+   "l": 3,
+   "so": 0,
+   "coef": null,
+   "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "USHL",
+     "team": "Tri-City Storm",
+     "gp": 38,
+     "g": null,
+     "a": null,
+     "pts": null,
+     "pm": null,
+     "pim": null,
+     "gaa": "2.75",
+     "svp": ".911",
+     "w": 16,
+     "l": 16,
+     "so": 4,
+     "coef": 0.143,
+     "status": "rostered"
+    },
+    {
+     "league": "WJC-20",
+     "team": "Slovakia U20",
+     "gp": 4,
+     "g": null,
+     "a": null,
+     "pts": null,
+     "pm": null,
+     "pim": null,
+     "gaa": "4.11",
+     "svp": ".877",
+     "w": 1,
+     "l": 3,
+     "so": 0,
+     "coef": 0.269,
+     "status": "rostered"
+    },
+    {
+     "league": "International-Jr",
+     "team": "Slovakia U20 (all)",
+     "gp": 4,
+     "g": null,
+     "a": null,
+     "pts": null,
+     "pm": null,
+     "pim": null,
+     "gaa": "4.11",
+     "svp": ".877",
+     "w": 1,
+     "l": 3,
+     "so": 0,
+     "coef": null,
+     "status": "rostered"
+    }
+   ]
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "USHL",
+  "leagueSlug": "ushl",
+  "table": "USHL",
+  "coef": 0.143,
+  "team": "Tri-City Storm",
+  "gp": 38,
+  "lineGp": 38,
+  "svp": 0.9111,
+  "gaa": "2.75",
+  "w": 16,
+  "l": 16,
+  "so": 4,
+  "leagueSvp": 0.8948,
+  "leagueN": 37,
+  "svDelta": 0.0163,
+  "feature": 0.0163,
+  "feature1": 0.0163,
+  "featureSeasons": 1
+ },
+ "league": {
+  "name": "USHL",
+  "table": "USHL",
+  "coef": 0.143,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "ushl",
+   "season": "2025-2026",
+   "ageBucket": "U19",
+   "cohortN": 10,
+   "gp": 38,
+   "value": 0.9111,
+   "percentile": 70.0,
+   "percentileAllAges": 88.8,
+   "allAgesN": 240
+  },
+  "current": null
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 30.0,
+  "median": 0.0,
+  "p75": 74.3,
+  "p90": 92.2,
+  "pRegular": 0.42,
+  "pTopLine": 0.28,
+  "pAboveAvg": 0.36,
+  "poolN": 219,
+  "group": "G",
+  "age": 18,
+  "pickWeight": 1.0,
+  "tier": "top-line",
+  "featureBand": [
+   -0.02,
+   0.025
+  ],
+  "examples": [
+   {
+    "name": "Dan Vlada\u0159",
+    "year": 2015,
+    "pick": 75,
+    "league": "USHL",
+    "feature": 0.0125,
+    "peak": 74.3,
+    "tier": "top-line",
+    "nhlGp": 159
+   },
+   {
+    "name": "Matt Villalta",
+    "year": 2017,
+    "pick": 72,
+    "league": "OHL",
+    "feature": 0.0162,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 3
+   },
+   {
+    "name": "Adin Hill",
+    "year": 2015,
+    "pick": 76,
+    "league": "WHL",
+    "feature": 0.0112,
+    "peak": 75.0,
+    "tier": "top-line",
+    "nhlGp": 214
+   },
+   {
+    "name": "Michael Hutchinson",
+    "year": 2008,
+    "pick": 77,
+    "league": "OHL",
+    "feature": 0.0095,
+    "peak": 46.4,
+    "tier": "below average",
+    "nhlGp": 154
+   },
+   {
+    "name": "Kirill Ustimenko",
+    "year": 2017,
+    "pick": 80,
+    "league": "MHL",
+    "feature": 0.0241,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Chris Driedger",
+    "year": 2012,
+    "pick": 76,
+    "league": "WHL",
+    "feature": 0.0039,
+    "peak": 93.8,
+    "tier": "elite",
+    "nhlGp": 67
+   },
+   {
+    "name": "Igor Bobkov",
+    "year": 2009,
+    "pick": 76,
+    "league": "MHL",
+    "feature": 0.002,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matt Hackett",
+    "year": 2009,
+    "pick": 77,
+    "league": "OHL",
+    "feature": 0.003,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 26
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 73,
+  "expected": 27.2,
+  "median": 0.0,
+  "p75": 65.7,
+  "p90": 94.4,
+  "pRegular": 0.37,
+  "pTopLine": 0.23,
+  "pAboveAvg": 0.32,
+  "band": "65-120",
+  "group": "G"
+ },
+ "blend": {
+  "w": 0.5,
+  "sinceDraft": 0,
+  "pedigreeExpected": 27.2,
+  "cohortExpected": 30.0,
+  "expected": 28.6,
+  "tier": "below average"
+ },
+ "trajectory": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 38,
+  "season": "2025-2026"
+ },
+ "rank": 7,
+ "score": 28.6
+}

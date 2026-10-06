@@ -10,6 +10,7 @@
  "height": "6'0\"",
  "weight": 183,
  "shoots": "R",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 0,
    "pm": 0,
    "pim": 15,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
   }
@@ -50,8 +56,59 @@
    "pts": 53,
    "pm": 8,
    "pim": 14,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.143,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Wisconsin",
+     "gp": 1,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": 0,
+     "pim": 15,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "USHL",
+     "team": "Sioux Falls Stampede",
+     "gp": 54,
+     "g": 24,
+     "a": 29,
+     "pts": 53,
+     "pm": 8,
+     "pim": 14,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.143,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -71,7 +128,8 @@
   "nhle82": 11.5,
   "lines": [
    "USHL"
-  ]
+  ],
+  "feature": 0.14
  },
  "league": {
   "name": "USHL",
@@ -84,10 +142,9 @@
    "league": "ushl",
    "season": "2025-2026",
    "ageBucket": "U19",
-   "exactAge": 18,
    "cohortN": 78,
    "gp": 54,
-   "pgp": 0.981,
+   "value": 0.9815,
    "percentile": 91.0,
    "percentileAllAges": 90.8,
    "allAgesN": 1813
@@ -104,21 +161,21 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 13.9,
+  "expected": 14.1,
   "median": 0.0,
-  "p75": 29.4,
-  "p90": 54.5,
-  "pRegular": 0.3,
-  "pTopLine": 0.06,
-  "pAboveAvg": 0.12,
-  "poolN": 1364,
+  "p75": 29.7,
+  "p90": 52.5,
+  "pRegular": 0.34,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.1,
+  "poolN": 1362,
   "group": "F",
   "age": 18,
+  "pickWeight": 1.0,
   "tier": "below average",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.13,
-   0.15
+  "featureBand": [
+   0.129,
+   0.16
   ],
   "examples": [
    {
@@ -126,47 +183,37 @@
     "year": 2008,
     "pick": 109,
     "league": "J20 SuperElit",
-    "nhle": 0.138,
+    "feature": 0.138,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 1
-   },
-   {
-    "name": "Jesse Gabrielle",
-    "year": 2015,
-    "pick": 105,
-    "league": "WHL",
-    "nhle": 0.141,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
    },
    {
     "name": "Tyler Shattock",
     "year": 2009,
     "pick": 108,
     "league": "WHL",
-    "nhle": 0.143,
+    "feature": 0.143,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Glenn Gawdin",
+    "name": "Jesse Gabrielle",
     "year": 2015,
-    "pick": 116,
+    "pick": 105,
     "league": "WHL",
-    "nhle": 0.141,
+    "feature": 0.141,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 13
+    "nhlGp": 0
    },
    {
     "name": "Henrik Bj\u00f6rklund",
     "year": 2009,
     "pick": 111,
     "league": "HockeyAllsvenskan",
-    "nhle": 0.137,
+    "feature": 0.137,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -176,7 +223,7 @@
     "year": 2009,
     "pick": 107,
     "league": "OHL",
-    "nhle": 0.137,
+    "feature": 0.137,
     "peak": 4.7,
     "tier": "replacement level",
     "nhlGp": 87
@@ -186,20 +233,30 @@
     "year": 2015,
     "pick": 108,
     "league": "WHL",
-    "nhle": 0.136,
+    "feature": 0.136,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Ryan Fitzgerald",
-    "year": 2013,
-    "pick": 120,
-    "league": "NCAA",
-    "nhle": 0.141,
+    "name": "Glenn Gawdin",
+    "year": 2015,
+    "pick": 116,
+    "league": "WHL",
+    "feature": 0.141,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
+    "nhlGp": 13
+   },
+   {
+    "name": "Tom K\u00fchnhackl",
+    "year": 2010,
+    "pick": 110,
+    "league": "OHL",
+    "feature": 0.146,
+    "peak": 38.9,
+    "tier": "below average",
+    "nhlGp": 232
    }
   ]
  },
@@ -215,27 +272,34 @@
   "band": "65-120",
   "group": "F"
  },
+ "blend": {
+  "w": 0.5,
+  "sinceDraft": 0,
+  "pedigreeExpected": 13.4,
+  "cohortExpected": 14.1,
+  "expected": 13.8,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "USHS-MN",
-   "nhle": 0.055,
-   "gp": 57
+   "feature": 0.055,
+   "gp": 28
   },
   "to": {
    "season": "2025-2026",
    "league": "USHL",
-   "nhle": 0.14,
+   "feature": 0.14,
    "gp": 54
   },
   "delta": 0.085
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
   "gp": 54,
   "season": "2025-2026"
  },
- "rank": 8,
- "score": 13.9
+ "rank": 14,
+ "score": 13.8
 }

@@ -10,6 +10,7 @@
  "height": "6'1\"",
  "weight": 185,
  "shoots": "R",
+ "catches": null,
  "contract": "26/27",
  "rights": "signed",
  "draft": {
@@ -37,8 +38,159 @@
    "pts": 9,
    "pm": -4,
    "pim": 48,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.389,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Abbotsford Canucks",
+     "gp": 24,
+     "g": 3,
+     "a": 6,
+     "pts": 9,
+     "pm": -4,
+     "pim": 48,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Utica Comets",
+     "gp": 46,
+     "g": 3,
+     "a": 6,
+     "pts": 9,
+     "pm": -14,
+     "pim": 26,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    },
+    {
+     "league": "AHL",
+     "team": "Wilkes-Barre/Scranton Penguins",
+     "gp": 19,
+     "g": 1,
+     "a": 2,
+     "pts": 3,
+     "pm": -5,
+     "pim": 28,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2023-2024",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Utica Comets",
+     "gp": 54,
+     "g": 14,
+     "a": 10,
+     "pts": 24,
+     "pm": -2,
+     "pim": 72,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2022-2023",
+   "lines": [
+    {
+     "league": "OHL",
+     "team": "Peterborough Petes",
+     "gp": 59,
+     "g": 19,
+     "a": 29,
+     "pts": 48,
+     "pm": -13,
+     "pim": 77,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.144,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2021-2022",
+   "lines": [
+    {
+     "league": "OHL",
+     "team": "Peterborough Petes",
+     "gp": 35,
+     "g": 10,
+     "a": 19,
+     "pts": 29,
+     "pm": -4,
+     "pim": 37,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.144,
+     "status": "rostered"
+    },
+    {
+     "league": "OHL",
+     "team": "Sudbury Wolves",
+     "gp": 24,
+     "g": 9,
+     "a": 11,
+     "pts": 20,
+     "pm": -14,
+     "pim": 27,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.144,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "reason": "past draft+4"

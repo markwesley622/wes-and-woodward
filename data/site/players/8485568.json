@@ -4,7 +4,7 @@
  "slug": "michal-pradel",
  "season": "20262027",
  "seasonLabel": "2026-27",
- "kind": "G",
+ "kind": "P",
  "standIn": null,
  "bio": {
   "number": null,
@@ -38,15 +38,15 @@
  "myComponents": null,
  "hsc": {},
  "note": "No NHL games in 2026-27.",
- "prospect": false,
+ "prospect": true,
  "prospectStatus": {
-  "prospect": false,
+  "prospect": true,
   "rookieEligible": true,
-  "inWindow": null,
-  "window": null,
+  "inWindow": true,
+  "window": "draft+1",
   "draftYear": 2025,
   "onNhlRoster": false,
-  "template": "nhl"
+  "template": "prospect"
  },
  "art": false
 }

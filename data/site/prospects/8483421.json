@@ -10,6 +10,7 @@
  "height": "6'0\"",
  "weight": 194,
  "shoots": "L",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -37,8 +38,103 @@
    "pts": 15,
    "pm": -14,
    "pim": 23,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Notre Dame",
+     "gp": 35,
+     "g": 8,
+     "a": 7,
+     "pts": 15,
+     "pm": -14,
+     "pim": 23,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Notre Dame",
+     "gp": 38,
+     "g": 7,
+     "a": 12,
+     "pts": 19,
+     "pm": -1,
+     "pim": 18,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2023-2024",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Notre Dame",
+     "gp": 36,
+     "g": 3,
+     "a": 10,
+     "pts": 13,
+     "pm": 3,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2022-2023",
+   "lines": [
+    {
+     "league": "USHL",
+     "team": "Lincoln Stars",
+     "gp": 57,
+     "g": 13,
+     "a": 30,
+     "pts": 43,
+     "pm": 19,
+     "pim": 32,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.143,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -58,7 +154,8 @@
   "nhle82": 6.8,
   "lines": [
    "NCAA"
-  ]
+  ],
+  "feature": 0.083
  },
  "league": {
   "name": "NCAA",
@@ -71,10 +168,9 @@
    "league": "ncaa",
    "season": "2025-2026",
    "ageBucket": "U22",
-   "exactAge": 21,
    "cohortN": 259,
    "gp": 35,
-   "pgp": 0.429,
+   "value": 0.4286,
    "percentile": 51.7,
    "percentileAllAges": 50.0,
    "allAgesN": 3059
@@ -83,59 +179,39 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 0.6,
+  "expected": 0.8,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
   "pRegular": 0.04,
   "pTopLine": 0.0,
   "pAboveAvg": 0.0,
-  "poolN": 1127,
+  "poolN": 1122,
   "group": "F",
   "age": 21,
+  "pickWeight": 0.0,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.07,
-   0.1
+  "featureBand": [
+   0.079,
+   0.087
   ],
   "examples": [
    {
-    "name": "Troy Josephs",
-    "year": 2013,
-    "pick": 209,
-    "league": "NCAA",
-    "nhle": 0.083,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jani Lajunen",
+    "name": "Daultan Leveill\u00e9",
     "year": 2008,
-    "pick": 201,
-    "league": "AHL",
-    "nhle": 0.083,
+    "pick": 29,
+    "league": "NCAA",
+    "feature": 0.083,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Adam Marsh",
-    "year": 2015,
-    "pick": 200,
+    "name": "Matt Tassone",
+    "year": 2008,
+    "pick": 176,
     "league": "ECHL",
-    "nhle": 0.083,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Julien Nantel",
-    "year": 2014,
-    "pick": 204,
-    "league": "AHL",
-    "nhle": 0.081,
+    "feature": 0.083,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -145,37 +221,57 @@
     "year": 2008,
     "pick": 197,
     "league": "NCAA",
-    "nhle": 0.083,
+    "feature": 0.083,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "J\u00e9r\u00e9my Michel",
-    "year": 2019,
-    "pick": 217,
-    "league": "USports",
-    "nhle": 0.087,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Matteo Gennaro",
-    "year": 2015,
-    "pick": 203,
+    "name": "Jani Lajunen",
+    "year": 2008,
+    "pick": 201,
     "league": "AHL",
-    "nhle": 0.08,
+    "feature": 0.083,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Brent Andrews",
+    "name": "Andrew Fritsch",
     "year": 2011,
-    "pick": 202,
+    "pick": 155,
     "league": "CIS",
-    "nhle": 0.08,
+    "feature": 0.083,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Chris Clapperton",
+    "year": 2013,
+    "pick": 122,
+    "league": "ECHL",
+    "feature": 0.083,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "J\u00e9r\u00e9my Gr\u00e9goire",
+    "year": 2013,
+    "pick": 176,
+    "league": "AHL",
+    "feature": 0.083,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Troy Josephs",
+    "year": 2013,
+    "pick": 209,
+    "league": "NCAA",
+    "feature": 0.083,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -194,27 +290,34 @@
   "band": "121-300",
   "group": "F"
  },
+ "blend": {
+  "w": 0.0,
+  "sinceDraft": 3,
+  "pedigreeExpected": 7.5,
+  "cohortExpected": 0.8,
+  "expected": 0.8,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "NCAA",
-   "nhle": 0.097,
+   "feature": 0.097,
    "gp": 38
   },
   "to": {
    "season": "2025-2026",
    "league": "NCAA",
-   "nhle": 0.083,
+   "feature": 0.083,
    "gp": 35
   },
   "delta": -0.014
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
   "gp": 35,
   "season": "2025-2026"
  },
- "rank": 27,
- "score": 0.6
+ "rank": 32,
+ "score": 0.8
 }

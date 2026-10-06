@@ -10,6 +10,7 @@
  "height": "6'3\"",
  "weight": 220,
  "shoots": "L",
+ "catches": null,
  "contract": "26/27",
  "rights": "signed",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 1,
    "pm": 1,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.389,
    "status": "rostered"
   }
@@ -50,8 +56,164 @@
    "pts": 14,
    "pm": -2,
    "pim": 8,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.389,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 2,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": 1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 36,
+     "g": 3,
+     "a": 11,
+     "pts": 14,
+     "pm": -2,
+     "pim": 8,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 67,
+     "g": 2,
+     "a": 23,
+     "pts": 25,
+     "pm": 2,
+     "pim": 22,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2023-2024",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Denver",
+     "gp": 43,
+     "g": 7,
+     "a": 29,
+     "pts": 36,
+     "pm": 33,
+     "pim": 14,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    },
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 1,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": 0,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2022-2023",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Denver",
+     "gp": 38,
+     "g": 4,
+     "a": 17,
+     "pts": 21,
+     "pm": 8,
+     "pim": 18,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2021-2022",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Denver",
+     "gp": 39,
+     "g": 3,
+     "a": 15,
+     "pts": 18,
+     "pm": 20,
+     "pim": 12,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "reason": "past draft+4"

@@ -10,6 +10,7 @@
  "height": "5'11\"",
  "weight": 192,
  "shoots": "L",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -37,8 +38,37 @@
    "pts": 11,
    "pm": 2,
    "pim": 14,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.113,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "QMJHL",
+     "team": "Moncton Wildcats",
+     "gp": 55,
+     "g": 6,
+     "a": 5,
+     "pts": 11,
+     "pm": 2,
+     "pim": 14,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.113,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -58,7 +88,8 @@
   "nhle82": 1.9,
   "lines": [
    "QMJHL"
-  ]
+  ],
+  "feature": 0.023
  },
  "league": {
   "name": "QMJHL",
@@ -71,10 +102,9 @@
    "league": "qmjhl",
    "season": "2025-2026",
    "ageBucket": "U19",
-   "exactAge": 18,
    "cohortN": 77,
    "gp": 55,
-   "pgp": 0.2,
+   "value": 0.2,
    "percentile": 14.3,
    "percentileAllAges": 18.2,
    "allAgesN": 1907
@@ -83,21 +113,21 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 1.1,
+  "expected": 1.9,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
-  "pRegular": 0.04,
+  "pRegular": 0.06,
   "pTopLine": 0.0,
   "pAboveAvg": 0.0,
-  "poolN": 1364,
+  "poolN": 1362,
   "group": "F",
   "age": 18,
+  "pickWeight": 1.0,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.01,
-   0.05
+  "featureBand": [
+   0.007,
+   0.059
   ],
   "examples": [
    {
@@ -105,37 +135,7 @@
     "year": 2009,
     "pick": 197,
     "league": "OHL",
-    "nhle": 0.021,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Brett Perlini",
-    "year": 2010,
-    "pick": 192,
-    "league": "NCAA",
-    "nhle": 0.022,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Gustav Olhaver",
-    "year": 2015,
-    "pick": 191,
-    "league": "WHL",
-    "nhle": 0.022,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Nick Pastujov",
-    "year": 2016,
-    "pick": 193,
-    "league": "NCAA",
-    "nhle": 0.021,
+    "feature": 0.021,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -145,17 +145,37 @@
     "year": 2013,
     "pick": 201,
     "league": "USHL",
-    "nhle": 0.027,
+    "feature": 0.027,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Randy McNaught",
+    "name": "Brett Perlini",
     "year": 2010,
-    "pick": 190,
+    "pick": 192,
+    "league": "NCAA",
+    "feature": 0.022,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Gustav Olhaver",
+    "year": 2015,
+    "pick": 191,
     "league": "WHL",
-    "nhle": 0.025,
+    "feature": 0.022,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Nick Pastujov",
+    "year": 2016,
+    "pick": 193,
+    "league": "NCAA",
+    "feature": 0.021,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -165,17 +185,27 @@
     "year": 2012,
     "pick": 200,
     "league": "J20 SuperElit",
-    "nhle": 0.017,
+    "feature": 0.017,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Kristian R\u00f8yk\u00e5s Marthinsen",
-    "year": 2017,
-    "pick": 213,
-    "league": "J20 Elit",
-    "nhle": 0.029,
+    "name": "Randy McNaught",
+    "year": 2010,
+    "pick": 190,
+    "league": "WHL",
+    "feature": 0.025,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Troy Josephs",
+    "year": 2013,
+    "pick": 209,
+    "league": "OJHL",
+    "feature": 0.03,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -194,27 +224,34 @@
   "band": "121-300",
   "group": "F"
  },
+ "blend": {
+  "w": 0.5,
+  "sinceDraft": 0,
+  "pedigreeExpected": 7.5,
+  "cohortExpected": 1.9,
+  "expected": 4.7,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "USHS-Prep",
-   "nhle": 0.033,
-   "gp": 54
+   "feature": 0.033,
+   "gp": 30
   },
   "to": {
    "season": "2025-2026",
    "league": "QMJHL",
-   "nhle": 0.023,
+   "feature": 0.023,
    "gp": 55
   },
   "delta": -0.01
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
   "gp": 55,
   "season": "2025-2026"
  },
  "rank": 26,
- "score": 1.1
+ "score": 4.7
 }

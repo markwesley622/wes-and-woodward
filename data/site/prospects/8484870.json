@@ -10,6 +10,7 @@
  "height": "5'11\"",
  "weight": 176,
  "shoots": "L",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 2,
    "pm": 0,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
   }
@@ -50,6 +56,11 @@
    "pts": 52,
    "pm": 19,
    "pim": 23,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
   },
@@ -62,6 +73,11 @@
    "pts": 1,
    "pm": -1,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": null,
    "status": "rostered"
   },
@@ -74,8 +90,132 @@
    "pts": 1,
    "pm": -3,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.269,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Minnesota-Duluth",
+     "gp": 2,
+     "g": 0,
+     "a": 2,
+     "pts": 2,
+     "pm": 0,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Minnesota-Duluth",
+     "gp": 40,
+     "g": 25,
+     "a": 27,
+     "pts": 52,
+     "pm": 19,
+     "pim": 23,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    },
+    {
+     "league": "WC",
+     "team": "USA",
+     "gp": 6,
+     "g": 1,
+     "a": 0,
+     "pts": 1,
+     "pm": -1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
+     "status": "rostered"
+    },
+    {
+     "league": "WJC-20",
+     "team": "USA U20",
+     "gp": 3,
+     "g": 1,
+     "a": 0,
+     "pts": 1,
+     "pm": -3,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.269,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Minnesota-Duluth",
+     "gp": 23,
+     "g": 9,
+     "a": 19,
+     "pts": 28,
+     "pm": 5,
+     "pim": 16,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    },
+    {
+     "league": "WJC-20",
+     "team": "USA U20",
+     "gp": 6,
+     "g": 1,
+     "a": 2,
+     "pts": 3,
+     "pm": 3,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.269,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -96,7 +236,8 @@
   "lines": [
    "NCAA",
    "WJC-20"
-  ]
+  ],
+  "feature": 0.241
  },
  "league": {
   "name": "NCAA",
@@ -109,10 +250,9 @@
    "league": "ncaa",
    "season": "2025-2026",
    "ageBucket": "U20",
-   "exactAge": 19,
    "cohortN": 49,
    "gp": 40,
-   "pgp": 1.3,
+   "value": 1.3,
    "percentile": 91.8,
    "percentileAllAges": 98.6,
    "allAgesN": 3059
@@ -136,14 +276,14 @@
   "pRegular": 0.76,
   "pTopLine": 0.14,
   "pAboveAvg": 0.26,
-  "poolN": 1308,
+  "poolN": 1305,
   "group": "F",
   "age": 19,
+  "pickWeight": 0.5,
   "tier": "above average",
-  "expectedTier": "below average",
-  "nhleBand": [
-   0.2,
-   0.27
+  "featureBand": [
+   0.199,
+   0.271
   ],
   "examples": [
    {
@@ -151,7 +291,7 @@
     "year": 2008,
     "pick": 45,
     "league": "NCAA",
-    "nhle": 0.239,
+    "feature": 0.239,
     "peak": 7.5,
     "tier": "replacement level",
     "nhlGp": 168
@@ -161,7 +301,7 @@
     "year": 2019,
     "pick": 45,
     "league": "KHL",
-    "nhle": 0.236,
+    "feature": 0.236,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 19
@@ -171,7 +311,7 @@
     "year": 2018,
     "pick": 42,
     "league": "NCAA",
-    "nhle": 0.246,
+    "feature": 0.246,
     "peak": 34.0,
     "tier": "below average",
     "nhlGp": 270
@@ -181,7 +321,7 @@
     "year": 2016,
     "pick": 43,
     "league": "AHL",
-    "nhle": 0.233,
+    "feature": 0.233,
     "peak": 58.0,
     "tier": "above average",
     "nhlGp": 119
@@ -191,7 +331,7 @@
     "year": 2014,
     "pick": 42,
     "league": "AHL",
-    "nhle": 0.25,
+    "feature": 0.25,
     "peak": 10.9,
     "tier": "replacement level",
     "nhlGp": 66
@@ -201,7 +341,7 @@
     "year": 2015,
     "pick": 58,
     "league": "SHL",
-    "nhle": 0.245,
+    "feature": 0.245,
     "peak": 32.0,
     "tier": "below average",
     "nhlGp": 371
@@ -211,7 +351,7 @@
     "year": 2018,
     "pick": 61,
     "league": "KHL",
-    "nhle": 0.239,
+    "feature": 0.239,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -221,7 +361,7 @@
     "year": 2009,
     "pick": 45,
     "league": "AHL",
-    "nhle": 0.227,
+    "feature": 0.227,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 82
@@ -240,27 +380,34 @@
   "band": "33-64",
   "group": "F"
  },
+ "blend": {
+  "w": 0.25,
+  "sinceDraft": 1,
+  "pedigreeExpected": 23.7,
+  "cohortExpected": 33.3,
+  "expected": 30.9,
+  "tier": "below average"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "NCAA",
-   "nhle": 0.215,
-   "gp": 29
+   "feature": 0.215,
+   "gp": 23
   },
   "to": {
    "season": "2025-2026",
    "league": "NCAA",
-   "nhle": 0.241,
-   "gp": 43
+   "feature": 0.241,
+   "gp": 40
   },
   "delta": 0.026
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
-  "gp": 43,
+  "gp": 40,
   "season": "2025-2026"
  },
- "rank": 4,
- "score": 33.3
+ "rank": 6,
+ "score": 30.9
 }

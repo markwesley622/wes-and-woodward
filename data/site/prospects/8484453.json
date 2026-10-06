@@ -1,0 +1,317 @@
+{
+ "epId": "599324",
+ "nhlId": 8484453,
+ "name": "Rudy Guimond",
+ "slug": "rudy-guimond",
+ "group": "G",
+ "position": "G",
+ "birthDate": "2005-05-19",
+ "age": 21,
+ "height": "6'4\"",
+ "weight": 187,
+ "shoots": null,
+ "catches": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2023,
+  "overall": 169,
+  "round": 6
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+3",
+  "draftYear": 2023,
+  "onNhlRoster": false
+ },
+ "scouting": "He generally keeps his routes short around the crease by keeping his depth fairly shallow, even off the rush. -EliteProspects 2023 NHL Draft Guide",
+ "currentLines": [],
+ "lastLines": [
+  {
+   "league": "QMJHL",
+   "team": "Moncton Wildcats",
+   "gp": 50,
+   "g": null,
+   "a": null,
+   "pts": null,
+   "pm": null,
+   "pim": null,
+   "gaa": "2.27",
+   "svp": ".922",
+   "w": 40,
+   "l": 7,
+   "so": 3,
+   "coef": 0.113,
+   "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "QMJHL",
+     "team": "Moncton Wildcats",
+     "gp": 50,
+     "g": null,
+     "a": null,
+     "pts": null,
+     "pm": null,
+     "pim": null,
+     "gaa": "2.27",
+     "svp": ".922",
+     "w": 40,
+     "l": 7,
+     "so": 3,
+     "coef": 0.113,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "QMJHL",
+     "team": "Moncton Wildcats",
+     "gp": 16,
+     "g": null,
+     "a": null,
+     "pts": null,
+     "pm": null,
+     "pim": null,
+     "gaa": "1.73",
+     "svp": ".940",
+     "w": 16,
+     "l": 0,
+     "so": 3,
+     "coef": 0.113,
+     "status": "rostered"
+    },
+    {
+     "league": "USHL",
+     "team": "Cedar Rapids RoughRiders",
+     "gp": 6,
+     "g": null,
+     "a": null,
+     "pts": null,
+     "pm": null,
+     "pim": null,
+     "gaa": "2.88",
+     "svp": ".887",
+     "w": 1,
+     "l": 5,
+     "so": 1,
+     "coef": 0.143,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2023-2024",
+   "lines": [
+    {
+     "league": "USHL",
+     "team": "Cedar Rapids RoughRiders",
+     "gp": 32,
+     "g": null,
+     "a": null,
+     "pts": null,
+     "pm": null,
+     "pim": null,
+     "gaa": "3.66",
+     "svp": ".869",
+     "w": 13,
+     "l": 13,
+     "so": 0,
+     "coef": 0.143,
+     "status": "rostered"
+    }
+   ]
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "QMJHL",
+  "leagueSlug": "qmjhl",
+  "table": "QMJHL",
+  "coef": 0.113,
+  "team": "Moncton Wildcats",
+  "gp": 50,
+  "lineGp": 50,
+  "svp": 0.9223,
+  "gaa": "2.27",
+  "w": 40,
+  "l": 7,
+  "so": 3,
+  "leagueSvp": 0.8959,
+  "leagueN": 40,
+  "svDelta": 0.0264,
+  "feature": 0.0333,
+  "feature1": 0.0264,
+  "featureSeasons": 2
+ },
+ "league": {
+  "name": "QMJHL",
+  "table": "QMJHL",
+  "coef": 0.113,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "qmjhl",
+   "season": "2025-2026",
+   "ageBucket": "U21",
+   "cohortN": 3,
+   "gp": 50,
+   "percentile": null,
+   "note": "sample too small"
+  },
+  "current": null
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 13.8,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 95.3,
+  "pRegular": 0.16,
+  "pTopLine": 0.12,
+  "pAboveAvg": 0.14,
+  "poolN": 225,
+  "group": "G",
+  "age": 20,
+  "pickWeight": 0.5,
+  "tier": "replacement level",
+  "featureBand": [
+   -0.011,
+   0.037
+  ],
+  "examples": [
+   {
+    "name": "Nicola Riopel",
+    "year": 2009,
+    "pick": 142,
+    "league": "QMJHL",
+    "feature": 0.0309,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Akira Schmid",
+    "year": 2018,
+    "pick": 136,
+    "league": "USHL",
+    "feature": 0.0371,
+    "peak": 95.8,
+    "tier": "elite",
+    "nhlGp": 83
+   },
+   {
+    "name": "Patrik Bartosak",
+    "year": 2013,
+    "pick": 146,
+    "league": "WHL",
+    "feature": 0.0263,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Darcy Kuemper",
+    "year": 2009,
+    "pick": 161,
+    "league": "WHL",
+    "feature": 0.0198,
+    "peak": 98.3,
+    "tier": "elite",
+    "nhlGp": 490
+   },
+   {
+    "name": "Filip Larsson",
+    "year": 2016,
+    "pick": 167,
+    "league": "NCAA",
+    "feature": 0.029,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Laurent Brossoit",
+    "year": 2011,
+    "pick": 164,
+    "league": "ECHL",
+    "feature": 0.0145,
+    "peak": 98.6,
+    "tier": "elite",
+    "nhlGp": 141
+   },
+   {
+    "name": "Morgan Clark",
+    "year": 2008,
+    "pick": 191,
+    "league": "QMJHL",
+    "feature": 0.0077,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Connor Hellebuyck",
+    "year": 2012,
+    "pick": 130,
+    "league": "NCAA",
+    "feature": 0.0323,
+    "peak": 98.4,
+    "tier": "elite",
+    "nhlGp": 625
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 139,
+  "expected": 9.3,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 42.2,
+  "pRegular": 0.16,
+  "pTopLine": 0.06,
+  "pAboveAvg": 0.09,
+  "band": "121-300",
+  "group": "G"
+ },
+ "blend": {
+  "w": 0.25,
+  "sinceDraft": 2,
+  "pedigreeExpected": 9.3,
+  "cohortExpected": 13.8,
+  "expected": 12.7,
+  "tier": "replacement level"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "QMJHL",
+   "feature": 0.0402,
+   "gp": 16
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "QMJHL",
+   "feature": 0.0333,
+   "gp": 50
+  },
+  "delta": -0.0069
+ },
+ "nhlSample": null,
+ "availability": {
+  "gp": 50,
+  "season": "2025-2026"
+ },
+ "rank": 15,
+ "score": 12.7
+}

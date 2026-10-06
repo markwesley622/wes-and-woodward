@@ -10,6 +10,7 @@
  "height": "6'2\"",
  "weight": 185,
  "shoots": "L",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 1,
    "pm": 4,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
   }
@@ -50,8 +56,81 @@
    "pts": 14,
    "pm": 7,
    "pim": 34,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Colorado College",
+     "gp": 2,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": 4,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Colorado College",
+     "gp": 36,
+     "g": 2,
+     "a": 12,
+     "pts": 14,
+     "pm": 7,
+     "pim": 34,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Colorado College",
+     "gp": 34,
+     "g": 3,
+     "a": 7,
+     "pts": 10,
+     "pm": 0,
+     "pim": 12,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -71,7 +150,8 @@
   "nhle82": 6.1,
   "lines": [
    "NCAA"
-  ]
+  ],
+  "feature": 0.075
  },
  "league": {
   "name": "NCAA",
@@ -84,10 +164,9 @@
    "league": "ncaa",
    "season": "2025-2026",
    "ageBucket": "U22",
-   "exactAge": 21,
    "cohortN": 128,
    "gp": 36,
-   "pgp": 0.389,
+   "value": 0.3889,
    "percentile": 76.6,
    "percentileAllAges": 74.0,
    "allAgesN": 1709
@@ -111,14 +190,14 @@
   "pRegular": 0.08,
   "pTopLine": 0.0,
   "pAboveAvg": 0.04,
-  "poolN": 757,
+  "poolN": 756,
   "group": "D",
   "age": 20,
+  "pickWeight": 0.5,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.06,
-   0.09
+  "featureBand": [
+   0.056,
+   0.092
   ],
   "examples": [
    {
@@ -126,7 +205,7 @@
     "year": 2017,
     "pick": 211,
     "league": "NCAA",
-    "nhle": 0.073,
+    "feature": 0.073,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -136,7 +215,7 @@
     "year": 2016,
     "pick": 203,
     "league": "QMJHL",
-    "nhle": 0.073,
+    "feature": 0.073,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -146,7 +225,7 @@
     "year": 2015,
     "pick": 202,
     "league": "HockeyAllsvenskan",
-    "nhle": 0.073,
+    "feature": 0.073,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -156,7 +235,7 @@
     "year": 2017,
     "pick": 197,
     "league": "Mestis",
-    "nhle": 0.076,
+    "feature": 0.076,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -166,7 +245,7 @@
     "year": 2017,
     "pick": 214,
     "league": "NCAA",
-    "nhle": 0.078,
+    "feature": 0.078,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -176,7 +255,7 @@
     "year": 2019,
     "pick": 211,
     "league": "Liiga",
-    "nhle": 0.071,
+    "feature": 0.071,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -186,7 +265,7 @@
     "year": 2017,
     "pick": 204,
     "league": "Czechia2",
-    "nhle": 0.071,
+    "feature": 0.071,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -196,7 +275,7 @@
     "year": 2016,
     "pick": 202,
     "league": "OHL",
-    "nhle": 0.071,
+    "feature": 0.071,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -215,27 +294,34 @@
   "band": "121-300",
   "group": "D"
  },
+ "blend": {
+  "w": 0.25,
+  "sinceDraft": 1,
+  "pedigreeExpected": 7.0,
+  "cohortExpected": 3.2,
+  "expected": 4.2,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "NCAA",
-   "nhle": 0.057,
+   "feature": 0.057,
    "gp": 34
   },
   "to": {
    "season": "2025-2026",
    "league": "NCAA",
-   "nhle": 0.075,
+   "feature": 0.075,
    "gp": 36
   },
   "delta": 0.018
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
   "gp": 36,
   "season": "2025-2026"
  },
- "rank": 23,
- "score": 3.2
+ "rank": 28,
+ "score": 4.2
 }

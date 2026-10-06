@@ -240,11 +240,11 @@ def write_player(pid, out):
     is sent to Grand Rapids the nightly build swaps him back to the prospect template. One slug, one
     page, whichever status is current is canonical."""
     land = json.load((ROOT / "data" / "raw" / "players" / str(pid) / "landing.json").open())
-    st = prospect_status(land) if out.get("kind") != "G" else {"prospect": False, "rookieEligible": rookie_eligible(land), "inWindow": None, "window": None, "draftYear": (land.get("draftDetails") or {}).get("year")}
+    st = prospect_status(land)                      # goalies too (Mark, 10/6): same rule, same prospect template off the NHL roster
     on_nhl_roster = pid in nhl_roster_ids()
     out["prospect"] = st["prospect"]
-    out["prospectStatus"] = {**st, "onNhlRoster": on_nhl_roster, "template": "nhl" if (on_nhl_roster or out.get("kind") == "G" or not st["prospect"]) else "prospect"}
-    if out["prospectStatus"]["template"] == "prospect" and out.get("kind") == "S": out["kind"] = "P"
+    out["prospectStatus"] = {**st, "onNhlRoster": on_nhl_roster, "template": "nhl" if (on_nhl_roster or not st["prospect"]) else "prospect"}
+    if out["prospectStatus"]["template"] == "prospect": out["kind"] = "P"      # bio.position still says G for goalies
     out["art"] = has_art(pid)
     # every page is published (Mark, 10/6): players without commissioned art get the 3D initials line art
     # (src/components/Initials.astro) in the art slot. The art gate of 9/24 and the played-a-game rule

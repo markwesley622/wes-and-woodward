@@ -10,6 +10,7 @@
  "height": "6'2\"",
  "weight": 207,
  "shoots": "L",
+ "catches": null,
  "contract": "26/27",
  "rights": "signed",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 1,
    "pm": -1,
    "pim": 2,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.389,
    "status": "rostered"
   }
@@ -50,8 +56,505 @@
    "pts": 21,
    "pm": 33,
    "pim": 36,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.389,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 2,
+     "g": 1,
+     "a": 0,
+     "pts": 1,
+     "pm": -1,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 61,
+     "g": 3,
+     "a": 18,
+     "pts": 21,
+     "pm": 33,
+     "pim": 36,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 23,
+     "g": 3,
+     "a": 6,
+     "pts": 9,
+     "pm": 13,
+     "pim": 18,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    },
+    {
+     "league": "NHL",
+     "team": "Detroit Red Wings",
+     "gp": 7,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": -1,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2023-2024",
+   "lines": [
+    {
+     "league": "NHL",
+     "team": "Toronto Maple Leafs",
+     "gp": 30,
+     "g": 0,
+     "a": 4,
+     "pts": 4,
+     "pm": 5,
+     "pim": 19,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    },
+    {
+     "league": "NHL",
+     "team": "Anaheim Ducks",
+     "gp": 10,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -2,
+     "pim": 13,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    },
+    {
+     "league": "AHL",
+     "team": "Toronto Marlies",
+     "gp": 5,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": -2,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2022-2023",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Chicago Wolves",
+     "gp": 65,
+     "g": 10,
+     "a": 22,
+     "pts": 32,
+     "pm": 14,
+     "pim": 46,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2021-2022",
+   "lines": [
+    {
+     "league": "NHL",
+     "team": "Edmonton Oilers",
+     "gp": 30,
+     "g": 0,
+     "a": 4,
+     "pts": 4,
+     "pm": 1,
+     "pim": 13,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    },
+    {
+     "league": "AHL",
+     "team": "Bakersfield Condors",
+     "gp": 11,
+     "g": 0,
+     "a": 2,
+     "pts": 2,
+     "pm": -6,
+     "pim": 9,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    },
+    {
+     "league": "NHL",
+     "team": "Montr\u00e9al Canadiens",
+     "gp": 3,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": 2,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2020-2021",
+   "lines": [
+    {
+     "league": "NHL",
+     "team": "Edmonton Oilers",
+     "gp": 19,
+     "g": 0,
+     "a": 2,
+     "pts": 2,
+     "pm": 0,
+     "pim": 9,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    },
+    {
+     "league": "HockeyAllsvenskan",
+     "team": "HC Vita H\u00e4sten",
+     "gp": 11,
+     "g": 3,
+     "a": 6,
+     "pts": 9,
+     "pm": 6,
+     "pim": 10,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.351,
+     "status": "rostered"
+    },
+    {
+     "league": "HockeyAllsvenskan",
+     "team": "Kristianstads IK",
+     "gp": 3,
+     "g": 0,
+     "a": 3,
+     "pts": 3,
+     "pm": 0,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.351,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2019-2020",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Bakersfield Condors",
+     "gp": 25,
+     "g": 3,
+     "a": 7,
+     "pts": 10,
+     "pm": 2,
+     "pim": 18,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    },
+    {
+     "league": "NHL",
+     "team": "Edmonton Oilers",
+     "gp": 8,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -4,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2018-2019",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Bakersfield Condors",
+     "gp": 67,
+     "g": 8,
+     "a": 19,
+     "pts": 27,
+     "pm": 25,
+     "pim": 45,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2017-2018",
+   "lines": [
+    {
+     "league": "SHL",
+     "team": "Djurg\u00e5rdens IF",
+     "gp": 49,
+     "g": 1,
+     "a": 12,
+     "pts": 13,
+     "pm": 13,
+     "pim": 30,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.566,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2016-2017",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "UMass",
+     "gp": 36,
+     "g": 2,
+     "a": 6,
+     "pts": 8,
+     "pm": -6,
+     "pim": 28,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2015-2016",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "UMass",
+     "gp": 27,
+     "g": 2,
+     "a": 5,
+     "pts": 7,
+     "pm": -6,
+     "pim": 26,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    },
+    {
+     "league": "International-Jr",
+     "team": "Sweden U20 (all)",
+     "gp": 13,
+     "g": 3,
+     "a": 2,
+     "pts": 5,
+     "pm": 7,
+     "pim": 16,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
+     "status": "rostered"
+    },
+    {
+     "league": "WJC-20",
+     "team": "Sweden U20",
+     "gp": 7,
+     "g": 2,
+     "a": 1,
+     "pts": 3,
+     "pm": 7,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.269,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2014-2015",
+   "lines": [
+    {
+     "league": "USHL",
+     "team": "Dubuque Fighting Saints",
+     "gp": 52,
+     "g": 2,
+     "a": 14,
+     "pts": 16,
+     "pm": 18,
+     "pim": 79,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.143,
+     "status": "rostered"
+    },
+    {
+     "league": "International-Jr",
+     "team": "Sweden U20 (all)",
+     "gp": 12,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": 0,
+     "pim": 16,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
+     "status": "rostered"
+    },
+    {
+     "league": "WJC-20",
+     "team": "Sweden U20",
+     "gp": 7,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": 1,
+     "pim": 8,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.269,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "reason": "lost rookie eligibility"

@@ -76,7 +76,7 @@ const RECENT = 10;
   {!isP && (<>
   <section class="sec">
     <div class="shell">
-      <p class="kicker"><a href="/players/">Players</a> · Red Wings · {season}</p>
+      <p class="kicker"><a href="/players/">Players</a> · Red Wings · {season}{P.prospectStatus?.prospect && prospect?.rank ? <> · <a href="/prospects/">Prospect</a> · pipeline rank {prospect.rank} · {P.prospectStatus.window}</> : null}</p>
       <div class="head">
         {art ? (
           <picture class="art"><source srcset={`/players/${P.playerId}-art.webp`} type="image/webp" /><img src={`/players/${P.playerId}-art.png`} alt={`${P.name}, illustrated`} width="1100" height="825" /></picture>

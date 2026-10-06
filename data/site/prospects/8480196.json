@@ -10,6 +10,7 @@
  "height": "5'9\"",
  "weight": 176,
  "shoots": "L",
+ "catches": null,
  "contract": "26/27",
  "rights": "signed",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 2,
    "pm": -1,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.389,
    "status": "rostered"
   }
@@ -50,6 +56,11 @@
    "pts": 5,
    "pm": -1,
    "pim": 8,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 1.0,
    "status": "rostered"
   },
@@ -62,8 +73,286 @@
    "pts": 3,
    "pm": -8,
    "pim": 2,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 1.0,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 2,
+     "g": 1,
+     "a": 1,
+     "pts": 2,
+     "pm": -1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "NHL",
+     "team": "Buffalo Sabres",
+     "gp": 35,
+     "g": 2,
+     "a": 3,
+     "pts": 5,
+     "pm": -1,
+     "pim": 8,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    },
+    {
+     "league": "NHL",
+     "team": "Winnipeg Jets",
+     "gp": 15,
+     "g": 0,
+     "a": 3,
+     "pts": 3,
+     "pm": -8,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "NHL",
+     "team": "Buffalo Sabres",
+     "gp": 48,
+     "g": 0,
+     "a": 7,
+     "pts": 7,
+     "pm": -9,
+     "pim": 10,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2023-2024",
+   "lines": [
+    {
+     "league": "NHL",
+     "team": "Buffalo Sabres",
+     "gp": 36,
+     "g": 1,
+     "a": 7,
+     "pts": 8,
+     "pm": 5,
+     "pim": 8,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    },
+    {
+     "league": "AHL",
+     "team": "Rochester Americans",
+     "gp": 10,
+     "g": 0,
+     "a": 3,
+     "pts": 3,
+     "pm": 5,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2022-2023",
+   "lines": [
+    {
+     "league": "NHL",
+     "team": "Buffalo Sabres",
+     "gp": 59,
+     "g": 1,
+     "a": 8,
+     "pts": 9,
+     "pm": -24,
+     "pim": 8,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2021-2022",
+   "lines": [
+    {
+     "league": "NHL",
+     "team": "Buffalo Sabres",
+     "gp": 73,
+     "g": 1,
+     "a": 9,
+     "pts": 10,
+     "pm": -9,
+     "pim": 12,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2020-2021",
+   "lines": [
+    {
+     "league": "NHL",
+     "team": "Buffalo Sabres",
+     "gp": 38,
+     "g": 1,
+     "a": 8,
+     "pts": 9,
+     "pm": -1,
+     "pim": 12,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    },
+    {
+     "league": "AHL",
+     "team": "Rochester Americans",
+     "gp": 5,
+     "g": 0,
+     "a": 3,
+     "pts": 3,
+     "pm": -3,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2019-2020",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Rochester Americans",
+     "gp": 61,
+     "g": 4,
+     "a": 23,
+     "pts": 27,
+     "pm": 8,
+     "pim": 34,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2018-2019",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Providence College",
+     "gp": 42,
+     "g": 4,
+     "a": 24,
+     "pts": 28,
+     "pm": 17,
+     "pim": 8,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2017-2018",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Providence College",
+     "gp": 40,
+     "g": 4,
+     "a": 21,
+     "pts": 25,
+     "pm": 16,
+     "pim": 18,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "reason": "lost rookie eligibility"

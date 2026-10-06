@@ -10,6 +10,7 @@
  "height": "6'1\"",
  "weight": 190,
  "shoots": "R",
+ "catches": null,
  "contract": "27/28",
  "rights": "signed",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 3,
    "pm": 0,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.389,
    "status": "rostered"
   }
@@ -50,6 +56,11 @@
    "pts": 28,
    "pm": -4,
    "pim": 13,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.441,
    "status": "rostered"
   },
@@ -62,8 +73,222 @@
    "pts": 2,
    "pm": 1,
    "pim": 2,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.389,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 2,
+     "g": 2,
+     "a": 1,
+     "pts": 3,
+     "pm": 0,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "Liiga",
+     "team": "HPK",
+     "gp": 54,
+     "g": 17,
+     "a": 11,
+     "pts": 28,
+     "pm": -4,
+     "pim": 13,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.441,
+     "status": "rostered"
+    },
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 3,
+     "g": 1,
+     "a": 1,
+     "pts": 2,
+     "pm": 1,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "Liiga",
+     "team": "HPK",
+     "gp": 46,
+     "g": 14,
+     "a": 30,
+     "pts": 44,
+     "pm": 6,
+     "pim": 30,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.441,
+     "status": "rostered"
+    },
+    {
+     "league": "International-Jr",
+     "team": "Finland U20 (all)",
+     "gp": 10,
+     "g": 5,
+     "a": 4,
+     "pts": 9,
+     "pm": 0,
+     "pim": 28,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
+     "status": "rostered"
+    },
+    {
+     "league": "International",
+     "team": "Finland (all)",
+     "gp": 9,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": -1,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
+     "status": "rostered"
+    },
+    {
+     "league": "WJC-20",
+     "team": "Finland U20",
+     "gp": 7,
+     "g": 6,
+     "a": 1,
+     "pts": 7,
+     "pm": -1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.269,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2023-2024",
+   "lines": [
+    {
+     "league": "Liiga",
+     "team": "Pelicans",
+     "gp": 38,
+     "g": 4,
+     "a": 6,
+     "pts": 10,
+     "pm": -1,
+     "pim": 8,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.441,
+     "status": "rostered"
+    },
+    {
+     "league": "U20 SM-sarja",
+     "team": "Pelicans U20",
+     "gp": 8,
+     "g": 14,
+     "a": 7,
+     "pts": 21,
+     "pm": 13,
+     "pim": 6,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.083,
+     "status": "rostered"
+    },
+    {
+     "league": "International-Jr",
+     "team": "Finland U20 (all)",
+     "gp": 8,
+     "g": 2,
+     "a": 2,
+     "pts": 4,
+     "pm": null,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
+     "status": "rostered"
+    },
+    {
+     "league": "International-Jr",
+     "team": "Finland U19 (all)",
+     "gp": 7,
+     "g": 5,
+     "a": 11,
+     "pts": 16,
+     "pm": null,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -84,7 +309,8 @@
   "lines": [
    "Liiga",
    "AHL"
-  ]
+  ],
+  "feature": 0.23
  },
  "league": {
   "name": "Liiga",
@@ -97,10 +323,9 @@
    "league": "liiga",
    "season": "2025-2026",
    "ageBucket": "U21",
-   "exactAge": 20,
    "cohortN": 20,
    "gp": 54,
-   "pgp": 0.519,
+   "value": 0.5185,
    "percentile": 85.0,
    "percentileAllAges": 83.7,
    "allAgesN": 442
@@ -117,102 +342,102 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 24.9,
-  "median": 10.0,
-  "p75": 46.3,
-  "p90": 80.5,
-  "pRegular": 0.52,
-  "pTopLine": 0.12,
-  "pAboveAvg": 0.24,
-  "poolN": 1240,
+  "expected": 27.1,
+  "median": 4.9,
+  "p75": 60.1,
+  "p90": 82.3,
+  "pRegular": 0.5,
+  "pTopLine": 0.16,
+  "pAboveAvg": 0.28,
+  "poolN": 1236,
   "group": "F",
   "age": 20,
-  "tier": "below average",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.2,
-   0.26
+  "pickWeight": 0.0,
+  "tier": "above average",
+  "featureBand": [
+   0.221,
+   0.238
   ],
   "examples": [
    {
-    "name": "Jan Jen\u00edk",
-    "year": 2018,
-    "pick": 65,
-    "league": "AHL",
-    "nhle": 0.233,
+    "name": "Damien Riat",
+    "year": 2016,
+    "pick": 117,
+    "league": "NL",
+    "feature": 0.23,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 24
+    "nhlGp": 0
    },
    {
-    "name": "Reilly Smith",
+    "name": "Valentin Nussbaumer",
+    "year": 2019,
+    "pick": 207,
+    "league": "NL",
+    "feature": 0.23,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Alex Chiasson",
     "year": 2009,
-    "pick": 69,
+    "pick": 38,
     "league": "NCAA",
-    "nhle": 0.222,
-    "peak": 89.0,
-    "tier": "elite",
-    "nhlGp": 988
+    "feature": 0.231,
+    "peak": 60.1,
+    "tier": "above average",
+    "nhlGp": 651
    },
    {
-    "name": "Zack Smith",
-    "year": 2008,
-    "pick": 79,
+    "name": "Drew Shore",
+    "year": 2009,
+    "pick": 44,
+    "league": "NCAA",
+    "feature": 0.229,
+    "peak": 33.9,
+    "tier": "below average",
+    "nhlGp": 98
+   },
+   {
+    "name": "Martin Kaut",
+    "year": 2018,
+    "pick": 16,
     "league": "AHL",
-    "nhle": 0.233,
-    "peak": 52.2,
+    "feature": 0.231,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 56
+   },
+   {
+    "name": "Cody Hodgson",
+    "year": 2008,
+    "pick": 10,
+    "league": "AHL",
+    "feature": 0.228,
+    "peak": 82.3,
+    "tier": "top-line",
+    "nhlGp": 328
+   },
+   {
+    "name": "Joe Colborne",
+    "year": 2008,
+    "pick": 16,
+    "league": "AHL",
+    "feature": 0.228,
+    "peak": 71.4,
     "tier": "above average",
-    "nhlGp": 662
+    "nhlGp": 295
    },
    {
     "name": "Johan Larsson",
     "year": 2010,
     "pick": 56,
     "league": "AHL",
-    "nhle": 0.228,
+    "feature": 0.228,
     "peak": 22.4,
     "tier": "replacement level",
     "nhlGp": 488
-   },
-   {
-    "name": "Morgan Geekie",
-    "year": 2017,
-    "pick": 67,
-    "league": "AHL",
-    "nhle": 0.245,
-    "peak": 83.5,
-    "tier": "top-line",
-    "nhlGp": 418
-   },
-   {
-    "name": "Michael Latta",
-    "year": 2009,
-    "pick": 72,
-    "league": "AHL",
-    "nhle": 0.214,
-    "peak": 10.0,
-    "tier": "replacement level",
-    "nhlGp": 113
-   },
-   {
-    "name": "Ben Hanowski",
-    "year": 2009,
-    "pick": 63,
-    "league": "NCAA",
-    "nhle": 0.214,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 16
-   },
-   {
-    "name": "Semyon Der-Arguchintsev",
-    "year": 2018,
-    "pick": 76,
-    "league": "AHL",
-    "nhle": 0.244,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
    }
   ]
  },
@@ -228,27 +453,34 @@
   "band": "65-120",
   "group": "F"
  },
+ "blend": {
+  "w": 0.0,
+  "sinceDraft": 2,
+  "pedigreeExpected": 13.4,
+  "cohortExpected": 27.1,
+  "expected": 27.1,
+  "tier": "below average"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "Liiga",
-   "nhle": 0.402,
-   "gp": 53
+   "feature": 0.402,
+   "gp": 46
   },
   "to": {
    "season": "2025-2026",
    "league": "Liiga",
-   "nhle": 0.23,
-   "gp": 57
+   "feature": 0.23,
+   "gp": 54
   },
   "delta": -0.172
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
-  "gp": 57,
+  "gp": 54,
   "season": "2025-2026"
  },
- "rank": 5,
- "score": 24.9
+ "rank": 9,
+ "score": 27.1
 }

@@ -10,6 +10,7 @@
  "height": "6'4\"",
  "weight": 216,
  "shoots": "L",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -37,8 +38,37 @@
    "pts": 8,
    "pm": 6,
    "pim": 51,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.113,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "QMJHL",
+     "team": "Cape Breton Eagles",
+     "gp": 38,
+     "g": 4,
+     "a": 4,
+     "pts": 8,
+     "pm": 6,
+     "pim": 51,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.113,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -58,7 +88,8 @@
   "nhle82": 2.0,
   "lines": [
    "QMJHL"
-  ]
+  ],
+  "feature": 0.024
  },
  "league": {
   "name": "QMJHL",
@@ -71,10 +102,9 @@
    "league": "qmjhl",
    "season": "2025-2026",
    "ageBucket": "U19",
-   "exactAge": 18,
    "cohortN": 54,
    "gp": 38,
-   "pgp": 0.211,
+   "value": 0.2105,
    "percentile": 40.7,
    "percentileAllAges": 42.3,
    "allAgesN": 1017
@@ -93,11 +123,11 @@
   "poolN": 837,
   "group": "D",
   "age": 18,
+  "pickWeight": 1.0,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.02,
-   0.03
+  "featureBand": [
+   0.014,
+   0.033
   ],
   "examples": [
    {
@@ -105,7 +135,7 @@
     "year": 2017,
     "pick": 175,
     "league": "OHL",
-    "nhle": 0.024,
+    "feature": 0.024,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -115,17 +145,7 @@
     "year": 2008,
     "pick": 179,
     "league": "OJHL",
-    "nhle": 0.024,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Ivan Chukarov",
-    "year": 2015,
-    "pick": 182,
-    "league": "NAHL",
-    "nhle": 0.024,
+    "feature": 0.024,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -135,7 +155,7 @@
     "year": 2010,
     "pick": 168,
     "league": "EJHL",
-    "nhle": 0.023,
+    "feature": 0.023,
     "peak": 13.6,
     "tier": "replacement level",
     "nhlGp": 197
@@ -145,7 +165,37 @@
     "year": 2012,
     "pick": 168,
     "league": "USHL",
-    "nhle": 0.025,
+    "feature": 0.025,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Patrick Holway",
+    "year": 2015,
+    "pick": 170,
+    "league": "USHL",
+    "feature": 0.026,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ivan Chukarov",
+    "year": 2015,
+    "pick": 182,
+    "league": "NAHL",
+    "feature": 0.024,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Santeri Saari",
+    "year": 2013,
+    "pick": 173,
+    "league": "Mestis",
+    "feature": 0.021,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -155,30 +205,10 @@
     "year": 2016,
     "pick": 161,
     "league": "USHS-Prep",
-    "nhle": 0.024,
+    "feature": 0.024,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 1
-   },
-   {
-    "name": "Patrick Holway",
-    "year": 2015,
-    "pick": 170,
-    "league": "USHL",
-    "nhle": 0.026,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Michael Sdao",
-    "year": 2009,
-    "pick": 191,
-    "league": "USHL",
-    "nhle": 0.024,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
    }
   ]
  },
@@ -194,27 +224,34 @@
   "band": "121-300",
   "group": "D"
  },
+ "blend": {
+  "w": 0.5,
+  "sinceDraft": 0,
+  "pedigreeExpected": 7.0,
+  "cohortExpected": 3.7,
+  "expected": 5.3,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "QMJHL",
-   "nhle": 0.008,
+   "feature": 0.008,
    "gp": 54
   },
   "to": {
    "season": "2025-2026",
    "league": "QMJHL",
-   "nhle": 0.024,
+   "feature": 0.024,
    "gp": 38
   },
   "delta": 0.016
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
   "gp": 38,
   "season": "2025-2026"
  },
- "rank": 21,
- "score": 3.7
+ "rank": 24,
+ "score": 5.3
 }

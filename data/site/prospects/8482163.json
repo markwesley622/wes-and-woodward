@@ -10,6 +10,7 @@
  "height": "6'0\"",
  "weight": 183,
  "shoots": "L",
+ "catches": null,
  "contract": "26/27",
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 1,
    "pm": -1,
    "pim": 6,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.566,
    "status": "rostered"
   }
@@ -50,6 +56,11 @@
    "pts": 16,
    "pm": 4,
    "pim": 20,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.566,
    "status": "rostered"
   },
@@ -62,8 +73,254 @@
    "pts": 0,
    "pm": 0,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": null,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "SHL",
+     "team": "Malm\u00f6 Redhawks",
+     "gp": 5,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": -1,
+     "pim": 6,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.566,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "SHL",
+     "team": "Malm\u00f6 Redhawks",
+     "gp": 52,
+     "g": 5,
+     "a": 11,
+     "pts": 16,
+     "pm": 4,
+     "pim": 20,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.566,
+     "status": "rostered"
+    },
+    {
+     "league": "International",
+     "team": "Finland (all)",
+     "gp": 3,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": 0,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 62,
+     "g": 1,
+     "a": 4,
+     "pts": 5,
+     "pm": -15,
+     "pim": 40,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2023-2024",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 32,
+     "g": 1,
+     "a": 5,
+     "pts": 6,
+     "pm": 5,
+     "pim": 6,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2022-2023",
+   "lines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 48,
+     "g": 1,
+     "a": 7,
+     "pts": 8,
+     "pm": -7,
+     "pim": 14,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    },
+    {
+     "league": "ECHL",
+     "team": "Toledo Walleye",
+     "gp": 5,
+     "g": 0,
+     "a": 3,
+     "pts": 3,
+     "pm": -2,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.147,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2021-2022",
+   "lines": [
+    {
+     "league": "Liiga",
+     "team": "TPS",
+     "gp": 52,
+     "g": 3,
+     "a": 4,
+     "pts": 7,
+     "pm": 9,
+     "pim": 55,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.441,
+     "status": "rostered"
+    },
+    {
+     "league": "International-Jr",
+     "team": "Finland U20 (all)",
+     "gp": 7,
+     "g": 1,
+     "a": 0,
+     "pts": 1,
+     "pm": 2,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
+     "status": "rostered"
+    },
+    {
+     "league": "WJC-20",
+     "team": "Finland U20",
+     "gp": 7,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": 1,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.269,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2020-2021",
+   "lines": [
+    {
+     "league": "Liiga",
+     "team": "TPS",
+     "gp": 53,
+     "g": 4,
+     "a": 10,
+     "pts": 14,
+     "pm": 12,
+     "pim": 24,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.441,
+     "status": "rostered"
+    },
+    {
+     "league": "WJC-20",
+     "team": "Finland U20",
+     "gp": 7,
+     "g": 0,
+     "a": 2,
+     "pts": 2,
+     "pm": 7,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.269,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "reason": "past draft+4"

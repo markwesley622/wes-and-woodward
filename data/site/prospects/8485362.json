@@ -10,6 +10,7 @@
  "height": "6'1\"",
  "weight": 190,
  "shoots": "L",
+ "catches": null,
  "contract": "28/29",
  "rights": "signed",
  "draft": {
@@ -37,6 +38,11 @@
    "pts": 77,
    "pm": 45,
    "pim": 56,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.141,
    "status": "rostered"
   },
@@ -49,8 +55,54 @@
    "pts": 0,
    "pm": 0,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.269,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "WHL",
+     "team": "Everett Silvertips",
+     "gp": 53,
+     "g": 36,
+     "a": 41,
+     "pts": 77,
+     "pm": 45,
+     "pim": 56,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.141,
+     "status": "rostered"
+    },
+    {
+     "league": "WJC-20",
+     "team": "Canada U20",
+     "gp": 2,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": 0,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.269,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -71,7 +123,8 @@
   "lines": [
    "WHL",
    "WJC-20"
-  ]
+  ],
+  "feature": 0.197
  },
  "league": {
   "name": "WHL",
@@ -84,10 +137,9 @@
    "league": "whl",
    "season": "2025-2026",
    "ageBucket": "U20",
-   "exactAge": 19,
    "cohortN": 70,
    "gp": 53,
-   "pgp": 1.453,
+   "value": 1.4528,
    "percentile": 95.7,
    "percentileAllAges": 98.1,
    "allAgesN": 2365
@@ -96,21 +148,21 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 52.5,
-  "median": 56.2,
-  "p75": 83.5,
-  "p90": 94.8,
-  "pRegular": 0.82,
-  "pTopLine": 0.34,
-  "pAboveAvg": 0.54,
-  "poolN": 1364,
+  "expected": 53.6,
+  "median": 56.9,
+  "p75": 85.2,
+  "p90": 95.6,
+  "pRegular": 0.8,
+  "pTopLine": 0.36,
+  "pAboveAvg": 0.56,
+  "poolN": 1362,
   "group": "F",
   "age": 18,
+  "pickWeight": 1.0,
   "tier": "top-line",
-  "expectedTier": "above average",
-  "nhleBand": [
-   0.17,
-   0.23
+  "featureBand": [
+   0.144,
+   0.242
   ],
   "examples": [
    {
@@ -118,7 +170,7 @@
     "year": 2012,
     "pick": 12,
     "league": "QMJHL",
-    "nhle": 0.196,
+    "feature": 0.196,
     "peak": 40.3,
     "tier": "below average",
     "nhlGp": 249
@@ -128,7 +180,7 @@
     "year": 2008,
     "pick": 14,
     "league": "WHL",
-    "nhle": 0.195,
+    "feature": 0.195,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 127
@@ -138,7 +190,7 @@
     "year": 2014,
     "pick": 12,
     "league": "OHL",
-    "nhle": 0.201,
+    "feature": 0.201,
     "peak": 42.0,
     "tier": "below average",
     "nhlGp": 262
@@ -148,47 +200,47 @@
     "year": 2009,
     "pick": 15,
     "league": "OHL",
-    "nhle": 0.195,
+    "feature": 0.195,
     "peak": 47.8,
     "tier": "below average",
     "nhlGp": 266
-   },
-   {
-    "name": "Sonny Milano",
-    "year": 2014,
-    "pick": 16,
-    "league": "OHL",
-    "nhle": 0.197,
-    "peak": 56.2,
-    "tier": "above average",
-    "nhlGp": 344
-   },
-   {
-    "name": "Grigori Denisenko",
-    "year": 2018,
-    "pick": 15,
-    "league": "KHL",
-    "nhle": 0.202,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 33
    },
    {
     "name": "Joel Farabee",
     "year": 2018,
     "pick": 14,
     "league": "NCAA",
-    "nhle": 0.189,
+    "feature": 0.189,
     "peak": 77.6,
     "tier": "top-line",
     "nhlGp": 500
+   },
+   {
+    "name": "Grigori Denisenko",
+    "year": 2018,
+    "pick": 15,
+    "league": "KHL",
+    "feature": 0.202,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 33
+   },
+   {
+    "name": "Sonny Milano",
+    "year": 2014,
+    "pick": 16,
+    "league": "OHL",
+    "feature": 0.197,
+    "peak": 56.2,
+    "tier": "above average",
+    "nhlGp": 344
    },
    {
     "name": "Vasili Podkolzin",
     "year": 2019,
     "pick": 10,
     "league": "KHL",
-    "nhle": 0.195,
+    "feature": 0.195,
     "peak": 47.0,
     "tier": "below average",
     "nhlGp": 304
@@ -207,27 +259,34 @@
   "band": "6-15",
   "group": "F"
  },
+ "blend": {
+  "w": 0.5,
+  "sinceDraft": 0,
+  "pedigreeExpected": 65.9,
+  "cohortExpected": 53.6,
+  "expected": 59.8,
+  "tier": "above average"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "WHL",
-   "nhle": 0.206,
+   "feature": 0.206,
    "gp": 56
   },
   "to": {
    "season": "2025-2026",
    "league": "WHL",
-   "nhle": 0.197,
-   "gp": 55
+   "feature": 0.197,
+   "gp": 53
   },
   "delta": -0.009
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
-  "gp": 55,
+  "gp": 53,
   "season": "2025-2026"
  },
- "rank": 2,
- "score": 52.5
+ "rank": 1,
+ "score": 59.8
 }

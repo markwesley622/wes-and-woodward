@@ -10,6 +10,7 @@
  "height": "6'5\"",
  "weight": 220,
  "shoots": "L",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 0,
    "pm": 1,
    "pim": 4,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
   }
@@ -50,8 +56,103 @@
    "pts": 2,
    "pm": -1,
    "pim": 47,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Minnesota-Duluth",
+     "gp": 2,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": 1,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Minnesota-Duluth",
+     "gp": 39,
+     "g": 0,
+     "a": 2,
+     "pts": 2,
+     "pm": -1,
+     "pim": 47,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Colorado College",
+     "gp": 37,
+     "g": 1,
+     "a": 2,
+     "pts": 3,
+     "pm": -3,
+     "pim": 39,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2023-2024",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Wisconsin",
+     "gp": 16,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -3,
+     "pim": 19,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -71,7 +172,8 @@
   "nhle82": 0.8,
   "lines": [
    "NCAA"
-  ]
+  ],
+  "feature": 0.01
  },
  "league": {
   "name": "NCAA",
@@ -84,10 +186,9 @@
    "league": "ncaa",
    "season": "2025-2026",
    "ageBucket": "U21",
-   "exactAge": 20,
    "cohortN": 65,
    "gp": 39,
-   "pgp": 0.051,
+   "value": 0.0513,
    "percentile": 6.2,
    "percentileAllAges": 8.0,
    "allAgesN": 1709
@@ -104,79 +205,59 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 3.5,
+  "expected": 0.2,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 4.6,
-  "pRegular": 0.12,
+  "p90": 0.0,
+  "pRegular": 0.02,
   "pTopLine": 0.0,
-  "pAboveAvg": 0.02,
-  "poolN": 757,
+  "pAboveAvg": 0.0,
+  "poolN": 756,
   "group": "D",
   "age": 20,
+  "pickWeight": 0.0,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
+  "featureBand": [
    0.0,
-   0.05
+   0.023
   ],
   "examples": [
    {
-    "name": "Eric Mestery",
+    "name": "Jonathan Carlsson",
     "year": 2008,
-    "pick": 57,
-    "league": "MJHL",
-    "nhle": 0.017,
+    "pick": 162,
+    "league": "Elitserien",
+    "feature": 0.01,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Dalton Thrower",
-    "year": 2012,
-    "pick": 51,
-    "league": "ECHL",
-    "nhle": 0.024,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Eemeli R\u00e4s\u00e4nen",
-    "year": 2017,
-    "pick": 59,
-    "league": "KHL",
-    "nhle": 0.019,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jonathan-Ismael Diaby",
-    "year": 2013,
-    "pick": 64,
-    "league": "ECHL",
-    "nhle": 0.018,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Brett Ponich",
+    "name": "Mark Adams",
     "year": 2009,
-    "pick": 48,
-    "league": "AHL",
-    "nhle": 0.032,
+    "pick": 134,
+    "league": "NCAA",
+    "feature": 0.01,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Josh Anderson",
-    "year": 2016,
-    "pick": 71,
+    "name": "Jaynen Rissling",
+    "year": 2012,
+    "pick": 197,
     "league": "ECHL",
-    "nhle": 0.018,
+    "feature": 0.01,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kieran Ruscheinski",
+    "year": 2019,
+    "pick": 206,
+    "league": "BCHL",
+    "feature": 0.01,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -186,17 +267,37 @@
     "year": 2011,
     "pick": 84,
     "league": "AHL",
-    "nhle": 0.011,
+    "feature": 0.011,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Mathieu Brodeur",
-    "year": 2008,
-    "pick": 76,
-    "league": "ECHL",
-    "nhle": 0.003,
+    "name": "Steven Ruggiero",
+    "year": 2015,
+    "pick": 178,
+    "league": "NCAA",
+    "feature": 0.011,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Mike McKee",
+    "year": 2012,
+    "pick": 140,
+    "league": "NCAA",
+    "feature": 0.009,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Cade Webber",
+    "year": 2019,
+    "pick": 99,
+    "league": "NCAA",
+    "feature": 0.013,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -215,27 +316,34 @@
   "band": "33-64",
   "group": "D"
  },
+ "blend": {
+  "w": 0.0,
+  "sinceDraft": 2,
+  "pedigreeExpected": 26.1,
+  "cohortExpected": 0.2,
+  "expected": 0.2,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "NCAA",
-   "nhle": 0.016,
+   "feature": 0.016,
    "gp": 37
   },
   "to": {
    "season": "2025-2026",
    "league": "NCAA",
-   "nhle": 0.01,
+   "feature": 0.01,
    "gp": 39
   },
   "delta": -0.006
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
   "gp": 39,
   "season": "2025-2026"
  },
- "rank": 22,
- "score": 3.5
+ "rank": 34,
+ "score": 0.2
 }

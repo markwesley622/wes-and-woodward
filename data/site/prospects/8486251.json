@@ -10,6 +10,7 @@
  "height": "6'0\"",
  "weight": 176,
  "shoots": "R",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 6,
    "pm": -5,
    "pim": 2,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.144,
    "status": "rostered"
   }
@@ -50,8 +56,37 @@
    "pts": 44,
    "pm": -5,
    "pim": 47,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.144,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "OHL",
+     "team": "Peterborough Petes",
+     "gp": 7,
+     "g": 2,
+     "a": 4,
+     "pts": 6,
+     "pm": -5,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.144,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -71,7 +106,8 @@
   "nhle82": 8.7,
   "lines": [
    "OHL"
-  ]
+  ],
+  "feature": 0.106
  },
  "league": {
   "name": "OHL",
@@ -84,10 +120,9 @@
    "league": "ohl",
    "season": "2025-2026",
    "ageBucket": "U18",
-   "exactAge": 17,
    "cohortN": 80,
    "gp": 60,
-   "pgp": 0.733,
+   "value": 0.7333,
    "percentile": 83.8,
    "percentileAllAges": 76.6,
    "allAgesN": 2086
@@ -96,10 +131,9 @@
    "league": "ohl",
    "season": "2026-2027",
    "ageBucket": "U19",
-   "exactAge": 18,
    "cohortN": 82,
    "gp": 7,
-   "pgp": 0.857,
+   "value": 0.8571,
    "percentile": 75.6,
    "percentileAllAges": 75.4,
    "allAgesN": 1774
@@ -107,21 +141,21 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 13.4,
+  "expected": 7.0,
   "median": 0.0,
-  "p75": 19.2,
-  "p90": 51.9,
-  "pRegular": 0.3,
-  "pTopLine": 0.06,
-  "pAboveAvg": 0.1,
-  "poolN": 1378,
+  "p75": 0.0,
+  "p90": 37.0,
+  "pRegular": 0.22,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.02,
+  "poolN": 1374,
   "group": "F",
   "age": 17,
+  "pickWeight": 1.0,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.1,
-   0.11
+  "featureBand": [
+   0.091,
+   0.117
   ],
   "examples": [
    {
@@ -129,7 +163,7 @@
     "year": 2008,
     "pick": 109,
     "league": "J20 SuperElit",
-    "nhle": 0.107,
+    "feature": 0.107,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 1
@@ -139,37 +173,37 @@
     "year": 2017,
     "pick": 109,
     "league": "OHL",
-    "nhle": 0.107,
+    "feature": 0.107,
     "peak": 47.3,
     "tier": "below average",
     "nhlGp": 117
-   },
-   {
-    "name": "Martin Pospisil",
-    "year": 2018,
-    "pick": 105,
-    "league": "USHL",
-    "nhle": 0.108,
-    "peak": 37.0,
-    "tier": "below average",
-    "nhlGp": 169
    },
    {
     "name": "Bill Arnold",
     "year": 2010,
     "pick": 108,
     "league": "NTDP",
-    "nhle": 0.103,
+    "feature": 0.103,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 1
+   },
+   {
+    "name": "Martin Pospisil",
+    "year": 2018,
+    "pick": 105,
+    "league": "USHL",
+    "feature": 0.108,
+    "peak": 37.0,
+    "tier": "below average",
+    "nhlGp": 169
    },
    {
     "name": "Mark MacMillan",
     "year": 2010,
     "pick": 113,
     "league": "BCHL",
-    "nhle": 0.108,
+    "feature": 0.108,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -179,27 +213,27 @@
     "year": 2011,
     "pick": 114,
     "league": "OHL",
-    "nhle": 0.108,
+    "feature": 0.108,
     "peak": 51.9,
     "tier": "above average",
     "nhlGp": 478
    },
    {
-    "name": "Santeri Virtanen",
-    "year": 2017,
-    "pick": 105,
-    "league": "WJC-18",
-    "nhle": 0.109,
+    "name": "Jachym Kondelik",
+    "year": 2018,
+    "pick": 111,
+    "league": "USHL",
+    "feature": 0.11,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Shane Eiserman",
-    "year": 2014,
-    "pick": 100,
-    "league": "USHL",
-    "nhle": 0.108,
+    "name": "Brad Morrison",
+    "year": 2015,
+    "pick": 113,
+    "league": "WHL",
+    "feature": 0.103,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -218,27 +252,34 @@
   "band": "65-120",
   "group": "F"
  },
+ "blend": {
+  "w": 0.5,
+  "sinceDraft": -1,
+  "pedigreeExpected": 13.4,
+  "cohortExpected": 7.0,
+  "expected": 10.2,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "OHL",
-   "nhle": 0.025,
+   "feature": 0.025,
    "gp": 57
   },
   "to": {
    "season": "2025-2026",
    "league": "OHL",
-   "nhle": 0.106,
+   "feature": 0.106,
    "gp": 60
   },
   "delta": 0.081
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
   "gp": 60,
   "season": "2025-2026"
  },
- "rank": 9,
- "score": 13.4
+ "rank": 18,
+ "score": 10.2
 }

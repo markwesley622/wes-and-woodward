@@ -10,6 +10,7 @@
  "height": "5'10\"",
  "weight": 165,
  "shoots": "L",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 0,
    "pm": -1,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
   }
@@ -50,6 +56,11 @@
    "pts": 48,
    "pm": -4,
    "pim": 71,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.121,
    "status": "rostered"
   },
@@ -62,6 +73,11 @@
    "pts": 18,
    "pm": -1,
    "pim": 4,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.143,
    "status": "rostered"
   },
@@ -74,8 +90,37 @@
    "pts": 5,
    "pm": 2,
    "pim": 6,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.135,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Minnesota-Duluth",
+     "gp": 2,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -97,7 +142,8 @@
    "NTDP",
    "USHL",
    "WJC-18"
-  ]
+  ],
+  "feature": 0.11
  },
  "league": {
   "name": "NTDP",
@@ -119,21 +165,21 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 16.3,
+  "expected": 18.6,
   "median": 0.0,
-  "p75": 22.4,
+  "p75": 36.7,
   "p90": 63.3,
-  "pRegular": 0.42,
+  "pRegular": 0.46,
   "pTopLine": 0.04,
-  "pAboveAvg": 0.14,
-  "poolN": 1378,
+  "pAboveAvg": 0.16,
+  "poolN": 1374,
   "group": "F",
   "age": 17,
-  "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.1,
-   0.12
+  "pickWeight": 1.0,
+  "tier": "below average",
+  "featureBand": [
+   0.092,
+   0.126
   ],
   "examples": [
    {
@@ -141,47 +187,37 @@
     "year": 2008,
     "pick": 45,
     "league": "BCHL",
-    "nhle": 0.11,
+    "feature": 0.11,
     "peak": 7.5,
     "tier": "replacement level",
     "nhlGp": 168
-   },
-   {
-    "name": "Jordan Greenway",
-    "year": 2015,
-    "pick": 50,
-    "league": "NTDP",
-    "nhle": 0.11,
-    "peak": 67.2,
-    "tier": "above average",
-    "nhlGp": 478
    },
    {
     "name": "Brett Pollock",
     "year": 2014,
     "pick": 45,
     "league": "WHL",
-    "nhle": 0.109,
+    "feature": 0.109,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Boris Katchouk",
-    "year": 2016,
-    "pick": 44,
-    "league": "OHL",
-    "nhle": 0.112,
-    "peak": 22.2,
-    "tier": "replacement level",
-    "nhlGp": 179
+    "name": "Jordan Greenway",
+    "year": 2015,
+    "pick": 50,
+    "league": "NTDP",
+    "feature": 0.11,
+    "peak": 67.2,
+    "tier": "above average",
+    "nhlGp": 478
    },
    {
     "name": "Maxime Sauv\u00e9",
     "year": 2008,
     "pick": 47,
     "league": "QMJHL",
-    "nhle": 0.106,
+    "feature": 0.106,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 1
@@ -191,30 +227,40 @@
     "year": 2011,
     "pick": 47,
     "league": "NCAA",
-    "nhle": 0.114,
+    "feature": 0.114,
     "peak": 41.0,
     "tier": "below average",
     "nhlGp": 705
    },
    {
-    "name": "Luke Adam",
-    "year": 2008,
+    "name": "Boris Katchouk",
+    "year": 2016,
     "pick": 44,
-    "league": "QMJHL",
-    "nhle": 0.107,
-    "peak": 43.3,
-    "tier": "below average",
-    "nhlGp": 90
+    "league": "OHL",
+    "feature": 0.112,
+    "peak": 22.2,
+    "tier": "replacement level",
+    "nhlGp": 179
    },
    {
     "name": "Gabryel Paquin-Boudreau",
     "year": 2013,
     "pick": 49,
     "league": "QMJHL",
-    "nhle": 0.106,
+    "feature": 0.106,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Luke Adam",
+    "year": 2008,
+    "pick": 44,
+    "league": "QMJHL",
+    "feature": 0.107,
+    "peak": 43.3,
+    "tier": "below average",
+    "nhlGp": 90
    }
   ]
  },
@@ -230,27 +276,34 @@
   "band": "33-64",
   "group": "F"
  },
+ "blend": {
+  "w": 0.5,
+  "sinceDraft": -1,
+  "pedigreeExpected": 23.7,
+  "cohortExpected": 18.6,
+  "expected": 21.1,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "NTDP",
-   "nhle": 0.074,
-   "gp": 80
+   "feature": 0.074,
+   "gp": 48
   },
   "to": {
    "season": "2025-2026",
    "league": "NTDP",
-   "nhle": 0.11,
-   "gp": 82
+   "feature": 0.11,
+   "gp": 57
   },
   "delta": 0.036
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
-  "gp": 82,
+  "gp": 57,
   "season": "2025-2026"
  },
- "rank": 7,
- "score": 16.3
+ "rank": 11,
+ "score": 21.1
 }

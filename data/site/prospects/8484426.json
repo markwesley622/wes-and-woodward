@@ -10,6 +10,7 @@
  "height": "6'3\"",
  "weight": 185,
  "shoots": "R",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 0,
    "pm": 1,
    "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
   }
@@ -50,8 +56,103 @@
    "pts": 9,
    "pm": 8,
    "pim": 14,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Wisconsin",
+     "gp": 2,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": 1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Wisconsin",
+     "gp": 37,
+     "g": 0,
+     "a": 9,
+     "pts": 9,
+     "pm": 8,
+     "pim": 14,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Wisconsin",
+     "gp": 36,
+     "g": 0,
+     "a": 4,
+     "pts": 4,
+     "pm": 0,
+     "pim": 14,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2023-2024",
+   "lines": [
+    {
+     "league": "USHL",
+     "team": "Sioux Falls Stampede",
+     "gp": 41,
+     "g": 1,
+     "a": 6,
+     "pts": 7,
+     "pm": -3,
+     "pim": 51,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.143,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -71,7 +172,8 @@
   "nhle82": 3.9,
   "lines": [
    "NCAA"
-  ]
+  ],
+  "feature": 0.047
  },
  "league": {
   "name": "NCAA",
@@ -84,10 +186,9 @@
    "league": "ncaa",
    "season": "2025-2026",
    "ageBucket": "U22",
-   "exactAge": 21,
    "cohortN": 128,
    "gp": 37,
-   "pgp": 0.243,
+   "value": 0.2432,
    "percentile": 49.2,
    "percentileAllAges": 49.0,
    "allAgesN": 1709
@@ -104,99 +205,99 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 4.5,
+  "expected": 0.0,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
-  "pRegular": 0.08,
-  "pTopLine": 0.02,
-  "pAboveAvg": 0.06,
+  "pRegular": 0.0,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.0,
   "poolN": 694,
   "group": "D",
   "age": 21,
+  "pickWeight": 0.0,
   "tier": "replacement level",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.03,
-   0.06
+  "featureBand": [
+   0.042,
+   0.052
   ],
   "examples": [
    {
-    "name": "Cam Clarke",
-    "year": 2016,
-    "pick": 136,
-    "league": "NCAA",
-    "nhle": 0.045,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Gage Ausmus",
-    "year": 2013,
-    "pick": 151,
-    "league": "NCAA",
-    "nhle": 0.046,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Isaac MacLeod",
-    "year": 2010,
-    "pick": 136,
-    "league": "NCAA",
-    "nhle": 0.053,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Mark Borowiecki",
+    "name": "Tyler Cuma",
     "year": 2008,
-    "pick": 139,
-    "league": "NCAA",
-    "nhle": 0.053,
-    "peak": 61.8,
-    "tier": "above average",
-    "nhlGp": 458
-   },
-   {
-    "name": "Tyler Nanne",
-    "year": 2014,
-    "pick": 142,
-    "league": "NCAA",
-    "nhle": 0.052,
+    "pick": 23,
+    "league": "AHL",
+    "feature": 0.047,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
+    "nhlGp": 1
    },
    {
-    "name": "Brett Flemming",
+    "name": "Kyle Bigos",
     "year": 2009,
-    "pick": 145,
-    "league": "ECHL",
-    "nhle": 0.043,
+    "pick": 99,
+    "league": "NCAA",
+    "feature": 0.047,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Patrick Koudys",
+    "name": "Gus Young",
+    "year": 2009,
+    "pick": 184,
+    "league": "NCAA",
+    "feature": 0.047,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kevin Lind",
+    "year": 2010,
+    "pick": 177,
+    "league": "NCAA",
+    "feature": 0.047,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Peter Stoykewych",
+    "year": 2010,
+    "pick": 199,
+    "league": "NCAA",
+    "feature": 0.047,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Aaron Harstad",
     "year": 2011,
-    "pick": 147,
+    "pick": 187,
     "league": "NCAA",
-    "nhle": 0.043,
+    "feature": 0.047,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Ryan Zuhlsdorf",
-    "year": 2015,
-    "pick": 150,
+    "name": "Nate Clurman",
+    "year": 2016,
+    "pick": 161,
     "league": "NCAA",
-    "nhle": 0.044,
+    "feature": 0.047,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
+   },
+   {
+    "name": "Alex Kannok Leipert",
+    "year": 2018,
+    "pick": 161,
+    "league": "AHL",
+    "feature": 0.047,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -215,27 +316,34 @@
   "band": "121-300",
   "group": "D"
  },
+ "blend": {
+  "w": 0.0,
+  "sinceDraft": 2,
+  "pedigreeExpected": 7.0,
+  "cohortExpected": 0.0,
+  "expected": 0.0,
+  "tier": "did not stick"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "NCAA",
-   "nhle": 0.022,
+   "feature": 0.022,
    "gp": 36
   },
   "to": {
    "season": "2025-2026",
    "league": "NCAA",
-   "nhle": 0.047,
+   "feature": 0.047,
    "gp": 37
   },
   "delta": 0.025
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
   "gp": 37,
   "season": "2025-2026"
  },
- "rank": 19,
- "score": 4.5
+ "rank": 35,
+ "score": 0.0
 }

@@ -10,6 +10,7 @@
  "height": "6'4\"",
  "weight": 205,
  "shoots": "L",
+ "catches": null,
  "contract": null,
  "rights": "unsigned",
  "draft": {
@@ -36,6 +37,11 @@
    "pts": 0,
    "pm": -1,
    "pim": 2,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
   }
@@ -50,8 +56,103 @@
    "pts": 19,
    "pm": 8,
    "pim": 10,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
    "coef": 0.194,
    "status": "rostered"
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Massachusetts",
+     "gp": 2,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -1,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2025-2026",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "UMass",
+     "gp": 36,
+     "g": 8,
+     "a": 11,
+     "pts": 19,
+     "pm": 8,
+     "pim": 10,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2024-2025",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "UMass",
+     "gp": 40,
+     "g": 4,
+     "a": 7,
+     "pts": 11,
+     "pm": 16,
+     "pim": 16,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  },
+  {
+   "season": "2023-2024",
+   "lines": [
+    {
+     "league": "BCHL",
+     "team": "Penticton Vees",
+     "gp": 53,
+     "g": 6,
+     "a": 24,
+     "pts": 30,
+     "pm": null,
+     "pim": 22,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.08,
+     "status": "rostered"
+    }
+   ]
   }
  ],
  "anchor": {
@@ -71,7 +172,8 @@
   "nhle82": 8.4,
   "lines": [
    "NCAA"
-  ]
+  ],
+  "feature": 0.102
  },
  "league": {
   "name": "NCAA",
@@ -84,10 +186,9 @@
    "league": "ncaa",
    "season": "2025-2026",
    "ageBucket": "U21",
-   "exactAge": 20,
    "cohortN": 65,
    "gp": 36,
-   "pgp": 0.528,
+   "value": 0.5278,
    "percentile": 90.8,
    "percentileAllAges": 88.9,
    "allAgesN": 1709
@@ -104,102 +205,102 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 18.5,
+  "expected": 16.1,
   "median": 0.0,
-  "p75": 45.5,
-  "p90": 71.6,
+  "p75": 28.8,
+  "p90": 67.5,
   "pRegular": 0.34,
-  "pTopLine": 0.08,
-  "pAboveAvg": 0.2,
-  "poolN": 757,
+  "pTopLine": 0.06,
+  "pAboveAvg": 0.16,
+  "poolN": 756,
   "group": "D",
   "age": 20,
+  "pickWeight": 0.0,
   "tier": "below average",
-  "expectedTier": "replacement level",
-  "nhleBand": [
-   0.09,
-   0.12
+  "featureBand": [
+   0.097,
+   0.107
   ],
   "examples": [
    {
-    "name": "Case McCarthy",
-    "year": 2019,
-    "pick": 118,
+    "name": "Anthony Bitetto",
+    "year": 2010,
+    "pick": 168,
     "league": "NCAA",
-    "nhle": 0.104,
+    "feature": 0.102,
+    "peak": 13.6,
+    "tier": "replacement level",
+    "nhlGp": 197
+   },
+   {
+    "name": "Zach Trotman",
+    "year": 2010,
+    "pick": 210,
+    "league": "NCAA",
+    "feature": 0.102,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 91
+   },
+   {
+    "name": "Andy Welinski",
+    "year": 2011,
+    "pick": 83,
+    "league": "NCAA",
+    "feature": 0.102,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 46
+   },
+   {
+    "name": "Colin Miller",
+    "year": 2012,
+    "pick": 151,
+    "league": "AHL",
+    "feature": 0.102,
+    "peak": 82.5,
+    "tier": "top-line",
+    "nhlGp": 590
+   },
+   {
+    "name": "Valeri Vasilyev",
+    "year": 2012,
+    "pick": 201,
+    "league": "KHL",
+    "feature": 0.102,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Hunter Skinner",
-    "year": 2019,
-    "pick": 112,
-    "league": "AHL",
-    "nhle": 0.103,
+    "name": "Ian McCoshen",
+    "year": 2013,
+    "pick": 31,
+    "league": "NCAA",
+    "feature": 0.102,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 1
+    "nhlGp": 60
+   },
+   {
+    "name": "Casey Fitzgerald",
+    "year": 2016,
+    "pick": 86,
+    "league": "NCAA",
+    "feature": 0.102,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 63
    },
    {
     "name": "Tucker Poolman",
     "year": 2013,
     "pick": 127,
     "league": "USHL",
-    "nhle": 0.101,
+    "feature": 0.101,
     "peak": 46.7,
     "tier": "below average",
     "nhlGp": 163
-   },
-   {
-    "name": "Jaccob Slavin",
-    "year": 2012,
-    "pick": 120,
-    "league": "NCAA",
-    "nhle": 0.097,
-    "peak": 84.4,
-    "tier": "top-line",
-    "nhlGp": 787
-   },
-   {
-    "name": "Eric Hjorth",
-    "year": 2019,
-    "pick": 104,
-    "league": "HockeyAllsvenskan",
-    "nhle": 0.101,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jack St. Ivany",
-    "year": 2018,
-    "pick": 112,
-    "league": "NCAA",
-    "nhle": 0.097,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 54
-   },
-   {
-    "name": "Michal Jord\u00e1n",
-    "year": 2008,
-    "pick": 105,
-    "league": "AHL",
-    "nhle": 0.105,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 79
-   },
-   {
-    "name": "Riley Stillman",
-    "year": 2016,
-    "pick": 114,
-    "league": "AHL",
-    "nhle": 0.11,
-    "peak": 29.0,
-    "tier": "below average",
-    "nhlGp": 167
    }
   ]
  },
@@ -215,27 +316,34 @@
   "band": "65-120",
   "group": "D"
  },
+ "blend": {
+  "w": 0.0,
+  "sinceDraft": 2,
+  "pedigreeExpected": 12.3,
+  "cohortExpected": 16.1,
+  "expected": 16.1,
+  "tier": "replacement level"
+ },
  "trajectory": {
   "from": {
    "season": "2024-2025",
    "league": "NCAA",
-   "nhle": 0.053,
+   "feature": 0.053,
    "gp": 40
   },
   "to": {
    "season": "2025-2026",
    "league": "NCAA",
-   "nhle": 0.102,
+   "feature": 0.102,
    "gp": 36
   },
   "delta": 0.049
  },
- "deployment": null,
  "nhlSample": null,
  "availability": {
   "gp": 36,
   "season": "2025-2026"
  },
- "rank": 6,
- "score": 18.5
+ "rank": 13,
+ "score": 16.1
 }
