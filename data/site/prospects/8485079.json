@@ -1,0 +1,269 @@
+{
+ "epId": "741439",
+ "nhlId": 8485079,
+ "name": "Charlie Forslund",
+ "slug": "charlie-forslund",
+ "group": "F",
+ "position": "LW/RW",
+ "birthDate": "2006-05-04",
+ "age": 20,
+ "height": "6'4\"",
+ "weight": 218,
+ "shoots": "L",
+ "contract": "27/28+1",
+ "rights": "unsigned",
+ "draft": {
+  "year": 2024,
+  "overall": 176,
+  "round": 6
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+2",
+  "draftYear": 2024,
+  "onNhlRoster": false
+ },
+ "scouting": "Forslund\u2019s got some credibility as a dual-threat scorer, but it\u2019s his shot that really stands out as his most potent weapon. He pairs that wicked release with a knack for popping into soft ice and creating opportunities to use it away from the puck. -EliteProspects 2024 NHL Draft Guide",
+ "currentLines": [
+  {
+   "league": "HockeyAllsvenskan",
+   "team": "Almtuna IS",
+   "gp": 7,
+   "g": 1,
+   "a": 3,
+   "pts": 4,
+   "pm": -2,
+   "pim": 2,
+   "coef": 0.351,
+   "status": "rostered"
+  },
+  {
+   "league": "SHL",
+   "team": "Bryn\u00e4s IF",
+   "gp": 2,
+   "g": 0,
+   "a": 1,
+   "pts": 1,
+   "pm": 1,
+   "pim": 0,
+   "coef": 0.566,
+   "status": "not-active-on-team"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "HockeyAllsvenskan",
+   "team": "Almtuna IS",
+   "gp": 28,
+   "g": 5,
+   "a": 4,
+   "pts": 9,
+   "pm": 1,
+   "pim": 12,
+   "coef": 0.351,
+   "status": "rostered"
+  },
+  {
+   "league": "U20 Nationell",
+   "team": "Mora IK U20",
+   "gp": 12,
+   "g": 3,
+   "a": 4,
+   "pts": 7,
+   "pm": -4,
+   "pim": 6,
+   "coef": 0.091,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "HockeyAllsvenskan",
+  "leagueSlug": "hockeyallsvenskan",
+  "table": "Allsvenskan",
+  "coef": 0.351,
+  "team": "Almtuna IS",
+  "gp": 40,
+  "g": 5,
+  "a": 4,
+  "pts": 9,
+  "pgp": 0.321,
+  "lineGp": 28,
+  "nhle": 0.095,
+  "nhle82": 7.8,
+  "lines": [
+   "U20 Nationell",
+   "HockeyAllsvenskan"
+  ]
+ },
+ "league": {
+  "name": "HockeyAllsvenskan",
+  "table": "Allsvenskan",
+  "coef": 0.351,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "hockeyallsvenskan",
+   "season": "2025-2026",
+   "ageBucket": "U20",
+   "exactAge": 19,
+   "cohortN": 13,
+   "gp": 28,
+   "pgp": 0.321,
+   "percentile": 61.5,
+   "percentileAllAges": 59.9,
+   "allAgesN": 377
+  },
+  "current": {
+   "league": "hockeyallsvenskan",
+   "season": "2026-2027",
+   "ageBucket": "U21",
+   "exactAge": 20,
+   "cohortN": 10,
+   "gp": 7,
+   "pgp": 0.571,
+   "percentile": 30.0,
+   "percentileAllAges": 66.8,
+   "allAgesN": 334
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 3.1,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 12.3,
+  "pRegular": 0.1,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.02,
+  "poolN": 1308,
+  "group": "F",
+  "age": 19,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.08,
+   0.1
+  ],
+  "examples": [
+   {
+    "name": "Iiro Pakarinen",
+    "year": 2011,
+    "pick": 184,
+    "league": "SM-liiga",
+    "nhle": 0.095,
+    "peak": 18.9,
+    "tier": "replacement level",
+    "nhlGp": 134
+   },
+   {
+    "name": "Hunter Drew",
+    "year": 2018,
+    "pick": 178,
+    "league": "QMJHL",
+    "nhle": 0.093,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 2
+   },
+   {
+    "name": "Cristiano DiGiacinto",
+    "year": 2014,
+    "pick": 170,
+    "league": "OHL",
+    "nhle": 0.096,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Shawn Boudrias",
+    "year": 2018,
+    "pick": 179,
+    "league": "QMJHL",
+    "nhle": 0.093,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Cole Koepke",
+    "year": 2018,
+    "pick": 183,
+    "league": "USHL",
+    "nhle": 0.093,
+    "peak": 19.0,
+    "tier": "replacement level",
+    "nhlGp": 166
+   },
+   {
+    "name": "Karel Plasek",
+    "year": 2019,
+    "pick": 175,
+    "league": "Czechia",
+    "nhle": 0.091,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jordan Nolan",
+    "year": 2009,
+    "pick": 186,
+    "league": "OHL",
+    "nhle": 0.097,
+    "peak": 12.3,
+    "tier": "replacement level",
+    "nhlGp": 375
+   },
+   {
+    "name": "Artyom Manukyan",
+    "year": 2018,
+    "pick": 186,
+    "league": "KHL",
+    "nhle": 0.093,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 586,
+  "expected": 7.5,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 31.0,
+  "pRegular": 0.16,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "J20 Nationell",
+   "nhle": 0.049,
+   "gp": 50
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "HockeyAllsvenskan",
+   "nhle": 0.095,
+   "gp": 40
+  },
+  "delta": 0.046
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 40,
+  "season": "2025-2026"
+ },
+ "rank": 24,
+ "score": 3.1
+}

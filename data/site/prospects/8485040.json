@@ -1,0 +1,241 @@
+{
+ "epId": "597751",
+ "nhlId": 8485040,
+ "name": "John Whipple",
+ "slug": "john-whipple",
+ "group": "D",
+ "position": "D",
+ "birthDate": "2006-01-20",
+ "age": 20,
+ "height": "6'2\"",
+ "weight": 205,
+ "shoots": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2024,
+  "overall": 144,
+  "round": 5
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+2",
+  "draftYear": 2024,
+  "onNhlRoster": false
+ },
+ "scouting": "Whipple generates significant power on the backpedal and maintains his speed through pivots, making him a strong rush defender. He forces attacks wide, then explodes across and hammers the opponent into the boards. Aggressive net-front defence and flashes of deceptive, fast retrievals give him lots of defensive versatility. -EliteProspects 2024 NHL Draft Guide \r\n\r\nFather: Trey Whipple\r\nBrother: Alec Whipple",
+ "currentLines": [
+  {
+   "league": "NCAA",
+   "team": "Univ. of Minnesota",
+   "gp": 2,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": 0,
+   "pim": 0,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "NCAA",
+   "team": "Univ. of Minnesota",
+   "gp": 36,
+   "g": 1,
+   "a": 1,
+   "pts": 2,
+   "pm": -1,
+   "pim": 14,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "NCAA",
+  "leagueSlug": "ncaa",
+  "table": "NCAA",
+  "coef": 0.194,
+  "team": "Univ. of Minnesota",
+  "gp": 36,
+  "g": 1,
+  "a": 1,
+  "pts": 2,
+  "pgp": 0.056,
+  "lineGp": 36,
+  "nhle": 0.011,
+  "nhle82": 0.9,
+  "lines": [
+   "NCAA"
+  ]
+ },
+ "league": {
+  "name": "NCAA",
+  "table": "NCAA",
+  "coef": 0.194,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "ncaa",
+   "season": "2025-2026",
+   "ageBucket": "U20",
+   "exactAge": 19,
+   "cohortN": 30,
+   "gp": 36,
+   "pgp": 0.056,
+   "percentile": 13.3,
+   "percentileAllAges": 8.5,
+   "allAgesN": 1709
+  },
+  "current": {
+   "league": "ncaa",
+   "season": "2026-2027",
+   "ageBucket": "U21",
+   "cohortN": 0,
+   "gp": 2,
+   "percentile": null,
+   "note": "sample too small"
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 4.5,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 8.7,
+  "pRegular": 0.1,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.06,
+  "poolN": 795,
+  "group": "D",
+  "age": 19,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.01,
+   0.03
+  ],
+  "examples": [
+   {
+    "name": "Mark Borowiecki",
+    "year": 2008,
+    "pick": 139,
+    "league": "NCAA",
+    "nhle": 0.012,
+    "peak": 61.8,
+    "tier": "above average",
+    "nhlGp": 458
+   },
+   {
+    "name": "Andreas S\u00f6derberg",
+    "year": 2014,
+    "pick": 148,
+    "league": "HockeyAllsvenskan",
+    "nhle": 0.008,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Michael Karow",
+    "year": 2017,
+    "pick": 126,
+    "league": "NCAA",
+    "nhle": 0.01,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Wiley Sherman",
+    "year": 2013,
+    "pick": 150,
+    "league": "NCAA",
+    "nhle": 0.016,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Drew Olson",
+    "year": 2008,
+    "pick": 118,
+    "league": "NCAA",
+    "nhle": 0.011,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Tyler Stahl",
+    "year": 2010,
+    "pick": 167,
+    "league": "WHL",
+    "nhle": 0.014,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Tobias Geisser",
+    "year": 2017,
+    "pick": 120,
+    "league": "AHL",
+    "nhle": 0.009,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Braden Birch",
+    "year": 2008,
+    "pick": 179,
+    "league": "NCAA",
+    "nhle": 0.012,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 380,
+  "expected": 7.0,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 36.0,
+  "pRegular": 0.15,
+  "pTopLine": 0.03,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "D"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "NCAA",
+   "nhle": 0.02,
+   "gp": 29
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "NCAA",
+   "nhle": 0.011,
+   "gp": 36
+  },
+  "delta": -0.009
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 36,
+  "season": "2025-2026"
+ },
+ "rank": 18,
+ "score": 4.5
+}

@@ -1,0 +1,220 @@
+{
+ "epId": "806444",
+ "nhlId": 8485641,
+ "name": "Will Murphy",
+ "slug": "will-murphy",
+ "group": "D",
+ "position": "D",
+ "birthDate": "2007-08-24",
+ "age": 19,
+ "height": "6'4\"",
+ "weight": 216,
+ "shoots": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2025,
+  "overall": 172,
+  "round": 6
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+1",
+  "draftYear": 2025,
+  "onNhlRoster": false
+ },
+ "scouting": "Will Murphy can ram through opponents. At 6-foot-4, the defenceman has the range and strength needed to work the boards and protect higher-danger areas. He uses his stick to deny space, push opponents wide, and then finishes by immobilizing them. He knows his role inside a team and isn\u2019t afraid to use his stature to intimidate. -EliteProspects 2025 NHL Draft Guide",
+ "currentLines": [],
+ "lastLines": [
+  {
+   "league": "QMJHL",
+   "team": "Cape Breton Eagles",
+   "gp": 38,
+   "g": 4,
+   "a": 4,
+   "pts": 8,
+   "pm": 6,
+   "pim": 51,
+   "coef": 0.113,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "QMJHL",
+  "leagueSlug": "qmjhl",
+  "table": "QMJHL",
+  "coef": 0.113,
+  "team": "Cape Breton Eagles",
+  "gp": 38,
+  "g": 4,
+  "a": 4,
+  "pts": 8,
+  "pgp": 0.211,
+  "lineGp": 38,
+  "nhle": 0.024,
+  "nhle82": 2.0,
+  "lines": [
+   "QMJHL"
+  ]
+ },
+ "league": {
+  "name": "QMJHL",
+  "table": "QMJHL",
+  "coef": 0.113,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "qmjhl",
+   "season": "2025-2026",
+   "ageBucket": "U19",
+   "exactAge": 18,
+   "cohortN": 54,
+   "gp": 38,
+   "pgp": 0.211,
+   "percentile": 40.7,
+   "percentileAllAges": 42.3,
+   "allAgesN": 1017
+  },
+  "current": null
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 3.7,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 0.0,
+  "pRegular": 0.08,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.06,
+  "poolN": 837,
+  "group": "D",
+  "age": 18,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.02,
+   0.03
+  ],
+  "examples": [
+   {
+    "name": "Trent Bourque",
+    "year": 2017,
+    "pick": 175,
+    "league": "OHL",
+    "nhle": 0.024,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Braden Birch",
+    "year": 2008,
+    "pick": 179,
+    "league": "OJHL",
+    "nhle": 0.024,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ivan Chukarov",
+    "year": 2015,
+    "pick": 182,
+    "league": "NAHL",
+    "nhle": 0.024,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Anthony Bitetto",
+    "year": 2010,
+    "pick": 168,
+    "league": "EJHL",
+    "nhle": 0.023,
+    "peak": 13.6,
+    "tier": "replacement level",
+    "nhlGp": 197
+   },
+   {
+    "name": "Cliff Watson",
+    "year": 2012,
+    "pick": 168,
+    "league": "USHL",
+    "nhle": 0.025,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Nate Clurman",
+    "year": 2016,
+    "pick": 161,
+    "league": "USHS-Prep",
+    "nhle": 0.024,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
+   },
+   {
+    "name": "Patrick Holway",
+    "year": 2015,
+    "pick": 170,
+    "league": "USHL",
+    "nhle": 0.026,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Michael Sdao",
+    "year": 2009,
+    "pick": 191,
+    "league": "USHL",
+    "nhle": 0.024,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 380,
+  "expected": 7.0,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 36.0,
+  "pRegular": 0.15,
+  "pTopLine": 0.03,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "D"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "QMJHL",
+   "nhle": 0.008,
+   "gp": 54
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "QMJHL",
+   "nhle": 0.024,
+   "gp": 38
+  },
+  "delta": 0.016
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 38,
+  "season": "2025-2026"
+ },
+ "rank": 21,
+ "score": 3.7
+}

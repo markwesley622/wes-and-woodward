@@ -1,0 +1,264 @@
+{
+ "epId": "752269",
+ "nhlId": 8484432,
+ "name": "Kevin Bicker",
+ "slug": "kevin-bicker",
+ "group": "F",
+ "position": "LW/RW",
+ "birthDate": "2005-01-29",
+ "age": 21,
+ "height": "6'1\"",
+ "weight": 176,
+ "shoots": "L",
+ "contract": "26/27",
+ "rights": "unsigned",
+ "draft": {
+  "year": 2023,
+  "overall": 147,
+  "round": 5
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+3",
+  "draftYear": 2023,
+  "onNhlRoster": false
+ },
+ "scouting": "Bicker plays fast, but doesn't overextend, he applies intense pressure, but only after eliminating the puck carrier's options. Comes across the hips to force dump-ins or get the steal. Has some playmaking touch. Deceptive and precise, his passes bypass defenders and connect with teammates in the slot. -EliteProspects 2023 NHL Draft Guide \r\n\r\n\r\nBrother: Albert Bicker",
+ "currentLines": [
+  {
+   "league": "DEL",
+   "team": "Iserlohn Roosters",
+   "gp": 6,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": -2,
+   "pim": 4,
+   "coef": 0.352,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "DEL",
+   "team": "L\u00f6wen Frankfurt",
+   "gp": 21,
+   "g": 2,
+   "a": 2,
+   "pts": 4,
+   "pm": 2,
+   "pim": 4,
+   "coef": 0.352,
+   "status": "rostered"
+  },
+  {
+   "league": "DEL",
+   "team": "Adler Mannheim",
+   "gp": 6,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": -1,
+   "pim": 0,
+   "coef": 0.352,
+   "status": "rostered"
+  },
+  {
+   "league": "DEL2",
+   "team": "EC Bad Nauheim",
+   "gp": 2,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": -1,
+   "pim": 0,
+   "coef": 0.205,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "DEL",
+  "leagueSlug": "del",
+  "table": "DEL",
+  "coef": 0.352,
+  "team": "L\u00f6wen Frankfurt",
+  "gp": 29,
+  "g": 2,
+  "a": 2,
+  "pts": 4,
+  "pgp": 0.19,
+  "lineGp": 21,
+  "nhle": 0.049,
+  "nhle82": 4.0,
+  "lines": [
+   "DEL",
+   "DEL",
+   "DEL2"
+  ]
+ },
+ "league": {
+  "name": "DEL",
+  "table": "DEL",
+  "coef": 0.352,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "del",
+   "season": "2025-2026",
+   "ageBucket": "U21",
+   "cohortN": 5,
+   "gp": 27,
+   "percentile": null,
+   "note": "sample too small"
+  },
+  "current": {
+   "league": "del",
+   "season": "2026-2027",
+   "ageBucket": "U22",
+   "cohortN": 7,
+   "gp": 6,
+   "percentile": null,
+   "note": "sample too small"
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 2.1,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 0.0,
+  "pRegular": 0.04,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.02,
+  "poolN": 1240,
+  "group": "F",
+  "age": 20,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.04,
+   0.07
+  ],
+  "examples": [
+   {
+    "name": "Yasin Ciss\u00e9",
+    "year": 2010,
+    "pick": 150,
+    "league": "QMJHL",
+    "nhle": 0.049,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kory Nagy",
+    "year": 2008,
+    "pick": 142,
+    "league": "ECHL",
+    "nhle": 0.052,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Derek Rodwell",
+    "year": 2009,
+    "pick": 144,
+    "league": "NCAA",
+    "nhle": 0.045,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kyle DeCoste",
+    "year": 2008,
+    "pick": 147,
+    "league": "OHL",
+    "nhle": 0.055,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Julien Cayer",
+    "year": 2008,
+    "pick": 151,
+    "league": "NCAA",
+    "nhle": 0.044,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Darren Kramer",
+    "year": 2011,
+    "pick": 156,
+    "league": "AHL",
+    "nhle": 0.046,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Corey Durocher",
+    "year": 2010,
+    "pick": 153,
+    "league": "CCHL",
+    "nhle": 0.044,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Nick Campoli",
+    "year": 2017,
+    "pick": 158,
+    "league": "NCAA",
+    "nhle": 0.054,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 586,
+  "expected": 7.5,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 31.0,
+  "pRegular": 0.16,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "DEL",
+   "nhle": 0.088,
+   "gp": 20
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "DEL",
+   "nhle": 0.049,
+   "gp": 29
+  },
+  "delta": -0.039
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 29,
+  "season": "2025-2026"
+ },
+ "rank": 25,
+ "score": 2.1
+}

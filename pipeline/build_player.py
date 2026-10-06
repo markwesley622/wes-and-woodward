@@ -206,11 +206,45 @@ def has_art(pid):
     return (ROOT / "public" / "players" / f"{pid}-art.webp").exists()
 
 
+def nhl_roster_ids():
+    """Player ids on the current NHL roster (data/raw/nhl/roster.json, refreshed nightly by fetch_nhl.py)."""
+    p = ROOT / "data" / "raw" / "nhl" / "roster.json"
+    if not p.exists(): return set()
+    r = json.load(p.open())
+    return {x["id"] for k in ("forwards", "defensemen", "goalies") for x in r.get(k, [])}
+
+
+def prospect_status(land):
+    """Mark's rule (10/6): a prospect is rookie-eligible AND inside draft+4, where the draft year is
+    year one (2021 draft -> through 2025-26). Undrafted: no draft year on file, so the window is
+    age-based instead (under 23 on Sept 15 of the season) until a signing year is recorded."""
+    eligible = rookie_eligible(land)
+    draft = land.get("draftDetails") or {}
+    yr = int(SEASON[:4])
+    if draft.get("year"):
+        in_window = yr <= int(draft["year"]) + 4
+        window = f"draft+{yr - int(draft['year'])}"
+    else:
+        age = (dt.date(yr, 9, 15) - dt.date.fromisoformat(land["birthDate"])).days / 365.25
+        in_window = age < 23
+        window = "undrafted"
+    return {"prospect": bool(eligible and in_window), "rookieEligible": eligible, "inWindow": in_window, "window": window, "draftYear": draft.get("year")}
+
+
 def write_player(pid, out):
     """A page exists only for a player with art (Mark, 9/24). Everyone else is archived, unpublished
-    and out of the sitemap, ready to promote if he plays."""
-    out["prospect"] = out.get("kind") != "G" and rookie_eligible(json.load((ROOT / "data" / "raw" / "players" / str(pid) / "landing.json").open()))
-    if out["prospect"] and out.get("kind") == "S": out["kind"] = "P"
+    and out of the sitemap, ready to promote if he plays.
+
+    Template rule (Mark, 10/6): the page template follows CURRENT roster status, not eligibility. A
+    prospect on the NHL roster (Brandsegg-Nygård, Johansson) gets the same page as DeBrincat; when he
+    is sent to Grand Rapids the nightly build swaps him back to the prospect template. One slug, one
+    page, whichever status is current is canonical."""
+    land = json.load((ROOT / "data" / "raw" / "players" / str(pid) / "landing.json").open())
+    st = prospect_status(land) if out.get("kind") != "G" else {"prospect": False, "rookieEligible": rookie_eligible(land), "inWindow": None, "window": None, "draftYear": (land.get("draftDetails") or {}).get("year")}
+    on_nhl_roster = pid in nhl_roster_ids()
+    out["prospect"] = st["prospect"]
+    out["prospectStatus"] = {**st, "onNhlRoster": on_nhl_roster, "template": "nhl" if (on_nhl_roster or out.get("kind") == "G" or not st["prospect"]) else "prospect"}
+    if out["prospectStatus"]["template"] == "prospect" and out.get("kind") == "S": out["kind"] = "P"
     out["art"] = has_art(pid)
     # a page exists for anyone with art, or anyone who has played an NHL game this season (Mark, 10/3)
     played = bool(out.get("gameLog")) or any((l.get("league") == "NHL" and (l.get("gp") or 0) > 0) for l in out.get("seasonLines") or [])

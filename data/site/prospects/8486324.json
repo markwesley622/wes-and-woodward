@@ -1,0 +1,284 @@
+{
+ "epId": "750559",
+ "nhlId": 8486324,
+ "name": "Myles Brosnan",
+ "slug": "myles-brosnan",
+ "group": "D",
+ "position": "D",
+ "birthDate": "2007-10-19",
+ "age": 18,
+ "height": "6'0\"",
+ "weight": 194,
+ "shoots": "R",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2026,
+  "overall": 196,
+  "round": 7
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+0",
+  "draftYear": 2026,
+  "onNhlRoster": false
+ },
+ "scouting": null,
+ "currentLines": [
+  {
+   "league": "QMJHL",
+   "team": "Moncton Wildcats",
+   "gp": 6,
+   "g": 3,
+   "a": 1,
+   "pts": 4,
+   "pm": -1,
+   "pim": 4,
+   "coef": 0.113,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "USHS-Prep",
+   "team": "Dexter Southfield School",
+   "gp": 30,
+   "g": 7,
+   "a": 44,
+   "pts": 51,
+   "pm": null,
+   "pim": null,
+   "coef": 0.028,
+   "status": "rostered"
+  },
+  {
+   "league": "18U AAA",
+   "team": "Brookline Whalers 18U AAA",
+   "gp": 18,
+   "g": 6,
+   "a": 10,
+   "pts": 16,
+   "pm": 0,
+   "pim": 0,
+   "coef": 0.031,
+   "status": "rostered"
+  },
+  {
+   "league": "BEAST 18U",
+   "team": "Brookline Whalers 18U AAA",
+   "gp": 3,
+   "g": 1,
+   "a": 1,
+   "pts": 2,
+   "pm": null,
+   "pim": 0,
+   "coef": null,
+   "status": "rostered"
+  },
+  {
+   "league": "NTDP",
+   "team": "U.S. National U18 Team",
+   "gp": 2,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": -1,
+   "pim": 2,
+   "coef": 0.121,
+   "status": "rostered"
+  },
+  {
+   "league": "USHL",
+   "team": "Sioux City Musketeers",
+   "gp": 2,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": 0,
+   "pim": 0,
+   "coef": 0.143,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "USHS-Prep",
+  "leagueSlug": "ushs-prep",
+  "table": "USHS-Prep",
+  "coef": 0.028,
+  "team": "Dexter Southfield School",
+  "gp": 52,
+  "g": 7,
+  "a": 44,
+  "pts": 51,
+  "pgp": 1.7,
+  "lineGp": 30,
+  "nhle": 0.037,
+  "nhle82": 3.0,
+  "lines": [
+   "18U AAA",
+   "NTDP",
+   "USHL",
+   "USHS-Prep"
+  ]
+ },
+ "league": {
+  "name": "USHS-Prep",
+  "table": "USHS-Prep",
+  "coef": 0.028,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": null,
+  "current": {
+   "league": "qmjhl",
+   "season": "2026-2027",
+   "ageBucket": "U20",
+   "exactAge": 19,
+   "cohortN": 34,
+   "gp": 6,
+   "pgp": 0.667,
+   "percentile": 73.5,
+   "percentileAllAges": 80.2,
+   "allAgesN": 848
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 7.1,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 61.1,
+  "pRegular": 0.1,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.1,
+  "poolN": 837,
+  "group": "D",
+  "age": 17,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.03,
+   0.04
+  ],
+  "examples": [
+   {
+    "name": "Xavier Bouchard",
+    "year": 2018,
+    "pick": 185,
+    "league": "QMJHL",
+    "nhle": 0.037,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Nolan De Jong",
+    "year": 2013,
+    "pick": 197,
+    "league": "BCHL",
+    "nhle": 0.038,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jesper Pettersson",
+    "year": 2014,
+    "pick": 198,
+    "league": "J20 SuperElit",
+    "nhle": 0.036,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Drew Daniels",
+    "year": 2008,
+    "pick": 194,
+    "league": "USHS-Prep",
+    "nhle": 0.038,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ziyat Paigin",
+    "year": 2015,
+    "pick": 209,
+    "league": "MHL",
+    "nhle": 0.037,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Gianluca Curcuruto",
+    "year": 2012,
+    "pick": 182,
+    "league": "OHL",
+    "nhle": 0.037,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Nicolas Mattinen",
+    "year": 2016,
+    "pick": 179,
+    "league": "OHL",
+    "nhle": 0.037,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Wyatt Kalynuk",
+    "year": 2017,
+    "pick": 196,
+    "league": "USHL",
+    "nhle": 0.039,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 26
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 380,
+  "expected": 7.0,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 36.0,
+  "pRegular": 0.15,
+  "pTopLine": 0.03,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "D"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "USHS-Prep",
+   "nhle": 0.036,
+   "gp": 28
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "USHS-Prep",
+   "nhle": 0.037,
+   "gp": 52
+  },
+  "delta": 0.001
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 52,
+  "season": "2025-2026"
+ },
+ "rank": 16,
+ "score": 7.1
+}

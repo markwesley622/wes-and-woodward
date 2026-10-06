@@ -1,0 +1,295 @@
+{
+ "epId": "690467",
+ "nhlId": 8485592,
+ "name": "Michal Svrcek",
+ "slug": "michal-svrcek",
+ "group": "F",
+ "position": "LW/RW",
+ "birthDate": "2007-01-26",
+ "age": 19,
+ "height": "5'11\"",
+ "weight": 190,
+ "shoots": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2025,
+  "overall": 119,
+  "round": 4
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+1",
+  "draftYear": 2025,
+  "onNhlRoster": false
+ },
+ "scouting": "Svrcek\u2019s motor and high pace of play have remained the most consistent thing in his game. While being on the smaller side comes with its limitations, he still managed to be a nuisance for the opposing defenders by swarming them and applying tons of pressure, even occasionally finishing his checks against bigger opponents. -EliteProspects 2025 NHL Draft Guide",
+ "currentLines": [
+  {
+   "league": "OHL",
+   "team": "Windsor Spitfires",
+   "gp": 7,
+   "g": 1,
+   "a": 2,
+   "pts": 3,
+   "pm": 0,
+   "pim": 0,
+   "coef": 0.144,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "SHL",
+   "team": "Bryn\u00e4s IF",
+   "gp": 12,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": -2,
+   "pim": 0,
+   "coef": 0.566,
+   "status": "rostered"
+  },
+  {
+   "league": "U20 Nationell",
+   "team": "Bryn\u00e4s IF U20",
+   "gp": 11,
+   "g": 6,
+   "a": 12,
+   "pts": 18,
+   "pm": 8,
+   "pim": 31,
+   "coef": 0.091,
+   "status": "rostered"
+  },
+  {
+   "league": "HockeyAllsvenskan",
+   "team": "V\u00e4ster\u00e5s IK",
+   "gp": 10,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": -4,
+   "pim": 4,
+   "coef": 0.351,
+   "status": "rostered"
+  },
+  {
+   "league": "International-Jr",
+   "team": "Slovakia U20 (all)",
+   "gp": 10,
+   "g": 2,
+   "a": 2,
+   "pts": 4,
+   "pm": null,
+   "pim": 2,
+   "coef": null,
+   "status": "rostered"
+  },
+  {
+   "league": "WJC-20",
+   "team": "Slovakia U20",
+   "gp": 5,
+   "g": 1,
+   "a": 1,
+   "pts": 2,
+   "pm": -2,
+   "pim": 0,
+   "coef": 0.269,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "SHL",
+  "leagueSlug": "shl",
+  "table": "SHL",
+  "coef": 0.566,
+  "team": "Bryn\u00e4s IF",
+  "gp": 38,
+  "g": 0,
+  "a": 0,
+  "pts": 0,
+  "pgp": 0.0,
+  "lineGp": 12,
+  "nhle": 0.057,
+  "nhle82": 4.7,
+  "lines": [
+   "U20 Nationell",
+   "SHL",
+   "HockeyAllsvenskan",
+   "WJC-20"
+  ]
+ },
+ "league": {
+  "name": "SHL",
+  "table": "SHL",
+  "coef": 0.566,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "shl",
+   "season": "2025-2026",
+   "ageBucket": "U19",
+   "exactAge": 18,
+   "cohortN": 17,
+   "gp": 12,
+   "pgp": 0.0,
+   "percentile": 0.0,
+   "percentileAllAges": 0.0,
+   "allAgesN": 378
+  },
+  "current": {
+   "league": "ohl",
+   "season": "2026-2027",
+   "ageBucket": "U20",
+   "exactAge": 19,
+   "cohortN": 71,
+   "gp": 7,
+   "pgp": 0.429,
+   "percentile": 32.4,
+   "percentileAllAges": 42.3,
+   "allAgesN": 1774
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 7.5,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 37.6,
+  "pRegular": 0.22,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.06,
+  "poolN": 1364,
+  "group": "F",
+  "age": 18,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.05,
+   0.07
+  ],
+  "examples": [
+   {
+    "name": "Ludwig Blomstrand",
+    "year": 2011,
+    "pick": 120,
+    "league": "J20 SuperElit",
+    "nhle": 0.057,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Luke Stevens",
+    "year": 2015,
+    "pick": 126,
+    "league": "USHS-Prep",
+    "nhle": 0.055,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Lucas Feuk",
+    "year": 2019,
+    "pick": 116,
+    "league": "J20 SuperElit",
+    "nhle": 0.061,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Rhett Gardner",
+    "year": 2016,
+    "pick": 116,
+    "league": "AJHL",
+    "nhle": 0.062,
+    "peak": 0.3,
+    "tier": "replacement level",
+    "nhlGp": 41
+   },
+   {
+    "name": "Thomas Di Pauli",
+    "year": 2012,
+    "pick": 100,
+    "league": "NCAA",
+    "nhle": 0.057,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 2
+   },
+   {
+    "name": "Sam Lafferty",
+    "year": 2014,
+    "pick": 113,
+    "league": "USHS-Prep",
+    "nhle": 0.062,
+    "peak": 41.6,
+    "tier": "below average",
+    "nhlGp": 378
+   },
+   {
+    "name": "Jasper Weatherby",
+    "year": 2018,
+    "pick": 102,
+    "league": "BCHL",
+    "nhle": 0.056,
+    "peak": 10.6,
+    "tier": "replacement level",
+    "nhlGp": 50
+   },
+   {
+    "name": "Lane MacDermid",
+    "year": 2009,
+    "pick": 112,
+    "league": "OHL",
+    "nhle": 0.052,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 21
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 371,
+  "expected": 13.4,
+  "median": 0.0,
+  "p75": 10.8,
+  "p90": 54.8,
+  "pRegular": 0.29,
+  "pTopLine": 0.07,
+  "pAboveAvg": 0.13,
+  "band": "65-120",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "J20 Nationell",
+   "nhle": 0.092,
+   "gp": 54
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "SHL",
+   "nhle": 0.057,
+   "gp": 38
+  },
+  "delta": -0.035
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 38,
+  "season": "2025-2026"
+ },
+ "rank": 14,
+ "score": 7.5
+}

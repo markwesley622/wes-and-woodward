@@ -1,0 +1,244 @@
+{
+ "epId": "876731",
+ "nhlId": 8486251,
+ "name": "Adam Levac",
+ "slug": "adam-levac",
+ "group": "F",
+ "position": "C",
+ "birthDate": "2008-06-27",
+ "age": 18,
+ "height": "6'0\"",
+ "weight": 176,
+ "shoots": "R",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2026,
+  "overall": 108,
+  "round": 4
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+0",
+  "draftYear": 2026,
+  "onNhlRoster": false
+ },
+ "scouting": null,
+ "currentLines": [
+  {
+   "league": "OHL",
+   "team": "Peterborough Petes",
+   "gp": 7,
+   "g": 2,
+   "a": 4,
+   "pts": 6,
+   "pm": -5,
+   "pim": 2,
+   "coef": 0.144,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "OHL",
+   "team": "Peterborough Petes",
+   "gp": 60,
+   "g": 16,
+   "a": 28,
+   "pts": 44,
+   "pm": -5,
+   "pim": 47,
+   "coef": 0.144,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "OHL",
+  "leagueSlug": "ohl",
+  "table": "OHL",
+  "coef": 0.144,
+  "team": "Peterborough Petes",
+  "gp": 60,
+  "g": 16,
+  "a": 28,
+  "pts": 44,
+  "pgp": 0.733,
+  "lineGp": 60,
+  "nhle": 0.106,
+  "nhle82": 8.7,
+  "lines": [
+   "OHL"
+  ]
+ },
+ "league": {
+  "name": "OHL",
+  "table": "OHL",
+  "coef": 0.144,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "ohl",
+   "season": "2025-2026",
+   "ageBucket": "U18",
+   "exactAge": 17,
+   "cohortN": 80,
+   "gp": 60,
+   "pgp": 0.733,
+   "percentile": 83.8,
+   "percentileAllAges": 76.6,
+   "allAgesN": 2086
+  },
+  "current": {
+   "league": "ohl",
+   "season": "2026-2027",
+   "ageBucket": "U19",
+   "exactAge": 18,
+   "cohortN": 82,
+   "gp": 7,
+   "pgp": 0.857,
+   "percentile": 75.6,
+   "percentileAllAges": 75.4,
+   "allAgesN": 1774
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 13.4,
+  "median": 0.0,
+  "p75": 19.2,
+  "p90": 51.9,
+  "pRegular": 0.3,
+  "pTopLine": 0.06,
+  "pAboveAvg": 0.1,
+  "poolN": 1378,
+  "group": "F",
+  "age": 17,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.1,
+   0.11
+  ],
+  "examples": [
+   {
+    "name": "Andr\u00e9 Petersson",
+    "year": 2008,
+    "pick": 109,
+    "league": "J20 SuperElit",
+    "nhle": 0.107,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
+   },
+   {
+    "name": "Adam Ruzicka",
+    "year": 2017,
+    "pick": 109,
+    "league": "OHL",
+    "nhle": 0.107,
+    "peak": 47.3,
+    "tier": "below average",
+    "nhlGp": 117
+   },
+   {
+    "name": "Martin Pospisil",
+    "year": 2018,
+    "pick": 105,
+    "league": "USHL",
+    "nhle": 0.108,
+    "peak": 37.0,
+    "tier": "below average",
+    "nhlGp": 169
+   },
+   {
+    "name": "Bill Arnold",
+    "year": 2010,
+    "pick": 108,
+    "league": "NTDP",
+    "nhle": 0.103,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
+   },
+   {
+    "name": "Mark MacMillan",
+    "year": 2010,
+    "pick": 113,
+    "league": "BCHL",
+    "nhle": 0.108,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Tobias Rieder",
+    "year": 2011,
+    "pick": 114,
+    "league": "OHL",
+    "nhle": 0.108,
+    "peak": 51.9,
+    "tier": "above average",
+    "nhlGp": 478
+   },
+   {
+    "name": "Santeri Virtanen",
+    "year": 2017,
+    "pick": 105,
+    "league": "WJC-18",
+    "nhle": 0.109,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Shane Eiserman",
+    "year": 2014,
+    "pick": 100,
+    "league": "USHL",
+    "nhle": 0.108,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 371,
+  "expected": 13.4,
+  "median": 0.0,
+  "p75": 10.8,
+  "p90": 54.8,
+  "pRegular": 0.29,
+  "pTopLine": 0.07,
+  "pAboveAvg": 0.13,
+  "band": "65-120",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "OHL",
+   "nhle": 0.025,
+   "gp": 57
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "OHL",
+   "nhle": 0.106,
+   "gp": 60
+  },
+  "delta": 0.081
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 60,
+  "season": "2025-2026"
+ },
+ "rank": 9,
+ "score": 13.4
+}

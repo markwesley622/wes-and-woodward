@@ -1,0 +1,241 @@
+{
+ "epId": "702620",
+ "nhlId": 8485103,
+ "name": "Fisher Scott",
+ "slug": "fisher-scott",
+ "group": "D",
+ "position": "D",
+ "birthDate": "2004-10-27",
+ "age": 21,
+ "height": "6'2\"",
+ "weight": 185,
+ "shoots": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2024,
+  "overall": 208,
+  "round": 7
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+2",
+  "draftYear": 2024,
+  "onNhlRoster": false
+ },
+ "scouting": "Sister: Stella Scott",
+ "currentLines": [
+  {
+   "league": "NCAA",
+   "team": "Colorado College",
+   "gp": 2,
+   "g": 0,
+   "a": 1,
+   "pts": 1,
+   "pm": 4,
+   "pim": 0,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "NCAA",
+   "team": "Colorado College",
+   "gp": 36,
+   "g": 2,
+   "a": 12,
+   "pts": 14,
+   "pm": 7,
+   "pim": 34,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "NCAA",
+  "leagueSlug": "ncaa",
+  "table": "NCAA",
+  "coef": 0.194,
+  "team": "Colorado College",
+  "gp": 36,
+  "g": 2,
+  "a": 12,
+  "pts": 14,
+  "pgp": 0.389,
+  "lineGp": 36,
+  "nhle": 0.075,
+  "nhle82": 6.1,
+  "lines": [
+   "NCAA"
+  ]
+ },
+ "league": {
+  "name": "NCAA",
+  "table": "NCAA",
+  "coef": 0.194,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "ncaa",
+   "season": "2025-2026",
+   "ageBucket": "U22",
+   "exactAge": 21,
+   "cohortN": 128,
+   "gp": 36,
+   "pgp": 0.389,
+   "percentile": 76.6,
+   "percentileAllAges": 74.0,
+   "allAgesN": 1709
+  },
+  "current": {
+   "league": "ncaa",
+   "season": "2026-2027",
+   "ageBucket": "U23",
+   "cohortN": 0,
+   "gp": 2,
+   "percentile": null,
+   "note": "sample too small"
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 3.2,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 0.0,
+  "pRegular": 0.08,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.04,
+  "poolN": 757,
+  "group": "D",
+  "age": 20,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.06,
+   0.09
+  ],
+  "examples": [
+   {
+    "name": "Croix Evingson",
+    "year": 2017,
+    "pick": 211,
+    "league": "NCAA",
+    "nhle": 0.073,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jake Ryczek",
+    "year": 2016,
+    "pick": 203,
+    "league": "QMJHL",
+    "nhle": 0.073,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Petter Hansson",
+    "year": 2015,
+    "pick": 202,
+    "league": "HockeyAllsvenskan",
+    "nhle": 0.073,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ville R\u00e4s\u00e4nen",
+    "year": 2017,
+    "pick": 197,
+    "league": "Mestis",
+    "nhle": 0.076,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matt Hellickson",
+    "year": 2017,
+    "pick": 214,
+    "league": "NCAA",
+    "nhle": 0.078,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Santeri Airola",
+    "year": 2019,
+    "pick": 211,
+    "league": "Liiga",
+    "nhle": 0.071,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Daniel Bukac",
+    "year": 2017,
+    "pick": 204,
+    "league": "Czechia2",
+    "nhle": 0.071,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jacob Friend",
+    "year": 2016,
+    "pick": 202,
+    "league": "OHL",
+    "nhle": 0.071,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 380,
+  "expected": 7.0,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 36.0,
+  "pRegular": 0.15,
+  "pTopLine": 0.03,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "D"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "NCAA",
+   "nhle": 0.057,
+   "gp": 34
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "NCAA",
+   "nhle": 0.075,
+   "gp": 36
+  },
+  "delta": 0.018
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 36,
+  "season": "2025-2026"
+ },
+ "rank": 23,
+ "score": 3.2
+}

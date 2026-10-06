@@ -1,0 +1,241 @@
+{
+ "epId": "597849",
+ "nhlId": 8485098,
+ "name": "Austin Baker",
+ "slug": "austin-baker",
+ "group": "F",
+ "position": "LW",
+ "birthDate": "2006-02-12",
+ "age": 20,
+ "height": "6'0\"",
+ "weight": 190,
+ "shoots": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2024,
+  "overall": 203,
+  "round": 7
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+2",
+  "draftYear": 2024,
+  "onNhlRoster": false
+ },
+ "scouting": "For most part, Baker plays a straight-line game. He uses his speed to push back the defence, win races, and occasionally fly down the wing and beat the goalie with a wrister. -EliteProspects 2024 NHL Draft Guide",
+ "currentLines": [
+  {
+   "league": "NCAA",
+   "team": "Miami Univ. (Ohio)",
+   "gp": 2,
+   "g": 1,
+   "a": 1,
+   "pts": 2,
+   "pm": 0,
+   "pim": 0,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "NCAA",
+   "team": "Michigan State Univ.",
+   "gp": 14,
+   "g": 0,
+   "a": 1,
+   "pts": 1,
+   "pm": 0,
+   "pim": 15,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "NCAA",
+  "leagueSlug": "ncaa",
+  "table": "NCAA",
+  "coef": 0.194,
+  "team": "Michigan State Univ.",
+  "gp": 14,
+  "g": 0,
+  "a": 1,
+  "pts": 1,
+  "pgp": 0.071,
+  "lineGp": 14,
+  "nhle": 0.014,
+  "nhle82": 1.1,
+  "lines": [
+   "NCAA"
+  ]
+ },
+ "league": {
+  "name": "NCAA",
+  "table": "NCAA",
+  "coef": 0.194,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "ncaa",
+   "season": "2025-2026",
+   "ageBucket": "U20",
+   "exactAge": 19,
+   "cohortN": 49,
+   "gp": 14,
+   "pgp": 0.071,
+   "percentile": 0.0,
+   "percentileAllAges": 4.0,
+   "allAgesN": 3059
+  },
+  "current": {
+   "league": "ncaa",
+   "season": "2026-2027",
+   "ageBucket": "U21",
+   "cohortN": 0,
+   "gp": 2,
+   "percentile": null,
+   "note": "sample too small"
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 0.1,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 0.0,
+  "pRegular": 0.02,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.0,
+  "poolN": 1308,
+  "group": "F",
+  "age": 19,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.0,
+   0.06
+  ],
+  "examples": [
+   {
+    "name": "Rasmus Bodin",
+    "year": 2012,
+    "pick": 200,
+    "league": "J20 SuperElit",
+    "nhle": 0.013,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jared Fiegl",
+    "year": 2014,
+    "pick": 191,
+    "league": "NCAA",
+    "nhle": 0.013,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Maxwell Tardy",
+    "year": 2009,
+    "pick": 202,
+    "league": "NCAA",
+    "nhle": 0.022,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Petr Placek",
+    "year": 2011,
+    "pick": 176,
+    "league": "NCAA",
+    "nhle": 0.013,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Riley Hughes",
+    "year": 2018,
+    "pick": 216,
+    "league": "NCAA",
+    "nhle": 0.023,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ashton Bernard",
+    "year": 2009,
+    "pick": 174,
+    "league": "QMJHL",
+    "nhle": 0.019,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Hunter Fejes",
+    "year": 2012,
+    "pick": 178,
+    "league": "NCAA",
+    "nhle": 0.007,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Christian Isackson",
+    "year": 2010,
+    "pick": 203,
+    "league": "NCAA",
+    "nhle": 0.0,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 586,
+  "expected": 7.5,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 31.0,
+  "pRegular": 0.16,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "USHL",
+   "nhle": 0.079,
+   "gp": 56
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "NCAA",
+   "nhle": 0.014,
+   "gp": 14
+  },
+  "delta": -0.065
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 14,
+  "season": "2025-2026"
+ },
+ "rank": 29,
+ "score": 0.1
+}

@@ -1,0 +1,220 @@
+{
+ "epId": "574842",
+ "nhlId": 8483421,
+ "name": "Brennan Ali",
+ "slug": "brennan-ali",
+ "group": "F",
+ "position": "C/LW",
+ "birthDate": "2004-02-09",
+ "age": 22,
+ "height": "6'0\"",
+ "weight": 194,
+ "shoots": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2022,
+  "overall": 212,
+  "round": 7
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+4",
+  "draftYear": 2022,
+  "onNhlRoster": false
+ },
+ "scouting": "There\u2019s never taking a shift off, and then there\u2019s Brennan Ali. Every second of every shift, he\u2019s working. He sprints for every loose puck, applies non-stop pressure, and throws himself into the puck carrier. Where many players, justifiably, coast, he keeps his foot on the gas pedal for the chance that he could impact the play. He finishes every off-puck route, backing off defenders and creating space behind him. Second and third efforts win battles, and then he looks to the net. He also has moments of creativity, like a give-and-go, cutback into a net drive, or delay before passing to the trailer. -EliteProspects 2022 NHL Draft Guide",
+ "currentLines": [],
+ "lastLines": [
+  {
+   "league": "NCAA",
+   "team": "Univ. of Notre Dame",
+   "gp": 35,
+   "g": 8,
+   "a": 7,
+   "pts": 15,
+   "pm": -14,
+   "pim": 23,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "NCAA",
+  "leagueSlug": "ncaa",
+  "table": "NCAA",
+  "coef": 0.194,
+  "team": "Univ. of Notre Dame",
+  "gp": 35,
+  "g": 8,
+  "a": 7,
+  "pts": 15,
+  "pgp": 0.429,
+  "lineGp": 35,
+  "nhle": 0.083,
+  "nhle82": 6.8,
+  "lines": [
+   "NCAA"
+  ]
+ },
+ "league": {
+  "name": "NCAA",
+  "table": "NCAA",
+  "coef": 0.194,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "ncaa",
+   "season": "2025-2026",
+   "ageBucket": "U22",
+   "exactAge": 21,
+   "cohortN": 259,
+   "gp": 35,
+   "pgp": 0.429,
+   "percentile": 51.7,
+   "percentileAllAges": 50.0,
+   "allAgesN": 3059
+  },
+  "current": null
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 0.6,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 0.0,
+  "pRegular": 0.04,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.0,
+  "poolN": 1127,
+  "group": "F",
+  "age": 21,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.07,
+   0.1
+  ],
+  "examples": [
+   {
+    "name": "Troy Josephs",
+    "year": 2013,
+    "pick": 209,
+    "league": "NCAA",
+    "nhle": 0.083,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jani Lajunen",
+    "year": 2008,
+    "pick": 201,
+    "league": "AHL",
+    "nhle": 0.083,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Adam Marsh",
+    "year": 2015,
+    "pick": 200,
+    "league": "ECHL",
+    "nhle": 0.083,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Julien Nantel",
+    "year": 2014,
+    "pick": 204,
+    "league": "AHL",
+    "nhle": 0.081,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Mark Goggin",
+    "year": 2008,
+    "pick": 197,
+    "league": "NCAA",
+    "nhle": 0.083,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "J\u00e9r\u00e9my Michel",
+    "year": 2019,
+    "pick": 217,
+    "league": "USports",
+    "nhle": 0.087,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matteo Gennaro",
+    "year": 2015,
+    "pick": 203,
+    "league": "AHL",
+    "nhle": 0.08,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Brent Andrews",
+    "year": 2011,
+    "pick": 202,
+    "league": "CIS",
+    "nhle": 0.08,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 586,
+  "expected": 7.5,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 31.0,
+  "pRegular": 0.16,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "NCAA",
+   "nhle": 0.097,
+   "gp": 38
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "NCAA",
+   "nhle": 0.083,
+   "gp": 35
+  },
+  "delta": -0.014
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 35,
+  "season": "2025-2026"
+ },
+ "rank": 27,
+ "score": 0.6
+}

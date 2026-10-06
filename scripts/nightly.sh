@@ -14,6 +14,9 @@ LOG="$HOME/.wesandwoodward/logs/nightly-$(date +%Y-%m-%d).log"
   ./refresh.sh
   python3 pipeline/fetch_eh.py || echo "EH pull failed, continuing with the files on disk"
   python3 pipeline/build_player.py --roster --fetch
+  # prospect system: re-applies the status rule and roster-status template swap on the cached EliteProspects
+  # pull (data/raw/ep, refreshed by hand from Mark's Chrome via pipeline/ep_refresh.py; it is not in git)
+  python3 pipeline/build_prospects.py || echo "prospect build failed, keeping the files on disk"
   npm run build --silent >/dev/null
   git add -A data/site data/archive data/raw/nhl data/raw/moneypuck data/raw/players
   if git diff --cached --quiet; then

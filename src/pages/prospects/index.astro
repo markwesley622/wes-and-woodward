@@ -1,0 +1,136 @@
+---
+import Base from '../../layouts/Base.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+const D = JSON.parse(fs.readFileSync(path.resolve('data/site/prospects.json'), 'utf8'));
+const live = new Set(fs.readdirSync(path.resolve('data/site/players')).filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', '')));
+const P = D.prospects, X = D.excluded, GK = D.goalies;
+const season = `${D.season.slice(0, 4)}–${D.season.slice(6)}`;
+const lastSeason = `${Number(D.season.slice(0, 4)) - 1}–${D.season.slice(2, 4)}`;
+const signed = (v, d = 2) => (v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d));
+const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
+const link = (p) => (p.nhlId && live.has(String(p.nhlId)) ? `/players/${p.slug}/` : null);
+const lineOf = (ls) => (ls && ls.length ? ls[0] : null);
+const lineText = (l) => (l ? `${l.league} · ${l.gp ?? 0} gp, ${l.g ?? 0}–${l.a ?? 0}–${l.pts ?? 0}` : '—');
+const tierClass = (t) => ({ 'elite': 'elite', 'top-line': 'top', 'above average': 'above' }[t] || '');
+const pctText = (pf) => (pf && pf.percentile != null ? `${Math.round(pf.percentile)}th` : '—');
+---
+<Base title="Prospects — Wes & Woodward" description="The Red Wings pipeline, ranked on what each prospect projects to as an NHL player at his position: league strength, age-relative production, cohort ceiling and trajectory." schema={[{ '@type': 'CollectionPage', '@id': 'https://wesandwoodward.com/prospects/', url: 'https://wesandwoodward.com/prospects/', name: 'Prospect Pipeline', description: 'Every Red Wings prospect, ranked on projected NHL ceiling within position.', isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, about: { '@id': 'https://wesandwoodward.com/team/#team' },
+  mainEntity: { '@type': 'ItemList', itemListOrder: 'https://schema.org/ItemListOrderAscending', numberOfItems: P.length, itemListElement: P.map((p) => ({ '@type': 'ListItem', position: p.rank, name: p.name, url: link(p) ? `https://wesandwoodward.com${link(p)}` : undefined })) } }]}>
+  <section class="sec">
+    <div class="shell">
+      <p class="kicker">Prospects · {season}</p>
+      <h1 class="page-title">Prospect Pipeline</h1>
+      <p class="lede">Every skater whose rights Detroit holds who is still a prospect: rookie-eligible and inside draft+4. Ranked on expected NHL peak, measured within his position, so a defenseman is judged against defensemen at every step.</p>
+
+      <div class="controls mono">
+        <div class="toggle" id="posfilter" role="tablist" aria-label="Position">
+          <button type="button" class="on" data-pos="all" role="tab" aria-selected="true">All</button>
+          <button type="button" data-pos="F" role="tab" aria-selected="false">Forwards</button>
+          <button type="button" data-pos="D" role="tab" aria-selected="false">Defense</button>
+        </div>
+      </div>
+
+      <div class="table-scroll">
+        <table class="sortable">
+          <thead><tr>
+            <th class="num on" data-sort="num">#</th><th data-sort="text">Player</th><th data-sort="text">Pos</th><th class="num" data-sort="num">Age</th><th data-sort="num">Draft</th>
+            <th data-sort="text">{lastSeason} line</th><th class="num" data-sort="num">League coef.</th><th class="num" data-sort="num">NHLe / 82</th>
+            <th class="num" data-sort="num">Age-relative pct.</th><th class="num" data-sort="num">Expected peak</th><th data-sort="num">Ceiling</th><th class="num" data-sort="num">P(NHL regular)</th>
+            <th class="num" data-sort="num">Trajectory</th><th data-sort="text">Now</th>
+          </tr></thead>
+          <tbody>
+            {P.map((p) => { const A = p.anchor, C = p.ceiling || {}, pf = p.performance.last, href = link(p), now = lineOf(p.currentLines); return (
+              <tr data-pos={p.group}>
+                <td class="num" data-v={p.rank}><span class:list={['rk', { red: p.rank <= 3 }]}>{p.rank}</span></td>
+                <td data-v={p.name.split(' ').slice(-1)[0]}>{href ? <a href={href}>{p.name}</a> : <span>{p.name}</span>}</td>
+                <td data-v={p.position}>{p.position}</td>
+                <td class="num" data-v={p.age ?? -1}>{p.age ?? '—'}</td>
+                <td data-v={p.draft?.overall ?? 999} class:list={{ mute: !p.draft }}>{p.draft ? `${p.draft.year} · ${ordinal(p.draft.overall)}` : 'undrafted'}</td>
+                <td data-v={A?.league ?? ''}>{A ? `${A.league} · ${A.lineGp} gp, ${A.g}–${A.a}–${A.pts}` : '—'}</td>
+                <td class="num" data-v={A?.coef ?? -1}>{A ? A.coef.toFixed(3) : '—'}</td>
+                <td class="num" data-v={A?.nhle82 ?? -1}>{A ? A.nhle82.toFixed(1) : '—'}</td>
+                <td class="num" data-v={pf?.percentile ?? -1} title={pf && pf.percentile != null ? `${pf.league.toUpperCase()} ${pf.season}, ${p.group === 'D' ? 'defensemen' : 'forwards'} born ${p.birthDate.slice(0, 4)}, ${pf.cohortN} skaters` : ''}>{pctText(pf)}{pf && pf.percentile != null ? <span class="mute"> · n {pf.cohortN}</span> : null}</td>
+                <td class="num val" data-v={C.expected ?? -1}>{C.expected != null ? C.expected.toFixed(0) : '—'}</td>
+                <td data-v={C.p75 ?? -1} class:list={[tierClass(C.tier)]}>{C.tier ?? '—'}{C.p75 != null ? <span class="mute"> · {Math.round(C.p75)}th</span> : null}</td>
+                <td class="num" data-v={C.pRegular ?? -1}>{C.pRegular != null ? `${Math.round(C.pRegular * 100)}%` : '—'}</td>
+                <td class="num" data-v={p.trajectory?.delta ?? -99} title={p.trajectory ? `${p.trajectory.from.league} ${p.trajectory.from.season} → ${p.trajectory.to.league} ${p.trajectory.to.season}` : ''}>{p.trajectory ? signed(p.trajectory.delta * 82, 0) : '—'}</td>
+                <td data-v={now?.league ?? ''} class:list={{ mute: !now }}>{lineText(now)}</td>
+              </tr>
+            ); })}
+          </tbody>
+        </table>
+      </div>
+      <p class="note mono">Rank: by expected NHL peak, the mean of the cohort outcome where a bust counts as zero. League coef.: Network NHLe points coefficient (hockeystats.com, Patrick Bacon), the share of a point in that league worth an NHL point. NHLe / 82: last full season's points per game blended across every league he played, times the coefficient, times 82. Age-relative pct.: points-per-game percentile among skaters of the same position born the same year in that league, that season (EliteProspects). Expected peak and ceiling: the nearest {D.cohort.k} drafted skaters of the {D.cohort.years[0]}–{D.cohort.years[1]} classes at the same position, age, NHLe and draft slot, and where their best NHL season landed as a points-per-game percentile among regulars at the position; expected is the mean, ceiling the 75th percentile of that group. P(NHL regular): share of the group with at least one half-season or more in the NHL. Trajectory: change in NHLe / 82 between the two most recent full seasons. Now: this season's line to date.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="out">
+    <div class="shell">
+      <h2>In the system, no longer prospects</h2>
+      <p class="lede">Rights Detroit holds on players who have either lost rookie eligibility or passed draft+4. They are listed here, not ranked.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Player</th><th>Pos</th><th class="num">Age</th><th>Draft</th><th>Why</th><th>Now</th></tr></thead>
+          <tbody>
+            {X.map((p) => { const href = link(p), now = lineOf(p.currentLines); return (
+              <tr><td>{href ? <a href={href}>{p.name}</a> : p.name}</td><td>{p.position}</td><td class="num">{p.age ?? '—'}</td><td class:list={{ mute: !p.draft }}>{p.draft ? `${p.draft.year} · ${ordinal(p.draft.overall)}` : 'undrafted'}</td><td>{p.reason}</td><td class:list={{ mute: !now }}>{lineText(now)}</td></tr>
+            ); })}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="goalies">
+    <div class="shell">
+      <h2>Goalies</h2>
+      <p class="lede">Goalies are not in the model. Save percentage does not translate across leagues the way scoring does, so they are listed on their lines until there is a goalie-specific method.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Goalie</th><th class="num">Age</th><th>Draft</th><th>{lastSeason}</th><th>Now</th></tr></thead>
+          <tbody>
+            {GK.map((g) => { const href = link(g), last = lineOf(g.lastLines), now = lineOf(g.currentLines); return (
+              <tr><td>{href ? <a href={href}>{g.name}</a> : g.name}</td><td class="num">{g.age ?? '—'}</td><td class:list={{ mute: !g.draft }}>{g.draft ? `${g.draft.year} · ${ordinal(g.draft.overall)}` : 'undrafted'}</td><td class:list={{ mute: !last }}>{last ? `${last.league} · ${last.gp ?? 0} gp` : '—'}</td><td class:list={{ mute: !now }}>{now ? `${now.league} · ${now.gp ?? 0} gp` : '—'}</td></tr>
+            ); })}
+          </tbody>
+        </table>
+      </div>
+      <p class="note mono">Sources: EliteProspects (lines, league tables, draft classes), NHL API (season pools for the percentiles, rookie eligibility), hockeystats.com (league coefficients, retrieved {D.nhle.retrieved}). Built {D.built}.</p>
+    </div>
+  </section>
+</Base>
+<script>
+  const posBtns = document.querySelectorAll('#posfilter button');
+  posBtns.forEach((b) => b.addEventListener('click', () => { posBtns.forEach((o) => { o.classList.toggle('on', o === b); o.setAttribute('aria-selected', String(o === b)); }); document.querySelectorAll('table.sortable tbody tr').forEach((r) => { r.hidden = b.dataset.pos !== 'all' && r.dataset.pos !== b.dataset.pos; }); }));
+  document.querySelectorAll('table.sortable').forEach((table) => {
+    const ths = [...table.querySelectorAll('th')];
+    ths.forEach((th, idx) => th.addEventListener('click', () => {
+      const wasOn = th.classList.contains('on'), desc = wasOn ? !th.classList.contains('desc') : th.dataset.sort === 'num';
+      ths.forEach((o) => o.classList.remove('on', 'desc')); th.classList.add('on'); if (desc) th.classList.add('desc');
+      const rows = [...table.tBodies[0].rows];
+      rows.sort((a, b) => { const va = a.cells[idx].dataset.v, vb = b.cells[idx].dataset.v; const cmp = th.dataset.sort === 'num' ? Number(va) - Number(vb) : String(va).localeCompare(String(vb)); return desc ? -cmp : cmp; });
+      rows.forEach((r) => table.tBodies[0].appendChild(r));
+    }));
+  });
+</script>
+<style>
+  .lede { max-width: 70ch; font-size: 18px; line-height: 1.55; margin: 0 0 22px; }
+  .page-title { margin-bottom: 14px; }
+  .controls { display: flex; gap: 14px; flex-wrap: wrap; margin: 0 0 18px; }
+  .toggle { display: inline-flex; border: 1px solid var(--ink); border-radius: 3px; overflow: hidden; }
+  .toggle button { background: none; border: 0; padding: 9px 16px; cursor: pointer; font: inherit; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
+  .toggle button.on { background: var(--ink); color: #fff; }
+  th.num, td.num { text-align: right; }
+  .sortable th { cursor: pointer; user-select: none; white-space: nowrap; }
+  .sortable th:hover { color: var(--ink); }
+  th.on { color: var(--ink); border-bottom-color: var(--red); }
+  th.on::after { content: " ↑"; color: var(--red); } th.on.desc::after { content: " ↓"; }
+  table a { text-decoration: underline; text-underline-offset: 2px; }
+  td { white-space: nowrap; }
+  .val { font-weight: 600; font-size: 15px; }
+  .rk { font-weight: 600; } .rk.red { color: var(--red); }
+  td.elite, td.top { color: var(--red); font-weight: 600; } td.above { font-weight: 600; }
+  .mute, td.mute { color: var(--mute); font-weight: 400; }
+  .note { color: var(--mute); font-size: 11px; margin: 12px 0 0; text-transform: none; letter-spacing: 0; max-width: 110ch; }
+</style>

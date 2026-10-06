@@ -10,10 +10,12 @@ export async function getStaticPaths() {
   return files.map((f) => {
     const P = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
     const art = fs.existsSync(path.resolve(`public/players/${P.playerId}-art.webp`));
-    return { params: { slug: P.slug }, props: { P, art } };
+    const pf = path.resolve(`data/site/prospects/${P.playerId}.json`);
+    const prospect = fs.existsSync(pf) ? JSON.parse(fs.readFileSync(pf, 'utf8')) : null;   // the prospect-system block (build_prospects.py)
+    return { params: { slug: P.slug }, props: { P, art, prospect } };
   });
 }
-const { P, art } = Astro.props;
+const { P, art, prospect } = Astro.props;
 
 const B = P.bio, L = P.seasonLine || {}, SC = P.score, MP = P.moneypuck || {}, G = P.gameLog || [], GS = P.gameScore, HS = P.hsc || {}, TG = P.teamGameScore;
 const SI = P.standIn || null;
@@ -69,7 +71,7 @@ const RECENT = 10;
   mainEntity: { '@type': 'Person', '@id': `https://wesandwoodward.com/players/${P.slug}/#person`, name: P.name, jobTitle: isG ? 'Professional hockey goaltender' : 'Professional hockey player', birthDate: B.birthDate, birthPlace: B.birthplace ? { '@type': 'Place', name: B.birthplace } : undefined,
     height: B.heightIn ? { '@type': 'QuantitativeValue', value: B.heightIn, unitCode: 'INH' } : undefined, weight: B.weightLb ? { '@type': 'QuantitativeValue', value: B.weightLb, unitCode: 'LBR' } : undefined,
     memberOf: { '@id': 'https://wesandwoodward.com/team/#team' }, image: P.art ? `https://wesandwoodward.com/players/${P.playerId}-art.webp` : undefined, sameAs: [`https://www.nhl.com/player/${P.playerId}`] } }]} title={`${P.name} — Wes & Woodward`} description={isP ? `${P.name}, Red Wings prospect: draft pedigree and every line he played in ${season}.` : `${P.name}, ${season}: value score, where it comes from, and a game-by-game log with game score.`}>
-  {isP && <Prospect P={P} art={art} />}
+  {isP && <Prospect P={P} art={art} prospect={prospect} />}
   {!isP && (<>
   <section class="sec">
     <div class="shell">

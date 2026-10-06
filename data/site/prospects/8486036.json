@@ -1,0 +1,220 @@
+{
+ "epId": "628089",
+ "nhlId": 8486036,
+ "name": "Beckham Edwards",
+ "slug": "beckham-edwards",
+ "group": "F",
+ "position": "C",
+ "birthDate": "2008-01-06",
+ "age": 18,
+ "height": "6'1\"",
+ "weight": 187,
+ "shoots": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2026,
+  "overall": 143,
+  "round": 5
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+0",
+  "draftYear": 2026,
+  "onNhlRoster": false
+ },
+ "scouting": null,
+ "currentLines": [],
+ "lastLines": [
+  {
+   "league": "OHL",
+   "team": "Sarnia Sting",
+   "gp": 64,
+   "g": 19,
+   "a": 26,
+   "pts": 45,
+   "pm": -26,
+   "pim": 14,
+   "coef": 0.144,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "OHL",
+  "leagueSlug": "ohl",
+  "table": "OHL",
+  "coef": 0.144,
+  "team": "Sarnia Sting",
+  "gp": 64,
+  "g": 19,
+  "a": 26,
+  "pts": 45,
+  "pgp": 0.703,
+  "lineGp": 64,
+  "nhle": 0.101,
+  "nhle82": 8.3,
+  "lines": [
+   "OHL"
+  ]
+ },
+ "league": {
+  "name": "OHL",
+  "table": "OHL",
+  "coef": 0.144,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "ohl",
+   "season": "2025-2026",
+   "ageBucket": "U18",
+   "exactAge": 17,
+   "cohortN": 80,
+   "gp": 64,
+   "pgp": 0.703,
+   "percentile": 80.0,
+   "percentileAllAges": 73.3,
+   "allAgesN": 2086
+  },
+  "current": null
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 11.1,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 56.0,
+  "pRegular": 0.2,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.12,
+  "poolN": 1378,
+  "group": "F",
+  "age": 17,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.09,
+   0.11
+  ],
+  "examples": [
+   {
+    "name": "Joel Broda",
+    "year": 2008,
+    "pick": 144,
+    "league": "WHL",
+    "nhle": 0.102,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jacob Lagac\u00e9",
+    "year": 2008,
+    "pick": 134,
+    "league": "QMJHL",
+    "nhle": 0.1,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Anthony Nigro",
+    "year": 2008,
+    "pick": 155,
+    "league": "OHL",
+    "nhle": 0.103,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jordan Stallard",
+    "year": 2016,
+    "pick": 127,
+    "league": "WHL",
+    "nhle": 0.102,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Dakota Joshua",
+    "year": 2014,
+    "pick": 128,
+    "league": "USHL",
+    "nhle": 0.099,
+    "peak": 56.0,
+    "tier": "above average",
+    "nhlGp": 296
+   },
+   {
+    "name": "Rudolfs Balcers",
+    "year": 2015,
+    "pick": 142,
+    "league": "Norway",
+    "nhle": 0.106,
+    "peak": 47.8,
+    "tier": "below average",
+    "nhlGp": 170
+   },
+   {
+    "name": "Michael Pelech",
+    "year": 2009,
+    "pick": 156,
+    "league": "OHL",
+    "nhle": 0.104,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Leevi Aaltonen",
+    "year": 2019,
+    "pick": 130,
+    "league": "U20 SM-liiga",
+    "nhle": 0.098,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 586,
+  "expected": 7.5,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 31.0,
+  "pRegular": 0.16,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "OHL",
+   "nhle": 0.105,
+   "gp": 62
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "OHL",
+   "nhle": 0.101,
+   "gp": 64
+  },
+  "delta": -0.004
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 64,
+  "season": "2025-2026"
+ },
+ "rank": 11,
+ "score": 11.1
+}

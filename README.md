@@ -61,3 +61,25 @@ GitHub account: markwesley622.
    week" draft-assist starting point (not built yet).
 3. Evergreen interactives — trade trees (~/Documents/debrincat-trade-tree) and NHL
    redraft port in as launch content.
+
+## Prospect system (decided 2026-10-06)
+
+Pages: `/prospects/` (ranked pipeline) and a "Where he projects" block on every prospect page.
+Builder: `pipeline/build_prospects.py` -> `data/site/prospects.json` + `data/site/prospects/<nhlId>.json`.
+
+- A prospect is rookie-eligible AND inside draft+4, where the draft year is year one (2021 -> through
+  2025-26). Undrafted: under 23 on Sept 15. `build_player.prospect_status()` is the single rule.
+- The page template follows CURRENT roster status: on the NHL roster -> the NHL template (same as
+  DeBrincat); in Grand Rapids -> the prospect template. One slug, the nightly build swaps it.
+- Four layers, each within position (F / D; goalies listed, not modelled): league strength (hockeystats.com
+  Network NHLe coefficient, `data/raw/nhle/hockeystats_nhle.json`), age-relative production (P/GP percentile
+  among same-league, same-position, same-age skaters from EP league tables), ceiling (nearest 50 drafted
+  skaters of 2008-2019 at the same position and age by NHLe + draft slot; outcome = peak NHL P/GP
+  percentile within position, busts = 0; expected / p75 / P(regular)), trajectory (NHLe change, last two
+  full seasons). Rank = expected peak.
+- EliteProspects is pulled from Mark's logged-in personal Chrome (Browser 2), never from a script:
+  `pipeline/ep_receiver.py` (local queue + sink on 127.0.0.1:8765) and `pipeline/ep_worker.js` (paste into
+  an EP tab via claude-in-chrome; fetches pages in-page, posts the embedded `__NEXT_DATA__` back).
+  `ep_refresh.py` queues the DET system + its players; `ep_league_pull.py <season>` queues league tables
+  (position x cumulative age bucket x page; exact ages are set differences). `data/raw/ep/` is gitignored.
+- NHL season pools for the percentiles: `data/raw/nhl_seasons/skaters_<season>.json` (NHL stats API).

@@ -2,8 +2,13 @@
 // Prospect page: a player still eligible for NHL rookie status. No value score (the NHL sample is
 // too small to rate), so the page is bio, draft pedigree, every line he played last season across
 // leagues, and the NHL game log if there is one.
-const { P, art } = Astro.props;
+const { P, art, prospect } = Astro.props;
 const B = P.bio, L = P.seasonLine || {}, G = P.gameLog || [], LINES = P.seasonLines || [];
+// prospect-system block (build_prospects.py): league strength, age-relative performance, cohort ceiling, trajectory
+const R = prospect || null, A = R?.anchor || null, C = R?.ceiling || null, PF = R?.performance?.last || null, PC = R?.performance?.current || null, TR = R?.trajectory || null, PD = R?.pedigree || null, DP = R?.deployment || null;
+const pctWord = (v) => (v == null ? '—' : `${Math.round(v)}th`);
+const tierClass = (t) => ({ 'elite': 'elite', 'top-line': 'top', 'above average': 'above' }[t] || '');
+const sgn = (v, d = 0) => (v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d));
 const season = `${P.seasonLabel.slice(0, 4)}–${P.seasonLabel.slice(5)}`;
 const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
 const mdy = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
@@ -30,7 +35,8 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
       <div class="scorebox">
         <span class="eb mono">Status</span>
         <span class="status">Prospect</span>
-        <span class="mono range">rookie-eligible · {nhlGp} NHL game{nhlGp === 1 ? '' : 's'} so far</span>
+        <span class="mono range">rookie-eligible · {P.prospectStatus?.window ?? ''}{P.prospectStatus?.window ? ' · ' : ''}{nhlGp} NHL game{nhlGp === 1 ? '' : 's'} so far</span>
+        {R && R.rank && <span class="mono range">pipeline rank {R.rank}{C?.expected != null ? ` · expected peak ${C.expected.toFixed(0)}` : ''}</span>}
       </div>
     </div>
     <div class="grid">
@@ -41,6 +47,41 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
     </div>
   </div>
 </section>
+
+{R && A && (
+<section class="sec" id="projection">
+  <div class="shell">
+    <h2>Where he projects</h2>
+    <p class="lede">Four reads, every one measured against {R.group === 'D' ? 'defensemen' : 'forwards'} only, built on his {A.season.slice(0, 4)}–{A.season.slice(7)} season{A.lines && A.lines.length > 1 ? ` across the ${A.lines.join(' and ')}` : ` in the ${A.league}`}.</p>
+    <div class="grid layers">
+      <div class="tile"><span class="eb mono">League strength</span><span class="num">{A.coef.toFixed(3)}</span><span class="sub">{A.league} coefficient · a point there is worth {Math.round(A.coef * 100)}% of an NHL point</span></div>
+      <div class="tile"><span class="eb mono">Production, age-relative</span><span class="num">{pctWord(PF?.percentile)}</span><span class="sub">{PF && PF.percentile != null ? `percentile among ${PF.league.toUpperCase()} ${R.group === 'D' ? 'defensemen' : 'forwards'} born ${R.birthDate.slice(0, 4)}, ${PF.season.slice(0, 4)}–${PF.season.slice(7)} (${PF.cohortN} skaters) · NHLe ${A.nhle82.toFixed(1)} per 82` : `no same-age table for this league yet · NHLe ${A.nhle82.toFixed(1)} per 82`}</span></div>
+      <div class="tile"><span class="eb mono">Ceiling</span><span class:list={['num', 'word', tierClass(C?.tier)]}>{C ? C.tier : '—'}</span><span class="sub">{C ? `75th percentile of ${C.n} comparable paths lands at the ${Math.round(C.p75)}th percentile of NHL ${R.group === 'D' ? 'defensemen' : 'forwards'} · expected ${C.expected.toFixed(0)} · ${Math.round(C.pRegular * 100)}% became NHL regulars` : 'not enough same-age comparables'}</span></div>
+      <div class="tile"><span class="eb mono">Trajectory</span><span class="num">{TR ? sgn(TR.delta * 82) : '—'}</span><span class="sub">{TR ? `NHLe per 82, ${TR.from.league} ${TR.from.season} to ${TR.to.league} ${TR.to.season}` : 'needs two full seasons'}</span></div>
+    </div>
+    {C && C.examples && C.examples.length > 0 && (
+      <div class="table-scroll comps">
+        <table>
+          <thead><tr><th>Closest paths at age {C.age}</th><th>Draft</th><th>League then</th><th class="num">NHLe / 82</th><th>NHL outcome</th><th class="num">NHL GP</th></tr></thead>
+          <tbody>
+            {C.examples.map((e) => (
+              <tr><td>{e.name}</td><td>{e.year} · {e.pick}</td><td>{e.league}</td><td class="num">{(e.nhle * 82).toFixed(1)}</td><td class:list={[tierClass(e.tier)]}>{e.tier}{e.peak != null ? <span class="mute"> · {Math.round(e.peak)}th</span> : null}</td><td class="num">{e.nhlGp}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )}
+    <div class="facts mono">
+      {PD && <p><b>Draft pedigree.</b> Picks {PD.band} at the position, {PD.n} of them since 2008: {Math.round(PD.pRegular * 100)}% became NHL regulars, {Math.round(PD.pTopLine * 100)}% reached top-line production, expected peak {PD.expected.toFixed(0)}.</p>}
+      {PC && PC.percentile != null && <p><b>This season so far.</b> {pctWord(PC.percentile)} percentile among {PC.league.toUpperCase()} {R.group === 'D' ? 'defensemen' : 'forwards'} born {R.birthDate.slice(0, 4)} after {PC.gp} games ({PC.cohortN} skaters).</p>}
+      {DP && DP.toiPerGame != null && <p><b>Deployment.</b> {DP.toiPerGame} minutes a game over {DP.games} logged games{DP.ppGoals ? `, ${DP.ppGoals} of ${DP.goals} goals on the power play` : ''}.</p>}
+      {R.nhlSample && R.nhlSample.gp > 0 && <p><b>NHL sample.</b> {R.nhlSample.gp} games, {R.nhlSample.pts} points{R.nhlSample.thisSeason?.gp ? ` · ${R.nhlSample.thisSeason.gp} this season at ${R.nhlSample.thisSeason.toi} a night` : ''}. Small until it is not; it will outweigh the cohort once it is a full season.</p>}
+      <p><b>Games behind the numbers.</b> {A.gp} in {A.season}{PF && PF.percentile != null ? `, ${PF.cohortN} same-age skaters in the table` : ''}{C ? `, ${C.n} comparable paths from a pool of ${C.poolN}` : ''}.</p>
+    </div>
+    <p class="note mono">League strength is the Network NHLe points coefficient from hockeystats.com (Patrick Bacon). Production is points per game among skaters of the same position and the same age in the same league and season (EliteProspects tables). Ceiling: the nearest 50 drafted skaters of the 2008–2019 classes at the same position and age, matched on NHLe and draft slot, and where each one's best NHL season landed as a points-per-game percentile among regulars at the position; a player who never had a half-season in the NHL counts as zero. Tiers follow the value score on the NHL pages: elite 88+, top-line 73+, above average 50+, below average 27+.</p>
+  </div>
+</section>
+)}
 
 <section class="sec" id="lines">
   <div class="shell">
@@ -93,6 +134,11 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
   .lede { max-width: 66ch; font-size: 18px; line-height: 1.55; margin: 0 0 22px; }
   .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 90ch; }
   .tip { border-bottom: 1px dotted var(--mute); cursor: help; }
+  .layers .num.word { font-size: 26px; text-transform: capitalize; }
+  .layers .num.word.elite, .layers .num.word.top { color: var(--red); }
+  .comps { margin: 22px 0 0; } .comps td.elite, .comps td.top { color: var(--red); font-weight: 600; } .comps td.above { font-weight: 600; }
+  .comps .mute { color: var(--mute); font-weight: 400; }
+  .facts { margin: 22px 0 0; max-width: 90ch; } .facts p { margin: 0 0 8px; text-transform: none; letter-spacing: 0; font-size: 12.5px; line-height: 1.5; } .facts b { font-weight: 600; }
   th.num, td.num { text-align: right; }
   tr.nhl td { font-weight: 600; }
   td.red { color: var(--red); font-weight: 600; }

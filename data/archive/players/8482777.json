@@ -4,7 +4,7 @@
  "slug": "shai-buium",
  "season": "20262027",
  "seasonLabel": "2026-27",
- "kind": "P",
+ "kind": "S",
  "bio": {
   "number": 17,
   "position": "D",
@@ -63,6 +63,15 @@
  "moneypuck": {},
  "hsc": {},
  "note": "No NHL games in 2026-27; the line shown is his AHL season.",
- "prospect": true,
+ "prospect": false,
+ "prospectStatus": {
+  "prospect": false,
+  "rookieEligible": true,
+  "inWindow": false,
+  "window": "draft+5",
+  "draftYear": 2021,
+  "onNhlRoster": false,
+  "template": "nhl"
+ },
  "art": false
 }

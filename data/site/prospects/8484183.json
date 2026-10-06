@@ -1,0 +1,254 @@
+{
+ "epId": "734492",
+ "nhlId": 8484183,
+ "name": "Jesse Kiiskinen",
+ "slug": "jesse-kiiskinen",
+ "group": "F",
+ "position": "RW",
+ "birthDate": "2005-08-23",
+ "age": 21,
+ "height": "6'1\"",
+ "weight": 190,
+ "shoots": "R",
+ "contract": "27/28",
+ "rights": "signed",
+ "draft": {
+  "year": 2023,
+  "overall": 68,
+  "round": 3
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+3",
+  "draftYear": 2023,
+  "onNhlRoster": false
+ },
+ "scouting": "Father: Ville Kiiskinen",
+ "currentLines": [
+  {
+   "league": "AHL",
+   "team": "Grand Rapids Griffins",
+   "gp": 2,
+   "g": 2,
+   "a": 1,
+   "pts": 3,
+   "pm": 0,
+   "pim": 0,
+   "coef": 0.389,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "Liiga",
+   "team": "HPK",
+   "gp": 54,
+   "g": 17,
+   "a": 11,
+   "pts": 28,
+   "pm": -4,
+   "pim": 13,
+   "coef": 0.441,
+   "status": "rostered"
+  },
+  {
+   "league": "AHL",
+   "team": "Grand Rapids Griffins",
+   "gp": 3,
+   "g": 1,
+   "a": 1,
+   "pts": 2,
+   "pm": 1,
+   "pim": 2,
+   "coef": 0.389,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "Liiga",
+  "leagueSlug": "liiga",
+  "table": "Liiga",
+  "coef": 0.441,
+  "team": "HPK",
+  "gp": 57,
+  "g": 17,
+  "a": 11,
+  "pts": 28,
+  "pgp": 0.519,
+  "lineGp": 54,
+  "nhle": 0.23,
+  "nhle82": 18.9,
+  "lines": [
+   "Liiga",
+   "AHL"
+  ]
+ },
+ "league": {
+  "name": "Liiga",
+  "table": "Liiga",
+  "coef": 0.441,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "liiga",
+   "season": "2025-2026",
+   "ageBucket": "U21",
+   "exactAge": 20,
+   "cohortN": 20,
+   "gp": 54,
+   "pgp": 0.519,
+   "percentile": 85.0,
+   "percentileAllAges": 83.7,
+   "allAgesN": 442
+  },
+  "current": {
+   "league": "ahl",
+   "season": "2026-2027",
+   "ageBucket": "U22",
+   "cohortN": 0,
+   "gp": 2,
+   "percentile": null,
+   "note": "sample too small"
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 24.9,
+  "median": 10.0,
+  "p75": 46.3,
+  "p90": 80.5,
+  "pRegular": 0.52,
+  "pTopLine": 0.12,
+  "pAboveAvg": 0.24,
+  "poolN": 1240,
+  "group": "F",
+  "age": 20,
+  "tier": "below average",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.2,
+   0.26
+  ],
+  "examples": [
+   {
+    "name": "Jan Jen\u00edk",
+    "year": 2018,
+    "pick": 65,
+    "league": "AHL",
+    "nhle": 0.233,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 24
+   },
+   {
+    "name": "Reilly Smith",
+    "year": 2009,
+    "pick": 69,
+    "league": "NCAA",
+    "nhle": 0.222,
+    "peak": 89.0,
+    "tier": "elite",
+    "nhlGp": 988
+   },
+   {
+    "name": "Zack Smith",
+    "year": 2008,
+    "pick": 79,
+    "league": "AHL",
+    "nhle": 0.233,
+    "peak": 52.2,
+    "tier": "above average",
+    "nhlGp": 662
+   },
+   {
+    "name": "Johan Larsson",
+    "year": 2010,
+    "pick": 56,
+    "league": "AHL",
+    "nhle": 0.228,
+    "peak": 22.4,
+    "tier": "replacement level",
+    "nhlGp": 488
+   },
+   {
+    "name": "Morgan Geekie",
+    "year": 2017,
+    "pick": 67,
+    "league": "AHL",
+    "nhle": 0.245,
+    "peak": 83.5,
+    "tier": "top-line",
+    "nhlGp": 418
+   },
+   {
+    "name": "Michael Latta",
+    "year": 2009,
+    "pick": 72,
+    "league": "AHL",
+    "nhle": 0.214,
+    "peak": 10.0,
+    "tier": "replacement level",
+    "nhlGp": 113
+   },
+   {
+    "name": "Ben Hanowski",
+    "year": 2009,
+    "pick": 63,
+    "league": "NCAA",
+    "nhle": 0.214,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 16
+   },
+   {
+    "name": "Semyon Der-Arguchintsev",
+    "year": 2018,
+    "pick": 76,
+    "league": "AHL",
+    "nhle": 0.244,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 371,
+  "expected": 13.4,
+  "median": 0.0,
+  "p75": 10.8,
+  "p90": 54.8,
+  "pRegular": 0.29,
+  "pTopLine": 0.07,
+  "pAboveAvg": 0.13,
+  "band": "65-120",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "Liiga",
+   "nhle": 0.402,
+   "gp": 53
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "Liiga",
+   "nhle": 0.23,
+   "gp": 57
+  },
+  "delta": -0.172
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 57,
+  "season": "2025-2026"
+ },
+ "rank": 5,
+ "score": 24.9
+}

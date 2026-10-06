@@ -1,0 +1,241 @@
+{
+ "epId": "574853",
+ "nhlId": 8484426,
+ "name": "Jack Phelan",
+ "slug": "jack-phelan",
+ "group": "D",
+ "position": "D",
+ "birthDate": "2004-05-28",
+ "age": 22,
+ "height": "6'3\"",
+ "weight": 185,
+ "shoots": "R",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2023,
+  "overall": 137,
+  "round": 5
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+3",
+  "draftYear": 2023,
+  "onNhlRoster": false
+ },
+ "scouting": "Brothers: Danny Phelan & Michael Phelan",
+ "currentLines": [
+  {
+   "league": "NCAA",
+   "team": "Univ. of Wisconsin",
+   "gp": 2,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": 1,
+   "pim": 0,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "NCAA",
+   "team": "Univ. of Wisconsin",
+   "gp": 37,
+   "g": 0,
+   "a": 9,
+   "pts": 9,
+   "pm": 8,
+   "pim": 14,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "NCAA",
+  "leagueSlug": "ncaa",
+  "table": "NCAA",
+  "coef": 0.194,
+  "team": "Univ. of Wisconsin",
+  "gp": 37,
+  "g": 0,
+  "a": 9,
+  "pts": 9,
+  "pgp": 0.243,
+  "lineGp": 37,
+  "nhle": 0.047,
+  "nhle82": 3.9,
+  "lines": [
+   "NCAA"
+  ]
+ },
+ "league": {
+  "name": "NCAA",
+  "table": "NCAA",
+  "coef": 0.194,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "ncaa",
+   "season": "2025-2026",
+   "ageBucket": "U22",
+   "exactAge": 21,
+   "cohortN": 128,
+   "gp": 37,
+   "pgp": 0.243,
+   "percentile": 49.2,
+   "percentileAllAges": 49.0,
+   "allAgesN": 1709
+  },
+  "current": {
+   "league": "ncaa",
+   "season": "2026-2027",
+   "ageBucket": "U23",
+   "cohortN": 0,
+   "gp": 2,
+   "percentile": null,
+   "note": "sample too small"
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 4.5,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 0.0,
+  "pRegular": 0.08,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.06,
+  "poolN": 694,
+  "group": "D",
+  "age": 21,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.03,
+   0.06
+  ],
+  "examples": [
+   {
+    "name": "Cam Clarke",
+    "year": 2016,
+    "pick": 136,
+    "league": "NCAA",
+    "nhle": 0.045,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Gage Ausmus",
+    "year": 2013,
+    "pick": 151,
+    "league": "NCAA",
+    "nhle": 0.046,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Isaac MacLeod",
+    "year": 2010,
+    "pick": 136,
+    "league": "NCAA",
+    "nhle": 0.053,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Mark Borowiecki",
+    "year": 2008,
+    "pick": 139,
+    "league": "NCAA",
+    "nhle": 0.053,
+    "peak": 61.8,
+    "tier": "above average",
+    "nhlGp": 458
+   },
+   {
+    "name": "Tyler Nanne",
+    "year": 2014,
+    "pick": 142,
+    "league": "NCAA",
+    "nhle": 0.052,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Brett Flemming",
+    "year": 2009,
+    "pick": 145,
+    "league": "ECHL",
+    "nhle": 0.043,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Patrick Koudys",
+    "year": 2011,
+    "pick": 147,
+    "league": "NCAA",
+    "nhle": 0.043,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ryan Zuhlsdorf",
+    "year": 2015,
+    "pick": 150,
+    "league": "NCAA",
+    "nhle": 0.044,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 380,
+  "expected": 7.0,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 36.0,
+  "pRegular": 0.15,
+  "pTopLine": 0.03,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "D"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "NCAA",
+   "nhle": 0.022,
+   "gp": 36
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "NCAA",
+   "nhle": 0.047,
+   "gp": 37
+  },
+  "delta": 0.025
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 37,
+  "season": "2025-2026"
+ },
+ "rank": 19,
+ "score": 4.5
+}

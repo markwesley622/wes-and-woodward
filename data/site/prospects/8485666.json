@@ -1,0 +1,220 @@
+{
+ "epId": "876189",
+ "nhlId": 8485666,
+ "name": "Grayden Robertson-Palmer",
+ "slug": "grayden-robertson-palmer",
+ "group": "F",
+ "position": "C/LW",
+ "birthDate": "2007-08-29",
+ "age": 19,
+ "height": "5'11\"",
+ "weight": 192,
+ "shoots": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2025,
+  "overall": 204,
+  "round": 7
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+1",
+  "draftYear": 2025,
+  "onNhlRoster": false
+ },
+ "scouting": "Robertson-Palmer knows how to leverage his on-puck magnetism, weaving hand-off plays into forceful, straight-line crease drives. He drags defenders into space, opening lanes for teammates. His intensity is unrelenting, and he protects the puck effectively, extending his arm to shield off pressure. -EliteProspects 2025 NHL Draft Guide",
+ "currentLines": [],
+ "lastLines": [
+  {
+   "league": "QMJHL",
+   "team": "Moncton Wildcats",
+   "gp": 55,
+   "g": 6,
+   "a": 5,
+   "pts": 11,
+   "pm": 2,
+   "pim": 14,
+   "coef": 0.113,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "QMJHL",
+  "leagueSlug": "qmjhl",
+  "table": "QMJHL",
+  "coef": 0.113,
+  "team": "Moncton Wildcats",
+  "gp": 55,
+  "g": 6,
+  "a": 5,
+  "pts": 11,
+  "pgp": 0.2,
+  "lineGp": 55,
+  "nhle": 0.023,
+  "nhle82": 1.9,
+  "lines": [
+   "QMJHL"
+  ]
+ },
+ "league": {
+  "name": "QMJHL",
+  "table": "QMJHL",
+  "coef": 0.113,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "qmjhl",
+   "season": "2025-2026",
+   "ageBucket": "U19",
+   "exactAge": 18,
+   "cohortN": 77,
+   "gp": 55,
+   "pgp": 0.2,
+   "percentile": 14.3,
+   "percentileAllAges": 18.2,
+   "allAgesN": 1907
+  },
+  "current": null
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 1.1,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 0.0,
+  "pRegular": 0.04,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.0,
+  "poolN": 1364,
+  "group": "F",
+  "age": 18,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.01,
+   0.05
+  ],
+  "examples": [
+   {
+    "name": "Kyle Neuber",
+    "year": 2009,
+    "pick": 197,
+    "league": "OHL",
+    "nhle": 0.021,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Brett Perlini",
+    "year": 2010,
+    "pick": 192,
+    "league": "NCAA",
+    "nhle": 0.022,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Gustav Olhaver",
+    "year": 2015,
+    "pick": 191,
+    "league": "WHL",
+    "nhle": 0.022,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Nick Pastujov",
+    "year": 2016,
+    "pick": 193,
+    "league": "NCAA",
+    "nhle": 0.021,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jake Jackson",
+    "year": 2013,
+    "pick": 201,
+    "league": "USHL",
+    "nhle": 0.027,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Randy McNaught",
+    "year": 2010,
+    "pick": 190,
+    "league": "WHL",
+    "nhle": 0.025,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Rasmus Bodin",
+    "year": 2012,
+    "pick": 200,
+    "league": "J20 SuperElit",
+    "nhle": 0.017,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kristian R\u00f8yk\u00e5s Marthinsen",
+    "year": 2017,
+    "pick": 213,
+    "league": "J20 Elit",
+    "nhle": 0.029,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 586,
+  "expected": 7.5,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 31.0,
+  "pRegular": 0.16,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "USHS-Prep",
+   "nhle": 0.033,
+   "gp": 54
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "QMJHL",
+   "nhle": 0.023,
+   "gp": 55
+  },
+  "delta": -0.01
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 55,
+  "season": "2025-2026"
+ },
+ "rank": 26,
+ "score": 1.1
+}

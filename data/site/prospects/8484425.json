@@ -1,0 +1,241 @@
+{
+ "epId": "494607",
+ "nhlId": 8484425,
+ "name": "Sutter Muzzatti",
+ "slug": "sutter-muzzatti",
+ "group": "F",
+ "position": "F",
+ "birthDate": "2003-06-28",
+ "age": 23,
+ "height": "6'6\"",
+ "weight": 229,
+ "shoots": "L",
+ "contract": "27/28",
+ "rights": "signed",
+ "draft": {
+  "year": 2023,
+  "overall": 143,
+  "round": 5
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+3",
+  "draftYear": 2023,
+  "onNhlRoster": false
+ },
+ "scouting": "Muzzatti is a 6-foot-5 centre with a reasonable amount of skill and two-way diligence. -EliteProspects 2023 NHL Draft Guide \r\n\r\n\r\nFather: Jason Muzzatti\r\nBrother: Dryden Muzzatti\r\nUncle: Loris Muzzatti",
+ "currentLines": [
+  {
+   "league": "AHL",
+   "team": "Grand Rapids Griffins",
+   "gp": 2,
+   "g": 1,
+   "a": 0,
+   "pts": 1,
+   "pm": 0,
+   "pim": 0,
+   "coef": 0.389,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "NCAA",
+   "team": "Univ. of Notre Dame",
+   "gp": 37,
+   "g": 13,
+   "a": 19,
+   "pts": 32,
+   "pm": -18,
+   "pim": 42,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "NCAA",
+  "leagueSlug": "ncaa",
+  "table": "NCAA",
+  "coef": 0.194,
+  "team": "Univ. of Notre Dame",
+  "gp": 37,
+  "g": 13,
+  "a": 19,
+  "pts": 32,
+  "pgp": 0.865,
+  "lineGp": 37,
+  "nhle": 0.168,
+  "nhle82": 13.8,
+  "lines": [
+   "NCAA"
+  ]
+ },
+ "league": {
+  "name": "NCAA",
+  "table": "NCAA",
+  "coef": 0.194,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "ncaa",
+   "season": "2025-2026",
+   "ageBucket": "U23",
+   "exactAge": 22,
+   "cohortN": 190,
+   "gp": 37,
+   "pgp": 0.865,
+   "percentile": 88.9,
+   "percentileAllAges": 88.9,
+   "allAgesN": 3059
+  },
+  "current": {
+   "league": "ahl",
+   "season": "2026-2027",
+   "ageBucket": "U24",
+   "cohortN": 0,
+   "gp": 2,
+   "percentile": null,
+   "note": "sample too small"
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 4.3,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 23.8,
+  "pRegular": 0.12,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.02,
+  "poolN": 1009,
+  "group": "F",
+  "age": 22,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.14,
+   0.2
+  ],
+  "examples": [
+   {
+    "name": "Sam Carrick",
+    "year": 2010,
+    "pick": 144,
+    "league": "AHL",
+    "nhle": 0.167,
+    "peak": 23.8,
+    "tier": "replacement level",
+    "nhlGp": 395
+   },
+   {
+    "name": "Mathias From",
+    "year": 2016,
+    "pick": 143,
+    "league": "DEL",
+    "nhle": 0.166,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jonny Brodzinski",
+    "year": 2013,
+    "pick": 148,
+    "league": "AHL",
+    "nhle": 0.168,
+    "peak": 37.3,
+    "tier": "below average",
+    "nhlGp": 264
+   },
+   {
+    "name": "Judd Caulfield",
+    "year": 2019,
+    "pick": 145,
+    "league": "AHL",
+    "nhle": 0.166,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 2
+   },
+   {
+    "name": "Anthony Angello",
+    "year": 2014,
+    "pick": 145,
+    "league": "AHL",
+    "nhle": 0.174,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 31
+   },
+   {
+    "name": "Eero Elo",
+    "year": 2008,
+    "pick": 145,
+    "league": "SM-liiga",
+    "nhle": 0.161,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Joona Koppanen",
+    "year": 2016,
+    "pick": 135,
+    "league": "AHL",
+    "nhle": 0.172,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 33
+   },
+   {
+    "name": "Brendan Woods",
+    "year": 2012,
+    "pick": 129,
+    "league": "AHL",
+    "nhle": 0.167,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 7
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 586,
+  "expected": 7.5,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 31.0,
+  "pRegular": 0.16,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "NCAA",
+   "nhle": 0.058,
+   "gp": 10
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "NCAA",
+   "nhle": 0.168,
+   "gp": 37
+  },
+  "delta": 0.11
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 37,
+  "season": "2025-2026"
+ },
+ "rank": 20,
+ "score": 4.3
+}

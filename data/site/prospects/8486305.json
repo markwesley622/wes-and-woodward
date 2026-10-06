@@ -1,0 +1,270 @@
+{
+ "epId": "959469",
+ "nhlId": 8486305,
+ "name": "Luka Arkko",
+ "slug": "luka-arkko",
+ "group": "F",
+ "position": "LW",
+ "birthDate": "2008-01-14",
+ "age": 18,
+ "height": "6'3\"",
+ "weight": 212,
+ "shoots": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2026,
+  "overall": 175,
+  "round": 6
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+0",
+  "draftYear": 2026,
+  "onNhlRoster": false
+ },
+ "scouting": "Brother: Nikola Arkko",
+ "currentLines": [
+  {
+   "league": "OHL",
+   "team": "Erie Otters",
+   "gp": 3,
+   "g": 1,
+   "a": 1,
+   "pts": 2,
+   "pm": 0,
+   "pim": 0,
+   "coef": 0.144,
+   "status": "rostered"
+  },
+  {
+   "league": "International-Jr",
+   "team": "Finland U20 (all)",
+   "gp": 1,
+   "g": 0,
+   "a": 1,
+   "pts": 1,
+   "pm": null,
+   "pim": 0,
+   "coef": null,
+   "status": "not-active-on-team"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "U20 SM-sarja",
+   "team": "Pelicans U20",
+   "gp": 42,
+   "g": 11,
+   "a": 14,
+   "pts": 25,
+   "pm": 3,
+   "pim": 10,
+   "coef": 0.083,
+   "status": "rostered"
+  },
+  {
+   "league": "International-Jr",
+   "team": "Finland U18 (all)",
+   "gp": 14,
+   "g": 6,
+   "a": 5,
+   "pts": 11,
+   "pm": null,
+   "pim": 6,
+   "coef": null,
+   "status": "rostered"
+  },
+  {
+   "league": "U18 SM-sarja",
+   "team": "Pelicans U18",
+   "gp": 4,
+   "g": 6,
+   "a": 2,
+   "pts": 8,
+   "pm": null,
+   "pim": 4,
+   "coef": 0.04,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "U20 SM-sarja",
+  "leagueSlug": "u20-sm-sarja",
+  "table": "U20 SM-Liiga",
+  "coef": 0.083,
+  "team": "Pelicans U20",
+  "gp": 46,
+  "g": 11,
+  "a": 14,
+  "pts": 25,
+  "pgp": 0.595,
+  "lineGp": 42,
+  "nhle": 0.052,
+  "nhle82": 4.3,
+  "lines": [
+   "U18 SM-sarja",
+   "U20 SM-sarja"
+  ]
+ },
+ "league": {
+  "name": "U20 SM-sarja",
+  "table": "U20 SM-Liiga",
+  "coef": 0.083,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": null,
+  "current": {
+   "league": "ohl",
+   "season": "2026-2027",
+   "ageBucket": "U19",
+   "exactAge": 18,
+   "cohortN": 82,
+   "gp": 3,
+   "pgp": 0.667,
+   "percentile": 63.4,
+   "percentileAllAges": 61.5,
+   "allAgesN": 1774
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 10.3,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 48.6,
+  "pRegular": 0.24,
+  "pTopLine": 0.06,
+  "pAboveAvg": 0.08,
+  "poolN": 1378,
+  "group": "F",
+  "age": 17,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.05,
+   0.06
+  ],
+  "examples": [
+   {
+    "name": "Tyler Moy",
+    "year": 2015,
+    "pick": 175,
+    "league": "USHL",
+    "nhle": 0.051,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Chase Lang",
+    "year": 2014,
+    "pick": 167,
+    "league": "WHL",
+    "nhle": 0.052,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Rodrigo \u0100bols",
+    "year": 2016,
+    "pick": 184,
+    "league": "MHL",
+    "nhle": 0.052,
+    "peak": 16.7,
+    "tier": "replacement level",
+    "nhlGp": 64
+   },
+   {
+    "name": "Nikita Nesterenko",
+    "year": 2019,
+    "pick": 172,
+    "league": "USHS-Prep",
+    "nhle": 0.053,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 63
+   },
+   {
+    "name": "Matej Stransky",
+    "year": 2011,
+    "pick": 165,
+    "league": "WHL",
+    "nhle": 0.052,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Chase Balisy",
+    "year": 2011,
+    "pick": 170,
+    "league": "NTDP",
+    "nhle": 0.051,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 8
+   },
+   {
+    "name": "Johan S\u00f6dergran",
+    "year": 2018,
+    "pick": 165,
+    "league": "J20 SuperElit",
+    "nhle": 0.053,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Anton Blidh",
+    "year": 2013,
+    "pick": 180,
+    "league": "J20 SuperElit",
+    "nhle": 0.05,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 89
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 586,
+  "expected": 7.5,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 31.0,
+  "pRegular": 0.16,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "U18 SM-sarja",
+   "nhle": 0.042,
+   "gp": 43
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "U20 SM-sarja",
+   "nhle": 0.052,
+   "gp": 46
+  },
+  "delta": 0.01
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 46,
+  "season": "2025-2026"
+ },
+ "rank": 13,
+ "score": 10.3
+}

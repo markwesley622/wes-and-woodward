@@ -1,0 +1,233 @@
+{
+ "epId": "597730",
+ "nhlId": 8485362,
+ "name": "Carter Bear",
+ "slug": "carter-bear",
+ "group": "F",
+ "position": "LW/C",
+ "birthDate": "2006-11-04",
+ "age": 19,
+ "height": "6'1\"",
+ "weight": 190,
+ "shoots": "L",
+ "contract": "28/29",
+ "rights": "signed",
+ "draft": {
+  "year": 2025,
+  "overall": 13,
+  "round": 1
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+1",
+  "draftYear": 2025,
+  "onNhlRoster": false
+ },
+ "scouting": "Bear leaves nothing to chance. No matter the size of the opponent, the score, or the situation, he enters every battle with speed and never concedes an inch. Bear\u2019s playoffs-every-night mentality also powers his offensive game. He powers through contact to get to the net, relentlessly battles in the slot for tips and rebounds, and dominates play from the hashmarks and in.  -EliteProspects 2025 NHL Draft Guide",
+ "currentLines": [],
+ "lastLines": [
+  {
+   "league": "WHL",
+   "team": "Everett Silvertips",
+   "gp": 53,
+   "g": 36,
+   "a": 41,
+   "pts": 77,
+   "pm": 45,
+   "pim": 56,
+   "coef": 0.141,
+   "status": "rostered"
+  },
+  {
+   "league": "WJC-20",
+   "team": "Canada U20",
+   "gp": 2,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": 0,
+   "pim": 0,
+   "coef": 0.269,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "WHL",
+  "leagueSlug": "whl",
+  "table": "WHL",
+  "coef": 0.141,
+  "team": "Everett Silvertips",
+  "gp": 55,
+  "g": 36,
+  "a": 41,
+  "pts": 77,
+  "pgp": 1.453,
+  "lineGp": 53,
+  "nhle": 0.197,
+  "nhle82": 16.2,
+  "lines": [
+   "WHL",
+   "WJC-20"
+  ]
+ },
+ "league": {
+  "name": "WHL",
+  "table": "WHL",
+  "coef": 0.141,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "whl",
+   "season": "2025-2026",
+   "ageBucket": "U20",
+   "exactAge": 19,
+   "cohortN": 70,
+   "gp": 53,
+   "pgp": 1.453,
+   "percentile": 95.7,
+   "percentileAllAges": 98.1,
+   "allAgesN": 2365
+  },
+  "current": null
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 52.5,
+  "median": 56.2,
+  "p75": 83.5,
+  "p90": 94.8,
+  "pRegular": 0.82,
+  "pTopLine": 0.34,
+  "pAboveAvg": 0.54,
+  "poolN": 1364,
+  "group": "F",
+  "age": 18,
+  "tier": "top-line",
+  "expectedTier": "above average",
+  "nhleBand": [
+   0.17,
+   0.23
+  ],
+  "examples": [
+   {
+    "name": "Mikhail Grigorenko",
+    "year": 2012,
+    "pick": 12,
+    "league": "QMJHL",
+    "nhle": 0.196,
+    "peak": 40.3,
+    "tier": "below average",
+    "nhlGp": 249
+   },
+   {
+    "name": "Zach Boychuk",
+    "year": 2008,
+    "pick": 14,
+    "league": "WHL",
+    "nhle": 0.195,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 127
+   },
+   {
+    "name": "Brendan Perlini",
+    "year": 2014,
+    "pick": 12,
+    "league": "OHL",
+    "nhle": 0.201,
+    "peak": 42.0,
+    "tier": "below average",
+    "nhlGp": 262
+   },
+   {
+    "name": "Peter Holland",
+    "year": 2009,
+    "pick": 15,
+    "league": "OHL",
+    "nhle": 0.195,
+    "peak": 47.8,
+    "tier": "below average",
+    "nhlGp": 266
+   },
+   {
+    "name": "Sonny Milano",
+    "year": 2014,
+    "pick": 16,
+    "league": "OHL",
+    "nhle": 0.197,
+    "peak": 56.2,
+    "tier": "above average",
+    "nhlGp": 344
+   },
+   {
+    "name": "Grigori Denisenko",
+    "year": 2018,
+    "pick": 15,
+    "league": "KHL",
+    "nhle": 0.202,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 33
+   },
+   {
+    "name": "Joel Farabee",
+    "year": 2018,
+    "pick": 14,
+    "league": "NCAA",
+    "nhle": 0.189,
+    "peak": 77.6,
+    "tier": "top-line",
+    "nhlGp": 500
+   },
+   {
+    "name": "Vasili Podkolzin",
+    "year": 2019,
+    "pick": 10,
+    "league": "KHL",
+    "nhle": 0.195,
+    "peak": 47.0,
+    "tier": "below average",
+    "nhlGp": 304
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 72,
+  "expected": 65.9,
+  "median": 77.6,
+  "p75": 93.5,
+  "p90": 97.0,
+  "pRegular": 0.89,
+  "pTopLine": 0.53,
+  "pAboveAvg": 0.71,
+  "band": "6-15",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "WHL",
+   "nhle": 0.206,
+   "gp": 56
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "WHL",
+   "nhle": 0.197,
+   "gp": 55
+  },
+  "delta": -0.009
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 55,
+  "season": "2025-2026"
+ },
+ "rank": 2,
+ "score": 52.5
+}

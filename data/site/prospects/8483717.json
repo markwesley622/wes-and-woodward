@@ -1,0 +1,241 @@
+{
+ "epId": "626544",
+ "nhlId": 8483717,
+ "name": "Owen Mehlenbacher",
+ "slug": "owen-mehlenbacher",
+ "group": "F",
+ "position": "C",
+ "birthDate": "2004-01-26",
+ "age": 22,
+ "height": "6'2\"",
+ "weight": 190,
+ "shoots": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2022,
+  "overall": 201,
+  "round": 7
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+4",
+  "draftYear": 2022,
+  "onNhlRoster": false
+ },
+ "scouting": null,
+ "currentLines": [
+  {
+   "league": "NCAA",
+   "team": "Ferris State Univ.",
+   "gp": 2,
+   "g": 1,
+   "a": 0,
+   "pts": 1,
+   "pm": 2,
+   "pim": 2,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "NCAA",
+   "team": "UMass",
+   "gp": 32,
+   "g": 3,
+   "a": 6,
+   "pts": 9,
+   "pm": 5,
+   "pim": 8,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "NCAA",
+  "leagueSlug": "ncaa",
+  "table": "NCAA",
+  "coef": 0.194,
+  "team": "UMass",
+  "gp": 32,
+  "g": 3,
+  "a": 6,
+  "pts": 9,
+  "pgp": 0.281,
+  "lineGp": 32,
+  "nhle": 0.055,
+  "nhle82": 4.5,
+  "lines": [
+   "NCAA"
+  ]
+ },
+ "league": {
+  "name": "NCAA",
+  "table": "NCAA",
+  "coef": 0.194,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "ncaa",
+   "season": "2025-2026",
+   "ageBucket": "U22",
+   "exactAge": 21,
+   "cohortN": 259,
+   "gp": 32,
+   "pgp": 0.281,
+   "percentile": 30.9,
+   "percentileAllAges": 29.6,
+   "allAgesN": 3059
+  },
+  "current": {
+   "league": "ncaa",
+   "season": "2026-2027",
+   "ageBucket": "U23",
+   "cohortN": 0,
+   "gp": 2,
+   "percentile": null,
+   "note": "sample too small"
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 0.3,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 0.0,
+  "pRegular": 0.02,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.0,
+  "poolN": 1127,
+  "group": "F",
+  "age": 21,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.03,
+   0.08
+  ],
+  "examples": [
+   {
+    "name": "Christopher Crane",
+    "year": 2010,
+    "pick": 200,
+    "league": "ECHL",
+    "nhle": 0.055,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Stefan Della Rovere",
+    "year": 2008,
+    "pick": 204,
+    "league": "AHL",
+    "nhle": 0.056,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 7
+   },
+   {
+    "name": "Jared Fiegl",
+    "year": 2014,
+    "pick": 191,
+    "league": "NCAA",
+    "nhle": 0.055,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Gustav Olhaver",
+    "year": 2015,
+    "pick": 191,
+    "league": "HockeyAllsvenskan",
+    "nhle": 0.055,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kristian R\u00f8yk\u00e5s Marthinsen",
+    "year": 2017,
+    "pick": 213,
+    "league": "HockeyEttan",
+    "nhle": 0.057,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Hampus Mel\u00e9n",
+    "year": 2013,
+    "pick": 199,
+    "league": "Division 2",
+    "nhle": 0.049,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Brad Navin",
+    "year": 2011,
+    "pick": 197,
+    "league": "NCAA",
+    "nhle": 0.049,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Mitch Theoret",
+    "year": 2011,
+    "pick": 185,
+    "league": "Germany3",
+    "nhle": 0.057,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 586,
+  "expected": 7.5,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 31.0,
+  "pRegular": 0.16,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "NCAA",
+   "nhle": 0.047,
+   "gp": 25
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "NCAA",
+   "nhle": 0.055,
+   "gp": 32
+  },
+  "delta": 0.008
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 32,
+  "season": "2025-2026"
+ },
+ "rank": 28,
+ "score": 0.3
+}

@@ -53,6 +53,11 @@ const prevOf = (p) => prev[String(p.playerId)]?.value ?? 0;
 const top3 = allPlayers.filter((p) => p.kind !== 'G').sort((a, b) => (scoreOf(b) - scoreOf(a)) || (prevOf(b) - prevOf(a))).slice(0, 3)
   .map((p) => ({ ...p, score: p.score ?? (p.standIn ? { ...p.standIn } : { value: 0, rank: null, prevValue: prevOf(p) }), art: fs.existsSync(path.resolve(`public/players/${p.playerId}-art.webp`)) }));
 const dots = (n) => Array.from({ length: Math.max(0, n) });
+// top five prospects from the prospect system (data/site/prospects.json, build_prospects.py)
+const prospectsFile = path.resolve('data/site/prospects.json');
+const PR = fs.existsSync(prospectsFile) ? JSON.parse(fs.readFileSync(prospectsFile, 'utf8')) : { prospects: [] };
+const liveIds = new Set(allPlayers.map((p) => String(p.playerId)));
+const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveIds.has(String(p.nhlId)) ? `/players/${p.slug}/` : null, now: (p.currentLines && p.currentLines[0]) || (p.lastLines && p.lastLines[0]) || null }));
 ---
 <Base schema={[{ '@type': 'WebPage', '@id': 'https://wesandwoodward.com/', url: 'https://wesandwoodward.com/', name: 'Wes & Woodward', description: 'Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.', isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, about: { '@id': 'https://wesandwoodward.com/team/#team' } }]} title="Wes & Woodward — Detroit hockey, by the numbers" description="Independent Detroit Red Wings analytics: record, expected-goals standings, and the numbers behind a paywall elsewhere.">
   <section class="hero" aria-label="Detroit hockey, by the numbers">
@@ -163,8 +168,15 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
     <div class="shell">
       <h2>Top Prospects</h2>
       <div class="plist">
-        <div class="prow head mono"><span>Rank</span><span>Player</span><span>Club · league</span><span class="r">Score</span></div>
-        {[1, 2, 3, 4, 5].map((i) => (
+        <div class="prow head mono"><span>Rank</span><span>Player</span><span>Club · league</span><span class="r">Expected peak</span></div>
+        {top5.length ? top5.map((p) => (
+          <div class="prow">
+            <span class:list={['rk', { red: p.rank === 1 }]}>{p.rank}</span>
+            <span>{p.href ? <a href={p.href}>{p.name}</a> : p.name} <span class="mono pos">{p.position}</span></span>
+            <span class="mono club">{p.now ? `${p.now.team} · ${p.now.league}` : '—'}</span>
+            <span class="r"><strong>{p.ceiling?.expected != null ? p.ceiling.expected.toFixed(0) : '—'}</strong> <span class="mono pct">{p.ceiling?.tier ?? ''}</span></span>
+          </div>
+        )) : [1, 2, 3, 4, 5].map((i) => (
           <div class="prow">
             <span class:list={['rk', { red: i === 1 }]}>{i}</span>
             <span class="ghost" style={`width:${i % 2 ? 62 : 48}%`}></span>
@@ -173,7 +185,7 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
           </div>
         ))}
       </div>
-      <div class="viewall mono"><a href="#">View all prospects &rarr;</a></div>
+      <div class="viewall mono"><a href="/prospects/">View all prospects &rarr;</a></div>
     </div>
   </section>
 </Base>
@@ -189,6 +201,9 @@ const dots = (n) => Array.from({ length: Math.max(0, n) });
 </script>
 
 <style>
+  .prow .pos, .prow .club, .prow .pct { color: var(--mute); font-size: 11px; }
+  .prow .pct { display: block; }
+  .prow a { text-decoration: underline; text-underline-offset: 2px; }
   /* hero */
   /* overflow-x clip (not hidden) keeps the wheel free to parallax down past the hero's bottom edge while clipping its sides */
   .hero { position: relative; height: calc(100vh - 94px); min-height: 640px; border-bottom: 1px solid var(--rule); overflow-x: clip; }

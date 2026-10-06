@@ -1,0 +1,282 @@
+{
+ "epId": "794303",
+ "nhlId": 8485394,
+ "name": "Eddie Genborg",
+ "slug": "eddie-genborg",
+ "group": "F",
+ "position": "LW/RW",
+ "birthDate": "2007-04-20",
+ "age": 19,
+ "height": "6'2\"",
+ "weight": 198,
+ "shoots": "L",
+ "contract": "28/29",
+ "rights": "signed",
+ "draft": {
+  "year": 2025,
+  "overall": 44,
+  "round": 2
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+1",
+  "draftYear": 2025,
+  "onNhlRoster": false
+ },
+ "scouting": "Genborg is a physical two-way forward with a strong forechecking presence and good finishing instincts around the net. He hustles hard and throws his weight around on the forecheck, controls the cycle by sealing off pucks and dealing with back pressure and finds ways to win body positioning in the net front. -EliteProspects 2025 NHL Draft Guide \r\n\r\nBrother: Elliot Genborg",
+ "currentLines": [
+  {
+   "league": "SHL",
+   "team": "Timr\u00e5 IK",
+   "gp": 6,
+   "g": 0,
+   "a": 1,
+   "pts": 1,
+   "pm": -3,
+   "pim": 4,
+   "coef": 0.566,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "SHL",
+   "team": "Timr\u00e5 IK",
+   "gp": 43,
+   "g": 9,
+   "a": 16,
+   "pts": 25,
+   "pm": 8,
+   "pim": 24,
+   "coef": 0.566,
+   "status": "rostered"
+  },
+  {
+   "league": "International-Jr",
+   "team": "Sweden U20 (all)",
+   "gp": 16,
+   "g": 7,
+   "a": 6,
+   "pts": 13,
+   "pm": null,
+   "pim": 0,
+   "coef": null,
+   "status": "rostered"
+  },
+  {
+   "league": "AHL",
+   "team": "Grand Rapids Griffins",
+   "gp": 11,
+   "g": 1,
+   "a": 2,
+   "pts": 3,
+   "pm": 2,
+   "pim": 8,
+   "coef": 0.389,
+   "status": "rostered"
+  },
+  {
+   "league": "WJC-20",
+   "team": "Sweden U20",
+   "gp": 7,
+   "g": 3,
+   "a": 5,
+   "pts": 8,
+   "pm": 7,
+   "pim": 0,
+   "coef": 0.269,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "SHL",
+  "leagueSlug": "shl",
+  "table": "SHL",
+  "coef": 0.566,
+  "team": "Timr\u00e5 IK",
+  "gp": 61,
+  "g": 9,
+  "a": 16,
+  "pts": 25,
+  "pgp": 0.581,
+  "lineGp": 43,
+  "nhle": 0.286,
+  "nhle82": 23.5,
+  "lines": [
+   "SHL",
+   "AHL",
+   "WJC-20"
+  ]
+ },
+ "league": {
+  "name": "SHL",
+  "table": "SHL",
+  "coef": 0.566,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "shl",
+   "season": "2025-2026",
+   "ageBucket": "U19",
+   "exactAge": 18,
+   "cohortN": 17,
+   "gp": 43,
+   "pgp": 0.581,
+   "percentile": 82.4,
+   "percentileAllAges": 91.8,
+   "allAgesN": 378
+  },
+  "current": {
+   "league": "shl",
+   "season": "2026-2027",
+   "ageBucket": "U20",
+   "exactAge": 19,
+   "cohortN": 11,
+   "gp": 6,
+   "pgp": 0.167,
+   "percentile": 54.5,
+   "percentileAllAges": 45.5,
+   "allAgesN": 189
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 48.5,
+  "median": 56.2,
+  "p75": 79.7,
+  "p90": 94.3,
+  "pRegular": 0.76,
+  "pTopLine": 0.32,
+  "pAboveAvg": 0.56,
+  "poolN": 1364,
+  "group": "F",
+  "age": 18,
+  "tier": "top-line",
+  "expectedTier": "below average",
+  "nhleBand": [
+   0.23,
+   0.33
+  ],
+  "examples": [
+   {
+    "name": "Samuel Fagemo",
+    "year": 2019,
+    "pick": 50,
+    "league": "SHL",
+    "nhle": 0.285,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 21
+   },
+   {
+    "name": "Alex DeBrincat",
+    "year": 2016,
+    "pick": 39,
+    "league": "OHL",
+    "nhle": 0.29,
+    "peak": 96.2,
+    "tier": "elite",
+    "nhlGp": 698
+   },
+   {
+    "name": "Aleksi Heponiemi",
+    "year": 2017,
+    "pick": 40,
+    "league": "WHL",
+    "nhle": 0.277,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 25
+   },
+   {
+    "name": "Sam Steel",
+    "year": 2016,
+    "pick": 30,
+    "league": "WHL",
+    "nhle": 0.28,
+    "peak": 47.8,
+    "tier": "below average",
+    "nhlGp": 494
+   },
+   {
+    "name": "Calle J\u00e4rnkrok",
+    "year": 2010,
+    "pick": 51,
+    "league": "Elitserien",
+    "nhle": 0.302,
+    "peak": 67.2,
+    "tier": "above average",
+    "nhlGp": 774
+   },
+   {
+    "name": "Markus Granlund",
+    "year": 2011,
+    "pick": 45,
+    "league": "SM-liiga",
+    "nhle": 0.307,
+    "peak": 56.2,
+    "tier": "above average",
+    "nhlGp": 335
+   },
+   {
+    "name": "Rasmus Asplund",
+    "year": 2016,
+    "pick": 33,
+    "league": "SHL",
+    "nhle": 0.275,
+    "peak": 43.5,
+    "tier": "below average",
+    "nhlGp": 189
+   },
+   {
+    "name": "Nick Robertson",
+    "year": 2019,
+    "pick": 53,
+    "league": "OHL",
+    "nhle": 0.269,
+    "peak": 52.0,
+    "tier": "above average",
+    "nhlGp": 237
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 214,
+  "expected": 23.7,
+  "median": 0.0,
+  "p75": 46.3,
+  "p90": 72.7,
+  "pRegular": 0.5,
+  "pTopLine": 0.09,
+  "pAboveAvg": 0.23,
+  "band": "33-64",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "J20 Nationell",
+   "nhle": 0.074,
+   "gp": 63
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "SHL",
+   "nhle": 0.286,
+   "gp": 61
+  },
+  "delta": 0.212
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 61,
+  "season": "2025-2026"
+ },
+ "rank": 3,
+ "score": 48.5
+}

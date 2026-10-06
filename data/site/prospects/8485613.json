@@ -1,0 +1,280 @@
+{
+ "epId": "1073016",
+ "nhlId": 8485613,
+ "name": "Nikita Tyurin",
+ "slug": "nikita-tyurin",
+ "group": "D",
+ "position": "D",
+ "birthDate": "2007-07-02",
+ "age": 19,
+ "height": "6'1\"",
+ "weight": 190,
+ "shoots": "L",
+ "contract": "28/29",
+ "rights": "unsigned",
+ "draft": {
+  "year": 2025,
+  "overall": 140,
+  "round": 5
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+1",
+  "draftYear": 2025,
+  "onNhlRoster": false
+ },
+ "scouting": "Tyurin is an effective, puck-moving defender. A smooth handler and mover, he can escape forecheckers, keep the puck away from them, and find passing targets as his team regroups around him. He lets his options come to him, slowing the play, and then connects with teammates as they get open. Defending off the rush, he closes his gap on opponents near the red line, removing passing plays, and stepping up on opponents as opportunities arise. -EliteProspects 2025 NHL Draft Guide",
+ "currentLines": [
+  {
+   "league": "VHL",
+   "team": "Khimik Voskresensk",
+   "gp": 10,
+   "g": 0,
+   "a": 1,
+   "pts": 1,
+   "pm": -1,
+   "pim": 2,
+   "coef": 0.328,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "MHL",
+   "team": "MHK Spartak Moskva",
+   "gp": 48,
+   "g": 4,
+   "a": 25,
+   "pts": 29,
+   "pm": 15,
+   "pim": 40,
+   "coef": 0.143,
+   "status": "rostered"
+  },
+  {
+   "league": "KHL",
+   "team": "Spartak Moskva",
+   "gp": 7,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": -1,
+   "pim": 0,
+   "coef": 0.772,
+   "status": "rostered"
+  },
+  {
+   "league": "MHL",
+   "team": "MHK Spartak-MAH Moskva",
+   "gp": 4,
+   "g": 0,
+   "a": 1,
+   "pts": 1,
+   "pm": -2,
+   "pim": 0,
+   "coef": 0.143,
+   "status": "rostered"
+  },
+  {
+   "league": "VHL",
+   "team": "Khimik Voskresensk",
+   "gp": 1,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": 0,
+   "pim": 2,
+   "coef": 0.328,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2026-2027",
+  "league": "VHL",
+  "leagueSlug": "vhl",
+  "table": "VHL",
+  "coef": 0.328,
+  "team": "Khimik Voskresensk",
+  "gp": 10,
+  "g": 0,
+  "a": 1,
+  "pts": 1,
+  "pgp": 0.1,
+  "lineGp": 10,
+  "nhle": 0.033,
+  "nhle82": 2.7,
+  "lines": [
+   "VHL"
+  ]
+ },
+ "league": {
+  "name": "VHL",
+  "table": "VHL",
+  "coef": 0.328,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "mhl",
+   "season": "2025-2026",
+   "ageBucket": "U19",
+   "exactAge": 18,
+   "cohortN": 125,
+   "gp": 52,
+   "pgp": 0.577,
+   "percentile": 94.4,
+   "percentileAllAges": 96.7,
+   "allAgesN": 2781
+  },
+  "current": {
+   "league": "vhl",
+   "season": "2026-2027",
+   "ageBucket": "U20",
+   "exactAge": 19,
+   "cohortN": 12,
+   "gp": 10,
+   "pgp": 0.1,
+   "percentile": 50.0,
+   "percentileAllAges": 40.9,
+   "allAgesN": 516
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 5.0,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 20.7,
+  "pRegular": 0.14,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.06,
+  "poolN": 795,
+  "group": "D",
+  "age": 19,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.02,
+   0.04
+  ],
+  "examples": [
+   {
+    "name": "Carson Soucy",
+    "year": 2013,
+    "pick": 137,
+    "league": "NCAA",
+    "nhle": 0.034,
+    "peak": 61.3,
+    "tier": "above average",
+    "nhlGp": 443
+   },
+   {
+    "name": "Simon Karlsson",
+    "year": 2011,
+    "pick": 142,
+    "league": "OHL",
+    "nhle": 0.035,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Patrick Koudys",
+    "year": 2011,
+    "pick": 147,
+    "league": "USHL",
+    "nhle": 0.034,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Clark Seymour",
+    "year": 2012,
+    "pick": 143,
+    "league": "OHL",
+    "nhle": 0.03,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Josh Brown",
+    "year": 2013,
+    "pick": 152,
+    "league": "OHL",
+    "nhle": 0.031,
+    "peak": 22.4,
+    "tier": "replacement level",
+    "nhlGp": 300
+   },
+   {
+    "name": "Anton Klementyev",
+    "year": 2009,
+    "pick": 122,
+    "league": "AHL",
+    "nhle": 0.033,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
+   },
+   {
+    "name": "Nate Clurman",
+    "year": 2016,
+    "pick": 161,
+    "league": "USHL",
+    "nhle": 0.033,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
+   },
+   {
+    "name": "Greg Pateryn",
+    "year": 2008,
+    "pick": 128,
+    "league": "NCAA",
+    "nhle": 0.035,
+    "peak": 19.0,
+    "tier": "replacement level",
+    "nhlGp": 290
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 380,
+  "expected": 7.0,
+  "median": 0.0,
+  "p75": 0.0,
+  "p90": 36.0,
+  "pRegular": 0.15,
+  "pTopLine": 0.03,
+  "pAboveAvg": 0.07,
+  "band": "121-300",
+  "group": "D"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "MHL",
+   "nhle": 0.055,
+   "gp": 52
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "MHL",
+   "nhle": 0.071,
+   "gp": 60
+  },
+  "delta": 0.016
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 10,
+  "season": "2026-2027"
+ },
+ "rank": 17,
+ "score": 5.0
+}

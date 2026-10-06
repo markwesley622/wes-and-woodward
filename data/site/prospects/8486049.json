@@ -1,0 +1,241 @@
+{
+ "epId": "804140",
+ "nhlId": 8486049,
+ "name": "J.P. Hurlbert",
+ "slug": "j-p-hurlbert",
+ "group": "F",
+ "position": "F",
+ "birthDate": "2008-04-11",
+ "age": 18,
+ "height": "6'0\"",
+ "weight": 190,
+ "shoots": "R",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2026,
+  "overall": 23,
+  "round": 1
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+0",
+  "draftYear": 2026,
+  "onNhlRoster": false
+ },
+ "scouting": null,
+ "currentLines": [
+  {
+   "league": "NCAA",
+   "team": "Univ. of Michigan",
+   "gp": 2,
+   "g": 1,
+   "a": 0,
+   "pts": 1,
+   "pm": 0,
+   "pim": 2,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "WHL",
+   "team": "Kamloops Blazers",
+   "gp": 68,
+   "g": 42,
+   "a": 55,
+   "pts": 97,
+   "pm": 13,
+   "pim": 45,
+   "coef": 0.141,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "WHL",
+  "leagueSlug": "whl",
+  "table": "WHL",
+  "coef": 0.141,
+  "team": "Kamloops Blazers",
+  "gp": 68,
+  "g": 42,
+  "a": 55,
+  "pts": 97,
+  "pgp": 1.426,
+  "lineGp": 68,
+  "nhle": 0.201,
+  "nhle82": 16.5,
+  "lines": [
+   "WHL"
+  ]
+ },
+ "league": {
+  "name": "WHL",
+  "table": "WHL",
+  "coef": 0.141,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "whl",
+   "season": "2025-2026",
+   "ageBucket": "U18",
+   "exactAge": 17,
+   "cohortN": 89,
+   "gp": 68,
+   "pgp": 1.426,
+   "percentile": 96.6,
+   "percentileAllAges": 97.7,
+   "allAgesN": 2365
+  },
+  "current": {
+   "league": "ncaa",
+   "season": "2026-2027",
+   "ageBucket": "U19",
+   "cohortN": 0,
+   "gp": 2,
+   "percentile": null,
+   "note": "sample too small"
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 56.9,
+  "median": 58.0,
+  "p75": 92.8,
+  "p90": 96.8,
+  "pRegular": 0.78,
+  "pTopLine": 0.44,
+  "pAboveAvg": 0.6,
+  "poolN": 1378,
+  "group": "F",
+  "age": 17,
+  "tier": "elite",
+  "expectedTier": "above average",
+  "nhleBand": [
+   0.17,
+   0.23
+  ],
+  "examples": [
+   {
+    "name": "Nikolai Goldobin",
+    "year": 2014,
+    "pick": 27,
+    "league": "OHL",
+    "nhle": 0.202,
+    "peak": 48.4,
+    "tier": "below average",
+    "nhlGp": 125
+   },
+   {
+    "name": "David Pastr\u0148\u00e1k",
+    "year": 2014,
+    "pick": 25,
+    "league": "HockeyAllsvenskan",
+    "nhle": 0.206,
+    "peak": 99.0,
+    "tier": "elite",
+    "nhlGp": 837
+   },
+   {
+    "name": "Kyle Connor",
+    "year": 2015,
+    "pick": 17,
+    "league": "USHL",
+    "nhle": 0.204,
+    "peak": 98.0,
+    "tier": "elite",
+    "nhlGp": 698
+   },
+   {
+    "name": "Hunter Shinkaruk",
+    "year": 2013,
+    "pick": 24,
+    "league": "WHL",
+    "nhle": 0.189,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 15
+   },
+   {
+    "name": "Kailer Yamamoto",
+    "year": 2017,
+    "pick": 22,
+    "league": "WHL",
+    "nhle": 0.215,
+    "peak": 54.5,
+    "tier": "above average",
+    "nhlGp": 374
+   },
+   {
+    "name": "Isac Lundestr\u00f6m",
+    "year": 2018,
+    "pick": 23,
+    "league": "SHL",
+    "nhle": 0.184,
+    "peak": 35.9,
+    "tier": "below average",
+    "nhlGp": 405
+   },
+   {
+    "name": "Jaden Schwartz",
+    "year": 2010,
+    "pick": 14,
+    "league": "USHL",
+    "nhle": 0.198,
+    "peak": 92.9,
+    "tier": "elite",
+    "nhlGp": 863
+   },
+   {
+    "name": "Cole Caufield",
+    "year": 2019,
+    "pick": 15,
+    "league": "NTDP",
+    "nhle": 0.206,
+    "peak": 94.3,
+    "tier": "elite",
+    "nhlGp": 370
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 131,
+  "expected": 42.0,
+  "median": 37.6,
+  "p75": 77.2,
+  "p90": 89.2,
+  "pRegular": 0.72,
+  "pTopLine": 0.28,
+  "pAboveAvg": 0.44,
+  "band": "16-32",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "NTDP",
+   "nhle": 0.099,
+   "gp": 90
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "WHL",
+   "nhle": 0.201,
+   "gp": 68
+  },
+  "delta": 0.102
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 68,
+  "season": "2025-2026"
+ },
+ "rank": 1,
+ "score": 56.9
+}

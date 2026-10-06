@@ -1,0 +1,266 @@
+{
+ "epId": "597566",
+ "nhlId": 8484870,
+ "name": "Max Plante",
+ "slug": "max-plante",
+ "group": "F",
+ "position": "C",
+ "birthDate": "2006-02-20",
+ "age": 20,
+ "height": "5'11\"",
+ "weight": 176,
+ "shoots": "L",
+ "contract": null,
+ "rights": "unsigned",
+ "draft": {
+  "year": 2024,
+  "overall": 47,
+  "round": 2
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+2",
+  "draftYear": 2024,
+  "onNhlRoster": false
+ },
+ "scouting": "Plante is one of the most skilled passers in the draft, especially off the backhand. He feathers pucks through the tiniest of openings. Defensive pressure only empowers him; he takes advantage of assertive defending by ripping a pass right through it. He deceives enough to open lanes, but also knows when to make the quick pass for the counterattack. -EliteProspects 2024 NHL Draft Guide \r\n\r\nFather: Derek Plante\r\nBrothers: Zam Plante, Victor Plante",
+ "currentLines": [
+  {
+   "league": "NCAA",
+   "team": "Univ. of Minnesota-Duluth",
+   "gp": 2,
+   "g": 0,
+   "a": 2,
+   "pts": 2,
+   "pm": 0,
+   "pim": 0,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "NCAA",
+   "team": "Univ. of Minnesota-Duluth",
+   "gp": 40,
+   "g": 25,
+   "a": 27,
+   "pts": 52,
+   "pm": 19,
+   "pim": 23,
+   "coef": 0.194,
+   "status": "rostered"
+  },
+  {
+   "league": "WC",
+   "team": "USA",
+   "gp": 6,
+   "g": 1,
+   "a": 0,
+   "pts": 1,
+   "pm": -1,
+   "pim": 0,
+   "coef": null,
+   "status": "rostered"
+  },
+  {
+   "league": "WJC-20",
+   "team": "USA U20",
+   "gp": 3,
+   "g": 1,
+   "a": 0,
+   "pts": 1,
+   "pm": -3,
+   "pim": 0,
+   "coef": 0.269,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "NCAA",
+  "leagueSlug": "ncaa",
+  "table": "NCAA",
+  "coef": 0.194,
+  "team": "Univ. of Minnesota-Duluth",
+  "gp": 43,
+  "g": 25,
+  "a": 27,
+  "pts": 52,
+  "pgp": 1.3,
+  "lineGp": 40,
+  "nhle": 0.241,
+  "nhle82": 19.8,
+  "lines": [
+   "NCAA",
+   "WJC-20"
+  ]
+ },
+ "league": {
+  "name": "NCAA",
+  "table": "NCAA",
+  "coef": 0.194,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "ncaa",
+   "season": "2025-2026",
+   "ageBucket": "U20",
+   "exactAge": 19,
+   "cohortN": 49,
+   "gp": 40,
+   "pgp": 1.3,
+   "percentile": 91.8,
+   "percentileAllAges": 98.6,
+   "allAgesN": 3059
+  },
+  "current": {
+   "league": "ncaa",
+   "season": "2026-2027",
+   "ageBucket": "U21",
+   "cohortN": 0,
+   "gp": 2,
+   "percentile": null,
+   "note": "sample too small"
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 33.3,
+  "median": 29.7,
+  "p75": 52.0,
+  "p90": 83.6,
+  "pRegular": 0.76,
+  "pTopLine": 0.14,
+  "pAboveAvg": 0.26,
+  "poolN": 1308,
+  "group": "F",
+  "age": 19,
+  "tier": "above average",
+  "expectedTier": "below average",
+  "nhleBand": [
+   0.2,
+   0.27
+  ],
+  "examples": [
+   {
+    "name": "Zac Dalpe",
+    "year": 2008,
+    "pick": 45,
+    "league": "NCAA",
+    "nhle": 0.239,
+    "peak": 7.5,
+    "tier": "replacement level",
+    "nhlGp": 168
+   },
+   {
+    "name": "Yegor Afanasyev",
+    "year": 2019,
+    "pick": 45,
+    "league": "KHL",
+    "nhle": 0.236,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 19
+   },
+   {
+    "name": "Jack Drury",
+    "year": 2018,
+    "pick": 42,
+    "league": "NCAA",
+    "nhle": 0.246,
+    "peak": 34.0,
+    "tier": "below average",
+    "nhlGp": 270
+   },
+   {
+    "name": "Janne Kuokkanen",
+    "year": 2016,
+    "pick": 43,
+    "league": "AHL",
+    "nhle": 0.233,
+    "peak": 58.0,
+    "tier": "above average",
+    "nhlGp": 119
+   },
+   {
+    "name": "Vladislav Kamenev",
+    "year": 2014,
+    "pick": 42,
+    "league": "AHL",
+    "nhle": 0.25,
+    "peak": 10.9,
+    "tier": "replacement level",
+    "nhlGp": 66
+   },
+   {
+    "name": "Kevin Stenlund",
+    "year": 2015,
+    "pick": 58,
+    "league": "SHL",
+    "nhle": 0.245,
+    "peak": 32.0,
+    "tier": "below average",
+    "nhlGp": 371
+   },
+   {
+    "name": "Ivan Morozov",
+    "year": 2018,
+    "pick": 61,
+    "league": "KHL",
+    "nhle": 0.239,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jeremy Morin",
+    "year": 2009,
+    "pick": 45,
+    "league": "AHL",
+    "nhle": 0.227,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 82
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 214,
+  "expected": 23.7,
+  "median": 0.0,
+  "p75": 46.3,
+  "p90": 72.7,
+  "pRegular": 0.5,
+  "pTopLine": 0.09,
+  "pAboveAvg": 0.23,
+  "band": "33-64",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "NCAA",
+   "nhle": 0.215,
+   "gp": 29
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "NCAA",
+   "nhle": 0.241,
+   "gp": 43
+  },
+  "delta": 0.026
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 43,
+  "season": "2025-2026"
+ },
+ "rank": 4,
+ "score": 33.3
+}

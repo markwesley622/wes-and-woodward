@@ -1,0 +1,241 @@
+{
+ "epId": "593187",
+ "nhlId": 8484836,
+ "name": "Ond\u0159ej Becher",
+ "slug": "ondrej-becher",
+ "group": "F",
+ "position": "C/W",
+ "birthDate": "2004-02-22",
+ "age": 22,
+ "height": "6'1\"",
+ "weight": 187,
+ "shoots": "L",
+ "contract": "26/27",
+ "rights": "signed",
+ "draft": {
+  "year": 2024,
+  "overall": 80,
+  "round": 3
+ },
+ "status": {
+  "prospect": true,
+  "rookieEligible": true,
+  "inWindow": true,
+  "window": "draft+2",
+  "draftYear": 2024,
+  "onNhlRoster": false
+ },
+ "scouting": "With a combination of dynamic transition skills and off-puck details, Becher is a consistent contributor. In transition, he works give-and-gos, attacks on angles, uses the trailer, and delays as defenders close. -EliteProspects 2024 NHL Draft Guide",
+ "currentLines": [
+  {
+   "league": "AHL",
+   "team": "Grand Rapids Griffins",
+   "gp": 2,
+   "g": 0,
+   "a": 1,
+   "pts": 1,
+   "pm": 1,
+   "pim": 0,
+   "coef": 0.389,
+   "status": "rostered"
+  }
+ ],
+ "lastLines": [
+  {
+   "league": "AHL",
+   "team": "Grand Rapids Griffins",
+   "gp": 60,
+   "g": 9,
+   "a": 19,
+   "pts": 28,
+   "pm": 5,
+   "pim": 42,
+   "coef": 0.389,
+   "status": "rostered"
+  }
+ ],
+ "anchor": {
+  "season": "2025-2026",
+  "league": "AHL",
+  "leagueSlug": "ahl",
+  "table": "AHL",
+  "coef": 0.389,
+  "team": "Grand Rapids Griffins",
+  "gp": 60,
+  "g": 9,
+  "a": 19,
+  "pts": 28,
+  "pgp": 0.467,
+  "lineGp": 60,
+  "nhle": 0.182,
+  "nhle82": 14.9,
+  "lines": [
+   "AHL"
+  ]
+ },
+ "league": {
+  "name": "AHL",
+  "table": "AHL",
+  "coef": 0.389,
+  "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+ },
+ "performance": {
+  "last": {
+   "league": "ahl",
+   "season": "2025-2026",
+   "ageBucket": "U22",
+   "exactAge": 21,
+   "cohortN": 57,
+   "gp": 60,
+   "pgp": 0.467,
+   "percentile": 54.4,
+   "percentileAllAges": 53.6,
+   "allAgesN": 944
+  },
+  "current": {
+   "league": "ahl",
+   "season": "2026-2027",
+   "ageBucket": "U23",
+   "cohortN": 0,
+   "gp": 2,
+   "percentile": null,
+   "note": "sample too small"
+  }
+ },
+ "ceiling": {
+  "n": 50,
+  "expected": 10.3,
+  "median": 0.0,
+  "p75": 7.9,
+  "p90": 47.4,
+  "pRegular": 0.28,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.08,
+  "poolN": 1127,
+  "group": "F",
+  "age": 21,
+  "tier": "replacement level",
+  "expectedTier": "replacement level",
+  "nhleBand": [
+   0.15,
+   0.2
+  ],
+  "examples": [
+   {
+    "name": "Cole Schwindt",
+    "year": 2019,
+    "pick": 81,
+    "league": "AHL",
+    "nhle": 0.178,
+    "peak": 8.9,
+    "tier": "replacement level",
+    "nhlGp": 78
+   },
+   {
+    "name": "Nate Schnarr",
+    "year": 2017,
+    "pick": 75,
+    "league": "AHL",
+    "nhle": 0.177,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Alexander Dergachyov",
+    "year": 2015,
+    "pick": 74,
+    "league": "KHL",
+    "nhle": 0.174,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Oskar Sundqvist",
+    "year": 2012,
+    "pick": 81,
+    "league": "AHL",
+    "nhle": 0.168,
+    "peak": 47.4,
+    "tier": "below average",
+    "nhlGp": 545
+   },
+   {
+    "name": "Craig Cunningham",
+    "year": 2010,
+    "pick": 97,
+    "league": "AHL",
+    "nhle": 0.184,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 63
+   },
+   {
+    "name": "Bogdan Yakimov",
+    "year": 2013,
+    "pick": 83,
+    "league": "KHL",
+    "nhle": 0.167,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
+   },
+   {
+    "name": "Keegan Kolesar",
+    "year": 2015,
+    "pick": 69,
+    "league": "AHL",
+    "nhle": 0.189,
+    "peak": 35.8,
+    "tier": "below average",
+    "nhlGp": 441
+   },
+   {
+    "name": "Juho Lammikko",
+    "year": 2014,
+    "pick": 65,
+    "league": "AHL",
+    "nhle": 0.185,
+    "peak": 7.9,
+    "tier": "replacement level",
+    "nhlGp": 183
+   }
+  ]
+ },
+ "pedigree": {
+  "n": 371,
+  "expected": 13.4,
+  "median": 0.0,
+  "p75": 10.8,
+  "p90": 54.8,
+  "pRegular": 0.29,
+  "pTopLine": 0.07,
+  "pAboveAvg": 0.13,
+  "band": "65-120",
+  "group": "F"
+ },
+ "trajectory": {
+  "from": {
+   "season": "2024-2025",
+   "league": "AHL",
+   "nhle": 0.132,
+   "gp": 59
+  },
+  "to": {
+   "season": "2025-2026",
+   "league": "AHL",
+   "nhle": 0.182,
+   "gp": 60
+  },
+  "delta": 0.05
+ },
+ "deployment": null,
+ "nhlSample": null,
+ "availability": {
+  "gp": 60,
+  "season": "2025-2026"
+ },
+ "rank": 12,
+ "score": 10.3
+}
