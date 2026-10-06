@@ -174,7 +174,7 @@ const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveI
             <span class:list={['rk', { red: p.rank === 1 }]}>{p.rank}</span>
             <span>{p.href ? <a href={p.href}>{p.name}</a> : p.name} <span class="mono pos">{p.position}</span></span>
             <span class="mono club">{p.now ? `${p.now.team} · ${p.now.league}` : '—'}</span>
-            <span class="r"><strong>{p.ceiling?.expected != null ? p.ceiling.expected.toFixed(0) : '—'}</strong> <span class="mono pct">{p.ceiling?.tier ?? ''}</span></span>
+            <span class="r"><strong>{p.score != null ? p.score.toFixed(0) : '—'}</strong> <span class="mono pct">{p.ceiling?.tier ?? ''}</span></span>
           </div>
         )) : [1, 2, 3, 4, 5].map((i) => (
           <div class="prow">
