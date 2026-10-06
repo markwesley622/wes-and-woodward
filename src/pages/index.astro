@@ -168,13 +168,13 @@ const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveI
     <div class="shell">
       <h2>Top Prospects</h2>
       <div class="plist">
-        <div class="prow head mono"><span>Rank</span><span>Player</span><span>Club · league</span><span class="r">Expected peak</span></div>
+        <div class="prow head mono"><span>Rank</span><span>Player</span><span>Club · league</span><span class="r">Peak / ceiling</span></div>
         {top5.length ? top5.map((p) => (
           <div class="prow">
             <span class:list={['rk', { red: p.rank === 1 }]}>{p.rank}</span>
             <span>{p.href ? <a href={p.href}>{p.name}</a> : p.name} <span class="mono pos">{p.position}</span></span>
             <span class="mono club">{p.now ? `${p.now.team} · ${p.now.league}` : '—'}</span>
-            <span class="r"><strong>{p.score != null ? p.score.toFixed(0) : '—'}</strong> <span class="mono pct">{p.ceiling?.tier ?? ''}</span></span>
+            <span class="r"><strong>{p.score != null ? p.score.toFixed(0) : '—'}</strong><span class="mono pct"> / {p.ceiling?.tier ?? '—'}</span></span>
           </div>
         )) : [1, 2, 3, 4, 5].map((i) => (
           <div class="prow">
@@ -202,7 +202,7 @@ const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveI
 
 <style>
   .prow .pos, .prow .club, .prow .pct { color: var(--mute); font-size: 11px; }
-  .prow .pct { display: block; }
+  .prow .pct { display: inline; }
   .prow a { text-decoration: underline; text-underline-offset: 2px; }
   /* hero */
   /* overflow-x clip (not hidden) keeps the wheel free to parallax down past the hero's bottom edge while clipping its sides */
