@@ -50,7 +50,7 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
     <div class="grid">
       <div class="tile"><span class="eb mono">Drafted</span><span class="num">{B.draft ? `${B.draft.year}` : '—'}</span><span class="sub">{B.draft ? `${ordinal(B.draft.overallPick)} overall · round ${B.draft.round} · ${B.draft.teamAbbrev}` : 'undrafted'}</span></div>
       <div class="tile"><span class="eb mono">Age</span><span class="num">{age}</span><span class="sub">born {mdy(B.birthDate)}, {B.birthDate.slice(0, 4)}</span></div>
-      <div class="tile"><span class="eb mono">Last season{L.league ? ` · ${L.league}` : ''}</span><span class="num">{L.gp ?? '—'}</span><span class="sub">games{L.team ? ` · ${L.team}` : ''}</span></div>
+      <div class="tile"><span class="eb mono">This season{L.league ? ` · ${L.league}` : ''}</span><span class="num">{L.gp ?? '—'}</span><span class="sub">games{L.team ? ` · ${L.team}` : ''}{L.gp ? '' : ' · none yet'}</span></div>
       {B.position === 'G' ? (
         <div class="tile"><span class="eb mono">Save percentage</span><span class="num">{L.savePct != null ? sv3(L.savePct) : '—'}</span><span class="sub">{L.gaa != null ? `${Number(L.gaa).toFixed(2)} goals against average` : ''}{L.wins != null ? ` · ${L.wins}–${L.losses ?? 0}–${L.otLosses ?? 0}` : ''}</span></div>
       ) : (
