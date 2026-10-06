@@ -340,7 +340,7 @@ def main():
     skaters = [p for p in system["skaters"] if (EP / "player" / f"{p['id']}.json").exists()]
     goalies = [p for p in system["goalies"] if (EP / "player" / f"{p['id']}.json").exists()]
     idm = id_map(skaters + goalies)
-    from build_player import prospect_status, rookie_eligible, nhl_roster_ids   # noqa  (same rule as the page builder)
+    from build_player import prospect_status, rookie_eligible, nhl_roster_ids, slug_of   # noqa  (same rule as the page builder)
     roster = nhl_roster_ids()
     draft_by_ep = {}
     for f in (EP / "draft").glob("*.json"):
@@ -357,7 +357,9 @@ def main():
         else:   # no NHL id found: fall back to EP draft year + age window, flagged
             yr_d = dr["year"] if dr else None
             st = {"prospect": (yr_d is not None and YR <= yr_d + 4) or (yr_d is None and age_at(CUR, dob) < 23), "rookieEligible": None, "inWindow": True, "window": f"draft+{YR - yr_d}" if yr_d else "undrafted", "draftYear": yr_d, "note": "no NHL id; eligibility unverified"}
-        base = {"epId": p["id"], "nhlId": nhl_id, "name": pl["name"], "slug": re.sub(r"[^a-z0-9]+", "-", unicodedata.normalize("NFKD", pl["name"]).encode("ascii", "ignore").decode().lower()).strip("-"),
+        # slug must match the player page (build_player.slug_of on the NHL API name: "JP Hurlbert" -> jp-hurlbert, not EP's "J.P.")
+        slug = slug_of(f"{land['firstName']['default']} {land['lastName']['default']}") if land else slug_of(pl["name"])
+        base = {"epId": p["id"], "nhlId": nhl_id, "name": pl["name"], "slug": slug,
                 "group": g, "position": "/".join(pl.get("detailedPosition") or []) or pl.get("position"), "birthDate": dob, "age": int(age_at(CUR, dob)) if dob else None,
                 "height": (pl.get("height") or {}).get("imperial"), "weight": (pl.get("weight") or {}).get("imperial"), "shoots": pl.get("shoots"), "contract": pl.get("contract"),
                 "rights": (pl.get("nhlRights") or {}).get("rights"), "draft": ({"year": dr["year"], "overall": dr["overall"], "round": dr["round"]} if dr else None),

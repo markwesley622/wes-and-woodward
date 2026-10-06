@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Prospect from './_prospect.astro';
+import Initials from '../../components/Initials.astro';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -80,7 +81,7 @@ const RECENT = 10;
         {art ? (
           <picture class="art"><source srcset={`/players/${P.playerId}-art.webp`} type="image/webp" /><img src={`/players/${P.playerId}-art.png`} alt={`${P.name}, illustrated`} width="1100" height="825" /></picture>
         ) : (
-          <div class="art placeholder" aria-hidden="true"><span class="mono">#{B.number}</span></div>
+          <div class="art"><Initials name={P.name} label={B.number != null ? `#${B.number}` : ''} /></div>
         )}
         <div class="who">
           <h1 class="page-title">{P.name}</h1>

@@ -2,6 +2,7 @@
 // Prospect page: a player still eligible for NHL rookie status. No value score (the NHL sample is
 // too small to rate), so the page is bio, draft pedigree, every line he played last season across
 // leagues, and the NHL game log if there is one.
+import Initials from '../../components/Initials.astro';
 const { P, art, prospect } = Astro.props;
 const B = P.bio, L = P.seasonLine || {}, G = P.gameLog || [], LINES = P.seasonLines || [];
 // prospect-system block (build_prospects.py): league strength, age-relative performance, cohort ceiling, trajectory
@@ -26,7 +27,7 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
       {art ? (
         <picture class="art"><source srcset={`/players/${P.playerId}-art.webp`} type="image/webp" /><img src={`/players/${P.playerId}-art.png`} alt={`${P.name}, illustrated`} width="1100" height="825" /></picture>
       ) : (
-        <div class="art placeholder" aria-hidden="true"><span class="mono">#{B.number}</span></div>
+        <div class="art"><Initials name={P.name} label={B.number != null ? `#${B.number}` : ''} /></div>
       )}
       <div class="who">
         <h1 class="page-title">{P.name}</h1>

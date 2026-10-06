@@ -1,0 +1,54 @@
+---
+// A player's initials as 3D line art, in the family of the wheel hero: stroke-only block letters
+// (the site's display face, uppercase, bold) extruded by stacking SVG layers down the Z axis.
+// The block tilts a few degrees and drifts as the reader scrolls. Used in the art slot of every
+// player page that has no commissioned illustration (Mark, 10/6).
+const { name, label = '' } = Astro.props;
+const parts = String(name).replace(/[.]/g, ' ').trim().split(/\s+/).filter(Boolean);
+const first = parts[0] || '', last = parts[parts.length - 1] || '';
+const initials = ((first[0] || '') + (parts.length > 1 ? (last[0] || '') : '')).toUpperCase();
+const N = 14, STEP = 5, depth = N * STEP;
+const layers = Array.from({ length: N - 1 }, (_, i) => -(i + 1) * STEP);
+const size = initials.length > 1 ? 210 : 250;
+---
+<div class="initials" aria-hidden="true" data-initials>
+  <div class="block">
+    <svg class="layer back" viewBox="0 0 400 300" style={`transform:translateZ(${-depth}px)`}><text x="200" y="212" font-size={size}>{initials}</text></svg>
+    {layers.map((z) => (
+      <svg class="layer mid" viewBox="0 0 400 300" style={`transform:translateZ(${z}px)`}><text x="200" y="212" font-size={size}>{initials}</text></svg>
+    ))}
+    <svg class="layer face" viewBox="0 0 400 300" style="transform:translateZ(1px)"><text x="200" y="212" font-size={size}>{initials}</text></svg>
+  </div>
+  {label && <span class="mono tag">{label}</span>}
+</div>
+
+<style>
+  .initials { position: relative; aspect-ratio: 4 / 3; perspective: 1400px; perspective-origin: 50% 45%; transform: translateY(var(--ty, 0px)); will-change: transform; }
+  .block { position: absolute; inset: 0; transform-style: preserve-3d; transform: rotateX(var(--rx, 8deg)) rotateY(var(--ry, -12deg)); will-change: transform; }
+  .layer { position: absolute; inset: 0; width: 100%; height: 100%; backface-visibility: hidden; }
+  text { font-family: var(--sans); font-weight: 700; letter-spacing: -.04em; text-anchor: middle; fill: none; stroke: var(--ink); stroke-width: 1.2; stroke-linejoin: round; paint-order: stroke; }
+  .mid text { opacity: .42; }
+  .back text { stroke-width: 1.6; }
+  .face text { stroke-width: 2; }
+  .tag { position: absolute; right: 14px; bottom: 14px; color: var(--mute); font-size: 28px; letter-spacing: 0; }
+  @media (prefers-reduced-motion: reduce) { .initials { transform: none; } .block { transform: rotateX(8deg) rotateY(-12deg) !important; } }
+</style>
+
+<script>
+  const stages = document.querySelectorAll('[data-initials]');
+  if (stages.length && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    let queued = false;
+    const frame = () => {
+      queued = false;
+      const p = Math.min(1, Math.max(0, scrollY / 700));
+      stages.forEach((s) => {
+        const block = s.querySelector('.block');
+        block.style.setProperty('--rx', (8 - 10 * p).toFixed(2) + 'deg');
+        block.style.setProperty('--ry', (-12 + 24 * p).toFixed(2) + 'deg');
+        s.style.setProperty('--ty', (0.1 * Math.min(scrollY, 900)).toFixed(1) + 'px');
+      });
+    };
+    frame();
+    addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(frame); } }, { passive: true });
+  }
+</script>

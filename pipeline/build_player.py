@@ -246,9 +246,10 @@ def write_player(pid, out):
     out["prospectStatus"] = {**st, "onNhlRoster": on_nhl_roster, "template": "nhl" if (on_nhl_roster or out.get("kind") == "G" or not st["prospect"]) else "prospect"}
     if out["prospectStatus"]["template"] == "prospect" and out.get("kind") == "S": out["kind"] = "P"
     out["art"] = has_art(pid)
-    # a page exists for anyone with art, or anyone who has played an NHL game this season (Mark, 10/3)
-    played = bool(out.get("gameLog")) or any((l.get("league") == "NHL" and (l.get("gp") or 0) > 0) for l in out.get("seasonLines") or [])
-    publish = out["art"] or played
+    # every page is published (Mark, 10/6): players without commissioned art get the 3D initials line art
+    # (src/components/Initials.astro) in the art slot. The art gate of 9/24 and the played-a-game rule
+    # of 10/3 are retired; the archive dir now only holds players dropped from the roster/system lists.
+    publish = True
     live = ROOT / "data" / "site" / "players"; arch = ROOT / "data" / "archive" / "players"
     live.mkdir(parents=True, exist_ok=True); arch.mkdir(parents=True, exist_ok=True)
     dest = live if publish else arch
@@ -309,6 +310,7 @@ def build(pid, fetch=False):
     raw = ROOT / "data" / "raw" / "players" / str(pid); raw.mkdir(parents=True, exist_ok=True)
     if fetch or not (raw / "landing.json").exists():
         (raw / "landing.json").write_text(json.dumps(get(f"https://api-web.nhle.com/v1/player/{pid}/landing"), indent=1))
+    if fetch or not (raw / "gamelog_nhl.json").exists():   # build_prospects.id_map() caches landing.json alone
         (raw / "gamelog_nhl.json").write_text(json.dumps(get(f"https://api-web.nhle.com/v1/player/{pid}/game-log/{SEASON}/2"), indent=1))
     sys.path.insert(0, str(ROOT / "research" / "sandin-pellikka" / "raw" / "hsc")); import fetch_hsc as h
     _land = json.load((raw / "landing.json").open()); _log = json.load((raw / "gamelog_nhl.json").open()).get("gameLog", [])
@@ -498,8 +500,14 @@ def build(pid, fetch=False):
 if __name__ == "__main__":
     if sys.argv[1] == "--roster":
         roster = json.load((ROOT / "data" / "raw" / "players" / "roster_pages.json").open())
-        for r in roster:
-            try: build(r["playerId"], fetch="--fetch" in sys.argv)
-            except Exception as e: print("FAILED", r["name"], repr(e))
+        ids = [(r["playerId"], r["name"]) for r in roster]
+        # plus everyone in the Detroit system on EliteProspects with a matched NHL id (build_prospects.id_map)
+        idmap = ROOT / "data" / "raw" / "ep" / "idmap.json"
+        if idmap.exists():
+            have = {p for p, _ in ids}
+            ids += [(v, f"ep {k}") for k, v in json.load(idmap.open()).items() if v and v not in have]
+        for pid, name in ids:
+            try: build(pid, fetch="--fetch" in sys.argv)
+            except Exception as e: print("FAILED", name, repr(e))
     else:
         build(int(sys.argv[1]), fetch="--fetch" in sys.argv)
