@@ -6,6 +6,7 @@ OUT = pathlib.Path(__file__).resolve().parents[3] / "data/site/articles/two-way-
 FIX = [  # (old, new, why). Mark 10/7: keep his 46% / 76 pts / 36 goals wording for Seider and Larkin; only these fixes are applied.
     ("Sprong ranked in the 3rd percentile for defense and Fabbri ranked in the 6th percentile", "Fabbri ranked in the 3rd percentile for defense and Sprong ranked in the 6th percentile", "percentiles were swapped (EH even-strength defense, 2023-24)"),
     ("In 2025-26? How about 30th in goals - xG?", "In 2025-26? How about 29th in goals - xG?", "Detroit was 29th in goals minus xG (30th in goals per 60)"),
+    ("That number cratered the year after, falling to 29th and a -21 goals - xG.", "That number cratered the year after, falling to 26th and a -21 goals - xG.", "Mark 10/7: -21 ranked 26th in goals minus xG (29th was goals per 60)"),
     ("Andrew Copp led the entire NHL in goals below expected.", "Andrew Copp was among the five worst in the entire NHL in goals below expected.", "Lee, DeBrusk, Hertl and Meier were further under; Copp was 5th"),
     ("the Red Wings ranked 20th and 22nd in chances allowed", "the Red Wings ranked 22nd and 15th in chances allowed", "20th was 2023-24; the last two years are 22nd and 15th"),
     ("Michael Brandegg-Nygard", "Michael Brandsegg-Nygård", "spelling"),
