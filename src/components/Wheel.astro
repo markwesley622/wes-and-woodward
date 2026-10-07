@@ -3,25 +3,14 @@
 // Spokes roll with scroll; the tire (and its brushed highlight) stays fixed as a lighting cue.
 import parts from '../../design/wheel-parts.json';
 const N = 30, STEP = 5;
-const C = 2 * Math.PI * 415, blocks = 48, dash = (C / blocks) * 0.72, gap = C / blocks - dash;
-const layers = Array.from({ length: N }, (_, i) => i + 1).filter((i) => i !== 10 && i !== 20)
-  .map((i) => ({ z: -i * STEP, dash: `${dash.toFixed(2)} ${gap.toFixed(2)}`, off: ((10 < i && i < 20) ? C / blocks / 2 : 0).toFixed(2) }));
 const depth = N * STEP;
 ---
-<div class="stage" id="wheel-stage" aria-hidden="true">
+<div class="stage" id="wheel-stage" aria-hidden="true" data-rings={N} data-step={STEP}>
+  <canvas class="tread" id="wheel-tread"></canvas>
   <div class="wheel" id="wheel">
     <div class="back" style={`transform:translateZ(${-depth - 6}px)`}>
       <svg viewBox={parts.viewBox}><path class="tire" d={parts.tire} /></svg>
       <svg class="spokes" viewBox={parts.viewBox}><path d={parts.spokes} /></svg>
-    </div>
-    <div class="tread">
-      <svg class="tl" viewBox="0 0 840 840" style="transform:translateZ(-1px)"><circle cx="420" cy="420" r="415" class="edge" /></svg>
-      {layers.map((l) => (
-        <svg class="tl" viewBox="0 0 840 840" style={`transform:translateZ(${l.z}px)`}>
-          <circle cx="420" cy="420" r="415" stroke-dasharray={l.dash} stroke-dashoffset={l.off} />
-        </svg>
-      ))}
-      <svg class="tl" viewBox="0 0 840 840" style={`transform:translateZ(${-depth - 1}px)`}><circle cx="420" cy="420" r="415" class="edge" /></svg>
     </div>
     <div class="face" style="transform:translateZ(6px)">
       <svg viewBox={parts.viewBox}><path class="tire" d={parts.tire} /></svg>
@@ -33,32 +22,76 @@ const depth = N * STEP;
 <style>
   .stage { position: absolute; right: -6vw; top: -6vh; width: min(1040px, 86vw); aspect-ratio: 1; perspective: 1900px; perspective-origin: 50% 40%; z-index: 1; transform: translateY(var(--ty, 0px)); will-change: transform; }
   .wheel { position: absolute; inset: 0; transform-style: preserve-3d; transform: rotateX(var(--tilt, 6deg)); will-change: transform; }
-  .face, .back, .tread { position: absolute; inset: 0; transform-style: preserve-3d; }
-  .face svg, .back svg, .tl { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .face, .back { position: absolute; inset: 0; transform-style: preserve-3d; }
+  .face svg, .back svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  /* the tread wall is drawn on one canvas (see the script), 10% bigger than the stage on every side because
+     the near rings project past the stage edge once the wheel tilts */
+  .tread { position: absolute; left: -10%; top: -10%; width: 120%; height: 120%; pointer-events: none; }
   /* No non-scaling strokes and no SVG-internal transforms: every per-frame change is an element-level
      CSS transform, so the compositor moves the rasterized layers instead of re-drawing 32 SVGs each frame.
      Re-rastering was what made layers drop out for a frame at a time (the "flicker"). */
   path { fill: none; stroke: var(--ink); stroke-width: 1.5; }
-  circle { fill: none; stroke: var(--ink); stroke-width: 1.1; }
-  circle.edge { stroke-width: 1.5; }
   .spokes { transform-origin: 50.1% 50.1%; transform: rotate(var(--spin, 0deg)); will-change: transform; backface-visibility: hidden; }
-  .tread { transform: rotate(var(--spin, 0deg)); opacity: var(--tread, 0.35); will-change: transform; }
-  .tl { backface-visibility: hidden; }
   /* phones: the wheel's left edge sits on the gutter, in line with the wordmark; the rest runs off the right edge (page wrapper clips it) */
   @media (max-width: 640px) { .stage { left: var(--gutter); right: auto; top: 44vh; width: 124vw; } }
-  @media (prefers-reduced-motion: reduce) { .wheel { transform: rotateX(28deg) !important; } .tread { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .wheel { transform: rotateX(28deg) !important; } }
 </style>
 
 <script>
   const wheel = document.getElementById('wheel');
   const stage = document.getElementById('wheel-stage');
+  const tread = document.getElementById('wheel-tread');
   const hero = document.querySelector('.hero');
-  if (wheel && stage && hero) {
+  if (wheel && stage && tread && hero) {
     const q = new URLSearchParams(location.search);
     const fixedSy = q.has('sy') ? parseFloat(q.get('sy')) : null;
     if (fixedSy !== null) document.body.style.marginTop = -fixedSy + 'px';
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const TILT_MIN = 6, TILT_MAX = 74, ROLL = 420;
+    const TILT_MIN = 6, TILT_MAX = 74, ROLL = 420, REDUCED_TILT = 28;
+
+    // Tread wall: 30 rings stacked behind the face, each a dashed circle (48 tread blocks, the middle third offset
+    // half a block), drawn on ONE canvas with the projection CSS used to do for 30 separate 3D SVG layers.
+    // Those layers cost ~1 GB of GPU tiles on a 2x display and Chrome dropped tiles (blank patches) to cope.
+    // Same math as the CSS: stage perspective 1900px from (50%, 40%), wheel rotateX(tilt) about its centre,
+    // ring at translateZ(z), tread rotate(spin). Circle r=415 in an 840 viewBox; strokes 1.1 (edges 1.5).
+    // `extrude` (0-1) scales the ring depths: 0 at rest (the rings sit in one plane, the old look while the tread
+    // layer was translucent and Chrome flattened it), 1 once the wall is fully in, so it grows instead of popping.
+    const N = +stage.dataset.rings, STEP = +stage.dataset.step, BLOCKS = 48, PERSPECTIVE = 1900;
+    const P = (2 * Math.PI) / BLOCKS, DASH = P * 0.72;
+    const rings = [{ z: -1, edge: true }];
+    for (let i = 1; i <= N; i++) if (i !== 10 && i !== 20) rings.push({ z: -i * STEP, off: 10 < i && i < 20 ? P / 2 : 0 });
+    rings.push({ z: -N * STEP - 1, edge: true });
+    const ctx = tread.getContext('2d');
+    const ink = getComputedStyle(document.documentElement).getPropertyValue('--ink').trim() || '#141414';
+    function drawTread(tiltDeg, spinDeg, alpha, extrude) {
+      const W = stage.clientWidth, CW = tread.clientWidth, pad = (CW - W) / 2;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2), px = Math.round(CW * dpr);
+      if (tread.width !== px) { tread.width = px; tread.height = px; }
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, CW, CW);
+      tread.style.opacity = alpha;
+      const s = W / 840, R = 415 * s, c = W / 2, ox = W / 2, oy = 0.4 * W;
+      const a = (tiltDeg * Math.PI) / 180, ca = Math.cos(a), sa = Math.sin(a), phi = (spinDeg * Math.PI) / 180;
+      ctx.strokeStyle = ink;
+      const pt = (th, z, first) => {
+        z *= extrude;
+        const x = R * Math.cos(th), y = R * Math.sin(th);
+        const y2 = y * ca - z * sa, z2 = y * sa + z * ca, k = PERSPECTIVE / (PERSPECTIVE - z2);
+        const X = pad + ox + (c + x - ox) * k, Y = pad + oy + (c + y2 - oy) * k;
+        first ? ctx.moveTo(X, Y) : ctx.lineTo(X, Y);
+      };
+      for (const r of rings) {
+        ctx.lineWidth = (r.edge ? 1.5 : 1.1) * s;
+        ctx.beginPath();
+        if (r.edge) { for (let j = 0; j <= 144; j++) pt((j / 144) * 2 * Math.PI, r.z, j === 0); }
+        else for (let b = 0; b < BLOCKS; b++) {
+          const t0 = b * P - r.off + phi;
+          for (let j = 0; j <= 4; j++) pt(t0 + (j / 4) * DASH, r.z, j === 0);
+        }
+        ctx.stroke();
+      }
+    }
+
     const t0 = performance.now();
     let queued = false;
     function frame(now) {
@@ -70,13 +103,17 @@ const depth = N * STEP;
       const p = Math.min(1, Math.max(0, sy / range));
       const tilt = TILT_MIN + p * (TILT_MAX - TILT_MIN);
       const spin = reduce ? 0 : ((now - t0) / 1000) * 4 + p * ROLL;
+      const treadAlpha = reduce ? 1 : Math.min(1, 0.18 + p * 2.2);
+      const extrude = reduce ? 1 : Math.min(1, (p * 2.2) / 0.82);
       wheel.style.setProperty('--tilt', tilt.toFixed(2) + 'deg');
       wheel.style.setProperty('--spin', spin.toFixed(2) + 'deg');
-      wheel.style.setProperty('--tread', Math.min(1, 0.18 + p * 2.2).toFixed(3));
+      drawTread(reduce ? REDUCED_TILT : tilt, spin, treadAlpha.toFixed(3), extrude);
       stage.style.setProperty('--ty', (0.55 * Math.min(sy, 1.5 * h)).toFixed(1) + 'px');
       if (!reduce && sy < 2.2 * h) requestAnimationFrame(frame);
     }
+    const queue = () => { if (!queued) { queued = true; requestAnimationFrame(frame); } };
     requestAnimationFrame(frame);
-    addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(frame); } }, { passive: true });
+    addEventListener('scroll', queue, { passive: true });
+    addEventListener('resize', queue);
   }
 </script>
