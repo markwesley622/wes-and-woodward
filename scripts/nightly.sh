@@ -8,7 +8,7 @@
 export NVM_DIR="$HOME/.nvm"
 [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
 set -e
-export PATH="/opt/homebrew/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:$PATH"
+export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:$PATH"
 cd "$(dirname "$0")/.."
 LOG="$HOME/.wesandwoodward/logs/nightly-$(date +%Y-%m-%d).log"
 trap 'rc=$?; (( rc )) && osascript -e "display notification \"exit $rc, see $LOG\" with title \"W&W nightly refresh failed\""' EXIT
