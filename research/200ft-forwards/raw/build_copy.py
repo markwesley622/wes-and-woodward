@@ -3,14 +3,11 @@
 import json, pathlib, re, html
 SRC = pathlib.Path("/private/tmp/claude-501/-Users-markwesley/44b47499-45b5-4275-a5d5-36fa0e7f23e3/scratchpad/article.txt")
 OUT = pathlib.Path(__file__).resolve().parents[3] / "data/site/articles/two-way-forwards-copy.json"
-FIX = [  # (old, new, why)
+FIX = [  # (old, new, why). Mark 10/7: keep his 46% / 76 pts / 36 goals wording for Seider and Larkin; only these fixes are applied.
     ("Sprong ranked in the 3rd percentile for defense and Fabbri ranked in the 6th percentile", "Fabbri ranked in the 3rd percentile for defense and Sprong ranked in the 6th percentile", "percentiles were swapped (EH even-strength defense, 2023-24)"),
     ("In 2025-26? How about 30th in goals - xG?", "In 2025-26? How about 29th in goals - xG?", "Detroit was 29th in goals minus xG (30th in goals per 60)"),
     ("Andrew Copp led the entire NHL in goals below expected.", "Andrew Copp was among the five worst in the entire NHL in goals below expected.", "Lee, DeBrusk, Hertl and Meier were further under; Copp was 5th"),
     ("the Red Wings ranked 20th and 22nd in chances allowed", "the Red Wings ranked 22nd and 15th in chances allowed", "20th was 2023-24; the last two years are 22nd and 15th"),
-    ("The Red Wings were at 55% with Seider on, and 46% with him off.", "The Red Wings were at 55% with Seider on, and 45% with him off.", "off-ice share was 45%"),
-    ("Larkin has averaged 76 points per 82 over the last two seasons", "Larkin has averaged 72 points per 82 over the last two seasons", "70 and 74 per 82"),
-    ("Larkin’s 36 goals per 82 are significantly more", "Larkin’s 34 goals per 82 are significantly more", "30 and 38 per 82"),
     ("Michael Brandegg-Nygard", "Michael Brandsegg-Nygård", "spelling"),
     ("Andrei Vasilevsky-style", "Andrei Vasilevskiy-style", "spelling"),
     ("Andrei Vasilevsky became", "Andrei Vasilevskiy became", "spelling"),
