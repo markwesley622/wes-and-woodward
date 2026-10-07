@@ -4,13 +4,19 @@
 # Evolving-Hockey exports are subscriber files that stay local, which is why this runs on the Mac, not in CI.
 # It runs from the mirror clone at ~/.wesandwoodward/repo: launchd cannot read ~/Documents (macOS privacy
 # protection), so the working copy in Documents just needs a `git pull` before Mark's own edits.
+# launchd starts with a bare PATH and npm lives under nvm, so load nvm's default node before set -e
+export NVM_DIR="$HOME/.nvm"
+[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
 set -e
 export PATH="/opt/homebrew/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:$PATH"
 cd "$(dirname "$0")/.."
 LOG="$HOME/.wesandwoodward/logs/nightly-$(date +%Y-%m-%d).log"
+trap 'rc=$?; (( rc )) && osascript -e "display notification \"exit $rc, see $LOG\" with title \"W&W nightly refresh failed\""' EXIT
 {
   echo "=== nightly start $(date)"
-  git pull -q --ff-only origin main
+  # the mirror only holds generated data, so a run that died halfway must not block the next one's pull
+  git fetch -q origin main
+  git reset -q --hard origin/main
   ./refresh.sh
   python3 pipeline/fetch_eh.py || echo "EH pull failed, continuing with the files on disk"
   python3 pipeline/build_player.py --roster --fetch
