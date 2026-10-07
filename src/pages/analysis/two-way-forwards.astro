@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import C from '../../../data/site/articles/two-way-forwards-copy.json';
+import c1 from '../../../data/site/articles/two-way-forwards/c1-goals-vs-expected.svg?raw';
+import c2 from '../../../data/site/articles/two-way-forwards/c2-rank-card.svg?raw';
+import c3 from '../../../data/site/articles/two-way-forwards/c3-defense-goalie-grid.svg?raw';
+import c4 from '../../../data/site/articles/two-way-forwards/c4-teams-it-worked-for.svg?raw';
+import c5 from '../../../data/site/articles/two-way-forwards/c5-forward-finishing.svg?raw';
+import c7 from '../../../data/site/articles/two-way-forwards/c7-2023-24-outlier.svg?raw';
+import c8 from '../../../data/site/articles/two-way-forwards/c8-template-distance.svg?raw';
+import c9 from '../../../data/site/articles/two-way-forwards/c9-larkin-kopitar.svg?raw';
+
+const parts = C.parts, idx = C.idx;
+// each figure goes right after the paragraph its anchor names
+const figs = [
+  [idx.fig_sprong, c7], [idx.fig_goals, c1], [idx.fig_forwards, c5], [idx.fig_ranks, c2],
+  [idx.fig_grid, c3], [idx.fig_winners, c4], [idx.fig_larkin, c9], [idx.fig_comps, c8],
+];
+const blocks = [];
+let start = 0;
+for (const [after, svg] of figs) {
+  blocks.push({ html: parts.slice(start, after + 1).join('') });
+  blocks.push({ svg });
+  start = after + 1;
+}
+blocks.push({ html: parts.slice(start).join('') });
+
+const URL = 'https://wesandwoodward.com/analysis/two-way-forwards/';
+const DESC = 'Detroit built its forward group around compete and defensive responsibility. Three seasons of 5v5 scoring, the teams that made the archetype work, and where this roster was really headed.';
+---
+<Base ogType="article" schema={[{ '@type': 'Article', '@id': `${URL}#article`, url: URL, mainEntityOfPage: URL, headline: C.title, description: DESC,
+  datePublished: '2026-10-07', dateModified: '2026-10-07', inLanguage: 'en-US', author: { '@id': 'https://wesandwoodward.com/#org' }, publisher: { '@id': 'https://wesandwoodward.com/#org' }, isPartOf: { '@id': 'https://wesandwoodward.com/#website' },
+  about: [{ '@id': 'https://wesandwoodward.com/team/#team' }, { '@type': 'Person', name: 'Dylan Larkin' }, { '@type': 'Person', name: 'Moritz Seider' }], articleSection: 'Analysis',
+  keywords: ['Detroit Red Wings', 'two-way forwards', '5v5 scoring', 'expected goals', 'Steve Yzerman', 'Anze Kopitar', 'Los Angeles Kings'], wordCount: C.words }]}
+  title={`${C.title} — Wes & Woodward`} description={DESC}>
+  <section class="sec">
+    <div class="shell">
+      <p class="kicker mono">Analysis · October 7, 2026</p>
+      <h1 class="page-title">{C.title}</h1>
+      {blocks.map((b) => b.html !== undefined
+        ? <div class="prose" set:html={b.html} />
+        : <figure class="fig" set:html={b.svg} />)}
+      <p class="note mono" style="margin-top:28px">Method: 5v5 and all-situations goals and expected goals are MoneyPuck's; even-strength offense and defense, goals above replacement and RAPM are Evolving Hockey's, with percentiles and ranks taken among forwards or defensemen with 600+ minutes in that season. League ranks are within season, out of 30, 31 or 32 teams. The historical set is every team season from 2008-09 to 2025-26; a "low-scoring" team is one in the bottom third of 5v5 goals per 60. The comp distance is a Euclidean distance over ten rank percentiles: 5v5 scoring, chance creation, finishing, chances allowed, goaltending, forward defense, defensemen's defense, and the league rank of the best scorer, best forward by value and best defenseman. Front-office quotes are from DetroitRedWings.com, MLive and The Malik Report draft coverage.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .kicker { color: var(--mute); margin: 0 0 18px; }
+  .page-title { font-size: clamp(36px, 5.2vw, 72px); line-height: .94; margin-bottom: 30px; max-width: 18ch; text-wrap: balance; }
+  .prose { max-width: 68ch; font-size: 18px; line-height: 1.65; }
+  .prose :global(p) { margin: 0 0 18px; }
+  .prose :global(h3.art) { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.1; letter-spacing: -.02em; text-transform: none; margin: 40px 0 16px; }
+  .prose :global(h3.art::before) { content: "// "; color: var(--red); }
+  .fig { margin: 26px 0 38px; max-width: 760px; }
+  .fig :global(svg) { width: 100%; height: auto; display: block; }
+  .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 68ch; }
+</style>

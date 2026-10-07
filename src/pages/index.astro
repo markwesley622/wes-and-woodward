@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Wheel from '../components/Wheel.astro';
 import PuckDrop from '../components/PuckDrop.astro';
+import twoWayThumb from '../../data/site/articles/two-way-forwards/c1-goals-vs-expected.svg?raw';
 import D from '../../data/site/dashboard.json';
 import skaters from '../../data/site/skaters.json';
 
@@ -74,10 +75,10 @@ const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveI
     <div class="shell">
       <h2>Analysis</h2>
       <div class="row3">
-        {[['Featured', '2026–2027 Detroit Red Wings predictions']].map(([kind, title]) => (
-          <a class:list={['card', 'article', { pin: kind === 'Featured' }]} href={kind === 'Featured' ? '/analysis/2026-27-predictions/' : '#'}>
+        {[['Featured', '2026–2027 Detroit Red Wings predictions', '/analysis/2026-27-predictions/'], ['Latest', 'How committing to the 2-way forward archetype has worked out for the Red Wings', '/analysis/two-way-forwards/']].map(([kind, title, href]) => (
+          <a class:list={['card', 'article', { pin: kind === 'Featured' }]} href={href}>
             <span class:list={['eb', 'mono', { red: kind === 'Featured' }]}>{kind}</span>
-            {kind === 'Featured' ? <PuckDrop id="thumb-predictions" /> : <div class="thumb" aria-hidden="true"></div>}
+            {kind === 'Featured' ? <PuckDrop id="thumb-predictions" /> : <div class="thumb chart-thumb" aria-hidden="true" set:html={twoWayThumb} />}
             <h3>{title}</h3>
             <span class="mono" style="margin-top:auto">Read &rarr;</span>
           </a>
@@ -231,6 +232,8 @@ const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveI
   .tile .eb.tip, .card .eb.tip { display: inline-block; align-self: flex-start; width: auto; }
   .track .tickmark.pre { background: var(--mute); }
   .card.article .thumb { aspect-ratio: 16 / 9; background: var(--ghost); border-radius: 3px; }
+  .card.article .chart-thumb { overflow: hidden; display: flex; align-items: center; background: var(--paper); }
+  .card.article .chart-thumb :global(svg) { width: 100%; height: auto; display: block; }
   .card.article h3 { font-size: 20px; line-height: 1.2; }
   .progress .num { font-size: 44px; }
   .progress .num .of { font-size: 16px; font-weight: 500; color: var(--mute); letter-spacing: 0; }
