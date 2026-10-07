@@ -593,7 +593,7 @@
    "easternUTCOffset": "-04:00",
    "venueUTCOffset": "-04:00",
    "venueTimezone": "America/Detroit",
-   "gameState": "FUT",
+   "gameState": "OFF",
    "gameScheduleState": "OK",
    "tvBroadcasts": [
     {
@@ -635,11 +635,11 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/OTT_dark.svg",
     "awaySplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/OTT/20262027/OTT-radio.m3u8",
     "airlineLink": "https://www.aircanada.com/home/ca/en/aco/flights",
     "airlineDesc": "Book Flights with Air Canada",
     "hotelLink": "https://www.brookstreethotel.com/?gad_source=1&gad_campaignid=361534260&gbraid=0AAAAAD7lh6gowt52ky_hNFfUfpIJrBOLt&gclid=CjwKCAjws_DTBhB_EiwAXZknGWgxgnsGfRdBp1sxO_Bjc5W4YaWOrsfOWgCMIIPHfxIA9-A04EYXdhoClb8QAvD_BwE",
-    "hotelDesc": "Brookstreet Hotel"
+    "hotelDesc": "Brookstreet Hotel",
+    "score": 3
    },
    "homeTeam": {
     "id": 17,
@@ -657,15 +657,38 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/DET_dark.svg",
     "homeSplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/DET/20262027/DET-radio.m3u8"
+    "score": 5
    },
    "periodDescriptor": {
-    "number": 1,
+    "number": 3,
     "periodType": "REG",
     "maxRegulationPeriods": 3
    },
-   "ticketsLink": "https://www.ticketmaster.com/event/080064EED7AF7FAC?brand=redwings&artistid=805938&wt.mc_id=NHL_TEAM_DET_SCHEDULE_GM3&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_DET&utm_content=SCHEDULE_GM3",
-   "ticketsLinkFr": "https://www.ticketmaster.com/event/080064EED7AF7FAC?brand=redwings&artistid=805938&wt.mc_id=NHL_TEAM_DET_SCHEDULE_GM3&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_DET&utm_content=SCHEDULE_GM3",
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   },
+   "winningGoalie": {
+    "playerId": 8476434,
+    "firstInitial": {
+     "default": "J."
+    },
+    "lastName": {
+     "default": "Gibson"
+    }
+   },
+   "winningGoalScorer": {
+    "playerId": 8475753,
+    "firstInitial": {
+     "default": "J."
+    },
+    "lastName": {
+     "default": "Faulk"
+    }
+   },
+   "threeMinRecap": "/video/ott-at-det-recap-6406390075112",
+   "threeMinRecapFr": "/fr/video/ott-vs-det-06-10-2026-resume-6406391559112",
+   "condensedGame": "/video/ott-at-det-condensed-game-6406391348112",
+   "condensedGameFr": "/fr/video/match-condense-senators-red-wings-06-10-2026-6406390968112",
    "gameCenterLink": "/gamecenter/ott-vs-det/2026/10/06/2026020046"
   },
   {
@@ -2947,6 +2970,13 @@
    "gameState": "FUT",
    "gameScheduleState": "OK",
    "tvBroadcasts": [
+    {
+     "id": 281,
+     "market": "N",
+     "countryCode": "CA",
+     "network": "TVAS",
+     "sequenceNumber": 120
+    },
     {
      "id": 645,
      "market": "H",

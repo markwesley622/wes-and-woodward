@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.24,
-   "percentile": 41
+   "percentile": 44
   },
   "Offense": {
    "value": -0.4,
@@ -91,75 +91,75 @@
   },
   "Defense": {
    "value": 0.2,
-   "percentile": 69
+   "percentile": 66
   },
   "Net": {
-   "value": -0.1,
+   "value": -0.2,
    "percentile": 41
   }
  },
  "score": null,
  "standIn": {
-  "value": 41.4,
+  "value": 38.4,
   "gs": 0.58,
   "gs60": 1.19,
   "gameScore": 0.58,
   "minutes": 29,
   "gp": 2,
-  "rank": 354,
-  "pool": 608,
-  "percentile": 41.8,
+  "rank": 395,
+  "pool": 625,
+  "percentile": 36.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 352,
-    "name": "Ryan Winterton",
-    "team": "SEA",
-    "pos": "C",
-    "gp": 3,
-    "value": 41.6,
-    "gs60": 0.59,
-    "isMe": false
-   },
-   {
-    "rank": 353,
-    "name": "Anthony Mantha",
-    "team": "NJD",
-    "pos": "R",
+    "rank": 393,
+    "name": "Jeff Malott",
+    "team": "ANA",
+    "pos": "L",
     "gp": 2,
-    "value": 41.4,
-    "gs60": 0.58,
+    "value": 38.7,
+    "gs60": 0.6,
     "isMe": false
    },
    {
-    "rank": 354,
+    "rank": 394,
+    "name": "Anton Johansson",
+    "team": "DET",
+    "pos": "D",
+    "gp": 3,
+    "value": 38.7,
+    "gs60": 0.6,
+    "isMe": false
+   },
+   {
+    "rank": 395,
     "name": "J.T. Compher",
     "team": "DET",
     "pos": "L",
     "gp": 2,
-    "value": 41.4,
+    "value": 38.4,
     "gs60": 0.58,
     "isMe": true
    },
    {
-    "rank": 355,
-    "name": "Trevor van Riemsdyk",
-    "team": "PIT",
+    "rank": 396,
+    "name": "Brian Dumoulin",
+    "team": "LAK",
     "pos": "D",
-    "gp": 2,
-    "value": 41.2,
+    "gp": 3,
+    "value": 38.3,
     "gs60": 0.57,
     "isMe": false
    },
    {
-    "rank": 356,
-    "name": "Erik Cernak",
+    "rank": 397,
+    "name": "Zemgus Girgensons",
     "team": "TBL",
-    "pos": "D",
-    "gp": 2,
-    "value": 41.2,
-    "gs60": 0.57,
+    "pos": "C",
+    "gp": 3,
+    "value": 38.1,
+    "gs60": 0.56,
     "isMe": false
    }
   ],
@@ -339,7 +339,7 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": 0.45
+   "gameScore": 0.49
   },
   {
    "gameId": 2026020035,
@@ -359,7 +359,7 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": 0.02
+   "gameScore": 0.0
   }
  ],
  "teamGameScore": null,
@@ -369,12 +369,12 @@
   "best": {
    "date": "2026-10-02",
    "opponent": "NYR",
-   "value": 0.45
+   "value": 0.49
   },
   "worst": {
    "date": "2026-10-04",
    "opponent": "WPG",
-   "value": 0.02
+   "value": 0
   },
   "above2": 0,
   "below0": 0

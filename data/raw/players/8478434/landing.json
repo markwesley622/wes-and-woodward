@@ -55,10 +55,10 @@
    "subSeason": {
     "assists": 0,
     "gameWinningGoals": 0,
-    "gamesPlayed": 2,
+    "gamesPlayed": 3,
     "goals": 0,
     "otGoals": 0,
-    "pim": 9,
+    "pim": 11,
     "plusMinus": 0,
     "points": 0,
     "powerPlayGoals": 0,
@@ -66,44 +66,44 @@
     "shootingPctg": 0.0,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 0
+    "shots": 1
    },
    "career": {
     "assists": 76,
     "gameWinningGoals": 5,
-    "gamesPlayed": 441,
+    "gamesPlayed": 442,
     "goals": 44,
     "otGoals": 0,
-    "pim": 332,
+    "pim": 334,
     "plusMinus": -23,
     "points": 120,
     "powerPlayGoals": 1,
     "powerPlayPoints": 1,
-    "shootingPctg": 0.1018,
+    "shootingPctg": 0.1016,
     "shorthandedGoals": 2,
     "shorthandedPoints": 5,
-    "shots": 432
+    "shots": 433
    }
   }
  },
  "careerTotals": {
   "regularSeason": {
    "assists": 76,
-   "avgToi": "11:42",
+   "avgToi": "11:43",
    "faceoffWinningPctg": 0.415,
    "gameWinningGoals": 5,
-   "gamesPlayed": 441,
+   "gamesPlayed": 442,
    "goals": 44,
    "otGoals": 0,
-   "pim": 332,
+   "pim": 334,
    "plusMinus": -23,
    "points": 120,
    "powerPlayGoals": 1,
    "powerPlayPoints": 1,
-   "shootingPctg": 0.1018,
+   "shootingPctg": 0.1016,
    "shorthandedGoals": 2,
    "shorthandedPoints": 5,
-   "shots": 432
+   "shots": 433
   },
   "playoffs": {
    "assists": 7,
@@ -128,6 +128,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-10-06",
+   "gameId": 2026020046,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "OTT",
+   "pim": 2,
+   "plusMinus": 0,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 21,
+   "shorthandedGoals": 0,
+   "shots": 1,
+   "teamAbbrev": "DET",
+   "toi": "15:07"
+  },
   {
    "assists": 0,
    "gameDate": "2026-10-04",
@@ -863,15 +881,15 @@
   },
   {
    "assists": 0,
-   "avgToi": "10:36",
+   "avgToi": "12:06",
    "faceoffWinningPctg": 0.0,
    "gameTypeId": 2,
    "gameWinningGoals": 0,
-   "gamesPlayed": 2,
+   "gamesPlayed": 3,
    "goals": 0,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
-   "pim": 9,
+   "pim": 11,
    "plusMinus": 0,
    "points": 0,
    "powerPlayGoals": 0,
@@ -881,7 +899,7 @@
    "shootingPctg": 0.0,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 0,
+   "shots": 1,
    "teamCommonName": {
     "default": "Red Wings"
    },
@@ -1007,6 +1025,16 @@
     "default": "Alex"
    },
    "playerSlug": "alex-debrincat-8479337"
+  },
+  {
+   "playerId": 8480326,
+   "lastName": {
+    "default": "Dries"
+   },
+   "firstName": {
+    "default": "Sheldon"
+   },
+   "playerSlug": "sheldon-dries-8480326"
   },
   {
    "playerId": 8477971,

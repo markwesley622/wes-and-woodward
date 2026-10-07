@@ -3,6 +3,12 @@
  "gameTypeId": 2,
  "playerStatsSeasons": [
   {
+   "season": 20262027,
+   "gameTypes": [
+    2
+   ]
+  },
+  {
    "season": 20252026,
    "gameTypes": [
     2
@@ -70,5 +76,34 @@
    ]
   }
  ],
- "gameLog": []
+ "gameLog": [
+  {
+   "gameId": 2026020046,
+   "teamAbbrev": "DET",
+   "homeRoadFlag": "H",
+   "gameDate": "2026-10-06",
+   "goals": 1,
+   "assists": 1,
+   "commonName": {
+    "default": "Red Wings"
+   },
+   "opponentCommonName": {
+    "default": "Senators",
+    "fr": "S\u00e9nateurs"
+   },
+   "points": 2,
+   "plusMinus": 0,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 1,
+   "gameWinningGoals": 0,
+   "otGoals": 0,
+   "shots": 4,
+   "shifts": 26,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "pim": 2,
+   "toi": "20:41",
+   "opponentAbbrev": "OTT"
+  }
+ ]
 }

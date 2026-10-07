@@ -26,16 +26,16 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 2,
+  "gp": 3,
   "goals": 0,
-  "assists": 0,
-  "points": 0,
-  "plusMinus": -1,
+  "assists": 3,
+  "points": 3,
+  "plusMinus": -2,
   "pim": 2,
-  "shots": 4,
+  "shots": 10,
   "shootingPct": 0.0,
-  "toiPerGame": "21:58",
-  "ppPoints": 0,
+  "toiPerGame": "21:14",
+  "ppPoints": 2,
   "wins": null,
   "losses": null,
   "otLosses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 2,
+   "gp": 3,
    "goals": 0,
-   "assists": 0,
-   "points": 0,
-   "plusMinus": -1,
+   "assists": 3,
+   "points": 3,
+   "plusMinus": -2,
    "pim": 2
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Lucas Raymond",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482078.png",
-  "gamesPlayed": 2,
+  "gamesPlayed": 3,
   "goals": 0,
-  "assists": 0,
-  "points": 0,
-  "shots": 4,
+  "assists": 3,
+  "points": 3,
+  "shots": 10,
   "shootingPct": 0.0,
-  "toiPerGame": 1318.0,
-  "ixG": 0.36,
-  "goalsAboveExpected": -0.36,
-  "gameScore": 0.4,
+  "toiPerGame": 1274.3,
+  "ixG": 0.85,
+  "goalsAboveExpected": -0.85,
+  "gameScore": 3.3,
   "fiveOnFive": {
-   "icetimeMinutes": 29.9,
-   "onIceXgPct": 0.35,
-   "onIceCorsiPct": 0.55,
-   "ixgPer60": 0.08,
+   "icetimeMinutes": 42.5,
+   "onIceXgPct": 0.45,
+   "onIceCorsiPct": 0.6,
+   "ixgPer60": 0.593,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -1.0,
-   "percentile": 6
+   "value": -0.12,
+   "percentile": 29
   },
   "Offense": {
-   "value": -0.5,
-   "percentile": 9
+   "value": -0.0,
+   "percentile": 57
   },
   "Defense": {
-   "value": -0.2,
-   "percentile": 28
+   "value": -0.4,
+   "percentile": 16
   },
   "Net": {
-   "value": -0.7,
-   "percentile": 12
+   "value": -0.4,
+   "percentile": 28
   }
  },
  "score": null,
  "standIn": {
-  "value": 38.3,
-  "gs": 0.4,
-  "gs60": 0.55,
-  "gameScore": 0.4,
-  "minutes": 44,
-  "gp": 2,
-  "rank": 387,
-  "pool": 608,
-  "percentile": 36.0,
+  "value": 75.2,
+  "gs": 3.3,
+  "gs60": 3.11,
+  "gameScore": 3.3,
+  "minutes": 64,
+  "gp": 3,
+  "rank": 81,
+  "pool": 625,
+  "percentile": 87.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 385,
-    "name": "Jake Walman",
-    "team": "EDM",
-    "pos": "D",
+    "rank": 79,
+    "name": "Viktor Arvidsson",
+    "team": "DET",
+    "pos": "L",
     "gp": 3,
-    "value": 38.3,
-    "gs60": 0.4,
+    "value": 75.3,
+    "gs60": 3.31,
     "isMe": false
    },
    {
-    "rank": 386,
-    "name": "Emil Andrae",
-    "team": "CBJ",
-    "pos": "D",
+    "rank": 80,
+    "name": "Nicolas Roy",
+    "team": "COL",
+    "pos": "C",
     "gp": 2,
-    "value": 38.3,
-    "gs60": 0.4,
+    "value": 75.3,
+    "gs60": 3.31,
     "isMe": false
    },
    {
-    "rank": 387,
+    "rank": 81,
     "name": "Lucas Raymond",
     "team": "DET",
     "pos": "L",
-    "gp": 2,
-    "value": 38.3,
-    "gs60": 0.4,
+    "gp": 3,
+    "value": 75.2,
+    "gs60": 3.3,
     "isMe": true
    },
    {
-    "rank": 388,
-    "name": "Cody Glass",
-    "team": "NJD",
-    "pos": "C",
-    "gp": 2,
-    "value": 38.3,
-    "gs60": 0.4,
+    "rank": 82,
+    "name": "David Pastrnak",
+    "team": "BOS",
+    "pos": "R",
+    "gp": 4,
+    "value": 75.1,
+    "gs60": 3.29,
     "isMe": false
    },
    {
-    "rank": 389,
-    "name": "Sam Rinzel",
-    "team": "CHI",
-    "pos": "D",
-    "gp": 2,
-    "value": 38.3,
-    "gs60": 0.4,
+    "rank": 83,
+    "name": "Timo Meier",
+    "team": "NJD",
+    "pos": "R",
+    "gp": 3,
+    "value": 75.0,
+    "gs60": 3.28,
     "isMe": false
    }
   ],
@@ -264,7 +264,7 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": -0.85
+   "gameScore": -0.81
   },
   {
    "gameId": 2026020035,
@@ -278,28 +278,48 @@
    "shots": 2,
    "pim": 2,
    "toi": 23.9,
-   "ixg": 0.1,
+   "ixg": 0.24,
    "xgf": 0.37,
    "xga": 0.98,
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": -1.16
+   "gameScore": -1.11
+  },
+  {
+   "gameId": 2026020046,
+   "date": "2026-10-06",
+   "opponent": "OTT",
+   "home": true,
+   "goals": 0,
+   "assists": 3,
+   "points": 3,
+   "plusMinus": -1,
+   "shots": 6,
+   "pim": 0,
+   "toi": 19.8,
+   "ixg": 0.4,
+   "xgf": 0.74,
+   "xga": 0.63,
+   "gf": 1.0,
+   "ga": 2.0,
+   "blocks": 1.0,
+   "gameScore": 1.56
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -1.0,
-  "games": 2,
+  "average": -0.12,
+  "games": 3,
   "best": {
-   "date": "2026-10-02",
-   "opponent": "NYR",
-   "value": -0.85
+   "date": "2026-10-06",
+   "opponent": "OTT",
+   "value": 1.56
   },
   "worst": {
    "date": "2026-10-04",
    "opponent": "WPG",
-   "value": -1.16
+   "value": -1.11
   },
   "above2": 0,
   "below0": 2

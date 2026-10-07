@@ -83,11 +83,11 @@
  "hsc": {
   "Game score": {
    "value": 0.22,
-   "percentile": 40
+   "percentile": 43
   },
   "Offense": {
    "value": -0.3,
-   "percentile": 25
+   "percentile": 27
   },
   "Defense": {
    "value": 0.0,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": -0.3,
-   "percentile": 32
+   "percentile": 33
   }
  },
  "score": null,
  "standIn": {
-  "value": 41.9,
+  "value": 38.8,
   "gs": 0.61,
   "gs60": 1.86,
   "gameScore": 0.61,
   "minutes": 20,
   "gp": 2,
-  "rank": 348,
-  "pool": 608,
-  "percentile": 42.6,
+  "rank": 389,
+  "pool": 625,
+  "percentile": 37.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 346,
-    "name": "Nils Lundkvist",
-    "team": "DAL",
+    "rank": 387,
+    "name": "Ryan McDonagh",
+    "team": "TBL",
     "pos": "D",
-    "gp": 2,
-    "value": 42.6,
-    "gs60": 0.65,
-    "isMe": false
-   },
-   {
-    "rank": 347,
-    "name": "Adam Wilsby",
-    "team": "NSH",
-    "pos": "D",
-    "gp": 2,
-    "value": 42.3,
+    "gp": 3,
+    "value": 39.1,
     "gs60": 0.63,
     "isMe": false
    },
    {
-    "rank": 348,
-    "name": "Mason Appleton",
-    "team": "DET",
-    "pos": "C",
-    "gp": 2,
-    "value": 41.9,
-    "gs60": 0.61,
-    "isMe": true
-   },
-   {
-    "rank": 349,
+    "rank": 388,
     "name": "Adam Klapka",
     "team": "CGY",
     "pos": "R",
     "gp": 3,
-    "value": 41.9,
+    "value": 38.8,
     "gs60": 0.61,
     "isMe": false
    },
    {
-    "rank": 350,
-    "name": "Anton Johansson",
+    "rank": 389,
+    "name": "Mason Appleton",
     "team": "DET",
-    "pos": "D",
+    "pos": "C",
     "gp": 2,
-    "value": 41.7,
-    "gs60": 0.6,
+    "value": 38.8,
+    "gs60": 0.61,
+    "isMe": true
+   },
+   {
+    "rank": 390,
+    "name": "Bo Groulx",
+    "team": "TOR",
+    "pos": "C",
+    "gp": 3,
+    "value": 38.8,
+    "gs60": 0.61,
+    "isMe": false
+   },
+   {
+    "rank": 391,
+    "name": "Will Cuylle",
+    "team": "NYR",
+    "pos": "L",
+    "gp": 5,
+    "value": 38.8,
+    "gs60": 0.61,
     "isMe": false
    }
   ],
@@ -304,12 +304,12 @@
    "pim": 0,
    "toi": 10.3,
    "ixg": 0.03,
-   "xgf": 0.34,
+   "xgf": 0.33,
    "xga": 0.05,
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": 0.68
+   "gameScore": 0.7
   },
   {
    "gameId": 2026020035,
@@ -329,7 +329,7 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": -0.25
+   "gameScore": -0.26
   }
  ],
  "teamGameScore": null,
@@ -339,12 +339,12 @@
   "best": {
    "date": "2026-10-02",
    "opponent": "NYR",
-   "value": 0.68
+   "value": 0.7
   },
   "worst": {
    "date": "2026-10-04",
    "opponent": "WPG",
-   "value": -0.25
+   "value": -0.26
   },
   "above2": 0,
   "below0": 1

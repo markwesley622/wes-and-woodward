@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 2,
+  "gp": 3,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "plusMinus": 0,
-  "pim": 0,
+  "plusMinus": 1,
+  "pim": 2,
   "shots": 0,
   "shootingPct": 0.0,
-  "toiPerGame": "16:20",
+  "toiPerGame": "16:38",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 2,
+   "gp": 3,
    "goals": 0,
    "assists": 0,
    "points": 0,
-   "plusMinus": 0,
-   "pim": 0
+   "plusMinus": 1,
+   "pim": 2
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Anton Johansson",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8483679.png",
-  "gamesPlayed": 2,
+  "gamesPlayed": 3,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 0,
   "shootingPct": 0.0,
-  "toiPerGame": 980.0,
+  "toiPerGame": 997.7,
   "ixG": 0.08,
   "goalsAboveExpected": -0.08,
   "gameScore": 0.6,
   "fiveOnFive": {
-   "icetimeMinutes": 30.5,
-   "onIceXgPct": 0.39,
-   "onIceCorsiPct": 0.61,
-   "ixgPer60": 0.157,
+   "icetimeMinutes": 43.6,
+   "onIceXgPct": 0.46,
+   "onIceCorsiPct": 0.57,
+   "ixgPer60": 0.11,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.44,
-   "percentile": 18
+   "value": -0.01,
+   "percentile": 34
   },
   "Offense": {
-   "value": -0.5,
-   "percentile": 11
+   "value": -0.6,
+   "percentile": 8
   },
   "Defense": {
-   "value": 0.1,
-   "percentile": 61
+   "value": 0.4,
+   "percentile": 80
   },
   "Net": {
-   "value": -0.4,
-   "percentile": 28
+   "value": -0.2,
+   "percentile": 38
   }
  },
  "score": null,
  "standIn": {
-  "value": 41.7,
+  "value": 38.7,
   "gs": 0.6,
-  "gs60": 1.1,
+  "gs60": 0.72,
   "gameScore": 0.6,
-  "minutes": 33,
-  "gp": 2,
-  "rank": 350,
-  "pool": 608,
-  "percentile": 42.3,
+  "minutes": 50,
+  "gp": 3,
+  "rank": 394,
+  "pool": 625,
+  "percentile": 37.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 348,
-    "name": "Mason Appleton",
-    "team": "DET",
-    "pos": "C",
-    "gp": 2,
-    "value": 41.9,
-    "gs60": 0.61,
-    "isMe": false
-   },
-   {
-    "rank": 349,
-    "name": "Adam Klapka",
-    "team": "CGY",
-    "pos": "R",
+    "rank": 392,
+    "name": "Trevor Moore",
+    "team": "LAK",
+    "pos": "L",
     "gp": 3,
-    "value": 41.9,
-    "gs60": 0.61,
+    "value": 38.7,
+    "gs60": 0.6,
     "isMe": false
    },
    {
-    "rank": 350,
-    "name": "Anton Johansson",
-    "team": "DET",
-    "pos": "D",
-    "gp": 2,
-    "value": 41.7,
-    "gs60": 0.6,
-    "isMe": true
-   },
-   {
-    "rank": 351,
+    "rank": 393,
     "name": "Jeff Malott",
     "team": "ANA",
     "pos": "L",
     "gp": 2,
-    "value": 41.7,
+    "value": 38.7,
     "gs60": 0.6,
     "isMe": false
    },
    {
-    "rank": 352,
-    "name": "Ryan Winterton",
-    "team": "SEA",
-    "pos": "C",
+    "rank": 394,
+    "name": "Anton Johansson",
+    "team": "DET",
+    "pos": "D",
     "gp": 3,
-    "value": 41.6,
-    "gs60": 0.59,
+    "value": 38.7,
+    "gs60": 0.6,
+    "isMe": true
+   },
+   {
+    "rank": 395,
+    "name": "J.T. Compher",
+    "team": "DET",
+    "pos": "L",
+    "gp": 2,
+    "value": 38.4,
+    "gs60": 0.58,
+    "isMe": false
+   },
+   {
+    "rank": 396,
+    "name": "Brian Dumoulin",
+    "team": "LAK",
+    "pos": "D",
+    "gp": 3,
+    "value": 38.3,
+    "gs60": 0.57,
     "isMe": false
    }
   ],
@@ -183,12 +183,12 @@
    "pim": 0,
    "toi": 19.2,
    "ixg": 0.04,
-   "xgf": 0.35,
+   "xgf": 0.33,
    "xga": 0.81,
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": -0.57
+   "gameScore": -0.59
   },
   {
    "gameId": 2026020035,
@@ -208,22 +208,42 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": -0.31
+   "gameScore": -0.35
+  },
+  {
+   "gameId": 2026020046,
+   "date": "2026-10-06",
+   "opponent": "OTT",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 1,
+   "shots": 0,
+   "pim": 2,
+   "toi": 17.2,
+   "ixg": 0.0,
+   "xgf": 0.39,
+   "xga": 0.34,
+   "gf": 1.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 0.92
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.44,
-  "games": 2,
+  "average": -0.01,
+  "games": 3,
   "best": {
-   "date": "2026-10-04",
-   "opponent": "WPG",
-   "value": -0.31
+   "date": "2026-10-06",
+   "opponent": "OTT",
+   "value": 0.92
   },
   "worst": {
    "date": "2026-10-02",
    "opponent": "NYR",
-   "value": -0.57
+   "value": -0.59
   },
   "above2": 0,
   "below0": 2

@@ -26,16 +26,16 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 2,
-  "goals": 0,
-  "assists": 0,
-  "points": 0,
-  "plusMinus": 0,
+  "gp": 3,
+  "goals": 1,
+  "assists": 1,
+  "points": 2,
+  "plusMinus": 3,
   "pim": 2,
-  "shots": 4,
-  "shootingPct": 0.0,
-  "toiPerGame": "20:31",
-  "ppPoints": 0,
+  "shots": 7,
+  "shootingPct": 0.142857,
+  "toiPerGame": "19:47",
+  "ppPoints": 1,
   "wins": null,
   "losses": null,
   "otLosses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 2,
-   "goals": 0,
-   "assists": 0,
-   "points": 0,
-   "plusMinus": 0,
+   "gp": 3,
+   "goals": 1,
+   "assists": 1,
+   "points": 2,
+   "plusMinus": 3,
    "pim": 2
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Justin Faulk",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475753.png",
-  "gamesPlayed": 2,
-  "goals": 0,
-  "assists": 0,
-  "points": 0,
-  "shots": 4,
-  "shootingPct": 0.0,
-  "toiPerGame": 1230.5,
-  "ixG": 0.24,
-  "goalsAboveExpected": -0.24,
-  "gameScore": 0.45,
+  "gamesPlayed": 3,
+  "goals": 1,
+  "assists": 1,
+  "points": 2,
+  "shots": 7,
+  "shootingPct": 0.142857,
+  "toiPerGame": 1187.3,
+  "ixG": 0.38,
+  "goalsAboveExpected": 0.62,
+  "gameScore": 3.03,
   "fiveOnFive": {
-   "icetimeMinutes": 33.4,
-   "onIceXgPct": 0.5,
-   "onIceCorsiPct": 0.56,
-   "ixgPer60": 0.342,
+   "icetimeMinutes": 46.1,
+   "onIceXgPct": 0.63,
+   "onIceCorsiPct": 0.62,
+   "ixgPer60": 0.43,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.58,
-   "percentile": 14
+   "value": 1.32,
+   "percentile": 85
   },
   "Offense": {
-   "value": -0.5,
-   "percentile": 10
+   "value": 0.3,
+   "percentile": 79
   },
   "Defense": {
-   "value": 0.0,
-   "percentile": 50
+   "value": 0.5,
+   "percentile": 86
   },
   "Net": {
-   "value": -0.5,
-   "percentile": 21
+   "value": 0.8,
+   "percentile": 86
   }
  },
  "score": null,
  "standIn": {
-  "value": 39.2,
-  "gs": 0.45,
-  "gs60": 0.66,
-  "gameScore": 0.45,
-  "minutes": 41,
-  "gp": 2,
-  "rank": 376,
-  "pool": 608,
-  "percentile": 37.7,
+  "value": 72.2,
+  "gs": 3.03,
+  "gs60": 3.06,
+  "gameScore": 3.03,
+  "minutes": 59,
+  "gp": 3,
+  "rank": 97,
+  "pool": 625,
+  "percentile": 84.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 374,
-    "name": "Morgan Barron",
-    "team": "WPG",
-    "pos": "C",
-    "gp": 2,
-    "value": 39.3,
-    "gs60": 0.46,
-    "isMe": false
-   },
-   {
-    "rank": 375,
-    "name": "Juraj Slafkovsk",
+    "rank": 95,
+    "name": "Chris Kreider",
     "team": "MTL",
     "pos": "L",
-    "gp": 2,
-    "value": 39.3,
-    "gs60": 0.46,
+    "gp": 3,
+    "value": 72.5,
+    "gs60": 3.06,
     "isMe": false
    },
    {
-    "rank": 376,
+    "rank": 96,
+    "name": "Lawson Crouse",
+    "team": "UTA",
+    "pos": "L",
+    "gp": 4,
+    "value": 72.3,
+    "gs60": 3.04,
+    "isMe": false
+   },
+   {
+    "rank": 97,
     "name": "Justin Faulk",
     "team": "DET",
     "pos": "D",
-    "gp": 2,
-    "value": 39.2,
-    "gs60": 0.45,
+    "gp": 3,
+    "value": 72.2,
+    "gs60": 3.03,
     "isMe": true
    },
    {
-    "rank": 377,
-    "name": "Jonathan Aspirot",
-    "team": "BOS",
-    "pos": "D",
+    "rank": 98,
+    "name": "Hendrix Lapierre",
+    "team": "PIT",
+    "pos": "C",
     "gp": 3,
-    "value": 39.2,
-    "gs60": 0.45,
+    "value": 72.0,
+    "gs60": 3.02,
     "isMe": false
    },
    {
-    "rank": 378,
-    "name": "Aaron Ekblad",
-    "team": "FLA",
-    "pos": "D",
-    "gp": 2,
-    "value": 39.2,
-    "gs60": 0.45,
+    "rank": 99,
+    "name": "Shane Wright",
+    "team": "SEA",
+    "pos": "C",
+    "gp": 4,
+    "value": 71.8,
+    "gs60": 3.0,
     "isMe": false
    }
   ],
@@ -414,7 +414,7 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": -0.81
+   "gameScore": -0.8
   },
   {
    "gameId": 2026020035,
@@ -428,30 +428,50 @@
    "shots": 3,
    "pim": 0,
    "toi": 19.5,
-   "ixg": 0.26,
+   "ixg": 0.3,
    "xgf": 0.74,
    "xga": 0.75,
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": -0.34
+   "gameScore": -0.37
+  },
+  {
+   "gameId": 2026020046,
+   "date": "2026-10-06",
+   "opponent": "OTT",
+   "home": true,
+   "goals": 1,
+   "assists": 1,
+   "points": 2,
+   "plusMinus": 3,
+   "shots": 3,
+   "pim": 0,
+   "toi": 18.4,
+   "ixg": 0.15,
+   "xgf": 0.92,
+   "xga": 0.14,
+   "gf": 3.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 5.14
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.58,
-  "games": 2,
+  "average": 1.32,
+  "games": 3,
   "best": {
-   "date": "2026-10-04",
-   "opponent": "WPG",
-   "value": -0.34
+   "date": "2026-10-06",
+   "opponent": "OTT",
+   "value": 5.14
   },
   "worst": {
    "date": "2026-10-02",
    "opponent": "NYR",
-   "value": -0.81
+   "value": -0.8
   },
-  "above2": 0,
+  "above2": 1,
   "below0": 2
  },
  "prospect": false,

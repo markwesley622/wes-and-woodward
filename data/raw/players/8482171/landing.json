@@ -48,9 +48,83 @@
  "playerSlug": "william-wallinder-8482171",
  "inTop100AllTime": 0,
  "inHHOF": 0,
+ "featuredStats": {
+  "season": 20262027,
+  "regularSeason": {
+   "subSeason": {
+    "assists": 1,
+    "gameWinningGoals": 0,
+    "gamesPlayed": 1,
+    "goals": 0,
+    "otGoals": 0,
+    "pim": 0,
+    "plusMinus": 2,
+    "points": 1,
+    "powerPlayGoals": 0,
+    "powerPlayPoints": 0,
+    "shootingPctg": 0.0,
+    "shorthandedGoals": 0,
+    "shorthandedPoints": 0,
+    "shots": 0
+   },
+   "career": {
+    "assists": 1,
+    "gameWinningGoals": 0,
+    "gamesPlayed": 1,
+    "goals": 0,
+    "otGoals": 0,
+    "pim": 0,
+    "plusMinus": 2,
+    "points": 1,
+    "powerPlayGoals": 0,
+    "powerPlayPoints": 0,
+    "shorthandedGoals": 0,
+    "shorthandedPoints": 0,
+    "shots": 0
+   }
+  }
+ },
+ "careerTotals": {
+  "regularSeason": {
+   "assists": 1,
+   "avgToi": "9:07",
+   "gameWinningGoals": 0,
+   "gamesPlayed": 1,
+   "goals": 0,
+   "otGoals": 0,
+   "pim": 0,
+   "plusMinus": 2,
+   "points": 1,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 0,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "shots": 0
+  }
+ },
  "shopLink": "#TODO",
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
+ "last5Games": [
+  {
+   "assists": 1,
+   "gameDate": "2026-10-06",
+   "gameId": 2026020046,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "OTT",
+   "pim": 0,
+   "plusMinus": 2,
+   "points": 1,
+   "powerPlayGoals": 0,
+   "shifts": 15,
+   "shorthandedGoals": 0,
+   "shots": 0,
+   "teamAbbrev": "DET",
+   "toi": "9:07"
+  }
+ ],
  "seasonTotals": [
   {
    "assists": 3,
@@ -582,6 +656,39 @@
    "teamName": {
     "default": "Grand Rapids Griffins"
    }
+  },
+  {
+   "assists": 1,
+   "avgToi": "9:07",
+   "faceoffWinningPctg": 0.0,
+   "gameTypeId": 2,
+   "gameWinningGoals": 0,
+   "gamesPlayed": 1,
+   "goals": 0,
+   "leagueAbbrev": "NHL",
+   "otGoals": 0,
+   "pim": 0,
+   "plusMinus": 2,
+   "points": 1,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 0,
+   "season": 20262027,
+   "sequence": 1,
+   "shootingPctg": 0.0,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "shots": 0,
+   "teamCommonName": {
+    "default": "Red Wings"
+   },
+   "teamName": {
+    "default": "Detroit Red Wings",
+    "fr": "Red Wings de Detroit"
+   },
+   "teamPlaceNameWithPreposition": {
+    "default": "Detroit",
+    "fr": "de Detroit"
+   }
   }
  ],
  "currentTeamRoster": [
@@ -674,6 +781,16 @@
     "default": "Alex"
    },
    "playerSlug": "alex-debrincat-8479337"
+  },
+  {
+   "playerId": 8480326,
+   "lastName": {
+    "default": "Dries"
+   },
+   "firstName": {
+    "default": "Sheldon"
+   },
+   "playerSlug": "sheldon-dries-8480326"
   },
   {
    "playerId": 8477971,

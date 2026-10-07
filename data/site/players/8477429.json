@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 2,
+  "gp": 3,
   "goals": 0,
   "assists": 1,
   "points": 1,
   "plusMinus": -1,
-  "pim": 0,
-  "shots": 2,
+  "pim": 2,
+  "shots": 5,
   "shootingPct": 0.0,
-  "toiPerGame": "23:01",
+  "toiPerGame": "21:28",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 2,
+   "gp": 3,
    "goals": 0,
    "assists": 1,
    "points": 1,
    "plusMinus": -1,
-   "pim": 0
+   "pim": 2
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Andrew Copp",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477429.png",
-  "gamesPlayed": 2,
+  "gamesPlayed": 3,
   "goals": 0,
   "assists": 1,
   "points": 1,
-  "shots": 2,
+  "shots": 5,
   "shootingPct": 0.0,
-  "toiPerGame": 1380.5,
-  "ixG": 0.28,
-  "goalsAboveExpected": -0.28,
-  "gameScore": 1.12,
+  "toiPerGame": 1288.3,
+  "ixG": 0.57,
+  "goalsAboveExpected": -0.57,
+  "gameScore": 0.87,
   "fiveOnFive": {
-   "icetimeMinutes": 28.6,
-   "onIceXgPct": 0.39,
-   "onIceCorsiPct": 0.52,
-   "ixgPer60": 0.524,
+   "icetimeMinutes": 40.8,
+   "onIceXgPct": 0.45,
+   "onIceCorsiPct": 0.46,
+   "ixgPer60": 0.515,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.63,
-   "percentile": 13
+   "value": -0.27,
+   "percentile": 23
   },
   "Offense": {
-   "value": -0.3,
-   "percentile": 27
+   "value": -0.6,
+   "percentile": 9
   },
   "Defense": {
-   "value": -0.2,
-   "percentile": 26
+   "value": 0.1,
+   "percentile": 52
   },
   "Net": {
    "value": -0.5,
-   "percentile": 19
+   "percentile": 22
   }
  },
  "score": null,
  "standIn": {
-  "value": 50.9,
-  "gs": 1.12,
-  "gs60": 1.46,
-  "gameScore": 1.12,
-  "minutes": 46,
-  "gp": 2,
-  "rank": 261,
-  "pool": 608,
-  "percentile": 57.1,
+  "value": 42.5,
+  "gs": 0.87,
+  "gs60": 0.81,
+  "gameScore": 0.87,
+  "minutes": 64,
+  "gp": 3,
+  "rank": 348,
+  "pool": 625,
+  "percentile": 44.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 259,
-    "name": "Mike Matheson",
-    "team": "MTL",
-    "pos": "D",
-    "gp": 2,
-    "value": 51.1,
-    "gs60": 1.13,
-    "isMe": false
-   },
-   {
-    "rank": 260,
-    "name": "Zach Hyman",
+    "rank": 346,
+    "name": "Isaac Howard",
     "team": "EDM",
     "pos": "L",
-    "gp": 1,
-    "value": 51.1,
-    "gs60": 1.13,
+    "gp": 3,
+    "value": 42.6,
+    "gs60": 0.88,
     "isMe": false
    },
    {
-    "rank": 261,
+    "rank": 347,
+    "name": "Ben Chiarot",
+    "team": "DET",
+    "pos": "D",
+    "gp": 3,
+    "value": 42.6,
+    "gs60": 0.88,
+    "isMe": false
+   },
+   {
+    "rank": 348,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
-    "gp": 2,
-    "value": 50.9,
-    "gs60": 1.12,
+    "gp": 3,
+    "value": 42.5,
+    "gs60": 0.87,
     "isMe": true
    },
    {
-    "rank": 262,
-    "name": "Marcus Foligno",
-    "team": "MIN",
-    "pos": "L",
-    "gp": 2,
-    "value": 50.5,
-    "gs60": 1.1,
+    "rank": 349,
+    "name": "Logan Stanley",
+    "team": "NYI",
+    "pos": "D",
+    "gp": 3,
+    "value": 42.2,
+    "gs60": 0.85,
     "isMe": false
    },
    {
-    "rank": 263,
-    "name": "Owen Michaels",
-    "team": "EDM",
-    "pos": "R",
+    "rank": 350,
+    "name": "Dylan DeMelo",
+    "team": "WPG",
+    "pos": "D",
     "gp": 3,
-    "value": 50.5,
-    "gs60": 1.1,
+    "value": 42.2,
+    "gs60": 0.85,
     "isMe": false
    }
   ],
@@ -369,7 +369,7 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": -0.81
+   "gameScore": -0.77
   },
   {
    "gameId": 2026020035,
@@ -389,22 +389,42 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": -0.45
+   "gameScore": -0.44
+  },
+  {
+   "gameId": 2026020046,
+   "date": "2026-10-06",
+   "opponent": "OTT",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 3,
+   "pim": 2,
+   "toi": 18.4,
+   "ixg": 0.22,
+   "xgf": 0.19,
+   "xga": 0.14,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 0.39
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.63,
-  "games": 2,
+  "average": -0.27,
+  "games": 3,
   "best": {
-   "date": "2026-10-04",
-   "opponent": "WPG",
-   "value": -0.45
+   "date": "2026-10-06",
+   "opponent": "OTT",
+   "value": 0.39
   },
   "worst": {
    "date": "2026-10-02",
    "opponent": "NYR",
-   "value": -0.81
+   "value": -0.77
   },
   "above2": 0,
   "below0": 2

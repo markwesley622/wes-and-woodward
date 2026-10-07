@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 2,
+  "gp": 3,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "plusMinus": 0,
-  "pim": 9,
-  "shots": 0,
+  "pim": 11,
+  "shots": 1,
   "shootingPct": 0.0,
-  "toiPerGame": "10:36",
+  "toiPerGame": "12:06",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 2,
+   "gp": 3,
    "goals": 0,
    "assists": 0,
    "points": 0,
    "plusMinus": 0,
-   "pim": 9
+   "pim": 11
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Keegan Kolesar",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478434.png",
-  "gamesPlayed": 2,
+  "gamesPlayed": 3,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "shots": 0,
+  "shots": 1,
   "shootingPct": 0.0,
-  "toiPerGame": 636.0,
-  "ixG": 0.0,
-  "goalsAboveExpected": 0.0,
-  "gameScore": 0.75,
+  "toiPerGame": 726.3,
+  "ixG": 0.13,
+  "goalsAboveExpected": -0.13,
+  "gameScore": 0.38,
   "fiveOnFive": {
-   "icetimeMinutes": 18.2,
-   "onIceXgPct": 0.82,
-   "onIceCorsiPct": 0.77,
-   "ixgPer60": 0.0,
+   "icetimeMinutes": 30.2,
+   "onIceXgPct": 0.75,
+   "onIceCorsiPct": 0.56,
+   "ixgPer60": 0.258,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.48,
-   "percentile": 55
+   "value": 0.46,
+   "percentile": 56
   },
   "Offense": {
-   "value": -0.3,
-   "percentile": 29
+   "value": -0.6,
+   "percentile": 10
   },
   "Defense": {
-   "value": 0.3,
-   "percentile": 75
+   "value": 0.6,
+   "percentile": 91
   },
   "Net": {
-   "value": 0.0,
-   "percentile": 54
+   "value": -0.0,
+   "percentile": 53
   }
  },
  "score": null,
  "standIn": {
-  "value": 44.3,
-  "gs": 0.75,
-  "gs60": 2.12,
-  "gameScore": 0.75,
-  "minutes": 21,
-  "gp": 2,
-  "rank": 328,
-  "pool": 608,
-  "percentile": 45.9,
+  "value": 35.7,
+  "gs": 0.38,
+  "gs60": 0.63,
+  "gameScore": 0.38,
+  "minutes": 36,
+  "gp": 3,
+  "rank": 425,
+  "pool": 625,
+  "percentile": 31.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 326,
-    "name": "Noah Warren",
-    "team": "ANA",
-    "pos": "D",
-    "gp": 2,
-    "value": 44.3,
-    "gs60": 0.75,
+    "rank": 423,
+    "name": "Zack Ostapchuk",
+    "team": "SJS",
+    "pos": "C",
+    "gp": 3,
+    "value": 35.8,
+    "gs60": 0.39,
     "isMe": false
    },
    {
-    "rank": 327,
-    "name": "Noah Dobson",
-    "team": "MTL",
+    "rank": 424,
+    "name": "Emil Lilleberg",
+    "team": "TBL",
     "pos": "D",
-    "gp": 2,
-    "value": 44.3,
-    "gs60": 0.75,
+    "gp": 1,
+    "value": 35.7,
+    "gs60": 0.38,
     "isMe": false
    },
    {
-    "rank": 328,
+    "rank": 425,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
-    "gp": 2,
-    "value": 44.3,
-    "gs60": 0.75,
+    "gp": 3,
+    "value": 35.7,
+    "gs60": 0.38,
     "isMe": true
    },
    {
-    "rank": 329,
-    "name": "Alex Newhook",
-    "team": "MTL",
-    "pos": "C",
+    "rank": 426,
+    "name": "Jordan Kyrou",
+    "team": "WSH",
+    "pos": "R",
     "gp": 2,
-    "value": 44.3,
-    "gs60": 0.75,
+    "value": 35.7,
+    "gs60": 0.38,
     "isMe": false
    },
    {
-    "rank": 330,
-    "name": "Dalibor Dvorsky",
-    "team": "STL",
-    "pos": "R",
-    "gp": 2,
-    "value": 44.2,
-    "gs60": 0.74,
+    "rank": 427,
+    "name": "Ridly Greig",
+    "team": "OTT",
+    "pos": "C",
+    "gp": 1,
+    "value": 35.6,
+    "gs60": 0.37,
     "isMe": false
    }
   ],
@@ -294,7 +294,7 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": 0.73
+   "gameScore": 0.76
   },
   {
    "gameId": 2026020035,
@@ -314,22 +314,42 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": 0.23
+   "gameScore": 0.28
+  },
+  {
+   "gameId": 2026020046,
+   "date": "2026-10-06",
+   "opponent": "OTT",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 2,
+   "toi": 15.1,
+   "ixg": 0.04,
+   "xgf": 0.18,
+   "xga": 0.16,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 3.0,
+   "gameScore": 0.34
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.48,
-  "games": 2,
+  "average": 0.46,
+  "games": 3,
   "best": {
    "date": "2026-10-02",
    "opponent": "NYR",
-   "value": 0.73
+   "value": 0.76
   },
   "worst": {
    "date": "2026-10-04",
    "opponent": "WPG",
-   "value": 0.23
+   "value": 0.28
   },
   "above2": 0,
   "below0": 0

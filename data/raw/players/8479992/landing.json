@@ -57,7 +57,7 @@
    "subSeason": {
     "assists": 0,
     "gameWinningGoals": 0,
-    "gamesPlayed": 2,
+    "gamesPlayed": 3,
     "goals": 0,
     "otGoals": 0,
     "pim": 2,
@@ -73,7 +73,7 @@
    "career": {
     "assists": 88,
     "gameWinningGoals": 7,
-    "gamesPlayed": 456,
+    "gamesPlayed": 457,
     "goals": 66,
     "otGoals": 0,
     "pim": 245,
@@ -91,10 +91,10 @@
  "careerTotals": {
   "regularSeason": {
    "assists": 88,
-   "avgToi": "13:57",
-   "faceoffWinningPctg": 0.48100000000000004,
+   "avgToi": "13:58",
+   "faceoffWinningPctg": 0.4808,
    "gameWinningGoals": 7,
-   "gamesPlayed": 456,
+   "gamesPlayed": 457,
    "goals": 66,
    "otGoals": 0,
    "pim": 245,
@@ -112,6 +112,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-10-06",
+   "gameId": 2026020046,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "OTT",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 28,
+   "shorthandedGoals": 0,
+   "shots": 0,
+   "teamAbbrev": "DET",
+   "toi": "20:05"
+  },
   {
    "assists": 0,
    "gameDate": "2026-10-04",
@@ -633,11 +651,11 @@
   },
   {
    "assists": 0,
-   "avgToi": "15:32",
-   "faceoffWinningPctg": 0.5,
+   "avgToi": "17:03",
+   "faceoffWinningPctg": 0.333333,
    "gameTypeId": 2,
    "gameWinningGoals": 0,
-   "gamesPlayed": 2,
+   "gamesPlayed": 3,
    "goals": 0,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
@@ -755,6 +773,16 @@
     "default": "Alex"
    },
    "playerSlug": "alex-debrincat-8479337"
+  },
+  {
+   "playerId": 8480326,
+   "lastName": {
+    "default": "Dries"
+   },
+   "firstName": {
+    "default": "Sheldon"
+   },
+   "playerSlug": "sheldon-dries-8480326"
   },
   {
    "playerId": 8477971,

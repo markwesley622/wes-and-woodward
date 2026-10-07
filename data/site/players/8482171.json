@@ -4,7 +4,6 @@
  "slug": "william-wallinder",
  "season": "20262027",
  "seasonLabel": "2026-27",
- "kind": "S",
  "bio": {
   "number": 54,
   "position": "D",
@@ -23,21 +22,192 @@
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482171.png",
   "silhouette": "/players/8482171.png"
  },
+ "kind": "S",
  "seasonLine": {
-  "league": null
+  "league": "NHL",
+  "team": null,
+  "gp": 1,
+  "goals": 0,
+  "assists": 1,
+  "points": 1,
+  "plusMinus": 2,
+  "pim": 0,
+  "shots": 0,
+  "shootingPct": 0.0,
+  "toiPerGame": "9:07",
+  "ppPoints": 0,
+  "wins": null,
+  "losses": null,
+  "otLosses": null,
+  "gaa": null,
+  "savePct": null,
+  "shutouts": null
  },
- "seasonLines": [],
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 1,
+   "goals": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": 2,
+   "pim": 0
+  }
+ ],
+ "moneypuck": {
+  "playerId": 8482171,
+  "name": "William Wallinder",
+  "position": "D",
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482171.png",
+  "gamesPlayed": 1,
+  "goals": 0,
+  "assists": 1,
+  "points": 1,
+  "shots": 0,
+  "shootingPct": 0.0,
+  "toiPerGame": 547.0,
+  "ixG": 0.0,
+  "goalsAboveExpected": 0.0,
+  "gameScore": 1.35,
+  "fiveOnFive": {
+   "icetimeMinutes": 7.8,
+   "onIceXgPct": 0.86,
+   "onIceCorsiPct": 0.67,
+   "ixgPer60": 0.0,
+   "pctl_onIceXgPct": null,
+   "pctl_ixgPer60": null,
+   "qualifiesForPercentiles": false
+  }
+ },
+ "hsc": {
+  "Game score": {
+   "value": 3.16,
+   "percentile": 99
+  },
+  "Offense": {
+   "value": 0.5,
+   "percentile": 83
+  },
+  "Defense": {
+   "value": 0.2,
+   "percentile": 62
+  },
+  "Net": {
+   "value": 0.6,
+   "percentile": 82
+  }
+ },
  "score": null,
- "gameLog": [],
- "gameScore": null,
- "teamGameScore": null,
+ "standIn": {
+  "value": 49.4,
+  "gs": 1.35,
+  "gs60": 8.88,
+  "gameScore": 1.35,
+  "minutes": 9,
+  "gp": 1,
+  "rank": 278,
+  "pool": 625,
+  "percentile": 54.9,
+  "group": "skaters",
+  "standIn": true,
+  "neighbours": [
+   {
+    "rank": 276,
+    "name": "Jordan Staal",
+    "team": "CAR",
+    "pos": "C",
+    "gp": 4,
+    "value": 49.8,
+    "gs60": 1.38,
+    "isMe": false
+   },
+   {
+    "rank": 277,
+    "name": "Boone Jenner",
+    "team": "WSH",
+    "pos": "C",
+    "gp": 2,
+    "value": 49.7,
+    "gs60": 1.37,
+    "isMe": false
+   },
+   {
+    "rank": 278,
+    "name": "William Wallinder",
+    "team": "DET",
+    "pos": "D",
+    "gp": 1,
+    "value": 49.4,
+    "gs60": 1.35,
+    "isMe": true
+   },
+   {
+    "rank": 279,
+    "name": "Mackie Samoskevich",
+    "team": "SEA",
+    "pos": "R",
+    "gp": 3,
+    "value": 49.4,
+    "gs60": 1.35,
+    "isMe": false
+   },
+   {
+    "rank": 280,
+    "name": "Adam Pelech",
+    "team": "NYI",
+    "pos": "D",
+    "gp": 3,
+    "value": 49.4,
+    "gs60": 1.35,
+    "isMe": false
+   }
+  ],
+  "method": "Stand-in until the W&W value is computable: season game score (MoneyPuck, all situations; a counting stat, so ice time is already in it), scaled 0-100 the same way, among every NHL skater who has played this season."
+ },
  "impact": [],
  "career": [],
  "comps": [],
  "myComponents": null,
- "moneypuck": {},
- "hsc": {},
- "note": "No NHL games in 2026-27; the line shown is his most recent season.",
+ "gameLog": [
+  {
+   "gameId": 2026020046,
+   "date": "2026-10-06",
+   "opponent": "OTT",
+   "home": true,
+   "goals": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": 2,
+   "shots": 0,
+   "pim": 0,
+   "toi": 9.1,
+   "ixg": 0.0,
+   "xgf": 0.63,
+   "xga": 0.13,
+   "gf": 2.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 3.16
+  }
+ ],
+ "teamGameScore": null,
+ "gameScore": {
+  "average": 3.16,
+  "games": 1,
+  "best": {
+   "date": "2026-10-06",
+   "opponent": "OTT",
+   "value": 3.16
+  },
+  "worst": {
+   "date": "2026-10-06",
+   "opponent": "OTT",
+   "value": 3.16
+  },
+  "above2": 1,
+  "below0": 0
+ },
  "prospect": false,
  "prospectStatus": {
   "prospect": false,

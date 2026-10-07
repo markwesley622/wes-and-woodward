@@ -53,63 +53,81 @@
   "season": 20262027,
   "regularSeason": {
    "subSeason": {
-    "assists": 0,
+    "assists": 1,
     "gameWinningGoals": 0,
-    "gamesPlayed": 2,
+    "gamesPlayed": 3,
     "goals": 0,
     "otGoals": 0,
     "pim": 2,
-    "plusMinus": 0,
-    "points": 0,
+    "plusMinus": 1,
+    "points": 1,
     "powerPlayGoals": 0,
     "powerPlayPoints": 0,
     "shootingPctg": 0.0,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 1
+    "shots": 2
    },
    "career": {
-    "assists": 5,
+    "assists": 6,
     "gameWinningGoals": 0,
-    "gamesPlayed": 30,
+    "gamesPlayed": 31,
     "goals": 2,
     "otGoals": 0,
     "pim": 6,
-    "plusMinus": -7,
-    "points": 7,
+    "plusMinus": -6,
+    "points": 8,
     "powerPlayGoals": 0,
     "powerPlayPoints": 3,
-    "shootingPctg": 0.0625,
+    "shootingPctg": 0.060599999999999994,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 32
+    "shots": 33
    }
   }
  },
  "careerTotals": {
   "regularSeason": {
-   "assists": 5,
-   "avgToi": "10:55",
-   "faceoffWinningPctg": 0.39130000000000004,
+   "assists": 6,
+   "avgToi": "10:49",
+   "faceoffWinningPctg": 0.39880000000000004,
    "gameWinningGoals": 0,
-   "gamesPlayed": 30,
+   "gamesPlayed": 31,
    "goals": 2,
    "otGoals": 0,
    "pim": 6,
-   "plusMinus": -7,
-   "points": 7,
+   "plusMinus": -6,
+   "points": 8,
    "powerPlayGoals": 0,
    "powerPlayPoints": 3,
-   "shootingPctg": 0.0625,
+   "shootingPctg": 0.060599999999999994,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 32
+   "shots": 33
   }
  },
  "shopLink": "#TODO",
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 1,
+   "gameDate": "2026-10-06",
+   "gameId": 2026020046,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "OTT",
+   "pim": 0,
+   "plusMinus": 1,
+   "points": 1,
+   "powerPlayGoals": 0,
+   "shifts": 13,
+   "shorthandedGoals": 0,
+   "shots": 1,
+   "teamAbbrev": "DET",
+   "toi": "8:02"
+  },
   {
    "assists": 0,
    "gameDate": "2026-10-04",
@@ -503,18 +521,18 @@
    }
   },
   {
-   "assists": 0,
-   "avgToi": "8:55",
-   "faceoffWinningPctg": 0.533333,
+   "assists": 1,
+   "avgToi": "8:37",
+   "faceoffWinningPctg": 0.545455,
    "gameTypeId": 2,
    "gameWinningGoals": 0,
-   "gamesPlayed": 2,
+   "gamesPlayed": 3,
    "goals": 0,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
    "pim": 2,
-   "plusMinus": 0,
-   "points": 0,
+   "plusMinus": 1,
+   "points": 1,
    "powerPlayGoals": 0,
    "powerPlayPoints": 0,
    "season": 20262027,
@@ -522,7 +540,7 @@
    "shootingPctg": 0.0,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 1,
+   "shots": 2,
    "teamCommonName": {
     "default": "Red Wings"
    },
@@ -626,6 +644,16 @@
     "default": "Alex"
    },
    "playerSlug": "alex-debrincat-8479337"
+  },
+  {
+   "playerId": 8480326,
+   "lastName": {
+    "default": "Dries"
+   },
+   "firstName": {
+    "default": "Sheldon"
+   },
+   "playerSlug": "sheldon-dries-8480326"
   },
   {
    "playerId": 8477971,
