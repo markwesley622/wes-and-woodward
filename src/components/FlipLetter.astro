@@ -1,0 +1,57 @@
+---
+// A block letter in the Initials family (stroke-only display face, extruded by stacking SVG layers
+// down the Z axis) that turns on its vertical axis as the thumbnail climbs through the viewport.
+// The front of the slab is carved with one letter and the back with another, so a half turn reads
+// as a different letter: O on the way in, D once it has swung round (Mark, 10/7). Front-half layers
+// face forward and carry the front letter; back-half layers are turned 180deg and carry the back
+// letter, so with backface-visibility hidden each half is only ever seen from its own side. The
+// rotation is one custom property (--p) on an element transform, never an SVG attribute.
+const { id = 'flipletter', front = 'O', back = 'D' } = Astro.props;
+const N = 16, STEP = 4, depth = (N - 1) * STEP;
+const layers = Array.from({ length: N }, (_, i) => {
+  const z = -i * STEP;                                   // 0 is the face, -depth is the back
+  const isBack = i >= N / 2;
+  return { z, isBack, edge: i === 0 || i === N - 1 };
+});
+const SIZE = 250;
+---
+<div class="fl" id={id} aria-hidden="true">
+  <div class="block">
+    {layers.map((l) => (
+      <svg class:list={['layer', { edge: l.edge }]} viewBox="0 0 400 225"
+        style={l.isBack ? `transform:translateZ(${(l.z + depth / 2).toFixed(1)}px) rotateY(180deg)` : `transform:translateZ(${(l.z + depth / 2).toFixed(1)}px)`}>
+        <text x="200" y="202" font-size={SIZE}>{l.isBack ? back : front}</text>
+      </svg>
+    ))}
+  </div>
+</div>
+
+<style>
+  .fl { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--ghost); border-radius: 3px; perspective: 900px; perspective-origin: 50% 45%; }
+  .block { position: absolute; inset: 0; transform-style: preserve-3d; will-change: transform;
+    transform: rotateX(8deg) rotateY(calc(var(--p, 1) * 180deg)); }
+  .layer { position: absolute; inset: 0; width: 100%; height: 100%; backface-visibility: hidden; }
+  text { font-family: var(--sans); font-weight: 700; letter-spacing: -.04em; text-anchor: middle; fill: none; stroke: var(--ink); stroke-width: 1.1; stroke-linejoin: round; opacity: .42; }
+  .edge text { stroke-width: 2; opacity: 1; }
+  @media (prefers-reduced-motion: reduce) { .fl { --p: 1 !important; } }
+</style>
+
+<script define:vars={{ id }}>
+  const el = document.getElementById(id);
+  if (el) {
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const forced = new URLSearchParams(location.search).get('flip');   // ?flip=0..1 freezes the turn for screenshots
+    let queued = false;
+    const frame = () => {
+      queued = false;
+      const top = el.getBoundingClientRect().top, vh = innerHeight;
+      // the thumbnail climbs from the bottom of the viewport (p = 0, reads O) to its upper third (p = 1, reads D)
+      const start = vh * 0.95, end = vh * 0.42;
+      const p = Math.min(1, Math.max(0, (start - top) / (start - end)));
+      el.style.setProperty('--p', (forced !== null ? Number(forced) : reduce ? 1 : p).toFixed(3));
+    };
+    frame();
+    addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(frame); } }, { passive: true });
+    addEventListener('resize', frame);
+  }
+</script>
