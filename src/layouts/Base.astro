@@ -14,7 +14,16 @@ const ORG = { '@type': 'Organization', '@id': `${SITE}/#org`, name: 'Wes & Woodw
   image: { '@id': `${SITE}/#logo` }, knowsAbout: ['Detroit Red Wings', 'National Hockey League', 'hockey analytics', 'expected goals'] };
 const WEBSITE = { '@type': 'WebSite', '@id': `${SITE}/#website`, name: 'Wes & Woodward', alternateName: 'Wes and Woodward', url: `${SITE}/`, publisher: { '@id': `${SITE}/#org` }, inLanguage: 'en-US' };
 const pageNodes = schema ? (Array.isArray(schema) ? schema : [schema]) : [{ '@type': 'WebPage', '@id': canonical, url: canonical, name: title, description, isPartOf: { '@id': `${SITE}/#website` } }];
-const graph = { '@context': 'https://schema.org', '@graph': [ORG, WEBSITE, ...pageNodes] };
+// player pages (memberOf) and articles (about) point at the team by @id; carry the node so the reference resolves off /team/ too
+const TEAM = { '@type': 'SportsTeam', '@id': `${SITE}/team/#team`, name: 'Detroit Red Wings', sport: 'Ice hockey', url: `${SITE}/team/` };
+const teamNode = JSON.stringify(pageNodes).includes(TEAM['@id']) && !pageNodes.some((n) => n['@id'] === TEAM['@id']) ? [TEAM] : [];
+// breadcrumb trail from the URL: Home, then the section index where one exists, then this page (named from its title)
+const SECTIONS = { players: 'Players', prospects: 'Prospects' };
+const here = new URL(Astro.url.pathname, SITE).href, segs = Astro.url.pathname.split('/').filter(Boolean);
+const crumbs = segs.length ? [{ name: 'Home', item: `${SITE}/` }, ...(segs.length > 1 && SECTIONS[segs[0]] ? [{ name: SECTIONS[segs[0]], item: `${SITE}/${segs[0]}/` }] : []),
+  { name: Astro.props.crumb ?? title.replace(/ — Wes & Woodward$/, '').replace(/ — Prospect$/, ''), item: here }] : [];
+const breadcrumb = crumbs.length ? [{ '@type': 'BreadcrumbList', '@id': `${here}#breadcrumb`, itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.item })) }] : [];
+const graph = { '@context': 'https://schema.org', '@graph': [ORG, WEBSITE, ...pageNodes, ...teamNode, ...breadcrumb] };
 const wordmark = wordmarkRaw.replace('<svg ', '<svg class="wm" role="img" aria-label="Wes and Woodward" ').replace('fill="#000000"', 'fill="currentColor"');
 
 // season banner
