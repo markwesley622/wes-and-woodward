@@ -101,7 +101,7 @@ const RECENT = 10;
             <>
               <span class="score">{SI.value.toFixed(1)}</span>
               <span class="mono range">{isG ? `${SI.gsax >= 0 ? '+' : ''}${SI.gsax} goals saved above expected` : `game score ${SI.gs}`} · {ordinal(SI.rank)} of {SI.pool}</span>
-              <span class="mono split">until the W&amp;W value is computable · {SI.gp} gp, {SI.minutes} min{isG ? '' : ' · MoneyPuck game score; the log below uses HockeyStatCards\u2019 per-game version'}</span>
+              <span class="mono split">until the W&amp;W value is computable · {SI.gp} gp, {SI.minutes} min{isG ? '' : ' · game score from MoneyPuck and HockeyStatCards, averaged, the same number as the log below'}</span>
             </>
           ) : (
             <>
@@ -185,7 +185,7 @@ const RECENT = 10;
         </div>
         <div class="prose-sm">
           <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with twenty or more games this season, forwards and defensemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {last(P.name)} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} skaters, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how much of that is noise given how well each component repeats at his minutes; the number itself is this season's delivered value, not a projection.</p>
-          <p>Two outside checks. HockeyStatCards' Luszczyszyn model puts his net rating in the {HS.Net?.percentile}th percentile ({HS.Net?.value}) and his game score in the {HS['Game score']?.percentile}th. Evolving-Hockey's own headline number is {SC.raw.WAR} wins above replacement.</p>
+          <p>Two outside checks. HockeyStatCards' Luszczyszyn model puts his net rating in the {HS.Net?.percentile}th percentile ({HS.Net?.value}). Evolving-Hockey's own headline number is {SC.raw.WAR} wins above replacement.</p>
         </div>
       </div>
     </div>
@@ -295,7 +295,7 @@ const RECENT = 10;
     <div class="shell">
       <h2>Game log</h2>
       <div class="gs-tiles">
-        <div class="tile"><span class="eb mono">Game score, average</span><span class="num">{GS.average.toFixed(2)}</span><span class="sub">{GS.games} games · Luszczyszyn game score via HockeyStatCards</span>
+        <div class="tile"><span class="eb mono">Game score, average</span><span class="num">{GS.average.toFixed(2)}</span><span class="sub">{GS.games} games · MoneyPuck and HockeyStatCards, averaged</span>
           {TG && TG.avgRank && <span class="fn mono">{ordinal(TG.avgRank)} of {TG.players} Red Wings with {TG.minGames}+ games</span>}</div>
         <div class="tile"><span class="eb mono">Best game</span><span class="num">{GS.best.value.toFixed(2)}</span><span class="sub">{mdy(GS.best.date)} {G.find((g) => g.date === GS.best.date)?.home ? 'vs' : 'at'} {GS.best.opponent}</span>
           {TG && <span class="fn mono">Team best: {TG.best.name === P.name ? 'his' : last(TG.best.name) + ','} {TG.best.value.toFixed(2)} <a href={gameLink(TG.best)} class="glink">{gameText(TG.best)}</a></span>}</div>
@@ -335,7 +335,7 @@ const RECENT = 10;
         </table>
       </div>
       <button type="button" class="showall mono" id="showall" aria-expanded="false">Show all {G.length} games &darr;</button>
-      <p class="note mono">Most recent first. Box score from the NHL API. ixG, on-ice xGF/xGA and GF–GA are five-on-five, per HockeyStatCards (Natural Stat Trick data); TOI is all situations. Game score is Dom Luszczyszyn's formula, where 2.0 is a strong night and below zero is a poor one.</p>
+      <p class="note mono">Most recent first. Box score from the NHL API. ixG, on-ice xGF/xGA and GF–GA are five-on-five, per HockeyStatCards (Natural Stat Trick data); TOI is all situations. Game score is Dom Luszczyszyn's formula as MoneyPuck and HockeyStatCards each compute it, averaged, where 2.0 is a strong night and below zero is a poor one.</p>
     </div>
   </section>
   )}

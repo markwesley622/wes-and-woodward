@@ -100,70 +100,70 @@
  },
  "score": null,
  "standIn": {
-  "value": 49.4,
-  "gs": 1.35,
-  "gs60": 8.88,
-  "gameScore": 1.35,
+  "value": 60.1,
+  "gs": 2.25,
+  "gs60": 14.81,
+  "gameScore": 2.25,
   "minutes": 9,
   "gp": 1,
-  "rank": 278,
+  "rank": 179,
   "pool": 625,
-  "percentile": 54.9,
+  "percentile": 71.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 276,
-    "name": "Jordan Staal",
-    "team": "CAR",
-    "pos": "C",
-    "gp": 4,
-    "value": 49.8,
-    "gs60": 1.38,
-    "isMe": false
-   },
-   {
-    "rank": 277,
-    "name": "Boone Jenner",
-    "team": "WSH",
+    "rank": 177,
+    "name": "Kent Johnson",
+    "team": "CBJ",
     "pos": "C",
     "gp": 2,
-    "value": 49.7,
-    "gs60": 1.37,
+    "value": 60.3,
+    "gs60": 2.27,
     "isMe": false
    },
    {
-    "rank": 278,
+    "rank": 178,
+    "name": "Nick Foligno",
+    "team": "MIN",
+    "pos": "L",
+    "gp": 3,
+    "value": 60.2,
+    "gs60": 2.25,
+    "isMe": false
+   },
+   {
+    "rank": 179,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 1,
-    "value": 49.4,
-    "gs60": 1.35,
+    "value": 60.1,
+    "gs60": 2.25,
     "isMe": true
    },
    {
-    "rank": 279,
-    "name": "Mackie Samoskevich",
-    "team": "SEA",
-    "pos": "R",
-    "gp": 3,
-    "value": 49.4,
-    "gs60": 1.35,
+    "rank": 180,
+    "name": "Hampus Lindholm",
+    "team": "BOS",
+    "pos": "D",
+    "gp": 4,
+    "value": 59.7,
+    "gs60": 2.21,
     "isMe": false
    },
    {
-    "rank": 280,
-    "name": "Adam Pelech",
-    "team": "NYI",
+    "rank": 181,
+    "name": "Erik Gustafsson",
+    "team": "LAK",
     "pos": "D",
-    "gp": 3,
-    "value": 49.4,
-    "gs60": 1.35,
+    "gp": 2,
+    "value": 59.6,
+    "gs60": 2.2,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (MoneyPuck, all situations; a counting stat, so ice time is already in it), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [],
@@ -188,22 +188,26 @@
    "gf": 2.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": 3.16
+   "gameScore": 2.25,
+   "gameScoreParts": {
+    "moneypuck": 1.35,
+    "hockeystatcards": 3.16
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 3.16,
+  "average": 2.25,
   "games": 1,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
-   "value": 3.16
+   "value": 2.25
   },
   "worst": {
    "date": "2026-10-06",
    "opponent": "OTT",
-   "value": 3.16
+   "value": 2.25
   },
   "above2": 1,
   "below0": 0

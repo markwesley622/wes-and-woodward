@@ -16,7 +16,7 @@ the reliability standard error mapped back to percentiles. Two versions: sustain
 
 Usage: python3 pipeline/build_player.py 8481542 [--fetch]
 """
-import csv, datetime as dt, json, math, pathlib, re, ssl, sys, time, unicodedata, urllib.request
+import csv, datetime as dt, io, json, math, pathlib, re, ssl, sys, time, unicodedata, urllib.error, urllib.request
 import certifi
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -79,6 +79,28 @@ def read_csv(path):
     with path.open() as fh: return list(csv.DictReader(fh))
 
 
+# W&W game score: the average of MoneyPuck's and HockeyStatCards' versions of Luszczyszyn's game score.
+# One number everywhere (value box, homepage card, Players table, game log, chart, tiles), so a player's
+# season total is exactly the sum of his game log. A game only gets a score once both sources have it.
+HSC_LEAGUE = ROOT / "data" / "raw" / "hsc" / "skaters_gamescores.json"
+
+
+def blend(mp, hsc):
+    return None if mp is None or hsc is None else round((mp + hsc) / 2, 2)
+
+
+def mp_games(pid):
+    """MoneyPuck game-by-game game score this season (the career file, situation 'all')."""
+    req = urllib.request.Request(f"https://moneypuck.com/moneypuck/playerData/careers/gameByGame/regular/skaters/{pid}.csv",
+                                 headers={"User-Agent": "Mozilla/5.0 wings-data-pipeline/0.1"})
+    try: text = urllib.request.urlopen(req, context=CTX, timeout=60).read().decode("utf-8")
+    except urllib.error.HTTPError as e:
+        if e.code == 404: return []
+        raise
+    return [{"gameId": int(r["gameId"]), "date": r["gameDate"], "gameScore": float(r["gameScore"])}
+            for r in csv.DictReader(io.StringIO(text)) if r["season"] == CFG["mp_season"] and r["situation"] == "all"]
+
+
 def norm(name):
     """Evolving-Hockey spells names its own way (Debrincat, Van Riemsdyk, no accents)."""
     return re.sub(r"[^a-z]", "", unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower())
@@ -124,22 +146,25 @@ K, BLEND_MEASURED, REPEAT = reliability_constants()
 BLEND = {"sustainable": 0.60, "results": 0.40}
 
 
-def stand_in_skater(pid, name):
-    """Until Evolving-Hockey publishes the season (so the W&W value can be computed): cumulative game
-    score (MoneyPuck, all situations; a counting stat, so ice time is already in it) on the same 0-100
-    QBR scale, every NHL skater who has played, forwards and defensemen together like the real score."""
+def stand_in_skater(pid, name, my_total):
+    """Until Evolving-Hockey publishes the season (so the W&W value can be computed): cumulative W&W game
+    score (a counting stat, so ice time is already in it) on the same 0-100 QBR scale, every NHL skater who
+    has played, forwards and defensemen together like the real score. League pool = the average of each
+    skater's MoneyPuck and HockeyStatCards season totals; this player's own total is the sum of his game
+    log (my_total), so the box and the log can never disagree."""
     mp = read_csv(ROOT / "data" / "raw" / "moneypuck" / "skaters.csv")
-    rows = [r for r in mp if r["situation"] == "all" and f(r["games_played"]) > 0]
-    if not rows: return None
-    gs60 = {r["playerId"]: f(r["gameScore"]) for r in rows}                 # season total (name kept for the neighbours payload)
+    hsc = {str(r["playerId"]): r for r in json.load(HSC_LEAGUE.open())} if HSC_LEAGUE.exists() else {}
+    rows = [r for r in mp if r["situation"] == "all" and f(r["games_played"]) > 0 and r["playerId"] in hsc]
     mine = next((r for r in rows if str(r["playerId"]) == str(pid)), None)
-    if not mine: return None
-    pool = list(gs60.values()); my = gs60[mine["playerId"]]
+    if not rows or not mine or my_total is None: return None
+    gs60 = {r["playerId"]: (f(r["gameScore"]) + hsc[r["playerId"]]["totalAdjGameScore"]) / 2 for r in rows}   # season total (name kept for the neighbours payload)
+    gs60[mine["playerId"]] = my_total
+    pool = list(gs60.values()); my = my_total
     ranked = sorted(rows, key=lambda r: -gs60[r["playerId"]]); ids = [r["playerId"] for r in ranked]; idx = ids.index(mine["playerId"])
-    return {"value": qbr(pool, my), "gs": round(my, 2), "gs60": round(my / max(f(mine["icetime"]) / 3600, 1e-9), 2), "gameScore": round(f(mine["gameScore"]), 2), "minutes": round(f(mine["icetime"]) / 60), "gp": int(f(mine["games_played"])),
+    return {"value": qbr(pool, my), "gs": round(my, 2), "gs60": round(my / max(f(mine["icetime"]) / 3600, 1e-9), 2), "gameScore": round(my, 2), "minutes": round(f(mine["icetime"]) / 60), "gp": int(f(mine["games_played"])),
             "rank": idx + 1, "pool": len(pool), "percentile": percentile(pool, my), "group": "skaters", "standIn": True,
             "neighbours": [{"rank": i + 1, "name": r["name"], "team": r["team"], "pos": r["position"], "gp": int(f(r["games_played"])), "value": qbr(pool, gs60[r["playerId"]]), "gs60": round(gs60[r["playerId"]], 2), "isMe": r["playerId"] == mine["playerId"]} for i, r in enumerate(ranked) if abs(i - idx) <= 2],
-            "method": "Stand-in until the W&W value is computable: season game score (MoneyPuck, all situations; a counting stat, so ice time is already in it), scaled 0-100 the same way, among every NHL skater who has played this season."}
+            "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."}
 
 
 def stand_in_goalie(pid):
@@ -321,6 +346,8 @@ def build(pid, fetch=False):
             try: (raw / "hsc_card.json").write_text(json.dumps(h.card(pid), indent=1))
             except Exception as e: print("  hsc card failed:", e)
             time.sleep(4)
+        if fetch or not (raw / "mp_games.json").exists():
+            (raw / "mp_games.json").write_text(json.dumps(mp_games(pid), indent=1))
     land = json.load((raw / "landing.json").open())
     nhl_log = json.load((raw / "gamelog_nhl.json").open()).get("gameLog", [])
     name = f"{land['firstName']['default']} {land['lastName']['default']}"
@@ -332,6 +359,7 @@ def build(pid, fetch=False):
         return build_no_nhl(pid, raw, land, name)
     hsc_log = json.load((raw / "hsc_logs.json").open()) if (raw / "hsc_logs.json").exists() else []
     hsc_card = json.load((raw / "hsc_card.json").open()) if (raw / "hsc_card.json").exists() else {}
+    mp_log = json.load((raw / "mp_games.json").open()) if (raw / "mp_games.json").exists() else []
 
     # ---- Evolving-Hockey pools (same season, same position group, 20+ GP)
     def eh_rows(fn):
@@ -443,13 +471,15 @@ def build(pid, fetch=False):
             sk["fiveOnFive"] = {"icetimeMinutes": round(ice5 / 60, 1), "onIceXgPct": xg_pct, "onIceCorsiPct": f(r5["onIce_corsiPercentage"]), "ixgPer60": round(f(r5["I_F_xGoals"]) / ice5 * 3600, 3) if ice5 else 0,
                                 "pctl_onIceXgPct": percentile(pool, xg_pct), "qualifiesForPercentiles": ice5 >= 300 * 60}
 
-    # ---- game log: NHL box score joined to HockeyStatCards by date (HSC dates are MM-DD)
+    # ---- game log: NHL box score joined to HockeyStatCards by date (HSC dates are MM-DD) and MoneyPuck by game id
     hsc_by_date = {}
     for g in hsc_log:
         mmdd = g["Date"]; hsc_by_date[mmdd] = g
+    mp_by_id = {g["gameId"]: g["gameScore"] for g in mp_log}
     games = []
     for g in sorted(nhl_log, key=lambda g: g["gameDate"]):
         mmdd = g["gameDate"][5:]; hx = hsc_by_date.get(mmdd, {})
+        hsc_gs = float(hx["Game Score"]) if hx.get("Game Score") not in (None, "") else None
         m, s = g["toi"].split(":")
         games.append({
             "gameId": g["gameId"], "date": g["gameDate"], "opponent": g["opponentAbbrev"], "home": g["homeRoadFlag"] == "H",
@@ -457,7 +487,8 @@ def build(pid, fetch=False):
             "pim": g["pim"], "toi": round(int(m) + int(s) / 60, 1),
             "ixg": f(hx.get("iXG")) if hx else None, "xgf": f(hx.get("xGF")) if hx else None, "xga": f(hx.get("xGA")) if hx else None,
             "gf": f(hx.get("GF")) if hx else None, "ga": f(hx.get("GA")) if hx else None, "blocks": f(hx.get("Blk")) if hx else None,
-            "gameScore": f(hx.get("Game Score")) if hx else None,
+            "gameScore": blend(mp_by_id.get(g["gameId"]), hsc_gs),
+            "gameScoreParts": {"moneypuck": mp_by_id.get(g["gameId"]), "hockeystatcards": hsc_gs},
         })
     # team context for the game-score tiles (data/site/team_gamescores.json, 20+ GP skaters)
     tg_path = ROOT / "data" / "site" / "team_gamescores.json"
@@ -486,7 +517,7 @@ def build(pid, fetch=False):
         "playerId": pid, "name": name, "slug": slug_of(name), "season": SEASON, "seasonLabel": f"{SEASON[:4]}-{SEASON[6:]}",
         "bio": bio_block(land, pid),
         "kind": "S", "seasonLine": fs, "seasonLines": lines,
-        "moneypuck": sk, "hsc": hsc_card.get("ratings", {}), "score": score, "standIn": stand_in_skater(pid, name) if score is None else None,
+        "moneypuck": sk, "hsc": hsc_card.get("ratings", {}), "score": score, "standIn": stand_in_skater(pid, name, round(sum(gs), 2) if gs else None) if score is None else None,
         "impact": impact, "career": career, "comps": comps, "myComponents": my_components,
         "gameLog": games,
         "teamGameScore": team_gs,
@@ -498,6 +529,10 @@ def build(pid, fetch=False):
 
 
 if __name__ == "__main__":
+    if "--fetch" in sys.argv or not HSC_LEAGUE.exists():   # league-wide HSC season totals for the stand-in pool
+        sys.path.insert(0, str(ROOT / "research" / "sandin-pellikka" / "raw" / "hsc")); import fetch_hsc as h
+        HSC_LEAGUE.parent.mkdir(parents=True, exist_ok=True)
+        HSC_LEAGUE.write_text(json.dumps(h.league_gamescores(SEASON), indent=1))
     if sys.argv[1] == "--roster":
         roster = json.load((ROOT / "data" / "raw" / "players" / "roster_pages.json").open())
         ids = [(r["playerId"], r["name"]) for r in roster]

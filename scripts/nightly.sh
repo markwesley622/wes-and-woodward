@@ -24,7 +24,7 @@ trap 'rc=$?; (( rc )) && osascript -e "display notification \"exit $rc, see $LOG
   # pull (data/raw/ep, refreshed by hand from Mark's Chrome via pipeline/ep_refresh.py; it is not in git)
   python3 pipeline/build_prospects.py || echo "prospect build failed, keeping the files on disk"
   npm run build --silent >/dev/null
-  git add -A data/site data/archive data/raw/nhl data/raw/moneypuck data/raw/players
+  git add -A data/site data/archive data/raw/nhl data/raw/moneypuck data/raw/players data/raw/hsc
   if git diff --cached --quiet; then
     echo "no data changes"
   else

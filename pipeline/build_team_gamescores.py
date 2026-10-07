@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Per-game game scores for every Red Wings skater with 20+ GP (HockeyStatCards logs, cached
-under data/raw/players/<id>/hsc_logs.json) -> data/site/team_gamescores.json with each
-player's average, best and worst game, and counts at 2.0+ / below zero. Feeds the footnotes
-in the player-page game-log tiles. HSC rate-limits: requests are spaced out."""
-import json, pathlib, sys, time
+"""Per-game game scores for every Red Wings skater with 20+ GP, read from the game logs that
+build_player.py writes (data/site/players/<id>.json: the W&W game score, MoneyPuck and
+HockeyStatCards averaged) -> data/site/team_gamescores.json with each player's average, best and
+worst game, and counts at 2.0+ / below zero. Feeds the footnotes in the player-page game-log tiles,
+so run it after build_player.py and then rebuild the player pages."""
+import json, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SEASON = json.loads((ROOT / "pipeline" / "config.json").read_text())["nhl_season"]
-sys.path.insert(0, str(ROOT / "research" / "sandin-pellikka" / "raw" / "hsc")); import fetch_hsc as h
 
 def f(v):
     try: return float(v)
@@ -16,12 +16,9 @@ skaters = [p for p in json.load((ROOT / "data" / "site" / "skaters.json").open()
 nhl_log_dates = {}
 out = []
 for i, p in enumerate(skaters):
-    pid = p["playerId"]; raw = ROOT / "data" / "raw" / "players" / str(pid); raw.mkdir(parents=True, exist_ok=True)
-    path = raw / "hsc_logs.json"
-    if not path.exists():
-        path.write_text(json.dumps(h.logs(pid, season=SEASON, gtype=2), indent=1)); time.sleep(4)
-    logs = json.load(path.open())
-    games = [(g["Date"], f(g.get("Game Score"))) for g in logs if f(g.get("Game Score")) is not None]
+    pid = p["playerId"]; path = ROOT / "data" / "site" / "players" / f"{pid}.json"
+    if not path.exists(): continue
+    games = [(g["date"][5:], g["gameScore"]) for g in json.load(path.open()).get("gameLog", []) if g.get("gameScore") is not None]
     if not games: continue
     gs = [v for _, v in games]
     best = max(games, key=lambda t: t[1]); worst = min(games, key=lambda t: t[1])

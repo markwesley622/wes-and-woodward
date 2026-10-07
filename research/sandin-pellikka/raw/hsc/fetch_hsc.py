@@ -73,6 +73,47 @@ def logs(pid, season=None, gtype=2):
     return []
 
 
+PLAYERS_FN = "9f02f15cc45d78c1c11da0f238fdfadc874ab97c10b7ddfcf15b6f96f0f35242"   # /players table server fn (main-*.js, "sQ")
+
+
+def _seroval(v, ids):
+    """Encode a plain dict/str/int the way TanStack Start's client does (seroval toJSON nodes)."""
+    if isinstance(v, dict):
+        i = len(ids); ids.append(i)
+        return {"t": 10, "i": i, "p": {"k": list(v), "v": [_seroval(x, ids) for x in v.values()]}, "o": 0}
+    return {"t": 1, "s": v} if isinstance(v, str) else {"t": 0, "s": v}
+
+
+def _unseroval(n):
+    t = n["t"]
+    if t in (0, 1): return n["s"]
+    if t == 2: return {0: None, 1: None, 2: True, 3: False}.get(n["s"])
+    if t == 9: return [_unseroval(x) for x in n["a"]]
+    if t in (10, 11): return {k: _unseroval(x) for k, x in zip(n["p"]["k"], n["p"]["v"])}
+    raise ValueError(f"unhandled seroval node {n}")
+
+
+def league_gamescores(season, gtype=2):
+    """Every skater's season game score (the /players table: gamesPlayed, avgAdjGameScore,
+    totalAdjGameScore = the sum of his game-log Game Score column). The table's server function caps
+    pages at 200, so this walks the pages; sorted by player name so ties cannot shuffle across pages."""
+    import time, urllib.parse
+    rows, page, total = {}, 1, None
+    while total is None or len(rows) < total:
+        data = {"season": int(season), "type": gtype, "page": page, "pageSize": 200, "view": "gameScore", "sortKey": "player", "sortDir": "asc"}
+        payload = urllib.parse.quote(json.dumps({"t": _seroval({"data": data}, []), "f": 127, "m": []}, separators=(",", ":")))
+        req = urllib.request.Request(f"https://hockeystatcards.com/_serverFn/{PLAYERS_FN}?payload={payload}",
+                                     headers={"User-Agent": UA, "x-tsr-serverFn": "true", "accept": "application/json"})
+        res = _unseroval(json.loads(urllib.request.urlopen(req, context=CTX, timeout=60).read()))["result"]
+        total = res["total"]
+        if not res["rows"]: break
+        for r in res["rows"]: rows[r["playerId"]] = r
+        page += 1; time.sleep(2)
+    if len(rows) != total:
+        raise RuntimeError(f"HSC players table: got {len(rows)} of {total} rows")
+    return list(rows.values())
+
+
 if __name__ == "__main__":
     pid = sys.argv[1] if len(sys.argv) > 1 else "8484223"
     json.dump({"card": card(pid), "logs": logs(pid)},
