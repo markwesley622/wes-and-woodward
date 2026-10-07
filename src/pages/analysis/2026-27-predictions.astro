@@ -26,7 +26,7 @@ const path = (cum) => cum.map((p, i) => `${i === 0 ? 'M' : 'L'}${px(i + 1).toFix
 const projPath = (p) => `M${px(0)},${py(0)} L${px(G).toFixed(1)},${py(p).toFixed(1)}`;
 const gridPts = [20, 40, 60, 80, 100];
 
-// ---- chart 3: W&W value, every Red Wing with 20+ games in either season
+// ---- chart 3: W-Value, every Red Wing with 20+ games in either season
 const names = [...new Set([...W.values.map((v) => v.name), ...O.values.map((v) => v.name)])];
 const byW = Object.fromEntries(W.values.map((v) => [v.name, v])), byO = Object.fromEntries(O.values.map((v) => [v.name, v]));
 const rows = names.map((n) => ({ name: n, w: byW[n]?.value ?? null, o: byO[n]?.value ?? null })).sort((a, b) => Math.max(b.w ?? -1, b.o ?? -1) - Math.max(a.w ?? -1, a.o ?? -1));
@@ -105,8 +105,8 @@ const slice = (a, b) => parts.slice(a, b);
       <div class="prose" set:html={slice(idx.without + 1, idx.pred).join('')} />
 
       <figure class="fig">
-        <p class="eb mono">W&amp;W value in the two seasons · every Red Wing with 20 games · red with Larkin, black without</p>
-        <svg class="chart" viewBox={`0 0 ${VW} ${VH}`} role="img" aria-label="W and W value score for each Red Wing in the two simulated seasons">
+        <p class="eb mono">W-Value in the two seasons · every Red Wing with 20 games · red with Larkin, black without</p>
+        <svg class="chart" viewBox={`0 0 ${VW} ${VH}`} role="img" aria-label="W-Value for each Red Wing in the two simulated seasons">
           {[25, 50, 75, 100].map((v) => (<g><line x1={vx(v)} x2={vx(v)} y1={TOP - 6} y2={VH - 12} class="grid" /><text x={vx(v)} y={TOP - 10} class="lbl" text-anchor="middle">{v}</text></g>))}
           {rows.map((r, i) => { const y = TOP + i * RH; return (<g>
             <text x={LAB - 10} y={y + 14} class="name" text-anchor="end">{r.name}</text>

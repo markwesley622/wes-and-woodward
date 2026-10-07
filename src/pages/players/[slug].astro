@@ -74,7 +74,7 @@ const RECENT = 10;
 <Base ogType="profile" canonical={canonical} schema={[{ '@type': 'ProfilePage', '@id': `https://wesandwoodward.com/players/${P.slug}/`, url: `https://wesandwoodward.com/players/${P.slug}/`, name: P.name, isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, dateModified: new Date().toISOString().slice(0, 10),
   mainEntity: { '@type': 'Person', '@id': `https://wesandwoodward.com/players/${P.slug}/#person`, name: P.name, jobTitle: isG ? 'Professional hockey goaltender' : 'Professional hockey player', birthDate: B.birthDate, birthPlace: B.birthplace ? { '@type': 'Place', name: B.birthplace } : undefined,
     height: B.heightIn ? { '@type': 'QuantitativeValue', value: B.heightIn, unitCode: 'INH' } : undefined, weight: B.weightLb ? { '@type': 'QuantitativeValue', value: B.weightLb, unitCode: 'LBR' } : undefined,
-    memberOf: { '@id': 'https://wesandwoodward.com/team/#team' }, image: P.art ? `https://wesandwoodward.com/players/${P.playerId}-art.webp` : undefined, sameAs: [`https://www.nhl.com/player/${P.playerId}`] } }]} title={`${P.name} — Wes & Woodward`} description={isP ? `${P.name}, Red Wings prospect: draft pedigree and every line he played in ${season}.` : `${P.name}, ${season}: value score, where it comes from, and a game-by-game log with game score.`}>
+    memberOf: { '@id': 'https://wesandwoodward.com/team/#team' }, image: P.art ? `https://wesandwoodward.com/players/${P.playerId}-art.webp` : undefined, sameAs: [`https://www.nhl.com/player/${P.playerId}`] } }]} title={`${P.name} — Wes & Woodward`} description={isP ? `${P.name}, Red Wings prospect: draft pedigree and every line he played in ${season}.` : `${P.name}, ${season}: W-Value, where it comes from, and a game-by-game log with game score.`}>
   {!isP && (<>
   <section class="sec">
     <div class="shell">
@@ -90,7 +90,7 @@ const RECENT = 10;
           <p class="mono bio">#{B.number ?? '—'} · {POSN[B.position] ?? B.position} · {isG ? 'catches' : 'shoots'} {B.shoots} · {ht}, {B.weightLb} lb · age {age} · {B.birthplace}{B.draft ? ` · drafted ${B.draft.year}, ${B.draft.overallPick}th overall` : ''}</p>
         </div>
         <div class="scorebox">
-          <span class="eb mono">W&amp;W value</span>
+          <span class="eb mono">W-Value</span>
           {hasScore ? (
             <>
               <span class="score">{SC.value.toFixed(1)}</span>
@@ -101,7 +101,7 @@ const RECENT = 10;
             <>
               <span class="score">{SI.value.toFixed(1)}</span>
               <span class="mono range">{isG ? `${SI.gsax >= 0 ? '+' : ''}${SI.gsax} goals saved above expected` : `game score ${SI.gs}`} · {ordinal(SI.rank)} of {SI.pool}</span>
-              <span class="mono split">until the W&amp;W value is computable · {SI.gp} gp, {SI.minutes} min{isG ? '' : ' · game score from MoneyPuck and HockeyStatCards, averaged, the same number as the log below'}</span>
+              <span class="mono split">until the W-Value is computable · {SI.gp} gp, {SI.minutes} min{isG ? '' : ' · game score from MoneyPuck and HockeyStatCards, averaged, the same number as the log below'}</span>
             </>
           ) : (
             <>
@@ -139,12 +139,12 @@ const RECENT = 10;
         <div class="left">
           <p class="eb mono">NHL goalies with 600+ minutes, {SC.pool} of them</p>
           <table class="rank">
-            <thead><tr><th>Rank</th><th>Goalie</th><th class="num">GSAx</th><th class="num">Value</th></tr></thead>
+            <thead><tr><th>Rank</th><th>Goalie</th><th class="num">GSAx</th><th class="num">W-Value</th></tr></thead>
             <tbody>{SC.neighbours.map((n) => <tr class:list={{ me: n.isMe }}><td class="rk">{n.rank}</td><td>{n.name}</td><td class="num">{n.gsax > 0 ? '+' : ''}{n.gsax}</td><td class:list={['num', { red: n.isMe }]}>{n.value.toFixed(1)}</td></tr>)}</tbody>
           </table>
         </div>
         <div class="prose-sm">
-          <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL goalie with 600 or more minutes this season. It is built on goals saved above expected: {SC.goals.toFixed(0)} goals allowed against {SC.xGoals} expected from the shots he faced, per MoneyPuck. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is wide by design: goaltending is the least repeatable thing in the sport, so the range only closes with a lot of minutes.</p>
+          <p><strong>W-Value {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL goalie with 600 or more minutes this season. It is built on goals saved above expected: {SC.goals.toFixed(0)} goals allowed against {SC.xGoals} expected from the shots he faced, per MoneyPuck. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is wide by design: goaltending is the least repeatable thing in the sport, so the range only closes with a lot of minutes.</p>
         </div>
       </div>
     </div>
@@ -154,7 +154,7 @@ const RECENT = 10;
   {hasScore && !isG && (
   <section class="sec" id="value">
     <div class="shell">
-      <h2>Where the value comes from</h2>
+      <h2>Where the W-Value comes from</h2>
       <div class="two">
         <div class="left">
         <div class="table-scroll">
@@ -172,7 +172,7 @@ const RECENT = 10;
         <div class="rankwrap">
         <p class="eb mono">Where he ranks · all NHL skaters, {SC.pool} with 20+ games</p>
         <table class="rank">
-          <thead><tr><th>Rank</th><th>Player</th><th>Team</th><th>Pos</th><th class="num">GP</th><th class="num">Value</th><th class="num">Goals counted</th></tr></thead>
+          <thead><tr><th>Rank</th><th>Player</th><th>Team</th><th>Pos</th><th class="num">GP</th><th class="num">W-Value</th><th class="num">Goals counted</th></tr></thead>
           <tbody>
             {(SC.neighbours || []).map((n) => (
               <tr class:list={{ me: n.isMe }}><td class="rk">{n.rank}</td><td>{n.name}</td><td>{n.team}</td><td>{n.pos}</td><td class="num">{n.gp}</td><td class:list={['num', { red: n.isMe }]}>{n.value.toFixed(1)}</td><td class="num">{n.goals > 0 ? '+' : ''}{n.goals.toFixed(1)}</td></tr>
@@ -184,7 +184,7 @@ const RECENT = 10;
 
         </div>
         <div class="prose-sm">
-          <p><strong>Score {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with twenty or more games this season, forwards and defensemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {last(P.name)} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} skaters, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how much of that is noise given how well each component repeats at his minutes; the number itself is this season's delivered value, not a projection.</p>
+          <p><strong>W-Value {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with twenty or more games this season, forwards and defensemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {last(P.name)} sits {Math.log(SC.value / (100 - SC.value)).toFixed(1)} standard deviations above the average of {SC.pool} skaters, which is the {Math.round(SC.percentile)}th percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how much of that is noise given how well each component repeats at his minutes; the number itself is this season's delivered value, not a projection.</p>
           <p>Two outside checks. HockeyStatCards' Luszczyszyn model puts his net rating in the {HS.Net?.percentile}th percentile ({HS.Net?.value}). Evolving-Hockey's own headline number is {SC.raw.WAR} wins above replacement.</p>
         </div>
       </div>
@@ -223,11 +223,11 @@ const RECENT = 10;
   </section>
   )}
 
-  {hasScore && !isG && CA.length > 0 && (
+  {!isG && CA.length > 0 && (
   <section class="sec" id="career">
     <div class="shell">
       <h2>Career arc</h2>
-      <p class="lede">Value by season, split into the five components, on the same 60/40 blend of chances and results. Bars above the line add value; below the line cost it.</p>
+      <p class="lede">Value by season, split into the five components, on a 60/40 blend of chances and results. Bars above the line add value; below the line cost it.</p>
       <svg class="chart career" viewBox={`0 0 ${CW} ${CH}`} role="img" aria-label="Value by season, stacked by component">
         {cTicks.map((v) => <g><line x1={CP.l} x2={CW - CP.r} y1={cy(v)} y2={cy(v)} class:list={['grid', { zero: v === 0 }]} /><text x={CP.l - 8} y={cy(v) + 4} text-anchor="end" class="lbl">{v > 0 ? '+' : ''}{v}</text></g>)}
         {careerBars.map((bars, i) => (

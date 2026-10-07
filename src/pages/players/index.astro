@@ -17,8 +17,8 @@ const toiMin = (s) => { if (!s) return null; const [m, sec] = String(s).split(':
 const num = (v, d = 1) => (v == null ? '—' : Number(v).toFixed(d));
 const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
 ---
-<Base schema={[{ '@type': 'CollectionPage', '@id': 'https://wesandwoodward.com/players/', url: 'https://wesandwoodward.com/players/', name: 'Advanced Player Stats', description: "Every Red Wing on the roster: value score, NHL rank, and this season's numbers.", isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, about: { '@id': 'https://wesandwoodward.com/team/#team' },
-  mainEntity: { '@type': 'ItemList', itemListOrder: 'https://schema.org/ItemListOrderDescending', numberOfItems: all.length, itemListElement: all.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: `https://wesandwoodward.com/players/${p.slug}/` })) } }]} title="Players — Wes & Woodward" description="Every Red Wing on the roster: value score, NHL rank, and this season's numbers, sortable.">
+<Base schema={[{ '@type': 'CollectionPage', '@id': 'https://wesandwoodward.com/players/', url: 'https://wesandwoodward.com/players/', name: 'Advanced Player Stats', description: "Every Red Wing on the roster: W-Value, NHL rank, and this season's numbers.", isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, about: { '@id': 'https://wesandwoodward.com/team/#team' },
+  mainEntity: { '@type': 'ItemList', itemListOrder: 'https://schema.org/ItemListOrderDescending', numberOfItems: all.length, itemListElement: all.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: `https://wesandwoodward.com/players/${p.slug}/` })) } }]} title="Players — Wes & Woodward" description="Every Red Wing on the roster: W-Value, NHL rank, and this season's numbers, sortable.">
   <section class="sec">
     <div class="shell">
       <p class="kicker">Players · {season}</p>
@@ -43,7 +43,7 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
             <th data-sort="text">Player</th><th data-sort="text">Pos</th><th data-sort="text">League</th>
             <th class="num" data-sort="num">GP</th><th class="num" data-sort="num">G</th><th class="num" data-sort="num">A</th><th class="num" data-sort="num">P</th>
             <th class="num" data-sort="num">+/−</th><th class="num" data-sort="num">TOI</th><th class="num" data-sort="num">ixG</th><th class="num" data-sort="num">5v5 xG%</th>
-            <th class="num" data-sort="num">Goals of value</th><th class="num" data-sort="num">NHL rank</th><th class="num on desc" data-sort="num">Value</th>
+            <th class="num" data-sort="num">Goals of value</th><th class="num" data-sort="num">NHL rank</th><th class="num on desc" data-sort="num">W-Value</th>
           </tr></thead>
           <tbody>
             {skaters.map((p) => { const L = p.seasonLine || {}, S = p.score ?? p.standIn, f5 = (p.moneypuck || {}).fiveOnFive || {}; const grp = p.bio.position === 'D' ? 'D' : 'F'; const toi = toiMin(L.toiPerGame); return (
@@ -56,7 +56,7 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
                 <td class="num" data-v={toi ?? -1}>{L.league === 'NHL' && L.toiPerGame ? L.toiPerGame : '—'}</td>
                 <td class="num" data-v={p.moneypuck?.ixG ?? -1}>{num(p.moneypuck?.ixG)}</td>
                 <td class="num" data-v={f5.onIceXgPct ?? -1}>{f5.onIceXgPct != null ? `${Math.round(f5.onIceXgPct * 100)}%` : '—'}</td>
-                <td class="num" data-v={S?.goalsBlended ?? -99}>{S ? signed(S.goalsBlended) : '—'}</td>
+                <td class="num" data-v={S?.goalsBlended ?? -99}>{S?.goalsBlended != null ? signed(S.goalsBlended) : '—'}</td>
                 <td class="num" data-v={S?.rank ?? 9999}>{S?.rank ? `${S.rank} of ${S.pool}` : '—'}</td>
                 <td class:list={['num', 'val', { red: (S?.value ?? 0) >= 73 }]} data-v={S?.value ?? -1}>{S ? S.value.toFixed(1) : '0.0'}</td>
               </tr>
@@ -69,7 +69,7 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
         <table class="sortable">
           <thead><tr>
             <th data-sort="text">Goalie</th><th data-sort="text">League</th><th class="num" data-sort="num">GP</th><th class="num" data-sort="num">W</th><th class="num" data-sort="num">L</th><th class="num" data-sort="num">OTL</th>
-            <th class="num" data-sort="num">SV%</th><th class="num" data-sort="num">GAA</th><th class="num" data-sort="num">SO</th><th class="num" data-sort="num">GSAx</th><th class="num" data-sort="num">NHL rank</th><th class="num on desc" data-sort="num">Value</th>
+            <th class="num" data-sort="num">SV%</th><th class="num" data-sort="num">GAA</th><th class="num" data-sort="num">SO</th><th class="num" data-sort="num">GSAx</th><th class="num" data-sort="num">NHL rank</th><th class="num on desc" data-sort="num">W-Value</th>
           </tr></thead>
           <tbody>
             {goalies.map((p) => { const L = p.seasonLine || {}, S = p.score ?? p.standIn; return (
@@ -87,7 +87,7 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
         </table>
       </div>
 
-      <p class="note mono">Value: a 0–100 rating where 50 is the average NHL player at the position group (skaters positionless, goalies on goals saved above expected), this season only. NHL rank counts skaters with 20+ games and goalies with 600+ minutes. A prospect is rookie-eligible and inside draft+4; while he is on the NHL roster he is rated here like everyone else, and when he is in Grand Rapids his page switches to the prospect read. The whole pipeline, ranked, is on the <a href="/prospects/">Prospects</a> page.</p>
+      <p class="note mono">W-Value: a 0–100 rating where 50 is the average NHL player at the position group (skaters positionless, goalies on goals saved above expected), this season only. NHL rank counts skaters with 20+ games and goalies with 600+ minutes. A prospect is rookie-eligible and inside draft+4; while he is on the NHL roster he is rated here like everyone else, and when he is in Grand Rapids his page switches to the prospect read. The whole pipeline, ranked, is on the <a href="/prospects/">Prospects</a> page.</p>
     </div>
   </section>
 </Base>

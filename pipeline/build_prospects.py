@@ -15,7 +15,7 @@ Decided with Mark 2026-10-06. Four layers, every one computed WITHIN POSITION (F
                         and, while pedigree still counts, a similar draft slot. Outcome = each one's peak
                         NHL season as a percentile among NHL regulars at the position (skaters: points per
                         game; goalies: save percentage); busts count as 0. Expected = mean, ceiling = 75th
-                        percentile. Tier words match the NHL page value score.
+                        percentile. Tier words match the NHL page W-Value.
   4. Trajectory         change in the production feature between the last two full seasons.
 
   Draft pedigree (same cohort, by pick band) enters with DIMINISHING RETURNS (Mark, 10/6): it is

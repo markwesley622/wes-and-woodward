@@ -40,7 +40,7 @@ const tiles = D.tiles.filter((t) => KEEP[t.key]).map((t) => ({
 const tile = (key) => tiles[D.tiles.filter((t) => KEEP[t.key]).findIndex((t) => t.key === key)];
 const T5 = tile('xg_share_5v5'), TPP = tile('pp_xgf60'), TPK = tile('pk_xga60');
 
-// top three Red Wings on the W&W value score (data/site/players/*.json)
+// top three Red Wings on the W-Value (data/site/players/*.json)
 import fs from 'node:fs';
 import path from 'node:path';
 const POS = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense', G: 'Goalie' };

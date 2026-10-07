@@ -1,5 +1,5 @@
 ---
-// Prospect page: a player still eligible for NHL rookie status. No value score (the NHL sample is
+// Prospect page: a player still eligible for NHL rookie status. No W-Value (the NHL sample is
 // too small to rate), so the page is bio, draft pedigree, every line he played last season across
 // leagues, and the NHL game log if there is one.
 import Initials from '../../components/Initials.astro';
@@ -86,7 +86,7 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
       {R.nhlSample && R.nhlSample.gp > 0 && <p><b>NHL sample.</b> {R.nhlSample.gp} games{isGoalie ? '' : `, ${R.nhlSample.pts} points`}{R.nhlSample.thisSeason?.gp ? ` · ${R.nhlSample.thisSeason.gp} this season${R.nhlSample.thisSeason.toi ? ` at ${R.nhlSample.thisSeason.toi} a night` : ''}` : ''}. Small until it is not; it will outweigh the cohort once it is a full season.</p>}
       <p><b>Games behind the numbers.</b> {A.lineGp} in {seasonLabel(A.season)}{PF && PF.percentile != null ? `, ${PF.cohortN} same-year ${posWord} in the table` : ''}{C ? `, ${C.n} comparable paths from a pool of ${C.poolN}` : ''}.</p>
     </div>
-    <p class="note mono">League strength is the Network NHLe points coefficient from hockeystats.com (Patrick Bacon). Production is points per game among skaters of the same position and the same age in the same league and season (EliteProspects tables). Ceiling: the nearest 50 drafted skaters of the 2008–2019 classes at the same position and age, matched on NHLe and draft slot, and where each one's best NHL season landed as a points-per-game percentile among regulars at the position; a player who never had a half-season in the NHL counts as zero. Tiers follow the value score on the NHL pages: elite 88+, top-line 73+, above average 50+, below average 27+.</p>
+    <p class="note mono">League strength is the Network NHLe points coefficient from hockeystats.com (Patrick Bacon). Production is points per game among skaters of the same position and the same age in the same league and season (EliteProspects tables). Ceiling: the nearest 50 drafted skaters of the 2008–2019 classes at the same position and age, matched on NHLe and draft slot, and where each one's best NHL season landed as a points-per-game percentile among regulars at the position; a player who never had a half-season in the NHL counts as zero. Tiers follow the W-Value on the NHL pages: elite 88+, top-line 73+, above average 50+, below average 27+.</p>
   </div>
 </section>
 )}
@@ -115,7 +115,7 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
         </tbody>
       </table>
     </div>
-    <p class="note mono">A value score arrives once he has an NHL season large enough to rate; until then he is listed with the prospects.</p>
+    <p class="note mono">A W-Value arrives once he has an NHL season large enough to rate; until then he is listed with the prospects.</p>
   </div>
 </section>
 

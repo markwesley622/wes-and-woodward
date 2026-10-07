@@ -7,7 +7,7 @@ Sources (all cached under data/raw/players/<playerId>/):
   MoneyPuck skaters.csv           individual + on-ice xG, league percentiles (via build_site_data pools)
   Evolving-Hockey exports         GAR / xGAR components + RAPM (research/rasmussen/raw/eh, subscriber export)
 
-The W&W value score is a QBR-style 0-100 rating (positionless: 50 = the average NHL
+The W-Value is a QBR-style 0-100 rating (positionless: 50 = the average NHL
 skater, ~23 points per standard deviation, one decimal), NOT a percentile, of a shrunken
 goals-above-replacement composite. Each component is pulled toward zero by a reliability
 factor TOI/(TOI+k) whose k reflects how repeatable that component is; the likely range is
@@ -147,7 +147,7 @@ BLEND = {"sustainable": 0.60, "results": 0.40}
 
 
 def stand_in_skater(pid, name, my_total):
-    """Until Evolving-Hockey publishes the season (so the W&W value can be computed): cumulative W&W game
+    """Until Evolving-Hockey publishes the season (so the W-Value can be computed): cumulative W&W game
     score (a counting stat, so ice time is already in it) on the same 0-100 QBR scale, every NHL skater who
     has played, forwards and defensemen together like the real score. League pool = the average of each
     skater's MoneyPuck and HockeyStatCards season totals; this player's own total is the sum of his game
@@ -164,7 +164,7 @@ def stand_in_skater(pid, name, my_total):
     return {"value": qbr(pool, my), "gs": round(my, 2), "gs60": round(my / max(f(mine["icetime"]) / 3600, 1e-9), 2), "gameScore": round(my, 2), "minutes": round(f(mine["icetime"]) / 60), "gp": int(f(mine["games_played"])),
             "rank": idx + 1, "pool": len(pool), "percentile": percentile(pool, my), "group": "skaters", "standIn": True,
             "neighbours": [{"rank": i + 1, "name": r["name"], "team": r["team"], "pos": r["position"], "gp": int(f(r["games_played"])), "value": qbr(pool, gs60[r["playerId"]]), "gs60": round(gs60[r["playerId"]], 2), "isMe": r["playerId"] == mine["playerId"]} for i, r in enumerate(ranked) if abs(i - idx) <= 2],
-            "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."}
+            "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."}
 
 
 def stand_in_goalie(pid):
@@ -179,7 +179,7 @@ def stand_in_goalie(pid):
     return {"value": qbr(pool, my), "gsax60": round(my, 2), "gsax": round(f(mine["xGoals"]) - f(mine["goals"]), 2), "minutes": round(f(mine["icetime"]) / 60), "gp": int(f(mine["games_played"])),
             "rank": idx + 1, "pool": len(pool), "percentile": percentile(pool, my), "group": "goalies", "standIn": True,
             "neighbours": [{"rank": i + 1, "name": r["name"], "team": r["team"], "gp": int(f(r["games_played"])), "value": qbr(pool, g60[r["playerId"]]), "gsax60": round(g60[r["playerId"]], 2), "isMe": r["playerId"] == mine["playerId"]} for i, r in enumerate(ranked) if abs(i - idx) <= 2],
-            "method": "Stand-in until the W&W value is computable: season goals saved above expected (MoneyPuck), scaled 0-100 the same way, among every NHL goalie who has played this season."}
+            "method": "Stand-in until the W-Value is computable: season goals saved above expected (MoneyPuck), scaled 0-100 the same way, among every NHL goalie who has played this season."}
 
 
 def bio_block(land, pid):
@@ -382,7 +382,7 @@ def build(pid, fetch=False):
     xs_pool = [sum(f(r[c]) for c in XK.values()) for r in xg_rows if grp(r)]
     g_pool = [sum(f(r[c]) for c in GK.values()) for r in g_rows if grp(r)]
     me_x = eh_row(xg_rows, name, "DET"); has_eh = me_x is not None
-    # no Evolving-Hockey row yet (early season, or EH hasn't published): keep the page, skip the value score
+    # no Evolving-Hockey row yet (early season, or EH hasn't published): keep the page, skip the W-Value
     if not has_eh and not nhl_log: return build_no_nhl(pid, raw, land, name, nhl_log)
     me_g = g_for(me_x) if has_eh else None
     if has_eh and me_g is None: me_g = me_x
