@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.7,
-   "percentile": 4
+   "percentile": 5
   },
   "Defense": {
    "value": 0.2,
@@ -95,75 +95,75 @@
   },
   "Net": {
    "value": -0.5,
-   "percentile": 24
+   "percentile": 25
   }
  },
  "score": null,
  "standIn": {
-  "value": 34.9,
+  "value": 35.2,
   "gs": -0.06,
   "gs60": -0.08,
   "gameScore": -0.06,
   "minutes": 47,
   "gp": 3,
-  "rank": 459,
-  "pool": 625,
-  "percentile": 26.6,
+  "rank": 460,
+  "pool": 628,
+  "percentile": 26.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 457,
+    "rank": 458,
     "name": "Adam Edstrom",
     "team": "NSH",
     "pos": "C",
     "gp": 3,
-    "value": 35.2,
+    "value": 35.5,
     "gs60": -0.03,
     "isMe": false
    },
    {
-    "rank": 458,
+    "rank": 459,
     "name": "Samuel Honzek",
     "team": "CGY",
     "pos": "L",
     "gp": 3,
-    "value": 35.1,
+    "value": 35.4,
     "gs60": -0.04,
     "isMe": false
    },
    {
-    "rank": 459,
+    "rank": 460,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 3,
-    "value": 34.9,
+    "value": 35.2,
     "gs60": -0.06,
     "isMe": true
    },
    {
-    "rank": 460,
+    "rank": 461,
     "name": "Dmitri Voronkov",
     "team": "CBJ",
     "pos": "L",
     "gp": 2,
-    "value": 34.9,
+    "value": 35.2,
     "gs60": -0.07,
     "isMe": false
    },
    {
-    "rank": 461,
+    "rank": 462,
     "name": "Philip Broberg",
     "team": "STL",
     "pos": "D",
     "gp": 3,
-    "value": 34.8,
+    "value": 35.1,
     "gs60": -0.07,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [

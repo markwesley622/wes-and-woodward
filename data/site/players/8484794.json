@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 1.2,
-   "percentile": 82
+   "percentile": 83
   },
   "Offense": {
    "value": 0.0,
@@ -91,79 +91,79 @@
   },
   "Defense": {
    "value": 0.5,
-   "percentile": 90
+   "percentile": 89
   },
   "Net": {
    "value": 0.5,
-   "percentile": 79
+   "percentile": 78
   }
  },
  "score": null,
  "standIn": {
-  "value": 68.3,
+  "value": 66.9,
   "gs": 3.05,
   "gs60": 4.38,
   "gameScore": 3.05,
   "minutes": 42,
   "gp": 3,
-  "rank": 124,
-  "pool": 625,
-  "percentile": 80.2,
+  "rank": 134,
+  "pool": 628,
+  "percentile": 78.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 122,
-    "name": "Ryker Evans",
-    "team": "SEA",
-    "pos": "D",
-    "gp": 4,
-    "value": 68.5,
-    "gs60": 3.07,
+    "rank": 132,
+    "name": "Beckett Sennecke",
+    "team": "ANA",
+    "pos": "R",
+    "gp": 2,
+    "value": 67.0,
+    "gs60": 3.06,
     "isMe": false
    },
    {
-    "rank": 123,
+    "rank": 133,
     "name": "Jeremy Lauzon",
     "team": "VGK",
     "pos": "D",
     "gp": 4,
-    "value": 68.3,
+    "value": 66.9,
     "gs60": 3.05,
     "isMe": false
    },
    {
-    "rank": 124,
+    "rank": 134,
     "name": "Michael Brandsegg-Nygrd",
     "team": "DET",
     "pos": "R",
     "gp": 3,
-    "value": 68.3,
+    "value": 66.9,
     "gs60": 3.05,
     "isMe": true
    },
    {
-    "rank": 125,
+    "rank": 135,
     "name": "Sam Steel",
     "team": "DAL",
     "pos": "C",
     "gp": 3,
-    "value": 68.2,
+    "value": 66.8,
     "gs60": 3.04,
     "isMe": false
    },
    {
-    "rank": 126,
-    "name": "Cole Perfetti",
-    "team": "WPG",
-    "pos": "C",
-    "gp": 3,
-    "value": 68.0,
-    "gs60": 3.02,
+    "rank": 136,
+    "name": "Erik Karlsson",
+    "team": "PIT",
+    "pos": "D",
+    "gp": 4,
+    "value": 66.7,
+    "gs60": 3.03,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [

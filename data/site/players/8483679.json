@@ -87,83 +87,83 @@
   },
   "Offense": {
    "value": -0.6,
-   "percentile": 8
+   "percentile": 9
   },
   "Defense": {
    "value": 0.4,
-   "percentile": 80
+   "percentile": 79
   },
   "Net": {
-   "value": -0.2,
-   "percentile": 38
+   "value": -0.3,
+   "percentile": 39
   }
  },
  "score": null,
  "standIn": {
-  "value": 38.6,
+  "value": 38.7,
   "gs": 0.29,
   "gs60": 0.35,
   "gameScore": 0.29,
   "minutes": 50,
   "gp": 3,
-  "rank": 413,
-  "pool": 625,
-  "percentile": 33.9,
+  "rank": 412,
+  "pool": 628,
+  "percentile": 34.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 411,
+    "rank": 410,
     "name": "Pavel Zacha",
     "team": "BOS",
     "pos": "C",
     "gp": 4,
-    "value": 38.8,
+    "value": 38.9,
     "gs60": 0.31,
     "isMe": false
    },
    {
-    "rank": 412,
+    "rank": 411,
     "name": "Connor Zary",
     "team": "CGY",
     "pos": "C",
     "gp": 2,
-    "value": 38.7,
+    "value": 38.8,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 413,
+    "rank": 412,
     "name": "Anton Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 3,
-    "value": 38.6,
+    "value": 38.7,
     "gs60": 0.29,
     "isMe": true
    },
    {
-    "rank": 414,
+    "rank": 413,
     "name": "Theo Lindstein",
     "team": "STL",
     "pos": "D",
     "gp": 3,
-    "value": 38.5,
+    "value": 38.6,
     "gs60": 0.28,
     "isMe": false
    },
    {
-    "rank": 415,
-    "name": "Mike Reilly",
-    "team": "CAR",
-    "pos": "D",
-    "gp": 2,
-    "value": 38.4,
+    "rank": 414,
+    "name": "Isaac Howard",
+    "team": "EDM",
+    "pos": "L",
+    "gp": 3,
+    "value": 38.5,
     "gs60": 0.27,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [],

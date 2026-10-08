@@ -87,83 +87,83 @@
   },
   "Offense": {
    "value": -0.2,
-   "percentile": 42
+   "percentile": 43
   },
   "Defense": {
    "value": 0.0,
-   "percentile": 50
+   "percentile": 49
   },
   "Net": {
    "value": -0.1,
-   "percentile": 44
+   "percentile": 45
   }
  },
  "score": null,
  "standIn": {
-  "value": 50.9,
+  "value": 50.3,
   "gs": 1.41,
   "gs60": 3.27,
   "gameScore": 1.41,
   "minutes": 26,
   "gp": 3,
-  "rank": 269,
-  "pool": 625,
-  "percentile": 57.0,
+  "rank": 273,
+  "pool": 628,
+  "percentile": 56.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 267,
+    "rank": 271,
+    "name": "Dougie Hamilton",
+    "team": "NJD",
+    "pos": "D",
+    "gp": 3,
+    "value": 50.5,
+    "gs60": 1.44,
+    "isMe": false
+   },
+   {
+    "rank": 272,
     "name": "Joel Eriksson Ek",
     "team": "MIN",
     "pos": "C",
     "gp": 3,
-    "value": 50.9,
+    "value": 50.3,
     "gs60": 1.42,
     "isMe": false
    },
    {
-    "rank": 268,
-    "name": "Kevin Stenlund",
-    "team": "UTA",
-    "pos": "C",
-    "gp": 4,
-    "value": 50.9,
-    "gs60": 1.41,
-    "isMe": false
-   },
-   {
-    "rank": 269,
+    "rank": 273,
     "name": "Nate Danielson",
     "team": "DET",
     "pos": "C",
     "gp": 3,
-    "value": 50.9,
+    "value": 50.3,
     "gs60": 1.41,
     "isMe": true
    },
    {
-    "rank": 270,
-    "name": "Brad Marchand",
-    "team": "FLA",
-    "pos": "L",
-    "gp": 2,
-    "value": 50.8,
+    "rank": 274,
+    "name": "Kevin Stenlund",
+    "team": "UTA",
+    "pos": "C",
+    "gp": 4,
+    "value": 50.3,
     "gs60": 1.41,
     "isMe": false
    },
    {
-    "rank": 271,
-    "name": "Konsta Helenius",
-    "team": "BUF",
-    "pos": "C",
-    "gp": 3,
-    "value": 50.8,
-    "gs60": 1.4,
+    "rank": 275,
+    "name": "Brad Marchand",
+    "team": "FLA",
+    "pos": "L",
+    "gp": 2,
+    "value": 50.2,
+    "gs60": 1.41,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [

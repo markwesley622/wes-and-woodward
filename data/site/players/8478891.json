@@ -83,19 +83,19 @@
  "hsc": {
   "Game score": {
    "value": 0.22,
-   "percentile": 43
+   "percentile": 45
   },
   "Offense": {
    "value": -0.3,
-   "percentile": 27
+   "percentile": 29
   },
   "Defense": {
-   "value": 0.0,
+   "value": -0.0,
    "percentile": 47
   },
   "Net": {
    "value": -0.3,
-   "percentile": 33
+   "percentile": 34
   }
  },
  "score": null,
@@ -107,8 +107,8 @@
   "minutes": 20,
   "gp": 2,
   "rank": 379,
-  "pool": 625,
-  "percentile": 39.4,
+  "pool": 628,
+  "percentile": 39.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
@@ -118,7 +118,7 @@
     "team": "CHI",
     "pos": "D",
     "gp": 4,
-    "value": 41.2,
+    "value": 41.1,
     "gs60": 0.54,
     "isMe": false
    },
@@ -128,7 +128,7 @@
     "team": "DET",
     "pos": "L",
     "gp": 2,
-    "value": 41.2,
+    "value": 41.1,
     "gs60": 0.53,
     "isMe": false
    },
@@ -148,7 +148,7 @@
     "team": "TOR",
     "pos": "D",
     "gp": 4,
-    "value": 41.0,
+    "value": 40.9,
     "gs60": 0.52,
     "isMe": false
    },
@@ -158,12 +158,12 @@
     "team": "NSH",
     "pos": "C",
     "gp": 3,
-    "value": 40.9,
+    "value": 40.8,
     "gs60": 0.5,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [

@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": 0.7,
-   "percentile": 91
+   "percentile": 90
   },
   "Defense": {
    "value": 0.1,
@@ -95,75 +95,75 @@
   },
   "Net": {
    "value": 0.8,
-   "percentile": 87
+   "percentile": 86
   }
  },
  "score": null,
  "standIn": {
-  "value": 80.2,
+  "value": 78.6,
   "gs": 4.46,
   "gs60": 4.33,
   "gameScore": 4.46,
   "minutes": 62,
   "gp": 3,
-  "rank": 54,
-  "pool": 625,
-  "percentile": 91.4,
+  "rank": 62,
+  "pool": 628,
+  "percentile": 90.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 52,
+    "rank": 60,
     "name": "Filip Hallander",
     "team": "PIT",
     "pos": "C",
     "gp": 2,
-    "value": 80.4,
+    "value": 78.8,
     "gs60": 4.48,
     "isMe": false
    },
    {
-    "rank": 53,
+    "rank": 61,
     "name": "Oliver Bjorkstrand",
     "team": "NYR",
     "pos": "R",
     "gp": 5,
-    "value": 80.3,
+    "value": 78.7,
     "gs60": 4.48,
     "isMe": false
    },
    {
-    "rank": 54,
+    "rank": 62,
     "name": "Alex DeBrincat",
     "team": "DET",
     "pos": "R",
     "gp": 3,
-    "value": 80.2,
+    "value": 78.6,
     "gs60": 4.46,
     "isMe": true
    },
    {
-    "rank": 55,
-    "name": "Josh Manson",
-    "team": "COL",
+    "rank": 63,
+    "name": "Samuel Girard",
+    "team": "PIT",
     "pos": "D",
-    "gp": 2,
-    "value": 80.2,
-    "gs60": 4.46,
+    "gp": 4,
+    "value": 78.4,
+    "gs60": 4.44,
     "isMe": false
    },
    {
-    "rank": 56,
+    "rank": 64,
     "name": "Jalen Chatfield",
     "team": "CAR",
     "pos": "D",
     "gp": 4,
-    "value": 80.0,
+    "value": 78.4,
     "gs60": 4.43,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [

@@ -86,40 +86,40 @@
    "percentile": 26
   },
   "Offense": {
-   "value": -0.8,
-   "percentile": 1
+   "value": -0.9,
+   "percentile": 2
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 91
+   "percentile": 90
   },
   "Net": {
    "value": -0.3,
-   "percentile": 36
+   "percentile": 37
   }
  },
  "score": null,
  "standIn": {
-  "value": 41.4,
+  "value": 41.3,
   "gs": 0.55,
   "gs60": 0.44,
   "gameScore": 0.55,
   "minutes": 75,
   "gp": 3,
   "rank": 374,
-  "pool": 625,
-  "percentile": 40.2,
+  "pool": 628,
+  "percentile": 40.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
     "rank": 372,
-    "name": "Trevor van Riemsdyk",
-    "team": "PIT",
-    "pos": "D",
+    "name": "Justin Sourdif",
+    "team": "WSH",
+    "pos": "C",
     "gp": 3,
-    "value": 41.5,
-    "gs60": 0.56,
+    "value": 41.4,
+    "gs60": 0.57,
     "isMe": false
    },
    {
@@ -128,7 +128,7 @@
     "team": "DAL",
     "pos": "C",
     "gp": 3,
-    "value": 41.4,
+    "value": 41.3,
     "gs60": 0.55,
     "isMe": false
    },
@@ -138,7 +138,7 @@
     "team": "DET",
     "pos": "D",
     "gp": 3,
-    "value": 41.4,
+    "value": 41.3,
     "gs60": 0.55,
     "isMe": true
    },
@@ -148,7 +148,7 @@
     "team": "TBL",
     "pos": "D",
     "gp": 3,
-    "value": 41.4,
+    "value": 41.3,
     "gs60": 0.55,
     "isMe": false
    },
@@ -163,7 +163,7 @@
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [

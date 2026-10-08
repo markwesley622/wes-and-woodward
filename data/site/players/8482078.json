@@ -83,87 +83,87 @@
  "hsc": {
   "Game score": {
    "value": -0.12,
-   "percentile": 29
+   "percentile": 28
   },
   "Offense": {
    "value": -0.0,
-   "percentile": 57
+   "percentile": 56
   },
   "Defense": {
    "value": -0.4,
-   "percentile": 16
+   "percentile": 17
   },
   "Net": {
    "value": -0.4,
-   "percentile": 28
+   "percentile": 29
   }
  },
  "score": null,
  "standIn": {
-  "value": 51.5,
+  "value": 50.9,
   "gs": 1.47,
   "gs60": 1.38,
   "gameScore": 1.47,
   "minutes": 64,
   "gp": 3,
-  "rank": 260,
-  "pool": 625,
-  "percentile": 58.4,
+  "rank": 266,
+  "pool": 628,
+  "percentile": 57.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 258,
-    "name": "Michael Rasmussen",
-    "team": "DET",
+    "rank": 264,
+    "name": "Adam Lowry",
+    "team": "WPG",
     "pos": "C",
-    "gp": 3,
-    "value": 51.7,
+    "gp": 4,
+    "value": 51.0,
     "gs60": 1.48,
     "isMe": false
    },
    {
-    "rank": 259,
-    "name": "Oskar Bck",
-    "team": "DAL",
-    "pos": "C",
+    "rank": 265,
+    "name": "Vincent Desharnais",
+    "team": "WSH",
+    "pos": "D",
     "gp": 3,
-    "value": 51.7,
+    "value": 51.0,
     "gs60": 1.48,
     "isMe": false
    },
    {
-    "rank": 260,
+    "rank": 266,
     "name": "Lucas Raymond",
     "team": "DET",
     "pos": "L",
     "gp": 3,
-    "value": 51.5,
+    "value": 50.9,
     "gs60": 1.47,
     "isMe": true
    },
    {
-    "rank": 261,
+    "rank": 267,
     "name": "Dawson Mercer",
     "team": "NJD",
     "pos": "C",
     "gp": 3,
-    "value": 51.4,
+    "value": 50.8,
     "gs60": 1.45,
     "isMe": false
    },
    {
-    "rank": 262,
-    "name": "Radek Faksa",
-    "team": "DAL",
-    "pos": "C",
+    "rank": 268,
+    "name": "Kiefer Sherwood",
+    "team": "SJS",
+    "pos": "L",
     "gp": 3,
-    "value": 51.3,
+    "value": 50.7,
     "gs60": 1.45,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [

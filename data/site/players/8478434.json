@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": 0.46,
-   "percentile": 56
+   "percentile": 57
   },
   "Offense": {
    "value": -0.6,
-   "percentile": 10
+   "percentile": 11
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 91
+   "percentile": 90
   },
   "Net": {
    "value": -0.0,
@@ -100,70 +100,70 @@
  },
  "score": null,
  "standIn": {
-  "value": 45.0,
+  "value": 44.7,
   "gs": 0.88,
   "gs60": 1.45,
   "gameScore": 0.88,
   "minutes": 36,
   "gp": 3,
-  "rank": 325,
-  "pool": 625,
-  "percentile": 48.0,
+  "rank": 331,
+  "pool": 628,
+  "percentile": 47.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 323,
-    "name": "Tristan Luneau",
-    "team": "ANA",
-    "pos": "D",
+    "rank": 329,
+    "name": "Jake DeBrusk",
+    "team": "VAN",
+    "pos": "L",
     "gp": 2,
-    "value": 45.2,
-    "gs60": 0.9,
+    "value": 45.0,
+    "gs60": 0.91,
     "isMe": false
    },
    {
-    "rank": 324,
+    "rank": 330,
     "name": "Blake Coleman",
     "team": "MIN",
     "pos": "L",
     "gp": 3,
-    "value": 45.2,
+    "value": 44.9,
     "gs60": 0.9,
     "isMe": false
    },
    {
-    "rank": 325,
+    "rank": 331,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
     "gp": 3,
-    "value": 45.0,
+    "value": 44.7,
     "gs60": 0.88,
     "isMe": true
    },
    {
-    "rank": 326,
-    "name": "Arttu Hyry",
-    "team": "DAL",
-    "pos": "R",
-    "gp": 3,
-    "value": 44.9,
-    "gs60": 0.87,
-    "isMe": false
-   },
-   {
-    "rank": 327,
+    "rank": 332,
     "name": "Bokondji Imama",
     "team": "FLA",
     "pos": "L",
     "gp": 4,
-    "value": 44.9,
+    "value": 44.6,
+    "gs60": 0.87,
+    "isMe": false
+   },
+   {
+    "rank": 333,
+    "name": "Arttu Hyry",
+    "team": "DAL",
+    "pos": "R",
+    "gp": 3,
+    "value": 44.6,
     "gs60": 0.87,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [

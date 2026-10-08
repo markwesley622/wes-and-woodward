@@ -94,76 +94,76 @@
    "percentile": 52
   },
   "Net": {
-   "value": -0.5,
-   "percentile": 22
+   "value": -0.6,
+   "percentile": 23
   }
  },
  "score": null,
  "standIn": {
-  "value": 35.9,
+  "value": 36.1,
   "gs": 0.03,
   "gs60": 0.03,
   "gameScore": 0.03,
   "minutes": 64,
   "gp": 3,
-  "rank": 447,
-  "pool": 625,
+  "rank": 449,
+  "pool": 628,
   "percentile": 28.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 445,
+    "rank": 447,
+    "name": "Braden Schneider",
+    "team": "NYR",
+    "pos": "D",
+    "gp": 5,
+    "value": 36.3,
+    "gs60": 0.06,
+    "isMe": false
+   },
+   {
+    "rank": 448,
     "name": "Alexander Kerfoot",
     "team": "NSH",
     "pos": "C",
     "gp": 3,
-    "value": 36.1,
+    "value": 36.3,
     "gs60": 0.05,
     "isMe": false
    },
    {
-    "rank": 446,
-    "name": "Dylan Strome",
-    "team": "WSH",
-    "pos": "C",
-    "gp": 2,
-    "value": 35.9,
-    "gs60": 0.03,
-    "isMe": false
-   },
-   {
-    "rank": 447,
+    "rank": 449,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
     "gp": 3,
-    "value": 35.9,
+    "value": 36.1,
     "gs60": 0.03,
     "isMe": true
    },
    {
-    "rank": 448,
+    "rank": 450,
     "name": "Nino Niederreiter",
     "team": "WPG",
     "pos": "R",
     "gp": 2,
-    "value": 35.9,
+    "value": 36.1,
     "gs60": 0.03,
     "isMe": false
    },
    {
-    "rank": 449,
+    "rank": 451,
     "name": "Max Sasson",
     "team": "VAN",
     "pos": "C",
     "gp": 4,
-    "value": 35.7,
+    "value": 36.0,
     "gs60": 0.02,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [

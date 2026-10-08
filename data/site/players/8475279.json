@@ -83,87 +83,87 @@
  "hsc": {
   "Game score": {
    "value": 0.42,
-   "percentile": 54
+   "percentile": 55
   },
   "Offense": {
    "value": -0.0,
-   "percentile": 58
+   "percentile": 57
   },
   "Defense": {
    "value": 0.0,
-   "percentile": 46
+   "percentile": 47
   },
   "Net": {
    "value": -0.0,
-   "percentile": 54
+   "percentile": 55
   }
  },
  "score": null,
  "standIn": {
-  "value": 47.0,
+  "value": 46.6,
   "gs": 1.06,
   "gs60": 1.17,
   "gameScore": 1.06,
   "minutes": 54,
   "gp": 3,
-  "rank": 307,
-  "pool": 625,
-  "percentile": 50.9,
+  "rank": 314,
+  "pool": 628,
+  "percentile": 50.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 305,
+    "rank": 312,
     "name": "Bobby Brink",
     "team": "MIN",
     "pos": "R",
     "gp": 3,
-    "value": 47.3,
+    "value": 46.9,
     "gs60": 1.09,
     "isMe": false
    },
    {
-    "rank": 306,
+    "rank": 313,
     "name": "Braeden Bowman",
     "team": "VGK",
     "pos": "R",
     "gp": 4,
-    "value": 47.1,
+    "value": 46.7,
     "gs60": 1.07,
     "isMe": false
    },
    {
-    "rank": 307,
+    "rank": 314,
     "name": "Ben Chiarot",
     "team": "DET",
     "pos": "D",
     "gp": 3,
-    "value": 47.0,
+    "value": 46.6,
     "gs60": 1.06,
     "isMe": true
    },
    {
-    "rank": 308,
+    "rank": 315,
     "name": "Denton Mateychuk",
     "team": "CBJ",
     "pos": "D",
     "gp": 2,
-    "value": 46.8,
+    "value": 46.4,
     "gs60": 1.04,
     "isMe": false
    },
    {
-    "rank": 309,
+    "rank": 316,
     "name": "Marat Khusnutdinov",
     "team": "BOS",
     "pos": "C",
     "gp": 4,
-    "value": 46.6,
+    "value": 46.2,
     "gs60": 1.02,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [

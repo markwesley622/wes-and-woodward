@@ -100,70 +100,70 @@
  },
  "score": null,
  "standIn": {
-  "value": 60.1,
+  "value": 59.1,
   "gs": 2.25,
   "gs60": 14.81,
   "gameScore": 2.25,
   "minutes": 9,
   "gp": 1,
-  "rank": 179,
-  "pool": 625,
-  "percentile": 71.4,
+  "rank": 185,
+  "pool": 628,
+  "percentile": 70.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 177,
+    "rank": 183,
     "name": "Kent Johnson",
     "team": "CBJ",
     "pos": "C",
     "gp": 2,
-    "value": 60.3,
+    "value": 59.3,
     "gs60": 2.27,
     "isMe": false
    },
    {
-    "rank": 178,
+    "rank": 184,
     "name": "Nick Foligno",
     "team": "MIN",
     "pos": "L",
     "gp": 3,
-    "value": 60.2,
+    "value": 59.1,
     "gs60": 2.25,
     "isMe": false
    },
    {
-    "rank": 179,
+    "rank": 185,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 1,
-    "value": 60.1,
+    "value": 59.1,
     "gs60": 2.25,
     "isMe": true
    },
    {
-    "rank": 180,
+    "rank": 186,
+    "name": "Mikael Granlund",
+    "team": "ANA",
+    "pos": "C",
+    "gp": 2,
+    "value": 59.0,
+    "gs60": 2.24,
+    "isMe": false
+   },
+   {
+    "rank": 187,
     "name": "Hampus Lindholm",
     "team": "BOS",
     "pos": "D",
     "gp": 4,
-    "value": 59.7,
+    "value": 58.7,
     "gs60": 2.21,
-    "isMe": false
-   },
-   {
-    "rank": 181,
-    "name": "Erik Gustafsson",
-    "team": "LAK",
-    "pos": "D",
-    "gp": 2,
-    "value": 59.6,
-    "gs60": 2.2,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W&W value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
  },
  "impact": [],
  "career": [],
