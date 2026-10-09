@@ -87,79 +87,79 @@
   },
   "Offense": {
    "value": -0.9,
-   "percentile": 2
+   "percentile": 3
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 90
+   "percentile": 88
   },
   "Net": {
    "value": -0.3,
-   "percentile": 37
+   "percentile": 36
   }
  },
  "score": null,
  "standIn": {
-  "value": 41.3,
+  "value": 40.1,
   "gs": 0.55,
   "gs60": 0.44,
   "gameScore": 0.55,
   "minutes": 75,
   "gp": 3,
-  "rank": 374,
-  "pool": 628,
-  "percentile": 40.4,
+  "rank": 395,
+  "pool": 639,
+  "percentile": 38.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 372,
-    "name": "Justin Sourdif",
-    "team": "WSH",
-    "pos": "C",
-    "gp": 3,
-    "value": 41.4,
+    "rank": 393,
+    "name": "Mathieu Olivier",
+    "team": "CBJ",
+    "pos": "R",
+    "gp": 2,
+    "value": 40.3,
     "gs60": 0.57,
     "isMe": false
    },
    {
-    "rank": 373,
-    "name": "Justin Hryckowian",
-    "team": "DAL",
+    "rank": 394,
+    "name": "Justin Sourdif",
+    "team": "WSH",
     "pos": "C",
     "gp": 3,
-    "value": 41.3,
-    "gs60": 0.55,
+    "value": 40.3,
+    "gs60": 0.57,
     "isMe": false
    },
    {
-    "rank": 374,
+    "rank": 395,
     "name": "Moritz Seider",
     "team": "DET",
     "pos": "D",
     "gp": 3,
-    "value": 41.3,
+    "value": 40.1,
     "gs60": 0.55,
     "isMe": true
    },
    {
-    "rank": 375,
-    "name": "Charle-Edouard D'Astous",
-    "team": "TBL",
-    "pos": "D",
-    "gp": 3,
-    "value": 41.3,
-    "gs60": 0.55,
-    "isMe": false
-   },
-   {
-    "rank": 376,
+    "rank": 396,
     "name": "Aaron Ekblad",
     "team": "FLA",
     "pos": "D",
     "gp": 2,
-    "value": 41.2,
+    "value": 40.1,
     "gs60": 0.54,
+    "isMe": false
+   },
+   {
+    "rank": 397,
+    "name": "J.T. Compher",
+    "team": "DET",
+    "pos": "L",
+    "gp": 2,
+    "value": 40.0,
+    "gs60": 0.53,
     "isMe": false
    }
   ],

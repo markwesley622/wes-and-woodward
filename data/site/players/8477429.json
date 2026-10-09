@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.6,
-   "percentile": 9
+   "percentile": 12
   },
   "Defense": {
    "value": 0.1,
@@ -95,70 +95,70 @@
   },
   "Net": {
    "value": -0.6,
-   "percentile": 23
+   "percentile": 25
   }
  },
  "score": null,
  "standIn": {
-  "value": 36.1,
+  "value": 35.5,
   "gs": 0.03,
   "gs60": 0.03,
   "gameScore": 0.03,
   "minutes": 64,
   "gp": 3,
-  "rank": 449,
-  "pool": 628,
+  "rank": 457,
+  "pool": 639,
   "percentile": 28.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 447,
+    "rank": 455,
     "name": "Braden Schneider",
     "team": "NYR",
     "pos": "D",
     "gp": 5,
-    "value": 36.3,
+    "value": 35.7,
     "gs60": 0.06,
     "isMe": false
    },
    {
-    "rank": 448,
-    "name": "Alexander Kerfoot",
-    "team": "NSH",
-    "pos": "C",
-    "gp": 3,
-    "value": 36.3,
-    "gs60": 0.05,
+    "rank": 456,
+    "name": "Hoyt Stanley",
+    "team": "OTT",
+    "pos": "D",
+    "gp": 1,
+    "value": 35.7,
+    "gs60": 0.06,
     "isMe": false
    },
    {
-    "rank": 449,
+    "rank": 457,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
     "gp": 3,
-    "value": 36.1,
+    "value": 35.5,
     "gs60": 0.03,
     "isMe": true
    },
    {
-    "rank": 450,
+    "rank": 458,
     "name": "Nino Niederreiter",
     "team": "WPG",
     "pos": "R",
     "gp": 2,
-    "value": 36.1,
+    "value": 35.5,
     "gs60": 0.03,
     "isMe": false
    },
    {
-    "rank": 451,
-    "name": "Max Sasson",
-    "team": "VAN",
-    "pos": "C",
+    "rank": 459,
+    "name": "Isaac Howard",
+    "team": "EDM",
+    "pos": "L",
     "gp": 4,
-    "value": 36.0,
+    "value": 35.4,
     "gs60": 0.02,
     "isMe": false
    }

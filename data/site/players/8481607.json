@@ -87,78 +87,78 @@
   },
   "Offense": {
    "value": -0.7,
-   "percentile": 5
+   "percentile": 7
   },
   "Defense": {
    "value": 0.2,
-   "percentile": 65
+   "percentile": 63
   },
   "Net": {
    "value": -0.5,
-   "percentile": 25
+   "percentile": 27
   }
  },
  "score": null,
  "standIn": {
-  "value": 35.2,
+  "value": 34.7,
   "gs": -0.06,
   "gs60": -0.08,
   "gameScore": -0.06,
   "minutes": 47,
   "gp": 3,
-  "rank": 460,
-  "pool": 628,
+  "rank": 468,
+  "pool": 639,
   "percentile": 26.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 458,
-    "name": "Adam Edstrom",
-    "team": "NSH",
-    "pos": "C",
-    "gp": 3,
-    "value": 35.5,
+    "rank": 466,
+    "name": "Conor Garland",
+    "team": "CBJ",
+    "pos": "R",
+    "gp": 2,
+    "value": 35.0,
     "gs60": -0.03,
     "isMe": false
    },
    {
-    "rank": 459,
-    "name": "Samuel Honzek",
-    "team": "CGY",
+    "rank": 467,
+    "name": "Michael Bunting",
+    "team": "PHI",
     "pos": "L",
-    "gp": 3,
-    "value": 35.4,
-    "gs60": -0.04,
+    "gp": 1,
+    "value": 34.7,
+    "gs60": -0.06,
     "isMe": false
    },
    {
-    "rank": 460,
+    "rank": 468,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 3,
-    "value": 35.2,
+    "value": 34.7,
     "gs60": -0.06,
     "isMe": true
    },
    {
-    "rank": 461,
-    "name": "Dmitri Voronkov",
-    "team": "CBJ",
-    "pos": "L",
-    "gp": 2,
-    "value": 35.2,
+    "rank": 469,
+    "name": "Dominic Toninato",
+    "team": "CHI",
+    "pos": "C",
+    "gp": 1,
+    "value": 34.6,
     "gs60": -0.07,
     "isMe": false
    },
    {
-    "rank": 462,
-    "name": "Philip Broberg",
-    "team": "STL",
-    "pos": "D",
-    "gp": 3,
-    "value": 35.1,
+    "rank": 470,
+    "name": "Dmitri Voronkov",
+    "team": "CBJ",
+    "pos": "L",
+    "gp": 2,
+    "value": 34.6,
     "gs60": -0.07,
     "isMe": false
    }

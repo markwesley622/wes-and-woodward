@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": 0.24,
-   "percentile": 46
+   "percentile": 47
   },
   "Offense": {
    "value": 0.1,
-   "percentile": 67
+   "percentile": 64
   },
   "Defense": {
-   "value": -0.2,
-   "percentile": 27
+   "value": -0.3,
+   "percentile": 29
   },
   "Net": {
    "value": -0.2,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 45.0,
+  "value": 43.5,
   "gs": 0.91,
   "gs60": 1.25,
   "gameScore": 0.91,
   "minutes": 44,
   "gp": 3,
-  "rank": 327,
-  "pool": 628,
-  "percentile": 47.9,
+  "rank": 351,
+  "pool": 639,
+  "percentile": 45.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 325,
-    "name": "Dalibor Dvorsky",
-    "team": "STL",
+    "rank": 349,
+    "name": "Adam Klapka",
+    "team": "CGY",
     "pos": "R",
     "gp": 3,
-    "value": 45.3,
-    "gs60": 0.93,
-    "isMe": false
-   },
-   {
-    "rank": 326,
-    "name": "Mavrik Bourque",
-    "team": "NSH",
-    "pos": "C",
-    "gp": 3,
-    "value": 45.1,
+    "value": 43.6,
     "gs60": 0.92,
     "isMe": false
    },
    {
-    "rank": 327,
-    "name": "Axel Sandin-Pellikka",
-    "team": "DET",
-    "pos": "D",
+    "rank": 350,
+    "name": "Mikael Backlund",
+    "team": "CGY",
+    "pos": "C",
     "gp": 3,
-    "value": 45.0,
-    "gs60": 0.91,
-    "isMe": true
-   },
-   {
-    "rank": 328,
-    "name": "Bryan Rust",
-    "team": "PIT",
-    "pos": "R",
-    "gp": 1,
-    "value": 45.0,
+    "value": 43.5,
     "gs60": 0.91,
     "isMe": false
    },
    {
-    "rank": 329,
-    "name": "Jake DeBrusk",
-    "team": "VAN",
-    "pos": "L",
-    "gp": 2,
-    "value": 45.0,
+    "rank": 351,
+    "name": "Axel Sandin-Pellikka",
+    "team": "DET",
+    "pos": "D",
+    "gp": 3,
+    "value": 43.5,
     "gs60": 0.91,
+    "isMe": true
+   },
+   {
+    "rank": 352,
+    "name": "Bryan Rust",
+    "team": "PIT",
+    "pos": "R",
+    "gp": 1,
+    "value": 43.5,
+    "gs60": 0.91,
+    "isMe": false
+   },
+   {
+    "rank": 353,
+    "name": "Warren Foegele",
+    "team": "OTT",
+    "pos": "L",
+    "gp": 4,
+    "value": 43.3,
+    "gs60": 0.89,
     "isMe": false
    }
   ],

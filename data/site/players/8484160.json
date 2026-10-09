@@ -94,72 +94,72 @@
    "percentile": 49
   },
   "Net": {
-   "value": -0.1,
-   "percentile": 45
+   "value": -0.2,
+   "percentile": 46
   }
  },
  "score": null,
  "standIn": {
-  "value": 50.3,
+  "value": 48.3,
   "gs": 1.41,
   "gs60": 3.27,
   "gameScore": 1.41,
   "minutes": 26,
   "gp": 3,
-  "rank": 273,
-  "pool": 628,
-  "percentile": 56.4,
+  "rank": 292,
+  "pool": 639,
+  "percentile": 54.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 271,
-    "name": "Dougie Hamilton",
-    "team": "NJD",
-    "pos": "D",
-    "gp": 3,
-    "value": 50.5,
-    "gs60": 1.44,
-    "isMe": false
-   },
-   {
-    "rank": 272,
-    "name": "Joel Eriksson Ek",
-    "team": "MIN",
+    "rank": 290,
+    "name": "Conor Geekie",
+    "team": "TBL",
     "pos": "C",
-    "gp": 3,
-    "value": 50.3,
+    "gp": 4,
+    "value": 48.3,
     "gs60": 1.42,
     "isMe": false
    },
    {
-    "rank": 273,
-    "name": "Nate Danielson",
-    "team": "DET",
-    "pos": "C",
-    "gp": 3,
-    "value": 50.3,
-    "gs60": 1.41,
-    "isMe": true
-   },
-   {
-    "rank": 274,
-    "name": "Kevin Stenlund",
-    "team": "UTA",
-    "pos": "C",
-    "gp": 4,
-    "value": 50.3,
+    "rank": 291,
+    "name": "Will Borgen",
+    "team": "BOS",
+    "pos": "D",
+    "gp": 5,
+    "value": 48.3,
     "gs60": 1.41,
     "isMe": false
    },
    {
-    "rank": 275,
+    "rank": 292,
+    "name": "Nate Danielson",
+    "team": "DET",
+    "pos": "C",
+    "gp": 3,
+    "value": 48.3,
+    "gs60": 1.41,
+    "isMe": true
+   },
+   {
+    "rank": 293,
     "name": "Brad Marchand",
     "team": "FLA",
     "pos": "L",
     "gp": 2,
-    "value": 50.2,
+    "value": 48.2,
     "gs60": 1.41,
+    "isMe": false
+   },
+   {
+    "rank": 294,
+    "name": "Brady Tkachuk",
+    "team": "FLA",
+    "pos": "L",
+    "gp": 4,
+    "value": 48.1,
+    "gs60": 1.4,
     "isMe": false
    }
   ],

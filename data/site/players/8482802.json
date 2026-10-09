@@ -87,11 +87,11 @@
   },
   "Offense": {
    "value": 0.1,
-   "percentile": 68
+   "percentile": 66
   },
   "Defense": {
-   "value": -0.1,
-   "percentile": 34
+   "value": -0.2,
+   "percentile": 35
   },
   "Net": {
    "value": -0.0,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 44.4,
+  "value": 42.9,
   "gs": 0.85,
   "gs60": 6.88,
   "gameScore": 0.85,
   "minutes": 7,
   "gp": 1,
-  "rank": 340,
-  "pool": 628,
-  "percentile": 45.9,
+  "rank": 362,
+  "pool": 639,
+  "percentile": 43.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 338,
+    "rank": 360,
+    "name": "Bokondji Imama",
+    "team": "FLA",
+    "pos": "L",
+    "gp": 4,
+    "value": 43.1,
+    "gs60": 0.87,
+    "isMe": false
+   },
+   {
+    "rank": 361,
     "name": "Sidney Crosby",
     "team": "PIT",
     "pos": "C",
     "gp": 4,
-    "value": 44.4,
+    "value": 42.9,
     "gs60": 0.85,
     "isMe": false
    },
    {
-    "rank": 339,
-    "name": "Ian Cole",
-    "team": "CHI",
-    "pos": "D",
-    "gp": 4,
-    "value": 44.4,
-    "gs60": 0.85,
-    "isMe": false
-   },
-   {
-    "rank": 340,
+    "rank": 362,
     "name": "Carter Mazur",
     "team": "DET",
     "pos": "L",
     "gp": 1,
-    "value": 44.4,
+    "value": 42.9,
     "gs60": 0.85,
     "isMe": true
    },
    {
-    "rank": 341,
-    "name": "Tyler Myers",
-    "team": "DAL",
-    "pos": "D",
+    "rank": 363,
+    "name": "Ryan Strome",
+    "team": "CGY",
+    "pos": "C",
     "gp": 3,
-    "value": 44.3,
+    "value": 42.8,
     "gs60": 0.84,
     "isMe": false
    },
    {
-    "rank": 342,
-    "name": "Aleksander Barkov",
-    "team": "FLA",
-    "pos": "C",
-    "gp": 2,
-    "value": 43.9,
-    "gs60": 0.8,
+    "rank": 364,
+    "name": "Colton Parayko",
+    "team": "STL",
+    "pos": "D",
+    "gp": 4,
+    "value": 42.6,
+    "gs60": 0.81,
     "isMe": false
    }
   ],

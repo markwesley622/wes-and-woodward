@@ -86,80 +86,80 @@
    "percentile": 77
   },
   "Offense": {
-   "value": 0.6,
-   "percentile": 86
+   "value": 0.5,
+   "percentile": 84
   },
   "Defense": {
    "value": -0.2,
-   "percentile": 30
+   "percentile": 33
   },
   "Net": {
-   "value": 0.4,
-   "percentile": 71
+   "value": 0.3,
+   "percentile": 68
   }
  },
  "score": null,
  "standIn": {
-  "value": 67.9,
+  "value": 64.6,
   "gs": 3.16,
   "gs60": 3.45,
   "gameScore": 3.16,
   "minutes": 55,
   "gp": 3,
-  "rank": 128,
-  "pool": 628,
-  "percentile": 79.6,
+  "rank": 155,
+  "pool": 639,
+  "percentile": 75.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 126,
-    "name": "Paul Cotter",
-    "team": "VAN",
-    "pos": "L",
+    "rank": 153,
+    "name": "Kris Letang",
+    "team": "PIT",
+    "pos": "D",
     "gp": 4,
-    "value": 68.1,
-    "gs60": 3.17,
+    "value": 65.3,
+    "gs60": 3.24,
     "isMe": false
    },
    {
-    "rank": 127,
+    "rank": 154,
     "name": "Chandler Stephenson",
     "team": "SEA",
     "pos": "C",
     "gp": 4,
-    "value": 68.0,
+    "value": 64.6,
     "gs60": 3.17,
     "isMe": false
    },
    {
-    "rank": 128,
+    "rank": 155,
     "name": "Viktor Arvidsson",
     "team": "DET",
     "pos": "L",
     "gp": 3,
-    "value": 67.9,
+    "value": 64.6,
     "gs60": 3.16,
     "isMe": true
    },
    {
-    "rank": 129,
-    "name": "Adam Pelech",
-    "team": "NYI",
+    "rank": 156,
+    "name": "Elias Pettersson",
+    "team": "VAN",
     "pos": "D",
-    "gp": 3,
-    "value": 67.9,
-    "gs60": 3.16,
+    "gp": 5,
+    "value": 64.5,
+    "gs60": 3.15,
     "isMe": false
    },
    {
-    "rank": 130,
-    "name": "Shane Pinto",
-    "team": "OTT",
-    "pos": "C",
-    "gp": 3,
-    "value": 67.1,
-    "gs60": 3.08,
+    "rank": 157,
+    "name": "Eric Robinson",
+    "team": "CAR",
+    "pos": "L",
+    "gp": 5,
+    "value": 64.0,
+    "gs60": 3.1,
     "isMe": false
    }
   ],

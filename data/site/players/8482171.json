@@ -86,80 +86,80 @@
    "percentile": 99
   },
   "Offense": {
-   "value": 0.5,
-   "percentile": 83
+   "value": 0.4,
+   "percentile": 81
   },
   "Defense": {
    "value": 0.2,
-   "percentile": 62
+   "percentile": 61
   },
   "Net": {
    "value": 0.6,
-   "percentile": 82
+   "percentile": 78
   }
  },
  "score": null,
  "standIn": {
-  "value": 59.1,
+  "value": 56.3,
   "gs": 2.25,
   "gs60": 14.81,
   "gameScore": 2.25,
   "minutes": 9,
   "gp": 1,
-  "rank": 185,
-  "pool": 628,
-  "percentile": 70.5,
+  "rank": 214,
+  "pool": 639,
+  "percentile": 66.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 183,
-    "name": "Kent Johnson",
-    "team": "CBJ",
+    "rank": 212,
+    "name": "Anton Frondell",
+    "team": "CHI",
     "pos": "C",
-    "gp": 2,
-    "value": 59.3,
+    "gp": 5,
+    "value": 56.4,
     "gs60": 2.27,
     "isMe": false
    },
    {
-    "rank": 184,
+    "rank": 213,
     "name": "Nick Foligno",
     "team": "MIN",
     "pos": "L",
     "gp": 3,
-    "value": 59.1,
+    "value": 56.3,
     "gs60": 2.25,
     "isMe": false
    },
    {
-    "rank": 185,
+    "rank": 214,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 1,
-    "value": 59.1,
+    "value": 56.3,
     "gs60": 2.25,
     "isMe": true
    },
    {
-    "rank": 186,
-    "name": "Mikael Granlund",
-    "team": "ANA",
-    "pos": "C",
+    "rank": 215,
+    "name": "Erik Gustafsson",
+    "team": "LAK",
+    "pos": "D",
     "gp": 2,
-    "value": 59.0,
-    "gs60": 2.24,
+    "value": 55.8,
+    "gs60": 2.2,
     "isMe": false
    },
    {
-    "rank": 187,
-    "name": "Hampus Lindholm",
-    "team": "BOS",
+    "rank": 216,
+    "name": "K'Andre Miller",
+    "team": "CAR",
     "pos": "D",
-    "gp": 4,
-    "value": 58.7,
-    "gs60": 2.21,
+    "gp": 5,
+    "value": 55.7,
+    "gs60": 2.2,
     "isMe": false
    }
   ],

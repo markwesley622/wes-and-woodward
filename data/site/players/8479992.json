@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": 0.58,
-   "percentile": 62
+   "percentile": 61
   },
   "Offense": {
    "value": -0.5,
-   "percentile": 12
+   "percentile": 15
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 90
+   "percentile": 88
   },
   "Net": {
    "value": 0.0,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 51.1,
+  "value": 49.0,
   "gs": 1.49,
   "gs60": 1.75,
   "gameScore": 1.49,
   "minutes": 51,
   "gp": 3,
-  "rank": 262,
-  "pool": 628,
-  "percentile": 58.3,
+  "rank": 279,
+  "pool": 639,
+  "percentile": 56.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 260,
-    "name": "Kasperi Kapanen",
-    "team": "EDM",
-    "pos": "R",
-    "gp": 3,
-    "value": 51.5,
-    "gs60": 1.52,
+    "rank": 277,
+    "name": "Nikolaj Ehlers",
+    "team": "CAR",
+    "pos": "L",
+    "gp": 5,
+    "value": 49.2,
+    "gs60": 1.5,
     "isMe": false
    },
    {
-    "rank": 261,
-    "name": "Noah Warren",
-    "team": "ANA",
-    "pos": "D",
-    "gp": 2,
-    "value": 51.4,
-    "gs60": 1.52,
+    "rank": 278,
+    "name": "Linus Karlsson",
+    "team": "VAN",
+    "pos": "C",
+    "gp": 5,
+    "value": 49.2,
+    "gs60": 1.5,
     "isMe": false
    },
    {
-    "rank": 262,
+    "rank": 279,
     "name": "Michael Rasmussen",
     "team": "DET",
     "pos": "C",
     "gp": 3,
-    "value": 51.1,
+    "value": 49.0,
     "gs60": 1.49,
     "isMe": true
    },
    {
-    "rank": 263,
-    "name": "Oskar Bck",
-    "team": "DAL",
-    "pos": "C",
+    "rank": 280,
+    "name": "Alex Killorn",
+    "team": "ANA",
+    "pos": "L",
     "gp": 3,
-    "value": 51.0,
-    "gs60": 1.48,
+    "value": 49.0,
+    "gs60": 1.49,
     "isMe": false
    },
    {
-    "rank": 264,
-    "name": "Adam Lowry",
-    "team": "WPG",
-    "pos": "C",
-    "gp": 4,
-    "value": 51.0,
+    "rank": 281,
+    "name": "Jordan Greenway",
+    "team": "CHI",
+    "pos": "L",
+    "gp": 5,
+    "value": 49.0,
     "gs60": 1.48,
     "isMe": false
    }

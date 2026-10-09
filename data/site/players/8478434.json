@@ -87,11 +87,11 @@
   },
   "Offense": {
    "value": -0.6,
-   "percentile": 11
+   "percentile": 13
   },
   "Defense": {
-   "value": 0.6,
-   "percentile": 90
+   "value": 0.5,
+   "percentile": 87
   },
   "Net": {
    "value": -0.0,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 44.7,
+  "value": 43.2,
   "gs": 0.88,
   "gs60": 1.45,
   "gameScore": 0.88,
   "minutes": 36,
   "gp": 3,
-  "rank": 331,
-  "pool": 628,
-  "percentile": 47.3,
+  "rank": 356,
+  "pool": 639,
+  "percentile": 44.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 329,
-    "name": "Jake DeBrusk",
-    "team": "VAN",
-    "pos": "L",
-    "gp": 2,
-    "value": 45.0,
-    "gs60": 0.91,
-    "isMe": false
-   },
-   {
-    "rank": 330,
-    "name": "Blake Coleman",
-    "team": "MIN",
-    "pos": "L",
+    "rank": 354,
+    "name": "Olen Zellweger",
+    "team": "BUF",
+    "pos": "D",
     "gp": 3,
-    "value": 44.9,
-    "gs60": 0.9,
+    "value": 43.3,
+    "gs60": 0.89,
     "isMe": false
    },
    {
-    "rank": 331,
+    "rank": 355,
+    "name": "John Tavares",
+    "team": "TOR",
+    "pos": "C",
+    "gp": 4,
+    "value": 43.2,
+    "gs60": 0.88,
+    "isMe": false
+   },
+   {
+    "rank": 356,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
     "gp": 3,
-    "value": 44.7,
+    "value": 43.2,
     "gs60": 0.88,
     "isMe": true
    },
    {
-    "rank": 332,
-    "name": "Bokondji Imama",
-    "team": "FLA",
-    "pos": "L",
+    "rank": 357,
+    "name": "Darren Raddysh",
+    "team": "TOR",
+    "pos": "D",
     "gp": 4,
-    "value": 44.6,
-    "gs60": 0.87,
+    "value": 43.2,
+    "gs60": 0.88,
     "isMe": false
    },
    {
-    "rank": 333,
-    "name": "Arttu Hyry",
-    "team": "DAL",
-    "pos": "R",
-    "gp": 3,
-    "value": 44.6,
-    "gs60": 0.87,
+    "rank": 358,
+    "name": "Gavin McKenna",
+    "team": "TOR",
+    "pos": "L",
+    "gp": 4,
+    "value": 43.2,
+    "gs60": 0.88,
     "isMe": false
    }
   ],

@@ -91,75 +91,75 @@
   },
   "Defense": {
    "value": 0.5,
-   "percentile": 89
+   "percentile": 86
   },
   "Net": {
    "value": 0.5,
-   "percentile": 78
+   "percentile": 76
   }
  },
  "score": null,
  "standIn": {
-  "value": 66.9,
+  "value": 63.6,
   "gs": 3.05,
   "gs60": 4.38,
   "gameScore": 3.05,
   "minutes": 42,
   "gp": 3,
-  "rank": 134,
-  "pool": 628,
-  "percentile": 78.7,
+  "rank": 162,
+  "pool": 639,
+  "percentile": 74.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 132,
-    "name": "Beckett Sennecke",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 2,
-    "value": 67.0,
+    "rank": 160,
+    "name": "Ryker Evans",
+    "team": "SEA",
+    "pos": "D",
+    "gp": 4,
+    "value": 63.8,
+    "gs60": 3.07,
+    "isMe": false
+   },
+   {
+    "rank": 161,
+    "name": "Peyton Krebs",
+    "team": "BUF",
+    "pos": "C",
+    "gp": 4,
+    "value": 63.7,
     "gs60": 3.06,
     "isMe": false
    },
    {
-    "rank": 133,
-    "name": "Jeremy Lauzon",
-    "team": "VGK",
-    "pos": "D",
-    "gp": 4,
-    "value": 66.9,
-    "gs60": 3.05,
-    "isMe": false
-   },
-   {
-    "rank": 134,
+    "rank": 162,
     "name": "Michael Brandsegg-Nygrd",
     "team": "DET",
     "pos": "R",
     "gp": 3,
-    "value": 66.9,
+    "value": 63.6,
     "gs60": 3.05,
     "isMe": true
    },
    {
-    "rank": 135,
-    "name": "Sam Steel",
-    "team": "DAL",
-    "pos": "C",
-    "gp": 3,
-    "value": 66.8,
-    "gs60": 3.04,
-    "isMe": false
-   },
-   {
-    "rank": 136,
+    "rank": 163,
     "name": "Erik Karlsson",
     "team": "PIT",
     "pos": "D",
     "gp": 4,
-    "value": 66.7,
+    "value": 63.4,
     "gs60": 3.03,
+    "isMe": false
+   },
+   {
+    "rank": 164,
+    "name": "Chris Kreider",
+    "team": "MTL",
+    "pos": "L",
+    "gp": 4,
+    "value": 63.2,
+    "gs60": 3.0,
     "isMe": false
    }
   ],

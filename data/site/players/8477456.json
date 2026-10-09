@@ -83,82 +83,82 @@
  "hsc": {
   "Game score": {
    "value": 0.24,
-   "percentile": 46
+   "percentile": 47
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 23
+   "percentile": 25
   },
   "Defense": {
    "value": 0.2,
-   "percentile": 66
+   "percentile": 63
   },
   "Net": {
    "value": -0.2,
-   "percentile": 42
+   "percentile": 43
   }
  },
  "score": null,
  "standIn": {
-  "value": 41.1,
+  "value": 40.0,
   "gs": 0.53,
   "gs60": 1.08,
   "gameScore": 0.53,
   "minutes": 29,
   "gp": 2,
-  "rank": 378,
-  "pool": 628,
-  "percentile": 39.8,
+  "rank": 397,
+  "pool": 639,
+  "percentile": 37.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 376,
+    "rank": 395,
+    "name": "Moritz Seider",
+    "team": "DET",
+    "pos": "D",
+    "gp": 3,
+    "value": 40.1,
+    "gs60": 0.54,
+    "isMe": false
+   },
+   {
+    "rank": 396,
     "name": "Aaron Ekblad",
     "team": "FLA",
     "pos": "D",
     "gp": 2,
-    "value": 41.2,
+    "value": 40.1,
     "gs60": 0.54,
     "isMe": false
    },
    {
-    "rank": 377,
-    "name": "Artyom Levshunov",
-    "team": "CHI",
-    "pos": "D",
-    "gp": 4,
-    "value": 41.1,
-    "gs60": 0.54,
-    "isMe": false
-   },
-   {
-    "rank": 378,
+    "rank": 397,
     "name": "J.T. Compher",
     "team": "DET",
     "pos": "L",
     "gp": 2,
-    "value": 41.1,
+    "value": 40.0,
     "gs60": 0.53,
     "isMe": true
    },
    {
-    "rank": 379,
+    "rank": 398,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 41.0,
+    "value": 39.9,
     "gs60": 0.52,
     "isMe": false
    },
    {
-    "rank": 380,
-    "name": "Jake McCabe",
-    "team": "TOR",
+    "rank": 399,
+    "name": "John Marino",
+    "team": "UTA",
     "pos": "D",
-    "gp": 4,
-    "value": 40.9,
+    "gp": 5,
+    "value": 39.9,
     "gs60": 0.52,
     "isMe": false
    }
