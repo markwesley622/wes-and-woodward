@@ -23,6 +23,6 @@ const canonical = twin && nhlPageIsCanonical(P) ? twin : undefined;
 ---
 <Base canonical={canonical} schema={[{ '@type': 'ProfilePage', '@id': `https://wesandwoodward.com/prospects/${P.slug}/`, url: `https://wesandwoodward.com/prospects/${P.slug}/`, name: `${P.name} — Prospect`, isPartOf: { '@id': 'https://wesandwoodward.com/#website' },
   mainEntity: { '@type': 'Person', '@id': `https://wesandwoodward.com/prospects/${P.slug}/#person`, name: P.name, jobTitle: `Hockey player (${POSN[P.bio.position] ?? P.bio.position})`, birthDate: P.bio.birthDate, memberOf: { '@id': 'https://wesandwoodward.com/team/#team' }, sameAs: [`https://www.nhl.com/player/${P.playerId}`] } }]}
-  title={`${P.name} — Prospect — Wes & Woodward`} description={`${P.name}, Red Wings prospect: where he projects as an NHL ${P.bio.position === 'G' ? 'goalie' : P.bio.position === 'D' ? 'defenseman' : 'forward'}, draft pedigree and every line since his draft year.`}>
+  title={`${P.name} Prospect Projections and Stats | Wes & Woodward`} crumb={P.name} description={`${P.name}, Red Wings prospect: where he projects as an NHL ${P.bio.position === 'G' ? 'goalie' : P.bio.position === 'D' ? 'defenseman' : 'forward'}, draft pedigree and every line since his draft year.`}>
   <Prospect P={P} art={false} prospect={prospect} twin={twin} />
 </Base>
