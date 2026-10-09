@@ -1,0 +1,320 @@
+{
+ "slug": "goals-above-expected",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Goals above expected",
+  "short": "GAx",
+  "abbr": "GAx",
+  "aliases": [
+   "GAx",
+   "G−xG",
+   "goals minus expected goals",
+   "finishing",
+   "goals above expected"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "goals above expected",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json (status single_keyword: one measured keyword, no supporting set; Ahrefs KE US volumes), 2026-10-09"
+ },
+ "seo": {
+  "title": "Goals Above Expected in Hockey and What GAx Tells You",
+  "description": "Goals above expected is goals minus expected goals, the finishing number. How it's calculated, how much of it is luck, and the Red Wings' live leaders.",
+  "h1": "Goals Above Expected (GAx)"
+ },
+ "hero": {
+  "definition": "Goals above expected (GAx) is a player's or team's goals minus its expected goals, the gap between what the shots were worth and what went in. Positive means the finishing beat an average shooter on the same chances, and a single season of it carries a lot of luck.",
+  "dek": "Cole Caufield led the league last season at plus-17.3, with 51 goals on 33.7 expected. Andrew Copp's minus-10.8 was the fifth-worst among the league's 940 skaters, and the number repeats only weakly year over year."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "GAx · G−xG",
+   "sub": "the Team page tile calls it finishing"
+  },
+  {
+   "label": "Formula",
+   "value": "G − xG",
+   "sub": "goals minus expected goals on the same shots"
+  },
+  {
+   "label": "League, 2025-26",
+   "value": "−1.6%",
+   "sub": "skaters' goals vs. MoneyPuck ixG, all situations"
+  },
+  {
+   "label": "Best, 2025-26",
+   "value": "+17.3",
+   "sub": "Cole Caufield, 51 goals on 33.7 expected"
+  },
+  {
+   "label": "Worst, 2025-26",
+   "value": "−13.6",
+   "sub": "Anders Lee, 19 goals on 32.6 expected"
+  },
+  {
+   "label": "Best Red Wing",
+   "value": "+8.2",
+   "sub": "Justin Faulk, 16 goals on 7.8 expected"
+  },
+  {
+   "label": "Typical spread",
+   "value": "±4.9",
+   "sub": "one standard deviation, 327 forwards with 60+ GP"
+  },
+  {
+   "label": "Repeats at",
+   "value": "r = 0.38",
+   "sub": "year to year, 260 forwards (ixG 0.77)"
+  }
+ ],
+ "origin": [
+  "Goals above expected is what's left when you subtract an expected-goals model from the scoreboard, so it came into public use with those models. The idea behind it is older. Alan Ryder's 2004 shot-quality paper set out to separate the quality of the shots a team allowed from the goaltending behind it, and the goalie version of the same subtraction, goals saved above expected, is still how MoneyPuck and this site grade goaltenders.",
+  "The shooter's version needed a decision about talent. When Dawson Sprigings and Asmae Toumi built their 2015 model at Hockey-Graphs, they folded shooter talent in by regressing each player's shooting percentage toward the league average, adding 375 league-average shots for a forward and 275 for a defenseman before computing it. MoneyPuck kept its base model talent-free and publishes a separate shooting-talent number, defined as a player's ability to score more goals than an average player given the same chances.",
+  "Evolving-Hockey's tables carry the same comparison as two rates, a player's goals per unblocked attempt (FSh%) beside his expected goals per unblocked attempt (xFSh%). This site's <a href=\"/team/\">Team page</a> calls the team version finishing and rebuilds it every night."
+ ],
+ "calculation": {
+  "intro": [
+   "It's two numbers and a subtraction. The only choice that matters is which expected-goals model supplies the second number, because each site prices shots its own way. These are the inputs:"
+  ],
+  "inputs": [
+   "Goals, all situations unless a column says otherwise",
+   "Expected goals on the same shots (ixG for a player, xGF for a team)",
+   "Unblocked attempts, for the per-shot version",
+   "Ice time, for the per-60 version"
+  ],
+  "formulas": [
+   {
+    "label": "Total",
+    "expr": "GAx = goals − expected goals"
+   },
+   {
+    "label": "Per shot",
+    "expr": "FSh% − xFSh% = (goals − ixG) ÷ unblocked attempts"
+   },
+   {
+    "label": "Per 60",
+    "expr": "GAx/60 = GAx × 60 ÷ minutes played"
+   },
+   {
+    "label": "Goalie mirror",
+    "expr": "GSAx = expected goals against − goals allowed"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A center takes 150 unblocked attempts worth 15.0 expected goals and scores 20, so he's plus-5.0. That's a goal on 13.3% of his unblocked attempts against an expected 10.0%. If his finishing is league average, the 15 goals his chances were worth are the better guess for next season.",
+  "after": [
+   "League-wide the number doesn't have to land on zero. MoneyPuck's skaters scored 8,084 goals last season on 8,213 individual expected goals, so the league as a whole finished 129 goals (about 1.6%) under the model."
+  ],
+  "variants": [
+   {
+    "term": "GAx/60",
+    "def": "Goals above expected per 60 minutes, for comparing players with different ice time.",
+    "slug": "per-60-rates"
+   },
+   {
+    "term": "Finishing",
+    "def": "A team's goals minus its expected goals, the tile of that name on the Team page."
+   },
+   {
+    "term": "FSh% − xFSh%",
+    "def": "Evolving-Hockey's per-shot version, actual minus expected goals per unblocked attempt.",
+    "slug": "shot-quality"
+   },
+   {
+    "term": "Shooting talent",
+    "def": "MoneyPuck's estimate of a player's ability to score more than an average player on the same chances."
+   },
+   {
+    "term": "GSAx",
+    "def": "The goalie's side of the same subtraction, expected goals faced minus goals allowed.",
+    "slug": "goals-saved-above-expected"
+   }
+  ]
+ },
+ "meaning": [
+  "GAx measures finishing, everything that happens to a shot after the model has priced it. Positive means a player or team scored more than an average shooter would have on the same chances. Among the 327 forwards with 60 games last season, the median sat at minus-0.8, one standard deviation was 4.9 goals, and three in four finished within five goals of zero either way.",
+  "The extremes are where the names are. Caufield led the league, with Morgan Geekie at plus-16.5 and Anthony Mantha at plus-14.7. Anders Lee finished last at minus-13.6, just behind Jake DeBrusk and Tomas Hertl, three shooters who each generated at least 32 expected goals and scored 24 or fewer. You need a lot of chances to miss by that much, which is why the bottom of the list is full of high-volume shooters and the top is full of players whose looks went in.",
+  "Detroit's finishers split hard. <a href=\"/players/justin-faulk/\">Justin Faulk</a> was the team's best at plus-8.2, 16 goals on 7.8 expected and 23rd in the league, with <a href=\"/players/lucas-raymond/\">Lucas Raymond</a> at plus-5.5 and <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> at plus-4.1. Copp, <a href=\"/players/marco-kasper/\">Marco Kasper</a> (minus-6.4) and <a href=\"/players/emmitt-finnie/\">Emmitt Finnie</a> (minus-6.2) were all among the 30 worst in the league. Is a plus-8 defenseman suddenly a sniper? One season can't tell you. Faulk's 16 goals came on shots the model priced at 0.038 expected goals each, a point shooter's diet, and a year earlier in St. Louis he'd scored 4 on 6.0 expected.",
+  "How much of that is skill? There's some, and a lot less than there is in the chances. Among the 260 forwards who played 60 games in both of the last two seasons, GAx correlated at 0.38 between seasons, against 0.77 for individual expected goals. That's real signal, about half as sticky as the chances themselves, and it matches MoneyPuck's own warning that a player's goals over a season can run above or below what his true shooting talent would produce."
+ ],
+ "uses": [
+  {
+   "title": "Checking a breakout before you buy it",
+   "html": "A big positive GAx is a reason to look harder at a scorer's breakout before trusting it. Caufield's plus-17.3 followed a plus-7.8 the season before, two straight years well above the model, which is the kind of track record that starts to look like talent. <a href=\"/players/andrew-copp/\">Copp</a>'s minus-10.8 followed a minus-2.3, so most of last season's gap was new, and a one-year dip by a player who'd finished close to the model before is the kind a weak year-to-year correlation tells you to expect to shrink."
+  },
+  {
+   "title": "Sorting a team's scoring problem",
+   "html": "Team GAx tells you whether a team that isn't scoring is missing chances or missing finishes. Detroit scored 142 five-on-five goals on 161.1 expected last season, a 19.1-goal shortfall that only New Jersey, the Islanders and Vancouver topped. That calls for a different fix than adding shot volume, and the Team page's finishing tile tracks it every night."
+  },
+  {
+   "title": "Grading goalies with the same math",
+   "html": "Flip it around and you get goals saved above expected, the expected goals a goalie faced minus the goals he allowed. Every goal counts once on each side, so a shooter's plus is some goalie's minus, and the two numbers are built to be read together when you're deciding whether a hot streak belongs to the shooters or to the goalies they faced."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night from MoneyPuck. The team's finishing comes first, then the Red Wings who've scored the most goals above their expected total this season.",
+  "tiles": [
+   {
+    "tile": "finishing"
+   },
+   {
+    "label": "Team goals, all situations",
+    "source": "team",
+    "path": "situations.all.goalsFor",
+    "format": "int",
+    "sub": "MoneyPuck"
+   },
+   {
+    "label": "Team xG, all situations",
+    "source": "team",
+    "path": "situations.all.xGoalsFor",
+    "format": "num1",
+    "sub": "MoneyPuck"
+   }
+  ],
+  "leaders": {
+   "source": "skaters",
+   "sort": "goalsAboveExpected",
+   "limit": 8,
+   "caption": "Red Wings skaters by goals above expected, all situations",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "Goals",
+     "path": "goals",
+     "format": "int"
+    },
+    {
+     "label": "ixG",
+     "path": "ixG",
+     "format": "num2"
+    },
+    {
+     "label": "GAx",
+     "path": "goalsAboveExpected",
+     "format": "signed2"
+    },
+    {
+     "label": "Shots",
+     "path": "shots",
+     "format": "int"
+    },
+    {
+     "label": "Sh%",
+     "path": "shootingPct",
+     "format": "pct1"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. A full season of finishing carries a lot of luck and a few games carry far more, so read these as a record of what's happened so far.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "One season is mostly noise",
+   "html": "GAx correlated at 0.38 between seasons for regular forwards, so a single season's number is a weak guide to the next one, and two or three seasons pointing the same way mean far more than one big year."
+  },
+  {
+   "title": "It inherits the model's blind spots",
+   "html": "If the model misses a pre-shot pass or a screen, the goal that follows looks like great finishing. GAx can't tell a sniper from a player whose chances were better than the play-by-play could see."
+  },
+  {
+   "title": "The models disagree",
+   "html": "Each model weighs shots differently, so the same player's GAx can differ between MoneyPuck and Evolving-Hockey. Pick one. This site uses MoneyPuck throughout, and mixing sources in one comparison measures the models as much as the shooters."
+  },
+  {
+   "title": "The league total isn't zero",
+   "html": "MoneyPuck's skaters finished about 1.6% under the model as a group last season, so a player sitting exactly at zero finished a little better than the typical shooter did. Small gaps either side of zero aren't worth arguing about."
+  },
+  {
+   "title": "It ignores shot volume",
+   "html": "A plus-3 on 100 attempts is better finishing than a plus-3 on 400, and the raw total can't tell them apart. The per-shot version, FSh% minus xFSh%, is the one that can."
+  }
+ ],
+ "related": [
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "The chances. GAx is what the finishing did with them."
+  },
+  {
+   "slug": "individual-expected-goals",
+   "name": "Individual expected goals",
+   "abbr": "ixG",
+   "vs": "The second number in a player's GAx, and the stickier one."
+  },
+  {
+   "slug": "shooting-percentage",
+   "name": "Shooting percentage",
+   "abbr": "SH%",
+   "vs": "Finishing with no adjustment for how good the shots were."
+  },
+  {
+   "slug": "goals-saved-above-expected",
+   "name": "Goals saved above expected",
+   "abbr": "GSAx",
+   "vs": "The same subtraction from the goalie's side."
+  },
+  {
+   "slug": "pdo",
+   "name": "PDO",
+   "abbr": "PDO",
+   "vs": "On-ice shooting plus saving, the team-luck cousin."
+  },
+  {
+   "slug": "on-ice-shooting-and-save-percentage",
+   "name": "On-ice shooting and save percentage",
+   "abbr": "oiSH%",
+   "vs": "Finishing by everyone on the ice with a player."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Expected Goals Model",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/about.htm",
+   "note": "the base model leaves out shooting skill; a season's goals can run above or below true talent"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "shooting talent above average, shooting-talent-adjusted expected goals, GSAx"
+  },
+  {
+   "label": "Expected Goals are a better predictor of future scoring than Corsi, Goals",
+   "publisher": "Hockey-Graphs, October 1, 2015",
+   "url": "https://hockey-graphs.com/2015/10/01/expected-goals-are-a-better-predictor-of-future-scoring-than-corsi-goals/",
+   "note": "shooter talent folded in with regressed shooting percentage (375 shots for forwards, 275 for defensemen)"
+  },
+  {
+   "label": "Standard Skater Tables",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/standard-skater-tables/",
+   "note": "FSh% (G ÷ iFF) and xFSh% (ixG ÷ iFF)"
+  },
+  {
+   "label": "Shot Quality",
+   "publisher": "Alan Ryder, HockeyAnalytics.com, 2004",
+   "url": "https://hockeyanalytics.com/Research_files/Shot_Quality.pdf",
+   "note": "separating shot quality allowed from goaltending"
+  },
+  {
+   "label": "2025-26 and 2024-25 regular-season skater and team files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league and Red Wings figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season skater and team files (raw/mp_skaters_2025.csv, raw/mp_teams_2025.csv) and its 2024-25 skater file (raw/mp_skaters_2024-25_ixg_gax_yoy_dl2026-10-09.csv), all downloaded October 9, 2026. Goals above expected is I_F_goals − I_F_xGoals in all situations; rankings cover all 940 skaters, distribution figures the 327 forwards with 60+ games; repeatability is the Pearson correlation between 2024-25 and 2025-26 values for the 260 forwards with 60+ games in both; the league figure divides the 940 skaters' summed goals by their summed ixG. Detroit's five-on-five team shortfall is goalsFor − xGoalsFor at 5on5 in the team file. The Red Wings section rebuilds nightly from MoneyPuck."
+}

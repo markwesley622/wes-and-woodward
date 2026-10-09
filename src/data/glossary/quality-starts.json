@@ -1,0 +1,230 @@
+{
+ "slug": "quality-starts",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Quality starts",
+  "short": "QS",
+  "abbr": "QS",
+  "aliases": [
+   "QS",
+   "QS%",
+   "quality start percentage",
+   "really bad starts",
+   "RBS"
+  ],
+  "category": "Goalie"
+ },
+ "keywords": {
+  "primary": "quality starts in hockey",
+  "supporting": [],
+  "source": "No measured search volume: research/glossary-pseo/stat_themes.json marks this stat no_volume (no candidate keyword with Ahrefs US volume), 2026-10-09; the primary is the natural phrase"
+ },
+ "seo": {
+  "title": "Quality Starts in Hockey and How Goalies Earn Them",
+  "description": "Quality starts in hockey count the nights a goalie gave his team a chance to win. Vollman's rule, the league benchmarks, and Detroit's 2025-26 numbers.",
+  "h1": "Quality Starts in Hockey (QS) and Really Bad Starts (RBS)"
+ },
+ "hero": {
+  "definition": "A quality start (QS) is a start in which a goalie's save percentage beats the league average for the season, or reaches .885 on a night he faces 20 shots or fewer. Its opposite is the really bad start (RBS), any start under .850.",
+  "dek": "Quality starts in hockey ask whether a goalie gave his team a chance to win, whatever it did at the other end, which is something a win-loss record can't tell you. Last season the league's starters cleared the bar in a little more than half their starts."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "QS · RBS",
+   "sub": "quality starts and really bad starts"
+  },
+  {
+   "label": "The bar",
+   "value": ".896",
+   "sub": "2025-26 league save percentage, to beat"
+  },
+  {
+   "label": "Small-shot rule",
+   "value": ".885",
+   "sub": "on nights with 20 or fewer shots against"
+  },
+  {
+   "label": "League rate",
+   "value": "54.2%",
+   "sub": "1,421 quality starts in 2,624, 2025-26"
+  },
+  {
+   "label": "RBS rate",
+   "value": "22.6%",
+   "sub": "594 starts under .850, 2025-26"
+  },
+  {
+   "label": "Best QS%",
+   "value": "74.4%",
+   "sub": "Scott Wedgewood, COL, 32 of 43 (30+ starts)"
+  },
+  {
+   "label": "Worst QS%",
+   "value": "31.4%",
+   "sub": "Frederik Andersen, CAR, 11 of 35"
+  },
+  {
+   "label": "Created by",
+   "value": "Vollman",
+   "sub": "Rob Vollman; published by Hockey-Reference"
+  }
+ ],
+ "origin": [
+  "Quality starts came out of Rob Vollman's work at Hockey Prospectus around 2009, and he laid out the rule in his Hockey Abstract books. The idea was to credit a goalie only when he'd played well enough for an average team to win. In the 2013 edition he counted a start as quality if the goalie stopped at least a league-average share of shots or played at least as well as a replacement-level goalie while allowing two goals or fewer, and he put replacement level at 88.5%.",
+  "Hockey-Reference publishes the version this page uses and credits it to the Hockey Abstract. A start counts if the goalie's save percentage beats the league average for the year, or if he's at .885 or better on a night with 20 or fewer shots, and an RBS is anything under .850. DobberHockey noted in 2014 that quality starts had gone from a year-end number in annuals like Hockey Prospectus to a live one on Hockey-Reference, updated as the season goes.",
+  "The NHL keeps a quality-start column of its own, and it comes out lower. Its total last season was 1,286, against 1,421 under Vollman's rule, and its stats glossary doesn't define the stat. Wes & Woodward's check found the NHL's count matches, for every goalie who played, a flat bar of better than .900 with no small-shot exception. Which version are you looking at? Check before you compare goalies across sites."
+ ],
+ "calculation": {
+  "intro": [
+   "The test runs one start at a time, and only starts count, so a relief appearance can't earn one or cost one. The bar is the league's save percentage for the full season, which was .896 last year, and it moves every season with the league. These are the inputs:"
+  ],
+  "inputs": [
+   "The goalie's saves and shots against in the start",
+   "The league-average save percentage for the season (.896 in 2025-26)",
+   "The 20-shot line for the small-shot rule",
+   "Games started, the denominator for QS%"
+  ],
+  "formulas": [
+   {
+    "label": "Quality start",
+    "expr": "start SV% > league SV%, or start SV% ≥ .885 on 20 or fewer shots"
+   },
+   {
+    "label": "Really bad start",
+    "expr": "start SV% < .850"
+   },
+   {
+    "label": "Rate",
+    "expr": "QS% = QS ÷ GS"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. Say the league average is .900. A goalie who stops 28 of 30 shots gets a quality start, and one who stops 25 of 28 doesn't. Allow two goals on 18 shots (.889) and the .885 rule covers him, even though he finished under the league mark. Let in five on 27 and it's an RBS. That's the whole test.",
+  "after": [
+   "The small-shot rule doesn't come up much. Of last season's starts, 424 came on 20 shots or fewer, and only 38 quality starts got through on the small-shot clause alone. Run on the NHL's game-by-game goalie logs, the rule reproduces Hockey-Reference's published totals for last season exactly, quality starts and RBS both (and goalie by goalie)."
+  ],
+  "variants": [
+   {
+    "term": "QS",
+    "def": "Quality starts. Starts above the season's league save percentage, or at .885 or better on 20 shots or fewer."
+   },
+   {
+    "term": "QS%",
+    "def": "Quality starts divided by games started. Hockey-Reference calls over 60% good and under 50% bad."
+   },
+   {
+    "term": "RBS",
+    "def": "Really bad starts. Starts with a save percentage under .850."
+   },
+   {
+    "term": "NHL QS",
+    "def": "The NHL's own quality-start column, which runs lower and isn't defined in its glossary."
+   }
+  ]
+ },
+ "meaning": [
+  "Quality starts ask whether a goalie gave his team a chance to win. Last season 54.2% of starts qualified. Hockey-Reference's guide treats anything over 60% as good and anything under 50% as bad, with the league usually around 53%, so last season ran a little hot by its own standard. The bar itself was low, too, since the league's save percentage was the lowest it had been in decades.",
+  "Among the 41 goalies with 30 or more starts, the median rate was 57.1%. Scott Wedgewood led at 74.4% in Colorado, and Jesper Wallstedt, Dan Vladar and Andrei Vasilevskiy all cleared 72%. Frederik Andersen trailed at 31.4% in Carolina, with Jacob Markstrom and Kevin Lankinen next from the bottom. That's a wide spread for a stat whose bar sits right around the league's middle, though one season's spread carries a lot of luck.",
+  "<a href=\"/players/john-gibson/\">John Gibson</a> made 29 quality starts in 57 for Detroit, which put him in the bottom quarter of the regulars. Cam Talbot came in at 48.0%, with eight of his 25 starts under .850. Gibson gave the Wings a chance about half the time. That squares with a save percentage just above the league's, and it's a reminder of how thin the margin is between an average starter and a below-average one.",
+  "Does QS% tell you anything save percentage doesn't? Mostly no. Among the 53 goalies with 25 or more starts last season, the correlation between the two was 0.89. Where it earns its keep is in the shape of a season, because two goalies can reach the same save percentage by different routes, one steady and one streaky, and only the start-by-start count shows which is which."
+ ],
+ "uses": [
+  {
+   "title": "Measuring consistency",
+   "html": "Dan Vladar and Ilya Sorokin stopped pucks at the same rate in their starts last season, a hair over .905. Vladar turned in 37 quality starts in 51. Sorokin had 28 in 54, so his nights swung harder. He led the league with seven shutouts and still fell short of the bar in nearly half his starts, while Vladar cleared it nearly three times in four. Same rate, different seasons."
+  },
+  {
+   "title": "Counting the disasters",
+   "html": "RBS is the stat for nights a team had no chance. Jordan Binnington had 18 in 39 starts for St. Louis, nearly half. The league-wide rate sat between a fifth and a quarter of starts, so a goalie running at 40% or more is handing away a bad night nearly twice as often as the typical starter."
+  },
+  {
+   "title": "Separating the goalie from the scoreboard",
+   "html": "Brandon Bussi and Connor Hellebuyck had almost identical quality-start rates last season, both a shade over 56%, and Bussi won 31 games to Hellebuyck's 23. Their goaltending gave Carolina and Winnipeg the same chance on the same share of nights. The eight-win gap came from what their teams did with it. If you want to know how a goalie played, the quality-start rate gets you closer than his win total does."
+  }
+ ],
+ "limits": [
+  {
+   "title": "It mostly restates save percentage",
+   "html": "With a correlation that high between QS% and save percentage among last season's regulars, the rate adds texture more than new information, and it shouldn't outrank the save percentage it's built from (or the expected-goals stats that grade the shots behind it)."
+  },
+  {
+   "title": "The bar is a cliff",
+   "html": "A .897 start and a .895 start land on opposite sides of last season's line. A four-goal night on a heavy workload counts the same as a shutout, and a start that barely misses .850 counts the same as a blowout, so the stat throws away most of what happened inside each game."
+  },
+  {
+   "title": "It barely repeats",
+   "html": "For the 39 goalies with 25 or more starts in each of the last two seasons, one year's QS% correlated with the next at 0.05. Save percentage wasn't much better on the same goalies (0.07). A Leafs Nation study a decade ago reached the same verdict on quality starts, so treat one season's rate as a description and never a forecast."
+  },
+  {
+   "title": "Two versions are in circulation",
+   "html": "Hockey-Reference's rule and the NHL's column disagree for most goalies, and Vollman's 2013 description used the league averages of its day, about .913 and then .917. Check which version a site uses before you compare a goalie's number across them, since the gap can run several starts a season."
+  }
+ ],
+ "related": [
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "The season rate QS% tracks closely, one start at a time."
+  },
+  {
+   "slug": "goalie-record",
+   "name": "Goalie record",
+   "abbr": "W-L-OTL",
+   "vs": "Wins need goal support. A quality start doesn't."
+  },
+  {
+   "slug": "shutouts",
+   "name": "Shutouts",
+   "abbr": "SO",
+   "vs": "Only perfect starts. Every shutout is a quality start."
+  },
+  {
+   "slug": "goals-saved-above-expected",
+   "name": "Goals saved above expected",
+   "abbr": "GSAx",
+   "vs": "Weights every shot by danger. QS treats a start as pass or fail."
+  },
+  {
+   "slug": "goals-saved-above-average",
+   "name": "Goals saved above average",
+   "abbr": "GSAA",
+   "vs": "Totals the goals a goalie saved over average, start by start."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "2025-26 NHL goalie stats (QS, QS%, RBS column notes)",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leagues/NHL_2026_goalies.html",
+   "note": "the definition, the 60%/50%/53% benchmarks, credit to Vollman's Hockey Abstract, published 2025-26 totals"
+  },
+  {
+   "label": "Are Quality Starts a Repeatable Skill?",
+   "publisher": "The Leafs Nation, October 27, 2016",
+   "url": "https://theleafsnation.com/news/are-quality-starts-a-repeatable-skill",
+   "note": "2009 Hockey Prospectus origin; Vollman's 2013 Hockey Abstract definition quoted; not a repeatable skill"
+  },
+  {
+   "label": "Quality Starts",
+   "publisher": "DobberHockey (Steve Laidlaw), December 13, 2014",
+   "url": "https://dobberhockey.com/2014/12/13/quality-starts",
+   "note": "around since 2009 in year-end annuals like Hockey Prospectus; live on Hockey-Reference by 2014"
+  },
+  {
+   "label": "Goalie summary, advanced and per-game reports, 2024-25 and 2025-26",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/goalie/summary?isGame=true&limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "every start's saves and shots against; the NHL's own quality-start column"
+  },
+  {
+   "label": "Stats glossary",
+   "publisher": "NHL",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "carries no quality-start entry"
+  }
+ ],
+ "method": "Quality starts and RBS are Wes & Woodward's calculations from the NHL stats API's per-game goalie report, downloaded October 9, 2026: a start is quality when its save percentage beats the season's league save percentage (64,976 saves ÷ 72,530 shots = .896 in 2025-26; .900 in 2024-25) or reaches .885 on 20 or fewer shots against, and an RBS when it falls under .850. The 2025-26 results match Hockey-Reference's published totals exactly (1,421 and 594 over 2,624 starts; Hockey-Reference's goalie page downloaded the same day). Rankings use the 41 goalies with 30+ starts; the QS%-to-save-percentage correlation uses the 53 goalies with 25+ starts; year-to-year correlations use the 39 goalies with 25+ starts in both 2024-25 and 2025-26, with save percentage measured over the same starts. The NHL comparison uses the API's goalie advanced report (qualityStart), tested against flat cutoffs from .880 to .934 on the same per-game data. This stat isn't in the nightly pipeline yet, so the page has no live Red Wings section."
+}

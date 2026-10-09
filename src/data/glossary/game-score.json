@@ -1,0 +1,285 @@
+{
+ "slug": "game-score",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Game score",
+  "short": "Game Score",
+  "abbr": "GS",
+  "aliases": [
+   "GS",
+   "Game Score",
+   "Luszczyszyn game score",
+   "player game score",
+   "GSVA"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "game score in hockey",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json status no_volume (no measured US volume in Ahrefs KE, 2026-10-09); primary is the natural phrase, no supporting keywords"
+ },
+ "seo": {
+  "title": "Game Score in Hockey and How the Formula Works",
+  "description": "Game score in hockey rolls a player's box score and on-ice results into one number per game. The formula, the benchmarks, and the Red Wings' live leaders.",
+  "h1": "Game Score in Hockey (GS)"
+ },
+ "hero": {
+  "definition": "Game score is a single-game rating that rolls goals, assists, shots, blocks, penalties, faceoffs and on-ice shot and goal results into one number. Dom Luszczyszyn built game score in hockey form in 2016, weighting each piece so a season's total lands close to a player's points. This site averages MoneyPuck's and HockeyStatCards' versions.",
+  "dek": "Points tell you who scored. Game score asks what else happened while a player was out there, from the shots he took to the penalties he drew to whether his team won the shot battle, and it puts a number on every night of a season."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "GS",
+   "sub": "Luszczyszyn's Game Score"
+  },
+  {
+   "label": "Scale",
+   "value": "≈ points",
+   "sub": "a season's total lands near the points total"
+  },
+  {
+   "label": "Median forward",
+   "value": "0.53",
+   "sub": "per game, 2025-26, 327 forwards with 60+ GP"
+  },
+  {
+   "label": "Median defenseman",
+   "value": "0.36",
+   "sub": "per game, 2025-26, 161 with 60+ GP"
+  },
+  {
+   "label": "League leader",
+   "value": "1.86",
+   "sub": "Nathan MacKinnon, per game, 2025-26"
+  },
+  {
+   "label": "Best Red Wing",
+   "value": "1.07",
+   "sub": "Alex DeBrincat, per game, 32nd of 488"
+  },
+  {
+   "label": "A strong night",
+   "value": "2.0+",
+   "sub": "the line this site's game logs highlight"
+  },
+  {
+   "label": "This site uses",
+   "value": "MP + HSC",
+   "sub": "MoneyPuck and HockeyStatCards, averaged"
+  }
+ ],
+ "origin": [
+  "Game score started in baseball and went through basketball on the way to hockey. Bill James created the baseball version and John Hollinger built the basketball one, and Dom Luszczyszyn credited both when he introduced hockey's at Hockey-Graphs on July 13, 2016, under the title \"Measuring Single Game Productivity.\"",
+  "His method was deliberately simple. Each stat was weighted by how often it shows up relative to goals, then the weights were scaled down by 75% so a player's game score would roughly equal his points. Corsi, blocked shots and faceoffs were worth so little already that they weren't scaled any further. Goalies got their own formula, built on goals allowed and saves. The top of the scale is steep. The original piece listed the only games since 2007-08 that rated above 5, and Sam Gagner's eight-point night in 2012 was worth 7.1.",
+  "The formula has moved on since. Luszczyszyn added expected goals in 2019, the version NHL.com later described as using \"advanced measures of shot quality for and against,\" and he built his player-value model at The Athletic, Game Score Value Added (GSVA), on the same idea. MoneyPuck's data dictionary carries a gameScore column \"as designed by @domluszczyszyn,\" and HockeyStatCards publishes a game score for every game in a player's log, with links back to both the 2016 article and the 2019 model."
+ ],
+ "calculation": {
+  "intro": [
+   "The original skater formula is a weighted sum of 13 counts, positive for the things that help and negative for the things that hurt. Goals carry the most weight and faceoffs the least. These are the inputs:"
+  ],
+  "inputs": [
+   "Goals, primary assists and secondary assists",
+   "Shots on goal",
+   "Blocked shots",
+   "Penalties drawn and penalties taken",
+   "Faceoffs won and lost",
+   "On-ice shot attempts for and against at five-on-five",
+   "On-ice goals for and against at five-on-five"
+  ],
+  "formulas": [
+   {
+    "label": "Skater (2016)",
+    "expr": "GS = 0.75 G + 0.7 A1 + 0.55 A2 + 0.075 SOG + 0.05 BLK + 0.15 PD − 0.15 PT + 0.01 FOW − 0.01 FOL + 0.05 CF − 0.05 CA + 0.15 GF − 0.15 GA"
+   },
+   {
+    "label": "Goalie (2016)",
+    "expr": "GS = −0.75 GA + 0.1 SV"
+   },
+   {
+    "label": "Season",
+    "expr": "season game score = the sum of every game's score"
+   },
+   {
+    "label": "This site",
+    "expr": "W&W game score = (MoneyPuck + HockeyStatCards) ÷ 2"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. A forward scores once, adds a secondary assist, puts four shots on goal, blocks one, takes a penalty and wins six of ten draws. At five-on-five he's on the ice for a dozen shot attempts for and eight against, and one goal each way (his own included). Run that through the weights and you get 1.72, a good night just short of the 2.0 line this site's game logs highlight. The goal and the assist account for more than three-quarters of it.",
+  "after": [
+   "MoneyPuck applies the box-score terms to all situations and the on-ice terms to five-on-five. Rebuild its season figures for last season from its own columns that way and the formula above lands within 0.01 for 923 of the league's 940 skaters. HockeyStatCards points readers to the 2019 model and shows expected-goal columns beside each game's score, and its numbers don't match MoneyPuck's game for game. This site averages the two (a game only gets a score once both have posted it)."
+  ],
+  "variants": [
+   {
+    "term": "Per game",
+    "def": "A season's total divided by games played, the number to compare players on."
+   },
+   {
+    "term": "Goalie game score",
+    "def": "Goals against and saves only, from the 2016 formula."
+   },
+   {
+    "term": "GSVA",
+    "def": "Game Score Value Added, Luszczyszyn's multi-season player value in wins at The Athletic."
+   },
+   {
+    "term": "W-Value stand-in",
+    "def": "Early in a season, before Evolving-Hockey's numbers arrive, this site ranks players on game score instead.",
+    "slug": "w-value"
+   }
+  ]
+ },
+ "meaning": [
+  "Game score measures single-game productivity, priced in points.",
+  "It's built to land near a player's point total over a season, so Alex DeBrincat's 87.4 in MoneyPuck's file for last season sits right beside his 85 points, even though the shots, blocks and on-ice terms pull some players well above or below their point totals. Per game, the median forward who played 60 games scored 0.53 and the top 10% cleared 1.02. Defensemen sat about a third lower, because the formula pays mostly for points. Nathan MacKinnon led everyone at 1.86 a game, ahead of Nikita Kucherov and Connor McDavid.",
+  "<a href=\"/players/alex-debrincat/\">DeBrincat</a> was Detroit's best at 1.07, 32nd of the 488 skaters who played 60 games, and <a href=\"/players/dylan-larkin/\">Dylan Larkin</a>, <a href=\"/players/moritz-seider/\">Moritz Seider</a> and <a href=\"/players/lucas-raymond/\">Lucas Raymond</a> were bunched just under 0.90. If you're scanning a game log, that's the context for a single night's number. Detroit's regulars averaged between zero and a little over one a game, so a 2.0 is a night well above anyone's usual.",
+  "Does it repeat? It holds up about as well as points do. For forwards who played 60 games in each of the last two seasons, per-game game score correlated with the next season's at 0.86, against 0.88 for points per game. Luszczyszyn called it fairly repeatable in 2016, and the numbers back him."
+ ],
+ "uses": [
+  {
+   "title": "Grading one night",
+   "html": "That's the job it was built for. What counts as a good night? Every Red Wings player page here logs a game score for each game, with 2.0 marking a strong one and anything below zero a poor one, plus a ten-game rolling average so you can see a hot or cold stretch forming before the season totals do. The chart colors each bar by sign, so a run of poor nights stands out."
+  },
+  {
+   "title": "Ranking players early in a season",
+   "html": "This site's W-Value needs Evolving-Hockey's numbers, which aren't there at the start of a season. Until they are, each player page ranks him on cumulative game score among every NHL skater who's played, on the same 0 to 100 scale, and labels it as a stand-in. It's a rough proxy for value, built from the box score, and it gives way to the W-Value once that can be computed."
+  },
+  {
+   "title": "Crediting the work behind the points",
+   "html": "Seider and Raymond finished last season with almost the same game score on very different point totals, 60 and 76. Seider's 180 blocked shots were worth 9.0 on their own, and Detroit's five-on-five shot attempts ran 176 ahead of opponents' with him on the ice, worth 8.8 more. <a href=\"/players/ben-chiarot/\">Ben Chiarot</a> went the other way. His 15 points became a 9.3 game score, dragged down by a five-on-five attempt margin of minus-218."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night from the NHL API and MoneyPuck. Red Wings skaters ranked on MoneyPuck's own season game score, a running total, so the players with the most games have a head start; the per-game number on each player page is this site's two-source average.",
+  "tiles": [],
+  "leaders": {
+   "source": "skaters",
+   "sort": "gameScore",
+   "limit": 8,
+   "caption": "Red Wings skaters by MoneyPuck game score, season total, all situations",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "Points",
+     "path": "points",
+     "format": "int"
+    },
+    {
+     "label": "Shots",
+     "path": "shots",
+     "format": "int"
+    },
+    {
+     "label": "Game score",
+     "path": "gameScore",
+     "format": "num2"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. Game score is a running total, so one big night moves these rankings a long way this early.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "The weights are a judgment call",
+   "html": "Luszczyszyn set each weight by how often that stat turns into goals and then rounded it, so nothing in the formula was fit to winning, and a shot on goal is worth 0.075 because of how often shots become goals."
+  },
+  {
+   "title": "It's mostly points",
+   "html": "Goals and assists made up 68% of the game score earned by the league's forwards who played 60 games last season. A defenseman who doesn't produce points can't climb far, however well you think he defends."
+  },
+  {
+   "title": "Shot volume counts twice",
+   "html": "Every shot on goal earns its own 0.075, and the same shot feeds the on-ice Corsi term (a second, smaller credit). DeBrincat's 287 shots on goal were worth 21.5 of his 87.4, a quarter of his season total."
+  },
+  {
+   "title": "The versions disagree",
+   "html": "MoneyPuck's number reproduces the 2016 formula, while HockeyStatCards points to the 2019 model with expected goals in it, so the same game can grade as a good night on one site and an ordinary one on the other. Averaging the two smooths that out without settling which is right."
+  }
+ ],
+ "related": [
+  {
+   "slug": "points",
+   "name": "Points",
+   "abbr": "P",
+   "vs": "Game score is scaled to match points, then adds everything else."
+  },
+  {
+   "slug": "wins-above-replacement",
+   "name": "Wins above replacement",
+   "abbr": "WAR",
+   "vs": "A season-long regression model. Game score is a box-score formula."
+  },
+  {
+   "slug": "w-value",
+   "name": "W-Value",
+   "abbr": "W-Value",
+   "vs": "This site's 0-100 rating. Game score stands in for it early in a season."
+  },
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "One of game score's on-ice terms, at five-on-five."
+  },
+  {
+   "slug": "plus-minus",
+   "name": "Plus-minus",
+   "abbr": "+/-",
+   "vs": "Game score's goal term is a five-on-five plus-minus with a 0.15 weight."
+  },
+  {
+   "slug": "individual-expected-goals",
+   "name": "Individual expected goals",
+   "abbr": "ixG",
+   "vs": "The input the newer game score formula added."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Measuring Single Game Productivity: An Introduction to Game Score",
+   "publisher": "Dom Luszczyszyn, Hockey-Graphs, July 13, 2016",
+   "url": "https://hockey-graphs.com/2016/07/13/measuring-single-game-productivity-an-introduction-to-game-score/",
+   "note": "formula, weighting method, goalie version, Bill James and Hollinger, Gagner's 7.1, repeatability"
+  },
+  {
+   "label": "Player data dictionary",
+   "publisher": "MoneyPuck",
+   "url": "https://peter-tanner.com/moneypuck/downloads/MoneyPuckDataDictionaryForPlayers.csv",
+   "note": "gameScore credited to Luszczyszyn"
+  },
+  {
+   "label": "Player game logs",
+   "publisher": "HockeyStatCards",
+   "url": "https://www.hockeystatcards.com/players/8477946?tab=logs",
+   "note": "per-game Game Score with xG columns; links to the 2016 article and the 2019 model"
+  },
+  {
+   "label": "Analytics with Alison: breaking down McCann's play",
+   "publisher": "NHL.com, November 13, 2021",
+   "url": "https://www.nhl.com/kraken/news/analytics-with-alison-breaking-down-mccanns-play-327887662",
+   "note": "current Game Score uses shot quality for and against"
+  },
+  {
+   "label": "All About The Jersey hockey stat primer",
+   "publisher": "SB Nation, December 28, 2020",
+   "url": "https://www.allaboutthejersey.com/2020/12/28/22201666/all-about-the-jersey-hockey-stat-primer-goals-above-replacement-game-score-value-added",
+   "note": "GSVA built on Game Score; xG added in 2019"
+  },
+  {
+   "label": "2024-25 and 2025-26 regular-season skater files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every benchmark, the formula check and the repeatability figure"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season skater file (downloaded October 9, 2026) and its 2024-25 file (downloaded October 9, 2026, saved as raw/mp_skaters_2024_repeatability.csv). Per-game game score is MoneyPuck's season gameScore ÷ games played, all situations, among skaters with 60+ games; the formula check rebuilds gameScore from the same file's all-situations box-score columns and five-on-five on-ice columns; term contributions use the 2016 weights; repeatability is the Pearson correlation of per-game game score (and points per game) between seasons for the 260 forwards with 60+ games in both. The site's per-game blend and the 2.0 highlight line come from pipeline/build_player.py and the player page."
+}

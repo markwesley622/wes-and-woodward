@@ -1,0 +1,325 @@
+{
+ "slug": "games-played",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Games played",
+  "short": "GP",
+  "abbr": "GP",
+  "aliases": [
+   "GP",
+   "games",
+   "GS",
+   "games started",
+   "GR",
+   "games relieved"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "what does gp mean in hockey",
+  "supporting": [
+   "gp meaning hockey",
+   "gp in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Does GP Mean in Hockey and What Counts as a Game",
+  "description": "What does GP mean in hockey? Games played, any game with at least one shift. Skater and goalie rules, leaderboard minimums, and Detroit's numbers.",
+  "h1": "What Does GP Mean in Hockey? Games Played, Defined"
+ },
+ "hero": {
+  "definition": "In hockey, games played (GP) counts the games in which a player took at least one shift on the ice. A healthy scratch doesn't get one, and neither does a backup goalie who dresses and never plays. It's the denominator under every per-game stat, which is why small GP totals are where the noise lives.",
+  "dek": "What does GP mean in hockey stat lines beyond that? It's the column every per-game number leans on, and the NHL's definition has edge cases that catch people, like shootout-only appearances and goalies who start, get pulled and come back."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "GP",
+   "sub": "goalies add GS (started) and GR (relieved)"
+  },
+  {
+   "label": "What counts",
+   "value": "One shift",
+   "sub": "or a shootout appearance"
+  },
+  {
+   "label": "Played all 82",
+   "value": "99",
+   "sub": "skaters in 2025-26, plus one at 83"
+  },
+  {
+   "label": "Median skater",
+   "value": "61 GP",
+   "sub": "of the 940 who played in 2025-26"
+  },
+  {
+   "label": "Goalie starts",
+   "value": "2,624",
+   "sub": "one per team per game, 2025-26"
+  },
+  {
+   "label": "Relief games",
+   "value": "144",
+   "sub": "goalie GP minus starts, 2025-26"
+  },
+  {
+   "label": "Goalie leader",
+   "value": "64",
+   "sub": "Karel Vejmelka, 63 of them starts"
+  },
+  {
+   "label": "Tracked since",
+   "value": "1917-18",
+   "sub": "the NHL's first season"
+  }
+ ],
+ "origin": [
+  "Games played is as old as the league. The NHL's stats glossary dates it to 1917-18, the first season, and the rulebook still hands the job to a person. Rule 33 of last season's rulebook has the In-Arena Scorer list every eligible player and the starting lineup on the Official Report of Match, then mark which of them took part in the game. That mark is where a game played comes from.",
+  "The GP meaning in hockey box scores comes straight from the NHL's glossary. A game played is any game in which a player had at least one shift on the ice, or took part in the shootout. A player on the active roster who's scratched from the lineup doesn't get one. A backup goalie who dresses and sits all night doesn't either, and the glossary notes that the same rule covers the rare skater who dresses and never leaves the bench.",
+  "The shootout clause is the newest wrinkle. The NHL's shootout stats start in 2005-06, and a goalie or skater who appears only in the shootout gets a game played with zero minutes of ice time. Goalies get two more columns. Games started (GS) counts the nights a goalie was the starter, games relieved (GR) counts the rest, and a goalie who's pulled and later returns to the same game is credited with one start and no relief appearance."
+ ],
+ "calculation": {
+  "intro": [
+   "GP is a count, so the work is in deciding what counts. The NHL's glossary spells out the cases, and every one of them turns on whether a player got on the ice:"
+  ],
+  "inputs": [
+   "In: any game with at least one shift on the ice",
+   "In: a shootout-only appearance, even at zero minutes",
+   "Out: a healthy scratch, even one on the active roster",
+   "Out: a dressed backup goalie, or skater, who never plays",
+   "Goalies only: each game played is either a start (GS) or a relief appearance (GR)"
+  ],
+  "formulas": [
+   {
+    "label": "Per-game rate",
+    "expr": "stat per game = total ÷ GP"
+   },
+   {
+    "label": "Full-season pace",
+    "expr": "pace = (total ÷ GP) × games on the schedule"
+   },
+   {
+    "label": "Games relieved",
+    "expr": "GR = GP − GS"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. Say a team's seventh defenseman is a healthy scratch for 22 of its 82 games and plays in the other 60. He finishes with 60 GP. If he scored 15 points, that's 0.25 a game, a 20-point pace over the full schedule. Now say he blocks a shot on his first shift of a game and doesn't return. That game still counts as one.",
+  "after": [
+   "A one-shift game and a 26-minute game are the same row in the GP column. That's why the NHL's own glossary warns that dividing by games played \"does not account for varying time on ice and varying special teams time,\" and why analysts who care about rates divide by minutes instead."
+  ],
+  "variants": [
+   {
+    "term": "GS",
+    "def": "Games started. A goalie's games played in which he started for his team."
+   },
+   {
+    "term": "GR",
+    "def": "Games relieved. A goalie's games played minus his starts."
+   },
+   {
+    "term": "P/GP",
+    "def": "Points per game played, the rate GP is most often divided into.",
+    "slug": "points-per-game"
+   },
+   {
+    "term": "TOI/GP",
+    "def": "Time on ice per game played, the average minutes behind every per-game number.",
+    "slug": "time-on-ice"
+   }
+  ]
+ },
+ "meaning": [
+  "GP measures availability, and over a season it's mostly a record of who stayed healthy and in the lineup. Last season 940 skaters played at least one NHL game. The median skater played 61, and 488 cleared 60. Only 99 played exactly 82, and Brett Kulak, who suited up for three teams, was the lone skater above the schedule at 83. At the other end, 31 skaters played a single game.",
+  "Detroit used 29 skaters, and six of them, <a href=\"/players/moritz-seider/\">Moritz Seider</a>, <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a>, Ben Chiarot, J.T. Compher, <a href=\"/players/emmitt-finnie/\">Emmitt Finnie</a> and Albert Johansson, played all 82 games. Marco Kasper missed one and Lucas Raymond two. <a href=\"/players/dylan-larkin/\">Dylan Larkin</a> played 74, which matters more than it looks once you start dividing (more on that below).",
+  "For goalies, games played and starts split apart. The league's 98 goalies combined for 2,768 games played and 2,624 starts, exactly one per team per game, so 144 appearances came in relief. Karel Vejmelka led the league with 64 games played, 63 of them starts. Four goalies finished the season with one game played and no starts at all.",
+  "Why do leaderboards need a floor? Because the per-game math gets silly fast. Nathan MacKinnon scored 0.66 goals a game, the best rate among skaters with 60 or more games. Four skaters who played a single game and scored in it finished at 1.00, and Oliver Bonk's two points in his only game would top Nikita Kucherov's 1.71 points per game, the best mark among regulars. Nobody thinks Bonk out-produced Kucherov, and keeping one-game wonders off the top of that list is what GP minimums are for."
+ ],
+ "uses": [
+  {
+   "title": "Putting totals on a per-game footing",
+   "html": "Larkin scored 34 goals in 74 games last season, 0.46 a game. Stretched over Detroit's 82, that's a 38-goal pace, and it puts him much closer to DeBrincat's 41 (0.50 a game) than the raw totals suggest. Those eight missed games were worth about four goals at his rate, more than half the seven-goal gap between the two. A goal total always comes with a GP. Don't compare two without it."
+  },
+  {
+   "title": "Reading a goalie's workload",
+   "html": "<a href=\"/players/john-gibson/\">John Gibson</a> played 57 games for Detroit and started all 57. Cam Talbot played 34 but started 25, so nine of his appearances came in relief, and Detroit's two goalies combined for 91 games played in an 82-game season. If you count GP alone, the two look closer than they were. Starts are the workload number. A goalie's GP only tells you how often he got on the ice at all."
+  },
+  {
+   "title": "Setting a minimum",
+   "html": "Hockey-Reference won't rank a goalie on save percentage or goals-against average until he's played 0.3125 games per scheduled game, 26 in an 82-game season, and 55 goalies cleared that bar last season. The William M. Jennings Trophy sets its floor at 25 games, per the Hockey Hall of Fame. This site uses ice time for the same job, requiring 300 five-on-five minutes before it ranks a skater in percentiles and 600 minutes for a goalie, since a game played can mean a single shift."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night. Games played, starts and the team record come from the NHL's own club stats and standings.",
+  "tiles": [
+   {
+    "label": "Games played",
+    "source": "dashboard",
+    "path": "standings.gamesPlayed",
+    "format": "int",
+    "sub": "this season"
+   },
+   {
+    "label": "Standings points",
+    "source": "team",
+    "path": "record.points",
+    "format": "int",
+    "sub": "this season"
+   },
+   {
+    "label": "Points percentage",
+    "source": "team",
+    "path": "record.pointPctg",
+    "format": "pct1",
+    "sub": "points ÷ points available"
+   }
+  ],
+  "leaders": {
+   "source": "goalies",
+   "sort": "gamesPlayed",
+   "ascending": false,
+   "limit": 5,
+   "caption": "Red Wings goalies by games played",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "GS",
+     "path": "gamesStarted",
+     "format": "int"
+    },
+    {
+     "label": "W",
+     "path": "wins",
+     "format": "int"
+    },
+    {
+     "label": "L",
+     "path": "losses",
+     "format": "int"
+    },
+    {
+     "label": "OTL",
+     "path": "otLosses",
+     "format": "int"
+    },
+    {
+     "label": "SV%",
+     "path": "savePct",
+     "format": "sv3"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games, so every per-game rate on this site is still resting on a handful of nights."
+ },
+ "limits": [
+  {
+   "title": "One shift counts as a game",
+   "html": "A player who takes one shift and leaves hurt gets the same game played as one who logs 25 minutes, so a per-game rate can hide a big difference in how much of him you saw."
+  },
+  {
+   "title": "It doesn't say why a player missed time",
+   "html": "Healthy scratches, injuries, suspensions and stints in the minors all look the same in the GP column, which only records the games a player was on the ice. You have to go to the transaction log or the injury report to tell a benched player from a hurt one."
+  },
+  {
+   "title": "Goalie GP mixes starts and relief",
+   "html": "A goalie who mops up the last ten minutes of a blowout gets the same game played as one who starts and plays 60. Games started is the honest workload count, and games played overstates any goalie who comes off the bench a lot."
+  },
+  {
+   "title": "Trades bend the totals",
+   "html": "A player who changes teams midseason can finish above the schedule's game count, which is how Kulak reached 83, because GP isn't capped at a team's total and a traded player's line folds two or three teams' schedules, with their different off nights and back-to-backs, into a single number."
+  }
+ ],
+ "related": [
+  {
+   "slug": "points-per-game",
+   "name": "Points per game",
+   "abbr": "P/GP",
+   "vs": "Points divided by GP, the per-game rate most fans see first."
+  },
+  {
+   "slug": "per-60-rates",
+   "name": "Per-60 rates",
+   "abbr": "/60",
+   "vs": "Divides by minutes instead of games, so a one-shift night doesn't count as a full one."
+  },
+  {
+   "slug": "time-on-ice",
+   "name": "Time on ice",
+   "abbr": "TOI",
+   "vs": "How many minutes each of those games held."
+  },
+  {
+   "slug": "goalie-record",
+   "name": "Goalie record (W-L-OTL)",
+   "abbr": "W-L-OTL",
+   "vs": "The decisions a goalie took in his games played."
+  },
+  {
+   "slug": "points-percentage",
+   "name": "Points percentage",
+   "abbr": "P%",
+   "vs": "A team's standings points divided by the points its games played made available."
+  }
+ ],
+ "faq": [
+  {
+   "q": "How many games can a player play and still be a rookie?",
+   "a": "For the Calder Trophy, a player can't have played more than 25 games in any single preceding season, or six or more games in each of any two preceding seasons, in any major professional league, according to NHL.com. There's an age cap too, since he can be no older than 26 on Sept. 15 of his rookie season."
+  },
+  {
+   "q": "Who has played the most NHL games?",
+   "a": "Patrick Marleau, with 1,779 regular-season games over a career that ended in 2021, according to Hockey-Reference's career list. Gordie Howe is second at 1,767 and Mark Messier third at 1,756."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NHL Stats glossary",
+   "publisher": "NHL.com (also served at api.nhle.com/stats/rest/en/glossary)",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "GP, GS and GR definitions; shootout-only appearances; per-game caveat; first season tracked"
+  },
+  {
+   "label": "Official Rules 2025-26, Rule 33 (In-Arena Scorer)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "the scorer lists eligible players and marks those who took part in the game"
+  },
+  {
+   "label": "NHL Leaderboard Stat Requirements",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/rate_stat_req.html",
+   "note": "goalie leaderboard minimum of 0.3125 games per scheduled game"
+  },
+  {
+   "label": "William M. Jennings Trophy",
+   "publisher": "Hockey Hall of Fame",
+   "url": "https://hhof.com/thecollection/williammjenningstrophy.html",
+   "note": "25-game minimum"
+  },
+  {
+   "label": "NHL Calder Memorial Trophy winners complete list",
+   "publisher": "NHL.com, May 13, 2026",
+   "url": "https://www.nhl.com/news/topic/nhl-awards/nhl-calder-memorial-trophy-winners-complete-list-287749198",
+   "note": "rookie eligibility rules"
+  },
+  {
+   "label": "NHL & WHA Career Leaders and Records for Games Played",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leaders/games_played_career.html",
+   "note": "Marleau, Howe and Messier career totals"
+  },
+  {
+   "label": "2025-26 skater and goalie summaries (league and Detroit-only)",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/goalie/summary?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "every games-played, start and per-game figure on this page"
+  }
+ ],
+ "method": "Every figure is a Wes & Woodward calculation from the NHL stats API's 2025-26 regular-season skater and goalie summaries, downloaded October 9, 2026: the league files for the distributions (940 skaters, 98 goalies) and Detroit-only splits (teamId 17) for the Red Wings' games, starts and the 29 skaters they used. Per-game leaders compare skaters with 60+ games against the full list. Paces multiply a per-game rate by Detroit's 82 games. The Red Wings section rebuilds nightly."
+}

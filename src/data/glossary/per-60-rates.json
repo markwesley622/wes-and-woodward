@@ -1,0 +1,316 @@
+{
+ "slug": "per-60-rates",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Per-60 rates",
+  "short": "per-60",
+  "abbr": "/60",
+  "aliases": [
+   "/60",
+   "per 60",
+   "per 60 minutes",
+   "rate stats",
+   "P/60",
+   "G/60",
+   "points per 60"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "per 60 in hockey",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json status no_volume (no measured US volume in Ahrefs KE, 2026-10-09); primary is the natural phrase, no supporting keywords"
+ },
+ "seo": {
+  "title": "Per 60 in Hockey and How Per-60 Rates Are Calculated",
+  "description": "Per 60 in hockey means a stat divided by ice time and scaled to 60 minutes. The formula, benchmarks, limits, and the Red Wings' live rates.",
+  "h1": "Per-60 Rates (/60) and Stats Per 60 in Hockey"
+ },
+ "hero": {
+  "definition": "A per-60 rate takes any count, whether it's goals, points, shot attempts or expected goals, divides it by a player's ice time and scales it to 60 minutes. Written /60, a stat per 60 in hockey shorthand puts a top-line forward and a fourth-liner who plays half as much on the same footing.",
+  "dek": "Totals reward minutes as much as talent. Dylan Larkin outscored Patrick Kane by ten points last season, but at five-on-five Kane produced more per minute, and the season totals hide that completely."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "/60 · rates",
+   "sub": "P/60, G/60, iSAT/60 on NHL.com"
+  },
+  {
+   "label": "Formula",
+   "value": "× 60 ÷ TOI",
+   "sub": "the count times 60, over minutes played"
+  },
+  {
+   "label": "Median forward",
+   "value": "1.60",
+   "sub": "5v5 points per 60, 2025-26, 500+ minutes"
+  },
+  {
+   "label": "Median defenseman",
+   "value": "0.83",
+   "sub": "5v5 points per 60, 2025-26, 500+ minutes"
+  },
+  {
+   "label": "Best forward, 2025-26",
+   "value": "3.64",
+   "sub": "Kucherov, 5v5 points per 60"
+  },
+  {
+   "label": "Best Red Wing",
+   "value": "2.31",
+   "sub": "DeBrincat, 39th of 385 forwards"
+  },
+  {
+   "label": "Ice time since",
+   "value": "1997-98",
+   "sub": "first season of official NHL time on ice"
+  },
+  {
+   "label": "This site's floor",
+   "value": "300 min",
+   "sub": "of 5v5 ice time before a percentile shows"
+  }
+ ],
+ "origin": [
+  "Hockey's oldest per-60 rate belongs to goalies. Goals-against average is goals allowed times 60, divided by minutes played, and the NHL's stats glossary carries it all the way back to the league's first season. Skaters had to wait. The league's ice-time records for skaters don't start until 1997-98, so for most of its history the only way to adjust a scorer's output was to divide by games played.",
+  "That adjustment has an obvious hole, and the NHL's own glossary names it. Points per game, it says, \"does not account for varying time on ice and varying special teams time.\" A forward who plays big minutes with a regular spot on the power play isn't doing the same job as a fourth-liner who never leaves even strength, and dividing by games treats the two jobs alike.",
+  "Once ice time was public, the analysts moved first. By the end of the 2000s writers were citing Gabe Desjardins' Behind the Net for scoring that was split from the power play and adjusted for ice time, and two years later the Globe and Mail was quoting its rate stats. The league caught up. NHL.com now runs a Scoring per 60 report at five-on-five with data going back to 2009-10, Natural Stat Trick defines its rates the same way, and MoneyPuck's glossary explains the idea with a player who scores two goals in two hours of ice time. NHL.com's own analytics primer calls it the most common rate scale in hockey."
+ ],
+ "calculation": {
+  "intro": [
+   "The arithmetic fits on one line. Divide the count by minutes played and multiply by 60. The judgment is in choosing the minutes, because forwards score on the power play at more than two and a half times their five-on-five pace, and a rate that mixes the two rewards whoever gets the power-play time. Analysts split rates by game state for that reason. These are the inputs:"
+  ],
+  "inputs": [
+   "The count, whether it's goals, points, shot attempts, expected goals, hits or anything else",
+   "Time on ice in the same game state, in minutes",
+   "The game state (all situations, five-on-five, power play or penalty kill)",
+   "A minimum-minutes cutoff, so a ten-minute cameo can't top the leaderboard"
+  ],
+  "formulas": [
+   {
+    "label": "Rate",
+    "expr": "stat/60 = stat × 60 ÷ TOI (minutes)"
+   },
+   {
+    "label": "Back to a total",
+    "expr": "stat = stat/60 × TOI ÷ 60"
+   },
+   {
+    "label": "Goalie version",
+    "expr": "GAA = goals against × 60 ÷ TOI"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. Forward A scores 30 points in 1,200 minutes and Forward B scores 20 in 600. A's total is half again as big, but B's rate is 2.00 to A's 1.50. Give B the same minutes at the same rate and he'd score 40. Would he keep that rate with twice the ice time? That's a separate question, and it's the one rates can't answer.",
+  "after": [
+   "Check the unit before you divide. MoneyPuck's files and the NHL's stats API report ice time in seconds, while most tables you'll read display minutes."
+  ],
+  "variants": [
+   {
+    "term": "P/60",
+    "def": "Points per 60 minutes, usually at five-on-five."
+   },
+   {
+    "term": "G/60",
+    "def": "Goals per 60 minutes."
+   },
+   {
+    "term": "iCF/60",
+    "def": "A player's own shot attempts per 60 (iSAT/60 on NHL.com).",
+    "slug": "individual-shot-attempts"
+   },
+   {
+    "term": "ixG/60",
+    "def": "Individual expected goals per 60, the shooting-quality rate this site ranks Red Wings on.",
+    "slug": "individual-expected-goals"
+   },
+   {
+    "term": "xGF/60",
+    "def": "Expected goals for per 60 while the player or team is on the ice.",
+    "slug": "expected-goals"
+   }
+  ]
+ },
+ "meaning": [
+  "A per-60 rate measures efficiency, how much a player produces in the minutes he gets.",
+  "That matters because the minutes are never equal. Among the forwards who played 60 or more games last season, the busiest averaged 23 minutes a night and the lightest about seven, according to MoneyPuck's season file. At five-on-five, the median forward with at least 500 minutes scored 1.60 points per 60 and the top 10% cleared 2.31. Defensemen run on their own scale (a median of 0.83), so compare them with each other and leave the forwards out of it.",
+  "In Detroit, <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> sat right on the top-10% line at 2.31, 39th of 385 forwards. Kane and <a href=\"/players/lucas-raymond/\">Lucas Raymond</a> both scored at better than 1.9, comfortably above the median, while <a href=\"/players/dylan-larkin/\">Larkin</a> scored at 1.41. That's the case for using rates at all. Larkin carried more of the load in total, and DeBrincat got more out of each shift.",
+  "Do rates hold up from one season to the next? Some do. For forwards with 500 five-on-five minutes in both of the last two seasons, shot attempts carried over at a correlation of 0.85, expected goals at 0.65, points at 0.53 and goals at 0.42, all measured as per-60 rates. The rates a player controls most directly are the ones that repeat, so lean on volume rates for what a player is and treat one season's goal or point rate as part skill, part bounces."
+ ],
+ "uses": [
+  {
+   "title": "Comparing players on different minutes",
+   "html": "Larkin's 67 points were third on the team last season, and only 25 of them came at five-on-five, where his rate sat in the bottom half of the league's regular forwards. James van Riemsdyk scored at a 1.74 rate in far fewer minutes (less than two-thirds of Larkin's five-on-five time). Larkin's total leaned on the power play and the other game states, which produced the other 42 of his points. You'd never see that split in the totals."
+  },
+  {
+   "title": "Separating the power play",
+   "html": "Pool every forward's points and minutes by game state and you get 4.37 points per 60 at five-on-four against 1.63 at five-on-five. That's why an all-situations rate flatters a power-play regular. <a href=\"/players/moritz-seider/\">Moritz Seider</a> scored 25 of his 60 points at five-on-four in about a sixth of the minutes he played at five-on-five, two very different jobs folded into one total."
+  },
+  {
+   "title": "Setting a minimum",
+   "html": "Small samples break rates. Utah's Kevin Rooney scored one five-on-five point in under ten minutes last season, a rate of 6.16 that's about 70% above the league's best among regulars (Nikita Kucherov's 3.64). Natural Stat Trick lets you set a minimum ice time for exactly that reason. This site's percentiles need 300 five-on-five minutes before a skater gets one, and the benchmarks on this page use 500."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night from the NHL API and MoneyPuck. The team's special-teams rates come first, then the Red Wings ranked on individual expected goals per 60 at five-on-five.",
+  "tiles": [
+   {
+    "tile": "pp_xgf60"
+   },
+   {
+    "tile": "pk_xga60"
+   }
+  ],
+  "leaders": {
+   "source": "skaters",
+   "sort": "fiveOnFive.ixgPer60",
+   "limit": 8,
+   "caption": "Red Wings skaters by individual expected goals per 60, five-on-five",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "5v5 min",
+     "path": "fiveOnFive.icetimeMinutes",
+     "format": "num1"
+    },
+    {
+     "label": "5v5 ixG/60",
+     "path": "fiveOnFive.ixgPer60",
+     "format": "num2"
+    },
+    {
+     "label": "ixG, all",
+     "path": "ixG",
+     "format": "num2"
+    },
+    {
+     "label": "Goals",
+     "path": "goals",
+     "format": "int"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. A player needs 300 five-on-five minutes before this site gives him a percentile, so read these rates as a record of a small sample.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "Small samples swing wildly",
+   "html": "At 300 minutes a single point moves a player's rate by 0.20, about an eighth of the median forward's whole rate, so a rate only settles once the minutes pile up."
+  },
+  {
+   "title": "It can't see the role",
+   "html": "A rate doesn't know who a player was on the ice with, who he faced or where his shifts started. Evolving-Hockey's RAPM exists to strip those out, controlling for teammates, opponents and zone starts before it reports a player's impact as a rate."
+  },
+  {
+   "title": "Minutes aren't handed out at random",
+   "html": "Coaches hand out ice time on purpose, so a fourth-liner with a top-line rate can be a small sample or a sheltered role (soft matchups, lots of offensive-zone starts). Nothing in the rate tells you whether he'd keep it at 18 minutes a night."
+  },
+  {
+   "title": "Rates ignore how much a player plays",
+   "html": "A forward who scores at the same rate over 18 minutes a night as another does over 10 is worth more, because somebody has to play the other eight. Pair the rate with the minutes before you rank anyone."
+  }
+ ],
+ "related": [
+  {
+   "slug": "time-on-ice",
+   "name": "Time on ice",
+   "abbr": "TOI",
+   "vs": "The denominator every per-60 rate divides by."
+  },
+  {
+   "slug": "points-per-game",
+   "name": "Points per game",
+   "abbr": "P/GP",
+   "vs": "Divides by games, so it can't see ice time."
+  },
+  {
+   "slug": "individual-shot-attempts",
+   "name": "Individual shot attempts",
+   "abbr": "iCF",
+   "vs": "The most repeatable rate, usually quoted per 60."
+  },
+  {
+   "slug": "rapm",
+   "name": "RAPM",
+   "abbr": "RAPM",
+   "vs": "A per-60 impact with teammates and opponents removed."
+  },
+  {
+   "slug": "goals-against-average",
+   "name": "Goals against average",
+   "abbr": "GAA",
+   "vs": "The goalie stat that was a per-60 rate all along."
+  },
+  {
+   "slug": "five-on-five",
+   "name": "Five-on-five",
+   "abbr": "5v5",
+   "vs": "The game state most per-60 rates are quoted in."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Stats glossary (GAA, TOI, P/GP, P/60, iSAT/60)",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/glossary",
+   "note": "GAA formula and 1917-18 start, TOI since 1997-98, the P/GP caveat, per-60 definitions"
+  },
+  {
+   "label": "Scoring per 60 (5v5, since 2009-10)",
+   "publisher": "NHL.com stats",
+   "url": "https://www.nhl.com/stats/skaters?report=scoringRates&reportType=season&seasonFrom=20242025&seasonTo=20242025&gameType=2",
+   "note": "the league's own per-60 report"
+  },
+  {
+   "label": "Beyond the box score: intro to hockey analytics",
+   "publisher": "NHL.com (Alison Lukan), September 6, 2022",
+   "url": "https://www.nhl.com/kraken/news/beyond-box-score-intro-to-hockey-analytics-335471754",
+   "note": "per 60 as the most common rate scale"
+  },
+  {
+   "label": "Player glossary",
+   "publisher": "Natural Stat Trick",
+   "url": "https://www.naturalstattrick.com/glossary.php?players",
+   "note": "/60 defined as stat × 60 ÷ TOI"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "2 goals in 120 minutes = 1 goal per 60"
+  },
+  {
+   "label": "Perpetually underrated",
+   "publisher": "Canucks Army (Jonathan Willis), April 8, 2009",
+   "url": "https://canucksarmy.com/news/perpetually-underrated",
+   "note": "Behind the Net's ice-time-adjusted even-strength scoring"
+  },
+  {
+   "label": "The NHL's top defensive forwards",
+   "publisher": "The Globe and Mail (James Mirtle), April 13, 2011",
+   "url": "https://www.theglobeandmail.com/sports/hockey/globe-on-hockey/the-nhls-top-defensive-forwards/article576302/",
+   "note": "per-60 figures from Gabe Desjardins' Behind the Net"
+  },
+  {
+   "label": "Regularized Adjusted Plus-Minus glossary",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/regularized-adjusted-plus-minus/",
+   "note": "per-60 impacts and what RAPM controls for"
+  },
+  {
+   "label": "2024-25 and 2025-26 regular-season skater files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every rate, ice-time and repeatability figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season skater file (downloaded October 9, 2026) and its 2024-25 file (downloaded October 9, 2026, saved as raw/mp_skaters_2024_repeatability.csv). Rates are the count × 60 ÷ ice time in minutes at five-on-five; benchmarks use skaters with 500+ five-on-five minutes (385 forwards, 213 defensemen); minutes per game use the 327 forwards with 60+ games, all situations; the power-play comparison pools every forward's points and minutes by game state; repeatability is the Pearson correlation between 2024-25 and 2025-26 rates for the 324 forwards with 500+ five-on-five minutes in both. The 300-minute and 600-minute percentile floors are in pipeline/build_site_data.py. The Red Wings section rebuilds nightly from MoneyPuck."
+}

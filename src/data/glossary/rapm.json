@@ -1,0 +1,290 @@
+{
+ "slug": "rapm",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "RAPM",
+  "short": "RAPM",
+  "abbr": "RAPM",
+  "aliases": [
+   "RAPM",
+   "regularized adjusted plus-minus",
+   "adjusted plus-minus",
+   "APM",
+   "isolated impact"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "rapm in hockey",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json status no_volume (no measured US volume in Ahrefs KE, 2026-10-09); primary is the natural phrase, no supporting keywords"
+ },
+ "seo": {
+  "title": "RAPM in Hockey and How Regularized Adjusted Plus-Minus Works",
+  "description": "RAPM in hockey isolates each player's impact from his teammates, opponents and zone starts. How the regression works, and where the Red Wings ranked.",
+  "h1": "Regularized Adjusted Plus-Minus (RAPM) in Hockey"
+ },
+ "hero": {
+  "definition": "Regularized adjusted plus-minus (RAPM) is a regression that estimates each player's impact on shot attempts, expected goals and goals while controlling for teammates, opponents, zone starts and the score. RAPM in hockey is reported per 60 minutes against a league-average baseline of zero, and it's a building block of the public WAR models.",
+  "dek": "Plus-minus hands everyone on the ice the same credit for a goal. RAPM runs every shift of a season through one regression and splits the credit by who was out there, which is why this site uses it for the isolated-impact chart you'll find on every player page."
+ },
+ "facts": [
+  {
+   "label": "Full name",
+   "value": "RAPM",
+   "sub": "regularized adjusted plus-minus"
+  },
+  {
+   "label": "Unit",
+   "value": "Per 60",
+   "sub": "change in the team's rate, per 60 minutes"
+  },
+  {
+   "label": "Average",
+   "value": "0.00",
+   "sub": "every rating is measured from league average"
+  },
+  {
+   "label": "Middle 80%",
+   "value": "±0.2",
+   "sub": "net xG impact per 60, 2025-26, 20+ GP"
+  },
+  {
+   "label": "League leader",
+   "value": "+0.53",
+   "sub": "Moritz Seider, net xG per 60, 2025-26"
+  },
+  {
+   "label": "One row is",
+   "value": "A stint",
+   "sub": "a stretch of play with no line change"
+  },
+  {
+   "label": "First in hockey",
+   "value": "2010",
+   "sub": "Brian Macdonald's adjusted plus-minus"
+  },
+  {
+   "label": "This site uses",
+   "value": "EH RAPM",
+   "sub": "Evolving-Hockey, even strength, one season"
+  }
+ ],
+ "origin": [
+  "Adjusted plus-minus started in basketball. Dan Rosenbaum laid it out at 82games.com in April 2004, building on the WINVAL ratings Jeff Sagarin and Wayne Winston had designed. Regress the scoring margin of every stretch of play on who was on the floor, and each player's coefficient is his impact with his teammates and opponents held constant.",
+  "The first versions were noisy, because players who share most of their minutes are hard to pull apart. Joseph Sill's fix, presented at the MIT Sloan Sports Analytics Conference in March 2010, was regularization (ridge regression, in statistics terms), which he said nearly doubled the method's accuracy on games it hadn't seen.",
+  "Brian Macdonald brought it to hockey the same year. His first version, posted in June 2010 and published in the Journal of Quantitative Analysis in Sports in 2011, used weighted least squares on even-strength goals, and his 2012 follow-up switched to ridge regression, ran it on goals, shots, Fenwick and Corsi, and produced estimates he described as independent of teammates, opponents and the zone where a shift began. Robert Gramacy, Matthew Taddy and Shane Jensen published a regularized logistic version the next year.",
+  "Evolving-Hockey revived it for the public at Hockey-Graphs on January 14, 2019, and its version sits under the even-strength components of its WAR model. That's the RAPM this site plots, taken from Evolving-Hockey's single-season, even-strength export for every skater with 20 games."
+ ],
+ "calculation": {
+  "intro": [
+   "The regression treats every stint, a stretch of play with no substitutions, as one observation, weighted by how long it lasted. The target is the team's rate of shot attempts, expected goals or goals per 60 minutes during that stint, with a separate regression for each. Evolving-Hockey's 2017-18 demonstration ran 293,009 shifts averaging 12.94 seconds apiece, entered as 586,018 rows (one for each team's offense). These are the predictors:"
+  ],
+  "inputs": [
+   "Each skater on the ice for the offense",
+   "Each skater on the ice for the defense",
+   "The score state",
+   "The strength state (five-on-five, four-on-four and so on)",
+   "Whether the stint included a faceoff in either team's offensive zone",
+   "Whether either team was on the second night of a back-to-back",
+   "Home ice"
+  ],
+  "formulas": [
+   {
+    "label": "Regression",
+    "expr": "rate per 60 = Σ offense ratings + Σ defense ratings + context"
+   },
+   {
+    "label": "Ridge penalty",
+    "expr": "minimize squared error + λ × Σ rating²"
+   },
+   {
+    "label": "Net impact",
+    "expr": "net = offense rating − defense rating"
+   },
+   {
+    "label": "Over a season",
+    "expr": "goals of impact = rating × minutes ÷ 60"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. A defenseman's team generates 2.9 expected goals per 60 with him on the ice, against a league rate of 2.5. Raw on-ice numbers give him all of that plus-0.4. His usual partner and the top line he plays behind were out there for most of those minutes, though, and the regression has seen how they do without him. Say it hands them plus-0.3 of the credit. He's left with plus-0.1, and the ridge penalty trims that a little further toward zero.",
+  "after": [
+   "Ridge regularization pulls every rating toward zero, which is league average, and the strength of the pull is chosen by cross-validation. A player with very little ice time gets pulled almost all the way (Evolving-Hockey's write-up puts the line at roughly 100 to 150 even-strength minutes), so you'll see plenty of fringe players sitting a hair from zero. Each season is run on its own with players split by team. The multi-season versions combine single seasons weighted by ice time."
+  ],
+  "variants": [
+   {
+    "term": "xGF/60",
+    "def": "Offense. How much a player raises his team's expected goals per 60."
+   },
+   {
+    "term": "xGA/60",
+    "def": "Defense. How much he raises or lowers expected goals against per 60, so negative is good."
+   },
+   {
+    "term": "xG±/60",
+    "def": "Net impact, offense minus defense."
+   },
+   {
+    "term": "CF/60, GF/60",
+    "def": "The same regression run on shot attempts or on goals.",
+    "slug": "corsi"
+   },
+   {
+    "term": "APM",
+    "def": "Adjusted plus-minus without the ridge penalty, the noisier original."
+   }
+  ]
+ },
+ "meaning": [
+  "RAPM measures isolated impact against an average player. Zero is league average and the unit is goals (or expected goals, or attempts) per 60 minutes. If you see a net rating of plus-0.20, it means a team's expected-goal margin ran a fifth of a goal per 60 better with that player on the ice than his teammates, opponents and usage can explain.",
+  "Detroit had the best number in the league last season. It wasn't a forward. In Evolving-Hockey's 2025-26 even-strength file, net expected-goal impact among skaters with 20 or more games ran from minus-0.58 to plus-0.53 per 60. The middle 80% sat between minus-0.19 and plus-0.21. <a href=\"/players/moritz-seider/\">Moritz Seider</a> was the plus-0.53, ahead of Adam Fox and Jordan Spence, with plus-0.24 on offense and 0.30 fewer expected goals against per 60 on defense. Over his 1,640 even-strength minutes that's about 14.6 expected goals of impact.",
+  "The rest of the roster spread out behind him. <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> ranked 50th at plus-0.26. <a href=\"/players/dylan-larkin/\">Dylan Larkin</a> was 542nd at minus-0.08, a little below average at both ends, and <a href=\"/players/ben-chiarot/\">Ben Chiarot</a> was 774th of 795 at minus-0.30, most of it on defense.",
+  "Why trust a number that's been deliberately pulled toward zero? Because the unpulled version predicts worse. Sill's out-of-sample tests are the case for the penalty, and Evolving-Hockey sizes its own penalty the same way, on data the model hasn't seen."
+ ],
+ "uses": [
+  {
+   "title": "The isolated-impact chart",
+   "html": "Every player page on this site plots offense against defense RAPM for every NHL skater with 20 games, Red Wings highlighted, up and right good at both ends. It's the quickest way you can check whether a player's on-ice numbers are his own or borrowed from the people around him. Only four skaters cleared plus-0.20 at both ends last season, and <a href=\"/players/moritz-seider/\">Seider</a> was one of them."
+  },
+  {
+   "title": "The engine under WAR",
+   "html": "Evolving-Hockey runs long-term RAPM for each component, then trains a statistical plus-minus model to predict it and uses that model's output for each season of its <a href=\"/glossary/wins-above-replacement/\">WAR</a>. It goes the long way because single-season RAPM still struggles with linemates who always play together. Patrick Bacon's WAR at HockeyStats uses a weighted ridge regression for the same job, so both of the main public value models rest on it."
+  },
+  {
+   "title": "Seeing past the box score",
+   "html": "<a href=\"/players/marco-kasper/\">Marco Kasper</a> scored 0.93 five-on-five points per 60 last season, 354th of 385 forwards with 500 minutes. RAPM rated him plus-0.17 net, 115th in the league, and most of it came on offense (plus-0.12 expected goals for per 60). His line's chances went up with him on the ice even when the points didn't come, which is the case for patience."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Linemates are hard to separate",
+   "html": "What happens when two players share almost every shift? The regression has little to tell them apart with, and Evolving-Hockey says multicollinearity is still an issue within a single season. That's why its WAR uses long-term RAPM."
+  },
+  {
+   "title": "Shrinkage hides extremes",
+   "html": "Ridge pulls every rating toward zero, so a strong player on limited minutes looks closer to average than he is, and anyone under roughly 100 to 150 even-strength minutes is pulled almost all the way."
+  },
+  {
+   "title": "The controls are coarse",
+   "html": "Zone starts enter only as whether a stint included a faceoff in a given zone, and score as a handful of states. Anything that isn't on the list, from shift length to who's in goal for the expected-goal versions, ends up folded into somebody's rating, and you can't tell whose."
+  },
+  {
+   "title": "It assumes impacts add up",
+   "html": "Because the model is linear, a player's rating stays the same whoever he's with, so chemistry between two linemates who are better together than apart has nowhere to go but into their individual numbers."
+  }
+ ],
+ "related": [
+  {
+   "slug": "wins-above-replacement",
+   "name": "Wins above replacement",
+   "abbr": "WAR",
+   "vs": "Turns RAPM-based components into one value in wins."
+  },
+  {
+   "slug": "plus-minus",
+   "name": "Plus-minus",
+   "abbr": "+/-",
+   "vs": "The unadjusted ancestor. Equal credit for everyone on the ice."
+  },
+  {
+   "slug": "relative-corsi",
+   "name": "Relative Corsi",
+   "abbr": "Rel CF%",
+   "vs": "On-ice minus off-ice. RAPM adjusts for everyone at once."
+  },
+  {
+   "slug": "quality-of-competition-and-teammates",
+   "name": "Quality of competition and teammates",
+   "abbr": "QoC",
+   "vs": "Describes who a player faced. RAPM controls for it."
+  },
+  {
+   "slug": "zone-starts",
+   "name": "Zone starts",
+   "abbr": "OZS%",
+   "vs": "One of the context terms RAPM holds constant."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "The target behind the xGF/60 and xGA/60 versions."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Is RAPM the same as relative Corsi?",
+   "a": "Not quite. Relative Corsi is the difference between a team's numbers with a player on the ice and with him off it, so it still carries whoever he played with and against. RAPM puts all ten skaters into one regression together, so each rating is net of the other nine."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Reviving Regularized Adjusted Plus-Minus for Hockey",
+   "publisher": "Hockey-Graphs (Evolving-Hockey), January 14, 2019",
+   "url": "https://hockey-graphs.com/2019/01/14/reviving-regularized-adjusted-plus-minus-for-hockey/",
+   "note": "weighted ridge regression, stints, predictor list, cross-validation, shrinkage below 100-150 minutes, 2017-18 demonstration"
+  },
+  {
+   "label": "Regularized Adjusted Plus-Minus glossary",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/regularized-adjusted-plus-minus/",
+   "note": "targets GF/60, xGF/60, CF/60; zone-start definition; per-season by team"
+  },
+  {
+   "label": "Wins Above Replacement, Parts 2 and 3",
+   "publisher": "Hockey-Graphs (Evolving-Hockey), January 17-18, 2019",
+   "url": "https://hockey-graphs.com/2019/01/17/wins-above-replacement-the-process-part-2/",
+   "note": "long-term RAPM as the SPM target; single-season multicollinearity"
+  },
+  {
+   "label": "Measuring How NBA Players Help Their Teams Win",
+   "publisher": "Dan Rosenbaum, 82games.com, April 30, 2004",
+   "url": "http://www.82games.com/comm30.htm",
+   "note": "adjusted plus-minus and WINVAL"
+  },
+  {
+   "label": "Improved NBA Adjusted +/- Using Regularization and Out-of-Sample Testing",
+   "publisher": "Joseph Sill, MIT Sloan Sports Analytics Conference, March 6, 2010",
+   "url": "https://sloansportsconference.com/research-papers/improved-nba-adjusted-using-regularization-and-out-of-sample-testing",
+   "note": "ridge regression nearly doubles accuracy"
+  },
+  {
+   "label": "A Regression-Based Adjusted Plus-Minus Statistic for NHL Players",
+   "publisher": "Brian Macdonald, Journal of Quantitative Analysis in Sports, 2011 (arXiv June 2010)",
+   "url": "https://arxiv.org/abs/1006.4310",
+   "note": "first hockey APM, weighted least squares"
+  },
+  {
+   "label": "Adjusted Plus-Minus for NHL Players using Ridge Regression with Goals, Shots, Fenwick, and Corsi",
+   "publisher": "Brian Macdonald, Journal of Quantitative Analysis in Sports, October 2012",
+   "url": "https://arxiv.org/abs/1201.0317",
+   "note": "ridge version independent of teammates, opponents and zone starts"
+  },
+  {
+   "label": "Estimating Player Contribution in Hockey with Regularized Logistic Regression",
+   "publisher": "Gramacy, Taddy and Jensen, Journal of Quantitative Analysis in Sports, 2013",
+   "url": "https://arxiv.org/abs/1209.5026",
+   "note": "regularized logistic version"
+  },
+  {
+   "label": "WAR methodology",
+   "publisher": "HockeyStats (Patrick Bacon)",
+   "url": "https://hockeystats.com/methodology/war",
+   "note": "weighted ridge regression for play-driving"
+  },
+  {
+   "label": "Player glossary",
+   "publisher": "Natural Stat Trick",
+   "url": "https://www.naturalstattrick.com/glossary.php?players",
+   "note": "Rel defined as on-ice minus off-ice"
+  },
+  {
+   "label": "2025-26 even-strength RAPM export",
+   "publisher": "Evolving-Hockey data",
+   "url": "https://evolving-hockey.com/",
+   "note": "every league and Red Wings RAPM figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from Evolving-Hockey's even-strength RAPM export (all seasons through 2025-26, downloaded September 8, 2026, in research/rasmussen/raw/eh): the pool is the 795 skater-team rows for 2025-26 whose player played 20+ games, ranked on net expected-goal impact (xGF/60 minus xGA/60); impact in goals is the rating × even-strength minutes ÷ 60. Kasper's points per 60 come from MoneyPuck's 2025-26 skater file (downloaded October 9, 2026), five-on-five, among 385 forwards with 500+ minutes."
+}

@@ -1,0 +1,295 @@
+{
+ "slug": "shutouts",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Shutouts",
+  "short": "shutouts",
+  "abbr": "SO",
+  "aliases": [
+   "SO",
+   "shutout",
+   "team shutout",
+   "combined shutout",
+   "NHL shutouts"
+  ],
+  "category": "Goalie",
+  "plural": true
+ },
+ "keywords": {
+  "primary": "what does so mean in hockey",
+  "supporting": [
+   "what is so in hockey",
+   "shutout hockey meaning",
+   "shutout meaning hockey",
+   "shutout in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Does SO Mean in Hockey and How Shutouts Work",
+  "description": "What does SO mean in hockey? On a goalie's line it's shutouts, games with no goals allowed. The credit rules, the records, and the Red Wings' live numbers.",
+  "h1": "What Does SO Mean in Hockey? Shutout (SO) Rules and Records"
+ },
+ "hero": {
+  "definition": "SO in hockey stands for shutout, a game in which a goalie plays the whole way and his team allows no goals before any shootout. If two goalies combine for the clean sheet, the team is credited with the shutout and neither goalie is.",
+  "dek": "What does SO mean in hockey when it isn't on a goalie's line? On the NHL's shootout reports the same letters mark shootout stats, so the table tells you which. On this page it's the shutout, the cleanest night a goalie can have, and the league's starters managed one about every 24 starts last season."
+ },
+ "facts": [
+  {
+   "label": "Abbreviation",
+   "value": "SO",
+   "sub": "on a goalie's stat line"
+  },
+  {
+   "label": "League total",
+   "value": "111",
+   "sub": "goalie shutouts in 2025-26, plus 2 combined"
+  },
+  {
+   "label": "Rate",
+   "value": "4.2%",
+   "sub": "of the league's 2,624 starts, 2025-26"
+  },
+  {
+   "label": "Leader, 2025-26",
+   "value": "7",
+   "sub": "Ilya Sorokin, NYI"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "5",
+   "sub": "team shutouts, 4 by John Gibson, 1 combined"
+  },
+  {
+   "label": "Season record",
+   "value": "22",
+   "sub": "George Hainsworth, Montreal, 1928-29, in 44 games"
+  },
+  {
+   "label": "Career record",
+   "value": "125",
+   "sub": "Martin Brodeur"
+  },
+  {
+   "label": "Credit rule",
+   "value": "1 goalie",
+   "sub": "a combined shutout goes to the team"
+  }
+ ],
+ "origin": [
+  "The shutout is as old as goaltending stats get, and its records belong to another game. George Hainsworth posted 22 for Montreal in 1928-29, in a 44-game schedule, and the NHL's own records show nobody's topped 15 in the near-century since (Tony Esposito's 15 in 1969-70 is the closest). Martin Brodeur holds the career mark with 125. Terry Sawchuk is second with 103, and his 85 with Detroit are still the franchise record.",
+  "The modern shutout has thinned out. NHL goalies recorded 191 in 2003-04 and 111 last season, with two more teams on the schedule, which works out to a shutout in 7.8% of team games then and 4.2% now. League scoring climbed over the same stretch, and a perfect night now takes a goalie, a defense and a fair amount of luck lining up together.",
+  "The meaning of a shutout in hockey record books comes straight from the NHL's stats glossary, which counts games in which the opposing team scores zero goals before the shootout. NHL.com and Hockey-Reference publish shutouts for every goalie, and the league's team reports carry a separate team-shutout column that catches the games two goalies shared."
+ ],
+ "calculation": {
+  "intro": [
+   "There's no formula, just a set of rules about when the zero counts and who gets it. The opponent can't score in regulation or overtime, the shootout doesn't count, and the credit goes to a goalie only when he's the one goalie his team used. These are the inputs:"
+  ],
+  "inputs": [
+   "The opponent's goals in regulation and overtime, which have to be zero",
+   "The number of goalies his team used, which has to be one",
+   "The shootout, which is ignored for this purpose",
+   "Games started, the denominator for a shutout rate"
+  ],
+  "formulas": [
+   {
+    "label": "Shutout",
+    "expr": "opponent's goals before the shootout = 0, with one goalie used"
+   },
+   {
+    "label": "Team shutout",
+    "expr": "opponent's goals before the shootout = 0, any number of goalies"
+   },
+   {
+    "label": "Shutout rate",
+    "expr": "SO ÷ games started"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A starter stops all 20 shots over two periods, gets hurt, and the backup stops all 10 in the third of a 3-0 win. The team gets a shutout and neither goalie does. Detroit played that exact game at New Jersey on March 8, 2026, when <a href=\"/players/john-gibson/\">John Gibson</a> made 21 saves before he was hurt late in the second and Cam Talbot stopped 10 in the third (per the Associated Press, the first combined shutout by Detroit goalies since 2014).",
+  "after": [
+   "The shootout carve-out works in the goalie's favor. When the Islanders beat Seattle in a shootout after a scoreless game in November, the league credited David Rittich and Joey Daccord with a shutout apiece, and Daccord's came with an overtime loss attached."
+  ],
+  "variants": [
+   {
+    "term": "SO",
+    "def": "Shutouts on a goalie's line. Games in which he was the only goalie his team used and the opponent scored nothing before any shootout."
+   },
+   {
+    "term": "Team shutout",
+    "def": "A game in which the team allowed no goals before any shootout, however many goalies it used. The NHL counts these in its team reports."
+   },
+   {
+    "term": "SO (shootout)",
+    "def": "On the NHL's shootout reports the same letters mark shootout stats (SO G is shootout goals), a different stat entirely."
+   },
+   {
+    "term": "GAA",
+    "def": "A shutout is a game with a 0.00 goals against average.",
+    "slug": "goals-against-average"
+   }
+  ]
+ },
+ "meaning": [
+  "Shutouts are rare, and a lot of good goalies go a season without one. NHL goalies posted 111 in 2,624 starts last season. Only 52 of the 98 goalies who played got one, and 14 of the 51 who played at least 30 games went the whole year without one, Connor Hellebuyck among them despite starting more than two-thirds of Winnipeg's games.",
+  "Ilya Sorokin led the league with seven for the Islanders, who led all teams with nine team shutouts, and Joel Hofer had six for St. Louis. Gibson's four tied him with six other goalies for third, and Detroit's five team shutouts counted the one he shared with Talbot. Four teams (Anaheim, Winnipeg, San Jose and Philadelphia) didn't post a single one.",
+  "What does a shutout tell you about a goalie? Less than the zero suggests. Sorokin's seven came with a .906 save percentage and Hellebuyck's none with a .895, a real gap of 11 points, though nowhere near the gap between seven and zero. A shutout needs the goalie to stop everything and the game to hand him a manageable number of shots, and he only controls the first half of that.",
+  "That's why the count reads best as a highlight reel. It tells you how often a goalie and his team put together a perfect night, and it's a fun number to chase for milestones, but it doesn't rank goalies. For that you'd want save percentage or goals saved above expected over the same season."
+ ],
+ "uses": [
+  {
+   "title": "Finding a team's perfect nights",
+   "html": "Team shutouts measure goalie and defense together, which is the honest way to read them. Colorado and Minnesota, the two teams with the best team save percentages last season, posted eight apiece. The Islanders led with nine behind Sorokin. Detroit's five tied for sixth, above the league's median of three, and one of them came from two goalies."
+  },
+  {
+   "title": "Tracking milestones",
+   "html": "Shutouts are the stat records get kept on, and Detroit's book is long. Terry Sawchuk had 12 in a season three times for the Wings (in seasons of 67 to 70 games) and Glenn Hall matched it in 1955-56. Sawchuk's 85 with the franchise are more than twice the 39 of Chris Osgood, who's second. Nobody else in Detroit history has reached 30."
+  },
+  {
+   "title": "Reading the workload behind the zero",
+   "html": "Line a goalie's shutouts up against his saves in each one and you can see how much of the work was his. Gibson's four last season took 39 saves against Vancouver, 27 against Montreal, 26 against Chicago and 21 against Colorado. The Vancouver one asked nearly twice as much of him as the Colorado one. Both count once."
+  }
+ ],
+ "live": {
+  "intro": "Shutouts, save percentage and GAA come from the NHL's club stats, rebuilt nightly. Detroit's goals against comes first, then every goalie the Wings have used this season, most shutouts first.",
+  "tiles": [
+   {
+    "label": "Goals against",
+    "source": "team",
+    "path": "record.goalAgainst",
+    "format": "int",
+    "sub": "all goals allowed, this season"
+   },
+   {
+    "tile": "gsax"
+   }
+  ],
+  "leaders": {
+   "source": "goalies",
+   "sort": "shutouts",
+   "ascending": false,
+   "limit": 5,
+   "caption": "Red Wings goalies by shutouts",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "GS",
+     "path": "gamesStarted",
+     "format": "int"
+    },
+    {
+     "label": "SO",
+     "path": "shutouts",
+     "format": "int"
+    },
+    {
+     "label": "SV%",
+     "path": "savePct",
+     "format": "sv3"
+    },
+    {
+     "label": "GAA",
+     "path": "gaa",
+     "format": "num2"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. Last season the league's starters managed one shutout about every 24 starts, so a zero here this early says almost nothing.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "It's all or nothing",
+   "html": "A 21-save shutout and a 39-save shutout count exactly the same on a goalie's line, and a 45-save night that gets spoiled by one deflection with a minute to play counts for nothing at all, which is why the stat tells you about outcomes and little about how a goalie played."
+  },
+  {
+   "title": "Shot volume decides a lot of it",
+   "html": "Treat every shot as an independent coin flip at a .905 save percentage and a goalie stops all 22 about 11% of the time, against 3% when he faces 35. Real shots aren't independent, but the direction holds. He doesn't pick the number."
+  },
+  {
+   "title": "Shared shutouts vanish from the goalie's line",
+   "html": "Gibson stopped every shot he faced on March 8 and got no shutout, because Talbot finished the game. Only the team's column records it. A goalie's career total can understate how many clean nights he was part of, since the shared ones never reach his line."
+  },
+  {
+   "title": "The sample is tiny",
+   "html": "Most regulars land somewhere between zero and four in a season, so a single bounce moves a goalie up or down a bracket. Sorokin's seven and Hellebuyck's zero sat on save percentages only 11 points apart, and you'd be hard pressed to rank them by the shutout column alone."
+  }
+ ],
+ "related": [
+  {
+   "slug": "goals-against-average",
+   "name": "Goals against average",
+   "abbr": "GAA",
+   "vs": "Goals per 60 minutes. A shutout is a single game at zero."
+  },
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "Share of shots stopped, every game counted."
+  },
+  {
+   "slug": "goalie-record",
+   "name": "Goalie record",
+   "abbr": "W-L-OTL",
+   "vs": "Wins and losses. A shutout win needs no goal support beyond one."
+  },
+  {
+   "slug": "quality-starts",
+   "name": "Quality starts",
+   "abbr": "QS",
+   "vs": "Counts good starts. A shutout counts only perfect ones."
+  },
+  {
+   "slug": "goals-saved-above-expected",
+   "name": "Goals saved above expected",
+   "abbr": "GSAx",
+   "vs": "Grades every save by danger, shutout or not."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Stats glossary (shutouts, shootout stats, complete games)",
+   "publisher": "NHL",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "shutout = no opponent goals before the shootout; SO G and SO S are shootout stats"
+  },
+  {
+   "label": "Goalie summary and per-game reports, 2003-04 and 2025-26; career, season and franchise records",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/goalie/summary?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "every shutout count, record and save total on this page"
+  },
+  {
+   "label": "Team summary and per-game team reports, 2025-26",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/summary?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "team shutouts, combined shutouts, team save percentage"
+  },
+  {
+   "label": "Gibson and Talbot combine to make 31 saves in the Red Wings' 3-0 win over the Devils",
+   "publisher": "Associated Press, via CBS Sports, March 8, 2026",
+   "url": "https://www.cbssports.com/nhl/gametracker/recap/NHL_20260308_DET@NJ",
+   "note": "Gibson's injury, Talbot's third period, first Detroit combined shutout since 2014"
+  },
+  {
+   "label": "Takeaways from Oilers' 4-0 shutout victory over Bruins",
+   "publisher": "The Hockey Writers, January 8, 2025",
+   "url": "https://thehockeywriters.com/takeaways-from-oilers-4-0-shutout-victory-over-bruins-2025-01-07/",
+   "note": "a goalie who shares a shutout isn't credited with one"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "SO = shutouts"
+  }
+ ],
+ "method": "Every count is Wes & Woodward's calculation from the NHL stats API, downloaded October 9, 2026: goalie shutouts from the 2025-26 goalie summary; team and combined shutouts by matching the per-game team report (goals against = 0) to the per-game goalie report (goalies used and shutout credit); the shutout rate is goalie shutouts ÷ the league's 2,624 starts; the 2003-04 rate is 191 ÷ 2,460 team games. Season, career and Red Wings franchise records come from the same API's season and career goalie queries (regular season, 1917-18 through 2025-26). The coin-flip figures are 0.905^22 and 0.905^35. The Red Wings section rebuilds nightly from the NHL's club stats."
+}

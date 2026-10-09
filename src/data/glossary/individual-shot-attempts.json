@@ -1,0 +1,256 @@
+{
+ "slug": "individual-shot-attempts",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Individual shot attempts",
+  "short": "iCF",
+  "abbr": "iCF",
+  "aliases": [
+   "iCF",
+   "iSAT",
+   "individual Corsi for",
+   "individual shot attempts",
+   "iCF/60",
+   "iFF"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "icf in hockey",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json status no_volume (no measured US volume in Ahrefs KE, 2026-10-09); primary is the abbreviation form, no supporting keywords"
+ },
+ "seo": {
+  "title": "iCF in Hockey and How Individual Shot Attempts Are Counted",
+  "description": "iCF in hockey counts every shot attempt a player takes, on goal, missed or blocked. How it's counted, what it predicts, and where the Red Wings rank.",
+  "h1": "Individual Shot Attempts (iCF) in Hockey"
+ },
+ "hero": {
+  "definition": "Individual shot attempts (iCF) counts every shot a player takes himself, whether it's on goal, wide of the net or blocked. It's the shooter's own slice of Corsi, which counts every attempt by his team while he's on the ice, and the purest measure of shooting volume there is. You'll usually see iCF in hockey tables as a per-60 rate.",
+  "dek": "Volume is the most repeatable thing a shooter does. A forward's five-on-five attempt rate carries over from one season to the next about twice as well as his goal rate, which makes iCF the first number to check when a scorer's goals dry up."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "iSAT, iCF/60",
+   "sub": "NHL.com calls it iSAT"
+  },
+  {
+   "label": "Counts",
+   "value": "3 events",
+   "sub": "shots on goal, missed shots, attempts blocked"
+  },
+  {
+   "label": "Median forward",
+   "value": "248",
+   "sub": "attempts, 2025-26, 327 forwards with 60+ GP"
+  },
+  {
+   "label": "League leader",
+   "value": "600",
+   "sub": "Nathan MacKinnon, all situations, 2025-26"
+  },
+  {
+   "label": "Best Red Wing",
+   "value": "579",
+   "sub": "Alex DeBrincat, third in the NHL"
+  },
+  {
+   "label": "Median 5v5 rate",
+   "value": "11.86",
+   "sub": "forward attempts per 60, 500+ minutes"
+  },
+  {
+   "label": "Blocked",
+   "value": "26.7%",
+   "sub": "of all 152,884 NHL attempts, 2025-26"
+  },
+  {
+   "label": "Repeats at",
+   "value": "r = 0.85",
+   "sub": "5v5 iCF/60 year to year, 324 forwards"
+  }
+ ],
+ "origin": [
+  "iCF is the individual half of Corsi, and Corsi got its name almost by accident. Bob McKenzie reported in 2014 that the blogger Vic Ferrari (Tim Barnes) first heard Sabres general manager Darcy Regier talking about shot attempts on the radio, then went looking on the Buffalo website for a name to hang on the stat and settled on goaltending coach Jim Corsi, in part because he liked the moustache. McKenzie places it somewhere between 2006 and 2008, the same stretch that produced Fenwick and PDO.",
+  "The raw material is older than the name. The NHL has tracked shots on goal for skaters since 1959-60 and missed shots since 1997-98, and it's recorded blocked shots since 2002-03. Put the three together and you have every attempt a player made, which the league's play-by-play logs one event at a time.",
+  "The league now uses the idea under its own labels. NHL.com calls Corsi SAT and a player's own attempts iSAT, defining iSAT/60 as a player's \"own shot attempts (missed shots, attempts blocked, and shots on goal) per 60 minutes.\" Natural Stat Trick uses the iCF label, with iFF for unblocked attempts, and MoneyPuck carries the count in its season files as I_F_shotAttempts. That's the column this site reads."
+ ],
+ "calculation": {
+  "intro": [
+   "There's no model and nothing to weight. iCF adds up three kinds of play-by-play event, all credited to the player who shot, and Natural Stat Trick's definition leaves the shootout out. These are the inputs:"
+  ],
+  "inputs": [
+   "Shots on goal, which include goals",
+   "Missed shots, whether wide, over the net, off the post or crossbar, or short",
+   "Attempts blocked by an opposing skater",
+   "Time on ice, for the per-60 version",
+   "The game state, since power-play attempts come much faster"
+  ],
+  "formulas": [
+   {
+    "label": "Count",
+    "expr": "iCF = shots on goal + missed shots + attempts blocked"
+   },
+   {
+    "label": "Unblocked",
+    "expr": "iFF = shots on goal + missed shots"
+   },
+   {
+    "label": "Rate",
+    "expr": "iCF/60 = iCF × 60 ÷ TOI (minutes)"
+   },
+   {
+    "label": "Blocked share",
+    "expr": "attempts blocked ÷ iCF"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. A forward takes six attempts in a game, three on goal (one of them a goal), two wide and one into a defenseman's shin pads. His iCF is six, his iFF five and his shots on goal three. Over a 15-minute night that's a rate of 24 attempts per 60, about double what the median forward manages at five-on-five.",
+  "after": [
+   "MoneyPuck's files check out to the attempt. For every one of the league's 940 skaters last season, shots on goal plus misses plus blocked attempts equals the shot-attempt column, and of those 152,884 attempts a little more than a quarter never got past a skater."
+  ],
+  "variants": [
+   {
+    "term": "iFF",
+    "def": "Individual Fenwick for. Unblocked attempts only, on goal plus missed.",
+    "slug": "fenwick"
+   },
+   {
+    "term": "SOG",
+    "def": "Shots on goal, the NHL's traditional shots column. Misses and blocks don't count.",
+    "slug": "shots-on-goal"
+   },
+   {
+    "term": "iCF/60",
+    "def": "Attempts per 60 minutes, usually at five-on-five. The version to compare players on.",
+    "slug": "per-60-rates"
+   },
+   {
+    "term": "ixG",
+    "def": "Individual expected goals. The unblocked attempts weighted by how dangerous each one was.",
+    "slug": "individual-expected-goals"
+   },
+   {
+    "term": "CF",
+    "def": "On-ice Corsi for. Every attempt by the player's team while he's on the ice, his own included.",
+    "slug": "corsi"
+   }
+  ]
+ },
+ "meaning": [
+  "iCF measures how often a player shoots, and nothing more. A wrister that beats the goalie, a slapper from the blue line into the crest and a pass-shot that dies on a shin pad all count once. Among the 327 forwards who played at least 60 games last season, the median took 248 attempts in all situations and the top 10% took 421 or more. Nathan MacKinnon led the league with 600 and Zach Werenski was second, a rare defenseman near the top. <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> was third at 579, more than twice the median forward, and nobody else in Detroit came close (<a href=\"/players/dylan-larkin/\">Dylan Larkin</a> was next at 452). Strip out ice time and the story holds. At five-on-five the median forward with 500 minutes attempted about 12 shots per 60, and DeBrincat's 20 ranked sixth in the league.",
+  "Why care about attempts that miss? Because volume repeats. For forwards with 500 five-on-five minutes in both of the last two seasons, attempts per 60 carried over at a correlation of 0.85. Goals per 60 managed 0.42 and shooting percentage 0.25, which is why the shots a player takes this year are the best single guide you'll find to the shots he'll take next year.",
+  "Goals come and go with the bounces, and the attempts tell you whether the shooter is still doing his part."
+ ],
+ "uses": [
+  {
+   "title": "Separating volume from quality",
+   "html": "<a href=\"/players/andrew-copp/\">Andrew Copp</a> shows why iCF needs a partner. His five-on-five attempt rate ranked 304th of 385 forwards last season, yet his individual expected goals sat above the median forward's, because the shots he did take came from close in. They were worth 0.107 expected goals per unblocked attempt against a league average of 0.073. Low volume, high danger. A scorer whose attempts hold steady while his goals vanish is usually running cold, and one whose attempts fall off has a different problem."
+  },
+  {
+   "title": "Spotting shots that don't get through",
+   "html": "Defensemen shoot through more traffic. Last season 36% of the median defenseman's attempts were blocked, against 22% for the median forward. <a href=\"/players/axel-sandin-pellikka/\">Axel Sandin-Pellikka</a> had 42% of his blocked, the 16th-highest share among 161 regular defensemen, while <a href=\"/players/moritz-seider/\">Moritz Seider</a> got more through than most (30% blocked). A blocked attempt still counts toward iCF, so you need the blocked share to check a busy total."
+  },
+  {
+   "title": "Finding the line's shooter",
+   "html": "Who's the shooter on a line? Divide a player's attempts by his team's attempts while he's on the ice and you get his share of the line's shooting. The median forward with 500 five-on-five minutes took 21% last season. DeBrincat took 33%, second in the league behind Viktor Arvidsson, which is the profile of a trigger man. Copp, a center who shoots less, took 17%."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Every attempt counts the same",
+   "html": "A point shot through three bodies and a backdoor tap-in are each worth one, which is the gap expected goals exists to close and the reason iCF and ixG belong side by side."
+  },
+  {
+   "title": "Blocked shots have no honest location",
+   "html": "The NHL logs a blocked attempt at the spot of the block, so there's no record of where it was taken. That's why expected-goal models leave blocks out, and why the blocked part of iCF can't be graded for danger at all."
+  },
+  {
+   "title": "It can't see passing",
+   "html": "A playmaker who sets up three shots and takes none gets nothing. A low share of the line's attempts can mean a passer as easily as a passenger, and iCF can't tell you which."
+  },
+  {
+   "title": "All-situations totals mix game states",
+   "html": "Power-play time produces attempts much faster than five-on-five play does, so a player's all-situations total partly measures how many power-play minutes he gets. Compare five-on-five rates when you want the player."
+  }
+ ],
+ "related": [
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "Every attempt by both teams with the player on the ice. iCF is only his own."
+  },
+  {
+   "slug": "individual-expected-goals",
+   "name": "Individual expected goals",
+   "abbr": "ixG",
+   "vs": "The same shooter's unblocked attempts, weighted by danger."
+  },
+  {
+   "slug": "shots-on-goal",
+   "name": "Shots on goal",
+   "abbr": "SOG",
+   "vs": "Only the attempts that reach the goalie or go in."
+  },
+  {
+   "slug": "fenwick",
+   "name": "Fenwick",
+   "abbr": "FF%",
+   "vs": "Drops blocked attempts, the on-ice version of iFF."
+  },
+  {
+   "slug": "shooting-percentage",
+   "name": "Shooting percentage",
+   "abbr": "SH%",
+   "vs": "Goals per shot on goal, the noisy half of scoring."
+  },
+  {
+   "slug": "per-60-rates",
+   "name": "Per-60 rates",
+   "abbr": "/60",
+   "vs": "How iCF is put on a level field across ice time."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Stats glossary (SAT, iSAT/60, shots, missed shots, blocked shots)",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/glossary",
+   "note": "iSAT definition; shots since 1959-60, misses since 1997-98, blocks since 2002-03"
+  },
+  {
+   "label": "The real story of how Corsi got its name",
+   "publisher": "TSN (Bob McKenzie), October 6, 2014 (Wayback Machine copy)",
+   "url": "https://web.archive.org/web/20160113063806/http://www.tsn.ca/mckenzie-the-real-story-of-how-corsi-got-its-name-1.100011",
+   "note": "Vic Ferrari (Tim Barnes), Darcy Regier, Jim Corsi, 2006 to 2008"
+  },
+  {
+   "label": "Player glossary",
+   "publisher": "Natural Stat Trick",
+   "url": "https://www.naturalstattrick.com/glossary.php?players",
+   "note": "iCF and iFF definitions, shootout excluded"
+  },
+  {
+   "label": "Player data dictionary",
+   "publisher": "MoneyPuck",
+   "url": "https://peter-tanner.com/moneypuck/downloads/MoneyPuckDataDictionaryForPlayers.csv",
+   "note": "I_F_shotAttempts includes shots on goal, missed shots and blocked attempts"
+  },
+  {
+   "label": "Beyond the box score: intro to hockey analytics",
+   "publisher": "NHL.com (Alison Lukan), September 6, 2022",
+   "url": "https://www.nhl.com/kraken/news/beyond-box-score-intro-to-hockey-analytics-335471754",
+   "note": "the NHL marks where a shot is blocked, not where it was taken"
+  },
+  {
+   "label": "2024-25 and 2025-26 regular-season skater files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every count, rate and repeatability figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season skater file (downloaded October 9, 2026) and its 2024-25 file (downloaded October 9, 2026, saved as raw/mp_skaters_2024_repeatability.csv). Totals are all situations among the 327 forwards with 60+ games; rates are attempts × 60 ÷ five-on-five minutes among skaters with 500+ five-on-five minutes; repeatability is the Pearson correlation between 2024-25 and 2025-26 five-on-five rates for the 324 forwards with 500+ minutes in both; expected goals per unblocked attempt is ixG ÷ (shots on goal + missed shots); a player's share of the line's attempts is his five-on-five attempts ÷ on-ice team attempts."
+}

@@ -1,0 +1,252 @@
+{
+ "slug": "faceoff-percentage",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Faceoff percentage",
+  "short": "FO%",
+  "abbr": "FO%",
+  "aliases": [
+   "FO%",
+   "FOW",
+   "FOL",
+   "FOW%",
+   "faceoffs won",
+   "faceoff win percentage",
+   "face-off percentage"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "what is fow in hockey",
+  "supporting": [
+   "hockey fow",
+   "fow hockey meaning",
+   "faceoff win percentage nhl",
+   "face off percentage nhl"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Is FOW in Hockey and How Faceoff Percentage Works",
+  "description": "What is FOW in hockey? Faceoffs won. How faceoff percentage is recorded and calculated, what a win is worth, and the Red Wings' 2025-26 numbers.",
+  "h1": "What Is FOW in Hockey? Faceoffs Won and Faceoff Percentage (FO%)"
+ },
+ "hero": {
+  "definition": "Faceoff percentage (FO%) is the share of the draws a player or team takes that it wins, faceoffs won divided by faceoffs taken. FOW is the count of wins and FOL the count of losses. Every draw has one winner, so the league as a whole sits at 50%, and the best regular centers win around 60%.",
+  "dek": "What is FOW in hockey shorthand? It's faceoffs won, a column the NHL has kept for every player for nearly three decades, and the best research on it says a single win is worth about one seventy-sixth of a goal."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "FOW · FOL",
+   "sub": "faceoffs won and lost; the NHL writes FOW%"
+  },
+  {
+   "label": "Unit",
+   "value": "Percent",
+   "sub": "wins divided by draws taken"
+  },
+  {
+   "label": "League average",
+   "value": "50%",
+   "sub": "by construction, every draw has a winner"
+  },
+  {
+   "label": "Best team, 2025-26",
+   "value": "54.5%",
+   "sub": "N.Y. Rangers, a hair ahead of Ottawa"
+  },
+  {
+   "label": "Worst team, 2025-26",
+   "value": "45.9%",
+   "sub": "Buffalo"
+  },
+  {
+   "label": "Best regular, 2025-26",
+   "value": "63.1%",
+   "sub": "Claude Giroux, 799 draws (500-draw minimum)"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "51.0%",
+   "sub": "10th of 32 teams"
+  },
+  {
+   "label": "Published by",
+   "value": "NHL",
+   "sub": "since 1997-98; zone splits since 2009-10"
+  }
+ ],
+ "origin": [
+  "The NHL has counted faceoffs for every player since 1997-98. The league's glossary dates FOW, FOL and FO% to that season, with even-strength, power-play and shorthanded splits from the start and zone splits a dozen seasons later. The numbers come from the league's real-time scorers, the off-ice crew that Rule 36 of the rulebook puts at every game (three stats-entry scorers, a time-on-ice scorer and an event analyst, overseen by a scoring system manager) to \"electronically record all official statistics.\"",
+  "The draw itself is Rule 76. A linesperson drops the puck between two players, and the rule spells out who puts his stick down first, the defending player at the eight spots outside center ice and the visitor at center. It doesn't say who wins the draw. The working standard, the one Sportlogiq's Sloan paper states outright, is that whichever team gets the puck first after the drop wins it, and the two players who took the draw are credited with the win and the loss. Wingers take some draws, including when an official sends a center out of the circle for a violation (a team's second violation on the same draw is a bench minor). Players listed as centers took 86% of the league's draws last season.",
+  "The analytics on faceoffs mostly try to put a price on a win. Michael Schuckers, Tom Pasquali and Jim Curro at St. Lawrence University ran 211,372 faceoffs from the three seasons ending in 2010-11 and found it took 76.5 wins to add one goal of differential. Sportlogiq's Nick Czuzoj-Shulman and four co-authors cited the same figure seven years later, then used the company's computer-vision tracking data to argue that what kind of win a center gets matters more than how many he gets."
+ ],
+ "calculation": {
+  "intro": [
+   "It's a single division. Count the draws a player or team won, divide by the draws it took, and that's FO%. The league held 73,496 faceoffs in 2025-26, a little over 56 a game, and the play-by-play credits each one to a winner and a loser. These are the inputs:"
+  ],
+  "inputs": [
+   "Faceoffs won (FOW), credited to the player who took the draw for the team that gained possession",
+   "Faceoffs lost (FOL), charged to the other player in the circle",
+   "Where the draw happened (offensive, defensive or neutral zone)",
+   "The strength state (even strength, power play, shorthanded)"
+  ],
+  "formulas": [
+   {
+    "label": "Faceoff percentage",
+    "expr": "FO% = FOW ÷ (FOW + FOL)"
+   },
+   {
+    "label": "Net wins",
+    "expr": "faceoff differential = FOW − FOL"
+   },
+   {
+    "label": "Goal value (Schuckers et al.)",
+    "expr": "goals ≈ faceoff differential ÷ 76.5"
+   },
+   {
+    "label": "By zone",
+    "expr": "OZ FO% = offensive-zone FOW ÷ offensive-zone draws"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. A center takes 1,000 draws and wins 550, so he's at 55%, with 100 more wins than losses. At Schuckers' rate those extra wins are worth about 1.3 goals over a season. Drop him to 50% and they're worth nothing.",
+  "after": [
+   "The NHL spells it face-off win percentage, and its stats site splits every player's draws by zone and strength. Those splits matter because draws aren't equal. A win in either end zone is worth far more than one at center ice, and a special-teams win is worth more than one at even strength. That's why the uses below lean on the splits."
+  ],
+  "variants": [
+   {
+    "term": "FOW",
+    "def": "Faceoffs won. That's the FOW meaning in hockey box scores, a raw count of draws won."
+   },
+   {
+    "term": "FOL",
+    "def": "Faceoffs lost, the other half of the same count."
+   },
+   {
+    "term": "FOW%",
+    "def": "NHL stats tables label faceoff win percentage FOW%. It's the same number other sites call FO%."
+   },
+   {
+    "term": "OZ, DZ, NZ FO%",
+    "def": "The same division for draws in the offensive, defensive and neutral zones, published by the NHL since 2009-10."
+   }
+  ]
+ },
+ "meaning": [
+  "FO% measures one skill in isolation, how often a player wins the draw in front of him, and the raw number holds up. Schuckers' group built a model that adjusted every player's results for zone, strength and home ice, then found it correlated with plain FO% at better than 0.95. Their conclusion was that raw FO% doesn't need adjusting, which is more than you can say for the hits and giveaways the same scorers log.",
+  "The team scale is narrow. Every draw has a winner and a loser, so the league sits at exactly 50%, and last season the teams ran from Buffalo's 45.9% to the Rangers' 54.5% (Ottawa finished a hair behind and took more draws). Detroit won 51.0%, 10th in the league, with 93 more wins than losses. The man advantage tilts it a bit; teams on the power play won 54.4% of those draws.",
+  "Individual centers spread out more, since a team's number blends several of them together. Among the 120 skaters who took at least 500 draws, the median won 51.1%, and only five got to 60%, led by Claude Giroux at 63.1%. <a href=\"/players/dylan-larkin/\">Dylan Larkin</a> took the third-most draws in the league, 1,492, and won 52.9%, a little better than the median. <a href=\"/players/andrew-copp/\">Andrew Copp</a> was Detroit's best regular at 54.2%.",
+  "What does a good FO% buy you? Less than the attention it gets. Apply Schuckers' rate to last season and Ottawa's league-best differential was worth about 5.4 goals, Buffalo's cost about 5.0, and Detroit's bought about 1.2. Across the league, team FO% and goal differential correlated at 0.10, which is close to nothing."
+ ],
+ "uses": [
+  {
+   "title": "Deploying centers by zone",
+   "html": "Zone splits show which center a coach trusts with the draws that matter, and Detroit's are telling. Larkin won 50.3% of his defensive-zone draws and 54.5% in the offensive zone. <a href=\"/players/j-t-compher/\">J.T. Compher</a> took 448 draws in his own end, far more than at the other end, a defensive role, and won 47.3% of them. Copp won 53.4% of his defensive-zone draws, the best of the three. In Schuckers' numbers it takes about 60 end-zone wins to make a goal and about 164 neutral-zone wins, so the end-zone draws are the ones to win."
+  },
+  {
+   "title": "Weighting special teams",
+   "html": "Power-play and shorthanded draws are worth about two and a half times as much as even-strength ones in Schuckers' numbers (40.9 wins per goal against 101.6). His group concluded that a team's best faceoff men should take more of their draws outside the neutral zone and on special teams. Larkin took 264 power-play draws for Detroit and won 59.5%, more than six points better than his overall mark."
+  },
+  {
+   "title": "Pricing a specialist",
+   "html": "Faceoff value scales with volume, which caps what a specialist can add. Schuckers' group put a center who takes 1,200 draws and wins 60% at about 3.1 goals of differential a season, roughly one point in the standings. That's real, and it's close to the ceiling. Only 23 skaters took that many draws last season and only five won 60% (of 500 or more), so you'd want a specialist to do something else well too."
+  }
+ ],
+ "limits": [
+  {
+   "title": "A win isn't always clean",
+   "html": "Sportlogiq found only 44.5% of the wins in the company's sample were clean, the puck sent straight to a teammate. Clean offensive-zone wins led to a shot event 38.6% of the time against 30.3% for the scrambles, and FO% counts both the same."
+  },
+  {
+   "title": "Teammates win draws too",
+   "html": "Because the win goes to whichever team gets possession first, a winger who beats his man to a loose puck earns his center the win. The credit is individual, and the result is partly a team play that the center didn't finish himself."
+  },
+  {
+   "title": "Scorers make mistakes",
+   "html": "An NHL team analyst who checked video against the league's real-time reports told Schuckers' group that about 5% of faceoffs were recorded wrong, with the Islanders' old building at Nassau Coliseum singled out."
+  },
+  {
+   "title": "It barely tracks with winning",
+   "html": "In Sportlogiq's sample, faceoff win percentage's correlation with goals was minus-1.8% and its correlation with wins was 0.03%. You can win the draws and lose the game."
+  }
+ ],
+ "related": [
+  {
+   "slug": "zone-starts",
+   "name": "Zone starts",
+   "abbr": "OZS%",
+   "vs": "Where a player's shifts begin. FO% is whether his center wins the draw that starts them."
+  },
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "Shot attempts, which a won draw can start and doesn't guarantee."
+  },
+  {
+   "slug": "game-score",
+   "name": "Game score",
+   "abbr": "GS",
+   "vs": "Folds faceoff wins and losses into a single-game rating."
+  },
+  {
+   "slug": "takeaways-and-giveaways",
+   "name": "Takeaways and giveaways",
+   "abbr": "TK/GV",
+   "vs": "The other possession counts the scorers log, and far shakier ones."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does the home team have an edge on faceoffs?",
+   "a": "A small one. Rule 76 makes the visiting player put his stick down first at center ice, and Schuckers' group found that playing at home raised a player's chance of winning a draw by 1.5%. Last season the home team won 50.4% of them."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Stats glossary (FOW, FOL, FOW%, zone face-offs)",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "definitions and first season for each faceoff stat (read through the stats API's glossary endpoint)"
+  },
+  {
+   "label": "Official Rules 2025-2026, Rule 36 (Real Time Scorers) and Rule 76 (Face-offs)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "who records the stats, stick-placement order, violations; no definition of a win"
+  },
+  {
+   "label": "An Analysis of NHL Faceoffs",
+   "publisher": "Michael Schuckers, Tom Pasquali and Jim Curro, Statistical Sports Consulting, 2012",
+   "url": "https://web.archive.org/web/2019/http://statsportsconsulting.com/main/wp-content/uploads/FaceoffAnalysis12-12.pdf",
+   "note": "76.5 wins per goal and the zone and strength splits, home-ice and power-play effects, raw vs adjusted FO%, the 5% recording-error estimate"
+  },
+  {
+   "label": "Winning Is Not Everything: A contextual analysis of hockey face-offs",
+   "publisher": "Czuzoj-Shulman, Yu, Boucher, Bornn and Javan (Sportlogiq), arXiv 1902.02397, 2019",
+   "url": "https://arxiv.org/abs/1902.02397",
+   "note": "possession-first definition of a win, clean-win rates, correlation with goals and wins"
+  },
+  {
+   "label": "Team and skater faceoff reports, 2025-26 regular season",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/faceoffpercentages?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "team FO%, zone and strength splits, Detroit centers' zone draws"
+  },
+  {
+   "label": "Play-by-play, all 1,312 games of 2025-26",
+   "publisher": "NHL (api-web.nhle.com)",
+   "url": "https://api-web.nhle.com/v1/gamecenter/2025020001/play-by-play",
+   "note": "home teams' share of draws"
+  },
+  {
+   "label": "2025-26 regular-season skater and team files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "player draw counts and FO%, goal differential"
+  }
+ ],
+ "method": "Team FO%, draw counts and zone and strength splits come from the NHL stats API's 2025-26 regular-season team and skater faceoff reports; the home share is Wes & Woodward's tally of all 1,312 games' NHL play-by-play; player FO% is faceoffsWon ÷ (faceoffsWon + faceoffsLost) in MoneyPuck's 2025-26 skaters file, all situations, with a 500-draw cutoff (120 skaters). All downloaded October 9, 2026. Goal values apply Schuckers, Pasquali and Curro's 76.5 wins per goal to 2025-26 differentials, and the correlation is Pearson r across the 32 teams, with goal differential from MoneyPuck's teams file."
+}

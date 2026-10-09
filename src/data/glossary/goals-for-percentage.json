@@ -1,0 +1,250 @@
+{
+ "slug": "goals-for-percentage",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Goals for percentage",
+  "short": "GF%",
+  "abbr": "GF%",
+  "aliases": [
+   "GF%",
+   "goal share",
+   "Goals %",
+   "EV GF%",
+   "on-ice goals for percentage"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "goals for percentage in hockey",
+  "supporting": [],
+  "source": "No measured search volume (research/glossary-pseo/stat_themes.json status no_volume), so the primary is the natural phrase 'goals for percentage in hockey', 2026-10-09"
+ },
+ "seo": {
+  "title": "Goals For Percentage in Hockey and How GF% Works",
+  "description": "Goals for percentage in hockey is a team's share of the goals in its games. How GF% is calculated, what it predicts, and where Detroit ranked last season.",
+  "h1": "Goals For Percentage in Hockey (GF%)"
+ },
+ "hero": {
+  "definition": "Goals for percentage in hockey is a team's share of the goals scored in its games, or in the minutes a player is on the ice, usually at five-on-five. It's written GF%, and 50% means a team or player broke even. It's the result the process stats, CF% and xGF%, are trying to predict.",
+  "dek": "Detroit's five-on-five GF% last season was 45.5%, 26th in the league, while its shot and chance shares both sat at 48.8%. That gap is the case for reading goal share next to the stats that try to forecast it."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "Goals %",
+   "sub": "the NHL's label; EV GF% for even strength"
+  },
+  {
+   "label": "Team average",
+   "value": "50%",
+   "sub": "5v5 GF%, by construction"
+  },
+  {
+   "label": "Best team, 2025-26",
+   "value": "62.8%",
+   "sub": "Colorado, 216 for and 128 against at 5v5"
+  },
+  {
+   "label": "Worst team, 2025-26",
+   "value": "38.4%",
+   "sub": "Vancouver, 131 for and 210 against at 5v5"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "45.5%",
+   "sub": "26th of 32; 142 for and 170 against at 5v5"
+  },
+  {
+   "label": "Tracks points",
+   "value": "r = 0.86",
+   "sub": "with points %, 32 teams in 2025-26 (CF%: 0.57)"
+  },
+  {
+   "label": "Half-to-half r",
+   "value": "0.56",
+   "sub": "vs 0.81 for CF%, 96 team-seasons"
+  },
+  {
+   "label": "Player spread",
+   "value": "7.6 points",
+   "sub": "standard deviation, about twice CF%'s 4.0"
+  }
+ ],
+ "origin": [
+  "Goal share is plus-minus turned into a percentage. The NHL's glossary calls plus-minus \"hockey's first enhanced stat\" and dates it as an official statistic to 1959-60. It's a player's goal differential while he's on the ice, with power-play goals left out. Plus-minus counts the gap. GF% divides a team's goals by all the goals, which puts a fourth-liner and a top-pair defenseman on the same scale.",
+  "The league files the share as goals for percentage, with numbers back to 2009-10, and its glossary describes the skater version as generally five-on-five. The entry says to compare it with SAT% and USAT% (Corsi and Fenwick by their NHL names). The even-strength version's entry adds the warning that goal samples build up much more slowly than shot samples.",
+  "Natural Stat Trick publishes GF% for every team and skater, MoneyPuck carries on-ice goals for and against in its data files, and the NHL's team percentages report lists a five-on-five goals for percentage for every club. They're all built from the same thing, the goals logged in the league's play-by-play with the skaters who were on the ice for each one."
+ ],
+ "calculation": {
+  "intro": [
+   "Count the goals your team scored and the goals it allowed in the minutes that matter, then divide your goals by the total. At five-on-five that leaves out every goal scored in other game states (power plays, shorthanded play, empty nets, three-on-three overtime), about a third of the league's scoring last season. These are the inputs:"
+  ],
+  "inputs": [
+   "Goals for at five-on-five",
+   "Goals against at five-on-five",
+   "For a player, only the goals scored while he was on the ice, by either team",
+   "Five-on-five ice time, for per-60 rates"
+  ],
+  "formulas": [
+   {
+    "label": "Share",
+    "expr": "GF% = GF ÷ (GF + GA)"
+   },
+   {
+    "label": "Rate",
+    "expr": "GF/60 = GF ÷ five-on-five minutes × 60"
+   },
+   {
+    "label": "Relative",
+    "expr": "Rel GF% = on-ice GF% − off-ice GF%"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A winger is on the ice for 40 Detroit goals and 30 opposing goals at five-on-five over a season. His GF% is 57.1%, and his five-on-five plus-minus on those goals is plus-10. A teammate on for half as many goals each way has the same share on half the sample, which is why the share travels better than the count.",
+  "after": [
+   "Every skater on the ice gets the goal in his column whether he touched the puck or not, the same rule plus-minus uses. That's why a player's GF% says as much about his linemates and the goalie behind him as it does about him."
+  ],
+  "variants": [
+   {
+    "term": "GF",
+    "def": "Goals for, at five-on-five unless a site says otherwise."
+   },
+   {
+    "term": "GA",
+    "def": "Goals against."
+   },
+   {
+    "term": "GF%",
+    "def": "The share. 50% is break-even."
+   },
+   {
+    "term": "EV GF%",
+    "def": "The same share at all even strength, four-on-four and three-on-three included."
+   },
+   {
+    "term": "+/-",
+    "def": "Goals for minus goals against with the player on the ice, counting shorthanded and empty-net goals.",
+    "slug": "plus-minus"
+   }
+  ]
+ },
+ "meaning": [
+  "GF% measures results. It's the scoreboard, cut down to the minutes and the game state you choose, and over a full season it's the share that lines up with the standings. Among the 32 teams last season, five-on-five GF% correlated at 0.86 with points percentage (Corsi share managed 0.57).",
+  "Colorado led the league with 62.8% of the five-on-five goals in its games, and Vancouver finished last at 38.4%. Players spread far wider than they do on shot shares, because goals are rare. Among the 598 skaters with 500 five-on-five minutes, the median on-ice GF% was 50.0%, the top tenth cleared 59.5% and the bottom tenth sat at or below 39.3%, a spread nearly twice as wide as Corsi's. Alex DeBrincat's 56.2% topped Detroit's regulars.",
+  "Does a good GF% predict more of the same? Less than you'd think, and less early. In this site's split-season test (96 team-seasons over the last three years), a team's GF% through its first 20 games correlated at 0.37 with its GF% the rest of the way. Expected goals managed 0.51 and score-adjusted Corsi 0.42. By the halfway point goal share had caught up, and first-half GF% was the best single forecast of second-half GF% in the sample at 0.56, edging expected goals at 0.52. Goals get there. They just need half a season to do it."
+ ],
+ "uses": [
+  {
+   "title": "Checking results against process",
+   "html": "Detroit's 2025-26 season is the clean example. The Wings took 48.8% of the five-on-five attempts and the same share of the expected goals, and came away with 45.5% of the goals. Had their goal share matched their chance share, the five-on-five goals in their games would've split about 152 to 160. They split 142 to 170. That's ten goals each way, and most of it traces to the Wings' shooting (the <a href=\"/glossary/pdo/\">PDO</a> page breaks it down)."
+  },
+  {
+   "title": "Reading a player's on-ice results",
+   "html": "Put a player's GF% next to his expected-goals share and the gap tells you how much finishing and goaltending did for him, since the expected-goals side has already priced every chance he was on the ice for at both ends. Nathan MacKinnon led the league at 70.4% on a 57.6% share of the expected goals (both at five-on-five). <a href=\"/players/marco-kasper/\">Marco Kasper</a> went the other way, on for 38.2% of the goals and 50.3% of the expected goals, a goal share near the bottom of the league while his chance share sat at even."
+  },
+  {
+   "title": "Choosing the game state",
+   "html": "Five-on-five GF% is the default because power-play time varies so much from team to team, but it can hide a special-teams story, and a team that wins or loses its power-play minutes by a wide margin looks different once those goals are added back in. Detroit's all-situations goal share was 48.5%, three points better than at five-on-five, because the Wings outscored opponents 54 to 47 on the power play and penalty kill combined."
+  },
+  {
+   "title": "Replacing plus-minus",
+   "html": "Why not just use plus-minus? Because it mixes in shorthanded and empty-net goals and says nothing about how much a player played, while five-on-five GF% drops the special-teams noise and, as a share, doesn't reward a player just for piling up minutes. Two skaters who are each plus-10 can carry different goal shares, depending on how many goals were scored around them, and the share is the one you can compare across a roster."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Goals are rare",
+   "html": "Detroit's whole five-on-five season came down to 312 goals, against 7,734 shot attempts. Each goal moves GF% roughly 25 times as far as one attempt moves Corsi."
+  },
+  {
+   "title": "Goalies and shooting luck ride along",
+   "html": "A hot goalie or a cold stretch of finishing swings GF% without any change in how a team plays. PDO measures that part. It's shooting percentage plus save percentage, and it drifts back toward 100 over time."
+  },
+  {
+   "title": "A player's number is partly his team's",
+   "html": "Among the 598 skaters with 500 five-on-five minutes last season, on-ice GF% correlated at 0.53 with the team's GF%, since linemates and the goalie behind a player both leak into his on-ice goals."
+  },
+  {
+   "title": "It repeats poorly from year to year",
+   "html": "Among the 501 skaters with 500 minutes in both of the last two seasons, on-ice GF% correlated at 0.30 year over year, against 0.63 for on-ice CF% over the same span."
+  }
+ ],
+ "related": [
+  {
+   "slug": "plus-minus",
+   "name": "Plus-minus",
+   "abbr": "+/-",
+   "vs": "The goal differential, before it was turned into a share."
+  },
+  {
+   "slug": "goal-differential",
+   "name": "Goal differential",
+   "abbr": "DIFF",
+   "vs": "The team count in all situations."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "The chance share GF% gets measured against."
+  },
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "The same share counted in shot attempts."
+  },
+  {
+   "slug": "shot-share",
+   "name": "Shot share",
+   "abbr": "SF%",
+   "vs": "The same share counted in shots on goal."
+  },
+  {
+   "slug": "pdo",
+   "name": "PDO",
+   "abbr": "PDO",
+   "vs": "The shooting and save percentages between shot share and goal share."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "NHL stats glossary (Goals %, EV GF%, plus-minus)",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/glossary",
+   "note": "definitions, generally 5-on-5, available since 2009-10, goal samples build slowly, plus-minus official since 1959-60"
+  },
+  {
+   "label": "Team percentages report, 2025-26",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/percentages?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "five-on-five goals for percentage by team"
+  },
+  {
+   "label": "Team summary, 2025-26",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/summary?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "points percentage"
+  },
+  {
+   "label": "Player and team glossary",
+   "publisher": "Natural Stat Trick (read from a January 2025 Wayback Machine capture)",
+   "url": "https://www.naturalstattrick.com/glossary.php?players",
+   "note": "GF% for teams and players"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "on-ice and off-ice definitions"
+  },
+  {
+   "label": "2025-26 and 2024-25 team, skater and game-by-game files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 and 2024-25 regular-season team and skater files and its team game-by-game files for 2023-24 through 2025-26, all downloaded October 9, 2026. GF% is GF ÷ (GF + GA) at five-on-five unless noted; player figures cover the 598 skaters with 500 or more five-on-five minutes, and the year-to-year comparison the 501 with 500 minutes in both seasons. The split-season test cuts each of 96 team-seasons (all 82-game seasons) into its first 20 games and the rest, and into its first 41 and last 41, and reports Pearson correlations. Points percentage comes from the NHL stats API, downloaded the same day."
+}

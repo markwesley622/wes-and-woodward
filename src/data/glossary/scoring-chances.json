@@ -1,0 +1,264 @@
+{
+ "slug": "scoring-chances",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Scoring chances",
+  "short": "SCF",
+  "abbr": "SCF",
+  "aliases": [
+   "SCF",
+   "SCA",
+   "SCF%",
+   "scoring chances for",
+   "scoring chances against",
+   "iSCF"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "scf hockey",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json (single_keyword theme; Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "SCF in Hockey and How Scoring Chances Are Counted",
+  "description": "SCF in hockey is a team's scoring chances for. Where the stat comes from, how Natural Stat Trick counts it, and how the Red Wings graded in 2025-26.",
+  "h1": "Scoring Chances (SCF) in Hockey"
+ },
+ "hero": {
+  "definition": "Scoring chances (SCF) are the shot attempts Natural Stat Trick counts as real chances, based on where in the offensive zone they came from, with extra credit for rebounds and rush shots. SCF in hockey tables is a team's scoring chances for, and SCF% is its share of them.",
+  "dek": "A scoring chance is the stat a coach would draw on a whiteboard, and one of the hardest to define. The public version settles the argument with a points formula, which makes it consistent from one team to the next and leaves plenty to argue about."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "SCF · SCA",
+   "sub": "for, against, and SCF% for the share"
+  },
+  {
+   "label": "Built by",
+   "value": "War-on-Ice",
+   "sub": "December 31, 2014; Natural Stat Trick keeps it"
+  },
+  {
+   "label": "Counts as one",
+   "value": "2+ points",
+   "sub": "location 1 to 3, +1 rebound or rush, −1 blocked"
+  },
+  {
+   "label": "This site uses",
+   "value": "MoneyPuck",
+   "sub": "medium + high danger, an xG of 0.08 or more"
+  },
+  {
+   "label": "Share of shots",
+   "value": "24.0%",
+   "sub": "MoneyPuck medium + high, 5v5 attempts, 2025-26"
+  },
+  {
+   "label": "Best team, 2025-26",
+   "value": "56.4%",
+   "sub": "Ottawa, 5v5 medium + high danger share"
+  },
+  {
+   "label": "Worst team, 2025-26",
+   "value": "42.1%",
+   "sub": "Vancouver, 5v5 medium + high danger share"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "49.2%",
+   "sub": "21st of 32, same MoneyPuck cut"
+  }
+ ],
+ "origin": [
+  "Nobody owns the definition. \"If you were to ask 30 coaches the definition of a scoring chance, you will get 20 or more different answers,\" Garret Hohl wrote at Hockey-Graphs in 2017, and he noted that the blogging community's usual shortcut was the \"home plate\" area in front of the net. A 2022 analytics column on the Seattle Kraken's NHL.com site made the same point, noting that teams define chances their own way, and walked through the personal checklist broadcaster JT Brown uses.",
+  "The public, repeatable version came from War-on-Ice. On December 31, 2014, the site published its definition zone by zone, built on its own research into where goals come from and on David Johnson's earlier work on rush shots. War-on-Ice's run ended about two years later, after NHL teams hired its founders.",
+  "Natural Stat Trick carries the definition today. Its glossary describes a scoring chance \"as originally defined by War-on-Ice,\" restates it as a points system, which is how it's usually explained now, and publishes SCF, SCA and SCF% for every team and skater back to 2007-08.",
+  "MoneyPuck, the source this site uses, doesn't define a scoring-chance stat in its glossary, so the league numbers below come from its closest equivalent, the medium- and high-danger shots its expected goals model rates at 8% or better."
+ ],
+ "calculation": {
+  "intro": [
+   "Natural Stat Trick puts a points value on every shot attempt in the offensive zone and keeps the ones worth 2 or more. Attempts from the neutral or defensive zone aren't scored at all. The value has four parts:"
+  ],
+  "inputs": [
+   "Where the attempt was taken: 1 point for the outer areas of the zone, 2 for the high slot and the two wedges beside the net-front box, 3 for the net-front box itself",
+   "Rebound bonus: +1 for an attempt within 3 seconds of another blocked, missed or saved attempt, with no stoppage in between",
+   "Rush bonus: +1 for an attempt within 4 seconds of any event in the neutral or defensive zone, with no stoppage in between",
+   "Block penalty: −1 if the attempt was blocked, since the league logs a blocked shot where it was blocked"
+  ],
+  "formulas": [
+   {
+    "label": "Danger score",
+    "expr": "location (1, 2 or 3) + 1 if a rebound or rush − 1 if blocked"
+   },
+   {
+    "label": "Scoring chance",
+    "expr": "any attempt with a danger score of 2 or more"
+   },
+   {
+    "label": "Share",
+    "expr": "SCF% = SCF ÷ (SCF + SCA)"
+   },
+   {
+    "label": "Rate",
+    "expr": "SCF/60 = SCF × 60 ÷ time on ice"
+   }
+  ],
+  "example": "Here's a worked example with invented plays. Over one shift a team takes four attempts. The point shot is worth one point and the wrister from the high slot two. A backhand from the outer edge of the zone two seconds after a neutral-zone takeaway is worth one plus one for the rush, and a blocked attempt from the net-front box is worth three minus one for the block. Three of the four are scoring chances. None is high-danger, which takes a three.",
+  "after": [
+   "War-on-Ice's original post put the same rule a simpler way. From the low-danger area, only unblocked rebounds and rush shots count. From the medium-danger area, every unblocked attempt counts, and from the high-danger area everything counts, blocked shots included."
+  ],
+  "variants": [
+   {
+    "term": "SCF",
+    "def": "Scoring chances for. Every attempt worth 2 or more that a team takes, or takes while a given player is on the ice."
+   },
+   {
+    "term": "SCA",
+    "def": "Scoring chances against. The same count for the attempts a team allows."
+   },
+   {
+    "term": "SCF%",
+    "def": "A team's share of the scoring chances in its games, or in a player's minutes. 50% is break-even."
+   },
+   {
+    "term": "iSCF",
+    "def": "Individual scoring chances. Only the chances a player takes himself."
+   },
+   {
+    "term": "HDCF",
+    "def": "High-danger chances. The scoring chances worth 3 or more.",
+    "slug": "high-danger-chances"
+   }
+  ]
+ },
+ "meaning": [
+  "SCF counts how often a team gets a look worth having. It's a step up from Corsi, which counts a point shot through three bodies the same as a rebound at the crease, and a step short of expected goals, which gives every attempt its own price. Chances sit in between. That's the appeal. You can count them, and you can picture what each one looked like.",
+  "Natural Stat Trick's five-on-five numbers for four Red Wings forwards, pulled for this site's research in September, show what the scale looks like. Detroit got 47.0% of the scoring chances with <a href=\"/players/dylan-larkin/\">Dylan Larkin</a> on the ice, 46.3% with <a href=\"/players/emmitt-finnie/\">Emmitt Finnie</a>, 47.4% with <a href=\"/players/andrew-copp/\">Andrew Copp</a> and 49.0% with <a href=\"/players/marco-kasper/\">Marco Kasper</a>. All four sat under break-even.",
+  "League-wide benchmarks come from MoneyPuck's medium- plus high-danger shots, the nearest thing in this site's data. At five-on-five in 2025-26 that cut was 24.0% of unblocked attempts and produced 53.3% of the goals. Ottawa led the league with 56.4% of those shots in its games, and Vancouver finished last at 42.1%. Detroit was 21st at 49.2%, just under the median team's 49.9%. The Wings generated 9.40 of them per 60 minutes (21st) and allowed 9.71, exactly the median.",
+  "Why do chances matter more than attempts? A MoneyPuck chance went in 13.6% of the time at five-on-five last season, and everything else 3.8%. Hohl found a similar conversion rate for the home-plate area, where shots scored about 14% of the time and produced 78% of the goals on 46% of the attempts."
+ ],
+ "uses": [
+  {
+   "title": "Checking expected goals against the chance count",
+   "html": "Copp and Kasper both finished above 50% in NST's five-on-five expected goals share last season (51.9% and 52.0%) and below it in scoring-chance share (47.4% and 49.0%). SCF% counts a two and a four the same, while xG gives each attempt its own value, so the two shares can split. So which number do you trust? For a forward's process, <a href=\"/glossary/expected-goals/\">expected goals</a>, since it answers the question a split raises (what kind of chances each side got)."
+  },
+  {
+   "title": "Measuring who creates chances",
+   "html": "Individual scoring chances (iSCF) count only the shooter's own attempts. In NST's five-on-five numbers, Kasper created 129 in 963 minutes, about 8.0 per 60, more than Copp (6.5) or Finnie (6.7) managed in more ice time. He scored nine goals all season. A forward who keeps getting chances and isn't scoring raises a finishing question, and that's a different conversation from one who never gets there."
+  },
+  {
+   "title": "Ranking the league's chance creators",
+   "html": "MoneyPuck's version ranks shooters the same way. Connor McDavid led the league with 168 medium- or high-danger shots in all situations, about two and a half times the 68 of the median forward who played at least 60 games. <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> was ninth with 138, and Larkin tied for 21st with 121. Detroit's two best chance creators were its two leading goal scorers, with 41 and 34."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Nobody agrees on the definition",
+   "html": "Hohl's 30 coaches would give you 20 or more definitions, and NHL teams keep their own. NST's formula is a public convention that anyone can reproduce from the play-by-play, and a team's internal chance count for the same game can come out somewhere else entirely."
+  },
+  {
+   "title": "A two counts the same as a four",
+   "html": "Every qualifying attempt's worth one chance, so a high-slot wrister and a rebound at the crease get equal credit. Hohl's case against binning applies here too, since the line between a one and a two is a cliff with nothing on either side of it."
+  },
+  {
+   "title": "Sites draw different lines",
+   "html": "NST had Larkin at 47.0% of the scoring chances, and MoneyPuck's closest cut had him at 46.6%. For Copp the same two numbers were 47.4% and 52.3%, a gap big enough to flip him from the wrong side of break-even to the right one. Compare chance shares from one source at a time."
+  },
+  {
+   "title": "Location and timing are all it sees",
+   "html": "The formula's only inputs are where the attempt came from and how soon it followed another event. A screened point shot stays a one-pointer, and a one-timer off a cross-ice pass gets no extra credit, because the league's feed doesn't log screens or passes."
+  }
+ ],
+ "related": [
+  {
+   "slug": "high-danger-chances",
+   "name": "High-danger chances",
+   "abbr": "HDCF",
+   "vs": "The top slice of the same scale (3 points or more)."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "Prices every attempt by its scoring odds. SCF counts the ones over a line."
+  },
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "Counts every attempt from anywhere. SCF counts only the dangerous ones."
+  },
+  {
+   "slug": "fenwick",
+   "name": "Fenwick",
+   "abbr": "FF%",
+   "vs": "Unblocked attempts, all counted equally. SCF keeps blocked shots from in close."
+  },
+  {
+   "slug": "shot-quality",
+   "name": "Shot quality",
+   "abbr": "xG/shot",
+   "vs": "How dangerous the average attempt is. SCF counts how many cleared the bar."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does every goal count as a scoring chance?",
+   "a": "No. A goal is a shot attempt like any other in NST's count, so a point shot that beats a screened goalie goes in the books as a goal but not a scoring chance. NST tracks the goals that came from chances separately (SCGF), along with a shooting percentage on scoring-chance shots."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Glossary, team and player statistics (archived January 2025)",
+   "publisher": "Natural Stat Trick, via the Internet Archive",
+   "url": "https://web.archive.org/web/20250105170348/https://www.naturalstattrick.com/glossary.php?teams",
+   "note": "the points system, thresholds, SCF/SCA/SCF%/SCF60, SCGF, iSCF"
+  },
+  {
+   "label": "NEW: Defining Scoring Chances",
+   "publisher": "War-on-Ice blog, December 31, 2014",
+   "url": "http://blog.war-on-ice.com/new-defining-scoring-chances/",
+   "note": "the original zone-by-zone definition, Johnson's rush shots"
+  },
+  {
+   "label": "Annotated Glossary",
+   "publisher": "War-on-Ice blog, November 26, 2015",
+   "url": "http://blog.war-on-ice.com/annotated-glossary/",
+   "note": "danger zones as a WOI original, blocked-shot reasoning"
+  },
+  {
+   "label": "New Detroit Tigers analytics hire Andrew Thomas",
+   "publisher": "Detroit Free Press, May 23, 2024",
+   "url": "https://www.aol.com/detroit-tigers-analytics-hire-andrew-213652889.html",
+   "note": "War-on-Ice shut down after two years as its founders were hired"
+  },
+  {
+   "label": "Behind the Numbers: The issues with binning, QoC, and scoring chances",
+   "publisher": "Hockey-Graphs (Garret Hohl), February 6, 2017",
+   "url": "https://hockey-graphs.com/2017/02/06/behind-the-numbers-the-issues-with-binning-qoc-and-scoring-chances/",
+   "note": "30 coaches quote, home-plate shares, the case against binning"
+  },
+  {
+   "label": "De-Bunking the Stat: What Makes a Scoring Chance?",
+   "publisher": "NHL.com (Seattle Kraken), May 1, 2022",
+   "url": "https://www.nhl.com/kraken/news/seattle-kraken-analytics-with-alison-scoring-chances-333640288",
+   "note": "teams define chances differently; JT Brown's checklist"
+  },
+  {
+   "label": "General Advanced Stats",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "low, medium and high danger cutoffs"
+  },
+  {
+   "label": "2025-26 regular-season team and skater files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season team and skater files, downloaded October 9, 2026, using medium- plus high-danger shots (an xG of 0.08 or more) as the closest equivalent to a scoring chance: team share is those shots for ÷ (for + against) at five-on-five, rates are per 60 minutes of five-on-five ice time, conversion is goals ÷ shots in the bucket, and individual counts are all situations. Natural Stat Trick figures for Larkin, Finnie, Copp and Kasper come from its 2025-26 five-on-five Red Wings tables, pulled September 2, 2026 for this site's research."
+}

@@ -1,0 +1,277 @@
+{
+ "slug": "plus-minus",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Plus-minus",
+  "short": "+/-",
+  "abbr": "+/-",
+  "aliases": [
+   "+/-",
+   "plus/minus",
+   "plus minus",
+   "plus-minus rating",
+   "PM"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "what is plus minus in hockey",
+  "supporting": [
+   "plus minus hockey meaning",
+   "what is plus minus in nhl",
+   "plus minus meaning hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Is Plus-Minus in Hockey and How the +/- Stat Works",
+  "description": "What is plus-minus in hockey? A skater's on-ice goal differential, power-play goals left out. How +/- works, where it misleads, and Detroit's numbers.",
+  "h1": "What Is Plus-Minus (+/-) in Hockey"
+ },
+ "hero": {
+  "definition": "Plus-minus (+/-) is a skater's goal differential while he's on the ice, counting even-strength and shorthanded goals and leaving power-play goals out. Every skater on the ice gets a plus when his team scores and a minus when the other team does. It can't tell who caused the goal, so it carries his teammates' and goalie's results along with his own.",
+  "dek": "What is plus-minus in hockey good for, then? It's the oldest on-ice number in the NHL's books and still a fair first look at who got outscored, as long as you check it against the stats built to fix it."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "+/-",
+   "sub": "plus/minus, plus-minus rating"
+  },
+  {
+   "label": "Official since",
+   "value": "1959-60",
+   "sub": "per the NHL's stats glossary"
+  },
+  {
+   "label": "Counts",
+   "value": "EV + SH",
+   "sub": "even-strength and shorthanded goals, empty nets included"
+  },
+  {
+   "label": "Median forward",
+   "value": "0",
+   "sub": "327 forwards with 60+ games, 2025-26"
+  },
+  {
+   "label": "Best, 2025-26",
+   "value": "+57",
+   "sub": "Nathan MacKinnon, Colorado"
+  },
+  {
+   "label": "Worst, 2025-26",
+   "value": "−48",
+   "sub": "Brock Boeser, Vancouver"
+  },
+  {
+   "label": "Year to year",
+   "value": "0.35",
+   "sub": "correlation, 379 skaters with 60+ games both seasons"
+  },
+  {
+   "label": "Detroit's best",
+   "value": "+15",
+   "sub": "Moritz Seider, 2025-26"
+  }
+ ],
+ "origin": [
+  "The NHL calls plus-minus hockey's first enhanced statistic. Its stats glossary dates it as an official stat to 1959-60, and that's the first season the league's database carries it, with Montreal's Doug Harvey on top at plus-37. Anything earlier is blank. Gordie Howe's first 13 seasons in Detroit came before the stat existed, so his plus-minus record doesn't start until his 14th.",
+  "It had its own trophy for a while. The NHL handed out a plus-minus award from 1982-83 through 2007-08, starting with Edmonton's Charlie Huddy and ending with a Red Wing. Pavel Datsyuk won the last one at plus-41, one ahead of teammate Nicklas Lidstrom. Bobby Orr's plus-124 in 1970-71 is still the single-season record and Larry Robinson's plus-722 leads all careers, while Detroit's marks belong to Vladimir Konstantinov, plus-60 in 1995-96, and to Lidstrom, whose plus-450 over a career spent entirely in Detroit ranks eighth all-time.",
+  "Every stat site still publishes it, and the analytics side has built several stats to fix it. Evolving-Hockey's regularized adjusted plus-minus (RAPM) is the modern descendant, a regression that estimates each skater's impact while controlling for his teammates, his opponents, his zone starts and the score."
+ ],
+ "calculation": {
+  "intro": [
+   "That's the whole plus-minus meaning in hockey box scores, and the bookkeeping is just as simple. Every skater on the ice gets a plus when his team scores at even strength or shorthanded, and a minus when the other team does. Power-play goals don't count in either direction. Empty-net goals count like any other, and goalies don't get a rating at all. These are the inputs:"
+  ],
+  "inputs": [
+   "Every goal scored while the skater is on the ice",
+   "The strength of each goal (even strength, power play or shorthanded)",
+   "Which team scored it"
+  ],
+  "formulas": [
+   {
+    "label": "Plus-minus",
+    "expr": "+/- = (EV GF + SH GF) − (EV GA + SH GA), while on the ice"
+   },
+   {
+    "label": "Power play",
+    "expr": "PP goals for and against don't count"
+   },
+   {
+    "label": "Shorthanded",
+    "expr": "an SHG against = a minus for each skater on the power play"
+   },
+   {
+    "label": "Share version",
+    "expr": "EV GF% = EV GF ÷ (EV GF + EV GA)"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A defenseman plays in a 4-3 win. He's on the ice for two even-strength goals for and one against, then a power-play goal against while he's killing a penalty, then a shorthanded goal against while he's on his own power play. That's a plus-two and two minuses, so he finishes the night at even. He was on the ice for three of the other team's goals, and only two of them count.",
+  "after": [
+   "The rule cuts one way. A penalty killer never takes a minus for a power-play goal against, while a power-play skater takes one for every shorthanded goal he's on the ice for."
+  ],
+  "variants": [
+   {
+    "term": "+/-",
+    "def": "Plus-minus. Even-strength and shorthanded goals for minus against, while a skater is on the ice."
+   },
+   {
+    "term": "EV GF / EV GA",
+    "def": "Even-strength goals for and against on the ice, published by the NHL back to 2009-10."
+   },
+   {
+    "term": "GF%",
+    "def": "On-ice share of the goals, usually at five-on-five.",
+    "slug": "goals-for-percentage"
+   },
+   {
+    "term": "xGF%",
+    "def": "On-ice share of the expected goals, the process version.",
+    "slug": "expected-goals"
+   },
+   {
+    "term": "RAPM",
+    "def": "Regularized adjusted plus-minus, which controls for teammates, opponents, zone starts and score.",
+    "slug": "rapm"
+   }
+  ]
+ },
+ "meaning": [
+  "Plus-minus tells you whether a skater's team outscored the opponent while he was on the ice, outside the power play. Last season the median forward who played 60 games finished at exactly zero and the median defenseman at plus-2. The range ran from Nathan MacKinnon's plus-57 to Brock Boeser's minus-48.",
+  "The leaderboard looks a lot like the standings. Five of the top 11 were Colorado players (MacKinnon, Martin Necas, Sam Malinski, Josh Manson and Devon Toews), and Colorado had the league's best even-strength goal differential at plus-103. Boeser and Jake DeBrusk, two of the bottom seven, played in Vancouver, which had the worst at minus-93. Is that five great Colorado players or one great Colorado team? Plus-minus can't say.",
+  "Detroit's spread ran from Moritz Seider's plus-15 to minus-20 for both Axel Sandin-Pellikka and Marco Kasper. Seider's number matches how he played. At five-on-five he was on the ice for 71 Detroit goals and 57 against, and MoneyPuck's expected goals in his minutes came out 70.2 to 56.8, nearly the same margin.",
+  "Plus-minus is the least stable of the common counting stats. Among the 379 skaters who played 60 games in each of the last two seasons, it correlated at 0.35 from one season to the next, against 0.86 for points and 0.77 for penalty minutes. A big number one year tells you little about the next, which is what you'd expect from a stat that leans this hard on teammates, goalies and the bounces in a few dozen goals."
+ ],
+ "uses": [
+  {
+   "title": "Flagging a season for a closer look",
+   "html": "<a href=\"/players/marco-kasper/\">Kasper</a>'s minus-20 doesn't match his process. At five-on-five he was on the ice for 26 Detroit goals and 42 against, while the expected goals in his minutes were dead even at 40.4 to 39.9. Detroit shot 5.9% with him on the ice at five-on-five, against 9.5% for the league as a whole. That's the gap. A bad plus-minus with even expected goals points you at shooting luck before it points at the player."
+  },
+  {
+   "title": "Comparing teammates",
+   "html": "Two skaters on the same team share the same goalies and most of the same system, which takes out part of the noise. <a href=\"/players/moritz-seider/\">Seider</a> (plus-15) and <a href=\"/players/ben-chiarot/\">Ben Chiarot</a> (minus-9) both played every game for Detroit in 2025-26, and the 24-goal gap between them lines up with the expected goals, where MoneyPuck had Seider at plus-13.4 at five-on-five and Chiarot at minus-12.3."
+  },
+  {
+   "title": "Reaching back in time",
+   "html": "The NHL's on-ice goal splits start in 2009-10, while plus-minus reaches back to 1959-60. If you want to put Orr's plus-124 or Konstantinov's plus-60 next to a modern season, it's the only on-ice number the league kept for both, flaws included. Read those numbers with the team attached. Konstantinov's plus-60 came on a Detroit team that won 62 games, and Sergei Fedorov was plus-49 on the same roster."
+  }
+ ],
+ "limits": [
+  {
+   "title": "It skips the power play",
+   "html": "Power-play goals don't count for anyone, so a power-play specialist's best work never shows up, and a penalty killer can be on the ice for a dozen power-play goals against without a mark. A fifth of the league's goals sit outside the stat entirely."
+  },
+  {
+   "title": "It punishes the power play for shorthanded goals",
+   "html": "Hockey-Reference's definition spells out the asymmetry. Skaters get a minus for goals allowed at even strength or on the power play, so a first-unit forward wears every shorthanded goal his unit gives up while getting nothing for the power-play goals it scores."
+  },
+  {
+   "title": "It's a team stat with one name on it",
+   "html": "Evolving-Hockey's RAPM write-up notes that raw on-ice ratings are inherently impacted by teammates, opponents and zone starts. Academic work on the problem (Gramacy, Taddy and Jensen) describes plus-minus as an aggregate measure that averages over the contributions of everyone else on the ice."
+  },
+  {
+   "title": "Goaltending is baked in",
+   "html": "Every minus is a goal a goalie didn't stop. The NHL's own glossary attaches that warning to its on-ice power-play goals-against stat, calling it heavily influenced by teammates and goalie save percentage, and the same logic runs straight through plus-minus."
+  },
+  {
+   "title": "Empty nets count",
+   "html": "A late empty-netter is a minus for every skater on the trailing team, including the extra attacker who replaced the goalie, on a goal his team invited by pulling the goalie in the first place."
+  }
+ ],
+ "related": [
+  {
+   "slug": "rapm",
+   "name": "RAPM",
+   "abbr": "RAPM",
+   "vs": "Plus-minus with teammates, opponents and zone starts regressed out."
+  },
+  {
+   "slug": "goals-for-percentage",
+   "name": "Goals for percentage",
+   "abbr": "GF%",
+   "vs": "The same on-ice goals as a share, usually at five-on-five."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "Grades the chances behind the goals, so luck washes out faster."
+  },
+  {
+   "slug": "on-ice-shooting-and-save-percentage",
+   "name": "On-ice shooting and save percentage",
+   "abbr": "oiSH%",
+   "vs": "The luck inside a plus-minus, split into its two halves."
+  },
+  {
+   "slug": "goal-differential",
+   "name": "Goal differential",
+   "abbr": "DIFF",
+   "vs": "The team version, every goal in every situation."
+  },
+  {
+   "slug": "even-strength-goals",
+   "name": "Even-strength goals",
+   "abbr": "EVG",
+   "vs": "A player's own goals at even strength. Plus-minus counts everyone's."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Why doesn't plus-minus add up to zero across the league?",
+   "a": "Because the two sides don't always have the same number of skaters. A shorthanded goal hands out four pluses and five minuses, and an empty-net goal against a team that pulled its goalie hands out five pluses and six minuses. The league's skaters finished 2025-26 at a combined minus-507."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Stats glossary (+/-, EV GF, EV GA, EV GF%, PP GA/60)",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "official since 1959-60, first enhanced stat, what counts, goalies excluded, the teammates-and-goalie warning; pulled from api.nhle.com/stats/rest/en/glossary"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "minus for goals allowed at even strength or on the power play"
+  },
+  {
+   "label": "Winners of NHL awards that faded into history",
+   "publisher": "The Hockey News",
+   "url": "https://thehockeynews.com/news/winners-of-nhl-awards-that-faded-into-history",
+   "note": "the plus-minus award, Huddy first, Datsyuk last"
+  },
+  {
+   "label": "Skater stats API, 1959-60, 1982-83, 2007-08 and career/franchise records",
+   "publisher": "NHL",
+   "url": "https://api.nhle.com/stats/rest/en/skater/summary?limit=5&cayenneExp=seasonId=19591960%20and%20gameTypeId=2",
+   "note": "Harvey, Huddy, Datsyuk and Lidstrom, Orr, Robinson, Konstantinov"
+  },
+  {
+   "label": "Skater and team stats API, 2024-25 and 2025-26 regular seasons",
+   "publisher": "NHL",
+   "url": "https://api.nhle.com/stats/rest/en/skater/summary?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "every 2025-26 plus-minus, team goals by strength, the season-to-season correlation"
+  },
+  {
+   "label": "Regularized Adjusted Plus-Minus",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/regularized-adjusted-plus-minus/",
+   "note": "raw on-ice ratings are impacted by teammates, opponents and zone starts; what RAPM controls for"
+  },
+  {
+   "label": "Estimating Player Contribution in Hockey with Regularized Logistic Regression",
+   "publisher": "Gramacy, Taddy and Jensen (arXiv 1209.5026)",
+   "url": "https://arxiv.org/abs/1209.5026",
+   "note": "plus-minus as a marginal effect averaged over teammates and opponents"
+  },
+  {
+   "label": "2025-26 regular-season skater and team files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "five-on-five on-ice goals, expected goals and shooting for Seider, Kasper and Chiarot; league five-on-five shooting"
+  }
+ ],
+ "method": "Plus-minus figures are Wes & Woodward's calculations from the NHL stats API's 2025-26 regular-season skater summary, downloaded October 9, 2026 and saved in research/glossary-pseo/raw/; medians use the 327 forwards and 161 defensemen with 60 or more games, and the season-to-season correlation pairs the 2024-25 and 2025-26 summaries for the 379 skaters with 60 or more games in both. Team even-strength goal differential is goals for minus goals against after removing power-play and shorthanded goals (NHL team summary, power-play and penalty-kill reports). Five-on-five on-ice goals, expected goals and shooting percentages come from MoneyPuck's 2025-26 skater and team files, downloaded the same day; league five-on-five shooting is 5,367 goals on 56,451 shots."
+}

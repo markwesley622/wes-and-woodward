@@ -1,0 +1,301 @@
+{
+ "slug": "power-play-goals-and-points",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Power-play goals and points",
+  "short": "PPG",
+  "abbr": "PPG",
+  "aliases": [
+   "PPG",
+   "PPP",
+   "PPA",
+   "power-play goals",
+   "power-play points",
+   "power-play assists",
+   "PP goals"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "ppg hockey meaning",
+  "supporting": [
+   "ppg in hockey",
+   "ppg meaning hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "PPG in Hockey, the Meaning of Power-Play Goals and Points",
+  "description": "The PPG hockey meaning is power-play goals, and PPP is power-play points. How they're counted, what they tell you, and Detroit's power play, rebuilt nightly.",
+  "h1": "PPG in Hockey, Meaning Power-Play Goals, and PPP"
+ },
+ "hero": {
+  "definition": "A power-play goal (PPG) is a goal scored while the other team is shorthanded because of a penalty, whether that's five-on-four, five-on-three or four-on-three. Power-play points (PPP) add the assists on those goals. That's the PPG hockey meaning on an NHL stat line, and together the two columns show who a coach trusts with the man advantage and what he does with it.",
+  "dek": "About one goal in five comes on the power play, 1,595 of the league's 8,086 last season. Those goals pile up for a handful of players, because the first unit gets most of the extra-man minutes (about 61% of Detroit's skater time last season)."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "PPG · PPP",
+   "sub": "plus PPA, power-play assists"
+  },
+  {
+   "label": "Tracked since",
+   "value": "1933-34",
+   "sub": "first season in the NHL's records"
+  },
+  {
+   "label": "Share of goals",
+   "value": "19.7%",
+   "sub": "scored on the power play, 2025-26"
+  },
+  {
+   "label": "League PP%",
+   "value": "21.1%",
+   "sub": "1,595 goals on 7,555 power plays"
+  },
+  {
+   "label": "Most PPG, 2025-26",
+   "value": "27",
+   "sub": "Wyatt Johnston, Dallas"
+  },
+  {
+   "label": "Most PPP, 2025-26",
+   "value": "54",
+   "sub": "Connor McDavid, Edmonton"
+  },
+  {
+   "label": "Median forward",
+   "value": "7 PPP",
+   "sub": "327 forwards with 60+ games, 2025-26"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "56 PPG",
+   "sub": "tied for 7th of 32 teams"
+  }
+ ],
+ "origin": [
+  "The power-play goal is nearly as old as the NHL's record book, and the first leader on file was a Red Wing. The league's stats database splits goals by manpower back to 1933-34, and that season John Sorrell scored 10 of his 21 goals on the power play, four more than anyone else, while Detroit teammate Ebbie Goodfellow tied for second with six.",
+  "The rule that shapes the stat today came out of one Montreal power play. On November 5, 1955, Jean Béliveau scored three power-play goals against Boston on the same penalty, all inside 44 seconds, because a penalized player had to serve his full two minutes back then. The NHL changed the rule for the next season, and Rule 16.2 in the current book still reads that way. When a team scores against an opponent that's shorthanded by a minor, the first minor ends and the penalized player comes back. A major doesn't end on a goal under Rule 20.2, so a five-minute power play can produce more than one.",
+  "Every public stat site carries the columns, though they don't all count the same way. NHL.com publishes PPG, PPP and power-play assists back to that first season, and Hockey-Reference lists power-play goals as PP. MoneyPuck's data files split the game by skater counts, and their five-on-four bucket leaves out five-on-three and four-on-three play, which MoneyPuck files under \"other.\" Its power-play numbers won't match the NHL's to the goal.",
+  "Philadelphia's Tim Kerr holds the single-season record, 34 power-play goals in 1985-86, and Alex Ovechkin's 331 lead all careers. Detroit's best season is 21, shared by Mickey Redmond and Dino Ciccarelli. Gordie Howe holds the franchise's career mark with 209."
+ ],
+ "calculation": {
+  "intro": [
+   "A goal counts as a power-play goal when the team that gave it up was shorthanded by a penalty at the moment it went in. The NHL defines power-play time as the minutes a team spends with a man advantage, and that advantage has to come from the penalty box. What about a pulled goalie? A goalie pulled for an extra attacker leaves the teams even in the league's books, so a six-on-five goal goes in the even-strength column. These are the inputs:"
+  ],
+  "inputs": [
+   "The goal scorer and up to two assists, as the official scorer credits them",
+   "The manpower when the puck went in (5-on-4, 5-on-3 or 4-on-3)",
+   "The penalty that created the advantage",
+   "Power-play time on ice, for the per-60 version"
+  ],
+  "formulas": [
+   {
+    "label": "Goals",
+    "expr": "PPG = goals scored while the opponent is shorthanded by a penalty"
+   },
+   {
+    "label": "Points",
+    "expr": "PPP = PPG + power-play assists (PPA)"
+   },
+   {
+    "label": "Rate",
+    "expr": "PPP/60 = PPP ÷ power-play minutes × 60"
+   },
+   {
+    "label": "Team",
+    "expr": "PP% = team PPG ÷ power-play opportunities"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. Detroit draws a two-minute hooking minor. Thirty seconds in, the center wins a faceoff back to the defenseman, whose point shot gets tipped home by the winger at the net front. The winger gets one PPG and one PPP, the defenseman and the center get a power-play assist and a PPP each, and the minor ends on the spot. Had it been a five-minute major, the power play would've kept going, and a second goal would've added another PPG to someone's line.",
+  "after": [
+   "Nearly all of them come at five-on-four. Of the league's 1,595 power-play goals last season, 1,444 came five-on-four, 87 came five-on-three and 34 came four-on-three, and the rest sit in the NHL's empty-net, extra-attacker and penalty-shot columns."
+  ],
+  "variants": [
+   {
+    "term": "PPG",
+    "def": "Power-play goals. A player's own goals scored while the other team is shorthanded by a penalty."
+   },
+   {
+    "term": "PPA",
+    "def": "Power-play assists. The NHL splits them into primary (PPA1) and secondary (PPA2), back to 1997-98."
+   },
+   {
+    "term": "PPP",
+    "def": "Power-play points, goals plus assists with the man advantage."
+   },
+   {
+    "term": "PPP/60",
+    "def": "Power-play points per 60 minutes of power-play ice time, published by the NHL back to 2009-10.",
+    "slug": "per-60-rates"
+   },
+   {
+    "term": "PP%",
+    "def": "The team version. Power-play goals divided by power-play opportunities.",
+    "slug": "power-play-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "PPG and PPP measure two things at once, a player's finishing and playmaking with the extra man and his coach's decision to give him the ice. League-wide, the power play produced 1,595 of the 8,086 goals scored in 2025-26 on 7,555 power plays, a 21.1% conversion rate. Four goals in five happen somewhere else. That's the ceiling on what a power-play line can tell you about a player.",
+  "Production on the man advantage is concentrated in a few hands. Among the 327 forwards who played at least 60 games last season, the median scored three power-play goals and seven power-play points, the top 10% cleared 10 goals and 24 points, and 61 of them didn't record a single power-play point all year. Connor McDavid led the league with 54 PPP. Dallas's Wyatt Johnston led in goals with 27, seven clear of the next man, while Alex DeBrincat's 15 tied for seventh and Dylan Larkin's 14 tied for 10th.",
+  "Defensemen run on a different scale. Among the 161 with 60 games, the median had one power-play point, 71 didn't have any and the top 10% cleared 18. Moritz Seider's 28 tied for fourth at the position, behind Quinn Hughes, Evan Bouchard and Cale Makar, and they made up almost half of his 60 points.",
+  "Detroit leaned on its power play harder than most teams did. The Wings scored 56 power-play goals, tied for seventh, and converted 22.6% of their chances, 12th in the league, while at five-on-five they scored only 142, third-fewest, so the power play ended up producing 23.4% of Detroit's goals, the fifth-highest share in the league. That's a lopsided offense."
+ ],
+ "uses": [
+  {
+   "title": "Reading a coach's trust",
+   "html": "Power-play minutes are handed out, so PPP starts as a usage stat. Detroit's top five (<a href=\"/players/alex-debrincat/\">DeBrincat</a>, <a href=\"/players/dylan-larkin/\">Larkin</a>, <a href=\"/players/lucas-raymond/\">Lucas Raymond</a>, <a href=\"/players/moritz-seider/\">Seider</a> and Patrick Kane) each averaged better than three minutes a night on the power play last season, and nobody else who spent the full year in Detroit got two. Those five took about 61% of the team's skater power-play minutes. They put up 121 power-play points, and no other Red Wing had more than 11."
+  },
+  {
+   "title": "Comparing on a rate",
+   "html": "Totals reward whoever gets the most time, and PPP/60 corrects for it. So who was Detroit's best power-play player? DeBrincat led the team with 15 power-play goals, yet Seider produced points at the higher rate, 6.41 per 60 minutes to DeBrincat's 5.06. That's a quarterback's profile. Seider had a point on more of the unit's goals, and DeBrincat finished more of them, which is how a first unit is supposed to work."
+  },
+  {
+   "title": "Splitting a stat line",
+   "html": "A point total blends game states, and pulling out the power play shows you where a player's production comes from. DeBrincat got 27% of his points on the power play, Raymond 36% and Seider 47%, while the median forward with 60 games sat at 19%. A forward far above that line has more of his value riding on one unit's minutes. Lose the spot and the points go with it."
+  }
+ ],
+ "live": {
+  "intro": "Detroit's power play this season, rebuilt every night from MoneyPuck's 5-on-4 numbers (5-on-3 time isn't included).",
+  "tiles": [
+   {
+    "label": "5-on-4 goals",
+    "source": "team",
+    "path": "situations.5on4.goalsFor",
+    "format": "int",
+    "sub": "MoneyPuck, 5-on-4 only"
+   },
+   {
+    "label": "5-on-4 expected goals",
+    "source": "team",
+    "path": "situations.5on4.xGoalsFor",
+    "format": "num1",
+    "rankPath": "leagueRanks.xGoalsFor_5on4"
+   },
+   {
+    "tile": "pp_xgf60"
+   }
+  ],
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. A power play gets about three minutes a night, so these totals move a lot on one or two goals this early."
+ },
+ "limits": [
+  {
+   "title": "It credits ice time as much as skill",
+   "html": "A second-unit forward can't match a first-unit forward's total, whatever his talent, because he gets about half the minutes. PPP/60 helps, though a full season on the second unit can come in around 100 minutes (Andrew Copp played 107 last season), and a rate built on that little ice is fragile."
+  },
+  {
+   "title": "It ignores who drew the penalty",
+   "html": "The player who draws the penalty that creates a power play gets nothing in the PPG or PPP column, so Raymond's team-high 26 penalties drawn last season show up only on the penalties-drawn page."
+  },
+  {
+   "title": "A secondary assist counts as a full point",
+   "html": "PPP gives the second passer the same point it gives the goal scorer, even when his pass came two touches before the shot, though the NHL splits power-play assists into primary and secondary if you want the cleaner version."
+  },
+  {
+   "title": "It lumps a two-man advantage in with a one-man one",
+   "html": "A goal at five-on-three counts the same as one at five-on-four. The league scored 87 of them last season, and they sit in the same column as the 1,444 five-on-four goals."
+  },
+  {
+   "title": "The sample is small",
+   "html": "Add up DeBrincat's power-play time last season and you get 273 minutes, less than five full games of ice. That's thin. A few bounces in either direction change how a player's power-play year looks."
+  }
+ ],
+ "related": [
+  {
+   "slug": "power-play-percentage",
+   "name": "Power play percentage",
+   "abbr": "PP%",
+   "vs": "The team's conversion rate. PPG counts one player's goals."
+  },
+  {
+   "slug": "penalties-drawn",
+   "name": "Penalties drawn",
+   "abbr": "Pen Drawn",
+   "vs": "Who earns the power play. PPG counts who scores on it."
+  },
+  {
+   "slug": "shorthanded-goals-and-points",
+   "name": "Shorthanded goals and points",
+   "abbr": "SHG",
+   "vs": "Goals scored against the power play by the team killing it."
+  },
+  {
+   "slug": "even-strength-goals",
+   "name": "Even-strength goals",
+   "abbr": "EVG",
+   "vs": "The other four goals in five."
+  },
+  {
+   "slug": "points",
+   "name": "Points",
+   "abbr": "P",
+   "vs": "Goals and assists in every situation, power play included."
+  },
+  {
+   "slug": "power-play-unit",
+   "name": "Power play and penalty kill",
+   "abbr": "5v4",
+   "vs": "The team at 5-on-4, rated per 60 minutes. PPG counts one player's goals."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does PPG ever mean points per game?",
+   "a": "Not on an official NHL stat line. The league's glossary keeps PPG for power-play goals and writes points per game as P/GP. If the column holds decimals like 1.05, you're looking at points per game from another source, since a power-play goal total is always a whole number."
+  },
+  {
+   "q": "Is a goal on a delayed penalty a power-play goal?",
+   "a": "No. If a minor is signaled and the other team scores before the whistle, Rule 15.2 says the minor isn't imposed at all, so the goal goes down at whatever manpower was on the ice and nobody serves time. A major or match penalty is still assessed."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Stats glossary (PPG, PPP, PPA, PPA1/PPA2, PPP/60, PP%, P/GP, even-strength stats)",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "definitions and first season tracked; pulled from the glossary API at api.nhle.com/stats/rest/en/glossary"
+  },
+  {
+   "label": "Skater and team stats API, 2025-26 regular season",
+   "publisher": "NHL",
+   "url": "https://api.nhle.com/stats/rest/en/skater/summary?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "skater summary and power-play reports, team power-play and goals-for-by-strength reports"
+  },
+  {
+   "label": "Skater stats API, 1933-34 and career/franchise records",
+   "publisher": "NHL",
+   "url": "https://api.nhle.com/stats/rest/en/skater/summary?limit=5&cayenneExp=seasonId=19331934%20and%20gameTypeId=2",
+   "note": "Sorrell and Goodfellow in 1933-34; Kerr, Ovechkin, Redmond, Ciccarelli and Howe records"
+  },
+  {
+   "label": "This date in NHL history, November 5",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/news/this-date-in-nhl-history-november-5-283308796",
+   "note": "Béliveau's three power-play goals in 44 seconds and the 1956-57 rule change"
+  },
+  {
+   "label": "Official Rules 2025-2026",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "Rule 15.2 (delayed minor washed out by a goal), 16.2 (minor ends on a goal), 20.2 (major doesn't)"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "PP = power-play goals"
+  },
+  {
+   "label": "2025-26 regular-season data files",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "situation splits (5on4, 4on5, 5on5, other); the live slot"
+  }
+ ],
+ "method": "League and Red Wings figures are Wes & Woodward's calculations from the NHL stats API's 2025-26 regular-season reports (skater summary, skater power play, team power play, team summary and team goals-for-by-strength), downloaded October 9, 2026 and saved in research/glossary-pseo/raw/. Player benchmarks use the 327 forwards and 161 defensemen with 60 or more games. Shares of skater power-play minutes are each player's power-play time divided by five times the team's power-play time. Records come from the same API's season and career queries. The Red Wings section rebuilds nightly from MoneyPuck."
+}

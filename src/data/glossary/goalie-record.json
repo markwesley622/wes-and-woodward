@@ -1,0 +1,321 @@
+{
+ "slug": "goalie-record",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Goalie record (W-L-OTL)",
+  "short": "W-L-OTL",
+  "abbr": "W-L-OTL",
+  "aliases": [
+   "W-L-OTL",
+   "goalie wins",
+   "goalie losses",
+   "OTL",
+   "overtime loss",
+   "goalie of record",
+   "decision"
+  ],
+  "category": "Goalie"
+ },
+ "keywords": {
+  "primary": "overtime loss nhl",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json (status no_serp_overlap: primary only, no supporting keyword cleared the 30% SERP-domain gate; Ahrefs KE US volumes), 2026-10-09"
+ },
+ "seo": {
+  "title": "Overtime Loss in the NHL and How Goalie Records Work",
+  "description": "A goalie's record counts wins, losses and overtime losses. How an overtime loss in the NHL is credited, who gets the decision, and the Red Wings' live numbers.",
+  "h1": "Goalie Record (W-L-OTL) and the Overtime Loss in the NHL"
+ },
+ "hero": {
+  "definition": "A goalie's record (W-L-OTL) counts his wins, regulation losses and overtime or shootout losses. The decision goes to the goalie of record, the one in net when the deciding goal was scored, so the record tracks his team's scoring and defense as much as his own play.",
+  "dek": "An overtime loss in the NHL goes in its own column, and in the standings it's worth one point to a win's two. Darcy Kuemper led the league with 15 of them last season in Los Angeles. Every one was a point the Kings banked on a night he took the decision."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "W-L-OTL",
+   "sub": "wins, losses, overtime and shootout losses"
+  },
+  {
+   "label": "League, 2025-26",
+   "value": "1,312",
+   "sub": "wins, against 986 losses and 326 OT/SO losses"
+  },
+  {
+   "label": "Wins leader",
+   "value": "39",
+   "sub": "Andrei Vasilevskiy, TBL, 2025-26"
+  },
+  {
+   "label": "OTL leader",
+   "value": "15",
+   "sub": "Darcy Kuemper, LAK, 2025-26"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "41-31-10",
+   "sub": "Gibson 29-22-4, Talbot 12-9-6"
+  },
+  {
+   "label": "Season record",
+   "value": "48",
+   "sub": "wins, Martin Brodeur 2006-07, Braden Holtby 2015-16"
+  },
+  {
+   "label": "Career record",
+   "value": "691",
+   "sub": "wins, Martin Brodeur"
+  },
+  {
+   "label": "OTL column since",
+   "value": "2005-06",
+   "sub": "in the NHL's goalie stats, with the shootout"
+  }
+ ],
+ "origin": [
+  "Wins and losses are as old as goalie stats get. The NHL's stats glossary carries them back to 1917-18, and for most of the league's history the third column was ties. Ties went away with the 2005-06 season, when the shootout arrived and the standings started paying one point for an overtime or shootout loss.",
+  "The goalie stats followed. In the NHL's own numbers an overtime loss used to go in a goalie's plain loss column, and the OTL column starts with the shootout (in 2003-04 the league's goalies were credited with exactly as many losses as wins, plus 340 ties). Hockey-Reference folds the whole history into one column it labels T/O, for ties plus overtime and shootout losses. That lets you line up an older goalie's record with one from today.",
+  "The records sit with the workhorses. Martin Brodeur owns the career mark with 691 wins, and the season record of 48 is shared by Brodeur and Braden Holtby. Detroit's franchise leader is Terry Sawchuk with 350, ahead of Chris Osgood's 317, and nobody else in the franchise's history has reached 250."
+ ],
+ "calculation": {
+  "intro": [
+   "A goalie's record isn't calculated so much as assigned. Every game has one winning goalie and one losing goalie, and the NHL picks them with a single rule built on the game-winning goal. Its glossary defines that as the goal that gives the winner one more than the loser's final total, whenever it happens. These are the inputs:"
+  ],
+  "inputs": [
+   "The game-winning goal, the one that gives the winner one more goal than the loser finished with",
+   "The winning team's goalie in net when it scored that goal, who gets the W",
+   "The losing team's goalie of record when it went in, who gets an L in regulation or an OTL in overtime or a shootout",
+   "Everyone else who played, who gets no decision"
+  ],
+  "formulas": [
+   {
+    "label": "Record",
+    "expr": "W-L-OTL"
+   },
+   {
+    "label": "Decisions",
+    "expr": "W + L + OTL ≤ games played"
+   },
+   {
+    "label": "Team check",
+    "expr": "team W, L and OTL = the sums of its goalies' W, L and OTL"
+   },
+   {
+    "label": "Win share",
+    "expr": "W ÷ (W + L + OTL)"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A starter is pulled down 3-1 after two periods and his team comes back to win 4-3 with the backup in net. Who gets the win? The fourth goal is the game-winner (one more than the other team's three), and the backup was in net when it went in. He gets the win and the starter gets no decision. One goal settles both lines. Detroit had two of those last season, with Cam Talbot winning in relief of <a href=\"/players/john-gibson/\">John Gibson</a> against Anaheim in November and Nashville in March, which is why Gibson's decisions fall two short of his games played.",
+  "after": [
+   "The losing side works the same way, and it can get strange. In December 2011, Carolina's Mike Murphy took a loss against Calgary without allowing a goal, because he'd come on in relief, been pulled for an extra attacker, and was still the goalie of record when Jarome Iginla scored into the empty net for what became the winner in a 7-6 game (that's Sports Illustrated's account of it)."
+  ],
+  "variants": [
+   {
+    "term": "W",
+    "def": "Wins. The goalie in net when his team scored the game-winning goal."
+   },
+   {
+    "term": "L",
+    "def": "Regulation losses. The losing goalie of record in a game decided in 60 minutes."
+   },
+   {
+    "term": "OTL",
+    "def": "Overtime or shootout losses, a separate column since 2005-06. Hockey-Reference labels it OL."
+   },
+   {
+    "term": "T/O",
+    "def": "Hockey-Reference's combined column, ties plus overtime and shootout losses, for comparing across eras."
+   },
+   {
+    "term": "ROL",
+    "def": "The NHL's regulation and overtime losses, a goalie's losses with the shootouts taken out."
+   }
+  ]
+ },
+ "meaning": [
+  "The league's goalies were credited with 1,312 wins last season, one per game, against 986 regulation losses and 326 overtime or shootout losses. Those totals match the team standings exactly, which is the point. A goalie's record is his team's record, sliced by who was in net when the deciding goal went in.",
+  "Andrei Vasilevskiy led the league with 39 wins. In Detroit, Gibson went 29-22-4 and Talbot 12-9-6, and Talbot won more often than he lost in regulation despite a save percentage that sat near the bottom of the league's regulars. That's the first warning sign about the stat. A goalie can post a winning record on the strength of the games his team scored four times in front of him.",
+  "Records track run support as much as goaltending. Brandon Bussi went 31-6-2 for Carolina with a .895 save percentage, and Connor Hellebuyck went 23-23-11 for Winnipeg with a .895 of his own. How do two goalies who stop pucks at the same rate end up eight wins apart? Carolina scored 3.63 goals per full game with Bussi in net and Winnipeg 2.65 for Hellebuyck, and Bussi faced about four fewer shots a game behind him. Both gaps belong to the team.",
+  "Hellebuyck's own swing makes the same case from the other side. A season earlier he won 47 games with a .925 save percentage, so his win total fell by 24 as his save percentage dropped 30 points and his goal support thinned. Judge him on wins alone and you'd miss how much of that fall came from the team around him."
+ ],
+ "uses": [
+  {
+   "title": "Splitting a timeshare",
+   "html": "A record shows how a coach divided the net and who was there for the results. Gibson started 57 games last season and finished 48 of them, and Talbot made nine relief appearances to go with his 25 starts. Two of Talbot's 12 wins came in relief, in games Gibson started, while Gibson took the win in the combined shutout at New Jersey even though he left hurt in the second period and Talbot played the whole third."
+  },
+  {
+   "title": "Reading the OTL column",
+   "html": "Each overtime or shootout loss is a point in the standings, so a goalie with a lot of them kept his team level through 60 minutes in games it went on to lose. Kuemper's 15 led the league, Spencer Knight and Hellebuyck had 11 apiece, and Detroit's goalies combined for 10, worth 10 of the Wings' 92 points. If you want the shootouts stripped out, the NHL publishes ROL, its count of regulation and overtime losses."
+  },
+  {
+   "title": "Checking a goalie against his support",
+   "html": "The NHL publishes goals for while each goalie's in net, the closest thing hockey has to baseball's run support. Gibson and Talbot got almost identical support last season (2.85 and 2.81 goals per 60 minutes), so the gap between Gibson winning 53% of his decisions and Talbot 44% of his traces back to the goaltending."
+  }
+ ],
+ "live": {
+  "intro": "Wins, losses and overtime losses come from the NHL, rebuilt nightly. Detroit's team record comes first, then every goalie the Wings have used this season, most wins first.",
+  "tiles": [
+   {
+    "label": "Wins",
+    "source": "team",
+    "path": "record.wins",
+    "format": "int",
+    "sub": "team, this season"
+   },
+   {
+    "label": "Losses",
+    "source": "team",
+    "path": "record.losses",
+    "format": "int",
+    "sub": "regulation"
+   },
+   {
+    "label": "OT losses",
+    "source": "team",
+    "path": "record.otLosses",
+    "format": "int",
+    "sub": "overtime and shootout"
+   },
+   {
+    "label": "Points",
+    "source": "team",
+    "path": "record.points",
+    "format": "int",
+    "sub": "two per win, one per OT loss"
+   }
+  ],
+  "leaders": {
+   "source": "goalies",
+   "sort": "wins",
+   "ascending": false,
+   "limit": 5,
+   "caption": "Red Wings goalies by wins",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "GS",
+     "path": "gamesStarted",
+     "format": "int"
+    },
+    {
+     "label": "W",
+     "path": "wins",
+     "format": "int"
+    },
+    {
+     "label": "L",
+     "path": "losses",
+     "format": "int"
+    },
+    {
+     "label": "OTL",
+     "path": "otLosses",
+     "format": "int"
+    },
+    {
+     "label": "SV%",
+     "path": "savePct",
+     "format": "sv3"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. A record this early mostly tells you who's been in net, so read it next to save percentage.",
+  "credit": "NHL API"
+ },
+ "limits": [
+  {
+   "title": "It's a team stat with a goalie's name on it",
+   "html": "The goalie of record collects the result of a full game played by both teams, so run support, shot volume and the other goalie all land in his column."
+  },
+  {
+   "title": "One goal carries all the weight",
+   "html": "The decision rides on a single goal's timing. Gibson played two full periods against Anaheim in November and got no decision, then played about half a game against Philadelphia in April and got the win, because of when the deciding goals went in."
+  },
+  {
+   "title": "The OTL column mixes two outcomes",
+   "html": "A loss in three-on-three overtime and a loss in a shootout land in the same column, though a shootout is a different contest from the game before it. The NHL's ROL count exists to pull the shootouts back out."
+  },
+  {
+   "title": "Eras don't line up",
+   "html": "Before 2005-06 a goalie could tie, and in the NHL's goalie stats an overtime loss counted as a plain loss. Compare records across that line and you're comparing different bookkeeping, which is why Hockey-Reference's T/O column exists."
+  }
+ ],
+ "related": [
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "What the goalie stopped, with his team's scoring left out."
+  },
+  {
+   "slug": "quality-starts",
+   "name": "Quality starts",
+   "abbr": "QS",
+   "vs": "Whether he gave his team a chance to win, whatever the result."
+  },
+  {
+   "slug": "shutouts",
+   "name": "Shutouts",
+   "abbr": "SO",
+   "vs": "Wins and losses with no goals against, counted separately."
+  },
+  {
+   "slug": "goals-saved-above-expected",
+   "name": "Goals saved above expected",
+   "abbr": "GSAx",
+   "vs": "Grades the goalie on the shots he faced. Wins grade the team."
+  },
+  {
+   "slug": "regulation-wins",
+   "name": "Regulation wins",
+   "abbr": "RW",
+   "vs": "The team's wins inside 60 minutes, a standings tiebreaker."
+  },
+  {
+   "slug": "points-percentage",
+   "name": "Points percentage",
+   "abbr": "P%",
+   "vs": "The team's share of available standings points."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Stats glossary (GWG, P in the standings, ROL, GS W, GS L, CG, IG, GF)",
+   "publisher": "NHL",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "game-winning goal definition, standings points by result, OT/SO loss point since 2005-06, ROL, goals for while a goalie is in net"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "W, L, OL, T/O definitions"
+  },
+  {
+   "label": "'Canes goalie Murphy makes weird history",
+   "publisher": "Sports Illustrated, December 8, 2011",
+   "url": "https://www.si.com/nhl/2011/12/08/canes-goalie-murphy-makes-wierd-history",
+   "note": "goalie of record when the winning goal was scored; Murphy's loss without a goal against"
+  },
+  {
+   "label": "Goalie summary, advanced, started-vs-relieved and per-game reports; season, career and franchise records",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/goalie/summary?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "every record, decision, relief appearance and goals-for figure on this page; 2003-04 and 2024-25 totals"
+  },
+  {
+   "label": "Team summary, 2025-26",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/summary?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "team wins, losses, overtime losses and points"
+  }
+ ],
+ "method": "Every figure is Wes & Woodward's calculation from the NHL stats API, downloaded October 9, 2026: decisions, save percentages and goals for per 60 from the 2025-26 goalie summary and advanced reports; relief appearances and the games behind them from the per-game goalie report; team records from the team summary; 2003-04 and 2024-25 totals from those seasons' goalie summaries; career, single-season and Red Wings franchise records from the API's season and career goalie queries (regular season, 1917-18 through 2025-26). Win share is wins ÷ decisions. The Red Wings section rebuilds nightly from the NHL's club stats."
+}

@@ -1,0 +1,263 @@
+{
+ "slug": "blocked-shots",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Blocked shots",
+  "short": "BLK",
+  "abbr": "BLK",
+  "aliases": [
+   "BLK",
+   "BkS",
+   "blocks",
+   "shots blocked",
+   "blocked shot attempts"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "blocked shots nhl",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json (single_keyword theme; Ahrefs KE US volume, no supporting keywords), 2026-10-09"
+ },
+ "seo": {
+  "title": "Blocked Shots in the NHL and What a Block Tells You",
+  "description": "Blocked shots in the NHL are opponents' attempts a skater stops with his body or stick. How they're logged, what they mean, and the Red Wings' 2025-26 blocks.",
+  "h1": "Blocked Shots in the NHL (BLK)"
+ },
+ "hero": {
+  "definition": "A blocked shot (BLK) is an opponent's shot attempt that a skater stops with his body or stick before it reaches the net, credited to the player who blocked it. Blocked shots in the NHL are logged by each game's real-time scorers. A block keeps a puck off the goalie, but a team that blocks a lot is usually defending a lot.",
+  "dek": "Detroit blocked the third-most shots in the league last season, and that's less of a compliment than it sounds. A block is a good play at the end of a sequence the other team controlled long enough to shoot."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "BLK · BkS",
+   "sub": "blocks; the NHL's glossary writes BkS"
+  },
+  {
+   "label": "Unit",
+   "value": "Count",
+   "sub": "credited to the skater who made the block"
+  },
+  {
+   "label": "Share blocked",
+   "value": "24.3%",
+   "sub": "of all shot attempts, by a defender, 2025-26"
+  },
+  {
+   "label": "League average",
+   "value": "14.2",
+   "sub": "blocks per team per game, 2025-26"
+  },
+  {
+   "label": "Most, 2025-26",
+   "value": "1,331",
+   "sub": "Montreal"
+  },
+  {
+   "label": "Fewest, 2025-26",
+   "value": "928",
+   "sub": "Carolina"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "1,304",
+   "sub": "3rd of 32; Moritz Seider 180, 4th in the NHL"
+  },
+  {
+   "label": "Player leader",
+   "value": "190",
+   "sub": "Jake McCabe, Toronto, 2025-26"
+  }
+ ],
+ "origin": [
+  "Blocks come from the same Real-Time Scoring System as hits and giveaways, the crew of real-time scorers that Rule 36 of the rulebook puts at every game. The NHL's glossary defines a blocked shot as an opponent's attempt \"blocked by a skater, with his stick or body.\" Every block is two entries at once. The blocker gets a block, and the shooter gets a blocked attempt, which counts toward his shot attempts (the NHL's SAT, better known as Corsi) and stays out of his unblocked ones (USAT, or Fenwick).",
+  "The stat's history is a mess of dates. ESPN's Terry Frei reported in September 2002 that the league had distributed blocked shots for two seasons and was dropping them from player summaries along with hits, giveaways and takeaways, and he called junking blocks \"far less justifiable than the other deletions.\" The NHL's glossary says the league has recorded blocks since 2002-03. Its public realtime report has them for every team starting in 2005-06.",
+  "Rinks don't count them alike. Schuckers and Macdonald's study of six seasons ending in 2012-13 found a long list of rinks with persistent effects on blocks, from New Jersey, which recorded them at about 54% of the league rate, to Montreal and Toronto at more than 24% above it. Detroit's rink of that era recorded them at 0.88 times the league rate. Home teams got about 5% more blocks than visitors, and the study found no rink that favored its own team."
+ ],
+ "calculation": {
+  "intro": [
+   "A block is credited to one player, so the math is a tally. The play-by-play logs the shooter, the blocker and the spot of the block, and the league's realtime report counted 40,853 blocked attempts last season. Defenders were credited with 37,236 of them. The other 3,617 hit the shooter's own teammate, which the feed tags \"teammate-blocked.\" These are the inputs:"
+  ],
+  "inputs": [
+   "Blocks (BLK), opponents' attempts a skater stops, credited to him",
+   "Shot attempts blocked, a shooter's own attempts that got blocked",
+   "Opponents' shot attempts, for a block rate",
+   "Ice time, for per-60 rates"
+  ],
+  "formulas": [
+   {
+    "label": "Rate",
+    "expr": "blocks/60 = blocks ÷ minutes × 60"
+   },
+   {
+    "label": "Block share",
+    "expr": "block share = blocks ÷ opponents' shot attempts"
+   },
+   {
+    "label": "Corsi (SAT)",
+    "expr": "shot attempts = shots on goal + missed shots + blocked attempts"
+   },
+   {
+    "label": "Fenwick (USAT)",
+    "expr": "unblocked attempts = shots on goal + missed shots"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. One defenseman is on the ice for 600 opponents' attempts and blocks 60, so he stops 10%. His partner blocks the same 60 while on the ice for 400 attempts, a 15% rate. Their counts match, and the partner stopped a bigger share of a smaller load.",
+  "after": [
+   "Blocks are logged where the block happened, which is why expected-goals models leave blocked attempts out (there's no honest record of where those shots were taken)."
+  ],
+  "variants": [
+   {
+    "term": "BLK",
+    "def": "Blocks, credited to the defending skater. The NHL's glossary writes BkS."
+   },
+   {
+    "term": "Shot attempts blocked",
+    "def": "The shooter's side of the same event. It counts toward Corsi and is left out of Fenwick.",
+    "slug": "corsi"
+   },
+   {
+    "term": "Teammate-blocked",
+    "def": "An attempt that hits the shooter's own teammate. It counts as a blocked attempt, and nobody gets a block."
+   },
+   {
+    "term": "Blocks/60",
+    "def": "Blocks per 60 minutes of ice time.",
+    "slug": "per-60-rates"
+   }
+  ]
+ },
+ "meaning": [
+  "Blocks measure how many attempts a team faces as much as how well it handles them. Across the league's teams last season, block totals correlated with five-on-five shot attempts against per 60 minutes at 0.59 and with five-on-five Corsi share at minus-0.56, so if you want to know how hard a team defended, the raw block total is a poor place to start. Detroit faced 58.4 attempts per 60 at five-on-five, the eighth-most (the median team faced 56.4), and finished third in blocks with 1,304. That's the catch.",
+  "The rate is the fairer number. Defenders blocked 24.3% of the league's 152,961 shot attempts last season, and teams ranged from Chicago, which blocked 20.9% of its opponents' attempts, to Montreal at 27.1%. Detroit blocked 26.2%, fifth in the league. The Wings blocked a lot because they faced a lot, and they were good at it besides.",
+  "Among individual players, blocks are a defenseman's stat. Regular defensemen (60 or more games) had a median of 99 and regular forwards 36. Jake McCabe led the league with 190. <a href=\"/players/moritz-seider/\">Moritz Seider</a> was fourth with 180, <a href=\"/players/ben-chiarot/\">Ben Chiarot</a> had 160 and <a href=\"/players/simon-edvinsson/\">Simon Edvinsson</a> had 148, which put three Wings among the league's top 25.",
+  "Blocks follow the score, too. The team with more blocks won 59.1% of last season's games that weren't tied on blocks. Why would the team doing the blocking win more often? Schuckers and Macdonald's study answers it from the other side, since teams with a lead take fewer shots, get fewer of them blocked and leave the blocking to the team they're beating."
+ ],
+ "uses": [
+  {
+   "title": "Reading score effects",
+   "html": "A team protecting a lead faces more attempts, and it blocks more of them. Last season the game-level correlation between block differential and shot-attempt differential was minus-0.72, so a box score where one team blocked far more shots is mostly telling you who was pressing. Check the score before you credit the blocking team's commitment."
+  },
+  {
+   "title": "Grading a defenseman's job",
+   "html": "Rates separate the busy from the effective. Who blocked more efficiently, Seider or Chiarot? Chiarot did, at 5.6 per 60 minutes to Seider's 5.1, though Seider was playing the heaviest minutes on the team, and both cleared the 4.1 median for regular defensemen. Neither number says whether the shots they faced should've been blocked or never allowed in the first place, which is the question a coach would ask."
+  },
+  {
+   "title": "Building shot metrics",
+   "html": "Blocked attempts are the gap between Corsi and Fenwick. Corsi counts them as shots, Fenwick drops them, and expected-goals models drop them because the location on record is the block's. Last season a defender blocked about one attempt in four, so the two shot-share stats can tell slightly different stories about the same team."
+  }
+ ],
+ "limits": [
+  {
+   "title": "It rewards facing shots",
+   "html": "A team that spends its night in its own zone will pile up blocks, and the tie to five-on-five attempts against says a big total is as much a symptom as a skill. If you're reading a big number as a compliment, check the attempts against first."
+  },
+  {
+   "title": "Rinks still differ",
+   "html": "Last season the busiest building for blocks, in Los Angeles, logged 31.8 a game for both teams combined, 37% more than Chicago's 23.2. Some of that gap is the teams that play there, and Schuckers and Macdonald's work says some of it is the people counting."
+  },
+  {
+   "title": "The location is the block's",
+   "html": "The feed records where the puck was blocked. Where the shooter let it go isn't on record, which is the reason expected-goals models skip blocked attempts and the reason a block can't be priced the way a shot on goal can."
+  },
+  {
+   "title": "Teammates and bounces muddy it",
+   "html": "A puck that hits a teammate counts as a blocked attempt against the shooter with no block credited, and there were 3,617 of those last season. A block that bounces back to an opponent at the point and one that springs a breakout are the same entry in the play-by-play."
+  }
+ ],
+ "related": [
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "Counts blocked attempts as shots. BLK credits the skater who stopped them."
+  },
+  {
+   "slug": "fenwick",
+   "name": "Fenwick",
+   "abbr": "FF%",
+   "vs": "Leaves blocked attempts out entirely."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "Skips blocked attempts, since their recorded location is the block's."
+  },
+  {
+   "slug": "hits",
+   "name": "Hits",
+   "abbr": "HIT",
+   "vs": "The other defensive count the real-time scorers log."
+  },
+  {
+   "slug": "takeaways-and-giveaways",
+   "name": "Takeaways and giveaways",
+   "abbr": "TK/GV",
+   "vs": "Turnover counts from the same scorers, with bigger rink swings."
+  }
+ ],
+ "faq": [
+  {
+   "q": "What's the NHL record for blocked shots in a season?",
+   "a": "Kris Russell blocked 283 for Calgary in 2014-15. That's the most in a season in the NHL's public realtime data, which starts in 2005-06, and McCabe's league-leading 190 last season wouldn't have come close. League-wide, blocks per game peaked two seasons ago."
+  },
+  {
+   "q": "Do blocked shots count as shots on goal?",
+   "a": "No. The NHL's glossary leaves blocked attempts and missed shots out of shots on goal, so you'll find a blocked attempt only in the shooter's shot attempts (Corsi). The block itself goes to the defender, and it's the defender's column the box score shows."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Stats glossary (Blocked shots, Shots, SAT, USAT)",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "definition of a block; SAT and USAT treatment; shots on goal exclude blocked attempts; glossary's start date (read through the stats API's glossary endpoint)"
+  },
+  {
+   "label": "Official Rules 2025-2026, Rule 36 (Real Time Scorers)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "who records the stats"
+  },
+  {
+   "label": "NHL taking the crunch out of numbers",
+   "publisher": "Terry Frei, ESPN.com, September 24, 2002",
+   "url": "https://www.espn.com/nhl/columns/frei_terry/1435985.html",
+   "note": "blocks dropped from player summaries in 2002; Frei's view of the decision"
+  },
+  {
+   "label": "Accounting for Rink Effects in the National Hockey League's Real Time Scoring System",
+   "publisher": "Michael Schuckers and Brian Macdonald, arXiv 1412.1035, 2014",
+   "url": "https://arxiv.org/abs/1412.1035",
+   "note": "rink and home effects on blocks, 2007-08 through 2012-13; score effect on blocked attempts"
+  },
+  {
+   "label": "General Terms",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/general-terms/",
+   "note": "blocked shots excluded from expected goals because the location logged is the block's"
+  },
+  {
+   "label": "Team realtime reports (season and game by game) and skater realtime leaders, 2005-06 through 2025-26",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/realtime?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "team blocks, attempts blocked, arena totals, single-season high"
+  },
+  {
+   "label": "Play-by-play, all 1,312 games of 2025-26",
+   "publisher": "NHL (api-web.nhle.com)",
+   "url": "https://api-web.nhle.com/v1/gamecenter/2025020001/play-by-play",
+   "note": "teammate-blocked tag; game results"
+  },
+  {
+   "label": "2025-26 regular-season skater and team files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "player blocks and ice time; team shot attempts and five-on-five Corsi"
+  }
+ ],
+ "method": "Team blocks, blocked attempts and per-arena totals come from the NHL stats API's team realtime report for the 2025-26 regular season, season totals and game by game; the teammate-blocked count and game results come from Wes & Woodward's pull of all 1,312 games' NHL play-by-play. Team shot attempts against, five-on-five attempts against per 60 and five-on-five Corsi share come from MoneyPuck's 2025-26 teams file; player blocks and ice time come from MoneyPuck's skaters file, all situations, with regulars defined as 60 or more games. All downloaded October 9, 2026. Block share is a team's blocks divided by its opponents' total shot attempts. Correlations are Pearson r, across the 32 teams or across games."
+}

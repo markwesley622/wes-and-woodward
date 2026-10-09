@@ -1,0 +1,285 @@
+{
+ "slug": "wins-above-replacement",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Wins above replacement",
+  "short": "WAR",
+  "abbr": "WAR",
+  "aliases": [
+   "WAR",
+   "GAR",
+   "xGAR",
+   "xWAR",
+   "SPAR",
+   "goals above replacement",
+   "expected goals above replacement"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "war hockey stat",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json (status no_serp_overlap: primary only, 'what is war in hockey' rejected at 29% SERP overlap), Ahrefs KE US, 2026-10-09"
+ },
+ "seo": {
+  "title": "WAR Hockey Stat and How Wins Above Replacement Works",
+  "description": "The WAR hockey stat prices a player's offense, defense, special teams and penalties against a replacement. How it's built, and the Red Wings' numbers.",
+  "h1": "Wins Above Replacement (WAR), the Hockey Stat for Total Value"
+ },
+ "hero": {
+  "definition": "Wins above replacement (WAR) is one number for a player's total value over a replacement-level player, the kind a team can find outside its regular lineup. Evolving-Hockey publishes it in goals, in wins and in an expected-goals form, labeled GAR, WAR and xGAR, and the WAR hockey stat covers even-strength play, special teams and penalties.",
+  "dek": "Hockey borrowed the idea from baseball, and it's harder to pull off on ice, where ten skaters share every shift. Evolving-Hockey's model is the main public version, and it's the foundation of the W-Value you'll find on every Red Wings player page here."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "GAR · xGAR",
+   "sub": "goals, and expected goals, above replacement"
+  },
+  {
+   "label": "Unit",
+   "value": "Wins",
+   "sub": "about 6.2 goals per win in 2025-26"
+  },
+  {
+   "label": "Replacement",
+   "value": "13 F · 7 D",
+   "sub": "everyone outside a team's top 13 F and 7 D by ice time"
+  },
+  {
+   "label": "Median forward",
+   "value": "0.9",
+   "sub": "WAR, 2025-26, 327 forwards with 60+ GP"
+  },
+  {
+   "label": "League leader",
+   "value": "4.9",
+   "sub": "Lane Hutson and Quinn Hughes, tied"
+  },
+  {
+   "label": "Best Red Wing",
+   "value": "4.3",
+   "sub": "Moritz Seider, tied for 4th of 940"
+  },
+  {
+   "label": "Main source",
+   "value": "EH",
+   "sub": "Evolving-Hockey GAR, WAR and xGAR"
+  },
+  {
+   "label": "This site uses",
+   "value": "W-Value",
+   "sub": "a 0-100 rating built on EH's xGAR and GAR"
+  }
+ ],
+ "origin": [
+  "WAR is a baseball idea. FanGraphs describes it as an attempt to sum up a player's total contribution to his team in one statistic, measured against the freely available minor leaguer who'd take his place if he got hurt. Hockey's early versions included Alan Ryder's Player Contribution in 2003 and Tom Awad's Goals Versus Threshold (GVT) at Hockey Prospectus, which Awad explained in 2009 as the hockey version of baseball's VORP, a player's value in goals above what a replacement would've contributed.",
+  "The modern models arrived in a rush. Andrew Thomas, Sam Ventura and Alexandra Mandrycky built one for their site WAR On Ice in the fall of 2014. Dawson Sprigings released his own in the summer of 2016, and Emmanuel Perry published a version on Corsica in May 2017.",
+  "Evolving-Hockey's is the one most people mean today. Josh and Luke Younggren laid it out in a three-part series at Hockey-Graphs on January 16 through 18, 2019, two days after their write-up of the RAPM regression it's built on. They were open about the goal. They'd made a descriptive model, they wrote, and \"we don't care whether it's predictive.\" The expected-goals version, xGAR, followed that October, and Evolving-Hockey describes it as the model for \"deserved\" or \"expected\" evaluation. It isn't the only public model. Patrick Bacon's, published at HockeyStats, gives shooting its own component, and Dom Luszczyszyn's Game Score Value Added does a similar job at The Athletic."
+ ],
+ "calculation": {
+  "intro": [
+   "The public models run the same three steps. Measure each part of a player's game in goals above average, move the zero point down to replacement level, then convert goals to wins. Evolving-Hockey splits a skater into six components:"
+  ],
+  "inputs": [
+   "Even-strength offense (EVO)",
+   "Even-strength defense (EVD)",
+   "Power-play offense (PPO)",
+   "Shorthanded defense (SHD)",
+   "Penalties taken (Take)",
+   "Penalties drawn (Draw)"
+  ],
+  "formulas": [
+   {
+    "label": "Goals",
+    "expr": "GAR = EVO + EVD + PPO + SHD + Take + Draw"
+   },
+   {
+    "label": "Wins",
+    "expr": "WAR = GAR ÷ goals per win"
+   },
+   {
+    "label": "Standings points",
+    "expr": "SPAR = GAR ÷ goals per standings point"
+   },
+   {
+    "label": "Expected version",
+    "expr": "xWAR = xGAR ÷ goals per win"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. A forward rates at plus-8 goals on even-strength offense, minus-2 on defense, plus-3 on the power play, zero on the penalty kill and plus-1 for drawing more penalties than he takes. That's 10 goals above replacement. At six goals per win he's worth about 1.7 wins, or a little over three standings points across a season.",
+  "after": [
+   "The hard part is measuring the components. That's where the models split. Evolving-Hockey runs a long-term RAPM regression for each one, trains a statistical plus-minus model (SPM) on play-by-play and box-score numbers to predict it, and uses the SPM output for each season. In the 2019 write-up, offense was built on actual goals for and defense on expected goals against.",
+   "Replacement level is a cutoff by ice time. Anyone outside a team's top 13 forwards or top seven defensemen counts as replacement at even strength, and the special-teams components use each team's top 11 skaters. Evolving-Hockey took that shortcut because there aren't enough league-minimum players to define replacement by salary. Goals become wins through a rolling, season-by-season conversion (about six goals per win in the 2025-26 export)."
+  ],
+  "variants": [
+   {
+    "term": "GAR",
+    "def": "Goals above replacement, the raw total before any conversion."
+   },
+   {
+    "term": "WAR",
+    "def": "GAR converted to wins."
+   },
+   {
+    "term": "SPAR",
+    "def": "Standing points above replacement, Evolving-Hockey's conversion to the standings."
+   },
+   {
+    "term": "xGAR",
+    "def": "Evolving-Hockey's expected-goals model, built for what a player deserved."
+   },
+   {
+    "term": "RAPM",
+    "def": "The regression underneath the even-strength components.",
+    "slug": "rapm"
+   }
+  ]
+ },
+ "meaning": [
+  "WAR measures total value against a player you could get for nothing.",
+  "Zero is replacement level, so a skater at zero is one a team could swap for a call-up without losing anything, and a negative number says the team would've been better off making that swap. On Evolving-Hockey's 2025-26 numbers the median forward with 60 or more games finished at 0.9 wins, and the top 10% cleared 2.4. Defensemen ran a touch lower (a median of 0.7 among 161). Lane Hutson and Quinn Hughes tied for the lead among all 940 skaters at 4.9 wins, with Hutson ahead on goals (30.2 to 29.9).",
+  "Detroit had one of the five best players in the league by this measure. <a href=\"/players/moritz-seider/\">Moritz Seider</a> tied for fourth at 4.3 wins, almost a full win clear of any other Red Wing, with <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> tied for tenth at 3.5 and <a href=\"/players/lucas-raymond/\">Lucas Raymond</a> at 2.7. The bottom of the scale is crowded, too, with almost a quarter of the skaters who played 60 games finishing below replacement, and <a href=\"/players/ben-chiarot/\">Ben Chiarot</a>'s minus-1.2 wins ranked 925th of 940.",
+  "How much of it carries over? Across every pair of consecutive seasons in Evolving-Hockey's files since 2007-08, for players with 800 minutes in both, xGAR correlated with the next season's xGAR at 0.50 and GAR at 0.44. That's real signal with a lot of one season's luck mixed in, which is why Evolving-Hockey suggests reading any season's number with a margin of about half a win either way."
+ ],
+ "uses": [
+  {
+   "title": "The W-Value on every player page",
+   "html": "This site's W-Value is a 0 to 100 rating built on Evolving-Hockey's components. It blends xGAR and GAR at 60/40, component by component, leaning toward chances because they repeat better from year to year, and scales the result so 50 is the average NHL skater with 20 or more games. Around the middle a standard deviation of value is worth about 23 points. Why blend at all? Evolving-Hockey's own awards use the average of the two models, and it says GAR isn't its preferred model for defensemen because it uses on-ice shooting percentage."
+  },
+  {
+   "title": "Comparing players across positions",
+   "html": "WAR puts a defenseman and a winger on one scale, and the components show you how each got there. Seider's 26.3 goals above replacement split almost evenly between even-strength offense and defense (10.9 and 10.4), with 4.4 more on the power play. DeBrincat's 21.4 leaned on even-strength offense, which supplied 14.1 of it. Different jobs, both near the top of the league."
+  },
+  {
+   "title": "Separating results from chances",
+   "html": "Sometimes GAR and xGAR disagree. The gap is the story. <a href=\"/players/axel-sandin-pellikka/\">Axel Sandin-Pellikka</a> finished his rookie season at minus-1.9 GAR and plus-3.3 xGAR, so the goals said below replacement while the chances said above it, if still short of the median defenseman. If you only looked at one model you'd have half the picture, and that's the kind of split the W-Value's blend is built to absorb."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Replacement level is a choice",
+   "html": "Evolving-Hockey draws the line at a team's top 13 forwards and top seven defensemen by ice time, and Bacon's model uses a similar cut. Move the line and every player's number moves with it. His play didn't change."
+  },
+  {
+   "title": "One season is a small sample",
+   "html": "A year-to-year correlation near 0.5 means a lot of any season's number won't come back, so read a single season's WAR as a record of what happened and give it the half-win margin Evolving-Hockey suggests."
+  },
+  {
+   "title": "The models don't agree",
+   "html": "Evolving-Hockey, HockeyStats and The Athletic each build their own components, choose their own replacement line and convert goals to wins their own way. The same player can carry a different WAR on each site, so compare numbers from one model at a time."
+  },
+  {
+   "title": "It can't explain itself",
+   "html": "WAR tells you how much value a player added, and you need the components to see where it came from. Even those come out of regressions, so they describe what the model credited him with over a season and say nothing about a given shift."
+  }
+ ],
+ "related": [
+  {
+   "slug": "rapm",
+   "name": "RAPM",
+   "abbr": "RAPM",
+   "vs": "The isolated per-60 impact WAR's even-strength components are built on."
+  },
+  {
+   "slug": "w-value",
+   "name": "W-Value",
+   "abbr": "W-Value",
+   "vs": "This site's 0-100 rating, a blend of xGAR and GAR."
+  },
+  {
+   "slug": "game-score",
+   "name": "Game score",
+   "abbr": "GS",
+   "vs": "A box-score formula for one game. WAR is a season-long model."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "The chance-quality model behind xGAR."
+  },
+  {
+   "slug": "plus-minus",
+   "name": "Plus-minus",
+   "abbr": "+/-",
+   "vs": "Gives everyone on the ice equal credit. WAR tries to split it."
+  },
+  {
+   "slug": "goals-saved-above-expected",
+   "name": "Goals saved above expected",
+   "abbr": "GSAx",
+   "vs": "The goalie number this site rates goaltenders on."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Do goalies get a WAR?",
+   "a": "Evolving-Hockey rates goalies separately, on goals above average and replacement built from the unblocked shots they face. This site's goalie rating uses MoneyPuck's goals saved above expected instead, scaled 0 to 100 among goalies with 600 or more minutes."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Wins Above Replacement, Parts 1-3",
+   "publisher": "Hockey-Graphs (Evolving-Hockey), January 16-18, 2019",
+   "url": "https://hockey-graphs.com/2019/01/16/wins-above-replacement-history-philosophy-and-objectives-part-1/",
+   "note": "history of hockey WAR, descriptive aim, RAPM and SPM method, replacement level, error range"
+  },
+  {
+   "label": "Goals Above Replacement glossary",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/goals-above-replacement/",
+   "note": "components, SPAR, current replacement level, goalie GAR"
+  },
+  {
+   "label": "About and Evolving-Hockey overview",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/evolving-hockey-overview/",
+   "note": "xGAR as the deserved or expected model; version history at evolving-hockey.com/about/"
+  },
+  {
+   "label": "Evolving-Hockey's NHL Awards, 2024-25",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/blog/evolving-hockeys-nhl-awards-24-25/",
+   "note": "awards average xGAR and GAR; GAR uses on-ice shooting percentage"
+  },
+  {
+   "label": "WAR",
+   "publisher": "FanGraphs library",
+   "url": "https://library.fangraphs.com/misc/war/",
+   "note": "baseball definition and the freely available replacement"
+  },
+  {
+   "label": "Understanding GVT, Part 1",
+   "publisher": "Tom Awad, Hockey Prospectus, July 30, 2009",
+   "url": "http://puckprospectus.com/article.php?articleid=233",
+   "note": "GVT as hockey's VORP"
+  },
+  {
+   "label": "WAR-On-Ice.com",
+   "publisher": "Carnegie Mellon University news, November 2014",
+   "url": "https://www.cmu.edu/news/stories/archives/2014/november/november3_hockeyanalytics.html",
+   "note": "Thomas and Ventura's site"
+  },
+  {
+   "label": "The Art of WAR",
+   "publisher": "Emmanuel Perry, Corsica, May 20, 2017",
+   "url": "http://www.corsica.hockey/blog/2017/05/20/the-art-of-war/",
+   "note": "Corsica's WAR"
+  },
+  {
+   "label": "WAR methodology",
+   "publisher": "HockeyStats",
+   "url": "https://hockeystats.com/methodology/war",
+   "note": "Patrick Bacon's six components and replacement level"
+  },
+  {
+   "label": "2025-26 GAR, xGAR and WAR exports",
+   "publisher": "Evolving-Hockey data",
+   "url": "https://evolving-hockey.com/",
+   "note": "every league and Red Wings figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from Evolving-Hockey's GAR and xGAR exports (all seasons through 2025-26, downloaded September 8, 2026, in research/rasmussen/raw/eh), with traded players' team rows summed: medians use the 327 forwards and 161 defensemen with 60+ games, ranks use all 940 skaters, goals per win is the median GAR ÷ WAR among skaters with at least one win either way, and repeatability is the Pearson correlation between consecutive seasons for players with 800+ all-situations minutes in both (2007-08 through 2025-26). The W-Value blend and scale come from pipeline/build_player.py."
+}

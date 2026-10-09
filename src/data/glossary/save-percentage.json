@@ -1,0 +1,319 @@
+{
+ "slug": "save-percentage",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Save percentage",
+  "short": "SV%",
+  "abbr": "SV%",
+  "aliases": [
+   "SV%",
+   "Sv%",
+   "save pct",
+   "goalie save percentage",
+   "NHL save percentage"
+  ],
+  "category": "Goalie"
+ },
+ "keywords": {
+  "primary": "how to calculate save percentage",
+  "supporting": [
+   "what does sv mean in hockey",
+   "what is sv in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "How to Calculate Save Percentage and What SV% Means",
+  "description": "Save percentage (SV%) is the share of shots on goal a goalie stops. How to calculate save percentage, what's good now, and the Red Wings' live numbers.",
+  "h1": "How to Calculate Save Percentage (SV%) in Hockey"
+ },
+ "hero": {
+  "definition": "Save percentage (SV%) is the share of shots on goal a goalie stops, his saves divided by the shots he faced. It's the standard grade for goaltending on every NHL stat line, and it treats a point shot and a backdoor tap-in the same, which is why expected-goals stats grade goalies more fairly.",
+  "dek": "Knowing how to calculate save percentage takes one line of division. Reading it takes context, because the league average moves (it fell to .896 last season, the lowest since 1993-94) and a goalie's number carries the shots his defense allowed."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "SV% · Sv%",
+   "sub": "save pct, printed as a decimal like .915"
+  },
+  {
+   "label": "Formula",
+   "value": "SV ÷ SA",
+   "sub": "saves over shots on goal faced"
+  },
+  {
+   "label": "League average",
+   "value": ".896",
+   "sub": "all NHL goalies, 2025-26"
+  },
+  {
+   "label": "Recent peak",
+   "value": ".915",
+   "sub": "2015-16, the high since at least 1983-84"
+  },
+  {
+   "label": "Best, 2025-26",
+   "value": ".921",
+   "sub": "Scott Wedgewood, COL (51 goalies, 30+ GP)"
+  },
+  {
+   "label": "Worst, 2025-26",
+   "value": ".870",
+   "sub": "Samuel Ersson, PHI (30+ GP)"
+  },
+  {
+   "label": "Official since",
+   "value": "1955-56",
+   "sub": "per the NHL's stats glossary"
+  },
+  {
+   "label": "This site uses",
+   "value": "NHL",
+   "sub": "official league numbers, rebuilt nightly"
+  }
+ ],
+ "origin": [
+  "Save percentage is younger than the goalie stats around it. The NHL's stats glossary dates official tracking to 1955-56, the season the league started counting shots against, so for the league's first 38 seasons a goalie's line ran on goals against, wins and shutouts. Once shots were in the books, the formula followed. It's the same one the NHL and Hockey-Reference print in their glossaries today, saves over shots against, with nothing weighted or adjusted.",
+  "The raw material is the shot on goal, logged rink by rink through the league's Real Time Scoring System. A shot on goal is an attempt the goalie has to stop. Misses and blocked attempts don't count, and the NHL's glossary files a shot off the post or crossbar as a missed shot. NHL skaters hit 2,137 posts and 691 crossbars last season, and none of them touched anyone's save percentage.",
+  "Since 1997-98 the league has split the number by strength, so you'll find even-strength, power-play and shorthanded versions on its goalie reports. Hockey-Reference publishes the overall figure next to its own goals saved above average. This site uses the NHL's official numbers for save percentage and MoneyPuck for the expected-goals stats built on top of it, which prices each attempt a goalie faces before it grades him."
+ ],
+ "calculation": {
+  "intro": [
+   "The formula is saves divided by shots against. Everything else is bookkeeping about which shots and goals count, and the NHL's rules are narrow on both. A goalie is charged only for what happens while he's in net, and only shots on goal go in the denominator. These are the inputs:"
+  ],
+  "inputs": [
+   "Shots against (SA), the shots on goal he faced while in net",
+   "Goals against (GA), the goals scored while he was in net",
+   "Saves (SV), shots against minus goals against",
+   "Left out entirely: missed shots, blocked attempts, shots off the post or crossbar, empty-net goals and shootout attempts"
+  ],
+  "formulas": [
+   {
+    "label": "Save percentage",
+    "expr": "SV% = SV ÷ SA"
+   },
+   {
+    "label": "Same thing, from goals",
+    "expr": "SV% = 1 − GA ÷ SA"
+   },
+   {
+    "label": "Team",
+    "expr": "team SV% = all its goalies' saves ÷ all their shots against"
+   },
+   {
+    "label": "Versus average",
+    "expr": "goals saved above average = (SV% − league SV%) × SA"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A goalie faces 30 shots and allows three, so he made 27 saves, and 27 divided by 30 is .900. One more save makes it .933. Over a full season the steps get much finer, and that's where the decimals start to matter. At Gibson's workload last season (real numbers now, 1,461 shots), each extra save moved his save percentage by about .0007.",
+  "after": [
+   "Empty-net and shootout goals stay out of it. NHL teams allowed 8,086 goals last season and their goalies were charged with 7,578, a gap of exactly the league's 508 empty-net goals. Shootouts work the same way. When the Islanders beat Seattle in a shootout after a scoreless game in November, the official stats gave David Rittich and Joey Daccord a shutout apiece and zero goals against, though Daccord also took the overtime loss."
+  ],
+  "variants": [
+   {
+    "term": "SV",
+    "def": "Saves. On a hockey box score, SV means the shots on goal a goalie stopped, and SV% is those saves as a share of his shots against.",
+    "slug": "saves-and-shots-against"
+   },
+   {
+    "term": "EV SV%",
+    "def": "Even-strength save percentage. It drops the power-play shots that go in more often, and the NHL has published it since 1997-98."
+   },
+   {
+    "term": "PP SV%",
+    "def": "Save percentage while the goalie's team is shorthanded. Lower and noisier than the overall number."
+   },
+   {
+    "term": "xSV%",
+    "def": "Expected save percentage. What an average goalie would post on the same shots once each one is priced by danger.",
+    "slug": "expected-save-percentage"
+   },
+   {
+    "term": "HDSV%",
+    "def": "Save percentage on high-danger shots only.",
+    "slug": "high-danger-save-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "Save percentage measures how often a shot that reached the goalie stayed out. It doesn't say how many shots there were or where they came from, so it's always read against the league average, and that average moves. NHL goalies stopped .896 of their shots last season, the league's lowest mark since 1993-94. A decade earlier it peaked at .915. A .905 that would've been below average then was well above it last season.",
+  "What's a good save percentage, then? Anything above the league's .896 was better than average last season, and the 51 goalies who played at least 30 games had a median of .899. Scott Wedgewood led at .921 in Colorado and Samuel Ersson finished last at .870 in Philadelphia. Gibson's .901 ranked 21st, a hair above the league mark, and Cam Talbot's .883 sat near the bottom. Put them together and Detroit's goalies stopped .895 of the shots they faced, about as close to league average as a team gets.",
+  "The scale is narrower than it looks. Ten points of save percentage is one goal per 100 shots, and Juuse Saros led the league with 1,700 shots faced, so even for the busiest starter in the league those ten points come to about 17 goals over a season. Gibson's edge over an average goalie on his workload came to 8.2 goals. Talbot's gap ran the other way, 10.0 goals in about half the shots.",
+  "Does it carry over from year to year? Less than you'd think. Among the 35 goalies who played 30 or more games in each of the last two seasons, the correlation between one season's save percentage and the next was 0.28, which means the first year's number explained less than a tenth of the spread in the second. A few hundred shots isn't much of a sample, and the defense in front of a goalie doesn't hold still either."
+ ],
+ "uses": [
+  {
+   "title": "Grading a goalie against the league",
+   "html": "Subtract the league average from a goalie's save percentage, multiply by his shots against, and you get goals saved above average (GSAA), which Hockey-Reference publishes for every goalie. <a href=\"/players/john-gibson/\">Gibson</a> stopped 1,317 of 1,461 shots last season, 8.2 more than a .896 goalie would have on the same workload. Talbot came up 10.0 short of an average goalie on his. Detroit's tandem netted out about two goals below average for the whole season. That's a rounding error over a full schedule."
+  },
+  {
+   "title": "Splitting it by strength",
+   "html": "League-wide, goalies stopped .903 of even-strength shots last season and .853 of power-play shots, a 50-point gap the NHL's glossary puts down to the better looks a power play gets. That's why analysts check the even-strength number first. A goalie behind a team that takes a lot of penalties sees more of the hard shots. Gibson faced 202 of his shots on the penalty kill (13.8%, against 14.9% league-wide), and his .912 at even strength was a better read on him than his .837 shorthanded."
+  },
+  {
+   "title": "Checking it against shot quality",
+   "html": "Save percentage can't see how hard the shots were, so it's paired with expected goals. MoneyPuck priced the attempts Gibson faced at 155.7 expected goals and he allowed 144, so he finished 11.7 goals saved above expected (GSAx). That's more credit than his 8.2 above average, a sign the shots he saw were a little more dangerous than the league's typical mix. Talbot finished 13.1 below expected, which squares with what his save percentage already said."
+  }
+ ],
+ "live": {
+  "intro": "Save percentage, GAA and the record come from the NHL's club stats and GSAx from MoneyPuck, all rebuilt nightly. Team goaltending comes first, then every goalie Detroit has used this season.",
+  "tiles": [
+   {
+    "tile": "gsax"
+   },
+   {
+    "label": "Goals against",
+    "source": "team",
+    "path": "record.goalAgainst",
+    "format": "int",
+    "sub": "all goals allowed, this season"
+   }
+  ],
+  "leaders": {
+   "source": "goalies",
+   "sort": "savePct",
+   "ascending": false,
+   "limit": 5,
+   "caption": "Red Wings goalies by save percentage",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "GS",
+     "path": "gamesStarted",
+     "format": "int"
+    },
+    {
+     "label": "SV%",
+     "path": "savePct",
+     "format": "sv3"
+    },
+    {
+     "label": "GAA",
+     "path": "gaa",
+     "format": "num2"
+    },
+    {
+     "label": "GSAx",
+     "path": "gsax",
+     "format": "signed1"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. One goal on 300 shots moves a save percentage by .003, so treat this as a record of what's happened so far.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "Every shot counts the same",
+   "html": "A point shot through no traffic and a backdoor tap-in each count as one shot and one possible save. A goalie behind a defense that allows a lot of the second kind posts a lower number for reasons he can't control, which is the gap expected save percentage and GSAx were built to close."
+  },
+  {
+   "title": "The league average won't sit still",
+   "html": "The league's mark has slid from .915 a decade ago to .896 last season, so a .905 is a good year now and was a poor one then, and you'll want to compare a goalie to his own season's average before you compare him to anyone from another era."
+  },
+  {
+   "title": "One season can mislead",
+   "html": "Connor Hellebuyck stopped .925 of his shots in Winnipeg two seasons ago and .895 there last season, a 30-point drop for the same goalie on the same team. Swings like that are why one season's save percentage predicts so little of the next."
+  },
+  {
+   "title": "Someone decides what's a shot",
+   "html": "Every shot on goal is a scorer's call, though the call holds up better than most. Michael Schuckers and Brian Macdonald's study of six seasons ending in 2012-13 found shots were the most consistently recorded of the events they examined, with only two arenas (Florida's and St. Louis's) logging them at a rate clearly off the league's."
+  }
+ ],
+ "related": [
+  {
+   "slug": "goals-saved-above-expected",
+   "name": "Goals saved above expected",
+   "abbr": "GSAx",
+   "vs": "Prices every shot by danger. SV% counts them all the same."
+  },
+  {
+   "slug": "goals-saved-above-average",
+   "name": "Goals saved above average",
+   "abbr": "GSAA",
+   "vs": "SV% turned into goals against a league-average goalie."
+  },
+  {
+   "slug": "expected-save-percentage",
+   "name": "Expected save percentage",
+   "abbr": "xSV%",
+   "vs": "The SV% an average goalie would post on the same shots."
+  },
+  {
+   "slug": "high-danger-save-percentage",
+   "name": "High-danger save percentage",
+   "abbr": "HDSV%",
+   "vs": "SV% on the shots from right in front only."
+  },
+  {
+   "slug": "goals-against-average",
+   "name": "Goals against average",
+   "abbr": "GAA",
+   "vs": "Goals per 60 minutes, so shot volume counts against the goalie."
+  },
+  {
+   "slug": "saves-and-shots-against",
+   "name": "Saves and shots against",
+   "abbr": "SA",
+   "vs": "The counts SV% is built from."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Why do some sites show .915 and others 91.5%?",
+   "a": "They're the same number in two formats. Hockey-Reference prints save percentage as a three-digit decimal, while some tables, including the live one on this page, show it as a percentage. The NHL's own stats feed stores the raw decimal, 0.91233 for Andrei Vasilevskiy's season last year."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Stats glossary (Sv%, Sv, SA, EV Sv%, PP Sv%, GAA)",
+   "publisher": "NHL",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "formula, 1955-56 start, posts and crossbars as missed shots, strength splits since 1997-98, PP Sv% lower because of better shots"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "SV% = saves ÷ shots against; SV = SA − GA"
+  },
+  {
+   "label": "2025-26 NHL goalie stats",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leagues/NHL_2026_goalies.html",
+   "note": "SV% and GSAA columns"
+  },
+  {
+   "label": "Goalie summary, saves by strength, and per-game reports, 2024-25 and 2025-26",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/goalie/summary?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "every league, team and goalie save percentage on this page; season totals back to 1983-84"
+  },
+  {
+   "label": "Team summary and skater realtime reports, 2025-26",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/summary?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "team goals against, empty-net goals, posts and crossbars"
+  },
+  {
+   "label": "2025-26 goalie file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "expected goals faced and GSAx"
+  },
+  {
+   "label": "Accounting for Rink Effects in the National Hockey League's Real Time Scoring System",
+   "publisher": "Michael Schuckers and Brian Macdonald, arXiv 1412.1035 (2014)",
+   "url": "https://arxiv.org/abs/1412.1035",
+   "note": "shot counts by rink, 2007-08 to 2012-13"
+  }
+ ],
+ "method": "League, team and goalie save percentages are Wes & Woodward's calculations from the NHL stats API (goalie summary, saves-by-strength and per-game goalie reports, team summary and skater realtime reports), downloaded October 9, 2026: save percentage is saves ÷ shots against summed over goalies, team figures sum each team's goalies game by game, rankings use the 51 goalies with 30+ games played, and the year-to-year correlation uses the 35 goalies with 30+ games in both 2024-25 and 2025-26. Goals saved above average is (goalie SV% − league SV%) × shots against. League save percentage by season comes from the same API back to 1983-84. GSAx and expected goals come from MoneyPuck's 2025-26 goalie file (all situations), downloaded the same day; MoneyPuck's own shots-on-goal tally (72,520) lands within 10 of the NHL's 72,530, and its expected goals are built on unblocked attempts. The Red Wings section rebuilds nightly from the NHL's club stats and MoneyPuck."
+}

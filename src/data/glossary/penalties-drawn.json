@@ -1,0 +1,260 @@
+{
+ "slug": "penalties-drawn",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Penalties drawn",
+  "short": "penalties drawn",
+  "abbr": "Pen Drawn",
+  "aliases": [
+   "Pen Drawn",
+   "penalties drawn",
+   "drawn penalties",
+   "net penalties",
+   "penalty differential",
+   "Net Pen"
+  ],
+  "category": "Skater",
+  "plural": true
+ },
+ "keywords": {
+  "primary": "penalties drawn in hockey",
+  "supporting": [],
+  "source": "No measured search volume: stat_themes.json lists penalties-drawn as status no_volume with 0 candidates, so the primary is the natural phrase 'penalties drawn in hockey', 2026-10-09"
+ },
+ "seo": {
+  "title": "Penalties Drawn in Hockey and Why They're Worth Goals",
+  "description": "Penalties drawn in hockey are the calls a player earns from opponents, most of them power plays. How they're tracked, what they're worth, and Detroit's leaders.",
+  "h1": "Penalties Drawn in Hockey (Pen Drawn) and Net Penalties"
+ },
+ "hero": {
+  "definition": "Penalties drawn in hockey are the penalties called on opponents because of a player, the hooks, trips and holds he forces out of the other team. Most of them hand his team a power play. Subtract the penalties he takes and you get net penalties, or penalty differential, a small but real piece of what a player's worth.",
+  "dek": "It's the one skill on the ice that shows up on the other team's stat line. Connor McDavid drew 56 penalties last season, and Detroit finished second in the league in penalty differential."
+ },
+ "facts": [
+  {
+   "label": "NHL abbreviation",
+   "value": "Pen Drawn",
+   "sub": "net penalties = drawn minus taken"
+  },
+  {
+   "label": "Tracked since",
+   "value": "2009-10",
+   "sub": "first season in the NHL's records"
+  },
+  {
+   "label": "Worth",
+   "value": "0.17",
+   "sub": "net goals per penalty, WAR-On-Ice's average"
+  },
+  {
+   "label": "League total",
+   "value": "9,692",
+   "sub": "penalties drawn by the 32 teams, 2025-26"
+  },
+  {
+   "label": "Most, 2025-26",
+   "value": "56",
+   "sub": "Connor McDavid, Edmonton"
+  },
+  {
+   "label": "Median forward",
+   "value": "15",
+   "sub": "327 forwards with 60+ games, 2025-26"
+  },
+  {
+   "label": "Year to year",
+   "value": "0.73",
+   "sub": "correlation of drawn per 60, 379 skaters"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "+44",
+   "sub": "net penalties, 2nd of 32 teams"
+  }
+ ],
+ "origin": [
+  "The NHL started publishing penalties drawn with the 2009-10 season, alongside penalties taken and net penalties, and that's where its database begins. Los Angeles's Dustin Brown led that first season with 75. The raw material is the league's play-by-play feed, which tags every penalty with the player who committed it and the player who drew it, so it's one of the few public stats built from a referee's decision about two players at once, the one who broke the rule and the one he broke it against.",
+  "The case for caring came from the WAR models. Evolving-Hockey traces its method to the penalty component of WAR-On-Ice's model, where A.C. Thomas and his co-authors worked out that a penalty is worth about 0.17 net goals on average, based on how much more often teams score with the extra man. As the Younggrens put it in their own version, first published at Hockey-Graphs in January 2019, \"taking penalties is a bad thing and drawing penalties is a good thing.\"",
+  "Their version prices each penalty by the strength state it creates. A minor drawn at five-on-five is worth 0.182 goals, and one that turns a five-on-four into a five-on-three is worth more. Penalties drawn and penalties taken are separate components of Evolving-Hockey's WAR, and MoneyPuck's skater files carry the drawn count too."
+ ],
+ "calculation": {
+  "intro": [
+   "The NHL credits each penalty drawn to the opponent named as drawing it in the play-by-play. The count includes every penalty type in every situation, and the per-60 version divides by the player's ice time. These are the inputs:"
+  ],
+  "inputs": [
+   "Every penalty called on an opponent, and the player who drew it",
+   "Every penalty the player takes himself",
+   "Ice time, for the per-60 rates",
+   "The strength state each penalty creates, for goal values"
+  ],
+  "formulas": [
+   {
+    "label": "Net",
+    "expr": "net penalties = penalties drawn − penalties taken"
+   },
+   {
+    "label": "Rate",
+    "expr": "drawn/60 = penalties drawn ÷ ice time × 60"
+   },
+   {
+    "label": "Rough value",
+    "expr": "goals ≈ net penalties × 0.17"
+   },
+   {
+    "label": "Evolving-Hockey",
+    "expr": "each penalty valued by the change in scoring rates its strength state creates"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A winger beats a defenseman wide and gets hooked, then draws a trip on the forecheck. In the third he takes a slashing minor himself. He's drawn two and taken one, a net of plus-one, worth about 0.17 goals at the old WAR-On-Ice average. His team got two power plays out of him and gave one back.",
+  "after": [
+   "Not every penalty has someone on the other side to credit. Teams drew 9,692 penalties last season and individual skaters were credited with 8,673 of them, so 1,019 never landed on a skater's line."
+  ],
+  "variants": [
+   {
+    "term": "Pen Drawn",
+    "def": "Penalties drawn by the player. All penalty types, all situations."
+   },
+   {
+    "term": "Pen Taken",
+    "def": "Penalties the player takes, counted the same way.",
+    "slug": "penalty-minutes"
+   },
+   {
+    "term": "Net Pen",
+    "def": "Drawn minus taken. The NHL's glossary notes that forwards tend to post better numbers than defensemen."
+   },
+   {
+    "term": "Drawn/60",
+    "def": "Penalties drawn per 60 minutes of ice time, which evens out playing time.",
+    "slug": "per-60-rates"
+   },
+   {
+    "term": "Draw",
+    "def": "Evolving-Hockey's WAR component for penalties drawn, in goals above replacement.",
+    "slug": "wins-above-replacement"
+   }
+  ]
+ },
+ "meaning": [
+  "Penalties drawn measures a skill that rarely shows up anywhere else on a stat line, getting the other team to break the rules. Among the 327 forwards who played at least 60 games last season, the median drew 15. Defensemen drew fewer, a median of 10 among the 161 regulars, and they take more than they draw (the median defenseman drew 0.39 per 60 minutes and took 0.63), which is why the NHL's glossary says forwards tend to post better net numbers.",
+  "Connor McDavid lapped the league. He drew 56, 18 more than the Islanders' Matthew Schaefer in second, and his net of plus-34 was 14 better than anyone else's. On a rate basis Philadelphia's Garnet Hathaway led all regulars, drawing more than two penalties per 60 minutes in a depth role that averaged about 10 minutes a night, which shows how much a rate can reward a player the box score barely notices.",
+  "Detroit drew 312 penalties, 10th in the league, and took only 268, so its net of plus-44 finished second, one behind Minnesota. <a href=\"/players/lucas-raymond/\">Lucas Raymond</a> led the Wings with 26 drawn, with <a href=\"/players/dylan-larkin/\">Dylan Larkin</a> and <a href=\"/players/j-t-compher/\">J.T. Compher</a> close behind. At WAR-On-Ice's rough 0.17 goals a penalty, the team's plus-44 was worth about seven and a half goals.",
+  "Is drawing penalties a repeatable skill? The numbers say it mostly is. Among the 379 skaters who played 60 games in each of the last two seasons, penalties drawn per 60 minutes correlated at 0.73 from one season to the next, close to penalties taken per 60 (0.79) and far above plus-minus (0.35). A season's leaderboard is a fair guide to the next one, which can't be said for every stat on this site."
+ ],
+ "uses": [
+  {
+   "title": "Finding value a box score hides",
+   "html": "<a href=\"/players/emmitt-finnie/\">Emmitt Finnie</a> drew 22 penalties last season and took three, a net of plus-19 that tied for third in the league behind McDavid and Winnipeg's Gabriel Vilardi. That's about three goals at 0.17 apiece, and none of it shows up in his 30 points. You won't find it on his PIM line either, which reads six. Among forwards, only McDavid and Vilardi finished higher."
+  },
+  {
+   "title": "Reading a team's power-play balance",
+   "html": "A positive differential means more power plays than penalty kills. How many more did Detroit get? The Wings had 248 power-play opportunities and were shorthanded 210 times, a gap of 38 man advantages over the season. For a team that scored 56 power-play goals, that's offense it didn't have to create at five-on-five. Minnesota, the only team with a bigger differential, scored 65 power-play goals."
+  },
+  {
+   "title": "Pricing a physical defenseman",
+   "html": "Defensemen tend to sit on the wrong side of the ledger, and the net number tells you by how much. <a href=\"/players/ben-chiarot/\">Ben Chiarot</a> took 31 penalties and drew 10, a minus-21 that ranked fifth-worst in the league and works out to about three and a half goals at 0.17 each. Boston's Nikita Zadorov was worst at minus-25. <a href=\"/players/moritz-seider/\">Moritz Seider</a>, who averaged the most ice time on the team, finished at minus-6, right at the median for a regular defenseman."
+  }
+ ],
+ "limits": [
+  {
+   "title": "The referee has to call it",
+   "html": "A penalty drawn only exists if an official sees it and calls it, so a player who gets held all night without a whistle gets nothing in the column. It measures what got called, and that overlaps with what happened on the ice without matching it."
+  },
+  {
+   "title": "Washed-out calls disappear",
+   "html": "If a minor is signaled and the other team scores before the whistle, Rule 15.2 says the minor isn't imposed at all. Evolving-Hockey's penalty write-up notes that the NHL doesn't record those delayed-penalty situations, so the player who drew the call gets no credit."
+  },
+  {
+   "title": "Every type counts as one",
+   "html": "The NHL's count includes all penalty types, so a drawn misconduct (which doesn't put anyone's team a man down under Rule 22.3) or a coincidental fighting major counts the same as a hook that puts his team on the power play."
+  },
+  {
+   "title": "The goal values are small",
+   "html": "The median forward finished at plus-2 net, and the whole spread from Finnie's plus-19 to Chiarot's minus-21 comes to about seven goals at 0.17 apiece. That's real, and it's small. You'd need a lot of it to outweigh what a 20-goal scorer brings."
+  }
+ ],
+ "related": [
+  {
+   "slug": "penalty-minutes",
+   "name": "Penalty minutes",
+   "abbr": "PIM",
+   "vs": "The minutes a player takes. Penalties drawn counts what he earns."
+  },
+  {
+   "slug": "power-play-goals-and-points",
+   "name": "Power-play goals and points",
+   "abbr": "PPG",
+   "vs": "Who scores on the power play a drawn penalty creates."
+  },
+  {
+   "slug": "power-play-percentage",
+   "name": "Power play percentage",
+   "abbr": "PP%",
+   "vs": "How often a team cashes in the power plays it draws."
+  },
+  {
+   "slug": "penalty-kill-percentage",
+   "name": "Penalty kill percentage",
+   "abbr": "PK%",
+   "vs": "How a team survives the penalties it takes."
+  },
+  {
+   "slug": "wins-above-replacement",
+   "name": "Wins above replacement",
+   "abbr": "WAR",
+   "vs": "Folds penalties drawn and taken into a player's total value."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does drawing a penalty count as a point?",
+   "a": "No. It doesn't touch goals, assists or points, and it isn't on the NHL's main skater summary table. The league keeps it in a separate penalties report, next to penalties taken and net penalties."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Stats glossary (Pen Drawn, Pen Taken, Net Pen, per-60 versions)",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "definitions, all types and situations, first season 2009-10, forwards post better net numbers; pulled from api.nhle.com/stats/rest/en/glossary"
+  },
+  {
+   "label": "Skater and team penalty reports, 2009-10, 2024-25 and 2025-26",
+   "publisher": "NHL",
+   "url": "https://api.nhle.com/stats/rest/en/skater/penalties?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "Brown in 2009-10; every 2025-26 drawn, taken and net figure; team drawn totals, power-play opportunities and times shorthanded"
+  },
+  {
+   "label": "Game play-by-play (sample game 2025020001)",
+   "publisher": "NHL",
+   "url": "https://api-web.nhle.com/v1/gamecenter/2025020001/play-by-play",
+   "note": "penalty events carry committedByPlayerId and drawnByPlayerId"
+  },
+  {
+   "label": "Penalty Goals: An Expanded Approach to Measuring Penalties in the NHL",
+   "publisher": "Evolving-Hockey (Josh and Luke Younggren), first published at Hockey-Graphs, January 2019",
+   "url": "https://evolving-hockey.com/?p=472",
+   "note": "WAR-On-Ice origin, Thomas's 0.17, 0.182 for a 5v5 minor, the bad-thing/good-thing quote, delayed-penalty goals not recorded"
+  },
+  {
+   "label": "Goals Above Replacement",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/goals-above-replacement/",
+   "note": "Take and Draw as separate WAR components"
+  },
+  {
+   "label": "Official Rules 2025-2026",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "Rule 15.2, a delayed minor isn't imposed when a goal is scored"
+  },
+  {
+   "label": "2025-26 regular-season skater file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "carries penaltiesDrawn per skater"
+  }
+ ],
+ "method": "League and Red Wings figures are Wes & Woodward's calculations from the NHL stats API's 2025-26 regular-season skater penalties, team penalties, team power-play and team penalty-kill reports, downloaded October 9, 2026 and saved in research/glossary-pseo/raw/. Medians use the 327 forwards and 161 defensemen with 60 or more games; per-60 leaders are limited to players with 60 or more games. The season-to-season correlations pair the 2024-25 and 2025-26 reports for the 379 skaters with 60 or more games in both. Goal values multiply net penalties by WAR-On-Ice's 0.17 average as quoted by Evolving-Hockey, a rough figure that ignores strength state."
+}

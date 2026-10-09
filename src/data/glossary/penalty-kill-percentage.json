@@ -1,0 +1,289 @@
+{
+ "slug": "penalty-kill-percentage",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Penalty kill percentage",
+  "short": "PK%",
+  "abbr": "PK%",
+  "aliases": [
+   "PK%",
+   "penalty-killing percentage",
+   "penalty kill pct",
+   "net PK%",
+   "penalty kill percentage in hockey"
+  ],
+  "category": "Team"
+ },
+ "keywords": {
+  "primary": "what is penalty kill percentage",
+  "supporting": [
+   "penalty kill percentage",
+   "what is penalty kill percentage in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (primary_override from 'penalty kill percentage'; Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Is Penalty Kill Percentage and How PK% Is Calculated",
+  "description": "What is penalty kill percentage? The share of opponents' power plays a team kills off. How it's calculated, what's good, and the Red Wings' live numbers.",
+  "h1": "What Is Penalty Kill Percentage (PK%) in Hockey"
+ },
+ "hero": {
+  "definition": "Penalty kill percentage (PK%) is the share of an opponent's power plays a team kills off without allowing a goal. It's the mirror image of power-play percentage, calculated as times shorthanded minus power-play goals allowed, divided by times shorthanded.",
+  "dek": "What is penalty kill percentage in hockey worth on its own? It's a conversion rate that ignores how often a team ends up short-handed, which is why Detroit's 23rd-ranked kill last season still allowed fewer power-play goals than 18 other teams."
+ },
+ "facts": [
+  {
+   "label": "Formula",
+   "value": "Kills ÷ TSH",
+   "sub": "kills = times shorthanded minus power-play goals against"
+  },
+  {
+   "label": "League average",
+   "value": "78.9%",
+   "sub": "100% minus the league's 21.1% PP%, 2025-26"
+  },
+  {
+   "label": "Best, 2025-26",
+   "value": "84.6%",
+   "sub": "Colorado, 36 goals allowed in 234 times shorthanded"
+  },
+  {
+   "label": "Worst, 2025-26",
+   "value": "71.5%",
+   "sub": "Vancouver, 65 goals allowed in 228"
+  },
+  {
+   "label": "Red Wings, 2025-26",
+   "value": "77.1%",
+   "sub": "23rd of 32, 48 goals allowed in 210"
+  },
+  {
+   "label": "Record",
+   "value": "89.6%",
+   "sub": "New Jersey, 2011-12, tracked since 1977-78"
+  },
+  {
+   "label": "Short-handed",
+   "value": "2.88",
+   "sub": "times per team per game, 2025-26"
+  },
+  {
+   "label": "Repeats at",
+   "value": "r = 0.26",
+   "sub": "PK% year to year, 310 team pairs since 2015-16"
+  }
+ ],
+ "origin": [
+  "Penalty killing has a scoring rule older than the stat that grades it. A team that took a minor used to play short-handed for the full two minutes no matter how many goals it gave up, and Jean Béliveau's three power-play goals in 44 seconds against Boston in November 1955 pushed the league to change that for the next season. Today's rulebook ends the minor with the least time left as soon as the short-handed team is scored on (Rule 16.2), so the worst a kill can do on a single minor is one goal.",
+  "The league's stats database carries kill rates for every season from 1977-78 on. New Jersey's 89.6% in 2011-12 is the best on record. League-wide kills peaked in the late 1990s and sat at 78.9% last season, which is what you'd expect once power plays started scoring more again, since every extra power-play goal is a goal some penalty kill allowed.",
+  "The definition is shared across the sport. NHL.com's glossary takes a team's shorthanded situations, subtracts the power-play goals it allowed to get the power plays it killed, and divides by the shorthanded situations, the same formula Hockey-Reference uses. The league's stats site adds a net version that credits a team for the shorthanded goals it scores."
+ ],
+ "calculation": {
+  "intro": [
+   "Every power play one team gets is a penalty kill for the other, so the inputs are the power-play inputs seen from the other bench. These are the inputs:"
+  ],
+  "inputs": [
+   "Times shorthanded, one for each man advantage an opponent gets",
+   "Power-play goals allowed while short-handed",
+   "Shorthanded goals scored, for the net version",
+   "Penalty-kill time on ice, for rate versions like goals against per 60"
+  ],
+  "formulas": [
+   {
+    "label": "Rate",
+    "expr": "PK% = (times shorthanded − PP goals allowed) ÷ times shorthanded"
+   },
+   {
+    "label": "Same thing",
+    "expr": "PK% = 1 − PP goals allowed ÷ times shorthanded"
+   },
+   {
+    "label": "Net",
+    "expr": "net PK% = (times shorthanded − PP goals allowed + shorthanded goals) ÷ times shorthanded"
+   },
+   {
+    "label": "League",
+    "expr": "league PK% = 100% − league PP%"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A team is short-handed 240 times and allows 48 power-play goals, so it kills 192 penalties and its PK% is 80.0%. Score eight shorthanded goals along the way and the net rate rises to 83.3%. Take 40 fewer penalties at the same rate and it allows 40 goals, eight fewer, with exactly the same kill rate.",
+  "after": [
+   "Across the whole league the two sides cancel. Every power-play goal is a power-play goal against somebody, so last season's league-wide PP% of 21.1% and PK% of 78.9% sum to exactly 100, as they do every year. A team's own pair doesn't have to, and how far their sum lands above or below 100 is a quick read on its special teams."
+  ],
+  "variants": [
+   {
+    "term": "TSH",
+    "def": "Times shorthanded. The denominator, one for each power play an opponent gets."
+   },
+   {
+    "term": "PPGA",
+    "def": "Power-play goals against. The goals a kill gives up."
+   },
+   {
+    "term": "Net PK%",
+    "def": "Kills plus shorthanded goals, over times shorthanded. The NHL's stats site publishes it beside the gross rate."
+   },
+   {
+    "term": "SHG",
+    "def": "Shorthanded goals, scored by the team that's killing the penalty.",
+    "slug": "shorthanded-goals-and-points"
+   },
+   {
+    "term": "4v5 xGA/60",
+    "def": "Expected goals allowed per 60 minutes at four-on-five, the chances a kill gives up whether or not they go in.",
+    "slug": "power-play-unit"
+   },
+   {
+    "term": "PP%",
+    "def": "The same penalties from the other bench. Power-play goals over opportunities.",
+    "slug": "power-play-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "PK% measures how often a team survives a penalty. Last season's median kill was 79.6%, Colorado led at 84.6%, and Vancouver finished last at 71.5%. Over an average team's 236 times shorthanded, the gap between first and last comes to about 31 goals, the same order of swing you get between the league's best and worst power plays.",
+  "Detroit killed 77.1% of its penalties last season, 23rd in the league and a big step up from 70.1% (dead last) the year before. Discipline did more for the Wings than the kill did. They were short-handed only 210 times, the third-fewest in the league, so their 48 power-play goals against tied for the 13th-fewest. MoneyPuck had them allowing chances at one of the league's highest rates (28th in four-on-five expected goals against, adjusted for ice time), and the goaltending stopped about what an average goalie would have.",
+  "Is a good kill a repeatable skill? It's less repeatable than a good power play. Over the last ten seasons a team's PK% correlated at 0.26 with its rate the next season, against 0.37 for PP%, so a kill that ranked near the top one year can land in the middle the next without anyone changing the system. Detroit's jump from last to 23rd is the kind of swing that number allows. It's a reason to read one season of PK% as a record of what happened, and to check the chances underneath it before calling a kill fixed or broken."
+ ],
+ "uses": [
+  {
+   "title": "Pairing the rate with discipline",
+   "html": "Because PK% ignores the number of penalties a team takes, analysts read it next to times shorthanded per game. Boston was short-handed 278 times last season, the most in the league, and allowed 64 power-play goals with a 77.0% kill. Detroit killed penalties at almost exactly the same rate and allowed 48. The 16-goal gap was penalties taken. If you're comparing two kills, you need both numbers."
+  },
+  {
+   "title": "Checking the chances behind the kill",
+   "html": "Four-on-five expected goals against show you whether a kill is limiting chances or leaning on its goalie, and the link is looser than it is on the power play. Across the league last season, PK% and four-on-five expected goals against per 60 correlated at minus-0.46, against 0.72 for the power-play pair. Chicago is the clearest goalie case. The Blackhawks finished last in five-on-five expected-goal share, killed penalties better than everyone but Colorado, and allowed 36 goals at four-on-five on 46.5 expected."
+  },
+  {
+   "title": "Crediting shorthanded goals",
+   "html": "Net PK% adds back the shorthanded goals a kill scores. Carolina scored 12, the most in the league, and its 80.5% kill became 85.7% net. Buffalo's 11 gave it the best net rate in the league. Detroit scored three, so its kill barely moved."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night from MoneyPuck's four-on-five numbers. The nightly feed doesn't carry the NHL's penalty-kill percentage yet, so these tiles show the goals and chances behind it.",
+  "tiles": [
+   {
+    "tile": "pk_xga60"
+   },
+   {
+    "label": "4v5 goals against",
+    "source": "team",
+    "path": "situations.4on5.goalsAgainst",
+    "format": "int",
+    "sub": "MoneyPuck, four-on-five"
+   },
+   {
+    "label": "4v5 expected goals against",
+    "source": "team",
+    "path": "situations.4on5.xGoalsAgainst",
+    "format": "num2",
+    "sub": "MoneyPuck, four-on-five"
+   }
+  ],
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. A team is short-handed about three times a night, so one bad game can still drop its kill rate by several points this early."
+ },
+ "limits": [
+  {
+   "title": "It ignores volume",
+   "html": "The percentage can't see the penalties that put a team short-handed in the first place, and that's the half of penalty killing that discipline controls. Times shorthanded per game repeated better from one season to the next (a 0.51 correlation over the last ten years) than PK% did."
+  },
+  {
+   "title": "It leans on the goalie",
+   "html": "A kill's goaltending decides a lot of its rate, and the goalie isn't the one running the scheme. Ottawa allowed the fewest expected goals for its time at four-on-five last season and still finished 29th in PK%, because it gave up 48 goals on 37.3 expected. The skaters did their part."
+  },
+  {
+   "title": "Shorthanded goals don't count",
+   "html": "Gross PK% gives a kill no credit for the shorthanded goals it scores, which is why the NHL publishes a net version beside it."
+  },
+  {
+   "title": "The sample is small",
+   "html": "A team is short-handed about 235 times a season, so two goals either way moves its kill by almost a full percentage point, enough to jump a few places in the middle of the league."
+  }
+ ],
+ "related": [
+  {
+   "slug": "power-play-percentage",
+   "name": "Power play percentage",
+   "abbr": "PP%",
+   "vs": "The same penalties from the side with the extra skater."
+  },
+  {
+   "slug": "shorthanded-goals-and-points",
+   "name": "Shorthanded goals and points",
+   "abbr": "SHG",
+   "vs": "The goals a kill scores, which net PK% credits."
+  },
+  {
+   "slug": "penalty-minutes",
+   "name": "Penalty minutes",
+   "abbr": "PIM",
+   "vs": "The penalties that set up every kill."
+  },
+  {
+   "slug": "power-play-unit",
+   "name": "Power play and penalty kill (5v4, 4v5)",
+   "abbr": "4v5",
+   "vs": "Per-60 rates on the kill, with expected goals against."
+  },
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "The goalie's share of a kill's success."
+  },
+  {
+   "slug": "goals-saved-above-expected",
+   "name": "Goals saved above expected",
+   "abbr": "GSAx",
+   "vs": "Separates the goalie from the penalty killers in front of him."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Hockey glossary",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/info/hockey-glossary",
+   "note": "penalty-killing percentage, power plays killed over shorthanded situations"
+  },
+  {
+   "label": "This Date in NHL History, Nov. 5",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/news/this-date-in-nhl-history-november-5-283308796",
+   "note": "Béliveau's three power-play goals in 44 seconds in 1955 and the 1956-57 rule change"
+  },
+  {
+   "label": "Official Rules 2025-2026",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "Rule 16.2, a goal against a short-handed team ends the minor with the least time left"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "PK% as (PPOA − PPA) ÷ PPOA"
+  },
+  {
+   "label": "Team penalty-kill report, 2025-26 regular season",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/penaltykill?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "every team's times shorthanded, goals allowed, net rate and shorthanded goals"
+  },
+  {
+   "label": "Team penalty-kill and power-play reports, every regular season",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/penaltykill?isAggregate=false&isGame=false&limit=-1&cayenneExp=gameTypeId=2%20and%20seasonId%3E=19171918%20and%20seasonId%3C=20252026",
+   "note": "records since 1977-78, league rates by season and year-to-year repeatability"
+  },
+  {
+   "label": "2025-26 regular-season team file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "four-on-five goals, expected goals against and ice time; five-on-five expected-goal share"
+  }
+ ],
+ "method": "Penalty-kill figures are Wes & Woodward's calculations from the NHL stats API team penalty-kill report for 2025-26 (downloaded October 9, 2026, saved as raw/nhl_team_penaltykill_20252026_pkpct_page.json) and for every regular season through 2025-26 (raw/nhl_team_penaltykill_allseasons_to_20252026.json; the power-play comparison uses raw/nhl_team_powerplay_allseasons_to_20252026.json). PK% is 1 − power-play goals allowed ÷ times shorthanded; net PK% is (times shorthanded − power-play goals allowed + shorthanded goals) ÷ times shorthanded, which matches the API's net column for all 32 teams; records use team seasons of 48+ games from 1977-78 on; repeatability is the Pearson correlation of a franchise's figure with its next season's, 310 pairs from 2015-16 through 2025-26. Four-on-five rates are per 60 minutes from MoneyPuck's 2025-26 team file (raw/mp_teams_2025.csv, downloaded October 9, 2026). The Red Wings section rebuilds nightly from MoneyPuck."
+}

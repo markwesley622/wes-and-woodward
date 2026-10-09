@@ -1,0 +1,263 @@
+{
+ "slug": "hits",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Hits",
+  "short": "hits",
+  "abbr": "HIT",
+  "aliases": [
+   "HIT",
+   "hits",
+   "body checks",
+   "hits for",
+   "hits against",
+   "HF",
+   "HA"
+  ],
+  "category": "Skater",
+  "plural": true
+ },
+ "keywords": {
+  "primary": "what does hits mean in hockey",
+  "supporting": [
+   "hit in hockey",
+   "what is hits in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Does Hits Mean in Hockey and Why the Count Varies",
+  "description": "What does hits mean in hockey? HIT counts body checks on the puck carrier. Who logs them, why rinks differ, what they tell you, and the Red Wings' 2025-26 hits.",
+  "h1": "What Does Hits Mean in Hockey? The Hit (HIT) Stat"
+ },
+ "hero": {
+  "definition": "Hits (HIT) count the body checks a player delivers on the opponent carrying the puck, as logged by the real-time scorers working each NHL game. The count is credited to the player who throws the check. Scorers in different arenas don't all count them the same way, and the team that out-hits its opponent loses more often than it wins.",
+  "dek": "What does hits mean in hockey box scores? It's the stat that looks most like effort, and analysts mostly read it backward, since every hit is thrown by the team that doesn't have the puck."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "HIT",
+   "sub": "hits for (HF) and hits against (HA)"
+  },
+  {
+   "label": "Unit",
+   "value": "Count",
+   "sub": "one per body check on the puck carrier"
+  },
+  {
+   "label": "League average",
+   "value": "20.4",
+   "sub": "hits per team per game, 2025-26"
+  },
+  {
+   "label": "Most, 2025-26",
+   "value": "2,112",
+   "sub": "N.Y. Rangers"
+  },
+  {
+   "label": "Fewest, 2025-26",
+   "value": "1,346",
+   "sub": "Chicago"
+  },
+  {
+   "label": "Player leader",
+   "value": "413",
+   "sub": "Yakov Trenin, Minnesota, 2025-26"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "1,480",
+   "sub": "29th of 32; Marco Kasper led with 186"
+  },
+  {
+   "label": "Public since",
+   "value": "2005-06",
+   "sub": "NHL realtime report (its glossary says 1997-98)"
+  }
+ ],
+ "origin": [
+  "Hits belong to the NHL's Real-Time Scoring System. Rule 36 of the rulebook puts a crew of real-time scorers at every game (three stats-entry scorers, a time-on-ice scorer and an event analyst, overseen by a scoring system manager) to \"electronically record all official statistics,\" and the league's glossary defines a hit as a body check \"delivered by a player on the opposing team's puck carrier.\" Whether a bump along the boards counts is the scorer's call, made in real time by whoever's working that building.",
+  "The league has never been comfortable with the number. ESPN's Terry Frei reported in September 2002 that the NHL had distributed hits, giveaways, takeaways and blocked shots for two seasons and was scrubbing them from player summaries. In Frei's summary of the league's reasoning, the categories \"involved subjective judgments that could vary from building to building.\" (Robert Svehla had led the league with 386 hits the season before.) They came back. The NHL's public realtime report carries hits for every team from 2005-06 on.",
+  "Twelve years later, Michael Schuckers and Brian Macdonald measured how much the building matters. Working from five-on-five data for six seasons ending in 2012-13, they estimated a separate effect for every rink and found home teams were credited with about 11% more hits than visitors once team quality and the score were accounted for. Los Angeles recorded hits at 1.30 times the league rate and the Rangers' rink at 1.27. New Jersey's logged them at 0.59."
+ ],
+ "calculation": {
+  "intro": [
+   "A hit is a count, so the math is bookkeeping. The play-by-play logs each one with the hitter, the player who got hit and where it happened, and the league's scorers logged 53,658 of them last season. Analysts work from these inputs:"
+  ],
+  "inputs": [
+   "Hits for (HF), the checks a player or team delivers",
+   "Hits against (HA), the checks a player or team absorbs",
+   "Ice time, to turn counts into rates",
+   "Home or road, since the home building's scorers log every game there"
+  ],
+  "formulas": [
+   {
+    "label": "Rate",
+    "expr": "hits/60 = hits ÷ minutes played × 60"
+   },
+   {
+    "label": "Differential",
+    "expr": "hit differential = HF − HA"
+   },
+   {
+    "label": "Share",
+    "expr": "hit share = HF ÷ (HF + HA)"
+   },
+   {
+    "label": "Road only",
+    "expr": "road hits/60 = road hits ÷ road minutes × 60"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. A winger is credited with 90 hits at home and 60 on the road in the same ice time. Nothing in the box score says whether that 30-hit gap is the way he plays in his own building or the way his home scorers count, and that's why the road number is the one to trust. It's spread across every other team's scorers.",
+  "after": [
+   "Rates per 60 minutes are the fairer comparison, since a fourth-liner playing 11 minutes and a top-pair defenseman playing 25 aren't on the same clock. A legal hit in hockey lands on the player with the puck or the one who's just lost it. Rule 56 calls a check on anyone else interference."
+  ],
+  "variants": [
+   {
+    "term": "HF",
+    "def": "Hits for, the checks a player or team delivers. Box scores just call it hits."
+   },
+   {
+    "term": "HA",
+    "def": "Hits against, or hits taken. Since a hit has to land on the puck carrier, the players who carry it most absorb the most."
+   },
+   {
+    "term": "Hits/60",
+    "def": "Hits per 60 minutes of ice time.",
+    "slug": "per-60-rates"
+   },
+   {
+    "term": "Hit differential",
+    "def": "HF minus HA, for a team or for the minutes a player is on the ice."
+   }
+  ]
+ },
+ "meaning": [
+  "Hits measure physical engagement, and mostly they measure who didn't have the puck. Garret Hohl at Hockey-Graphs ran seven-plus seasons of game-level data starting in 2007 and found the \"out-scoring team tends to be out-hit.\" Within a game, hit differential tracked goal differential about as strongly as shot differential did, only in the opposite direction. The saying Hohl cites from the analytics crowd is the obvious explanation, that \"you cannot hit when you have the puck.\"",
+  "Last season said the same thing. The team that threw more hits won 43.8% of the 1,254 games that weren't tied on hits. Teams ranged from Chicago's 1,346 hits to the Rangers' 2,112, and Detroit threw 1,480, the fourth-fewest. The league's hitting less than it used to, too. Both teams combined averaged 50.0 hits a game at the 2014-15 peak and 40.9 last season.",
+  "The individual scale runs wide. Among the 327 forwards who played 60 or more games, the median threw 66 hits, and Yakov Trenin led everyone with 413, more than six times that. Defensemen threw about as many per player and fewer per minute, since they play more. <a href=\"/players/marco-kasper/\">Marco Kasper</a> led Detroit with 186 and <a href=\"/players/ben-chiarot/\">Ben Chiarot</a> had 170. Across all 488 regulars, hits and points correlated at minus-0.25, so the league's big hitters mostly aren't its big scorers."
+ ],
+ "uses": [
+  {
+   "title": "Reading the game state",
+   "html": "Why does the team that hits more lose more often? Part of it is the score. Schuckers and Macdonald found that teams with a lead have fewer hits recorded than teams that are trailing, about 3% fewer for each goal of average lead. When you see a lopsided hit count in a box score, check the score and the shot attempts before you credit the team that threw them with controlling the game."
+  },
+  {
+   "title": "Comparing players on the road",
+   "html": "Road numbers strip out the home scorer. Last season Chicago's skaters were credited with 18.0 hits a game at home and 14.8 on the road, the biggest home bump in the league, while Detroit's split was 18.4 and 17.7. A Blackhawk's home total is the one to discount, and a Red Wing's barely needs it."
+  },
+  {
+   "title": "Spotting a role",
+   "html": "Hit rates pick out the players whose game is built on contact. Kasper threw 10.0 hits per 60 minutes last season, almost three times the median regular forward's 3.6 and the highest rate of any Wing who played 20 games. A rate like that doesn't say whether the checks won the puck back. It does say how he spends his shifts."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Arenas count differently",
+   "html": "Last season Ottawa's building logged 46.1 hits a game for both teams combined and Seattle's logged 36.8. Two seasons earlier the gap was far wider, with Toronto's building at 69.6 and Columbus's at 30.6."
+  },
+  {
+   "title": "Home teams get a bump",
+   "html": "Home teams were credited with 4.4% more hits than visitors last season, down from the 11% Schuckers and Macdonald measured. They found three rinks (New Jersey, Dallas and Toronto) that recorded home and visiting hits differently."
+  },
+  {
+   "title": "It counts checks without results",
+   "html": "A check that separates a man from the puck and one finished a second after a dump-in count the same, because the play-by-play records who hit whom and where it happened and has no field for what happened next."
+  },
+  {
+   "title": "It rewards ice time",
+   "html": "Raw totals favor players who play a lot of minutes and stayed healthy all season, which is why rates per 60 are the better comparison."
+  }
+ ],
+ "related": [
+  {
+   "slug": "blocked-shots",
+   "name": "Blocked shots",
+   "abbr": "BLK",
+   "vs": "Another real-time count, credited to the skater who gets in a shot's way."
+  },
+  {
+   "slug": "takeaways-and-giveaways",
+   "name": "Takeaways and giveaways",
+   "abbr": "TK/GV",
+   "vs": "Turnover counts from the same scorers, with even bigger rink swings."
+  },
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "Shot attempts for and against, a better read on who had the puck."
+  },
+  {
+   "slug": "per-60-rates",
+   "name": "Per-60 rates",
+   "abbr": "/60",
+   "vs": "Turns hit totals into rates per 60 minutes of ice time."
+  },
+  {
+   "slug": "penalty-minutes",
+   "name": "Penalty minutes",
+   "abbr": "PIM",
+   "vs": "Where the illegal checks end up."
+  }
+ ],
+ "faq": [
+  {
+   "q": "What's the most hits in an NHL season?",
+   "a": "Kiefer Sherwood threw 462 for Vancouver in 2024-25, the most in a season in the NHL's public realtime data, which starts in 2005-06. Trenin's 413 last season is second. Every one of those hits went through a scorer's judgment, half of them in the same home building, so a record in this stat is partly a record of who was counting."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Stats glossary (Hits)",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "definition of a hit; glossary's first season (read through the stats API's glossary endpoint)"
+  },
+  {
+   "label": "Official Rules 2025-2026, Rule 36 (Real Time Scorers) and Rule 56 (Interference)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "who records the stats; who can be checked legally"
+  },
+  {
+   "label": "NHL taking the crunch out of numbers",
+   "publisher": "Terry Frei, ESPN.com, September 24, 2002",
+   "url": "https://www.espn.com/nhl/columns/frei_terry/1435985.html",
+   "note": "the 2002 decision to drop hits, giveaways, takeaways and blocks; 2001-02 leaders"
+  },
+  {
+   "label": "Accounting for Rink Effects in the National Hockey League's Real Time Scoring System",
+   "publisher": "Michael Schuckers and Brian Macdonald, arXiv 1412.1035, 2014",
+   "url": "https://arxiv.org/abs/1412.1035",
+   "note": "rink and home effects on hits, 2007-08 through 2012-13; score effect on hits"
+  },
+  {
+   "label": "The Usefulness (or lack thereof) of Hit Totals",
+   "publisher": "Garret Hohl, Hockey-Graphs, February 9, 2015",
+   "url": "https://hockey-graphs.com/2015/02/09/the-usefulness-or-lack-thereof-of-hit-totals/",
+   "note": "out-scoring teams get out-hit; hits and Corsi unrelated"
+  },
+  {
+   "label": "Team realtime reports (season and game by game), 2005-06 through 2025-26; skater realtime leaders",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/realtime?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "team hits, home and road splits, arena totals, hits per game by season, single-season high"
+  },
+  {
+   "label": "Play-by-play, all 1,312 games of 2025-26",
+   "publisher": "NHL (api-web.nhle.com)",
+   "url": "https://api-web.nhle.com/v1/gamecenter/2025020001/play-by-play",
+   "note": "fields recorded for each hit; game results"
+  },
+  {
+   "label": "2025-26 regular-season skater file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "player hits, ice time and points"
+  }
+ ],
+ "method": "Team hits, home and road splits and per-arena totals come from the NHL stats API's team realtime report for the 2025-26 regular season, season totals and game by game, and the same report for 2023-24 (arena totals) and 2005-06 through 2025-26 (hits per game); game results and the out-hit record come from Wes & Woodward's pull of all 1,312 games' NHL play-by-play. Player hits, ice time and points come from MoneyPuck's 2025-26 skaters file, all situations, with regulars defined as 60 or more games (327 forwards, 161 defensemen). All downloaded October 9, 2026. Correlations are Pearson r. MoneyPuck's team hit total matches the NHL's to within one hit."
+}

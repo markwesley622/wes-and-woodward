@@ -1,0 +1,254 @@
+{
+ "slug": "on-ice-shooting-and-save-percentage",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "On-ice shooting and save percentage",
+  "short": "oiSH%/oiSV%",
+  "abbr": "oiSH%",
+  "aliases": [
+   "oiSH%",
+   "oiSV%",
+   "on-ice SH%",
+   "on-ice SV%",
+   "OSh%",
+   "OSv%",
+   "on-ice shooting percentage",
+   "on-ice save percentage"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "on-ice shooting and save percentage in hockey",
+  "supporting": [],
+  "source": "No measured search volume (stat_themes.json status no_volume, Ahrefs KE US, 2026-10-09); primary is the natural phrase for the stat"
+ },
+ "seo": {
+  "title": "On-Ice Shooting and Save Percentage in Hockey Explained",
+  "description": "On-ice shooting and save percentage in hockey are a team's SH% and SV% with one skater on the ice. How they work, how much is luck, and Detroit's 2025-26.",
+  "h1": "On-Ice Shooting and Save Percentage in Hockey (oiSH%, oiSV%)"
+ },
+ "hero": {
+  "definition": "On-ice shooting and save percentage in hockey are the shooting (oiSH%) and save (oiSV%) percentages of a player's team while he's on the ice. Both swing with luck year over year, and their sum is PDO. They're where you look first when a skater's goals and shots tell different stories.",
+  "dek": "A skater takes a fraction of the shots and makes none of the saves that go into his on-ice percentages. That's why they bounce around so much, and why you can't read much into one season of them."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "oiSH%, oiSV%",
+   "sub": "OSh% and OSv% at War-on-Ice"
+  },
+  {
+   "label": "League 5v5 SH%",
+   "value": "9.51%",
+   "sub": "all 32 teams' shots on goal, 2025-26"
+  },
+  {
+   "label": "League 5v5 SV%",
+   "value": "90.49%",
+   "sub": "the mirror image, by construction"
+  },
+  {
+   "label": "Forward spread",
+   "value": "7.0-12.1%",
+   "sub": "oiSH%, 10th to 90th percentile, 385 forwards"
+  },
+  {
+   "label": "Repeats, oiSH%",
+   "value": "r = 0.35",
+   "sub": "forwards, 2024-25 to 2025-26"
+  },
+  {
+   "label": "Repeats, oiSV%",
+   "value": "r = 0.06",
+   "sub": "the same 324 forwards"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "8.06%",
+   "sub": "5v5 team shooting, 30th of 32"
+  },
+  {
+   "label": "This site uses",
+   "value": "MoneyPuck",
+   "sub": "five-on-five goals and shots on goal"
+  }
+ ],
+ "origin": [
+  "On-ice percentages are a by-product of the shift data. Evolving-Hockey's glossary dates on-ice stats to 2007, when the NHL started logging events and shifts in enough detail to show who was on the ice for every shot. Once analysts could split a team's shots and goals by the skaters on the ice, the two percentages fell out of the arithmetic, and they've been on the public stats sites in one form or another ever since.",
+  "Their most famous use came as a pair. PDO, the sum of on-ice shooting and save percentage, came out of the Irreverent Oilers blog, according to War-on-Ice's glossary, which wrote the parts as OSh% and OSv% and noted that league-average PDO is 100 by construction. The argument that followed was over how much of either number a skater controls.",
+  "Hockey-Graphs' Garret Hohl took the save-percentage side in 2014. He lined up 575 samples of a defenseman's relative save percentage against the same number over the next two seasons and found that the first explained 2.6% of the second. The tenth of defensemen with the worst two-year impact had none on average over the next two, and the best tenth kept less than a fifth of theirs. His verdict was blunt. Defensemen don't have substantial, sustainable control over save percentage.",
+  "Hockey-Reference lists the pair as oiSH% and oiSV% in its skater tables, Natural Stat Trick and Evolving-Hockey publish them, and the NHL's own stats site carries on-ice shooting percentage in its puck-possession report."
+ ],
+ "calculation": {
+  "intro": [
+   "Both numbers are ordinary shooting and save percentages, restricted to the seconds a given skater was on the ice. Most analysis uses five-on-five, because the power play inflates shooting percentage (teams shot about 50% better at five-on-four last season) and the penalty kill drags save percentage down. The inputs:"
+  ],
+  "inputs": [
+   "Goals his team scored while he was on the ice",
+   "Shots on goal his team took while he was on the ice, goals included",
+   "Goals his team allowed while he was on the ice",
+   "Shots on goal his team allowed while he was on the ice, goals included",
+   "The game state, usually five-on-five"
+  ],
+  "formulas": [
+   {
+    "label": "On-ice shooting",
+    "expr": "oiSH% = on-ice goals for ÷ on-ice shots on goal for"
+   },
+   {
+    "label": "On-ice saves",
+    "expr": "oiSV% = 1 − (on-ice goals against ÷ on-ice shots on goal against)"
+   },
+   {
+    "label": "PDO",
+    "expr": "PDO = oiSH% + oiSV% (100 is average)"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. A forward is on the ice for 400 shots on goal for and 400 against, with 36 goals at each end. His oiSH% is 9.0% and his oiSV% is 91.0%, so his PDO is exactly 100 and his goal differential is even. Give him eight more goals on the same shots and his oiSH% jumps to 11.0%, with nothing about his shot share changed. He'd look like a much better player. He wouldn't be one.",
+  "after": [
+   "Two details trip people up. Shots on goal include goals, and blocked and missed attempts don't figure in at all. An on-ice number belongs to everyone who was out there, too, so a defenseman's oiSH% includes every shot his forwards took with him on the ice, and a forward's oiSV% is his goalie's save percentage during his shifts."
+  ],
+  "variants": [
+   {
+    "term": "oiSH%",
+    "def": "On-ice shooting percentage. His team's goals per shot on goal while he's on the ice."
+   },
+   {
+    "term": "oiSV%",
+    "def": "On-ice save percentage. His team's save percentage while he's on the ice."
+   },
+   {
+    "term": "PDO",
+    "def": "The sum of the two. 100 is league average by construction.",
+    "slug": "pdo"
+   },
+   {
+    "term": "SH%",
+    "def": "Individual shooting percentage. Only the player's own shots, with no teammates involved.",
+    "slug": "shooting-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "The league sets the baseline. At five-on-five last season, teams scored on 9.51% of their shots on goal, so goalies stopped 90.49%, and for the league as a whole the two add to exactly 100, which makes every player's on-ice numbers a measure of how far his shifts strayed from those two marks.",
+  "The spread is wider than it looks. Among the 385 forwards who played at least 500 five-on-five minutes, the median oiSH% was 9.52%, and the middle 80% of them landed between 7.0% and 12.1%. Utah shot 4.47% with Brandon Tanev on the ice, and Montreal shot 17.26% with Alex Newhook. On-ice save percentage had a narrower spread, which is what you'd expect from a number the goalie mostly owns.",
+  "Detroit lived at the low end of the shooting scale. The Wings shot 8.06% as a team at five-on-five, 30th in the league, and only Calgary and New Jersey were worse. Their save percentage behind it was 90.48%, 17th and a hair under the league rate. Among Detroit's skaters with 900 five-on-five minutes, <a href=\"/players/lucas-raymond/\">Lucas Raymond</a> was on the ice for the best shooting at 10.23% and <a href=\"/players/marco-kasper/\">Marco Kasper</a> for the worst at 5.91%.",
+  "Why not take the numbers at face value? Because they don't repeat. Among the 324 forwards with 500 five-on-five minutes in each of the last two seasons, oiSH% correlated at 0.35 with the following season's and oiSV% at 0.06, next to 0.64 for shot-attempt share. For the 177 defensemen who qualified, the two figures were 0.16 and 0.04. A forward has some say over how well his line finishes. Nobody on the ice but the goalie has much say over the saves, and if you're grading a skater on his oiSV%, you're mostly grading his goalie."
+ ],
+ "uses": [
+  {
+   "title": "Finding the luck in a goal differential",
+   "html": "Kasper is the cleanest case on the roster. Detroit had 50.3% of the expected goals with him on the ice at five-on-five last season and 38.2% of the actual goals. His oiSV% was 90.41%, right at the league rate, so the gap came from the other end. The Wings scored on 26 of 440 shots with him out there. At the league's 9.51%, the same shots would've produced about 42 goals. Nearly all of the gap was finishing."
+  },
+  {
+   "title": "Separating a defenseman from his goalie",
+   "html": "Detroit's goalies stopped 93.77% of the shots with <a href=\"/players/jacob-bernard-docker/\">Jacob Bernard-Docker</a> on the ice and 88.49% with <a href=\"/players/axel-sandin-pellikka/\">Axel Sandin-Pellikka</a> out there. Some of that was real, since the Wings allowed 2.83 expected goals per 60 with Sandin-Pellikka and 2.39 with Bernard-Docker. The gap in actual goals against was three times as wide (3.07 per 60 to 1.73), and Hohl's research says you should bet on the save percentages moving toward each other."
+  },
+  {
+   "title": "Flagging regression",
+   "html": "Do the extremes hold up? Take the ten forwards with the highest oiSH% two seasons ago who played 500 five-on-five minutes in both years. They averaged 12.87% that season and 10.75% the next. The ten lowest climbed to 8.72% from 5.19%. The league rate rose by about half a point in between, which explains a sliver of the climb at the bottom and none of the drop at the top."
+  }
+ ],
+ "limits": [
+  {
+   "title": "It belongs to five skaters and a goalie",
+   "html": "A player's on-ice percentages are shared with everyone who was out there with him, and the goalie's share of the save percentage dwarfs anyone's. Credit or blame for a single skater needs a model that splits the ice time, like RAPM."
+  },
+  {
+   "title": "Shot quality hides inside it",
+   "html": "A line that takes its shots from the slot should shoot better than one that fires from the point, and on-ice shooting percentage can't tell the difference. If you compare goals with expected goals on the ice, you can separate the quality of the chances from the finishing."
+  },
+  {
+   "title": "The samples are small",
+   "html": "Detroit's eight forwards with 900 five-on-five minutes were each on the ice for 440 to 604 of the team's shots on goal. With 440 shots, every goal moves Kasper's oiSH% by almost a quarter of a point, so two or three bounces can turn a league-average line into an outlier."
+  },
+  {
+   "title": "The game state changes the number",
+   "html": "Larkin's on-ice shooting percentage is 11.2% in Hockey-Reference's table and 8.1% in MoneyPuck's five-on-five numbers. The difference is the game state each site counts. Check which situation a site is quoting before you compare two players or two seasons, since the same skater can look like two different shooters."
+  }
+ ],
+ "related": [
+  {
+   "slug": "pdo",
+   "name": "PDO",
+   "abbr": "PDO",
+   "vs": "The two percentages added together. 100 is average."
+  },
+  {
+   "slug": "shooting-percentage",
+   "name": "Shooting percentage",
+   "abbr": "SH%",
+   "vs": "A player's own goals per shot. oiSH% counts his whole line's."
+  },
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "The goalie's number. oiSV% is the same rate during one skater's shifts."
+  },
+  {
+   "slug": "goals-for-percentage",
+   "name": "Goals for percentage",
+   "abbr": "GF%",
+   "vs": "The on-ice goal share. On-ice percentages explain why it drifts from xG."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "The chances a line created. oiSH% is how many of them it buried."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Do empty-net goals count in on-ice percentages?",
+   "a": "Not at five-on-five. Natural Stat Trick defines five-on-five as five skaters and a goalie on each side, so pulling the goalie moves the play into another game state. All-situations numbers include them, which is one more reason to check the game state first."
+  }
+ ],
+ "sources": [
+  {
+   "label": "General Terms",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/general-terms/",
+   "note": "on-ice stats date to the NHL's 2007 event and shift tracking"
+  },
+  {
+   "label": "Annotated Glossary",
+   "publisher": "War-on-Ice blog, November 26, 2015",
+   "url": "http://blog.war-on-ice.com/annotated-glossary/",
+   "note": "OSh%, OSv%, PDO = their sum, 100 by construction, Irreverent Oilers origin"
+  },
+  {
+   "label": "Defensemen still have no substantial and sustainable control over save percentage",
+   "publisher": "Hockey-Graphs (Garret Hohl), July 7, 2014",
+   "url": "https://hockey-graphs.com/2014/07/07/defensemen-still-have-no-sustainable-control-over-save-percentage/",
+   "note": "575 samples, 2.6% explained, regression of the extreme tenths"
+  },
+  {
+   "label": "Skater Advanced Statistics, 2025-26",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leagues/NHL_2026_skaters-advanced.html",
+   "note": "oiSH% and oiSV% definitions; Larkin's 11.2%"
+  },
+  {
+   "label": "Glossary, player statistics (archived January 9, 2025)",
+   "publisher": "Natural Stat Trick, via the Internet Archive",
+   "url": "https://web.archive.org/web/20250109011312/https://www.naturalstattrick.com/glossary.php?players",
+   "note": "on-ice SH%, SV% and PDO formulas; five-on-five definition"
+  },
+  {
+   "label": "Skater puck possessions report, 2025-26",
+   "publisher": "NHL.com stats",
+   "url": "https://api.nhle.com/stats/rest/en/skater/puckPossessions?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "carries on-ice shooting percentage"
+  },
+  {
+   "label": "2024-25 and 2025-26 regular-season team and skater files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league and Red Wings figure on this page"
+  }
+ ],
+ "method": "League and Red Wings figures are Wes & Woodward's calculations from MoneyPuck's regular-season files: 2025-26 team and skater files downloaded October 9, 2026, and the 2024-25 skater and team files downloaded September 8, 2026 for this site's research. oiSH% is on-ice goals for ÷ on-ice shots on goal for and oiSV% is 1 − goals against ÷ shots on goal against, both at five-on-five; samples are skaters with at least 500 five-on-five minutes (in both seasons for the year-to-year correlations, which are Pearson r). Expected-goal shares and rates use MoneyPuck's on-ice expected goals at five-on-five."
+}

@@ -1,0 +1,271 @@
+{
+ "slug": "score-adjusted-stats",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Score-adjusted stats",
+  "short": "score adjustment",
+  "abbr": "",
+  "aliases": [
+   "score-adjusted Corsi",
+   "score-adjusted Fenwick",
+   "score and venue adjusted",
+   "score-adjusted expected goals",
+   "score effects",
+   "score close"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "score-adjusted stats in hockey",
+  "supporting": [],
+  "source": "No measured search volume (stat_themes.json status no_volume, Ahrefs KE US, 2026-10-09); primary is the natural phrase for the stat"
+ },
+ "seo": {
+  "title": "Score-Adjusted Stats in Hockey and How Score Effects Work",
+  "description": "Score-adjusted stats in hockey reweight shots for the score, since trailing teams push. How the adjustment works, what it moves, and Detroit's live numbers.",
+  "h1": "Score-Adjusted Stats in Hockey"
+ },
+ "hero": {
+  "definition": "Score-adjusted stats in hockey reweight shot attempts and expected goals for the score at the moment they happened, because trailing teams push and leading teams sit back. Unadjusted, a team that leads a lot looks worse at controlling play than it is, and a team that trails a lot looks better.",
+  "dek": "Teams with a lead took less than half of the five-on-five unblocked attempts in each of the last eight seasons. Raw shot shares don't know that, and that's what score adjustment is for."
+ },
+ "facts": [
+  {
+   "label": "Adjusts for",
+   "value": "Score, venue",
+   "sub": "who's leading, and who's at home"
+  },
+  {
+   "label": "Leading by one",
+   "value": "47.1%",
+   "sub": "leader's share of 5v5 unblocked attempts, 2025-26"
+  },
+  {
+   "label": "Leading by 3+",
+   "value": "44.7%",
+   "sub": "the same share with a lead of three or more"
+  },
+  {
+   "label": "Tied, home team",
+   "value": "51.4%",
+   "sub": "home share of 5v5 unblocked attempts"
+  },
+  {
+   "label": "Standard method",
+   "value": "McCurdy",
+   "sub": "2014; used by NST and Evolving-Hockey"
+  },
+  {
+   "label": "Typical move",
+   "value": "0.44 pts",
+   "sub": "average change in a team's 5v5 Corsi share"
+  },
+  {
+   "label": "Biggest mover",
+   "value": "+1.2 pts",
+   "sub": "Colorado's 5v5 Corsi share, 56.7% to 57.9%"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "48.6%",
+   "sub": "adjusted 5v5 Corsi share, 23rd (raw 48.8%, 21st)"
+  }
+ ],
+ "origin": [
+  "Every fan has seen score effects, even without the name, because \"teams that are losing get more of the puck,\" as Micah Blake McCurdy put it, and that's why a raw shot share flatters a team that spends its nights chasing and shortchanges one that spends them protecting leads.",
+  "The first fix threw data away. Score close, pioneered by Tore Purdy (who blogged as JLikens), counted only events from the minutes when a game was within a goal in the first two periods or tied in the third. Eric Tulsky's January 2012 piece at Broad Street Hockey kept every event and weighted it by score state instead, using the minutes teams spent in each one.",
+  "McCurdy's version, first published in October 2014, is the one Natural Stat Trick and Evolving-Hockey use today. It dropped the time weights, split home from away and capped the score at three goals either way. When he split 40-game samples in half, the halves matched each other with an R² of 0.530 on his adjusted Fenwick, 0.488 on Tulsky's and 0.428 on score close. His version predicted future goals and wins best of the three, too, and score close came last on every test.",
+  "War-on-Ice built its own model for score, period and rink effects, and MoneyPuck, the source this site uses, publishes score-adjusted shot attempts and score- and venue-adjusted expected goals, with a glossary that states the goal plainly (more credit to away teams and teams with big leads)."
+ ],
+ "calculation": {
+  "intro": [
+   "McCurdy's method needs nothing but event counts. For each score state and venue, count how many events each side generated over a big sample, then pick weights that make both sides count as the average of the two. The trailing team's events get marked down and the leading team's marked up. The inputs:"
+  ],
+  "inputs": [
+   "The score when each event happened, capped at three goals either way",
+   "Whether the team that took the shot was home or away",
+   "The game state, since five-on-five, four-on-four and special teams each get their own weights",
+   "The event type, since Corsi, Fenwick, shots on goal, goals and expected goals each get their own weights"
+  ],
+  "formulas": [
+   {
+    "label": "Weight",
+    "expr": "weight × team's events = average of both teams' events in that score and venue state"
+   },
+   {
+    "label": "Adjusted count",
+    "expr": "Σ (each event × its weight)"
+   },
+   {
+    "label": "Adjusted share",
+    "expr": "adjusted CF ÷ (adjusted CF + adjusted CA)"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. Over a season, home teams leading by a goal take 1,000 five-on-five attempts and the trailing visitors take 1,100. The average is 1,050, so each home attempt in that state gets a weight of 1.05 and each away attempt 0.95. A team that sits on a lot of one-goal leads at home gets its own attempts marked up 5% and its opponents' marked down about 5%.",
+  "after": [
+   "Run the same arithmetic on MoneyPuck's 2025-26 shot data and the weights come out close to McCurdy's. With the home team up a goal at five-on-five, home teams took 7,736 unblocked attempts and visitors 8,497, which works out to weights of 1.049 and 0.955. McCurdy's numbers from 2007 to 2014 were 1.026 and 0.975, so the effect was a little stronger last season than in his sample."
+  ],
+  "variants": [
+   {
+    "term": "Score-adjusted CF%",
+    "def": "Corsi share with every attempt reweighted by score state and venue.",
+    "slug": "corsi"
+   },
+   {
+    "term": "Score-adjusted xGF%",
+    "def": "Expected-goal share reweighted the same way. MoneyPuck's fully adjusted version also discounts rebound flurries.",
+    "slug": "expected-goals"
+   },
+   {
+    "term": "Score close",
+    "def": "The older method. Only events with the game within a goal in the first two periods or tied in the third."
+   },
+   {
+    "term": "Venue adjustment",
+    "def": "The home-and-away half of the weights. Home teams take a bigger share of the attempts than visitors in the same score state."
+   }
+  ]
+ },
+ "meaning": [
+  "Score effects are big enough to see in any single season. At five-on-five in 2025-26, a team leading by one took 47.1% of the unblocked attempts, a team up two took 45.8% and a team up three or more took 44.7%. Tied games tilted toward the home side, which took 51.4%. Across the last eight seasons, teams with a lead of any size took between 44.6% and 48.9% of the unblocked attempts, every year under half.",
+  "Over a full season, it barely reorders the league. MoneyPuck's score-adjusted five-on-five Corsi share moved the average team by 0.44 points last season and no team by more than 1.25, and raw and adjusted shares correlated at 0.99. Colorado gained the most, from 56.7% to 57.9%, and Vancouver lost the most, from 46.5% to 45.2%.",
+  "Detroit barely moved. The Wings had 48.8% of the five-on-five shot attempts raw (21st) and 48.6% adjusted (23rd), and their expected-goal share went from 48.8% to 48.6%. Among their regular skaters the biggest change belonged to <a href=\"/players/axel-sandin-pellikka/\">Axel Sandin-Pellikka</a>, whose on-ice Corsi share dropped from 50.2% to 49.6% (the largest drop among the Wings with 900 five-on-five minutes).",
+  "Why bother with it, then? Because the gain grows as the sample shrinks, and McCurdy's harder test shows it. That test used five games to predict the next 35, and there his adjusted Fenwick reached an R² of 0.330, against 0.249 for Tulsky's method and 0.242 for score close. The fewer games you've got, the more a couple of lopsided scores can bend a raw number, and the more the adjustment's worth."
+ ],
+ "uses": [
+  {
+   "title": "Reading the first month",
+   "html": "Early in a season, that's where score effects do the most damage. A team that blows out two of its first five opponents spends a lot of those nights sitting on leads, and its raw share sags for reasons that have nothing to do with how well it plays. The Team page shows Detroit's expected-goal share both ways every night, and in October the adjusted number is the one you'd quote."
+  },
+  {
+   "title": "Giving good teams their credit back",
+   "html": "Which teams does the adjustment help? The ones that spend more time ahead, since raw shares shortchange them. Last season the four biggest gainers from MoneyPuck's adjustment included Carolina and Colorado, the league's two best raw possession teams, and the biggest losers included Vancouver and Toronto, two of the worst. The reordering is small, and it points the way you'd expect."
+  },
+  {
+   "title": "Comparing players on different teams",
+   "html": "A player on a team that trailed all season picks up shot attempts that score effects handed him. Among 598 skaters with 500 five-on-five minutes, adjustment moved on-ice Corsi share by 0.46 points on average, and the biggest drop, Philadelphia's Noah Juulsen, went from 45.3% to 43.7%. If you're comparing players across teams, use adjusted numbers. Evolving-Hockey score-adjusts every on-ice and relative number on its site."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night from MoneyPuck. The first two tiles are Detroit's five-on-five expected-goal share before and after MoneyPuck's score, venue and flurry adjustments, and the third is the raw shot-attempt share for comparison.",
+  "tiles": [
+   {
+    "tile": "xg_share_5v5"
+   },
+   {
+    "tile": "xg_share_5v5_adj"
+   },
+   {
+    "label": "5v5 shot-attempt share, raw",
+    "source": "team",
+    "path": "situations.5on5.corsiPct",
+    "format": "pct1",
+    "rankPath": "leagueRanks.corsiPct_5on5"
+   }
+  ],
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. McCurdy found the adjustment helps most in small samples like this one, and both shares will still swing from game to game."
+ },
+ "limits": [
+  {
+   "title": "It can't tell why a team sat back",
+   "html": "A team protecting a lead by choice and a team getting outplayed while ahead get the same markup. The weights are league averages, so a club whose style doesn't change with the score gets adjusted as if it did."
+  },
+  {
+   "title": "The sites use different weights",
+   "html": "Natural Stat Trick and Evolving-Hockey use McCurdy's method, War-on-Ice ran its own model, and MoneyPuck publishes its own adjusted columns. An adjusted share from one site won't match another's to the decimal, so compare within a source."
+  },
+  {
+   "title": "Score close is still around",
+   "html": "Plenty of older analysis was built on score close, which throws out every event outside the close-game window. McCurdy's tests had it last on repeatability and on predicting goals and wins, so if you run into a close-game number, treat it as a weaker version of the same idea."
+  },
+  {
+   "title": "It reweights shots, and the luck stays",
+   "html": "Adjustment changes how much each attempt counts. It doesn't change which ones went in, so shooting and save percentage swings come through untouched, and a team's adjusted goal share can still drift a long way from its adjusted expected-goal share."
+  }
+ ],
+ "related": [
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "The raw shot-attempt share. Score adjustment is a reweighting of it."
+  },
+  {
+   "slug": "fenwick",
+   "name": "Fenwick",
+   "abbr": "FF%",
+   "vs": "Unblocked attempts. McCurdy built and tested his adjustment on Fenwick."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "Shot quality. MoneyPuck score-adjusts it the same way."
+  },
+  {
+   "slug": "five-on-five",
+   "name": "Five-on-five",
+   "abbr": "5v5",
+   "vs": "The game state most adjusted numbers are quoted in."
+  },
+  {
+   "slug": "shot-share",
+   "name": "Shot share",
+   "abbr": "SF%",
+   "vs": "Shots on goal only. Adjustable the same way, with its own weights."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does score adjustment apply on the power play?",
+   "a": "It can. Evolving-Hockey publishes separate score and venue weights for five-on-five, four-on-four, three-on-three and the special-teams states. Natural Stat Trick's adjusted filter is five-on-five only, so its adjusted tables don't cover the power play."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Better Way to Compute Score-Adjusted Fenwick",
+   "publisher": "HockeyViz (Micah Blake McCurdy), first published October 2014 at senstats.ca",
+   "url": "https://hockeyviz.com/txt/senstats",
+   "note": "the method, 2007-2014 counts and weights, score close and Tulsky comparisons, R² tests"
+  },
+  {
+   "label": "Annotated Glossary",
+   "publisher": "War-on-Ice blog, November 26, 2015",
+   "url": "http://blog.war-on-ice.com/annotated-glossary/",
+   "note": "score close and Tore Purdy, Tulsky's January 2012 article, War-on-Ice's own model"
+  },
+  {
+   "label": "Score Adjustments",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/score-adjustments/",
+   "note": "McCurdy's method, all on-ice and relative metrics adjusted, weights by strength state and event type"
+  },
+  {
+   "label": "General Terms",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/general-terms/",
+   "note": "why trailing and home teams shoot more"
+  },
+  {
+   "label": "Glossary, team statistics (archived January 5, 2025)",
+   "publisher": "Natural Stat Trick, via the Internet Archive",
+   "url": "https://web.archive.org/web/20250105170348/https://www.naturalstattrick.com/glossary.php?teams",
+   "note": "5v5 Score & Venue Adjusted uses McCurdy's method"
+  },
+  {
+   "label": "General Advanced Stats",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "score adjusted and flurry adjusted definitions"
+  },
+  {
+   "label": "Shot data, 2018-19 through 2025-26, and 2025-26 team and skater files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every computed figure on this page"
+  }
+ ],
+ "method": "Score-state figures are Wes & Woodward's calculations from MoneyPuck's shot-by-shot files for the 2018-19 through 2025-26 regular seasons (downloaded September 8, 2026 for this site's research): five-on-five unblocked attempts with both goalies in, grouped by the score before each shot (capped at three either way) and by venue; weights follow McCurdy's rule (weight × events = average of both sides' events). Team and player raw-versus-adjusted shares use MoneyPuck's 2025-26 team and skater files, downloaded October 9, 2026: Corsi share from shot attempts and score-adjusted shot attempts, expected-goal share from xGoals and score- and venue-adjusted xGoals, five-on-five, skaters with at least 500 minutes."
+}

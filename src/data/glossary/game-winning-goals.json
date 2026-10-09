@@ -1,0 +1,229 @@
+{
+ "slug": "game-winning-goals",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Game-winning goals",
+  "short": "GWG",
+  "abbr": "GWG",
+  "aliases": [
+   "GWG",
+   "game-winner",
+   "game-winning goal",
+   "winning goal"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "game winning goal hockey",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json (no_serp_overlap: primary only, Ahrefs KE US volume), 2026-10-09"
+ },
+ "seo": {
+  "title": "Game-Winning Goal in Hockey and How the GWG Is Defined",
+  "description": "A game-winning goal in hockey put the winner one ahead of the loser's final total. How it's defined, why it doesn't repeat, and the Red Wings' leaders.",
+  "h1": "GWG and the Game-Winning Goal in Hockey"
+ },
+ "hero": {
+  "definition": "A game-winning goal in hockey (GWG) is the goal that put the winning team one ahead of the loser's final total, so the third goal of a 5-2 win. It doesn't have to come late or feel decisive at the time, and it can be scored in the first period.",
+  "dek": "Every win in regulation or overtime produces exactly one, which is why the league's game-winners last season matched, one for one, its wins that didn't go to a shootout. That makes the stat a by-product of winning, and the clutch reputation people hang on it doesn't hold up from one season to the next."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "GWG",
+   "sub": "the game-winner"
+  },
+  {
+   "label": "Per win",
+   "value": "1",
+   "sub": "every regulation or overtime win; none in a shootout"
+  },
+  {
+   "label": "Share of goals",
+   "value": "14.8%",
+   "sub": "1,193 of 8,086 goals, 2025-26"
+  },
+  {
+   "label": "Median forward",
+   "value": "2",
+   "sub": "327 forwards with 60+ games, 2025-26"
+  },
+  {
+   "label": "Leader, 2025-26",
+   "value": "12",
+   "sub": "Cole Caufield, Montreal"
+  },
+  {
+   "label": "Red Wings leader",
+   "value": "9",
+   "sub": "Dylan Larkin, tied for third in the NHL"
+  },
+  {
+   "label": "Season record",
+   "value": "16",
+   "sub": "Phil Esposito (twice) and Michel Goulet"
+  },
+  {
+   "label": "Year to year",
+   "value": "−0.02",
+   "sub": "correlation of a forward's GWG share across two seasons"
+  }
+ ],
+ "origin": [
+  "The definition is the NHL's own, and it's mechanical. NHL.com's stats glossary calls the game-winner \"the goal that gives the winning team one more goal than the opponent's eventual final score, regardless of when it occurs in a game or what the score is at the time.\" So in a 7-1 win the game-winner is the second goal, and it could've come eight minutes in, with the game still close.",
+  "The league's database carries game-winners back to its first season, and the records belong to the scorers you'd expect. Phil Esposito (twice) and Michel Goulet share the single-season mark of 16. Alex Ovechkin's 141 through last season are the most in a career, ahead of Jaromir Jagr's 135 and Gordie Howe's 121, every one of which Howe scored for Detroit. Steve Yzerman sits second on the franchise list (94), and Hockey-Reference's leaderboards carry the same counts as the league's.",
+  "Shootout wins don't produce one. Rule 84.4 gives the team that wins a shootout one extra goal in the final score, but it says the player who scores the deciding attempt \"will not be credited with a goal scored in his personal statistics,\" and the game-winner column follows suit. Last season's 1,312 wins included 119 shootouts, and the league credited 1,193 game-winners, one for each of the rest. The arithmetic is exact. Once the goals are credited, there's no judgment call in picking the game-winner, which is the stat's one real strength."
+ ],
+ "calculation": {
+  "intro": [
+   "Finding the game-winner takes the final score and the order of the winner's goals. Count the winning team's goals until they pass the loser's final total. That's the one. These are the inputs:"
+  ],
+  "inputs": [
+   "The final score, not counting the shootout's extra goal",
+   "The order of the winning team's goals",
+   "The player credited with the goal that took the winner one past the loser's final total",
+   "Whether the game went to a shootout, which means no game-winner at all"
+  ],
+  "formulas": [
+   {
+    "label": "Which goal",
+    "expr": "GWG = the winner's goal number (loser's final goals + 1)"
+   },
+   {
+    "label": "Per game",
+    "expr": "1 GWG per regulation or overtime win, 0 per shootout win"
+   },
+   {
+    "label": "League",
+    "expr": "total GWG = wins − shootout wins"
+   },
+   {
+    "label": "Share",
+    "expr": "GWG share = GWG ÷ goals"
+   }
+  ],
+  "example": "Here's a worked example, with an invented game. Detroit leads by a goal late, scores into an empty net, then gives up a goal with seconds left and wins 3-2. The loser finished with two, so the game-winner is Detroit's third goal, the empty-netter. The goal that put the Wings ahead in the second period is just a goal, even though it was the one that decided the night.",
+  "after": [
+   "Overtime goals are always game-winners, since the first goal in overtime ends the game with the winner one ahead. They made up 207 of last season's 1,193 game-winners, about 17%."
+  ],
+  "variants": [
+   {
+    "term": "OTG",
+    "def": "An overtime goal, which is always the game-winner.",
+    "slug": "overtime-goals"
+   },
+   {
+    "term": "Shootout winner",
+    "def": "The deciding shootout goal. It adds one to the team's final score but doesn't count as a goal or a GWG for the player."
+   },
+   {
+    "term": "GWG share",
+    "def": "Game-winners divided by goals, the usual way to dress the stat up as a clutch measure. The league rate was 14.8% in 2025-26."
+   }
+  ]
+ },
+ "meaning": [
+  "GWG measures how many of a player's goals landed on one particular rung of the final score in games his team won. That makes it a blend of two things, how many goals he scores and how often his team wins, and anything you'd call clutch is a small slice on top. A 40-goal scorer on a good team piles them up as a matter of course.",
+  "League-wide, 14.8% of last season's goals were game-winners. Among the 327 forwards who played at least 60 games, the median had two and the top tenth had five or more, while 42 of them had none at all. Montreal's Cole Caufield led the league with 12 and Steven Stamkos had 10. Dylan Larkin tied for third with nine, alongside Jason Robertson, Brock Nelson and Nick Schmaltz.",
+  "Larkin's nine came on 34 goals, 26% of his total and close to double the league's rate. A season earlier he'd had three game-winners on 30 goals, or 10%. Alex DeBrincat had six of his 41, almost exactly the league rate, and Patrick Kane had four of his 16.",
+  "Does that make Larkin clutch? The numbers say a player's share of game-winners doesn't carry over at all. Among the 197 regular forwards who scored at least 10 goals in each of the last two seasons, the share of a player's goals that were game-winners had a correlation of minus 0.02 across the pair, which is no relationship whatsoever. Game-winners per game repeated at 0.39, and that's only because goal scoring itself repeats."
+ ],
+ "uses": [
+  {
+   "title": "Testing a clutch reputation",
+   "html": "Divide a player's game-winners by his goals and set it against the league's 14.8%. A big gap is a fine bar argument and a poor basis for a contract, since the share didn't repeat at all for forwards across the last two seasons. Larkin's jump from 10% to 26% is the kind of swing you'd expect from noise."
+  },
+  {
+   "title": "Reading a team's wins through its scorers",
+   "html": "Because every regulation or overtime win produces exactly one game-winner, a team's GWG total is the same as its wins outside the shootout. Who was scoring when Detroit won last season? Mostly the top of the lineup, since <a href=\"/players/dylan-larkin/\">Larkin</a>'s nine, <a href=\"/players/alex-debrincat/\">DeBrincat</a>'s six and <a href=\"/players/lucas-raymond/\">Raymond</a>'s five accounted for just over half of the team's 39, and nobody else on the roster had more than Patrick Kane's four."
+  },
+  {
+   "title": "Separating overtime winners",
+   "html": "Four of Larkin's nine game-winners came in overtime, where every goal is a game-winner by definition. Strip those out and his regulation share falls to five of 30, or 17%, much closer to the league's 12.5% for goals scored in regulation. Caufield (the league leader) scored five of his 12 in overtime. Same story."
+  }
+ ],
+ "limits": [
+  {
+   "title": "The final score decides it",
+   "html": "The third goal of a 5-2 win gets the credit even if it came in the first period, and a goal that tied the game with two minutes left gets nothing. The stat can't tell a goal that mattered from one that happened to land on the right rung."
+  },
+  {
+   "title": "It doesn't repeat",
+   "html": "A forward's share of goals that were game-winners had essentially no correlation across the last two seasons among the 197 regulars who scored 10 or more in both, so last season's high share says almost nothing about next season's."
+  },
+  {
+   "title": "Winning teams hand them out",
+   "html": "A player can only score a game-winner in a win, so a good scorer on a bad team gets fewer chances. The goal he scores to make it 2-1 only stays the game-winner if his goalie keeps the other team from tying it, which means you're grading the roster around him as much as the player."
+  },
+  {
+   "title": "Shootouts don't count",
+   "html": "Detroit won two shootouts last season and nobody on the roster got a game-winner for either, even though the deciding shot won the Wings two points."
+  }
+ ],
+ "related": [
+  {
+   "slug": "goals",
+   "name": "Goals",
+   "abbr": "G",
+   "vs": "Every goal counts. GWG flags one per win."
+  },
+  {
+   "slug": "overtime-goals",
+   "name": "Overtime goals",
+   "abbr": "OTG",
+   "vs": "Always game-winners, and about one in six of them last season."
+  },
+  {
+   "slug": "regulation-wins",
+   "name": "Regulation wins",
+   "abbr": "RW",
+   "vs": "ROW, wins outside the shootout, equals a team's GWG total."
+  },
+  {
+   "slug": "goalie-record",
+   "name": "Goalie record (W-L-OTL)",
+   "abbr": "W",
+   "vs": "The goalie's side of the same wins."
+  },
+  {
+   "slug": "points",
+   "name": "Points",
+   "abbr": "PTS",
+   "vs": "Goals plus assists, with no weight for when they came."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Stats glossary",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "the official game-winning goal definition, first season tracked"
+  },
+  {
+   "label": "Official Rules 2025-26 (Rule 84)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "no personal goal credit for the shootout winner"
+  },
+  {
+   "label": "Skater and team stats, 2025-26 and all seasons",
+   "publisher": "NHL.com stats (api.nhle.com)",
+   "url": "https://www.nhl.com/stats/skaters",
+   "note": "every 2025-26 count, career and franchise game-winner totals"
+  },
+  {
+   "label": "Single-season and career leaders, game-winning goals",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leaders/goals_gw_season.html",
+   "note": "the 16-goal season record and the career list"
+  },
+  {
+   "label": "Standings, 2025-26 final",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/standings",
+   "note": "wins, shootout wins and Detroit's regulation-plus-overtime wins"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from the NHL stats API's 2025-26 regular-season skater and team summaries and final standings, downloaded October 9, 2026: forward benchmarks use the 327 forwards with 60 or more games, the year-over-year correlations use forwards with 60 or more games in both 2024-25 and 2025-26 (and, for the GWG share, at least 10 goals in both), and overtime game-winners are the overtime-goal column. Career and franchise totals are NHL stats API totals through 2025-26."
+}

@@ -1,0 +1,248 @@
+{
+ "slug": "takeaways-and-giveaways",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Takeaways and giveaways",
+  "short": "TK/GV",
+  "abbr": "TK/GV",
+  "aliases": [
+   "TK",
+   "GV",
+   "TkA",
+   "GvA",
+   "takeaways",
+   "giveaways",
+   "turnovers"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "what does gv mean in hockey",
+  "supporting": [
+   "gv meaning hockey",
+   "what does tk mean in hockey",
+   "what is tk in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Does GV Mean in Hockey and How Takeaways Work",
+  "description": "What does GV mean in hockey? Giveaways, or unforced turnovers; TK is takeaways. How they're logged, why they mislead, and the Red Wings' 2025-26 counts.",
+  "h1": "What Does GV Mean in Hockey? Takeaways (TK) and Giveaways (GV)"
+ },
+ "hero": {
+  "definition": "Takeaways (TK) count the times a player takes the puck from an opponent, and giveaways (GV) count the times he gives it up on an unforced error. Arena scorers log both by judgment, so the counts vary by rink and by season, and the players with the most giveaways are usually the ones who have the puck most.",
+  "dek": "What does GV mean in hockey stat lines? Giveaways, and the column is less damning than it looks, since Nathan MacKinnon led the league with 165 last season while scoring 127 points."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "TK · GV",
+   "sub": "the NHL's glossary writes TkA and GvA"
+  },
+  {
+   "label": "Unit",
+   "value": "Count",
+   "sub": "one per turnover, credited by the scorer"
+  },
+  {
+   "label": "Giveaways a game",
+   "value": "29.9",
+   "sub": "both teams, 2025-26 (14.6 in 2023-24)"
+  },
+  {
+   "label": "Takeaways a game",
+   "value": "9.2",
+   "sub": "both teams, 2025-26 (13.9 in 2023-24)"
+  },
+  {
+   "label": "GV leader, 2025-26",
+   "value": "165",
+   "sub": "Nathan MacKinnon, who scored 127 points"
+  },
+  {
+   "label": "TK leader, 2025-26",
+   "value": "52",
+   "sub": "Jackson LaCombe, Anaheim"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "1,189 GV",
+   "sub": "10th-fewest; 364 takeaways, 11th-fewest"
+  },
+  {
+   "label": "Season high, TK",
+   "value": "144",
+   "sub": "Pavel Datsyuk, Detroit, 2007-08"
+  }
+ ],
+ "origin": [
+  "Takeaways and giveaways come from the NHL's Real-Time Scoring System, the crew of real-time scorers that Rule 36 of the rulebook puts at every game. The league's glossary defines a giveaway as a turnover where the player \"makes an unforced error that results in giving the puck up to the opposition,\" and a takeaway as a turnover where the player \"takes the puck from the opposition.\" Whether a lost puck was forced or unforced is a call one of the real-time scorers makes as the play happens.",
+  "The league has doubted the numbers almost as long as it's kept them. ESPN's Terry Frei reported in September 2002 that the NHL was dropping takeaways, giveaways, hits and blocked shots from player summaries because, in his summary of the league's reasoning, they \"involved subjective judgments that could vary from building to building.\" The NHL's public realtime report carries both for every team from 2005-06 on.",
+  "Twelve years after Frei's column, Michael Schuckers and Brian Macdonald measured the damage for six seasons ending in 2012-13. Home teams were credited with about 68% more giveaways than visitors and about 50% more takeaways, the biggest home effects of any event they studied. Columbus recorded giveaways at about 14% of the league rate while Edmonton ran at more than twice it. The Islanders' rink logged takeaways at about twice the league rate, and Pittsburgh's logged about a fifth.",
+  "Then the counts changed shape. For most of the public era the league logged a few more giveaways than takeaways. In 2024-25 giveaways doubled and takeaways fell by about a third, and last season looked the same, 29.9 giveaways a game to 9.2 takeaways. The home bump went away with it. Home teams were credited with 44% more giveaways than visitors two seasons earlier and slightly fewer than visitors last season."
+ ],
+ "calculation": {
+  "intro": [
+   "Both are counts, one player per event. The scorer decides which column a turnover goes in, a takeaway for the player who forced it or a giveaway for the player who lost it, and last season's play-by-play carried 40,366 giveaways (1,186 of them charged to goalies) and 12,099 takeaways. These are the inputs:"
+  ],
+  "inputs": [
+   "Giveaways (GV), unforced turnovers, charged to the player who lost the puck",
+   "Takeaways (TK), forced turnovers, credited to the player who won it",
+   "Zone (MoneyPuck splits out defensive-zone giveaways)",
+   "Ice time, for per-60 rates",
+   "Home or road, since the home building's scorers make every call there"
+  ],
+  "formulas": [
+   {
+    "label": "Net",
+    "expr": "turnover differential = TK − GV"
+   },
+   {
+    "label": "Ratio",
+    "expr": "TK/GV ratio = TK ÷ GV"
+   },
+   {
+    "label": "Rate",
+    "expr": "GV/60 = giveaways ÷ minutes × 60"
+   },
+   {
+    "label": "Turnovers won (Schuckers and Macdonald)",
+    "expr": "turnovers won = team's TK + opponent's GV"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. A defenseman who plays big minutes is charged with 90 giveaways and credited with 30 takeaways, a net of minus-60. Whether that's bad depends on how often he had the puck, which the count doesn't record. His partner, who rarely touches it, has fewer chances to give it away.",
+  "after": [
+   "Defensive-zone giveaways are the ones closest to your own net, and MoneyPuck splits them out. They made up 46% of all giveaways last season. In the plain GV column, a giveaway at your own blue line and one at the other team's blue line count exactly the same."
+  ],
+  "variants": [
+   {
+    "term": "TK",
+    "def": "Takeaways. In hockey stat lines TK means a turnover the player forced."
+   },
+   {
+    "term": "GV",
+    "def": "Giveaways. GV's meaning in hockey box scores is an unforced turnover."
+   },
+   {
+    "term": "DZ GV",
+    "def": "Defensive-zone giveaways, a MoneyPuck column."
+   },
+   {
+    "term": "Turnovers",
+    "def": "A team's takeaways plus its opponent's giveaways, the combined count Schuckers and Macdonald built to get around rink effects in how the two are recorded."
+   }
+  ]
+ },
+ "meaning": [
+  "Who gives the puck away most? The players who have it most. Among the 327 forwards who played 60 or more games last season, giveaways and points correlated at 0.80, and the league's top four in giveaways (MacKinnon, Macklin Celebrini with 150, and Connor McDavid and David Pastrnak with 134 each) all scored at least 100 points. You can't give away a puck you never had.",
+  "Team totals say even less. Across the league, giveaways and five-on-five Corsi share correlated at 0.13 and takeaways at 0.28, and the spread is narrow, from Montreal's 1,094 giveaways to Utah's 1,313. Detroit sat in the bottom third of the league in both columns, and with correlations that weak, neither ranking says much about how the Wings managed the puck.",
+  "Regular forwards had a median of 55 giveaways and 19 takeaways, regular defensemen 80 and 21. On Detroit, <a href=\"/players/moritz-seider/\">Moritz Seider</a> was charged with the most giveaways (99), and <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> led in takeaways with 43, tied for ninth in the league, while giving the puck away 87 times himself.",
+  "The single-season high in the NHL's public data is Pavel Datsyuk's 144 takeaways for Detroit in 2007-08, and he holds second place too. Last season's leader, Jackson LaCombe, had 52. League-wide, takeaways per game are down about a third from Datsyuk's season, so the gap between them is partly Datsyuk and partly a league that logs a third fewer takeaways."
+ ],
+ "uses": [
+  {
+   "title": "Comparing teammates",
+   "html": "Teammates play in front of the same home scorers, which makes within-team comparisons the safest use of these numbers. DeBrincat's 43 takeaways against <a href=\"/players/lucas-raymond/\">Lucas Raymond</a>'s 31 and <a href=\"/players/dylan-larkin/\">Dylan Larkin</a>'s 18 is a fair comparison, since all three were counted by the same people in Detroit and the same rotation of scorers on the road."
+  },
+  {
+   "title": "Checking a rink's habits",
+   "html": "Visitors' numbers expose a building's scorers. Little Caesars Arena credited visiting teams with 13.5 giveaways a game last season, the fewest in the league (the median building was at 14.8), and its 8.5 takeaways a game for both teams combined ranked 31st. One season isn't proof. Schuckers and Macdonald required an effect to point the same way in five of six seasons before calling it a rink effect, and the season before, the same building sat near the middle."
+  },
+  {
+   "title": "Finding the puck-movers",
+   "html": "Big giveaway totals on the blue line usually belong to the defensemen who play the most minutes. The three in the league's top 11 last season were Zach Werenski, MacKenzie Weegar and Evan Bouchard, and all three played at least 22 minutes a night against a median of 20.4 for regular defensemen. Bouchard and Werenski were the league's two top-scoring defensemen."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Scorers disagree",
+   "html": "Two seasons ago Montreal's building logged 24.1 giveaways a game for both teams and Columbus's logged 6.2, about a quarter as many. Rinks are closer now, and the calls are still judgment calls, made by a different crew in every building."
+  },
+  {
+   "title": "Seasons don't compare",
+   "html": "Giveaways doubled in 2024-25 while takeaways fell, so a career total or multi-season average that straddles that season mixes eras whose league averages differ by a factor of two."
+  },
+  {
+   "title": "Possession isn't in the denominator",
+   "html": "A player who has the puck for long stretches will lose it more often in raw terms. If you want a true turnover rate, you'd need puck touches in the denominator, and the play-by-play doesn't record them."
+  },
+  {
+   "title": "One turnover, two possible columns",
+   "html": "A lost puck becomes one player's takeaway or the other player's giveaway depending on whether the scorer saw it as forced. That's the reason Schuckers and Macdonald combined the two into a single turnover count."
+  }
+ ],
+ "related": [
+  {
+   "slug": "hits",
+   "name": "Hits",
+   "abbr": "HIT",
+   "vs": "Another real-time count from the same scorers, with smaller rink swings."
+  },
+  {
+   "slug": "blocked-shots",
+   "name": "Blocked shots",
+   "abbr": "BLK",
+   "vs": "The defender's real-time count for stopping a shot instead of stealing the puck."
+  },
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "Shot attempts for and against, the steadier proxy for who had the puck."
+  },
+  {
+   "slug": "faceoff-percentage",
+   "name": "Faceoff percentage",
+   "abbr": "FO%",
+   "vs": "A possession count from the same scorers that holds up when adjusted for zone and home ice."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Stats glossary (Giveaways, Takeaways)",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "definitions (read through the stats API's glossary endpoint)"
+  },
+  {
+   "label": "Official Rules 2025-2026, Rule 36 (Real Time Scorers)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "who records the stats"
+  },
+  {
+   "label": "NHL taking the crunch out of numbers",
+   "publisher": "Terry Frei, ESPN.com, September 24, 2002",
+   "url": "https://www.espn.com/nhl/columns/frei_terry/1435985.html",
+   "note": "the 2002 decision to drop turnovers from player summaries; 2001-02 leaders"
+  },
+  {
+   "label": "Accounting for Rink Effects in the National Hockey League's Real Time Scoring System",
+   "publisher": "Michael Schuckers and Brian Macdonald, arXiv 1412.1035, 2014",
+   "url": "https://arxiv.org/abs/1412.1035",
+   "note": "home and rink effects on giveaways and takeaways, 2007-08 through 2012-13; the combined turnover count"
+  },
+  {
+   "label": "Team realtime reports (season and game by game) and skater realtime leaders, 2005-06 through 2025-26",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/realtime?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "per-game totals by season, home and road splits, arena totals, single-season highs"
+  },
+  {
+   "label": "Play-by-play, all 1,312 games of 2025-26",
+   "publisher": "NHL (api-web.nhle.com)",
+   "url": "https://api-web.nhle.com/v1/gamecenter/2025020001/play-by-play",
+   "note": "giveaways and takeaways logged, goalies' share"
+  },
+  {
+   "label": "2025-26 regular-season skater and team files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "player takeaways, giveaways, points and ice time; defensive-zone giveaways; five-on-five Corsi"
+  }
+ ],
+ "method": "League per-game totals by season, home and road splits and per-arena totals come from the NHL stats API's team realtime report (season totals for 2005-06 through 2025-26; game by game for 2023-24, 2024-25 and 2025-26); team giveaways and takeaways are the NHL's skater-credited totals. Goalies' share of giveaways comes from Wes & Woodward's pull of all 1,312 games' NHL play-by-play. Player counts, points and ice time come from MoneyPuck's 2025-26 skaters file, all situations, with regulars defined as 60 or more games; the defensive-zone share comes from MoneyPuck's teams file. All downloaded October 9, 2026. Correlations are Pearson r."
+}

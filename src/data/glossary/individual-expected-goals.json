@@ -1,0 +1,322 @@
+{
+ "slug": "individual-expected-goals",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Individual expected goals",
+  "short": "ixG",
+  "abbr": "ixG",
+  "aliases": [
+   "ixG",
+   "ixG/60",
+   "individual xG",
+   "individual expected goals for",
+   "I_F_xGoals"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "ixg hockey stat",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json (status single_keyword: one measured keyword, no supporting set; Ahrefs KE US volumes), 2026-10-09"
+ },
+ "seo": {
+  "title": "The ixG Hockey Stat and How Individual Expected Goals Work",
+  "description": "ixG is the hockey stat for individual expected goals, the chances a player creates with his own shots. How it's built, what's good, and the Red Wings' leaders.",
+  "h1": "Individual Expected Goals, the ixG Hockey Stat"
+ },
+ "hero": {
+  "definition": "Individual expected goals, or ixG, is the hockey stat that adds up the expected goals on every unblocked shot a player takes himself. It measures how many good looks he gets, whether or not they go in, and it's the half of a scorer's season that holds up best from one year to the next.",
+  "dek": "Connor McDavid led the league last season at 43.6, about two and a half times the median forward. Alex DeBrincat was fifth, and Andrew Copp's 19.8 is the best argument on Detroit's roster for reading ixG before goals."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "ixG · ixG/60",
+   "sub": "I_F_xGoals in MoneyPuck's data files"
+  },
+  {
+   "label": "Counts",
+   "value": "Unblocked",
+   "sub": "shots on goal plus misses; blocks are left out"
+  },
+  {
+   "label": "Median forward",
+   "value": "17.3",
+   "sub": "all situations, 327 forwards with 60+ GP, 2025-26"
+  },
+  {
+   "label": "Top 10%",
+   "value": "29.7+",
+   "sub": "same 327 forwards, 2025-26"
+  },
+  {
+   "label": "League leader",
+   "value": "43.6",
+   "sub": "Connor McDavid, 2025-26"
+  },
+  {
+   "label": "Best Red Wing",
+   "value": "36.9",
+   "sub": "Alex DeBrincat, fifth in the NHL"
+  },
+  {
+   "label": "Median 5v5 rate",
+   "value": "0.70",
+   "sub": "ixG per 60, 385 forwards with 500+ minutes"
+  },
+  {
+   "label": "Repeats at",
+   "value": "r = 0.77",
+   "sub": "year to year, 260 forwards (goals 0.73)"
+  }
+ ],
+ "origin": [
+  "ixG is the original expected-goals idea pointed at one shooter. When Dawson Sprigings and Asmae Toumi published their model at Hockey-Graphs in October 2015, they tested it on individual players as well as teams, and found that a player's ixG per 60 minutes did better than his shot attempts or his shooting percentage at estimating his future scoring. The finding held at the player level as well as the team level, which is what made ixG worth tracking on its own.",
+  "The 'i' is the same prefix that marks a player's own numbers across the public sites. Evolving-Hockey's tables list iCF (every attempt he takes), iFF (his unblocked attempts) and iSF (his shots on goal), and define ixG as the total expected goals of his iFF shots. MoneyPuck carries the same number in its data files under the column I_F_xGoals.",
+  "Every figure on this page uses MoneyPuck's model, the one described on the <a href=\"/glossary/expected-goals/\">expected goals</a> page. A player's ixG here can differ from his total on Evolving-Hockey, which trains its own model on its own choice of features, so you shouldn't mix the two sources in one comparison."
+ ],
+ "calculation": {
+  "intro": [
+   "Take every unblocked attempt a player takes himself, price each one with the expected-goals model, and add them up. MoneyPuck's model prices each shot on these inputs:"
+  ],
+  "inputs": [
+   "Distance to the net and the angle of the shot",
+   "The shot type",
+   "The last event before the shot, where it happened and how many seconds earlier",
+   "How many skaters each side had, and whether the net was empty",
+   "Whether the shooter was on his off wing"
+  ],
+  "formulas": [
+   {
+    "label": "Total",
+    "expr": "ixG = sum of xG on every unblocked attempt a player takes"
+   },
+   {
+    "label": "Rate",
+    "expr": "ixG/60 = ixG × 60 ÷ minutes played"
+   },
+   {
+    "label": "Per attempt",
+    "expr": "xG per attempt = ixG ÷ unblocked attempts (iFF)"
+   },
+   {
+    "label": "Finishing",
+    "expr": "goals above expected = goals − ixG"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A winger takes 200 unblocked attempts in a season and the model prices them at an average of 0.09 each, so his ixG is 18.0. Score 22 and he's four goals above expected. Score 14 and he's four below, on exactly the same chances, and his ixG hasn't moved at all.",
+  "after": [
+   "Blocked attempts don't count, because the NHL logs a block where it happened and leaves no honest record of where the shot came from. Totals on this site are all situations unless a column says otherwise, and power-play time pads them, which is why the five-on-five rate per 60 is the version to compare players on."
+  ],
+  "variants": [
+   {
+    "term": "ixG/60",
+    "def": "ixG per 60 minutes, usually at five-on-five. The version to compare players with different ice time.",
+    "slug": "per-60-rates"
+   },
+   {
+    "term": "iFF",
+    "def": "A player's own unblocked attempts, the shots ixG is built from.",
+    "slug": "individual-shot-attempts"
+   },
+   {
+    "term": "xFSh%",
+    "def": "Evolving-Hockey's name for ixG per unblocked attempt, the average danger of a player's shots.",
+    "slug": "shot-quality"
+   },
+   {
+    "term": "GAx",
+    "def": "Goals minus ixG. The finishing half of a player's scoring.",
+    "slug": "goals-above-expected"
+   },
+   {
+    "term": "On-ice xGF",
+    "def": "Expected goals for by the player's whole team while he's on the ice. ixG is only his own shots.",
+    "slug": "expected-goals"
+   }
+  ]
+ },
+ "meaning": [
+  "ixG measures chance creation from the shooter's side, and it rewards both volume and location. Among the 327 forwards who played at least 60 games last season, the median generated 17.3 in all situations and the top 10% cleared 29.7. McDavid led at 43.6, ahead of Nathan MacKinnon and Kirill Kaprizov. Defensemen live on a different scale, since their shots carry less than half the expected value of a forward's at the median (0.039 per unblocked attempt against 0.087), and the median regular defenseman generated 5.1 while Jakob Chychrun led them at 18.8.",
+  "DeBrincat was the only Red Wing in the top 15, with Dylan Larkin 18th. The drop after that is steep. Copp, Lucas Raymond, James van Riemsdyk and Emmitt Finnie all landed between 19.2 and 19.8, a couple of goals above the median forward, which tells you Detroit's chance creation ran through two players. Everyone else on the roster sat at or below the forward median, defensemen included, and that's a thin base for a team that finished the season short of goals.",
+  "Why lead with ixG over goals? It holds still. Among the 260 forwards who played 60 games in both of the last two seasons, ixG correlated at 0.77 from one year to the next, goals at 0.73, and the gap between them at only 0.38. Per 60 minutes the difference widens, 0.76 for ixG against 0.62 for goals. Sprigings and Toumi's 2015 tests pointed the same way, with ixG rates beating shot attempts and shooting percentage at estimating what a player would score next."
+ ],
+ "uses": [
+  {
+   "title": "Reading a slump",
+   "html": "Is a scorer's slump about his chances or his finishing? ixG answers the first half. <a href=\"/players/andrew-copp/\">Copp</a> scored 9 goals last season on 19.8 ixG, the fifth-largest shortfall among the league's 940 skaters. His chances went up. He'd generated 12.3 ixG the season before, so you can put last season's drop in goals on the finishing, which is the half of scoring that swings the most."
+  },
+  {
+   "title": "Separating volume from danger",
+   "html": "ixG is volume times danger, and the two pieces tell different stories. <a href=\"/players/alex-debrincat/\">DeBrincat</a>'s total came from 443 unblocked attempts at 0.083 expected goals each, below the 0.087 median for forwards with 150 or more attempts. Zach Hyman got 35.2 from 245 attempts at 0.144 each, the highest rate among those forwards. Nearly the same total, opposite routes. Both worked. Hyman scored 31 goals and DeBrincat scored 41, so neither shape is the wrong one, and the split tells you which kind of shooter you're projecting."
+  },
+  {
+   "title": "Comparing players on a level field",
+   "html": "Totals reward ice time and power-play minutes, so analysts compare forwards on five-on-five ixG per 60. The median forward with 500 five-on-five minutes generated 0.70 last season. DeBrincat ranked 53rd of 385 at 0.88, and you'll find a surprise a little further down the list. <a href=\"/players/marco-kasper/\">Marco Kasper</a>, whose goals fell from 19 to 9, still created five-on-five chances at a higher rate than <a href=\"/players/dylan-larkin/\">Larkin</a> did (0.81 per 60 against 0.66)."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night from MoneyPuck. Team numbers come first, then the Red Wings who've generated the most individual expected goals this season.",
+  "tiles": [
+   {
+    "label": "Team xG, all situations",
+    "source": "team",
+    "path": "situations.all.xGoalsFor",
+    "format": "num1",
+    "sub": "MoneyPuck, sum of every Red Wing's shots"
+   },
+   {
+    "label": "Team xG, 5v5",
+    "source": "team",
+    "path": "situations.5on5.xGoalsFor",
+    "format": "num1",
+    "sub": "MoneyPuck, five-on-five"
+   },
+   {
+    "tile": "finishing"
+   }
+  ],
+  "leaders": {
+   "source": "skaters",
+   "sort": "ixG",
+   "limit": 8,
+   "caption": "Red Wings skaters by individual expected goals, all situations",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "Goals",
+     "path": "goals",
+     "format": "int"
+    },
+    {
+     "label": "Shots",
+     "path": "shots",
+     "format": "int"
+    },
+    {
+     "label": "ixG",
+     "path": "ixG",
+     "format": "num2"
+    },
+    {
+     "label": "5v5 ixG/60",
+     "path": "fiveOnFive.ixgPer60",
+     "format": "num2"
+    },
+    {
+     "label": "Goals − ixG",
+     "path": "goalsAboveExpected",
+     "format": "signed2"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games, which is a few dozen shots for most of these players. Treat the order as a record of what's happened so far.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "It ignores who's shooting",
+   "html": "The model prices a McDavid wrister and a fourth-liner's from the same spot the same way, because MoneyPuck's base model doesn't factor in shooting skill. That's the job of goals above expected."
+  },
+  {
+   "title": "It can't see the pass",
+   "html": "The NHL's play-by-play doesn't record passes, so a cross-crease feed looks to the model like any other shot from that spot. The player who made the pass gets nothing on this stat, which is why playmakers look better on on-ice expected goals than on ixG."
+  },
+  {
+   "title": "Rebounds stack up",
+   "html": "A player who follows his own shot can collect two attempts' worth of ixG on one sequence. MoneyPuck publishes a flurry-adjusted version that gives less credit for rebound chances than for first shots."
+  },
+  {
+   "title": "Blocked shots vanish",
+   "html": "Attempts that get blocked add nothing. A shooter who fires through traffic, defensemen above all, generates less ixG than his attempt totals suggest, and you'd need his individual shot attempts to see the full volume."
+  },
+  {
+   "title": "Ice time pads the totals",
+   "html": "A first-line winger with power-play time piles up ixG that a third-liner never gets the minutes to match, so compare totals only between players in similar roles and lean on the per-60 rate for everyone else."
+  }
+ ],
+ "related": [
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "The team and on-ice version. ixG is one shooter's own attempts."
+  },
+  {
+   "slug": "goals-above-expected",
+   "name": "Goals above expected",
+   "abbr": "GAx",
+   "vs": "Goals minus ixG, the finishing half of scoring."
+  },
+  {
+   "slug": "individual-shot-attempts",
+   "name": "Individual shot attempts",
+   "abbr": "iCF",
+   "vs": "Counts every attempt the same. ixG weights each by danger."
+  },
+  {
+   "slug": "shot-quality",
+   "name": "Shot quality",
+   "abbr": "xFSh%",
+   "vs": "ixG divided by attempts, the average danger of each shot."
+  },
+  {
+   "slug": "shots-on-goal",
+   "name": "Shots on goal",
+   "abbr": "SOG",
+   "vs": "Only shots that reach the goalie, with no weight for danger."
+  },
+  {
+   "slug": "per-60-rates",
+   "name": "Per-60 rates",
+   "abbr": "/60",
+   "vs": "How ixG is put on a level field across ice time."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Expected Goals are a better predictor of future scoring than Corsi, Goals",
+   "publisher": "Hockey-Graphs, October 1, 2015",
+   "url": "https://hockey-graphs.com/2015/10/01/expected-goals-are-a-better-predictor-of-future-scoring-than-corsi-goals/",
+   "note": "ixG per 60 beat shot attempts and shooting percentage at estimating future individual scoring"
+  },
+  {
+   "label": "A New Expected Goal Model That is Better Than Corsi at Predicting Future Goals",
+   "publisher": "HockeyStats (Medium)",
+   "url": "https://topdownhockey.medium.com/a-new-expected-goal-model-that-is-better-than-corsi-at-predicting-future-goals-ecfa44dc84e9",
+   "note": "names Sprigings and Toumi as the 2015 authors"
+  },
+  {
+   "label": "Standard Skater Tables",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/standard-skater-tables/",
+   "note": "iCF, iFF, iSF, ixG as the xG of all iFF shots, xFSh% as ixG ÷ iFF"
+  },
+  {
+   "label": "Expected Goals Model",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/about.htm",
+   "note": "model inputs; shooting talent isn't part of the base model"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "expected goals on unblocked attempts; flurry adjustment"
+  },
+  {
+   "label": "2025-26 and 2024-25 regular-season skater files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league and Red Wings figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season skater file (raw/mp_skaters_2025.csv) and its 2024-25 file (raw/mp_skaters_2024-25_ixg_gax_yoy_dl2026-10-09.csv), both downloaded October 9, 2026. ixG is MoneyPuck's I_F_xGoals in all situations among the 327 forwards (and 161 defensemen) with 60+ games; five-on-five rates are ixG × 60 ÷ five-on-five minutes among the 385 forwards with 500+ five-on-five minutes; expected goals per attempt is ixG ÷ unblocked attempts among the 238 forwards with 150+ unblocked attempts; repeatability is the Pearson correlation between 2024-25 and 2025-26 values for the 260 forwards with 60+ games in both. The Red Wings section rebuilds nightly from MoneyPuck."
+}

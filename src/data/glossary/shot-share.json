@@ -1,0 +1,263 @@
+{
+ "slug": "shot-share",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Shot share",
+  "short": "SF%",
+  "abbr": "SF%",
+  "aliases": [
+   "SF%",
+   "shots for percentage",
+   "shot differential",
+   "SF",
+   "SA"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "shot share in hockey",
+  "supporting": [],
+  "source": "No measured search volume (research/glossary-pseo/stat_themes.json status no_volume), so the primary is the natural phrase 'shot share in hockey', 2026-10-09"
+ },
+ "seo": {
+  "title": "Shot Share in Hockey and How SF% Is Calculated",
+  "description": "Shot share in hockey is a team's share of the shots on goal in its games. How SF% is calculated, how it compares with Corsi, and where Detroit ranked.",
+  "h1": "Shot Share in Hockey (SF%)"
+ },
+ "hero": {
+  "definition": "Shot share in hockey is a team's share of the shots on goal in its games, or in the minutes a given player is on the ice, usually at five-on-five. It's written SF%, for shots for percentage, and 50% is break-even. It's the narrowest of the shot-share stats, since missed and blocked attempts don't count.",
+  "dek": "It's the oldest one too, because the NHL has counted team shots on goal since the 1950s, decades before it logged a missed or blocked shot. Last season it tracked the standings more closely than Corsi did."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "SF%",
+   "sub": "shots for percentage; the count is shot differential"
+  },
+  {
+   "label": "Counts",
+   "value": "On goal",
+   "sub": "goals plus saves; misses and blocks left out"
+  },
+  {
+   "label": "Team average",
+   "value": "50%",
+   "sub": "5v5 SF%, by construction"
+  },
+  {
+   "label": "Best team, 2025-26",
+   "value": "57.7%",
+   "sub": "Carolina, 5v5"
+  },
+  {
+   "label": "Worst team, 2025-26",
+   "value": "44.4%",
+   "sub": "Chicago, 5v5"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "49.7%",
+   "sub": "18th of 32 at 5v5"
+  },
+  {
+   "label": "Official since",
+   "value": "1955-56",
+   "sub": "team shots, per the NHL; skater shots since 1959-60"
+  },
+  {
+   "label": "Best on record",
+   "value": "59.4%",
+   "sub": "Detroit, 2007-08, all situations"
+  }
+ ],
+ "origin": [
+  "Shot share came first by default. The NHL's glossary says shots have been officially tracked for teams since 1955-56, and it dates missed shots to 1997-98 and blocked shots to 2002-03, so for most of the league's history a team's share of the shots was the only shot-share number the official record could support.",
+  "The newer stats grew out of its blind spots. Jim Corsi, the Sabres' goaltending coach, added missed and blocked shots to shots on goal because shots against left part of a goalie's workload out. The bloggers who borrowed his name in the 2000s applied the same count to skaters. Shot share didn't go away. The NHL's stats site lists shots for and against per game and a shot differential, and Natural Stat Trick publishes SF% for teams and players, with goals counted as shots on goal.",
+  "Today's counts come from the league's Real Time Scoring System, which logs shots, misses and blocks into the public play-by-play files that MoneyPuck, Natural Stat Trick and the NHL's own reports are built from. Every shot on goal ends as either a goal or a save, so the same count sits underneath save percentage."
+ ],
+ "calculation": {
+  "intro": [
+   "Shot share follows Corsi's recipe with a narrower filter. Only shots that reach the goalie or go in count, and the share is your team's shots divided by both teams'. By the NHL's definition, a shot is on goal if it went in or would've gone in without the save. A puck off the post goes down as a miss. These are the inputs:"
+  ],
+  "inputs": [
+   "Shots on goal for, goals included",
+   "Shots on goal against, goals included",
+   "Five-on-five ice time, for per-60 rates",
+   "For a player, which shots came while he was on the ice"
+  ],
+  "formulas": [
+   {
+    "label": "Share",
+    "expr": "SF% = SF ÷ (SF + SA)"
+   },
+   {
+    "label": "Differential",
+    "expr": "shot differential = SF − SA"
+   },
+   {
+    "label": "From Fenwick",
+    "expr": "SF = FF − missed shots"
+   },
+   {
+    "label": "Rate",
+    "expr": "SF/60 = SF ÷ five-on-five minutes × 60"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. The Wings take 45 attempts in a game's worth of five-on-five, and only 20 of them reach the goalie. The other team gets 25 of its 40 attempts on goal. Detroit won the Corsi count and lost the shot count, so its SF% for the night is 44.4%. The two shares point in opposite directions.",
+  "after": [
+   "What separates the two stats is how many attempts get through. Across the league at five-on-five last season, 47% of attempts became shots on goal, about a quarter missed and the rest were blocked, so shot share works with a little under half of Corsi's sample."
+  ],
+  "variants": [
+   {
+    "term": "SF",
+    "def": "Shots on goal for, goals included."
+   },
+   {
+    "term": "SA",
+    "def": "Shots on goal against."
+   },
+   {
+    "term": "SF%",
+    "def": "The share. 50% is break-even."
+   },
+   {
+    "term": "Shot differential",
+    "def": "SF minus SA, the count version. The NHL lists it per game as SD/GP."
+   },
+   {
+    "term": "SF/60",
+    "def": "Shots for per 60 minutes of five-on-five.",
+    "slug": "per-60-rates"
+   }
+  ]
+ },
+ "meaning": [
+  "Shot share measures which team got more pucks to the goalie. Carolina led the league at five-on-five last season with 57.7% of the shots on goal in its games, and Chicago finished last at 44.4%. Detroit was 18th at 49.7%, almost dead even. On rates, Colorado generated a league-high 32.9 shots per 60 minutes, and Detroit sat right at the median of about 26.",
+  "Players spread wider. Among the 598 skaters with 500 five-on-five minutes, the median on-ice SF% was 49.9%, the top tenth cleared 55.5% and the bottom tenth sat at or below 44.8%. Moritz Seider led Detroit's regulars at 55.9%, and Michael Rasmussen was lowest at 44.5%.",
+  "What does it mean when shot share and Corsi disagree? Usually that one team's attempts aren't getting through. A team whose SF% sits above its CF% is blocking a lot of the other side's shots or missing the net less than its opponents (or both), and a team whose SF% trails its CF% is doing the opposite. Detroit's 49.7% sat about a point above its Corsi share for the first reason.",
+  "Does the narrower count cost it anything? On tracking results, last season's standings and three years of split-season tests both say no. Among the 32 teams, five-on-five SF% correlated at 0.70 with points percentage, ahead of CF% at 0.57 though behind expected goals at 0.74. In the split-season test on the <a href=\"/glossary/corsi/\">Corsi page</a>, first-half SF% correlated at 0.47 with second-half goal share, ahead of CF% at 0.42. Corsi repeated better from half to half (0.81 to 0.70). Shot share is the noisier stat. It just happens to sit closer to goals."
+ ],
+ "uses": [
+  {
+   "title": "Checking a box score",
+   "html": "Every box score carries shots on goal, so an all-situations shot share is the one possession number you can figure without a stats site. It's crude (power plays tilt it), but it's free. By that count, Detroit took 50.4% of the shots in its games last season, 14th in the league and a little better than its five-on-five share once the power play and penalty kill are added in."
+  },
+  {
+   "title": "Comparing eras",
+   "html": "Because the league's stats feed carries team shots back to 1959-60, shot share is the one possession stat that reaches the six-team era. The Wings own that list. The 2007-08 team took 59.4% of the shots in all situations (the highest share in those 66 seasons) and won the Stanley Cup. Detroit led the league in shot share eight times over that span, including four straight seasons from 2005-06 on, and only Montreal, with 11, has led it more often."
+  },
+  {
+   "title": "Cross-checking Corsi",
+   "html": "Shots on goal are the most consistently recorded shot event in the play-by-play. In six seasons of league data ending in 2012-13, Michael Schuckers and Brian Macdonald found persistent rink effects for shots on goal in only two arenas, against 15 for blocked shots and nine for missed shots. When a team's Corsi and shot share disagree, the scorer's pencil is one suspect you'd want to rule out."
+  }
+ ],
+ "limits": [
+  {
+   "title": "It throws out half the attempts",
+   "html": "Only 47% of five-on-five attempts reached the goalie last season, so shot share runs on about half the sample Corsi uses, and it didn't repeat as well between the halves of a season."
+  },
+  {
+   "title": "A post counts for nothing",
+   "html": "A one-timer off the iron and a wrister that sails into the glass both go down as misses. A team that generates lots of dangerous looks and hits a few posts gets no credit in SF% for any of them."
+  },
+  {
+   "title": "Every shot counts the same",
+   "html": "A dump-in that the goalie gloves from center ice counts as much as a rebound at the side of the net (that's the gap expected goals was built to close)."
+  },
+  {
+   "title": "A player's number is mostly his team's",
+   "html": "How much? Among the 598 skaters with 500 five-on-five minutes last season, on-ice SF% correlated at 0.72 with the team's SF%, so you can't compare a fourth-liner on a good team with a top-liner on a weak one without adjusting."
+  }
+ ],
+ "related": [
+  {
+   "slug": "shots-on-goal",
+   "name": "Shots on goal",
+   "abbr": "SOG",
+   "vs": "The raw count shot share is built from."
+  },
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "Adds missed and blocked attempts."
+  },
+  {
+   "slug": "fenwick",
+   "name": "Fenwick",
+   "abbr": "FF%",
+   "vs": "Adds the missed shots back in."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "Weights each unblocked attempt by its chance of going in."
+  },
+  {
+   "slug": "goals-for-percentage",
+   "name": "Goals for percentage",
+   "abbr": "GF%",
+   "vs": "The same share, counted in goals."
+  },
+  {
+   "slug": "pdo",
+   "name": "PDO",
+   "abbr": "PDO",
+   "vs": "The shooting and save percentages that turn shot share into goal share."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "NHL stats glossary (Shots, Missed shots, Blocked shots, SD/GP)",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/glossary",
+   "note": "team shots official since 1955-56, skaters since 1959-60, misses since 1997-98, blocks since 2002-03, posts count as misses"
+  },
+  {
+   "label": "Hockey glossary (Shot on Goal)",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/info/hockey-glossary",
+   "note": "a shot on goal went in or would have if not stopped"
+  },
+  {
+   "label": "Team summary, all seasons through 2025-26",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/summary?cayenneExp=gameTypeId=2",
+   "note": "shots for and against per game, 1959-60 on"
+  },
+  {
+   "label": "2007-08 Detroit Red Wings",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/teams/DET/2008.html",
+   "note": "Stanley Cup champions"
+  },
+  {
+   "label": "Jim Corsi, the man behind Corsi numbers",
+   "publisher": "NBC Sports (James O'Brien), April 30, 2010",
+   "url": "https://www.nbcsports.com/nhl/news/jim-corsi-the-man-behind-corsi-numbers",
+   "note": "shots against left out part of a goalie's workload"
+  },
+  {
+   "label": "Player and team glossary",
+   "publisher": "Natural Stat Trick (read from a January 2025 Wayback Machine capture)",
+   "url": "https://www.naturalstattrick.com/glossary.php?teams",
+   "note": "Shots, SF%, goals counted as shots on net"
+  },
+  {
+   "label": "Accounting for Rink Effects in the National Hockey League's Real Time Scoring System",
+   "publisher": "Michael Schuckers and Brian Macdonald, arXiv 1412.1035",
+   "url": "https://arxiv.org/abs/1412.1035",
+   "note": "rink effects for shots, misses and blocks, 2007-08 through 2012-13"
+  },
+  {
+   "label": "2025-26 team, skater and game-by-game files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every 2025-26 and split-season figure on this page"
+  }
+ ],
+ "method": "Five-on-five figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season team and skater files and its team game-by-game files for 2023-24 through 2025-26, all downloaded October 9, 2026. SF% is SF ÷ (SF + SA) from shots on goal including goals; player figures cover the 598 skaters with 500 or more five-on-five minutes. Points percentage and the historical all-situations shares (shots for per game ÷ shots for and against per game, every team-season from 1959-60 through 2025-26) come from the NHL stats API team summary, downloaded the same day."
+}

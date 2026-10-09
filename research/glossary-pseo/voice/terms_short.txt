@@ -1,0 +1,129 @@
+Goals a player scores, credited to the last player on the scoring team to touch the puck. It's the stat every other number on this site is trying to predict.
+
+Credit for the last one or two players on the scoring team to touch the puck before the goal scorer. The first is the primary assist, the second the secondary.
+
+Goals plus assists, each worth one point. It's the oldest way to rank skaters, and it counts a secondary assist the same as a goal.
+
+Goals for minus goals against while a skater is on the ice at even strength or shorthanded. Power-play goals don't count, and it can't tell who caused the goal.
+
+Total minutes a player is penalized, at two for a minor, five for a major and 10 for a misconduct. Penalties he draws don't offset it.
+
+Goals (PPG) and points (PPP) scored while a player's team has more skaters on the ice than its opponent. They show who a coach trusts with the man advantage.
+
+Goals (SHG) and points (SHP) scored while a player's team has fewer skaters on the ice than its opponent, usually on a penalty kill.
+
+Goals (EVG) and points (EVP) scored with the same number of skaters on each side, including 4-on-4 and 3-on-3. Most of a season's scoring happens here.
+
+The goal that put the winner one ahead of the loser's final total, so the third goal of a 5-2 win. It can come in the first period.
+
+Goals scored in overtime, which end the game on the spot. Regular-season overtime is five minutes of 3-on-3; playoff overtime is full 20-minute periods at five-on-five.
+
+Goals plus the shots a goalie stopped. Misses, posts and blocked shots don't count, so it's the narrowest of the shot stats.
+
+Goals divided by shots on goal. A shooter who runs far above his career rate in one season usually drifts back toward it the next.
+
+How many minutes a player is on the ice, in total or per game (ATOI). It's the clearest read on how much a coach trusts someone.
+
+Faceoffs won divided by faceoffs taken (FOW counts the wins). 50% is break-even, and the best regular centers win around 60%.
+
+Body checks credited by each arena's off-ice scorers, who don't all count them the same way. A team that's hitting a lot usually doesn't have the puck.
+
+Shot attempts a player stops with his body before they reach the net. Blocks prevent goals, but a team that blocks a lot is usually defending a lot.
+
+Takeaways (TK) are pucks a player steals; giveaways (GV) are pucks he loses on his own. Arena scorers log both and vary by rink, so treat them as rough counts.
+
+The number of games a player appeared in. Per-game stats divide by it, and small totals are where the noise lives.
+
+Points divided by games played. It puts a player who missed time on the same footing as one who played all 82, and a point a game marks a star.
+
+Penalties a player draws from opponents, each one a power play for his team. Drawn minus taken is penalty differential, a small but real piece of a player's value.
+
+Saves divided by shots on goal faced. It treats a point shot and a backdoor tap-in the same, which is why expected-goals stats grade goalies more fairly.
+
+Goals a goalie allows per 60 minutes. It ignores how many shots he faced and how dangerous they were, so it grades his defense along with him.
+
+A game in which a goalie plays the whole way and allows no goals. If two goalies combine for a clean sheet, neither gets credit.
+
+A goalie's wins, regulation losses and overtime or shootout losses (OTL). The decision goes to the goalie in net for the deciding goal, so it tracks his team too.
+
+Expected goals a goalie faced minus the goals he allowed. Positive means he stopped more than an average goalie would have on the same shots.
+
+Goals a goalie saved compared with a league-average save percentage on the same number of shots. Unlike GSAx, it treats every shot as equally dangerous.
+
+A start where a goalie beats the league-average save percentage, or posts .885 on 20 shots or fewer. A really bad start (RBS) is anything under .850.
+
+Save percentage on high-danger shots only, the attempts from right in front of the net. It isolates the saves that swing games, though the samples get small fast.
+
+The save percentage an average goalie would post on the shots a goalie faced, built from expected goals. Subtract it from his real save percentage to see what he added.
+
+Shots against (SA) are shots on goal a goalie faced, goals against (GA) the ones that went in, saves (SV) the rest. Save percentage is SV divided by SA.
+
+Standings points earned divided by points available, two per game. It's how you compare teams that have played different numbers of games.
+
+Wins in regulation (RW), or in regulation and overtime (ROW), leaving out shootout wins. RW is one of the NHL's first standings tiebreakers.
+
+Goals for minus goals against. Over a full season it tracks standings points closely, which makes it a quick check on whether a record is real.
+
+Power-play goals divided by power-play opportunities. It says how well a team converts and nothing about how many power plays it draws.
+
+The share of opponents' power plays a team kills off without allowing a goal. It's the mirror image of power-play percentage.
+
+The probability that an unblocked shot becomes a goal, priced against hundreds of thousands of past NHL shots like it. Add them up for a player's or team's total.
+
+Expected goals on the shots a player takes himself. It measures how many good looks he gets, whether or not they go in.
+
+Goals minus expected goals, for a player or team. Positive means the finishing beat an average shooter on the same chances, and a single season carries a lot of luck.
+
+Every shot attempt, on goal, missed or blocked, counted for and against while a player or team is on the ice. CF% is the share; the NHL calls it SAT.
+
+Corsi without the blocked shots, so unblocked attempts for and against. It's the same set of shots expected goals uses, and the NHL calls it USAT.
+
+A player's Corsi share with him on the ice minus his team's share without him. It shows whether he drives play better or worse than the rest of the roster.
+
+On-ice shooting percentage plus on-ice save percentage, usually at five-on-five. Everyone drifts back toward 1.000 (or 100), so a number far from it usually means luck.
+
+Shot attempts Natural Stat Trick rates as most dangerous, mostly from right in front of the net, with extra weight for rebounds and rush shots. HDCF% is a team's share.
+
+Shot attempts Natural Stat Trick counts as scoring chances, based on where they came from, with extra credit for rebounds and rush shots. SCF% is a team's share.
+
+A team's share of the shots on goal in its games, or in a player's minutes. It's the narrowest shot-share stat, since misses and blocks don't count.
+
+A team's share of the goals scored in its games, or in a player's minutes, usually at five-on-five. It's the result that xGF% and CF% try to predict.
+
+The shooting (oiSH%) and save (oiSV%) percentages of a player's team while he's on the ice. Both swing with luck, and their sum is PDO.
+
+The share of a player's shifts that begin with an offensive-zone (OZS%) or defensive-zone (DZS%) faceoff. Coaches use them to shelter or bury players, and they tilt results.
+
+Measures of how strong a player's opponents (QoC) and linemates (QoT) were, usually weighted by shared ice time. They put a player's results in context.
+
+One number for a player's total value over a replacement-level player, in goals (GAR) or wins (WAR). Evolving-Hockey's version also comes in an expected-goals form (xGAR).
+
+Regularized adjusted plus-minus, a regression that estimates each player's impact while controlling for teammates, opponents, zone starts and score. It's a building block of public WAR models.
+
+Any stat divided by ice time and scaled to 60 minutes. It levels the field between a top-line forward and a fourth-liner who plays half as much.
+
+The share of goals scored while a player is on the ice that he scored or assisted on. It shows who's driving the offense and who's along for the ride.
+
+A single-game rating that rolls goals, assists, shots, blocks, penalties, faceoffs and on-ice shot and goal results into one number. This site averages MoneyPuck's and HockeyStatCards' versions.
+
+How a team carries the puck into the offensive zone, with control or by dumping it in, and how it gets out of its own. The NHL doesn't log either.
+
+Every shot attempt a player takes himself, on goal, missed or blocked. It's a pure measure of shooting volume.
+
+Stats reweighted for the score, because trailing teams push and leading teams sit back. Unadjusted, a team that leads a lot looks worse at controlling play than it is.
+
+How dangerous a team's or player's shots are on average, usually measured as expected goals per unblocked attempt. Location matters most, then shot type and what happened just before.
+
+This site's 0-to-100 rating of a player's value this season, with 50 as the NHL average. Skaters are scored on goals above replacement, goalies on goals saved above expected.
+
+Where a number ranks in its comparison group on a 0-to-100 scale, so the 90th percentile beats 90% of the group. Forwards and defensemen are usually ranked separately here.
+
+Both teams with five skaters and a goalie on the ice, which is most of every game. It's the default for comparisons because special-teams time varies so much.
+
+A power play (5v4) is time with an extra skater after an opponent's penalty; the penalty kill (4v5) is the other side. Both are rated here per 60 minutes.
+
+Every game state combined, five-on-five, power play, penalty kill, 4-on-4, 3-on-3 and empty net. Individual totals like ixG use it unless a column says otherwise.
+
+The standings rebuilt on expected goals. Each team's all-situations xGF and xGA become a Pythagorean win rate, then points, and all 32 teams are ranked the same way.
+
+MoneyPuck's simulation of the rest of the season, giving projected points and playoff odds. This site freezes the opening-night projection and shows the updated one, re-run after every result.

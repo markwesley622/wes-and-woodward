@@ -1,0 +1,302 @@
+{
+ "slug": "goals-against-average",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Goals against average",
+  "short": "GAA",
+  "abbr": "GAA",
+  "aliases": [
+   "GAA",
+   "goals-against average",
+   "goalie GAA",
+   "NHL goals against average"
+  ],
+  "category": "Goalie"
+ },
+ "keywords": {
+  "primary": "goals against average",
+  "supporting": [
+   "gaa hockey meaning",
+   "what is goals against average in hockey",
+   "goals against average hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "Goals Against Average (GAA) and How It's Calculated",
+  "description": "Goals against average (GAA) is goals allowed per 60 minutes. How it's calculated, why it grades the defense too, and the Red Wings' live numbers.",
+  "h1": "Goals Against Average (GAA) in Hockey"
+ },
+ "hero": {
+  "definition": "Goals against average (GAA) is the number of goals a goalie allows per 60 minutes in net, his goals against times 60 divided by his minutes played. It ignores how many shots he faced and how dangerous they were, so it grades his defense along with him.",
+  "dek": "That's the whole meaning of GAA in hockey box scores, and it's the oldest rate stat a goalie has. It's the easiest one to misread, too, since a goalie behind a leaky defense can post a worse GAA than a weaker goalie behind a stingy one, and you can't tell which is which from the number alone."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "GAA",
+   "sub": "goals-against average"
+  },
+  {
+   "label": "Formula",
+   "value": "GA per 60",
+   "sub": "goals against × 60 ÷ minutes in net"
+  },
+  {
+   "label": "League average",
+   "value": "2.88",
+   "sub": "all NHL goalies, 2025-26"
+  },
+  {
+   "label": "Team average",
+   "value": "3.08",
+   "sub": "goals allowed per team game, empty nets in"
+  },
+  {
+   "label": "Best, 2025-26",
+   "value": "2.02",
+   "sub": "Scott Wedgewood, COL (51 goalies, 30+ GP)"
+  },
+  {
+   "label": "Worst, 2025-26",
+   "value": "3.70",
+   "sub": "Kevin Lankinen, VAN (30+ GP)"
+  },
+  {
+   "label": "Record low",
+   "value": "0.92",
+   "sub": "George Hainsworth, Montreal, 1928-29"
+  },
+  {
+   "label": "Official since",
+   "value": "1917-18",
+   "sub": "the NHL's first season, per its glossary"
+  }
+ ],
+ "origin": [
+  "Goals against average is as old as the NHL. The league's stats glossary carries it back to 1917-18, the first season, and for nearly four decades it was the only rate a goalie had, because shots against weren't officially counted until 1955-56. The record still belongs to that early stretch. George Hainsworth allowed fewer than a goal a game for Montreal in 1928-29, a 0.92 GAA that's never been matched.",
+  "It's priced by the clock. The NHL's glossary defines GAA as goals against times 60, divided by time on ice, and Hockey-Reference uses the same recipe with minutes played, so overtime and partial games count at their real length. A goalie who plays one period in relief is charged for one period, and the goals he allows count against that slice of the game only.",
+  "NHL.com and Hockey-Reference both publish it, and Hockey-Reference runs an adjusted GAA next to the raw one. The inputs are the two things a scorer has always tracked for a goalie, the goals charged to him and his time in net, which is why the stat reaches back further than anything built on shots. Neither input cares what the chance looked like before the puck went in, and that's the stat's oldest blind spot."
+ ],
+ "calculation": {
+  "intro": [
+   "GAA is a rate, goals per full game in net. A goalie's charged for every goal scored while he's in the crease, and his clock runs only while he's there, so a relief appearance counts for the minutes he played and nothing more. These are the inputs:"
+  ],
+  "inputs": [
+   "Goals against (GA), every goal scored while he was in net",
+   "Minutes played, his time in net to the second",
+   "60, the length of a regulation game",
+   "Left out: empty-net goals, which happen while he's on the bench, and shootout goals"
+  ],
+  "formulas": [
+   {
+    "label": "Goals against average",
+    "expr": "GAA = GA × 60 ÷ minutes played"
+   },
+   {
+    "label": "From shots",
+    "expr": "GAA = shots against per 60 × (1 − SV%)"
+   },
+   {
+    "label": "Team",
+    "expr": "goals against per game = all goals allowed ÷ games played"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A goalie plays 3,000 minutes and allows 140 goals, so his GAA is 140 times 60 divided by 3,000, or 2.80. Pull him after one period and three goals some night and that game on its own works out to a 9.00, which is why an early hook bends a season GAA more than its share of the minutes suggests.",
+  "after": [
+   "The second formula is the one worth remembering. GAA is shot volume times the share that gets through, so it splits cleanly into the goalie's part and his defense's part. John Gibson faced 27.6 shots per full game in net last season and let 9.9% of them in (one minus his .901 save percentage), which comes out to his 2.72. Change either factor and the GAA moves with it, whether or not the goalie did anything different."
+  ],
+  "variants": [
+   {
+    "term": "GA",
+    "def": "Goals against, the numerator. Every goal scored while a goalie was in net.",
+    "slug": "saves-and-shots-against"
+   },
+   {
+    "term": "GA/GP",
+    "def": "A team's goals against per game played. It includes empty-net goals, so it runs higher than its goalies' GAA."
+   },
+   {
+    "term": "SA/60",
+    "def": "Shots against per 60 minutes, the defense's half of GAA and the NHL's measure of a goalie's workload."
+   },
+   {
+    "term": "GSAA",
+    "def": "Goals saved above average. Save percentage turned into goals against a league-average goalie.",
+    "slug": "goals-saved-above-average"
+   }
+  ]
+ },
+ "meaning": [
+  "What does goals against average in hockey measure, then? Goals per game, more or less, with the empty nets taken out. NHL goalies allowed 2.88 per full game in net last season. Teams allowed 3.08 goals a game, a higher figure because it counts the league's 508 empty-net goals, which go against a team and never against its goalie.",
+  "Among the 51 goalies who played 30 or more games, the median GAA was 2.76. Scott Wedgewood led at 2.02 in Colorado and Kevin Lankinen trailed at 3.70 in Vancouver. Gibson's 2.72 ranked 22nd, the middle of the pack, and Cam Talbot's 3.19 sat near the bottom. A good GAA in this scoring environment is anything under about 2.75, and anything over 3.00 landed a goalie in roughly the bottom third last season.",
+  "GAA tracks save percentage less closely than you'd expect. Joseph Woll stopped .899 of his shots in Toronto and still finished near the bottom in GAA at 3.34, because he faced more shots per minute than anyone else in the group. Samuel Ersson stopped .870 in Philadelphia, the worst rate of the bunch, and posted a better GAA (3.12) behind a defense that allowed far fewer. By save percentage Woll was the better goalie by a wide margin. His GAA said the opposite.",
+  "Does a low GAA carry over? Not much. For the 35 goalies who were regulars in each of the last two seasons, the year-to-year correlation in GAA was 0.27, about the same as save percentage's 0.28, and part of what carries over belongs to the team in front of him. Judge a goalie on his GAA and you're partly judging the skaters who decide how many shots he sees."
+ ],
+ "uses": [
+  {
+   "title": "Reading the defense along with the goalie",
+   "html": "Brandon Bussi posted a 2.47 GAA for Carolina last season, sixth among the regulars, on a .895 save percentage that ranked 32nd. The difference was volume. He faced fewer shots per minute than any of them, behind a Carolina team that allowed the fewest shots in the league (23.9 a game). Give that same .895 a league-average workload and it produces about a 2.90 GAA, right at the league mark. Bussi's number was mostly his defense's."
+  },
+  {
+   "title": "Splitting a team's goals against",
+   "html": "Detroit allowed 254 goals last season, the 20th-fewest in the league, and they break down three ways. <a href=\"/players/john-gibson/\">Gibson</a> was charged with 144, Talbot with 93, and the other 17 went into an empty net. The Wings' shots against were middle of the pack too (16th fewest), so the goals-against ranking wasn't about volume. It was mostly a story of one starter near average and a backup well below it."
+  },
+  {
+   "title": "Pricing a save-percentage change",
+   "html": "Because GAA is shots times the miss rate, you can turn any save-percentage change into goals for a given defense. At Gibson's workload last season, every ten points of save percentage was worth 0.28 goals a game, or about 23 goals over a full season. Gibson's 18-point edge on Talbot came to half a goal a game, which is the gap between Detroit's two options every night the Wings picked a starter."
+  }
+ ],
+ "live": {
+  "intro": "GAA, save percentage and the record come from the NHL's club stats, rebuilt nightly. Detroit's goals against comes first, then every goalie the Wings have used this season, lowest GAA first.",
+  "tiles": [
+   {
+    "label": "Goals against",
+    "source": "team",
+    "path": "record.goalAgainst",
+    "format": "int",
+    "sub": "all goals allowed, this season"
+   },
+   {
+    "tile": "gsax"
+   }
+  ],
+  "leaders": {
+   "source": "goalies",
+   "sort": "gaa",
+   "ascending": true,
+   "limit": 5,
+   "caption": "Red Wings goalies by goals against average",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "GS",
+     "path": "gamesStarted",
+     "format": "int"
+    },
+    {
+     "label": "GAA",
+     "path": "gaa",
+     "format": "num2"
+    },
+    {
+     "label": "SV%",
+     "path": "savePct",
+     "format": "sv3"
+    },
+    {
+     "label": "W",
+     "path": "wins",
+     "format": "int"
+    },
+    {
+     "label": "SO",
+     "path": "shutouts",
+     "format": "int"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. Over 10 full games every extra goal adds 0.10 to a GAA, so treat this as a record of what's happened so far.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "It charges the goalie for the defense",
+   "html": "Half of GAA is shots against, and a goalie doesn't choose how many he faces. The Woll and Ersson split above is the standard case, and it's why analysts start from save percentage or GSAx when they want the goalie on his own."
+  },
+  {
+   "title": "Every goal counts the same",
+   "html": "A breakaway and a deflection off a defenseman's skate each add one goal, and only expected-goals stats like GSAx price the chances before the goalie touches them."
+  },
+  {
+   "title": "The empty nets disappear",
+   "html": "Detroit's goalies were charged with 237 of the 254 goals the Wings allowed last season, which is right for grading the goalies and means that if you're grading team defense you need the other 17 added back."
+  },
+  {
+   "title": "Relief work bends it",
+   "html": "Talbot made nine of his appearances in relief last season. Short appearances carry full weight per minute, so a goalie who mops up blowouts can see his GAA swing on a handful of goals that a starter would've absorbed over a full night."
+  },
+  {
+   "title": "Scoring eras move the baseline",
+   "html": "League-wide GAA was 3.84 in 1983-84 and bottomed out at 2.46 two decades later, the low of the last four decades. A goalie's number only means something next to his own season's average, so a GAA from one era can't be lined up against another's without that adjustment."
+  }
+ ],
+ "related": [
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "Share of shots stopped. GAA multiplies in how many shots there were."
+  },
+  {
+   "slug": "goals-saved-above-average",
+   "name": "Goals saved above average",
+   "abbr": "GSAA",
+   "vs": "Goals saved against a league-average goalie on the same shots."
+  },
+  {
+   "slug": "goals-saved-above-expected",
+   "name": "Goals saved above expected",
+   "abbr": "GSAx",
+   "vs": "Prices every shot by danger before grading the goalie."
+  },
+  {
+   "slug": "saves-and-shots-against",
+   "name": "Saves and shots against",
+   "abbr": "SA",
+   "vs": "The raw counts. GAA folds shots against into a per-60 rate."
+  },
+  {
+   "slug": "shutouts",
+   "name": "Shutouts",
+   "abbr": "SO",
+   "vs": "Games with a GAA of zero, counted one at a time."
+  },
+  {
+   "slug": "goalie-record",
+   "name": "Goalie record",
+   "abbr": "W-L-OTL",
+   "vs": "Decisions, which add the team's scoring to its defense."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Stats glossary (GAA, GA/GP, SA/60, Sv%, SA)",
+   "publisher": "NHL",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "GAA = GA × 60 ÷ TOI, first season 1917-18, shots against tracked from 1955-56, team GA/GP includes empty-net goals"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "GAA = goals against ÷ minutes played × 60"
+  },
+  {
+   "label": "2025-26 NHL goalie stats",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leagues/NHL_2026_goalies.html",
+   "note": "adjusted GAA column"
+  },
+  {
+   "label": "Goalie summary, advanced, started-vs-relieved and per-game reports, 2024-25 and 2025-26",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/goalie/summary?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "every goalie GAA, shots against per 60 and relief split on this page; league GAA by season back to 1983-84; season GAA record"
+  },
+  {
+   "label": "Team summary and skater realtime reports, 2025-26",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/summary?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "team goals and shots against per game, empty-net goals"
+  }
+ ],
+ "method": "Every figure is Wes & Woodward's calculation from the NHL stats API (goalie summary, advanced, started-vs-relieved and per-game goalie reports; team summary; skater realtime), downloaded October 9, 2026. League GAA is total goals charged to goalies × 3,600 ÷ total goalie time on ice in seconds; team goals per game is the team summary's goals against ÷ games played; rankings use the 51 goalies with 30+ games played; the year-to-year correlation uses the 35 goalies with 30+ games in both 2024-25 and 2025-26. League GAA by season comes from the same API back to 1983-84, and the single-season record is the lowest GAA among goalies with 25+ games since 1917-18. The Red Wings section rebuilds nightly from the NHL's club stats and MoneyPuck."
+}

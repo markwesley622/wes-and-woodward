@@ -1,0 +1,292 @@
+{
+ "slug": "shorthanded-goals-and-points",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Shorthanded goals and points",
+  "short": "SHG",
+  "abbr": "SHG",
+  "aliases": [
+   "SHG",
+   "SHP",
+   "SHA",
+   "shorthanded goals",
+   "short-handed goals",
+   "shorthanded points",
+   "SH goals"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "what does shg mean in hockey",
+  "supporting": [
+   "shg hockey meaning",
+   "shg meaning hockey",
+   "short handed goal hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate; primary overridden from 'shg hockey', whose SERP is leaderboards), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Does SHG Mean in Hockey? Shorthanded Goals and Points",
+  "description": "What does SHG mean in hockey? Shorthanded goals, scored by a team killing a penalty. How SHG and SHP are counted, how rare they are, and Detroit's kill.",
+  "h1": "What Does SHG Mean in Hockey? Shorthanded Goals and Points (SHG, SHP)"
+ },
+ "hero": {
+  "definition": "A shorthanded goal (SHG) is a goal scored by a team that's a man down because of a penalty. Shorthanded points (SHP) add the assists on those goals. They're the rarest goals by game state, about one in 40 last season, and the NHL's own glossary notes that the shots behind them often come on breakaways and odd-man rushes.",
+  "dek": "What does SHG mean in hockey box scores? It's the penalty kill's scoring column, and because a shorthanded goal doesn't end the penalty, the power play that gave it up keeps going for whatever time is left on the clock."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "SHG · SHP",
+   "sub": "spelled short-handed in the rulebook"
+  },
+  {
+   "label": "Tracked since",
+   "value": "1933-34",
+   "sub": "first season in the NHL's records"
+  },
+  {
+   "label": "Share of goals",
+   "value": "2.5%",
+   "sub": "205 of 8,086, 2025-26"
+  },
+  {
+   "label": "How often",
+   "value": "36.9",
+   "sub": "power plays per shorthanded goal, 2025-26"
+  },
+  {
+   "label": "Most SHG, 2025-26",
+   "value": "5",
+   "sub": "Ryan McLeod, Buffalo"
+  },
+  {
+   "label": "Most SHP, 2025-26",
+   "value": "7",
+   "sub": "Jean-Gabriel Pageau, Islanders"
+  },
+  {
+   "label": "Most by a team",
+   "value": "12",
+   "sub": "Carolina, 2025-26"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "3 SHG",
+   "sub": "and 5 allowed on its own power play"
+  }
+ ],
+ "origin": [
+  "The NHL has kept shorthanded goals as long as it's kept power-play goals, back to the first season its stats database splits scoring by strength, and the record holders are a who's who of centers. Mario Lemieux's 13 in 1988-89 still stand as the single-season mark. Wayne Gretzky's 73 lead all careers. Steve Yzerman is third with 50, every one of them for Detroit, and Marcel Dionne's 10 in 1974-75 remain the franchise's season record.",
+  "The rulebook spells it short-handed and defines it in Rule 16.2 as a team that's below the numerical strength of its opponent on the ice when a goal is scored. Whatever the spelling, the SHG meaning in hockey is the same on every stat site. The rule ends a minor penalty only when the team with the advantage scores, so a short-handed goal in hockey changes the score and nothing else. The penalty stays.",
+  "NHL.com publishes SHG, SHP and shorthanded assists back to 1933-34, and Hockey-Reference lists shorthanded goals as SH. The league folds the stat into two of its team numbers. Net power-play percentage subtracts the shorthanded goals a power play allows, and net penalty-kill percentage credits a kill for the ones it scores. MoneyPuck's data files carry a four-on-five bucket for the analytics side."
+ ],
+ "calculation": {
+  "intro": [
+   "A goal is shorthanded when the scoring team had fewer players on the ice than its opponent, because of a penalty, at the moment it went in. Points follow the usual scoring rules, one for the goal and one each for up to two assists. These are the inputs:"
+  ],
+  "inputs": [
+   "The goal scorer and up to two assists, as the official scorer credits them",
+   "The manpower when the puck went in (4-on-5, 3-on-5 or 3-on-4)",
+   "The penalty that put the scoring team down a man",
+   "Shorthanded time on ice, for the per-60 version"
+  ],
+  "formulas": [
+   {
+    "label": "Goals",
+    "expr": "SHG = goals scored while the scoring team is shorthanded by a penalty"
+   },
+   {
+    "label": "Points",
+    "expr": "SHP = SHG + shorthanded assists (SHA)"
+   },
+   {
+    "label": "Rate",
+    "expr": "SHP/60 = SHP ÷ shorthanded minutes × 60"
+   },
+   {
+    "label": "Team",
+    "expr": "Net PK% = 1 − (power-play goals against − SHG) ÷ times shorthanded"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. Detroit takes a tripping minor. Forty seconds into the kill, a Wings forward picks off a cross-ice pass at his own blue line, and the defenseman who joins the rush buries the return feed. The defenseman gets an SHG and an SHP, the forward an SHA and an SHP, and all four Detroit skaters get a plus while the five on the other side's power play each get a minus. The tripping minor keeps running, so the opponent still has 80 seconds of power play left.",
+  "after": [
+   "Most of them come at four-on-five. Of the league's 205 shorthanded goals last season, 173 came four-on-five and one came three-on-four, and the other 31 sit in the NHL's empty-net, extra-attacker and penalty-shot columns."
+  ],
+  "variants": [
+   {
+    "term": "SHG",
+    "def": "Shorthanded goals. A player's own goals scored while his team is down a man to a penalty."
+   },
+   {
+    "term": "SHA",
+    "def": "Shorthanded assists, split by the NHL into primary (SHA1) and secondary (SHA2) back to 1997-98."
+   },
+   {
+    "term": "SHP",
+    "def": "Shorthanded points, goals plus assists while killing a penalty."
+   },
+   {
+    "term": "SHP/60",
+    "def": "Shorthanded points per 60 minutes of shorthanded ice time, published by the NHL back to 2009-10.",
+    "slug": "per-60-rates"
+   },
+   {
+    "term": "Net PK%",
+    "def": "The NHL's penalty-kill percentage with a team's own shorthanded goals credited back.",
+    "slug": "penalty-kill-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "SHG measures something a penalty kill rarely does, which is score. League-wide there were 205 shorthanded goals last season, 2.5% of all goals, against 1,595 on the power play, so teams with the man advantage outscored the teams killing it by nearly eight to one. Most penalty killers go a whole season without one. Of the 327 forwards who played at least 60 games, 222 didn't score a shorthanded goal, and only 13 skaters in the league scored three or more.",
+  "The leaders come from a short list. Buffalo's Ryan McLeod led the league with five, on 10 shorthanded shots, and the Islanders' Jean-Gabriel Pageau led in points with seven. Carolina scored 12 as a team, while Colorado, Boston and Seattle scored two each. The average team got one about every 13 games.",
+  "Detroit scored three, tied for fourth-fewest, and allowed five on its own power play (the median team allowed six). Dylan Larkin, Michael Rasmussen and Albert Johansson scored one apiece, and Johansson's two SHP led the team. The Wings' kill spent its time defending. At 77.1% it ranked 23rd in penalty-kill percentage, which is the number that mattered, and the three shorthanded goals were a footnote to a kill that gave up 48 power-play goals of its own.",
+  "Does a shorthanded scorer do it again? Less often than a power-play scorer. Among the 379 skaters who played 60 games in each of the last two seasons, shorthanded goals correlated at 0.44 from one season to the next, against 0.74 for power-play goals and 0.80 for goals overall. On a stat where most players finish at zero or one, a single breakaway moves a player from the pack to the top of the list."
+ ],
+ "uses": [
+  {
+   "title": "Netting out a power play",
+   "html": "A power play that gives up shorthanded goals is worse than its PP% says, and the NHL's net power-play percentage subtracts them. Colorado allowed 13, the most in the league, which dropped its conversion rate from 17.1% (27th) to a net 12.2% (31st) and turned a below-average power play into one of the worst in hockey. Detroit allowed five, so its 22.6% fell to 20.6%. You'd miss that on the standard table."
+  },
+  {
+   "title": "Crediting a penalty kill",
+   "html": "Net penalty-kill percentage works the other way. It gives a kill credit for its own goals, and Carolina's 12 shorthanded goals lifted its kill from 80.5%, 11th in the league, to a net 85.7%, third, an eight-spot climb built on goals that a penalty kill isn't even asked to score. Detroit's kill moved the same way on a smaller scale, from 77.1% to a net 78.6%, because three shorthanded goals don't buy much."
+  },
+  {
+   "title": "Spotting a penalty killer's offense",
+   "html": "An SHP on a forward's line tells you he's killing penalties and creating something while he does it. Detroit's heaviest penalty-kill minutes went to Ben Chiarot (146), <a href=\"/players/moritz-seider/\">Moritz Seider</a> (130) and <a href=\"/players/j-t-compher/\">J.T. Compher</a> (126), and none of them recorded a shorthanded point. <a href=\"/players/albert-johansson/\">Johansson</a> had two in 111 minutes, the team high. That's rare. League-wide, 190 of the 327 regular forwards went the whole season without one."
+  }
+ ],
+ "live": {
+  "intro": "Detroit's penalty kill this season, rebuilt every night from MoneyPuck's 4-on-5 numbers. The average team scored a shorthanded goal about once every 13 games last season, so early totals are mostly zeros.",
+  "tiles": [
+   {
+    "label": "4-on-5 goals for",
+    "source": "team",
+    "path": "situations.4on5.goalsFor",
+    "format": "int",
+    "sub": "MoneyPuck, shorthanded at 4-on-5"
+   },
+   {
+    "label": "4-on-5 expected goals for",
+    "source": "team",
+    "path": "situations.4on5.xGoalsFor",
+    "format": "num2",
+    "sub": "chances created while killing a penalty"
+   },
+   {
+    "label": "4-on-5 goals against",
+    "source": "team",
+    "path": "situations.4on5.goalsAgainst",
+    "format": "int",
+    "sub": "power-play goals allowed at 4-on-5"
+   },
+   {
+    "tile": "pk_xga60"
+   }
+  ],
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. One shorthanded goal is a hot streak this early, so read these as a record of what's happened so far."
+ },
+ "limits": [
+  {
+   "title": "It's mostly zeros",
+   "html": "With 222 of 327 regular forwards at zero, the stat can't separate most penalty killers from each other. Score twice and you're in the league's top 45, which is a thin line to build a reputation on."
+  },
+  {
+   "title": "It ignores the job",
+   "html": "A penalty killer's job is keeping the puck out of his own net. SHG says nothing about it. If you want the defending, power-play goals against per 60 minutes and the expected-goals numbers on the penalty-kill tile cover it."
+  },
+  {
+   "title": "The shots are scarce",
+   "html": "Penalty killers took 1,998 shots on goal all season, about one for every four power plays, and no skater took more than 23. A shorthanded shooting percentage rests on a couple dozen shots at most."
+  },
+  {
+   "title": "It doesn't care how the goal happened",
+   "html": "An empty-net goal against a power play that pulled its goalie for a sixth attacker counts the same as a breakaway finished past a set goalie. One of those is a skill play and the other is a long shot into an open net."
+  },
+  {
+   "title": "Goalie numbers swing with it",
+   "html": "The NHL's glossary calls shorthanded save percentage volatile, because goalies face so few of these shots in a season. The same small sample runs through the shooters' side of the stat."
+  }
+ ],
+ "related": [
+  {
+   "slug": "penalty-kill-percentage",
+   "name": "Penalty kill percentage",
+   "abbr": "PK%",
+   "vs": "How often a kill keeps the power play off the board. SHG counts its own goals."
+  },
+  {
+   "slug": "power-play-goals-and-points",
+   "name": "Power-play goals and points",
+   "abbr": "PPG",
+   "vs": "Goals with the man advantage, nearly eight times as common."
+  },
+  {
+   "slug": "plus-minus",
+   "name": "Plus-minus",
+   "abbr": "+/-",
+   "vs": "Counts shorthanded goals for and against. Ignores power-play goals."
+  },
+  {
+   "slug": "even-strength-goals",
+   "name": "Even-strength goals",
+   "abbr": "EVG",
+   "vs": "Goals with matching manpower, including 4-on-4."
+  },
+  {
+   "slug": "goals",
+   "name": "Goals",
+   "abbr": "G",
+   "vs": "Every goal in every situation."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Is a goal scored at 4-on-4 a shorthanded goal?",
+   "a": "No. Coincidental minors to both teams don't make either side short-handed under Rule 16.2, so a 4-on-4 goal goes in the even-strength column even though both teams have a player in the box."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Stats glossary (SHG, SHP, SHA, SHA1/SHA2, SHP/60, Net PP%, Net PK%, PP GA/60, SH Sv%)",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "definitions, first season tracked, the breakaway and volatility notes; pulled from api.nhle.com/stats/rest/en/glossary"
+  },
+  {
+   "label": "Skater and team stats API, 2024-25 and 2025-26 regular seasons",
+   "publisher": "NHL",
+   "url": "https://api.nhle.com/stats/rest/en/skater/penaltykill?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "skater summary and penalty-kill reports; team penalty-kill, power-play and goals-for-by-strength reports"
+  },
+  {
+   "label": "Skater stats API, season and career records",
+   "publisher": "NHL",
+   "url": "https://api.nhle.com/stats/rest/en/skater/summary?isAggregate=true&limit=8&cayenneExp=gameTypeId=2",
+   "note": "Lemieux, Gretzky, Messier, Yzerman and Dionne"
+  },
+  {
+   "label": "Official Rules 2025-2026",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "Rule 16.2, the short-handed definition, minor penalties ending on a goal, coincidental minors"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "SH = short-handed goals; plus-minus counts short-handed goals"
+  },
+  {
+   "label": "2025-26 regular-season data files",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "the 4on5 situation split; the live slot"
+  }
+ ],
+ "method": "League and Red Wings figures are Wes & Woodward's calculations from the NHL stats API's 2025-26 regular-season reports (skater summary and penalty kill, team penalty kill, power play and goals-for-by-strength), downloaded October 9, 2026 and saved in research/glossary-pseo/raw/. Forward counts use the 327 forwards with 60 or more games. The season-to-season correlation pairs the 2024-25 and 2025-26 skater summaries for the 379 skaters with 60 or more games in both. Games per shorthanded goal is 2,624 team games divided by 205 goals. Records come from the same API's season and career queries. The Red Wings section rebuilds nightly from MoneyPuck."
+}

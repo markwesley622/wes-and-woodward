@@ -1,0 +1,49 @@
+Expected goals (xG) is the probability that an unblocked shot becomes a goal, priced against hundreds of thousands of past NHL shots from similar spots and situations. Add those probabilities up and you get the goals a player or team would've scored with league-average finishing and goaltending. A team's total is written xGF in hockey shorthand, for expected goals for.
+
+Goals are rare. The average NHL team scored 3.08 a game last season, and a lot of those came down to a bounce off a skate or a post. xG keeps every chance and strips out much of the luck, which is why it's the number this site leans on more than any other.
+
+Hockey's version of expected goals is 22 years old. Alan Ryder published a paper called Shot Quality at HockeyAnalytics.com in 2004, working from 2002-03 data, and weighted each shot by its distance, its type and whether it was a rebound. He pointed it at defense, grading the quality of the shots a team allowed.
+
+It didn't catch on for another 11 years. In October 2015, Dawson Sprigings and Asmae Toumi published a model at Hockey-Graphs showing that once a team had played about 20 games, xG predicted its future goals better than score-adjusted Corsi or goals themselves did. Emmanuel Perry's model on Corsica followed in 2016, and the public sites built their own from there.
+
+Four public sites publish xG today, and their numbers don't always match (more on that below). MoneyPuck, built by Peter Tanner, is the one this site uses. Evolving-Hockey, from Josh and Luke Younggren, runs four separate models for even strength, the power play, shorthanded offense and empty nets. Natural Stat Trick and HockeyStats publish xG too. All four start from the same raw material, the NHL's play-by-play feed, which logs every shot attempt with a shot type and a pair of rink coordinates.
+
+Soccer uses the same idea under the same name, though a hockey xG model is trained on hockey shots and only means something for hockey.
+
+The recipe is the same everywhere. Take a few hundred thousand past shots whose outcome you already know, describe each one with everything the play-by-play records, and train a model to predict which ones went in. MoneyPuck's current version was rebuilt for 2026-27 with gradient boosting on a random sample of more than 289,000 shots from 2023-24 through 2025-26 (for scale, the league took 112,096 unblocked attempts in 2025-26 alone). These are its inputs:
+
+Here's a worked example, with invented round numbers. Say a shift produces three unblocked attempts. The point shot is worth 0.03, the wrister from the faceoff dot 0.09 and the rebound at the side of the net 0.28, so the shift generated 0.40 expected goals. Score on any one of them and it finished 0.60 goals above expected. Score on none and it finished 0.40 below.
+
+Blocked shots are left out. The NHL logs a blocked shot at the spot of the block, so there's no honest record of where it was taken. That's also why xG counts unblocked attempts, the same set of shots as Fenwick.
+
+xG measures process. It tells you how many chances a team or player generated or allowed, and how dangerous they were, before a goalie or a crossbar got a vote.
+
+At the team level the anchor is 50%. Every expected goal one team creates is one the other team allows, so the league as a whole sits at exactly half. Last season Colorado led the league at five-on-five with 56.9% of the expected goals in its games, Carolina was second at 56.3% and Chicago finished last at 42.4%. Detroit was 21st at 48.8%, which means the Wings spent the season giving up slightly more than they created, and they didn't have the finishing to cover the gap (more on that below). Per 60 minutes of five-on-five play the range runs from 2.13 expected goals to Colorado's 3.03. The median team generated 2.47 and Detroit 2.38, a tick below the middle of the pack.
+
+The scale gets wider once you're looking at individual shooters. Among the 327 forwards who played at least 60 games in 2025-26, the median generated 17.3 individual expected goals in all situations and the top 10% cleared 29.7. Connor McDavid led the league at 43.6, about two and a half times the median forward. Alex DeBrincat was fifth at 36.9, the only Red Wing in the top 15 (Dylan Larkin was 18th).
+
+Why trust a model over the scoreboard? Because of what it predicts. In Sprigings and Toumi's study, xG and actual goals forecast a team's future scoring about equally well at the 20-game mark. Past that point xG pulled ahead and stayed there, which is the case for trusting it over the goal column for the rest of a season.
+
+Detroit's 2025-26 five-on-five season is the cleanest example on this site. The Wings scored 142 goals on 161.1 expected, a 19.1-goal shortfall that only New Jersey, the Islanders and Vancouver topped. At the other end they allowed 170 on 169.2 expected, so Detroit's goaltending was close to neutral. That's a finishing problem. It needs a different fix than a team that can't generate chances at all.
+
+Subtract a player's expected goals from his actual goals and you get goals above expected. DeBrincat scored 41 on 36.9 expected last season, a plus-4.1. Andrew Copp scored 9 on 19.8, a minus-10.8 that was the fifth-largest shortfall among the league's 940 skaters. Cole Caufield led in the other direction with 51 goals on 33.7 expected (plus-17.3). Is that skill or luck? MoneyPuck's own notes on shooting talent warn that one season of finishing carries a lot of luck, so a gap like Copp's means more over three or four years than over one.
+
+Flip the model to the goalie's side and you get goals saved above expected (GSAx), the expected goals a goalie faced minus the goals he allowed. Because every shot is already priced, a goalie behind a leaky defense doesn't get punished for the quality of what he sees. It's the goaltending number this site uses on the Team page.
+
+Swap every team's goals for its expected goals and you can ask which teams the results have flattered. The Team page runs that table every night, scoring all 32 teams on xG and showing where Detroit would sit if the bounces evened out.
+
+The play-by-play logs shots, but it doesn't record the passes that set them up. A cross-crease feed on a 2-on-1 looks to the model like any other shot from that spot, the exact play Evolving-Hockey uses to illustrate the gap. HockeyStats says plainly that its model has no royal-road pass data and leans on features that stand in for pre-shot movement.
+
+A McDavid wrister and a fourth-liner's from the same spot get the same value, because neither MoneyPuck's base model nor Evolving-Hockey's factors in shooting skill (MoneyPuck publishes a separate shooting-talent-adjusted version for exactly that reason).
+
+Every location comes from the league's event feed, and the feed makes mistakes. MoneyPuck's own demo video flags a slap shot that was recorded closer to the net than it was taken, which inflated its value.
+
+Neither MoneyPuck's nor Evolving-Hockey's published feature list includes goalie positioning, screens or traffic. All three help decide whether a shot goes in, and the public models price them only indirectly.
+
+Because blocked attempts are excluded, a defense that blocks a lot of shots looks better on xG against than one that lets them through to its goalie, and an offense that gets a lot of its own shots blocked looks worse for the same reason.
+
+MoneyPuck, Evolving-Hockey and HockeyStats each train their own model on their own choice of features and seasons, so the same player can carry a different xG from one site to the next. Don't mix sources; compare numbers from one site at a time (this site uses MoneyPuck throughout).
+
+Yes. MoneyPuck's model takes the number of skaters on each side and whether the net is empty as inputs, and Evolving-Hockey trains separate models for even strength, the power play, shorthanded play and empty nets. Most of the analysis on this site isolates five-on-five anyway, since power-play time isn't the same from team to team. The Team page splits Detroit's numbers by situation.
+
+Yes, and by a lot. At five-on-five in 2025-26, Montreal scored 23.4 more goals than expected, Buffalo 23.0 and Boston 22.1, while New Jersey came up 33.6 short. Whether a gap like that is skill or luck is the question goals above expected and a multi-season view are built to answer.

@@ -1,0 +1,345 @@
+{
+ "slug": "even-strength-goals",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Even-strength goals",
+  "short": "EVG",
+  "abbr": "EVG",
+  "aliases": [
+   "EVG",
+   "EVP",
+   "ES goals",
+   "even-strength points",
+   "EV goals",
+   "even strength goals NHL"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "even strength goals nhl",
+  "supporting": [
+   "even strength points nhl"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate; the primary's SERP is leaderboards, no explainer candidate), 2026-10-09"
+ },
+ "seo": {
+  "title": "Even-Strength Goals in the NHL and How EVG Is Counted",
+  "description": "Even-strength goals in the NHL are scored with equal manpower, 4-on-4 and 3-on-3 included. How EVG is counted, who led, and Detroit's 5v5 numbers nightly.",
+  "h1": "Even-Strength Goals in the NHL (EVG and EVP)"
+ },
+ "hero": {
+  "definition": "An even-strength goal (EVG) is a goal scored while both teams have the same number of players on the ice, at five-on-five, four-on-four or three-on-three. Even-strength points (EVP) add the assists. It's where most of a season's scoring happens, and it's the column to read when you want a scorer's production without his power-play time.",
+  "dek": "Even-strength goals in the NHL made up 77.7% of all scoring last season. The column holds more than five-on-five play, though, and the difference matters when you're comparing it with the analytics sites."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "EVG · EVP",
+   "sub": "ES goals, even-strength points"
+  },
+  {
+   "label": "Covers",
+   "value": "3 states",
+   "sub": "5-on-5, 4-on-4, 3-on-3, plus most empty-net goals"
+  },
+  {
+   "label": "Share of goals",
+   "value": "77.7%",
+   "sub": "6,286 of 8,086, 2025-26"
+  },
+  {
+   "label": "At 5-on-5",
+   "value": "66.3%",
+   "sub": "of all goals, 2025-26"
+  },
+  {
+   "label": "Most EVG, 2025-26",
+   "value": "42",
+   "sub": "Nathan MacKinnon, Colorado"
+  },
+  {
+   "label": "Most EVP, 2025-26",
+   "value": "97",
+   "sub": "Nathan MacKinnon, Colorado"
+  },
+  {
+   "label": "Median forward",
+   "value": "12 EVG",
+   "sub": "and 30 EVP, 327 forwards with 60+ games"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "180",
+   "sub": "even-strength goals, 23rd of 32"
+  }
+ ],
+ "origin": [
+  "The NHL's stats database files every goal as even strength, power play or shorthanded, going back as far as its power-play records do. It's the biggest column in the record book, and Wayne Gretzky owns it. His 68 even-strength goals in 1981-82 are still the single-season record, and his 617 lead all careers, ahead of Alex Ovechkin and Gordie Howe. Steve Yzerman's 45 in 1988-89 are Detroit's season record.",
+  "The league's definition is simple. Even strength means both teams have the same number of players on the ice, either because nobody's in the penalty box or because both sides have lost the same number to penalties. That includes four-on-four after coincidental minors, which Rule 16.2 says don't make either team shorthanded, and three-on-three, the format of every regular-season overtime under Rule 84.1.",
+  "Analysts mostly work at five-on-five instead. The NHL's own glossary explains why, since comparisons at even strength or five-on-five aren't skewed by how much power-play time a player gets, and five-on-five strips out the goalie-pulled minutes at the end of games. MoneyPuck's data files carry a 5on5 bucket, and that's the split this site uses for most of its team numbers."
+ ],
+ "calculation": {
+  "intro": [
+   "Every NHL goal is filed as even strength, power play or shorthanded, so the even-strength column is whatever's left after the other two. A goal scored with a goalie pulled for an extra attacker still counts as even strength when neither team has a man in the box. These are the inputs:"
+  ],
+  "inputs": [
+   "The goal scorer and up to two assists, as the official scorer credits them",
+   "The manpower when the puck went in",
+   "Whether either team was shorthanded by an unmatched penalty",
+   "Even-strength time on ice, for the per-60 version"
+  ],
+  "formulas": [
+   {
+    "label": "Goals",
+    "expr": "EVG = goals − PPG − SHG"
+   },
+   {
+    "label": "Points",
+    "expr": "EVP = EVG + even-strength assists"
+   },
+   {
+    "label": "On-ice share",
+    "expr": "EV GF% = EV GF ÷ (EV GF + EV GA)"
+   },
+   {
+    "label": "Five-on-five",
+    "expr": "5v5 goals = EVG − 4-on-4, 3-on-3 and goalie-pulled goals"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. Say a forward's 30-goal season breaks down as 20 at five-on-five, two at four-on-four, one in a three-on-three overtime, two into empty nets late in games and five on the power play. His EVG is 25, the 30 goals minus the five power-play goals. His five-on-five total is 20. Those five extra goals are the gap between the NHL's even-strength column and the five-on-five column the analytics sites publish.",
+  "after": [
+   "League-wide the gap is about a seventh of the column. Of the 6,286 even-strength goals scored last season, 5,362 came at five-on-five, 178 at three-on-three and 82 at four-on-four, and the other 664 came with a net empty, with an extra attacker on or on a penalty shot."
+  ],
+  "variants": [
+   {
+    "term": "EVG",
+    "def": "Even-strength goals. A player's own goals scored with equal manpower on both sides."
+   },
+   {
+    "term": "EVP",
+    "def": "Even-strength points, goals plus assists with equal manpower. The NHL tracks it back to 1933-34."
+   },
+   {
+    "term": "EV GF / EV GA",
+    "def": "Even-strength goals for and against while a player is on the ice, whether or not he gets a point. The NHL publishes them back to 2009-10."
+   },
+   {
+    "term": "EV GF%",
+    "def": "A player's or team's share of the even-strength goals scored in its minutes.",
+    "slug": "goals-for-percentage"
+   },
+   {
+    "term": "5v5",
+    "def": "The analytics default. Five skaters a side, with both goalies in.",
+    "slug": "five-on-five"
+   }
+  ]
+ },
+ "meaning": [
+  "EVG measures scoring in the part of the game where neither team has a manpower edge, which is most of it. Power-play time varies so much from player to player (Detroit's first unit got more than three minutes a night, its fourth line almost none) that the even-strength column is the fairest place to compare scorers on different teams and in different roles. If you only have one number for a forward's scoring, this is the one that doesn't depend on whether his coach likes him on the power play.",
+  "Among the 327 forwards who played at least 60 games last season, the median scored 12 even-strength goals and 30 even-strength points. Nathan MacKinnon led the league in both with 42 and 97. Alex DeBrincat's 62 even-strength points ranked ninth, and his 26 even-strength goals tied for 21st. Is that a different player from the one in the goal column? A little. He scored 15 of his 41 on the power play.",
+  "Where did Detroit's offense go missing last season? At even strength. The Wings scored 180 even-strength goals, 23rd in the league, against a median of 197, and only 142 at five-on-five, third-fewest. Even strength produced 75.3% of Detroit's goals, a smaller share than all but eight teams managed, and the special teams made back only part of the even-strength deficit.",
+  "Even-strength scoring holds up from year to year about as well as scoring overall. Among the 379 skaters with 60 games in each of the last two seasons, EVP correlated at 0.77 from one season to the next and EVG at 0.71, close to the 0.86 and 0.80 for points and goals. Expected goals settle faster, though. The Hockey-Graphs study behind this site's xG page found that once a team is about a quarter of the way into a season, a team's xG beats its goals at forecasting the goals it'll score next."
+ ],
+ "uses": [
+  {
+   "title": "Comparing scorers without the power play",
+   "html": "<a href=\"/players/lucas-raymond/\">Lucas Raymond</a> finished nine points behind <a href=\"/players/alex-debrincat/\">DeBrincat</a>. At even strength the gap was 13 (62 to 49), because Raymond made up ground on the power play, 27 points to 23. Which of them drove more of Detroit's even-strength offense? The even-strength line answers that better than the point total does, and it says DeBrincat, by a wide margin. Raymond got 36% of his points on the power play to DeBrincat's 27%, so his total leans harder on the first unit."
+  },
+  {
+   "title": "Finding where a team's offense broke",
+   "html": "Detroit's 142 five-on-five goals were third-fewest in the league, and the team's expected goals say it wasn't a chance problem, because MoneyPuck's model had the Wings at 161.1 expected goals at five-on-five and they finished 19.1 goals short of it. Score those and Detroit's even-strength total sits right at the league median. That's the difference between a roster that can't create and one that can't finish, and the two call for different fixes."
+  },
+  {
+   "title": "Checking a defenseman's offense",
+   "html": "<a href=\"/players/moritz-seider/\">Moritz Seider</a>'s 60 points tied for 11th among defensemen, and his 28 power-play points tied for fourth. At even strength he had 32, comfortably above the median regular defenseman's 22 and well short of Evan Bouchard's 60. His power-play production is already elite, so the gap between Seider and the league's top offensive defensemen sits at even strength, and that's where his next step would have to come from."
+  }
+ ],
+ "live": {
+  "intro": "Detroit's five-on-five scoring this season, rebuilt every night, with the Red Wings' goal scorers below. Five-on-five is the biggest piece of even strength; 4-on-4, 3-on-3 and empty-net goals aren't in these tiles.",
+  "credit": "NHL API and MoneyPuck",
+  "tiles": [
+   {
+    "label": "5v5 goals for",
+    "source": "team",
+    "path": "situations.5on5.goalsFor",
+    "format": "int",
+    "sub": "MoneyPuck, five-on-five"
+   },
+   {
+    "label": "5v5 goals against",
+    "source": "team",
+    "path": "situations.5on5.goalsAgainst",
+    "format": "int",
+    "sub": "MoneyPuck, five-on-five"
+   },
+   {
+    "label": "5v5 expected goals for",
+    "source": "team",
+    "path": "situations.5on5.xGoalsFor",
+    "format": "num1",
+    "sub": "what the chances were worth"
+   },
+   {
+    "tile": "xg_share_5v5"
+   }
+  ],
+  "leaders": {
+   "source": "skaters",
+   "sort": "goals",
+   "ascending": false,
+   "limit": 8,
+   "caption": "Red Wings skaters by goals in all situations, with their five-on-five minutes and shot rates",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "Goals",
+     "path": "goals",
+     "format": "int"
+    },
+    {
+     "label": "Points",
+     "path": "points",
+     "format": "int"
+    },
+    {
+     "label": "5v5 min",
+     "path": "fiveOnFive.icetimeMinutes",
+     "format": "num1"
+    },
+    {
+     "label": "5v5 ixG/60",
+     "path": "fiveOnFive.ixgPer60",
+     "format": "num2"
+    },
+    {
+     "label": "5v5 on-ice xGF%",
+     "path": "fiveOnFive.onIceXgPct",
+     "format": "pct1"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. Before about 20, expected goals and goals forecast the rest of a season about equally well, so read the goal tiles as a record of what's happened."
+ },
+ "limits": [
+  {
+   "title": "It mixes game states",
+   "html": "A three-on-three overtime winner and an empty-netter in the last minute both land in the column, and last season 924 of the 6,286 even-strength goals weren't scored at five-on-five, which is why analysts reach for the five-on-five split first."
+  },
+  {
+   "title": "Empty nets pad it",
+   "html": "The league scored 508 empty-net goals last season, and the NHL counted most of them as even strength. A forward who closes out a lot of games gets a few free goals that have nothing to do with beating a goalie."
+  },
+  {
+   "title": "It doesn't say who drove the play",
+   "html": "EVG credits the scorer and EVP the passers, and the other three skaters on the ice get nothing, so on-ice goal share and expected goals do a better job of showing who tilted the ice."
+  },
+  {
+   "title": "Ice time still matters",
+   "html": "A top-six forward plays far more even-strength minutes than a fourth-liner, so totals favor him. The NHL publishes even-strength ice time back to 1997-98, and per-60 rates correct for most of it when you're comparing across roles."
+  },
+  {
+   "title": "Goals carry shooting luck",
+   "html": "An even-strength goal total rides on shooting percentage, and MoneyPuck's notes on shooting talent warn that one season of finishing carries a lot of luck. A big jump or drop in EVG deserves a look at the shots behind it before anyone calls it a new level."
+  }
+ ],
+ "related": [
+  {
+   "slug": "five-on-five",
+   "name": "Five-on-five",
+   "abbr": "5v5",
+   "vs": "The biggest slice of even strength, minus 4-on-4, 3-on-3 and pulled goalies."
+  },
+  {
+   "slug": "power-play-goals-and-points",
+   "name": "Power-play goals and points",
+   "abbr": "PPG",
+   "vs": "The other column that adds up to a goal total, about one goal in five."
+  },
+  {
+   "slug": "goals",
+   "name": "Goals",
+   "abbr": "G",
+   "vs": "Every goal in every situation."
+  },
+  {
+   "slug": "points",
+   "name": "Points",
+   "abbr": "P",
+   "vs": "Goals and assists in every situation. EVP strips out the special teams."
+  },
+  {
+   "slug": "goals-for-percentage",
+   "name": "Goals for percentage",
+   "abbr": "GF%",
+   "vs": "The on-ice share of goals. EVG counts only the ones a player scores."
+  },
+  {
+   "slug": "plus-minus",
+   "name": "Plus-minus",
+   "abbr": "+/-",
+   "vs": "On-ice even-strength goals for minus against, with shorthanded goals mixed in."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Do overtime goals count as even-strength goals?",
+   "a": "Yes, unless a penalty is involved. Regular-season overtime is three-on-three under Rule 84.1, and a penalty in overtime gives the other team a fourth skater, so a goal on that four-on-three goes in the power-play column."
+  },
+  {
+   "q": "Where can I find even-strength points for NHL players?",
+   "a": "The NHL's skater summary report, the table behind NHL.com's stats pages, carries EVG and EVP for every season back to 1933-34, so even-strength points for any NHL season are a sort away. The live table above covers this season's Red Wings."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Stats glossary (EVG, EVP, EV GF, EV GA, EV GF%, EV TOI, even-strength stats, 5-on-5 stats)",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "the even-strength definition, what it includes, why analysts compare at even strength or 5-on-5; pulled from api.nhle.com/stats/rest/en/glossary"
+  },
+  {
+   "label": "Skater and team stats API, 2024-25 and 2025-26 regular seasons",
+   "publisher": "NHL",
+   "url": "https://api.nhle.com/stats/rest/en/team/goalsforbystrength?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "team goals for and against by strength; skater summary, power-play and penalty-kill reports"
+  },
+  {
+   "label": "Skater stats API, season and career records",
+   "publisher": "NHL",
+   "url": "https://api.nhle.com/stats/rest/en/skater/summary?isAggregate=true&limit=8&cayenneExp=gameTypeId=2",
+   "note": "Gretzky, Ovechkin, Howe and Yzerman"
+  },
+  {
+   "label": "Official Rules 2025-2026",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "Rule 16.2 (coincidental minors), Rule 84.1 (three-on-three overtime, four-on-three on a penalty)"
+  },
+  {
+   "label": "Expected Goals are a better predictor of future scoring than Corsi, Goals",
+   "publisher": "Hockey-Graphs, October 1, 2015",
+   "url": "https://hockey-graphs.com/2015/10/01/expected-goals-are-a-better-predictor-of-future-scoring-than-corsi-goals/",
+   "note": "xG beats goals at forecasting after about 20 games"
+  },
+  {
+   "label": "Expected Goals Model",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/about.htm",
+   "note": "shooting-talent note, one season of finishing carries a lot of luck"
+  },
+  {
+   "label": "2025-26 regular-season data files",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "Detroit's 5on5 goals and expected goals; the live slot"
+  }
+ ],
+ "method": "League and Red Wings figures are Wes & Woodward's calculations from the NHL stats API's 2025-26 regular-season reports (skater summary, team summary, power play, penalty kill, and goals for and against by strength), downloaded October 9, 2026 and saved in research/glossary-pseo/raw/. Team even-strength goals are goals for minus power-play and shorthanded goals; the goalie-pulled and penalty-shot remainder is even-strength goals minus the 5-on-5, 4-on-4 and 3-on-3 columns. Player benchmarks use the 327 forwards and 161 defensemen with 60 or more games; the season-to-season correlations pair the 2024-25 and 2025-26 skater summaries for the 379 skaters with 60 or more games in both. Detroit's five-on-five expected goals come from MoneyPuck's 2025-26 team file, downloaded the same day. The Red Wings section rebuilds nightly from MoneyPuck."
+}

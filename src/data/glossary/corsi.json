@@ -1,0 +1,375 @@
+{
+ "slug": "corsi",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Corsi",
+  "short": "Corsi",
+  "abbr": "CF%",
+  "aliases": [
+   "CF%",
+   "CF",
+   "CA",
+   "SAT",
+   "SAT%",
+   "Corsi for percentage",
+   "shot attempts percentage"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "corsi hockey",
+  "supporting": [
+   "what is corsi in hockey",
+   "what is corsi",
+   "corsi nhl",
+   "corsi for percentage",
+   "what does corsi mean in hockey",
+   "corsi for nhl",
+   "corsi hockey stat",
+   "sat hockey stat"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "Corsi in Hockey and How Corsi For Percentage Works",
+  "description": "Corsi in hockey counts every shot attempt for and against. Where it came from, how CF% is calculated, what it predicts, and the Red Wings' numbers, nightly.",
+  "h1": "Corsi in Hockey and Corsi For Percentage (CF%)"
+ },
+ "hero": {
+  "definition": "Corsi in hockey is a count of every shot attempt, on goal, missed or blocked, that a team takes and allows, or that happens while a given player is on the ice. Corsi for percentage (CF%) is the team's share of those attempts, so 50% is break-even. The NHL calls the same hockey stat SAT, for shot attempts.",
+  "dek": "At five-on-five last season the league logged 121,106 shot attempts and 5,367 goals, about 23 attempts for every goal. That bigger sample is most of the case for Corsi, and it's still the steadiest read on which team spent the night in the other team's end."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "SAT · CF%",
+   "sub": "the NHL's name, and the share"
+  },
+  {
+   "label": "Counts",
+   "value": "Attempts",
+   "sub": "on goal, missed and blocked"
+  },
+  {
+   "label": "Team average",
+   "value": "50%",
+   "sub": "5v5 CF%, by construction"
+  },
+  {
+   "label": "Best team, 2025-26",
+   "value": "59.8%",
+   "sub": "Carolina, 5v5 CF%"
+  },
+  {
+   "label": "Worst team, 2025-26",
+   "value": "44.8%",
+   "sub": "Toronto, 5v5 CF%"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "48.8%",
+   "sub": "21st of 32 at 5v5"
+  },
+  {
+   "label": "Named for",
+   "value": "Jim Corsi",
+   "sub": "the Sabres' goalie coach, picked for his mustache"
+  },
+  {
+   "label": "This site uses",
+   "value": "MoneyPuck",
+   "sub": "rebuilt nightly"
+  }
+ ],
+ "origin": [
+  "Corsi got its name almost by accident. Tim Barnes, a Chicago financial analyst who blogged as Vic Ferrari at Irreverent Oiler Fans, started tracking shot-attempt differential after hearing Sabres general manager Darcy Regier talk about shot attempts on the radio. He told Bob McKenzie he thought about calling it the Regier number, then the Ruff number after coach Lindy Ruff, before he settled on a photo on the Sabres' website of Jim Corsi, the team's longtime goaltending coach. \"I just liked his moustache,\" Ferrari said.",
+  "The name fit better than Ferrari knew. Corsi had been adding shots on goal, missed shots and blocked shots together to measure how hard his goalies worked, because shots on goal alone left part of the workload out (he later walked NBC Sports through the method). Ferrari didn't learn that until McKenzie told him in a 2014 interview. There's one more coincidence in the story. Corsi played 26 games in goal for the Oilers in 1979-80, and the stat with his name was born on an Oilers blog.",
+  "It went mainstream fast. Corsi was a working tool on the Alberta blogs by November 2007, when Matt Fenwick proposed the version that drops blocked shots. Washington hired Barnes as an analytics consultant in October 2014, and in February 2015 NHL.com launched an enhanced-stats section that renamed Corsi SAT, short for shot attempts. The league's stats site still files it that way, with numbers back to 2009-10. Natural Stat Trick, MoneyPuck, Evolving-Hockey and Hockey-Reference all publish it under the blogger's name, built from the same NHL play-by-play feed."
+ ],
+ "calculation": {
+  "intro": [
+   "The arithmetic is simple, which is half its appeal. Every shot attempt goes in one of two columns, for or against, and the share is your team's column divided by both. The NHL counts only five-on-five attempts for SAT, and this site does the same, since power-play time varies so much from team to team. These are the inputs:"
+  ],
+  "inputs": [
+   "Shots on goal, goals included",
+   "Missed shots, including posts and crossbars",
+   "Blocked attempts, credited to the team that shot",
+   "Five-on-five ice time, for per-60 rates",
+   "For a player, which attempts happened while he was on the ice"
+  ],
+  "formulas": [
+   {
+    "label": "Corsi for",
+    "expr": "CF = shots on goal + missed shots + blocked attempts"
+   },
+   {
+    "label": "Differential",
+    "expr": "Corsi = CF − CA"
+   },
+   {
+    "label": "Share",
+    "expr": "CF% = CF ÷ (CF + CA)"
+   },
+   {
+    "label": "Rate",
+    "expr": "CF/60 = CF ÷ five-on-five minutes × 60"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. Say Detroit and an opponent play a game's worth of five-on-five. The Wings put 20 shots on goal, miss the net 10 times and get 15 attempts blocked, so their Corsi for is 45. The other team finishes with 40 attempts of its own. Detroit's CF% for the night is 45 ÷ 85, or 52.9%, and its Corsi differential is plus-five.",
+  "after": [
+   "Goals count, since every goal is a shot on goal. Shootout attempts never do, and the NHL's version drops everything outside five-on-five, so power plays and pulled-goalie stretches are out. The individual version, iCF, keeps only the attempts a player takes himself."
+  ],
+  "variants": [
+   {
+    "term": "CF",
+    "def": "Corsi for. Every attempt a team takes, or takes while a given player is on the ice."
+   },
+   {
+    "term": "CA",
+    "def": "Corsi against. The same count for the attempts aimed at your net."
+   },
+   {
+    "term": "CF%",
+    "def": "Corsi for percentage, the share. The NHL's stats site lists it as SAT%. 50% is break-even."
+   },
+   {
+    "term": "Rel CF%",
+    "def": "A player's on-ice CF% minus his team's CF% with him on the bench.",
+    "slug": "relative-corsi"
+   },
+   {
+    "term": "iCF",
+    "def": "Individual Corsi for. Only the attempts a player takes himself.",
+    "slug": "individual-shot-attempts"
+   }
+  ]
+ },
+ "meaning": [
+  "Corsi measures territory. A team taking most of the attempts is spending more of the night in the other team's end, and the NHL's glossary calls SAT a common proxy for puck possession, though it adds that the stat doesn't time possession itself. What Corsi can't tell you is whether those attempts were any good.",
+  "At five-on-five last season, Carolina led the league with 59.8% of the shot attempts in its games and Toronto finished last at 44.8%. Detroit was 21st at 48.8%, which works out to about two more attempts against than for on an average night. Players spread wider. Among the 598 skaters who logged at least 500 five-on-five minutes, the median on-ice CF% was 49.6%, the top tenth cleared 55.3% and the bottom tenth sat at or below 45.1%. Carolina's K'Andre Miller topped the list at 61.9%, and 20 of the top 50 were Hurricanes, which says how much of a player's raw Corsi belongs to his team.",
+  "Why did analysts trust it in the first place? Because it repeats. Across the last three seasons, 96 team-seasons in all, a team's CF% over the first half of its schedule correlated at 0.81 with its CF% over the second half (a perfect match would score one), against 0.56 for goal share. The NHL's glossary still credits shot-attempt possession with a high correlation with winning and with predicting future performance.",
+  "As a forecast of goals, plain Corsi has been passed. In the same sample, first-half CF% correlated at 0.42 with second-half goal share, score-adjusted Corsi at 0.47, expected goals at 0.52 and first-half goal share itself at 0.56. Corsi, with or without the score adjustment, is the most stable number in the family. It's no longer the one that tells you the most about who'll outscore whom."
+ ],
+ "uses": [
+  {
+   "title": "Reading a team's process",
+   "html": "Detroit's last season splits cleanly. The Wings took 48.8% of the five-on-five attempts, 21st in the league, and the same 48.8% of the expected goals, so shot volume and shot quality told the same story. Their goal share was 45.5%, 26th, because they converted 8.1% of their shots on goal, the third-worst rate in the league. Corsi says Detroit was a little below average at tilting the ice. The scoreboard said worse."
+  },
+  {
+   "title": "Comparing players on one roster",
+   "html": "Corsi gets more useful once you split it by who's on the ice. <a href=\"/players/moritz-seider/\">Moritz Seider</a> was on for 53.0% of the five-on-five attempts while he played, the best mark among Detroit's regulars, and the Wings managed 46.2% with him on the bench. That gap is his relative Corsi, and it ranked 12th among the league's 598 skaters with 500 minutes. <a href=\"/players/ben-chiarot/\">Ben Chiarot</a>, second among Detroit defensemen in five-on-five minutes, ran the other way, at 46.3% on the ice and 50.4% off it."
+  },
+  {
+   "title": "Adjusting for the score",
+   "html": "Trailing teams pile up attempts and leading teams sit back, the pattern the NHL's glossary calls score effects. By the league's own count, Detroit took 53.5% of the five-on-five attempts while trailing last season and 42.9% while leading. The average team ran 52.4% and 47.4%, so the Wings sat back harder than most with a lead. Score-adjusted Corsi reweights each attempt by game state (Natural Stat Trick and Evolving-Hockey both use Micah Blake McCurdy's method), and it held up better than raw Corsi in the split-season test above."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night from MoneyPuck, with games played from the NHL API. Detroit's five-on-five Corsi share comes first with its league rank, then the all-situations number and the expected-goals share for comparison, then the Red Wings skaters with the best on-ice CF% so far.",
+  "tiles": [
+   {
+    "label": "5v5 Corsi share (CF%)",
+    "source": "team",
+    "path": "situations.5on5.corsiPct",
+    "format": "pct1",
+    "rankPath": "leagueRanks.corsiPct_5on5"
+   },
+   {
+    "label": "All-situations CF%",
+    "source": "team",
+    "path": "situations.all.corsiPct",
+    "format": "pct1",
+    "sub": "power play and penalty kill included"
+   },
+   {
+    "tile": "xg_share_5v5"
+   }
+  ],
+  "leaders": {
+   "source": "skaters",
+   "sort": "fiveOnFive.onIceCorsiPct",
+   "limit": 8,
+   "caption": "Red Wings skaters by on-ice CF%, five-on-five",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "5v5 min",
+     "path": "fiveOnFive.icetimeMinutes",
+     "format": "num1"
+    },
+    {
+     "label": "On-ice CF%",
+     "path": "fiveOnFive.onIceCorsiPct",
+     "format": "pct1"
+    },
+    {
+     "label": "On-ice xGF%",
+     "path": "fiveOnFive.onIceXgPct",
+     "format": "pct1"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. Corsi steadies faster than goals do, but a few games of attempts is still a small sample, and a skater with little ice time can top this table. Read it as a record of what's happened so far.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "Every attempt counts the same",
+   "html": "A point shot through three bodies counts exactly as much as a one-timer from the slot. Expected goals exists to fix that, and it beat raw Corsi as a forecast of second-half goal share in the test on this page (0.52 to 0.42)."
+  },
+  {
+   "title": "Blocks and misses depend on the scorer",
+   "html": "Shots on goal get logged about the same way in every rink. Blocks and misses don't. In six seasons of league data ending in 2012-13, Michael Schuckers and Brian Macdonald found persistent rink effects for blocked shots in 15 arenas and for missed shots in nine, against two for shots on goal."
+  },
+  {
+   "title": "A player's number is mostly his team's",
+   "html": "How much of it? Among the 598 skaters with 500 five-on-five minutes last season, on-ice CF% correlated at 0.74 with the team's CF%. Usage matters too. The NHL's glossary notes that players who start more shifts in the offensive zone should expect a slight bump in SAT%."
+  },
+  {
+   "title": "It doesn't time possession",
+   "html": "The NHL's glossary says outright that SAT doesn't measure possession time, so a team that cycles for 40 seconds without a shot gets nothing for it."
+  },
+  {
+   "title": "Goals still decide the standings",
+   "html": "Goal share tracks the standings far more closely, correlating at 0.86 with points percentage across the 32 teams last season, against 0.57 for CF%."
+  }
+ ],
+ "related": [
+  {
+   "slug": "fenwick",
+   "name": "Fenwick",
+   "abbr": "FF%",
+   "vs": "Corsi minus the blocked shots."
+  },
+  {
+   "slug": "relative-corsi",
+   "name": "Relative Corsi",
+   "abbr": "Rel CF%",
+   "vs": "A player's CF% minus his team's with him on the bench."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "Weights each unblocked attempt by its chance of going in. Corsi counts them all as one."
+  },
+  {
+   "slug": "shot-share",
+   "name": "Shot share",
+   "abbr": "SF%",
+   "vs": "Shots on goal only, so misses and blocks drop out."
+  },
+  {
+   "slug": "score-adjusted-stats",
+   "name": "Score-adjusted stats",
+   "abbr": "Score-adj.",
+   "vs": "Corsi reweighted for the score, so sitting on a lead doesn't count against a team."
+  },
+  {
+   "slug": "pdo",
+   "name": "PDO",
+   "abbr": "PDO",
+   "vs": "The shooting and save percentages that turn attempts into goals."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "McKenzie on how Corsi got its name (Hockey Confidential excerpt)",
+   "publisher": "Die By The Blade (SB Nation), October 6, 2014, quoting Bob McKenzie, TSN",
+   "url": "https://www.diebytheblade.com/corsi-number-named-after-darcy-regier-bob-mckenzie/",
+   "note": "Regier on the radio, the Regier and Ruff numbers, the Sabres website photo, the moustache quote, Corsi's workload count"
+  },
+  {
+   "label": "Corsi (statistic)",
+   "publisher": "Wikipedia, citing McKenzie, TSN, October 6, 2014",
+   "url": "https://en.wikipedia.org/wiki/Corsi_(statistic)",
+   "note": "Tim Barnes, a Chicago financial analyst writing as Vic Ferrari"
+  },
+  {
+   "label": "Caps hire analytics pioneer Tim Barnes, aka Vic Ferrari",
+   "publisher": "Russian Machine Never Breaks, October 11, 2014",
+   "url": "https://www.russianmachineneverbreaks.com/2014/10/11/caps-hire-analytics-pioneer-tim-barnes-aka-vic-ferrari/",
+   "note": "Barnes is Vic Ferrari, ran Irreverent Oilers Fans, hired by Washington"
+  },
+  {
+   "label": "Jim Corsi, the man behind Corsi numbers",
+   "publisher": "NBC Sports (James O'Brien), April 30, 2010",
+   "url": "https://www.nbcsports.com/nhl/news/jim-corsi-the-man-behind-corsi-numbers",
+   "note": "Corsi as Sabres goalie coach, his workload method"
+  },
+  {
+   "label": "Jim Corsi player page",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/players/c/corsiji01.html",
+   "note": "26 games for Edmonton in 1979-80"
+  },
+  {
+   "label": "Flames thru 20",
+   "publisher": "Battle of Alberta, November 2007",
+   "url": "https://battleofalberta.blogspot.com/2007/11/",
+   "note": "Corsi in use and the case for dropping blocked shots"
+  },
+  {
+   "label": "Revenge of the Nerds: NHL.com embraces advanced analytics",
+   "publisher": "Sports Illustrated (Allan Muir), February 20, 2015",
+   "url": "https://www.si.com/nhl/2015/02/20/nhl-new-advanced-hockey-stats-package-on-website",
+   "note": "the NHL renames Corsi SAT and Fenwick USAT"
+  },
+  {
+   "label": "NHL stats glossary (SAT, SAT%, score effects, puck possession, OZ Start%)",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/glossary",
+   "note": "definitions, 5-on-5 only, available since 2009-10, possession and score-effects notes"
+  },
+  {
+   "label": "Team percentages report, 2025-26",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/percentages?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "SAT% while leading and trailing"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "Corsi definition, on-ice and off-ice"
+  },
+  {
+   "label": "General Terms",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/general-terms/",
+   "note": "CF and CA definitions, McCurdy score and venue adjustment"
+  },
+  {
+   "label": "Player and team glossary",
+   "publisher": "Natural Stat Trick (read from a January 2025 Wayback Machine capture)",
+   "url": "https://www.naturalstattrick.com/glossary.php?players",
+   "note": "Corsi, CF%, shootout excluded, McCurdy score adjustment"
+  },
+  {
+   "label": "Skater and team analytics",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/analytics/",
+   "note": "publishes Corsi"
+  },
+  {
+   "label": "Accounting for Rink Effects in the National Hockey League's Real Time Scoring System",
+   "publisher": "Michael Schuckers and Brian Macdonald, arXiv 1412.1035",
+   "url": "https://arxiv.org/abs/1412.1035",
+   "note": "rink effects for blocks, misses and shots, 2007-08 through 2012-13"
+  },
+  {
+   "label": "2025-26 team, skater and game-by-game files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season team and skater files and its team game-by-game files for 2023-24 through 2025-26, all downloaded October 9, 2026. Team CF% is CF ÷ (CF + CA) at five-on-five from attempt counts; player figures cover the 598 skaters with 500 or more five-on-five minutes. The split-season test cuts each of 96 team-seasons (all 82-game seasons, 2023-24 through 2025-26) into its first 41 and last 41 games and reports Pearson correlations. Points percentage and SAT% by score state come from the NHL stats API, downloaded the same day. The Red Wings section rebuilds nightly from MoneyPuck and the NHL API."
+}

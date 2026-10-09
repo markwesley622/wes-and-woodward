@@ -1,0 +1,223 @@
+{
+ "slug": "individual-points-percentage",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Individual points percentage",
+  "short": "IPP",
+  "abbr": "IPP",
+  "aliases": [
+   "IPP",
+   "individual point percentage",
+   "individual points percentage",
+   "points percentage on ice"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "ipp in hockey",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json status no_volume (no measured US volume in Ahrefs KE, 2026-10-09); primary is the abbreviation form, no supporting keywords"
+ },
+ "seo": {
+  "title": "IPP in Hockey and How Individual Points Percentage Works",
+  "description": "IPP in hockey is the share of on-ice goals a player scored or assisted on. The formula, what's normal for forwards and defensemen, and Detroit's numbers.",
+  "h1": "Individual Points Percentage (IPP) in Hockey"
+ },
+ "hero": {
+  "definition": "Individual points percentage (IPP) is the share of the goals scored while a player is on the ice that he scored or assisted on. It's his points divided by his on-ice goals for, usually at five-on-five, and IPP in hockey analysis is the quick check on whether a player is driving the offense or along for the ride.",
+  "dek": "A forward can post a strong plus-minus without touching the puck on the plays that matter, and IPP checks his fingerprints on each goal. It's one of the noisiest numbers in a stat line, though, which is worth knowing before you lean on it."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "IPP",
+   "sub": "individual point percentage"
+  },
+  {
+   "label": "Unit",
+   "value": "Percent",
+   "sub": "0 to 100, can't top 100"
+  },
+  {
+   "label": "Median forward",
+   "value": "65.4%",
+   "sub": "5v5, 2025-26, 385 with 500+ minutes"
+  },
+  {
+   "label": "Median defenseman",
+   "value": "34.8%",
+   "sub": "5v5, 2025-26, 213 with 500+ minutes"
+  },
+  {
+   "label": "Average skater",
+   "value": "53.7%",
+   "sub": "2.68 points per 5v5 goal, split five ways"
+  },
+  {
+   "label": "Best Red Wing",
+   "value": "87.0%",
+   "sub": "van Riemsdyk, 20 of 23, 3rd of 385"
+  },
+  {
+   "label": "Repeats at",
+   "value": "r = 0.21",
+   "sub": "forwards, 2024-25 to 2025-26"
+  },
+  {
+   "label": "Published by",
+   "value": "NST",
+   "sub": "Natural Stat Trick; this site computes it from MoneyPuck"
+  }
+ ],
+ "origin": [
+  "IPP doesn't have a famous inventor. It grew out of the on-ice goal counts public stats sites publish, and by 2015 it was common enough for TSN to explain it. Travis Yost's 2015 explainer at TSN set out the norms that still roughly hold, about 68% for forwards and about 30% for defensemen, with Sidney Crosby at 84.8% and Erik Karlsson at 49.4% leading the career numbers in his data.",
+  "Yost's main point was about luck. IPP \"regresses substantially towards league averages,\" he wrote, so a player who's far off both the league norm and his own career norm is more often having a lucky or unlucky season than finding a new level. A general manager who knows that can sell a player after a lucky year and buy one after an unlucky one.",
+  "Natural Stat Trick publishes it today, defined as the percentage of the goals for a player's team while he's on the ice that he earned a point on, or total points over goals for, in whatever game state you filter for. This site computes it from MoneyPuck's five-on-five points and on-ice goals."
+ ],
+ "calculation": {
+  "intro": [
+   "Two numbers go in, and both come straight from the event log. The numerator is the player's own points and the denominator is every goal his team scored while he was on the ice, counted in the same game state. A primary assist and a secondary assist count the same. These are the inputs:"
+  ],
+  "inputs": [
+   "The player's goals",
+   "His primary and secondary assists",
+   "His team's goals while he was on the ice (on-ice goals for)",
+   "The game state, almost always five-on-five"
+  ],
+  "formulas": [
+   {
+    "label": "IPP",
+    "expr": "IPP = (goals + assists) ÷ on-ice goals for"
+   },
+   {
+    "label": "Primary only",
+    "expr": "primary IPP = (goals + primary assists) ÷ on-ice goals for"
+   },
+   {
+    "label": "League average",
+    "expr": "points per goal ÷ skaters on the ice"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. A forward is on the ice for 40 of his team's five-on-five goals. He scores 10 of them and picks up assists on 16 more, so his IPP is 26 ÷ 40, or 65%, right about the league median for a forward. Take away three of those assists, the kind that hinge on who touched the puck last in a scramble, and he drops to 57.5%, just above the bottom fifth.",
+  "after": [
+   "A point can't be counted twice on one goal, so IPP tops out at 100%. If you add up every five-on-five goal last season, each one came with 2.68 points (the goal plus an average of 1.68 assists) and five skaters on the ice, which puts the average skater's IPP at about 54%. Forwards sit above that line and defensemen below it."
+  ],
+  "variants": [
+   {
+    "term": "5v5 IPP",
+    "def": "The standard version, counted only at five-on-five so power-play time doesn't skew it."
+   },
+   {
+    "term": "Primary IPP",
+    "def": "Goals and first assists only. It drops the secondary assists, the least repeatable part of a point total."
+   },
+   {
+    "term": "On-ice GF",
+    "def": "Goals for while the player is on the ice, the denominator.",
+    "slug": "goals-for-percentage"
+   },
+   {
+    "term": "Points",
+    "def": "The numerator, goals plus assists.",
+    "slug": "points"
+   }
+  ]
+ },
+ "meaning": [
+  "IPP measures involvement, so it doesn't care how many goals a line scores, only how many of them a given player had a hand in.",
+  "The scale splits cleanly by position. Among the 385 forwards with at least 500 five-on-five minutes last season, the median IPP was 65.4% and the top 10% cleared 76.9%. Defensemen run at about half that, with a median of 34.8% among 213. Detroit's top forwards sat near the top of the scale. <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> had a point on 45 of the 59 goals scored with him on the ice and <a href=\"/players/lucas-raymond/\">Lucas Raymond</a> on 37 of 49, both around 76%, and James van Riemsdyk ranked third in the league with 20 points on 23 goals.",
+  "Does a high IPP carry over? It barely does. For forwards with 500 five-on-five minutes in both of the last two seasons, IPP correlated with the next season's at 0.21, about the same as shooting percentage and a long way below shot attempts per 60 (0.85). Defensemen were a little steadier at 0.36.",
+  "There's a reason it bounces around. The median forward was on the ice for 38 five-on-five goals last season, so one goal moves his IPP by about two and a half points, and a three-goal swing in who touched the puck moves it by eight."
+ ],
+ "uses": [
+  {
+   "title": "Spotting a passenger",
+   "html": "A forward with good on-ice goal numbers and a low IPP can be riding his linemates. <a href=\"/players/emmitt-finnie/\">Emmitt Finnie</a> was on the ice for 38 five-on-five goals as a rookie and had a point on 20, a 52.6% IPP that ranked 336th of 385 forwards. Does that make him a passenger? It doesn't on its own, since his role and his linemates matter, but it's where an analyst starts asking."
+  },
+  {
+   "title": "Flagging a scorer due to rebound",
+   "html": "If you see a good scorer with a low IPP, he's usually been unlucky with assists. A player who reliably drives play doesn't stop getting points on his line's goals. Because IPP repeats so poorly, a season well below a player's career norm is a better bet to recover than to stick. That's the logic Yost laid out for using it as a regression flag, and for trading on it."
+  },
+  {
+   "title": "Reading a defenseman",
+   "html": "A defenseman's IPP shows how much he joins the attack. <a href=\"/players/moritz-seider/\">Moritz Seider</a> was on the ice for 71 five-on-five goals last season, more than any other Red Wing, and had a point on 24 of them (33.8%), right around the median defenseman. His value at five-on-five came from the goals and chances on his side of the ledger more than from the points column."
+  },
+  {
+   "title": "Separating primary from secondary",
+   "html": "<a href=\"/players/andrew-copp/\">Andrew Copp</a> had a point on 62% of Detroit's five-on-five goals with him on the ice, a little under the forward median. Twelve of his 26 points were secondary assists, though, and only four were goals. Count goals and first assists alone and his share falls to 33%, against 52.5% for DeBrincat. The first number says Copp was involved, and the second says the involvement was usually a step removed from the finish."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Small denominators",
+   "html": "Forty on-ice goals is a full season for most forwards, and it's a small sample. A four-goal swing in who touched the puck last moves that forward's IPP by 10 points, close to the gap between the median forward and the top 10%."
+  },
+  {
+   "title": "Secondary assists count the same",
+   "html": "A point is a point, so a secondary assist counts as much as a goal. Secondary assists per 60 carried over from one season to the next at a correlation of 0.22, against 0.38 for primary assists. They're the noisiest piece of the numerator. Primary IPP helps, but it shrinks an already small sample."
+  },
+  {
+   "title": "It can't see plays that don't end in goals",
+   "html": "IPP only knows about goals, so a forward who keeps creating chances on a line that can't finish gets no credit for any of them, which is why it pairs with expected goals."
+  },
+  {
+   "title": "Linemates set the ceiling",
+   "html": "A playmaker on a line with a shooter who finishes everything will post a high IPP, and the same player beside poor finishers won't. The stat measures his share of what the line produced, so you can't read it without knowing who was on the line."
+  }
+ ],
+ "related": [
+  {
+   "slug": "points",
+   "name": "Points",
+   "abbr": "P",
+   "vs": "The numerator. IPP divides it by on-ice goals."
+  },
+  {
+   "slug": "goals-for-percentage",
+   "name": "Goals for percentage",
+   "abbr": "GF%",
+   "vs": "Uses on-ice goals for and against. IPP asks who touched the goals for."
+  },
+  {
+   "slug": "plus-minus",
+   "name": "Plus-minus",
+   "abbr": "+/-",
+   "vs": "Credits everyone on the ice equally. IPP asks who did the work."
+  },
+  {
+   "slug": "on-ice-shooting-and-save-percentage",
+   "name": "On-ice shooting percentage",
+   "abbr": "oiSH%",
+   "vs": "The other luck check on a player's goal totals."
+  },
+  {
+   "slug": "assists",
+   "name": "Assists",
+   "abbr": "A",
+   "vs": "The secondary ones inflate IPP most."
+  },
+  {
+   "slug": "per-60-rates",
+   "name": "Per-60 rates",
+   "abbr": "/60",
+   "vs": "Scales points by ice time. IPP scales them by on-ice goals."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Player glossary",
+   "publisher": "Natural Stat Trick (Wayback Machine snapshot, January 9, 2025)",
+   "url": "https://web.archive.org/web/20250109000000*/naturalstattrick.com/glossary.php?players",
+   "note": "IPP definition and formula"
+  },
+  {
+   "label": "2024-25 and 2025-26 regular-season skater files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every IPP, on-ice goal and repeatability figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season skater file (downloaded October 9, 2026) and its 2024-25 file (downloaded October 9, 2026, saved as raw/mp_skaters_2024_repeatability.csv). IPP is five-on-five points ÷ five-on-five on-ice goals for, among skaters with 500+ five-on-five minutes; the league average is all five-on-five points ÷ all five-on-five on-ice goals for; repeatability is the Pearson correlation between 2024-25 and 2025-26 IPP for skaters with 500+ five-on-five minutes in both seasons."
+}

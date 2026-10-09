@@ -1,0 +1,324 @@
+{
+ "slug": "assists",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Assists",
+  "short": "assists",
+  "abbr": "A",
+  "aliases": [
+   "A",
+   "A1",
+   "A2",
+   "primary assists",
+   "secondary assists",
+   "first assist",
+   "second assist"
+  ],
+  "category": "Skater",
+  "plural": true
+ },
+ "keywords": {
+  "primary": "what does a mean in hockey",
+  "supporting": [
+   "a in hockey",
+   "what does a stand for in hockey",
+   "assists in hockey",
+   "what is a in hockey",
+   "a meaning hockey",
+   "what is assist in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Does A Mean in Hockey and How Assists Are Awarded",
+  "description": "What does A mean in hockey? Assists. How the scorer awards up to two per goal, primary vs secondary, what a good total is, and the Red Wings' assist leaders.",
+  "h1": "What Does A Mean in Hockey? Assists (A)"
+ },
+ "hero": {
+  "definition": "An assist (A) is credit for the last one or two players on the scoring team to touch the puck before the goal scorer, as long as no opponent plays it or takes control in between. The teammate who touched it right before the scorer gets the primary assist, and the one before him gets the secondary.",
+  "dek": "What does A mean in hockey? In a hockey stat line it's assists, though on the front of a sweater the same A can stand for an alternate captain. Skaters were credited with about 1.7 assists for every goal scored last season, so the column fills up faster than the goal column ever will."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "A · A1 · A2",
+   "sub": "total, primary and secondary"
+  },
+  {
+   "label": "Maximum",
+   "value": "2",
+   "sub": "assists on any one goal (Rule 78.3)"
+  },
+  {
+   "label": "Per goal",
+   "value": "1.69",
+   "sub": "skater assists per goal, 2025-26"
+  },
+  {
+   "label": "Median forward",
+   "value": "21",
+   "sub": "assists, 327 forwards with 60+ games, 2025-26"
+  },
+  {
+   "label": "Leader, 2025-26",
+   "value": "90",
+   "sub": "Connor McDavid, Edmonton"
+  },
+  {
+   "label": "Red Wings leader",
+   "value": "51",
+   "sub": "Lucas Raymond, 34 of them primary"
+  },
+  {
+   "label": "Credited by",
+   "value": "Scorer",
+   "sub": "the In-Arena Scorer, from video replay"
+  },
+  {
+   "label": "This site uses",
+   "value": "NHL stats",
+   "sub": "official totals and the primary/secondary split"
+  }
+ ],
+ "origin": [
+  "The assist rule is one short paragraph of the rulebook. Rule 78.3 credits \"the player or players (maximum two) who touch the puck prior to the goal scorer,\" as long as no defender plays the puck or controls it in between, and it adds that only one point can go to any player on a goal. That last clause is why a defenseman who starts a rush and finishes it gets the goal and nothing more. The In-Arena Scorer makes the call from video replay and records the assisting players next to every scorer's name, and a team has 24 hours to appeal what he decides.",
+  "Assists weren't always this common. The NHL's own records show no secondary assists at all in the league's first five seasons, and skaters averaged fewer than one assist per goal every year until 1931-32. The rate has stayed between 1.61 and 1.74 in every season since 1960-61, so today's 1.69 is the norm and the early years are the outlier.",
+  "The split between first and second assists is official. NHL.com's stats glossary defines the primary assist as the teammate who touched the puck directly before the scorer and the secondary as the one before that, and it calls goals plus primary assists a player's primary points. Analysts weight the two differently. Game Score, the single-game rating Dom Luszczyszyn introduced at Hockey-Graphs in 2016, values a goal at 0.75, a primary assist at 0.7 and a secondary at 0.55. The NHL's stats pages and MoneyPuck's data files both carry the split for every skater, and this site uses the league's official count."
+ ],
+ "calculation": {
+  "intro": [
+   "Counting assists means tracing the puck backward from the goal. The scorer starts with the goal scorer and walks the play back through the scoring team's touches until an opponent plays the puck or takes control of it, then credits up to two teammates. These are the inputs:"
+  ],
+  "inputs": [
+   "The goal scorer, who can't also get an assist on the same goal",
+   "The last teammate to touch the puck before him (the primary assist)",
+   "The teammate who touched it before that (the secondary assist)",
+   "Whether an opponent played the puck or took control in between, which wipes out the earlier touches",
+   "Video replay, which the scorer uses to check every touch (Rule 33.2)"
+  ],
+  "formulas": [
+   {
+    "label": "Per goal",
+    "expr": "assists ≤ 2"
+   },
+   {
+    "label": "Season",
+    "expr": "A = A1 + A2"
+   },
+   {
+    "label": "Points",
+    "expr": "PTS = G + A"
+   },
+   {
+    "label": "Primary points",
+    "expr": "G + A1"
+   }
+  ],
+  "example": "Here's a worked example, with an invented play. A defenseman wins a puck battle behind his own net and moves it to his center, who carries it through the neutral zone and drops it to a winger. The winger scores. The center gets the primary assist and the defenseman the secondary. Had an opponent poked the puck loose between the center and the winger, who then picked it up and scored, the goal would've gone in unassisted.",
+  "after": [
+   "Most goals come with the full set. Roughly three goals in four carried two assists last season and only about 6% went in with none, which is why a team's assist column runs so far ahead of its goal column."
+  ],
+  "variants": [
+   {
+    "term": "A1",
+    "def": "Primary assist, the last teammate to touch the puck before the scorer. It's the more repeatable of the two for forwards."
+   },
+   {
+    "term": "A2",
+    "def": "Secondary assist, the teammate who touched it before the primary assister. Defensemen collect a larger share of these."
+   },
+   {
+    "term": "PPA",
+    "def": "Power-play assists, earned with more skaters on the ice than the opponent.",
+    "slug": "power-play-goals-and-points"
+   },
+   {
+    "term": "SHA",
+    "def": "Shorthanded assists, earned while outnumbered.",
+    "slug": "shorthanded-goals-and-points"
+   },
+   {
+    "term": "Primary points",
+    "def": "Goals plus primary assists, the NHL glossary's name for a player's most direct scoring contributions."
+   }
+  ]
+ },
+ "meaning": [
+  "Assists measure involvement in the play that scored, at one or two removes, and that's the A's whole meaning in hockey box scores. The rule only asks who touched the puck and in what order, so a secondary assist can come from the breakout pass that started a rush or from a point shot that one teammate tipped and another buried. It doesn't ask which touch was the clever one.",
+  "Defensemen nearly match forwards here, which they don't come close to doing in goals. Among last season's regulars (60 or more games), the median forward had 21 assists and the median defenseman 20, while the top tenth of forwards had 43 or more. Connor McDavid led the league with 90.",
+  "Lucas Raymond led Detroit with 51 assists, and 34 of them were primary. Moritz Seider had 50, tied for ninth among the league's defensemen, on a near-even split of primary and secondary. Alex DeBrincat added 44, a little more than half of them primary, to go with his team-leading 41 goals.",
+  "Position shapes the split. Among last season's regulars, forwards' assists were 59% primary and defensemen's 48%. The eight most secondary-heavy players among those with 40 or more assists were all defensemen, and David Pastrnak sat at the other end of the list, with 57 of his 71 assists primary.",
+  "Do assists repeat? Primary assists do, a little better than secondary ones. Among forwards who played 60 games in each of the last two seasons, primary assists per game correlated at 0.80 across the pair and secondary assists at 0.73. Defensemen's two numbers were level (0.71 and 0.70), so a blueliner's second assists aren't the noise they're often taken for."
+ ],
+ "uses": [
+  {
+   "title": "Stripping out the second assist",
+   "html": "Primary points keep goals and first assists and drop the rest. <a href=\"/players/alex-debrincat/\">DeBrincat</a> goes from 85 points to 65 primary points, and <a href=\"/players/lucas-raymond/\">Raymond</a> and <a href=\"/players/dylan-larkin/\">Larkin</a> each lose a similar share of theirs. <a href=\"/players/moritz-seider/\">Seider</a> falls from 60 to 36, the biggest relative drop of the four and the league-wide pattern for defensemen in one line. It's a quick way to see whose total leans on the second assist."
+  },
+  {
+   "title": "Measuring a playmaker's share",
+   "html": "Individual points percentage divides a player's points by the goals his team scored while he was on the ice. By MoneyPuck's all-situations counts, DeBrincat and Raymond each figured in 69% of the goals scored with them on the ice last season and Larkin in 65%. Seider's 43% looks low until you remember that defensemen scored only 15% of the league's goals. Compare a player against his own position before you read anything into his share."
+  },
+  {
+   "title": "Reading the power play",
+   "html": "Assists pile up fastest with the man advantage. Power-play goals carried 1.91 assists apiece last season, against 1.66 for goals at even strength, and Seider's 28 power-play points were the most on the team (he had 32 at even strength). Before you rate any defenseman's assist total, check how much of it came on the power play."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night. Team goal totals come from MoneyPuck and the Red Wings' assist leaders from the NHL's official stats. The nightly feed carries total assists, not the primary and secondary split.",
+  "tiles": [
+   {
+    "label": "Goals for, all situations",
+    "source": "team",
+    "path": "situations.all.goalsFor",
+    "format": "int",
+    "sub": "each one can carry up to two assists"
+   },
+   {
+    "label": "Goals for, five-on-five",
+    "source": "team",
+    "path": "situations.5on5.goalsFor",
+    "format": "int",
+    "sub": "MoneyPuck count"
+   }
+  ],
+  "leaders": {
+   "source": "skaters",
+   "sort": "assists",
+   "ascending": false,
+   "limit": 8,
+   "caption": "Red Wings skaters by assists, all situations",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "Assists",
+     "path": "assists",
+     "format": "int"
+    },
+    {
+     "label": "Goals",
+     "path": "goals",
+     "format": "int"
+    },
+    {
+     "label": "Points",
+     "path": "points",
+     "format": "int"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. A single power-play goal can add two assists to the table, so early leaders change fast.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "One touch is all it takes",
+   "html": "A secondary assist for a short pass behind your own net counts the same as one for a cross-ice feed through two defenders, because the rule records who touched the puck and can't say how much the touch mattered."
+  },
+  {
+   "title": "It can't see the pass that set up a miss",
+   "html": "The league's event feed records shots and goals but not passes, so a perfect feed that a teammate fires wide earns nothing. The chances a passer creates never show up in his line unless somebody finishes them."
+  },
+  {
+   "title": "It depends on the finisher",
+   "html": "Every assist needs a teammate to score, so a center whose wingers shoot 8% will collect fewer than one whose wingers shoot 14% even if he makes exactly the same passes."
+  },
+  {
+   "title": "The scorer makes judgment calls",
+   "html": "Scrambles in front, tips and passes that brush an opponent's stick all come down to the In-Arena Scorer's read of the replay. A team has 24 hours to ask the league to change it, so the assists in the next morning's box score aren't always the ones announced in the building."
+  }
+ ],
+ "related": [
+  {
+   "slug": "goals",
+   "name": "Goals",
+   "abbr": "G",
+   "vs": "Credit for the player who put the puck in. He can't also get an assist."
+  },
+  {
+   "slug": "points",
+   "name": "Points",
+   "abbr": "PTS",
+   "vs": "Goals plus assists, with a secondary assist worth the same as a goal."
+  },
+  {
+   "slug": "individual-points-percentage",
+   "name": "Individual points percentage",
+   "abbr": "IPP",
+   "vs": "A player's points as a share of the goals scored while he's on the ice."
+  },
+  {
+   "slug": "points-per-game",
+   "name": "Points per game",
+   "abbr": "P/GP",
+   "vs": "Points divided by games played, so missed games don't hide production."
+  },
+  {
+   "slug": "game-score",
+   "name": "Game score",
+   "abbr": "GS",
+   "vs": "A single-game rating that weights a primary assist above a secondary."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Can a goalie get an assist?",
+   "a": "Yes. The rule credits any player who touched the puck, goalies included, and goalies collected 58 assists last season (Jacob Markstrom led them with four). Each one came from a touch that started a play the other team never broke up."
+  },
+  {
+   "q": "Who has the most assists in NHL history?",
+   "a": "Wayne Gretzky, with 1,963, and he holds the single-season record of 163 as well. Steve Yzerman's 1,063 are the Red Wings record, and his 1988-89 season is still the franchise's best."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Official Rules 2025-26 (Rules 6, 33 and 78)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "the two-assist maximum, the defender-control exception, one point per player per goal, the alternate captain's A"
+  },
+  {
+   "label": "Stats glossary",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "assists, primary and secondary assists, primary points"
+  },
+  {
+   "label": "Skater and goalie stats, 2025-26 and all seasons",
+   "publisher": "NHL.com stats (api.nhle.com)",
+   "url": "https://www.nhl.com/stats/skaters",
+   "note": "every 2025-26 count, the season-by-season assist rates and the career and franchise records"
+  },
+  {
+   "label": "Measuring Single Game Productivity: An Introduction to Game Score",
+   "publisher": "Hockey-Graphs, July 13, 2016",
+   "url": "https://hockey-graphs.com/2016/07/13/measuring-single-game-productivity-an-introduction-to-game-score/",
+   "note": "Game Score weights for goals and primary and secondary assists"
+  },
+  {
+   "label": "An Introduction to NWHL Game Score",
+   "publisher": "Hockey-Graphs, March 22, 2018",
+   "url": "https://hockey-graphs.com/2018/03/22/an-introduction-to-nwhl-game-score/",
+   "note": "credits Dom Luszczyszyn with releasing Game Score in July 2016"
+  },
+  {
+   "label": "A New Expected Goals Model for Predicting Goals in the NHL",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/blog/a-new-expected-goals-model-for-predicting-goals-in-the-nhl/",
+   "note": "the NHL's event feed doesn't record passes"
+  },
+  {
+   "label": "2025-26 regular-season skater file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "on-ice goals for the individual points percentage figures"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from the NHL stats API's 2025-26 regular-season skater summary, skater scoring-per-game report (primary and secondary assists) and goalie summary, downloaded October 9, 2026; forward and defenseman benchmarks use skaters with 60 or more games, and the year-over-year correlations use players with 60 or more games in both 2024-25 and 2025-26. The season-by-season assist rates sum every skater's assists and goals for each season from 1917-18 through 2025-26, same source and date. Individual points percentage is points divided by MoneyPuck's all-situations on-ice goals for, from its 2025-26 skater file, same date."
+}

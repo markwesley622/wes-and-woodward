@@ -1,0 +1,326 @@
+{
+ "slug": "shooting-percentage",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Shooting percentage",
+  "short": "SH%",
+  "abbr": "SH%",
+  "aliases": [
+   "SH%",
+   "S%",
+   "shooting pct",
+   "NHL shooting percentage",
+   "team shooting percentage"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "what is shooting percentage in hockey",
+  "supporting": [
+   "nhl shooting percentage",
+   "what does shooting percentage mean in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate; primary_override from 'nhl shooting percentage'), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Is Shooting Percentage in Hockey and Why It Regresses",
+  "description": "What is shooting percentage in hockey? Goals divided by shots on goal. League averages, why it regresses to the mean, and the Red Wings' finishers, nightly.",
+  "h1": "What Is Shooting Percentage in Hockey? The SH% Stat"
+ },
+ "hero": {
+  "definition": "Shooting percentage (SH%, or S% in NHL tables) is the share of shots on goal that go in, goals divided by shots on goal. Missed and blocked shots aren't part of it. It swings a lot from year to year, and a shooter who runs far above his career rate in one season usually drifts back toward it the next.",
+  "dek": "What is shooting percentage in hockey good for? It tells you who finished, and it's the first number to check when a player's goal total jumps or collapses, because the shot count usually explains everything else."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "S% · SH%",
+   "sub": "the NHL's tables write S%"
+  },
+  {
+   "label": "Formula",
+   "value": "G ÷ SOG",
+   "sub": "misses and blocks left out"
+  },
+  {
+   "label": "League, 2025-26",
+   "value": "11.1%",
+   "sub": "all skaters, highest since at least 2005-06"
+  },
+  {
+   "label": "Forwards",
+   "value": "13.0%",
+   "sub": "pooled, 2025-26; defensemen 6.1%"
+  },
+  {
+   "label": "Best team",
+   "value": "13.2%",
+   "sub": "Dallas, 2025-26"
+  },
+  {
+   "label": "Worst team",
+   "value": "9.0%",
+   "sub": "Calgary, 2025-26"
+  },
+  {
+   "label": "Year to year",
+   "value": "r = 0.35",
+   "sub": "forwards with 100+ shots in both seasons"
+  },
+  {
+   "label": "Official since",
+   "value": "1959-60",
+   "sub": "per the NHL's stats glossary"
+  }
+ ],
+ "origin": [
+  "Shooting percentage has an official start date. The NHL's stats glossary says the league began tracking it in 1959-60, the same season it started counting shots for individual skaters, and defines it as goals divided by shots on goal. Missed and blocked shots stay out of it by the glossary's own wording, so the stat only grades the shots that reached the goalie.",
+  "The league baseline moves, which is why a shooting percentage needs a season attached. For most of the 2010s the NHL as a whole shot about 9% (Grantland's 2014 guide to on-ice percentages put it at \"right about 9 percent\"). The rate has climbed every season since 2017-18, to 11.1% last season, the highest in the league's team data back to 2005-06. A shooter who'd have beaten the league average a decade ago can trail it now without changing a thing.",
+  "Everyone publishes it. The NHL lists it as S% in its stats tables, and Hockey-Reference ranks players on it once they've taken one shot per scheduled game, a floor that keeps a fourth-liner with two goals on six shots off the top of its leaderboard. What the analytics side added was an argument about how much of it a player controls, and for most players in most seasons the answer is less than the goal total suggests."
+ ],
+ "calculation": {
+  "intro": [
+   "The arithmetic is one division, and the NHL's glossary is specific about what goes in each half. What makes the stat tricky is how small both halves are for a single player over a single season. These are the inputs:"
+  ],
+  "inputs": [
+   "Goals, empty-net goals included (the NHL counts them toward a player's totals)",
+   "Shots on goal, meaning goals plus the shots the goalie saved",
+   "Left out: shots that miss the net, hit the post or crossbar, or get blocked"
+  ],
+  "formulas": [
+   {
+    "label": "Player or team",
+    "expr": "SH% = goals ÷ shots on goal"
+   },
+   {
+    "label": "At career rate",
+    "expr": "expected goals at career SH% = shots × career SH%"
+   },
+   {
+    "label": "Finishing gap",
+    "expr": "goals − (shots × career SH%)"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A winger scores 20 goals on 200 shots, a 10% season. The next year he takes the same number of shots and two extra pucks go in off a skate. That's 22 goals and 11%, and nothing about his shooting changed. Two bounces are a one-point swing.",
+  "after": [
+   "A forward who takes 130 shots, about the median for a regular last season, gains or loses a full point of shooting percentage on fewer than two goals, which is a couple of bounces spread across a whole season and the reason the stat needs a career's worth of shots before anyone should trust it."
+  ],
+  "variants": [
+   {
+    "term": "S%",
+    "def": "The NHL's abbreviation for the same stat."
+   },
+   {
+    "term": "Team SH%",
+    "def": "Team goals divided by team shots on goal. Empty-net goals count and shootout goals don't."
+   },
+   {
+    "term": "oiSH%",
+    "def": "On-ice shooting percentage. The team's shooting while a given player is on the ice, scorer or not.",
+    "slug": "on-ice-shooting-and-save-percentage"
+   },
+   {
+    "term": "Sv%",
+    "def": "Save percentage, the same division from the goalie's side of the puck.",
+    "slug": "save-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "SH% measures finishing, and position decides most of the baseline. NHL skaters converted 11.1% of their shots on goal last season, but forwards shot 13.0% as a group and defensemen 6.1%, so the two are never compared directly. Among the 234 forwards with at least 100 shots the median was 13.4%, and one in ten cleared 18.4%. Robert Thomas led that group at 24.5%.",
+  "Teams sit in a much tighter band, since a full roster's worth of shots averages out a lot of the noise. Dallas led the league at 13.2% and Calgary trailed at 9.0%. Detroit's 10.3% ranked 26th. At the league rate the Wings' shots would've produced about 17 more goals, the same shortfall their expected-goals numbers flag, on a team that sat near the middle of the league in shot volume.",
+  "The number that matters most is how little of it carries over. Wes & Woodward lined up the 189 forwards with at least 100 shots in each of the last two seasons. The top tenth by shooting percentage in the first season converted 19.9% as a group and 16.4% the next, and all but one of them dropped. The bottom tenth went from 8.1% to 11.9%, and five of every six rose. The group as a whole barely moved. Both tails gave back more than half their distance from the middle in a single year.",
+  "That's regression to the mean, and it isn't a new idea. Sports Illustrated's 2016 analytics column called it mean reversion and used the textbook case, a 10% career shooter who scores 30 goals on 20% shooting and shouldn't be expected to repeat it. MoneyPuck's model notes put the same idea plainly, that there's a lot of luck in whether a shot goes in. The anchor is the player's own career rate. Does that make shooting percentage pure luck? It doesn't. The year-to-year correlation for forwards was 0.35, low but well above zero, and MoneyPuck's notes add that some players are better shooters than others."
+ ],
+ "uses": [
+  {
+   "title": "Spotting a hot season",
+   "html": "<a href=\"/players/dylan-larkin/\">Dylan Larkin</a> scored 34 goals on 229 shots last season, 14.8%. His career rate is 11.4%, and at that rate the same shots produce about 26 goals. That eight-goal gap is the part you shouldn't count on. Compare <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> (14.3% on a 14.2% career rate) and <a href=\"/players/lucas-raymond/\">Lucas Raymond</a> (14.5% on 14.5%), who scored about what their shots said they would."
+  },
+  {
+   "title": "Explaining a slump",
+   "html": "<a href=\"/players/marco-kasper/\">Marco Kasper</a> went from 19 goals on 145 shots to nine on 131 over the last two seasons. His shot count barely moved and his shooting percentage fell from 13.1% to 6.9%. With 277 career shots, he hasn't shot enough to say which season was the real one, which is the point. His true rate sits somewhere in between, and the shot count is the part of his game that held."
+  },
+  {
+   "title": "Setting a goal projection",
+   "html": "Multiply a player's shots by his career shooting percentage and you get a goal total stripped of one season's bounces. It's the simplest projection in hockey, and it's how this page priced Larkin's year above. Expected goals does the same job with shot quality included, which is why this site's finishing numbers use goals above expected. For a young player with few career shots, pull his rate toward the forward average (13.0% last season) until his own sample fills in."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night. Goals, shots and shooting percentage come from the NHL's own club stats; expected goals and the finishing tile come from MoneyPuck.",
+  "tiles": [
+   {
+    "tile": "finishing"
+   },
+   {
+    "label": "5v5 goals",
+    "source": "team",
+    "path": "situations.5on5.goalsFor",
+    "format": "int",
+    "sub": "this season"
+   },
+   {
+    "label": "5v5 expected goals",
+    "source": "team",
+    "path": "situations.5on5.xGoalsFor",
+    "format": "num1",
+    "sub": "this season"
+   }
+  ],
+  "leaders": {
+   "source": "skaters",
+   "sort": "goals",
+   "ascending": false,
+   "limit": 8,
+   "caption": "Red Wings skaters by goals, with shooting percentage",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "Goals",
+     "path": "goals",
+     "format": "int"
+    },
+    {
+     "label": "SOG",
+     "path": "shots",
+     "format": "int"
+    },
+    {
+     "label": "S%",
+     "path": "shootingPct",
+     "format": "pct1"
+    },
+    {
+     "label": "ixG",
+     "path": "ixG",
+     "format": "num2"
+    },
+    {
+     "label": "Goals − ixG",
+     "path": "goalsAboveExpected",
+     "format": "signed2"
+    }
+   ]
+  },
+  "smallSample": 41,
+  "smallSampleNote": "Detroit has played {gp} games. A regular forward takes fewer than two shots a game, so one bounce moves his shooting percentage by several points this early."
+ },
+ "limits": [
+  {
+   "title": "Empty nets pad it",
+   "html": "The NHL counts empty-net goals in a player's totals, and nobody's in net to stop those shots, so a player who piles up empty-netters gets a bump in the standard S% column that says nothing about beating a goalie."
+  },
+  {
+   "title": "Every shot weighs the same",
+   "html": "A tip from the top of the crease and a slap shot from the blue line count the same in the denominator, so a shooting percentage mixes finishing skill with shot location. Goals above expected exists to pull the two apart, by pricing every shot before asking whether it went in."
+  },
+  {
+   "title": "Small samples swing it",
+   "html": "A regular forward takes about 34 shots in 20 games, so a single goal moves his rate by three points. That's why a hot month says little about a player's true rate, and why Hockey-Reference won't rank anyone who hasn't averaged a shot per scheduled game."
+  },
+  {
+   "title": "Misses and blocks don't show",
+   "html": "A player whose attempts keep missing the net or getting blocked can post a fine shooting percentage on the few that get through, and the stat can't tell you how many chances he wasted. Corsi counts every one of those misses and blocks, and expected goals prices the misses."
+  }
+ ],
+ "related": [
+  {
+   "slug": "shots-on-goal",
+   "name": "Shots on goal",
+   "abbr": "SOG",
+   "vs": "The denominator. SH% is goals divided by SOG."
+  },
+  {
+   "slug": "goals-above-expected",
+   "name": "Goals above expected",
+   "abbr": "GAx",
+   "vs": "Grades finishing against shot quality instead of shot count."
+  },
+  {
+   "slug": "on-ice-shooting-and-save-percentage",
+   "name": "On-ice shooting and save percentage",
+   "abbr": "oiSH%",
+   "vs": "The team's shooting while a player is on the ice, his own shots or not."
+  },
+  {
+   "slug": "pdo",
+   "name": "PDO",
+   "abbr": "PDO",
+   "vs": "On-ice SH% plus on-ice save percentage, a luck gauge."
+  },
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "The same division from the goalie's side."
+  },
+  {
+   "slug": "individual-expected-goals",
+   "name": "Individual expected goals",
+   "abbr": "ixG",
+   "vs": "How many goals a player's shots should've produced."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Do shootout goals count toward shooting percentage?",
+   "a": "No. Rule 84.4 of the NHL rulebook says the player who scores the shootout winner isn't credited with a goal in his personal statistics, and the NHL keeps shootout goals and attempts in their own columns. Its shootout shooting percentage counts every attempt, misses included."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NHL Stats glossary",
+   "publisher": "NHL.com (also served at api.nhle.com/stats/rest/en/glossary)",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "S% definition and 1959-60 start; S and SOG; empty-net goals in player totals; shootout shooting percentage"
+  },
+  {
+   "label": "Official Rules 2025-26, Rule 84.4 (Shootout)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "shootout winner not credited as a goal in personal statistics"
+  },
+  {
+   "label": "How age, shooting percentage and 'puck luck' factor into future performance",
+   "publisher": "Sports Illustrated (Department of Hockey Analytics), November 2016",
+   "url": "https://www.si.com/nhl/2016/11/06/analytics-predicting-future-performance",
+   "note": "mean reversion in shooting percentage, the 10%-career, 20%-season example"
+  },
+  {
+   "label": "Expected Goals Model (about)",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/about.htm",
+   "note": "luck in whether a shot goes in; some players are better shooters than others"
+  },
+  {
+   "label": "Your Guide to NHL On-Ice Percentages",
+   "publisher": "Grantland (Sean McIndoe), March 20, 2014",
+   "url": "https://grantland.com/the-triangle/your-guide-to-nhl-on-ice-percentages/",
+   "note": "league average \"right about 9 percent\" at the time"
+  },
+  {
+   "label": "NHL Leaderboard Stat Requirements",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/rate_stat_req.html",
+   "note": "shooting-percentage leaderboard minimum of one shot per scheduled game"
+  },
+  {
+   "label": "Team summary 2005-06 through 2025-26; skater summaries 2024-25 and 2025-26; career skater totals",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/skater/summary?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "league, team and player shooting percentages, career rates, the year-to-year test"
+  },
+  {
+   "label": "2025-26 regular-season team file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "team goals and shots on goal, all situations"
+  }
+ ],
+ "method": "League, team and player figures are Wes & Woodward's calculations, downloaded October 9, 2026. League shooting percentage by season is team goals ÷ (shots per game × games) summed over every team in the NHL stats API team summary, 2005-06 through 2025-26 (team goals include empty-net goals, not shootout winners). 2025-26 player and position rates use the NHL skater summary (8,086 goals on 73,022 shots); the forward distribution covers the 234 forwards with 100+ shots. Team rates are goals ÷ shots on goal in MoneyPuck's 2025-26 team file, all situations. The year-to-year test pairs the 189 forwards with 100+ shots in both the 2024-25 and 2025-26 NHL skater summaries; the top and bottom 18 are the top and bottom tenth by 2024-25 shooting percentage, rates pooled. Career rates are the NHL's regular-season career totals through 2025-26. The Red Wings section rebuilds nightly."
+}

@@ -1,0 +1,260 @@
+{
+ "slug": "expected-save-percentage",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Expected save percentage",
+  "short": "xSV%",
+  "abbr": "xSV%",
+  "aliases": [
+   "xSV%",
+   "xFSv%",
+   "expected Fenwick save percentage",
+   "delta save percentage",
+   "dSV%",
+   "dFSv%",
+   "save % above expected"
+  ],
+  "category": "Goalie"
+ },
+ "keywords": {
+  "primary": "expected save percentage in hockey",
+  "supporting": [],
+  "source": "No measured US search volume (research/glossary-pseo/stat_themes.json status no_volume, 2026-10-09); primary is the natural phrase for the stat"
+ },
+ "seo": {
+  "title": "Expected Save Percentage in Hockey and How It's Built",
+  "description": "Expected save percentage in hockey is the save rate an average goalie would post on the same shots. How xSV% and dSV% work, and what Detroit's goalies posted.",
+  "h1": "Expected Save Percentage in Hockey (xSV%)"
+ },
+ "hero": {
+  "definition": "Expected save percentage (xSV%) is the save percentage an average goalie would post on the exact shots a goalie faced, built from expected goals. Subtract it from his real save percentage and you get delta save percentage (dSV%), the share of shots he stopped beyond what the shot quality called for. It's goals saved above expected written as a rate.",
+  "dek": "Expected save percentage in hockey answers the question raw save percentage skips, which is how hard the shots were. Cam Talbot faced one of the gentlest shot mixes in the league last season and still finished near the bottom of it."
+ },
+ "facts": [
+  {
+   "label": "Abbreviation",
+   "value": "xSV%",
+   "sub": "xFSv% when it's figured on unblocked attempts"
+  },
+  {
+   "label": "Formula",
+   "value": "1 − xGA/FA",
+   "sub": "expected goals over unblocked attempts faced"
+  },
+  {
+   "label": "Delta",
+   "value": "dSV%",
+   "sub": "real save percentage minus expected"
+  },
+  {
+   "label": "League xFSv%",
+   "value": ".950",
+   "sub": "every unblocked attempt, 2025-26"
+  },
+  {
+   "label": "Gentlest mix",
+   "value": ".956",
+   "sub": "Jesper Wallstedt, MIN (30+ GP)"
+  },
+  {
+   "label": "Toughest mix",
+   "value": ".940",
+   "sub": "Frederik Andersen, CAR (30+ GP)"
+  },
+  {
+   "label": "Red Wings, dFSv%",
+   "value": "+0.36",
+   "sub": "John Gibson, in points; Cam Talbot −0.76"
+  },
+  {
+   "label": "Earliest form",
+   "value": "2004",
+   "sub": "Alan Ryder's shot-quality-neutral SV%"
+  }
+ ],
+ "origin": [
+  "Expected save percentage is the oldest form of the goalie-versus-shot-quality idea. Alan Ryder's 2004 paper <em>Shot Quality</em> estimated how dangerous each team's shots against were, then backed out a shot-quality-neutral save percentage, which he described as \"the save percentage one would expect with no variation in shot quality from team to team.\" His 2002-03 table lifted Florida's goaltending (basically Roberto Luongo, Ryder noted) seven places, into second in the league.",
+  "Brian Macdonald, Craig Lennon and Rodney Sturdivant gave it the modern formula in 2012, one minus expected goals against divided by shots against, and paired it with an adjusted save percentage, the league average plus the gap between a goalie's real and expected rates. Tim Thomas posted .940 in 2010-11 on shots that called for .915. They found some evidence that the adjusted number predicted a goalie's future better than plain save percentage did, and called it \"far from overwhelming.\"",
+  "Evolving-Hockey publishes today's version as expected Fenwick save percentage (xFSv%), figured on unblocked attempts, next to the delta it calls dFSv%, and MoneyPuck's glossary defines both an expected save percentage and a \"Save % Above Expected.\" NHL.com's Seattle Kraken analytics column walked fans through the delta in 2021."
+ ],
+ "calculation": {
+  "intro": [
+   "Every version divides expected goals against by a count of shots, and the count you pick sets the scale. Public expected-goals models price unblocked attempts, misses included, so the cleanest version divides by those. Here's what goes in:"
+  ],
+  "inputs": [
+   "Expected goals against (xGA), the summed xG of every unblocked attempt the goalie faced",
+   "Unblocked attempts against (FA), or shots on goal against (SA) for the box-score scale",
+   "Goals against, for his real save percentage on the same scale"
+  ],
+  "formulas": [
+   {
+    "label": "Expected",
+    "expr": "xFSv% = 1 − xGA ÷ FA"
+   },
+   {
+    "label": "Real",
+    "expr": "FSv% = 1 − GA ÷ FA"
+   },
+   {
+    "label": "Delta",
+    "expr": "dFSv% = FSv% − xFSv% = GSAx ÷ FA"
+   },
+   {
+    "label": "Box-score scale",
+    "expr": "xSV% = 1 − xGA ÷ SA (Macdonald, Lennon and Sturdivant, 2012)"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A goalie faces 2,000 unblocked attempts worth 100 expected goals, so his xFSv% is .950. He allows 90. That's a .955 Fenwick save percentage and a dFSv% of plus-0.5 points, which is the same 10 goals as his GSAx spread across 2,000 attempts.",
+  "after": [
+   "Misses count as stops in the Fenwick version, which is why these numbers sit near .950 when box-score save percentages sit near .900. League-wide, the expected and real Fenwick rates came out almost identical last season (.9495 and .9500), so the average goalie stopped about what the model said he would."
+  ],
+  "variants": [
+   {
+    "term": "xFSv%",
+    "def": "Evolving-Hockey's expected Fenwick save percentage, on unblocked attempts."
+   },
+   {
+    "term": "dFSv%, dSV%",
+    "def": "Real minus expected. Positive means the goalie stopped more than his shots called for."
+   },
+   {
+    "term": "Save % above expected",
+    "def": "MoneyPuck's name for the same delta (\"Save % Above Expected\")."
+   },
+   {
+    "term": "Adjusted SV%",
+    "def": "League save percentage plus a goalie's delta, the version Macdonald, Lennon and Sturdivant used."
+   },
+   {
+    "term": "GSAx",
+    "def": "The delta counted in goals.",
+    "slug": "goals-saved-above-expected"
+   }
+  ]
+ },
+ "meaning": [
+  "xSV% measures the shots, and dSV% measures the goalie. A high xFSv% means a gentle shot mix, the kind a tight defense hands its goalie, and a low one means he's seeing chances from in close. Among the 51 goalies who played at least 30 games last season, Jesper Wallstedt's .9559 in Minnesota was the gentlest mix and Frederik Andersen's .9402 in Carolina the toughest. The list sorts by team. Minnesota's two goalies had the two gentlest mixes, Seattle's two were third and fourth, and Carolina's two were the two toughest.",
+  "Detroit's goalies saw similar work. Talbot's xFSv% was .9534, the sixth-gentlest mix among the regulars, and <a href=\"/players/john-gibson/\">John Gibson</a>'s was .9516. The results split from there. Gibson's dFSv% was plus-0.36 points and Talbot's was minus-0.76, ahead of only Samuel Ersson and Jordan Binnington. On the box-score scale, the shots Talbot faced called for about a .900 save percentage and he posted .883.",
+  "The spread in dFSv% is narrow (Scott Wedgewood led at plus-1.00, Binnington trailed at minus-1.10 and the median regular sat at plus-0.17), so the league's regulars fit inside about two percentage points of unblocked attempts and a gap of a few tenths separates a good season from an ordinary one.",
+  "Does either half carry over? Among the 39 goalies with 1,500 or more minutes in both of the last two seasons, the year-to-year correlation was 0.21 for dFSv% and 0.04 for xFSv%, and the shot-mix number didn't hold up any better for the 31 who stayed on the same team. You'd think a defense's shot mix would be stable. Talbot's was .9477 the season before last and .9534 last season, in front of the same club."
+ ],
+ "uses": [
+  {
+   "title": "Separating defense from goaltending",
+   "html": "Raw save percentage mixes the two, and xSV% pulls them apart. Wallstedt's .916 was the second-best save percentage among the regulars, but how much of it was Wallstedt? His shot mix was the gentlest in the league, and his dFSv% of plus-0.29 ranked 22nd of the 51. Minnesota's defense earned a share of that save percentage. The goalie earned the rest."
+  },
+  {
+   "title": "Comparing goalies with different workloads",
+   "html": "dFSv% is GSAx per shot, so it lets a backup's season sit next to a starter's. Devin Cooley's plus-0.98 in Calgary was second only to Wedgewood's, on 1,758 unblocked attempts, while Logan Thompson's plus-0.85 came on 3,461 and made him the league leader in GSAx. Use the rate when you want to know how well a goalie played and the total when you want to know what it was worth."
+  }
+ ],
+ "limits": [
+  {
+   "title": "It inherits the model's blind spots",
+   "html": "Expected save percentage is only as good as the expected goals behind it, and the public models don't see pre-shot passes, screens or where the goalie was standing. A goalie who faces a steady diet of cross-crease feeds gets those shots priced like any others from the same spots."
+  },
+  {
+   "title": "The denominator changes the number",
+   "html": "Divide by unblocked attempts and the league sits near .950. Divide by shots on goal and it sits near .895. Both scales are legitimate, and mixing them isn't, so check which one a site uses before you compare goalies across sources."
+  },
+  {
+   "title": "Small gaps, lots of noise",
+   "html": "A full season's dFSv% leaderboard spans about two percentage points, and a year-to-year correlation of 0.21 means most of any one goalie's gap doesn't repeat. Talbot's own delta was plus-0.47 the season before he posted minus-0.76."
+  },
+  {
+   "title": "The expected side isn't pure defense",
+   "html": "Rebounds a goalie gives up become new shots against him and pull his own xSV% down, so part of what looks like a tough shot mix can be his own doing. MoneyPuck's flurry-adjusted expected goals, which give less credit for rebound chances than for first shots, are one way around it."
+  }
+ ],
+ "related": [
+  {
+   "slug": "goals-saved-above-expected",
+   "name": "Goals saved above expected",
+   "abbr": "GSAx",
+   "vs": "The same comparison counted in goals."
+  },
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "The real rate xSV% is measured against."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "The model behind every expected save percentage."
+  },
+  {
+   "slug": "goals-saved-above-average",
+   "name": "Goals saved above average",
+   "abbr": "GSAA",
+   "vs": "Assumes every goalie faced the league's average shot mix."
+  },
+  {
+   "slug": "high-danger-save-percentage",
+   "name": "High-danger save percentage",
+   "abbr": "HDSV%",
+   "vs": "Save rate on one slice of shots, with no per-shot pricing."
+  },
+  {
+   "slug": "fenwick",
+   "name": "Fenwick",
+   "abbr": "FF%",
+   "vs": "The unblocked attempts xFSv% divides by."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Shot Quality",
+   "publisher": "Alan Ryder, HockeyAnalytics.com, January 2004",
+   "url": "https://hockeyanalytics.com/Research_files/Shot_Quality.pdf",
+   "note": "shot-quality-neutral save percentage, Florida's 2002-03 move"
+  },
+  {
+   "label": "Evaluating NHL Goalies, Skaters, and Teams Using Weighted Shots",
+   "publisher": "Brian Macdonald, Craig Lennon and Rodney Sturdivant, arXiv 1205.1746, May 2012",
+   "url": "https://arxiv.org/abs/1205.1746",
+   "note": "ExpSv% = 1 − ExpGA/ShotA, adjusted save percentage, Thomas's 2010-11 figures, \"far from overwhelming\""
+  },
+  {
+   "label": "Standard Goalie Tables",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/standard-goalie-tables/",
+   "note": "FSv%, xFSv%, dFSv% formulas"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "expected save percentage, save % above expected"
+  },
+  {
+   "label": "Analytics with Alison: Sizing up Goaltending",
+   "publisher": "NHL.com (Seattle Kraken), October 28, 2021",
+   "url": "https://www.nhl.com/kraken/news/topic/analytics-with-alison/analytics-with-alison-seattle-kraken-goaltending-stats-327310028",
+   "note": "dFSv% explained for fans"
+  },
+  {
+   "label": "Expected Goals Model",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/about.htm",
+   "note": "model inputs; no goalie positioning or screens listed"
+  },
+  {
+   "label": "2025-26 and 2024-25 regular-season goalie files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league and goalie figure on this page"
+  },
+  {
+   "label": "Goalie summary, 2025-26 regular season",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/goalie/summary?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "box-score save percentages"
+  }
+ ],
+ "method": "Figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season goalie file, all situations, downloaded October 9, 2026 (raw/mp_goalies_2025.csv): xFSv% is 1 − xGoals ÷ unblocked_shot_attempts, FSv% is 1 − goals ÷ unblocked_shot_attempts, dFSv% is their difference in percentage points, and the box-score scale uses 1 − xGoals ÷ ongoal. League rates sum every goalie (7,646.4 expected goals and 7,575 goals on 151,555 unblocked attempts). Rankings use the 51 goalies with 30+ games played. Year-to-year correlations (Pearson) use the 39 goalies with 1,500+ minutes in both 2024-25 and 2025-26 (31 with the same team both years), with 2024-25 from MoneyPuck's goalie file downloaded the same day (raw/mp_goalies_2024_for_gsax_repeatability_dl2026-10-09.csv). Box-score save percentages for Wallstedt and Talbot come from the NHL stats API goalie summary (raw/nhl_goalie_summary_20252026_gsaa_xsv.json)."
+}

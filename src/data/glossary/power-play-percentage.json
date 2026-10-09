@@ -1,0 +1,288 @@
+{
+ "slug": "power-play-percentage",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Power play percentage",
+  "short": "PP%",
+  "abbr": "PP%",
+  "aliases": [
+   "PP%",
+   "power-play percentage",
+   "power play pct",
+   "net PP%",
+   "power play percentage NHL"
+  ],
+  "category": "Team"
+ },
+ "keywords": {
+  "primary": "power play percentage nhl",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json (status no_serp_overlap: the theme's primary with no supporting keywords; Ahrefs KE US volumes), 2026-10-09"
+ },
+ "seo": {
+  "title": "Power Play Percentage in the NHL and How PP% Is Calculated",
+  "description": "Power play percentage in the NHL is power-play goals divided by opportunities. Its history, what a good rate is, and the Red Wings' live power-play numbers.",
+  "h1": "Power Play Percentage in the NHL (PP%)"
+ },
+ "hero": {
+  "definition": "Power play percentage (PP%) is power-play goals divided by power-play opportunities, roughly the share of a team's man advantages that produce a goal. It says how well a team converts and nothing about how many power plays it draws. Across the league, power play percentage in the NHL ran at 21.1% last season.",
+  "dek": "About one goal in five comes on the power play, so a few points of conversion move a season. Detroit's rate fell from 27.0% to 22.6% between the last two seasons, which cost the Wings about 11 goals at last season's volume."
+ },
+ "facts": [
+  {
+   "label": "Formula",
+   "value": "PPG ÷ PPO",
+   "sub": "power-play goals over opportunities"
+  },
+  {
+   "label": "League average",
+   "value": "21.1%",
+   "sub": "1,595 goals on 7,555 chances, 2025-26"
+  },
+  {
+   "label": "Best, 2025-26",
+   "value": "30.6%",
+   "sub": "Edmonton, 68 of 222"
+  },
+  {
+   "label": "Worst, 2025-26",
+   "value": "15.7%",
+   "sub": "Philadelphia, 37 of 235"
+  },
+  {
+   "label": "Red Wings, 2025-26",
+   "value": "22.6%",
+   "sub": "12th of 32, 56 of 248"
+  },
+  {
+   "label": "Record",
+   "value": "32.4%",
+   "sub": "Edmonton, 2022-23, tracked since 1977-78"
+  },
+  {
+   "label": "Share of goals",
+   "value": "19.7%",
+   "sub": "of all NHL goals came on a power play, 2025-26"
+  },
+  {
+   "label": "Chances a game",
+   "value": "2.88",
+   "sub": "per team in 2025-26, down from 5.46 in 1987-88"
+  }
+ ],
+ "origin": [
+  "The power play got its modern shape from one Canadiens hat trick. On Nov. 5, 1955, Jean Béliveau scored three power-play goals against Boston in 44 seconds, all on the same penalty, because a penalized player back then served his full two minutes no matter how many goals went in. The NHL changed the rule for the next season so a penalized player could return once his team gave up a goal, and today's rulebook still ends a minor the moment a short-handed team is scored on.",
+  "The percentage came later. The league's stats database carries power-play opportunities for every team from 1977-78 on, and that first season produced a record that stood until 2022-23, when Montreal's 31.9% finally fell to an Edmonton power play that converted 32.4% of its chances. Only five of the 1,282 team seasons since 1977-78 have cleared 30%, and Edmonton's 30.6% last season was one of them.",
+  "The formula hasn't moved in all that time. NHL.com's glossary defines it as total power-play goals divided by total power-play opportunities, Hockey-Reference uses the same division, and the league's stats site adds a net version that takes away the shorthanded goals a team gives up while it's on the power play. That's the whole family."
+ ],
+ "calculation": {
+  "intro": [
+   "The arithmetic is one division, and the judgment is in what counts as a power play and which goals count toward it, which the rulebook settles for most cases. These are the inputs:"
+  ],
+  "inputs": [
+   "Power-play goals, scored while a team has more skaters on the ice than its opponent",
+   "Power-play opportunities, one for each man advantage an opponent's penalty hands a team",
+   "Shorthanded goals allowed, for the net version",
+   "Power-play time on ice, for rate versions like goals per 60"
+  ],
+  "formulas": [
+   {
+    "label": "Rate",
+    "expr": "PP% = power-play goals ÷ power-play opportunities"
+   },
+   {
+    "label": "Net",
+    "expr": "net PP% = (power-play goals − shorthanded goals allowed) ÷ opportunities"
+   },
+   {
+    "label": "Per 60",
+    "expr": "PP goals/60 = power-play goals × 60 ÷ power-play minutes"
+   },
+   {
+    "label": "Mirror",
+    "expr": "PK% = 1 − power-play goals allowed ÷ times shorthanded"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A team draws 250 power plays and scores on 55 of them, so its PP% is 22.0%. It gives up five shorthanded goals along the way, which drops the net rate to 20.0%. Give the same team 200 power plays at the same rate and it scores 44, eleven fewer goals with a percentage that hasn't changed at all.",
+  "after": [
+   "The rulebook shapes those numbers. A power play on a single minor ends at the first goal, because a goal against a short-handed team wipes out the minor with the least time left (Rule 16.2). A major doesn't end on a goal (Rule 20.2), so a five-minute power play can produce more than one. Coincidental minors don't put either side short-handed, so matching penalties don't hand anyone a power play."
+  ],
+  "variants": [
+   {
+    "term": "PPG",
+    "def": "Power-play goals. The numerator, credited to the team and to the scorer.",
+    "slug": "power-play-goals-and-points"
+   },
+   {
+    "term": "PPO",
+    "def": "Power-play opportunities. The denominator, one for each man advantage."
+   },
+   {
+    "term": "Net PP%",
+    "def": "Power-play goals minus shorthanded goals allowed, divided by opportunities. The NHL's stats site publishes it beside the gross rate."
+   },
+   {
+    "term": "5v4 xGF/60",
+    "def": "Expected goals per 60 minutes at five-on-four, the chances a power play creates whether or not they go in.",
+    "slug": "power-play-unit"
+   },
+   {
+    "term": "PK%",
+    "def": "The other side of the same penalties. The share of opponents' power plays a team kills off.",
+    "slug": "penalty-kill-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "PP% measures conversion. The league as a whole converted 21.1% last season, and the median team sat a hair lower. Edmonton led at 30.6% and Philadelphia finished last at 15.7%, a gap that's worth about 35 goals over an average team's season of opportunities.",
+  "Why does a few points of conversion matter that much? Because goals come much faster with the extra skater. MoneyPuck's numbers for last season have the league scoring about three times as often per minute at five-on-four as at five-on-five (7.32 goals per 60 against 2.48), even though the average team spent less than five minutes a night with the man advantage.",
+  "Detroit converted 22.6% of its chances, 12th in the league. Volume helped the Wings more than the rate did. Their 248 opportunities tied for the seventh-most in the league, so their 56 power-play goals tied for seventh as well, five spots better than the percentage. MoneyPuck graded Detroit's five-on-four chances higher still, seventh in the league in expected goals per minute at five-on-four.",
+  "Does a good power play stay good? Some of it carries over, and a lot of it doesn't. Over the last ten seasons a team's PP% correlated at 0.37 with its rate the following season, which leaves plenty of room for a unit to rise or fall on shooting luck and personnel. Detroit's the nearest example, fourth in the league two seasons ago and 12th last season."
+ ],
+ "uses": [
+  {
+   "title": "Splitting conversion from volume",
+   "html": "PP% ignores how often a team gets the chance, so analysts pair it with opportunities per game. Toronto drew the fewest power plays in the league last season and converted 21.3%, while Florida drew the most, converted 19.5% and scored 52 power-play goals to Toronto's 42. The team with the worse percentage scored ten more goals. If you're judging what a power play is worth to a team, you need both numbers, and the second one depends on how often its skaters draw penalties."
+  },
+  {
+   "title": "Checking the chances behind the rate",
+   "html": "Expected goals at five-on-four show you whether a power play is creating chances or riding a hot stretch of shooting. Across the league last season, PP% and five-on-four expected goals per 60 correlated at 0.72, so the two mostly agree. Colorado is the outlier worth knowing. The league's best five-on-five team by expected goals converted only 17.1% (27th), and MoneyPuck had Colorado's five-on-four unit scoring 40 goals on 50.1 expected."
+  },
+  {
+   "title": "Netting out shorthanded goals",
+   "html": "A power play that gives up shorthanded goals hands some of its work back, which is what net PP% measures. Colorado allowed 13 shorthanded goals, the most in the league, and its net rate fell to 12.2%. Detroit gave up five, and its 22.6% netted out at 20.6%. Washington's 17.8% fell to 13.3%, which turned a below-average power play into one of the league's worst."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night from MoneyPuck's five-on-four numbers. The nightly feed doesn't carry the NHL's power-play percentage yet, so these tiles show the chances and goals behind it.",
+  "tiles": [
+   {
+    "tile": "pp_xgf60"
+   },
+   {
+    "label": "5v4 goals",
+    "source": "team",
+    "path": "situations.5on4.goalsFor",
+    "format": "int",
+    "sub": "MoneyPuck, five-on-four"
+   },
+   {
+    "label": "5v4 expected goals",
+    "source": "team",
+    "path": "situations.5on4.xGoalsFor",
+    "format": "num2",
+    "rankPath": "leagueRanks.xGoalsFor_5on4"
+   }
+  ],
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. A team gets about three power plays a night, so one hot game still moves these numbers more than anything else on the page."
+ },
+ "limits": [
+  {
+   "title": "It ignores volume",
+   "html": "Two teams with identical percentages end up about 15 goals apart if one draws last season's high of 266 power plays and the other draws last season's low of 197. The percentage can't see that gap, and it's the gap that shows up on the scoreboard."
+  },
+  {
+   "title": "Shorthanded goals don't count against it",
+   "html": "Gross PP% never subtracts the shorthanded goals a unit gives up, which is why the NHL publishes a net version beside it and why Colorado's two rates sat almost five points apart last season."
+  },
+  {
+   "title": "The sample is small",
+   "html": "A team gets about 240 power plays a season, so two or three goals either way moves its rate by a full percentage point. That's enough to jump several places in a league where the middle third sat within about four points."
+  },
+  {
+   "title": "It can't separate finishing from chances",
+   "html": "A unit can shoot well above or below the quality of its looks for a whole season. Edmonton's league-best power play scored 63 times on 52.0 expected goals at five-on-four, and the percentage alone can't tell you that 11 of those goals came from finishing above what the model expected."
+  }
+ ],
+ "related": [
+  {
+   "slug": "penalty-kill-percentage",
+   "name": "Penalty kill percentage",
+   "abbr": "PK%",
+   "vs": "The same penalties from the short-handed side."
+  },
+  {
+   "slug": "power-play-goals-and-points",
+   "name": "Power-play goals and points",
+   "abbr": "PPG",
+   "vs": "The players who score them. PP% is the team's rate."
+  },
+  {
+   "slug": "power-play-unit",
+   "name": "Power play and penalty kill (5v4, 4v5)",
+   "abbr": "5v4",
+   "vs": "Per-60 rates on the man advantage, with expected goals."
+  },
+  {
+   "slug": "shorthanded-goals-and-points",
+   "name": "Shorthanded goals and points",
+   "abbr": "SHG",
+   "vs": "The goals a power play gives back, which net PP% subtracts."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "The chances behind the conversion rate."
+  }
+ ],
+ "faq": [
+  {
+   "q": "How long does a power play last?",
+   "a": "Two minutes for a minor, unless the power play scores first, since a goal ends the short-handed team's earliest-expiring minor. A double minor is four minutes, and a major runs its full five no matter how many goals go in. By the league's own time-on-ice totals, the average NHL power play lasted about a minute and 39 seconds last season."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Hockey glossary",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/info/hockey-glossary",
+   "note": "power-play percentage is power-play goals divided by power-play opportunities"
+  },
+  {
+   "label": "This Date in NHL History, Nov. 5",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/news/this-date-in-nhl-history-november-5-283308796",
+   "note": "Béliveau's three power-play goals in 44 seconds in 1955 and the 1956-57 rule change"
+  },
+  {
+   "label": "Official Rules 2025-2026",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "Rule 16.2 (a goal ends a minor; coincidental minors), 16.1, 18.1, 20.1 and 20.2 (penalty lengths, majors don't end on a goal)"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "PP% and PPO definitions"
+  },
+  {
+   "label": "Team power-play report, 2025-26 regular season",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/powerplay?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "every team's goals, opportunities, net rate, shorthanded goals allowed and power-play time"
+  },
+  {
+   "label": "Team power-play report, every regular season",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/powerplay?isAggregate=false&isGame=false&limit=-1&cayenneExp=gameTypeId=2%20and%20seasonId%3E=19171918%20and%20seasonId%3C=20252026",
+   "note": "tracking from 1977-78, the record rates, opportunities per game and year-to-year repeatability"
+  },
+  {
+   "label": "Team summary, 2025-26 regular season",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/summary?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "total goals, for the power play's share"
+  },
+  {
+   "label": "2025-26 regular-season team file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "five-on-four and five-on-five goals, expected goals and ice time"
+  }
+ ],
+ "method": "Power-play figures are Wes & Woodward's calculations from the NHL stats API team power-play report for 2025-26 (downloaded October 9, 2026, saved as raw/nhl_team_powerplay_20252026_ppct_page.json) and for every regular season through 2025-26 (raw/nhl_team_powerplay_allseasons_to_20252026.json). League PP% is total power-play goals ÷ total opportunities; net PP% is (power-play goals − shorthanded goals allowed) ÷ opportunities, which matches the API's net column for all 32 teams; average power-play length is total power-play time ÷ total opportunities; records use team seasons of 48+ games from 1977-78 on; repeatability is the Pearson correlation of a franchise's PP% with its next season's, 310 pairs from 2015-16 through 2025-26. The power play's share of goals divides by total goals in the NHL team summary (raw/nhl_team_summary_20252026_pp_pk_gd.json). Five-on-four and five-on-five rates are per 60 minutes from MoneyPuck's 2025-26 team file (raw/mp_teams_2025.csv, downloaded October 9, 2026). The Red Wings section rebuilds nightly from MoneyPuck."
+}

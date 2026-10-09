@@ -1,0 +1,259 @@
+{
+ "slug": "penalty-minutes",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Penalty minutes",
+  "short": "PIM",
+  "abbr": "PIM",
+  "aliases": [
+   "PIM",
+   "PIMs",
+   "penalties in minutes",
+   "penalty minutes",
+   "PIM/GP"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "what is pim in hockey",
+  "supporting": [
+   "what does pim mean in hockey",
+   "pim in hockey",
+   "pim meaning hockey",
+   "pim hockey meaning",
+   "what does pim stand for in hockey",
+   "pims in hockey",
+   "pims hockey meaning"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Is PIM in Hockey? Penalty Minutes and How They Add Up",
+  "description": "What is PIM in hockey? Penalty minutes, two for a minor, five for a major, 10 for a misconduct. How PIM adds up, what it misses, and Detroit's numbers.",
+  "h1": "What Is PIM in Hockey? Penalty Minutes (PIM) Explained"
+ },
+ "hero": {
+  "definition": "Penalty minutes (PIM) are the total time a player or team is penalized, at two minutes for a minor, four for a double minor, five for a major and 10 for a misconduct or game misconduct. Every penalty counts whether or not it put his team shorthanded, and the penalties he draws from opponents don't offset any of it.",
+  "dek": "What is PIM in hockey, and what does PIM stand for in a box score? Penalty minutes. The stat mixes minors that cost a team a power play with misconducts that cost it nothing on the ice, which makes it a rougher read on discipline than it looks."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "PIM · PIMs",
+   "sub": "penalties in minutes"
+  },
+  {
+   "label": "Minor",
+   "value": "2 min",
+   "sub": "4 for a double minor (Rules 16, 18)"
+  },
+  {
+   "label": "Major",
+   "value": "5 min",
+   "sub": "fights included (Rule 20)"
+  },
+  {
+   "label": "Misconduct",
+   "value": "10 min",
+   "sub": "no shorthanded time (Rule 22)"
+  },
+  {
+   "label": "Game misconduct",
+   "value": "10 min",
+   "sub": "in the records; a match penalty is 15 (Rules 21, 23)"
+  },
+  {
+   "label": "Most, 2025-26",
+   "value": "152",
+   "sub": "Nikita Zadorov, Boston"
+  },
+  {
+   "label": "Median forward",
+   "value": "28",
+   "sub": "327 forwards with 60+ games, 2025-26"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "629",
+   "sub": "team PIM, fifth-fewest of 32"
+  }
+ ],
+ "origin": [
+  "Penalty minutes are as old as the league. The NHL's stats glossary lists its first season, 1917-18, as the first year of PIM, and the stat's still a raw sum of every minute charged. Dave Schultz's 472 for Philadelphia in 1974-75 remain the single-season record. Bob Probert's 398 in 1987-88 (sixth all-time) stand as Detroit's record, and nobody's piled up more as a Red Wing than Probert did over his career.",
+  "The minutes come straight from the rulebook's penalty section. A minor is two, a double minor four and a major five, and the NHL's glossary notes that fighting majors are almost always coincidental, so they rarely change the manpower. A misconduct is 10 minutes in the box that doesn't make a team shorthanded, a game misconduct goes into the league's records as 10 minutes even though the player's gone for the night, and a match penalty goes in as 15, five on the clock plus 10 for the ejection.",
+  "Every stat site carries the column, and Hockey-Reference gives the PIM meaning in hockey's older wording, penalties in minutes. The NHL's blunt about what's inside it. Its glossary defines penalty minutes as \"a total of all penalty minutes, whether those penalties caused an opposition power play or not.\" Since 2009-10 the league has published penalties taken and drawn as counts too, and those counts are what public WAR models put a goal value on."
+ ],
+ "calculation": {
+  "intro": [
+   "PIM is a sum. Every penalty charged to a player adds its minutes to his total, whether or not it put his team a man down. In the plural they're PIMs, and the PIMs meaning in hockey slang is the same running total. These are the inputs:"
+  ],
+  "inputs": [
+   "Minor penalties, two minutes each (four for a double minor)",
+   "Major penalties, five minutes each",
+   "Misconducts and game misconducts, 10 minutes each",
+   "Match penalties, 15 minutes each"
+  ],
+  "formulas": [
+   {
+    "label": "Total",
+    "expr": "PIM = 2 × minors + 4 × double minors + 5 × majors + 10 × (misconducts + game misconducts) + 15 × match penalties"
+   },
+   {
+    "label": "Per game",
+    "expr": "PIM/GP = PIM ÷ games played"
+   },
+   {
+    "label": "Count",
+    "expr": "penalties taken = number of penalties, whatever their length"
+   },
+   {
+    "label": "Net",
+    "expr": "net penalties = penalties drawn − penalties taken"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A forward takes a hooking minor in the first period, drops the gloves in the second and gets a misconduct for arguing the call in the third. His line reads 17 PIM, two plus five plus 10. His team spent two of those minutes shorthanded. The rest were free. The fight drew a matching major for the other player, so nobody went a man down, and a substitute took his place on the ice during the misconduct.",
+  "after": [
+   "The count is the cleaner number. The NHL's penalties-taken column treats a two-minute hook and a 10-minute misconduct as one penalty each, so it tracks how often a player hands the other team something, and that's usually the more useful question."
+  ],
+  "variants": [
+   {
+    "term": "PIM",
+    "def": "Penalty minutes, every minute charged."
+   },
+   {
+    "term": "PIM/GP",
+    "def": "Penalty minutes per game played, published by the NHL back to 1997-98."
+   },
+   {
+    "term": "Pen Taken",
+    "def": "Penalties taken, a count. All penalty types, all situations."
+   },
+   {
+    "term": "Pen Drawn",
+    "def": "Penalties drawn from opponents, the other side of the ledger.",
+    "slug": "penalties-drawn"
+   },
+   {
+    "term": "TS",
+    "def": "Times shorthanded, the team count that penalty-kill percentage is built on.",
+    "slug": "penalty-kill-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "PIM measures how much time a player's been sentenced to, which only partly overlaps with how often he hurts his team. League-wide, teams were charged 23,596 penalty minutes last season on 9,656 penalties. Most of those were minors, 8,490 of them, and the rest were bench minors, majors, misconducts and a handful of game misconducts and match penalties, every one added in at its full length.",
+  "Look inside a leader's total and the mix shows up. Boston's Mark Kastelic was second in the league with 140. He took 25 minors, 10 majors and four misconducts, so 40 of his minutes came from misconducts that never put Boston a man down. His teammate Nikita Zadorov led the league with 152, and his came mostly from minors, 41 of them, the most in hockey. Same total, different player.",
+  "Among the 327 forwards who played at least 60 games, the median had 28 PIM and the top 10% cleared 62. Defensemen run higher, with a median of 34 among the 161 regulars. Detroit was one of the league's most disciplined teams by any count. The Wings took 629 penalty minutes (fifth-fewest) and 11 majors (tied for second-fewest), and they were shorthanded 210 times, third-fewest. Simon Edvinsson and Ben Chiarot led the team with 75 each.",
+  "Does a high PIM total follow a player from year to year? It does. Among the 379 skaters who played 60 games in each of the last two seasons, PIM correlated at 0.77 from one season to the next, closer to points than to plus-minus. If you're projecting a player's penalty habits, last season's line is a fair place to start."
+ ],
+ "uses": [
+  {
+   "title": "Measuring a team's discipline, roughly",
+   "html": "Across the 32 teams, penalty minutes correlated with times shorthanded at 0.72 last season, and the number of minors correlated at 0.86, which fits, since misconducts and most fighting majors don't hand the other team a power play at all. Tampa Bay led the league with 1,207 PIM, 229 more than anyone else, yet Boston and Florida were both shorthanded more often than Tampa was. If you want to know which team hands out power plays, you're better off counting the minors."
+  },
+  {
+   "title": "Finding the fights",
+   "html": "Every fight is a major, so the majors inside a PIM total are where fighting shows up. Anaheim's Ross Johnston and Columbus's Mathieu Olivier led the league with 11 majors each. Detroit took 11 as a whole team, tied for second-fewest in the league, and that's about as clear a read on a roster's style as a box score gives you."
+  },
+  {
+   "title": "Pairing it with penalties drawn",
+   "html": "Minutes alone can't say whether a player's penalties cost his team, but the penalties he draws can balance them out. Zadorov took 51 and drew 26, a net of minus-25 that was the worst in the league. <a href=\"/players/ben-chiarot/\">Chiarot</a> took 31 and drew 10, a minus-21 that ranked fifth-worst, and that's the number that tells you what his 75 minutes cost Detroit."
+  }
+ ],
+ "limits": [
+  {
+   "title": "It counts minutes that cost nothing",
+   "html": "A misconduct puts 10 minutes on a player's line without putting his team a man down, and coincidental fighting majors leave the manpower even. A player can pile up PIM without ever costing his team a power play."
+  },
+  {
+   "title": "It ignores the penalties he draws",
+   "html": "Drawing penalties is half of a player's penalty value, and PIM leaves it out. <a href=\"/players/emmitt-finnie/\">Emmitt Finnie</a> had six PIM last season and drew 22 penalties, a net of plus-19 that tied for third in the league. His PIM line just looks quiet."
+  },
+  {
+   "title": "Washed-out penalties never appear",
+   "html": "If a minor is signaled and the other team scores before the whistle, Rule 15.2 says the minor isn't imposed at all, so it never reaches anyone's PIM, even though the player committed it and his team gave up a goal while the call was pending."
+  },
+  {
+   "title": "Every minor costs the same two minutes",
+   "html": "Evolving-Hockey values a minor taken at five-on-five at 0.182 goals and one taken 30 seconds into an opponent's five-on-four at 0.419, because the second one creates a five-on-three. PIM charges both the same two minutes, and it can't tell you which one hurt."
+  }
+ ],
+ "related": [
+  {
+   "slug": "penalties-drawn",
+   "name": "Penalties drawn",
+   "abbr": "Pen Drawn",
+   "vs": "The other side of the ledger. PIM counts only what a player takes."
+  },
+  {
+   "slug": "penalty-kill-percentage",
+   "name": "Penalty kill percentage",
+   "abbr": "PK%",
+   "vs": "What the team does with the minors a player takes."
+  },
+  {
+   "slug": "power-play-percentage",
+   "name": "Power play percentage",
+   "abbr": "PP%",
+   "vs": "What the other team does with them."
+  },
+  {
+   "slug": "power-play-goals-and-points",
+   "name": "Power-play goals and points",
+   "abbr": "PPG",
+   "vs": "The goals a power play scores, the real cost of a minor."
+  },
+  {
+   "slug": "wins-above-replacement",
+   "name": "Wins above replacement",
+   "abbr": "WAR",
+   "vs": "Prices penalties taken and drawn in goals, inside one number."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Do coincidental penalties count toward PIM?",
+   "a": "Yes. Both players get the minutes on their lines even though neither team goes shorthanded, because the NHL's penalty-minute total includes every penalty, whether it caused a power play or not."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Stats glossary (PIM, PIM/GP, minor, major, misconduct, match, Pen Taken, Pen Drawn, Net Pen, PK%)",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "first season tracked, the PIM definition, fighting majors usually coincidental; pulled from api.nhle.com/stats/rest/en/glossary"
+  },
+  {
+   "label": "Official Rules 2025-2026",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "Rules 15.2, 16.1, 18.1, 20.1, 21.2, 22.1, 22.3 and 23.1"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "PIM = penalties in minutes"
+  },
+  {
+   "label": "Skater and team penalty reports, 2024-25 and 2025-26 regular seasons",
+   "publisher": "NHL",
+   "url": "https://api.nhle.com/stats/rest/en/skater/penalties?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "minors, majors, misconducts, penalties drawn and taken; team penalties, penalty kill and power play"
+  },
+  {
+   "label": "Skater stats API, season and franchise records",
+   "publisher": "NHL",
+   "url": "https://api.nhle.com/stats/rest/en/skater/summary?isAggregate=false&limit=8&cayenneExp=gameTypeId=2",
+   "note": "Schultz, Probert and Kocur"
+  },
+  {
+   "label": "Penalty Goals: An Expanded Approach to Measuring Penalties in the NHL",
+   "publisher": "Evolving-Hockey (Josh and Luke Younggren), first published at Hockey-Graphs, January 2019",
+   "url": "https://evolving-hockey.com/?p=472",
+   "note": "goal values of a minor at 5v5 and during a 5v4"
+  }
+ ],
+ "method": "League and Red Wings figures are Wes & Woodward's calculations from the NHL stats API's 2025-26 regular-season skater penalties, skater summary, team penalties, team penalty-kill and team power-play reports, downloaded October 9, 2026 and saved in research/glossary-pseo/raw/. Medians use the 327 forwards and 161 defensemen with 60 or more games. Team correlations are Pearson coefficients across the 32 teams; the season-to-season correlation pairs the 2024-25 and 2025-26 skater summaries for the 379 skaters with 60 or more games in both. Records come from the same API's season and franchise queries."
+}

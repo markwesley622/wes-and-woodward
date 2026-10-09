@@ -1,0 +1,85 @@
+# One glossary page per stat. names = every name the stat goes by (abbreviation, full name,
+# NHL.com label, alternate spellings). Each name is crossed with MODIFIERS to form candidates.
+STATS = [
+    # --- skater counting ---
+    ("goals", "Skater", "Goals", ["goals", "g"]),
+    ("assists", "Skater", "Assists", ["assist", "assists", "primary assist", "secondary assist", "a"]),
+    ("points", "Skater", "Points", ["points", "pts", "p"]),
+    ("plus-minus", "Skater", "Plus-minus", ["plus minus", "plus/minus", "+/-"]),
+    ("pim", "Skater", "Penalty minutes", ["pim", "pims", "penalty minutes"]),
+    ("ppg", "Skater", "Power-play goals and points", ["ppg", "ppp", "power play goals", "power play points", "power play goal"]),
+    ("shg", "Skater", "Shorthanded goals and points", ["shg", "shp", "shorthanded goal", "short handed goal", "shorthanded points", "shorty"]),
+    ("evg", "Skater", "Even-strength goals", ["evg", "even strength goals", "even strength points", "evp"]),
+    ("gwg", "Skater", "Game-winning goals", ["gwg", "game winning goal", "game winning goals", "game winner"]),
+    ("otg", "Skater", "Overtime goals", ["otg", "overtime goals", "overtime goal"]),
+    ("sog", "Skater", "Shots on goal", ["sog", "shots on goal", "shots"]),
+    ("sh-pct", "Skater", "Shooting percentage", ["shooting percentage", "sh%", "s%", "shooting pct"]),
+    ("toi", "Skater", "Time on ice", ["toi", "atoi", "time on ice", "average time on ice", "toi/gp"]),
+    ("fo-pct", "Skater", "Faceoff percentage", ["faceoff percentage", "faceoff win percentage", "fo%", "fow", "faceoff wins", "faceoffs won", "face off percentage"]),
+    ("hits", "Skater", "Hits", ["hits", "hit"]),
+    ("blocks", "Skater", "Blocked shots", ["blocked shots", "blocks", "blk", "bks"]),
+    ("takeaways", "Skater", "Takeaways and giveaways", ["takeaways", "giveaways", "tk", "gv"]),
+    ("gp", "Skater", "Games played", ["gp", "games played"]),
+    ("p-gp", "Skater", "Points per game", ["points per game", "p/gp", "points per game average"]),
+    ("penalties-drawn", "Skater", "Penalties drawn", ["penalties drawn", "penalty differential"]),
+    # --- goalie ---
+    ("sv-pct", "Goalie", "Save percentage", ["save percentage", "sv%", "save %", "save pct", "sv pct", "sv"]),
+    ("gaa", "Goalie", "Goals against average", ["gaa", "goals against average", "goals against avg"]),
+    ("shutout", "Goalie", "Shutouts", ["shutout", "shutouts", "so"]),
+    ("goalie-record", "Goalie", "Goalie record (W-L-OTL)", ["otl", "overtime loss", "overtime losses", "w-l-otl", "goalie record", "goalie wins"]),
+    ("gsax", "Goalie", "Goals saved above expected", ["gsax", "goals saved above expected"]),
+    ("gsaa", "Goalie", "Goals saved above average", ["gsaa", "goals saved above average"]),
+    ("quality-starts", "Goalie", "Quality starts", ["quality starts", "quality start", "qs", "really bad starts", "rbs"]),
+    ("hdsv", "Goalie", "High-danger save percentage", ["high danger save percentage", "hdsv%", "hdsv", "high danger save"]),
+    ("xsv", "Goalie", "Expected save percentage", ["expected save percentage", "xsv%", "xsv", "dsv%", "delta save percentage"]),
+    ("saves", "Goalie", "Saves and shots against", ["saves", "shots against", "sa", "ga", "goals against"]),
+    # --- team ---
+    ("pts-pct", "Team", "Points percentage", ["points percentage", "points %", "p%", "pts%", "point percentage"]),
+    ("regulation-wins", "Team", "Regulation wins", ["regulation wins", "rw", "row", "regulation and overtime wins", "regulation wins tiebreaker"]),
+    ("goal-diff", "Team", "Goal differential", ["goal differential", "goal diff", "diff"]),
+    ("pp-pct", "Team", "Power play percentage", ["power play percentage", "pp%", "power play %", "power play pct"]),
+    ("pk-pct", "Team", "Penalty kill percentage", ["penalty kill percentage", "pk%", "penalty kill %", "pk pct"]),
+    # --- advanced ---
+    ("xg", "Advanced", "Expected goals", ["xg", "expected goals", "xgf", "xga", "xgf%", "xg%", "expected goals for", "expected goals against", "expected goals percentage", "expected goals for percentage"]),
+    ("ixg", "Advanced", "Individual expected goals", ["ixg", "individual expected goals"]),
+    ("gax", "Advanced", "Goals above expected", ["goals above expected", "gax", "g-xg", "goals minus expected goals", "finishing"]),
+    ("corsi", "Advanced", "Corsi", ["corsi", "corsi for", "corsi against", "cf%", "corsi for percentage", "corsi percentage", "sat", "shot attempts", "shot attempt percentage", "sat%"]),
+    ("fenwick", "Advanced", "Fenwick", ["fenwick", "ff%", "fenwick for percentage", "usat", "unblocked shot attempts", "fenwick percentage"]),
+    ("rel-corsi", "Advanced", "Relative Corsi", ["relative corsi", "rel cf%", "corsi rel", "corsi relative", "relative cf%"]),
+    ("pdo", "Advanced", "PDO", ["pdo", "spsv%", "shooting plus save percentage"]),
+    ("hdcf", "Advanced", "High-danger chances", ["high danger chances", "high danger scoring chances", "hdcf", "hdcf%", "hdca", "high danger chances for"]),
+    ("scf", "Advanced", "Scoring chances", ["scoring chances", "scoring chance", "scf", "scf%", "scoring chances for"]),
+    ("sf-pct", "Advanced", "Shot share", ["shot share", "sf%", "shots for percentage", "shot differential"]),
+    ("gf-pct", "Advanced", "Goals for percentage", ["gf%", "goals for percentage", "goal share"]),
+    ("on-ice-pct", "Advanced", "On-ice shooting and save percentage", ["on ice shooting percentage", "on ice save percentage", "oish%", "oisv%"]),
+    ("zone-starts", "Advanced", "Zone starts", ["zone starts", "zone start percentage", "ozs%", "offensive zone starts", "offensive zone start percentage", "dzs%", "defensive zone starts"]),
+    ("qoc", "Advanced", "Quality of competition and teammates", ["quality of competition", "qoc", "quality of teammates", "qot"]),
+    ("war", "Advanced", "Wins above replacement", ["wins above replacement", "war", "goals above replacement", "gar", "spar", "standings points above replacement", "xgar"]),
+    ("rapm", "Advanced", "RAPM", ["rapm", "regularized adjusted plus minus", "adjusted plus minus"]),
+    ("per60", "Advanced", "Per-60 rates", ["per 60", "points per 60", "p/60", "goals per 60", "g/60", "per 60 minutes"]),
+    ("ipp", "Advanced", "Individual points percentage", ["ipp", "individual points percentage", "primary points", "primary assists"]),
+    ("game-score", "Advanced", "Game score", ["game score", "gamescore", "game score stat"]),
+    ("zone-entries", "Advanced", "Zone entries and exits", ["zone entries", "controlled zone entries", "zone exits", "controlled entries", "microstats"]),
+    ("icf", "Advanced", "Individual shot attempts", ["icf", "individual corsi", "individual shot attempts"]),
+    ("score-adjusted", "Advanced", "Score-adjusted stats", ["score adjusted", "score and venue adjusted", "score effects"]),
+    ("shot-quality", "Advanced", "Shot quality", ["shot quality", "shot danger", "danger zones"]),
+]
+
+MODIFIERS = [
+    "{n} hockey", "{n} nhl", "hockey {n}", "nhl {n}", "what is {n} in hockey", "what is {n} hockey",
+    "what is {n} in nhl", "what does {n} mean in hockey", "what does {n} stand for in hockey",
+    "{n} meaning hockey", "{n} hockey meaning", "{n} in hockey", "{n} hockey stat", "{n} stat hockey",
+    "{n} definition hockey", "how to calculate {n} hockey", "how is {n} calculated hockey",
+    "{n} formula hockey", "{n} hockey formula", "{n} nhl stat",
+    # unqualified forms: only kept if the SERP is hockey
+    "{n}", "what is {n}", "what does {n} mean", "how to calculate {n}", "how is {n} calculated", "{n} formula", "{n} stat",
+]
+
+# Names that are too short or too generic to stand alone: only the explicit
+# hockey-question templates are generated for them ("what does gp mean in hockey").
+GENERIC_NAMES = {"goals", "assist", "assists", "points", "shots", "hits", "hit", "blocks", "saves",
+                 "shorty", "finishing", "war", "row", "sat", "shp", "diff", "game score", "gamescore",
+                 "goals against", "shots against", "game winner", "goal share"}
+Q_TEMPLATES = ["what is {n} in hockey", "what does {n} mean in hockey", "what does {n} stand for in hockey",
+               "{n} meaning hockey", "{n} hockey meaning", "{n} in hockey", "{n} hockey stat",
+               "{n} stat hockey", "{n} nhl stat", "{n} definition hockey"]

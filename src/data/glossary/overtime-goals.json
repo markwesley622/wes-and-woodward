@@ -1,0 +1,248 @@
+{
+ "slug": "overtime-goals",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Overtime goals",
+  "short": "OTG",
+  "abbr": "OTG",
+  "aliases": [
+   "OTG",
+   "OT goal",
+   "overtime winner",
+   "OT winner"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "overtime goal",
+  "supporting": [
+   "hockey overtime goal"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "Overtime Goal Rules and the OTG Stat in Hockey",
+  "description": "An overtime goal ends the game on the spot. How 3-on-3 and playoff overtime work, how often games end in OT, and the Red Wings' overtime scorers.",
+  "h1": "The Overtime Goal (OTG) in Hockey"
+ },
+ "hero": {
+  "definition": "An overtime goal (OTG) is any goal scored after a game ends regulation tied, and it ends the game on the spot. Regular-season overtime is one five-minute period of three-on-three, with a shootout if nobody scores, and playoff overtime is full 20-minute periods at five-on-five until somebody does.",
+  "dek": "Last season 326 of the NHL's 1,312 games went past regulation, and 207 of them ended on a hockey overtime goal before anyone had to take a shootout attempt. Every one of those counts as a game-winner, too."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "OTG",
+   "sub": "the OT winner"
+  },
+  {
+   "label": "Format",
+   "value": "3-on-3",
+   "sub": "five minutes, regular season, since 2015-16"
+  },
+  {
+   "label": "Games to OT",
+   "value": "24.8%",
+   "sub": "326 of 1,312 games, 2025-26"
+  },
+  {
+   "label": "Decided in OT",
+   "value": "63.5%",
+   "sub": "207 of the 326; the rest went to a shootout"
+  },
+  {
+   "label": "Leader, 2025-26",
+   "value": "5",
+   "sub": "Cole Caufield, Montreal"
+  },
+  {
+   "label": "Red Wings leader",
+   "value": "4",
+   "sub": "Dylan Larkin, tied for second in the NHL"
+  },
+  {
+   "label": "Wings record",
+   "value": "13",
+   "sub": "Larkin, career regular-season OT goals"
+  },
+  {
+   "label": "Playoff record",
+   "value": "8",
+   "sub": "Joe Sakic, career playoff OT goals"
+  }
+ ],
+ "origin": [
+  "Regular-season overtime has changed shape three times since the NHL added a five-minute, five-on-five extra period for 1983-84 (the league's records show 54 overtime wins that first year and none the season before). Losing in overtime cost a team the point it would've had from a tie until 1999-2000, when the league went to four-on-four and started giving the loser a point anyway. It needed the help. By The Hockey News' count, 162 of the 222 games that reached overtime the season before the change had still ended in ties.",
+  "The shootout arrived in 2005-06 and ended ties for good, and three-on-three replaced four-on-four a decade later. The effect showed up right away, as the share of overtime games settled before a shootout jumped from 44% in the last four-on-four season to 61% in the first three-on-three one. By the Associated Press's count, shootouts went from deciding 15% of all games at their peak to 5.9% in 2024-25, and they climbed back to 9.1% last season.",
+  "Rule 84.1 sets today's format. The ice gets shoveled, the teams change ends, and three skaters a side play up to five minutes, with the first goal winning the game and the extra standings point. Can a team pull its goalie for an extra attacker? Yes, but under Rule 84.2 it forfeits the point it earned for reaching overtime if it loses with the net empty. Penalties add skaters instead of taking them away, so a minor turns three-on-three into four-on-three.",
+  "Playoffs have no shootout. Rule 84.5 sends the teams to a 15-minute intermission and then plays full 20-minute periods, changing ends each time, until somebody scores. That's how the longest game in league history went to Detroit, when Mud Bruneteau scored 116 minutes and 30 seconds into overtime, in the sixth extra period, to beat the Montreal Maroons in a 1936 semifinal."
+ ],
+ "calculation": {
+  "intro": [
+   "An overtime goal is a goal with a period tag, so the counting's simple. What changes from one season or league to the next is the format around it, and that's why career totals from different eras don't compare cleanly. These are the inputs:"
+  ],
+  "inputs": [
+   "A game tied after three regulation periods",
+   "The format: five minutes of 3-on-3 in the regular season, 20-minute five-on-five periods in the playoffs",
+   "The first goal scored in overtime, which ends the game (Rules 84.1 and 84.5)",
+   "The player credited with it under the normal scoring rules"
+  ],
+  "formulas": [
+   {
+    "label": "Per game",
+    "expr": "OTG ≤ 1"
+   },
+   {
+    "label": "OT games",
+    "expr": "overtime games = overtime wins + shootouts"
+   },
+   {
+    "label": "Decided in OT",
+    "expr": "share = overtime wins ÷ overtime games"
+   },
+   {
+    "label": "Always",
+    "expr": "every OTG is also a GWG"
+   }
+  ],
+  "example": "Here's a worked example, with an invented game. Detroit and Boston finish regulation tied at two, so each team banks a point. Ninety seconds into the three-on-three period, a Detroit defenseman jumps into the rush and scores. He gets an overtime goal and a game-winner, the final goes in as 3-2, and the Wings take the second point.",
+  "after": [
+   "A shootout goal isn't an overtime goal. If the five minutes end scoreless, Rule 84.4 sends the game to a shootout, and while the winning team gets one goal added to its final score, nobody's goal total changes."
+  ],
+  "variants": [
+   {
+    "term": "OTW",
+    "def": "Overtime wins, the games a team won before the shootout. Regulation plus overtime wins make up ROW.",
+    "slug": "regulation-wins"
+   },
+   {
+    "term": "OTL",
+    "def": "Overtime losses. The standings column lumps overtime and shootout losses together, each worth a point.",
+    "slug": "goalie-record"
+   },
+   {
+    "term": "Playoff OTG",
+    "def": "Overtime goals in the playoffs, kept separately. Joe Sakic holds the career record with eight."
+   },
+   {
+    "term": "Shootout winner",
+    "def": "The deciding shootout goal, which doesn't count as a goal for anyone."
+   }
+  ]
+ },
+ "meaning": [
+  "Overtime goals measure who finishes games when the rink has six skaters on it instead of ten. They're rare by construction (one per overtime game at most), and each one's worth a standings point the moment it goes in. Each one matters. A season's worth of them tells you little about the scorer, though, because the samples are so small that one lucky week can make a leader.",
+  "League-wide, a quarter of last season's games reached overtime and 207 ended there. Of the 144 players who scored an overtime goal, 42 scored two or more and only 15 scored three or more. Montreal's Cole Caufield led with five, and Kirill Kaprizov, Clayton Keller, Adrian Kempe and Dylan Larkin had four apiece. Defensemen show up more here than in the goal column as a whole, with about 20% of the overtime goals against 15% of all goals.",
+  "Detroit went 9-6 in overtime last season and 2-4 in shootouts, so 21 of its games went past regulation. Larkin scored four of the nine overtime winners. Alex DeBrincat had two, and Moritz Seider, Andrew Copp and Simon Edvinsson had one each. Larkin's 13 career overtime goals are the franchise record, one ahead of Sergei Fedorov's, and Alex Ovechkin's 27 lead the league through last season."
+ ],
+ "uses": [
+  {
+   "title": "Grading a team's overtime record",
+   "html": "A team's overtime wins are its overtime goals, so the stat doubles as a read on how a team plays three-on-three. Minnesota led the league with 11 overtime wins last season. Detroit's nine tied for sixth. The Wings lost four of their six shootouts, though, and that's the part of the extra time no overtime goal can fix."
+  },
+  {
+   "title": "Measuring three-on-three finishers",
+   "html": "Overtime totals are small, so you'll want to read them over a career. <a href=\"/players/dylan-larkin/\">Larkin</a>'s 13 put him on top of a franchise list that runs back through Fedorov, Brendan Shanahan and Steve Yzerman, which is decent company for a stat with no trophy attached. Is one big season proof of a three-on-three specialist? Leon Draisaitl led the league with six overtime goals in 2024-25 and scored one last season."
+  },
+  {
+   "title": "Reading playoff history",
+   "html": "Playoff overtime goals are where the franchise's mythology lives. The only two Stanley Cup Final Game 7s ever decided in overtime both went to Detroit, on Pete Babando's double-overtime goal against the Rangers in 1950 and Tony Leswick's against Montreal four years later. No other team has even one. Joe Sakic's eight career playoff overtime goals are the league record."
+  }
+ ],
+ "limits": [
+  {
+   "title": "The samples are tiny",
+   "html": "A league leader has five or six in a season, so one bounce moves a player up or down the list. Overtime goal counts correlated at 0.33 across the last two seasons for regular forwards, and the three leaders from the season before combined for four last season."
+  },
+  {
+   "title": "It credits one player for a scramble",
+   "html": "The goal goes to whoever finished the play that went in. The save at the other end that kept the game alive a few seconds earlier doesn't show up in any skater's line."
+  },
+  {
+   "title": "Eras don't compare",
+   "html": "Career totals mix five-on-five, four-on-four and three-on-three overtime. With 44% of overtime games ending before the shootout in the last four-on-four season and 63.5% last season, a scorer from the three-on-three era gets more chances by format alone, and you can't compare him straight up with one from the 1990s."
+  },
+  {
+   "title": "Regular season and playoffs are different games",
+   "html": "The league keeps regular-season and playoff overtime goals in separate counts, and the formats (five minutes of three-on-three against open-ended 20-minute periods at five-on-five, with no shootout waiting at the end) are different enough that you should split any combined total you come across before you quote it."
+  }
+ ],
+ "related": [
+  {
+   "slug": "game-winning-goals",
+   "name": "Game-winning goals",
+   "abbr": "GWG",
+   "vs": "Every overtime goal is one. Most game-winners come in regulation."
+  },
+  {
+   "slug": "goals",
+   "name": "Goals",
+   "abbr": "G",
+   "vs": "All goals, whatever the period. Shootout goals count in neither."
+  },
+  {
+   "slug": "regulation-wins",
+   "name": "Regulation wins",
+   "abbr": "RW",
+   "vs": "ROW adds overtime wins to regulation wins and leaves out shootouts."
+  },
+  {
+   "slug": "goalie-record",
+   "name": "Goalie record (W-L-OTL)",
+   "abbr": "OTL",
+   "vs": "The loser's side, with overtime and shootout losses lumped together."
+  },
+  {
+   "slug": "points-percentage",
+   "name": "Points percentage",
+   "abbr": "P%",
+   "vs": "Standings points per point available, where the overtime loser's point lands."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Official Rules 2025-26 (Rule 84)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "3-on-3 overtime, the pulled-goalie forfeit, penalties in overtime, the shootout, playoff overtime"
+  },
+  {
+   "label": "Stats glossary",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "overtime goals; 4-on-4 through 2014-15 and 3-on-3 from 2015-16"
+  },
+  {
+   "label": "Team and skater stats, 1982-83 through 2025-26",
+   "publisher": "NHL.com stats (api.nhle.com)",
+   "url": "https://www.nhl.com/stats/teams",
+   "note": "overtime wins, shootouts and ties by season; every 2025-26 count; career and franchise overtime goals"
+  },
+  {
+   "label": "Examining the cases for and against the NHL's loser point",
+   "publisher": "The Hockey News (Jacob Titus), December 28, 2023",
+   "url": "https://thehockeynews.com/news/examining-the-cases-for-and-against-the-nhls-loser-point",
+   "note": "five-minute overtime in 1983-84, the move to 4-on-4 and the loser point, 162 ties in 222 overtime games in 1998-99"
+  },
+  {
+   "label": "20 years of the shootout in the NHL",
+   "publisher": "Associated Press via Fox Sports, October 6, 2025",
+   "url": "https://www.foxsports.com/articles/nhl/20-years-of-the-shootout-in-the-nhl-what-to-know-and-who-has-been-the-best",
+   "note": "shootout since 2005, 3-on-3 since 2015, the shootout's share of games"
+  },
+  {
+   "label": "NHL Playoff Overtime Goals",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/playoffs/overtime-goals.cgi",
+   "note": "Bruneteau 1936, Babando 1950, Leswick 1954, Sakic's eight"
+  },
+  {
+   "label": "Standings, 2025-26 final",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/standings",
+   "note": "Detroit's overtime and shootout record"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from the NHL stats API's regular-season team and skater summaries and the 2025-26 final standings, downloaded October 9, 2026: overtime wins are regulation-plus-overtime wins minus regulation wins, overtime games are overtime wins plus shootout wins, and Detroit's overtime losses are its overtime-and-shootout losses minus shootout losses. The year-over-year correlation uses the 260 forwards with 60 or more games in both 2024-25 and 2025-26. Career and franchise overtime goals are NHL stats API totals through 2025-26; playoff overtime goals are Hockey-Reference's list as of the same date."
+}

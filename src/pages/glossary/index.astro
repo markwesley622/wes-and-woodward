@@ -1,0 +1,60 @@
+---
+// Glossary hub: every stat page built from src/data/glossary/*.json, grouped by category.
+import Base from '../../layouts/Base.astro';
+import { glossary, plain } from '../../lib/glossary.js';
+
+const SITE = 'https://wesandwoodward.com';
+const ORDER = ['Advanced', 'Skater', 'Goalie', 'Team'];
+const groups = ORDER.map((c) => ({ cat: c, items: glossary.filter((g) => g.stat.category === c) })).filter((g) => g.items.length);
+const DESC = `Every hockey stat abbreviation and advanced stat this site uses, ${glossary.length} in all, defined with its formula, what it tells you and the Red Wings' live numbers.`;
+const schema = [{
+  '@type': 'CollectionPage', '@id': `${SITE}/glossary/`, url: `${SITE}/glossary/`, name: 'Hockey Stats Glossary', description: DESC, inLanguage: 'en-US', isPartOf: { '@id': `${SITE}/#website` },
+  mainEntity: { '@type': 'DefinedTermSet', '@id': `${SITE}/glossary/#set`, name: 'Wes & Woodward hockey stats glossary', url: `${SITE}/glossary/`,
+    hasDefinedTerm: glossary.map((g) => ({ '@id': `${SITE}/glossary/${g.slug}/#term` })) },
+}];
+---
+<Base title="Hockey Stat Abbreviations and Advanced Stats Glossary | Wes & Woodward" description={DESC} schema={schema} crumb="Glossary">
+  <section class="sec">
+    <div class="shell">
+      <p class="kicker">Glossary</p>
+      <h1 class="page-title">Hockey Stats Glossary</h1>
+      <p class="lede">Every hockey stat abbreviation and advanced stat this publication uses, {glossary.length} of them, defined once: where it comes from, how it's calculated, what it tells you and what it can't. Each page carries the Red Wings' current numbers, rebuilt every night.</p>
+      <nav class="jump mono" aria-label="Glossary sections">
+        {groups.map((g) => <a href={`#${g.cat.toLowerCase()}`}>{g.cat} <span>{g.items.length}</span></a>)}
+      </nav>
+      {groups.map((g) => (
+        <div class="grp" id={g.cat.toLowerCase()}>
+          <p class="mono gl">{g.cat} stats</p>
+          <div class="plist">
+            {g.items.map((it) => (
+              <a class="row" href={`/glossary/${it.slug}/`}>
+                <span class="ab mono lc">{it.stat.abbr}</span>
+                <span class="nm">{it.stat.name}</span>
+                <span class="df">{plain(it.hero.definition).split('. ')[0]}.</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-title { font-size: clamp(40px, 6vw, 84px); line-height: .92; margin-bottom: 22px; }
+  .lede { max-width: 68ch; font-size: 18px; line-height: 1.6; margin: 0 0 36px; }
+  .jump { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 28px; }
+  .jump a { border: 1px solid var(--rule); padding: 8px 12px; }
+  .jump a span { color: var(--red); margin-left: 4px; }
+  .jump a:hover { border-color: var(--red); }
+  .grp { margin-top: 24px; scroll-margin-top: 90px; }
+  .gl { color: var(--mute); margin: 0 0 10px; }
+  .gl::before { content: "// "; color: var(--red); }
+  .row { display: grid; grid-template-columns: 90px 260px 1fr; gap: 18px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  .row:first-child { border-top: 1px solid var(--rule); }
+  .ab { font-size: 14px; font-weight: 500; color: var(--red); }
+  .nm { font-size: 22px; font-weight: 600; letter-spacing: -.02em; }
+  .df { color: var(--mute); font-size: 15px; line-height: 1.5; }
+  .row:hover .nm { color: var(--red); }
+  @media (max-width: 760px) { .row { grid-template-columns: 70px 1fr; } .df { grid-column: 1 / -1; } }
+</style>

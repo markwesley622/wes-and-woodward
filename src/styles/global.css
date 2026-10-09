@@ -97,3 +97,20 @@ td { border-bottom: 1px solid var(--rule); padding: 7px 14px 7px 0; white-space:
   .row3 { grid-template-columns: 1fr; }
   .prow { grid-template-columns: 40px 1fr 1fr 60px; gap: 10px; }
 }
+
+/* hover definitions (script in Base.astro, terms in src/data/glossary-terms.json) */
+.term { cursor: help; }
+.term:not(th) { border-bottom: 1px dotted var(--mute); }
+th.term { text-decoration: underline dotted var(--mute); text-underline-offset: 3px; }
+.term:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.tile .eb.term, .card .eb.term { display: inline-block; align-self: flex-start; width: auto; }
+.term-card { position: absolute; z-index: 50; width: min(320px, calc(100vw - 32px)); background: var(--paper); color: var(--ink); border: 1px solid var(--ink); box-shadow: 4px 4px 0 var(--rule); padding: 14px 16px 15px; text-transform: none; letter-spacing: 0; text-align: left; white-space: normal; font-family: var(--sans); font-weight: 400; }
+.term-card[hidden] { display: none; }
+.term-card p { margin: 0; }
+.term-k { color: var(--red); margin-bottom: 8px !important; }
+.term-k::before { content: "// "; }
+.term-k span { color: var(--mute); letter-spacing: 0; text-transform: none; }
+.term-d { font-size: 14px; line-height: 1.5; }
+.term-note { margin-top: 10px !important; padding-top: 10px; border-top: 1px solid var(--rule); color: var(--mute); font-size: 11px; line-height: 1.5; }
+.term-full { display: inline-block; margin-top: 12px; color: var(--ink); border-bottom: 1px solid var(--ink); padding-bottom: 2px; }
+.term-full:hover, .term-full:focus-visible { color: var(--red); border-color: var(--red); }

@@ -1,0 +1,258 @@
+{
+ "slug": "saves-and-shots-against",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Saves and shots against",
+  "short": "SA",
+  "abbr": "SA",
+  "aliases": [
+   "SA",
+   "SV",
+   "GA",
+   "shots against",
+   "saves",
+   "goals against",
+   "SA/60"
+  ],
+  "category": "Goalie"
+ },
+ "keywords": {
+  "primary": "what does sa mean in hockey",
+  "supporting": [
+   "what is sa in hockey",
+   "sa in hockey",
+   "what does ga mean in hockey",
+   "ga hockey meaning",
+   "what is ga in hockey",
+   "sa hockey meaning",
+   "ga in hockey",
+   "ga meaning hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Does SA Mean in Hockey and How Saves Are Counted",
+  "description": "What does SA mean in hockey? Shots against, the shots on goal a goalie faces. Saves, goals against, what counts as a shot, and Detroit's 2025-26 numbers.",
+  "h1": "What Does SA Mean in Hockey? Shots Against (SA) and Saves (SV)"
+ },
+ "hero": {
+  "definition": "Shots against (SA) are the shots on goal a goalie faced, goals against (GA) the ones that went in, and saves (SV) the rest. The three always balance (SA minus GA equals SV), and save percentage is SV divided by SA.",
+  "dek": "What does SA mean in hockey for judging a goalie? It's his workload, and the league's goalies faced 72,530 shots on goal last season, 27.6 per team game. Saves follow from it, which is why the league's save leader is usually its busiest goalie, whatever his save percentage."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "SA · SV · GA",
+   "sub": "shots against, saves, goals against"
+  },
+  {
+   "label": "Identity",
+   "value": "SA = SV + GA",
+   "sub": "every shot on goal is one or the other"
+  },
+  {
+   "label": "League shots",
+   "value": "72,530",
+   "sub": "faced by NHL goalies, 2025-26"
+  },
+  {
+   "label": "Per team game",
+   "value": "27.6",
+   "sub": "shots on goal against, 2025-26"
+  },
+  {
+   "label": "Most saves",
+   "value": "1,519",
+   "sub": "Juuse Saros, NSH, on 1,700 shots, 2025-26"
+  },
+  {
+   "label": "Most in a game",
+   "value": "48",
+   "sub": "Elvis Merzlikins, CBJ, vs. MIN, Oct. 11, 2025"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "27.5",
+   "sub": "shots against per game, 15th fewest of 32"
+  },
+  {
+   "label": "Tracked since",
+   "value": "1955-56",
+   "sub": "officially, per the NHL's stats glossary"
+  }
+ ],
+ "origin": [
+  "Shots against are the oldest shot data the NHL keeps. Its stats glossary dates official team shots-against tracking to 1955-56, and save percentage starts the same season. The meaning of SA and GA in hockey box scores hasn't changed since. SA is shots on goal against, GA is goals against, and saves are the difference. Both NHL.com and Hockey-Reference print save percentage right next to them.",
+  "Every shot is logged rink by rink through the league's Real Time Scoring System, and the NHL's glossary is specific about the edges. A shot on goal is one the goalie has to stop. Attempts that are blocked or miss don't count, and a shot off the post or crossbar goes down as a missed shot, which is how NHL skaters hit 2,137 posts and 691 crossbars last season without adding a single shot against.",
+  "NHL.com splits shots against and saves by strength back to 1997-98, and Hockey-Reference carries SA, SV and GA on every goalie line. MoneyPuck counts differently. Its goalie file logs every unblocked attempt a goalie faced, misses included, and builds its expected goals on those, though its own shots-on-goal tally lands within 10 of the NHL's for last season."
+ ],
+ "calculation": {
+  "intro": [
+   "Saves aren't recorded on their own. They're whatever's left of a goalie's shots against once the goals come off, so the whole family rests on two counts and one subtraction. A goalie's charged only for what happens while he's in net. These are the inputs:"
+  ],
+  "inputs": [
+   "Shots against (SA), every shot on goal while he was in net",
+   "Goals against (GA), every goal scored while he was in net",
+   "Excluded from both: missed shots, blocked attempts, and shots off the post or crossbar",
+   "Never charged to a goalie: empty-net goals and shootout attempts"
+  ],
+  "formulas": [
+   {
+    "label": "Saves",
+    "expr": "SV = SA − GA"
+   },
+   {
+    "label": "Save percentage",
+    "expr": "SV% = SV ÷ SA"
+   },
+   {
+    "label": "Workload",
+    "expr": "SA/60 = SA × 60 ÷ minutes played"
+   },
+   {
+    "label": "Team",
+    "expr": "shots against per game = all goalies' SA ÷ games played"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A goalie faces 32 shots on goal and allows three, so he's credited with 29 saves and a .906 save percentage. A shot that rings off the post changes none of that, and neither does a slapper a defenseman blocks. <a href=\"/players/john-gibson/\">John Gibson</a>'s real line last season was 1,461 shots against, 144 goals against and 1,317 saves.",
+  "after": [
+   "Empty-net and shootout goals stay off a goalie's line. NHL teams allowed 8,086 goals last season and their goalies were charged with 7,578, and the difference is exactly the league's 508 empty-net goals. Shootout attempts get their own columns in the NHL's reports and never touch SA, SV or GA."
+  ],
+  "variants": [
+   {
+    "term": "SA",
+    "def": "Shots against. Every shot on goal a goalie faced, goals included."
+   },
+   {
+    "term": "SV",
+    "def": "Saves. Shots against minus goals against.",
+    "slug": "save-percentage"
+   },
+   {
+    "term": "GA",
+    "def": "Goals against. Every goal scored while the goalie was in net, and the numerator of GAA.",
+    "slug": "goals-against-average"
+   },
+   {
+    "term": "SA/60",
+    "def": "Shots against per 60 minutes, the NHL's measure of the workload a defense puts on its goalie."
+   },
+   {
+    "term": "SOG",
+    "def": "Shots on goal from the shooter's side. One team's SOG is the other team's SA.",
+    "slug": "shots-on-goal"
+   }
+  ]
+ },
+ "meaning": [
+  "Shots against measure workload. NHL goalies faced 72,530 shots on goal last season and stopped 64,976. The median start brought 24 saves, and 40 or more happened only 39 times in 2,624 starts. Among the 51 goalies who played at least 30 games, Joseph Woll faced the most per 60 minutes in Toronto and Brandon Bussi the fewest in Carolina, a gap of nearly ten shots a game that no goalie can do anything about once the puck drops.",
+  "Saves mostly measure the same thing. Juuse Saros led the league with 1,519 saves on 1,700 shots for Nashville, and his .894 save percentage ranked 35th of the 51. The busiest goalie piles up the most saves almost by default, so a saves total tells you more about the defense in front of a goalie than about the goalie himself.",
+  "Detroit sat in the middle. The Wings' goalies faced 2,258 shots, 27.5 a game and the 15th-lowest total of 32 teams, and stopped 2,021 of them. Gibson's workload came to 27.6 shots per 60 minutes, right on the league's average, which makes his numbers easy to read. He wasn't buried and he wasn't sheltered.",
+  "What's a big night? The single-game high last season was Elvis Merzlikins's 48 saves on 52 shots for Columbus against Minnesota in October, and four others reached 46, including <a href=\"/players/daniil-tarasov/\">Daniil Tarasov</a>'s 47 for Florida in March. Nobody got that high more than once, and you'd need a busy night and a good one at the same time to get there."
+ ],
+ "uses": [
+  {
+   "title": "Building save percentage",
+   "html": "Shots against are the denominator for every save-based goalie stat. Gibson's 1,317 saves on 1,461 shots made a .901 save percentage, and at the league's .896 an average goalie would've stopped about 1,309 of the same shots, which puts Gibson 8.2 goals above average for the season. You can't build that comparison without an honest shot count underneath it."
+  },
+  {
+   "title": "Grading a defense",
+   "html": "Team shots against is the bluntest measure of how much a defense lets through. Carolina's goalies faced 23.8 shots a game last season, the fewest in the league, and Toronto's faced 32.2, the most. Every extra shot is another chance for a goal, so a goalie traded between those two teams would see his GAA move even if his save percentage didn't."
+  },
+  {
+   "title": "Splitting the shots by strength",
+   "html": "The NHL splits shots against into even strength, power play and shorthanded. League-wide, 14.9% of the shots goalies faced last season came with their team shorthanded, and those went in far more often (a .853 save percentage against .903 at even strength). Gibson saw 13.8% of his on the penalty kill, a touch below the league's share."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Every shot counts once",
+   "html": "A dump-in that a goalie gloves from center ice and a one-timer from the slot each add one shot against, so if you want them weighted by danger before you grade anyone, you need expected-goals stats."
+  },
+  {
+   "title": "Someone decides what's a shot",
+   "html": "Every shot on goal is a scorer's call. Michael Schuckers and Brian Macdonald's study of six seasons ending in 2012-13 found shots were the most consistently recorded of the events they examined, with only two arenas (Florida's and St. Louis's) logging them at a rate clearly off the league's."
+  },
+  {
+   "title": "Saves reward volume",
+   "html": "Saros led the league in saves with a below-median save percentage. A big saves total is a workload number first, and a goalie on a team that gives up a lot of shots will pile them up whether he's playing well or not, so it belongs next to save percentage and never in place of it."
+  },
+  {
+   "title": "Misses and blocks disappear",
+   "html": "MoneyPuck logged 151,555 unblocked attempts against goalies last season, and more than half of them missed the net. Shots against can't see any of those, so a goalie's line says nothing about the attempts that never reached him or about how many of them he'd have stopped if they had."
+  }
+ ],
+ "related": [
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "Saves divided by shots against."
+  },
+  {
+   "slug": "goals-against-average",
+   "name": "Goals against average",
+   "abbr": "GAA",
+   "vs": "Goals against per 60 minutes in net."
+  },
+  {
+   "slug": "shots-on-goal",
+   "name": "Shots on goal",
+   "abbr": "SOG",
+   "vs": "The same shots, counted for the shooter."
+  },
+  {
+   "slug": "goals-saved-above-average",
+   "name": "Goals saved above average",
+   "abbr": "GSAA",
+   "vs": "Saves compared with a league-average goalie on the same shots."
+  },
+  {
+   "slug": "goals-saved-above-expected",
+   "name": "Goals saved above expected",
+   "abbr": "GSAx",
+   "vs": "Weights every attempt by danger, misses included."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Stats glossary (SA, Sv, Sv%, SA/60, EV SA, PP SA)",
+   "publisher": "NHL",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "definitions, 1955-56 start, blocked and missed attempts excluded, posts and crossbars as missed shots, strength splits since 1997-98"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "SA, SV = SA − GA, GA"
+  },
+  {
+   "label": "Goalie summary, saves by strength, advanced and per-game reports, 2025-26",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/goalie/summary?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "every shot, save and goals-against count on this page"
+  },
+  {
+   "label": "Team summary and skater realtime reports, 2025-26",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/skater/realtime?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "posts, crossbars, empty-net goals, team goals against"
+  },
+  {
+   "label": "2025-26 goalie file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "unblocked attempts and shots on goal against goalies"
+  },
+  {
+   "label": "Accounting for Rink Effects in the National Hockey League's Real Time Scoring System",
+   "publisher": "Michael Schuckers and Brian Macdonald, arXiv 1412.1035 (2014)",
+   "url": "https://arxiv.org/abs/1412.1035",
+   "note": "shot counts by rink, 2007-08 to 2012-13"
+  }
+ ],
+ "method": "Every count is Wes & Woodward's calculation from the NHL stats API (goalie summary, saves-by-strength, advanced and per-game goalie reports; team summary; skater realtime), downloaded October 9, 2026: league totals sum all 98 goalies; per-team-game figures divide by the league's 2,624 starts; team shots against per game sums each team's goalies game by game and divides by the 82 games of 2025-26; rankings use the 51 goalies with 30+ games played; single-game highs come from the per-game report. Unblocked attempts and MoneyPuck's own shots-on-goal tally (72,520 against the NHL's 72,530) come from MoneyPuck's 2025-26 goalie file (all situations), downloaded the same day. This stat isn't in the nightly pipeline yet, so the page has no live Red Wings section."
+}

@@ -1,0 +1,267 @@
+{
+ "slug": "goals-saved-above-average",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Goals saved above average",
+  "short": "GSAA",
+  "abbr": "GSAA",
+  "aliases": [
+   "GSAA",
+   "goals saved above average",
+   "GSAA NHL"
+  ],
+  "category": "Goalie"
+ },
+ "keywords": {
+  "primary": "goals saved above average",
+  "supporting": [
+   "gsaa nhl",
+   "gsaa hockey stat"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "Goals Saved Above Average (GSAA) and How to Calculate It",
+  "description": "Goals saved above average counts the goals a goalie saved against a league-average save rate. How GSAA works, where it misleads, and the Red Wings' goalies.",
+  "h1": "Goals Saved Above Average (GSAA) in Hockey"
+ },
+ "hero": {
+  "definition": "Goals saved above average (GSAA) is how many goals a goalie saved compared with a league-average goalie facing the same number of shots on goal. Take his saves and subtract what an average goalie would've stopped, which is his shots against times the league save percentage. It treats every shot as equally dangerous, the gap GSAx was built to close.",
+  "dek": "It's save percentage converted into goals, which makes it the easiest goalie stat to explain and one of the easiest to fool. <a href=\"/players/john-gibson/\">John Gibson</a> finished plus-8.2 for Detroit last season and Cam Talbot finished minus-10.0."
+ },
+ "facts": [
+  {
+   "label": "Abbreviation",
+   "value": "GSAA",
+   "sub": "goals saved above average"
+  },
+  {
+   "label": "Baseline",
+   "value": ".896",
+   "sub": "league save percentage, 2025-26"
+  },
+  {
+   "label": "League total",
+   "value": "0",
+   "sub": "by construction, every season"
+  },
+  {
+   "label": "Median, 30+ GP",
+   "value": "+2.5",
+   "sub": "51 goalies, 2025-26"
+  },
+  {
+   "label": "Best, 2025-26",
+   "value": "+27.8",
+   "sub": "Scott Wedgewood, COL (30+ GP)"
+  },
+  {
+   "label": "Worst, 2025-26",
+   "value": "−26.2",
+   "sub": "Kevin Lankinen, VAN (30+ GP)"
+  },
+  {
+   "label": "Red Wings, 2025-26",
+   "value": "+8.2",
+   "sub": "John Gibson; Cam Talbot −10.0"
+  },
+  {
+   "label": "Season record",
+   "value": "+73",
+   "sub": "Bernie Parent, 1973-74, per Hockey-Reference"
+  }
+ ],
+ "origin": [
+  "GSAA is save percentage with a scoreboard attached. Save percentage tells you how often a goalie stopped the puck, and GSAA turns the gap between his rate and the league's into goals by multiplying it by his workload. Rob Vollman, writing for NHL.com in 2017, described the recipe as a goalie's shots faced times the league-average save percentage, subtracted from the saves he made. It needs nothing beyond shots and saves, which is why it reaches back decades further than any stat built on where the shots came from.",
+  "Hockey-Reference computes it for every NHL goalie back to 1955-56, the first season in its GSAA tables. The single-season record there belongs to Bernie Parent, plus-73 in 1973-74, and the runner-up is Tony Esposito's plus-65 from that same season. The stat rewards two things at once, stopping more than the league and facing a lot of shots. A record needs both.",
+  "Natural Stat Trick and Evolving-Hockey publish GSAA as well, and Evolving-Hockey shows it beside GSAx in the same goalie table, which makes the gap between the two easy to read. NST takes the average within whatever filters you set (five-on-five only, say, or a single team's games) and runs the same arithmetic inside each of its danger bands, so its goalie tables list high-, medium- and low-danger GSAA next to the total."
+ ],
+ "calculation": {
+  "intro": [
+   "GSAA needs three numbers from any box score and one league average, and that's the whole appeal. Here's the list:"
+  ],
+  "inputs": [
+   "Shots on goal the goalie faced (SA)",
+   "Saves he made (SV); goals against is the difference",
+   "The league's save percentage for the same season and situation (NHL goalies stopped 64,976 of 72,530 shots in 2025-26, a .8958 rate)"
+  ],
+  "formulas": [
+   {
+    "label": "Saves form",
+    "expr": "GSAA = SV − (SA × league SV%)"
+   },
+   {
+    "label": "Rate form",
+    "expr": "GSAA = (SV% − league SV%) × SA"
+   },
+   {
+    "label": "Goals form",
+    "expr": "GSAA = SA × (1 − league SV%) − GA"
+   },
+   {
+    "label": "League",
+    "expr": "sum of every goalie's GSAA = 0"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A goalie faces 1,500 shots in a season when the league stops .900 of them, so an average goalie would allow 150 goals on his workload. Allow 135 and he's plus-15. Allow 165 and he's minus-15. On a workload that size, every point of save percentage is worth a goal and a half.",
+  "after": [
+   "Last season's leader shows the scale in real numbers. Scott Wedgewood stopped .921 of the 1,093 shots he faced in Colorado and finished plus-27.8."
+  ],
+  "variants": [
+   {
+    "term": "HDGSAA, MDGSAA, LDGSAA",
+    "def": "Natural Stat Trick's GSAA inside each danger band, measured against that band's average save percentage.",
+    "slug": "high-danger-save-percentage"
+   },
+   {
+    "term": "GSAx",
+    "def": "Prices each shot by its own expected-goal value, so a tap-in costs more than a point shot.",
+    "slug": "goals-saved-above-expected"
+   },
+   {
+    "term": "Team GSAA",
+    "def": "A team's goalies added together. Detroit's pair came to minus-1.8 in 2025-26."
+   },
+   {
+    "term": "SV%",
+    "def": "The rate GSAA is built from, saves divided by shots on goal.",
+    "slug": "save-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "GSAA measures stopping against the league's own rate. Zero is average by construction, because the baseline is the league's save percentage, so every plus on one goalie's line is a minus on somebody else's, though the typical regular still sits a little above zero (among the 51 goalies who played at least 30 games last season, the median was plus-2.5).",
+  "Wedgewood led the NHL at plus-27.8, ahead of Logan Thompson and Andrei Vasilevskiy, and Kevin Lankinen finished last at minus-26.2 in Vancouver. <a href=\"/players/john-gibson/\">Gibson</a>'s plus-8.2 ranked 19th of the 51 and Talbot's minus-10.0 ranked 40th, which leaves Detroit's pair at minus-1.8 combined, a hair below an average tandem. The two stats mostly agree. Among last season's regulars, GSAA and GSAx correlated at 0.88, and the exceptions are the goalies whose defenses handed them unusually easy or unusually hard shots (more on that below).",
+  "What was Talbot's season worth in the standings? Had he simply been average, Detroit would've allowed 10 fewer goals. At last season's exchange rate, where each standings point cost about 3.3 goals of differential, that's three points. It would've lifted the Wings from 92 to about 95, still four short of the East's last wild card (Ottawa took it with 99).",
+  "How well does GSAA carry over? Among the 35 goalies who played 30 or more games in both of the last two seasons, the correlation between one season's GSAA and the next was 0.25, about what save percentage itself manages for the same goalies. A starter faces something like 1,500 shots a season, and at that volume a few bounces either way move the number by whole goals."
+ ],
+ "uses": [
+  {
+   "title": "Comparing goalies across eras",
+   "html": "Because GSAA is measured against each season's own league rate, it travels across eras in a way raw save percentage can't. The league stopped .900 of its shots the season before last and .896 last season, so a goalie who held steady at .900 went from average to above it without changing a thing. GSAA re-centers on zero every year, and that's how Hockey-Reference can rank Parent's record season next to a modern starter's."
+  },
+  {
+   "title": "Checking a save percentage against its workload",
+   "html": "A great save percentage on a small workload doesn't add up to much. Trent Miner stopped .933 of his shots for Colorado last season, better than Wedgewood's league-leading .921 among regulars, but he faced 104 of them in four games, so his GSAA came to plus-3.8. Wedgewood's was more than seven times that. GSAA keeps the volume in the number, which is what you want when the question is how many goals a goalie was worth."
+  },
+  {
+   "title": "Breaking a season down by danger",
+   "html": "Run the same arithmetic inside the NHL's high-danger zone, measuring each zone against its own league rate, and Talbot's season comes apart cleanly. He stopped 157 of the 211 shots he faced from in close, about 14 fewer than an average goalie would have, and he was about two goals better than average on everything else. The damage was all in close. Natural Stat Trick publishes that kind of split as HDGSAA, with medium- and low-danger versions alongside."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Every shot counts the same",
+   "html": "A point shot through traffic and a tap-in at the side of the net count the same in GSAA. Minnesota's defense gave its goalies the two gentlest shot mixes among the 51 regulars, and GSAA credits Jesper Wallstedt and Filip Gustavsson with 24 more goals between them than GSAx does. Carolina's Frederik Andersen got the hardest mix and runs the other way, minus-18.6 in GSAA and minus-3.3 in GSAx."
+  },
+  {
+   "title": "The baseline moves",
+   "html": "League save percentage changes from season to season, so the same plus-10 in two different years was measured against two different bars."
+  },
+  {
+   "title": "The sites don't agree to the decimal",
+   "html": "Hockey-Reference lists Gibson at plus-8.6 and Talbot at minus-9.7, a few tenths off this page, because its numbers match a league baseline of .8955, goals against divided by shots, where the NHL's saves-over-shots rate is .8958. Natural Stat Trick's average moves with whatever filters you set."
+  },
+  {
+   "title": "It rewards workload",
+   "html": "GSAA is a counting stat, so a starter can pile up a big number in either direction and a backup can't. Rank goalies on it and you're partly ranking how much they played. Divide it by shots faced and you're back to save percentage minus the league rate."
+  }
+ ],
+ "related": [
+  {
+   "slug": "goals-saved-above-expected",
+   "name": "Goals saved above expected",
+   "abbr": "GSAx",
+   "vs": "Prices each shot by its danger. GSAA prices every shot at the league rate."
+  },
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "The rate GSAA converts into goals."
+  },
+  {
+   "slug": "goals-against-average",
+   "name": "Goals against average",
+   "abbr": "GAA",
+   "vs": "Goals per 60 minutes, with no shots in the formula at all."
+  },
+  {
+   "slug": "expected-save-percentage",
+   "name": "Expected save percentage",
+   "abbr": "xSV%",
+   "vs": "A league-average save rate tailored to one goalie's shots."
+  },
+  {
+   "slug": "high-danger-save-percentage",
+   "name": "High-danger save percentage",
+   "abbr": "HDSV%",
+   "vs": "Save rate on the shots from right in front of the net."
+  },
+  {
+   "slug": "quality-starts",
+   "name": "Quality starts",
+   "abbr": "QS",
+   "vs": "The same league-average test, one start at a time."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Chicago Blackhawks key statistics",
+   "publisher": "Rob Vollman, NHL.com, August 7, 2017",
+   "url": "https://www.nhl.com/news/2017-18-blackhawks-numbers-stats-analysis-290601190",
+   "note": "how GSAA is calculated"
+  },
+  {
+   "label": "NHL & WHA Single Season Leaders and Records for Goals Saved Above Average",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leaders/gs_above_avg_season.html",
+   "note": "Parent's +73 and Esposito's +65 in 1973-74, Joseph's +57 in 1992-93"
+  },
+  {
+   "label": "NHL Progressive Leaders and Records for Goals Saved Above Average",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leaders/gs_above_avg_progress.html",
+   "note": "GSAA tables begin in 1955-56"
+  },
+  {
+   "label": "2025-26 NHL goalie statistics",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leagues/NHL_2026_goalies.html",
+   "note": "Gibson +8.6 and Talbot −9.7 on Hockey-Reference's baseline"
+  },
+  {
+   "label": "Glossary, goalie statistics",
+   "publisher": "Natural Stat Trick (Internet Archive copy, January 9, 2025)",
+   "url": "https://www.naturalstattrick.com/glossary.php?players",
+   "note": "GSAA within selected filters; HD, MD and LD GSAA"
+  },
+  {
+   "label": "Standard Goalie Tables",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/standard-goalie-tables/",
+   "note": "publishes GSAA and GSAx"
+  },
+  {
+   "label": "Goalie summary, 2025-26 and 2024-25 regular seasons",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/goalie/summary?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "shots, saves and goals for every goalie; league save percentage"
+  },
+  {
+   "label": "NHL EDGE goalie save locations",
+   "publisher": "NHL",
+   "url": "https://www.nhl.com/nhl-edge/glossary",
+   "note": "high-danger zone definition and Talbot's high-danger shots"
+  },
+  {
+   "label": "2025-26 regular-season goalie file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "GSAx and shot mix for the Andersen comparison"
+  }
+ ],
+ "method": "League and goalie figures are Wes & Woodward's calculations from the NHL stats API goalie summary for the 2025-26 and 2024-25 regular seasons, downloaded October 9, 2026 (raw/nhl_goalie_summary_20252026_gsaa_xsv.json, raw/nhl_goalie_summary_20242025_gsaa_repeatability.json). League save percentage is total saves divided by total shots against (64,976 ÷ 72,530 = .8958 in 2025-26; .9001 in 2024-25); GSAA is saves minus shots against times league save percentage; rankings use the 51 goalies with 30+ games played; the year-to-year correlation (Pearson) uses the 35 goalies with 30+ games in both seasons (GSAA 0.25, save percentage 0.28); the GSAA-GSAx correlation (0.88) pairs the 51 regulars with MoneyPuck's 2025-26 goalie file. Talbot's high-danger split uses NHL EDGE goalie detail (raw/nhl_edge_goalie_detail_all98_20252026_hdsv.json): high-danger GSAA uses the league high-danger save percentage (.8110, 16,749 of 20,653) and the rest of his shots use the league's save percentage on all other shots (.9296). GSAx and shot-mix comparisons use MoneyPuck's 2025-26 goalie file (raw/mp_goalies_2025.csv). The points-per-goal rate is an ordinary least-squares fit of standings points on goal differential for the 32 teams (0.305 points per goal) using the NHL standings API for April 17, 2026 (raw/nhl_standings_2026-04-17_final_20252026_ptspct_rw.json). Hockey-Reference figures come from its 2025-26 goalie page as saved the same day (raw/hr_goalies_2025-26_downloaded_2026-10-09.html)."
+}

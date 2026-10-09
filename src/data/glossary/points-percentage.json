@@ -1,0 +1,281 @@
+{
+ "slug": "points-percentage",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Points percentage",
+  "short": "P%",
+  "abbr": "P%",
+  "aliases": [
+   "P%",
+   "PTS%",
+   "points percentage",
+   "point percentage",
+   "NHL points percentage"
+  ],
+  "category": "Team"
+ },
+ "keywords": {
+  "primary": "what is points percentage in hockey",
+  "supporting": [
+   "nhl points percentage"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate; primary_override from 'nhl points percentage', whose top 10 is standings pages), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Is Points Percentage in Hockey and How It Works",
+  "description": "What is points percentage in hockey? Standings points earned over points available. How P% works, why .500 isn't average, and the Red Wings' live mark.",
+  "h1": "What Is Points Percentage in Hockey? The P% Stat"
+ },
+ "hero": {
+  "definition": "Points percentage (P%) is the share of available standings points a team has earned, its points divided by two times its games played. It's how you compare teams that have played different numbers of games, and the NHL uses it as the first step in breaking ties in the standings.",
+  "dek": "What is points percentage in hockey good for? Reading standings in progress, mostly, since a team with games in hand can sit below a rival on points and above it on percentage. Know one quirk before you use it. The league average isn't .500, and last season it was .562."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "P% · PTS%",
+   "sub": "P% in NHL tables, PTS% at Hockey-Reference"
+  },
+  {
+   "label": "Formula",
+   "value": "PTS ÷ 2GP",
+   "sub": "points over points available"
+  },
+  {
+   "label": "League average",
+   "value": ".562",
+   "sub": "2025-26, above .500 because of overtime points"
+  },
+  {
+   "label": "A .500 team",
+   "value": "26th",
+   "sub": "Winnipeg finished exactly .500 in 2025-26"
+  },
+  {
+   "label": "Best, 2025-26",
+   "value": ".738",
+   "sub": "Colorado, 121 points"
+  },
+  {
+   "label": "Worst, 2025-26",
+   "value": ".354",
+   "sub": "Vancouver, 58 points"
+  },
+  {
+   "label": "Red Wings, 2025-26",
+   "value": ".561",
+   "sub": "41-31-10, 92 points, the league median"
+  },
+  {
+   "label": "Tiebreak step",
+   "value": "1st",
+   "sub": "fewer games played means a better P%"
+  }
+ ],
+ "origin": [
+  "Points percentage exists because NHL standings are kept in points, and points aren't handed out evenly. A win in regulation, overtime or a shootout is worth two, an overtime or shootout loss is worth one and a regulation loss is worth nothing, a split you can check against any team's line in the standings. The NHL's own season-by-season standings settings date the loser's point to 1999-2000 and put the last ties in 2004-05, so every season since has been decided without them.",
+  "Hockey-Reference defines PTS% as points divided by maximum possible points, for teams and for goalies, and the NHL labels it P%. The league builds it into its tie-breaking procedure, too. The first step is \"the fewer number of games played (i.e., superior points percentage),\" which only matters while teams have played different numbers of games, so NHL points percentage does most of its work in the middle of a season. By the last night, when everyone's schedule is complete, it's just points in a different coat.",
+  "Its biggest moment came during the pandemic. When play stopped in the 2019-20 season, the NHL declared the regular season over and picked its 24-team return-to-play field \"on the basis of points percentage at the pause.\" Detroit's .275 was the worst in the league, and the Wings entered the draft lottery with the best odds of anybody, 18.5%."
+ ],
+ "calculation": {
+  "intro": [
+   "It takes two numbers from any standings table, and a third for older seasons. That's the whole recipe:"
+  ],
+  "inputs": [
+   "Standings points (two for any win, one for an overtime or shootout loss)",
+   "Games played",
+   "Ties, for seasons before 2005-06, worth a point each"
+  ],
+  "formulas": [
+   {
+    "label": "Points percentage",
+    "expr": "P% = points ÷ (2 × games played)"
+   },
+   {
+    "label": "Points",
+    "expr": "points = 2 × wins + overtime losses"
+   },
+   {
+    "label": "Before 2005-06",
+    "expr": "P% = (2 × W + T + OTL) ÷ (2 × GP)"
+   },
+   {
+    "label": "Full-season pace",
+    "expr": "points pace = P% × 2 × scheduled games"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A team with 24 points from its first 20 games has a .600 points percentage. A team with 25 points from 22 games sits a point ahead in the standings, but its rate is .568. The first team's ahead where it counts, and it passes the second on points if it wins either of its two games in hand.",
+  "after": [
+   "It's printed as a three-digit decimal, the way a batting average is. The standings themselves still sort on points, and percentage steps in only when two teams are level."
+  ],
+  "variants": [
+   {
+    "term": "P%, PTS%",
+    "def": "Points percentage under the NHL's label and Hockey-Reference's."
+   },
+   {
+    "term": "Win %",
+    "def": "Wins divided by games played, a separate column in the NHL's standings feed. Detroit's was .500 last season."
+   },
+   {
+    "term": "RW%",
+    "def": "Regulation wins divided by games played.",
+    "slug": "regulation-wins"
+   },
+   {
+    "term": "ROW%",
+    "def": "Regulation and overtime wins over games played. The NHL used it to split Buffalo and New Jersey, tied at .493, in its 2020 lottery order."
+   },
+   {
+    "term": "Points pace",
+    "def": "Points percentage times the points available in a full season."
+   }
+  ]
+ },
+ "meaning": [
+  "Points percentage measures how much of the available credit a team collected, and the catch is the baseline. Every game that goes past regulation hands out three points where a regulation game hands out two, and last season 326 of the 1,312 games did, so the league average came out to .562. Winnipeg finished at exactly .500 and ranked 26th. Break-even is below average now. It's worth remembering every time somebody calls a club a .500 team as if that's a compliment.",
+  "Colorado led the league at .738 and Vancouver finished last at .354. Detroit's .561 was the league median exactly, and the Wings were one of four teams tied at 92 points with Utah, Columbus and Anaheim, sorted by the tiebreakers that come after percentage once everyone's played the same number of games.",
+  "The playoff line depends on the conference. Ottawa took the East's last wild card at .604 (99 points), seven points clear of Detroit, while Los Angeles got in out West at .549. The Wings' .561 was better than the West's final qualifier and nowhere near the East's. Geography mattered."
+ ],
+ "uses": [
+  {
+   "title": "Reading the standings before the schedule evens out",
+   "html": "When the 2019-20 season stopped, teams had played different numbers of games, so the NHL ranked them on points percentage. That put the Islanders (.588) ahead of Toronto and Columbus (.579 each) even though the Islanders had a point fewer, because they'd played two fewer games. You can run the same check on any midseason table where the games-played column doesn't match."
+  },
+  {
+   "title": "Comparing seasons of different lengths",
+   "html": "Detroit's rebuild reads cleanly in one column. The Wings were at .275 when the 2019-20 season stopped and .429 in the 56-game season that followed, and they've climbed in four of the five seasons since, to .561 last season. Raw points can't make that comparison. The schedule's length changed from season to season along the way, and a team's points total depends as much on how many games it got to play as on how well it played them."
+  },
+  {
+   "title": "Separating points from wins",
+   "html": "How did Los Angeles make the playoffs while winning fewer than half its games? The Kings won 35, a .427 win percentage, and their 20 overtime and shootout losses (the league's most) paid out a point each. Points percentage counted them at .549. Put the two numbers next to each other and you can see how much of a team's standing came from games it lost."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night from the NHL standings. Detroit's points percentage comes first, then the record behind it.",
+  "tiles": [
+   {
+    "label": "Points percentage",
+    "source": "team",
+    "path": "record.pointPctg",
+    "format": "sv3",
+    "sub": "points over points available"
+   },
+   {
+    "label": "Points",
+    "source": "team",
+    "path": "record.points",
+    "format": "int",
+    "sub": "two per win, one per overtime loss"
+   },
+   {
+    "label": "Wins",
+    "source": "team",
+    "path": "record.wins",
+    "format": "int",
+    "sub": "regulation, overtime and shootout"
+   },
+   {
+    "label": "Overtime losses",
+    "source": "team",
+    "path": "record.otLosses",
+    "format": "int",
+    "sub": "shootout losses included"
+   }
+  ],
+  "credit": "NHL API",
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. A win against a regulation loss still moves points percentage a long way (.100 at 10 games, .050 at 20), so read it next to games in hand."
+ },
+ "limits": [
+  {
+   "title": "It counts the loser point",
+   "html": "An overtime or shootout loss counts as half a win, so teams that reach overtime a lot look better than their win totals. Los Angeles' 20 loser points last season were more than a fifth of its total."
+  },
+  {
+   "title": "It doesn't care how a team won",
+   "html": "A shootout win is worth the same two points as a lopsided win in regulation, and the standings sort that out only in tiebreaks, through regulation wins, when two teams finish a season level on points and have played the same number of games."
+  },
+  {
+   "title": "Eras don't line up",
+   "html": "Before the loser point arrived an overtime loss paid nothing, and until the league stopped allowing ties a game could end level, so older points percentages came out of different point systems. Compare a team with its own era's league average first."
+  },
+  {
+   "title": "It's a record of results",
+   "html": "Points percentage tells you what happened, every bounce included. It doesn't separate a team that won on its goaltending from one that won on its shot share, so pair it with goal differential before you decide a record is real."
+  }
+ ],
+ "related": [
+  {
+   "slug": "regulation-wins",
+   "name": "Regulation wins",
+   "abbr": "RW",
+   "vs": "The next tiebreaker once games played are equal."
+  },
+  {
+   "slug": "goal-differential",
+   "name": "Goal differential",
+   "abbr": "DIFF",
+   "vs": "Goals for minus against, a check on whether a P% is real."
+  },
+  {
+   "slug": "xg-standings",
+   "name": "Expected standings",
+   "abbr": "xPts",
+   "vs": "Points rebuilt from expected goals, on the same scale."
+  },
+  {
+   "slug": "goalie-record",
+   "name": "Goalie record",
+   "abbr": "W-L-OTL",
+   "vs": "The same win and overtime-loss columns, credited to a goalie."
+  },
+  {
+   "slug": "overtime-goals",
+   "name": "Overtime goals",
+   "abbr": "OTG",
+   "vs": "The goals that decide the three-point games."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Tie-Breaking Procedure",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/info/standings-info/tie-breaking-procedure",
+   "note": "fewer games played (superior points percentage) as the first tiebreaker"
+  },
+  {
+   "label": "NHL Announces Return to Play Plan for 2019-20",
+   "publisher": "NHL, May 26, 2020",
+   "url": "https://media.nhl.com/site/vasset/public/attachments/2020/05/13995/ReturnToPlay052620.pdf",
+   "note": "24-team field and seeding by points percentage; Detroit .275 and 18.5% lottery odds; Buffalo and New Jersey split on ROW%"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "PTS% = points divided by maximum possible points"
+  },
+  {
+   "label": "Standings season settings",
+   "publisher": "NHL API",
+   "url": "https://api-web.nhle.com/v1/standings-season",
+   "note": "overtime-loss point from 1999-2000, ties through 2004-05"
+  },
+  {
+   "label": "Standings, April 17, 2026, and each season's final day back to 2015-16",
+   "publisher": "NHL API",
+   "url": "https://api-web.nhle.com/v1/standings/2026-04-17",
+   "note": "every team figure on this page"
+  },
+  {
+   "label": "2026 playoff bracket",
+   "publisher": "NHL API",
+   "url": "https://api-web.nhle.com/v1/playoff-bracket/2026",
+   "note": "Ottawa and Los Angeles as the second wild cards"
+  }
+ ],
+ "method": "Team figures are Wes & Woodward's calculations from the NHL standings API, downloaded October 9, 2026: 2025-26 from the standings for April 17, 2026, the day after the regular season ended (raw/nhl_standings_2026-04-17_final_20252026_ptspct_rw.json; every team at 82 games, points = 2 × wins + overtime losses for all 32), and earlier seasons from each season's final standings date (raw/nhl_standings_season_ends_2015-16_to_2025-26_det_ptspct.json; 2019-20 is the March 11, 2020 pause). League average is total points over total points available (2,950 of 5,248). Rule dates come from the NHL's standings season settings (raw/nhl_standings_season_flags_downloaded_2026-10-09_rw.json); playoff qualifiers from the 2026 bracket (raw/nhl_playoff_bracket_2026_rw.json); the 2020 figures from the NHL release (raw/nhl_return_to_play_release_2020-05-26_ptspct.pdf). The Red Wings section rebuilds nightly from the NHL standings."
+}

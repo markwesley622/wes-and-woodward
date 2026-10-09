@@ -1,0 +1,331 @@
+{
+ "slug": "shots-on-goal",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Shots on goal",
+  "short": "SOG",
+  "abbr": "SOG",
+  "aliases": [
+   "SOG",
+   "S",
+   "shots",
+   "SA",
+   "shots against",
+   "NHL shots on goal"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "what does sog mean in hockey",
+  "supporting": [
+   "sog in hockey",
+   "what is sog in hockey",
+   "sog hockey",
+   "sog hockey meaning",
+   "sog meaning hockey",
+   "what does shots on goal mean in hockey",
+   "what is shots on goal in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Does SOG Mean in Hockey and What Counts as a Shot",
+  "description": "What does SOG mean in hockey? Shots on goal, goals plus saves. What counts, how it differs from Corsi, and the Red Wings' shot leaders, rebuilt nightly.",
+  "h1": "What Does SOG Mean in Hockey? The Shots on Goal Stat"
+ },
+ "hero": {
+  "definition": "In hockey, shots on goal (SOG) are the shots that either go in or force the goalie to make a save. A shot that misses the net, rings off the post or crossbar, or gets blocked by a skater doesn't count, which makes SOG the narrowest of hockey's shot stats. Every goal is a shot on goal, and so is every save.",
+  "dek": "What does SOG mean in hockey box scores? It's the S column, the NHL's oldest official shot count, and the SOG meaning in hockey is narrower than the word shot suggests."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "S · SOG",
+   "sub": "SA for shots against"
+  },
+  {
+   "label": "What counts",
+   "value": "Goals, saves",
+   "sub": "posts, misses and blocks don't"
+  },
+  {
+   "label": "Team average",
+   "value": "27.8",
+   "sub": "shots on goal per game, 2025-26"
+  },
+  {
+   "label": "Most, 2025-26",
+   "value": "33.7",
+   "sub": "Colorado, per game"
+  },
+  {
+   "label": "Fewest, 2025-26",
+   "value": "24.6",
+   "sub": "Chicago, per game"
+  },
+  {
+   "label": "Player leader",
+   "value": "350",
+   "sub": "Nathan MacKinnon, 2025-26"
+  },
+  {
+   "label": "Attempts on goal",
+   "value": "47.8%",
+   "sub": "of all 2025-26 shot attempts"
+  },
+  {
+   "label": "Official since",
+   "value": "1955-56",
+   "sub": "for teams; skaters since 1959-60"
+  }
+ ],
+ "origin": [
+  "Shots on goal are one of the NHL's oldest official stats. The league has counted them for teams since 1955-56 and for individual skaters since 1959-60, according to its own stats glossary, and hockey's two best-known rate stats, save percentage and shooting percentage, became official in those same seasons with SOG as their denominator. For four decades a shot on goal was the only kind of shot the official record kept.",
+  "The rest of the shot record arrived much later. The NHL's glossary dates missed shots, its bin for anything wide, over, short or off the iron, to 1997-98, with blocked shots a few seasons behind. Its shot-attempt stats, SAT and USAT (the public calls them Corsi and Fenwick), start in 2009-10. That head start still shows. The NHL's game box score lists SOG for every player and has no column for the attempts he missed or had blocked.",
+  "People make the call in every building. Rule 36 of last season's NHL rulebook puts a crew of Real Time Scorers at each game to electronically record all official statistics, and it names the crew as three stats-entry scorers, a time-on-ice scorer and an event analyst, overseen by a scoring system manager. They produce reports during the first and second intermissions and again after the game. Whether a puck that grazes the goalie's pad was a save or a miss is their judgment."
+ ],
+ "calculation": {
+  "intro": [
+   "Counting shots on goal is bookkeeping, and the NHL's glossary sets the rules. Every unblocked shot attempt either reaches the goalie or it doesn't, and only the ones that go in or need a save get counted. Here's what you'll find in the count and what you won't:"
+  ],
+  "inputs": [
+   "In: goals, since every goal is a shot on goal",
+   "In: shots the goalie stops",
+   "Out: shots that hit the post or crossbar and stay out, which the NHL logs as missed shots",
+   "Out: shots that go wide, go over the net or fall short of it",
+   "Out: attempts a skater blocks before they reach the goalie"
+  ],
+  "formulas": [
+   {
+    "label": "Shots on goal",
+    "expr": "SOG = goals + saves"
+   },
+   {
+    "label": "Unblocked (Fenwick)",
+    "expr": "USAT = SOG + missed shots"
+   },
+   {
+    "label": "All attempts (Corsi)",
+    "expr": "SAT = SOG + missed shots + blocked attempts"
+   },
+   {
+    "label": "Shooting %",
+    "expr": "S% = goals ÷ SOG"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. Say a forward fires ten attempts in a game. Three get blocked, two sail wide and one rings off the post. That leaves four that reach the goalie, and one goes in. His line reads one goal on four shots on goal, a one-in-four shooting night, while his Corsi count is ten and his Fenwick count is seven.",
+  "after": [
+   "The post rule is the one that trips people up. A shot off the iron comes closer to scoring than almost anything else a shooter can do, and the record files it with the slap shot that clears the glass. The NHL's reasoning is in its save percentage definition. A goalie doesn't have to defend a shot that misses the frame, and a puck off the post is a miss by that standard, so counting it as a shot on goal would hand the goalie a save he didn't make."
+  ],
+  "variants": [
+   {
+    "term": "S",
+    "def": "The NHL's own abbreviation in its stats tables. Same stat as SOG."
+   },
+   {
+    "term": "SA",
+    "def": "Shots against. The shots on goal a team or goalie faces, and the denominator of save percentage.",
+    "slug": "saves-and-shots-against"
+   },
+   {
+    "term": "S/GP",
+    "def": "Shots on goal per game played, the usual way to compare players who missed time."
+   },
+   {
+    "term": "SF%",
+    "def": "A team's share of the shots on goal in its games, or in a player's minutes.",
+    "slug": "shot-share"
+   }
+  ]
+ },
+ "meaning": [
+  "SOG measures the shooting that got through. It sits in the middle of the shot funnel, below attempts and above goals, and last season shows how much each step trims. NHL teams combined for 152,961 shot attempts, according to MoneyPuck's season file. Skaters blocked 40,865 of them and another 39,036 missed the net, which left 73,060 shots on goal, 47.8% of the total. Goalies stopped all but 8,086. A shot on goal went in about one time in nine, and a shot attempt about one time in 19.",
+  "The average team put 27.8 shots on goal a game in 2025-26. Colorado led the league at 33.7, while Chicago finished last at 24.6. Detroit landed in the middle at 28.2 a game and allowed 27.7, so the Wings' shot differential was half a shot a game, 14th in the league. Call it a wash. You won't find the Wings at either end of a shot-volume table.",
+  "The scale runs wider for individual shooters. Among the 327 forwards who played at least 60 games, the median put 131 shots on goal. Defensemen shoot less, with a median of 93 among the 161 regulars. Nathan MacKinnon led the league with 350. <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> tied Macklin Celebrini for fourth at 287, more than twice the median forward, <a href=\"/players/dylan-larkin/\">Dylan Larkin</a>'s 229 ranked 20th among forwards, and <a href=\"/players/moritz-seider/\">Moritz Seider</a>'s 187 ranked tenth among defensemen.",
+  "Why does a raw count still matter when expected goals exist? Because shot volume is a skill that repeats. Wes & Woodward took the 189 forwards with at least 100 shots on goal in each of the last two seasons and lined the seasons up. Their shots per game correlated at 0.80. Their shooting percentages correlated at 0.35. A player who shoots a lot one year shoots a lot the next, and whether those shots go in is a far noisier question."
+ ],
+ "uses": [
+  {
+   "title": "Finding the volume shooters",
+   "html": "Shots on goal are the first thing to check when a scorer's goal total jumps. DeBrincat's 41 goals last season came on 287 shots. At the league's 11.1% shooting rate that volume alone is worth about 32 goals, so most of his season was the shot count and the rest was finishing (his 14.3% sat right on his 14.2% career rate). That's a profile you can trust. A scorer who matches his total on 180 shots is converting almost 23% of them, and you'd want to see that twice before you believed it."
+  },
+  {
+   "title": "Separating volume from finishing",
+   "html": "Dallas is the reason to never stop at shots. The Stars put 25.3 shots on goal a game last season, 30th in the league, and still scored 273 goals, ninth-most, because 13.2% of their shots went in, the best rate in the league. Calgary went the other way. The Flames landed 28.1 a game, a hair above average, and scored a league-low 208 on 9.0% shooting. Rank the two on shots alone and you'd pick the wrong team."
+  },
+  {
+   "title": "Grading goalies",
+   "html": "Save percentage is saves divided by shots on goal faced, so the standard goalie line starts here. <a href=\"/players/john-gibson/\">John Gibson</a> faced 1,461 shots on goal for Detroit last season and stopped 1,317, a .901 save percentage (the league rate was .896). Because a shot on goal is any shot that needed a save, the stat can't tell a point shot from a backdoor tap-in, which is why this site grades goalies on goals saved above expected."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night. Shots on goal, goals and shooting percentage come from the NHL's own club stats; the shot-attempt share and ixG come from MoneyPuck.",
+  "tiles": [
+   {
+    "label": "Games played",
+    "source": "dashboard",
+    "path": "standings.gamesPlayed",
+    "format": "int",
+    "sub": "this season"
+   },
+   {
+    "label": "Goals for",
+    "source": "team",
+    "path": "record.goalFor",
+    "format": "int",
+    "sub": "all situations"
+   },
+   {
+    "label": "5v5 shot-attempt share",
+    "source": "team",
+    "path": "situations.5on5.corsiPct",
+    "format": "pct1",
+    "rankPath": "leagueRanks.corsiPct_5on5"
+   }
+  ],
+  "leaders": {
+   "source": "skaters",
+   "sort": "shots",
+   "ascending": false,
+   "limit": 8,
+   "caption": "Red Wings skaters by shots on goal, all situations",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "SOG",
+     "path": "shots",
+     "format": "int"
+    },
+    {
+     "label": "Goals",
+     "path": "goals",
+     "format": "int"
+    },
+    {
+     "label": "S%",
+     "path": "shootingPct",
+     "format": "pct1"
+    },
+    {
+     "label": "ixG",
+     "path": "ixG",
+     "format": "num2"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. Shot rates settle faster than goal totals, but a hot week still reorders a leaderboard this young."
+ },
+ "limits": [
+  {
+   "title": "Every shot counts the same",
+   "html": "A wrist shot from the blue line that the goalie catches and a rebound he stops at the edge of the crease each count as one shot on goal, which is the gap expected goals was built to close (the average unblocked attempt last season was worth 0.073 goals in MoneyPuck's model)."
+  },
+  {
+   "title": "Most attempts don't count",
+   "html": "More than half of last season's shot attempts were blocked or missed, and SOG ignores every one of them. A forward whose shots keep finding shin pads looks quieter on SOG than he played, which is why analysts reach for Corsi and Fenwick when they want a bigger sample."
+  },
+  {
+   "title": "The post is a miss",
+   "html": "A shot off the post or crossbar goes in the books as a missed shot, the same as one that misses by five feet, so SOG undersells a shooter who keeps ringing iron."
+  },
+  {
+   "title": "Rinks count a little differently",
+   "html": "People log shots in each arena, and Michael Schuckers and Brian Macdonald measured the crews' differences over six seasons of the NHL's Real Time Scoring System, through 2012-13. Shots were the steadiest event they tested. Only two rinks showed a persistent shot effect, Florida's about 3% high and St. Louis's about 4.5% low, next to 12 rinks for hits, 18 for giveaways and nine for missed shots."
+  }
+ ],
+ "related": [
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "Every attempt, on goal, missed or blocked. SOG keeps only the ones the goalie had to face."
+  },
+  {
+   "slug": "fenwick",
+   "name": "Fenwick",
+   "abbr": "FF%",
+   "vs": "Adds missed shots to SOG and leaves out the blocks."
+  },
+  {
+   "slug": "shooting-percentage",
+   "name": "Shooting percentage",
+   "abbr": "SH%",
+   "vs": "Goals divided by SOG, the finishing half of the equation."
+  },
+  {
+   "slug": "saves-and-shots-against",
+   "name": "Saves and shots against",
+   "abbr": "SA",
+   "vs": "The same shots on goal, counted from the goalie's side."
+  },
+  {
+   "slug": "individual-shot-attempts",
+   "name": "Individual shot attempts",
+   "abbr": "iCF",
+   "vs": "A player's own attempts, misses and blocks included."
+  },
+  {
+   "slug": "shot-share",
+   "name": "Shot share",
+   "abbr": "SF%",
+   "vs": "A team's share of the SOG in its games."
+  }
+ ],
+ "faq": [
+  {
+   "q": "What's the NHL record for shots on goal in a season?",
+   "a": "Phil Esposito's 550 in 1970-71, according to Hockey-Reference's single-season list. Alex Ovechkin's 528 in 2008-09 is the only season that's come close, and MacKinnon's league-leading 350 last season sits nowhere near the top of the all-time list."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NHL Stats glossary",
+   "publisher": "NHL.com (also served at api.nhle.com/stats/rest/en/glossary)",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "S, SA, MsS, BkS, SAT, USAT, S% and Sv% definitions and the first season each was tracked"
+  },
+  {
+   "label": "Official Rules 2025-26, Rule 36 (Real Time Scorers)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "who records official statistics at each game and when reports go out"
+  },
+  {
+   "label": "Accounting for Rink Effects in the National Hockey League's Real Time Scoring System",
+   "publisher": "Michael Schuckers and Brian Macdonald, arXiv 1412.1035",
+   "url": "https://arxiv.org/abs/1412.1035",
+   "note": "rink effects on shots, hits, giveaways and missed shots, 2007-08 to 2012-13"
+  },
+  {
+   "label": "Game box score (gamecenter boxscore feed)",
+   "publisher": "NHL",
+   "url": "https://api-web.nhle.com/v1/gamecenter/2025020001/boxscore",
+   "note": "per-player box-score fields: SOG, hits, blocks, ice time, no missed or blocked attempts"
+  },
+  {
+   "label": "2025-26 team summary and skater summary; 2024-25 skater summary",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/summary?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "shots per game, goals, player shot totals, career shooting percentages, year-to-year comparison"
+  },
+  {
+   "label": "2025-26 regular-season team file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "league shot attempts, misses, blocks, shots on goal and expected goals"
+  },
+  {
+   "label": "NHL & WHA Single Season Leaders and Records for Shots",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leaders/shots_season.html",
+   "note": "Esposito and Ovechkin single-season records"
+  }
+ ],
+ "method": "League and team figures are Wes & Woodward's calculations, downloaded October 9, 2026. Shot-funnel totals (attempts, blocks, misses, shots on goal, goals, xG per unblocked attempt) are summed over the 32 teams in MoneyPuck's 2025-26 team file, all situations. Team shots per game, goals and ranks come from the NHL stats API team summary; player shots, goals and save numbers from the NHL skater and goalie summaries (Detroit-only splits for Gibson). Forward and defense benchmarks use skaters with 60+ games. The year-to-year test pairs the 189 forwards with 100+ shots on goal in both the 2024-25 and 2025-26 NHL skater summaries (Pearson correlation of shots per game and of shooting percentage). Career shooting percentage is the NHL's regular-season career aggregate through 2025-26. The Red Wings section rebuilds nightly."
+}

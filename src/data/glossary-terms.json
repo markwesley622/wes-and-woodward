@@ -1,0 +1,807 @@
+[
+ {
+  "id": "goals",
+  "slug": "goals",
+  "name": "Goals",
+  "abbr": [
+   "G"
+  ],
+  "category": "Skater",
+  "short": "Goals a player scores, credited to the last player on the scoring team to touch the puck. It's the stat every other number on this site is trying to predict.",
+  "page": false,
+  "primaryKeyword": "what does g mean in hockey"
+ },
+ {
+  "id": "assists",
+  "slug": "assists",
+  "name": "Assists",
+  "abbr": [
+   "A"
+  ],
+  "category": "Skater",
+  "short": "Credit for the last one or two players on the scoring team to touch the puck before the goal scorer. The first is the primary assist, the second the secondary.",
+  "page": false,
+  "primaryKeyword": "what does a mean in hockey"
+ },
+ {
+  "id": "points",
+  "slug": "points",
+  "name": "Points",
+  "abbr": [
+   "P",
+   "PTS"
+  ],
+  "category": "Skater",
+  "short": "Goals plus assists, each worth one point. It's the standard way to rank skaters, and it counts a secondary assist the same as a goal.",
+  "page": false,
+  "primaryKeyword": "points in hockey"
+ },
+ {
+  "id": "plus-minus",
+  "slug": "plus-minus",
+  "name": "Plus-minus",
+  "abbr": [
+   "+/-"
+  ],
+  "category": "Skater",
+  "short": "Goals for minus goals against while a skater is on the ice at even strength or shorthanded. Power-play goals don't count, and it can't tell who caused the goal.",
+  "page": false,
+  "primaryKeyword": "what is plus minus in hockey"
+ },
+ {
+  "id": "pim",
+  "slug": "penalty-minutes",
+  "name": "Penalty minutes",
+  "abbr": [
+   "PIM"
+  ],
+  "category": "Skater",
+  "short": "Total minutes a player is penalized, at two for a minor, five for a major and 10 for a misconduct. Penalties he draws don't offset it.",
+  "page": false,
+  "primaryKeyword": "what is pim in hockey"
+ },
+ {
+  "id": "ppg",
+  "slug": "power-play-goals-and-points",
+  "name": "Power-play goals and points",
+  "abbr": [
+   "PPG",
+   "PPP"
+  ],
+  "category": "Skater",
+  "short": "Goals (PPG) and points (PPP) scored while the other team is shorthanded by a penalty. They show who a coach trusts with the man advantage.",
+  "page": false,
+  "primaryKeyword": "ppg hockey meaning"
+ },
+ {
+  "id": "shg",
+  "slug": "shorthanded-goals-and-points",
+  "name": "Shorthanded goals and points",
+  "abbr": [
+   "SHG",
+   "SHP"
+  ],
+  "category": "Skater",
+  "short": "Goals (SHG) and points (SHP) scored while a player's own team is shorthanded by a penalty. They're rare and swing a lot from one season to the next.",
+  "page": false,
+  "primaryKeyword": "what does shg mean in hockey"
+ },
+ {
+  "id": "evg",
+  "slug": "even-strength-goals",
+  "name": "Even-strength goals",
+  "abbr": [
+   "EVG",
+   "EVP"
+  ],
+  "category": "Skater",
+  "short": "Goals (EVG) and points (EVP) scored when neither team is shorthanded by a penalty, including 4-on-4, 3-on-3 and most empty-net goals. Most scoring happens here.",
+  "page": false,
+  "primaryKeyword": "even strength goals nhl"
+ },
+ {
+  "id": "gwg",
+  "slug": "game-winning-goals",
+  "name": "Game-winning goals",
+  "abbr": [
+   "GWG"
+  ],
+  "category": "Skater",
+  "short": "The goal that put the winner one ahead of the loser's final total, so the third goal of a 5-2 win. It can come in the first period.",
+  "page": false,
+  "primaryKeyword": "game winning goal hockey"
+ },
+ {
+  "id": "otg",
+  "slug": "overtime-goals",
+  "name": "Overtime goals",
+  "abbr": [
+   "OTG"
+  ],
+  "category": "Skater",
+  "short": "Goals scored in overtime, which end the game on the spot. Regular-season overtime is five minutes of 3-on-3; playoff overtime is full 20-minute periods at five-on-five.",
+  "page": false,
+  "primaryKeyword": "overtime goal"
+ },
+ {
+  "id": "sog",
+  "slug": "shots-on-goal",
+  "name": "Shots on goal",
+  "abbr": [
+   "SOG",
+   "S"
+  ],
+  "category": "Skater",
+  "short": "Goals plus the shots a goalie stopped. Misses, posts and blocked shots don't count, so it's the narrowest of the shot stats.",
+  "page": false,
+  "primaryKeyword": "what does sog mean in hockey"
+ },
+ {
+  "id": "sh-pct",
+  "slug": "shooting-percentage",
+  "name": "Shooting percentage",
+  "abbr": [
+   "SH%",
+   "S%"
+  ],
+  "category": "Skater",
+  "short": "Goals divided by shots on goal. A shooter who runs far above his career rate in one season usually drifts back toward it the next.",
+  "page": false,
+  "primaryKeyword": "what is shooting percentage in hockey"
+ },
+ {
+  "id": "toi",
+  "slug": "time-on-ice",
+  "name": "Time on ice",
+  "abbr": [
+   "TOI",
+   "ATOI"
+  ],
+  "category": "Skater",
+  "short": "How many minutes a player is on the ice, in total or per game (ATOI). It's the clearest read on how much a coach trusts someone.",
+  "page": false,
+  "primaryKeyword": "what does toi mean in hockey"
+ },
+ {
+  "id": "fo-pct",
+  "slug": "faceoff-percentage",
+  "name": "Faceoff percentage",
+  "abbr": [
+   "FO%",
+   "FOW"
+  ],
+  "category": "Skater",
+  "short": "Faceoffs won divided by faceoffs taken (FOW counts the wins). 50% is break-even, and the best regular centers win around 60%.",
+  "page": false,
+  "primaryKeyword": "what is fow in hockey"
+ },
+ {
+  "id": "hits",
+  "slug": "hits",
+  "name": "Hits",
+  "abbr": [
+   "HIT"
+  ],
+  "category": "Skater",
+  "short": "Body checks credited by each arena's off-ice scorers, who don't all count them the same way. A team that's hitting a lot usually doesn't have the puck.",
+  "page": false,
+  "primaryKeyword": "what does hits mean in hockey"
+ },
+ {
+  "id": "blocks",
+  "slug": "blocked-shots",
+  "name": "Blocked shots",
+  "abbr": [
+   "BLK"
+  ],
+  "category": "Skater",
+  "short": "Opponents' shot attempts a skater stops with his body or stick before they reach the net. A team that blocks a lot is usually defending a lot.",
+  "page": false,
+  "primaryKeyword": "blocked shots nhl"
+ },
+ {
+  "id": "takeaways",
+  "slug": "takeaways-and-giveaways",
+  "name": "Takeaways and giveaways",
+  "abbr": [
+   "TK",
+   "GV"
+  ],
+  "category": "Skater",
+  "short": "Takeaways (TK) are pucks a player steals; giveaways (GV) are pucks he loses on his own. Arena scorers log both and vary by rink, so treat them as rough counts.",
+  "page": false,
+  "primaryKeyword": "what does gv mean in hockey"
+ },
+ {
+  "id": "gp",
+  "slug": "games-played",
+  "name": "Games played",
+  "abbr": [
+   "GP"
+  ],
+  "category": "Skater",
+  "short": "The number of games a player appeared in. Per-game stats divide by it, and small totals are where the noise lives.",
+  "page": false,
+  "primaryKeyword": "what does gp mean in hockey"
+ },
+ {
+  "id": "p-gp",
+  "slug": "points-per-game",
+  "name": "Points per game",
+  "abbr": [
+   "P/GP"
+  ],
+  "category": "Skater",
+  "short": "Points divided by games played. It puts a player who missed time on the same footing as one who played every game, and a point a game marks a star.",
+  "page": false,
+  "primaryKeyword": "points per game nhl"
+ },
+ {
+  "id": "penalties-drawn",
+  "slug": "penalties-drawn",
+  "name": "Penalties drawn",
+  "abbr": [],
+  "category": "Skater",
+  "short": "Penalties a player draws from opponents, most of them power plays for his team. Drawn minus taken is penalty differential, a small but real piece of a player's value.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "sv-pct",
+  "slug": "save-percentage",
+  "name": "Save percentage",
+  "abbr": [
+   "SV%"
+  ],
+  "category": "Goalie",
+  "short": "Saves divided by shots on goal faced. It treats a point shot and a backdoor tap-in the same, which is why expected-goals stats grade goalies more fairly.",
+  "page": false,
+  "primaryKeyword": "how to calculate save percentage"
+ },
+ {
+  "id": "gaa",
+  "slug": "goals-against-average",
+  "name": "Goals against average",
+  "abbr": [
+   "GAA"
+  ],
+  "category": "Goalie",
+  "short": "Goals a goalie allows per 60 minutes. It ignores how many shots he faced and how dangerous they were, so it grades his defense along with him.",
+  "page": false,
+  "primaryKeyword": "goals against average"
+ },
+ {
+  "id": "shutout",
+  "slug": "shutouts",
+  "name": "Shutouts",
+  "abbr": [
+   "SO"
+  ],
+  "category": "Goalie",
+  "short": "A game in which a goalie plays the whole way and allows no goals. If two goalies combine for a clean sheet, neither gets credit.",
+  "page": false,
+  "primaryKeyword": "what does so mean in hockey"
+ },
+ {
+  "id": "goalie-record",
+  "slug": "goalie-record",
+  "name": "Goalie record (W-L-OTL)",
+  "abbr": [
+   "W",
+   "L",
+   "OTL"
+  ],
+  "category": "Goalie",
+  "short": "A goalie's wins, regulation losses and overtime or shootout losses (OTL). The decision goes to the goalie in net for the deciding goal, so it tracks his team too.",
+  "page": false,
+  "primaryKeyword": "overtime loss nhl"
+ },
+ {
+  "id": "gsax",
+  "slug": "goals-saved-above-expected",
+  "name": "Goals saved above expected",
+  "abbr": [
+   "GSAx"
+  ],
+  "category": "Goalie",
+  "short": "Expected goals a goalie faced minus the goals he allowed. Positive means he stopped more than an average goalie would have on the same shots.",
+  "page": false,
+  "primaryKeyword": "goals saved above expected"
+ },
+ {
+  "id": "gsaa",
+  "slug": "goals-saved-above-average",
+  "name": "Goals saved above average",
+  "abbr": [
+   "GSAA"
+  ],
+  "category": "Goalie",
+  "short": "Goals a goalie saved compared with a league-average save percentage on the same number of shots. Unlike GSAx, it treats every shot as equally dangerous.",
+  "page": false,
+  "primaryKeyword": "goals saved above average"
+ },
+ {
+  "id": "quality-starts",
+  "slug": "quality-starts",
+  "name": "Quality starts",
+  "abbr": [
+   "QS"
+  ],
+  "category": "Goalie",
+  "short": "A start where a goalie beats the league-average save percentage, or posts .885 on 20 shots or fewer. A really bad start (RBS) is anything under .850.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "hdsv",
+  "slug": "high-danger-save-percentage",
+  "name": "High-danger save percentage",
+  "abbr": [
+   "HDSV%"
+  ],
+  "category": "Goalie",
+  "short": "Save percentage on high-danger shots only, the shots on goal from right in front of the net. It isolates the saves that swing games, though the samples get small fast.",
+  "page": false,
+  "primaryKeyword": "high danger save percentage nhl"
+ },
+ {
+  "id": "xsv",
+  "slug": "expected-save-percentage",
+  "name": "Expected save percentage",
+  "abbr": [
+   "xSV%"
+  ],
+  "category": "Goalie",
+  "short": "The save percentage an average goalie would post on the shots a goalie faced, built from expected goals. Subtract it from his real save percentage to see what he added.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "saves",
+  "slug": "saves-and-shots-against",
+  "name": "Saves and shots against",
+  "abbr": [
+   "SA",
+   "GA",
+   "SV"
+  ],
+  "category": "Goalie",
+  "short": "Shots against (SA) are shots on goal a goalie faced, goals against (GA) the ones that went in, saves (SV) the rest. Save percentage is SV divided by SA.",
+  "page": false,
+  "primaryKeyword": "what does sa mean in hockey"
+ },
+ {
+  "id": "pts-pct",
+  "slug": "points-percentage",
+  "name": "Points percentage",
+  "abbr": [
+   "P%",
+   "PTS%"
+  ],
+  "category": "Team",
+  "short": "Standings points earned divided by points available, two per game. It's how you compare teams that have played different numbers of games.",
+  "page": false,
+  "primaryKeyword": "what is points percentage in hockey"
+ },
+ {
+  "id": "regulation-wins",
+  "slug": "regulation-wins",
+  "name": "Regulation wins",
+  "abbr": [
+   "RW",
+   "ROW"
+  ],
+  "category": "Team",
+  "short": "Wins in regulation (RW), or in regulation and overtime (ROW), leaving out shootout wins. When teams finish a season level on points, RW is the first tiebreaker.",
+  "page": false,
+  "primaryKeyword": "what does rw mean in hockey"
+ },
+ {
+  "id": "goal-diff",
+  "slug": "goal-differential",
+  "name": "Goal differential",
+  "abbr": [
+   "DIFF"
+  ],
+  "category": "Team",
+  "short": "Goals for minus goals against. Over a full season it tracks standings points closely, which makes it a quick check on whether a record is real.",
+  "page": false,
+  "primaryKeyword": "nhl goal differential"
+ },
+ {
+  "id": "pp-pct",
+  "slug": "power-play-percentage",
+  "name": "Power play percentage",
+  "abbr": [
+   "PP%"
+  ],
+  "category": "Team",
+  "short": "Power-play goals divided by power-play opportunities. It says how well a team converts and nothing about how many power plays it draws.",
+  "page": false,
+  "primaryKeyword": "power play percentage nhl"
+ },
+ {
+  "id": "pk-pct",
+  "slug": "penalty-kill-percentage",
+  "name": "Penalty kill percentage",
+  "abbr": [
+   "PK%"
+  ],
+  "category": "Team",
+  "short": "The share of opponents' power plays a team kills off without allowing a goal. It's the mirror image of power-play percentage.",
+  "page": false,
+  "primaryKeyword": "what is penalty kill percentage"
+ },
+ {
+  "id": "xg",
+  "slug": "expected-goals",
+  "name": "Expected goals",
+  "abbr": [
+   "xG",
+   "xGF",
+   "xGA",
+   "xGF%"
+  ],
+  "category": "Advanced",
+  "short": "The probability that an unblocked shot becomes a goal, priced against hundreds of thousands of past NHL shots like it. Add them up for a player's or team's total.",
+  "page": true,
+  "primaryKeyword": "xgf hockey"
+ },
+ {
+  "id": "ixg",
+  "slug": "individual-expected-goals",
+  "name": "Individual expected goals",
+  "abbr": [
+   "ixG"
+  ],
+  "category": "Advanced",
+  "short": "Expected goals on the shots a player takes himself. It measures how many good looks he gets, whether or not they go in.",
+  "page": false,
+  "primaryKeyword": "ixg hockey stat"
+ },
+ {
+  "id": "gax",
+  "slug": "goals-above-expected",
+  "name": "Goals above expected",
+  "abbr": [
+   "GAx",
+   "G−xG"
+  ],
+  "category": "Advanced",
+  "short": "Goals minus expected goals, for a player or team. Positive means the finishing beat an average shooter on the same chances, and a single season carries a lot of luck.",
+  "page": false,
+  "primaryKeyword": "goals above expected"
+ },
+ {
+  "id": "corsi",
+  "slug": "corsi",
+  "name": "Corsi",
+  "abbr": [
+   "CF%",
+   "CF",
+   "CA",
+   "SAT"
+  ],
+  "category": "Advanced",
+  "short": "Every shot attempt, on goal, missed or blocked, counted for and against while a player or team is on the ice. CF% is the share; the NHL calls it SAT.",
+  "page": false,
+  "primaryKeyword": "corsi hockey"
+ },
+ {
+  "id": "fenwick",
+  "slug": "fenwick",
+  "name": "Fenwick",
+  "abbr": [
+   "FF%",
+   "USAT"
+  ],
+  "category": "Advanced",
+  "short": "Corsi without the blocked shots, so unblocked attempts for and against. It's the same set of shots expected goals uses, and the NHL calls it USAT.",
+  "page": false,
+  "primaryKeyword": "fenwick hockey stat"
+ },
+ {
+  "id": "rel-corsi",
+  "slug": "relative-corsi",
+  "name": "Relative Corsi",
+  "abbr": [
+   "Rel CF%"
+  ],
+  "category": "Advanced",
+  "short": "A player's Corsi share with him on the ice minus his team's share without him. It shows whether he drives play better or worse than the rest of the roster.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "pdo",
+  "slug": "pdo",
+  "name": "PDO",
+  "abbr": [
+   "PDO"
+  ],
+  "category": "Advanced",
+  "short": "On-ice shooting percentage plus on-ice save percentage, usually at five-on-five. Everyone drifts back toward 1.000 (or 100), so a number far from it usually means luck.",
+  "page": false,
+  "primaryKeyword": "pdo hockey"
+ },
+ {
+  "id": "hdcf",
+  "slug": "high-danger-chances",
+  "name": "High-danger chances",
+  "abbr": [
+   "HDCF",
+   "HDCF%"
+  ],
+  "category": "Advanced",
+  "short": "Shot attempts Natural Stat Trick rates as most dangerous, mostly from right in front of the net, with extra weight for rebounds and rush shots. HDCF% is a team's share.",
+  "page": false,
+  "primaryKeyword": "high danger chances nhl"
+ },
+ {
+  "id": "scf",
+  "slug": "scoring-chances",
+  "name": "Scoring chances",
+  "abbr": [
+   "SCF",
+   "SCF%"
+  ],
+  "category": "Advanced",
+  "short": "Shot attempts Natural Stat Trick counts as scoring chances, based on where they came from, with extra credit for rebounds and rush shots. SCF% is a team's share.",
+  "page": false,
+  "primaryKeyword": "scf hockey"
+ },
+ {
+  "id": "sf-pct",
+  "slug": "shot-share",
+  "name": "Shot share",
+  "abbr": [
+   "SF%"
+  ],
+  "category": "Advanced",
+  "short": "A team's share of the shots on goal in its games, or in a player's minutes. It's the narrowest shot-share stat, since misses and blocks don't count.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "gf-pct",
+  "slug": "goals-for-percentage",
+  "name": "Goals for percentage",
+  "abbr": [
+   "GF%"
+  ],
+  "category": "Advanced",
+  "short": "A team's share of the goals scored in its games, or in a player's minutes, usually at five-on-five. It's the result that xGF% and CF% try to predict.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "on-ice-pct",
+  "slug": "on-ice-shooting-and-save-percentage",
+  "name": "On-ice shooting and save percentage",
+  "abbr": [
+   "oiSH%",
+   "oiSV%"
+  ],
+  "category": "Advanced",
+  "short": "The shooting (oiSH%) and save (oiSV%) percentages of a player's team while he's on the ice. Both swing with luck, and their sum is PDO.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "zone-starts",
+  "slug": "zone-starts",
+  "name": "Zone starts",
+  "abbr": [
+   "OZS%",
+   "DZS%"
+  ],
+  "category": "Advanced",
+  "short": "The share of a player's end-zone faceoff starts that came in the offensive zone (OZS%) or his own end (DZS%). Coaches use them to shelter or bury players.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "qoc",
+  "slug": "quality-of-competition-and-teammates",
+  "name": "Quality of competition and teammates",
+  "abbr": [
+   "QoC",
+   "QoT"
+  ],
+  "category": "Advanced",
+  "short": "Measures of how strong a player's opponents (QoC) and linemates (QoT) were, usually weighted by shared ice time. They put a player's results in context.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "war",
+  "slug": "wins-above-replacement",
+  "name": "Wins above replacement",
+  "abbr": [
+   "WAR",
+   "GAR",
+   "xGAR"
+  ],
+  "category": "Advanced",
+  "short": "One number for a player's total value over a replacement-level player, in goals (GAR) or wins (WAR). Evolving-Hockey's version also comes in an expected-goals form (xGAR).",
+  "page": false,
+  "primaryKeyword": "war hockey stat"
+ },
+ {
+  "id": "rapm",
+  "slug": "rapm",
+  "name": "RAPM",
+  "abbr": [
+   "RAPM"
+  ],
+  "category": "Advanced",
+  "short": "Regularized adjusted plus-minus, a regression that estimates each player's impact while controlling for teammates, opponents, zone starts and score. It's a building block of public WAR models.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "per60",
+  "slug": "per-60-rates",
+  "name": "Per-60 rates",
+  "abbr": [
+   "/60"
+  ],
+  "category": "Advanced",
+  "short": "Any stat divided by ice time and scaled to 60 minutes. It levels the field between a top-line forward and a fourth-liner who plays half as much.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "ipp",
+  "slug": "individual-points-percentage",
+  "name": "Individual points percentage",
+  "abbr": [
+   "IPP"
+  ],
+  "category": "Advanced",
+  "short": "The share of goals scored while a player is on the ice that he scored or assisted on. It shows who's driving the offense and who's along for the ride.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "game-score",
+  "slug": "game-score",
+  "name": "Game score",
+  "abbr": [
+   "GS"
+  ],
+  "category": "Advanced",
+  "short": "A single-game rating that rolls goals, assists, shots, blocks, penalties, faceoffs and on-ice shot and goal results into one number. This site averages MoneyPuck's and HockeyStatCards' versions.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "zone-entries",
+  "slug": "zone-entries-and-exits",
+  "name": "Zone entries and exits",
+  "abbr": [],
+  "category": "Advanced",
+  "short": "How a team gets the puck into the offensive zone, carrying it or dumping it in, and how it gets out of its own end. The NHL doesn't log either.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "icf",
+  "slug": "individual-shot-attempts",
+  "name": "Individual shot attempts",
+  "abbr": [
+   "iCF"
+  ],
+  "category": "Advanced",
+  "short": "Every shot attempt a player takes himself, on goal, missed or blocked. It's a pure measure of shooting volume.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "score-adjusted",
+  "slug": "score-adjusted-stats",
+  "name": "Score-adjusted stats",
+  "abbr": [],
+  "category": "Advanced",
+  "short": "Stats reweighted for the score, because trailing teams push and leading teams sit back. Unadjusted, a team that leads a lot looks worse at controlling play than it is.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "shot-quality",
+  "slug": "shot-quality",
+  "name": "Shot quality",
+  "abbr": [
+   "xFSh%"
+  ],
+  "category": "Advanced",
+  "short": "How dangerous a team's or player's shots are on average, usually expected goals per unblocked attempt. Distance to the net is the biggest single factor.",
+  "page": false,
+  "primaryKeyword": "shot quality nhl"
+ },
+ {
+  "id": "w-value",
+  "slug": "w-value",
+  "name": "W-Value",
+  "abbr": [
+   "W-Value"
+  ],
+  "category": "Site",
+  "short": "This site's 0-to-100 rating of a player's value this season, with 50 as the NHL average. Skaters are scored on goals above replacement, goalies on goals saved above expected.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "percentile",
+  "slug": "percentile",
+  "name": "Percentile",
+  "abbr": [
+   "pct"
+  ],
+  "category": "Site",
+  "short": "Where a number ranks in its comparison group on a 0-to-100 scale, so the 90th percentile beats 90% of the group. Forwards and defensemen are usually ranked separately here.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "five-on-five",
+  "slug": "five-on-five",
+  "name": "Five-on-five",
+  "abbr": [
+   "5v5"
+  ],
+  "category": "Context",
+  "short": "Both teams with five skaters and a goalie on the ice, which is most of every game. It's the default for comparisons because special-teams time varies so much.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "power-play-unit",
+  "slug": "power-play-unit",
+  "name": "Power play and penalty kill (5v4, 4v5)",
+  "abbr": [
+   "5v4",
+   "4v5",
+   "PP",
+   "PK"
+  ],
+  "category": "Context",
+  "short": "A power play (5v4) is time with an extra skater after an opponent's penalty; the penalty kill (4v5) is the other side. Both are rated here per 60 minutes.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "all-situations",
+  "slug": "all-situations",
+  "name": "All situations",
+  "abbr": [
+   "all sit"
+  ],
+  "category": "Context",
+  "short": "Every game state combined, five-on-five, power play, penalty kill, 4-on-4, 3-on-3 and empty net. Individual totals like ixG use it unless a column says otherwise.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "xg-standings",
+  "slug": "xg-standings",
+  "name": "Expected standings",
+  "abbr": [
+   "xPts"
+  ],
+  "category": "Site",
+  "short": "The standings rebuilt on expected goals. Each team's all-situations xGF and xGA become a Pythagorean win rate, then points, and all 32 teams are ranked the same way.",
+  "page": false,
+  "primaryKeyword": null
+ },
+ {
+  "id": "projection",
+  "slug": "projection",
+  "name": "Season projection",
+  "abbr": [],
+  "category": "Site",
+  "short": "MoneyPuck's simulation of the rest of the season, giving projected points and playoff odds. This site freezes the opening-night projection and shows the updated one, re-run after every result.",
+  "page": false,
+  "primaryKeyword": null
+ }
+]

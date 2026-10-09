@@ -1,0 +1,297 @@
+{
+ "slug": "zone-entries-and-exits",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Zone entries and exits",
+  "short": "entry and exit data",
+  "abbr": "",
+  "aliases": [
+   "zone entries",
+   "zone exits",
+   "controlled entries",
+   "carry-ins",
+   "dump-ins",
+   "controlled exits",
+   "transition data",
+   "neutral-zone play"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "zone entries in hockey",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json status no_volume (no measured US volume in Ahrefs KE, 2026-10-09); primary is the natural phrase, no supporting keywords"
+ },
+ "seo": {
+  "title": "Zone Entries in Hockey and How Zone Exits Are Tracked",
+  "description": "Zone entries in hockey track how a team crosses the blue line, with control or by dumping it in. The research, the numbers, and why the NHL doesn't log them.",
+  "h1": "Zone Entries in Hockey and Zone Exits"
+ },
+ "hero": {
+  "definition": "Zone entries and exits track how a team gets the puck into the offensive zone, with control or by dumping it in, and how it gets out of its own end. Zone entries in hockey are counted by hand, since the NHL's play-by-play doesn't log either one. In every data set the original researchers collected, carrying the puck in beat dumping it.",
+  "dek": "A carry-in produces about twice the shots of a dump-in. That finding started on a fan blog in 2011 and took its author all the way to an NHL general manager's office."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "Transition",
+   "sub": "neutral-zone play, carry-ins, controlled exits"
+  },
+  {
+   "label": "Controlled entry",
+   "value": "Carry, pass",
+   "sub": "skating it over the line or passing at the line"
+  },
+  {
+   "label": "Shots per carry-in",
+   "value": "0.62",
+   "sub": "vs 0.28 per dump-in, 2011-12, Sloan study"
+  },
+  {
+   "label": "Carry-ins lost",
+   "value": "14%",
+   "sub": "of carry attempts ended in a turnover"
+  },
+  {
+   "label": "Break-even",
+   "value": "34%",
+   "sub": "confidence a carry works before it beats a dump"
+  },
+  {
+   "label": "Controlled exits",
+   "value": "≈ 9 in 10",
+   "sub": "work, against about 1 in 5 dump-outs"
+  },
+  {
+   "label": "NHL logs it",
+   "value": "No",
+   "sub": "hand-tracked by fans; teams buy it from vendors"
+  },
+  {
+   "label": "Main public source",
+   "value": "A3Z",
+   "sub": "Corey Sznajder's All Three Zones"
+  }
+ ],
+ "origin": [
+  "Zone entries started on a fan blog. Eric Tulsky began logging how the Flyers got the puck into the offensive zone at Broad Street Hockey during the 2011 playoffs. He recorded who crossed the blue line and whether he carried the puck, passed it or dumped it in, and by that October his numbers showed 0.51 shot attempts per controlled entry against 0.20 per uncontrolled one.",
+  "The full version arrived at the 2013 MIT Sloan Sports Analytics Conference. Tulsky, Geoffrey Detweiler, Robert Spencer and Corey Sznajder tracked 330 games from 2011-12 (a full season for the Flyers and Wild, a handful for most other teams). Their conclusion was blunt. Carrying the puck across the blue line \"generates more than twice as many shots, scoring chances, and goals as dumping the puck in.\" Tulsky joined the Carolina Hurricanes as a consultant the next year and was named their general manager in June 2024.",
+  "Sznajder turned it into a project. He tracked every game of the 2013-14 regular season by hand and has tracked publicly since 2016-17 (usually 30 to 50 games per team), sharing the data through his All Three Zones Patreon. CJ Turtoro's Tableau dashboards turned it into charts anyone could read. Zone exits got their own studies along the way, from Jennifer Lute Costella's 2015 look at a Nashville-Chicago playoff series to a 2019 Hockey-Graphs analysis of Sznajder's data.",
+  "The NHL still doesn't publish any of it. The 2013 paper noted that its data wasn't \"tracked by the NHL,\" Sznajder describes his work as tracking data the league doesn't provide, and NHL EDGE reports how long the puck spends in each zone without saying how it got there. So where do teams get it? They buy it. Sportlogiq lists controlled entries among its metrics, and its platform is used by 97% of NHL teams."
+ ],
+ "calculation": {
+  "intro": [
+   "There's no formula until somebody has watched the game. A tracker logs every time a team carries, passes or dumps the puck across a blue line, who had it and what happened next. Then the counting starts. These are the inputs:"
+  ],
+  "inputs": [
+   "Who crossed the blue line with the puck, or sent it across",
+   "How it crossed, whether carried, passed to a teammate at the line, dumped in or something else (a shot on goal from the neutral zone, say)",
+   "What followed, from shot attempts and scoring chances to goals, before the puck left the zone",
+   "For exits, whether the team kept the puck (carry or pass), gave it away (a clear or a missed pass) or failed outright (a turnover or an icing)",
+   "Which defenders were on the ice, for entry defense"
+  ],
+  "formulas": [
+   {
+    "label": "Controlled entry %",
+    "expr": "controlled entries ÷ all entries"
+   },
+   {
+    "label": "Entry value",
+    "expr": "shot attempts that follow ÷ entries of that type"
+   },
+   {
+    "label": "Controlled exit %",
+    "expr": "exits with possession ÷ all exit attempts"
+   },
+   {
+    "label": "Entry defense",
+    "expr": "opponent's controlled entries ÷ opponent's entries, defender on the ice"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. A team makes 60 five-on-five entries in a game, half carried in and half dumped. If each carry produces 0.6 shot attempts and each dump 0.3, close to the league rates in the Sloan study, that's 18 attempts from carries and 9 from dumps. Turn five of those dumps into carries and the team picks up one and a half more attempts without changing anything else about how it plays.",
+  "after": [
+   "The definitions matter, and they aren't universal. All Three Zones counts a controlled entry as \"skating over the line or passing to a teammate at the blue line,\" and it counts a denied entry as a failed entry for the attacker. Exits split three ways, with possession, without it and failed. In the Sloan study the observers agreed on how to classify an entry more than 85% of the time, so careful trackers can still disagree on as many as one in seven."
+  ],
+  "variants": [
+   {
+    "term": "Controlled entry",
+    "def": "Carried or passed across the blue line with possession."
+   },
+   {
+    "term": "Dump-in",
+    "def": "Shot or chipped into the zone to be chased, or dumped to make a line change."
+   },
+   {
+    "term": "Entry denial",
+    "def": "A defender stops the entry at the line. A failed entry for the attacker."
+   },
+   {
+    "term": "Controlled exit",
+    "def": "Carried or passed out of the defensive zone with possession."
+   },
+   {
+    "term": "Shot assist",
+    "def": "The pass before any shot attempt, tracked by All Three Zones like an assist on every shot."
+   }
+  ]
+ },
+ "meaning": [
+  "Entry and exit data measures the neutral zone, the part of the ice the league's official numbers skip.",
+  "The headline number is the gap between carrying and dumping. In the Sloan study's 2011-12 data, controlled entries produced 0.62 shot attempts apiece for the league outside Philadelphia, dump-ins produced 0.28, and goals followed the same pattern at more than twice the rate. The risk is smaller than you'd guess. Only 14% of carry-in attempts in the study's Capitals games ended in a turnover, and the authors worked out that a player needs to be just 34% sure a carry will work before it's the better play.",
+  "Who can do it is a skill question. Tulsky found that high-end forwards carry the puck in on more than 70% of their entries while grinders get as low as 30%. Defense works at the same line. In the Flyers games tracked for Tulsky's 2014 piece, Braydon Coburn allowed a carry-in on 62.8% of the entries that came at him and broke up 11.7%. Andrew MacDonald's numbers were 78.1% and 4.7%.",
+  "Exits follow the same rule. In Costella's playoff series (six games at even strength), controlled exits led to an entry attempt by the exiting team 88% of the time and dump-outs 29%. The 2019 Hockey-Graphs study found carries and passes out of the zone worked almost nine times in ten and dump-outs about one in five. That's a controlled exit almost four times as likely to work."
+ ],
+ "uses": [
+  {
+   "title": "Deciding when to dump",
+   "html": "The Sloan paper's practical answer was a threshold. A carry attempt was worth a net 0.42 shots, against 0.12 for a dump-and-chase and minus-0.10 for a dump-and-change. So a puck carrier should try to carry it whenever he's at least 34% confident it'll work, and on those numbers a dump-in is the fallback when the carry isn't there. It's a coaching rule you can test on any tracked game."
+  },
+  {
+   "title": "Splitting shot numbers into parts",
+   "html": "Is a team's shot problem in the neutral zone or the offensive zone? Count its entries and the attempts each one produces and you can tell. That was the point of the 2013 paper's title, \"Using Zone Entry Data to Separate Offensive, Neutral, and Defensive Zone Performance.\" A team that's getting in often but producing little needs a different fix from one that can't get in at all."
+  },
+  {
+   "title": "Grading defensemen at both blue lines",
+   "html": "Box scores give a defenseman blocks and hits. Entry tracking shows you whether opponents can carry the puck past him (Coburn against MacDonald is the textbook case). Exit tracking shows whether he gets the puck out with control, the half of the job the exit studies tie to whether his team gets the next entry. Neither shows up anywhere in the NHL's own numbers."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Somebody has to watch",
+   "html": "Every number here comes from a person with a video feed and a spreadsheet. Trained observers in the Sloan study agreed more than 85% of the time, which is good and still leaves room for one tracker's carry to be another's dump."
+  },
+  {
+   "title": "Public samples are partial",
+   "html": "All Three Zones usually covers 30 to 50 games per team, so a player's numbers rest on a fraction of his season, and the vendor data teams buy isn't public."
+  },
+  {
+   "title": "Not every dump-in is a mistake",
+   "html": "A dump to change lines isn't the same play as a dump to forecheck, and the Sloan paper valued them differently (minus-0.10 against plus-0.12). Counting every dump-in as a failure ignores why it happened."
+  },
+  {
+   "title": "The NHL's own data can't fill the gap",
+   "html": "NHL EDGE tracks the puck and players, but its public zone numbers stop at time spent in each zone and zone starts. You can't rebuild entries or exits from anything the league posts."
+  }
+ ],
+ "related": [
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "Counts the shot attempts that entries produce."
+  },
+  {
+   "slug": "zone-starts",
+   "name": "Zone starts",
+   "abbr": "OZS%",
+   "vs": "Where a shift begins after a faceoff. Entries are how play gets there."
+  },
+  {
+   "slug": "scoring-chances",
+   "name": "Scoring chances",
+   "abbr": "SCF",
+   "vs": "The other outcome the 2013 study measured per entry."
+  },
+  {
+   "slug": "takeaways-and-giveaways",
+   "name": "Takeaways and giveaways",
+   "abbr": "TK, GV",
+   "vs": "The NHL's own turnover counts. A failed exit is often a giveaway."
+  },
+  {
+   "slug": "five-on-five",
+   "name": "Five-on-five",
+   "abbr": "5v5",
+   "vs": "The game state the entry research measured."
+  },
+  {
+   "slug": "shot-quality",
+   "name": "Shot quality",
+   "abbr": "",
+   "vs": "What happens after the entry, once the shot comes."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Using Zone Entry Data To Separate Offensive, Neutral, And Defensive Zone Performance",
+   "publisher": "Tulsky, Detweiler, Spencer and Sznajder, MIT Sloan Sports Analytics Conference, March 2013 (Wayback Machine copy)",
+   "url": "http://web.archive.org/web/20180820234018/http://www.sloansportsconference.com:80/wp-content/uploads/2013/Using%20Zone%20Entry%20Data%20To%20Separate%20Offensive,%20Neutral,%20And%20Defensive%20Zone%20Performance.pdf",
+   "note": "330 games, shots and goals per entry, 14% turnovers, net values, 34% break-even, 85% observer agreement, NHL doesn't track it"
+  },
+  {
+   "label": "Philadelphia Flyers zone entries",
+   "publisher": "Broad Street Hockey (Eric Tulsky), October 25, 2011",
+   "url": "https://www.broadstreethockey.com/post/philadelphia-flyers-zone-entries/",
+   "note": "carry, pass or dump; 0.51 vs 0.20 shot attempts"
+  },
+  {
+   "label": "Zone entry article archive",
+   "publisher": "Broad Street Hockey",
+   "url": "https://www.broadstreethockey.com/post/zone-entry-article-archive/",
+   "note": "tracking started in the 2011 playoffs"
+  },
+  {
+   "label": "Using zone entries to measure defensive contributions",
+   "publisher": "SB Nation (Eric Tulsky), April 9, 2014",
+   "url": "https://www.sbnation.com/nhl/2014/4/9/5592622/nhl-stats-zone-entries-defense",
+   "note": "carry-against and break-up rates; 70% vs 30% carry rates"
+  },
+  {
+   "label": "Eric Tulsky named Carolina Hurricanes general manager",
+   "publisher": "NHL.com, June 18, 2024",
+   "url": "https://www.nhl.com/news/eric-tulsky-named-carolina-hurricanes-general-manager",
+   "note": "consultant from 2014, GM in 2024"
+  },
+  {
+   "label": "All Three Zones (about and player-card FAQ)",
+   "publisher": "Corey Sznajder",
+   "url": "https://www.patreon.com/CSznajder/about",
+   "note": "2013-14 full season, public since 2016-17, 30-50 games per team, definitions"
+  },
+  {
+   "label": "Two years of research, 1,230 games watched",
+   "publisher": "The Hockey News (Dom Luszczyszyn), September 29, 2015",
+   "url": "https://thehockeynews.com/news/article/two-years-of-research-1230-games-watched-why-neutral-zone-play-is-much-more-important-than-you-think",
+   "note": "Sznajder watched every 2013-14 game"
+  },
+  {
+   "label": "How should we interpret microstats?",
+   "publisher": "JFresh, October 1, 2020",
+   "url": "https://jfresh.substack.com/p/how-should-we-interpret-microstats",
+   "note": "manual tracking; CJ Turtoro's A3Z dashboard"
+  },
+  {
+   "label": "Clearing the defensive zone: the dangers of dumping the puck out",
+   "publisher": "Jennifer Lute Costella, May 19, 2015",
+   "url": "https://jenlc13.wordpress.com/2015/05/19/clearing-the-defensive-zone-the-dangers-of-dumping-the-puck-out/",
+   "note": "88% vs 29% entry attempts after exits"
+  },
+  {
+   "label": "Why possession is the key to zone exits",
+   "publisher": "Hockey-Graphs, July 30, 2019",
+   "url": "https://hockey-graphs.com/2019/07/30/why-possession-is-the-key-to-zone-exits/",
+   "note": "carry and pass exits work almost nine times in ten, dump-outs one in five"
+  },
+  {
+   "label": "NHL EDGE advanced stats section",
+   "publisher": "NHL.com, October 23, 2023",
+   "url": "https://www.nhl.com/news/nhl-edge-advanced-stats-section-brings-fans-closer-to-game",
+   "note": "EDGE reports puck zone time"
+  },
+  {
+   "label": "Teamworks buys Sportlogiq",
+   "publisher": "BetaKit, January 21, 2026",
+   "url": "https://betakit.com/teamworks-the-operating-system-for-sports-buys-hockey-analytics-platform-sportlogiq/",
+   "note": "used by 97% of NHL teams"
+  },
+  {
+   "label": "Sportlogiq metrics",
+   "publisher": "Sportlogiq",
+   "url": "https://www.sportlogiq.com/2020/08/19/elementor-2527/",
+   "note": "controlled entries among its metrics"
+  }
+ ],
+ "method": "Every figure on this page comes from the published research cited in Sources; none is a Wes & Woodward calculation except the worked example, whose numbers are invented. The NHL publishes no entry or exit data, so there are no 2025-26 league or Red Wings benchmarks here."
+}

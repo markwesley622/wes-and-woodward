@@ -2,6 +2,8 @@
 import '../styles/global.css';
 import wordmarkRaw from '../../brand/wes-and-woodward-wordmark-black.svg?raw';
 import D from '../../data/site/dashboard.json';
+import { termCards, LABELS } from '../lib/terms.js';
+import { glossary } from '../lib/glossary.js';
 
 const { title = 'Wes & Woodward', description = 'Detroit hockey, by the numbers.', schema = null, ogType = 'website' } = Astro.props;
 const base = import.meta.env.BASE_URL;
@@ -18,10 +20,10 @@ const pageNodes = schema ? (Array.isArray(schema) ? schema : [schema]) : [{ '@ty
 const TEAM = { '@type': 'SportsTeam', '@id': `${SITE}/team/#team`, name: 'Detroit Red Wings', sport: 'Ice hockey', url: `${SITE}/team/` };
 const teamNode = JSON.stringify(pageNodes).includes(TEAM['@id']) && !pageNodes.some((n) => n['@id'] === TEAM['@id']) ? [TEAM] : [];
 // breadcrumb trail from the URL: Home, then the section index where one exists, then this page (named from its title)
-const SECTIONS = { players: 'Players', prospects: 'Prospects' };
+const SECTIONS = { players: 'Players', prospects: 'Prospects', glossary: 'Glossary' };
 const here = new URL(Astro.url.pathname, SITE).href, segs = Astro.url.pathname.split('/').filter(Boolean);
 const crumbs = segs.length ? [{ name: 'Home', item: `${SITE}/` }, ...(segs.length > 1 && SECTIONS[segs[0]] ? [{ name: SECTIONS[segs[0]], item: `${SITE}/${segs[0]}/` }] : []),
-  { name: Astro.props.crumb ?? title.replace(/ — Wes & Woodward$/, '').replace(/ — Prospect$/, ''), item: here }] : [];
+  { name: Astro.props.crumb ?? title.replace(/ (—|\|) Wes & Woodward$/, '').replace(/ — Prospect$/, ''), item: here }] : [];
 const breadcrumb = crumbs.length ? [{ '@type': 'BreadcrumbList', '@id': `${here}#breadcrumb`, itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.item })) }] : [];
 const graph = { '@context': 'https://schema.org', '@graph': [ORG, WEBSITE, ...pageNodes, ...teamNode, ...breadcrumb] };
 const wordmark = wordmarkRaw.replace('<svg ', '<svg class="wm" role="img" aria-label="Wes and Woodward" ').replace('fill="#000000"', 'fill="currentColor"');
@@ -39,6 +41,15 @@ if (D.seasonState === 'offseason') {
   if (NG) banner += ` · ${NG.season.slice(0, 4)}–${NG.season.slice(6)} opens ${mdy(NG.date)} ${vs(NG)} ${NG.opponent}`;
 }
 // preseason and in-season: just `season · record` (Mark's copy, 9/23)
+// global footer: sections, reference (glossary lives here, not in the header), the glossary's pages, data credits
+const footSections = [['Team', `${base}team/`], ['Players', `${base}players/`], ['Prospects', `${base}prospects/`], ['Analysis', `${base}#analysis`]];
+const footReference = [['Glossary', `${base}glossary/`], ['About', `${base}about/`]];
+// eight pages the footer points at: the site's core analytics stats, then the biggest search themes (stat_themes.json)
+const FOOT_GLOSSARY = ['expected-goals', 'corsi', 'goals-saved-above-expected', 'pdo', 'shots-on-goal', 'penalty-minutes', 'plus-minus', 'save-percentage'];
+const footGlossary = FOOT_GLOSSARY.map((slug) => glossary.find((g) => g.slug === slug)).filter(Boolean).map((g) => [g.stat.name, `${base}glossary/${g.slug}/`]);
+const footData = [['NHL API', 'https://api-web.nhle.com'], ['MoneyPuck', 'https://moneypuck.com'], ['HockeyStatCards', 'https://hockeystatcards.com'],
+  ['Natural Stat Trick', 'https://www.naturalstattrick.com'], ['Evolving-Hockey', 'https://evolving-hockey.com'], ['Elite Prospects', 'https://www.eliteprospects.com']];
+const termData = JSON.stringify({ cards: termCards, labels: LABELS });
 const nav = [['Team', `${base}team/`], ['Players', `${base}players/`], ['Prospects', `${base}prospects/`], ['Analysis', `${base}#analysis`], ['About', `${base}about/`]];
 ---
 <!doctype html>
@@ -93,20 +104,132 @@ const nav = [['Team', `${base}team/`], ['Players', `${base}players/`], ['Prospec
     <main>
       <slot />
     </main>
-    <footer>
+    <footer class="foot">
       <div class="shell">
-        <p>
-          Wes &amp; Woodward is an independent publication and is not affiliated with the
-          Detroit Red Wings or the NHL. Data: <a href="https://api-web.nhle.com">NHL API</a>,
-          <a href="https://moneypuck.com">MoneyPuck</a>,
-          <a href="https://hockeystatcards.com">HockeyStatCards</a>,
-          <a href="https://www.naturalstattrick.com">Natural Stat Trick</a>,
-          <a href="https://evolving-hockey.com">Evolving-Hockey</a> and
-          <a href="https://www.eliteprospects.com">Elite Prospects</a>.
-        </p>
+        <div class="foot-top">
+          <div class="foot-brand">
+            <a class="foot-home" href={base} aria-label="Wes and Woodward, home" set:html={wordmark} />
+            <p class="foot-tag">Detroit hockey, by the numbers. Dashboards rebuild every night.</p>
+          </div>
+          <nav class="foot-cols" aria-label="Footer">
+            <div class="foot-col">
+              <p class="mono foot-h">Sections</p>
+              {footSections.map(([label, href]) => <a href={href}>{label}</a>)}
+            </div>
+            <div class="foot-col">
+              <p class="mono foot-h">Reference</p>
+              {footReference.map(([label, href]) => <a href={href}>{label}</a>)}
+            </div>
+            {footGlossary.length > 0 && (
+              <div class="foot-col">
+                <p class="mono foot-h">Glossary</p>
+                {footGlossary.map(([label, href]) => <a href={href}>{label}</a>)}
+                <a class="foot-all" href={`${base}glossary/`}>All stats →</a>
+              </div>
+            )}
+            <div class="foot-col">
+              <p class="mono foot-h">Data</p>
+              {footData.map(([label, href]) => <a href={href} rel="noopener">{label}</a>)}
+            </div>
+          </nav>
+        </div>
+        <div class="foot-base mono lc">
+          <p>Wes &amp; Woodward is an independent publication and is not affiliated with the Detroit Red Wings or the NHL.</p>
+          <p>© {new Date().getFullYear()} Wes &amp; Woodward</p>
+        </div>
       </div>
     </footer>
     </div>
+    <script type="application/json" id="term-data" set:html={termData} />
+    <script>
+      // Hover definitions: any stat label that matches a glossary term (or carries data-term) opens a small card with
+      // the term's short definition and, when the stat has a glossary page, a "Full definition" link. Mouse: hover
+      // (the card stays open while the pointer moves into it). Keyboard: focus, Tab moves into the link, Esc closes.
+      // Touch: tap the label (sortable headers keep their tap for sorting).
+      (() => {
+        const el = document.getElementById('term-data');
+        if (!el) return;
+        const { cards, labels } = JSON.parse(el.textContent);
+        const norm = (t) => t.replace(/[\u2212\u2013]/g, '-').replace(/[↑↓▲▼]/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+        const here = location.pathname;
+        document.querySelectorAll('th, .eb, .tip, [data-term]').forEach((n) => {
+          const id = n.dataset.term || labels[norm(n.textContent)];
+          if (!id || id === 'none' || !cards[id] || n.closest('.term-card')) return;
+          n.dataset.term = id;
+          n.classList.add('term');
+          if (n.title) { n.dataset.note = n.title; n.removeAttribute('title'); }
+          if (!n.matches('a, button, [tabindex]')) n.tabIndex = 0;
+        });
+        if (!document.querySelector('[data-term].term')) return;
+
+        const card = document.createElement('div');
+        card.className = 'term-card';
+        card.id = 'term-card';
+        card.setAttribute('role', 'tooltip');
+        card.hidden = true;
+        document.body.appendChild(card);
+        let owner = null, openT = 0, closeT = 0, lastPtr = 'mouse', openedAt = 0, quiet = null;
+        document.addEventListener('pointerdown', (e) => { lastPtr = e.pointerType || 'mouse'; }, { capture: true });
+
+        const esc = (t) => t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+        const place = (n) => {
+          const r = n.getBoundingClientRect(), w = card.offsetWidth, h = card.offsetHeight, gap = 8, pad = 16;
+          let x = Math.min(Math.max(pad, r.left), innerWidth - w - pad);
+          let y = r.bottom + gap;
+          if (y + h > innerHeight - pad && r.top - gap - h > pad) y = r.top - gap - h;
+          card.style.left = `${x + scrollX}px`;
+          card.style.top = `${y + scrollY}px`;
+        };
+        const open = (n) => {
+          clearTimeout(closeT);
+          if (owner === n && !card.hidden) return;
+          const c = cards[n.dataset.term];
+          const link = c.h && c.h !== here ? `<a class="term-full mono" href="${c.h}">Full definition →</a>` : '';
+          const note = n.dataset.note ? `<p class="term-note mono lc">${esc(n.dataset.note)}</p>` : '';
+          card.innerHTML = `<p class="term-k mono">${esc(c.n)}${c.a ? ` <span>${esc(c.a)}</span>` : ''}</p><p class="term-d">${esc(c.d)}</p>${note}${link}`;
+          if (owner) owner.removeAttribute('aria-describedby');
+          owner = n;
+          n.setAttribute('aria-describedby', 'term-card');
+          card.hidden = false;
+          openedAt = Date.now();
+          place(n);
+        };
+        const close = () => { clearTimeout(openT); card.hidden = true; if (owner) owner.removeAttribute('aria-describedby'); owner = null; };
+        const later = () => { clearTimeout(openT); clearTimeout(closeT); closeT = setTimeout(close, 180); };
+
+        document.addEventListener('pointerover', (e) => {
+          if (e.pointerType !== 'mouse') return;
+          const n = e.target.closest('.term');
+          if (n) { clearTimeout(closeT); clearTimeout(openT); openT = setTimeout(() => open(n), 120); }
+          else if (e.target.closest('.term-card')) clearTimeout(closeT);
+        });
+        document.addEventListener('pointerout', (e) => {
+          if (e.pointerType !== 'mouse') return;
+          const from = e.target.closest('.term, .term-card'), to = e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest('.term, .term-card');
+          if (from && from !== to) later();
+        });
+        document.addEventListener('click', (e) => {
+          const n = e.target.closest('.term');
+          // a tap focuses the label (which opens the card) and then clicks it: only a later tap on the same label closes it
+          if (n && lastPtr !== 'mouse' && !n.matches('[data-sort], a, button')) { owner === n && !card.hidden && Date.now() - openedAt > 400 ? close() : open(n); return; }
+          if (!e.target.closest('.term-card')) close();
+        });
+        document.addEventListener('focusin', (e) => {
+          const n = e.target.closest('.term');
+          if (n && n === quiet) { quiet = null; return; }
+          if (n) open(n); else if (!e.target.closest('.term-card')) close();
+        });
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && !card.hidden) { const o = owner; close(); if (o) { quiet = o; o.focus(); } }
+          if (e.key === 'Tab' && !e.shiftKey && owner && document.activeElement === owner && !card.hidden) {
+            const a = card.querySelector('a'); if (a) { e.preventDefault(); a.focus(); }
+          }
+          if (e.key === 'Tab' && e.shiftKey && document.activeElement && document.activeElement.closest('.term-card') && owner) { e.preventDefault(); owner.focus(); }
+        });
+        addEventListener('scroll', () => { if (!card.hidden && owner) place(owner); }, { passive: true });
+        addEventListener('resize', close);
+      })();
+    </script>
     <script>
       // Header: hides on a deliberate scroll down, returns on any scroll up, and also
       // whenever the pointer comes to the top of the window or focus lands in the header,
@@ -171,9 +294,25 @@ const nav = [['Team', `${base}team/`], ['Players', `${base}players/`], ['Prospec
   .home :global(.wm) { height: 30px; width: auto; }
   .right { display: flex; align-items: center; gap: 28px; }
   .nav { display: flex; gap: 24px; }
-  footer { padding: 36px 0 60px; color: var(--mute); font-size: 12px; line-height: 1.6; }
-  footer a { color: var(--mute); text-decoration: underline; }
-  footer a:hover { color: var(--red); }
+  .foot { margin-top: 0; padding: 56px 0 40px; border-top: 1px solid var(--ink); }
+  .foot-top { display: grid; grid-template-columns: minmax(220px, 1fr) 2.4fr; gap: 48px; padding-bottom: 40px; border-bottom: 1px solid var(--rule); }
+  .foot-home { color: var(--ink); display: inline-block; }
+  .foot-home :global(.wm) { height: 28px; width: auto; }
+  .foot-tag { margin: 14px 0 0; max-width: 30ch; color: var(--mute); font-size: 14px; line-height: 1.5; }
+  .foot-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+  .foot-col { display: flex; flex-direction: column; gap: 9px; min-width: 0; }
+  .foot-h { margin: 0 0 4px; color: var(--mute); }
+  .foot-h::before { content: "// "; color: var(--red); }
+  .foot-col a { font-size: 15px; line-height: 1.3; }
+  .foot-col a:hover { color: var(--red); }
+  .foot-all { color: var(--red); font-size: 13px !important; margin-top: 2px; }
+  .foot-base { display: flex; justify-content: space-between; gap: 24px; padding-top: 20px; color: var(--mute); font-size: 11px; line-height: 1.6; }
+  .foot-base p { margin: 0; }
+  @media (max-width: 900px) {
+    .foot-top { grid-template-columns: 1fr; gap: 32px; }
+    .foot-cols { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; }
+    .foot-base { flex-direction: column; gap: 6px; }
+  }
   @media (max-width: 900px) {
     .right { gap: 14px; }
     .nav { gap: 14px; font-size: 10px; }

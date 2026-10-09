@@ -1,0 +1,333 @@
+{
+ "slug": "goals-saved-above-expected",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Goals saved above expected",
+  "short": "GSAx",
+  "abbr": "GSAx",
+  "aliases": [
+   "GSAx",
+   "goals saved above expectation",
+   "NHL goals saved above expected",
+   "xGA minus GA"
+  ],
+  "category": "Goalie"
+ },
+ "keywords": {
+  "primary": "goals saved above expected",
+  "supporting": [
+   "gsax nhl",
+   "gsax hockey",
+   "goals saved above expected nhl",
+   "what is gsax in hockey",
+   "nhl goals saved above expected"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "Goals Saved Above Expected (GSAx) and How It's Calculated",
+  "description": "Goals saved above expected is the xG a goalie faced minus the goals he allowed. How GSAx works, what it shows, and the Red Wings' goalies, rebuilt nightly.",
+  "h1": "Goals Saved Above Expected (GSAx) in the NHL"
+ },
+ "hero": {
+  "definition": "Goals saved above expected (GSAx) is the expected goals a goalie faced minus the goals he allowed. A positive number means he stopped more than an average goalie would have on the same shots, and a negative one means he let in more. Because every shot gets priced by its danger first, GSAx in hockey grades the goalie apart from the defense in front of him.",
+  "dek": "It's the goaltending number this site leans on, from the Team page to every goalie's player page. <a href=\"/players/john-gibson/\">John Gibson</a> saved 11.7 more goals than expected for Detroit last season and Cam Talbot allowed 13.1 more, which is most of the story of the Wings' crease in two numbers."
+ },
+ "facts": [
+  {
+   "label": "Abbreviation",
+   "value": "GSAx",
+   "sub": "the x is for expected, as in xG"
+  },
+  {
+   "label": "Formula",
+   "value": "xGA − GA",
+   "sub": "expected goals faced minus goals allowed"
+  },
+  {
+   "label": "Average goalie",
+   "value": "0",
+   "sub": "same shots, league-average stopping"
+  },
+  {
+   "label": "Median, 30+ GP",
+   "value": "+4.2",
+   "sub": "51 goalies, 2025-26 (the league total ran +71)"
+  },
+  {
+   "label": "Best, 2025-26",
+   "value": "+29.3",
+   "sub": "Logan Thompson, WSH (30+ GP)"
+  },
+  {
+   "label": "Worst, 2025-26",
+   "value": "−22.4",
+   "sub": "Jordan Binnington, STL (30+ GP)"
+  },
+  {
+   "label": "Red Wings, 2025-26",
+   "value": "+11.7",
+   "sub": "John Gibson; Cam Talbot −13.1"
+  },
+  {
+   "label": "This site uses",
+   "value": "MoneyPuck",
+   "sub": "all situations, rebuilt nightly"
+  }
+ ],
+ "origin": [
+  "The idea is older than the name. Alan Ryder's paper <em>Shot Quality</em>, the same 2004 study that started hockey's expected goals, called save percentage \"a murky statistic\" because goalies don't face the same shots, and argued that \"to measure goaltending, it is necessary to neutralize shot quality.\" He built a shot-quality-neutral save percentage for every team in the 2002-03 season to do it, and while Minnesota ranked first either way, Detroit's goaltending moved up a spot, from eighth to seventh.",
+  "The subtraction itself showed up eight years later, in a paper by Brian Macdonald, Craig Lennon and Rodney Sturdivant. They priced every shot with a regression model, added up each goalie's expected goals against and took away the goals he'd allowed, which they described as \"the number of goals that a goalie saved above what is expected.\" That's GSAx in everything but the abbreviation. Their leader for 2010-11 was Tim Thomas, who allowed 103 goals on 145 expected.",
+  "MoneyPuck and Evolving-Hockey both publish GSAx in the NHL today, each defined as expected goals against minus goals against and each built on its own expected-goals model, and NHL.com's Seattle Kraken analytics column walked fans through it in 2021. This site uses MoneyPuck's version in the <a href=\"/team/\">Team page</a>'s goalie table, on the goaltending axis of the team radar and in the rating on each goalie's player page."
+ ],
+ "calculation": {
+  "intro": [
+   "GSAx takes two numbers, and the hard one comes from the expected-goals model. MoneyPuck prices every unblocked attempt a goalie faces, adds those prices up into his expected goals against, and subtracts the goals that beat him. Here's what goes in:"
+  ],
+  "inputs": [
+   "Every unblocked shot attempt against him, goals, saves and misses alike",
+   "Each attempt's expected-goal value from MoneyPuck's model (location, shot type, the play before it, skaters on the ice)",
+   "The goals he allowed on those attempts",
+   "His minutes or his shots faced, for the rate versions"
+  ],
+  "formulas": [
+   {
+    "label": "One goalie",
+    "expr": "GSAx = expected goals against (xGA) − goals against (GA)"
+   },
+   {
+    "label": "Per shot",
+    "expr": "dFSv% = GSAx ÷ unblocked attempts faced"
+   },
+   {
+    "label": "Per 60",
+    "expr": "GSAx/60 = GSAx × 60 ÷ minutes played"
+   },
+   {
+    "label": "Team",
+    "expr": "team GSAx = team xGA − team GA, empty nets included"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A goalie faces 30 unblocked attempts in a game, 20 of them from the point and bad angles at 0.03 apiece, eight from the slot at 0.15 and two rebounds at 0.40, which adds up to 2.6 expected goals. Allow two and he's plus-0.6 for the night. Allow the same two on a night of nothing but point shots, worth 0.9 combined, and he's minus-1.1, because the model expected him to stop nearly all of them.",
+  "after": [
+   "Misses count on the expected side, which surprises people. MoneyPuck prices the chance that an unblocked attempt becomes a goal, so each value already includes the odds it misses the net. Blocked attempts aren't counted at all, and neither are empty-net goals, which go against the team and never against a goalie."
+  ],
+  "variants": [
+   {
+    "term": "GSAx",
+    "def": "The season or career total, in goals. MoneyPuck and Evolving-Hockey both publish it."
+   },
+   {
+    "term": "dFSv%",
+    "def": "Evolving-Hockey's per-shot version, Fenwick save percentage minus expected Fenwick save percentage. It works out to GSAx divided by unblocked attempts faced.",
+    "slug": "expected-save-percentage"
+   },
+   {
+    "term": "Save % above expected",
+    "def": "MoneyPuck's rate version, a goalie's save percentage minus his expected save percentage.",
+    "slug": "expected-save-percentage"
+   },
+   {
+    "term": "GSAA",
+    "def": "The older stat. It prices every shot at the league-average save percentage, whatever its danger.",
+    "slug": "goals-saved-above-average"
+   },
+   {
+    "term": "Team GSAx",
+    "def": "A team's expected goals against minus its goals against, the Team page tile. Empty-net goals count here."
+   }
+  ]
+ },
+ "meaning": [
+  "GSAx measures stopping. Zero is an average goalie on the same shots, and every goal above or below it is one the goalie found or gave back. The league total doesn't have to come out to zero, and last season it didn't, since MoneyPuck's goalies allowed 7,575 goals on 7,646.4 expected, a combined plus-71.4 that leaves the typical regular above the line. Among the 51 goalies who played at least 30 games, the median was plus-4.2 (across all 98, it was minus-1.0).",
+  "Logan Thompson led the NHL in goals saved above expected at plus-29.3 for Washington, with Jeremy Swayman and Ilya Sorokin close behind, and Jordan Binnington finished last at minus-22.4. <a href=\"/players/john-gibson/\">Gibson</a>'s plus-11.7 ranked 12th of the 51 regulars, inside the top quarter, while Talbot's minus-13.1 ranked 47th.",
+  "Put Detroit's two together and they nearly cancel. Gibson's plus and Talbot's minus net out to minus-1.4, and the team figure, which adds empty-net goals and the expected goals behind them, came to minus-1.6 (21st in the league, and minus-0.8 at five-on-five). The Wings' goaltending as a whole was average. The split between their two goalies wasn't.",
+  "How much should one season of GSAx count for? Not much, by itself. Among the 39 goalies who played 1,500 or more minutes in both of the last two seasons, the correlation between one year's GSAx per unblocked attempt and the next was 0.21, and you don't have to look past Detroit's crease to see what that means in practice. Talbot was plus-12.8 in 47 games for the Wings the year before he finished minus-13.1. This site's goalie ratings build the doubt in, trusting a season's GSAx only halfway once a goalie reaches 1,500 minutes."
+ ],
+ "uses": [
+  {
+   "title": "Splitting the goalie from his defense",
+   "html": "Gibson and Talbot played for the same team, so you'd expect their shot quality to look alike, and it did (Talbot's unblocked attempts against averaged 0.047 expected goals apiece, Gibson's 0.048). Gibson allowed 144 goals on 155.7 expected, and Talbot allowed 93 on 79.9. That's one defense producing opposite results, and GSAx hands the difference to the two men in net."
+  },
+  {
+   "title": "Grading goalies on different teams",
+   "html": "Scott Wedgewood led the league's regulars in save percentage at .921 and finished fifth in GSAx. Why didn't the save-percentage leader lead in GSAx too? Because Colorado's defense gave him one of the gentler shot mixes in the league. Thompson's .912 trailed Wedgewood's, but he faced more than 1,100 additional unblocked attempts, and harder ones, which is how he finished first. GSAx answers the question save percentage can't, which is how many goals a goalie was worth given the work he got."
+  },
+  {
+   "title": "Rating a goalie's season on this site",
+   "html": "Every goalie on the <a href=\"/team/\">Team page</a> carries his GSAx and a league percentile among goalies with 600 or more minutes, and the radar's goaltending axis uses the team total. On a player page it becomes a 0-100 rating where 50 is the average NHL goalie in that pool, with a confidence band that tightens as his minutes climb. You're reading the same MoneyPuck number in all three places."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night from MoneyPuck and the NHL's club stats. The team's goaltending number comes first, then the expected and actual goals behind it, then each Red Wings goalie.",
+  "tiles": [
+   {
+    "tile": "gsax"
+   },
+   {
+    "label": "Expected goals against",
+    "source": "team",
+    "path": "situations.all.xGoalsAgainst",
+    "format": "num1",
+    "sub": "all situations, MoneyPuck"
+   },
+   {
+    "label": "Goals against",
+    "source": "team",
+    "path": "situations.all.goalsAgainst",
+    "format": "int",
+    "sub": "all situations, empty nets included"
+   }
+  ],
+  "leaders": {
+   "source": "goalies",
+   "sort": "gsax",
+   "limit": 5,
+   "caption": "Red Wings goalies by goals saved above expected, all situations",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "GS",
+     "path": "gamesStarted",
+     "format": "int"
+    },
+    {
+     "label": "SV%",
+     "path": "savePct",
+     "format": "sv3"
+    },
+    {
+     "label": "GAA",
+     "path": "gaa",
+     "format": "num2"
+    },
+    {
+     "label": "GSAx",
+     "path": "gsax",
+     "format": "signed1"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. A goalie's GSAx swings by whole goals from one night to the next this early, and even a full season of it carries over weakly, so read this as a record of what's happened.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "It inherits the xG model's blind spots",
+   "html": "GSAx is only as fair as the expected goals underneath it. Public models don't see the passes before a shot, so a cross-crease one-timer gets priced like any other shot from that spot, and neither MoneyPuck's nor Evolving-Hockey's published inputs include screens or where the goalie was standing."
+  },
+  {
+   "title": "One season is a small sample",
+   "html": "A correlation of 0.21 means one season's GSAx explains about 4% of the spread in the next, and Talbot's swing of almost 26 goals between seasons came with the same team in front of him."
+  },
+  {
+   "title": "Rebounds land on the goalie's own ledger",
+   "html": "A rebound a goalie gives up becomes another shot against him, and its expected goals go on his tab. Save it and he banks credit for a chance his first save created. MoneyPuck publishes a flurry-adjusted version that gives less credit for rebound chances than for first shots."
+  },
+  {
+   "title": "The sites don't agree",
+   "html": "MoneyPuck and Evolving-Hockey train different models, so the same goalie can carry a different GSAx on each site. Pick one source and stay with it when you compare goalies. Every number on this page is MoneyPuck's, from its file for last season as published when this page was reviewed."
+  }
+ ],
+ "related": [
+  {
+   "slug": "goals-saved-above-average",
+   "name": "Goals saved above average",
+   "abbr": "GSAA",
+   "vs": "Prices every shot at the league-average save rate. GSAx prices each one by danger."
+  },
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "Saves over shots on goal, with no adjustment for shot quality."
+  },
+  {
+   "slug": "expected-save-percentage",
+   "name": "Expected save percentage",
+   "abbr": "xSV%",
+   "vs": "The same comparison as a rate, per shot faced."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "The model underneath, pointed at shooters instead of goalies."
+  },
+  {
+   "slug": "high-danger-save-percentage",
+   "name": "High-danger save percentage",
+   "abbr": "HDSV%",
+   "vs": "Save rate on the shots from right in front, with no per-shot pricing."
+  },
+  {
+   "slug": "goals-against-average",
+   "name": "Goals against average",
+   "abbr": "GAA",
+   "vs": "Goals allowed per 60, with shot volume and quality ignored."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does GSAx count the playoffs?",
+   "a": "Only if you ask for it. MoneyPuck publishes separate regular-season and playoff files, and every number on this page comes from the 2025-26 regular season. Even a run to the Final is a fraction of a full regular season, so a goalie's playoff GSAx is an even smaller sample than his regular-season one."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Glossary",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "GSAx, expected goals against, expected save percentage, flurry adjustment"
+  },
+  {
+   "label": "Standard Goalie Tables",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/standard-goalie-tables/",
+   "note": "GSAx = xGA − GA, dFSv%"
+  },
+  {
+   "label": "Shot Quality",
+   "publisher": "Alan Ryder, HockeyAnalytics.com, January 2004",
+   "url": "https://hockeyanalytics.com/Research_files/Shot_Quality.pdf",
+   "note": "save percentage as \"a murky statistic\", shot-quality-neutral save percentage, 2002-03 rankings"
+  },
+  {
+   "label": "Evaluating NHL Goalies, Skaters, and Teams Using Weighted Shots",
+   "publisher": "Brian Macdonald, Craig Lennon and Rodney Sturdivant, arXiv 1205.1746, May 2012",
+   "url": "https://arxiv.org/abs/1205.1746",
+   "note": "expected goals against minus goals against, Tim Thomas's 2010-11 figures"
+  },
+  {
+   "label": "Analytics with Alison: Sizing up Goaltending",
+   "publisher": "NHL.com (Seattle Kraken), October 28, 2021",
+   "url": "https://www.nhl.com/kraken/news/topic/analytics-with-alison/analytics-with-alison-seattle-kraken-goaltending-stats-327310028",
+   "note": "GSAx explained for fans"
+  },
+  {
+   "label": "Expected Goals Model",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/about.htm",
+   "note": "model inputs; no goalie positioning or screens listed"
+  },
+  {
+   "label": "A New Expected Goals Model for Predicting Goals in the NHL",
+   "publisher": "Evolving-Hockey (Josh and Luke Younggren)",
+   "url": "https://evolving-hockey.com/blog/a-new-expected-goals-model-for-predicting-goals-in-the-nhl/",
+   "note": "pre-shot passes the model can't see"
+  },
+  {
+   "label": "2025-26 and 2024-25 regular-season goalie and team files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league, team and goalie figure on this page"
+  }
+ ],
+ "method": "League, team and goalie figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season goalie and team files, all situations, downloaded October 9, 2026 (raw/mp_goalies_2025.csv, raw/mp_teams_2025.csv). GSAx is xGoals minus goals; rankings use the 51 goalies with 30+ games played; team GSAx is xGoalsAgainst minus goalsAgainst from the team file; expected goals per attempt divide by unblocked attempts. The year-to-year correlation (Pearson, GSAx per unblocked attempt) uses the 39 goalies with 1,500+ minutes in both 2024-25 and 2025-26, with 2024-25 from MoneyPuck's goalie file downloaded the same day (raw/mp_goalies_2024_for_gsax_repeatability_dl2026-10-09.csv). The 1,500-minute half-trust and 600-minute rating pool come from this site's pipeline (pipeline/build_player.py). The Red Wings section rebuilds nightly from MoneyPuck and the NHL's club stats."
+}

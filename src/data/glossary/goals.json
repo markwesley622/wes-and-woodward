@@ -1,0 +1,345 @@
+{
+ "slug": "goals",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Goals",
+  "short": "goals",
+  "abbr": "G",
+  "aliases": [
+   "G",
+   "goals scored",
+   "EVG",
+   "PPG",
+   "SHG",
+   "ENG"
+  ],
+  "category": "Skater",
+  "plural": true
+ },
+ "keywords": {
+  "primary": "what does g mean in hockey",
+  "supporting": [
+   "goals in hockey",
+   "what is g in hockey",
+   "g in hockey",
+   "g meaning hockey",
+   "what does g stand for in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Does G Mean in Hockey and How Goals Are Credited",
+  "description": "What does G mean in hockey? Goals. How the scorer credits them, what a good total is, what they predict, and the Red Wings' goal leaders, rebuilt nightly.",
+  "h1": "What Does G Mean in Hockey? Goals (G)"
+ },
+ "hero": {
+  "definition": "A goal (G) is credited to the last player on the scoring team to touch the puck before it crosses the goal line, and it counts as one point in his record. It's the result that every other stat on this site, expected goals included, is trying to predict.",
+  "dek": "What does G mean in hockey? In a stat column it's goals, though on a hockey roster the same G can stand for goalie. The average NHL team scored 3.08 goals a game last season, and the In-Arena Scorer decided whose name went on every one."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "G",
+   "sub": "split into EVG, PPG and SHG by situation"
+  },
+  {
+   "label": "Unit",
+   "value": "1 point",
+   "sub": "each goal counts once in a player's points"
+  },
+  {
+   "label": "Team average",
+   "value": "3.08",
+   "sub": "goals per game, 2025-26"
+  },
+  {
+   "label": "Median forward",
+   "value": "16",
+   "sub": "goals, 327 forwards with 60+ games, 2025-26"
+  },
+  {
+   "label": "Leader, 2025-26",
+   "value": "53",
+   "sub": "Nathan MacKinnon, Colorado"
+  },
+  {
+   "label": "Red Wings leader",
+   "value": "41",
+   "sub": "Alex DeBrincat, tied for 11th in the NHL"
+  },
+  {
+   "label": "Credited by",
+   "value": "Scorer",
+   "sub": "the In-Arena Scorer; the league rules on appeals"
+  },
+  {
+   "label": "This site uses",
+   "value": "NHL stats",
+   "sub": "official counts, with MoneyPuck's ixG alongside"
+  }
+ ],
+ "origin": [
+  "Goals are the one stat with a complete record from the league's first season. The NHL's database counts them back to 1917-18, when Joe Malone scored 44 times in 20 games for the Canadiens. Assists were scarce then, with fewer than half as many credited as goals, so goals made up 70% of the points on the board that winter.",
+  "Who gets the goal is the In-Arena Scorer's call, and Rule 78.1 makes his decision final over the referee's. Rule 78.2 credits the player who \"propelled the puck into the opponent's goal,\" and Rule 33.2 spells out what that means in practice. The goal goes to whichever attacker touched the puck last, so a point shot that clips a teammate's shin pad on the way in is the teammate's goal, whoever wound up for it. If a defender puts the puck into his own net, the last attacker to touch it gets the credit.",
+  "The call isn't locked at the final horn, either. The scorer works from video replay, a team has 24 hours after the game to ask for a change, and the League Official Scorer (appointed by Hockey Operations) has the last word. That's how a goal you heard announced for one player can sit under a teammate's name in the next morning's box score.",
+  "The league hands out a trophy for the total. The Maurice \"Rocket\" Richard Trophy, donated by the Canadiens in 1999, goes to the regular season's top goal scorer. Teemu Selanne won the first, and Nathan MacKinnon won last season's with 53. NHL.com, Hockey-Reference and MoneyPuck all publish goals from the league's official scoring, though MoneyPuck's skater file for last season comes in two goals short of the NHL's count, which is reason enough to name your source every time you quote one."
+ ],
+ "calculation": {
+  "intro": [
+   "A goal's math is addition. The work happens in the rule that decides whose goal it is and in the tags the scorer attaches to it, which split one total into game situations and let you count power-play goals, empty-netters and overtime winners separately. These are the inputs:"
+  ],
+  "inputs": [
+   "The whole puck across the goal line, between the posts and under the crossbar (Rule 78.4)",
+   "The last player on the scoring team to touch it (Rule 33.2)",
+   "The manpower when it went in: even strength, power play or shorthanded",
+   "Whether the other team's net was empty",
+   "The period, which flags overtime goals",
+   "The final score, which flags the game-winning goal"
+  ],
+  "formulas": [
+   {
+    "label": "One goal",
+    "expr": "G = 1, credited to the last scoring-team player to touch the puck"
+   },
+   {
+    "label": "Season",
+    "expr": "G = EVG + PPG + SHG"
+   },
+   {
+    "label": "Shooting",
+    "expr": "G = shots on goal × shooting %"
+   },
+   {
+    "label": "Rate",
+    "expr": "G/GP = goals ÷ games played"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A winger takes 200 shots on goal and scores on 10% of them, so he finishes with 20 goals. If five came on the power play and one shorthanded, the other 14 came at even strength. Over an 80-game season that's a goal every fourth night.",
+  "after": [
+   "Shootout goals don't count for players. Rule 84.4 gives the team that wins a shootout one extra goal in the final score, but the shooter who decides it gets nothing in his personal stats, and the losing goalie isn't charged with it. That's why the NHL's stats pages and its standings disagree on last season's league-wide goal total by 119, one for each shootout."
+  ],
+  "variants": [
+   {
+    "term": "EVG",
+    "def": "Even-strength goals, scored with the same number of skaters on each side. 6,286 of the league's 8,086 in 2025-26.",
+    "slug": "even-strength-goals"
+   },
+   {
+    "term": "PPG",
+    "def": "Power-play goals, scored with more skaters on the ice than the opponent. 1,595 in 2025-26.",
+    "slug": "power-play-goals-and-points"
+   },
+   {
+    "term": "SHG",
+    "def": "Shorthanded goals, scored while outnumbered. 205 in 2025-26.",
+    "slug": "shorthanded-goals-and-points"
+   },
+   {
+    "term": "ENG",
+    "def": "Empty-net goals, scored with the other team's goalie pulled. They count in a player's total like any other goal."
+   },
+   {
+    "term": "GWG",
+    "def": "The goal that put the winner one ahead of the loser's final total.",
+    "slug": "game-winning-goals"
+   },
+   {
+    "term": "OTG",
+    "def": "Goals scored in overtime, each of which ends the game.",
+    "slug": "overtime-goals"
+   }
+  ]
+ },
+ "meaning": [
+  "Goals measure the result and nothing that came before it. They don't tell you how good the chance was, who created it or whether the goalie should've stopped it. They're still the currency the standings are paid in, since the rulebook awards every game to whichever team finishes with more of them, and the meaning of G in hockey box scores hasn't changed since Malone's first winter.",
+  "The baseline moves with the league, so it's worth knowing last season's. Detroit scored 2.91 goals a game (22nd in the league), a little under the average team's pace. Among the 327 forwards who played at least 60 games, the median scored 16 and the top tenth scored 32 or more, while defensemen lived on a different scale entirely (their median was five). Fifteen players reached 40, and only MacKinnon and Montreal's Cole Caufield reached 50.",
+  "Detroit's scoring ran through two players. Alex DeBrincat scored 41, tied for 11th in the league, and Dylan Larkin added 34. Nobody else on the roster reached 30 (Lucas Raymond was next with 25), which left the Wings thin behind their top two.",
+  "What do goals predict? Future goals, with more noise than the simplest stat in the sport ought to carry. Among the 260 forwards who played 60 games in each of the last two seasons, goals per game correlated at 0.74 across the pair, and points per game held up better at 0.88. Shooting percentage is the culprit. The same forwards' shots per game repeated at 0.89, their shooting percentage at 0.37."
+ ],
+ "uses": [
+  {
+   "title": "Splitting goals by situation",
+   "html": "The power play inflates some totals more than others. League-wide, about one goal in five came with the man advantage last season. <a href=\"/players/alex-debrincat/\">DeBrincat</a> scored 15 of his 41 there and <a href=\"/players/dylan-larkin/\">Larkin</a> 14 of his 34, close to double the league rate for both, which is worth knowing before you compare either one with a forward who never sees power-play time."
+  },
+  {
+   "title": "Checking goals against chances",
+   "html": "Line a player's goals up against his individual expected goals and you can see which totals the bounces built. <a href=\"/players/lucas-raymond/\">Raymond</a> scored 25 on 19.5 ixG last season, a 5.5-goal surplus, while Larkin scored 34 on 33.8, almost exactly what his shots were worth. Raymond's is the gap to watch. MoneyPuck's own notes on shooting talent warn that one season of finishing carries a lot of luck."
+  },
+  {
+   "title": "Breaking a total into shots and shooting",
+   "html": "Every goal total is shots times shooting percentage. MacKinnon led the league with 350 shots on goal and scored on 15.1% of them, while Caufield got to 51 on far fewer shots by converting 19.8% of his, against a league rate of 11.1%. Volume repeats. Percentage mostly doesn't, which is the good news in DeBrincat's line. His 14.3% was the lowest of the 15 players who scored 40, so his total rests on shots."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night. Team totals come from MoneyPuck, and the Red Wings' goal leaders come from the NHL's official stats with MoneyPuck's ixG alongside.",
+  "tiles": [
+   {
+    "label": "Goals for, all situations",
+    "source": "team",
+    "path": "situations.all.goalsFor",
+    "format": "int",
+    "sub": "MoneyPuck count, shootouts excluded"
+   },
+   {
+    "label": "Goals for, five-on-five",
+    "source": "team",
+    "path": "situations.5on5.goalsFor",
+    "format": "int",
+    "sub": "MoneyPuck count"
+   },
+   {
+    "tile": "finishing"
+   }
+  ],
+  "leaders": {
+   "source": "skaters",
+   "sort": "goals",
+   "ascending": false,
+   "limit": 8,
+   "caption": "Red Wings skaters by goals, all situations",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "Goals",
+     "path": "goals",
+     "format": "int"
+    },
+    {
+     "label": "Shots",
+     "path": "shots",
+     "format": "int"
+    },
+    {
+     "label": "SH%",
+     "path": "shootingPct",
+     "format": "pct1"
+    },
+    {
+     "label": "ixG",
+     "path": "ixG",
+     "format": "num2"
+    },
+    {
+     "label": "Goals − ixG",
+     "path": "goalsAboveExpected",
+     "format": "signed2"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. Shooting percentages swing hard this early, so treat these totals as a record of the last few weeks.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "It ignores how good the chance was",
+   "html": "A tap-in and a long wrister through traffic each count once. So does an empty-netter, and there were 508 of those last season, 6.3% of the league's goals (DeBrincat and Larkin had four apiece)."
+  },
+  {
+   "title": "One season is a small sample",
+   "html": "Goal totals ride on shooting percentage, which moves a lot year to year. That's why goals per game repeat less reliably than points per game, and why one hot season shouldn't set a player's price."
+  },
+  {
+   "title": "It gives one player the credit",
+   "html": "A goal is one line in one player's record, so the pass that set it up lands in the assists column and the defenseman who won the puck back three passes earlier gets nothing at all."
+  },
+  {
+   "title": "The scorer makes judgment calls",
+   "html": "Deflections, scrambles and own goals all come down to the In-Arena Scorer's read of who touched the puck last. Teams can appeal for 24 hours, so the next morning's box score can differ from the one announced in the building."
+  }
+ ],
+ "related": [
+  {
+   "slug": "assists",
+   "name": "Assists",
+   "abbr": "A",
+   "vs": "Credit for the one or two teammates who touched the puck before the scorer."
+  },
+  {
+   "slug": "points",
+   "name": "Points",
+   "abbr": "PTS",
+   "vs": "Goals plus assists, each worth one."
+  },
+  {
+   "slug": "shots-on-goal",
+   "name": "Shots on goal",
+   "abbr": "SOG",
+   "vs": "Goals plus saves. The volume half of every goal total."
+  },
+  {
+   "slug": "shooting-percentage",
+   "name": "Shooting percentage",
+   "abbr": "SH%",
+   "vs": "Goals divided by shots, the half that swings."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "What the chances were worth before the goalie got a say."
+  },
+  {
+   "slug": "game-winning-goals",
+   "name": "Game-winning goals",
+   "abbr": "GWG",
+   "vs": "The one goal per win that put the winner ahead for good."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Who has scored the most goals in NHL history?",
+   "a": "Alex Ovechkin, with 929 regular-season goals through 2025-26, ahead of Wayne Gretzky's 894. Gretzky still holds the single-season record of 92. Gordie Howe's 786 for Detroit are the franchise record, with Steve Yzerman second."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Official Rules 2025-26 (Rules 33, 78 and 84)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "who credits goals, the last-touch rule, own goals, the 24-hour appeal window, shootout goals"
+  },
+  {
+   "label": "Stats glossary",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "goals, empty-net goals, standings goals for vs stats goals for"
+  },
+  {
+   "label": "Skater and team stats, 2025-26 and all seasons",
+   "publisher": "NHL.com stats (api.nhle.com)",
+   "url": "https://www.nhl.com/stats/skaters",
+   "note": "every 2025-26 count, the 1917-18 figures and the career and franchise records"
+  },
+  {
+   "label": "Standings, 2025-26 final",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/standings",
+   "note": "8,205 standings goals and 119 shootouts"
+  },
+  {
+   "label": "Maurice \"Rocket\" Richard Trophy",
+   "publisher": "Hockey Hall of Fame",
+   "url": "https://hhof.com/thecollection/mauricerichardtrophy.html",
+   "note": "donated by the Canadiens in 1999, first winner Selanne for 1998-99"
+  },
+  {
+   "label": "Expected Goals Model",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/about.htm",
+   "note": "shooting-talent notes on how much luck one season of finishing carries"
+  },
+  {
+   "label": "2025-26 regular-season skater file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "individual expected goals and MoneyPuck's goal count"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from the NHL stats API's 2025-26 regular-season skater summary, team summary and final standings, downloaded October 9, 2026: goals per game is 8,086 goals over 2,624 team games, forward and defenseman benchmarks use skaters with 60 or more games, and the year-over-year correlations use the 260 forwards with 60 or more games in both 2024-25 and 2025-26. Individual expected goals come from MoneyPuck's 2025-26 skater file (all situations), same date. Career, franchise and 1917-18 figures are NHL stats API totals through 2025-26."
+}

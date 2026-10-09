@@ -1,0 +1,253 @@
+{
+ "slug": "high-danger-save-percentage",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "High-danger save percentage",
+  "short": "HDSV%",
+  "abbr": "HDSV%",
+  "aliases": [
+   "HDSV%",
+   "high danger save percentage",
+   "high-danger save %",
+   "HD save percentage"
+  ],
+  "category": "Goalie"
+ },
+ "keywords": {
+  "primary": "high danger save percentage nhl",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json (status no_serp_overlap: primary only, no supporting keyword cleared the 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "High-Danger Save Percentage in the NHL and What It Measures",
+  "description": "High-danger save percentage in the NHL is a goalie's save rate on shots from in close. How the league, NST and MoneyPuck define HDSV%, and Detroit's goalies.",
+  "h1": "High-Danger Save Percentage in the NHL (HDSV%)"
+ },
+ "hero": {
+  "definition": "High-danger save percentage (HDSV%) is a goalie's save percentage on shots from the most dangerous ice, right in front of the net. In the NHL's own version, that's shots on goal from a zone reaching 29 feet out from the goal, where last season's goalies faced 28% of their shots and allowed 52% of their goals. It isolates the saves that swing games, though the samples get small fast.",
+  "dek": "High-danger save percentage in the NHL comes in three versions that don't agree, because the league, Natural Stat Trick and MoneyPuck each draw the danger zone their own way. Cam Talbot's .744 for Detroit last season was the lowest among the league's regulars."
+ },
+ "facts": [
+  {
+   "label": "Abbreviation",
+   "value": "HDSV%",
+   "sub": "high-danger save percentage"
+  },
+  {
+   "label": "Formula",
+   "value": "HDSV ÷ HDSA",
+   "sub": "high-danger saves over high-danger shots on goal"
+  },
+  {
+   "label": "League average",
+   "value": ".811",
+   "sub": "NHL EDGE zone, 2025-26"
+  },
+  {
+   "label": "Share of goals",
+   "value": "52%",
+   "sub": "from 28% of shots on goal, 2025-26"
+  },
+  {
+   "label": "Best, 2025-26",
+   "value": ".864",
+   "sub": "Ilya Sorokin, NYI (30+ GP)"
+  },
+  {
+   "label": "Worst, 2025-26",
+   "value": ".744",
+   "sub": "Cam Talbot, DET (30+ GP)"
+  },
+  {
+   "label": "John Gibson",
+   "value": ".814",
+   "sub": "DET, 26th of 51, the median"
+  },
+  {
+   "label": "Definitions",
+   "value": "3",
+   "sub": "NHL EDGE, Natural Stat Trick, MoneyPuck"
+  }
+ ],
+ "origin": [
+  "High danger started life as a grade of scoring chance. War-on-Ice built the scale Natural Stat Trick still uses, and NST's glossary describes its chances \"as originally defined by War-on-Ice.\" Every shot attempt in the offensive zone gets a value from one to three depending on where it came from, plus one if it's a rebound or a rush shot and minus one if it was blocked, and anything that adds up to three or more counts as high danger.",
+  "The timing rules are precise. A rebound is any attempt within three seconds of another blocked, missed or saved attempt with no stoppage in between, and a rush shot is any attempt within four seconds of an event in the neutral or defensive zone, a definition David Johnson first drew up at his Hockey Analysis site before War-on-Ice set it at four seconds. NST's HDSV% is the share of those shots on goal that a goalie stopped.",
+  "The NHL drew its own line in its EDGE stats (the league publishes them back to 2021-22). Its high-danger zone is pure geometry, the area within 29 feet of the center of the goal and inside lines drawn from each faceoff dot to two feet outside the post, with no bonus for rebounds or rushes. MoneyPuck skips the map entirely and calls an unblocked attempt high danger when its expected-goals model gives it a 20% chance or better. This page uses the NHL's numbers, because they're shots on goal and that makes the result a save percentage in the box-score sense."
+ ],
+ "calculation": {
+  "intro": [
+   "Every version is the same division. Count the high-danger shots on goal a goalie faced, count the ones he stopped, and divide. The argument is over which shots count, and each source settles it differently:"
+  ],
+  "inputs": [
+   "NHL EDGE, shots on goal from within 29 feet of the center of the goal, between lines from each faceoff dot to two feet outside the post",
+   "Natural Stat Trick, shots on goal that score 3 or more on War-on-Ice's chance scale",
+   "MoneyPuck, unblocked attempts (misses included) with an expected-goal value of 0.20 or higher",
+   "The saves and goals on whichever set of shots you've chosen"
+  ],
+  "formulas": [
+   {
+    "label": "Rate",
+    "expr": "HDSV% = high-danger saves ÷ high-danger shots on goal"
+   },
+   {
+    "label": "Goals",
+    "expr": "HDGA = high-danger shots − high-danger saves"
+   },
+   {
+    "label": "In goals",
+    "expr": "HDGSAA = HD saves − (HD shots × league HDSV%)"
+   },
+   {
+    "label": "Everything else",
+    "expr": "(all saves − HD saves) ÷ (all shots − HD shots)"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A goalie faces 300 high-danger shots in a season and stops 246, an .820. Allow six more and he's at .800. Allow six fewer and he's at .840. On that workload each goal moves his high-danger number by more than three points, against less than one point on his full 1,500-shot season.",
+  "after": [
+   "That's why the leaderboard spreads so wide. Last season's regulars covered 120 points of high-danger save percentage between the best and the worst, and only about 50 points of overall save percentage."
+  ],
+  "variants": [
+   {
+    "term": "HDSA",
+    "def": "High-danger shots on goal against."
+   },
+   {
+    "term": "HDGA",
+    "def": "High-danger goals against, the shots minus the saves."
+   },
+   {
+    "term": "HDGSAA",
+    "def": "Natural Stat Trick's goals saved above average on high-danger shots only.",
+    "slug": "goals-saved-above-average"
+   },
+   {
+    "term": "MDSV%, LDSV%",
+    "def": "NST's medium- and low-danger versions, on shots that score exactly 2, or 1 or less."
+   },
+   {
+    "term": "HDCA",
+    "def": "High-danger chances against, with missed and blocked attempts included.",
+    "slug": "high-danger-chances"
+   }
+  ]
+ },
+ "meaning": [
+  "HDSV% measures how a goalie handles the shots that decide games. On the NHL's map, 28.5% of last season's shots on goal came from in close and they produced 51.7% of the goals, so the league stopped .811 of them and .930 of everything else. A shot from in close went in nearly three times as often as the rest, which makes a save there worth more than you'd guess from its single tick on the stat line.",
+  "Among the 51 goalies who played at least 30 games, the median was .814. Ilya Sorokin led at .864, and his 452 high-danger saves were the most in the league. The bottom four finished in this order (Juuse Saros, Jordan Binnington, Sergei Bobrovsky and Talbot), with Talbot alone below .750. <a href=\"/players/john-gibson/\">Gibson</a> landed exactly on the median.",
+  "Detroit's defense kept the share of shots from in close below the league's (26.7% of what its two goalies faced, against 28.5%), and both goalies sat in the lighter half of the league in high-danger workload. That makes Talbot's number harder to explain away. He didn't see an unusual volume of dangerous shots. He stopped a smaller share of them than anybody else who played 30 games.",
+  "Does one season of HDSV% predict the next? Among the 47 goalies who faced at least 150 high-danger shots in both of the last two seasons, the year-to-year correlation was 0.17, a little better than overall save percentage managed for the same group and still close to noise. Talbot himself was at .788 the season before."
+ ],
+ "uses": [
+  {
+   "title": "Finding where a goalie's season went wrong",
+   "html": "Talbot's season is the cleanest example on this site. Where did it go wrong? His overall save percentage was .883, and splitting it by zone shows where the goals came from. He allowed 54 on 211 high-danger shots, about 14 more than a league-average goalie would have, and on the other 586 shots he faced he was about two goals better than average. That's a crease problem, and it's the kind of split a single save percentage hides."
+  },
+  {
+   "title": "Reading the workload behind the number",
+   "html": "A high-danger save percentage means more when you know how many of those shots a goalie saw. Sorokin's league-best .864 came while 34.2% of his shots came from in close, the second-heaviest share among the regulars, behind only Carolina's Frederik Andersen. Put the rate and the share side by side and you're grading the goalie and the defense in front of him at the same time."
+  }
+ ],
+ "limits": [
+  {
+   "title": "The samples are tiny",
+   "html": "A regular faces about 300 high-danger shots a season (the median regular faced 316 last season). At that volume a goalie with exactly league-average skill lands anywhere from .767 to .855 in 19 seasons out of 20 by chance alone, a range that holds 47 of last season's 51 regulars."
+  },
+  {
+   "title": "Three definitions, three numbers",
+   "html": "Talbot's .744 on the NHL's zone becomes .633 on MoneyPuck's stricter cut, where only 79 of his attempts against qualified, and Natural Stat Trick's scale adds rebounds and rush shots that the NHL's map ignores. If you compare goalies, stay inside one source."
+  },
+  {
+   "title": "Location isn't the whole danger",
+   "html": "The NHL's version is pure geography, so a rebound at the top of the crease and a wrist shot from 28 feet count the same. Neither the NHL's zone nor NST's scale knows whether the goalie was screened."
+  },
+  {
+   "title": "Shots that miss don't count",
+   "html": "Every version except MoneyPuck's counts only shots on goal, so a defense that forces a shooter wide from the slot takes that chance out of the goalie's denominator entirely."
+  }
+ ],
+ "related": [
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "Every shot on goal, from anywhere on the ice."
+  },
+  {
+   "slug": "high-danger-chances",
+   "name": "High-danger chances",
+   "abbr": "HDCF",
+   "vs": "The same danger idea applied to every attempt, for teams and skaters."
+  },
+  {
+   "slug": "goals-saved-above-expected",
+   "name": "Goals saved above expected",
+   "abbr": "GSAx",
+   "vs": "Prices each shot by its own danger. HDSV% puts shots in one bucket."
+  },
+  {
+   "slug": "goals-saved-above-average",
+   "name": "Goals saved above average",
+   "abbr": "GSAA",
+   "vs": "The league-average comparison in goals, for all shots."
+  },
+  {
+   "slug": "expected-save-percentage",
+   "name": "Expected save percentage",
+   "abbr": "xSV%",
+   "vs": "The save rate a goalie's shot mix says an average goalie would post."
+  },
+  {
+   "slug": "scoring-chances",
+   "name": "Scoring chances",
+   "abbr": "SCF",
+   "vs": "The broader category, attempts scoring 2 or more on NST's scale."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "NHL EDGE glossary",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/nhl-edge/glossary",
+   "note": "high-danger zone (29 feet, faceoff-dot lines) and high-danger save percentage"
+  },
+  {
+   "label": "NHL EDGE goalie detail and goalie leaders, 2025-26 and 2024-25",
+   "publisher": "NHL API",
+   "url": "https://api-web.nhle.com/v1/edge/goalie-landing/20252026/2",
+   "note": "high-danger shots, saves and goals for every goalie; seasons available from 2021-22; Sorokin's 452 saves"
+  },
+  {
+   "label": "Glossary, team statistics",
+   "publisher": "Natural Stat Trick (Internet Archive copy, January 5, 2025)",
+   "url": "https://www.naturalstattrick.com/glossary.php?teams",
+   "note": "War-on-Ice scoring-chance scale, rebound and rush timing, high danger = 3 or more"
+  },
+  {
+   "label": "Glossary, goalie statistics",
+   "publisher": "Natural Stat Trick (Internet Archive copy, January 9, 2025)",
+   "url": "https://www.naturalstattrick.com/glossary.php?players",
+   "note": "HDSV%, HDGSAA, medium- and low-danger versions"
+  },
+  {
+   "label": "De-Bunking the Stat: What Makes a Scoring Chance?",
+   "publisher": "Alison Lukan, NHL.com (Seattle Kraken), May 1, 2022",
+   "url": "https://nhl.com/kraken/news/seattle-kraken-analytics-with-alison-scoring-chances-333640288",
+   "note": "NST's model was developed by War-On-Ice"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "high danger = unblocked attempts with a 20% or better chance of scoring"
+  },
+  {
+   "label": "2025-26 regular-season goalie file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "Talbot's high-danger attempts on MoneyPuck's cut"
+  }
+ ],
+ "method": "High-danger figures are Wes & Woodward's calculations from the NHL EDGE goalie-detail feed for every goalie who played in the 2025-26 regular season, downloaded October 9, 2026 (raw/nhl_edge_goalie_detail_all98_20252026_hdsv.json, 97 goalies with data): league HDSV% is total high-danger saves over total high-danger shots on goal (16,749 of 20,653, .8110); everything else is all saves minus high-danger saves over all shots minus high-danger shots (.9296); rankings use the 51 goalies with 30+ games played; goals versus average use the league rate for each zone. The year-to-year correlation (Pearson) uses the 47 goalies with 150+ high-danger shots on goal in both seasons, with 2024-25 from the same feed (raw/nhl_edge_goalie_detail_20242025_for_2025-26_25gp_goalies_hdsv.json). The chance range is a binomial 95% interval around .811 on 300 shots. MoneyPuck's version uses its 2025-26 goalie file (raw/mp_goalies_2025.csv), high-danger goals over high-danger unblocked attempts."
+}

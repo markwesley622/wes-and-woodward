@@ -1,0 +1,326 @@
+{
+ "slug": "goal-differential",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Goal differential",
+  "short": "goal differential",
+  "abbr": "DIFF",
+  "aliases": [
+   "DIFF",
+   "GD",
+   "goal diff",
+   "goals for minus goals against",
+   "NHL goal differential"
+  ],
+  "category": "Team"
+ },
+ "keywords": {
+  "primary": "nhl goal differential",
+  "supporting": [
+   "what is goal differential in hockey",
+   "goal differential nhl",
+   "what is diff in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "NHL Goal Differential and How It Tracks the Standings",
+  "description": "NHL goal differential is goals for minus goals against. How it's counted, how many goals a standings point costs, and the Red Wings' live numbers.",
+  "h1": "NHL Goal Differential (DIFF)"
+ },
+ "hero": {
+  "definition": "Goal differential is a team's goals for minus its goals against, the column marked DIFF in hockey standings. Over a full season it tracks standings points closely, which makes NHL goal differential the quickest check on whether a team's record is real. The standings version counts a shootout win as one goal.",
+  "dek": "Last season each standings point cost about 3.3 goals of differential, and differential alone explained 91% of the spread in points across the league. Detroit's minus-17 came with 92 points, about five more than a differential like that usually buys."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "DIFF · GD",
+   "sub": "DIFF is the NHL standings column"
+  },
+  {
+   "label": "Formula",
+   "value": "GF − GA",
+   "sub": "a shootout win counts as one goal in the standings"
+  },
+  {
+   "label": "League average",
+   "value": "0",
+   "sub": "every goal for is someone's goal against"
+  },
+  {
+   "label": "One point costs",
+   "value": "3.3 goals",
+   "sub": "of differential, 32 teams, 2025-26"
+  },
+  {
+   "label": "Best, 2025-26",
+   "value": "+99",
+   "sub": "Colorado, 302 for and 203 against"
+  },
+  {
+   "label": "Worst, 2025-26",
+   "value": "−100",
+   "sub": "Vancouver, 216 for and 316 against"
+  },
+  {
+   "label": "Red Wings, 2025-26",
+   "value": "−17",
+   "sub": "20th of 32, with 92 points"
+  },
+  {
+   "label": "Tiebreaker",
+   "value": "6th",
+   "sub": "after games played, three win counts and head-to-head"
+  }
+ ],
+ "origin": [
+  "The case for trusting goal differential over a won-lost record was borrowed from baseball. Bill James built his Pythagorean won-loss formula in the early 1980s to estimate the winning percentage a team's runs scored and allowed should produce, and hockey analysts swapped goals in for runs. Alan Ryder of HockeyAnalytics.com was one of the few to justify the hockey version from first principles before Kevin Dayaratna and Steven Miller did it formally in 2012. Working from three seasons of NHL results, they found the formula fits hockey as well as it fits baseball, with an exponent slightly above two.",
+  "The league itself treats the number as a tiebreaker. It's printed as DIFF in the NHL standings and sits sixth in line for breaking a tie on points, behind games played, regulation wins, regulation and overtime wins, total wins and points in head-to-head games. For that purpose the league counts overtime goals and credits the winner of a shootout with one goal (the loser gets one against), so the standings figure doesn't always match the one in the NHL's own stats tables.",
+  "The analytics sites built on it from there, with Hockey-Reference's Simple Rating System (SRS) adjusting each team's average differential for strength of schedule and the expected standings on this site's <a href=\"/team/\">Team page</a> running James's formula on expected goals in place of real ones."
+ ],
+ "calculation": {
+  "intro": [
+   "It's the simplest arithmetic on this site, and the only judgment call is which goals count. These are the inputs:"
+  ],
+  "inputs": [
+   "Goals for, every goal a team scores in regulation and overtime",
+   "Goals against, every goal it allows",
+   "Shootout results, which the NHL standings score as one goal for the winner and one against the loser",
+   "Games played, to turn the total into a per-game rate"
+  ],
+  "formulas": [
+   {
+    "label": "Season",
+    "expr": "DIFF = goals for − goals against"
+   },
+   {
+    "label": "Standings",
+    "expr": "DIFF = GF − GA, with +1 per shootout win and −1 per shootout loss"
+   },
+   {
+    "label": "Per game",
+    "expr": "DIFF per game = DIFF ÷ games played"
+   },
+   {
+    "label": "Share",
+    "expr": "GF% = GF ÷ (GF + GA)"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A team scores 250 goals and allows 230, so its differential is plus-20. Give it six shootout wins and four shootout losses and the standings version reads 256 for and 234 against. That's plus-22. The extra two goals of differential never happened in a game.",
+  "after": [
+   "That's why two reputable sources can print different numbers for the same team. Detroit's differential last season was minus-15 in the NHL's stats tables and minus-17 in its standings, because the Wings won two shootouts and lost four. Colorado's league-best 302 goals in the standings are the 298 it scored plus its four shootout wins."
+  ],
+  "variants": [
+   {
+    "term": "GF",
+    "def": "Goals for. Every goal a team scores, plus one for each shootout win in the standings version."
+   },
+   {
+    "term": "GA",
+    "def": "Goals against. Every goal a team allows, plus one for each shootout loss in the standings version."
+   },
+   {
+    "term": "DIFF/GP",
+    "def": "Goal differential divided by games played, the version to use before every team has played a full season."
+   },
+   {
+    "term": "GF%",
+    "def": "Goals for as a share of all the goals in a team's games, or in a player's minutes. 50% is break-even.",
+    "slug": "goals-for-percentage"
+   },
+   {
+    "term": "xG diff",
+    "def": "Expected goals for minus expected goals against, the same subtraction run on chances.",
+    "slug": "expected-goals"
+   },
+   {
+    "term": "5v5 DIFF",
+    "def": "Goal differential at five-on-five only, with power plays and empty nets stripped out.",
+    "slug": "five-on-five"
+   }
+  ]
+ },
+ "meaning": [
+  "Goal differential measures how thoroughly a team outscored its opponents, and over a season it's the simplest one-number summary of results that doesn't care how close the games were. Last season it accounted for 91% of the variation in standings points among the 32 teams. The fitted line puts the price of one point at 3.3 goals, or roughly 6.5 goals per win, which is a handy exchange rate when you're judging a trade or a hot goalie.",
+  "Zero is the league average by construction (every goal for is somebody's goal against). A team at zero doesn't finish with half the points, though. Why does the average team clear half? Because 326 games went to overtime or a shootout last season and each one paid the loser a point, so the average club finished with 92.2 points, ten more than an even split. Colorado led the league at plus-99, Vancouver finished last at minus-100, and the median team sat at minus-4.",
+  "Detroit finished at minus-17 (20th in the league) with 92 points. A minus-17 team earns about 87 points on last season's line, so the Wings beat theirs by five, the third-largest overshoot in the league behind San Jose and Montreal. It still wasn't enough. Detroit finished 10th in the East, level on points with Columbus, and missed the playoffs.",
+  "Does differential predict next season? It predicts it a little better than the standings do. Across the 608 pairs of back-to-back seasons since 2005-06, a team's goal differential per game correlated at 0.54 with its points percentage the following year, against 0.52 for points percentage itself. The edge is small. Rosters turn over, so treat either number as a starting point for next season and nothing more."
+ ],
+ "uses": [
+  {
+   "title": "Checking whether a record is real",
+   "html": "Compare a team's points to the points its differential usually buys and you can see who has been living on close games. The Rangers went the wrong way last season, finishing minus-12 with 77 points, about 11 fewer than their differential projected (the largest shortfall in the league). A gap like that doesn't tell you much about a team's talent by itself, which is why analysts check the differential before they trust the record."
+  },
+  {
+   "title": "Breaking ties in the standings",
+   "html": "The NHL uses differential to separate teams level on points, but only after five other checks. Detroit learned how far down the list it sits in 2023-24. The Wings finished plus-4 and tied Washington at 91 points for the East's last playoff spot, and the Capitals took it on the second tiebreaker, regulation wins, 32 to 27. Washington's differential was minus-37. The Wings' edge of forty-one goals never came into play."
+  },
+  {
+   "title": "Rating teams by margin",
+   "html": "Hockey-Reference's SRS starts from average goal differential per game and adjusts it for strength of schedule, so a team that ran up its margin against weak opponents gets marked down. The result reads in goals per game above or below average, with zero as average. Colorado's plus-99 works out to 1.21 goals a game before that adjustment (Tampa Bay was second at plus-59)."
+  },
+  {
+   "title": "Swapping in expected goals",
+   "html": "Replace goals with expected goals and you get a differential with most of the finishing and goaltending luck stripped out. At five-on-five last season the Wings were minus-28 on goals and minus-8.1 on expected goals. Nearly all of that gap was finishing, since Detroit allowed almost exactly what the model expected. The goaltending broke even. The Team page's expected standings are built on the same swap."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night. Goals for and against come from the NHL standings, which count a shootout win as a goal; the five-on-five numbers come from MoneyPuck.",
+  "tiles": [
+   {
+    "label": "Goals for",
+    "source": "team",
+    "path": "record.goalFor",
+    "format": "int",
+    "sub": "NHL standings, shootout wins included"
+   },
+   {
+    "label": "Goals against",
+    "source": "team",
+    "path": "record.goalAgainst",
+    "format": "int",
+    "sub": "NHL standings, shootout losses included"
+   },
+   {
+    "label": "5v5 goals for",
+    "source": "team",
+    "path": "situations.5on5.goalsFor",
+    "format": "int",
+    "sub": "MoneyPuck, five-on-five"
+   },
+   {
+    "label": "5v5 goals against",
+    "source": "team",
+    "path": "situations.5on5.goalsAgainst",
+    "format": "int",
+    "sub": "MoneyPuck, five-on-five"
+   }
+  ],
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games, so one lopsided night can still swing the differential by four or five goals.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "Every goal counts the same",
+   "html": "A goal in a blowout counts exactly as much as an overtime winner. One blowout can move a team's differential more than a week of one-goal games, so a per-game figure early in a season swings hard, and a team that wins a lot of close games and loses a few big ones will sit below its record."
+  },
+  {
+   "title": "Empty-net goals count in full",
+   "html": "A team chasing a game late pulls its goalie and gives up empty-netters. Those goals land in the differential like any other, so a club that's often trailing late looks worse than its five-on-five play was."
+  },
+  {
+   "title": "Shootouts are scored as goals",
+   "html": "The standings add a goal for every shootout win. Philadelphia won 10 shootouts and lost four last season, which turned a plus-1 in the league's stats database into a plus-7 in its standings. Nobody scored those six goals in a game."
+  },
+  {
+   "title": "Schedules aren't equal",
+   "html": "A plus-20 built against weak opponents means less than the same margin built against strong ones, which is the adjustment Hockey-Reference's SRS makes and the raw number doesn't."
+  },
+  {
+   "title": "It's full of shooting and saving luck",
+   "html": "Goals for and against both carry finishing and goaltending variance, the noise that PDO and expected-goal differential try to strip out. Detroit's 19.1-goal finishing shortfall at five-on-five was worth about six standings points at the league's exchange rate."
+  }
+ ],
+ "related": [
+  {
+   "slug": "points-percentage",
+   "name": "Points percentage",
+   "abbr": "P%",
+   "vs": "The standings result that differential predicts."
+  },
+  {
+   "slug": "regulation-wins",
+   "name": "Regulation wins",
+   "abbr": "RW",
+   "vs": "The second tiebreaker, four steps ahead of differential."
+  },
+  {
+   "slug": "goals-for-percentage",
+   "name": "Goals for percentage",
+   "abbr": "GF%",
+   "vs": "The same goals as a share, usually at five-on-five."
+  },
+  {
+   "slug": "xg-standings",
+   "name": "Expected standings",
+   "abbr": "xPts",
+   "vs": "Points rebuilt from expected goals instead of real ones."
+  },
+  {
+   "slug": "pdo",
+   "name": "PDO",
+   "abbr": "PDO",
+   "vs": "The shooting and saving luck baked into a differential."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "Differential on chances, with finishing stripped out."
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is the best goal differential in NHL history?",
+   "a": "Montreal's plus-216 in 1976-77, when the Canadiens scored 387 goals and allowed 171. The worst belongs to the 1974-75 Capitals at minus-265. Detroit's best was plus-144 in 1995-96, the 62-win season."
+  },
+  {
+   "q": "Is goal differential the same as plus-minus?",
+   "a": "They're cousins. Plus-minus is a player stat that counts even-strength and shorthanded goals while he's on the ice and skips power-play goals at both ends, so it leaves out a big slice of what a team's differential includes. Goal differential counts every goal the team scores or allows."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Tie-breaking procedure",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/info/standings-info/tie-breaking-procedure",
+   "note": "differential is the sixth tiebreaker; overtime goals count and a shootout win counts as one goal"
+  },
+  {
+   "label": "Hockey glossary",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/info/hockey-glossary",
+   "note": "the DIFF column; a shootout win counts as one goal for in the standings"
+  },
+  {
+   "label": "Standings on April 16, 2026 (final 2025-26 regular season)",
+   "publisher": "NHL standings API",
+   "url": "https://api-web.nhle.com/v1/standings/2026-04-16",
+   "note": "every team's points, differential, overtime losses and shootout record"
+  },
+  {
+   "label": "Standings on April 18, 2024 (final 2023-24 regular season)",
+   "publisher": "NHL standings API",
+   "url": "https://api-web.nhle.com/v1/standings/2024-04-18",
+   "note": "Detroit and Washington at 91 points, regulation wins 27 and 32"
+  },
+  {
+   "label": "Team summary, every regular season",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/summary?isAggregate=false&isGame=false&limit=-1&cayenneExp=gameTypeId=2%20and%20seasonId%3E=19171918%20and%20seasonId%3C=20252026",
+   "note": "goals for and against without shootout goals; the historical bests and worsts"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "Simple Rating System and plus-minus definitions"
+  },
+  {
+   "label": "The Pythagorean Won-Loss Formula and Hockey",
+   "publisher": "Kevin D. Dayaratna and Steven J. Miller, arXiv 1208.1725",
+   "url": "https://arxiv.org/abs/1208.1725",
+   "note": "Bill James's formula, Ryder's earlier work, 2008-09 to 2010-11 data, exponent slightly above two"
+  },
+  {
+   "label": "2025-26 regular-season team file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "Detroit's five-on-five goals and expected goals"
+  }
+ ],
+ "method": "Standings figures (points, goal differential with shootout goals, overtime losses, regulation wins) come from the NHL standings API for April 16, 2026, the final day of the 2025-26 regular season (downloaded October 9, 2026, saved as raw/nhl_standings_2026-04-16_final_20252026.json), and for April 18, 2024 (raw/nhl_standings_2024-04-18_final_20232024.json). The points-per-goal rate is an ordinary least-squares fit of standings points on standings goal differential for the 32 teams (slope 0.305 points per goal, R² 0.91); goals per win uses the same fit on wins. Stats-table goals without shootout goals, the historical bests and worsts, and the year-over-year test (Pearson correlation of goal differential per game and of points percentage with the next season's points percentage, same franchise ID, 608 season pairs from 2005-06 through 2025-26) come from the NHL stats API team summary for every regular season (downloaded October 9, 2026, saved as raw/nhl_team_summary_allseasons_to_20252026.json and raw/nhl_team_summary_20252026_pp_pk_gd.json). Five-on-five goals and expected goals are from MoneyPuck's 2025-26 team file (raw/mp_teams_2025.csv, downloaded October 9, 2026). The Red Wings section rebuilds nightly."
+}

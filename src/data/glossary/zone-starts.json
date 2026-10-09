@@ -1,0 +1,285 @@
+{
+ "slug": "zone-starts",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Zone starts",
+  "short": "OZS%",
+  "abbr": "OZS%",
+  "aliases": [
+   "OZS%",
+   "DZS%",
+   "oZS%",
+   "dZS%",
+   "OZ Start%",
+   "OZ Ratio",
+   "offensive zone starts",
+   "defensive zone starts",
+   "zone start percentage"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "zone starts in hockey",
+  "supporting": [],
+  "source": "No measured search volume (stat_themes.json status no_volume, Ahrefs KE US, 2026-10-09); primary is the natural phrase for the stat"
+ },
+ "seo": {
+  "title": "Zone Starts in Hockey and How OZS% Is Calculated",
+  "description": "Zone starts in hockey show where a player's shifts begin. How OZS% is calculated, how much deployment moves results, and the Red Wings' 2025-26 numbers.",
+  "h1": "Zone Starts in Hockey (OZS% and DZS%)"
+ },
+ "hero": {
+  "definition": "Zone starts in hockey track where a player's shifts begin. OZS% is the share of his offensive- and defensive-zone faceoff starts that came in the offensive zone, and DZS% is the share in his own end. Coaches use them to shelter or bury players, and the starts tilt the results.",
+  "dek": "Most shifts don't start with a faceoff at all. Six in ten began on the fly at five-on-five last season, which is the first reason zone starts explain less than they get blamed for."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "OZS%, DZS%",
+   "sub": "oZS% at Hockey-Reference, OZ Ratio at NHL.com"
+  },
+  {
+   "label": "On the fly",
+   "value": "61.2%",
+   "sub": "of 5v5 shifts in 2025-26, no faceoff at all"
+  },
+  {
+   "label": "End-zone draws",
+   "value": "21.6%",
+   "sub": "of 5v5 shifts started in either end zone"
+  },
+  {
+   "label": "Median forward",
+   "value": "53.1%",
+   "sub": "5v5 OZS%, 385 forwards with 500+ minutes"
+  },
+  {
+   "label": "Most sheltered",
+   "value": "98.1%",
+   "sub": "Alex Ovechkin, 305 offensive starts and 6 defensive"
+  },
+  {
+   "label": "Most buried",
+   "value": "6.6%",
+   "sub": "Blake Lizotte, 14 offensive starts and 199 defensive"
+  },
+  {
+   "label": "Detroit's lowest",
+   "value": "34.5%",
+   "sub": "Moritz Seider, 247 of 377 starts in his own end"
+  },
+  {
+   "label": "This site uses",
+   "value": "MoneyPuck",
+   "sub": "shift starts by zone, five-on-five"
+  }
+ ],
+ "origin": [
+  "Zone starts came out of the first wave of public hockey analytics, and nobody's quite sure who thought of them. War-on-Ice's glossary guessed \"probably Gabe and Vic\" and noted that the number had been \"found at behindthenet.ca for the longest time.\" Rob Vollman's player usage charts, which War-on-Ice credited too, made it famous by putting zone starts on one axis and quality of competition on the other, with each player's bubble colored by relative Corsi.",
+  "The research that followed shrank it. Eric Tulsky, who was named the Carolina Hurricanes' general manager in 2024, estimated that an offensive-zone start was worth about 0.31 unblocked attempts (roughly 0.4 Corsi events), about half of what analysts had assumed, according to a 2014 Hockey-Graphs summary. In 2015 Matt Cane measured the effect in goals at Hockey-Graphs and found that even after an offensive-zone faceoff win and 45 seconds of play, it came to less than 0.02.",
+  "Micah Blake McCurdy added the biggest piece the same year at HockeyViz. Around half of all shifts start on the fly, he found, and once he reweighted every shot for where the skaters' shifts began, only 5% of the players with 100 five-on-five minutes in 2014-15 saw their shot share move more than a percentage point. Two moved more than two.",
+  "The NHL publishes two versions today (OZ Start% and OZ Ratio, both at five-on-five and both available back to 2009-10), Hockey-Reference has oZS% and dZS%, and Natural Stat Trick and MoneyPuck count shift starts by zone."
+ ],
+ "calculation": {
+  "intro": [
+   "There are two ways to count a zone start, and the sites split on them. Natural Stat Trick and MoneyPuck count shift starts, so a faceoff counts only if the player's shift began with it. The NHL and Hockey-Reference count every offensive- and defensive-zone faceoff a player was on the ice for, whether his shift started there or not. Either way, the pieces are the same:"
+  ],
+  "inputs": [
+   "Offensive-zone starts, the shifts or faceoffs in the attacking zone",
+   "Defensive-zone starts, the same in his own zone",
+   "Neutral-zone starts, which most versions leave out of the percentage",
+   "On-the-fly starts, the shifts that began during play, which no faceoff-based version can see",
+   "The game state, almost always five-on-five"
+  ],
+  "formulas": [
+   {
+    "label": "Offensive share",
+    "expr": "OZS% = OZ starts ÷ (OZ starts + DZ starts)"
+   },
+   {
+    "label": "Defensive share",
+    "expr": "DZS% = DZ starts ÷ (OZ starts + DZ starts) = 100% − OZS%"
+   },
+   {
+    "label": "NHL OZ Start%",
+    "expr": "OZ faceoffs on ice ÷ (OZ + NZ + DZ faceoffs on ice)"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. A center starts 1,000 five-on-five shifts, 600 of them on the fly, 160 in the neutral zone, 140 in the offensive zone and 100 in his own end. His OZS% is 140 ÷ 240, or 58.3%, which reads as a sheltered player. Only 24% of his shifts started with a faceoff in either end, though, so the label describes about a quarter of his night.",
+  "after": [
+   "The two counting methods can tell different stories about the same player. Moritz Seider started 34.5% of his end-zone shifts in the offensive zone by MoneyPuck's count of shift starts, while the NHL's on-ice faceoff count has him at 42.8%, because the NHL's count includes every draw he was on the ice for, the ones in the middle of a shift included."
+  ],
+  "variants": [
+   {
+    "term": "OZS%",
+    "def": "Offensive-zone start percentage. The share of a player's offensive- and defensive-zone starts that came in the offensive zone."
+   },
+   {
+    "term": "DZS%",
+    "def": "Defensive-zone start percentage. The same share for his own end."
+   },
+   {
+    "term": "OZ Ratio",
+    "def": "The NHL's version, built from every offensive- and defensive-zone faceoff he was on the ice for."
+   },
+   {
+    "term": "OZ Start%",
+    "def": "The NHL's other version, which puts neutral-zone faceoffs in the denominator too."
+   },
+   {
+    "term": "On-the-fly starts",
+    "def": "Shifts that began during play. Natural Stat Trick and MoneyPuck count them, and they're most of the game."
+   }
+  ]
+ },
+ "meaning": [
+  "OZS% measures deployment. It tells you where a coach chose to start a player when the whistle gave him the choice. At five-on-five last season the median forward with 500 minutes started 53.1% of his end-zone shifts in the offensive zone and the median defenseman 46.3%.",
+  "Most players live in the middle. More than half of those 385 forwards sat between 40% and 60%, and the 10th and 90th percentiles were 36.1% and 67.6%. The extremes belong to specialists. Washington's Alex Ovechkin started 305 shifts in the offensive zone and six in his own end (98.1%), and Pittsburgh's Blake Lizotte, Noel Acciari and Connor Dewar were the league's three most buried forwards, with Lizotte's 6.6% at the bottom.",
+  "Detroit's forwards were deployed evenly. The eight with 900 five-on-five minutes all landed between 46.1% and 56.2%. The defense was where the choices showed, and the top pair took the hard starts. <a href=\"/players/moritz-seider/\">Moritz Seider</a> (34.5%) and <a href=\"/players/simon-edvinsson/\">Simon Edvinsson</a> (34.8%) were 16th- and 17th-lowest among the league's 213 defensemen with 500 minutes, and <a href=\"/players/axel-sandin-pellikka/\">Axel Sandin-Pellikka</a> was the most sheltered Wings defenseman at 50.8%.",
+  "How much does a tough deployment cost? Less than you'd think. Run Tulsky's rate on Seider's season and his 117 more defensive starts than offensive ones were worth about 36 unblocked attempts of differential, which would have moved his Fenwick share from 55.3% to about 56.2%. That's a rounding error next to how well he played."
+ ],
+ "uses": [
+  {
+   "title": "Grading a buried defenseman",
+   "html": "Seider's results look better once you know where he started. He began 247 shifts in his own end and 130 in the offensive zone, and Detroit still had 55.3% of the expected goals and 54.1% of the high-danger shots with him on the ice at five-on-five. A defenseman who wins that share from those starts is driving play, and the deployment makes the results more impressive. How rare was his deployment? Only fifteen of the league's regular defensemen started a smaller share in the offensive zone."
+  },
+  {
+   "title": "Checking a sheltered scorer",
+   "html": "Ovechkin's 305 offensive starts against six defensive ones were the most lopsided deployment in the league, and Washington still had only 49.6% of the unblocked attempts with him on the ice at five-on-five. Lizotte, buried at the other extreme, was on the ice for 52.5%. Zone starts tell you what a coach asked of a player. His shot share tells you what he did with it, and the two don't always line up."
+  },
+  {
+   "title": "Adjusting shot numbers",
+   "html": "McCurdy's adjustment weights each shot by how rare it was given where the shifts began. Shots for after an offensive-zone start count 0.80 and shots against 1.23, and after a defensive-zone start it flips (1.33 for, 0.78 against). Evolving-Hockey's RAPM goes a step further and regresses zone starts out alongside teammates, competition and score state, so you don't have to adjust by hand."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Most shifts start on the fly",
+   "html": "Six in ten five-on-five shifts began during play last season, and only about one in five began with a faceoff in either end. OZS% describes a minority of a player's shifts and says nothing about the rest."
+  },
+  {
+   "title": "The effect fades fast",
+   "html": "Cane found that a defensive-zone faceoff win stops mattering after about 8 seconds and a neutral-zone win after 14, and that even an offensive-zone win takes close to a minute to pay out in full. A player who changes 15 seconds after an offensive-zone win gets about 75% of what a full 45-second shift would've given him."
+  },
+  {
+   "title": "It ignores the faceoff result",
+   "html": "A defensive-zone start after a won draw is a different shift from one after a lost draw, and OZS% counts them the same. Cane's expected faceoff goal differential was built to account for both the result and the shift length that follows."
+  },
+  {
+   "title": "Where a shift ends is on the player",
+   "html": "McCurdy's framing is the cleanest. Where and how a shift starts is the coach's decision, and what happens next, including winning the draw and getting the puck out, is the player's. A line that can't get the puck out keeps producing defensive-zone faceoffs, and somebody's got to take them."
+  },
+  {
+   "title": "The sites don't count the same thing",
+   "html": "Shift starts and on-ice faceoffs give different answers, as Seider's 34.5% and 42.8% show. Compare zone starts from one source at a time, and check whether it's counting shifts or faceoffs."
+  }
+ ],
+ "related": [
+  {
+   "slug": "faceoff-percentage",
+   "name": "Faceoff percentage",
+   "abbr": "FO%",
+   "vs": "Who wins the draw. Zone starts are where the draw happens."
+  },
+  {
+   "slug": "quality-of-competition-and-teammates",
+   "name": "Quality of competition and teammates",
+   "abbr": "QoC",
+   "vs": "The other half of deployment, who a player plays against and with."
+  },
+  {
+   "slug": "relative-corsi",
+   "name": "Relative Corsi",
+   "abbr": "CF% Rel",
+   "vs": "A player's shot share against his team's. Zone starts are one reason it moves."
+  },
+  {
+   "slug": "rapm",
+   "name": "Regularized adjusted plus-minus",
+   "abbr": "RAPM",
+   "vs": "Adjusts for zone starts, teammates and competition at once."
+  },
+  {
+   "slug": "zone-entries-and-exits",
+   "name": "Zone entries and exits",
+   "abbr": "CE%",
+   "vs": "How a team gets the puck into and out of the zones the shifts start in."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Do zone starts count power-play faceoffs?",
+   "a": "Not in the versions most people quote. The NHL calculates OZ Start% and OZ Ratio at five-on-five, Hockey-Reference labels its zone starts even strength, and MoneyPuck and Natural Stat Trick let you pick the situation. Special-teams draws describe a different job and stay out of the deployment numbers."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Annotated Glossary",
+   "publisher": "War-on-Ice blog, November 26, 2015",
+   "url": "http://blog.war-on-ice.com/annotated-glossary/",
+   "note": "zone starts' origin note, Vollman's usage charts"
+  },
+  {
+   "label": "Overemphasizing Context",
+   "publisher": "Hockey-Graphs (garik16), January 1, 2014",
+   "url": "https://hockey-graphs.com/2014/01/01/overemphasizing-context-a-mistake-just-as-poor-as-explaining-context-in-the-first-place/",
+   "note": "Tulsky's 0.31 Fenwick per offensive-zone start"
+  },
+  {
+   "label": "A New Way To Measure Deployment: Expected Faceoff Goal Differential",
+   "publisher": "Hockey-Graphs (Matt Cane), October 19, 2015",
+   "url": "https://hockey-graphs.com/2015/10/19/a-new-way-to-measure-deployment-expected-faceoff-goal-differential/",
+   "note": "under 0.02 goals, decay times, the 75% example"
+  },
+  {
+   "label": "Shift Starts and Ends, Part 2",
+   "publisher": "HockeyViz (Micah Blake McCurdy), September 3, 2015",
+   "url": "https://hockeyviz.com/txt/shifts2",
+   "note": "half of shifts on the fly, adjustment weights, 5% of players move a point"
+  },
+  {
+   "label": "Eric Tulsky named Carolina Hurricanes general manager",
+   "publisher": "NHL.com, June 18, 2024",
+   "url": "https://www.nhl.com/news/eric-tulsky-named-carolina-hurricanes-general-manager",
+   "note": "Tulsky's appointment"
+  },
+  {
+   "label": "Stats glossary (OZ Start%, OZ Ratio)",
+   "publisher": "NHL.com stats",
+   "url": "https://api.nhle.com/stats/rest/en/glossary?cayenneExp=languageCode=%22en%22",
+   "note": "definitions, five-on-five, available since 2009-10"
+  },
+  {
+   "label": "Skater puck possessions report, 2025-26",
+   "publisher": "NHL.com stats",
+   "url": "https://api.nhle.com/stats/rest/en/skater/puckPossessions?limit=-1&cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "Seider's 42.8% OZ Ratio"
+  },
+  {
+   "label": "Skater Advanced Statistics, 2025-26",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leagues/NHL_2026_skaters-advanced.html",
+   "note": "oZS% and dZS% definitions"
+  },
+  {
+   "label": "Glossary, player statistics (archived January 9, 2025)",
+   "publisher": "Natural Stat Trick, via the Internet Archive",
+   "url": "https://web.archive.org/web/20250109011312/https://www.naturalstattrick.com/glossary.php?players",
+   "note": "zone starts as shift starts, on-the-fly starts"
+  },
+  {
+   "label": "Regularized Adjusted Plus-Minus",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/regularized-adjusted-plus-minus/",
+   "note": "RAPM controls for zone starts"
+  },
+  {
+   "label": "2025-26 regular-season skater file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every shift-start figure on this page"
+  }
+ ],
+ "method": "Shift-start figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season skater file, downloaded October 9, 2026: OZS% is offensive-zone shift starts ÷ (offensive + defensive), five-on-five, for skaters with at least 500 five-on-five minutes; on-the-fly and end-zone shares are league totals of all five-on-five shift starts. On-ice shares (Fenwick, expected goals, high-danger shots) come from the same file. The NHL's OZ Ratio for Seider is from the NHL stats API's 2025-26 puck-possessions report, downloaded October 9, 2026. The 36-attempt estimate applies Tulsky's 0.31 unblocked attempts per net offensive-zone start to Seider's 117-start gap and splits it evenly between attempts for and against."
+}

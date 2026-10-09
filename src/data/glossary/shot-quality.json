@@ -1,0 +1,263 @@
+{
+ "slug": "shot-quality",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Shot quality",
+  "short": "shot quality",
+  "abbr": "xFSh%",
+  "aliases": [
+   "xFSh%",
+   "expected Fenwick shooting percentage",
+   "xG per shot",
+   "xG per unblocked attempt",
+   "shot quality against",
+   "SQA"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "shot quality nhl",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json (status single_keyword: one measured keyword, no supporting set; Ahrefs KE US volumes), 2026-10-09"
+ },
+ "seo": {
+  "title": "Shot Quality in the NHL and How It's Measured",
+  "description": "Shot quality in the NHL is how dangerous a team's or player's shots are, measured as expected goals per attempt. History, benchmarks and the Red Wings' rank.",
+  "h1": "Shot Quality in the NHL"
+ },
+ "hero": {
+  "definition": "Shot quality is how dangerous a team's or player's shots are on average, usually measured as expected goals per unblocked attempt. Distance to the net is the biggest single factor, and shot type and what happened just before the shot matter too. Shot quality in the NHL averaged 0.073 expected goals per unblocked attempt last season.",
+  "dek": "Quality is the other half of every shot total, and across the league's 32 teams it barely tracked volume last season. Detroit took a league-average number of attempts at five-on-five and ranked 28th in how dangerous they were."
+ },
+ "facts": [
+  {
+   "label": "Measured as",
+   "value": "xG ÷ FF",
+   "sub": "expected goals per unblocked attempt"
+  },
+  {
+   "label": "League average",
+   "value": "0.073",
+   "sub": "all situations, 2025-26"
+  },
+  {
+   "label": "At five-on-five",
+   "value": "0.061",
+   "sub": "league average, 2025-26"
+  },
+  {
+   "label": "Best offense, 5v5",
+   "value": "0.068",
+   "sub": "Dallas, 2025-26"
+  },
+  {
+   "label": "Best defense, 5v5",
+   "value": "0.056",
+   "sub": "Minnesota, xG allowed per attempt against"
+  },
+  {
+   "label": "Red Wings, 5v5",
+   "value": "0.059",
+   "sub": "28th for; 15th against at 0.061"
+  },
+  {
+   "label": "High danger",
+   "value": "7.9%",
+   "sub": "of attempts were 20%+ chances (MoneyPuck), 2025-26"
+  },
+  {
+   "label": "Biggest factor",
+   "value": "Distance",
+   "sub": "Evolving-Hockey's most important model variable"
+  }
+ ],
+ "origin": [
+  "Shot quality is where expected goals started. \"Not all shots on goal are created equal,\" Alan Ryder wrote in the first line of <em>Shot Quality</em>, a January 2004 paper at HockeyAnalytics.com, and he defined a shot's quality as its chance of becoming a goal. Working from the 2002-03 season (62,351 shots, 5,810 of them goals), he priced each one by its distance, its type and whether it was a rebound, then built a team measure he called shot quality against.",
+  "Why did he care about the quality of shots a team allowed? A team that allows dangerous shots makes its goaltender look worse than he is, so Ryder's measure set out to split defense from goaltending. New Jersey allowed the least dangerous shots in his data, and he put the spread between the league's best and worst teams at roughly 19 goals either way for an average club.",
+  "The argument that followed was over how much of it teams control, and Dawson Sprigings and Asmae Toumi were still calling shot quality the subject of spirited debate when they published their expected-goals model in 2015. Evolving-Hockey notes that the earliest expected-goals models were often described as shot-quality models. Today the per-shot average falls out of any of them, and Evolving-Hockey publishes it for players as xFSh%, expected goals divided by unblocked attempts."
+ ],
+ "calculation": {
+  "intro": [
+   "Price every unblocked attempt with an expected-goals model, add the prices up, and divide by the number of attempts. The model does the real work, and MoneyPuck's prices each shot on these inputs:"
+  ],
+  "inputs": [
+   "Distance to the net and the angle of the shot",
+   "The shot type",
+   "The last event before the shot, where it happened and how many seconds earlier, which is how rebounds get picked up",
+   "How many skaters each side had, and whether the net was empty",
+   "Whether the shooter was on his off wing"
+  ],
+  "formulas": [
+   {
+    "label": "For",
+    "expr": "shot quality = xG ÷ unblocked attempts"
+   },
+   {
+    "label": "Against",
+    "expr": "shot quality against = xGA ÷ unblocked attempts against"
+   },
+   {
+    "label": "Player",
+    "expr": "xFSh% = ixG ÷ iFF"
+   },
+   {
+    "label": "The split",
+    "expr": "xG = unblocked attempts × xG per attempt"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. Team A takes 50 unblocked attempts in a game at 0.06 expected goals each, for 3.0 expected goals. Team B takes 30 at 0.10 each and gets the same 3.0. They've built the same expected goals out of opposite shapes, and the shape tells you whether a team is living at the point or at the crease.",
+  "after": [
+   "MoneyPuck sorts attempts into danger tiers by the same probabilities, with low danger under 8%, medium between 8% and 20%, and high at 20% or more. Last season 73% of the league's unblocked attempts were low danger and 7.9% were high danger, which is why the league average sits so close to the bottom of the scale."
+  ],
+  "variants": [
+   {
+    "term": "xFSh%",
+    "def": "Expected Fenwick shooting percentage, Evolving-Hockey's name for a player's ixG per unblocked attempt.",
+    "slug": "individual-expected-goals"
+   },
+   {
+    "term": "xGA/FA",
+    "def": "The same average for the shots a team allows. Lower is better."
+   },
+   {
+    "term": "Danger tiers",
+    "def": "MoneyPuck's low, medium and high buckets, split at 8% and 20% chances of a goal."
+   },
+   {
+    "term": "SQA",
+    "def": "Ryder's 2004 shot quality against, expected goals allowed scaled to league-average shots and goals."
+   },
+   {
+    "term": "xG",
+    "def": "The total. Shot quality is xG divided by the attempts behind it.",
+    "slug": "expected-goals"
+   }
+  ]
+ },
+ "meaning": [
+  "Shot quality measures danger per attempt, and the league average sits low because most shots aren't dangerous. Last season the average unblocked attempt carried 0.073 expected goals in all situations and 0.061 at five-on-five. Dallas led the league at five-on-five at 0.068 (Seattle and Los Angeles were last at 0.058), and the whole league fit inside a band about a hundredth of an expected goal wide.",
+  "Quality and quantity didn't travel together. Across the league at five-on-five, a team's attempt rate and its expected goals per attempt had a correlation of minus-0.10, which is to say none worth mentioning. Volume did most of the work. Attempt rate correlated at 0.90 with a team's expected goals per 60, and quality at only 0.33, so Colorado led the league in five-on-five expected goals per hour on the most attempts in the league at league-average quality. Dallas went the other way, with the best quality and the fewest attempts, and finished 22nd. Quality alone didn't carry it.",
+  "Detroit's problem was the quality. The Wings took 40.5 unblocked attempts per 60 at five-on-five, right at the league median, but their 0.059 expected goals per attempt ranked 28th. They allowed 0.061 per attempt, 15th, so the defense was average and the offense's attempts were among the least dangerous in the league. Why does that matter? Because a team taking low-danger shots needs a lot more of them to make up the difference."
+ ],
+ "uses": [
+  {
+   "title": "Grading defense apart from goaltending",
+   "html": "Ryder's original use still works. A team's expected goals allowed per attempt says how dangerous its opponents' shots were before the goalie touched them. Minnesota allowed the least dangerous attempts at five-on-five last season (0.056) and Carolina the most (0.068), even while Carolina finished second in five-on-five expected-goal share on sheer volume. You'd grade Carolina's goalies on a harder workload than its shot counts suggest."
+  },
+  {
+   "title": "Explaining a shooting percentage",
+   "html": "A player's shooting percentage depends partly on where he shoots from, so analysts check quality before they call a hot or cold year luck. <a href=\"/players/andrew-copp/\">Andrew Copp</a>'s attempts carried 0.107 expected goals each last season, 31st among the 238 forwards with 150 or more, so his 9 goals were a finishing problem with good looks behind it."
+  },
+  {
+   "title": "Reading a shooter's role",
+   "html": "Per-shot quality tells you where a player does his shooting. Zach Hyman's attempts carried 0.144 expected goals each, the highest rate among regular forwards, against a median of 0.087. <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> sat below the median at 0.083 and made it up on volume. Detroit's highest-quality shooters were James van Riemsdyk (0.117, seventh), <a href=\"/players/emmitt-finnie/\">Emmitt Finnie</a> and Copp, and none of the three took more than 185 unblocked attempts, which left much of Detroit's volume to lower-danger shooters like DeBrincat, <a href=\"/players/lucas-raymond/\">Lucas Raymond</a> and Patrick Kane."
+  }
+ ],
+ "limits": [
+  {
+   "title": "It's only as good as the model",
+   "html": "Shot quality inherits every blind spot of the expected-goals model underneath it, including the passes the play-by-play doesn't record and the shot locations scorers get wrong. Ryder flagged the same problem in 2004, when his data had wraparounds logged from 60 feet."
+  },
+  {
+   "title": "Blocked shots are left out",
+   "html": "The average is built on unblocked attempts, so a team whose shots get blocked a lot can post the same number as one that never shoots through traffic. You'd need the blocked-shot counts to tell them apart."
+  },
+  {
+   "title": "Averages hide the mix",
+   "html": "A team at 0.060 could be taking steady mid-range shots or mixing point shots with a few great chances. The danger tiers show you the mix, and the single average can't."
+  },
+  {
+   "title": "It repeats less than volume",
+   "html": "Team shot quality carried over between the last two seasons at a correlation of 0.48 for and 0.54 against at five-on-five, against 0.62 for attempt rates, so one season of it is a weaker signal than the shot counts."
+  },
+  {
+   "title": "Shooter talent isn't in it",
+   "html": "MoneyPuck's base model doesn't factor in shooting skill, so a sniper's shot from the slot is priced exactly like a grinder's from the same spot. That's deliberate. Finishing gets measured separately, as goals above expected."
+  }
+ ],
+ "related": [
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "The total. Shot quality is the per-attempt average."
+  },
+  {
+   "slug": "high-danger-chances",
+   "name": "High-danger chances",
+   "abbr": "HDCF",
+   "vs": "Counts the dangerous attempts. Shot quality averages all of them."
+  },
+  {
+   "slug": "scoring-chances",
+   "name": "Scoring chances",
+   "abbr": "SCF",
+   "vs": "A zone-based count of chances, with no per-shot price."
+  },
+  {
+   "slug": "fenwick",
+   "name": "Fenwick",
+   "abbr": "FF%",
+   "vs": "The unblocked attempts shot quality divides by."
+  },
+  {
+   "slug": "individual-expected-goals",
+   "name": "Individual expected goals",
+   "abbr": "ixG",
+   "vs": "One shooter's total, before dividing by his attempts."
+  },
+  {
+   "slug": "shooting-percentage",
+   "name": "Shooting percentage",
+   "abbr": "SH%",
+   "vs": "What actually went in. Shot quality is what should have."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Shot Quality",
+   "publisher": "Alan Ryder, HockeyAnalytics.com, January 2004",
+   "url": "https://hockeyanalytics.com/Research_files/Shot_Quality.pdf",
+   "note": "the first shot-quality model, 62,351 shots from 2002-03, shot quality against, New Jersey's lead"
+  },
+  {
+   "label": "A New Expected Goals Model for Predicting Goals in the NHL",
+   "publisher": "Evolving-Hockey (Josh and Luke Younggren)",
+   "url": "https://evolving-hockey.com/blog/a-new-expected-goals-model-for-predicting-goals-in-the-nhl/",
+   "note": "early xG models described as shot-quality models; shot distance the most important variable"
+  },
+  {
+   "label": "Standard Skater Tables",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/standard-skater-tables/",
+   "note": "xFSh% as ixG ÷ iFF"
+  },
+  {
+   "label": "Expected Goals are a better predictor of future scoring than Corsi, Goals",
+   "publisher": "Hockey-Graphs, October 1, 2015",
+   "url": "https://hockey-graphs.com/2015/10/01/expected-goals-are-a-better-predictor-of-future-scoring-than-corsi-goals/",
+   "note": "shot quality as the subject of spirited debate"
+  },
+  {
+   "label": "Expected Goals Model",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/about.htm",
+   "note": "model inputs; shooting skill left out of the base model"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "low, medium and high danger thresholds at 8% and 20%"
+  },
+  {
+   "label": "2025-26 and 2024-25 regular-season team and skater files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league and Red Wings figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season team and skater files (raw/mp_teams_2025.csv, raw/mp_skaters_2025.csv) and its 2024-25 team file (raw/mp_teams_2024-25_shotquality_yoy_dl2026-10-09.csv), all downloaded October 9, 2026. Team shot quality is xGoalsFor ÷ unblockedShotAttemptsFor (and the against version) at five-on-five or all situations; volume is unblocked attempts per 60 minutes of five-on-five ice time; correlations are Pearson across the 32 teams; repeatability compares each team's 2024-25 and 2025-26 values; danger shares use MoneyPuck's low, medium and high danger shot counts. Player shot quality is I_F_xGoals ÷ I_F_unblockedShotAttempts among the 238 forwards with 150+ unblocked attempts in all situations. The pipeline doesn't carry attempt counts yet, so this page has no live Red Wings section."
+}

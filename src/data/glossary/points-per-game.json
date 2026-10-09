@@ -1,0 +1,234 @@
+{
+ "slug": "points-per-game",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Points per game",
+  "short": "P/GP",
+  "abbr": "P/GP",
+  "aliases": [
+   "P/GP",
+   "points per game played",
+   "point-per-game pace",
+   "scoring rate"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "points per game nhl",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json (single_keyword theme, Ahrefs KE US volumes), 2026-10-09"
+ },
+ "seo": {
+  "title": "Points Per Game in the NHL and How P/GP Is Calculated",
+  "description": "Points per game in the NHL is points divided by games played. How it's figured, the usual minimums, what counts as elite, and the Red Wings' best rates.",
+  "h1": "P/GP and Points Per Game in the NHL"
+ },
+ "hero": {
+  "definition": "Points per game (P/GP) is a player's points divided by the games he played. It puts a player who missed time on the same footing as one who dressed for every game, and in the current NHL a point a game marks a star.",
+  "dek": "Points per game in the NHL is the cleanest way to compare scorers who played different numbers of games. Thirty-five of last season's 488 regular skaters reached a point a game, and only one of them was a Red Wing."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "P/GP",
+   "sub": "points per game played; NHL.com saves PPG for power-play goals"
+  },
+  {
+   "label": "Formula",
+   "value": "PTS ÷ GP",
+   "sub": "points divided by games played"
+  },
+  {
+   "label": "Median forward",
+   "value": "0.51",
+   "sub": "327 forwards with 60+ games, 2025-26"
+  },
+  {
+   "label": "Median defenseman",
+   "value": "0.34",
+   "sub": "161 defensemen with 60+ games, 2025-26"
+  },
+  {
+   "label": "Leader, 2025-26",
+   "value": "1.71",
+   "sub": "Nikita Kucherov, 130 points in 76 games"
+  },
+  {
+   "label": "Red Wings leader",
+   "value": "1.04",
+   "sub": "Alex DeBrincat, 85 points in 82 games"
+  },
+  {
+   "label": "Career record",
+   "value": "1.921",
+   "sub": "Wayne Gretzky, 500-point minimum"
+  },
+  {
+   "label": "This site uses",
+   "value": "60 games",
+   "sub": "the minimum for its benchmarks"
+  }
+ ],
+ "origin": [
+  "The rate is as old as the totals behind it. NHL.com's stats glossary carries points per game played back to the league's first season and describes it plainly, as points divided by games played to account for players who missed games to injury or didn't spend the whole season in the NHL. Joe Malone's 48 points in 20 games that first winter work out to 2.40, most of them his own goals.",
+  "The records belong to the 1980s. Wayne Gretzky's career rate of 1.921 is the best in league history among players with 500 points, a hair ahead of Mario Lemieux's 1.883, and his 1983-84 season, at 2.77 points a game, is the best full season anyone has had. Why does nobody come close now? The league doesn't score the way it did then. Teams averaged 3.94 goals a game that season and 3.08 last season, and every point starts with a goal.",
+  "Because a rate can rest on a handful of games, every leaderboard needs a floor, and the floors differ. Hockey-Reference's season leaderboard requires 0.625 points per scheduled team game, about 52 points over last season's schedule, and its career board requires 500 points. That's a points minimum (games played don't enter into it), so a player who reaches that total in half a season makes the list and a full-season grinder with 50 doesn't. This site uses a 60-game floor for its benchmarks instead, which keeps part-season call-ups and long injury absences out of the medians."
+ ],
+ "calculation": {
+  "intro": [
+   "The math is one division. The choices that matter are in the denominator and in the cutoff, since both decide who shows up on a leaderboard, and most arguments about the stat turn out to be arguments about one or the other. These are the inputs:"
+  ],
+  "inputs": [
+   "Points, goals plus assists",
+   "Games played, which counts any game where the player took at least one shift or appeared in the shootout",
+   "A minimum in games or points before anyone gets ranked"
+  ],
+  "formulas": [
+   {
+    "label": "Rate",
+    "expr": "P/GP = PTS ÷ GP"
+   },
+   {
+    "label": "Season pace",
+    "expr": "pace = P/GP × games on the schedule"
+   },
+   {
+    "label": "Goals rate",
+    "expr": "G/GP = G ÷ GP"
+   },
+   {
+    "label": "Assists rate",
+    "expr": "A/GP = A ÷ GP"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A winger who scores 60 points in 60 games has a rate of 1.00. A teammate who plays 80 games and scores 68 has more points and the lower rate (0.85), and he's the one who sits lower on a per-game leaderboard, even though he did more for the team over the whole season.",
+  "after": [
+   "Games played counts any game with a shift, so a player hurt on his first shift of a night takes a full game's denominator for one shift's worth of chances. The bigger blind spot is the one NHL.com's own glossary flags. The rate doesn't account for differences in ice time or special-teams time."
+  ],
+  "variants": [
+   {
+    "term": "G/GP",
+    "def": "Goals per game played, the rate version of goals.",
+    "slug": "goals"
+   },
+   {
+    "term": "A/GP",
+    "def": "Assists per game played. NHL.com tracks primary and secondary assists per game too.",
+    "slug": "assists"
+   },
+   {
+    "term": "Pace",
+    "def": "P/GP times the games on the schedule, the season total a player's rate would produce over a full season."
+   },
+   {
+    "term": "P/60",
+    "def": "Points per 60 minutes of ice time, which divides by minutes instead of games.",
+    "slug": "per-60-rates"
+   }
+  ]
+ },
+ "meaning": [
+  "P/GP measures scoring per appearance, and it's the most repeatable of the basic scoring rates. Among the 260 forwards who played 60 games in each of the last two seasons, a player's points per game in the first season correlated at 0.88 with the second, ahead of goals per game at 0.74. If you're trying to guess next year's scoring from this year's, start here.",
+  "Last season the median regular forward scored 0.51 points a game and the median defenseman 0.34, and a point a game was a high bar. Nikita Kucherov led at 1.71, just ahead of Connor McDavid, and Leon Draisaitl's rate ranked fourth even though his point total ranked only ninth, because he got his 97 points in 65 games. Kucherov's edge came entirely from the denominator, since McDavid finished with eight more points.",
+  "The bar moves with the league's scoring. In 2014-15, when teams averaged 2.66 goals a game, only eight regulars reached a point a game, and last season 35 did. A forward at 0.95 today has 43 regulars for company, where back then he'd have been one of 11. That's one player's rate read against two different leagues, and it's why a raw rate travels badly from one era to another.",
+  "Alex DeBrincat's 1.04 ranked 31st among the regulars and made him Detroit's only point-a-game player, with Lucas Raymond and Dylan Larkin close behind. Moritz Seider's 0.73 ranked 16th among regular defensemen, a top-pair rate on a team that finished 22nd in goals."
+ ],
+ "uses": [
+  {
+   "title": "Comparing players who missed time",
+   "html": "This is the job the stat was built for. Draisaitl's 97 points and Mark Scheifele's 103 look close as totals, but Draisaitl got his in far fewer games and scored at 1.49 a game to Scheifele's 1.26. Who had the better season? Scheifele helped his team on more nights and Draisaitl helped more on the nights he played, which is the whole case for keeping both numbers. Closer to home, <a href=\"/players/dylan-larkin/\">Larkin</a> missed eight games, and his rate works out to a 74-point pace over a full season, seven more than he finished with."
+  },
+  {
+   "title": "Turning a rate into a season",
+   "html": "Multiply P/GP by the games on the schedule and you get a pace, the number broadcasts quote all season. It's useful as a translation, since <a href=\"/players/lucas-raymond/\">Raymond</a>'s rate works out to a 78-point full season and <a href=\"/players/alex-debrincat/\">DeBrincat</a>, who never missed a game, finished exactly on his. It's far less useful in October, when a pace built on a few games is mostly noise. Treat any pace quoted before Thanksgiving as a description of the first few weeks."
+  },
+  {
+   "title": "Comparing eras",
+   "html": "Gretzky's 2.77 and McDavid's 1.68 weren't scored in the same league. Before you compare rates across seasons, check how many goals the league was scoring (the swing from eight point-a-game regulars to 35 in barely a decade is the warning) or use a source that adjusts for it."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Small samples flatter",
+   "html": "Porter Martone scored 10 points in nine games last season, a 1.11 rate that would've ranked 20th among the league's regulars. A rate built on nine games carries the same noise as a goal total built on nine games, which is why every leaderboard sets a minimum."
+  },
+  {
+   "title": "It ignores ice time",
+   "html": "A game is a game in the denominator, whether the player had a short night or a long one. Seider played 25.7 minutes a night last season and DeBrincat 18.5, so per game Seider looks closer to DeBrincat than he does per minute, where the gap is nearly double. Use a per-60 rate for that."
+  },
+  {
+   "title": "It includes the power play",
+   "html": "P/GP folds in power-play points, which made up 21% of all skater points last season and which depend on how much power-play time a coach hands out. Two forwards with the same rate can have far different even-strength production."
+  },
+  {
+   "title": "The abbreviation collides",
+   "html": "NHL.com uses PPG for power-play goals, so a PPG column on an official table means something else entirely, and it's worth checking the glossary before you quote one."
+  }
+ ],
+ "related": [
+  {
+   "slug": "points",
+   "name": "Points",
+   "abbr": "PTS",
+   "vs": "The total that P/GP divides by games."
+  },
+  {
+   "slug": "games-played",
+   "name": "Games played",
+   "abbr": "GP",
+   "vs": "The denominator, which counts a one-shift night as a full game."
+  },
+  {
+   "slug": "per-60-rates",
+   "name": "Per-60 rates",
+   "abbr": "/60",
+   "vs": "Divides by minutes instead of games, which evens out ice time."
+  },
+  {
+   "slug": "goals",
+   "name": "Goals",
+   "abbr": "G",
+   "vs": "Goals per game repeat less reliably than points per game."
+  },
+  {
+   "slug": "time-on-ice",
+   "name": "Time on ice",
+   "abbr": "TOI",
+   "vs": "The minutes P/GP leaves out."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does points per game include the playoffs?",
+   "a": "Not unless the table says so. NHL.com and Hockey-Reference keep regular-season and playoff stats separately, and every benchmark on this page is regular season only. Playoff rates come from far smaller samples, so they're best read on their own."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Stats glossary",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "P/GP definition and its ice-time caveat, games played, PPG as power-play goals"
+  },
+  {
+   "label": "Rate Statistic Requirements",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/rate_stat_req.html",
+   "note": "0.625 points per scheduled game for season leaders, 500 points for career leaders"
+  },
+  {
+   "label": "Career leaders, points per game",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leaders/points_per_game_career.html",
+   "note": "Gretzky 1.921, Lemieux 1.883"
+  },
+  {
+   "label": "Skater stats, 2025-26 and all seasons",
+   "publisher": "NHL.com stats (api.nhle.com)",
+   "url": "https://www.nhl.com/stats/skaters",
+   "note": "every 2025-26 rate, the season-by-season point-a-game counts, Malone's 1917-18 line and the single-season records"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from the NHL stats API's regular-season skater summaries, downloaded October 9, 2026: 2025-26 benchmarks use skaters with 60 or more games (327 forwards, 161 defensemen), point-a-game counts by season use the same 60-game floor, goals per team game is total goals over total team games, per-minute comparisons use games played times average time on ice, and the year-over-year correlation uses the 260 forwards with 60 or more games in both 2024-25 and 2025-26. Single-season records use a 40-game minimum in the same API; career rates are Hockey-Reference's."
+}

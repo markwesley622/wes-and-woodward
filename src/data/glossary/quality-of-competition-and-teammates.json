@@ -1,0 +1,256 @@
+{
+ "slug": "quality-of-competition-and-teammates",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Quality of competition and teammates",
+  "short": "QoC",
+  "abbr": "QoC",
+  "aliases": [
+   "QoC",
+   "QoT",
+   "quality of competition",
+   "quality of teammates",
+   "TOI QoC",
+   "competition metrics"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "quality of competition in hockey",
+  "supporting": [],
+  "source": "No measured search volume (stat_themes.json status no_volume, Ahrefs KE US, 2026-10-09); primary is the natural phrase for the stat"
+ },
+ "seo": {
+  "title": "Quality of Competition in Hockey and Quality of Teammates",
+  "description": "Quality of competition in hockey (QoC) measures how good a player's opponents were. How it's built, how little it moves results, and the Red Wings' numbers.",
+  "h1": "Quality of Competition in Hockey (QoC) and Teammates (QoT)"
+ },
+ "hero": {
+  "definition": "Quality of competition in hockey (QoC) measures how strong a player's opponents were, and quality of teammates (QoT) does the same for his linemates, usually by averaging each one's quality and weighting it by the ice time they shared. Both put a player's results in context.",
+  "dek": "\"He plays tough minutes\" is a common defense of a bad shot share. The numbers say the gap between the easiest and hardest competition in the league is small, and the gap in teammates is more than twice as wide."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "QoC, QoT",
+   "sub": "quality of competition, quality of teammates"
+  },
+  {
+   "label": "Built from",
+   "value": "Shared TOI",
+   "sub": "each opponent weighted by the time faced"
+  },
+  {
+   "label": "Forward QoC",
+   "value": "27.2-29.9%",
+   "sub": "opponents' TOI%, 372 forwards, 2025-26"
+  },
+  {
+   "label": "Forward QoT",
+   "value": "26.2-33.2%",
+   "sub": "teammates' TOI%, the same 372 forwards"
+  },
+  {
+   "label": "Teammates vary",
+   "value": "2.2x",
+   "sub": "as much as opponents, by standard deviation"
+  },
+  {
+   "label": "Toughest Wing",
+   "value": "29.71%",
+   "sub": "Dylan Larkin's QoC, 6th of 372 forwards"
+  },
+  {
+   "label": "Softest Wing",
+   "value": "27.85%",
+   "sub": "James van Riemsdyk's QoC, 346th of 372"
+  },
+  {
+   "label": "This site uses",
+   "value": "EH",
+   "sub": "Evolving-Hockey even-strength tables, 2025-26"
+  }
+ ],
+ "origin": [
+  "Context stats arrived early in public analytics. By 2014, Behind the Net alone carried three measures of competition and three of teammates, by one Hockey-Graphs writer's count. Rob Vollman's player usage charts put quality of competition on one axis and zone starts on the other, which made deployment something you could see at a glance.",
+  "Eric Tulsky changed how they're built. In an August 2012 post at NHL Numbers, the earliest War-on-Ice could find, he measured competition by ice time, and a month later his histograms showed how narrow the spread in competition was across the league. Two things followed, in Garret Hohl's summary at Hockey-Graphs. Ice time became the preferred measure over shot metrics, and the impact of line matching went from important to overrated to \"inconsequential.\"",
+  "The follow-up work filled in the edges. A 2014 Hockey-Graphs piece noted that nearly every player's average opponent landed within one shot attempt per 60 minutes of average, with the extremes around two. Hohl's 2015 study found teammate quality had about five times the variance of competition quality, and that a one-point change in either moved a player's own shot share about 1.5 points (up for teammates, down for opponents). In 2016, Ryan Stimson and DTMAboutHeart split both by position and found that what matters depends on the player. For a forward's shot generation, the defensemen he faced and the forwards he played with carried the weight.",
+  "Evolving-Hockey publishes QoC and QoT tables built on ice time, RAPM, GAR and expected goals above replacement, with every opponent and teammate weighted by the minutes he shared with the player, and this page uses its even-strength numbers from 2025-26 throughout."
+ ],
+ "calculation": {
+  "intro": [
+   "Every version is a weighted average. Pick a measure of quality, look up every opponent a player faced, and weight each one by the share of the player's ice time he spent against him. Evolving-Hockey describes its tables exactly that way. The inputs:"
+  ],
+  "inputs": [
+   "Every opponent (for QoC) or teammate (for QoT) a player shared the ice with",
+   "The seconds they shared, from the NHL's shift charts",
+   "A quality rating for each of them, such as TOI%, time on ice per game, RAPM, GAR or xGAR per 60",
+   "The game state, usually even strength or five-on-five"
+  ],
+  "formulas": [
+   {
+    "label": "Competition",
+    "expr": "QoC = Σ (opponent's rating × time shared) ÷ Σ time shared"
+   },
+   {
+    "label": "Teammates",
+    "expr": "QoT = Σ (teammate's rating × time shared) ÷ Σ time shared"
+   },
+   {
+    "label": "Ice-time rating",
+    "expr": "TOI% = a player's ice time ÷ the minutes available to him"
+   }
+  ],
+  "example": "Here's a worked example with invented round numbers. A forward spends 600 even-strength minutes against opponents who play 30% of their team's minutes, and 400 against opponents who play 27%. His ice-time QoC is (600 × 30 + 400 × 27) ÷ 1,000, or 28.8%, which is about what the average forward faces. Two lineups that look nothing alike on the bench can produce nearly the same number.",
+  "after": [
+   "Ice time is the rating Tulsky's work made standard, and it's a blunt one. As Hohl put it in 2015, a 13-minute forward on a contending team doesn't have the same talent as a 13-minute forward on a lottery team, which is why the RAPM, GAR and xGAR versions exist."
+  ],
+  "variants": [
+   {
+    "term": "QoC",
+    "def": "Quality of competition. The time-weighted quality of the opponents a player faced."
+   },
+   {
+    "term": "QoT",
+    "def": "Quality of teammates. The same average for the players he skated with."
+   },
+   {
+    "term": "TOI QoC",
+    "def": "The ice-time version, where each opponent's rating is his share of his team's minutes."
+   },
+   {
+    "term": "RAPM QoC",
+    "def": "A version that rates each opponent by his isolated impact instead of his minutes.",
+    "slug": "rapm"
+   },
+   {
+    "term": "xGAR QoC",
+    "def": "Rates each opponent by expected goals above replacement per 60.",
+    "slug": "wins-above-replacement"
+   }
+  ]
+ },
+ "meaning": [
+  "QoC measures how hard a player's minutes were, and for almost everyone the answer is close to average. If you line up the 372 forwards with 500 even-strength minutes in Evolving-Hockey's 2025-26 table, their opponents' TOI% ran from 27.23% to 29.86%, with a standard deviation of 0.56 points. That's a narrow band. In minutes, the toughest-faced forward's opponents averaged 14.99 a game and the easiest-faced forward's 13.65.",
+  "Teammates spread out more. The same forwards' QoT ran from 26.21% to 33.19%, with a standard deviation of 1.20 points, about 2.2 times as wide as the competition's, or 4.6 times the variance, close to the five times Hohl measured with shot-share ratings in 2015. Rated by xGAR per 60, teammates varied 5.6 times as much as opponents did.",
+  "Detroit's numbers follow the league's shape. <a href=\"/players/dylan-larkin/\">Dylan Larkin</a> faced the toughest competition on the team (29.71%, sixth among the 372 forwards), and James van Riemsdyk the softest (27.85%, 346th). In minutes, Larkin's opponents averaged 14.9 a game and van Riemsdyk's 13.95. The whole range of Detroit's forward assignments came to less than a minute of opponent ice time per game.",
+  "So does QoC matter? Over a full season it matters a little, and you can put a number on it. Hohl's slope says a one-point bump in competition shot share costs a player about 1.5 points of his own, and the league spread in competition is narrow. Teammates move more, because their spread is wider."
+ ],
+ "uses": [
+  {
+   "title": "Testing the tough-minutes defense",
+   "html": "Larkin's competition was the sixth-toughest among regular forwards, and Detroit had 47.2% of the expected goals with him on the ice at five-on-five. Is that the tough-minutes story? It's half of it, since his teammates ranked 41st by the same measure, and Hohl's research says a better linemate helps about as much per point as a better opponent hurts. When you see a top-line center with top-line competition, check who he played with before you grade him on a curve."
+  },
+  {
+   "title": "Explaining a split within a pair",
+   "html": "<a href=\"/players/moritz-seider/\">Moritz Seider</a> and <a href=\"/players/ben-chiarot/\">Ben Chiarot</a> faced nearly the same competition last season (29.12% and 28.87%). Their teammates were another story, 15th and 168th among 214 defensemen by the same measure. Detroit had 55.3% of the expected goals with Seider on the ice at five-on-five and 45.2% with Chiarot. The competition column puts them side by side, and the teammates column puts them 153 places apart."
+  },
+  {
+   "title": "Checking whether a player was sheltered",
+   "html": "Evolving-Hockey's table is season-only, so for its <a href=\"/players/axel-sandin-pellikka/\">Axel Sandin-Pellikka</a> research this site rebuilt his QoC game by game from NHL shift charts, matching EH's five-on-five ice time to the hundredth of a minute. His opponents' xGAR per 60 averaged +0.156 over his first 34 games and +0.253 over his last 34, while his ice time fell. Was he being hidden? His competition got tougher as his minutes shrank, which is the opposite of sheltering."
+  }
+ ],
+ "limits": [
+  {
+   "title": "It's an average of a distribution",
+   "html": "A single QoC number blends a few shifts against the other team's top line with a lot of shifts against everybody else. Hohl conceded the mean-only problem in 2017, and argued that splitting opponents into tiers doesn't fix it, since the cutoffs are arbitrary."
+  },
+  {
+   "title": "The rating is only as good as its input",
+   "html": "Ice-time QoC rewards facing players who play a lot, which isn't the same as facing good ones. The RAPM and GAR versions fix that by rating opponents on results, and they carry whatever error those models have."
+  },
+  {
+   "title": "It describes context and adjusts for nothing",
+   "html": "Knowing a player's QoC doesn't tell you how much to move his numbers, only which direction. Regression models like RAPM, which control for teammates, opponents, zone starts and score at once, do the adjusting, and Hohl called them superior to either kind of QoC."
+  },
+  {
+   "title": "Teammates aren't one thing",
+   "html": "Hohl found that a teammate's effect on a player isn't the same for every player, the way competition's is. Stimson and DTMAboutHeart found the useful split runs by position, and a single QoT number hides both."
+  }
+ ],
+ "related": [
+  {
+   "slug": "rapm",
+   "name": "Regularized adjusted plus-minus",
+   "abbr": "RAPM",
+   "vs": "Controls for competition and teammates at once. QoC only describes them."
+  },
+  {
+   "slug": "zone-starts",
+   "name": "Zone starts",
+   "abbr": "OZS%",
+   "vs": "The other half of deployment, where a player's shifts begin."
+  },
+  {
+   "slug": "relative-corsi",
+   "name": "Relative Corsi",
+   "abbr": "CF% Rel",
+   "vs": "A player's shot share against his team's. QoC and QoT help explain it."
+  },
+  {
+   "slug": "wins-above-replacement",
+   "name": "Wins above replacement",
+   "abbr": "WAR",
+   "vs": "One of the ratings QoC can be built on."
+  },
+  {
+   "slug": "time-on-ice",
+   "name": "Time on ice",
+   "abbr": "TOI",
+   "vs": "The rating the most common version of QoC is built on."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Skater Quality of Teammate and Quality of Competition",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/?p=881",
+   "note": "weighted-average construction, TOI%, RAPM, GAR, xGAR ratings"
+  },
+  {
+   "label": "Overemphasizing Context",
+   "publisher": "Hockey-Graphs (garik16), January 1, 2014",
+   "url": "https://hockey-graphs.com/2014/01/01/overemphasizing-context-a-mistake-just-as-poor-as-explaining-context-in-the-first-place/",
+   "note": "Behind the Net's three and three; the plus-or-minus one Corsi/60 range"
+  },
+  {
+   "label": "Annotated Glossary",
+   "publisher": "War-on-Ice blog, November 26, 2015",
+   "url": "http://blog.war-on-ice.com/annotated-glossary/",
+   "note": "Tulsky's August 2012 ice-time metric as the first reference; Vollman's usage charts"
+  },
+  {
+   "label": "Why linemate and competition metrics may not be as simple as we think",
+   "publisher": "Hockey-Graphs (Garret Hohl), October 8, 2015",
+   "url": "https://hockey-graphs.com/2015/10/08/why-linemate-and-competition-metrics-may-not-be-as-simple-as-we-think/",
+   "note": "Tulsky's September 2012 histograms, the 1.5 slope, five times the variance, the 13-minute forward"
+  },
+  {
+   "label": "Just How Important is Quality of Competition?",
+   "publisher": "Hockey-Graphs (Ryan Stimson and DTMAboutHeart), October 10, 2016",
+   "url": "https://hockey-graphs.com/2016/10/10/just-how-important-is-quality-of-competition-very-also-not-much-its-all-relative/",
+   "note": "position-split QoC and QoT"
+  },
+  {
+   "label": "Behind the Numbers: The issues with binning, QoC, and scoring chances",
+   "publisher": "Hockey-Graphs (Garret Hohl), February 6, 2017",
+   "url": "https://hockey-graphs.com/2017/02/06/behind-the-numbers-the-issues-with-binning-qoc-and-scoring-chances/",
+   "note": "mean-only QoC, binned opponents, regression models"
+  },
+  {
+   "label": "Regularized Adjusted Plus-Minus",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/regularized-adjusted-plus-minus/",
+   "note": "RAPM controls for teammates, opponents, zone starts and score"
+  },
+  {
+   "label": "2025-26 regular-season skater file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "five-on-five expected-goal shares"
+  }
+ ],
+ "method": "QoC and QoT figures are Wes & Woodward's calculations from Evolving-Hockey's 2025-26 even-strength QoC and QoT tables (subscriber export, downloaded September 2, 2026 for this site's research): skaters with at least 500 even-strength minutes, ranges and standard deviations of the TOI% and xGAR-per-60 columns, ranks by TOI%. Expected-goal shares are MoneyPuck five-on-five on-ice xGF ÷ (xGF + xGA) from the 2025-26 skater file downloaded October 9, 2026. Sandin-Pellikka's game-by-game QoC was rebuilt from NHL shift charts for this site's research in September 2026: five-on-five seconds only, each opponent rated by his Evolving-Hockey 2025-26 xGAR per 60 and averaged by shared time, with games split into his first and last 34 and weighted by his ice time."
+}

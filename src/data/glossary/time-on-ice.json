@@ -1,0 +1,319 @@
+{
+ "slug": "time-on-ice",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Time on ice",
+  "short": "TOI",
+  "abbr": "TOI",
+  "aliases": [
+   "TOI",
+   "ATOI",
+   "TOI/GP",
+   "ice time",
+   "EV TOI",
+   "PP TOI",
+   "SH TOI",
+   "average time on ice"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "what does toi mean in hockey",
+  "supporting": [
+   "what is toi in hockey",
+   "toi hockey meaning",
+   "toi in hockey",
+   "time on ice nhl",
+   "time on ice",
+   "hockey time on ice"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Does TOI Mean in Hockey and How Ice Time Is Tracked",
+  "description": "What does TOI mean in hockey? Time on ice, a player's minutes. How it's tracked, ATOI and the EV, PP and SH splits, and the Red Wings' ice-time leaders.",
+  "h1": "What Does TOI Mean in Hockey? Time on Ice and ATOI"
+ },
+ "hero": {
+  "definition": "In hockey, time on ice (TOI) is how many minutes a player spends on the ice, in total or per game. The per-game version is average time on ice (ATOI), and it's the clearest read on how much a coach trusts someone. The NHL splits it into even-strength, power-play and shorthanded time.",
+  "dek": "What does TOI mean in hockey box scores? It's the ice-time column the NHL's game sheet carries for every player, and the league has kept it officially only since 1997-98."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "TOI · ATOI",
+   "sub": "the NHL writes the average as TOI/GP"
+  },
+  {
+   "label": "Built from",
+   "value": "EV + PP + SH",
+   "sub": "even strength, power play, shorthanded"
+  },
+  {
+   "label": "Median forward",
+   "value": "15:56",
+   "sub": "TOI/GP, 327 forwards with 60+ GP, 2025-26"
+  },
+  {
+   "label": "Median defenseman",
+   "value": "20:21",
+   "sub": "TOI/GP, 161 defensemen with 60+ GP, 2025-26"
+  },
+  {
+   "label": "League leader",
+   "value": "27:44",
+   "sub": "Quinn Hughes, TOI/GP, 2025-26"
+  },
+  {
+   "label": "Most minutes",
+   "value": "2,105",
+   "sub": "Moritz Seider, the NHL's high in 2025-26"
+  },
+  {
+   "label": "Year to year",
+   "value": "r = 0.90",
+   "sub": "TOI/GP, skaters with 60+ GP both seasons"
+  },
+  {
+   "label": "Official since",
+   "value": "1997-98",
+   "sub": "per the NHL's stats glossary"
+  }
+ ],
+ "origin": [
+  "Ice time is a young official stat. The NHL's stats glossary dates time on ice, and its even-strength, power-play and shorthanded splits, to 1997-98. By then the league had been counting individual skaters' shots for nearly four decades without recording anyone's minutes.",
+  "People track it. Rule 36 of last season's NHL rulebook lists a time-on-ice scorer among the Real Time Scorers assigned to every game, next to three stats-entry scorers and an event analyst, and requires their reports during the first and second intermissions and again after the game. The minutes in a box score come from that log, with a league-assigned scoring system manager overseeing the data.",
+  "The NHL calls the total TOI and the average TOI/GP. Hockey-Reference calls the average ATOI and prints it in minutes and seconds per game, so the TOI meaning in hockey tables is identical at both sites and only the label moves. The NHL's glossary pins down the arithmetic. A player's TOI is his even-strength, power-play and shorthanded time added together, defined as playing time in all situations, so overtime minutes count, and the league breaks those out in their own OT TOI column."
+ ],
+ "calculation": {
+  "intro": [
+   "Ice time is game-clock time summed over a player's shifts, and the NHL sorts every second of it by manpower. Stoppages and TV timeouts add nothing, since the clock isn't running, and time in the penalty box isn't time on the ice. These are the inputs:"
+  ],
+  "inputs": [
+   "Even-strength time (EV TOI), when both teams have the same number of skaters",
+   "Power-play time (PP TOI), when his team has the man advantage",
+   "Shorthanded time (SH TOI), when his team is killing a penalty",
+   "Shifts, the separate trips over the boards that the time is summed from",
+   "Games played, the denominator for the per-game average"
+  ],
+  "formulas": [
+   {
+    "label": "Total",
+    "expr": "TOI = EV TOI + PP TOI + SH TOI"
+   },
+   {
+    "label": "Per game (ATOI)",
+    "expr": "TOI/GP = TOI ÷ games played"
+   },
+   {
+    "label": "Per shift",
+    "expr": "TOI/shift = TOI ÷ shifts"
+   },
+   {
+    "label": "Rate stats",
+    "expr": "stat per 60 = stat ÷ TOI in minutes × 60"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A defenseman takes 24 shifts in a game and averages 50 seconds a shift. That's 20 minutes of ice time. If three of those minutes come on the power play and two on the penalty kill, his even-strength time is 15 minutes. Keep that up for an 80-game season and he's logged 1,600 minutes.",
+  "after": [
+   "Analysts use the total as a denominator more often than as a stat. Divide goals, shots or expected goals by ice time and multiply by 60, and you've got a per-60 rate that puts a fourth-liner and a first-liner on the same scale, even when one of them plays twice as long as the other."
+  ],
+  "variants": [
+   {
+    "term": "TOI/GP",
+    "def": "Average time on ice per game. Hockey-Reference calls it ATOI."
+   },
+   {
+    "term": "EV TOI",
+    "def": "Even-strength ice time, which the NHL's glossary calls the way to compare usage in normal situations."
+   },
+   {
+    "term": "PP TOI",
+    "def": "Power-play ice time. PP TOI% is a player's share of his team's total."
+   },
+   {
+    "term": "SH TOI",
+    "def": "Shorthanded ice time. SH TOI% is a player's share of his team's penalty-kill minutes."
+   },
+   {
+    "term": "/60",
+    "def": "Any stat scaled to 60 minutes of TOI.",
+    "slug": "per-60-rates"
+   }
+  ]
+ },
+ "meaning": [
+  "TOI measures trust, and position sets the baseline. Among the 327 forwards who played at least 60 games last season, the median averaged just under 16 minutes a night. The 161 defensemen who did the same had a median a bit over 20, on more shifts that ran a couple of seconds longer. Compare a forward to forwards and a defenseman to defensemen, or you'll be comparing two different jobs.",
+  "Quinn Hughes led the league at 27:44 a game, and <a href=\"/players/moritz-seider/\">Moritz Seider</a> was third, behind Zach Werenski, at 25:40. Seider played every game at that rate, which made him the NHL's leader in total minutes with 2,104.7, about 50 more than anyone else. Among forwards, Connor McDavid led at just under 23 minutes, and <a href=\"/players/dylan-larkin/\">Dylan Larkin</a>'s average of just over 20 ranked 29th.",
+  "The splits tell you what kind of trust it is. Taking the median of each piece, the typical forward played about 13 and a half minutes a night at even strength, a minute and 40 seconds on the power play and 40 seconds shorthanded. <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> was a power-play specialist, with more than three minutes a game on the man advantage and almost nothing on the penalty kill. Larkin did both jobs (more than three minutes a night on the power play and a minute and a half shorthanded), and <a href=\"/players/j-t-compher/\">J.T. Compher</a> was a penalty killer first.",
+  "Why does a coach's opinion belong in a stats glossary? Because it's one of the steadiest numbers in hockey. Among the 379 skaters who played 60 or more games in each of the last two seasons, ice time per game correlated at 0.90 season over season. It barely moves. A player's minutes this year are a strong hint about his minutes next year, and about where his coach slots him on the depth chart today."
+ ],
+ "uses": [
+  {
+   "title": "Reading the depth chart",
+   "html": "Sort a roster by TOI/GP and you've got the coach's depth chart without the press release. It's that blunt. Detroit's two heaviest-used defensemen last season were Seider and <a href=\"/players/simon-edvinsson/\">Simon Edvinsson</a>, who averaged better than 22 minutes, with <a href=\"/players/ben-chiarot/\">Ben Chiarot</a> next at nearly 21. Up front, Larkin, <a href=\"/players/lucas-raymond/\">Lucas Raymond</a> and DeBrincat all averaged more than 18 minutes and carried the heaviest loads. At the other end, <a href=\"/players/axel-sandin-pellikka/\">Axel Sandin-Pellikka</a>'s 16:13 ranked 149th of the 161 regular defensemen."
+  },
+  {
+   "title": "Turning totals into rates",
+   "html": "James van Riemsdyk's 31 points in 72 games look modest at 0.43 a game, a step behind <a href=\"/players/andrew-copp/\">Andrew Copp</a>'s 0.54. Per 60 minutes the order flips, 2.20 for van Riemsdyk to 1.97 for Copp, because van Riemsdyk did it in less than 12 minutes a night to Copp's 16 and a half. Some of that is power-play time (almost two of van Riemsdyk's nightly minutes came with the man advantage), which is the first thing to check behind any rate."
+  },
+  {
+   "title": "Tracking workload",
+   "html": "Seider's 2,104.7 minutes came on 28.6 shifts a game, and he didn't miss one of Detroit's 82 games. That total is a defenseman's version of a goalie's starts, the plain workload number, and nobody in the league carried more of it. The NHL's share versions (PP TOI% and SH TOI%) show the same thing for special teams, the slice of a team's power-play or penalty-kill time that one player soaked up."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night. Games played, average ice time and points come from the NHL's own club stats; five-on-five minutes and the team's special-teams time come from MoneyPuck.",
+  "tiles": [
+   {
+    "label": "Games played",
+    "source": "dashboard",
+    "path": "standings.gamesPlayed",
+    "format": "int",
+    "sub": "the TOI/GP denominator"
+   },
+   {
+    "label": "5-on-4 time",
+    "source": "team",
+    "path": "situations.5on4.iceTime",
+    "format": "mmss",
+    "sub": "team power-play time this season (minutes:seconds)"
+   },
+   {
+    "label": "4-on-5 time",
+    "source": "team",
+    "path": "situations.4on5.iceTime",
+    "format": "mmss",
+    "sub": "team penalty-kill time this season (minutes:seconds)"
+   }
+  ],
+  "leaders": {
+   "source": "skaters",
+   "sort": "toiPerGame",
+   "ascending": false,
+   "limit": 8,
+   "caption": "Red Wings skaters by average ice time per game, all situations",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "TOI/GP",
+     "path": "toiPerGame",
+     "format": "mmss"
+    },
+    {
+     "label": "5v5 minutes",
+     "path": "fiveOnFive.icetimeMinutes",
+     "format": "num1"
+    },
+    {
+     "label": "Points",
+     "path": "points",
+     "format": "int"
+    }
+   ]
+  },
+  "smallSample": 10,
+  "smallSampleNote": "Detroit has played {gp} games, so one blowout or early injury still bends an average this young.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "It records the coach's opinion",
+   "html": "Minutes say how much a coach played someone. Whether the player earned them is a separate question, and on-ice goal and expected-goal shares are the stats that answer it. TOI can't tell the difference."
+  },
+  {
+   "title": "Power-play time inflates rates",
+   "html": "NHL teams scored almost three times as many goals per minute at five-on-four last season as at five-on-five (7.32 per 60 to 2.48, according to MoneyPuck's season file), so a big power-play role lifts any all-situations per-60 number. Split the rates by situation before you compare two players."
+  },
+  {
+   "title": "It doesn't say where shifts started",
+   "html": "Two players with the same 18 minutes can face different work, one starting in the offensive zone against third lines and the other taking defensive-zone draws against the other team's best, and TOI records none of it, which is why zone starts and quality of competition exist as stats of their own."
+  },
+  {
+   "title": "One bad night drags the average",
+   "html": "A player who leaves a game hurt after one shift still has that game in his denominator, because a single shift earns a game played, so his TOI/GP drops through no choice of his coach's. It's a small effect over a full season and a big one over five games."
+  }
+ ],
+ "related": [
+  {
+   "slug": "per-60-rates",
+   "name": "Per-60 rates",
+   "abbr": "/60",
+   "vs": "Uses TOI as the denominator to level a 12-minute player and a 22-minute one."
+  },
+  {
+   "slug": "games-played",
+   "name": "Games played",
+   "abbr": "GP",
+   "vs": "The denominator of TOI/GP, and it counts a one-shift night as a full game."
+  },
+  {
+   "slug": "five-on-five",
+   "name": "Five-on-five",
+   "abbr": "5v5",
+   "vs": "The biggest slice of every player's TOI, and the default for comparisons."
+  },
+  {
+   "slug": "power-play-unit",
+   "name": "Power play and penalty kill (5v4, 4v5)",
+   "abbr": "PP / PK",
+   "vs": "The special-teams slices of TOI, rated per 60 minutes."
+  },
+  {
+   "slug": "zone-starts",
+   "name": "Zone starts",
+   "abbr": "OZS%",
+   "vs": "Where a player's shifts began, the context TOI leaves out."
+  },
+  {
+   "slug": "quality-of-competition-and-teammates",
+   "name": "Quality of competition and teammates",
+   "abbr": "QoC",
+   "vs": "Who a player shared those minutes with and against."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Do goalies have time on ice?",
+   "a": "Yes, and it's the denominator of goals-against average, which the NHL calculates as goals against times 60 divided by time on ice. Karel Vejmelka led all goalies with almost 3,700 minutes last season. John Gibson's 3,181 minutes and 144 goals against work out to his 2.72 GAA."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NHL Stats glossary",
+   "publisher": "NHL.com (also served at api.nhle.com/stats/rest/en/glossary)",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "TOI, TOI/GP, EV/PP/SH TOI and their 1997-98 start; OT TOI; PP TOI% and SH TOI%; GAA formula"
+  },
+  {
+   "label": "Official Rules 2025-26, Rule 36 (Real Time Scorers)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "time-on-ice scorer at every game; reports at intermissions and after the game"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/about/glossary.html",
+   "note": "ATOI, average time on ice in minutes and seconds per game"
+  },
+  {
+   "label": "2025-26 time-on-ice and summary reports; 2024-25 skater summary; 2025-26 goalie summary",
+   "publisher": "NHL stats API",
+   "url": "https://api.nhle.com/stats/rest/en/skater/timeonice?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "every ice-time, shift and split figure on this page, the year-to-year test, goalie minutes"
+  },
+  {
+   "label": "2025-26 regular-season team file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "goals per 60 at five-on-four and five-on-five"
+  }
+ ],
+ "method": "Ice-time figures are Wes & Woodward's calculations from the NHL stats API's 2025-26 regular-season time-on-ice report, downloaded October 9, 2026: benchmarks use the 327 forwards and 161 defensemen with 60+ games, ranks are within those groups, and Detroit figures use the Detroit-only split (teamId 17). Per-60 points divide points by total minutes (TOI/GP × GP). The year-to-year test pairs the 379 skaters with 60+ games in both the 2024-25 and 2025-26 NHL skater summaries (Pearson correlation of TOI/GP). Situation scoring rates are goals ÷ ice time × 60, summed over MoneyPuck's 32 team rows at 5on4 and 5on5. Goalie minutes come from the NHL goalie summary. The Red Wings section rebuilds nightly."
+}

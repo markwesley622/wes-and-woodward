@@ -1,0 +1,247 @@
+{
+ "slug": "regulation-wins",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Regulation wins",
+  "short": "RW",
+  "abbr": "RW",
+  "aliases": [
+   "RW",
+   "ROW",
+   "regulation wins",
+   "regulation and overtime wins",
+   "regulation plus overtime wins"
+  ],
+  "category": "Team"
+ },
+ "keywords": {
+  "primary": "what does rw mean in hockey",
+  "supporting": [
+   "row hockey stat",
+   "what does row mean in hockey",
+   "regulation wins nhl",
+   "what is rw in hockey",
+   "what is row in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "What Does RW Mean in Hockey and How Regulation Wins Work",
+  "description": "What does RW mean in hockey? Regulation wins, the first standings tiebreaker. How RW and ROW are counted, the spots they've decided, and Detroit's totals.",
+  "h1": "What Does RW Mean in Hockey? Regulation Wins (RW and ROW)"
+ },
+ "hero": {
+  "definition": "Regulation wins (RW) are the games a team wins within 60 minutes, before overtime or a shootout. ROW, the hockey stat beside it in the standings, adds overtime wins and leaves out only shootout wins. When teams finish a season level on points, RW is the first tiebreaker.",
+  "dek": "What does RW mean in hockey standings? It's the column that decided the East's last playoff spot in 2023-24, when Washington and Detroit both finished with 91 points and the Capitals' 32 regulation wins beat the Wings' 27."
+ },
+ "facts": [
+  {
+   "label": "Abbreviations",
+   "value": "RW · ROW",
+   "sub": "regulation wins; regulation plus overtime wins"
+  },
+  {
+   "label": "RW counts",
+   "value": "60 minutes",
+   "sub": "wins decided before overtime or a shootout"
+  },
+  {
+   "label": "Tiebreak order",
+   "value": "RW, ROW, W",
+   "sub": "after games played, per the NHL"
+  },
+  {
+   "label": "RW first since",
+   "value": "2019-20",
+   "sub": "ROW led the tiebreaks from 2010-11"
+  },
+  {
+   "label": "League share",
+   "value": "75%",
+   "sub": "of 2025-26 wins came in regulation"
+  },
+  {
+   "label": "Most, 2025-26",
+   "value": "48",
+   "sub": "Colorado"
+  },
+  {
+   "label": "Fewest, 2025-26",
+   "value": "15",
+   "sub": "Vancouver"
+  },
+  {
+   "label": "Red Wings, 2025-26",
+   "value": "30",
+   "sub": "of 41 wins, with 39 ROW; the league median"
+  }
+ ],
+ "origin": [
+  "Regulation wins exist because not every win is earned the same way anymore. Overtime losses started paying a point in 1999-2000, and the NHL's own standings show ties giving way to the shootout in 2005-06, so from then on a tied game could be won by a team's shooters going one at a time. The first fix came in 2010-11. Before then, as ESPN reported that August, the first tiebreaker \"had been total wins of any kind,\" and Columbus general manager Scott Howson proposed counting only regulation and overtime wins, a change the league made \"to give more weight to victories gained in some form of team play.\"",
+  "That count became ROW, with its own column in the standings. Nine seasons later the league went a step further. For 2019-20 it moved regulation wins ahead of ROW as the first tiebreaker after games played and added an RW column. That's where the order still stands. It's why a 60-minute win is the most useful kind a team can bank in March, even though it pays the same two points as any other.",
+  "The full procedure, per the NHL, runs fewer games played (a better points percentage), regulation wins, regulation and overtime wins, total wins, points in head-to-head games, goal differential and goals scored, with a shootout win counting as one goal for. Regulation wins in the NHL decide ties only once games played are equal, which by the final night of a normal season they are."
+ ],
+ "calculation": {
+  "intro": [
+   "Both numbers are counts, and the only work is sorting each win by when it ended. The NHL's standings feed does that sorting for every team after every game. Here's what it tracks:"
+  ],
+  "inputs": [
+   "Wins decided within the 60 minutes of regulation",
+   "Wins decided in overtime",
+   "Wins decided in a shootout",
+   "Games played, for the rate versions"
+  ],
+  "formulas": [
+   {
+    "label": "RW",
+    "expr": "RW = wins − overtime wins − shootout wins"
+   },
+   {
+    "label": "ROW",
+    "expr": "ROW = RW + overtime wins = wins − shootout wins"
+   },
+   {
+    "label": "Wins",
+    "expr": "W = RW + overtime wins + shootout wins"
+   },
+   {
+    "label": "Rate",
+    "expr": "RW% = RW ÷ games played"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A team with 45 wins, six of them in overtime and five in a shootout, has 34 regulation wins and 40 ROW. A rival that finishes level on points with 44 wins, 36 of them in regulation, takes the tiebreak, one fewer win and all.",
+  "after": [
+   "Overtime and shootout losses don't enter either count, since they live in the OTL column and pay a point each, which is why you'll see a team lose a game and still gain ground on the team behind it."
+  ],
+  "variants": [
+   {
+    "term": "RW",
+    "def": "Regulation wins, the first tiebreaker after games played."
+   },
+   {
+    "term": "ROW",
+    "def": "Regulation plus overtime wins, the second."
+   },
+   {
+    "term": "SOW, SOL",
+    "def": "Shootout wins and losses, separate columns in the NHL's standings feed. Shootout wins drop out of both counts above."
+   },
+   {
+    "term": "RW%",
+    "def": "Regulation wins over games played. Detroit's was .366 last season."
+   },
+   {
+    "term": "P%",
+    "def": "Points percentage, the tiebreak step before RW.",
+    "slug": "points-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "RW measures how often a team settles games in 60 minutes. Last season 986 of the league's 1,312 wins came in regulation, about three in four, and the rest came after the horn. Colorado led with 48 regulation wins and Vancouver had the fewest with 15. Detroit's 30 was the league median.",
+  "The share tells you more than the count. Why look at it? A team's regulation-win total rises with how many games it won at all, so the share is the cleaner read on how it won them. St. Louis got 89% of its wins in regulation, the league's highest share, while only 63% of Philadelphia's did, because the Flyers won 10 shootouts, more than anyone else. Detroit's share was 73%, a shade below the league's, with nine wins in overtime and two in a shootout.",
+  "Tiebreaks come up more often than you'd think. Six sets of teams finished level on points last season, and two of those ties set division seeds. Tampa Bay beat Montreal for second in the Atlantic on regulation wins, and Pittsburgh beat Philadelphia for second in the Metropolitan (34 to 27) even though the Flyers had two more wins, which would've put Philadelphia second under the old total-wins rule. Both pairs met in the first round. The teams that lost the tiebreak won both series.",
+  "Detroit's own number has been steadier than its record. The Wings' 27 regulation wins in 2023-24 were the ones that cost them a playoff spot. They've banked 30 in each season since, missing the playoffs by five points and then by seven."
+ ],
+ "uses": [
+  {
+   "title": "Settling playoff spots",
+   "html": "Detroit learned the stakes in the 2023-24 wild-card race. The Wings had more total wins than Washington (41 to 40) and more ROW (38 to 36), so under either of the league's two previous tiebreak rules the spot would've been theirs. Regulation wins sent the Capitals to the playoffs, and the Wings finished with the same 91 points and no postseason."
+  },
+  {
+   "title": "Seeing where a team's points came from",
+   "html": "Regulation wins strip out the games decided after 60 minutes. Philadelphia's 43 wins last season tied for 10th in the league, but its 27 regulation wins were in the bottom third. Los Angeles made the playoffs with 22 regulation wins, tied for second-fewest in the league, on the strength of 13 wins after regulation and 20 overtime and shootout losses. Look at the RW column before you decide a team's record is as strong as its point total."
+  }
+ ],
+ "limits": [
+  {
+   "title": "It only matters at the margins",
+   "html": "A tiebreaker decides nothing unless two teams finish level on points. Last season it reordered six groups of tied teams, set two division seeds and decided no playoff spots. It did slot Detroit 10th in the East, a place ahead of Columbus, which counts for nothing once the season's over."
+  },
+  {
+   "title": "The points don't change",
+   "html": "A regulation win and a shootout win are still worth two points each, so RW reorders teams that are already level and does nothing to the gap between teams that aren't. It's a sorting rule, and the points table underneath it doesn't move."
+  },
+  {
+   "title": "It says nothing about margin",
+   "html": "A five-goal win and a one-goal win that needed an empty-netter count the same. RW is a record of when games ended, and goal differential (sixth in the tiebreak order) is where the margins show up."
+  },
+  {
+   "title": "Rule changes break old comparisons",
+   "html": "Both tiebreakers are recent, so ties in earlier seasons were settled under different rules. The NHL's standings feed lists RW for seasons when nobody was sorting on it, which makes it easy to read a modern tiebreak into an old race that didn't use one."
+  }
+ ],
+ "related": [
+  {
+   "slug": "points-percentage",
+   "name": "Points percentage",
+   "abbr": "P%",
+   "vs": "The tiebreak step before RW, while games played differ."
+  },
+  {
+   "slug": "goal-differential",
+   "name": "Goal differential",
+   "abbr": "DIFF",
+   "vs": "Sixth in the tiebreak order, where margin counts."
+  },
+  {
+   "slug": "overtime-goals",
+   "name": "Overtime goals",
+   "abbr": "OTG",
+   "vs": "The goals that turn a tie into an overtime win, which ROW counts and RW leaves out."
+  },
+  {
+   "slug": "goalie-record",
+   "name": "Goalie record",
+   "abbr": "W-L-OTL",
+   "vs": "Decisions credited to goalies, with overtime and shootout losses lumped together."
+  },
+  {
+   "slug": "xg-standings",
+   "name": "Expected standings",
+   "abbr": "xPts",
+   "vs": "Standings rebuilt from expected goals."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Tie-Breaking Procedure",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/info/standings-info/tie-breaking-procedure",
+   "note": "full tiebreak order, RW and ROW columns, shootout win as one goal for"
+  },
+  {
+   "label": "Source: NHL to change tiebreaker",
+   "publisher": "ESPN, August 22, 2010",
+   "url": "https://www.espn.in/nhl/news/story?id=5482334",
+   "note": "total wins as the old first tiebreaker, Howson's proposal, the league's reason"
+  },
+  {
+   "label": "New Tie-Breaking Procedure This Season",
+   "publisher": "Oilers Nation, September 12, 2019",
+   "url": "https://oilersnation.com/news/amp/new-tie-breaking-procedure-this-season",
+   "note": "regulation wins become the first tiebreaker for 2019-20"
+  },
+  {
+   "label": "Standings season settings",
+   "publisher": "NHL API",
+   "url": "https://api-web.nhle.com/v1/standings-season",
+   "note": "overtime-loss point from 1999-2000, ROW in use from 2010-11, RW from 2019-20"
+  },
+  {
+   "label": "Standings for April 4, 2004, April 18, 2006, April 18, 2024 and April 17, 2026",
+   "publisher": "NHL API",
+   "url": "https://api-web.nhle.com/v1/standings/2026-04-17",
+   "note": "ties in 2003-04, shootouts in 2005-06, the 2023-24 wild-card tie, every 2025-26 figure"
+  },
+  {
+   "label": "2026 playoff bracket",
+   "publisher": "NHL API",
+   "url": "https://api-web.nhle.com/v1/playoff-bracket/2026",
+   "note": "first-round matchups and results"
+  }
+ ],
+ "method": "Figures are Wes & Woodward's calculations from the NHL standings API, downloaded October 9, 2026. 2025-26 uses the standings for April 17, 2026, the day after the regular season ended (raw/nhl_standings_2026-04-17_final_20252026_ptspct_rw.json): overtime wins are regulationPlusOtWins minus regulationWins, and shootout wins are wins minus regulationPlusOtWins (shootoutWins agrees for all 32 teams). 2023-24 uses the final standings for April 18, 2024 (raw/nhl_standings_season_ends_2015-16_to_2025-26_det_ptspct.json). Ties and shootouts come from the standings for April 4, 2004 (340 team ties, no shootout wins) and April 18, 2006 (no ties, 145 shootout wins) (raw/nhl_standings_2004-04-04_ties_vs_shootout_rw.json, raw/nhl_standings_2006-04-18_ties_vs_shootout_rw.json). Rule dates come from the NHL's standings season settings (raw/nhl_standings_season_flags_downloaded_2026-10-09_rw.json) and first-round results from the 2026 bracket (raw/nhl_playoff_bracket_2026_rw.json)."
+}

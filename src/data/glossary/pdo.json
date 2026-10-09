@@ -1,0 +1,275 @@
+{
+ "slug": "pdo",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "PDO",
+  "short": "PDO",
+  "abbr": "PDO",
+  "aliases": [
+   "PDO",
+   "SPSV%",
+   "shooting plus save percentage",
+   "on-ice S%+Sv%",
+   "Sh% + Sv%"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "pdo hockey",
+  "supporting": [
+   "nhl pdo",
+   "pdo nhl",
+   "pdo meaning hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "PDO in Hockey and How Shooting Plus Save Percentage Works",
+  "description": "PDO in hockey adds on-ice shooting and save percentage. Where the name came from, how it's calculated, what it says about luck, and where Detroit ranked.",
+  "h1": "PDO in Hockey (Shooting Plus Save Percentage)"
+ },
+ "hero": {
+  "definition": "PDO in hockey is a team's shooting percentage plus its save percentage, usually at five-on-five, or the same two numbers for the minutes a given player is on the ice. Because every goal for one team is a goal against for another, the league as a whole always lands at exactly 100. Teams far from 100 tend to drift back, which is why PDO gets read as a luck meter.",
+  "dek": "PDO has no meaning in hockey or anywhere else, since the letters don't stand for anything. Detroit finished 25th at 98.5 last season, mostly because the Wings scored on 8.1% of their five-on-five shots, the third-lowest rate in the league."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "SPSV%",
+   "sub": "the NHL's name, on-ice S% + Sv%"
+  },
+  {
+   "label": "League average",
+   "value": "100",
+   "sub": "every season, by construction"
+  },
+  {
+   "label": "Normal range",
+   "value": "98 to 102",
+   "sub": "80 of 96 team-seasons, 2023-24 through 2025-26"
+  },
+  {
+   "label": "Best team, 2025-26",
+   "value": "102.4",
+   "sub": "Dallas, 5v5"
+  },
+  {
+   "label": "Worst team, 2025-26",
+   "value": "97.1",
+   "sub": "New Jersey, 5v5"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "98.5",
+   "sub": "25th of 32, on 8.1% shooting (30th)"
+  },
+  {
+   "label": "Half-to-half r",
+   "value": "0.36",
+   "sub": "vs 0.81 for CF%, 96 team-seasons"
+  },
+  {
+   "label": "Named for",
+   "value": "A username",
+   "sub": "Brian King's handle at Irreverent Oiler Fans"
+  }
+ ],
+ "origin": [
+  "PDO is a username. Brian King, an Edmonton native and Oilers fan, was a regular at Irreverent Oiler Fans in the mid-2000s, the same blog where Vic Ferrari named Corsi, and PDO was the handle he'd carried over from playing Counter-Strike. When Ferrari posted each Oiler's on-ice goals, shooting percentage and save percentage, King added the two percentages together, and the stat kept his screen name.",
+  "King built it for players. Looking at Ferrari's numbers, he saw some Oilers who were \"incredibly lucky\" and some who \"just couldn't score to save their lives,\" and he knew from playing that \"you can do everything absolutely perfect, and the puck ends up in your net,\" as he told the University of Maryland's Capital News Service in 2017. He still prefers the player version, since a player's sample is smaller and the swings are bigger.",
+  "The league picked it up in February 2015 under the name SPSV%, for shooting plus save percentage. The NHL's glossary entry says the stat is also known as PDO and credits it to Tim Barnes, Ferrari's real name, whose blog published the numbers King summed. It describes the stat's purpose as estimating \"puck luck\" at five-on-five and says a low value often points to better results ahead. Natural Stat Trick and Hockey-Reference print it as PDO, and the league's stats feed carries it as five-on-five shooting plus save percentage."
+ ],
+ "calculation": {
+  "intro": [
+   "Both halves come from the same shots on goal. Shooting percentage is goals divided by shots on goal, save percentage is the share of the other team's shots that didn't go in, and PDO adds them. The only thing sites disagree on is the scale. The NHL and Hockey-Reference print it around 100, and older analytics writing, Hockey-Graphs included, dropped the decimal and wrote it around 1000. These are the inputs:"
+  ],
+  "inputs": [
+   "Goals for and shots on goal for, at five-on-five",
+   "Goals against and shots on goal against, at five-on-five",
+   "For a player, only the shots and goals while he was on the ice"
+  ],
+  "formulas": [
+   {
+    "label": "Shooting",
+    "expr": "Sh% = GF ÷ SF"
+   },
+   {
+    "label": "Saves",
+    "expr": "Sv% = 1 − GA ÷ SA"
+   },
+   {
+    "label": "PDO",
+    "expr": "PDO = (Sh% + Sv%) × 100"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. Say a team scores 90 goals on 1,000 five-on-five shots and allows 80 on the same number of shots against. It shot 9.0% and saved 92.0%, so its PDO is 101. Its opponent's shooting and save percentages for those same games would add up to 99, because the two sides split the same pucks.",
+  "after": [
+   "Empty-net goals fall outside five-on-five (a pulled goalie makes it six-on-five), so they don't touch the standard version. That matters, since a team that pulls its goalie a lot gives up goals no goalie had a chance to stop."
+  ],
+  "variants": [
+   {
+    "term": "Team PDO",
+    "def": "Shooting plus save percentage for everything a team does at five-on-five."
+   },
+   {
+    "term": "On-ice PDO",
+    "def": "The same sum for only the minutes a player is on the ice. The NHL lists it as on-ice S%+Sv%.",
+    "slug": "on-ice-shooting-and-save-percentage"
+   },
+   {
+    "term": "oiSH%",
+    "def": "On-ice shooting percentage, PDO's offensive half.",
+    "slug": "on-ice-shooting-and-save-percentage"
+   },
+   {
+    "term": "oiSV%",
+    "def": "On-ice save percentage, PDO's defensive half.",
+    "slug": "on-ice-shooting-and-save-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "PDO measures how often shots turned into goals at both ends of the ice. Since every shot on goal ends as a goal or a save, the league-wide number is exactly 100 every season, and a team at 102 is converting or stopping shots at a better clip than the league. The NHL's glossary calls the stat an estimate of \"puck luck,\" and the data mostly backs that up.",
+  "Dallas led the league at five-on-five last season at 102.4 and New Jersey finished last at 97.1. Detroit's 98.5 splits cleanly. The Wings stopped shots at the league-median rate and finished 30th in shooting, so the whole shortfall sat on the offensive side. Most teams live close to the middle. Over the last three seasons, five of every six team-seasons finished between 98 and 102. Players spread wider because their samples are smaller, and among the 598 skaters with 500 five-on-five minutes last season, four in five fell between 96.8 and 103.3.",
+  "Why does everyone call it luck? Because it doesn't hold up between the halves of a season. In the same sample, a team's first-half PDO correlated at 0.36 with its second-half PDO, against 0.81 for Corsi. Teams that reached the halfway point at 101.5 or better averaged 102.6 in the first half and 101.1 in the second, and the teams at 98.5 or worse climbed from 98.0 to 98.8. The same pull works on individual players. Skaters who posted a PDO of 103 or better two seasons ago (56 regulars in all) averaged 103.8 that year and 101.0 last season."
+ ],
+ "uses": [
+  {
+   "title": "Sorting good teams from hot ones",
+   "html": "Dallas is the cleanest example from last season. The Stars' league-best PDO came with a 47.5% Corsi share and 50.8% of the expected goals, and they still scored 55.2% of the five-on-five goals. Boston (second in PDO) ran the same pattern. That's what PDO is built to flag, a goal share running well ahead of the shot and chance shares. It doesn't promise the gap will close. It tells you which part of the record you'd bet on least."
+  },
+  {
+   "title": "Explaining Detroit's goal gap",
+   "html": "The Wings' five-on-five goal share last season was 45.5%, well under the 48.8% they posted on both Corsi and expected goals. PDO points straight at the cause of that gap. Detroit's goaltending was league-average, and its shooting wasn't. At the median team's shooting rate of 9.6%, the Wings' five-on-five shots would've produced about 168 goals. They scored 142."
+  },
+  {
+   "title": "Reading a player's on-ice goals",
+   "html": "<a href=\"/players/marco-kasper/\">Marco Kasper</a> was on the ice for 26 Detroit goals and 42 against at five-on-five last season, a 38.2% goal share. Was he a 38% player? His shot and chance numbers said he was much closer to even, with about half of the attempts and half of the expected goals. His on-ice PDO of 96.3 ranked 558th of 598 skaters, built mostly on a 5.9% on-ice shooting rate, and a season earlier he'd been at 99.8."
+  },
+  {
+   "title": "Checking a hot start",
+   "html": "PDO is the first number to pull when a record surprises you in November. Over the last three seasons, a team's PDO through its first 20 games correlated at only 0.21 with its PDO over the rest of the year, so a team riding a hot PDO a quarter of the way in hasn't shown you much about where it'll be in March. Shot and chance shares carry over far better, which is why this site leans on expected goals for early-season reads."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Goaltending is a skill",
+   "html": "King himself said a team with Carey Price or Henrik Lundqvist \"is going to be a PDO leader.\" Save percentage is half the stat, and Hockey-Graphs' Benjamin Wendorf wrote in 2014 that a single goaltender can outperform expectations by a wide margin."
+  },
+  {
+   "title": "So is finishing",
+   "html": "Shooting talent is real (MoneyPuck publishes a shooting-talent-adjusted version of its expected-goals model for that reason), and the NHL's glossary notes that a handful of elite players have consistently posted on-ice numbers well over 100."
+  },
+  {
+   "title": "It can't see shot quality",
+   "html": "A team that takes better shots should shoot a higher percentage, and one that allows worse shots should post a better save percentage. PDO can't separate that from fortune. Expected goals can, since it prices the shots first."
+  },
+  {
+   "title": "Small samples swing it hard",
+   "html": "A season of one player's minutes covers a few hundred shots each way. Among the 598 skaters with 500 minutes last season, the extremes were 93.4 and 107.7, a spread no team came near."
+  }
+ ],
+ "related": [
+  {
+   "slug": "on-ice-shooting-and-save-percentage",
+   "name": "On-ice shooting and save percentage",
+   "abbr": "oiSH% · oiSV%",
+   "vs": "PDO's two halves, read separately."
+  },
+  {
+   "slug": "shooting-percentage",
+   "name": "Shooting percentage",
+   "abbr": "SH%",
+   "vs": "A shooter's own rate. PDO uses every shot while he's on the ice."
+  },
+  {
+   "slug": "save-percentage",
+   "name": "Save percentage",
+   "abbr": "SV%",
+   "vs": "The goalie's half of PDO."
+  },
+  {
+   "slug": "goals-for-percentage",
+   "name": "Goals for percentage",
+   "abbr": "GF%",
+   "vs": "The result PDO helps explain."
+  },
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "Shot volume, the half of the story PDO leaves out."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "Prices shot quality, which PDO can't see."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "How an advanced hockey stat measures luck in the NHL",
+   "publisher": "Capital News Service, University of Maryland (Justin Meyer), February 3, 2017",
+   "url": "https://cnsmaryland.org/2017/02/03/how-an-advanced-hockey-stat-measures-luck-in-the-nhl",
+   "note": "Brian King, the username and Counter-Strike origin, Ferrari's on-ice data, King's quotes"
+  },
+  {
+   "label": "NHL Grab Bag: Farewell, Mustache Stat",
+   "publisher": "Grantland (Sean McIndoe), February 20, 2015",
+   "url": "https://grantland.com/the-triangle/nhl-grab-bag-farewell-mustache-stat/",
+   "note": "PDO stands for nothing, a forum poster's username, Counter-Strike"
+  },
+  {
+   "label": "Revenge of the Nerds: NHL.com embraces advanced analytics",
+   "publisher": "Sports Illustrated (Allan Muir), February 20, 2015",
+   "url": "https://www.si.com/nhl/2015/02/20/nhl-new-advanced-hockey-stats-package-on-website",
+   "note": "the NHL names PDO SPSV%"
+  },
+  {
+   "label": "NHL stats glossary (On-ice S%+Sv%, On-ice S%, On-ice Sv%, regression to the mean)",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/glossary",
+   "note": "also known as PDO, credited to Tim Barnes, puck luck, elite players over 100"
+  },
+  {
+   "label": "Team percentages report, 2025-26",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/percentages?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "five-on-five shooting plus save percentage by team"
+  },
+  {
+   "label": "Outperforming PDO: Mirages and Oases in the NHL",
+   "publisher": "Hockey-Graphs (Benjamin Wendorf), February 4, 2014",
+   "url": "https://hockey-graphs.com/2014/02/04/nhl-outperforming-pdo-leafs-canucks-bruins-senators/",
+   "note": "1000 scale, a single goaltender can outperform expectations"
+  },
+  {
+   "label": "Skater advanced stats, 2025-26",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leagues/NHL_2026_skaters-advanced.html",
+   "note": "PDO printed on the 100 scale"
+  },
+  {
+   "label": "Player and team glossary",
+   "publisher": "Natural Stat Trick (read from a January 2025 Wayback Machine capture)",
+   "url": "https://www.naturalstattrick.com/glossary.php?teams",
+   "note": "PDO, shooting percentage plus save percentage"
+  },
+  {
+   "label": "Expected Goals Model",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/about.htm",
+   "note": "shooting-talent-adjusted version"
+  },
+  {
+   "label": "2025-26 and 2024-25 team, skater and game-by-game files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 and 2024-25 regular-season team and skater files and its team game-by-game files for 2023-24 through 2025-26, all downloaded October 9, 2026. PDO is (GF ÷ SF + 1 − GA ÷ SA) × 100 at five-on-five, with shots on goal including goals. Player figures cover the 598 skaters with 500 or more five-on-five minutes; the two-season comparison uses the 501 skaters with 500 minutes in both 2024-25 and 2025-26. The split-season test cuts each of 96 team-seasons (all 82-game seasons, 2023-24 through 2025-26) into its first 41 and last 41 games (or its first 20 and the rest) and reports Pearson correlations."
+}

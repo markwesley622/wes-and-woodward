@@ -1,0 +1,254 @@
+{
+ "slug": "relative-corsi",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Relative Corsi",
+  "short": "Rel CF%",
+  "abbr": "Rel CF%",
+  "aliases": [
+   "Rel CF%",
+   "CF% Rel",
+   "Corsi Rel",
+   "relative Corsi for percentage",
+   "SAT% Relative"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "relative corsi in hockey",
+  "supporting": [],
+  "source": "No measured search volume (research/glossary-pseo/stat_themes.json status no_volume), so the primary is the natural phrase 'relative corsi in hockey', 2026-10-09"
+ },
+ "seo": {
+  "title": "Relative Corsi in Hockey and What Rel CF% Measures",
+  "description": "Relative Corsi in hockey is a player's CF% minus his team's without him. How it's calculated, what it shows, where it misleads, and Detroit's best marks.",
+  "h1": "Relative Corsi in Hockey (Rel CF%)"
+ },
+ "hero": {
+  "definition": "Relative Corsi in hockey is a player's on-ice Corsi share minus his team's Corsi share while he's off the ice, usually at five-on-five. A positive number means his team controls more of the shot attempts with him than without him. It's written Rel CF%, and it strips out most of what a good or bad team does to a player's raw Corsi.",
+  "dek": "Raw Corsi mostly measures the team, and last season's leaderboard showed it. Twenty of the top 50 skaters in on-ice CF% played for Carolina, while Moritz Seider, sixth among the league's 213 regular defensemen by the relative number, didn't crack the top 100."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "CF% Rel",
+   "sub": "SAT% Relative on the NHL's stats site"
+  },
+  {
+   "label": "Unit",
+   "value": "Points",
+   "sub": "percentage points, plus or minus"
+  },
+  {
+   "label": "Median skater",
+   "value": "0.0",
+   "sub": "598 skaters with 500+ 5v5 minutes, 2025-26"
+  },
+  {
+   "label": "Top tenth",
+   "value": "+4.4",
+   "sub": "bottom tenth at −4.4 or worse"
+  },
+  {
+   "label": "League leader, 2025-26",
+   "value": "+11.2",
+   "sub": "Jordan Spence, Ottawa"
+  },
+  {
+   "label": "Detroit's best, 2025-26",
+   "value": "+6.7",
+   "sub": "Moritz Seider, 12th of 598"
+  },
+  {
+   "label": "Team effect",
+   "value": "r = 0.00",
+   "sub": "Rel CF% vs team CF% (raw on-ice CF%: 0.74)"
+  },
+  {
+   "label": "Year to year",
+   "value": "r = 0.52",
+   "sub": "and 0.50 for players who changed teams"
+  }
+ ],
+ "origin": [
+  "Relative Corsi doesn't have a famous inventor. Writing for Hockey-Graphs in 2018, Evolving-Hockey's EvolvingWild surveyed the relative shot metrics and said he couldn't find where the approach first originated. The idea follows from Corsi itself, since once you're counting attempts with a player on the ice, the natural check is how his team did with him on the bench, and the subtraction is the simplest way to answer it.",
+  "The NHL's stats site carries it under the name SAT% Relative, defined in the league's glossary as a player's SAT% minus the team's SAT% while he wasn't on the ice, with numbers back to 2009-10. There's a Fenwick version, USAT% Relative, built the same way. MoneyPuck publishes on-ice and off-ice Corsi for every skater and defines relative as one minus the other, Hockey-Reference prints CF% rel for even strength, and Natural Stat Trick's relative view compares a player with his team's numbers while he's dressed but on the bench.",
+  "A refinement came later. David Johnson's HockeyAnalysis and Puckalytics sites made a relative-to-teammate version public, which measures a player against the specific teammates he skated with, weighted by their shared ice time. When a site prints Rel CF% without a qualifier, though, it means the simpler team version, and that's the one on this page."
+ ],
+ "calculation": {
+  "intro": [
+   "You need two splits of the same games, the minutes a player was on the ice and the minutes he sat. Compute the team's Corsi share in each and subtract the second from the first. Both splits cover only the games he dressed for, so a night in the press box doesn't count as off-ice time. These are the inputs:"
+  ],
+  "inputs": [
+   "On-ice Corsi for and against, at five-on-five",
+   "Off-ice Corsi for and against, the team's attempts while he sat",
+   "Five-on-five minutes on and off the ice, for the rate versions"
+  ],
+  "formulas": [
+   {
+    "label": "On-ice",
+    "expr": "CF% on = CF on ÷ (CF on + CA on)"
+   },
+   {
+    "label": "Off-ice",
+    "expr": "CF% off = CF off ÷ (CF off + CA off)"
+   },
+   {
+    "label": "Relative",
+    "expr": "Rel CF% = CF% on − CF% off"
+   },
+   {
+    "label": "Rate version",
+    "expr": "Rel CA/60 = CA/60 on − CA/60 off"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. With a defenseman on the ice, his team takes 550 attempts and allows 450, a 55.0% share. In the rest of the five-on-five minutes of his games, it takes 900 and allows 1,100, which is 45.0%. His Rel CF% is plus-10.0, and a teammate with the same on-ice share on a team that ran just as well without him would sit at zero.",
+  "after": [
+   "The rate versions split the number into the attempts a player helps create and the ones he helps prevent. Seider's was mostly defense. Detroit allowed 10.6 fewer attempts per 60 minutes with him on the ice (and generated 4.8 more), so most of his plus-6.7 was shots that never happened."
+  ],
+  "variants": [
+   {
+    "term": "Rel CF%",
+    "def": "On-ice CF% minus off-ice CF%. The NHL lists it as SAT% Relative."
+   },
+   {
+    "term": "Rel FF%",
+    "def": "The same subtraction with unblocked attempts. The NHL lists it as USAT% Relative.",
+    "slug": "fenwick"
+   },
+   {
+    "term": "Rel CF/60",
+    "def": "On-ice minus off-ice attempts generated per 60 minutes. Rel CA/60 does the same for attempts allowed, where lower is better."
+   },
+   {
+    "term": "Rel TM",
+    "def": "Relative to teammates. Compares a player with how his linemates did without him, weighted by shared ice time."
+   },
+   {
+    "term": "Rel xGF%",
+    "def": "The same on-minus-off split applied to expected goals.",
+    "slug": "expected-goals"
+   }
+  ]
+ },
+ "meaning": [
+  "Relative Corsi measures how a player's team does with him compared with how it does without him. Raw on-ice CF% mostly belongs to the team, so it can't make that comparison. Among the 598 skaters with 500 or more five-on-five minutes last season, on-ice CF% correlated at 0.74 with the team's CF% (a perfect match would score one), and relative CF% correlated at 0.00. Every one of Carolina's regulars was at 57.5% or better on the ice, and more than half of them still finished below zero relative to the Hurricanes without them.",
+  "The scale centers on zero. The median skater sat right at it (forwards a hair above, defensemen a hair below), and the top and bottom tenths of the league sat beyond plus and minus 4.4. Ottawa's Jordan Spence led the league at plus-11.2 and Columbus's Erik Gudbranson finished last at minus-14.5. Detroit's two best marks were on the blue line. Seider ranked 12th at plus-6.7 and Simon Edvinsson was close behind at plus-5.0, while Michael Rasmussen sat near the bottom of the league at minus-4.8.",
+  "Why bother with the subtraction when the raw number is right there? Because the relative number travels with the player. Among the 501 skaters with 500 minutes in each of the last two seasons, raw on-ice CF% correlated at 0.69 year to year for players who stayed put and 0.43 for the 114 who changed teams. Rel CF% held at 0.51 and 0.50. A player's raw number moves with his jersey, and his relative number mostly stays with him."
+ ],
+ "uses": [
+  {
+   "title": "Separating a player from his team",
+   "html": "<a href=\"/players/moritz-seider/\">Seider</a> is the Detroit case, and the gap between his two numbers tells you how much the Wings leaned on him. His on-ice CF% of 53.0% ranked 126th among the 598 regulars, behind every Carolina regular. His Rel CF% ranked 12th, because the Wings ran at 46.2% without him. Among the league's 213 defensemen with 500 minutes, only five did more for their team's shot share by this measure (Ottawa's Jordan Spence and the Rangers' Adam Fox led the list)."
+  },
+  {
+   "title": "Sorting a blue line",
+   "html": "Detroit's defense split cleanly in two. Seider and <a href=\"/players/simon-edvinsson/\">Edvinsson</a> ranked 6th and 18th among those 213 defensemen, while <a href=\"/players/ben-chiarot/\">Ben Chiarot</a>, <a href=\"/players/jacob-bernard-docker/\">Jacob Bernard-Docker</a> and <a href=\"/players/albert-johansson/\">Albert Johansson</a> all ran between minus-3.3 and minus-4.0. Where did Chiarot's gap come from? The rate split puts all of it on the defensive end, since Detroit generated about as many attempts with him on the ice as without him and allowed 8.8 more per 60 minutes."
+  },
+  {
+   "title": "Reading a newcomer",
+   "html": "Because you can compare the relative number across rosters, it's the better first read on a player who just arrived. <a href=\"/players/justin-faulk/\">Justin Faulk</a> came over from St. Louis with a minus-3.6 Rel CF% the season before and posted minus-1.3 in his first Detroit season. Both marks were below zero."
+  }
+ ],
+ "limits": [
+  {
+   "title": "A deep team drags it down",
+   "html": "A good player on a good team gets measured against good teammates. Carolina proves the point. Its 11 regulars below zero last season all posted on-ice shares of 57.5% or better, and the Hurricanes ran even higher without them."
+  },
+  {
+   "title": "Linemates still leak in",
+   "html": "If you spend most of your minutes beside one star, his numbers flow into your on-ice column. EvolvingWild's Hockey-Graphs piece names this as the main weakness of the team-relative version, and it's the reason the relative-to-teammate method exists."
+  },
+  {
+   "title": "Usage tilts it",
+   "html": "Coaches decide who starts in which zone, and the NHL's glossary notes that players with more offensive-zone starts should expect a slight bump in SAT% and players with more defensive-zone starts a slight dip."
+  },
+  {
+   "title": "Heavy minutes change the baseline",
+   "html": "Seider played about 40% of Detroit's five-on-five minutes (1,612 of 4,065), so his off-ice baseline is a lineup with the Wings' most-used defenseman out of it. That's a fair comparison, but it's a different one for a third-pair player whose off-ice minutes include the top pair."
+  },
+  {
+   "title": "The sources don't match",
+   "html": "Hockey-Reference counts all even-strength play and has Seider at 53.1% and plus-6.9, while MoneyPuck's five-on-five numbers put him at 53.0% and plus-6.7, so compare players on one site at a time and don't mix one site's five-on-five split with another's even-strength split."
+  }
+ ],
+ "related": [
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "The raw on-ice share that relative Corsi corrects."
+  },
+  {
+   "slug": "fenwick",
+   "name": "Fenwick",
+   "abbr": "FF%",
+   "vs": "Rel FF% does the same subtraction without the blocked shots."
+  },
+  {
+   "slug": "quality-of-competition-and-teammates",
+   "name": "Quality of competition and teammates",
+   "abbr": "QoC · QoT",
+   "vs": "Who a player faced and skated with, the context Rel CF% leaves in."
+  },
+  {
+   "slug": "zone-starts",
+   "name": "Zone starts",
+   "abbr": "OZS%",
+   "vs": "Where a player's shifts begin, which tilts his relative number."
+  },
+  {
+   "slug": "rapm",
+   "name": "RAPM",
+   "abbr": "RAPM",
+   "vs": "A regression that controls for teammates, opponents and zone starts at once."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "Rel xGF% runs the same on-off split on shot quality."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Revisiting Relative Shot Metrics, Part 1",
+   "publisher": "Hockey-Graphs (EvolvingWild), February 21, 2018",
+   "url": "https://hockey-graphs.com/2018/02/21/revisiting-relative-shot-metrics-part-1/",
+   "note": "origin unknown, Rel Team and Rel TM definitions, David Johnson's Rel TM, the linemate problem"
+  },
+  {
+   "label": "NHL stats glossary (SAT% Relative, USAT% Relative, OZ Start%, DZ Start%)",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/glossary",
+   "note": "definitions, available since 2009-10, zone-start effects"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "on-ice, off-ice and relative definitions"
+  },
+  {
+   "label": "Player glossary",
+   "publisher": "Natural Stat Trick (read from a January 2025 Wayback Machine capture)",
+   "url": "https://www.naturalstattrick.com/glossary.php?players",
+   "note": "relative view against the team's numbers with the player dressed but not on the ice"
+  },
+  {
+   "label": "Skater advanced stats, 2025-26",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/leagues/NHL_2026_skaters-advanced.html",
+   "note": "CF% rel at even strength; Seider 53.1% and +6.9"
+  },
+  {
+   "label": "2025-26 and 2024-25 skater and team files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 and 2024-25 regular-season skater and team files, downloaded October 9, 2026. On-ice and off-ice CF% come from MoneyPuck's on-ice and off-ice shot-attempt counts at five-on-five, and Rel CF% is the difference. Player figures cover the 598 skaters with 500 or more five-on-five minutes; the year-to-year comparison uses the 501 skaters with 500 minutes in both seasons. Per-60 splits use team five-on-five minutes minus the player's for off-ice time, so they're shown only for players who dressed for all 82 games of 2025-26."
+}

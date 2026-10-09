@@ -1,0 +1,287 @@
+{
+ "slug": "fenwick",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Fenwick",
+  "short": "Fenwick",
+  "abbr": "FF%",
+  "aliases": [
+   "FF%",
+   "FF",
+   "FA",
+   "USAT",
+   "USAT%",
+   "Fenwick for percentage",
+   "unblocked shot attempts"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "fenwick hockey stat",
+  "supporting": [],
+  "source": "research/glossary-pseo/stat_themes.json (status no_serp_overlap; primary overridden from 'fenwick hockey', whose top 10 is mostly leaderboards and other entities), 2026-10-09"
+ },
+ "seo": {
+  "title": "Fenwick, the Hockey Stat for Unblocked Shot Attempts",
+  "description": "Fenwick is the hockey stat that counts unblocked shot attempts. Where it came from, how FF% is calculated, how it differs from Corsi, and where Detroit ranked.",
+  "h1": "Fenwick, the Hockey Stat Behind FF%"
+ },
+ "hero": {
+  "definition": "Fenwick is the hockey stat that counts every unblocked shot attempt, on goal or missed, for and against a team or while a player is on the ice. It's Corsi with the blocked shots taken out, and the same set of shots expected goals uses. Fenwick for percentage (FF%) is the share, and the NHL calls the stat USAT.",
+  "dek": "Matt Fenwick built it in 2007 around one argument, that a blocked shot is a scoring chance the defense took away. No team blocked more five-on-five attempts than Detroit last season (Seattle tied it), which is why the Wings' Fenwick share ran nearly a point above their Corsi share."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "USAT · FF%",
+   "sub": "the NHL's name, and the share"
+  },
+  {
+   "label": "Counts",
+   "value": "Unblocked",
+   "sub": "shots on goal plus missed shots"
+  },
+  {
+   "label": "Team average",
+   "value": "50%",
+   "sub": "5v5 FF%, by construction"
+  },
+  {
+   "label": "Best team, 2025-26",
+   "value": "58.9%",
+   "sub": "Carolina, 5v5 FF%"
+  },
+  {
+   "label": "Worst team, 2025-26",
+   "value": "45.1%",
+   "sub": "Toronto, 5v5 FF%"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "49.7%",
+   "sub": "16th of 32 at 5v5, five spots above its CF% rank"
+  },
+  {
+   "label": "Unblocked share",
+   "value": "72%",
+   "sub": "of all 5v5 attempts in 2025-26"
+  },
+  {
+   "label": "Named for",
+   "value": "Matt Fenwick",
+   "sub": "Flames blogger at the Battle of Alberta"
+  }
+ ],
+ "origin": [
+  "Fenwick is Corsi with one edit, and the editor was a Flames fan. In November 2007, Matt Fenwick posted his notes on Calgary's first 20 games at the Battle of Alberta blog, with two versions of the Corsi plus-minus at the bottom, one counting blocked shots and one leaving them out. \"As a proxy for scoring chances for & against, I think it works best if blocked shots are excluded,\" he wrote. The version without blocks took his name.",
+  "His case came from the defending team's side of the puck. If Jarome Iginla winds up on a partial break and hits the post, that's a scoring chance. If Willie Mitchell gets a stick on the shot and deflects it into the netting, Fenwick argued, it isn't, and a stat that counts both the same fails to credit the defense. He granted that the version with blocks still had a use, as a proxy for zone time, or in his words, \"Where The Puck Is.\"",
+  "The NHL adopted Fenwick's stat in February 2015 under the name USAT, for unblocked shot attempts, and its glossary credits USAT with taking shot-blocking performance into account where SAT doesn't. The league's numbers go back to 2009-10. Natural Stat Trick, MoneyPuck, Evolving-Hockey and Hockey-Reference all publish it under Fenwick's name, and it lives on inside expected goals, which prices the same unblocked attempts one by one."
+ ],
+ "calculation": {
+  "intro": [
+   "Take Corsi and subtract the blocked attempts. The for and against columns, the five-on-five default and the share all work the way they do for Corsi, which is why they're almost always within a point of each other (31 of the 32 teams did last season). These are the inputs:"
+  ],
+  "inputs": [
+   "Shots on goal, goals included",
+   "Missed shots, including posts and crossbars",
+   "Five-on-five ice time, for per-60 rates",
+   "For a player, which attempts happened while he was on the ice"
+  ],
+  "formulas": [
+   {
+    "label": "Fenwick for",
+    "expr": "FF = shots on goal + missed shots"
+   },
+   {
+    "label": "From Corsi",
+    "expr": "FF = CF − blocked attempts"
+   },
+   {
+    "label": "Share",
+    "expr": "FF% = FF ÷ (FF + FA)"
+   },
+   {
+    "label": "Rate",
+    "expr": "FF/60 = FF ÷ five-on-five minutes × 60"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. The Wings put 20 shots on goal, miss the net 10 times and get 15 attempts blocked, so their Corsi for is 45 and their Fenwick for is 30. The other team takes 40 attempts and Detroit blocks 10 of them, which leaves a Fenwick against of 30. On Corsi, Detroit won the night 45 to 40. On Fenwick it's dead even, because the Wings had more of their own shots blocked than they blocked.",
+  "after": [
+   "The blocked column cuts both ways. A team that blocks a lot of shots shrinks its Fenwick against, and a team that gets a lot of its own attempts blocked shrinks its Fenwick for. Corsi counts every one of those attempts and doesn't care who did the blocking."
+  ],
+  "variants": [
+   {
+    "term": "FF",
+    "def": "Fenwick for. Every unblocked attempt a team takes, or takes while a given player is on the ice."
+   },
+   {
+    "term": "FA",
+    "def": "Fenwick against. The same count for the unblocked attempts aimed at your net."
+   },
+   {
+    "term": "FF%",
+    "def": "Fenwick for percentage, the share. The NHL lists it as USAT%. 50% is break-even."
+   },
+   {
+    "term": "FF% close",
+    "def": "FF% only while the game is within a goal in the first two periods or tied in the third or overtime. The NHL's glossary calls it a strong indicator of possession and a good predictor of future success."
+   },
+   {
+    "term": "Rel FF%",
+    "def": "A player's on-ice FF% minus his team's FF% with him off the ice. The NHL lists it as USAT% Relative."
+   }
+  ]
+ },
+ "meaning": [
+  "Fenwick measures the same thing Corsi does, territory, with a filter for the attempts that never reached the goalie. At the team level they're close to interchangeable. Across the 32 teams last season, five-on-five FF% and CF% correlated at 0.98, and 72% of the league's five-on-five attempts went unblocked.",
+  "Carolina led the league at 58.9% last season, Colorado was second at 55.9% and Toronto finished last at 45.1%. Detroit was 16th at 49.7%, five spots higher than its Corsi rank, a gap that's almost entirely about blocked shots (more on that below). Players spread about as wide as they do on Corsi. Among the 598 skaters who logged at least 500 five-on-five minutes, the median on-ice FF% was 49.6% and the top tenth cleared 55.0%, and a player's FF% and CF% correlated at 0.97.",
+  "Is Fenwick the better stat of the two? It's ahead only at the margins. In this site's split-season test (96 team-seasons, first half against second half, over the last three seasons), first-half FF% correlated at 0.44 with second-half goal share, a hair ahead of CF% at 0.42, while Corsi repeated a little better from half to half (0.81 to 0.77). There's one quieter advantage. In six seasons of league data ending in 2012-13, Michael Schuckers and Brian Macdonald found persistent rink effects in 12 arenas for Corsi events and five for Fenwick events, and blocked shots, the event Fenwick drops, showed them in 15."
+ ],
+ "uses": [
+  {
+   "title": "Seeing what the blocks are doing",
+   "html": "Detroit is the clean example. The Wings blocked 1,179 opponent attempts at five-on-five last season, tied with Seattle for the league lead and about 108 more than the median team, while getting 1,029 of their own attempts blocked, right at the median. That's why their FF% sat 0.88 points above their CF%, the second-largest such gap in the league behind Philadelphia's. Is blocking that many shots a skill or a sign that you're stuck in your own end? Fenwick can't settle that. It can show that Detroit's opponents out-attempted the Wings mostly with shots that never got through."
+  },
+  {
+   "title": "Building expected goals",
+   "html": "MoneyPuck's and Evolving-Hockey's expected-goals models both start from Fenwick attempts. They price only unblocked attempts, since the NHL's feed logs a blocked shot at the spot of the block and keeps no honest record of where it was taken. Add those prices up and you get xG, so a team's xGF% is a Fenwick share with each attempt weighted by its danger. The <a href=\"/glossary/expected-goals/\">expected goals</a> page covers the model."
+  },
+  {
+   "title": "Reading close-game numbers",
+   "html": "The NHL's glossary defines a close game as within one goal in the first two periods or tied in the third or overtime, and says limiting SAT and USAT to those minutes filters out the score effects that skew shot data, at some cost in sample size. The league still publishes the split. Detroit's five-on-five USAT% was 49.7% overall last season and 49.9% in close games, so the score didn't move the Wings much on this measure. Score-adjusted versions keep every minute and reweight it instead."
+  }
+ ],
+ "limits": [
+  {
+   "title": "It throws away real information",
+   "html": "A blocked attempt still tells you which team had the puck in the attacking zone, the point Fenwick himself conceded when he called the version with blocks a proxy for zone time. Over the last three seasons, Corsi repeated a little better from half to half."
+  },
+  {
+   "title": "Every unblocked attempt counts the same",
+   "html": "A wrister from the point that sails wide counts as much as a rebound at the side of the net. That's the job expected goals does with the same set of shots."
+  },
+  {
+   "title": "Misses still depend on the scorer",
+   "html": "Dropping blocks removes the least consistently recorded of the shot events, but missed shots stay in, and Schuckers and Macdonald found persistent rink effects for misses in nine arenas."
+  },
+  {
+   "title": "A player's number is mostly his team's",
+   "html": "How much? Among the 598 skaters with 500 five-on-five minutes last season, on-ice FF% correlated at 0.73 with the team's FF%. Relative versions, on-ice minus off-ice, take most of the team's influence out."
+  }
+ ],
+ "related": [
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "Fenwick plus the blocked shots."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "The same unblocked attempts, each weighted by its chance of going in."
+  },
+  {
+   "slug": "shot-share",
+   "name": "Shot share",
+   "abbr": "SF%",
+   "vs": "Fenwick minus the missed shots."
+  },
+  {
+   "slug": "blocked-shots",
+   "name": "Blocked shots",
+   "abbr": "BLK",
+   "vs": "The attempts Fenwick leaves out."
+  },
+  {
+   "slug": "relative-corsi",
+   "name": "Relative Corsi",
+   "abbr": "Rel CF%",
+   "vs": "On-ice minus off-ice, the player version of the same idea."
+  },
+  {
+   "slug": "score-adjusted-stats",
+   "name": "Score-adjusted stats",
+   "abbr": "Score-adj.",
+   "vs": "Reweights every minute for the score. FF% close drops the lopsided minutes instead."
+  }
+ ],
+ "faq": [],
+ "sources": [
+  {
+   "label": "Flames thru 20",
+   "publisher": "Battle of Alberta (Matt Fenwick), November 2007",
+   "url": "https://battleofalberta.blogspot.com/2007/11/",
+   "note": "the original argument for dropping blocked shots, the Iginla example, the zone-time line"
+  },
+  {
+   "label": "Intro To Advanced Hockey Statistics: Fenwick",
+   "publisher": "Pension Plan Puppets (Stephen Burtch), July 25, 2012",
+   "url": "https://www.pensionplanpuppets.com/intro-to-advanced-hockey-statistics-fenwick/",
+   "note": "identifies Matt Fenwick, Flames blogger at the Battle of Alberta"
+  },
+  {
+   "label": "Revenge of the Nerds: NHL.com embraces advanced analytics",
+   "publisher": "Sports Illustrated (Allan Muir), February 20, 2015",
+   "url": "https://www.si.com/nhl/2015/02/20/nhl-new-advanced-hockey-stats-package-on-website",
+   "note": "the NHL renames Fenwick USAT"
+  },
+  {
+   "label": "NHL stats glossary (USAT, USAT%, USAT% close, close game, USAT% Relative)",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/glossary",
+   "note": "definitions, available since 2009-10, shot-blocking note, close-game definition"
+  },
+  {
+   "label": "Team percentages report, 2025-26",
+   "publisher": "NHL.com stats API",
+   "url": "https://api.nhle.com/stats/rest/en/team/percentages?cayenneExp=seasonId=20252026%20and%20gameTypeId=2",
+   "note": "Detroit's USAT% overall and in close games"
+  },
+  {
+   "label": "Glossary",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "Fenwick definition"
+  },
+  {
+   "label": "General Terms",
+   "publisher": "Evolving-Hockey",
+   "url": "https://evolving-hockey.com/glossary/general-terms/",
+   "note": "FF and FA definitions, unblocked shots"
+  },
+  {
+   "label": "A New Expected Goals Model for Predicting Goals in the NHL",
+   "publisher": "Evolving-Hockey (Josh and Luke Younggren)",
+   "url": "https://evolving-hockey.com/blog/a-new-expected-goals-model-for-predicting-goals-in-the-nhl/",
+   "note": "unblocked shots only, blocked-shot location problem"
+  },
+  {
+   "label": "Player and team glossary",
+   "publisher": "Natural Stat Trick (read from a January 2025 Wayback Machine capture)",
+   "url": "https://www.naturalstattrick.com/glossary.php?teams",
+   "note": "Fenwick, FF%, referred to as USAT by the NHL"
+  },
+  {
+   "label": "Skater and team analytics",
+   "publisher": "Hockey-Reference",
+   "url": "https://www.hockey-reference.com/analytics/",
+   "note": "publishes Fenwick"
+  },
+  {
+   "label": "Accounting for Rink Effects in the National Hockey League's Real Time Scoring System",
+   "publisher": "Michael Schuckers and Brian Macdonald, arXiv 1412.1035",
+   "url": "https://arxiv.org/abs/1412.1035",
+   "note": "rink effects for Corsi, Fenwick, blocks and misses, 2007-08 through 2012-13"
+  },
+  {
+   "label": "2025-26 team, skater and game-by-game files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season team and skater files and its team game-by-game files for 2023-24 through 2025-26, all downloaded October 9, 2026. Team FF% is FF ÷ (FF + FA) at five-on-five from unblocked-attempt counts; blocks made are the opponents' blocked attempts; player figures cover the 598 skaters with 500 or more five-on-five minutes. The split-season test cuts each of 96 team-seasons (all 82-game seasons, 2023-24 through 2025-26) into its first 41 and last 41 games and reports Pearson correlations. USAT% overall and in close games comes from the NHL stats API, downloaded the same day."
+}

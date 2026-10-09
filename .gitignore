@@ -9,3 +9,13 @@ research/*/raw/mp/shots_*.csv
 research/*/raw/eh/*.csv
 logs/
 data/raw/ep/
+# glossary research: third-party downloads, keyword/SERP data and screenshots stay local
+research/glossary-pseo/raw/
+research/glossary-pseo/render/
+research/glossary-pseo/themes/
+research/glossary-pseo/theme_inputs/
+research/glossary-pseo/*.json
+research/glossary-pseo/*.tsv
+research/glossary-pseo/*.csv
+research/glossary-pseo/*.txt
+research/glossary-pseo/*.log

@@ -1,0 +1,338 @@
+{
+ "slug": "points",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "Points",
+  "short": "PTS",
+  "abbr": "P",
+  "aliases": [
+   "P",
+   "PTS",
+   "scoring points",
+   "primary points",
+   "EVP",
+   "PPP",
+   "SHP"
+  ],
+  "category": "Skater"
+ },
+ "keywords": {
+  "primary": "points in hockey",
+  "supporting": [
+   "what is points in hockey",
+   "what does points mean in hockey",
+   "pts in hockey",
+   "what does pts mean in hockey",
+   "what does p mean in hockey",
+   "what is pts in hockey",
+   "pts hockey meaning",
+   "p in hockey"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "Points in Hockey and How Goals and Assists Add Up",
+  "description": "Points in hockey are goals plus assists. How they're counted, what a good total is, how they differ from standings points, and the Red Wings' scoring leaders.",
+  "h1": "Points in Hockey (PTS)"
+ },
+ "hero": {
+  "definition": "Points in hockey (PTS or P in stat tables) are a player's goals plus his assists, with each one worth a single point. They're the standard way to rank skaters, and they count a secondary assist the same as a goal. The league's scoring title, the Art Ross Trophy, goes to whoever finishes the regular season with the most.",
+  "dek": "Box scores write it PTS or just P, and its meaning in hockey doesn't change from one table to the next. A team's standings points are another stat entirely."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "P · PTS",
+   "sub": "split into EVP, PPP and SHP by situation"
+  },
+  {
+   "label": "Formula",
+   "value": "G + A",
+   "sub": "one point per goal or assist"
+  },
+  {
+   "label": "Per goal",
+   "value": "2.69",
+   "sub": "skater points produced per goal, 2025-26"
+  },
+  {
+   "label": "Median forward",
+   "value": "37",
+   "sub": "points, 327 forwards with 60+ games, 2025-26"
+  },
+  {
+   "label": "Leader, 2025-26",
+   "value": "138",
+   "sub": "Connor McDavid, Edmonton"
+  },
+  {
+   "label": "Red Wings leader",
+   "value": "85",
+   "sub": "Alex DeBrincat, tied for 19th in the NHL"
+  },
+  {
+   "label": "Record season",
+   "value": "215",
+   "sub": "Wayne Gretzky, 1985-86"
+  },
+  {
+   "label": "This site uses",
+   "value": "NHL stats",
+   "sub": "official counts, rebuilt nightly"
+  }
+ ],
+ "origin": [
+  "The rulebook defines points in two sentences. Rule 78.2 says each goal \"shall count one point in the player's record,\" Rule 78.3 says the same of each assist, and both add that no player can collect more than one point on a single goal. So the goal scorer never picks up an assist on his own goal, however many times he touched the puck on the way up the ice.",
+  "The scoring title has had its own trophy since Art Ross, the former Bruins coach and general manager, presented one to the NHL in 1947. Montreal's Elmer Lach won the first, and it goes to the regular season's points leader with no vote at all. A tie goes to the player with more goals, then to the one who played fewer games. Wayne Gretzky won it a record 10 times. Gordie Howe won six, every one of them as a Red Wing.",
+  "Detroit's own record book runs through Howe and Steve Yzerman. Howe's 1,809 points are the franchise's career high and Yzerman is second, and Yzerman's 155-point season is still the best any Red Wing has had. NHL.com, Hockey-Reference and MoneyPuck all publish points from the league's official scoring, so the totals match within a few points from site to site (MoneyPuck's file for last season runs six short of the NHL's)."
+ ],
+ "calculation": {
+  "intro": [
+   "Points are addition with no weights. Every goal and every assist adds one, whatever the situation, and the scorer's manpower tags split the total the same way they split goals. These are the inputs:"
+  ],
+  "inputs": [
+   "Goals (Rule 78.2)",
+   "Primary assists, the last teammate's touch before the goal",
+   "Secondary assists, the touch before that",
+   "The manpower on each goal: even strength, power play or shorthanded",
+   "Games played, for per-game rates"
+  ],
+  "formulas": [
+   {
+    "label": "Points",
+    "expr": "PTS = G + A"
+   },
+   {
+    "label": "By situation",
+    "expr": "PTS = EVP + PPP + SHP"
+   },
+   {
+    "label": "Primary points",
+    "expr": "G + A1"
+   },
+   {
+    "label": "Rate",
+    "expr": "P/GP = PTS ÷ games played"
+   }
+  ],
+  "example": "Here's a worked example, with invented round numbers. A center scores 25 goals and adds 20 primary and 15 secondary assists, so he finishes with 60 points and 45 primary points. If 18 of the 60 came on the power play, the other 42 came at even strength.",
+  "after": [
+   "Standings points are a team stat with the same name. Rule 78.1 gives a team two points for any win, whether it comes in regulation, overtime or a shootout, and one point for a loss after regulation, and Rule 84.1 hands each team that point the moment a game ends regulation tied. Detroit finished last season with 92 standings points, 16th in the league."
+  ],
+  "variants": [
+   {
+    "term": "EVP",
+    "def": "Even-strength points, earned with the same number of skaters on each side.",
+    "slug": "even-strength-goals"
+   },
+   {
+    "term": "PPP",
+    "def": "Power-play points. They made up 21% of all skater points last season.",
+    "slug": "power-play-goals-and-points"
+   },
+   {
+    "term": "SHP",
+    "def": "Shorthanded points, earned while outnumbered.",
+    "slug": "shorthanded-goals-and-points"
+   },
+   {
+    "term": "Primary points",
+    "def": "Goals plus primary assists, which drops the second assist."
+   },
+   {
+    "term": "P/GP",
+    "def": "Points per game played, the rate version of the total.",
+    "slug": "points-per-game"
+   },
+   {
+    "term": "Standings points",
+    "def": "A team's two points per win and one per overtime or shootout loss.",
+    "slug": "points-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "Points measure how often a player figures in his team's scoring, and they're the most stable of the basic scoring stats. Among forwards who played 60 games in each of the last two seasons, points per game correlated at 0.88 across the pair, ahead of goals per game at 0.74. A goal total leans on shooting luck, and an assist total leans on teammates finishing. Add them together and the total holds up better than either half does.",
+  "Every goal feeds the column almost three times over. The league's skaters turned last season's goals into 2.69 points apiece, one for the scorer and the rest for whoever touched the puck before him. That's the assist at work. Among the regulars (60 or more games), the median forward had 37 points and the top tenth had 74 or more, while the median defenseman had 25. Connor McDavid led the league with 138.",
+  "Alex DeBrincat led Detroit with 85, tied for 19th in the league. Lucas Raymond had 76, Dylan Larkin 67 and Moritz Seider 60, which tied for 11th among the league's defensemen.",
+  "What's a good point total for a skater? It depends on the position before anything else. Only 20 of the 161 regular defensemen reached 50 points last season, while a third of the regular forwards did, so the same number marks a star on the blue line and a solid middle-six forward up front. You'll want to compare a player with his own position first."
+ ],
+ "uses": [
+  {
+   "title": "Ranking scorers",
+   "html": "Points are the league's default leaderboard, and they decide the Art Ross without a vote. They're the quickest check on a contract, too. A forward paid like a top-line scorer who sits near the forward median (37 points last season) needs another explanation, whether it's defense, injuries or a role that keeps him off the power play, and you should go find it before you call the deal a bust."
+  },
+  {
+   "title": "Splitting even strength from the power play",
+   "html": "About one point in five came on the power play league-wide last season. <a href=\"/players/alex-debrincat/\">DeBrincat</a> ran a little above that rate, with 62 of his 85 points at even strength, while <a href=\"/players/lucas-raymond/\">Raymond</a> and <a href=\"/players/dylan-larkin/\">Larkin</a> each got about a third of theirs with the extra man and <a href=\"/players/moritz-seider/\">Seider</a> got 28 of his 60 there. Context changes the order. At even strength alone, DeBrincat's lead over the rest of the roster grows from nine points to 13, and Seider falls behind Patrick Kane."
+  },
+  {
+   "title": "Adjusting for ice time",
+   "html": "A point total measures minutes as much as anything. Seider averaged 25.7 a night last season and DeBrincat 18.5, so Seider scored 1.71 points per hour of ice time and DeBrincat 3.36. Which of the two is the better scorer, then? DeBrincat, by a wide margin, at nearly twice Seider's rate. The median regular forward scored 1.96 an hour and the median defenseman 0.99, though, so both Red Wings sat well above their position's middle once you divide by the clock."
+  }
+ ],
+ "live": {
+  "intro": "Rebuilt every night. Detroit's standings points come from the NHL's table and the scoring leaders from the NHL's official stats.",
+  "tiles": [
+   {
+    "label": "Standings points",
+    "source": "team",
+    "path": "record.points",
+    "format": "int",
+    "sub": "two per win, one per overtime or shootout loss"
+   },
+   {
+    "label": "Goals for, all situations",
+    "source": "team",
+    "path": "situations.all.goalsFor",
+    "format": "int",
+    "sub": "MoneyPuck count, shootouts excluded"
+   }
+  ],
+  "leaders": {
+   "source": "skaters",
+   "sort": "points",
+   "ascending": false,
+   "limit": 8,
+   "caption": "Red Wings skaters by points, all situations",
+   "columns": [
+    {
+     "label": "GP",
+     "path": "gamesPlayed",
+     "format": "int"
+    },
+    {
+     "label": "Goals",
+     "path": "goals",
+     "format": "int"
+    },
+    {
+     "label": "Assists",
+     "path": "assists",
+     "format": "int"
+    },
+    {
+     "label": "Points",
+     "path": "points",
+     "format": "int"
+    },
+    {
+     "label": "Shots",
+     "path": "shots",
+     "format": "int"
+    }
+   ]
+  },
+  "smallSample": 20,
+  "smallSampleNote": "Detroit has played {gp} games. One three-point night moves a player up this table, so early order says little about the season.",
+  "credit": "NHL API and MoneyPuck"
+ },
+ "limits": [
+  {
+   "title": "A secondary assist counts as much as a goal",
+   "html": "The column treats the player who scored and the one who touched the puck two passes earlier as equals. Game Score, the single-game rating Dom Luszczyszyn built at Hockey-Graphs, separates them, valuing a goal at 0.75 and a secondary assist at 0.55."
+  },
+  {
+   "title": "It doesn't adjust for minutes or role",
+   "html": "NHL.com's own glossary notes that dividing points by games played doesn't account for ice time or special-teams time. A first-unit power-play forward and a fourth-liner can play the same number of games and see wildly different chances to score."
+  },
+  {
+   "title": "It's offense only",
+   "html": "Points record the goals a player helped score and nothing about the ones he was on the ice for at the other end, so a high scorer who gives back as much as he creates looks the same in this column as one who doesn't."
+  },
+  {
+   "title": "The name means two things",
+   "html": "Standings points belong to teams and depend on wins and overtime losses. A player's points belong to him, and the two numbers never feed each other directly."
+  }
+ ],
+ "related": [
+  {
+   "slug": "goals",
+   "name": "Goals",
+   "abbr": "G",
+   "vs": "One half of points, and the half that decides games."
+  },
+  {
+   "slug": "assists",
+   "name": "Assists",
+   "abbr": "A",
+   "vs": "The other half, split into primary and secondary."
+  },
+  {
+   "slug": "points-per-game",
+   "name": "Points per game",
+   "abbr": "P/GP",
+   "vs": "Points divided by games played, for players who missed time."
+  },
+  {
+   "slug": "individual-points-percentage",
+   "name": "Individual points percentage",
+   "abbr": "IPP",
+   "vs": "Points as a share of the goals scored while a player's on the ice."
+  },
+  {
+   "slug": "per-60-rates",
+   "name": "Per-60 rates",
+   "abbr": "/60",
+   "vs": "Points scaled to ice time, so a 25-minute defenseman and an 18-minute winger compare fairly."
+  },
+  {
+   "slug": "points-percentage",
+   "name": "Points percentage",
+   "abbr": "P%",
+   "vs": "The team stat built on standings points, a different kind of point."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Who has the most points in NHL history?",
+   "a": "Wayne Gretzky, with 2,857 in the regular season, including the single-season record of 215 from 1985-86. Jaromir Jagr is a distant second with 1,921."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Official Rules 2025-26 (Rules 78 and 84)",
+   "publisher": "National Hockey League",
+   "url": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+   "note": "one point per goal or assist, one point per player per goal, standings points"
+  },
+  {
+   "label": "Stats glossary",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/stats/glossary",
+   "note": "points, standings points, points per game and what it doesn't adjust for"
+  },
+  {
+   "label": "Trophy Thursday: Art Ross Trophy",
+   "publisher": "NHL.com (Bob Condor), January 16, 2020",
+   "url": "https://www.nhl.com/kraken/news/trophy-thursday-art-ross-trophy-314004938",
+   "note": "who presented it, first winner, no vote, tiebreakers, Gretzky's 10 and Howe's six"
+  },
+  {
+   "label": "Skater stats, 2025-26 and all seasons",
+   "publisher": "NHL.com stats (api.nhle.com)",
+   "url": "https://www.nhl.com/stats/skaters",
+   "note": "every 2025-26 count, Howe's six scoring titles with Detroit, career and franchise records"
+  },
+  {
+   "label": "Standings, 2025-26 final",
+   "publisher": "NHL.com",
+   "url": "https://www.nhl.com/standings",
+   "note": "Detroit's 92 standings points"
+  },
+  {
+   "label": "Measuring Single Game Productivity: An Introduction to Game Score",
+   "publisher": "Hockey-Graphs, July 13, 2016",
+   "url": "https://hockey-graphs.com/2016/07/13/measuring-single-game-productivity-an-introduction-to-game-score/",
+   "note": "Game Score weights for goals and assists"
+  },
+  {
+   "label": "2025-26 regular-season skater file",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "MoneyPuck's point count"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from the NHL stats API's 2025-26 regular-season skater summary and final standings, downloaded October 9, 2026: points per goal is 21,741 skater points over 8,086 goals, benchmarks use skaters with 60 or more games, points per 60 divide points by total time on ice (games played times average time on ice), and the year-over-year correlations use the 260 forwards with 60 or more games in both 2024-25 and 2025-26. Howe's scoring titles were checked season by season in the same API. Career, franchise and record figures are NHL stats API totals through 2025-26."
+}

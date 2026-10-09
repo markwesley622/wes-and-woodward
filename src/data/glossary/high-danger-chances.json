@@ -1,0 +1,291 @@
+{
+ "slug": "high-danger-chances",
+ "status": "live",
+ "reviewed": "2026-10-09",
+ "stat": {
+  "name": "High-danger chances",
+  "short": "HDCF",
+  "abbr": "HDCF",
+  "aliases": [
+   "HDCF",
+   "HDCA",
+   "HDCF%",
+   "high-danger scoring chances",
+   "high-danger shots",
+   "NHL high-danger chances"
+  ],
+  "category": "Advanced"
+ },
+ "keywords": {
+  "primary": "high danger chances nhl",
+  "supporting": [
+   "nhl high danger chances",
+   "high danger scoring chances nhl"
+  ],
+  "source": "research/glossary-pseo/stat_themes.json (Ahrefs KE US volumes + theme.py 30% SERP-domain gate), 2026-10-09"
+ },
+ "seo": {
+  "title": "High-Danger Chances in the NHL and How HDCF Is Calculated",
+  "description": "High-danger chances in the NHL are the attempts from right in front of the net. Where HDCF comes from, how it's counted, and how Detroit graded in 2025-26.",
+  "h1": "High-Danger Chances in the NHL (HDCF and HDCF%)"
+ },
+ "hero": {
+  "definition": "High-danger chances (HDCF) are the shot attempts Natural Stat Trick rates as the most dangerous, mostly from a box right in front of the net, with extra weight for rebounds and rush shots. NST's count of high-danger chances in the NHL goes back to 2007-08, and HDCF% is a team's share of them.",
+  "dek": "At five-on-five last season, MoneyPuck's high-danger shots went in 15.6% of the time and its low-danger shots 3.8%. Counting where the chances come from tells you more than counting attempts, as long as you know whose definition you're reading."
+ },
+ "facts": [
+  {
+   "label": "Also called",
+   "value": "HDCF · HDCA",
+   "sub": "for, against, and HDCF% for the share"
+  },
+  {
+   "label": "Built by",
+   "value": "War-on-Ice",
+   "sub": "2014-15; Natural Stat Trick keeps it going"
+  },
+  {
+   "label": "Counts as one",
+   "value": "3+ points",
+   "sub": "location 1 to 3, +1 rebound or rush, −1 blocked"
+  },
+  {
+   "label": "Share of shots",
+   "value": "5.9%",
+   "sub": "MoneyPuck high-danger, 5v5 attempts, 2025-26"
+  },
+  {
+   "label": "Best team, 2025-26",
+   "value": "59.0%",
+   "sub": "Colorado, 5v5 high-danger share"
+  },
+  {
+   "label": "Worst team, 2025-26",
+   "value": "42.4%",
+   "sub": "Chicago, 5v5 high-danger share"
+  },
+  {
+   "label": "Detroit, 2025-26",
+   "value": "48.6%",
+   "sub": "18th of 32, 5v5 high-danger share"
+  },
+  {
+   "label": "This site uses",
+   "value": "MoneyPuck",
+   "sub": "its cut is an xG of 0.20 or more"
+  }
+ ],
+ "origin": [
+  "High-danger chances are younger than they sound. They come from War-on-Ice, the stats site Andrew C. Thomas, Sam Ventura and Alexandra Mandrycky started in 2014, which published its scoring-chance definition on December 31 of that year. The site's annotated glossary lists high-danger scoring chances, the attempts that rate three or more on the same scale, as one of its own originals, and it credits the ideas it borrowed (Rob Vollman's \"home plate\" area in front of the net and David Johnson's work on rush shots among them).",
+  "War-on-Ice didn't last. It shut down after about two years, once NHL teams started hiring its founders. Thomas and Mandrycky joined the Minnesota Wild's front office in January 2016, Ventura went to the Penguins, and in 2024 the Detroit Tigers hired Thomas to run their baseball analytics department as a vice president.",
+  "Natural Stat Trick kept the definition alive. Its glossary describes scoring chances \"as originally defined by War-on-Ice\" and counts high-danger scoring chances in NHL games for every team and every skater. The count travels well beyond NST's own tables. The Seattle Kraken's own analytics column on NHL.com used NST's model for a 2022 piece on scoring chances.",
+  "MoneyPuck, the source this site uses, publishes its own version built on expected goals, and the two counts run on different scales, which is the first thing to know before you compare one site's numbers with another's."
+ ],
+ "calculation": {
+  "intro": [
+   "Natural Stat Trick scores every shot attempt taken in the offensive zone (attempts from the neutral or defensive zone don't count) and keeps the ones that reach three. There are four pieces to the score:"
+  ],
+  "inputs": [
+   "Where the attempt was taken: 1 point for the outer areas of the zone, 2 for the high slot and the two wedges beside the net-front box, 3 for the net-front box itself",
+   "Rebound bonus: +1 for an attempt within 3 seconds of another blocked, missed or saved attempt, with no stoppage in between",
+   "Rush bonus: +1 for an attempt within 4 seconds of any event in the neutral or defensive zone, with no stoppage in between",
+   "Block penalty: −1 if the attempt was blocked, since the league logs a blocked shot where it was blocked"
+  ],
+  "formulas": [
+   {
+    "label": "Danger score",
+    "expr": "location (1, 2 or 3) + 1 if a rebound or rush − 1 if blocked"
+   },
+   {
+    "label": "High-danger chance",
+    "expr": "any attempt with a danger score of 3 or more"
+   },
+   {
+    "label": "Share",
+    "expr": "HDCF% = HDCF ÷ (HDCF + HDCA)"
+   }
+  ],
+  "example": "Here's a worked example with invented plays. A wrister from the point scores a single point and counts for nothing. A shot from the high slot scores two, a scoring chance but not a high-danger one, unless it came two seconds after a takeaway in the neutral zone, which makes it a rush shot and a three. A rebound jammed from the edge of the crease scores four, and it still goes in the books as one high-danger chance, the same as a three.",
+  "after": [
+   "MoneyPuck draws its line in a different place. It calls an unblocked attempt high-danger when its <a href=\"/glossary/expected-goals/\">expected goals</a> model gives it at least a 20% chance of going in, medium-danger from 8% to 20% and low-danger below 8%. That puts shot type, the previous event and the model's other inputs into the cut, and it leaves blocked shots out entirely."
+  ],
+  "variants": [
+   {
+    "term": "HDCF",
+    "def": "High-danger chances for. Every high-danger attempt a team takes, or takes while a given player is on the ice."
+   },
+   {
+    "term": "HDCA",
+    "def": "High-danger chances against. The same count for the attempts a team allows."
+   },
+   {
+    "term": "HDCF%",
+    "def": "A team's share of the high-danger chances in its games, or in a player's minutes. 50% is break-even."
+   },
+   {
+    "term": "iHDCF",
+    "def": "Individual high-danger chances. Only the attempts a player takes himself."
+   },
+   {
+    "term": "HDSV%",
+    "def": "Save percentage on high-danger shots on goal, the slice of a goalie's work NST isolates for the hardest saves.",
+    "slug": "high-danger-save-percentage"
+   }
+  ]
+ },
+ "meaning": [
+  "HDCF tells you how often a team gets to the most dangerous ice and how often it lets the other team get there. The league numbers on this page use MoneyPuck's version, the one in this site's data feed. Its cut is strict. At five-on-five in 2025-26 only 5.9% of unblocked attempts qualified as high-danger, and they produced 14.9% of the goals. Add power plays and empty nets and the bucket grows to nearly three goals in ten, closer to the \"about a third of goals\" in MoneyPuck's glossary.",
+  "At the team level the anchor is 50%. Colorado led the league at five-on-five with 59.0% of the high-danger shots in its games, and Chicago finished last at 42.4%. Detroit was 18th at 48.6%, a hair under the median team's 48.9%. Where did the Wings fall short? On offense. They generated 2.11 high-danger shots per 60 minutes, 29th in the league, while the median team managed 2.31, and they allowed 2.23, which ranked a respectable 12th.",
+  "The individual scale is small enough that a few rebounds move a player up or down the list. Among the 327 forwards who played at least 60 games, the median took 20 high-danger shots in all situations and the top 10% took 36 or more. Wyatt Johnston led the league with 51. <a href=\"/players/dylan-larkin/\">Dylan Larkin</a> tied for 15th with 40, and <a href=\"/players/alex-debrincat/\">Alex DeBrincat</a> tied for 28th with 37.",
+  "Why count chances at all? Because a chance is worth more than an attempt. MoneyPuck's high-danger shots went in 15.6% of the time at five-on-five last season and its low-danger shots 3.8%, so a high-danger shot carried about four times the scoring odds of a low-danger one. The top two buckets were closer than their names suggest, though (medium-danger shots scored 13.0% of the time), and that blurry middle is where a binned count gives ground to expected goals."
+ ],
+ "uses": [
+  {
+   "title": "Splitting finishing from goaltending",
+   "html": "Detroit's five-on-five season gets clearer once you isolate the hardest shots. The Wings scored on 17 of their 143 high-danger shots, an 11.9% rate, and allowed 30 goals on the 151 they gave up, or 19.9%, against a league rate of 15.6%. At the league rate, the same shots would've produced about 22 goals for and 24 against. Detroit's actual 17 and 30 cost it a net 12 goals on the most dangerous shots in the sport, with the shooters and the goalies splitting the blame almost evenly."
+  },
+  {
+   "title": "Grading defensemen",
+   "html": "A defenseman's on-ice high-danger share shows which side won the fight for the slot while his pairing was out there. <a href=\"/players/moritz-seider/\">Moritz Seider</a> played 1,612 five-on-five minutes last season and was on the ice for 66 high-danger shots for and 56 against, a 54.1% share. <a href=\"/players/justin-faulk/\">Justin Faulk</a>, in 1,395 minutes, was on for 41 for and 61 against (40.2%). That's 20 more dangerous looks allowed than created with Faulk on the ice."
+  },
+  {
+   "title": "Checking a shooter's process",
+   "html": "When a forward's goals dry up, his high-danger count tells you whether he stopped getting to the net or stopped finishing. <a href=\"/players/andrew-copp/\">Andrew Copp</a> took 29 high-danger shots in all situations last season, tied for 62nd in the league and nine more than the median forward, and scored on 5 of them. He finished with 9 goals. The chances were there. The finish wasn't."
+  }
+ ],
+ "limits": [
+  {
+   "title": "Every site draws the box differently",
+   "html": "Natural Stat Trick counted 385 high-danger chances, for and against, with Larkin on the ice at five-on-five last season. MoneyPuck's stricter cut counted 71. Both put his share in the low 40s (44.2% and 42.3%), but a count from one site can't be set next to a count from another."
+  },
+  {
+   "title": "A bin is a cliff",
+   "html": "A danger score treats a shot just inside the line as a full chance and one a foot outside as nothing, and it counts every attempt inside the box the same. That's Garret Hohl's case against binning at Hockey-Graphs, and it's why <a href=\"/glossary/expected-goals/\">expected goals</a>, which prices each attempt on its own, carries more information."
+  },
+  {
+   "title": "The bonuses come from a clock",
+   "html": "Rebounds and rush shots are flagged by timestamps (three seconds after an earlier attempt, four seconds after an event outside the zone). A cross-ice pass that sets up a one-timer from the same spot gets no bonus, because the league's feed doesn't log passes."
+  },
+  {
+   "title": "It's only as good as the scorer",
+   "html": "Every location comes from the NHL's event feed, and MoneyPuck's own explainer flags a slap shot that was recorded closer to the net than it was taken, the kind of scorer's error that can bump an attempt up a whole tier."
+  },
+  {
+   "title": "It doesn't know who shot",
+   "html": "A high-danger chance from the league's best finisher and one from a fourth-line grinder count the same. The count describes where the puck went, and you'll need goals above expected or a few seasons of shooting percentage to say anything about who was holding the stick."
+  }
+ ],
+ "related": [
+  {
+   "slug": "scoring-chances",
+   "name": "Scoring chances",
+   "abbr": "SCF",
+   "vs": "The same scale with a lower bar (2 points). HDCF keeps only the 3s and up."
+  },
+  {
+   "slug": "expected-goals",
+   "name": "Expected goals",
+   "abbr": "xG",
+   "vs": "Prices every attempt by its scoring odds. HDCF puts attempts in a bucket."
+  },
+  {
+   "slug": "high-danger-save-percentage",
+   "name": "High-danger save percentage",
+   "abbr": "HDSV%",
+   "vs": "How often goalies stop the high-danger shots that reach them."
+  },
+  {
+   "slug": "shot-quality",
+   "name": "Shot quality",
+   "abbr": "xG/shot",
+   "vs": "How dangerous the average attempt is. HDCF counts only the best ones."
+  },
+  {
+   "slug": "corsi",
+   "name": "Corsi",
+   "abbr": "CF%",
+   "vs": "Counts every attempt from anywhere. HDCF counts only the ones in close."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Are high-danger chances counted on the power play?",
+   "a": "Yes. Natural Stat Trick's tables let you pick the game state (all situations, five-on-five, the power play or the penalty kill), and MoneyPuck splits its counts by situation too. Most comparisons use five-on-five, since teams don't get the same amount of power-play time."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Glossary, team statistics (archived January 5, 2025)",
+   "publisher": "Natural Stat Trick, via the Internet Archive",
+   "url": "https://web.archive.org/web/20250105170348/https://www.naturalstattrick.com/glossary.php?teams",
+   "note": "zone values, rebound and rush bonuses, blocked-shot penalty, the 2 and 3 thresholds, HDCF% and HDSV% formulas, game-state filters"
+  },
+  {
+   "label": "Danger-zone map (archived April 16, 2024)",
+   "publisher": "Natural Stat Trick, via the Internet Archive",
+   "url": "https://web.archive.org/web/20240416071809/https://www.naturalstattrick.com/images/danger-zones.png",
+   "note": "where the 1, 2 and 3 areas sit"
+  },
+  {
+   "label": "NEW: Defining Scoring Chances",
+   "publisher": "War-on-Ice blog, December 31, 2014",
+   "url": "http://blog.war-on-ice.com/new-defining-scoring-chances/",
+   "note": "the original definition, rebound and rush timing"
+  },
+  {
+   "label": "Annotated Glossary",
+   "publisher": "War-on-Ice blog, November 26, 2015",
+   "url": "http://blog.war-on-ice.com/annotated-glossary/",
+   "note": "danger scoring, high-danger chances as a WOI original, Vollman and Johnson credits, why blocked shots lose a point"
+  },
+  {
+   "label": "Minnesota Wild hire stats specialists for hockey operations",
+   "publisher": "CBS Minnesota (AP), January 26, 2016",
+   "url": "https://www.cbsnews.com/minnesota/news/minnesota-wild-hire-stats-specialists-for-hockey-operations",
+   "note": "Thomas and Mandrycky to the Wild; War-on-Ice co-founders"
+  },
+  {
+   "label": "Penguins hire Sam Ventura as director of hockey research",
+   "publisher": "NHL.com, June 16, 2017",
+   "url": "https://www.nhl.com/penguins/news/penguins-hire-sam-ventura-as-director-of-hockey-research-289961770",
+   "note": "Ventura co-founded War-on-Ice"
+  },
+  {
+   "label": "New Detroit Tigers analytics hire Andrew Thomas",
+   "publisher": "Detroit Free Press, May 23, 2024",
+   "url": "https://www.aol.com/detroit-tigers-analytics-hire-andrew-213652889.html",
+   "note": "War-on-Ice founded 2014, shut down after two years; Thomas to the Tigers"
+  },
+  {
+   "label": "De-Bunking the Stat: What Makes a Scoring Chance?",
+   "publisher": "NHL.com (Seattle Kraken), May 1, 2022",
+   "url": "https://www.nhl.com/kraken/news/seattle-kraken-analytics-with-alison-scoring-chances-333640288",
+   "note": "uses the NST model developed by War-on-Ice"
+  },
+  {
+   "label": "General Advanced Stats",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/glossary.htm",
+   "note": "low, medium and high danger cutoffs and their shares"
+  },
+  {
+   "label": "Expected Goals Model",
+   "publisher": "MoneyPuck",
+   "url": "https://moneypuck.com/about.htm",
+   "note": "the mis-recorded slap shot example"
+  },
+  {
+   "label": "Behind the Numbers: The issues with binning, QoC, and scoring chances",
+   "publisher": "Hockey-Graphs (Garret Hohl), February 6, 2017",
+   "url": "https://hockey-graphs.com/2017/02/06/behind-the-numbers-the-issues-with-binning-qoc-and-scoring-chances/",
+   "note": "the case against binned chance counts"
+  },
+  {
+   "label": "2025-26 regular-season team and skater files",
+   "publisher": "MoneyPuck data",
+   "url": "https://moneypuck.com/data.htm",
+   "note": "every league figure on this page"
+  }
+ ],
+ "method": "League figures are Wes & Woodward's calculations from MoneyPuck's 2025-26 regular-season team and skater files, downloaded October 9, 2026: high-danger share is high-danger shots for ÷ (for + against) at five-on-five, rates are per 60 minutes of five-on-five ice time, conversion is high-danger goals ÷ high-danger shots, and individual counts are all situations. Natural Stat Trick's figures for Dylan Larkin come from its 2025-26 five-on-five Red Wings table, pulled September 2, 2026 for this site's research."
+}
