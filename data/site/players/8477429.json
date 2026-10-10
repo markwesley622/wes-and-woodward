@@ -69,11 +69,11 @@
   "toiPerGame": 1196.5,
   "ixG": 0.82,
   "goalsAboveExpected": -0.82,
-  "gameScore": 1.22,
+  "gameScore": 0.95,
   "fiveOnFive": {
    "icetimeMinutes": 52.9,
-   "onIceXgPct": 0.5,
-   "onIceCorsiPct": 0.48,
+   "onIceXgPct": 0.42,
+   "onIceCorsiPct": 0.47,
    "ixgPer60": 0.67,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 34.2,
-  "gs": 0.01,
-  "gs60": 0.01,
-  "gameScore": 0.01,
+  "value": 27.1,
+  "gs": -0.91,
+  "gs60": -0.68,
+  "gameScore": -0.91,
   "minutes": 80,
   "gp": 4,
-  "rank": 481,
+  "rank": 564,
   "pool": 645,
-  "percentile": 25.4,
+  "percentile": 12.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 479,
-    "name": "Frederick Gaudreau",
-    "team": "SEA",
-    "pos": "C",
-    "gp": 5,
-    "value": 34.4,
-    "gs60": 0.03,
+    "rank": 562,
+    "name": "Travis Mitchell",
+    "team": "ANA",
+    "pos": "D",
+    "gp": 4,
+    "value": 27.5,
+    "gs60": -0.85,
     "isMe": false
    },
    {
-    "rank": 480,
-    "name": "William Trudeau",
-    "team": "NSH",
+    "rank": 563,
+    "name": "Carson Soucy",
+    "team": "CBJ",
     "pos": "D",
     "gp": 3,
-    "value": 34.2,
-    "gs60": 0.01,
+    "value": 27.1,
+    "gs60": -0.91,
     "isMe": false
    },
    {
-    "rank": 481,
+    "rank": 564,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
     "gp": 4,
-    "value": 34.2,
-    "gs60": 0.01,
+    "value": 27.1,
+    "gs60": -0.91,
     "isMe": true
    },
    {
-    "rank": 482,
-    "name": "Raphael Lavoie",
-    "team": "VGK",
+    "rank": 565,
+    "name": "Barclay Goodrow",
+    "team": "SJS",
     "pos": "C",
-    "gp": 1,
-    "value": 34.0,
-    "gs60": -0.01,
+    "gp": 4,
+    "value": 27.0,
+    "gs60": -0.92,
     "isMe": false
    },
    {
-    "rank": 483,
-    "name": "Nico Sturm",
-    "team": "MIN",
-    "pos": "C",
-    "gp": 1,
-    "value": 33.8,
-    "gs60": -0.04,
+    "rank": 566,
+    "name": "Ryan Pulock",
+    "team": "NYI",
+    "pos": "D",
+    "gp": 4,
+    "value": 26.6,
+    "gs60": -0.98,
     "isMe": false
    }
   ],
@@ -441,29 +441,29 @@
    "gf": 0.0,
    "ga": 1.0,
    "blocks": 0.0,
-   "gameScore": null,
+   "gameScore": -0.92,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": 0.08,
     "hockeystatcards": -1.92
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.0,
-  "games": 3,
+  "average": -0.23,
+  "games": 4,
   "best": {
    "date": "2026-10-04",
    "opponent": "WPG",
    "value": 0.33
   },
   "worst": {
-   "date": "2026-10-02",
-   "opponent": "NYR",
-   "value": -0.33
+   "date": "2026-10-09",
+   "opponent": "SEA",
+   "value": -0.92
   },
   "above2": 0,
-  "below0": 1
+  "below0": 2
  },
  "prospect": false,
  "prospectStatus": {

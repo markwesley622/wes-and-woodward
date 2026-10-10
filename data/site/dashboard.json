@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-10T05:30+00:00",
+ "generatedAt": "2026-10-10T16:29+00:00",
  "season": "20262027",
  "seasonLabel": "2026-27",
  "seasonState": "in_season",
@@ -32,12 +32,12 @@
   },
   "wildcard": 9,
   "clinch": null,
-  "asOf": "2026-10-09"
+  "asOf": "2026-10-10"
  },
  "deserved": {
-  "xgWinPct": 0.5823,
+  "xgWinPct": 0.5833,
   "xgPoints": 5.1,
-  "xgPointsPer82": 103.8,
+  "xgPointsPer82": 104.0,
   "pointsAboveExpected": -3.1,
   "divisionPlace": 3,
   "conferencePlace": 6,
@@ -115,16 +115,6 @@
     "leaguePlace": 7
    },
    {
-    "team": "PIT",
-    "xgWinPct": 0.4971,
-    "xgPoints": 5.5,
-    "xgPointsPer82": 89.8,
-    "actualPoints": 5,
-    "division": "M",
-    "conference": "E",
-    "leaguePlace": 8
-   },
-   {
     "team": "COL",
     "xgWinPct": 0.6295,
     "xgPoints": 5.4,
@@ -132,6 +122,16 @@
     "actualPoints": 6,
     "division": "C",
     "conference": "W",
+    "leaguePlace": 8
+   },
+   {
+    "team": "PIT",
+    "xgWinPct": 0.4871,
+    "xgPoints": 5.4,
+    "xgPointsPer82": 88.2,
+    "actualPoints": 5,
+    "division": "M",
+    "conference": "E",
     "leaguePlace": 9
    },
    {
@@ -146,9 +146,9 @@
    },
    {
     "team": "DET",
-    "xgWinPct": 0.5823,
+    "xgWinPct": 0.5833,
     "xgPoints": 5.1,
-    "xgPointsPer82": 103.8,
+    "xgPointsPer82": 104.0,
     "actualPoints": 2,
     "division": "A",
     "conference": "E",
@@ -176,29 +176,29 @@
    },
    {
     "team": "WPG",
-    "xgWinPct": 0.4217,
-    "xgPoints": 4.7,
-    "xgPointsPer82": 77.5,
+    "xgWinPct": 0.4276,
+    "xgPoints": 4.8,
+    "xgPointsPer82": 78.4,
     "actualPoints": 7,
     "division": "C",
     "conference": "W",
     "leaguePlace": 14
    },
    {
-    "team": "ANA",
-    "xgWinPct": 0.5183,
+    "team": "SEA",
+    "xgWinPct": 0.4118,
     "xgPoints": 4.6,
-    "xgPointsPer82": 93.3,
+    "xgPointsPer82": 75.9,
     "actualPoints": 6,
     "division": "P",
     "conference": "W",
     "leaguePlace": 15
    },
    {
-    "team": "SEA",
-    "xgWinPct": 0.4129,
-    "xgPoints": 4.6,
-    "xgPointsPer82": 76.0,
+    "team": "ANA",
+    "xgWinPct": 0.5103,
+    "xgPoints": 4.5,
+    "xgPointsPer82": 92.0,
     "actualPoints": 6,
     "division": "P",
     "conference": "W",
@@ -266,9 +266,9 @@
    },
    {
     "team": "CBJ",
-    "xgWinPct": 0.5913,
+    "xgWinPct": 0.6054,
     "xgPoints": 3.9,
-    "xgPointsPer82": 105.3,
+    "xgPointsPer82": 107.6,
     "actualPoints": 4,
     "division": "M",
     "conference": "E",
@@ -370,30 +370,30 @@
  "projected": {
   "source": "MoneyPuck season simulation",
   "available": true,
-  "points": 88.4,
-  "playoffOdds": 0.2528,
-  "divisionOdds": 0.025,
-  "wildcardOdds": 0.11099999999999999,
-  "cupOdds": 0.01,
-  "lotteryOdds": 0.043,
+  "points": 87.3,
+  "playoffOdds": 0.2218,
+  "divisionOdds": 0.018,
+  "wildcardOdds": 0.1,
+  "cupOdds": 0.009,
+  "lotteryOdds": 0.048,
   "preseasonPoints": 88.6,
   "preseasonPlayoffOdds": 0.2553,
   "nextGame": {
    "WINREG": {
-    "points": 0.7,
-    "playoffOdds": 0.0234
+    "points": 1.2,
+    "playoffOdds": 0.038
    },
    "WINOT": {
-    "points": 0.6,
-    "playoffOdds": 0.0156
+    "points": 1.1,
+    "playoffOdds": 0.0257
    },
    "LOSSOT": {
-    "points": -0.4,
-    "playoffOdds": -0.0142
+    "points": 0.3,
+    "playoffOdds": 0.002
    },
    "LOSSREG": {
-    "points": -1.2,
-    "playoffOdds": -0.0362
+    "points": -0.8,
+    "playoffOdds": -0.0237
    }
   }
  },
@@ -407,17 +407,17 @@
   {
    "key": "xg_share_5v5",
    "label": "5v5 expected-goal share",
-   "value": 59.0,
+   "value": 60.0,
    "unit": "%",
-   "rank": 5,
+   "rank": 4,
    "of": 32,
    "note": "MoneyPuck, five-on-five",
-   "rankLabel": "5th of 32"
+   "rankLabel": "4th of 32"
   },
   {
    "key": "xg_share_5v5_adj",
    "label": "5v5 xG share, score & venue adjusted",
-   "value": 55.7,
+   "value": 56.5,
    "unit": "%",
    "rank": 9,
    "of": 32,
@@ -427,7 +427,7 @@
   {
    "key": "finishing",
    "label": "Finishing, goals above expected",
-   "value": -3.9,
+   "value": -4.2,
    "unit": "",
    "rank": 28,
    "of": 32,
@@ -438,7 +438,7 @@
   {
    "key": "gsax",
    "label": "Goaltending, goals saved above expected",
-   "value": -2.2,
+   "value": -2.0,
    "unit": "",
    "rank": 24,
    "of": 32,
@@ -459,12 +459,12 @@
   {
    "key": "pk_xga60",
    "label": "Penalty kill xG against per 60",
-   "value": 7.94,
+   "value": 8.48,
    "unit": "",
-   "rank": 20,
+   "rank": 23,
    "of": 32,
    "note": "4v5, lower is better",
-   "rankLabel": "20th of 32"
+   "rankLabel": "23rd of 32"
   }
  ],
  "radar": {
@@ -479,7 +479,7 @@
     "label": "Finishing",
     "note": "goals above expected, all situations",
     "det": 12.9,
-    "detRaw": "-3.9",
+    "detRaw": "-4.2",
     "top3": 55.9,
     "top3Raw": "+1.3"
    },
@@ -488,7 +488,7 @@
     "label": "Goaltending",
     "note": "goals saved above expected, all situations",
     "det": 25.8,
-    "detRaw": "-2.2",
+    "detRaw": "-2.0",
     "top3": 46.2,
     "top3Raw": "-0.2"
    },
@@ -497,7 +497,7 @@
     "label": "Attacking",
     "note": "5v5 expected goals for per 60",
     "det": 87.1,
-    "detRaw": "3.06",
+    "detRaw": "3.14",
     "top3": 55.9,
     "top3Raw": "2.67"
    },
@@ -505,17 +505,17 @@
     "key": "defending",
     "label": "Defending",
     "note": "5v5 expected goals against per 60 (lower is better)",
-    "det": 83.9,
-    "detRaw": "2.09",
-    "top3": 75.3,
+    "det": 90.3,
+    "detRaw": "2.05",
+    "top3": 74.2,
     "top3Raw": "2.18"
    },
    {
     "key": "possession",
     "label": "Possession",
     "note": "5v5 shot-attempt share",
-    "det": 87.1,
-    "detRaw": "59.0%",
+    "det": 90.3,
+    "detRaw": "60.0%",
     "top3": 53.8,
     "top3Raw": "51.7%"
    },
@@ -532,8 +532,8 @@
     "key": "penaltykill",
     "label": "Penalty kill",
     "note": "4v5 expected goals against per 60 (lower is better)",
-    "det": 38.7,
-    "detRaw": "7.94",
+    "det": 29.0,
+    "detRaw": "8.48",
     "top3": 77.4,
     "top3Raw": "5.61"
    }

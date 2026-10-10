@@ -71,14 +71,14 @@
   "shots": 4,
   "shootingPct": 0.0,
   "toiPerGame": 671.0,
-  "ixG": 0.38,
-  "goalsAboveExpected": -0.38,
-  "gameScore": 0.28,
+  "ixG": 0.46,
+  "goalsAboveExpected": -0.46,
+  "gameScore": 0.41,
   "fiveOnFive": {
    "icetimeMinutes": 10.6,
-   "onIceXgPct": 0.54,
-   "onIceCorsiPct": 0.58,
-   "ixgPer60": 2.148,
+   "onIceXgPct": 0.55,
+   "onIceCorsiPct": 0.59,
+   "ixgPer60": 2.6,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -103,7 +103,72 @@
   }
  },
  "score": null,
- "standIn": null,
+ "standIn": {
+  "value": 32.7,
+  "gs": -0.17,
+  "gs60": -0.91,
+  "gameScore": -0.17,
+  "minutes": 11,
+  "gp": 1,
+  "rank": 496,
+  "pool": 645,
+  "percentile": 23.1,
+  "group": "skaters",
+  "standIn": true,
+  "neighbours": [
+   {
+    "rank": 494,
+    "name": "Scott Laughton",
+    "team": "LAK",
+    "pos": "C",
+    "gp": 3,
+    "value": 33.1,
+    "gs60": -0.12,
+    "isMe": false
+   },
+   {
+    "rank": 495,
+    "name": "Jonas Siegenthaler",
+    "team": "NJD",
+    "pos": "D",
+    "gp": 3,
+    "value": 32.9,
+    "gs60": -0.15,
+    "isMe": false
+   },
+   {
+    "rank": 496,
+    "name": "Sheldon Dries",
+    "team": "DET",
+    "pos": "C",
+    "gp": 1,
+    "value": 32.7,
+    "gs60": -0.17,
+    "isMe": true
+   },
+   {
+    "rank": 497,
+    "name": "Connor Zary",
+    "team": "CGY",
+    "pos": "C",
+    "gp": 2,
+    "value": 32.7,
+    "gs60": -0.17,
+    "isMe": false
+   },
+   {
+    "rank": 498,
+    "name": "Igor Chernyshov",
+    "team": "SJS",
+    "pos": "L",
+    "gp": 4,
+    "value": 32.7,
+    "gs60": -0.18,
+    "isMe": false
+   }
+  ],
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+ },
  "impact": [],
  "career": [
   {
@@ -218,29 +283,29 @@
    "gf": 0.0,
    "ga": 2.0,
    "blocks": 2.0,
-   "gameScore": null,
+   "gameScore": -0.17,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": 0.41,
     "hockeystatcards": -0.74
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.0,
-  "games": 0,
+  "average": -0.17,
+  "games": 1,
   "best": {
    "date": "2026-10-09",
    "opponent": "SEA",
-   "value": 0
+   "value": -0.17
   },
   "worst": {
    "date": "2026-10-09",
    "opponent": "SEA",
-   "value": 0
+   "value": -0.17
   },
   "above2": 0,
-  "below0": 0
+  "below0": 1
  },
  "prospect": false,
  "prospectStatus": {

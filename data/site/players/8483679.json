@@ -69,12 +69,12 @@
   "toiPerGame": 1044.2,
   "ixG": 0.25,
   "goalsAboveExpected": -0.25,
-  "gameScore": 0.82,
+  "gameScore": 0.77,
   "fiveOnFive": {
-   "icetimeMinutes": 61.5,
+   "icetimeMinutes": 61.1,
    "onIceXgPct": 0.44,
-   "onIceCorsiPct": 0.55,
-   "ixgPer60": 0.244,
+   "onIceCorsiPct": 0.54,
+   "ixgPer60": 0.245,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 38.0,
-  "gs": 0.46,
-  "gs60": 0.4,
-  "gameScore": 0.46,
+  "value": 29.8,
+  "gs": -0.54,
+  "gs60": -0.47,
+  "gameScore": -0.54,
   "minutes": 70,
   "gp": 4,
-  "rank": 428,
+  "rank": 531,
   "pool": 645,
-  "percentile": 33.6,
+  "percentile": 17.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 426,
-    "name": "Brennan Othmann",
-    "team": "CGY",
-    "pos": "L",
-    "gp": 1,
-    "value": 38.0,
-    "gs60": 0.47,
-    "isMe": false
-   },
-   {
-    "rank": 427,
-    "name": "Max Sasson",
-    "team": "VAN",
+    "rank": 529,
+    "name": "Cody Glass",
+    "team": "NJD",
     "pos": "C",
-    "gp": 5,
-    "value": 38.0,
-    "gs60": 0.46,
+    "gp": 3,
+    "value": 30.0,
+    "gs60": -0.52,
     "isMe": false
    },
    {
-    "rank": 428,
+    "rank": 530,
+    "name": "Jordan Kyrou",
+    "team": "WSH",
+    "pos": "R",
+    "gp": 4,
+    "value": 30.0,
+    "gs60": -0.52,
+    "isMe": false
+   },
+   {
+    "rank": 531,
     "name": "Anton Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 4,
-    "value": 38.0,
-    "gs60": 0.46,
+    "value": 29.8,
+    "gs60": -0.54,
     "isMe": true
    },
    {
-    "rank": 429,
-    "name": "Ryan Strome",
-    "team": "CGY",
-    "pos": "C",
-    "gp": 4,
-    "value": 37.8,
-    "gs60": 0.44,
+    "rank": 532,
+    "name": "Arshdeep Bains",
+    "team": "VAN",
+    "pos": "L",
+    "gp": 5,
+    "value": 29.7,
+    "gs60": -0.56,
     "isMe": false
    },
    {
-    "rank": 430,
-    "name": "Ville Ottavainen",
-    "team": "SEA",
+    "rank": 533,
+    "name": "David Spacek",
+    "team": "MIN",
     "pos": "D",
-    "gp": 2,
-    "value": 37.8,
-    "gs60": 0.44,
+    "gp": 1,
+    "value": 29.6,
+    "gs60": -0.56,
     "isMe": false
    }
   ],
@@ -260,29 +260,29 @@
    "gf": 0.0,
    "ga": 1.0,
    "blocks": 2.0,
-   "gameScore": null,
+   "gameScore": -1.0,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": 0.175,
     "hockeystatcards": -2.18
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.15,
-  "games": 3,
+  "average": -0.14,
+  "games": 4,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
    "value": 0.42
   },
   "worst": {
-   "date": "2026-10-02",
-   "opponent": "NYR",
-   "value": -0.11
+   "date": "2026-10-09",
+   "opponent": "SEA",
+   "value": -1.0
   },
   "above2": 0,
-  "below0": 1
+  "below0": 2
  },
  "prospect": true,
  "prospectStatus": {

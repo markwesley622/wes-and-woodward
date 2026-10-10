@@ -69,12 +69,12 @@
   "toiPerGame": 996.8,
   "ixG": 0.59,
   "goalsAboveExpected": -0.59,
-  "gameScore": 1.7,
+  "gameScore": 1.45,
   "fiveOnFive": {
-   "icetimeMinutes": 46.9,
-   "onIceXgPct": 0.71,
-   "onIceCorsiPct": 0.62,
-   "ixgPer60": 0.474,
+   "icetimeMinutes": 46.5,
+   "onIceXgPct": 0.65,
+   "onIceCorsiPct": 0.61,
+   "ixgPer60": 0.477,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 46.4,
-  "gs": 1.41,
-  "gs60": 1.27,
-  "gameScore": 1.41,
+  "value": 42.4,
+  "gs": 0.96,
+  "gs60": 0.87,
+  "gameScore": 0.96,
   "minutes": 66,
   "gp": 4,
-  "rank": 320,
+  "rank": 370,
   "pool": 645,
-  "percentile": 50.4,
+  "percentile": 42.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 318,
-    "name": "Anthony Duclair",
-    "team": "NYI",
-    "pos": "L",
+    "rank": 368,
+    "name": "Morgan Frost",
+    "team": "CGY",
+    "pos": "C",
     "gp": 4,
-    "value": 46.5,
-    "gs60": 1.42,
+    "value": 42.6,
+    "gs60": 0.98,
     "isMe": false
    },
    {
-    "rank": 319,
-    "name": "Joel Kiviranta",
-    "team": "DAL",
-    "pos": "L",
-    "gp": 2,
-    "value": 46.4,
-    "gs60": 1.41,
+    "rank": 369,
+    "name": "Axel Sandin-Pellikka",
+    "team": "DET",
+    "pos": "D",
+    "gp": 3,
+    "value": 42.4,
+    "gs60": 0.96,
     "isMe": false
    },
    {
-    "rank": 320,
+    "rank": 370,
     "name": "Michael Rasmussen",
     "team": "DET",
     "pos": "C",
     "gp": 4,
-    "value": 46.4,
-    "gs60": 1.41,
+    "value": 42.4,
+    "gs60": 0.96,
     "isMe": true
    },
    {
-    "rank": 321,
-    "name": "Marcus Foligno",
-    "team": "MIN",
-    "pos": "L",
-    "gp": 4,
-    "value": 46.3,
-    "gs60": 1.39,
+    "rank": 371,
+    "name": "Sean Couturier",
+    "team": "PHI",
+    "pos": "C",
+    "gp": 5,
+    "value": 42.3,
+    "gs60": 0.95,
     "isMe": false
    },
    {
-    "rank": 322,
-    "name": "Arseny Gritsyuk",
-    "team": "NJD",
-    "pos": "R",
-    "gp": 3,
-    "value": 46.2,
-    "gs60": 1.38,
+    "rank": 372,
+    "name": "Casey Mittelstadt",
+    "team": "BOS",
+    "pos": "C",
+    "gp": 5,
+    "value": 42.3,
+    "gs60": 0.95,
     "isMe": false
    }
   ],
@@ -366,29 +366,29 @@
    "gf": 0.0,
    "ga": 1.0,
    "blocks": 0.0,
-   "gameScore": null,
+   "gameScore": -0.45,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": 0.21,
     "hockeystatcards": -1.1
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.47,
-  "games": 3,
+  "average": 0.24,
+  "games": 4,
   "best": {
    "date": "2026-10-04",
    "opponent": "WPG",
    "value": 0.62
   },
   "worst": {
-   "date": "2026-10-02",
-   "opponent": "NYR",
-   "value": 0.32
+   "date": "2026-10-09",
+   "opponent": "SEA",
+   "value": -0.45
   },
   "above2": 0,
-  "below0": 0
+  "below0": 1
  },
  "prospect": false,
  "prospectStatus": {

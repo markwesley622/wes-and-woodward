@@ -69,12 +69,12 @@
   "toiPerGame": 744.5,
   "ixG": 0.13,
   "goalsAboveExpected": -0.13,
-  "gameScore": 0.5,
+  "gameScore": 0.25,
   "fiveOnFive": {
-   "icetimeMinutes": 42.8,
-   "onIceXgPct": 0.68,
-   "onIceCorsiPct": 0.55,
-   "ixgPer60": 0.182,
+   "icetimeMinutes": 42.4,
+   "onIceXgPct": 0.6,
+   "onIceCorsiPct": 0.54,
+   "ixgPer60": 0.184,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 41.5,
-  "gs": 0.86,
-  "gs60": 1.04,
-  "gameScore": 0.86,
+  "value": 36.0,
+  "gs": 0.22,
+  "gs60": 0.27,
+  "gameScore": 0.22,
   "minutes": 50,
   "gp": 4,
-  "rank": 380,
+  "rank": 454,
   "pool": 645,
-  "percentile": 41.1,
+  "percentile": 29.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 378,
-    "name": "Owen Tippett",
-    "team": "PHI",
+    "rank": 452,
+    "name": "Alexey Toropchenko",
+    "team": "STL",
     "pos": "R",
-    "gp": 5,
-    "value": 41.5,
-    "gs60": 0.86,
+    "gp": 1,
+    "value": 36.1,
+    "gs60": 0.24,
     "isMe": false
    },
    {
-    "rank": 379,
-    "name": "Nic Dowd",
-    "team": "VGK",
-    "pos": "C",
-    "gp": 5,
-    "value": 41.5,
-    "gs60": 0.86,
+    "rank": 453,
+    "name": "Justin Danforth",
+    "team": "BUF",
+    "pos": "R",
+    "gp": 2,
+    "value": 36.0,
+    "gs60": 0.23,
     "isMe": false
    },
    {
-    "rank": 380,
+    "rank": 454,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
     "gp": 4,
-    "value": 41.5,
-    "gs60": 0.86,
+    "value": 36.0,
+    "gs60": 0.22,
     "isMe": true
    },
    {
-    "rank": 381,
-    "name": "Morgan Barron",
-    "team": "WPG",
-    "pos": "C",
-    "gp": 5,
-    "value": 41.5,
-    "gs60": 0.86,
+    "rank": 455,
+    "name": "Juraj Slafkovsk",
+    "team": "MTL",
+    "pos": "L",
+    "gp": 4,
+    "value": 35.9,
+    "gs60": 0.21,
     "isMe": false
    },
    {
-    "rank": 382,
-    "name": "Ross Johnston",
-    "team": "STL",
-    "pos": "L",
+    "rank": 456,
+    "name": "Anthony Mantha",
+    "team": "NJD",
+    "pos": "R",
     "gp": 3,
-    "value": 41.3,
-    "gs60": 0.84,
+    "value": 35.9,
+    "gs60": 0.21,
     "isMe": false
    }
   ],
@@ -366,29 +366,29 @@
    "gf": 0.0,
    "ga": 2.0,
    "blocks": 1.0,
-   "gameScore": null,
+   "gameScore": -0.64,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": -0.125,
     "hockeystatcards": -1.16
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.29,
-  "games": 3,
+  "average": 0.05,
+  "games": 4,
   "best": {
    "date": "2026-10-02",
    "opponent": "NYR",
    "value": 0.58
   },
   "worst": {
-   "date": "2026-10-06",
-   "opponent": "OTT",
-   "value": -0.11
+   "date": "2026-10-09",
+   "opponent": "SEA",
+   "value": -0.64
   },
   "above2": 0,
-  "below0": 1
+  "below0": 2
  },
  "prospect": false,
  "prospectStatus": {

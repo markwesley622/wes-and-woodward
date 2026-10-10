@@ -69,12 +69,12 @@
   "toiPerGame": 1170.0,
   "ixG": 0.97,
   "goalsAboveExpected": 0.03,
-  "gameScore": 3.19,
+  "gameScore": 3.24,
   "fiveOnFive": {
-   "icetimeMinutes": 27.2,
-   "onIceXgPct": 0.73,
-   "onIceCorsiPct": 0.73,
-   "ixgPer60": 1.475,
+   "icetimeMinutes": 27.1,
+   "onIceXgPct": 0.72,
+   "onIceCorsiPct": 0.74,
+   "ixgPer60": 1.485,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 54.2,
-  "gs": 2.26,
-  "gs60": 3.48,
-  "gameScore": 2.26,
+  "value": 60.6,
+  "gs": 2.98,
+  "gs60": 4.58,
+  "gameScore": 2.98,
   "minutes": 39,
   "gp": 2,
-  "rank": 249,
+  "rank": 190,
   "pool": 645,
-  "percentile": 61.4,
+  "percentile": 70.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 247,
-    "name": "Daniil But",
-    "team": "UTA",
-    "pos": "L",
-    "gp": 5,
-    "value": 54.4,
-    "gs60": 2.28,
-    "isMe": false
-   },
-   {
-    "rank": 248,
-    "name": "Kiefer Sherwood",
-    "team": "SJS",
-    "pos": "L",
+    "rank": 188,
+    "name": "Cole Hutson",
+    "team": "WSH",
+    "pos": "D",
     "gp": 4,
-    "value": 54.3,
-    "gs60": 2.27,
+    "value": 61.2,
+    "gs60": 3.04,
     "isMe": false
    },
    {
-    "rank": 249,
+    "rank": 189,
+    "name": "Mathieu Olivier",
+    "team": "CBJ",
+    "pos": "R",
+    "gp": 3,
+    "value": 60.6,
+    "gs60": 2.98,
+    "isMe": false
+   },
+   {
+    "rank": 190,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 54.2,
-    "gs60": 2.26,
+    "value": 60.6,
+    "gs60": 2.98,
     "isMe": true
    },
    {
-    "rank": 250,
-    "name": "Ian Cole",
-    "team": "CHI",
-    "pos": "D",
+    "rank": 191,
+    "name": "Morgan Geekie",
+    "team": "BOS",
+    "pos": "C",
     "gp": 5,
-    "value": 54.2,
-    "gs60": 2.25,
+    "value": 60.4,
+    "gs60": 2.95,
     "isMe": false
    },
    {
-    "rank": 251,
-    "name": "Justin Faulk",
-    "team": "DET",
-    "pos": "D",
-    "gp": 4,
-    "value": 54.1,
-    "gs60": 2.25,
+    "rank": 192,
+    "name": "Blake Lizotte",
+    "team": "PIT",
+    "pos": "C",
+    "gp": 5,
+    "value": 60.3,
+    "gs60": 2.94,
     "isMe": false
    }
   ],
@@ -378,26 +378,26 @@
    "gf": 0.0,
    "ga": 1.0,
    "blocks": 1.0,
-   "gameScore": null,
+   "gameScore": 0.72,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": 0.885,
     "hockeystatcards": 0.56
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 2.26,
-  "games": 1,
+  "average": 1.49,
+  "games": 2,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
    "value": 2.26
   },
   "worst": {
-   "date": "2026-10-06",
-   "opponent": "OTT",
-   "value": 2.26
+   "date": "2026-10-09",
+   "opponent": "SEA",
+   "value": 0.72
   },
   "above2": 1,
   "below0": 0
