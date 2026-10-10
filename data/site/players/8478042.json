@@ -26,16 +26,16 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 3,
-  "goals": 2,
+  "gp": 4,
+  "goals": 3,
   "assists": 1,
-  "points": 3,
-  "plusMinus": -1,
+  "points": 4,
+  "plusMinus": -2,
   "pim": 2,
-  "shots": 8,
-  "shootingPct": 0.25,
-  "toiPerGame": "18:20",
-  "ppPoints": 2,
+  "shots": 11,
+  "shootingPct": 0.272727,
+  "toiPerGame": "18:10",
+  "ppPoints": 3,
   "wins": null,
   "losses": null,
   "otLosses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 3,
-   "goals": 2,
+   "gp": 4,
+   "goals": 3,
    "assists": 1,
-   "points": 3,
-   "plusMinus": -1,
+   "points": 4,
+   "plusMinus": -2,
    "pim": 2
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Viktor Arvidsson",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478042.png",
-  "gamesPlayed": 3,
-  "goals": 2,
+  "gamesPlayed": 4,
+  "goals": 3,
   "assists": 1,
-  "points": 3,
-  "shots": 8,
-  "shootingPct": 0.25,
-  "toiPerGame": 1100.3,
-  "ixG": 1.45,
-  "goalsAboveExpected": 0.55,
-  "gameScore": 3.31,
+  "points": 4,
+  "shots": 11,
+  "shootingPct": 0.272727,
+  "toiPerGame": 1089.5,
+  "ixG": 1.81,
+  "goalsAboveExpected": 1.19,
+  "gameScore": 4.47,
   "fiveOnFive": {
-   "icetimeMinutes": 38.5,
-   "onIceXgPct": 0.54,
-   "onIceCorsiPct": 0.56,
-   "ixgPer60": 0.67,
+   "icetimeMinutes": 53.7,
+   "onIceXgPct": 0.56,
+   "onIceCorsiPct": 0.57,
+   "ixgPer60": 0.838,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,16 +82,16 @@
  },
  "hsc": {
   "Game score": {
-   "value": 1.01,
-   "percentile": 77
+   "value": 0.85,
+   "percentile": 68
   },
   "Offense": {
-   "value": 0.5,
-   "percentile": 84
+   "value": 0.6,
+   "percentile": 85
   },
   "Defense": {
-   "value": -0.2,
-   "percentile": 33
+   "value": -0.3,
+   "percentile": 29
   },
   "Net": {
    "value": 0.3,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 64.6,
-  "gs": 3.16,
-  "gs60": 3.45,
-  "gameScore": 3.16,
-  "minutes": 55,
-  "gp": 3,
-  "rank": 155,
-  "pool": 639,
-  "percentile": 75.7,
+  "value": 62.8,
+  "gs": 3.23,
+  "gs60": 2.67,
+  "gameScore": 3.23,
+  "minutes": 73,
+  "gp": 4,
+  "rank": 177,
+  "pool": 645,
+  "percentile": 72.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 153,
-    "name": "Kris Letang",
-    "team": "PIT",
-    "pos": "D",
-    "gp": 4,
-    "value": 65.3,
-    "gs60": 3.24,
+    "rank": 175,
+    "name": "Linus Karlsson",
+    "team": "VAN",
+    "pos": "C",
+    "gp": 5,
+    "value": 63.0,
+    "gs60": 3.26,
     "isMe": false
    },
    {
-    "rank": 154,
-    "name": "Chandler Stephenson",
-    "team": "SEA",
+    "rank": 176,
+    "name": "Brayden Schenn",
+    "team": "NYI",
     "pos": "C",
     "gp": 4,
-    "value": 64.6,
-    "gs60": 3.17,
+    "value": 62.9,
+    "gs60": 3.23,
     "isMe": false
    },
    {
-    "rank": 155,
+    "rank": 177,
     "name": "Viktor Arvidsson",
     "team": "DET",
     "pos": "L",
-    "gp": 3,
-    "value": 64.6,
-    "gs60": 3.16,
+    "gp": 4,
+    "value": 62.8,
+    "gs60": 3.23,
     "isMe": true
    },
    {
-    "rank": 156,
-    "name": "Elias Pettersson",
-    "team": "VAN",
-    "pos": "D",
-    "gp": 5,
-    "value": 64.5,
-    "gs60": 3.15,
+    "rank": 178,
+    "name": "Jiri Kulich",
+    "team": "BUF",
+    "pos": "C",
+    "gp": 4,
+    "value": 62.4,
+    "gs60": 3.19,
     "isMe": false
    },
    {
-    "rank": 157,
-    "name": "Eric Robinson",
-    "team": "CAR",
-    "pos": "L",
+    "rank": 179,
+    "name": "Elias Lindholm",
+    "team": "BOS",
+    "pos": "C",
     "gp": 5,
-    "value": 64.0,
-    "gs60": 3.1,
+    "value": 62.3,
+    "gs60": 3.17,
     "isMe": false
    }
   ],
@@ -369,10 +369,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 2.0,
-   "gameScore": 0.07,
+   "gameScore": 0.06,
    "gameScoreParts": {
     "moneypuck": -0.015,
-    "hockeystatcards": 0.16
+    "hockeystatcards": 0.14
    }
   },
   {
@@ -417,28 +417,52 @@
    "gf": 2.0,
    "ga": 2.0,
    "blocks": 0.0,
-   "gameScore": 1.97,
+   "gameScore": 2.05,
    "gameScoreParts": {
     "moneypuck": 2.155,
-    "hockeystatcards": 1.79
+    "hockeystatcards": 1.95
+   }
+  },
+  {
+   "gameId": 2026020066,
+   "date": "2026-10-09",
+   "opponent": "SEA",
+   "home": true,
+   "goals": 1,
+   "assists": 0,
+   "points": 1,
+   "plusMinus": -1,
+   "shots": 3,
+   "pim": 0,
+   "toi": 17.6,
+   "ixg": 0.66,
+   "xgf": 0.68,
+   "xga": 0.72,
+   "gf": 0.0,
+   "ga": 1.0,
+   "blocks": 1.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.25
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.05,
+  "average": 1.08,
   "games": 3,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
-   "value": 1.97
+   "value": 2.05
   },
   "worst": {
    "date": "2026-10-02",
    "opponent": "NYR",
-   "value": 0.07
+   "value": 0.06
   },
-  "above2": 0,
+  "above2": 1,
   "below0": 0
  },
  "prospect": false,

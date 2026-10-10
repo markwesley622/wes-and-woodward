@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 1,
+  "gp": 2,
   "goals": 1,
   "assists": 1,
   "points": 2,
-  "plusMinus": 0,
+  "plusMinus": -1,
   "pim": 2,
-  "shots": 4,
-  "shootingPct": 0.25,
-  "toiPerGame": "20:41",
+  "shots": 5,
+  "shootingPct": 0.2,
+  "toiPerGame": "19:30",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 1,
+   "gp": 2,
    "goals": 1,
    "assists": 1,
    "points": 2,
-   "plusMinus": 0,
+   "plusMinus": -1,
    "pim": 2
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Dylan Larkin",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477946.png",
-  "gamesPlayed": 1,
+  "gamesPlayed": 2,
   "goals": 1,
   "assists": 1,
   "points": 2,
-  "shots": 4,
-  "shootingPct": 0.25,
-  "toiPerGame": 1241.0,
-  "ixG": 0.86,
-  "goalsAboveExpected": 0.14,
-  "gameScore": 2.35,
+  "shots": 5,
+  "shootingPct": 0.2,
+  "toiPerGame": 1170.0,
+  "ixG": 0.97,
+  "goalsAboveExpected": 0.03,
+  "gameScore": 3.19,
   "fiveOnFive": {
-   "icetimeMinutes": 11.3,
-   "onIceXgPct": 0.6,
-   "onIceCorsiPct": 0.67,
-   "ixgPer60": 3.022,
+   "icetimeMinutes": 27.2,
+   "onIceXgPct": 0.73,
+   "onIceCorsiPct": 0.73,
+   "ixgPer60": 1.475,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 1.77,
-   "percentile": 94
+   "value": 1.36,
+   "percentile": 87
   },
   "Offense": {
-   "value": 0.6,
-   "percentile": 86
+   "value": 0.5,
+   "percentile": 82
   },
   "Defense": {
-   "value": -0.3,
-   "percentile": 23
+   "value": -0.1,
+   "percentile": 37
   },
   "Net": {
    "value": 0.3,
-   "percentile": 66
+   "percentile": 67
   }
  },
  "score": null,
  "standIn": {
-  "value": 54.5,
-  "gs": 2.06,
-  "gs60": 5.98,
-  "gameScore": 2.06,
-  "minutes": 21,
-  "gp": 1,
-  "rank": 227,
-  "pool": 639,
-  "percentile": 64.5,
+  "value": 54.2,
+  "gs": 2.26,
+  "gs60": 3.48,
+  "gameScore": 2.26,
+  "minutes": 39,
+  "gp": 2,
+  "rank": 249,
+  "pool": 645,
+  "percentile": 61.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 225,
-    "name": "Hendrix Lapierre",
-    "team": "PIT",
-    "pos": "C",
+    "rank": 247,
+    "name": "Daniil But",
+    "team": "UTA",
+    "pos": "L",
+    "gp": 5,
+    "value": 54.4,
+    "gs60": 2.28,
+    "isMe": false
+   },
+   {
+    "rank": 248,
+    "name": "Kiefer Sherwood",
+    "team": "SJS",
+    "pos": "L",
     "gp": 4,
-    "value": 54.5,
-    "gs60": 2.06,
+    "value": 54.3,
+    "gs60": 2.27,
     "isMe": false
    },
    {
-    "rank": 226,
-    "name": "Cole Hutson",
-    "team": "WSH",
-    "pos": "D",
-    "gp": 3,
-    "value": 54.5,
-    "gs60": 2.06,
-    "isMe": false
-   },
-   {
-    "rank": 227,
+    "rank": 249,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
-    "gp": 1,
-    "value": 54.5,
-    "gs60": 2.06,
+    "gp": 2,
+    "value": 54.2,
+    "gs60": 2.26,
     "isMe": true
    },
    {
-    "rank": 228,
-    "name": "Brandt Clarke",
-    "team": "LAK",
+    "rank": 250,
+    "name": "Ian Cole",
+    "team": "CHI",
     "pos": "D",
-    "gp": 3,
-    "value": 54.4,
-    "gs60": 2.06,
+    "gp": 5,
+    "value": 54.2,
+    "gs60": 2.25,
     "isMe": false
    },
    {
-    "rank": 229,
-    "name": "Anton Lundell",
-    "team": "FLA",
-    "pos": "C",
+    "rank": 251,
+    "name": "Justin Faulk",
+    "team": "DET",
+    "pos": "D",
     "gp": 4,
-    "value": 54.4,
-    "gs60": 2.05,
+    "value": 54.1,
+    "gs60": 2.25,
     "isMe": false
    }
   ],
@@ -354,26 +354,50 @@
    "gf": 2.0,
    "ga": 2.0,
    "blocks": 1.0,
-   "gameScore": 2.06,
+   "gameScore": 2.26,
    "gameScoreParts": {
     "moneypuck": 2.35,
-    "hockeystatcards": 1.77
+    "hockeystatcards": 2.17
+   }
+  },
+  {
+   "gameId": 2026020066,
+   "date": "2026-10-09",
+   "opponent": "SEA",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "shots": 1,
+   "pim": 0,
+   "toi": 18.3,
+   "ixg": 0.11,
+   "xgf": 0.8,
+   "xga": 0.18,
+   "gf": 0.0,
+   "ga": 1.0,
+   "blocks": 1.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.56
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 2.06,
+  "average": 2.26,
   "games": 1,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
-   "value": 2.06
+   "value": 2.26
   },
   "worst": {
    "date": "2026-10-06",
    "opponent": "OTT",
-   "value": 2.06
+   "value": 2.26
   },
   "above2": 1,
   "below0": 0

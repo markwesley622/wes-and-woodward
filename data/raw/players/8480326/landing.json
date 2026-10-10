@@ -43,39 +43,39 @@
  "inTop100AllTime": 0,
  "inHHOF": 0,
  "featuredStats": {
-  "season": 20252026,
+  "season": 20262027,
   "regularSeason": {
    "subSeason": {
     "assists": 0,
     "gameWinningGoals": 0,
-    "gamesPlayed": 5,
+    "gamesPlayed": 1,
     "goals": 0,
     "otGoals": 0,
     "pim": 0,
-    "plusMinus": 0,
+    "plusMinus": -2,
     "points": 0,
     "powerPlayGoals": 0,
     "powerPlayPoints": 0,
     "shootingPctg": 0.0,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 2
+    "shots": 4
    },
    "career": {
     "assists": 10,
     "gameWinningGoals": 1,
-    "gamesPlayed": 127,
+    "gamesPlayed": 128,
     "goals": 16,
     "otGoals": 0,
     "pim": 59,
-    "plusMinus": -20,
+    "plusMinus": -22,
     "points": 26,
     "powerPlayGoals": 5,
     "powerPlayPoints": 6,
-    "shootingPctg": 0.1,
+    "shootingPctg": 0.0975,
     "shorthandedGoals": 2,
     "shorthandedPoints": 2,
-    "shots": 160
+    "shots": 164
    }
   }
  },
@@ -83,20 +83,20 @@
   "regularSeason": {
    "assists": 10,
    "avgToi": "10:12",
-   "faceoffWinningPctg": 0.493,
+   "faceoffWinningPctg": 0.4938,
    "gameWinningGoals": 1,
-   "gamesPlayed": 127,
+   "gamesPlayed": 128,
    "goals": 16,
    "otGoals": 0,
    "pim": 59,
-   "plusMinus": -20,
+   "plusMinus": -22,
    "points": 26,
    "powerPlayGoals": 5,
    "powerPlayPoints": 6,
-   "shootingPctg": 0.1,
+   "shootingPctg": 0.0975,
    "shorthandedGoals": 2,
    "shorthandedPoints": 2,
-   "shots": 160
+   "shots": 164
   },
   "playoffs": {
    "assists": 0,
@@ -122,93 +122,21 @@
  "last5Games": [
   {
    "assists": 0,
-   "gameDate": "2026-03-21",
-   "gameId": 2025021108,
+   "gameDate": "2026-10-09",
+   "gameId": 2026020066,
    "gameTypeId": 2,
    "goals": 0,
    "homeRoadFlag": "H",
-   "opponentAbbrev": "BOS",
+   "opponentAbbrev": "SEA",
    "pim": 0,
-   "plusMinus": 0,
+   "plusMinus": -2,
    "points": 0,
    "powerPlayGoals": 0,
-   "shifts": 8,
+   "shifts": 19,
    "shorthandedGoals": 0,
-   "shots": 0,
+   "shots": 4,
    "teamAbbrev": "DET",
-   "toi": "4:26"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-03-19",
-   "gameId": 2025021085,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "H",
-   "opponentAbbrev": "MTL",
-   "pim": 0,
-   "plusMinus": 0,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 7,
-   "shorthandedGoals": 0,
-   "shots": 0,
-   "teamAbbrev": "DET",
-   "toi": "3:53"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-03-16",
-   "gameId": 2025021063,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "H",
-   "opponentAbbrev": "CGY",
-   "pim": 0,
-   "plusMinus": 0,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 14,
-   "shorthandedGoals": 0,
-   "shots": 0,
-   "teamAbbrev": "DET",
-   "toi": "8:23"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-03-14",
-   "gameId": 2025021053,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "DAL",
-   "pim": 0,
-   "plusMinus": 0,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 11,
-   "shorthandedGoals": 0,
-   "shots": 0,
-   "teamAbbrev": "DET",
-   "toi": "7:54"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-03-12",
-   "gameId": 2025021030,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "TBL",
-   "pim": 0,
-   "plusMinus": 0,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 15,
-   "shorthandedGoals": 0,
-   "shots": 2,
-   "teamAbbrev": "DET",
-   "toi": "10:16"
+   "toi": "11:11"
   }
  ],
  "seasonTotals": [
@@ -876,6 +804,39 @@
    "sequence": 11,
    "teamName": {
     "default": "Grand Rapids Griffins"
+   }
+  },
+  {
+   "assists": 0,
+   "avgToi": "11:11",
+   "faceoffWinningPctg": 1.0,
+   "gameTypeId": 2,
+   "gameWinningGoals": 0,
+   "gamesPlayed": 1,
+   "goals": 0,
+   "leagueAbbrev": "NHL",
+   "otGoals": 0,
+   "pim": 0,
+   "plusMinus": -2,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 0,
+   "season": 20262027,
+   "sequence": 1,
+   "shootingPctg": 0.0,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "shots": 4,
+   "teamCommonName": {
+    "default": "Red Wings"
+   },
+   "teamName": {
+    "default": "Detroit Red Wings",
+    "fr": "Red Wings de Detroit"
+   },
+   "teamPlaceNameWithPreposition": {
+    "default": "Detroit",
+    "fr": "de Detroit"
    }
   },
   {

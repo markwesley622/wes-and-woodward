@@ -49,23 +49,23 @@
  "inTop100AllTime": 0,
  "inHHOF": 0,
  "featuredStats": {
-  "season": 20252026,
+  "season": 20262027,
   "regularSeason": {
    "subSeason": {
-    "gamesPlayed": 33,
-    "goalsAgainstAvg": 3.054049,
-    "losses": 15,
-    "otLosses": 3,
-    "savePctg": 0.895135,
+    "gamesPlayed": 1,
+    "goalsAgainstAvg": 2.315113,
+    "losses": 0,
+    "otLosses": 0,
+    "savePctg": 0.888889,
     "shutouts": 0,
-    "wins": 13
+    "wins": 0
    },
    "career": {
-    "gamesPlayed": 98,
-    "goalsAgainstAvg": 3.302932,
+    "gamesPlayed": 99,
+    "goalsAgainstAvg": 3.298241,
     "losses": 49,
     "otLosses": 9,
-    "savePctg": 0.897039,
+    "savePctg": 0.897013,
     "shutouts": 1,
     "wins": 32
    }
@@ -74,17 +74,18 @@
  "careerTotals": {
   "regularSeason": {
    "assists": 2,
-   "gamesPlayed": 98,
+   "gamesPlayed": 99,
    "gamesStarted": 92,
    "goals": 0,
-   "goalsAgainst": 299,
-   "goalsAgainstAvg": 3.302932,
+   "goalsAgainst": 300,
+   "goalsAgainstAvg": 3.298241,
    "losses": 49,
    "otLosses": 9,
-   "savePctg": 0.897039,
-   "shotsAgainst": 2904,
+   "pim": 0,
+   "savePctg": 0.897013,
+   "shotsAgainst": 2913,
    "shutouts": 1,
-   "timeOnIce": "5431:32",
+   "timeOnIce": "5457:27",
    "wins": 32
   }
  },
@@ -93,79 +94,18 @@
  "watchLink": "#TODO",
  "last5Games": [
   {
-   "decision": "W",
-   "gameDate": "2026-04-15",
-   "gameId": 2025021303,
+   "gameDate": "2026-10-09",
+   "gameId": 2026020066,
    "gameTypeId": 2,
-   "gamesStarted": 1,
+   "gamesStarted": 0,
    "goalsAgainst": 1,
    "homeRoadFlag": "H",
-   "opponentAbbrev": "DET",
+   "opponentAbbrev": "SEA",
    "penaltyMins": 0,
-   "savePctg": 0.961538,
-   "shotsAgainst": 26,
-   "teamAbbrev": "FLA",
-   "toi": "60:00"
-  },
-  {
-   "decision": "W",
-   "gameDate": "2026-04-13",
-   "gameId": 2025021283,
-   "gameTypeId": 2,
-   "gamesStarted": 1,
-   "goalsAgainst": 2,
-   "homeRoadFlag": "H",
-   "opponentAbbrev": "NYR",
-   "penaltyMins": 0,
-   "savePctg": 0.925926,
-   "shotsAgainst": 27,
-   "teamAbbrev": "FLA",
-   "toi": "60:00"
-  },
-  {
-   "decision": "W",
-   "gameDate": "2026-04-11",
-   "gameId": 2025021270,
-   "gameTypeId": 2,
-   "gamesStarted": 1,
-   "goalsAgainst": 2,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "TOR",
-   "penaltyMins": 0,
-   "savePctg": 0.894737,
-   "shotsAgainst": 19,
-   "teamAbbrev": "FLA",
-   "toi": "60:00"
-  },
-  {
-   "decision": "O",
-   "gameDate": "2026-04-07",
-   "gameId": 2025021233,
-   "gameTypeId": 2,
-   "gamesStarted": 1,
-   "goalsAgainst": 3,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "MTL",
-   "penaltyMins": 0,
-   "savePctg": 0.90625,
-   "shotsAgainst": 32,
-   "teamAbbrev": "FLA",
-   "toi": "65:00"
-  },
-  {
-   "decision": "L",
-   "gameDate": "2026-04-05",
-   "gameId": 2025021223,
-   "gameTypeId": 2,
-   "gamesStarted": 1,
-   "goalsAgainst": 5,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "PIT",
-   "penaltyMins": 0,
-   "savePctg": 0.782609,
-   "shotsAgainst": 23,
-   "teamAbbrev": "FLA",
-   "toi": "60:00"
+   "savePctg": 0.888889,
+   "shotsAgainst": 9,
+   "teamAbbrev": "DET",
+   "toi": "25:55"
   }
  ],
  "seasonTotals": [
@@ -704,6 +644,37 @@
    },
    "timeOnIce": "1905:40",
    "wins": 13
+  },
+  {
+   "assists": 0,
+   "gameTypeId": 2,
+   "gamesPlayed": 1,
+   "gamesStarted": 0,
+   "goals": 0,
+   "goalsAgainst": 1,
+   "goalsAgainstAvg": 2.315113,
+   "leagueAbbrev": "NHL",
+   "losses": 0,
+   "otLosses": 0,
+   "pim": 0,
+   "savePctg": 0.888889,
+   "season": 20262027,
+   "sequence": 1,
+   "shotsAgainst": 9,
+   "shutouts": 0,
+   "teamCommonName": {
+    "default": "Red Wings"
+   },
+   "teamName": {
+    "default": "Detroit Red Wings",
+    "fr": "Red Wings de Detroit"
+   },
+   "teamPlaceNameWithPreposition": {
+    "default": "Detroit",
+    "fr": "de Detroit"
+   },
+   "timeOnIce": "25:55",
+   "wins": 0
   }
  ],
  "currentTeamRoster": [

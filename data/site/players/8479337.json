@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 3,
+  "gp": 4,
   "goals": 2,
-  "assists": 2,
-  "points": 4,
+  "assists": 3,
+  "points": 5,
   "plusMinus": 2,
   "pim": 4,
-  "shots": 8,
-  "shootingPct": 0.25,
-  "toiPerGame": "20:35",
+  "shots": 11,
+  "shootingPct": 0.181818,
+  "toiPerGame": "19:26",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,10 +47,10 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 3,
+   "gp": 4,
    "goals": 2,
-   "assists": 2,
-   "points": 4,
+   "assists": 3,
+   "points": 5,
    "plusMinus": 2,
    "pim": 4
   }
@@ -60,21 +60,21 @@
   "name": "Alex DeBrincat",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479337.png",
-  "gamesPlayed": 3,
+  "gamesPlayed": 4,
   "goals": 2,
-  "assists": 2,
-  "points": 4,
-  "shots": 8,
-  "shootingPct": 0.25,
-  "toiPerGame": 1234.7,
-  "ixG": 1.16,
-  "goalsAboveExpected": 0.84,
-  "gameScore": 4.35,
+  "assists": 3,
+  "points": 5,
+  "shots": 11,
+  "shootingPct": 0.181818,
+  "toiPerGame": 1166.2,
+  "ixG": 1.22,
+  "goalsAboveExpected": 0.78,
+  "gameScore": 5.67,
   "fiveOnFive": {
-   "icetimeMinutes": 42.9,
-   "onIceXgPct": 0.63,
-   "onIceCorsiPct": 0.56,
-   "ixgPer60": 0.783,
+   "icetimeMinutes": 56.5,
+   "onIceXgPct": 0.59,
+   "onIceCorsiPct": 0.6,
+   "ixgPer60": 0.659,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 1.52,
-   "percentile": 91
+   "value": 1.61,
+   "percentile": 92
   },
   "Offense": {
-   "value": 0.7,
-   "percentile": 88
+   "value": 0.9,
+   "percentile": 91
   },
   "Defense": {
-   "value": 0.1,
-   "percentile": 57
+   "value": 0.2,
+   "percentile": 60
   },
   "Net": {
-   "value": 0.8,
-   "percentile": 84
+   "value": 1.1,
+   "percentile": 89
   }
  },
  "score": null,
  "standIn": {
-  "value": 75.0,
-  "gs": 4.46,
-  "gs60": 4.33,
-  "gameScore": 4.46,
-  "minutes": 62,
-  "gp": 3,
-  "rank": 85,
-  "pool": 639,
-  "percentile": 86.7,
+  "value": 74.1,
+  "gs": 4.66,
+  "gs60": 3.6,
+  "gameScore": 4.66,
+  "minutes": 78,
+  "gp": 4,
+  "rank": 97,
+  "pool": 645,
+  "percentile": 85.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 83,
-    "name": "Oliver Bjorkstrand",
-    "team": "NYR",
-    "pos": "R",
+    "rank": 95,
+    "name": "Miro Heiskanen",
+    "team": "DAL",
+    "pos": "D",
+    "gp": 4,
+    "value": 74.2,
+    "gs60": 4.68,
+    "isMe": false
+   },
+   {
+    "rank": 96,
+    "name": "Filip Hronek",
+    "team": "VAN",
+    "pos": "D",
     "gp": 5,
-    "value": 75.1,
-    "gs60": 4.48,
+    "value": 74.1,
+    "gs60": 4.67,
     "isMe": false
    },
    {
-    "rank": 84,
-    "name": "Leo Carlsson",
-    "team": "ANA",
-    "pos": "C",
-    "gp": 3,
-    "value": 75.1,
-    "gs60": 4.47,
-    "isMe": false
-   },
-   {
-    "rank": 85,
+    "rank": 97,
     "name": "Alex DeBrincat",
     "team": "DET",
     "pos": "R",
-    "gp": 3,
-    "value": 75.0,
-    "gs60": 4.46,
+    "gp": 4,
+    "value": 74.1,
+    "gs60": 4.66,
     "isMe": true
    },
    {
-    "rank": 86,
-    "name": "Samuel Girard",
-    "team": "PIT",
-    "pos": "D",
+    "rank": 98,
+    "name": "Josh Anderson",
+    "team": "MTL",
+    "pos": "R",
     "gp": 4,
-    "value": 74.9,
-    "gs60": 4.44,
+    "value": 74.0,
+    "gs60": 4.65,
     "isMe": false
    },
    {
-    "rank": 87,
-    "name": "Logan Cooley",
-    "team": "UTA",
-    "pos": "C",
+    "rank": 99,
+    "name": "Alex Iafallo",
+    "team": "WPG",
+    "pos": "L",
     "gp": 5,
-    "value": 74.9,
-    "gs60": 4.44,
+    "value": 73.6,
+    "gs60": 4.6,
     "isMe": false
    }
   ],
@@ -324,10 +324,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": -0.32,
+   "gameScore": -0.25,
    "gameScoreParts": {
     "moneypuck": 0.025,
-    "hockeystatcards": -0.67
+    "hockeystatcards": -0.52
    }
   },
   {
@@ -348,10 +348,10 @@
    "gf": 1.0,
    "ga": 0.0,
    "blocks": 2.0,
-   "gameScore": 1.27,
+   "gameScore": 1.32,
    "gameScoreParts": {
     "moneypuck": 1.45,
-    "hockeystatcards": 1.1
+    "hockeystatcards": 1.19
    }
   },
   {
@@ -372,26 +372,50 @@
    "gf": 2.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": 3.51,
+   "gameScore": 3.59,
    "gameScoreParts": {
     "moneypuck": 2.875,
-    "hockeystatcards": 4.14
+    "hockeystatcards": 4.3
+   }
+  },
+  {
+   "gameId": 2026020066,
+   "date": "2026-10-09",
+   "opponent": "SEA",
+   "home": true,
+   "goals": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": 0,
+   "shots": 3,
+   "pim": 0,
+   "toi": 16.0,
+   "ixg": 0.12,
+   "xgf": 0.93,
+   "xga": 0.49,
+   "gf": 1.0,
+   "ga": 1.0,
+   "blocks": 0.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 1.47
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.49,
+  "average": 1.55,
   "games": 3,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
-   "value": 3.51
+   "value": 3.59
   },
   "worst": {
    "date": "2026-10-02",
    "opponent": "NYR",
-   "value": -0.32
+   "value": -0.25
   },
   "above2": 1,
   "below0": 1

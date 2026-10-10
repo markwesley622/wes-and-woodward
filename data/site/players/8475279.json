@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 3,
+  "gp": 4,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "plusMinus": 0,
-  "pim": 4,
+  "pim": 6,
   "shots": 3,
   "shootingPct": 0.0,
-  "toiPerGame": "18:03",
+  "toiPerGame": "17:49",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 3,
+   "gp": 4,
    "goals": 0,
    "assists": 0,
    "points": 0,
    "plusMinus": 0,
-   "pim": 4
+   "pim": 6
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Ben Chiarot",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475279.png",
-  "gamesPlayed": 3,
+  "gamesPlayed": 4,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 3,
   "shootingPct": 0.0,
-  "toiPerGame": 1082.7,
-  "ixG": 0.1,
-  "goalsAboveExpected": -0.1,
-  "gameScore": 0.88,
+  "toiPerGame": 1069.0,
+  "ixG": 0.11,
+  "goalsAboveExpected": -0.11,
+  "gameScore": 1.13,
   "fiveOnFive": {
-   "icetimeMinutes": 45.3,
-   "onIceXgPct": 0.7,
-   "onIceCorsiPct": 0.55,
-   "ixgPer60": 0.132,
+   "icetimeMinutes": 60.5,
+   "onIceXgPct": 0.64,
+   "onIceCorsiPct": 0.57,
+   "ixgPer60": 0.109,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.42,
-   "percentile": 55
+   "value": 0.03,
+   "percentile": 32
   },
   "Offense": {
-   "value": -0.0,
-   "percentile": 56
+   "value": 0.3,
+   "percentile": 73
   },
   "Defense": {
-   "value": 0.0,
-   "percentile": 47
+   "value": -0.6,
+   "percentile": 14
   },
   "Net": {
-   "value": -0.0,
-   "percentile": 54
+   "value": -0.3,
+   "percentile": 38
   }
  },
  "score": null,
  "standIn": {
-  "value": 44.9,
-  "gs": 1.06,
-  "gs60": 1.17,
-  "gameScore": 1.06,
-  "minutes": 54,
-  "gp": 3,
-  "rank": 332,
-  "pool": 639,
-  "percentile": 47.9,
+  "value": 43.0,
+  "gs": 1.03,
+  "gs60": 0.87,
+  "gameScore": 1.03,
+  "minutes": 71,
+  "gp": 4,
+  "rank": 359,
+  "pool": 645,
+  "percentile": 44.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 330,
-    "name": "Adam Wilsby",
-    "team": "NSH",
-    "pos": "D",
+    "rank": 357,
+    "name": "Josh Norris",
+    "team": "BUF",
+    "pos": "C",
     "gp": 4,
-    "value": 45.2,
-    "gs60": 1.09,
-    "isMe": false
-   },
-   {
-    "rank": 331,
-    "name": "Brock Boeser",
-    "team": "VAN",
-    "pos": "R",
-    "gp": 5,
-    "value": 45.0,
+    "value": 43.3,
     "gs60": 1.06,
     "isMe": false
    },
    {
-    "rank": 332,
+    "rank": 358,
+    "name": "Bobby Brink",
+    "team": "MIN",
+    "pos": "R",
+    "gp": 4,
+    "value": 43.1,
+    "gs60": 1.04,
+    "isMe": false
+   },
+   {
+    "rank": 359,
     "name": "Ben Chiarot",
     "team": "DET",
     "pos": "D",
-    "gp": 3,
-    "value": 44.9,
-    "gs60": 1.06,
+    "gp": 4,
+    "value": 43.0,
+    "gs60": 1.03,
     "isMe": true
    },
    {
-    "rank": 333,
+    "rank": 360,
+    "name": "Sean Walker",
+    "team": "CAR",
+    "pos": "D",
+    "gp": 5,
+    "value": 43.0,
+    "gs60": 1.03,
+    "isMe": false
+   },
+   {
+    "rank": 361,
     "name": "Jean-Gabriel Pageau",
     "team": "NYI",
     "pos": "C",
     "gp": 4,
-    "value": 44.9,
-    "gs60": 1.06,
-    "isMe": false
-   },
-   {
-    "rank": 334,
-    "name": "Marc Gatcomb",
-    "team": "VGK",
-    "pos": "C",
-    "gp": 4,
-    "value": 44.8,
-    "gs60": 1.05,
+    "value": 42.9,
+    "gs60": 1.02,
     "isMe": false
    }
   ],
@@ -384,10 +384,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 2.0,
-   "gameScore": 0.64,
+   "gameScore": 0.59,
    "gameScoreParts": {
     "moneypuck": 0.325,
-    "hockeystatcards": 0.96
+    "hockeystatcards": 0.85
    }
   },
   {
@@ -408,10 +408,10 @@
    "gf": 1.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": 1.43,
+   "gameScore": 1.4,
    "gameScoreParts": {
     "moneypuck": 0.925,
-    "hockeystatcards": 1.94
+    "hockeystatcards": 1.88
    }
   },
   {
@@ -432,26 +432,50 @@
    "gf": 0.0,
    "ga": 1.0,
    "blocks": 1.0,
-   "gameScore": -1.01,
+   "gameScore": -0.96,
    "gameScoreParts": {
     "moneypuck": -0.375,
-    "hockeystatcards": -1.64
+    "hockeystatcards": -1.54
+   }
+  },
+  {
+   "gameId": 2026020066,
+   "date": "2026-10-09",
+   "opponent": "SEA",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 2,
+   "toi": 17.1,
+   "ixg": 0.01,
+   "xgf": 1.41,
+   "xga": 1.26,
+   "gf": 1.0,
+   "ga": 1.0,
+   "blocks": 0.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": -1.08
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.35,
+  "average": 0.34,
   "games": 3,
   "best": {
    "date": "2026-10-04",
    "opponent": "WPG",
-   "value": 1.43
+   "value": 1.4
   },
   "worst": {
    "date": "2026-10-06",
    "opponent": "OTT",
-   "value": -1.01
+   "value": -0.96
   },
   "above2": 0,
   "below0": 1

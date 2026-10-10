@@ -3,6 +3,12 @@
  "gameTypeId": 2,
  "playerStatsSeasons": [
   {
+   "season": 20262027,
+   "gameTypes": [
+    2
+   ]
+  },
+  {
    "season": 20252026,
    "gameTypes": [
     2
@@ -40,5 +46,33 @@
    ]
   }
  ],
- "gameLog": []
+ "gameLog": [
+  {
+   "gameId": 2026020066,
+   "teamAbbrev": "DET",
+   "homeRoadFlag": "H",
+   "gameDate": "2026-10-09",
+   "goals": 0,
+   "assists": 0,
+   "commonName": {
+    "default": "Red Wings"
+   },
+   "opponentCommonName": {
+    "default": "Kraken"
+   },
+   "points": 0,
+   "plusMinus": -2,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 0,
+   "gameWinningGoals": 0,
+   "otGoals": 0,
+   "shots": 4,
+   "shifts": 19,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "pim": 0,
+   "toi": "11:11",
+   "opponentAbbrev": "SEA"
+  }
+ ]
 }
