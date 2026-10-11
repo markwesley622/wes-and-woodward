@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "plusMinus": 0,
+  "plusMinus": -1,
   "pim": 6,
-  "shots": 3,
+  "shots": 5,
   "shootingPct": 0.0,
-  "toiPerGame": "17:49",
+  "toiPerGame": "18:25",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 4,
+   "gp": 5,
    "goals": 0,
    "assists": 0,
    "points": 0,
-   "plusMinus": 0,
+   "plusMinus": -1,
    "pim": 6
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Ben Chiarot",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475279.png",
-  "gamesPlayed": 4,
+  "gamesPlayed": 5,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "shots": 3,
+  "shots": 5,
   "shootingPct": 0.0,
-  "toiPerGame": 1069.0,
-  "ixG": 0.11,
-  "goalsAboveExpected": -0.11,
-  "gameScore": 1.07,
+  "toiPerGame": 1105.2,
+  "ixG": 0.16,
+  "goalsAboveExpected": -0.16,
+  "gameScore": 0.92,
   "fiveOnFive": {
-   "icetimeMinutes": 60.5,
-   "onIceXgPct": 0.63,
-   "onIceCorsiPct": 0.56,
-   "ixgPer60": 0.109,
+   "icetimeMinutes": 76.0,
+   "onIceXgPct": 0.59,
+   "onIceCorsiPct": 0.53,
+   "ixgPer60": 0.126,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.03,
-   "percentile": 32
+   "value": 0.14,
+   "percentile": 38
   },
   "Offense": {
-   "value": 0.3,
-   "percentile": 73
+   "value": 0.2,
+   "percentile": 70
   },
   "Defense": {
-   "value": -0.6,
-   "percentile": 14
+   "value": -0.4,
+   "percentile": 21
   },
   "Net": {
-   "value": -0.3,
-   "percentile": 38
+   "value": -0.2,
+   "percentile": 45
   }
  },
  "score": null,
  "standIn": {
-  "value": 39.1,
+  "value": 38.4,
   "gs": 0.59,
-  "gs60": 0.5,
+  "gs60": 0.38,
   "gameScore": 0.59,
-  "minutes": 71,
-  "gp": 4,
-  "rank": 412,
-  "pool": 645,
+  "minutes": 92,
+  "gp": 5,
+  "rank": 420,
+  "pool": 657,
   "percentile": 36.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 410,
-    "name": "Aleksander Barkov",
-    "team": "FLA",
-    "pos": "C",
-    "gp": 2,
-    "value": 39.2,
+    "rank": 418,
+    "name": "Tanner Jeannot",
+    "team": "BOS",
+    "pos": "L",
+    "gp": 6,
+    "value": 38.4,
     "gs60": 0.59,
     "isMe": false
    },
    {
-    "rank": 411,
+    "rank": 419,
     "name": "Vince Dunn",
     "team": "SEA",
     "pos": "D",
     "gp": 5,
-    "value": 39.1,
+    "value": 38.4,
     "gs60": 0.59,
     "isMe": false
    },
    {
-    "rank": 412,
+    "rank": 420,
     "name": "Ben Chiarot",
     "team": "DET",
     "pos": "D",
-    "gp": 4,
-    "value": 39.1,
+    "gp": 5,
+    "value": 38.4,
     "gs60": 0.59,
     "isMe": true
    },
    {
-    "rank": 413,
-    "name": "Samuel Helenius",
-    "team": "LAK",
-    "pos": "C",
-    "gp": 1,
-    "value": 38.9,
-    "gs60": 0.57,
+    "rank": 421,
+    "name": "Arttu Hyry",
+    "team": "DAL",
+    "pos": "R",
+    "gp": 5,
+    "value": 38.2,
+    "gs60": 0.56,
     "isMe": false
    },
    {
-    "rank": 414,
+    "rank": 422,
     "name": "Aaron Ekblad",
     "team": "FLA",
     "pos": "D",
-    "gp": 2,
-    "value": 38.9,
-    "gs60": 0.56,
+    "gp": 3,
+    "value": 38.1,
+    "gs60": 0.55,
     "isMe": false
    }
   ],
@@ -446,7 +446,7 @@
    "goals": 0,
    "assists": 0,
    "points": 0,
-   "plusMinus": 0,
+   "plusMinus": -1,
    "shots": 0,
    "pim": 2,
    "toi": 17.1,
@@ -460,6 +460,30 @@
    "gameScoreParts": {
     "moneypuck": 0.2,
     "hockeystatcards": -1.08
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 2,
+   "pim": 0,
+   "toi": 20.9,
+   "ixg": 0.26,
+   "xgf": 0.69,
+   "xga": 0.66,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 2.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.6
    }
   }
  ],

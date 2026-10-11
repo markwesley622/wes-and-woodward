@@ -26,7 +26,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": 0,
   "assists": 0,
   "points": 0,
@@ -34,7 +34,7 @@
   "pim": 2,
   "shots": 6,
   "shootingPct": 0.0,
-  "toiPerGame": "16:37",
+  "toiPerGame": "16:55",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 4,
+   "gp": 5,
    "goals": 0,
    "assists": 0,
    "points": 0,
@@ -60,21 +60,21 @@
   "name": "Michael Rasmussen",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479992.png",
-  "gamesPlayed": 4,
+  "gamesPlayed": 5,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 6,
   "shootingPct": 0.0,
-  "toiPerGame": 996.8,
+  "toiPerGame": 1014.6,
   "ixG": 0.59,
   "goalsAboveExpected": -0.59,
-  "gameScore": 1.45,
+  "gameScore": 1.61,
   "fiveOnFive": {
-   "icetimeMinutes": 46.5,
-   "onIceXgPct": 0.65,
-   "onIceCorsiPct": 0.61,
-   "ixgPer60": 0.477,
+   "icetimeMinutes": 57.7,
+   "onIceXgPct": 0.59,
+   "onIceCorsiPct": 0.58,
+   "ixgPer60": 0.385,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.13,
-   "percentile": 37
+   "value": 0.19,
+   "percentile": 40
   },
   "Offense": {
-   "value": -0.8,
-   "percentile": 7
+   "value": -0.9,
+   "percentile": 6
   },
   "Defense": {
-   "value": 0.5,
-   "percentile": 80
+   "value": 0.6,
+   "percentile": 87
   },
   "Net": {
    "value": -0.3,
-   "percentile": 36
+   "percentile": 39
   }
  },
  "score": null,
  "standIn": {
-  "value": 42.4,
+  "value": 41.2,
   "gs": 0.96,
-  "gs60": 0.87,
+  "gs60": 0.68,
   "gameScore": 0.96,
-  "minutes": 66,
-  "gp": 4,
-  "rank": 370,
-  "pool": 645,
-  "percentile": 42.6,
+  "minutes": 85,
+  "gp": 5,
+  "rank": 380,
+  "pool": 657,
+  "percentile": 42.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 368,
-    "name": "Morgan Frost",
-    "team": "CGY",
-    "pos": "C",
-    "gp": 4,
-    "value": 42.6,
+    "rank": 378,
+    "name": "Brady Skjei",
+    "team": "NSH",
+    "pos": "D",
+    "gp": 5,
+    "value": 41.4,
     "gs60": 0.98,
     "isMe": false
    },
    {
-    "rank": 369,
-    "name": "Axel Sandin-Pellikka",
-    "team": "DET",
+    "rank": 379,
+    "name": "Oliver Ekman-Larsson",
+    "team": "TOR",
     "pos": "D",
-    "gp": 3,
-    "value": 42.4,
-    "gs60": 0.96,
+    "gp": 6,
+    "value": 41.4,
+    "gs60": 0.98,
     "isMe": false
    },
    {
-    "rank": 370,
+    "rank": 380,
     "name": "Michael Rasmussen",
     "team": "DET",
     "pos": "C",
-    "gp": 4,
-    "value": 42.4,
+    "gp": 5,
+    "value": 41.2,
     "gs60": 0.96,
     "isMe": true
    },
    {
-    "rank": 371,
-    "name": "Sean Couturier",
-    "team": "PHI",
+    "rank": 381,
+    "name": "Jonathan Castagna",
+    "team": "CGY",
     "pos": "C",
-    "gp": 5,
-    "value": 42.3,
+    "gp": 1,
+    "value": 41.1,
     "gs60": 0.95,
     "isMe": false
    },
    {
-    "rank": 372,
-    "name": "Casey Mittelstadt",
-    "team": "BOS",
+    "rank": 382,
+    "name": "Mavrik Bourque",
+    "team": "NSH",
     "pos": "C",
-    "gp": 5,
-    "value": 42.3,
-    "gs60": 0.95,
+    "gp": 4,
+    "value": 41.1,
+    "gs60": 0.94,
     "isMe": false
    }
   ],
@@ -370,6 +370,30 @@
    "gameScoreParts": {
     "moneypuck": 0.21,
     "hockeystatcards": -1.1
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 18.1,
+   "ixg": 0.0,
+   "xgf": 0.69,
+   "xga": 0.38,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 3.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.44
    }
   }
  ],

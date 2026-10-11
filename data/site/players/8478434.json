@@ -26,7 +26,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": 0,
   "assists": 0,
   "points": 0,
@@ -34,7 +34,7 @@
   "pim": 13,
   "shots": 2,
   "shootingPct": 0.0,
-  "toiPerGame": "12:25",
+  "toiPerGame": "12:55",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 4,
+   "gp": 5,
    "goals": 0,
    "assists": 0,
    "points": 0,
@@ -60,21 +60,21 @@
   "name": "Keegan Kolesar",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478434.png",
-  "gamesPlayed": 4,
+  "gamesPlayed": 5,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 2,
   "shootingPct": 0.0,
-  "toiPerGame": 744.5,
+  "toiPerGame": 774.6,
   "ixG": 0.13,
   "goalsAboveExpected": -0.13,
-  "gameScore": 0.25,
+  "gameScore": 0.1,
   "fiveOnFive": {
-   "icetimeMinutes": 42.4,
-   "onIceXgPct": 0.6,
-   "onIceCorsiPct": 0.54,
-   "ixgPer60": 0.184,
+   "icetimeMinutes": 55.2,
+   "onIceXgPct": 0.52,
+   "onIceCorsiPct": 0.51,
+   "ixgPer60": 0.141,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.05,
+   "value": 0.08,
    "percentile": 33
   },
   "Offense": {
-   "value": -0.8,
-   "percentile": 6
+   "value": -1.0,
+   "percentile": 3
   },
   "Defense": {
-   "value": 0.4,
-   "percentile": 76
+   "value": 0.6,
+   "percentile": 86
   },
   "Net": {
    "value": -0.4,
-   "percentile": 34
+   "percentile": 32
   }
  },
  "score": null,
  "standIn": {
-  "value": 36.0,
+  "value": 35.6,
   "gs": 0.22,
-  "gs60": 0.27,
+  "gs60": 0.2,
   "gameScore": 0.22,
-  "minutes": 50,
-  "gp": 4,
-  "rank": 454,
-  "pool": 645,
-  "percentile": 29.6,
+  "minutes": 65,
+  "gp": 5,
+  "rank": 469,
+  "pool": 657,
+  "percentile": 28.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 452,
+    "rank": 467,
     "name": "Alexey Toropchenko",
     "team": "STL",
     "pos": "R",
     "gp": 1,
-    "value": 36.1,
+    "value": 35.7,
     "gs60": 0.24,
     "isMe": false
    },
    {
-    "rank": 453,
-    "name": "Justin Danforth",
-    "team": "BUF",
-    "pos": "R",
-    "gp": 2,
-    "value": 36.0,
+    "rank": 468,
+    "name": "Ross Johnston",
+    "team": "STL",
+    "pos": "L",
+    "gp": 4,
+    "value": 35.7,
     "gs60": 0.23,
     "isMe": false
    },
    {
-    "rank": 454,
+    "rank": 469,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
-    "gp": 4,
-    "value": 36.0,
+    "gp": 5,
+    "value": 35.6,
     "gs60": 0.22,
     "isMe": true
    },
    {
-    "rank": 455,
-    "name": "Juraj Slafkovsk",
-    "team": "MTL",
-    "pos": "L",
-    "gp": 4,
-    "value": 35.9,
-    "gs60": 0.21,
+    "rank": 470,
+    "name": "Nick Perbix",
+    "team": "NSH",
+    "pos": "D",
+    "gp": 5,
+    "value": 35.4,
+    "gs60": 0.19,
     "isMe": false
    },
    {
-    "rank": 456,
-    "name": "Anthony Mantha",
-    "team": "NJD",
-    "pos": "R",
-    "gp": 3,
-    "value": 35.9,
-    "gs60": 0.21,
+    "rank": 471,
+    "name": "Aydar Suniev",
+    "team": "CGY",
+    "pos": "L",
+    "gp": 1,
+    "value": 35.2,
+    "gs60": 0.16,
     "isMe": false
    }
   ],
@@ -370,6 +370,30 @@
    "gameScoreParts": {
     "moneypuck": -0.125,
     "hockeystatcards": -1.16
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 14.9,
+   "ixg": 0.0,
+   "xgf": 0.19,
+   "xga": 0.41,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 2.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.19
    }
   }
  ],

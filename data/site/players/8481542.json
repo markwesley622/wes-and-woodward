@@ -26,7 +26,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": 0,
   "assists": 2,
   "points": 2,
@@ -34,7 +34,7 @@
   "pim": 2,
   "shots": 9,
   "shootingPct": 0.0,
-  "toiPerGame": "24:20",
+  "toiPerGame": "25:23",
   "ppPoints": 2,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 4,
+   "gp": 5,
    "goals": 0,
    "assists": 2,
    "points": 2,
@@ -60,21 +60,21 @@
   "name": "Moritz Seider",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481542.png",
-  "gamesPlayed": 4,
+  "gamesPlayed": 5,
   "goals": 0,
   "assists": 2,
   "points": 2,
   "shots": 9,
   "shootingPct": 0.0,
-  "toiPerGame": 1460.2,
+  "toiPerGame": 1522.8,
   "ixG": 0.52,
   "goalsAboveExpected": -0.52,
-  "gameScore": 3.58,
+  "gameScore": 3.08,
   "fiveOnFive": {
-   "icetimeMinutes": 65.8,
-   "onIceXgPct": 0.65,
-   "onIceCorsiPct": 0.63,
-   "ixgPer60": 0.027,
+   "icetimeMinutes": 84.8,
+   "onIceXgPct": 0.58,
+   "onIceCorsiPct": 0.54,
+   "ixgPer60": 0.021,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 1.1,
-   "percentile": 79
+   "value": 0.95,
+   "percentile": 74
   },
   "Offense": {
-   "value": -0.6,
-   "percentile": 15
+   "value": -0.7,
+   "percentile": 10
   },
   "Defense": {
-   "value": 1.4,
-   "percentile": 99
+   "value": 1.5,
+   "percentile": 100
   },
   "Net": {
    "value": 0.8,
-   "percentile": 83
+   "percentile": 81
   }
  },
  "score": null,
  "standIn": {
-  "value": 69.0,
+  "value": 65.2,
   "gs": 3.99,
-  "gs60": 2.46,
+  "gs60": 1.89,
   "gameScore": 3.99,
-  "minutes": 97,
-  "gp": 4,
-  "rank": 126,
-  "pool": 645,
-  "percentile": 80.5,
+  "minutes": 127,
+  "gp": 5,
+  "rank": 158,
+  "pool": 657,
+  "percentile": 76.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 124,
-    "name": "Marco Rossi",
-    "team": "VAN",
-    "pos": "C",
-    "gp": 5,
-    "value": 69.4,
-    "gs60": 4.04,
-    "isMe": false
-   },
-   {
-    "rank": 125,
-    "name": "Viktor Arvidsson",
-    "team": "DET",
+    "rank": 156,
+    "name": "Nils Hoglander",
+    "team": "NSH",
     "pos": "L",
-    "gp": 4,
-    "value": 69.1,
-    "gs60": 4.0,
+    "gp": 5,
+    "value": 65.4,
+    "gs60": 4.03,
     "isMe": false
    },
    {
-    "rank": 126,
+    "rank": 157,
+    "name": "Jalen Chatfield",
+    "team": "CAR",
+    "pos": "D",
+    "gp": 6,
+    "value": 65.3,
+    "gs60": 4.01,
+    "isMe": false
+   },
+   {
+    "rank": 158,
     "name": "Moritz Seider",
     "team": "DET",
     "pos": "D",
-    "gp": 4,
-    "value": 69.0,
+    "gp": 5,
+    "value": 65.2,
     "gs60": 3.99,
     "isMe": true
    },
    {
-    "rank": 127,
+    "rank": 159,
     "name": "Adam Lowry",
     "team": "WPG",
     "pos": "C",
     "gp": 5,
-    "value": 69.0,
+    "value": 65.1,
     "gs60": 3.98,
     "isMe": false
    },
    {
-    "rank": 128,
-    "name": "Nils Hoglander",
-    "team": "NSH",
+    "rank": 160,
+    "name": "Jesper Bratt",
+    "team": "NJD",
     "pos": "L",
     "gp": 4,
-    "value": 68.8,
-    "gs60": 3.96,
+    "value": 64.7,
+    "gs60": 3.92,
     "isMe": false
    }
   ],
@@ -340,6 +340,30 @@
    "gameScoreParts": {
     "moneypuck": 1.925,
     "hockeystatcards": 4.1
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 29.6,
+   "ixg": 0.0,
+   "xgf": 0.6,
+   "xga": 0.78,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 6.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.34
    }
   }
  ],

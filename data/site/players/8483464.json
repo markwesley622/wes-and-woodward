@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": 0.63,
-   "percentile": 59
+   "percentile": 60
   },
   "Offense": {
    "value": -0.2,
-   "percentile": 44
+   "percentile": 47
   },
   "Defense": {
    "value": 0.1,
-   "percentile": 55
+   "percentile": 53
   },
   "Net": {
    "value": -0.1,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 40.3,
+  "value": 39.5,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 397,
-  "pool": 645,
-  "percentile": 38.4,
+  "rank": 402,
+  "pool": 657,
+  "percentile": 38.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 395,
-    "name": "Ryan Greene",
-    "team": "CHI",
-    "pos": "C",
-    "gp": 5,
-    "value": 40.5,
+    "rank": 400,
+    "name": "Bryan Rust",
+    "team": "PIT",
+    "pos": "R",
+    "gp": 3,
+    "value": 39.6,
+    "gs60": 0.75,
+    "isMe": false
+   },
+   {
+    "rank": 401,
+    "name": "Simon Nemec",
+    "team": "CGY",
+    "pos": "D",
+    "gp": 4,
+    "value": 39.5,
     "gs60": 0.74,
     "isMe": false
    },
    {
-    "rank": 396,
-    "name": "Marc Gatcomb",
-    "team": "VGK",
-    "pos": "C",
-    "gp": 5,
-    "value": 40.3,
-    "gs60": 0.73,
-    "isMe": false
-   },
-   {
-    "rank": 397,
+    "rank": 402,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
     "gp": 1,
-    "value": 40.3,
+    "value": 39.5,
     "gs60": 0.73,
     "isMe": true
    },
    {
-    "rank": 398,
+    "rank": 403,
     "name": "Tye Kartye",
     "team": "NYR",
     "pos": "L",
     "gp": 6,
-    "value": 40.3,
+    "value": 39.4,
     "gs60": 0.72,
     "isMe": false
    },
    {
-    "rank": 399,
-    "name": "Niko Mikkola",
-    "team": "FLA",
-    "pos": "D",
-    "gp": 4,
-    "value": 40.3,
-    "gs60": 0.72,
+    "rank": 404,
+    "name": "Zachary L'Heureux",
+    "team": "COL",
+    "pos": "L",
+    "gp": 3,
+    "value": 39.1,
+    "gs60": 0.69,
     "isMe": false
    }
   ],

@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 2,
+  "gp": 3,
   "goals": 1,
   "assists": 1,
   "points": 2,
   "plusMinus": -1,
-  "pim": 2,
-  "shots": 5,
-  "shootingPct": 0.2,
-  "toiPerGame": "19:30",
+  "pim": 4,
+  "shots": 9,
+  "shootingPct": 0.111111,
+  "toiPerGame": "20:33",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 2,
+   "gp": 3,
    "goals": 1,
    "assists": 1,
    "points": 2,
    "plusMinus": -1,
-   "pim": 2
+   "pim": 4
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Dylan Larkin",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477946.png",
-  "gamesPlayed": 2,
+  "gamesPlayed": 3,
   "goals": 1,
   "assists": 1,
   "points": 2,
-  "shots": 5,
-  "shootingPct": 0.2,
-  "toiPerGame": 1170.0,
-  "ixG": 0.97,
-  "goalsAboveExpected": 0.03,
-  "gameScore": 3.24,
+  "shots": 9,
+  "shootingPct": 0.111111,
+  "toiPerGame": 1233.3,
+  "ixG": 1.14,
+  "goalsAboveExpected": -0.14,
+  "gameScore": 3.15,
   "fiveOnFive": {
-   "icetimeMinutes": 27.1,
-   "onIceXgPct": 0.72,
-   "onIceCorsiPct": 0.74,
-   "ixgPer60": 1.485,
+   "icetimeMinutes": 41.6,
+   "onIceXgPct": 0.61,
+   "onIceCorsiPct": 0.6,
+   "ixgPer60": 1.039,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 1.36,
-   "percentile": 87
+   "value": 0.99,
+   "percentile": 76
   },
   "Offense": {
-   "value": 0.5,
-   "percentile": 82
+   "value": 0.4,
+   "percentile": 76
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 37
+   "percentile": 42
   },
   "Net": {
    "value": 0.3,
-   "percentile": 67
+   "percentile": 65
   }
  },
  "score": null,
  "standIn": {
-  "value": 60.6,
+  "value": 57.4,
   "gs": 2.98,
-  "gs60": 4.58,
+  "gs60": 2.9,
   "gameScore": 2.98,
-  "minutes": 39,
-  "gp": 2,
-  "rank": 190,
-  "pool": 645,
-  "percentile": 70.5,
+  "minutes": 62,
+  "gp": 3,
+  "rank": 228,
+  "pool": 657,
+  "percentile": 65.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 188,
-    "name": "Cole Hutson",
-    "team": "WSH",
-    "pos": "D",
-    "gp": 4,
-    "value": 61.2,
-    "gs60": 3.04,
-    "isMe": false
-   },
-   {
-    "rank": 189,
-    "name": "Mathieu Olivier",
-    "team": "CBJ",
+    "rank": 226,
+    "name": "Adrian Kempe",
+    "team": "LAK",
     "pos": "R",
     "gp": 3,
-    "value": 60.6,
-    "gs60": 2.98,
+    "value": 57.7,
+    "gs60": 3.01,
     "isMe": false
    },
    {
-    "rank": 190,
+    "rank": 227,
+    "name": "John Carlson",
+    "team": "TBL",
+    "pos": "D",
+    "gp": 5,
+    "value": 57.6,
+    "gs60": 3.0,
+    "isMe": false
+   },
+   {
+    "rank": 228,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
-    "gp": 2,
-    "value": 60.6,
+    "gp": 3,
+    "value": 57.4,
     "gs60": 2.98,
     "isMe": true
    },
    {
-    "rank": 191,
-    "name": "Morgan Geekie",
-    "team": "BOS",
-    "pos": "C",
+    "rank": 229,
+    "name": "Brent Burns",
+    "team": "COL",
+    "pos": "D",
     "gp": 5,
-    "value": 60.4,
-    "gs60": 2.95,
+    "value": 57.4,
+    "gs60": 2.98,
     "isMe": false
    },
    {
-    "rank": 192,
-    "name": "Blake Lizotte",
-    "team": "PIT",
-    "pos": "C",
-    "gp": 5,
-    "value": 60.3,
-    "gs60": 2.94,
+    "rank": 230,
+    "name": "Tristan Luneau",
+    "team": "ANA",
+    "pos": "D",
+    "gp": 4,
+    "value": 57.4,
+    "gs60": 2.97,
     "isMe": false
    }
   ],
@@ -382,6 +382,30 @@
    "gameScoreParts": {
     "moneypuck": 0.885,
     "hockeystatcards": 0.56
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 4,
+   "pim": 2,
+   "toi": 22.7,
+   "ixg": 0.19,
+   "xgf": 0.46,
+   "xga": 0.63,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.25
    }
   }
  ],

@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": 2,
   "assists": 3,
   "points": 5,
-  "plusMinus": 2,
+  "plusMinus": 3,
   "pim": 4,
-  "shots": 11,
-  "shootingPct": 0.181818,
-  "toiPerGame": "19:26",
+  "shots": 18,
+  "shootingPct": 0.111111,
+  "toiPerGame": "19:55",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 4,
+   "gp": 5,
    "goals": 2,
    "assists": 3,
    "points": 5,
-   "plusMinus": 2,
+   "plusMinus": 3,
    "pim": 4
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Alex DeBrincat",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479337.png",
-  "gamesPlayed": 4,
+  "gamesPlayed": 5,
   "goals": 2,
   "assists": 3,
   "points": 5,
-  "shots": 11,
-  "shootingPct": 0.181818,
-  "toiPerGame": 1166.2,
-  "ixG": 1.38,
-  "goalsAboveExpected": 0.62,
-  "gameScore": 5.96,
+  "shots": 18,
+  "shootingPct": 0.111111,
+  "toiPerGame": 1195.2,
+  "ixG": 2.89,
+  "goalsAboveExpected": -0.89,
+  "gameScore": 6.19,
   "fiveOnFive": {
-   "icetimeMinutes": 56.5,
-   "onIceXgPct": 0.65,
-   "onIceCorsiPct": 0.61,
-   "ixgPer60": 0.829,
+   "icetimeMinutes": 72.6,
+   "onIceXgPct": 0.64,
+   "onIceCorsiPct": 0.56,
+   "ixgPer60": 1.338,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 1.61,
-   "percentile": 92
+   "value": 1.4,
+   "percentile": 89
   },
   "Offense": {
-   "value": 0.9,
-   "percentile": 91
+   "value": 0.8,
+   "percentile": 89
   },
   "Defense": {
    "value": 0.2,
-   "percentile": 60
+   "percentile": 63
   },
   "Net": {
-   "value": 1.1,
-   "percentile": 89
+   "value": 1.0,
+   "percentile": 88
   }
  },
  "score": null,
  "standIn": {
-  "value": 83.3,
+  "value": 79.3,
   "gs": 6.2,
-  "gs60": 4.78,
+  "gs60": 3.74,
   "gameScore": 6.2,
-  "minutes": 78,
-  "gp": 4,
-  "rank": 36,
-  "pool": 645,
-  "percentile": 94.4,
+  "minutes": 100,
+  "gp": 5,
+  "rank": 58,
+  "pool": 657,
+  "percentile": 91.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 34,
-    "name": "Declan Carlile",
-    "team": "PIT",
-    "pos": "D",
+    "rank": 56,
+    "name": "Jimmy Snuggerud",
+    "team": "STL",
+    "pos": "R",
     "gp": 5,
-    "value": 84.5,
-    "gs60": 6.45,
+    "value": 79.5,
+    "gs60": 6.24,
     "isMe": false
    },
    {
-    "rank": 35,
-    "name": "Leo Carlsson",
-    "team": "ANA",
-    "pos": "C",
+    "rank": 57,
+    "name": "Zach Werenski",
+    "team": "CBJ",
+    "pos": "D",
     "gp": 4,
-    "value": 84.4,
-    "gs60": 6.41,
+    "value": 79.4,
+    "gs60": 6.23,
     "isMe": false
    },
    {
-    "rank": 36,
+    "rank": 58,
     "name": "Alex DeBrincat",
     "team": "DET",
     "pos": "R",
-    "gp": 4,
-    "value": 83.3,
+    "gp": 5,
+    "value": 79.3,
     "gs60": 6.2,
     "isMe": true
    },
    {
-    "rank": 37,
-    "name": "Tim Sttzle",
-    "team": "OTT",
-    "pos": "C",
-    "gp": 4,
-    "value": 83.3,
-    "gs60": 6.2,
+    "rank": 59,
+    "name": "Owen Power",
+    "team": "BUF",
+    "pos": "D",
+    "gp": 5,
+    "value": 78.7,
+    "gs60": 6.08,
     "isMe": false
    },
    {
-    "rank": 38,
-    "name": "Parker Kelly",
-    "team": "COL",
+    "rank": 60,
+    "name": "Steven Stamkos",
+    "team": "NSH",
     "pos": "C",
-    "gp": 4,
-    "value": 82.9,
-    "gs60": 6.12,
+    "gp": 5,
+    "value": 78.5,
+    "gs60": 6.05,
     "isMe": false
    }
   ],
@@ -386,7 +386,7 @@
    "goals": 0,
    "assists": 1,
    "points": 1,
-   "plusMinus": 0,
+   "plusMinus": 1,
    "shots": 3,
    "pim": 0,
    "toi": 16.0,
@@ -400,6 +400,30 @@
    "gameScoreParts": {
     "moneypuck": 1.615,
     "hockeystatcards": 1.47
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 7,
+   "pim": 0,
+   "toi": 21.8,
+   "ixg": 1.06,
+   "xgf": 0.74,
+   "xga": 0.66,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.57
    }
   }
  ],

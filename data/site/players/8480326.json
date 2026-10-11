@@ -20,7 +20,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 1,
+  "gp": 2,
   "goals": 0,
   "assists": 0,
   "points": 0,
@@ -28,7 +28,7 @@
   "pim": 0,
   "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": "11:11",
+  "toiPerGame": "10:23",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -41,7 +41,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 1,
+   "gp": 2,
    "goals": 0,
    "assists": 0,
    "points": 0,
@@ -64,21 +64,21 @@
   "name": "Sheldon Dries",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480326.png",
-  "gamesPlayed": 1,
+  "gamesPlayed": 2,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": 671.0,
+  "toiPerGame": 622.5,
   "ixG": 0.46,
   "goalsAboveExpected": -0.46,
-  "gameScore": 0.41,
+  "gameScore": 0.1,
   "fiveOnFive": {
-   "icetimeMinutes": 10.6,
-   "onIceXgPct": 0.55,
-   "onIceCorsiPct": 0.59,
-   "ixgPer60": 2.6,
+   "icetimeMinutes": 19.1,
+   "onIceXgPct": 0.45,
+   "onIceCorsiPct": 0.48,
+   "ixgPer60": 1.449,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -86,19 +86,19 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.74,
-   "percentile": 8
+   "value": -0.23,
+   "percentile": 22
   },
   "Offense": {
-   "value": -0.1,
-   "percentile": 53
+   "value": -0.3,
+   "percentile": 38
   },
   "Defense": {
-   "value": -0.4,
-   "percentile": 23
+   "value": -0.2,
+   "percentile": 35
   },
   "Net": {
-   "value": -0.4,
+   "value": -0.5,
    "percentile": 32
   }
  },
@@ -106,48 +106,48 @@
  "standIn": {
   "value": 32.7,
   "gs": -0.17,
-  "gs60": -0.91,
+  "gs60": -0.49,
   "gameScore": -0.17,
-  "minutes": 11,
-  "gp": 1,
-  "rank": 496,
-  "pool": 645,
-  "percentile": 23.1,
+  "minutes": 21,
+  "gp": 2,
+  "rank": 508,
+  "pool": 657,
+  "percentile": 22.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 494,
+    "rank": 506,
+    "name": "Andre Burakovsky",
+    "team": "OTT",
+    "pos": "L",
+    "gp": 1,
+    "value": 32.9,
+    "gs60": -0.14,
+    "isMe": false
+   },
+   {
+    "rank": 507,
     "name": "Scott Laughton",
     "team": "LAK",
     "pos": "C",
     "gp": 3,
-    "value": 33.1,
-    "gs60": -0.12,
+    "value": 32.8,
+    "gs60": -0.16,
     "isMe": false
    },
    {
-    "rank": 495,
-    "name": "Jonas Siegenthaler",
-    "team": "NJD",
-    "pos": "D",
-    "gp": 3,
-    "value": 32.9,
-    "gs60": -0.15,
-    "isMe": false
-   },
-   {
-    "rank": 496,
+    "rank": 508,
     "name": "Sheldon Dries",
     "team": "DET",
     "pos": "C",
-    "gp": 1,
+    "gp": 2,
     "value": 32.7,
     "gs60": -0.17,
     "isMe": true
    },
    {
-    "rank": 497,
+    "rank": 509,
     "name": "Connor Zary",
     "team": "CGY",
     "pos": "C",
@@ -157,11 +157,11 @@
     "isMe": false
    },
    {
-    "rank": 498,
-    "name": "Igor Chernyshov",
-    "team": "SJS",
-    "pos": "L",
-    "gp": 4,
+    "rank": 510,
+    "name": "Jason Dickinson",
+    "team": "EDM",
+    "pos": "C",
+    "gp": 2,
     "value": 32.7,
     "gs60": -0.18,
     "isMe": false
@@ -287,6 +287,30 @@
    "gameScoreParts": {
     "moneypuck": 0.41,
     "hockeystatcards": -0.74
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 9.6,
+   "ixg": 0.0,
+   "xgf": 0.0,
+   "xga": 0.26,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 2.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.29
    }
   }
  ],

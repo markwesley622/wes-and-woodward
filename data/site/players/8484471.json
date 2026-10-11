@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": 1,
   "assists": 0,
   "points": 1,
   "plusMinus": 2,
   "pim": 0,
-  "shots": 7,
-  "shootingPct": 0.142857,
-  "toiPerGame": "16:19",
+  "shots": 9,
+  "shootingPct": 0.111111,
+  "toiPerGame": "16:32",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 4,
+   "gp": 5,
    "goals": 1,
    "assists": 0,
    "points": 1,
@@ -60,21 +60,21 @@
   "name": "Emmitt Finnie",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484471.png",
-  "gamesPlayed": 4,
+  "gamesPlayed": 5,
   "goals": 1,
   "assists": 0,
   "points": 1,
-  "shots": 7,
-  "shootingPct": 0.142857,
-  "toiPerGame": 978.5,
-  "ixG": 1.11,
-  "goalsAboveExpected": -0.11,
-  "gameScore": 2.45,
+  "shots": 9,
+  "shootingPct": 0.111111,
+  "toiPerGame": 991.8,
+  "ixG": 1.2,
+  "goalsAboveExpected": -0.2,
+  "gameScore": 2.04,
   "fiveOnFive": {
-   "icetimeMinutes": 50.6,
-   "onIceXgPct": 0.68,
-   "onIceCorsiPct": 0.59,
-   "ixgPer60": 1.055,
+   "icetimeMinutes": 65.2,
+   "onIceXgPct": 0.64,
+   "onIceCorsiPct": 0.53,
+   "ixgPer60": 0.837,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.93,
-   "percentile": 72
+   "value": 0.69,
+   "percentile": 64
   },
   "Offense": {
-   "value": 0.1,
-   "percentile": 63
+   "value": -0.1,
+   "percentile": 54
   },
   "Defense": {
-   "value": 0.4,
-   "percentile": 76
+   "value": 0.3,
+   "percentile": 73
   },
   "Net": {
-   "value": 0.4,
-   "percentile": 72
+   "value": 0.3,
+   "percentile": 65
   }
  },
  "score": null,
  "standIn": {
-  "value": 61.6,
+  "value": 58.3,
   "gs": 3.09,
-  "gs60": 2.84,
+  "gs60": 2.24,
   "gameScore": 3.09,
-  "minutes": 65,
-  "gp": 4,
-  "rank": 184,
-  "pool": 645,
-  "percentile": 71.5,
+  "minutes": 83,
+  "gp": 5,
+  "rank": 219,
+  "pool": 657,
+  "percentile": 66.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 182,
-    "name": "Cutter Gauthier",
-    "team": "ANA",
+    "rank": 217,
+    "name": "Mark Jankowski",
+    "team": "CAR",
     "pos": "L",
-    "gp": 4,
-    "value": 61.9,
-    "gs60": 3.13,
+    "gp": 6,
+    "value": 58.7,
+    "gs60": 3.14,
     "isMe": false
    },
    {
-    "rank": 183,
-    "name": "Elias Pettersson",
-    "team": "VAN",
-    "pos": "D",
+    "rank": 218,
+    "name": "Maxim Shabanov",
+    "team": "MIN",
+    "pos": "R",
     "gp": 5,
-    "value": 61.6,
-    "gs60": 3.09,
+    "value": 58.4,
+    "gs60": 3.11,
     "isMe": false
    },
    {
-    "rank": 184,
+    "rank": 219,
     "name": "Emmitt Finnie",
     "team": "DET",
     "pos": "C",
-    "gp": 4,
-    "value": 61.6,
+    "gp": 5,
+    "value": 58.3,
     "gs60": 3.09,
     "isMe": true
    },
    {
-    "rank": 185,
-    "name": "Eric Robinson",
-    "team": "CAR",
-    "pos": "L",
+    "rank": 220,
+    "name": "Ryan McDonagh",
+    "team": "TBL",
+    "pos": "D",
     "gp": 5,
-    "value": 61.5,
+    "value": 58.3,
     "gs60": 3.08,
     "isMe": false
    },
    {
-    "rank": 186,
-    "name": "Chris Kreider",
-    "team": "MTL",
-    "pos": "L",
-    "gp": 4,
-    "value": 61.4,
-    "gs60": 3.07,
+    "rank": 221,
+    "name": "Dylan Larkin",
+    "team": "DET",
+    "pos": "C",
+    "gp": 3,
+    "value": 58.1,
+    "gs60": 3.06,
     "isMe": false
    }
   ],
@@ -280,6 +280,30 @@
    "gameScoreParts": {
     "moneypuck": 0.89,
     "hockeystatcards": 1.2
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 2,
+   "pim": 0,
+   "toi": 17.4,
+   "ixg": 0.11,
+   "xgf": 0.62,
+   "xga": 0.73,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": -0.29
    }
   }
  ],

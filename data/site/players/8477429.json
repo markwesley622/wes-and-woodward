@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": 0,
   "assists": 1,
   "points": 1,
   "plusMinus": -2,
   "pim": 2,
-  "shots": 7,
+  "shots": 9,
   "shootingPct": 0.0,
-  "toiPerGame": "19:57",
+  "toiPerGame": "19:49",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 4,
+   "gp": 5,
    "goals": 0,
    "assists": 1,
    "points": 1,
@@ -60,21 +60,21 @@
   "name": "Andrew Copp",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477429.png",
-  "gamesPlayed": 4,
+  "gamesPlayed": 5,
   "goals": 0,
   "assists": 1,
   "points": 1,
-  "shots": 7,
+  "shots": 9,
   "shootingPct": 0.0,
-  "toiPerGame": 1196.5,
-  "ixG": 0.82,
-  "goalsAboveExpected": -0.82,
-  "gameScore": 0.95,
+  "toiPerGame": 1188.8,
+  "ixG": 1.14,
+  "goalsAboveExpected": -1.14,
+  "gameScore": 1.36,
   "fiveOnFive": {
-   "icetimeMinutes": 52.9,
-   "onIceXgPct": 0.42,
-   "onIceCorsiPct": 0.47,
-   "ixgPer60": 0.67,
+   "icetimeMinutes": 65.6,
+   "onIceXgPct": 0.43,
+   "onIceCorsiPct": 0.48,
+   "ixgPer60": 0.741,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.69,
-   "percentile": 9
+   "value": -0.46,
+   "percentile": 13
   },
   "Offense": {
-   "value": -0.8,
+   "value": -0.9,
    "percentile": 5
   },
   "Defense": {
-   "value": -0.3,
-   "percentile": 26
+   "value": -0.2,
+   "percentile": 36
   },
   "Net": {
    "value": -1.1,
-   "percentile": 7
+   "percentile": 10
   }
  },
  "score": null,
  "standIn": {
-  "value": 27.1,
+  "value": 27.7,
   "gs": -0.91,
-  "gs60": -0.68,
+  "gs60": -0.55,
   "gameScore": -0.91,
-  "minutes": 80,
-  "gp": 4,
-  "rank": 564,
-  "pool": 645,
-  "percentile": 12.6,
+  "minutes": 99,
+  "gp": 5,
+  "rank": 567,
+  "pool": 657,
+  "percentile": 13.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 562,
-    "name": "Travis Mitchell",
-    "team": "ANA",
-    "pos": "D",
-    "gp": 4,
-    "value": 27.5,
-    "gs60": -0.85,
-    "isMe": false
-   },
-   {
-    "rank": 563,
-    "name": "Carson Soucy",
-    "team": "CBJ",
-    "pos": "D",
-    "gp": 3,
-    "value": 27.1,
-    "gs60": -0.91,
-    "isMe": false
-   },
-   {
-    "rank": 564,
-    "name": "Andrew Copp",
-    "team": "DET",
-    "pos": "C",
-    "gp": 4,
-    "value": 27.1,
-    "gs60": -0.91,
-    "isMe": true
-   },
-   {
     "rank": 565,
-    "name": "Barclay Goodrow",
-    "team": "SJS",
-    "pos": "C",
-    "gp": 4,
-    "value": 27.0,
-    "gs60": -0.92,
+    "name": "Mike Matheson",
+    "team": "MTL",
+    "pos": "D",
+    "gp": 5,
+    "value": 27.7,
+    "gs60": -0.91,
     "isMe": false
    },
    {
     "rank": 566,
-    "name": "Ryan Pulock",
-    "team": "NYI",
+    "name": "Zach Whitecloud",
+    "team": "CGY",
     "pos": "D",
     "gp": 4,
-    "value": 26.6,
-    "gs60": -0.98,
+    "value": 27.7,
+    "gs60": -0.91,
+    "isMe": false
+   },
+   {
+    "rank": 567,
+    "name": "Andrew Copp",
+    "team": "DET",
+    "pos": "C",
+    "gp": 5,
+    "value": 27.7,
+    "gs60": -0.91,
+    "isMe": true
+   },
+   {
+    "rank": 568,
+    "name": "Brenden Dillon",
+    "team": "NJD",
+    "pos": "D",
+    "gp": 4,
+    "value": 27.6,
+    "gs60": -0.92,
+    "isMe": false
+   },
+   {
+    "rank": 569,
+    "name": "Helge Grans",
+    "team": "PHI",
+    "pos": "D",
+    "gp": 1,
+    "value": 27.5,
+    "gs60": -0.94,
     "isMe": false
    }
   ],
@@ -445,6 +445,30 @@
    "gameScoreParts": {
     "moneypuck": 0.08,
     "hockeystatcards": -1.92
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 2,
+   "pim": 0,
+   "toi": 19.3,
+   "ixg": 0.15,
+   "xgf": 0.69,
+   "xga": 0.38,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 2.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.47
    }
   }
  ],

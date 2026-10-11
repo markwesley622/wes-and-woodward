@@ -83,83 +83,83 @@
  "hsc": {
   "Game score": {
    "value": 0.39,
-   "percentile": 51
+   "percentile": 50
   },
   "Offense": {
-   "value": 0.1,
+   "value": 0.2,
    "percentile": 67
   },
   "Defense": {
    "value": -0.3,
-   "percentile": 26
+   "percentile": 28
   },
   "Net": {
-   "value": -0.1,
-   "percentile": 46
+   "value": -0.2,
+   "percentile": 47
   }
  },
  "score": null,
  "standIn": {
-  "value": 43.0,
+  "value": 41.8,
   "gs": 1.03,
   "gs60": 3.25,
   "gameScore": 1.03,
   "minutes": 19,
   "gp": 2,
-  "rank": 359,
-  "pool": 645,
-  "percentile": 44.2,
+  "rank": 374,
+  "pool": 657,
+  "percentile": 43.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 357,
+    "rank": 372,
+    "name": "John Tavares",
+    "team": "TOR",
+    "pos": "C",
+    "gp": 5,
+    "value": 42.1,
+    "gs60": 1.07,
+    "isMe": false
+   },
+   {
+    "rank": 373,
     "name": "Ryan Winterton",
     "team": "SEA",
     "pos": "C",
     "gp": 5,
-    "value": 43.2,
+    "value": 41.9,
     "gs60": 1.05,
     "isMe": false
    },
    {
-    "rank": 358,
-    "name": "Bobby Brink",
-    "team": "MIN",
-    "pos": "R",
-    "gp": 4,
-    "value": 43.1,
-    "gs60": 1.04,
-    "isMe": false
-   },
-   {
-    "rank": 359,
+    "rank": 374,
     "name": "Carter Mazur",
     "team": "DET",
     "pos": "L",
     "gp": 2,
-    "value": 43.0,
+    "value": 41.8,
     "gs60": 1.03,
     "isMe": true
    },
    {
-    "rank": 360,
-    "name": "Sean Walker",
-    "team": "CAR",
-    "pos": "D",
-    "gp": 5,
-    "value": 43.0,
-    "gs60": 1.03,
+    "rank": 375,
+    "name": "Ivan Demidov",
+    "team": "MTL",
+    "pos": "R",
+    "gp": 2,
+    "value": 41.7,
+    "gs60": 1.02,
     "isMe": false
    },
    {
-    "rank": 361,
-    "name": "Robert Thomas",
-    "team": "STL",
-    "pos": "C",
-    "gp": 4,
-    "value": 42.9,
-    "gs60": 1.02,
+    "rank": 376,
+    "name": "Luca Cagnoni",
+    "team": "SJS",
+    "pos": "D",
+    "gp": 5,
+    "value": 41.6,
+    "gs60": 1.0,
     "isMe": false
    }
   ],

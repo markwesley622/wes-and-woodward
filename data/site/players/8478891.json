@@ -83,82 +83,82 @@
  "hsc": {
   "Game score": {
    "value": -0.02,
-   "percentile": 31
+   "percentile": 29
   },
   "Offense": {
    "value": -0.3,
-   "percentile": 31
+   "percentile": 34
   },
   "Defense": {
-   "value": 0.0,
-   "percentile": 48
+   "value": -0.0,
+   "percentile": 47
   },
   "Net": {
    "value": -0.3,
-   "percentile": 36
+   "percentile": 37
   }
  },
  "score": null,
  "standIn": {
-  "value": 36.5,
+  "value": 36.1,
   "gs": 0.29,
   "gs60": 0.88,
   "gameScore": 0.29,
   "minutes": 20,
   "gp": 2,
-  "rank": 448,
-  "pool": 645,
-  "percentile": 30.5,
+  "rank": 457,
+  "pool": 657,
+  "percentile": 30.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 446,
-    "name": "Colin Blackwell",
-    "team": "DAL",
-    "pos": "C",
-    "gp": 2,
-    "value": 36.7,
+    "rank": 455,
+    "name": "Danton Heinen",
+    "team": "CBJ",
+    "pos": "L",
+    "gp": 4,
+    "value": 36.2,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 447,
+    "rank": 456,
     "name": "Emil Lilleberg",
     "team": "TBL",
     "pos": "D",
     "gp": 1,
-    "value": 36.6,
+    "value": 36.1,
     "gs60": 0.29,
     "isMe": false
    },
    {
-    "rank": 448,
+    "rank": 457,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 36.5,
+    "value": 36.1,
     "gs60": 0.29,
     "isMe": true
    },
    {
-    "rank": 449,
-    "name": "Braden Schneider",
-    "team": "NYR",
-    "pos": "D",
-    "gp": 6,
-    "value": 36.5,
+    "rank": 458,
+    "name": "Zack Ostapchuk",
+    "team": "SJS",
+    "pos": "C",
+    "gp": 5,
+    "value": 36.1,
     "gs60": 0.28,
     "isMe": false
    },
    {
-    "rank": 450,
-    "name": "Jack St. Ivany",
-    "team": "WPG",
+    "rank": 459,
+    "name": "Braden Schneider",
+    "team": "NYR",
     "pos": "D",
-    "gp": 2,
-    "value": 36.4,
+    "gp": 6,
+    "value": 36.1,
     "gs60": 0.28,
     "isMe": false
    }

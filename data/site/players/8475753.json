@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": 1,
   "assists": 1,
   "points": 2,
   "plusMinus": 0,
-  "pim": 2,
+  "pim": 4,
   "shots": 9,
   "shootingPct": 0.111111,
-  "toiPerGame": "19:33",
+  "toiPerGame": "19:17",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 4,
+   "gp": 5,
    "goals": 1,
    "assists": 1,
    "points": 2,
    "plusMinus": 0,
-   "pim": 2
+   "pim": 4
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Justin Faulk",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475753.png",
-  "gamesPlayed": 4,
+  "gamesPlayed": 5,
   "goals": 1,
   "assists": 1,
   "points": 2,
   "shots": 9,
   "shootingPct": 0.111111,
-  "toiPerGame": 1172.8,
+  "toiPerGame": 1157.2,
   "ixG": 0.44,
   "goalsAboveExpected": 0.56,
-  "gameScore": 3.38,
+  "gameScore": 3.03,
   "fiveOnFive": {
-   "icetimeMinutes": 62.7,
-   "onIceXgPct": 0.6,
-   "onIceCorsiPct": 0.62,
-   "ixgPer60": 0.373,
+   "icetimeMinutes": 78.3,
+   "onIceXgPct": 0.56,
+   "onIceCorsiPct": 0.59,
+   "ixgPer60": 0.299,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.29,
-   "percentile": 45
+   "value": 0.25,
+   "percentile": 44
   },
   "Offense": {
-   "value": 0.3,
-   "percentile": 75
+   "value": 0.0,
+   "percentile": 59
   },
   "Defense": {
-   "value": -0.4,
-   "percentile": 23
+   "value": -0.2,
+   "percentile": 37
   },
   "Net": {
    "value": -0.1,
-   "percentile": 52
+   "percentile": 48
   }
  },
  "score": null,
  "standIn": {
-  "value": 54.2,
+  "value": 51.7,
   "gs": 2.26,
-  "gs60": 1.73,
+  "gs60": 1.41,
   "gameScore": 2.26,
-  "minutes": 78,
-  "gp": 4,
-  "rank": 249,
-  "pool": 645,
-  "percentile": 61.4,
+  "minutes": 96,
+  "gp": 5,
+  "rank": 270,
+  "pool": 657,
+  "percentile": 58.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 247,
-    "name": "Daniil But",
-    "team": "UTA",
-    "pos": "L",
+    "rank": 268,
+    "name": "Justin Barron",
+    "team": "STL",
+    "pos": "D",
+    "gp": 2,
+    "value": 52.0,
+    "gs60": 2.29,
+    "isMe": false
+   },
+   {
+    "rank": 269,
+    "name": "Radko Gudas",
+    "team": "FLA",
+    "pos": "D",
     "gp": 5,
-    "value": 54.4,
-    "gs60": 2.28,
+    "value": 51.7,
+    "gs60": 2.26,
     "isMe": false
    },
    {
-    "rank": 248,
-    "name": "Kiefer Sherwood",
-    "team": "SJS",
-    "pos": "L",
-    "gp": 4,
-    "value": 54.3,
-    "gs60": 2.27,
-    "isMe": false
-   },
-   {
-    "rank": 249,
+    "rank": 270,
     "name": "Justin Faulk",
     "team": "DET",
     "pos": "D",
-    "gp": 4,
-    "value": 54.2,
+    "gp": 5,
+    "value": 51.7,
     "gs60": 2.26,
     "isMe": true
    },
    {
-    "rank": 250,
-    "name": "Ian Cole",
-    "team": "CHI",
+    "rank": 271,
+    "name": "K'Andre Miller",
+    "team": "CAR",
     "pos": "D",
-    "gp": 5,
-    "value": 54.2,
+    "gp": 6,
+    "value": 51.6,
     "gs60": 2.25,
     "isMe": false
    },
    {
-    "rank": 251,
-    "name": "Luke Schenn",
-    "team": "VAN",
+    "rank": 272,
+    "name": "Philip Broberg",
+    "team": "STL",
     "pos": "D",
-    "gp": 4,
-    "value": 54.0,
-    "gs60": 2.23,
+    "gp": 5,
+    "value": 51.6,
+    "gs60": 2.25,
     "isMe": false
    }
   ],
@@ -490,6 +490,30 @@
    "gameScoreParts": {
     "moneypuck": 0.35,
     "hockeystatcards": -3.12
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 2,
+   "toi": 18.2,
+   "ixg": 0.0,
+   "xgf": 0.23,
+   "xga": 0.45,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.09
    }
   }
  ],

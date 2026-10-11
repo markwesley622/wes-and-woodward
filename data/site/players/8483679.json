@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "plusMinus": 0,
-  "pim": 2,
-  "shots": 3,
+  "pim": 4,
+  "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": "17:24",
+  "toiPerGame": "16:04",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 4,
+   "gp": 5,
    "goals": 0,
    "assists": 0,
    "points": 0,
    "plusMinus": 0,
-   "pim": 2
+   "pim": 4
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Anton Johansson",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8483679.png",
-  "gamesPlayed": 4,
+  "gamesPlayed": 5,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "shots": 3,
+  "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": 1044.2,
-  "ixG": 0.25,
-  "goalsAboveExpected": -0.25,
-  "gameScore": 0.77,
+  "toiPerGame": 963.8,
+  "ixG": 0.27,
+  "goalsAboveExpected": -0.27,
+  "gameScore": 0.7,
   "fiveOnFive": {
-   "icetimeMinutes": 61.1,
-   "onIceXgPct": 0.44,
-   "onIceCorsiPct": 0.54,
-   "ixgPer60": 0.245,
+   "icetimeMinutes": 71.3,
+   "onIceXgPct": 0.43,
+   "onIceCorsiPct": 0.53,
+   "ixgPer60": 0.227,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,83 +82,83 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.47,
-   "percentile": 14
+   "value": -0.31,
+   "percentile": 18
   },
   "Offense": {
-   "value": -0.6,
+   "value": -0.7,
    "percentile": 13
   },
   "Defense": {
-   "value": -0.2,
-   "percentile": 32
+   "value": -0.1,
+   "percentile": 39
   },
   "Net": {
-   "value": -0.9,
-   "percentile": 15
+   "value": -0.8,
+   "percentile": 18
   }
  },
  "score": null,
  "standIn": {
-  "value": 29.8,
+  "value": 30.2,
   "gs": -0.54,
-  "gs60": -0.47,
+  "gs60": -0.4,
   "gameScore": -0.54,
-  "minutes": 70,
-  "gp": 4,
-  "rank": 531,
-  "pool": 645,
-  "percentile": 17.7,
+  "minutes": 80,
+  "gp": 5,
+  "rank": 546,
+  "pool": 657,
+  "percentile": 16.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 529,
-    "name": "Cody Glass",
-    "team": "NJD",
-    "pos": "C",
-    "gp": 3,
-    "value": 30.0,
-    "gs60": -0.52,
+    "rank": 544,
+    "name": "Jonatan Berggren",
+    "team": "STL",
+    "pos": "R",
+    "gp": 5,
+    "value": 30.4,
+    "gs60": -0.5,
     "isMe": false
    },
    {
-    "rank": 530,
+    "rank": 545,
     "name": "Jordan Kyrou",
     "team": "WSH",
     "pos": "R",
     "gp": 4,
-    "value": 30.0,
+    "value": 30.3,
     "gs60": -0.52,
     "isMe": false
    },
    {
-    "rank": 531,
+    "rank": 546,
     "name": "Anton Johansson",
     "team": "DET",
     "pos": "D",
-    "gp": 4,
-    "value": 29.8,
+    "gp": 5,
+    "value": 30.2,
     "gs60": -0.54,
     "isMe": true
    },
    {
-    "rank": 532,
-    "name": "Arshdeep Bains",
-    "team": "VAN",
+    "rank": 547,
+    "name": "Reid Schaefer",
+    "team": "NSH",
     "pos": "L",
-    "gp": 5,
-    "value": 29.7,
-    "gs60": -0.56,
+    "gp": 3,
+    "value": 30.1,
+    "gs60": -0.55,
     "isMe": false
    },
    {
-    "rank": 533,
-    "name": "David Spacek",
-    "team": "MIN",
-    "pos": "D",
-    "gp": 1,
-    "value": 29.6,
+    "rank": 548,
+    "name": "Collin Graf",
+    "team": "SJS",
+    "pos": "R",
+    "gp": 5,
+    "value": 30.0,
     "gs60": -0.56,
     "isMe": false
    }
@@ -264,6 +264,30 @@
    "gameScoreParts": {
     "moneypuck": 0.175,
     "hockeystatcards": -2.18
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 2,
+   "toi": 10.7,
+   "ixg": 0.06,
+   "xgf": 0.38,
+   "xga": 0.29,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.32
    }
   }
  ],

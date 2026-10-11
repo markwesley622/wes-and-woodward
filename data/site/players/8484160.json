@@ -26,7 +26,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": 0,
   "assists": 1,
   "points": 1,
@@ -34,7 +34,7 @@
   "pim": 2,
   "shots": 3,
   "shootingPct": 0.0,
-  "toiPerGame": "9:11",
+  "toiPerGame": "9:09",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 4,
+   "gp": 5,
    "goals": 0,
    "assists": 1,
    "points": 1,
@@ -60,21 +60,21 @@
   "name": "Nate Danielson",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484160.png",
-  "gamesPlayed": 4,
+  "gamesPlayed": 5,
   "goals": 0,
   "assists": 1,
   "points": 1,
   "shots": 3,
   "shootingPct": 0.0,
-  "toiPerGame": 550.5,
+  "toiPerGame": 549.0,
   "ixG": 0.19,
   "goalsAboveExpected": -0.19,
-  "gameScore": 1.14,
+  "gameScore": 0.77,
   "fiveOnFive": {
-   "icetimeMinutes": 35.0,
-   "onIceXgPct": 0.55,
-   "onIceCorsiPct": 0.58,
-   "ixgPer60": 0.326,
+   "icetimeMinutes": 44.0,
+   "onIceXgPct": 0.49,
+   "onIceCorsiPct": 0.52,
+   "ixgPer60": 0.259,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,16 +82,16 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.04,
-   "percentile": 33
+   "value": 0.08,
+   "percentile": 34
   },
   "Offense": {
-   "value": -0.2,
-   "percentile": 39
+   "value": -0.4,
+   "percentile": 26
   },
   "Defense": {
-   "value": -0.3,
-   "percentile": 28
+   "value": -0.1,
+   "percentile": 41
   },
   "Net": {
    "value": -0.5,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 39.6,
+  "value": 38.8,
   "gs": 0.64,
-  "gs60": 1.05,
+  "gs60": 0.84,
   "gameScore": 0.64,
-  "minutes": 37,
-  "gp": 4,
-  "rank": 405,
-  "pool": 645,
-  "percentile": 37.2,
+  "minutes": 46,
+  "gp": 5,
+  "rank": 410,
+  "pool": 657,
+  "percentile": 37.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 403,
-    "name": "Bryan Rust",
-    "team": "PIT",
+    "rank": 408,
+    "name": "Owen Tippett",
+    "team": "PHI",
     "pos": "R",
-    "gp": 2,
-    "value": 40.1,
-    "gs60": 0.7,
+    "gp": 6,
+    "value": 38.8,
+    "gs60": 0.65,
     "isMe": false
    },
    {
-    "rank": 404,
-    "name": "Nolan Allan",
-    "team": "SJS",
-    "pos": "D",
-    "gp": 2,
-    "value": 39.8,
-    "gs60": 0.67,
+    "rank": 409,
+    "name": "Andre Lee",
+    "team": "LAK",
+    "pos": "L",
+    "gp": 1,
+    "value": 38.8,
+    "gs60": 0.65,
     "isMe": false
    },
    {
-    "rank": 405,
+    "rank": 410,
     "name": "Nate Danielson",
     "team": "DET",
     "pos": "C",
-    "gp": 4,
-    "value": 39.6,
+    "gp": 5,
+    "value": 38.8,
     "gs60": 0.64,
     "isMe": true
    },
    {
-    "rank": 406,
-    "name": "Dylan Holloway",
-    "team": "STL",
-    "pos": "L",
-    "gp": 4,
-    "value": 39.5,
-    "gs60": 0.64,
+    "rank": 411,
+    "name": "Sean Walker",
+    "team": "CAR",
+    "pos": "D",
+    "gp": 6,
+    "value": 38.7,
+    "gs60": 0.63,
     "isMe": false
    },
    {
-    "rank": 407,
-    "name": "Cole Smith",
-    "team": "CHI",
-    "pos": "R",
-    "gp": 5,
-    "value": 39.4,
+    "rank": 412,
+    "name": "Trevor Moore",
+    "team": "LAK",
+    "pos": "L",
+    "gp": 3,
+    "value": 38.6,
     "gs60": 0.62,
     "isMe": false
    }
@@ -280,6 +280,30 @@
    "gameScoreParts": {
     "moneypuck": -0.035,
     "hockeystatcards": -0.92
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 9.1,
+   "ixg": 0.0,
+   "xgf": 0.0,
+   "xga": 0.23,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.26
    }
   }
  ],
