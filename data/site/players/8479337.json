@@ -87,79 +87,79 @@
   },
   "Offense": {
    "value": 0.8,
-   "percentile": 89
+   "percentile": 88
   },
   "Defense": {
    "value": 0.2,
    "percentile": 63
   },
   "Net": {
-   "value": 1.0,
-   "percentile": 88
+   "value": 1.1,
+   "percentile": 87
   }
  },
  "score": null,
  "standIn": {
-  "value": 79.3,
-  "gs": 6.2,
-  "gs60": 3.74,
-  "gameScore": 6.2,
+  "value": 80.0,
+  "gs": 6.6,
+  "gs60": 3.98,
+  "gameScore": 6.6,
   "minutes": 100,
   "gp": 5,
-  "rank": 58,
-  "pool": 657,
-  "percentile": 91.2,
+  "rank": 60,
+  "pool": 661,
+  "percentile": 90.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 56,
-    "name": "Jimmy Snuggerud",
-    "team": "STL",
-    "pos": "R",
-    "gp": 5,
-    "value": 79.5,
-    "gs60": 6.24,
-    "isMe": false
-   },
-   {
-    "rank": 57,
-    "name": "Zach Werenski",
-    "team": "CBJ",
-    "pos": "D",
-    "gp": 4,
-    "value": 79.4,
-    "gs60": 6.23,
-    "isMe": false
-   },
-   {
     "rank": 58,
-    "name": "Alex DeBrincat",
-    "team": "DET",
-    "pos": "R",
+    "name": "Matthew Schaefer",
+    "team": "NYI",
+    "pos": "D",
     "gp": 5,
-    "value": 79.3,
-    "gs60": 6.2,
-    "isMe": true
+    "value": 80.2,
+    "gs60": 6.63,
+    "isMe": false
    },
    {
     "rank": 59,
-    "name": "Owen Power",
-    "team": "BUF",
+    "name": "Josh Manson",
+    "team": "COL",
     "pos": "D",
     "gp": 5,
-    "value": 78.7,
-    "gs60": 6.08,
+    "value": 80.0,
+    "gs60": 6.61,
     "isMe": false
    },
    {
     "rank": 60,
-    "name": "Steven Stamkos",
-    "team": "NSH",
-    "pos": "C",
+    "name": "Alex DeBrincat",
+    "team": "DET",
+    "pos": "R",
     "gp": 5,
-    "value": 78.5,
-    "gs60": 6.05,
+    "value": 80.0,
+    "gs60": 6.6,
+    "isMe": true
+   },
+   {
+    "rank": 61,
+    "name": "Beckett Sennecke",
+    "team": "ANA",
+    "pos": "R",
+    "gp": 5,
+    "value": 79.8,
+    "gs60": 6.57,
+    "isMe": false
+   },
+   {
+    "rank": 62,
+    "name": "Easton Cowan",
+    "team": "TOR",
+    "pos": "R",
+    "gp": 6,
+    "value": 79.3,
+    "gs60": 6.46,
     "isMe": false
    }
   ],
@@ -420,17 +420,17 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": null,
+   "gameScore": 0.4,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": 0.225,
     "hockeystatcards": 0.57
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.55,
-  "games": 4,
+  "average": 1.32,
+  "games": 5,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",

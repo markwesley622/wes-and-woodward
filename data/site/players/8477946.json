@@ -87,11 +87,11 @@
   },
   "Offense": {
    "value": 0.4,
-   "percentile": 76
+   "percentile": 75
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 42
+   "percentile": 43
   },
   "Net": {
    "value": 0.3,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 57.4,
-  "gs": 2.98,
-  "gs60": 2.9,
-  "gameScore": 2.98,
+  "value": 57.1,
+  "gs": 3.06,
+  "gs60": 2.98,
+  "gameScore": 3.06,
   "minutes": 62,
   "gp": 3,
-  "rank": 228,
-  "pool": 657,
-  "percentile": 65.1,
+  "rank": 233,
+  "pool": 661,
+  "percentile": 64.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 226,
-    "name": "Adrian Kempe",
-    "team": "LAK",
+    "rank": 231,
+    "name": "Danila Yurov",
+    "team": "MIN",
     "pos": "R",
-    "gp": 3,
-    "value": 57.7,
-    "gs60": 3.01,
-    "isMe": false
-   },
-   {
-    "rank": 227,
-    "name": "John Carlson",
-    "team": "TBL",
-    "pos": "D",
     "gp": 5,
-    "value": 57.6,
-    "gs60": 3.0,
+    "value": 57.2,
+    "gs60": 3.06,
     "isMe": false
    },
    {
-    "rank": 228,
+    "rank": 232,
+    "name": "Pavel Buchnevich",
+    "team": "STL",
+    "pos": "L",
+    "gp": 5,
+    "value": 57.2,
+    "gs60": 3.06,
+    "isMe": false
+   },
+   {
+    "rank": 233,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
     "gp": 3,
-    "value": 57.4,
-    "gs60": 2.98,
+    "value": 57.1,
+    "gs60": 3.06,
     "isMe": true
    },
    {
-    "rank": 229,
-    "name": "Brent Burns",
-    "team": "COL",
-    "pos": "D",
-    "gp": 5,
-    "value": 57.4,
-    "gs60": 2.98,
+    "rank": 234,
+    "name": "Jack McBain",
+    "team": "UTA",
+    "pos": "C",
+    "gp": 6,
+    "value": 57.0,
+    "gs60": 3.05,
     "isMe": false
    },
    {
-    "rank": 230,
-    "name": "Tristan Luneau",
-    "team": "ANA",
-    "pos": "D",
-    "gp": 4,
-    "value": 57.4,
-    "gs60": 2.97,
+    "rank": 235,
+    "name": "Fabian Zetterlund",
+    "team": "OTT",
+    "pos": "L",
+    "gp": 5,
+    "value": 57.0,
+    "gs60": 3.04,
     "isMe": false
    }
   ],
@@ -402,26 +402,26 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": null,
+   "gameScore": 0.08,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": -0.09,
     "hockeystatcards": 0.25
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.49,
-  "games": 2,
+  "average": 1.02,
+  "games": 3,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
    "value": 2.26
   },
   "worst": {
-   "date": "2026-10-09",
-   "opponent": "SEA",
-   "value": 0.72
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "value": 0.08
   },
   "above2": 1,
   "below0": 0

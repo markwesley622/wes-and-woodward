@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": 0.5,
-   "percentile": 81
+   "percentile": 80
   },
   "Defense": {
    "value": 0.5,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 76.1,
-  "gs": 5.64,
-  "gs60": 4.75,
-  "gameScore": 5.64,
+  "value": 74.2,
+  "gs": 5.53,
+  "gs60": 4.66,
+  "gameScore": 5.53,
   "minutes": 71,
   "gp": 5,
-  "rank": 77,
-  "pool": 657,
-  "percentile": 88.3,
+  "rank": 91,
+  "pool": 661,
+  "percentile": 86.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 75,
-    "name": "Roope Hintz",
-    "team": "DAL",
-    "pos": "C",
-    "gp": 5,
-    "value": 76.1,
-    "gs60": 5.64,
+    "rank": 89,
+    "name": "Jordan Martinook",
+    "team": "CAR",
+    "pos": "L",
+    "gp": 7,
+    "value": 74.3,
+    "gs60": 5.56,
     "isMe": false
    },
    {
-    "rank": 76,
-    "name": "Cole Perfetti",
-    "team": "WPG",
-    "pos": "C",
-    "gp": 5,
-    "value": 76.1,
-    "gs60": 5.64,
+    "rank": 90,
+    "name": "Kaapo Kakko",
+    "team": "SEA",
+    "pos": "R",
+    "gp": 6,
+    "value": 74.3,
+    "gs60": 5.56,
     "isMe": false
    },
    {
-    "rank": 77,
+    "rank": 91,
     "name": "Michael Brandsegg-Nygrd",
     "team": "DET",
     "pos": "R",
     "gp": 5,
-    "value": 76.1,
-    "gs60": 5.64,
+    "value": 74.2,
+    "gs60": 5.53,
     "isMe": true
    },
    {
-    "rank": 78,
-    "name": "Hampus Lindholm",
-    "team": "BOS",
+    "rank": 92,
+    "name": "Brandon Montour",
+    "team": "SEA",
     "pos": "D",
     "gp": 6,
-    "value": 76.1,
-    "gs60": 5.63,
+    "value": 73.9,
+    "gs60": 5.48,
     "isMe": false
    },
    {
-    "rank": 79,
-    "name": "Pavel Dorofeyev",
-    "team": "NYR",
+    "rank": 93,
+    "name": "Zachary Bolduc",
+    "team": "MTL",
     "pos": "R",
-    "gp": 6,
-    "value": 76.0,
-    "gs60": 5.61,
+    "gp": 5,
+    "value": 73.8,
+    "gs60": 5.47,
     "isMe": false
    }
   ],
@@ -300,29 +300,29 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": null,
+   "gameScore": -0.11,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": -0.325,
     "hockeystatcards": 0.1
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.41,
-  "games": 4,
+  "average": 1.11,
+  "games": 5,
   "best": {
    "date": "2026-10-09",
    "opponent": "SEA",
    "value": 2.53
   },
   "worst": {
-   "date": "2026-10-06",
-   "opponent": "OTT",
-   "value": 0.31
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "value": -0.11
   },
   "above2": 2,
-  "below0": 0
+  "below0": 1
  },
  "prospect": true,
  "prospectStatus": {

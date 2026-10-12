@@ -87,79 +87,79 @@
   },
   "Offense": {
    "value": 0.2,
-   "percentile": 70
+   "percentile": 69
   },
   "Defense": {
    "value": -0.4,
-   "percentile": 21
+   "percentile": 22
   },
   "Net": {
    "value": -0.2,
-   "percentile": 45
+   "percentile": 44
   }
  },
  "score": null,
  "standIn": {
-  "value": 38.4,
-  "gs": 0.59,
-  "gs60": 0.38,
-  "gameScore": 0.59,
+  "value": 39.8,
+  "gs": 0.81,
+  "gs60": 0.53,
+  "gameScore": 0.81,
   "minutes": 92,
   "gp": 5,
-  "rank": 420,
-  "pool": 657,
-  "percentile": 36.1,
+  "rank": 399,
+  "pool": 661,
+  "percentile": 39.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 418,
-    "name": "Tanner Jeannot",
-    "team": "BOS",
-    "pos": "L",
-    "gp": 6,
-    "value": 38.4,
-    "gs60": 0.59,
-    "isMe": false
-   },
-   {
-    "rank": 419,
-    "name": "Vince Dunn",
-    "team": "SEA",
-    "pos": "D",
+    "rank": 397,
+    "name": "Isak Rosen",
+    "team": "WPG",
+    "pos": "R",
     "gp": 5,
-    "value": 38.4,
-    "gs60": 0.59,
+    "value": 39.9,
+    "gs60": 0.82,
     "isMe": false
    },
    {
-    "rank": 420,
+    "rank": 398,
+    "name": "Dmitri Voronkov",
+    "team": "CBJ",
+    "pos": "L",
+    "gp": 4,
+    "value": 39.9,
+    "gs60": 0.81,
+    "isMe": false
+   },
+   {
+    "rank": 399,
     "name": "Ben Chiarot",
     "team": "DET",
     "pos": "D",
     "gp": 5,
-    "value": 38.4,
-    "gs60": 0.59,
+    "value": 39.8,
+    "gs60": 0.81,
     "isMe": true
    },
    {
-    "rank": 421,
-    "name": "Arttu Hyry",
-    "team": "DAL",
-    "pos": "R",
-    "gp": 5,
-    "value": 38.2,
-    "gs60": 0.56,
+    "rank": 400,
+    "name": "Olen Zellweger",
+    "team": "BUF",
+    "pos": "D",
+    "gp": 4,
+    "value": 39.8,
+    "gs60": 0.8,
     "isMe": false
    },
    {
-    "rank": 422,
-    "name": "Aaron Ekblad",
-    "team": "FLA",
-    "pos": "D",
+    "rank": 401,
+    "name": "Corey Perry",
+    "team": "LAK",
+    "pos": "R",
     "gp": 3,
-    "value": 38.1,
-    "gs60": 0.55,
+    "value": 39.6,
+    "gs60": 0.77,
     "isMe": false
    }
   ],
@@ -480,17 +480,17 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 2.0,
-   "gameScore": null,
+   "gameScore": 0.22,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": -0.15,
     "hockeystatcards": 0.6
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.15,
-  "games": 4,
+  "average": 0.16,
+  "games": 5,
   "best": {
    "date": "2026-10-04",
    "opponent": "WPG",

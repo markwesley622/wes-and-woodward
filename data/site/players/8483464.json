@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": 0.63,
-   "percentile": 60
+   "percentile": 61
   },
   "Offense": {
    "value": -0.2,
-   "percentile": 47
+   "percentile": 48
   },
   "Defense": {
    "value": 0.1,
-   "percentile": 53
+   "percentile": 52
   },
   "Net": {
    "value": -0.1,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 39.5,
+  "value": 39.2,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 402,
-  "pool": 657,
-  "percentile": 38.8,
+  "rank": 405,
+  "pool": 661,
+  "percentile": 38.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 400,
-    "name": "Bryan Rust",
-    "team": "PIT",
-    "pos": "R",
-    "gp": 3,
-    "value": 39.6,
-    "gs60": 0.75,
-    "isMe": false
-   },
-   {
-    "rank": 401,
-    "name": "Simon Nemec",
-    "team": "CGY",
-    "pos": "D",
-    "gp": 4,
-    "value": 39.5,
-    "gs60": 0.74,
-    "isMe": false
-   },
-   {
-    "rank": 402,
-    "name": "Marco Kasper",
-    "team": "DET",
-    "pos": "C",
-    "gp": 1,
-    "value": 39.5,
-    "gs60": 0.73,
-    "isMe": true
-   },
-   {
     "rank": 403,
-    "name": "Tye Kartye",
-    "team": "NYR",
-    "pos": "L",
-    "gp": 6,
+    "name": "Kaiden Guhle",
+    "team": "MTL",
+    "pos": "D",
+    "gp": 1,
     "value": 39.4,
-    "gs60": 0.72,
+    "gs60": 0.76,
     "isMe": false
    },
    {
     "rank": 404,
+    "name": "Bryan Rust",
+    "team": "PIT",
+    "pos": "R",
+    "gp": 3,
+    "value": 39.4,
+    "gs60": 0.75,
+    "isMe": false
+   },
+   {
+    "rank": 405,
+    "name": "Marco Kasper",
+    "team": "DET",
+    "pos": "C",
+    "gp": 1,
+    "value": 39.2,
+    "gs60": 0.73,
+    "isMe": true
+   },
+   {
+    "rank": 406,
+    "name": "Liam Ohgren",
+    "team": "VAN",
+    "pos": "L",
+    "gp": 7,
+    "value": 39.0,
+    "gs60": 0.69,
+    "isMe": false
+   },
+   {
+    "rank": 407,
     "name": "Zachary L'Heureux",
     "team": "COL",
     "pos": "L",
     "gp": 3,
-    "value": 39.1,
+    "value": 38.9,
     "gs60": 0.69,
     "isMe": false
    }

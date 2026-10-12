@@ -83,37 +83,47 @@
  "hsc": {
   "Game score": {
    "value": 0.08,
-   "percentile": 33
+   "percentile": 34
   },
   "Offense": {
    "value": -1.0,
-   "percentile": 3
+   "percentile": 4
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 86
+   "percentile": 85
   },
   "Net": {
-   "value": -0.4,
-   "percentile": 32
+   "value": -0.5,
+   "percentile": 33
   }
  },
  "score": null,
  "standIn": {
-  "value": 35.6,
-  "gs": 0.22,
-  "gs60": 0.2,
-  "gameScore": 0.22,
+  "value": 35.7,
+  "gs": 0.24,
+  "gs60": 0.22,
+  "gameScore": 0.24,
   "minutes": 65,
   "gp": 5,
   "rank": 469,
-  "pool": 657,
-  "percentile": 28.6,
+  "pool": 661,
+  "percentile": 29.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
     "rank": 467,
+    "name": "Connor Clifton",
+    "team": "BOS",
+    "pos": "D",
+    "gp": 6,
+    "value": 35.7,
+    "gs60": 0.24,
+    "isMe": false
+   },
+   {
+    "rank": 468,
     "name": "Alexey Toropchenko",
     "team": "STL",
     "pos": "R",
@@ -123,43 +133,33 @@
     "isMe": false
    },
    {
-    "rank": 468,
-    "name": "Ross Johnston",
-    "team": "STL",
-    "pos": "L",
-    "gp": 4,
-    "value": 35.7,
-    "gs60": 0.23,
-    "isMe": false
-   },
-   {
     "rank": 469,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
     "gp": 5,
-    "value": 35.6,
-    "gs60": 0.22,
+    "value": 35.7,
+    "gs60": 0.24,
     "isMe": true
    },
    {
     "rank": 470,
-    "name": "Nick Perbix",
-    "team": "NSH",
-    "pos": "D",
-    "gp": 5,
-    "value": 35.4,
-    "gs60": 0.19,
+    "name": "Sean Couturier",
+    "team": "PHI",
+    "pos": "C",
+    "gp": 7,
+    "value": 35.7,
+    "gs60": 0.24,
     "isMe": false
    },
    {
     "rank": 471,
-    "name": "Aydar Suniev",
-    "team": "CGY",
-    "pos": "L",
-    "gp": 1,
-    "value": 35.2,
-    "gs60": 0.16,
+    "name": "Raphael Lavoie",
+    "team": "VGK",
+    "pos": "C",
+    "gp": 2,
+    "value": 35.6,
+    "gs60": 0.24,
     "isMe": false
    }
   ],
@@ -390,9 +390,9 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 2.0,
-   "gameScore": null,
+   "gameScore": 0.02,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": -0.15,
     "hockeystatcards": 0.19
    }
   }
@@ -400,7 +400,7 @@
  "teamGameScore": null,
  "gameScore": {
   "average": 0.05,
-  "games": 4,
+  "games": 5,
   "best": {
    "date": "2026-10-02",
    "opponent": "NYR",

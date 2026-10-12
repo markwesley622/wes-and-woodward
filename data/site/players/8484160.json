@@ -83,83 +83,83 @@
  "hsc": {
   "Game score": {
    "value": 0.08,
-   "percentile": 34
+   "percentile": 35
   },
   "Offense": {
-   "value": -0.4,
+   "value": -0.5,
    "percentile": 26
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 41
+   "percentile": 42
   },
   "Net": {
-   "value": -0.5,
+   "value": -0.6,
    "percentile": 28
   }
  },
  "score": null,
  "standIn": {
-  "value": 38.8,
-  "gs": 0.64,
-  "gs60": 0.84,
-  "gameScore": 0.64,
+  "value": 38.2,
+  "gs": 0.59,
+  "gs60": 0.77,
+  "gameScore": 0.59,
   "minutes": 46,
   "gp": 5,
-  "rank": 410,
-  "pool": 657,
-  "percentile": 37.6,
+  "rank": 422,
+  "pool": 661,
+  "percentile": 36.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 408,
-    "name": "Owen Tippett",
-    "team": "PHI",
-    "pos": "R",
-    "gp": 6,
-    "value": 38.8,
-    "gs60": 0.65,
+    "rank": 420,
+    "name": "Aleksander Barkov",
+    "team": "FLA",
+    "pos": "C",
+    "gp": 2,
+    "value": 38.2,
+    "gs60": 0.59,
     "isMe": false
    },
    {
-    "rank": 409,
-    "name": "Andre Lee",
-    "team": "LAK",
+    "rank": 421,
+    "name": "Tanner Jeannot",
+    "team": "BOS",
     "pos": "L",
-    "gp": 1,
-    "value": 38.8,
-    "gs60": 0.65,
+    "gp": 6,
+    "value": 38.2,
+    "gs60": 0.59,
     "isMe": false
    },
    {
-    "rank": 410,
+    "rank": 422,
     "name": "Nate Danielson",
     "team": "DET",
     "pos": "C",
     "gp": 5,
-    "value": 38.8,
-    "gs60": 0.64,
+    "value": 38.2,
+    "gs60": 0.59,
     "isMe": true
    },
    {
-    "rank": 411,
-    "name": "Sean Walker",
-    "team": "CAR",
+    "rank": 423,
+    "name": "Martin Fehrvry",
+    "team": "WSH",
     "pos": "D",
-    "gp": 6,
-    "value": 38.7,
-    "gs60": 0.63,
+    "gp": 5,
+    "value": 38.2,
+    "gs60": 0.59,
     "isMe": false
    },
    {
-    "rank": 412,
-    "name": "Trevor Moore",
-    "team": "LAK",
-    "pos": "L",
-    "gp": 3,
-    "value": 38.6,
-    "gs60": 0.62,
+    "rank": 424,
+    "name": "Arttu Hyry",
+    "team": "DAL",
+    "pos": "R",
+    "gp": 5,
+    "value": 38.0,
+    "gs60": 0.56,
     "isMe": false
    }
   ],
@@ -300,17 +300,17 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": null,
+   "gameScore": -0.05,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": -0.37,
     "hockeystatcards": 0.26
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.16,
-  "games": 4,
+  "average": 0.12,
+  "games": 5,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
@@ -322,7 +322,7 @@
    "value": -0.48
   },
   "above2": 0,
-  "below0": 2
+  "below0": 3
  },
  "prospect": false,
  "prospectStatus": {

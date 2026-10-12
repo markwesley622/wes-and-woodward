@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.19,
-   "percentile": 40
+   "percentile": 41
   },
   "Offense": {
    "value": -0.9,
@@ -91,75 +91,75 @@
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 87
+   "percentile": 86
   },
   "Net": {
    "value": -0.3,
-   "percentile": 39
+   "percentile": 40
   }
  },
  "score": null,
  "standIn": {
-  "value": 41.2,
-  "gs": 0.96,
-  "gs60": 0.68,
-  "gameScore": 0.96,
+  "value": 43.2,
+  "gs": 1.26,
+  "gs60": 0.89,
+  "gameScore": 1.26,
   "minutes": 85,
   "gp": 5,
-  "rank": 380,
-  "pool": 657,
-  "percentile": 42.2,
+  "rank": 360,
+  "pool": 661,
+  "percentile": 45.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 378,
-    "name": "Brady Skjei",
-    "team": "NSH",
+    "rank": 358,
+    "name": "Spencer Stastney",
+    "team": "PIT",
     "pos": "D",
-    "gp": 5,
-    "value": 41.4,
-    "gs60": 0.98,
+    "gp": 1,
+    "value": 43.6,
+    "gs60": 1.31,
     "isMe": false
    },
    {
-    "rank": 379,
-    "name": "Oliver Ekman-Larsson",
-    "team": "TOR",
-    "pos": "D",
-    "gp": 6,
-    "value": 41.4,
-    "gs60": 0.98,
+    "rank": 359,
+    "name": "Denver Barkey",
+    "team": "PHI",
+    "pos": "C",
+    "gp": 4,
+    "value": 43.6,
+    "gs60": 1.3,
     "isMe": false
    },
    {
-    "rank": 380,
+    "rank": 360,
     "name": "Michael Rasmussen",
     "team": "DET",
     "pos": "C",
     "gp": 5,
-    "value": 41.2,
-    "gs60": 0.96,
+    "value": 43.2,
+    "gs60": 1.26,
     "isMe": true
    },
    {
-    "rank": 381,
-    "name": "Jonathan Castagna",
-    "team": "CGY",
-    "pos": "C",
-    "gp": 1,
-    "value": 41.1,
-    "gs60": 0.95,
+    "rank": 361,
+    "name": "Charle-Edouard D'Astous",
+    "team": "TBL",
+    "pos": "D",
+    "gp": 5,
+    "value": 43.2,
+    "gs60": 1.25,
     "isMe": false
    },
    {
-    "rank": 382,
-    "name": "Mavrik Bourque",
-    "team": "NSH",
-    "pos": "C",
-    "gp": 4,
-    "value": 41.1,
-    "gs60": 0.94,
+    "rank": 362,
+    "name": "Sandis Vilmanis",
+    "team": "FLA",
+    "pos": "L",
+    "gp": 5,
+    "value": 43.2,
+    "gs60": 1.25,
     "isMe": false
    }
   ],
@@ -390,17 +390,17 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 3.0,
-   "gameScore": null,
+   "gameScore": 0.3,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": 0.16,
     "hockeystatcards": 0.44
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.24,
-  "games": 4,
+  "average": 0.25,
+  "games": 5,
   "best": {
    "date": "2026-10-04",
    "opponent": "WPG",

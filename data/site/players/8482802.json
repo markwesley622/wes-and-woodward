@@ -86,12 +86,12 @@
    "percentile": 50
   },
   "Offense": {
-   "value": 0.2,
+   "value": 0.1,
    "percentile": 67
   },
   "Defense": {
    "value": -0.3,
-   "percentile": 28
+   "percentile": 29
   },
   "Net": {
    "value": -0.2,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 41.8,
+  "value": 41.5,
   "gs": 1.03,
   "gs60": 3.25,
   "gameScore": 1.03,
   "minutes": 19,
   "gp": 2,
-  "rank": 374,
-  "pool": 657,
-  "percentile": 43.1,
+  "rank": 377,
+  "pool": 661,
+  "percentile": 43.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 372,
-    "name": "John Tavares",
-    "team": "TOR",
-    "pos": "C",
-    "gp": 5,
-    "value": 42.1,
-    "gs60": 1.07,
-    "isMe": false
-   },
-   {
-    "rank": 373,
-    "name": "Ryan Winterton",
+    "rank": 375,
+    "name": "Frederick Gaudreau",
     "team": "SEA",
     "pos": "C",
-    "gp": 5,
-    "value": 41.9,
-    "gs60": 1.05,
-    "isMe": false
-   },
-   {
-    "rank": 374,
-    "name": "Carter Mazur",
-    "team": "DET",
-    "pos": "L",
-    "gp": 2,
-    "value": 41.8,
-    "gs60": 1.03,
-    "isMe": true
-   },
-   {
-    "rank": 375,
-    "name": "Ivan Demidov",
-    "team": "MTL",
-    "pos": "R",
-    "gp": 2,
-    "value": 41.7,
-    "gs60": 1.02,
+    "gp": 6,
+    "value": 42.1,
+    "gs60": 1.11,
     "isMe": false
    },
    {
     "rank": 376,
-    "name": "Luca Cagnoni",
-    "team": "SJS",
-    "pos": "D",
+    "name": "John Tavares",
+    "team": "TOR",
+    "pos": "C",
     "gp": 5,
-    "value": 41.6,
-    "gs60": 1.0,
+    "value": 41.8,
+    "gs60": 1.07,
+    "isMe": false
+   },
+   {
+    "rank": 377,
+    "name": "Carter Mazur",
+    "team": "DET",
+    "pos": "L",
+    "gp": 2,
+    "value": 41.5,
+    "gs60": 1.03,
+    "isMe": true
+   },
+   {
+    "rank": 378,
+    "name": "Nic Dowd",
+    "team": "VGK",
+    "pos": "C",
+    "gp": 6,
+    "value": 41.4,
+    "gs60": 1.02,
+    "isMe": false
+   },
+   {
+    "rank": 379,
+    "name": "Ivan Demidov",
+    "team": "MTL",
+    "pos": "R",
+    "gp": 2,
+    "value": 41.4,
+    "gs60": 1.02,
     "isMe": false
    }
   ],

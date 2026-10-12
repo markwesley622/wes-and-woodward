@@ -86,80 +86,80 @@
    "percentile": 74
   },
   "Offense": {
-   "value": -0.7,
+   "value": -0.8,
    "percentile": 10
   },
   "Defense": {
-   "value": 1.5,
+   "value": 1.6,
    "percentile": 100
   },
   "Net": {
    "value": 0.8,
-   "percentile": 81
+   "percentile": 80
   }
  },
  "score": null,
  "standIn": {
-  "value": 65.2,
-  "gs": 3.99,
-  "gs60": 1.89,
-  "gameScore": 3.99,
+  "value": 63.4,
+  "gs": 3.91,
+  "gs60": 1.85,
+  "gameScore": 3.91,
   "minutes": 127,
   "gp": 5,
-  "rank": 158,
-  "pool": 657,
-  "percentile": 76.0,
+  "rank": 171,
+  "pool": 661,
+  "percentile": 74.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 156,
-    "name": "Nils Hoglander",
-    "team": "NSH",
-    "pos": "L",
-    "gp": 5,
-    "value": 65.4,
-    "gs60": 4.03,
-    "isMe": false
-   },
-   {
-    "rank": 157,
-    "name": "Jalen Chatfield",
-    "team": "CAR",
+    "rank": 169,
+    "name": "Noah Hanifin",
+    "team": "VGK",
     "pos": "D",
     "gp": 6,
-    "value": 65.3,
-    "gs60": 4.01,
+    "value": 64.2,
+    "gs60": 4.02,
     "isMe": false
    },
    {
-    "rank": 158,
-    "name": "Moritz Seider",
-    "team": "DET",
-    "pos": "D",
-    "gp": 5,
-    "value": 65.2,
-    "gs60": 3.99,
-    "isMe": true
-   },
-   {
-    "rank": 159,
+    "rank": 170,
     "name": "Adam Lowry",
     "team": "WPG",
     "pos": "C",
     "gp": 5,
-    "value": 65.1,
+    "value": 63.9,
     "gs60": 3.98,
     "isMe": false
    },
    {
-    "rank": 160,
+    "rank": 171,
+    "name": "Moritz Seider",
+    "team": "DET",
+    "pos": "D",
+    "gp": 5,
+    "value": 63.4,
+    "gs60": 3.91,
+    "isMe": true
+   },
+   {
+    "rank": 172,
     "name": "Jesper Bratt",
     "team": "NJD",
     "pos": "L",
     "gp": 4,
-    "value": 64.7,
-    "gs60": 3.92,
+    "value": 63.4,
+    "gs60": 3.91,
+    "isMe": false
+   },
+   {
+    "rank": 173,
+    "name": "Paul Cotter",
+    "team": "VAN",
+    "pos": "L",
+    "gp": 7,
+    "value": 63.3,
+    "gs60": 3.88,
     "isMe": false
    }
   ],
@@ -360,17 +360,17 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 6.0,
-   "gameScore": null,
+   "gameScore": -0.08,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": -0.5,
     "hockeystatcards": 0.34
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.0,
-  "games": 4,
+  "average": 0.78,
+  "games": 5,
   "best": {
    "date": "2026-10-09",
    "opponent": "SEA",
@@ -382,7 +382,7 @@
    "value": -0.73
   },
   "above2": 1,
-  "below0": 1
+  "below0": 2
  },
  "prospect": false,
  "prospectStatus": {

@@ -83,83 +83,83 @@
  "hsc": {
   "Game score": {
    "value": 0.25,
-   "percentile": 44
+   "percentile": 45
   },
   "Offense": {
    "value": 0.0,
    "percentile": 59
   },
   "Defense": {
-   "value": -0.2,
-   "percentile": 37
+   "value": -0.1,
+   "percentile": 39
   },
   "Net": {
    "value": -0.1,
-   "percentile": 48
+   "percentile": 49
   }
  },
  "score": null,
  "standIn": {
-  "value": 51.7,
-  "gs": 2.26,
-  "gs60": 1.41,
-  "gameScore": 2.26,
+  "value": 49.9,
+  "gs": 2.13,
+  "gs60": 1.33,
+  "gameScore": 2.13,
   "minutes": 96,
   "gp": 5,
-  "rank": 270,
-  "pool": 657,
-  "percentile": 58.9,
+  "rank": 290,
+  "pool": 661,
+  "percentile": 56.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 268,
-    "name": "Justin Barron",
-    "team": "STL",
+    "rank": 288,
+    "name": "Morgan Rielly",
+    "team": "TOR",
+    "pos": "D",
+    "gp": 6,
+    "value": 50.0,
+    "gs60": 2.13,
+    "isMe": false
+   },
+   {
+    "rank": 289,
+    "name": "Erik Gustafsson",
+    "team": "LAK",
     "pos": "D",
     "gp": 2,
-    "value": 52.0,
-    "gs60": 2.29,
+    "value": 49.9,
+    "gs60": 2.13,
     "isMe": false
    },
    {
-    "rank": 269,
-    "name": "Radko Gudas",
-    "team": "FLA",
-    "pos": "D",
-    "gp": 5,
-    "value": 51.7,
-    "gs60": 2.26,
-    "isMe": false
-   },
-   {
-    "rank": 270,
+    "rank": 290,
     "name": "Justin Faulk",
     "team": "DET",
     "pos": "D",
     "gp": 5,
-    "value": 51.7,
-    "gs60": 2.26,
+    "value": 49.9,
+    "gs60": 2.13,
     "isMe": true
    },
    {
-    "rank": 271,
-    "name": "K'Andre Miller",
-    "team": "CAR",
+    "rank": 291,
+    "name": "Seth Jones",
+    "team": "FLA",
     "pos": "D",
-    "gp": 6,
-    "value": 51.6,
-    "gs60": 2.25,
+    "gp": 5,
+    "value": 49.9,
+    "gs60": 2.12,
     "isMe": false
    },
    {
-    "rank": 272,
-    "name": "Philip Broberg",
+    "rank": 292,
+    "name": "Cam Fowler",
     "team": "STL",
     "pos": "D",
     "gp": 5,
-    "value": 51.6,
-    "gs60": 2.25,
+    "value": 49.6,
+    "gs60": 2.09,
     "isMe": false
    }
   ],
@@ -510,17 +510,17 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": null,
+   "gameScore": -0.13,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": -0.35,
     "hockeystatcards": 0.09
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.56,
-  "games": 4,
+  "average": 0.43,
+  "games": 5,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
@@ -532,7 +532,7 @@
    "value": -1.39
   },
   "above2": 1,
-  "below0": 2
+  "below0": 3
  },
  "prospect": false,
  "prospectStatus": {

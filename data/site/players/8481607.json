@@ -83,11 +83,11 @@
  "hsc": {
   "Game score": {
    "value": 0.46,
-   "percentile": 52
+   "percentile": 53
   },
   "Offense": {
    "value": -0.7,
-   "percentile": 12
+   "percentile": 13
   },
   "Defense": {
    "value": 0.8,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 43.9,
-  "gs": 1.29,
-  "gs60": 0.92,
-  "gameScore": 1.29,
+  "value": 50.6,
+  "gs": 2.22,
+  "gs60": 1.58,
+  "gameScore": 2.22,
   "minutes": 84,
   "gp": 5,
-  "rank": 353,
-  "pool": 657,
-  "percentile": 46.3,
+  "rank": 280,
+  "pool": 661,
+  "percentile": 57.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 351,
-    "name": "Spencer Stastney",
-    "team": "PIT",
-    "pos": "D",
-    "gp": 1,
-    "value": 44.1,
-    "gs60": 1.31,
+    "rank": 278,
+    "name": "Mikael Backlund",
+    "team": "CGY",
+    "pos": "C",
+    "gp": 5,
+    "value": 50.8,
+    "gs60": 2.25,
     "isMe": false
    },
    {
-    "rank": 352,
-    "name": "Pavel Zacha",
-    "team": "BOS",
+    "rank": 279,
+    "name": "Colton Sissons",
+    "team": "TOR",
     "pos": "C",
     "gp": 6,
-    "value": 44.1,
-    "gs60": 1.31,
+    "value": 50.8,
+    "gs60": 2.24,
     "isMe": false
    },
    {
-    "rank": 353,
+    "rank": 280,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 5,
-    "value": 43.9,
-    "gs60": 1.29,
+    "value": 50.6,
+    "gs60": 2.22,
     "isMe": true
    },
    {
-    "rank": 354,
-    "name": "Michael Rasmussen",
-    "team": "DET",
-    "pos": "C",
-    "gp": 5,
-    "value": 43.8,
-    "gs60": 1.28,
+    "rank": 281,
+    "name": "Arseny Gritsyuk",
+    "team": "NJD",
+    "pos": "R",
+    "gp": 4,
+    "value": 50.6,
+    "gs60": 2.21,
     "isMe": false
    },
    {
-    "rank": 355,
-    "name": "Zemgus Girgensons",
-    "team": "TBL",
-    "pos": "C",
+    "rank": 282,
+    "name": "Adam Wilsby",
+    "team": "NSH",
+    "pos": "D",
     "gp": 5,
-    "value": 43.6,
-    "gs60": 1.26,
+    "value": 50.5,
+    "gs60": 2.21,
     "isMe": false
    }
   ],
@@ -315,17 +315,17 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": null,
+   "gameScore": 0.93,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": 0.3,
     "hockeystatcards": 1.55
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.32,
-  "games": 4,
+  "average": 0.44,
+  "games": 5,
   "best": {
    "date": "2026-10-09",
    "opponent": "SEA",
