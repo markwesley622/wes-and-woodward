@@ -60,6 +60,7 @@ const nav = [['Team', `${base}team/`], ['Players', `${base}players/`], ['Prospec
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="canonical" href={canonical} />
+    {Astro.props.robots && <meta name="robots" content={Astro.props.robots} />}
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />

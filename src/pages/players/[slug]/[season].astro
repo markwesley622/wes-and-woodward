@@ -1,0 +1,27 @@
+---
+// One past Detroit season of an NHL player page. It exists for the season dropdown, which fetches it and swaps
+// its season parts into /players/<slug>/ without changing the URL (Mark, 10/12: same URL, off the index), so it is
+// noindex, unlinked and out of the sitemap. Opened directly it is still a whole, working page.
+import Base from '../../../layouts/Base.astro';
+import PlayerPage from '../../../components/PlayerPage.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+import { hasNhlPage } from '../../../lib/pages.js';
+import { pastSeasons, seasonMenu } from '../../../lib/seasons.js';
+
+export async function getStaticPaths() {
+  const dir = path.resolve('data/site/players');
+  return fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'))).filter(hasNhlPage).flatMap((P) => {
+    const art = fs.existsSync(path.resolve(`public/players/${P.playerId}-art.webp`));
+    const pf = path.resolve(`data/site/prospects/${P.playerId}.json`);
+    const prospect = fs.existsSync(pf) ? JSON.parse(fs.readFileSync(pf, 'utf8')) : null;
+    const menu = seasonMenu(P);
+    return pastSeasons(P).map((S) => ({ params: { slug: P.slug, season: S.seasonLabel }, props: { P, S, art, prospect, menu } }));
+  });
+}
+const { P, S, art, prospect, menu } = Astro.props;
+const season = `${S.seasonLabel.slice(0, 4)}–${S.seasonLabel.slice(5)}`;
+---
+<Base robots="noindex" title={`${P.name} ${season} | Wes & Woodward`} crumb={`${P.name}, ${season}`} description={`${P.name} with the Red Wings in ${season}.`}>
+  <PlayerPage P={P} S={S} art={art} prospect={prospect} seasons={menu} current={false} />
+</Base>

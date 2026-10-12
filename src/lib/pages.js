@@ -8,4 +8,9 @@ export const playedNhlThisSeason = (P) => (Array.isArray(P.gameLog) && P.gameLog
 export const hasNhlPage = (P) => !isProspect(P) || onNhlRoster(P) || playedNhlThisSeason(P);
 export const hasProspectPage = (P) => isProspect(P);
 export const nhlPageIsCanonical = (P) => !isProspect(P) || onNhlRoster(P);
+// The Players list (Mark, 10/12): only players who have played an NHL game for Detroit this season (detGames,
+// pipeline/build_player.py). Edvinsson and Bernard-Docker stay on it ahead of their first game because they are
+// expected up soon; either one drops off if he is traded (currentTeam is the NHL API's current team).
+const LIST_KEEP = new Set([8482762 /* Simon Edvinsson */, 8480879 /* Jacob Bernard-Docker */]);
+export const onPlayersList = (P) => hasNhlPage(P) && ((P.detGames ?? 0) > 0 || (LIST_KEEP.has(P.playerId) && P.currentTeam === 'DET'));
 export const canonicalPath = (P) => (nhlPageIsCanonical(P) ? `/players/${P.slug}/` : `/prospects/${P.slug}/`);

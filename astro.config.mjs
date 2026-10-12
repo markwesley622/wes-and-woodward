@@ -4,11 +4,13 @@ import fs from 'node:fs';
 
 // The sitemap lists canonical URLs only. A prospect with both an NHL page and a prospect page points one at the
 // other (src/lib/pages.js), so read each built page's canonical link (the sitemap is written after the pages)
-// and leave out any page whose canonical is somewhere else.
+// and leave out any page whose canonical is somewhere else, and any page marked noindex (a player's past seasons,
+// which only exist for the season dropdown to fetch).
 const dist = new URL('./dist/', import.meta.url);
 const selfCanonical = (page) => {
   try {
     const html = fs.readFileSync(new URL(`.${new URL(page).pathname}index.html`, dist), 'utf8');
+    if (/<meta name="robots" content="[^"]*noindex/.test(html)) return false;
     const m = html.match(/<link rel="canonical" href="([^"]+)"/);
     return !m || m[1] === page;
   } catch { return true; }

@@ -75,8 +75,14 @@ def f(v):
     except (TypeError, ValueError): return 0.0
 
 
+_CSV = {}
+
+
 def read_csv(path):
-    with path.open() as fh: return list(csv.DictReader(fh))
+    """Read once per run: the league files are re-read for every player otherwise."""
+    if path not in _CSV:
+        with path.open() as fh: _CSV[path] = list(csv.DictReader(fh))
+    return _CSV[path]
 
 
 # W&W game score: the average of MoneyPuck's and HockeyStatCards' versions of Luszczyszyn's game score.
@@ -89,8 +95,8 @@ def blend(mp, hsc):
     return None if mp is None or hsc is None else round((mp + hsc) / 2, 2)
 
 
-def mp_games(pid):
-    """MoneyPuck game-by-game game score this season (the career file, situation 'all')."""
+def mp_games(pid, mp_season=None):
+    """MoneyPuck game-by-game game score for one season (the career file, situation 'all'); default this season."""
     req = urllib.request.Request(f"https://moneypuck.com/moneypuck/playerData/careers/gameByGame/regular/skaters/{pid}.csv",
                                  headers={"User-Agent": "Mozilla/5.0 wings-data-pipeline/0.1"})
     try: text = urllib.request.urlopen(req, context=CTX, timeout=60).read().decode("utf-8")
@@ -98,7 +104,7 @@ def mp_games(pid):
         if e.code == 404: return []
         raise
     return [{"gameId": int(r["gameId"]), "date": r["gameDate"], "gameScore": float(r["gameScore"])}
-            for r in csv.DictReader(io.StringIO(text)) if r["season"] == CFG["mp_season"] and r["situation"] == "all"]
+            for r in csv.DictReader(io.StringIO(text)) if r["season"] == (mp_season or CFG["mp_season"]) and r["situation"] == "all"]
 
 
 def norm(name):
@@ -284,23 +290,28 @@ def write_player(pid, out):
     if not publish: print(f"  archived (no art, no games): {out['name']}")
 
 
+def det_games(nhl_log):
+    """Regular-season NHL games he played for Detroit in this game log (the Players list rule, src/lib/pages.js)."""
+    return sum(1 for g in nhl_log if g.get("teamAbbrev") == "DET")
+
+
 def build_no_nhl(pid, raw, land, name, nhl_log=None):
     """A roster player with no NHL season on record last year: bio + the line he did play."""
     fs = season_line(land)
     lines = [{"league": t.get("leagueAbbrev"), "team": t.get("teamName", {}).get("default"), "gp": t.get("gamesPlayed"), "goals": t.get("goals"), "assists": t.get("assists"),
               "points": t.get("points"), "plusMinus": t.get("plusMinus"), "pim": t.get("pim")} for t in land.get("seasonTotals", []) if t.get("season") == int(SEASON) and t.get("gameTypeId") == 2]
-    lines = [{"league": t.get("leagueAbbrev"), "team": t.get("teamName", {}).get("default"), "gp": t.get("gamesPlayed"), "goals": t.get("goals"), "assists": t.get("assists"),
-              "points": t.get("points"), "plusMinus": t.get("plusMinus"), "pim": t.get("pim")} for t in land.get("seasonTotals", []) if t.get("season") == int(SEASON) and t.get("gameTypeId") == 2]
     out = {"playerId": pid, "name": name, "slug": slug_of(name), "season": SEASON, "seasonLabel": f"{SEASON[:4]}-{SEASON[6:]}", "kind": "S",
            "bio": bio_block(land, pid), "seasonLine": fs, "seasonLines": lines, "score": None, "gameLog": [], "gameScore": None, "teamGameScore": None, "impact": [], "career": [], "comps": [],
-           "myComponents": None, "moneypuck": {}, "hsc": {}, "note": f"No NHL games in {SEASON[:4]}-{SEASON[6:]}; the line shown is his {fs.get('league') or 'most recent'} season."}
+           "myComponents": None, "moneypuck": {}, "hsc": {}, "note": f"No NHL games in {SEASON[:4]}-{SEASON[6:]}; the line shown is his {fs.get('league') or 'most recent'} season.",
+           "detGames": det_games(nhl_log or []), "currentTeam": land.get("currentTeamAbbrev")}
     write_player(pid, out); print(f"site/players/{pid}.json written: {name} (no NHL season; {fs.get('league')} {fs.get('gp')} GP)")
 
 
-def build_goalie(pid, raw, land, nhl_log, name):
-    """Goalie page: value = QBR-style rating of goals saved above expected (MoneyPuck, all situations)
-    among NHL goalies with 600+ minutes; game log from the NHL API."""
-    mp = read_csv(ROOT / "data" / "raw" / "moneypuck" / "goalies.csv")
+def goalie_season(pid, nhl_log, mp_rows, site_rows=None):
+    """One season of a goalie page: value = QBR-style rating of goals saved above expected (MoneyPuck,
+    all situations) among NHL goalies with 600+ minutes; game log from the NHL API. mp_rows = that
+    season's MoneyPuck goalies file; site_rows = data/site/goalies.json (current season only)."""
+    mp = mp_rows
     pool_rows = [r for r in mp if r["situation"] == "all" and f(r["icetime"]) >= 600 * 60]
     gsax = {r["name"]: f(r["xGoals"]) - f(r["goals"]) for r in pool_rows}
     mine = next((r for r in mp if r["situation"] == "all" and str(r.get("playerId")) == str(pid)), None)
@@ -322,48 +333,26 @@ def build_goalie(pid, raw, land, nhl_log, name):
         games.append({"gameId": g["gameId"], "date": g["gameDate"], "opponent": g["opponentAbbrev"], "home": g["homeRoadFlag"] == "H", "started": g.get("gamesStarted"),
                       "decision": g.get("decision"), "shotsAgainst": g.get("shotsAgainst"), "goalsAgainst": g.get("goalsAgainst"), "savePct": g.get("savePctg"),
                       "shutout": g.get("shutouts"), "toi": round(int(m) + int(s_) / 60, 1)})
-    sk = next((p for p in json.load((ROOT / "data" / "site" / "goalies.json").open()) if p["playerId"] == pid), {})
+    sk = next((p for p in site_rows if p["playerId"] == pid), {}) if site_rows is not None else {}
+    return score, games, sk
+
+
+def build_goalie(pid, raw, land, nhl_log, name):
+    score, games, sk = goalie_season(pid, nhl_log, read_csv(ROOT / "data" / "raw" / "moneypuck" / "goalies.csv"), json.load((ROOT / "data" / "site" / "goalies.json").open()))
     out = {"playerId": pid, "name": name, "slug": slug_of(name), "season": SEASON, "seasonLabel": f"{SEASON[:4]}-{SEASON[6:]}", "kind": "G",
            "standIn": stand_in_goalie(pid) if score is None else None,
            "bio": bio_block(land, pid), "seasonLine": season_line(land), "score": score, "moneypuck": sk, "gameLog": games, "gameScore": None, "teamGameScore": None,
            "impact": [], "career": [], "comps": [], "myComponents": None, "hsc": {},
-           "note": None if games else f"No NHL games in {SEASON[:4]}-{SEASON[6:]}."}
+           "note": None if games else f"No NHL games in {SEASON[:4]}-{SEASON[6:]}.",
+           "detGames": det_games(nhl_log), "currentTeam": land.get("currentTeamAbbrev")}
     write_player(pid, out); print(f"site/players/{pid}.json written: {name} (goalie) value {score['value'] if score else None} gsax {score['gsax'] if score else None} · {len(games)} games")
 
 
-def build(pid, fetch=False):
-    raw = ROOT / "data" / "raw" / "players" / str(pid); raw.mkdir(parents=True, exist_ok=True)
-    if fetch or not (raw / "landing.json").exists():
-        (raw / "landing.json").write_text(json.dumps(get(f"https://api-web.nhle.com/v1/player/{pid}/landing"), indent=1))
-    if fetch or not (raw / "gamelog_nhl.json").exists():   # build_prospects.id_map() caches landing.json alone
-        (raw / "gamelog_nhl.json").write_text(json.dumps(get(f"https://api-web.nhle.com/v1/player/{pid}/game-log/{SEASON}/2"), indent=1))
-    sys.path.insert(0, str(ROOT / "research" / "sandin-pellikka" / "raw" / "hsc")); import fetch_hsc as h
-    _land = json.load((raw / "landing.json").open()); _log = json.load((raw / "gamelog_nhl.json").open()).get("gameLog", [])
-    if _land.get("position") != "G" and _log:
-        if fetch or not (raw / "hsc_logs.json").exists():
-            (raw / "hsc_logs.json").write_text(json.dumps(h.logs(pid, season=SEASON, gtype=2), indent=1)); time.sleep(4)
-        if fetch or not (raw / "hsc_card.json").exists():
-            try: (raw / "hsc_card.json").write_text(json.dumps(h.card(pid), indent=1))
-            except Exception as e: print("  hsc card failed:", e)
-            time.sleep(4)
-        if fetch or not (raw / "mp_games.json").exists():
-            (raw / "mp_games.json").write_text(json.dumps(mp_games(pid), indent=1))
-    land = json.load((raw / "landing.json").open())
-    nhl_log = json.load((raw / "gamelog_nhl.json").open()).get("gameLog", [])
-    name = f"{land['firstName']['default']} {land['lastName']['default']}"
-    pos = land["position"]; group = "D" if pos == "D" else "F"; kind = "G" if pos == "G" else "S"
-    has_nhl = len(nhl_log) > 0
-    if kind == "G":
-        return build_goalie(pid, raw, land, nhl_log, name)
-    if not has_nhl:
-        return build_no_nhl(pid, raw, land, name)
-    hsc_log = json.load((raw / "hsc_logs.json").open()) if (raw / "hsc_logs.json").exists() else []
-    hsc_card = json.load((raw / "hsc_card.json").open()) if (raw / "hsc_card.json").exists() else {}
-    mp_log = json.load((raw / "mp_games.json").open()) if (raw / "mp_games.json").exists() else []
-
-    # ---- Evolving-Hockey pools (same season, same position group, 20+ GP)
+def skater_value(name, group, ehs):
+    """W-Value, isolated-impact map and player comps for one Evolving-Hockey season (ehs = '25-26').
+    Pools are that season's skaters with 20+ GP; when a midseason move split him, his Detroit row counts."""
     def eh_rows(fn):
-        return [r for r in csv.DictReader((EH / fn).open()) if r["Season"] == EH_SEASON]
+        return [r for r in csv.DictReader((EH / fn).open()) if r["Season"] == ehs]
     xg_rows, g_rows = eh_rows("xgar_all_seasons.csv"), eh_rows("gar_all_seasons.csv")
     rapm = {r["Player"]: r for r in eh_rows("rapm_ev_rates_all_seasons.csv")}
     # positionless: every NHL skater with 20+ GP is in the same pool (Mark, 9/23)
@@ -382,8 +371,6 @@ def build(pid, fetch=False):
     xs_pool = [sum(f(r[c]) for c in XK.values()) for r in xg_rows if grp(r)]
     g_pool = [sum(f(r[c]) for c in GK.values()) for r in g_rows if grp(r)]
     me_x = eh_row(xg_rows, name, "DET"); has_eh = me_x is not None
-    # no Evolving-Hockey row yet (early season, or EH hasn't published): keep the page, skip the W-Value
-    if not has_eh and not nhl_log: return build_no_nhl(pid, raw, land, name, nhl_log)
     me_g = g_for(me_x) if has_eh else None
     if has_eh and me_g is None: me_g = me_x
     score = None
@@ -421,20 +408,6 @@ def build(pid, fetch=False):
         rm = eh_row(rapm_rows, name, "DET")
         if rm: impact.append({"name": rm["Player"], "team": rm["Team"], "pos": rm["Position"], "off": f(rm["xGF/60"]), "def": -f(rm["xGA/60"]), "toi": round(f(rm["TOI"])), "det": True, "me": True})
 
-    # ---- career arc: this player's value by season, blended per component
-    def season_rows(fn):
-        out = {}
-        for r in csv.DictReader((EH / fn).open()):
-            if norm(r["Player"]) == norm(name) and (r["Season"] not in out or r["Team"] == "DET"): out[r["Season"]] = r
-        return out
-    cx, cg = season_rows("xgar_all_seasons.csv"), season_rows("gar_all_seasons.csv")
-    career = []
-    for sn in sorted(cx):
-        rx, rg = cx[sn], cg.get(sn)
-        comps = {c: round(BLEND["sustainable"] * f(rx[XK[c]]) + BLEND["results"] * f(rg[GK[c]]) if rg else f(rx[XK[c]]), 1) for c in XK}
-        career.append({"season": sn, "gp": int(rx["GP"]), "toi": round(f(rx["TOI_All"])), "components": comps,
-                       "total": round(sum(comps.values()), 1), "xGAR": f(rx["xGAR"]), "GAR": f(rg["GAR"]) if rg else None})
-
     # ---- player comps: nearest three same-position skaters on the standardized component profile
     def profile(rx):
         rg = g_for(rx)
@@ -455,11 +428,32 @@ def build(pid, fetch=False):
                           "value": qbr(x_pool, sum(v)), "goals": round(sum(v), 1),
                           "components": {c: round(v[i], 1) for i, c in enumerate(XK)}})
         my_components = {c: round(mine[i], 1) for i, c in enumerate(XK)}
+    return score, impact, comps, my_components
 
-    # ---- MoneyPuck (from the site's skaters.json, already percentiled); non-Red-Wings computed from the league file
-    sk = next((p for p in json.load((ROOT / "data" / "site" / "skaters.json").open()) if p["playerId"] == pid), {})
+
+def career_arc(name):
+    """This player's value by season, blended per component (every Evolving-Hockey season on file; his DET row when split)."""
+    def season_rows(fn):
+        out = {}
+        for r in csv.DictReader((EH / fn).open()):
+            if norm(r["Player"]) == norm(name) and (r["Season"] not in out or r["Team"] == "DET"): out[r["Season"]] = r
+        return out
+    cx, cg = season_rows("xgar_all_seasons.csv"), season_rows("gar_all_seasons.csv")
+    career = []
+    for sn in sorted(cx):
+        rx, rg = cx[sn], cg.get(sn)
+        comps = {c: round(BLEND["sustainable"] * f(rx[XK[c]]) + BLEND["results"] * f(rg[GK[c]]) if rg else f(rx[XK[c]]), 1) for c in XK}
+        career.append({"season": sn, "gp": int(rx["GP"]), "toi": round(f(rx["TOI_All"])), "components": comps,
+                       "total": round(sum(comps.values()), 1), "xGAR": f(rx["xGAR"]), "GAR": f(rg["GAR"]) if rg else None})
+    return career
+
+
+def mp_skater(pid, name, group, mp_rows, site_rows=None):
+    """MoneyPuck tiles. site_rows = data/site/skaters.json (current Red Wings, already percentiled); anyone
+    else, and every past season, is computed from that season's league file (mp_rows)."""
+    sk = next((p for p in site_rows if p["playerId"] == pid), {}) if site_rows is not None else {}
     if not sk:
-        mp = read_csv(ROOT / "data" / "raw" / "moneypuck" / "skaters.csv")
+        mp = mp_rows
         rows_all = [r for r in mp if r["situation"] == "all" and str(r["playerId"]) == str(pid)]
         rows_5 = [r for r in mp if r["situation"] == "5on5" and str(r["playerId"]) == str(pid)]
         if rows_all:
@@ -470,8 +464,11 @@ def build(pid, fetch=False):
             pool = [f(r["onIce_xGoalsPercentage"]) for r in mp if r["situation"] == "5on5" and f(r["icetime"]) >= 300 * 60 and (("D" if r["position"] == "D" else "F") == group)]
             sk["fiveOnFive"] = {"icetimeMinutes": round(ice5 / 60, 1), "onIceXgPct": xg_pct, "onIceCorsiPct": f(r5["onIce_corsiPercentage"]), "ixgPer60": round(f(r5["I_F_xGoals"]) / ice5 * 3600, 3) if ice5 else 0,
                                 "pctl_onIceXgPct": percentile(pool, xg_pct), "qualifiesForPercentiles": ice5 >= 300 * 60}
+    return sk
 
-    # ---- game log: NHL box score joined to HockeyStatCards by date (HSC dates are MM-DD) and MoneyPuck by game id
+
+def skater_games(nhl_log, hsc_log, mp_log):
+    """Game log: NHL box score joined to HockeyStatCards by date (HSC dates are MM-DD) and MoneyPuck by game id."""
     hsc_by_date = {}
     for g in hsc_log:
         mmdd = g["Date"]; hsc_by_date[mmdd] = g
@@ -490,26 +487,71 @@ def build(pid, fetch=False):
             "gameScore": blend(mp_by_id.get(g["gameId"]), hsc_gs),
             "gameScoreParts": {"moneypuck": mp_by_id.get(g["gameId"]), "hockeystatcards": hsc_gs},
         })
-    # team context for the game-score tiles (data/site/team_gamescores.json, 20+ GP skaters)
-    tg_path = ROOT / "data" / "site" / "team_gamescores.json"
-    team_gs = None
-    if tg_path.exists():
-        tp = json.load(tg_path.open())["players"]
-        by_date = {g["date"][5:]: g for g in games}
-        def game_ref(mmdd):
-            g = by_date.get(mmdd); return {"date": g["date"], "gameId": g["gameId"], "opponent": g["opponent"], "home": g["home"]} if g else {"date": mmdd}
-        ordered = sorted(tp, key=lambda r: -r["average"])
-        best = max(tp, key=lambda r: r["best"]["value"]); worst = min(tp, key=lambda r: r["worst"]["value"])
-        most2 = sorted(tp, key=lambda r: -r["above2"])
-        team_gs = {"players": len(tp), "minGames": json.load(tg_path.open())["minGames"],
-                   "avgRank": (1 + [r["playerId"] for r in ordered].index(pid)) if any(r["playerId"] == pid for r in ordered) else None,
-                   "best": {"name": best["name"], "playerId": best["playerId"], "value": best["best"]["value"], **game_ref(best["best"]["date"])},
-                   "worst": {"name": worst["name"], "playerId": worst["playerId"], "value": worst["worst"]["value"], **game_ref(worst["worst"]["date"])},
-                   "most2": {"name": most2[0]["name"], "playerId": most2[0]["playerId"], "above2": most2[0]["above2"], "below0": most2[0]["below0"]},
-                   "next2": {"name": most2[1]["name"], "above2": most2[1]["above2"]} if len(most2) > 1 else None}
+    return games
+
+
+def team_context(games, pid, tg_path):
+    """Team context for the game-score tiles (a team_gamescores file: that season's 20+ GP Red Wings)."""
+    if not tg_path.exists(): return None
+    tp = json.load(tg_path.open())["players"]
+    by_date = {g["date"][5:]: g for g in games}
+    def game_ref(mmdd):
+        g = by_date.get(mmdd); return {"date": g["date"], "gameId": g["gameId"], "opponent": g["opponent"], "home": g["home"]} if g else {"date": mmdd}
+    ordered = sorted(tp, key=lambda r: -r["average"])
+    best = max(tp, key=lambda r: r["best"]["value"]); worst = min(tp, key=lambda r: r["worst"]["value"])
+    most2 = sorted(tp, key=lambda r: -r["above2"])
+    return {"players": len(tp), "minGames": json.load(tg_path.open())["minGames"],
+            "avgRank": (1 + [r["playerId"] for r in ordered].index(pid)) if any(r["playerId"] == pid for r in ordered) else None,
+            "best": {"name": best["name"], "playerId": best["playerId"], "value": best["best"]["value"], **game_ref(best["best"]["date"])},
+            "worst": {"name": worst["name"], "playerId": worst["playerId"], "value": worst["worst"]["value"], **game_ref(worst["worst"]["date"])},
+            "most2": {"name": most2[0]["name"], "playerId": most2[0]["playerId"], "above2": most2[0]["above2"], "below0": most2[0]["below0"]},
+            "next2": {"name": most2[1]["name"], "above2": most2[1]["above2"]} if len(most2) > 1 else None}
+
+
+def game_score_summary(games):
     gs = [g["gameScore"] for g in games if g["gameScore"] is not None]
     scored = [g for g in games if g["gameScore"] is not None] or games
     best = max(scored, key=lambda g: g["gameScore"] if g["gameScore"] is not None else -99); worst = min(scored, key=lambda g: g["gameScore"] if g["gameScore"] is not None else 99)
+    return {"average": round(sum(gs) / max(1, len(gs)), 2), "games": len(gs), "best": {"date": best["date"], "opponent": best["opponent"], "value": best["gameScore"] or 0},
+            "worst": {"date": worst["date"], "opponent": worst["opponent"], "value": worst["gameScore"] or 0}, "above2": sum(1 for v in gs if v >= 2), "below0": sum(1 for v in gs if v < 0)}
+
+
+def build(pid, fetch=False):
+    raw = ROOT / "data" / "raw" / "players" / str(pid); raw.mkdir(parents=True, exist_ok=True)
+    if fetch or not (raw / "landing.json").exists():
+        (raw / "landing.json").write_text(json.dumps(get(f"https://api-web.nhle.com/v1/player/{pid}/landing"), indent=1))
+    if fetch or not (raw / "gamelog_nhl.json").exists():   # build_prospects.id_map() caches landing.json alone
+        (raw / "gamelog_nhl.json").write_text(json.dumps(get(f"https://api-web.nhle.com/v1/player/{pid}/game-log/{SEASON}/2"), indent=1))
+    sys.path.insert(0, str(ROOT / "research" / "sandin-pellikka" / "raw" / "hsc")); import fetch_hsc as h
+    _land = json.load((raw / "landing.json").open()); _log = json.load((raw / "gamelog_nhl.json").open()).get("gameLog", [])
+    if _land.get("position") != "G" and _log:
+        if fetch or not (raw / "hsc_logs.json").exists():
+            (raw / "hsc_logs.json").write_text(json.dumps(h.logs(pid, season=SEASON, gtype=2), indent=1)); time.sleep(4)
+        if fetch or not (raw / "hsc_card.json").exists():
+            try: (raw / "hsc_card.json").write_text(json.dumps(h.card(pid), indent=1))
+            except Exception as e: print("  hsc card failed:", e)
+            time.sleep(4)
+        if fetch or not (raw / "mp_games.json").exists():
+            (raw / "mp_games.json").write_text(json.dumps(mp_games(pid), indent=1))
+    land = json.load((raw / "landing.json").open())
+    nhl_log = json.load((raw / "gamelog_nhl.json").open()).get("gameLog", [])
+    name = f"{land['firstName']['default']} {land['lastName']['default']}"
+    pos = land["position"]; group = "D" if pos == "D" else "F"; kind = "G" if pos == "G" else "S"
+    has_nhl = len(nhl_log) > 0
+    if kind == "G":
+        return build_goalie(pid, raw, land, nhl_log, name)
+    if not has_nhl:
+        return build_no_nhl(pid, raw, land, name)
+    hsc_log = json.load((raw / "hsc_logs.json").open()) if (raw / "hsc_logs.json").exists() else []
+    hsc_card = json.load((raw / "hsc_card.json").open()) if (raw / "hsc_card.json").exists() else {}
+    mp_log = json.load((raw / "mp_games.json").open()) if (raw / "mp_games.json").exists() else []
+
+    score, impact, comps, my_components = skater_value(name, group, EH_SEASON)
+    career = career_arc(name)
+    sk = mp_skater(pid, name, group, read_csv(ROOT / "data" / "raw" / "moneypuck" / "skaters.csv"), json.load((ROOT / "data" / "site" / "skaters.json").open()))
+    games = skater_games(nhl_log, hsc_log, mp_log)
+    team_gs = team_context(games, pid, ROOT / "data" / "site" / "team_gamescores.json")
+    gs = [g["gameScore"] for g in games if g["gameScore"] is not None]
     fs = season_line(land)
     lines = [{"league": t.get("leagueAbbrev"), "team": t.get("teamName", {}).get("default"), "gp": t.get("gamesPlayed"), "goals": t.get("goals"), "assists": t.get("assists"),
               "points": t.get("points"), "plusMinus": t.get("plusMinus"), "pim": t.get("pim")} for t in land.get("seasonTotals", []) if t.get("season") == int(SEASON) and t.get("gameTypeId") == 2]
@@ -521,8 +563,8 @@ def build(pid, fetch=False):
         "impact": impact, "career": career, "comps": comps, "myComponents": my_components,
         "gameLog": games,
         "teamGameScore": team_gs,
-        "gameScore": {"average": round(sum(gs) / max(1, len(gs)), 2), "games": len(gs), "best": {"date": best["date"], "opponent": best["opponent"], "value": best["gameScore"] or 0},
-                      "worst": {"date": worst["date"], "opponent": worst["opponent"], "value": worst["gameScore"] or 0}, "above2": sum(1 for v in gs if v >= 2), "below0": sum(1 for v in gs if v < 0)},
+        "gameScore": game_score_summary(games),
+        "detGames": det_games(nhl_log), "currentTeam": land.get("currentTeamAbbrev"),
     }
     write_player(pid, out)
     print(f"site/players/{pid}.json written: {name} " + (f"value {score['value']} rank {score['rank']}/{score['pool']}" if score else f"no EH row yet · {len(games)} NHL games"))

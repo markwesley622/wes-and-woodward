@@ -62,6 +62,22 @@ GitHub account: markwesley622.
 3. Evergreen interactives — trade trees (~/Documents/debrincat-trade-tree) and NHL
    redraft port in as launch content.
 
+## Player pages: season dropdown and the Players list (decided 2026-10-12)
+
+- Every NHL player page has a Season dropdown: the current season plus each earlier regular season he
+  played for Detroit. Picking one swaps the season parts of the page in place; the URL never changes.
+  The past seasons render at `/players/<slug>/<2024-25>/` only so the dropdown can fetch them: noindex,
+  unlinked, out of the sitemap. Template: `src/components/PlayerPage.astro` (both routes use it).
+- Builder: `pipeline/build_player_seasons.py` (nightly, after `build_player.py`) ->
+  `data/site/players/seasons/<id>/<season>.json` + `data/site/team_gamescores_<season>.json`. Past
+  seasons never change, so raw pulls are cached in `data/raw/players/<id>/seasons/` and fetched once.
+- Game logs: the three most recent seasons, never before 2025-26 (the first season HockeyStatCards has;
+  the W&W game score needs it, and a MoneyPuck-only log was ruled out). Split seasons show Detroit games
+  only; MoneyPuck's xG tiles stay full-season and the page says so.
+- The Players list shows only players with an NHL game for Detroit this season, plus Edvinsson and
+  Bernard-Docker until they play or are traded (`onPlayersList` in `src/lib/pages.js`). Everyone else
+  keeps his page; he is just not listed.
+
 ## Prospect system (decided 2026-10-06)
 
 Pages: `/prospects/` (ranked pipeline) and a "Where he projects" block on every prospect page.

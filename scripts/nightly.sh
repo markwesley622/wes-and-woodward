@@ -20,6 +20,8 @@ trap 'rc=$?; (( rc )) && osascript -e "display notification \"exit $rc, see $LOG
   ./refresh.sh
   python3 pipeline/fetch_eh.py || echo "EH pull failed, continuing with the files on disk"
   python3 pipeline/build_player.py --roster --fetch
+  # past Detroit seasons for the player-page season dropdown; cached pulls, so this is a rebuild unless a player is new
+  python3 pipeline/build_player_seasons.py || echo "season build failed, keeping the files on disk"
   # prospect system: re-applies the status rule and roster-status template swap on the cached EliteProspects
   # pull (data/raw/ep, refreshed by hand from Mark's Chrome via pipeline/ep_refresh.py; it is not in git)
   python3 pipeline/build_prospects.py || echo "prospect build failed, keeping the files on disk"
