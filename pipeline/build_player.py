@@ -348,9 +348,15 @@ def build_goalie(pid, raw, land, nhl_log, name):
     write_player(pid, out); print(f"site/players/{pid}.json written: {name} (goalie) value {score['value'] if score else None} gsax {score['gsax'] if score else None} · {len(games)} games")
 
 
-def skater_value(name, group, ehs):
+# player comps match on true position (Mark, 10/12): centers with centers, wingers (either side) with wingers,
+# defensemen with defensemen. Evolving-Hockey lists a few players at two positions ("C/R"); they count for both.
+COMP_CLASS = {"C": "C", "L": "W", "R": "W", "D": "D"}
+
+
+def skater_value(name, group, ehs, pos):
     """W-Value, isolated-impact map and player comps for one Evolving-Hockey season (ehs = '25-26').
-    Pools are that season's skaters with 20+ GP; when a midseason move split him, his Detroit row counts."""
+    Pools are that season's skaters with 20+ GP; when a midseason move split him, his Detroit row counts.
+    pos = his NHL position (C/L/R/D), which picks the comps pool."""
     def eh_rows(fn):
         return [r for r in csv.DictReader((EH / fn).open()) if r["Season"] == ehs]
     xg_rows, g_rows = eh_rows("xgar_all_seasons.csv"), eh_rows("gar_all_seasons.csv")
@@ -408,11 +414,12 @@ def skater_value(name, group, ehs):
         rm = eh_row(rapm_rows, name, "DET")
         if rm: impact.append({"name": rm["Player"], "team": rm["Team"], "pos": rm["Position"], "off": f(rm["xGF/60"]), "def": -f(rm["xGA/60"]), "toi": round(f(rm["TOI"])), "det": True, "me": True})
 
-    # ---- player comps: nearest three same-position skaters on the standardized component profile
+    # ---- player comps: nearest three skaters at his position on the standardized component profile
     def profile(rx):
         rg = g_for(rx)
         return [BLEND["sustainable"] * f(rx[XK[c]]) + BLEND["results"] * f(rg[GK[c]]) if rg else f(rx[XK[c]]) for c in XK]
-    pool_rows = [r for r in xg_rows if grp(r) and (("D" if r["Position"] == "D" else "F") == group)]
+    cls = COMP_CLASS.get(pos, "D" if group == "D" else "W")
+    pool_rows = [r for r in xg_rows if grp(r) and cls in {COMP_CLASS.get(p) for p in r["Position"].split("/")}]
     profs = {r["Player"]: profile(r) for r in pool_rows}
     comps = []; my_components = None
     if has_eh and profs:
@@ -546,7 +553,7 @@ def build(pid, fetch=False):
     hsc_card = json.load((raw / "hsc_card.json").open()) if (raw / "hsc_card.json").exists() else {}
     mp_log = json.load((raw / "mp_games.json").open()) if (raw / "mp_games.json").exists() else []
 
-    score, impact, comps, my_components = skater_value(name, group, EH_SEASON)
+    score, impact, comps, my_components = skater_value(name, group, EH_SEASON, pos)
     career = career_arc(name)
     sk = mp_skater(pid, name, group, read_csv(ROOT / "data" / "raw" / "moneypuck" / "skaters.csv"), json.load((ROOT / "data" / "site" / "skaters.json").open()))
     games = skater_games(nhl_log, hsc_log, mp_log)

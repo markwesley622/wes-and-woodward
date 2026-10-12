@@ -245,7 +245,7 @@ const RECENT = 10;
   <section class="sec" id="comps">
     <div class="shell">
       <h2>Player comps</h2>
-      <p class="lede">The three {SC.position === 'D' ? 'defensemen' : 'forwards'} whose value profile {thisSeason} sits closest to his, component for component. A comp is a shape match, not a value match, so the score is shown beside each.</p>
+      <p class="lede">The three {({ C: 'centers', L: 'wingers', R: 'wingers', D: 'defensemen' })[B.position] ?? 'skaters'} whose value profile {thisSeason} sits closest to his, component for component. A comp is a shape match, not a value match, so the score is shown beside each.</p>
       <div class="row3">
         {CO.map((c) => (
           <div class="card comp">

@@ -7252,43 +7252,11 @@
  ],
  "comps": [
   {
-   "name": "Claude Giroux",
-   "team": "OTT",
-   "pos": "R",
-   "gp": 82,
-   "distance": 1.6,
-   "value": 76.0,
-   "goals": 11.9,
-   "components": {
-    "EVO": 7.5,
-    "EVD": -0.1,
-    "PPO": 2.8,
-    "SHD": -1.1,
-    "Pens": 2.9
-   }
-  },
-  {
-   "name": "William Nylander",
-   "team": "TOR",
-   "pos": "R",
-   "gp": 82,
-   "distance": 1.8,
-   "value": 72.3,
-   "goals": 10.6,
-   "components": {
-    "EVO": 8.6,
-    "EVD": -3.8,
-    "PPO": 4.8,
-    "SHD": -0.8,
-    "Pens": 1.8
-   }
-  },
-  {
    "name": "Anze Kopitar",
    "team": "L.A",
    "pos": "C",
    "gp": 81,
-   "distance": 1.96,
+   "distance": 1.9,
    "value": 76.4,
    "goals": 12.1,
    "components": {
@@ -7297,6 +7265,38 @@
     "PPO": 3.6,
     "SHD": -2.0,
     "Pens": 1.6
+   }
+  },
+  {
+   "name": "Kyle Palmieri",
+   "team": "NYI",
+   "pos": "C",
+   "gp": 82,
+   "distance": 2.1,
+   "value": 70.0,
+   "goals": 9.8,
+   "components": {
+    "EVO": 7.8,
+    "EVD": -1.6,
+    "PPO": 2.7,
+    "SHD": -0.6,
+    "Pens": 1.6
+   }
+  },
+  {
+   "name": "Joel Eriksson Ek",
+   "team": "MIN",
+   "pos": "C",
+   "gp": 77,
+   "distance": 2.2,
+   "value": 76.2,
+   "goals": 12.0,
+   "components": {
+    "EVO": 6.5,
+    "EVD": 2.0,
+    "PPO": 5.4,
+    "SHD": -3.5,
+    "Pens": 1.5
    }
   }
  ],

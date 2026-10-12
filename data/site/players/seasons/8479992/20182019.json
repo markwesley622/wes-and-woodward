@@ -7342,27 +7342,11 @@
  ],
  "comps": [
   {
-   "name": "Miikka Salomaki",
-   "team": "NSH",
-   "pos": "R",
-   "gp": 37,
-   "distance": 0.25,
-   "value": 35.1,
-   "goals": 0.0,
-   "components": {
-    "EVO": -1.9,
-    "EVD": 2.2,
-    "PPO": 0.0,
-    "SHD": 0.0,
-    "Pens": -0.3
-   }
-  },
-  {
    "name": "Patrik Berglund",
    "team": "BUF",
    "pos": "C",
    "gp": 23,
-   "distance": 0.3,
+   "distance": 0.29,
    "value": 36.0,
    "goals": 0.3,
    "components": {
@@ -7374,19 +7358,35 @@
    }
   },
   {
-   "name": "Anders Bjork",
-   "team": "BOS",
-   "pos": "L",
-   "gp": 20,
-   "distance": 0.41,
-   "value": 34.1,
-   "goals": -0.3,
+   "name": "Ryan Spooner",
+   "team": "EDM",
+   "pos": "C",
+   "gp": 25,
+   "distance": 0.45,
+   "value": 31.7,
+   "goals": -0.9,
    "components": {
-    "EVO": -1.8,
-    "EVD": 1.2,
-    "PPO": 0.2,
+    "EVO": -1.4,
+    "EVD": 0.8,
+    "PPO": -0.2,
     "SHD": 0.0,
-    "Pens": 0.2
+    "Pens": -0.2
+   }
+  },
+  {
+   "name": "Dylan Sikura",
+   "team": "CHI",
+   "pos": "C",
+   "gp": 33,
+   "distance": 0.56,
+   "value": 42.8,
+   "goals": 2.0,
+   "components": {
+    "EVO": -1.0,
+    "EVD": 3.1,
+    "PPO": 0.0,
+    "SHD": 0.0,
+    "Pens": 0.0
    }
   }
  ],

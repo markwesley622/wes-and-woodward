@@ -7522,22 +7522,6 @@
  ],
  "comps": [
   {
-   "name": "Michael Eyssimont",
-   "team": "BOS",
-   "pos": "C",
-   "gp": 56,
-   "distance": 0.12,
-   "value": 37.7,
-   "goals": 0.6,
-   "components": {
-    "EVO": 0.2,
-    "EVD": 0.1,
-    "PPO": 0.2,
-    "SHD": 0.0,
-    "Pens": 0.1
-   }
-  },
-  {
    "name": "Isak Rosen",
    "team": "WPG",
    "pos": "R",
@@ -7554,19 +7538,35 @@
    }
   },
   {
-   "name": "Matt Rempe",
-   "team": "NYR",
-   "pos": "C",
-   "gp": 26,
-   "distance": 0.19,
-   "value": 37.7,
-   "goals": 0.6,
+   "name": "Cole Smith",
+   "team": "VGK",
+   "pos": "R",
+   "gp": 21,
+   "distance": 0.26,
+   "value": 35.4,
+   "goals": -0.0,
    "components": {
-    "EVO": 0.0,
-    "EVD": 0.5,
+    "EVO": -0.9,
+    "EVD": 0.7,
+    "PPO": 0.0,
+    "SHD": -0.0,
+    "Pens": 0.2
+   }
+  },
+  {
+   "name": "Jeff Malott",
+   "team": "L.A",
+   "pos": "L",
+   "gp": 58,
+   "distance": 0.33,
+   "value": 40.4,
+   "goals": 1.4,
+   "components": {
+    "EVO": 1.1,
+    "EVD": 0.4,
     "PPO": 0.0,
     "SHD": 0.0,
-    "Pens": 0.0
+    "Pens": -0.1
    }
   }
  ],

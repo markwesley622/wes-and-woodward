@@ -7382,43 +7382,11 @@
  ],
  "comps": [
   {
-   "name": "Frederick Gaudreau",
-   "team": "MIN",
-   "pos": "C",
-   "gp": 82,
-   "distance": 0.99,
-   "value": 38.2,
-   "goals": 0.9,
-   "components": {
-    "EVO": 0.4,
-    "EVD": 0.2,
-    "PPO": 1.9,
-    "SHD": -2.0,
-    "Pens": 0.4
-   }
-  },
-  {
-   "name": "Joel Eriksson Ek",
-   "team": "MIN",
-   "pos": "C",
-   "gp": 46,
-   "distance": 1.33,
-   "value": 64.9,
-   "goals": 7.9,
-   "components": {
-    "EVO": 3.4,
-    "EVD": 3.1,
-    "PPO": 2.1,
-    "SHD": -1.8,
-    "Pens": 1.0
-   }
-  },
-  {
    "name": "Nathan Walker",
    "team": "STL",
    "pos": "L",
    "gp": 73,
-   "distance": 1.36,
+   "distance": 1.48,
    "value": 33.9,
    "goals": -0.3,
    "components": {
@@ -7426,6 +7394,38 @@
     "EVD": 1.4,
     "PPO": -0.0,
     "SHD": -1.5,
+    "Pens": 0.4
+   }
+  },
+  {
+   "name": "Cole Koepke",
+   "team": "BOS",
+   "pos": "L",
+   "gp": 73,
+   "distance": 1.7,
+   "value": 49.3,
+   "goals": 3.8,
+   "components": {
+    "EVO": 1.4,
+    "EVD": 3.0,
+    "PPO": 0.0,
+    "SHD": -1.2,
+    "Pens": 0.6
+   }
+  },
+  {
+   "name": "Brandon Duhaime",
+   "team": "WSH",
+   "pos": "R",
+   "gp": 82,
+   "distance": 1.71,
+   "value": 35.8,
+   "goals": 0.2,
+   "components": {
+    "EVO": -0.9,
+    "EVD": 1.5,
+    "PPO": 0.0,
+    "SHD": -0.8,
     "Pens": 0.4
    }
   }

@@ -7522,43 +7522,11 @@
  ],
  "comps": [
   {
-   "name": "Noah Gregor",
-   "team": "FLA",
-   "pos": "L",
-   "gp": 37,
-   "distance": 0.16,
-   "value": 32.5,
-   "goals": -0.9,
-   "components": {
-    "EVO": -0.7,
-    "EVD": -0.3,
-    "PPO": 0.0,
-    "SHD": 0.0,
-    "Pens": 0.1
-   }
-  },
-  {
-   "name": "Isak Rosen",
-   "team": "WPG",
-   "pos": "R",
-   "gp": 21,
-   "distance": 0.17,
-   "value": 38.0,
-   "goals": 0.7,
-   "components": {
-    "EVO": 0.5,
-    "EVD": 0.1,
-    "PPO": -0.0,
-    "SHD": 0.0,
-    "Pens": 0.2
-   }
-  },
-  {
    "name": "Michael Eyssimont",
    "team": "BOS",
    "pos": "C",
    "gp": 56,
-   "distance": 0.2,
+   "distance": 0.19,
    "value": 37.7,
    "goals": 0.6,
    "components": {
@@ -7567,6 +7535,38 @@
     "PPO": 0.2,
     "SHD": 0.0,
     "Pens": 0.1
+   }
+  },
+  {
+   "name": "Zach Aston-Reese",
+   "team": "CBJ",
+   "pos": "C/L",
+   "gp": 27,
+   "distance": 0.24,
+   "value": 31.0,
+   "goals": -1.3,
+   "components": {
+    "EVO": -1.0,
+    "EVD": -0.3,
+    "PPO": 0.0,
+    "SHD": -0.1,
+    "Pens": 0.1
+   }
+  },
+  {
+   "name": "Alex Turcotte",
+   "team": "L.A",
+   "pos": "C",
+   "gp": 62,
+   "distance": 0.3,
+   "value": 36.5,
+   "goals": 0.3,
+   "components": {
+    "EVO": 0.5,
+    "EVD": 0.1,
+    "PPO": -0.3,
+    "SHD": 0.0,
+    "Pens": 0.0
    }
   }
  ],

@@ -131,7 +131,7 @@ def build_season(pid, land, season, team_path=None):
         score, games, sk = bp.goalie_season(pid, nhl, mp_league("goalies", year))
         out.update(score=score, gameLog=games, moneypuck=sk)
     else:
-        score, impact, comps, mine = bp.skater_value(name, group, ehs)
+        score, impact, comps, mine = bp.skater_value(name, group, ehs, pos)
         out.update(score=score, impact=impact, comps=comps, myComponents=mine, moneypuck=bp.mp_skater(pid, name, group, mp_league("skaters", year)))
         if has_log(season):
             games = bp.skater_games(*logs(pid, season))

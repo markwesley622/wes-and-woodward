@@ -7522,27 +7522,11 @@
  ],
  "comps": [
   {
-   "name": "Adam Edstrom",
-   "team": "NYR",
-   "pos": "C",
-   "gp": 35,
-   "distance": 0.28,
-   "value": 35.1,
-   "goals": -0.1,
-   "components": {
-    "EVO": 1.1,
-    "EVD": -1.5,
-    "PPO": 0.0,
-    "SHD": 0.0,
-    "Pens": 0.3
-   }
-  },
-  {
    "name": "Ryan Lomberg",
    "team": "CGY",
    "pos": "L",
    "gp": 57,
-   "distance": 0.3,
+   "distance": 0.31,
    "value": 28.4,
    "goals": -2.1,
    "components": {
@@ -7554,11 +7538,27 @@
    }
   },
   {
+   "name": "Reid Schaefer",
+   "team": "NSH",
+   "pos": "L",
+   "gp": 47,
+   "distance": 0.32,
+   "value": 27.5,
+   "goals": -2.4,
+   "components": {
+    "EVO": -0.6,
+    "EVD": -1.8,
+    "PPO": 0.0,
+    "SHD": 0.1,
+    "Pens": 0.0
+   }
+  },
+  {
    "name": "Taylor Ward",
    "team": "L.A",
    "pos": "R",
    "gp": 36,
-   "distance": 0.32,
+   "distance": 0.33,
    "value": 32.8,
    "goals": -0.8,
    "components": {

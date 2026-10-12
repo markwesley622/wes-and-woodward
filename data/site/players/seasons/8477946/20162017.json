@@ -6672,43 +6672,11 @@
  ],
  "comps": [
   {
-   "name": "Brock McGinn",
-   "team": "CAR",
-   "pos": "L",
-   "gp": 57,
-   "distance": 0.85,
-   "value": 38.2,
-   "goals": 1.2,
-   "components": {
-    "EVO": -0.2,
-    "EVD": -2.1,
-    "PPO": 0.0,
-    "SHD": 1.0,
-    "Pens": 2.5
-   }
-  },
-  {
-   "name": "Justin Abdelkader",
-   "team": "DET",
-   "pos": "L",
-   "gp": 64,
-   "distance": 1.12,
-   "value": 31.1,
-   "goals": -0.6,
-   "components": {
-    "EVO": -3.9,
-    "EVD": -2.7,
-    "PPO": 1.8,
-    "SHD": 1.4,
-    "Pens": 2.8
-   }
-  },
-  {
    "name": "Brandon Sutter",
    "team": "VAN",
    "pos": "C",
    "gp": 81,
-   "distance": 1.14,
+   "distance": 1.12,
    "value": 54.3,
    "goals": 4.9,
    "components": {
@@ -6717,6 +6685,38 @@
     "PPO": 0.3,
     "SHD": 1.4,
     "Pens": 2.2
+   }
+  },
+  {
+   "name": "Denis Malgin",
+   "team": "FLA",
+   "pos": "C",
+   "gp": 47,
+   "distance": 1.28,
+   "value": 47.2,
+   "goals": 3.3,
+   "components": {
+    "EVO": 0.2,
+    "EVD": -0.0,
+    "PPO": 0.9,
+    "SHD": 0.0,
+    "Pens": 2.2
+   }
+  },
+  {
+   "name": "Tobias Rieder",
+   "team": "ARI",
+   "pos": "C",
+   "gp": 80,
+   "distance": 1.32,
+   "value": 41.6,
+   "goals": 2.0,
+   "components": {
+    "EVO": 1.9,
+    "EVD": -4.1,
+    "PPO": 0.6,
+    "SHD": 1.3,
+    "Pens": 2.3
    }
   }
  ],
