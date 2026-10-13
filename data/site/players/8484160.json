@@ -83,82 +83,82 @@
  "hsc": {
   "Game score": {
    "value": 0.08,
-   "percentile": 35
+   "percentile": 34
   },
   "Offense": {
    "value": -0.5,
-   "percentile": 26
+   "percentile": 27
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 42
+   "percentile": 41
   },
   "Net": {
    "value": -0.6,
-   "percentile": 28
+   "percentile": 29
   }
  },
  "score": null,
  "standIn": {
-  "value": 38.2,
+  "value": 38.0,
   "gs": 0.59,
   "gs60": 0.77,
   "gameScore": 0.59,
   "minutes": 46,
   "gp": 5,
-  "rank": 422,
+  "rank": 427,
   "pool": 661,
-  "percentile": 36.0,
+  "percentile": 35.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 420,
-    "name": "Aleksander Barkov",
-    "team": "FLA",
-    "pos": "C",
-    "gp": 2,
-    "value": 38.2,
-    "gs60": 0.59,
-    "isMe": false
-   },
-   {
-    "rank": 421,
+    "rank": 425,
     "name": "Tanner Jeannot",
     "team": "BOS",
     "pos": "L",
     "gp": 6,
-    "value": 38.2,
+    "value": 38.0,
     "gs60": 0.59,
     "isMe": false
    },
    {
-    "rank": 422,
+    "rank": 426,
+    "name": "Rieger Lorenz",
+    "team": "MIN",
+    "pos": "L",
+    "gp": 1,
+    "value": 38.0,
+    "gs60": 0.59,
+    "isMe": false
+   },
+   {
+    "rank": 427,
     "name": "Nate Danielson",
     "team": "DET",
     "pos": "C",
     "gp": 5,
-    "value": 38.2,
+    "value": 38.0,
     "gs60": 0.59,
     "isMe": true
    },
    {
-    "rank": 423,
-    "name": "Martin Fehrvry",
-    "team": "WSH",
-    "pos": "D",
-    "gp": 5,
-    "value": 38.2,
-    "gs60": 0.59,
+    "rank": 428,
+    "name": "Marc Gatcomb",
+    "team": "VGK",
+    "pos": "C",
+    "gp": 6,
+    "value": 37.9,
+    "gs60": 0.58,
     "isMe": false
    },
    {
-    "rank": 424,
+    "rank": 429,
     "name": "Arttu Hyry",
     "team": "DAL",
     "pos": "R",
     "gp": 5,
-    "value": 38.0,
+    "value": 37.8,
     "gs60": 0.56,
     "isMe": false
    }

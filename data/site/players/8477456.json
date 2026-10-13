@@ -83,82 +83,82 @@
  "hsc": {
   "Game score": {
    "value": 0.24,
-   "percentile": 44
+   "percentile": 43
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 30
+   "percentile": 31
   },
   "Defense": {
    "value": 0.2,
-   "percentile": 62
+   "percentile": 61
   },
   "Net": {
    "value": -0.2,
-   "percentile": 45
+   "percentile": 44
   }
  },
  "score": null,
  "standIn": {
-  "value": 37.8,
+  "value": 37.6,
   "gs": 0.53,
   "gs60": 1.08,
   "gameScore": 0.53,
   "minutes": 29,
   "gp": 2,
-  "rank": 429,
+  "rank": 434,
   "pool": 661,
-  "percentile": 34.9,
+  "percentile": 34.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 427,
-    "name": "Juraj Slafkovsk",
-    "team": "MTL",
-    "pos": "L",
-    "gp": 5,
-    "value": 37.9,
-    "gs60": 0.55,
-    "isMe": false
-   },
-   {
-    "rank": 428,
+    "rank": 432,
     "name": "Simon Holmstrom",
     "team": "NYI",
     "pos": "R",
     "gp": 5,
-    "value": 37.8,
+    "value": 37.6,
     "gs60": 0.53,
     "isMe": false
    },
    {
-    "rank": 429,
-    "name": "J.T. Compher",
-    "team": "DET",
-    "pos": "L",
-    "gp": 2,
-    "value": 37.8,
-    "gs60": 0.53,
-    "isMe": true
-   },
-   {
-    "rank": 430,
+    "rank": 433,
     "name": "Andre Lee",
     "team": "LAK",
     "pos": "L",
     "gp": 2,
-    "value": 37.8,
+    "value": 37.6,
     "gs60": 0.53,
     "isMe": false
    },
    {
-    "rank": 431,
-    "name": "Nikita Klepov",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 1,
+    "rank": 434,
+    "name": "J.T. Compher",
+    "team": "DET",
+    "pos": "L",
+    "gp": 2,
     "value": 37.6,
+    "gs60": 0.53,
+    "isMe": true
+   },
+   {
+    "rank": 435,
+    "name": "Braeden Bowman",
+    "team": "VGK",
+    "pos": "R",
+    "gp": 6,
+    "value": 37.5,
+    "gs60": 0.52,
+    "isMe": false
+   },
+   {
+    "rank": 436,
+    "name": "Jordan Spence",
+    "team": "OTT",
+    "pos": "D",
+    "gp": 5,
+    "value": 37.4,
     "gs60": 0.51,
     "isMe": false
    }

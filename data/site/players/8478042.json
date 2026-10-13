@@ -91,74 +91,74 @@
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 39
+   "percentile": 38
   },
   "Net": {
    "value": 0.3,
-   "percentile": 67
+   "percentile": 66
   }
  },
  "score": null,
  "standIn": {
-  "value": 64.4,
+  "value": 64.0,
   "gs": 4.05,
   "gs60": 2.64,
   "gameScore": 4.05,
   "minutes": 92,
   "gp": 5,
-  "rank": 166,
+  "rank": 167,
   "pool": 661,
-  "percentile": 74.9,
+  "percentile": 74.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
-   {
-    "rank": 164,
-    "name": "Bobby McMann",
-    "team": "SEA",
-    "pos": "C",
-    "gp": 6,
-    "value": 64.7,
-    "gs60": 4.08,
-    "isMe": false
-   },
    {
     "rank": 165,
     "name": "Mark Jankowski",
     "team": "CAR",
     "pos": "L",
     "gp": 7,
-    "value": 64.4,
-    "gs60": 4.05,
+    "value": 64.2,
+    "gs60": 4.09,
     "isMe": false
    },
    {
     "rank": 166,
+    "name": "Evgeni Malkin",
+    "team": "PIT",
+    "pos": "C",
+    "gp": 6,
+    "value": 64.2,
+    "gs60": 4.09,
+    "isMe": false
+   },
+   {
+    "rank": 167,
     "name": "Viktor Arvidsson",
     "team": "DET",
     "pos": "L",
     "gp": 5,
-    "value": 64.4,
+    "value": 64.0,
     "gs60": 4.05,
     "isMe": true
    },
    {
-    "rank": 167,
+    "rank": 168,
     "name": "Calum Ritchie",
     "team": "NYI",
     "pos": "C",
     "gp": 5,
-    "value": 64.3,
+    "value": 63.8,
     "gs60": 4.04,
     "isMe": false
    },
    {
-    "rank": 168,
+    "rank": 169,
     "name": "Nils Hoglander",
     "team": "NSH",
     "pos": "L",
     "gp": 5,
-    "value": 64.3,
+    "value": 63.8,
     "gs60": 4.03,
     "isMe": false
    }

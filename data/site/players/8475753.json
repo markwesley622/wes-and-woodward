@@ -83,11 +83,11 @@
  "hsc": {
   "Game score": {
    "value": 0.25,
-   "percentile": 45
+   "percentile": 44
   },
   "Offense": {
    "value": 0.0,
-   "percentile": 59
+   "percentile": 58
   },
   "Defense": {
    "value": -0.1,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": -0.1,
-   "percentile": 49
+   "percentile": 48
   }
  },
  "score": null,
  "standIn": {
-  "value": 49.9,
+  "value": 49.6,
   "gs": 2.13,
   "gs60": 1.33,
   "gameScore": 2.13,
   "minutes": 96,
   "gp": 5,
-  "rank": 290,
+  "rank": 296,
   "pool": 661,
-  "percentile": 56.1,
+  "percentile": 54.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 288,
+    "rank": 294,
+    "name": "Pavel Mintyukov",
+    "team": "ANA",
+    "pos": "D",
+    "gp": 5,
+    "value": 49.6,
+    "gs60": 2.14,
+    "isMe": false
+   },
+   {
+    "rank": 295,
     "name": "Morgan Rielly",
     "team": "TOR",
     "pos": "D",
     "gp": 6,
-    "value": 50.0,
+    "value": 49.6,
     "gs60": 2.13,
     "isMe": false
    },
    {
-    "rank": 289,
-    "name": "Erik Gustafsson",
-    "team": "LAK",
-    "pos": "D",
-    "gp": 2,
-    "value": 49.9,
-    "gs60": 2.13,
-    "isMe": false
-   },
-   {
-    "rank": 290,
+    "rank": 296,
     "name": "Justin Faulk",
     "team": "DET",
     "pos": "D",
     "gp": 5,
-    "value": 49.9,
+    "value": 49.6,
     "gs60": 2.13,
     "isMe": true
    },
    {
-    "rank": 291,
-    "name": "Seth Jones",
-    "team": "FLA",
+    "rank": 297,
+    "name": "Jeremy Lauzon",
+    "team": "VGK",
     "pos": "D",
-    "gp": 5,
-    "value": 49.9,
-    "gs60": 2.12,
+    "gp": 6,
+    "value": 49.6,
+    "gs60": 2.13,
     "isMe": false
    },
    {
-    "rank": 292,
-    "name": "Cam Fowler",
-    "team": "STL",
+    "rank": 298,
+    "name": "Erik Gustafsson",
+    "team": "LAK",
     "pos": "D",
-    "gp": 5,
+    "gp": 2,
     "value": 49.6,
-    "gs60": 2.09,
+    "gs60": 2.13,
     "isMe": false
    }
   ],

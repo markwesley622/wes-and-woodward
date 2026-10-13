@@ -87,82 +87,82 @@
  "hsc": {
   "Game score": {
    "value": -0.23,
-   "percentile": 21
+   "percentile": 20
   },
   "Offense": {
    "value": -0.3,
-   "percentile": 38
+   "percentile": 39
   },
   "Defense": {
    "value": -0.2,
-   "percentile": 36
+   "percentile": 35
   },
   "Net": {
    "value": -0.5,
-   "percentile": 32
+   "percentile": 33
   }
  },
  "score": null,
  "standIn": {
-  "value": 32.7,
+  "value": 32.6,
   "gs": -0.18,
   "gs60": -0.52,
   "gameScore": -0.18,
   "minutes": 21,
   "gp": 2,
-  "rank": 513,
+  "rank": 511,
   "pool": 661,
-  "percentile": 22.4,
+  "percentile": 22.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 511,
+    "rank": 509,
     "name": "Connor Zary",
     "team": "CGY",
     "pos": "C",
     "gp": 2,
-    "value": 32.8,
+    "value": 32.7,
     "gs60": -0.17,
     "isMe": false
    },
    {
-    "rank": 512,
+    "rank": 510,
     "name": "Jason Dickinson",
     "team": "EDM",
     "pos": "C",
     "gp": 2,
-    "value": 32.8,
+    "value": 32.7,
+    "gs60": -0.18,
+    "isMe": false
+   },
+   {
+    "rank": 511,
+    "name": "Sheldon Dries",
+    "team": "DET",
+    "pos": "C",
+    "gp": 2,
+    "value": 32.6,
+    "gs60": -0.18,
+    "isMe": true
+   },
+   {
+    "rank": 512,
+    "name": "Nico Sturm",
+    "team": "MIN",
+    "pos": "C",
+    "gp": 2,
+    "value": 32.6,
     "gs60": -0.18,
     "isMe": false
    },
    {
     "rank": 513,
-    "name": "Sheldon Dries",
-    "team": "DET",
-    "pos": "C",
-    "gp": 2,
-    "value": 32.7,
-    "gs60": -0.18,
-    "isMe": true
-   },
-   {
-    "rank": 514,
     "name": "Bo Groulx",
     "team": "TOR",
     "pos": "C",
     "gp": 5,
-    "value": 32.6,
-    "gs60": -0.2,
-    "isMe": false
-   },
-   {
-    "rank": 515,
-    "name": "Jeffrey Viel",
-    "team": "TBL",
-    "pos": "L",
-    "gp": 4,
-    "value": 32.6,
+    "value": 32.5,
     "gs60": -0.2,
     "isMe": false
    }

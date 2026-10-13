@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 1.02,
-   "percentile": 78
+   "percentile": 79
   },
   "Offense": {
    "value": 0.7,
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": -0.4,
-   "percentile": 20
+   "percentile": 21
   },
   "Net": {
    "value": 0.2,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 52.1,
+  "value": 51.7,
   "gs": 2.41,
   "gs60": 5.28,
   "gameScore": 2.41,
   "minutes": 27,
   "gp": 2,
-  "rank": 267,
+  "rank": 273,
   "pool": 661,
-  "percentile": 59.6,
+  "percentile": 58.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 265,
+    "rank": 271,
+    "name": "Jesper Boqvist",
+    "team": "NJD",
+    "pos": "C",
+    "gp": 2,
+    "value": 52.0,
+    "gs60": 2.44,
+    "isMe": false
+   },
+   {
+    "rank": 272,
     "name": "Tyler Bertuzzi",
     "team": "CHI",
     "pos": "L",
     "gp": 6,
-    "value": 52.3,
+    "value": 51.9,
     "gs60": 2.43,
     "isMe": false
    },
    {
-    "rank": 266,
-    "name": "Anthony Beauvillier",
-    "team": "WSH",
-    "pos": "R",
-    "gp": 5,
-    "value": 52.2,
-    "gs60": 2.42,
-    "isMe": false
-   },
-   {
-    "rank": 267,
+    "rank": 273,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 2,
-    "value": 52.1,
+    "value": 51.7,
     "gs60": 2.41,
     "isMe": true
    },
    {
-    "rank": 268,
+    "rank": 274,
     "name": "Kiefer Sherwood",
     "team": "SJS",
     "pos": "L",
     "gp": 5,
-    "value": 52.1,
+    "value": 51.7,
     "gs60": 2.41,
     "isMe": false
    },
    {
-    "rank": 269,
+    "rank": 275,
     "name": "Nick Paul",
     "team": "TOR",
     "pos": "L",
     "gp": 6,
-    "value": 51.7,
+    "value": 51.3,
     "gs60": 2.36,
     "isMe": false
    }

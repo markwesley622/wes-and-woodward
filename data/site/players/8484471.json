@@ -83,82 +83,82 @@
  "hsc": {
   "Game score": {
    "value": 0.69,
-   "percentile": 64
+   "percentile": 63
   },
   "Offense": {
    "value": -0.1,
    "percentile": 53
   },
   "Defense": {
-   "value": 0.4,
-   "percentile": 73
+   "value": 0.3,
+   "percentile": 72
   },
   "Net": {
    "value": 0.3,
-   "percentile": 65
+   "percentile": 64
   }
  },
  "score": null,
  "standIn": {
-  "value": 54.7,
+  "value": 54.3,
   "gs": 2.74,
   "gs60": 1.99,
   "gameScore": 2.74,
   "minutes": 83,
   "gp": 5,
-  "rank": 253,
+  "rank": 256,
   "pool": 661,
-  "percentile": 61.6,
+  "percentile": 61.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 251,
-    "name": "Nikita Nesterenko",
-    "team": "ANA",
-    "pos": "C",
-    "gp": 5,
-    "value": 54.9,
-    "gs60": 2.76,
-    "isMe": false
-   },
-   {
-    "rank": 252,
+    "rank": 254,
     "name": "Marat Khusnutdinov",
     "team": "BOS",
     "pos": "C",
     "gp": 6,
-    "value": 54.8,
+    "value": 54.4,
     "gs60": 2.76,
     "isMe": false
    },
    {
-    "rank": 253,
-    "name": "Emmitt Finnie",
-    "team": "DET",
-    "pos": "C",
-    "gp": 5,
-    "value": 54.7,
-    "gs60": 2.74,
-    "isMe": true
-   },
-   {
-    "rank": 254,
+    "rank": 255,
     "name": "Frederic Brunet",
     "team": "BOS",
     "pos": "D",
     "gp": 3,
-    "value": 54.7,
+    "value": 54.3,
     "gs60": 2.74,
     "isMe": false
    },
    {
-    "rank": 255,
+    "rank": 256,
+    "name": "Emmitt Finnie",
+    "team": "DET",
+    "pos": "C",
+    "gp": 5,
+    "value": 54.3,
+    "gs60": 2.74,
+    "isMe": true
+   },
+   {
+    "rank": 257,
+    "name": "Noah Hanifin",
+    "team": "VGK",
+    "pos": "D",
+    "gp": 6,
+    "value": 54.2,
+    "gs60": 2.73,
+    "isMe": false
+   },
+   {
+    "rank": 258,
     "name": "Adam Edstrom",
     "team": "NSH",
     "pos": "C",
     "gp": 5,
-    "value": 54.6,
+    "value": 54.2,
     "gs60": 2.73,
     "isMe": false
    }

@@ -91,75 +91,75 @@
   },
   "Defense": {
    "value": -0.4,
-   "percentile": 22
+   "percentile": 23
   },
   "Net": {
    "value": -0.2,
-   "percentile": 44
+   "percentile": 45
   }
  },
  "score": null,
  "standIn": {
-  "value": 39.8,
+  "value": 39.6,
   "gs": 0.81,
   "gs60": 0.53,
   "gameScore": 0.81,
   "minutes": 92,
   "gp": 5,
-  "rank": 399,
+  "rank": 402,
   "pool": 661,
-  "percentile": 39.6,
+  "percentile": 39.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 397,
-    "name": "Isak Rosen",
-    "team": "WPG",
-    "pos": "R",
-    "gp": 5,
-    "value": 39.9,
-    "gs60": 0.82,
-    "isMe": false
-   },
-   {
-    "rank": 398,
+    "rank": 400,
     "name": "Dmitri Voronkov",
     "team": "CBJ",
     "pos": "L",
     "gp": 4,
-    "value": 39.9,
+    "value": 39.7,
     "gs60": 0.81,
-    "isMe": false
-   },
-   {
-    "rank": 399,
-    "name": "Ben Chiarot",
-    "team": "DET",
-    "pos": "D",
-    "gp": 5,
-    "value": 39.8,
-    "gs60": 0.81,
-    "isMe": true
-   },
-   {
-    "rank": 400,
-    "name": "Olen Zellweger",
-    "team": "BUF",
-    "pos": "D",
-    "gp": 4,
-    "value": 39.8,
-    "gs60": 0.8,
     "isMe": false
    },
    {
     "rank": 401,
-    "name": "Corey Perry",
-    "team": "LAK",
-    "pos": "R",
-    "gp": 3,
+    "name": "Niko Mikkola",
+    "team": "FLA",
+    "pos": "D",
+    "gp": 5,
+    "value": 39.7,
+    "gs60": 0.81,
+    "isMe": false
+   },
+   {
+    "rank": 402,
+    "name": "Ben Chiarot",
+    "team": "DET",
+    "pos": "D",
+    "gp": 5,
     "value": 39.6,
-    "gs60": 0.77,
+    "gs60": 0.81,
+    "isMe": true
+   },
+   {
+    "rank": 403,
+    "name": "Konsta Helenius",
+    "team": "BUF",
+    "pos": "C",
+    "gp": 4,
+    "value": 39.5,
+    "gs60": 0.8,
+    "isMe": false
+   },
+   {
+    "rank": 404,
+    "name": "Ville Ottavainen",
+    "team": "SEA",
+    "pos": "D",
+    "gp": 3,
+    "value": 39.5,
+    "gs60": 0.79,
     "isMe": false
    }
   ],

@@ -87,78 +87,78 @@
   },
   "Offense": {
    "value": -0.3,
-   "percentile": 34
+   "percentile": 35
   },
   "Defense": {
    "value": -0.0,
-   "percentile": 46
+   "percentile": 47
   },
   "Net": {
-   "value": -0.3,
+   "value": -0.4,
    "percentile": 38
   }
  },
  "score": null,
  "standIn": {
-  "value": 36.0,
+  "value": 35.9,
   "gs": 0.29,
   "gs60": 0.88,
   "gameScore": 0.29,
   "minutes": 20,
   "gp": 2,
-  "rank": 458,
+  "rank": 461,
   "pool": 661,
-  "percentile": 30.7,
+  "percentile": 30.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 456,
+    "rank": 459,
     "name": "Danton Heinen",
     "team": "CBJ",
     "pos": "L",
     "gp": 4,
-    "value": 36.1,
+    "value": 35.9,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 457,
+    "rank": 460,
     "name": "Emil Lilleberg",
     "team": "TBL",
     "pos": "D",
     "gp": 1,
-    "value": 36.1,
+    "value": 35.9,
     "gs60": 0.29,
     "isMe": false
    },
    {
-    "rank": 458,
+    "rank": 461,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 36.0,
+    "value": 35.9,
     "gs60": 0.29,
     "isMe": true
    },
    {
-    "rank": 459,
-    "name": "Frank Vatrano",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 2,
-    "value": 36.0,
-    "gs60": 0.28,
-    "isMe": false
-   },
-   {
-    "rank": 460,
+    "rank": 462,
     "name": "Zack Ostapchuk",
     "team": "SJS",
     "pos": "C",
     "gp": 5,
-    "value": 36.0,
+    "value": 35.8,
+    "gs60": 0.28,
+    "isMe": false
+   },
+   {
+    "rank": 463,
+    "name": "Frank Vatrano",
+    "team": "ANA",
+    "pos": "R",
+    "gp": 2,
+    "value": 35.8,
     "gs60": 0.28,
     "isMe": false
    }

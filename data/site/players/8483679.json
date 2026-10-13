@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.31,
-   "percentile": 18
+   "percentile": 17
   },
   "Offense": {
    "value": -0.7,
@@ -91,16 +91,16 @@
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 42
+   "percentile": 41
   },
   "Net": {
    "value": -0.8,
-   "percentile": 18
+   "percentile": 19
   }
  },
  "score": null,
  "standIn": {
-  "value": 31.1,
+  "value": 31.0,
   "gs": -0.42,
   "gs60": -0.31,
   "gameScore": -0.42,
@@ -114,22 +114,22 @@
   "neighbours": [
    {
     "rank": 539,
-    "name": "Sam Lafferty",
-    "team": "FLA",
+    "name": "Will Smith",
+    "team": "SJS",
     "pos": "C",
-    "gp": 1,
-    "value": 31.2,
-    "gs60": -0.41,
+    "gp": 5,
+    "value": 31.3,
+    "gs60": -0.39,
     "isMe": false
    },
    {
     "rank": 540,
-    "name": "Evan Rodrigues",
-    "team": "NJD",
-    "pos": "C",
-    "gp": 4,
+    "name": "Alex Bump",
+    "team": "PHI",
+    "pos": "L",
+    "gp": 3,
     "value": 31.2,
-    "gs60": -0.41,
+    "gs60": -0.4,
     "isMe": false
    },
    {
@@ -138,7 +138,7 @@
     "team": "DET",
     "pos": "D",
     "gp": 5,
-    "value": 31.1,
+    "value": 31.0,
     "gs60": -0.42,
     "isMe": true
    },
@@ -148,7 +148,7 @@
     "team": "BUF",
     "pos": "D",
     "gp": 1,
-    "value": 31.0,
+    "value": 30.9,
     "gs60": -0.44,
     "isMe": false
    },

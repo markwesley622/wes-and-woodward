@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.08,
-   "percentile": 34
+   "percentile": 33
   },
   "Offense": {
    "value": -1.0,
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 85
+   "percentile": 84
   },
   "Net": {
    "value": -0.5,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 35.7,
+  "value": 35.5,
   "gs": 0.24,
   "gs60": 0.22,
   "gameScore": 0.24,
   "minutes": 65,
   "gp": 5,
-  "rank": 469,
+  "rank": 470,
   "pool": 661,
-  "percentile": 29.0,
+  "percentile": 28.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 467,
+    "rank": 468,
     "name": "Connor Clifton",
     "team": "BOS",
     "pos": "D",
     "gp": 6,
-    "value": 35.7,
-    "gs60": 0.24,
-    "isMe": false
-   },
-   {
-    "rank": 468,
-    "name": "Alexey Toropchenko",
-    "team": "STL",
-    "pos": "R",
-    "gp": 1,
-    "value": 35.7,
+    "value": 35.5,
     "gs60": 0.24,
     "isMe": false
    },
    {
     "rank": 469,
-    "name": "Keegan Kolesar",
-    "team": "DET",
+    "name": "Alexey Toropchenko",
+    "team": "STL",
     "pos": "R",
-    "gp": 5,
-    "value": 35.7,
-    "gs60": 0.24,
-    "isMe": true
-   },
-   {
-    "rank": 470,
-    "name": "Sean Couturier",
-    "team": "PHI",
-    "pos": "C",
-    "gp": 7,
-    "value": 35.7,
+    "gp": 1,
+    "value": 35.5,
     "gs60": 0.24,
     "isMe": false
    },
    {
+    "rank": 470,
+    "name": "Keegan Kolesar",
+    "team": "DET",
+    "pos": "R",
+    "gp": 5,
+    "value": 35.5,
+    "gs60": 0.24,
+    "isMe": true
+   },
+   {
     "rank": 471,
-    "name": "Raphael Lavoie",
-    "team": "VGK",
+    "name": "Sean Couturier",
+    "team": "PHI",
     "pos": "C",
-    "gp": 2,
-    "value": 35.6,
+    "gp": 7,
+    "value": 35.5,
+    "gs60": 0.24,
+    "isMe": false
+   },
+   {
+    "rank": 472,
+    "name": "Luke Schenn",
+    "team": "VAN",
+    "pos": "D",
+    "gp": 6,
+    "value": 35.5,
     "gs60": 0.24,
     "isMe": false
    }

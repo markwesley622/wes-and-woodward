@@ -83,11 +83,11 @@
  "hsc": {
   "Game score": {
    "value": 0.39,
-   "percentile": 50
+   "percentile": 49
   },
   "Offense": {
    "value": 0.1,
-   "percentile": 67
+   "percentile": 66
   },
   "Defense": {
    "value": -0.3,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 41.5,
+  "value": 41.2,
   "gs": 1.03,
   "gs60": 3.25,
   "gameScore": 1.03,
   "minutes": 19,
   "gp": 2,
-  "rank": 377,
+  "rank": 381,
   "pool": 661,
-  "percentile": 43.0,
+  "percentile": 42.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 375,
-    "name": "Frederick Gaudreau",
-    "team": "SEA",
-    "pos": "C",
-    "gp": 6,
-    "value": 42.1,
-    "gs60": 1.11,
-    "isMe": false
-   },
-   {
-    "rank": 376,
+    "rank": 379,
     "name": "John Tavares",
     "team": "TOR",
     "pos": "C",
     "gp": 5,
-    "value": 41.8,
+    "value": 41.6,
     "gs60": 1.07,
     "isMe": false
    },
    {
-    "rank": 377,
+    "rank": 380,
+    "name": "Dmitry Kulikov",
+    "team": "FLA",
+    "pos": "D",
+    "gp": 5,
+    "value": 41.5,
+    "gs60": 1.06,
+    "isMe": false
+   },
+   {
+    "rank": 381,
     "name": "Carter Mazur",
     "team": "DET",
     "pos": "L",
     "gp": 2,
-    "value": 41.5,
+    "value": 41.2,
     "gs60": 1.03,
     "isMe": true
    },
    {
-    "rank": 378,
-    "name": "Nic Dowd",
-    "team": "VGK",
-    "pos": "C",
-    "gp": 6,
-    "value": 41.4,
+    "rank": 382,
+    "name": "Carter Yakemchuk",
+    "team": "OTT",
+    "pos": "D",
+    "gp": 5,
+    "value": 41.2,
     "gs60": 1.02,
     "isMe": false
    },
    {
-    "rank": 379,
+    "rank": 383,
     "name": "Ivan Demidov",
     "team": "MTL",
     "pos": "R",
     "gp": 2,
-    "value": 41.4,
+    "value": 41.1,
     "gs60": 1.02,
     "isMe": false
    }

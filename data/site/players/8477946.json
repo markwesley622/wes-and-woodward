@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.99,
-   "percentile": 76
+   "percentile": 77
   },
   "Offense": {
    "value": 0.4,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 57.1,
+  "value": 56.7,
   "gs": 3.06,
   "gs60": 2.98,
   "gameScore": 3.06,
   "minutes": 62,
   "gp": 3,
-  "rank": 233,
+  "rank": 235,
   "pool": 661,
-  "percentile": 64.8,
+  "percentile": 64.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 231,
-    "name": "Danila Yurov",
-    "team": "MIN",
-    "pos": "R",
+    "rank": 233,
+    "name": "Cutter Gauthier",
+    "team": "ANA",
+    "pos": "L",
     "gp": 5,
-    "value": 57.2,
-    "gs60": 3.06,
+    "value": 56.8,
+    "gs60": 3.08,
     "isMe": false
    },
    {
-    "rank": 232,
+    "rank": 234,
     "name": "Pavel Buchnevich",
     "team": "STL",
     "pos": "L",
     "gp": 5,
-    "value": 57.2,
+    "value": 56.7,
     "gs60": 3.06,
-    "isMe": false
-   },
-   {
-    "rank": 233,
-    "name": "Dylan Larkin",
-    "team": "DET",
-    "pos": "C",
-    "gp": 3,
-    "value": 57.1,
-    "gs60": 3.06,
-    "isMe": true
-   },
-   {
-    "rank": 234,
-    "name": "Jack McBain",
-    "team": "UTA",
-    "pos": "C",
-    "gp": 6,
-    "value": 57.0,
-    "gs60": 3.05,
     "isMe": false
    },
    {
     "rank": 235,
-    "name": "Fabian Zetterlund",
-    "team": "OTT",
-    "pos": "L",
-    "gp": 5,
-    "value": 57.0,
+    "name": "Dylan Larkin",
+    "team": "DET",
+    "pos": "C",
+    "gp": 3,
+    "value": 56.7,
+    "gs60": 3.06,
+    "isMe": true
+   },
+   {
+    "rank": 236,
+    "name": "Jack McBain",
+    "team": "UTA",
+    "pos": "C",
+    "gp": 6,
+    "value": 56.6,
+    "gs60": 3.05,
+    "isMe": false
+   },
+   {
+    "rank": 237,
+    "name": "Quinton Byfield",
+    "team": "LAK",
+    "pos": "R",
+    "gp": 4,
+    "value": 56.5,
     "gs60": 3.04,
     "isMe": false
    }

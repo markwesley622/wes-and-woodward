@@ -87,79 +87,79 @@
   },
   "Offense": {
    "value": -0.2,
-   "percentile": 48
+   "percentile": 47
   },
   "Defense": {
    "value": 0.1,
-   "percentile": 52
+   "percentile": 53
   },
   "Net": {
    "value": -0.1,
-   "percentile": 50
+   "percentile": 49
   }
  },
  "score": null,
  "standIn": {
-  "value": 39.2,
+  "value": 39.0,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 405,
+  "rank": 412,
   "pool": 661,
-  "percentile": 38.7,
+  "percentile": 37.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 403,
-    "name": "Kaiden Guhle",
-    "team": "MTL",
-    "pos": "D",
-    "gp": 1,
-    "value": 39.4,
-    "gs60": 0.76,
-    "isMe": false
-   },
-   {
-    "rank": 404,
+    "rank": 410,
     "name": "Bryan Rust",
     "team": "PIT",
     "pos": "R",
     "gp": 3,
-    "value": 39.4,
+    "value": 39.2,
     "gs60": 0.75,
     "isMe": false
    },
    {
-    "rank": 405,
+    "rank": 411,
+    "name": "Aaron Ekblad",
+    "team": "FLA",
+    "pos": "D",
+    "gp": 3,
+    "value": 39.1,
+    "gs60": 0.74,
+    "isMe": false
+   },
+   {
+    "rank": 412,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
     "gp": 1,
-    "value": 39.2,
+    "value": 39.0,
     "gs60": 0.73,
     "isMe": true
    },
    {
-    "rank": 406,
-    "name": "Liam Ohgren",
-    "team": "VAN",
-    "pos": "L",
-    "gp": 7,
+    "rank": 413,
+    "name": "Nic Dowd",
+    "team": "VGK",
+    "pos": "C",
+    "gp": 6,
     "value": 39.0,
-    "gs60": 0.69,
+    "gs60": 0.72,
     "isMe": false
    },
    {
-    "rank": 407,
-    "name": "Zachary L'Heureux",
-    "team": "COL",
-    "pos": "L",
-    "gp": 3,
+    "rank": 414,
+    "name": "Dawson Mercer",
+    "team": "NJD",
+    "pos": "C",
+    "gp": 4,
     "value": 38.9,
-    "gs60": 0.69,
+    "gs60": 0.71,
     "isMe": false
    }
   ],
