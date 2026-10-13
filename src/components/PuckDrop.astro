@@ -68,6 +68,7 @@ const grid = Array.from({ length: 11 }, (_, i) => 20 + i * 56);
     let queued = false;
     const frame = () => {
       queued = false;
+      if (el.dataset.seq) return;   // the homepage Analysis pin drives --p itself (index.astro)
       const top = el.getBoundingClientRect().top, vh = innerHeight;
       // the thumbnail climbs from the bottom of the viewport (p = 0) to its upper third (p = 1)
       const start = vh * 0.95, end = vh * 0.42;
