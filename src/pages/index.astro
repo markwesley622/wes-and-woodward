@@ -282,8 +282,9 @@ const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveI
   .an-pin.on { height: var(--pin-h); }
   .an-pin.on > #analysis { position: sticky; top: var(--pin-top); background: var(--paper); }
   /* hero */
-  /* overflow-x clip (not hidden) keeps the wheel free to parallax down past the hero's bottom edge while clipping its sides */
-  .hero { position: relative; height: calc(100vh - 94px); min-height: 640px; border-bottom: 1px solid var(--rule); overflow-x: clip; }
+  /* overflow-x clip trims the wheel's sides; the clip-path also trims it at the hero's bottom edge (open above, where it
+     tucks under the masthead) so its scroll parallax never drifts out over the Analysis section (Mark, 10/13) */
+  .hero { position: relative; height: calc(100vh - 94px); min-height: 640px; border-bottom: 1px solid var(--rule); overflow-x: clip; clip-path: inset(-100vh 0 0 0); }
   .hero .shell { position: relative; height: 100%; }
   .stamp { position: absolute; left: var(--gutter); top: 22px; color: var(--mute); z-index: 3; }
   .stamp i { display: block; width: 5px; height: 5px; background: var(--red); margin-bottom: 8px; }
