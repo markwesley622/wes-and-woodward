@@ -99,7 +99,8 @@ const depth = N * STEP;
       const h = hero.offsetHeight;
       // layout-viewport height: innerHeight shrinks under pinch zoom and would make the wheel jump
       const range = h - document.documentElement.clientHeight * 0.35;
-      const sy = fixedSy !== null ? fixedSy : scrollY;
+      // index.astro's Analysis pin supplies an effective scroll that holds still while the screen is pinned
+      const sy = fixedSy !== null ? fixedSy : (window.__wwScroll ? window.__wwScroll() : scrollY);
       const p = Math.min(1, Math.max(0, sy / range));
       const tilt = TILT_MIN + p * (TILT_MAX - TILT_MIN);
       const spin = reduce ? 0 : ((now - t0) / 1000) * 4 + p * ROLL;
