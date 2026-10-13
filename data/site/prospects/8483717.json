@@ -31,12 +31,12 @@
   {
    "league": "NCAA",
    "team": "Ferris State Univ.",
-   "gp": 2,
+   "gp": 4,
    "g": 1,
    "a": 0,
    "pts": 1,
-   "pm": 2,
-   "pim": 2,
+   "pm": -3,
+   "pim": 4,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -72,12 +72,12 @@
     {
      "league": "NCAA",
      "team": "Ferris State Univ.",
-     "gp": 2,
+     "gp": 4,
      "g": 1,
      "a": 0,
      "pts": 1,
-     "pm": 2,
-     "pim": 2,
+     "pm": -3,
+     "pim": 4,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -236,10 +236,12 @@
    "league": "ncaa",
    "season": "2026-2027",
    "ageBucket": "U23",
-   "cohortN": 0,
-   "gp": 2,
-   "percentile": null,
-   "note": "sample too small"
+   "cohortN": 73,
+   "gp": 4,
+   "value": 0.25,
+   "percentile": 20.5,
+   "percentileAllAges": 22.0,
+   "allAgesN": 808
   }
  },
  "ceiling": {

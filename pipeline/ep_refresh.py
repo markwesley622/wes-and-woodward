@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Refresh the EliteProspects inputs for the prospect system (run whenever the pipeline should catch up:
 new signings, this season's lines, the current-season league tables). Needs ep_receiver.py serving and
-ep_worker.js running on an eliteprospects.com tab in Mark's personal Chrome (Browser 2).
+ep_worker.js running on an eliteprospects.com tab: either Mark's personal Chrome via claude-in-chrome,
+or the off-screen Chrome that pipeline/ep_pull.py drives unattended (the nightly path).
 
     python3 pipeline/ep_receiver.py &            # once
     python3 pipeline/ep_refresh.py               # queues: DET system page -> every system player page
@@ -11,7 +12,7 @@ ep_worker.js running on an eliteprospects.com tab in Mark's personal Chrome (Bro
 
 The cohort (draft classes 2008-2019 and their player pages) is historical and is not re-pulled here.
 """
-import json, time, urllib.request
+import json, sys, time, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -41,6 +42,10 @@ def main():
         fresh = sum(1 for k in keys if (EP / "player" / f"{k}.json").exists() and (EP / "player" / f"{k}.json").stat().st_mtime >= t0)
         print(f"  {fresh}/{len(keys)} refreshed", flush=True)
         if fresh >= len(keys): break
+        # the receiver drops a task after three failures, so an empty queue with pages missing is a failure, not a wait
+        queued = json.load(urllib.request.urlopen(SERVER + "/status", timeout=30))["queued"]
+        if queued == 0:
+            sys.exit(f"queue drained with {len(keys) - fresh} player pages not refreshed (see data/raw/ep/errors.jsonl)")
     print("refresh complete; now run ep_league_pull.py for the current season, then build_prospects.py")
 
 

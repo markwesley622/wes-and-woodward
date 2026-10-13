@@ -31,11 +31,11 @@
   {
    "league": "HockeyAllsvenskan",
    "team": "Almtuna IS",
-   "gp": 7,
+   "gp": 10,
    "g": 1,
-   "a": 3,
-   "pts": 4,
-   "pm": -2,
+   "a": 5,
+   "pts": 6,
+   "pm": -3,
    "pim": 2,
    "gaa": null,
    "svp": null,
@@ -48,7 +48,7 @@
   {
    "league": "SHL",
    "team": "Bryn\u00e4s IF",
-   "gp": 2,
+   "gp": 4,
    "g": 0,
    "a": 1,
    "pts": 1,
@@ -106,11 +106,11 @@
     {
      "league": "HockeyAllsvenskan",
      "team": "Almtuna IS",
-     "gp": 7,
+     "gp": 10,
      "g": 1,
-     "a": 3,
-     "pts": 4,
-     "pm": -2,
+     "a": 5,
+     "pts": 6,
+     "pm": -3,
      "pim": 2,
      "gaa": null,
      "svp": null,
@@ -123,7 +123,7 @@
     {
      "league": "SHL",
      "team": "Bryn\u00e4s IF",
-     "gp": 2,
+     "gp": 4,
      "g": 0,
      "a": 1,
      "pts": 1,
@@ -219,25 +219,25 @@
   }
  ],
  "anchor": {
-  "season": "2025-2026",
+  "season": "2026-2027",
   "league": "HockeyAllsvenskan",
   "leagueSlug": "hockeyallsvenskan",
   "table": "Allsvenskan",
   "coef": 0.351,
   "team": "Almtuna IS",
-  "gp": 40,
-  "g": 5,
-  "a": 4,
-  "pts": 9,
-  "pgp": 0.321,
-  "lineGp": 28,
-  "nhle": 0.095,
-  "nhle82": 7.8,
+  "gp": 14,
+  "g": 1,
+  "a": 5,
+  "pts": 6,
+  "pgp": 0.6,
+  "lineGp": 10,
+  "nhle": 0.191,
+  "nhle82": 15.7,
   "lines": [
-   "U20 Nationell",
+   "SHL",
    "HockeyAllsvenskan"
   ],
-  "feature": 0.095
+  "feature": 0.191
  },
  "league": {
   "name": "HockeyAllsvenskan",
@@ -261,114 +261,114 @@
    "league": "hockeyallsvenskan",
    "season": "2026-2027",
    "ageBucket": "U21",
-   "cohortN": 10,
-   "gp": 7,
-   "value": 0.5714,
-   "percentile": 30.0,
-   "percentileAllAges": 66.8,
-   "allAgesN": 334
+   "cohortN": 11,
+   "gp": 10,
+   "value": 0.6,
+   "percentile": 36.4,
+   "percentileAllAges": 69.2,
+   "allAgesN": 351
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 3.1,
+  "expected": 18.8,
   "median": 0.0,
-  "p75": 0.0,
-  "p90": 12.3,
-  "pRegular": 0.1,
-  "pTopLine": 0.02,
-  "pAboveAvg": 0.02,
-  "pElite": 0.02,
-  "poolN": 1305,
+  "p75": 32.3,
+  "p90": 82.6,
+  "pRegular": 0.34,
+  "pTopLine": 0.12,
+  "pAboveAvg": 0.2,
+  "pElite": 0.08,
+  "poolN": 1236,
   "group": "F",
-  "age": 19,
-  "pickWeight": 0.5,
-  "tier": "replacement level",
-  "pCeiling": 0.1,
+  "age": 20,
+  "pickWeight": 0.0,
+  "tier": "below average",
+  "pCeiling": 0.26,
   "featureBand": [
-   0.081,
-   0.104
+   0.186,
+   0.195
   ],
   "examples": [
    {
-    "name": "Iiro Pakarinen",
+    "name": "David Ullstr\u00f6m",
+    "year": 2008,
+    "pick": 102,
+    "league": "Elitserien",
+    "feature": 0.191,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 49
+   },
+   {
+    "name": "Ond\u0159ej Pal\u00e1t",
     "year": 2011,
-    "pick": 184,
-    "league": "SM-liiga",
-    "feature": 0.095,
-    "peak": 18.9,
-    "tier": "replacement level",
+    "pick": 208,
+    "league": "AHL",
+    "feature": 0.191,
+    "peak": 92.9,
+    "tier": "elite",
+    "nhlGp": 907
+   },
+   {
+    "name": "Adam Erne",
+    "year": 2013,
+    "pick": 33,
+    "league": "AHL",
+    "feature": 0.191,
+    "peak": 51.7,
+    "tier": "above average",
+    "nhlGp": 424
+   },
+   {
+    "name": "Jaret Anderson-Dolan",
+    "year": 2017,
+    "pick": 41,
+    "league": "AHL",
+    "feature": 0.191,
+    "peak": 32.3,
+    "tier": "below average",
     "nhlGp": 134
    },
    {
-    "name": "Hunter Drew",
-    "year": 2018,
-    "pick": 178,
-    "league": "QMJHL",
-    "feature": 0.093,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 2
-   },
-   {
-    "name": "Cristiano DiGiacinto",
-    "year": 2014,
-    "pick": 170,
-    "league": "OHL",
-    "feature": 0.096,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Shawn Boudrias",
-    "year": 2018,
-    "pick": 179,
-    "league": "QMJHL",
-    "feature": 0.093,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Cole Koepke",
-    "year": 2018,
-    "pick": 183,
-    "league": "USHL",
-    "feature": 0.093,
-    "peak": 19.0,
-    "tier": "replacement level",
-    "nhlGp": 166
-   },
-   {
-    "name": "Karel Plasek",
+    "name": "Kirill Slepets",
     "year": 2019,
-    "pick": 175,
-    "league": "Czechia",
-    "feature": 0.091,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jordan Nolan",
-    "year": 2009,
-    "pick": 186,
-    "league": "OHL",
-    "feature": 0.097,
-    "peak": 12.3,
-    "tier": "replacement level",
-    "nhlGp": 375
-   },
-   {
-    "name": "Artyom Manukyan",
-    "year": 2018,
-    "pick": 186,
+    "pick": 152,
     "league": "KHL",
-    "feature": 0.093,
+    "feature": 0.191,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Eero Elo",
+    "year": 2008,
+    "pick": 145,
+    "league": "SM-liiga",
+    "feature": 0.192,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Carter Ashton",
+    "year": 2009,
+    "pick": 29,
+    "league": "AHL",
+    "feature": 0.19,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 54
+   },
+   {
+    "name": "Riley Sheahan",
+    "year": 2010,
+    "pick": 21,
+    "league": "AHL",
+    "feature": 0.192,
+    "peak": 68.7,
+    "tier": "above average",
+    "nhlGp": 637
    }
   ]
  },
@@ -386,11 +386,11 @@
   "group": "F"
  },
  "blend": {
-  "w": 0.25,
-  "sinceDraft": 1,
+  "w": 0.0,
+  "sinceDraft": 2,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 3.1,
-  "expected": 4.2,
+  "cohortExpected": 18.8,
+  "expected": 18.8,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -410,9 +410,9 @@
  },
  "nhlSample": null,
  "availability": {
-  "gp": 28,
-  "season": "2025-2026"
+  "gp": 10,
+  "season": "2026-2027"
  },
- "rank": 27,
- "score": 4.2
+ "rank": 12,
+ "score": 18.8
 }

@@ -93,9 +93,16 @@ Builder: `pipeline/build_prospects.py` -> `data/site/prospects.json` + `data/sit
   skaters of 2008-2019 at the same position and age by NHLe + draft slot; outcome = peak NHL P/GP
   percentile within position, busts = 0; expected / p75 / P(regular)), trajectory (NHLe change, last two
   full seasons). Rank = expected peak.
-- EliteProspects is pulled from Mark's logged-in personal Chrome (Browser 2), never from a script:
-  `pipeline/ep_receiver.py` (local queue + sink on 127.0.0.1:8765) and `pipeline/ep_worker.js` (paste into
-  an EP tab via claude-in-chrome; fetches pages in-page, posts the embedded `__NEXT_DATA__` back).
-  `ep_refresh.py` queues the DET system + its players; `ep_league_pull.py <season>` queues league tables
-  (position x cumulative age bucket x page; exact ages are set differences). `data/raw/ep/` is gitignored.
+- EliteProspects is pulled through a logged-in Chrome, never a bare script: `pipeline/ep_receiver.py` (local
+  queue + sink on 127.0.0.1:8765) and `pipeline/ep_worker.js` (runs in an EP tab; fetches pages in-page, posts
+  the embedded `__NEXT_DATA__` back). `ep_refresh.py` queues the DET system + its players; `ep_league_pull.py
+  <season>` queues league tables (position x cumulative age bucket x page; exact ages are set differences;
+  `--goalies`, `--goalies --all-ages` for the goalie tables). `data/raw/ep/` is gitignored.
+  - Nightly (unattended): `pipeline/ep_pull.py` drives a real Chrome window off-screen with the session saved
+    once by `pipeline/ep_login.py` (`~/.config/wesandwoodward/ep_state.json`, same recipe as Evolving-Hockey),
+    injects the worker, runs the refresh + current-season league pulls, and sets the old tables aside so a
+    failed run restores them. Exit 2 = session expired: re-run `ep_login.py`. Headless Chromium (and spoofed
+    headless Chrome) is blocked by EP's Cloudflare challenge, which is why the window is headed but off-screen.
+  - By hand: inject `ep_worker.js` into an EP tab in Mark's personal Chrome via claude-in-chrome, then run the
+    two queue scripts (delete the current season's league tables first so they re-pull).
 - NHL season pools for the percentiles: `data/raw/nhl_seasons/skaters_<season>.json` (NHL stats API).

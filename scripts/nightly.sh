@@ -22,8 +22,9 @@ trap 'rc=$?; (( rc )) && osascript -e "display notification \"exit $rc, see $LOG
   python3 pipeline/build_player.py --roster --fetch
   # past Detroit seasons for the player-page season dropdown; cached pulls, so this is a rebuild unless a player is new
   python3 pipeline/build_player_seasons.py || echo "season build failed, keeping the files on disk"
-  # prospect system: re-applies the status rule and roster-status template swap on the cached EliteProspects
-  # pull (data/raw/ep, refreshed by hand from Mark's Chrome via pipeline/ep_refresh.py; it is not in git)
+  # prospect system: unattended EliteProspects pull (off-screen Chrome with the session saved by pipeline/ep_login.py;
+  # exit 2 = session expired, re-run ep_login.py), then the ranking rebuild on data/raw/ep (not in git)
+  python3 pipeline/ep_pull.py || echo "EP pull failed (exit $?), building prospects from the files on disk"
   python3 pipeline/build_prospects.py || echo "prospect build failed, keeping the files on disk"
   npm run build --silent >/dev/null
   git add -A data/site data/archive data/raw/nhl data/raw/moneypuck data/raw/players data/raw/hsc

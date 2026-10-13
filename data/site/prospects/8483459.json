@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 2,
-   "g": 0,
-   "a": 1,
-   "pts": 1,
-   "pm": -2,
+   "gp": 5,
+   "g": 1,
+   "a": 2,
+   "pts": 3,
+   "pm": 2,
    "pim": 0,
    "gaa": null,
    "svp": null,
@@ -89,11 +89,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 2,
-     "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": -2,
+     "gp": 5,
+     "g": 1,
+     "a": 2,
+     "pts": 3,
+     "pm": 2,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -254,10 +254,12 @@
    "league": "ahl",
    "season": "2026-2027",
    "ageBucket": "U24",
-   "cohortN": 0,
-   "gp": 2,
-   "percentile": null,
-   "note": "sample too small"
+   "cohortN": 41,
+   "gp": 5,
+   "value": 0.6,
+   "percentile": 56.1,
+   "percentileAllAges": 60.0,
+   "allAgesN": 543
   }
  },
  "ceiling": {
@@ -404,6 +406,6 @@
   "gp": 40,
   "season": "2025-2026"
  },
- "rank": 20,
+ "rank": 21,
  "score": 9.3
 }

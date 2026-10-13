@@ -27,7 +27,25 @@
   "onNhlRoster": false
  },
  "scouting": null,
- "currentLines": [],
+ "currentLines": [
+  {
+   "league": "NCAA",
+   "team": "Univ. of Notre Dame",
+   "gp": 2,
+   "g": 0,
+   "a": 1,
+   "pts": 1,
+   "pm": 1,
+   "pim": 0,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
+   "coef": 0.194,
+   "status": "rostered"
+  }
+ ],
  "lastLines": [
   {
    "league": "OHL",
@@ -47,7 +65,30 @@
    "status": "rostered"
   }
  ],
- "seasons": [],
+ "seasons": [
+  {
+   "season": "2026-2027",
+   "lines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Notre Dame",
+     "gp": 2,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": 1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ]
+  }
+ ],
  "anchor": {
   "season": "2025-2026",
   "league": "OHL",
@@ -86,7 +127,15 @@
    "percentileAllAges": 73.3,
    "allAgesN": 2086
   },
-  "current": null
+  "current": {
+   "league": "ncaa",
+   "season": "2026-2027",
+   "ageBucket": "U19",
+   "cohortN": 3,
+   "gp": 2,
+   "percentile": null,
+   "note": "sample too small"
+  }
  },
  "ceiling": {
   "n": 50,
@@ -232,6 +281,6 @@
   "gp": 64,
   "season": "2025-2026"
  },
- "rank": 17,
+ "rank": 18,
  "score": 10.3
 }

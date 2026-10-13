@@ -1,12 +1,23 @@
 // In-page EliteProspects worker. Paste/run on any eliteprospects.com tab in Mark's logged-in Chrome
 // (claude-in-chrome javascript_tool). Pulls tasks from pipeline/ep_receiver.py, fetches each EP page
 // with the session cookies, extracts the embedded __NEXT_DATA__ and POSTs a compact record back.
-// Stop with: window.__ww.running = false. Status: window.__ww.
+// Stop with: window.__ww.running = false. Status: window.__ww. Restart after a stop: a new run waits for the old loop to exit.
 (() => {
   if (window.__ww && window.__ww.running) return 'already running';
   const SERVER = 'http://127.0.0.1:8765';
   const W = (window.__ww = { running: true, done: 0, err: 0, last: null, started: Date.now(), concurrency: 3, gapMs: 700 });
-  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  // Timers sleep in a dedicated Worker: Chrome throttles a hidden tab's main-thread timers to one wake-up a
+  // minute after five minutes in the background, which stalled the loop at ~12 pages per 5 minutes (10/13).
+  // Worker timers are not throttled. Falls back to setTimeout if the page's CSP refuses blob workers.
+  const sleep = (() => {
+    try {
+      const w = new Worker(URL.createObjectURL(new Blob(['onmessage=e=>setTimeout(()=>postMessage(e.data.id),e.data.ms)'])));
+      let id = 0; const cb = {};
+      w.onmessage = (e) => { const f = cb[e.data]; delete cb[e.data]; if (f) f(); };
+      W.sleeper = 'worker';
+      return (ms) => new Promise((r) => { const i = ++id; cb[i] = r; w.postMessage({ id: i, ms }); });
+    } catch (e) { W.sleeper = 'setTimeout'; return (ms) => new Promise((r) => setTimeout(r, ms)); }
+  })();
   const DROP = new Set(['flagUrl', 'logo', '__typename', 'imageUrl', 'teamLogoUrl', 'biographyAsHTML', 'links', 'agencies', 'playerHighlights', 'playerQuotes']);
   const slim = (o) => JSON.parse(JSON.stringify(o ?? null, (k, v) => (DROP.has(k) ? undefined : v)));
   const list = (o) => (Array.isArray(o) ? o : o && typeof o === 'object' ? Object.values(o).find((v) => Array.isArray(v)) || [] : []);

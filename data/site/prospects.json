@@ -1,6 +1,6 @@
 {
  "season": "20262027",
- "built": "2026-10-12",
+ "built": "2026-10-13",
  "cohort": {
   "years": [
    2008,
@@ -44,7 +44,25 @@
     "onNhlRoster": false
    },
    "scouting": "Bear leaves nothing to chance. No matter the size of the opponent, the score, or the situation, he enters every battle with speed and never concedes an inch. Bear\u2019s playoffs-every-night mentality also powers his offensive game. He powers through contact to get to the net, relentlessly battles in the slot for tips and rebounds, and dominates play from the hashmarks and in.  -EliteProspects 2025 NHL Draft Guide",
-   "currentLines": [],
+   "currentLines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 3,
+     "g": 1,
+     "a": 1,
+     "pts": 2,
+     "pm": -1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ],
    "lastLines": [
     {
      "league": "WHL",
@@ -82,6 +100,28 @@
     }
    ],
    "seasons": [
+    {
+     "season": "2026-2027",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Grand Rapids Griffins",
+       "gp": 3,
+       "g": 1,
+       "a": 1,
+       "pts": 2,
+       "pm": -1,
+       "pim": 0,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      }
+     ]
+    },
     {
      "season": "2025-2026",
      "lines": [
@@ -161,7 +201,17 @@
      "percentileAllAges": 98.1,
      "allAgesN": 2365
     },
-    "current": null
+    "current": {
+     "league": "ahl",
+     "season": "2026-2027",
+     "ageBucket": "U21",
+     "cohortN": 28,
+     "gp": 3,
+     "value": 0.6667,
+     "percentile": 60.7,
+     "percentileAllAges": 61.5,
+     "allAgesN": 543
+    }
    },
    "ceiling": {
     "n": 50,
@@ -883,12 +933,12 @@
     {
      "league": "NCAA",
      "team": "Univ. of Michigan",
-     "gp": 2,
+     "gp": 4,
      "g": 1,
-     "a": 0,
-     "pts": 1,
+     "a": 1,
+     "pts": 2,
      "pm": 0,
-     "pim": 2,
+     "pim": 4,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -924,12 +974,12 @@
       {
        "league": "NCAA",
        "team": "Univ. of Michigan",
-       "gp": 2,
+       "gp": 4,
        "g": 1,
-       "a": 0,
-       "pts": 1,
+       "a": 1,
+       "pts": 2,
        "pm": 0,
-       "pim": 2,
+       "pim": 4,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -983,8 +1033,8 @@
      "league": "ncaa",
      "season": "2026-2027",
      "ageBucket": "U19",
-     "cohortN": 0,
-     "gp": 2,
+     "cohortN": 3,
+     "gp": 4,
      "percentile": null,
      "note": "sample too small"
     }
@@ -1169,16 +1219,16 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 1,
+     "gp": 2,
      "g": null,
      "a": null,
      "pts": null,
      "pm": null,
      "pim": null,
-     "gaa": "4.74",
-     "svp": ".839",
+     "gaa": "3.90",
+     "svp": ".857",
      "w": 0,
-     "l": 0,
+     "l": 1,
      "so": 0,
      "coef": 0.389,
      "status": "rostered"
@@ -1227,16 +1277,16 @@
       {
        "league": "AHL",
        "team": "Grand Rapids Griffins",
-       "gp": 1,
+       "gp": 2,
        "g": null,
        "a": null,
        "pts": null,
        "pm": null,
        "pim": null,
-       "gaa": "4.74",
-       "svp": ".839",
+       "gaa": "3.90",
+       "svp": ".857",
        "w": 0,
-       "l": 0,
+       "l": 1,
        "so": 0,
        "coef": 0.389,
        "status": "rostered"
@@ -1616,11 +1666,11 @@
     {
      "league": "SHL",
      "team": "Timr\u00e5 IK",
-     "gp": 6,
-     "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": -3,
+     "gp": 8,
+     "g": 2,
+     "a": 2,
+     "pts": 4,
+     "pm": -1,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -1708,11 +1758,11 @@
       {
        "league": "SHL",
        "team": "Timr\u00e5 IK",
-       "gp": 6,
-       "g": 0,
-       "a": 1,
-       "pts": 1,
-       "pm": -3,
+       "gp": 8,
+       "g": 2,
+       "a": 2,
+       "pts": 4,
+       "pm": -1,
        "pim": 4,
        "gaa": null,
        "svp": null,
@@ -1842,12 +1892,12 @@
      "league": "shl",
      "season": "2026-2027",
      "ageBucket": "U20",
-     "cohortN": 11,
-     "gp": 6,
-     "value": 0.1667,
-     "percentile": 54.5,
-     "percentileAllAges": 45.5,
-     "allAgesN": 189
+     "cohortN": 13,
+     "gp": 8,
+     "value": 0.5,
+     "percentile": 76.9,
+     "percentileAllAges": 78.1,
+     "allAgesN": 215
     }
    },
    "ceiling": {
@@ -2260,7 +2310,7 @@
      "league": "ncaa",
      "season": "2026-2027",
      "ageBucket": "U21",
-     "cohortN": 0,
+     "cohortN": 27,
      "gp": 2,
      "percentile": null,
      "note": "sample too small"
@@ -2761,16 +2811,16 @@
     {
      "league": "WHL",
      "team": "Prince Albert Raiders",
-     "gp": 5,
+     "gp": 7,
      "g": null,
      "a": null,
      "pts": null,
      "pm": null,
      "pim": null,
-     "gaa": "3.26",
-     "svp": ".889",
+     "gaa": "3.51",
+     "svp": ".879",
      "w": 2,
-     "l": 3,
+     "l": 4,
      "so": 0,
      "coef": 0.141,
      "status": "rostered"
@@ -2853,16 +2903,16 @@
       {
        "league": "WHL",
        "team": "Prince Albert Raiders",
-       "gp": 5,
+       "gp": 7,
        "g": null,
        "a": null,
        "pts": null,
        "pm": null,
        "pim": null,
-       "gaa": "3.26",
-       "svp": ".889",
+       "gaa": "3.51",
+       "svp": ".879",
        "w": 2,
-       "l": 3,
+       "l": 4,
        "so": 0,
        "coef": 0.141,
        "status": "rostered"
@@ -3094,12 +3144,12 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 2,
-     "g": 2,
-     "a": 1,
-     "pts": 3,
-     "pm": 0,
-     "pim": 0,
+     "gp": 5,
+     "g": 5,
+     "a": 2,
+     "pts": 7,
+     "pm": 4,
+     "pim": 2,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -3152,12 +3202,12 @@
       {
        "league": "AHL",
        "team": "Grand Rapids Griffins",
-       "gp": 2,
-       "g": 2,
-       "a": 1,
-       "pts": 3,
-       "pm": 0,
-       "pim": 0,
+       "gp": 5,
+       "g": 5,
+       "a": 2,
+       "pts": 7,
+       "pm": 4,
+       "pim": 2,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -3397,10 +3447,12 @@
      "league": "ahl",
      "season": "2026-2027",
      "ageBucket": "U22",
-     "cohortN": 0,
-     "gp": 2,
-     "percentile": null,
-     "note": "sample too small"
+     "cohortN": 33,
+     "gp": 5,
+     "value": 1.4,
+     "percentile": 93.9,
+     "percentileAllAges": 95.2,
+     "allAgesN": 543
     }
    },
    "ceiling": {
@@ -4113,11 +4165,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Minnesota-Duluth",
-     "gp": 2,
+     "gp": 4,
      "g": 0,
-     "a": 0,
-     "pts": 0,
-     "pm": -1,
+     "a": 1,
+     "pts": 1,
+     "pm": 0,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -4188,11 +4240,11 @@
       {
        "league": "NCAA",
        "team": "Univ. of Minnesota-Duluth",
-       "gp": 2,
+       "gp": 4,
        "g": 0,
-       "a": 0,
-       "pts": 0,
-       "pm": -1,
+       "a": 1,
+       "pts": 1,
+       "pm": 0,
        "pim": 0,
        "gaa": null,
        "svp": null,
@@ -4239,8 +4291,8 @@
      "league": "ncaa",
      "season": "2026-2027",
      "ageBucket": "U19",
-     "cohortN": 0,
-     "gp": 2,
+     "cohortN": 3,
+     "gp": 4,
      "percentile": null,
      "note": "sample too small"
     }
@@ -4393,6 +4445,424 @@
    "score": 21.1
   },
   {
+   "epId": "741439",
+   "nhlId": 8485079,
+   "name": "Charlie Forslund",
+   "slug": "charlie-forslund",
+   "group": "F",
+   "position": "LW/RW",
+   "birthDate": "2006-05-04",
+   "age": 20,
+   "height": "6'4\"",
+   "weight": 218,
+   "shoots": "L",
+   "catches": null,
+   "contract": "27/28+1",
+   "rights": "unsigned",
+   "draft": {
+    "year": 2024,
+    "overall": 176,
+    "round": 6
+   },
+   "status": {
+    "prospect": true,
+    "rookieEligible": true,
+    "inWindow": true,
+    "window": "draft+2",
+    "draftYear": 2024,
+    "onNhlRoster": false
+   },
+   "scouting": "Forslund\u2019s got some credibility as a dual-threat scorer, but it\u2019s his shot that really stands out as his most potent weapon. He pairs that wicked release with a knack for popping into soft ice and creating opportunities to use it away from the puck. -EliteProspects 2024 NHL Draft Guide",
+   "currentLines": [
+    {
+     "league": "HockeyAllsvenskan",
+     "team": "Almtuna IS",
+     "gp": 10,
+     "g": 1,
+     "a": 5,
+     "pts": 6,
+     "pm": -3,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.351,
+     "status": "rostered"
+    },
+    {
+     "league": "SHL",
+     "team": "Bryn\u00e4s IF",
+     "gp": 4,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": 1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.566,
+     "status": "not-active-on-team"
+    }
+   ],
+   "lastLines": [
+    {
+     "league": "HockeyAllsvenskan",
+     "team": "Almtuna IS",
+     "gp": 28,
+     "g": 5,
+     "a": 4,
+     "pts": 9,
+     "pm": 1,
+     "pim": 12,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.351,
+     "status": "rostered"
+    },
+    {
+     "league": "U20 Nationell",
+     "team": "Mora IK U20",
+     "gp": 12,
+     "g": 3,
+     "a": 4,
+     "pts": 7,
+     "pm": -4,
+     "pim": 6,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.091,
+     "status": "rostered"
+    }
+   ],
+   "seasons": [
+    {
+     "season": "2026-2027",
+     "lines": [
+      {
+       "league": "HockeyAllsvenskan",
+       "team": "Almtuna IS",
+       "gp": 10,
+       "g": 1,
+       "a": 5,
+       "pts": 6,
+       "pm": -3,
+       "pim": 2,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.351,
+       "status": "rostered"
+      },
+      {
+       "league": "SHL",
+       "team": "Bryn\u00e4s IF",
+       "gp": 4,
+       "g": 0,
+       "a": 1,
+       "pts": 1,
+       "pm": 1,
+       "pim": 0,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.566,
+       "status": "not-active-on-team"
+      }
+     ]
+    },
+    {
+     "season": "2025-2026",
+     "lines": [
+      {
+       "league": "HockeyAllsvenskan",
+       "team": "Almtuna IS",
+       "gp": 28,
+       "g": 5,
+       "a": 4,
+       "pts": 9,
+       "pm": 1,
+       "pim": 12,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.351,
+       "status": "rostered"
+      },
+      {
+       "league": "U20 Nationell",
+       "team": "Mora IK U20",
+       "gp": 12,
+       "g": 3,
+       "a": 4,
+       "pts": 7,
+       "pm": -4,
+       "pim": 6,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.091,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2024-2025",
+     "lines": [
+      {
+       "league": "J20 Nationell",
+       "team": "Mora IK J20",
+       "gp": 44,
+       "g": 9,
+       "a": 14,
+       "pts": 23,
+       "pm": 7,
+       "pim": 8,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.091,
+       "status": "rostered"
+      },
+      {
+       "league": "HockeyAllsvenskan",
+       "team": "Mora IK",
+       "gp": 6,
+       "g": 0,
+       "a": 1,
+       "pts": 1,
+       "pm": 2,
+       "pim": 0,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.351,
+       "status": "rostered"
+      }
+     ]
+    }
+   ],
+   "anchor": {
+    "season": "2026-2027",
+    "league": "HockeyAllsvenskan",
+    "leagueSlug": "hockeyallsvenskan",
+    "table": "Allsvenskan",
+    "coef": 0.351,
+    "team": "Almtuna IS",
+    "gp": 14,
+    "g": 1,
+    "a": 5,
+    "pts": 6,
+    "pgp": 0.6,
+    "lineGp": 10,
+    "nhle": 0.191,
+    "nhle82": 15.7,
+    "lines": [
+     "SHL",
+     "HockeyAllsvenskan"
+    ],
+    "feature": 0.191
+   },
+   "league": {
+    "name": "HockeyAllsvenskan",
+    "table": "Allsvenskan",
+    "coef": 0.351,
+    "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+   },
+   "performance": {
+    "last": {
+     "league": "hockeyallsvenskan",
+     "season": "2025-2026",
+     "ageBucket": "U20",
+     "cohortN": 13,
+     "gp": 28,
+     "value": 0.3214,
+     "percentile": 61.5,
+     "percentileAllAges": 59.9,
+     "allAgesN": 377
+    },
+    "current": {
+     "league": "hockeyallsvenskan",
+     "season": "2026-2027",
+     "ageBucket": "U21",
+     "cohortN": 11,
+     "gp": 10,
+     "value": 0.6,
+     "percentile": 36.4,
+     "percentileAllAges": 69.2,
+     "allAgesN": 351
+    }
+   },
+   "ceiling": {
+    "n": 50,
+    "expected": 18.8,
+    "median": 0.0,
+    "p75": 32.3,
+    "p90": 82.6,
+    "pRegular": 0.34,
+    "pTopLine": 0.12,
+    "pAboveAvg": 0.2,
+    "pElite": 0.08,
+    "poolN": 1236,
+    "group": "F",
+    "age": 20,
+    "pickWeight": 0.0,
+    "tier": "below average",
+    "pCeiling": 0.26,
+    "featureBand": [
+     0.186,
+     0.195
+    ],
+    "examples": [
+     {
+      "name": "David Ullstr\u00f6m",
+      "year": 2008,
+      "pick": 102,
+      "league": "Elitserien",
+      "feature": 0.191,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 49
+     },
+     {
+      "name": "Ond\u0159ej Pal\u00e1t",
+      "year": 2011,
+      "pick": 208,
+      "league": "AHL",
+      "feature": 0.191,
+      "peak": 92.9,
+      "tier": "elite",
+      "nhlGp": 907
+     },
+     {
+      "name": "Adam Erne",
+      "year": 2013,
+      "pick": 33,
+      "league": "AHL",
+      "feature": 0.191,
+      "peak": 51.7,
+      "tier": "above average",
+      "nhlGp": 424
+     },
+     {
+      "name": "Jaret Anderson-Dolan",
+      "year": 2017,
+      "pick": 41,
+      "league": "AHL",
+      "feature": 0.191,
+      "peak": 32.3,
+      "tier": "below average",
+      "nhlGp": 134
+     },
+     {
+      "name": "Kirill Slepets",
+      "year": 2019,
+      "pick": 152,
+      "league": "KHL",
+      "feature": 0.191,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 0
+     },
+     {
+      "name": "Eero Elo",
+      "year": 2008,
+      "pick": 145,
+      "league": "SM-liiga",
+      "feature": 0.192,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 0
+     },
+     {
+      "name": "Carter Ashton",
+      "year": 2009,
+      "pick": 29,
+      "league": "AHL",
+      "feature": 0.19,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 54
+     },
+     {
+      "name": "Riley Sheahan",
+      "year": 2010,
+      "pick": 21,
+      "league": "AHL",
+      "feature": 0.192,
+      "peak": 68.7,
+      "tier": "above average",
+      "nhlGp": 637
+     }
+    ]
+   },
+   "pedigree": {
+    "n": 586,
+    "expected": 7.5,
+    "median": 0.0,
+    "p75": 0.0,
+    "p90": 31.0,
+    "pRegular": 0.16,
+    "pTopLine": 0.04,
+    "pAboveAvg": 0.07,
+    "pElite": 0.02,
+    "band": "121-300",
+    "group": "F"
+   },
+   "blend": {
+    "w": 0.0,
+    "sinceDraft": 2,
+    "pedigreeExpected": 7.5,
+    "cohortExpected": 18.8,
+    "expected": 18.8,
+    "tier": "replacement level"
+   },
+   "trajectory": {
+    "from": {
+     "season": "2024-2025",
+     "league": "J20 Nationell",
+     "feature": 0.049,
+     "gp": 44
+    },
+    "to": {
+     "season": "2025-2026",
+     "league": "HockeyAllsvenskan",
+     "feature": 0.095,
+     "gp": 28
+    },
+    "delta": 0.046
+   },
+   "nhlSample": null,
+   "availability": {
+    "gp": 10,
+    "season": "2026-2027"
+   },
+   "rank": 12,
+   "score": 18.8
+  },
+  {
    "epId": "644921",
    "nhlId": 8484161,
    "name": "Noah Dower-Nilsson",
@@ -4425,11 +4895,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 2,
+     "gp": 5,
      "g": 0,
      "a": 2,
      "pts": 2,
-     "pm": -1,
+     "pm": -3,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -4466,11 +4936,11 @@
       {
        "league": "AHL",
        "team": "Grand Rapids Griffins",
-       "gp": 2,
+       "gp": 5,
        "g": 0,
        "a": 2,
        "pts": 2,
-       "pm": -1,
+       "pm": -3,
        "pim": 0,
        "gaa": null,
        "svp": null,
@@ -4659,10 +5129,12 @@
      "league": "ahl",
      "season": "2026-2027",
      "ageBucket": "U22",
-     "cohortN": 0,
-     "gp": 2,
-     "percentile": null,
-     "note": "sample too small"
+     "cohortN": 33,
+     "gp": 5,
+     "value": 0.4,
+     "percentile": 51.5,
+     "percentileAllAges": 48.4,
+     "allAgesN": 543
     }
    },
    "ceiling": {
@@ -4809,7 +5281,7 @@
     "gp": 48,
     "season": "2025-2026"
    },
-   "rank": 12,
+   "rank": 13,
    "score": 18.4
   },
   {
@@ -4845,11 +5317,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Massachusetts",
-     "gp": 2,
-     "g": 0,
+     "gp": 4,
+     "g": 1,
      "a": 0,
-     "pts": 0,
-     "pm": -1,
+     "pts": 1,
+     "pm": 1,
      "pim": 2,
      "gaa": null,
      "svp": null,
@@ -4886,11 +5358,11 @@
       {
        "league": "NCAA",
        "team": "Univ. of Massachusetts",
-       "gp": 2,
-       "g": 0,
+       "gp": 4,
+       "g": 1,
        "a": 0,
-       "pts": 0,
-       "pm": -1,
+       "pts": 1,
+       "pm": 1,
        "pim": 2,
        "gaa": null,
        "svp": null,
@@ -5011,10 +5483,12 @@
      "league": "ncaa",
      "season": "2026-2027",
      "ageBucket": "U22",
-     "cohortN": 0,
-     "gp": 2,
-     "percentile": null,
-     "note": "sample too small"
+     "cohortN": 33,
+     "gp": 4,
+     "value": 0.25,
+     "percentile": 36.4,
+     "percentileAllAges": 30.8,
+     "allAgesN": 467
     }
    },
    "ceiling": {
@@ -5161,7 +5635,7 @@
     "gp": 36,
     "season": "2025-2026"
    },
-   "rank": 13,
+   "rank": 14,
    "score": 16.1
   },
   {
@@ -5197,11 +5671,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Wisconsin",
-     "gp": 1,
-     "g": 0,
+     "gp": 3,
+     "g": 1,
      "a": 0,
-     "pts": 0,
-     "pm": 0,
+     "pts": 1,
+     "pm": 1,
      "pim": 15,
      "gaa": null,
      "svp": null,
@@ -5238,11 +5712,11 @@
       {
        "league": "NCAA",
        "team": "Univ. of Wisconsin",
-       "gp": 1,
-       "g": 0,
+       "gp": 3,
+       "g": 1,
        "a": 0,
-       "pts": 0,
-       "pm": 0,
+       "pts": 1,
+       "pm": 1,
        "pim": 15,
        "gaa": null,
        "svp": null,
@@ -5319,10 +5793,12 @@
      "league": "ncaa",
      "season": "2026-2027",
      "ageBucket": "U20",
-     "cohortN": 0,
-     "gp": 1,
-     "percentile": null,
-     "note": "sample too small"
+     "cohortN": 15,
+     "gp": 3,
+     "value": 0.3333,
+     "percentile": 26.7,
+     "percentileAllAges": 39.0,
+     "allAgesN": 808
     }
    },
    "ceiling": {
@@ -5469,7 +5945,7 @@
     "gp": 54,
     "season": "2025-2026"
    },
-   "rank": 14,
+   "rank": 15,
    "score": 13.8
   },
   {
@@ -5789,7 +6265,7 @@
     "gp": 50,
     "season": "2025-2026"
    },
-   "rank": 15,
+   "rank": 16,
    "score": 12.7
   },
   {
@@ -5825,11 +6301,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 2,
+     "gp": 5,
      "g": 0,
      "a": 1,
      "pts": 1,
-     "pm": 1,
+     "pm": 3,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -5866,11 +6342,11 @@
       {
        "league": "AHL",
        "team": "Grand Rapids Griffins",
-       "gp": 2,
+       "gp": 5,
        "g": 0,
        "a": 1,
        "pts": 1,
-       "pm": 1,
+       "pm": 3,
        "pim": 0,
        "gaa": null,
        "svp": null,
@@ -5969,10 +6445,12 @@
      "league": "ahl",
      "season": "2026-2027",
      "ageBucket": "U23",
-     "cohortN": 0,
-     "gp": 2,
-     "percentile": null,
-     "note": "sample too small"
+     "cohortN": 37,
+     "gp": 5,
+     "value": 0.2,
+     "percentile": 16.2,
+     "percentileAllAges": 22.3,
+     "allAgesN": 543
     }
    },
    "ceiling": {
@@ -6119,7 +6597,7 @@
     "gp": 60,
     "season": "2025-2026"
    },
-   "rank": 16,
+   "rank": 17,
    "score": 11.1
   },
   {
@@ -6151,7 +6629,25 @@
     "onNhlRoster": false
    },
    "scouting": null,
-   "currentLines": [],
+   "currentLines": [
+    {
+     "league": "NCAA",
+     "team": "Univ. of Notre Dame",
+     "gp": 2,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": 1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.194,
+     "status": "rostered"
+    }
+   ],
    "lastLines": [
     {
      "league": "OHL",
@@ -6171,7 +6667,30 @@
      "status": "rostered"
     }
    ],
-   "seasons": [],
+   "seasons": [
+    {
+     "season": "2026-2027",
+     "lines": [
+      {
+       "league": "NCAA",
+       "team": "Univ. of Notre Dame",
+       "gp": 2,
+       "g": 0,
+       "a": 1,
+       "pts": 1,
+       "pm": 1,
+       "pim": 0,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.194,
+       "status": "rostered"
+      }
+     ]
+    }
+   ],
    "anchor": {
     "season": "2025-2026",
     "league": "OHL",
@@ -6210,7 +6729,15 @@
      "percentileAllAges": 73.3,
      "allAgesN": 2086
     },
-    "current": null
+    "current": {
+     "league": "ncaa",
+     "season": "2026-2027",
+     "ageBucket": "U19",
+     "cohortN": 3,
+     "gp": 2,
+     "percentile": null,
+     "note": "sample too small"
+    }
    },
    "ceiling": {
     "n": 50,
@@ -6356,7 +6883,7 @@
     "gp": 64,
     "season": "2025-2026"
    },
-   "rank": 17,
+   "rank": 18,
    "score": 10.3
   },
   {
@@ -6392,12 +6919,12 @@
     {
      "league": "OHL",
      "team": "Peterborough Petes",
-     "gp": 7,
-     "g": 2,
-     "a": 4,
-     "pts": 6,
+     "gp": 8,
+     "g": 3,
+     "a": 5,
+     "pts": 8,
      "pm": -5,
-     "pim": 2,
+     "pim": 7,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -6433,12 +6960,12 @@
       {
        "league": "OHL",
        "team": "Peterborough Petes",
-       "gp": 7,
-       "g": 2,
-       "a": 4,
-       "pts": 6,
+       "gp": 8,
+       "g": 3,
+       "a": 5,
+       "pts": 8,
        "pm": -5,
-       "pim": 2,
+       "pim": 7,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -6492,12 +7019,12 @@
      "league": "ohl",
      "season": "2026-2027",
      "ageBucket": "U19",
-     "cohortN": 82,
-     "gp": 7,
-     "value": 0.8571,
-     "percentile": 75.6,
-     "percentileAllAges": 75.4,
-     "allAgesN": 1774
+     "cohortN": 84,
+     "gp": 8,
+     "value": 1.0,
+     "percentile": 84.5,
+     "percentileAllAges": 81.5,
+     "allAgesN": 1839
     }
    },
    "ceiling": {
@@ -6644,7 +7171,7 @@
     "gp": 60,
     "season": "2025-2026"
    },
-   "rank": 18,
+   "rank": 19,
    "score": 10.2
   },
   {
@@ -6680,12 +7207,12 @@
     {
      "league": "OHL",
      "team": "Windsor Spitfires",
-     "gp": 7,
+     "gp": 9,
      "g": 1,
      "a": 2,
      "pts": 3,
-     "pm": 0,
-     "pim": 0,
+     "pm": -2,
+     "pim": 2,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -6789,12 +7316,12 @@
       {
        "league": "OHL",
        "team": "Windsor Spitfires",
-       "gp": 7,
+       "gp": 9,
        "g": 1,
        "a": 2,
        "pts": 3,
-       "pm": 0,
-       "pim": 0,
+       "pm": -2,
+       "pim": 2,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -6941,12 +7468,12 @@
      "league": "ohl",
      "season": "2026-2027",
      "ageBucket": "U20",
-     "cohortN": 71,
-     "gp": 7,
-     "value": 0.4286,
-     "percentile": 32.4,
-     "percentileAllAges": 42.3,
-     "allAgesN": 1774
+     "cohortN": 76,
+     "gp": 9,
+     "value": 0.3333,
+     "percentile": 19.7,
+     "percentileAllAges": 32.8,
+     "allAgesN": 1839
     }
    },
    "ceiling": {
@@ -7093,7 +7620,7 @@
     "gp": 12,
     "season": "2025-2026"
    },
-   "rank": 19,
+   "rank": 20,
    "score": 9.7
   },
   {
@@ -7129,11 +7656,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 2,
-     "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": -2,
+     "gp": 5,
+     "g": 1,
+     "a": 2,
+     "pts": 3,
+     "pm": 2,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -7187,11 +7714,11 @@
       {
        "league": "AHL",
        "team": "Grand Rapids Griffins",
-       "gp": 2,
-       "g": 0,
-       "a": 1,
-       "pts": 1,
-       "pm": -2,
+       "gp": 5,
+       "g": 1,
+       "a": 2,
+       "pts": 3,
+       "pm": 2,
        "pim": 0,
        "gaa": null,
        "svp": null,
@@ -7352,10 +7879,12 @@
      "league": "ahl",
      "season": "2026-2027",
      "ageBucket": "U24",
-     "cohortN": 0,
-     "gp": 2,
-     "percentile": null,
-     "note": "sample too small"
+     "cohortN": 41,
+     "gp": 5,
+     "value": 0.6,
+     "percentile": 56.1,
+     "percentileAllAges": 60.0,
+     "allAgesN": 543
     }
    },
    "ceiling": {
@@ -7502,7 +8031,7 @@
     "gp": 40,
     "season": "2025-2026"
    },
-   "rank": 20,
+   "rank": 21,
    "score": 9.3
   },
   {
@@ -7538,11 +8067,11 @@
     {
      "league": "OHL",
      "team": "Erie Otters",
-     "gp": 3,
-     "g": 1,
+     "gp": 6,
+     "g": 3,
      "a": 1,
-     "pts": 2,
-     "pm": 0,
+     "pts": 4,
+     "pm": 1,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -7630,11 +8159,11 @@
       {
        "league": "OHL",
        "team": "Erie Otters",
-       "gp": 3,
-       "g": 1,
+       "gp": 6,
+       "g": 3,
        "a": 1,
-       "pts": 2,
-       "pm": 0,
+       "pts": 4,
+       "pm": 1,
        "pim": 0,
        "gaa": null,
        "svp": null,
@@ -7697,12 +8226,12 @@
      "league": "ohl",
      "season": "2026-2027",
      "ageBucket": "U19",
-     "cohortN": 82,
-     "gp": 3,
+     "cohortN": 84,
+     "gp": 6,
      "value": 0.6667,
-     "percentile": 63.4,
-     "percentileAllAges": 61.5,
-     "allAgesN": 1774
+     "percentile": 63.1,
+     "percentileAllAges": 64.4,
+     "allAgesN": 1839
     }
    },
    "ceiling": {
@@ -7849,7 +8378,7 @@
     "gp": 42,
     "season": "2025-2026"
    },
-   "rank": 21,
+   "rank": 22,
    "score": 8.1
   },
   {
@@ -7885,10 +8414,10 @@
     {
      "league": "QMJHL",
      "team": "Moncton Wildcats",
-     "gp": 6,
+     "gp": 8,
      "g": 3,
-     "a": 1,
-     "pts": 4,
+     "a": 4,
+     "pts": 7,
      "pm": -1,
      "pim": 4,
      "gaa": null,
@@ -7994,10 +8523,10 @@
       {
        "league": "QMJHL",
        "team": "Moncton Wildcats",
-       "gp": 6,
+       "gp": 8,
        "g": 3,
-       "a": 1,
-       "pts": 4,
+       "a": 4,
+       "pts": 7,
        "pm": -1,
        "pim": 4,
        "gaa": null,
@@ -8047,11 +8576,11 @@
      "season": "2026-2027",
      "ageBucket": "U20",
      "cohortN": 34,
-     "gp": 6,
-     "value": 0.6667,
-     "percentile": 73.5,
-     "percentileAllAges": 80.2,
-     "allAgesN": 848
+     "gp": 8,
+     "value": 0.875,
+     "percentile": 85.3,
+     "percentileAllAges": 90.3,
+     "allAgesN": 885
     }
    },
    "ceiling": {
@@ -8198,7 +8727,7 @@
     "gp": 30,
     "season": "2025-2026"
    },
-   "rank": 22,
+   "rank": 23,
    "score": 7.0
   },
   {
@@ -8234,12 +8763,12 @@
     {
      "league": "VHL",
      "team": "Khimik Voskresensk",
-     "gp": 10,
+     "gp": 12,
      "g": 0,
      "a": 1,
      "pts": 1,
-     "pm": -1,
-     "pim": 2,
+     "pm": -2,
+     "pim": 4,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -8326,12 +8855,12 @@
       {
        "league": "VHL",
        "team": "Khimik Voskresensk",
-       "gp": 10,
+       "gp": 12,
        "g": 0,
        "a": 1,
        "pts": 1,
-       "pm": -1,
-       "pim": 2,
+       "pm": -2,
+       "pim": 4,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -8423,18 +8952,18 @@
     "table": "VHL",
     "coef": 0.328,
     "team": "Khimik Voskresensk",
-    "gp": 10,
+    "gp": 12,
     "g": 0,
     "a": 1,
     "pts": 1,
-    "pgp": 0.1,
-    "lineGp": 10,
-    "nhle": 0.033,
-    "nhle82": 2.7,
+    "pgp": 0.083,
+    "lineGp": 12,
+    "nhle": 0.027,
+    "nhle82": 2.2,
     "lines": [
      "VHL"
     ],
-    "feature": 0.033
+    "feature": 0.027
    },
    "league": {
     "name": "VHL",
@@ -8459,22 +8988,22 @@
      "season": "2026-2027",
      "ageBucket": "U20",
      "cohortN": 12,
-     "gp": 10,
-     "value": 0.1,
+     "gp": 12,
+     "value": 0.0833,
      "percentile": 50.0,
-     "percentileAllAges": 40.9,
-     "allAgesN": 516
+     "percentileAllAges": 30.4,
+     "allAgesN": 530
     }
    },
    "ceiling": {
     "n": 50,
-    "expected": 5.0,
+    "expected": 6.4,
     "median": 0.0,
     "p75": 0.0,
-    "p90": 20.7,
+    "p90": 22.4,
     "pRegular": 0.14,
-    "pTopLine": 0.0,
-    "pAboveAvg": 0.06,
+    "pTopLine": 0.02,
+    "pAboveAvg": 0.08,
     "pElite": 0.0,
     "poolN": 794,
     "group": "D",
@@ -8483,36 +9012,56 @@
     "tier": "replacement level",
     "pCeiling": 0.14,
     "featureBand": [
-     0.022,
-     0.044
+     0.016,
+     0.039
     ],
     "examples": [
      {
-      "name": "Carson Soucy",
-      "year": 2013,
-      "pick": 137,
+      "name": "Isaac MacLeod",
+      "year": 2010,
+      "pick": 136,
       "league": "NCAA",
-      "feature": 0.034,
-      "peak": 61.3,
-      "tier": "above average",
-      "nhlGp": 443
-     },
-     {
-      "name": "Simon Karlsson",
-      "year": 2011,
-      "pick": 142,
-      "league": "OHL",
-      "feature": 0.035,
+      "feature": 0.026,
       "peak": null,
       "tier": "did not stick",
       "nhlGp": 0
      },
      {
-      "name": "Patrick Koudys",
+      "name": "Peter Andersson",
+      "year": 2009,
+      "pick": 143,
+      "league": "HockeyAllsvenskan",
+      "feature": 0.025,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 0
+     },
+     {
+      "name": "Connor Clifton",
+      "year": 2013,
+      "pick": 133,
+      "league": "NCAA",
+      "feature": 0.026,
+      "peak": 54.1,
+      "tier": "above average",
+      "nhlGp": 438
+     },
+     {
+      "name": "Nikita Nesterov",
       "year": 2011,
-      "pick": 147,
-      "league": "USHL",
-      "feature": 0.034,
+      "pick": 148,
+      "league": "KHL",
+      "feature": 0.028,
+      "peak": 20.7,
+      "tier": "replacement level",
+      "nhlGp": 170
+     },
+     {
+      "name": "Ryan Zuhlsdorf",
+      "year": 2015,
+      "pick": 150,
+      "league": "NCAA",
+      "feature": 0.026,
       "peak": null,
       "tier": "did not stick",
       "nhlGp": 0
@@ -8528,44 +9077,24 @@
       "nhlGp": 0
      },
      {
-      "name": "Josh Brown",
+      "name": "Gage Ausmus",
       "year": 2013,
-      "pick": 152,
-      "league": "OHL",
-      "feature": 0.031,
-      "peak": 22.4,
-      "tier": "replacement level",
-      "nhlGp": 300
-     },
-     {
-      "name": "Anton Klementyev",
-      "year": 2009,
-      "pick": 122,
-      "league": "AHL",
-      "feature": 0.033,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 1
-     },
-     {
-      "name": "Nate Clurman",
-      "year": 2016,
-      "pick": 161,
-      "league": "USHL",
-      "feature": 0.033,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 1
-     },
-     {
-      "name": "Greg Pateryn",
-      "year": 2008,
-      "pick": 128,
+      "pick": 151,
       "league": "NCAA",
-      "feature": 0.035,
-      "peak": 19.0,
-      "tier": "replacement level",
-      "nhlGp": 290
+      "feature": 0.028,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 0
+     },
+     {
+      "name": "Alex Lepkowski",
+      "year": 2011,
+      "pick": 137,
+      "league": "OHL",
+      "feature": 0.022,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 0
      }
     ]
    },
@@ -8586,8 +9115,8 @@
     "w": 0.25,
     "sinceDraft": 1,
     "pedigreeExpected": 7.0,
-    "cohortExpected": 5.0,
-    "expected": 5.5,
+    "cohortExpected": 6.4,
+    "expected": 6.6,
     "tier": "replacement level"
    },
    "trajectory": {
@@ -8607,11 +9136,11 @@
    },
    "nhlSample": null,
    "availability": {
-    "gp": 10,
+    "gp": 12,
     "season": "2026-2027"
    },
-   "rank": 23,
-   "score": 5.5
+   "rank": 24,
+   "score": 6.6
   },
   {
    "epId": "806444",
@@ -8870,7 +9399,7 @@
     "gp": 38,
     "season": "2025-2026"
    },
-   "rank": 24,
+   "rank": 25,
    "score": 5.3
   },
   {
@@ -9050,7 +9579,7 @@
      "league": "ncaa",
      "season": "2026-2027",
      "ageBucket": "U21",
-     "cohortN": 0,
+     "cohortN": 23,
      "gp": 2,
      "percentile": null,
      "note": "sample too small"
@@ -9200,7 +9729,7 @@
     "gp": 36,
     "season": "2025-2026"
    },
-   "rank": 25,
+   "rank": 26,
    "score": 5.1
   },
   {
@@ -9460,426 +9989,8 @@
     "gp": 55,
     "season": "2025-2026"
    },
-   "rank": 26,
-   "score": 4.7
-  },
-  {
-   "epId": "741439",
-   "nhlId": 8485079,
-   "name": "Charlie Forslund",
-   "slug": "charlie-forslund",
-   "group": "F",
-   "position": "LW/RW",
-   "birthDate": "2006-05-04",
-   "age": 20,
-   "height": "6'4\"",
-   "weight": 218,
-   "shoots": "L",
-   "catches": null,
-   "contract": "27/28+1",
-   "rights": "unsigned",
-   "draft": {
-    "year": 2024,
-    "overall": 176,
-    "round": 6
-   },
-   "status": {
-    "prospect": true,
-    "rookieEligible": true,
-    "inWindow": true,
-    "window": "draft+2",
-    "draftYear": 2024,
-    "onNhlRoster": false
-   },
-   "scouting": "Forslund\u2019s got some credibility as a dual-threat scorer, but it\u2019s his shot that really stands out as his most potent weapon. He pairs that wicked release with a knack for popping into soft ice and creating opportunities to use it away from the puck. -EliteProspects 2024 NHL Draft Guide",
-   "currentLines": [
-    {
-     "league": "HockeyAllsvenskan",
-     "team": "Almtuna IS",
-     "gp": 7,
-     "g": 1,
-     "a": 3,
-     "pts": 4,
-     "pm": -2,
-     "pim": 2,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.351,
-     "status": "rostered"
-    },
-    {
-     "league": "SHL",
-     "team": "Bryn\u00e4s IF",
-     "gp": 2,
-     "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": 1,
-     "pim": 0,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.566,
-     "status": "not-active-on-team"
-    }
-   ],
-   "lastLines": [
-    {
-     "league": "HockeyAllsvenskan",
-     "team": "Almtuna IS",
-     "gp": 28,
-     "g": 5,
-     "a": 4,
-     "pts": 9,
-     "pm": 1,
-     "pim": 12,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.351,
-     "status": "rostered"
-    },
-    {
-     "league": "U20 Nationell",
-     "team": "Mora IK U20",
-     "gp": 12,
-     "g": 3,
-     "a": 4,
-     "pts": 7,
-     "pm": -4,
-     "pim": 6,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.091,
-     "status": "rostered"
-    }
-   ],
-   "seasons": [
-    {
-     "season": "2026-2027",
-     "lines": [
-      {
-       "league": "HockeyAllsvenskan",
-       "team": "Almtuna IS",
-       "gp": 7,
-       "g": 1,
-       "a": 3,
-       "pts": 4,
-       "pm": -2,
-       "pim": 2,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.351,
-       "status": "rostered"
-      },
-      {
-       "league": "SHL",
-       "team": "Bryn\u00e4s IF",
-       "gp": 2,
-       "g": 0,
-       "a": 1,
-       "pts": 1,
-       "pm": 1,
-       "pim": 0,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.566,
-       "status": "not-active-on-team"
-      }
-     ]
-    },
-    {
-     "season": "2025-2026",
-     "lines": [
-      {
-       "league": "HockeyAllsvenskan",
-       "team": "Almtuna IS",
-       "gp": 28,
-       "g": 5,
-       "a": 4,
-       "pts": 9,
-       "pm": 1,
-       "pim": 12,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.351,
-       "status": "rostered"
-      },
-      {
-       "league": "U20 Nationell",
-       "team": "Mora IK U20",
-       "gp": 12,
-       "g": 3,
-       "a": 4,
-       "pts": 7,
-       "pm": -4,
-       "pim": 6,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.091,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2024-2025",
-     "lines": [
-      {
-       "league": "J20 Nationell",
-       "team": "Mora IK J20",
-       "gp": 44,
-       "g": 9,
-       "a": 14,
-       "pts": 23,
-       "pm": 7,
-       "pim": 8,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.091,
-       "status": "rostered"
-      },
-      {
-       "league": "HockeyAllsvenskan",
-       "team": "Mora IK",
-       "gp": 6,
-       "g": 0,
-       "a": 1,
-       "pts": 1,
-       "pm": 2,
-       "pim": 0,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.351,
-       "status": "rostered"
-      }
-     ]
-    }
-   ],
-   "anchor": {
-    "season": "2025-2026",
-    "league": "HockeyAllsvenskan",
-    "leagueSlug": "hockeyallsvenskan",
-    "table": "Allsvenskan",
-    "coef": 0.351,
-    "team": "Almtuna IS",
-    "gp": 40,
-    "g": 5,
-    "a": 4,
-    "pts": 9,
-    "pgp": 0.321,
-    "lineGp": 28,
-    "nhle": 0.095,
-    "nhle82": 7.8,
-    "lines": [
-     "U20 Nationell",
-     "HockeyAllsvenskan"
-    ],
-    "feature": 0.095
-   },
-   "league": {
-    "name": "HockeyAllsvenskan",
-    "table": "Allsvenskan",
-    "coef": 0.351,
-    "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
-   },
-   "performance": {
-    "last": {
-     "league": "hockeyallsvenskan",
-     "season": "2025-2026",
-     "ageBucket": "U20",
-     "cohortN": 13,
-     "gp": 28,
-     "value": 0.3214,
-     "percentile": 61.5,
-     "percentileAllAges": 59.9,
-     "allAgesN": 377
-    },
-    "current": {
-     "league": "hockeyallsvenskan",
-     "season": "2026-2027",
-     "ageBucket": "U21",
-     "cohortN": 10,
-     "gp": 7,
-     "value": 0.5714,
-     "percentile": 30.0,
-     "percentileAllAges": 66.8,
-     "allAgesN": 334
-    }
-   },
-   "ceiling": {
-    "n": 50,
-    "expected": 3.1,
-    "median": 0.0,
-    "p75": 0.0,
-    "p90": 12.3,
-    "pRegular": 0.1,
-    "pTopLine": 0.02,
-    "pAboveAvg": 0.02,
-    "pElite": 0.02,
-    "poolN": 1305,
-    "group": "F",
-    "age": 19,
-    "pickWeight": 0.5,
-    "tier": "replacement level",
-    "pCeiling": 0.1,
-    "featureBand": [
-     0.081,
-     0.104
-    ],
-    "examples": [
-     {
-      "name": "Iiro Pakarinen",
-      "year": 2011,
-      "pick": 184,
-      "league": "SM-liiga",
-      "feature": 0.095,
-      "peak": 18.9,
-      "tier": "replacement level",
-      "nhlGp": 134
-     },
-     {
-      "name": "Hunter Drew",
-      "year": 2018,
-      "pick": 178,
-      "league": "QMJHL",
-      "feature": 0.093,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 2
-     },
-     {
-      "name": "Cristiano DiGiacinto",
-      "year": 2014,
-      "pick": 170,
-      "league": "OHL",
-      "feature": 0.096,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 0
-     },
-     {
-      "name": "Shawn Boudrias",
-      "year": 2018,
-      "pick": 179,
-      "league": "QMJHL",
-      "feature": 0.093,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 0
-     },
-     {
-      "name": "Cole Koepke",
-      "year": 2018,
-      "pick": 183,
-      "league": "USHL",
-      "feature": 0.093,
-      "peak": 19.0,
-      "tier": "replacement level",
-      "nhlGp": 166
-     },
-     {
-      "name": "Karel Plasek",
-      "year": 2019,
-      "pick": 175,
-      "league": "Czechia",
-      "feature": 0.091,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 0
-     },
-     {
-      "name": "Jordan Nolan",
-      "year": 2009,
-      "pick": 186,
-      "league": "OHL",
-      "feature": 0.097,
-      "peak": 12.3,
-      "tier": "replacement level",
-      "nhlGp": 375
-     },
-     {
-      "name": "Artyom Manukyan",
-      "year": 2018,
-      "pick": 186,
-      "league": "KHL",
-      "feature": 0.093,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 0
-     }
-    ]
-   },
-   "pedigree": {
-    "n": 586,
-    "expected": 7.5,
-    "median": 0.0,
-    "p75": 0.0,
-    "p90": 31.0,
-    "pRegular": 0.16,
-    "pTopLine": 0.04,
-    "pAboveAvg": 0.07,
-    "pElite": 0.02,
-    "band": "121-300",
-    "group": "F"
-   },
-   "blend": {
-    "w": 0.25,
-    "sinceDraft": 1,
-    "pedigreeExpected": 7.5,
-    "cohortExpected": 3.1,
-    "expected": 4.2,
-    "tier": "replacement level"
-   },
-   "trajectory": {
-    "from": {
-     "season": "2024-2025",
-     "league": "J20 Nationell",
-     "feature": 0.049,
-     "gp": 44
-    },
-    "to": {
-     "season": "2025-2026",
-     "league": "HockeyAllsvenskan",
-     "feature": 0.095,
-     "gp": 28
-    },
-    "delta": 0.046
-   },
-   "nhlSample": null,
-   "availability": {
-    "gp": 28,
-    "season": "2025-2026"
-   },
    "rank": 27,
-   "score": 4.2
+   "score": 4.7
   },
   {
    "epId": "702620",
@@ -10058,7 +10169,7 @@
      "league": "ncaa",
      "season": "2026-2027",
      "ageBucket": "U23",
-     "cohortN": 0,
+     "cohortN": 34,
      "gp": 2,
      "percentile": null,
      "note": "sample too small"
@@ -10244,11 +10355,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 2,
+     "gp": 3,
      "g": 1,
      "a": 0,
      "pts": 1,
-     "pm": 0,
+     "pm": 1,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -10285,11 +10396,11 @@
       {
        "league": "AHL",
        "team": "Grand Rapids Griffins",
-       "gp": 2,
+       "gp": 3,
        "g": 1,
        "a": 0,
        "pts": 1,
-       "pm": 0,
+       "pm": 1,
        "pim": 0,
        "gaa": null,
        "svp": null,
@@ -10410,10 +10521,12 @@
      "league": "ahl",
      "season": "2026-2027",
      "ageBucket": "U24",
-     "cohortN": 0,
-     "gp": 2,
-     "percentile": null,
-     "note": "sample too small"
+     "cohortN": 41,
+     "gp": 3,
+     "value": 0.3333,
+     "percentile": 26.8,
+     "percentileAllAges": 40.0,
+     "allAgesN": 543
     }
    },
    "ceiling": {
@@ -10740,7 +10853,7 @@
      "league": "ncaa",
      "season": "2026-2027",
      "ageBucket": "U21",
-     "cohortN": 0,
+     "cohortN": 27,
      "gp": 2,
      "percentile": null,
      "note": "sample too small"
@@ -10926,11 +11039,11 @@
     {
      "league": "DEL",
      "team": "Iserlohn Roosters",
-     "gp": 6,
+     "gp": 8,
      "g": 0,
      "a": 0,
      "pts": 0,
-     "pm": -2,
+     "pm": -5,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -11001,11 +11114,11 @@
       {
        "league": "DEL",
        "team": "Iserlohn Roosters",
-       "gp": 6,
+       "gp": 8,
        "g": 0,
        "a": 0,
        "pts": 0,
-       "pm": -2,
+       "pm": -5,
        "pim": 4,
        "gaa": null,
        "svp": null,
@@ -11195,11 +11308,11 @@
      "season": "2026-2027",
      "ageBucket": "U22",
      "cohortN": 7,
-     "gp": 6,
+     "gp": 8,
      "value": 0.0,
      "percentile": 0.0,
      "percentileAllAges": 0.0,
-     "allAgesN": 136
+     "allAgesN": 151
     }
    },
    "ceiling": {
@@ -11708,12 +11821,12 @@
     {
      "league": "NCAA",
      "team": "Ferris State Univ.",
-     "gp": 2,
+     "gp": 4,
      "g": 1,
      "a": 0,
      "pts": 1,
-     "pm": 2,
-     "pim": 2,
+     "pm": -3,
+     "pim": 4,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -11749,12 +11862,12 @@
       {
        "league": "NCAA",
        "team": "Ferris State Univ.",
-       "gp": 2,
+       "gp": 4,
        "g": 1,
        "a": 0,
        "pts": 1,
-       "pm": 2,
-       "pim": 2,
+       "pm": -3,
+       "pim": 4,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -11913,10 +12026,12 @@
      "league": "ncaa",
      "season": "2026-2027",
      "ageBucket": "U23",
-     "cohortN": 0,
-     "gp": 2,
-     "percentile": null,
-     "note": "sample too small"
+     "cohortN": 73,
+     "gp": 4,
+     "value": 0.25,
+     "percentile": 20.5,
+     "percentileAllAges": 22.0,
+     "allAgesN": 808
     }
    },
    "ceiling": {
@@ -12099,12 +12214,12 @@
     {
      "league": "NCAA",
      "team": "Univ. of Minnesota-Duluth",
-     "gp": 2,
+     "gp": 4,
      "g": 0,
      "a": 0,
      "pts": 0,
-     "pm": 1,
-     "pim": 4,
+     "pm": 2,
+     "pim": 10,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -12140,12 +12255,12 @@
       {
        "league": "NCAA",
        "team": "Univ. of Minnesota-Duluth",
-       "gp": 2,
+       "gp": 4,
        "g": 0,
        "a": 0,
        "pts": 0,
-       "pm": 1,
-       "pim": 4,
+       "pm": 2,
+       "pim": 10,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -12265,10 +12380,12 @@
      "league": "ncaa",
      "season": "2026-2027",
      "ageBucket": "U22",
-     "cohortN": 0,
-     "gp": 2,
-     "percentile": null,
-     "note": "sample too small"
+     "cohortN": 33,
+     "gp": 4,
+     "value": 0.0,
+     "percentile": 0.0,
+     "percentileAllAges": 0.0,
+     "allAgesN": 467
     }
    },
    "ceiling": {
@@ -12451,12 +12568,12 @@
     {
      "league": "NCAA",
      "team": "Univ. of Wisconsin",
-     "gp": 2,
+     "gp": 4,
      "g": 0,
      "a": 0,
      "pts": 0,
-     "pm": 1,
-     "pim": 0,
+     "pm": 4,
+     "pim": 2,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -12492,12 +12609,12 @@
       {
        "league": "NCAA",
        "team": "Univ. of Wisconsin",
-       "gp": 2,
+       "gp": 4,
        "g": 0,
        "a": 0,
        "pts": 0,
-       "pm": 1,
-       "pim": 0,
+       "pm": 4,
+       "pim": 2,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -12617,10 +12734,12 @@
      "league": "ncaa",
      "season": "2026-2027",
      "ageBucket": "U23",
-     "cohortN": 0,
-     "gp": 2,
-     "percentile": null,
-     "note": "sample too small"
+     "cohortN": 34,
+     "gp": 4,
+     "value": 0.0,
+     "percentile": 0.0,
+     "percentileAllAges": 0.0,
+     "allAgesN": 467
     }
    },
    "ceiling": {
@@ -12799,6 +12918,23 @@
    "scouting": "Father: Todd Dries\r\nUncle: Ray Dries, Jr.\r\nCousins: Danny Dries & Nick Dries",
    "currentLines": [
     {
+     "league": "NHL",
+     "team": "Detroit Red Wings",
+     "gp": 2,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -2,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    },
+    {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
      "gp": 2,
@@ -12813,7 +12949,7 @@
      "l": null,
      "so": null,
      "coef": 0.389,
-     "status": "rostered"
+     "status": "not-active-on-team"
     }
    ],
    "lastLines": [
@@ -12857,6 +12993,23 @@
      "season": "2026-2027",
      "lines": [
       {
+       "league": "NHL",
+       "team": "Detroit Red Wings",
+       "gp": 2,
+       "g": 0,
+       "a": 0,
+       "pts": 0,
+       "pm": -2,
+       "pim": 0,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 1.0,
+       "status": "rostered"
+      },
+      {
        "league": "AHL",
        "team": "Grand Rapids Griffins",
        "gp": 2,
@@ -12871,7 +13024,7 @@
        "l": null,
        "so": null,
        "coef": 0.389,
-       "status": "rostered"
+       "status": "not-active-on-team"
       }
      ]
     },
@@ -12940,583 +13093,6 @@
    "reason": "lost rookie eligibility"
   },
   {
-   "epId": "291301",
-   "nhlId": 8482184,
-   "name": "Th\u00e9o Rochette",
-   "slug": "theo-rochette",
-   "group": "F",
-   "position": "C",
-   "birthDate": "2002-02-20",
-   "age": 24,
-   "height": "5'11\"",
-   "weight": 172,
-   "shoots": "L",
-   "catches": null,
-   "contract": "26/27",
-   "rights": "signed",
-   "draft": null,
-   "status": {
-    "prospect": false,
-    "rookieEligible": true,
-    "inWindow": false,
-    "window": "undrafted",
-    "draftYear": null,
-    "onNhlRoster": false
-   },
-   "scouting": "Rochette consistently involves everyone on the ice and he looks to connect plays. His passing ability helps him achieve that -- he makes passes ahead of them with his backhand, with lobs, with slips...Name it, he does it. -EliteProspects 2022 NHL Draft Guide \r\n\r\nFamily relations:\r\nFather: St\u00e9phane Rochette",
-   "currentLines": [
-    {
-     "league": "AHL",
-     "team": "Grand Rapids Griffins",
-     "gp": 2,
-     "g": 1,
-     "a": 2,
-     "pts": 3,
-     "pm": -3,
-     "pim": 0,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.389,
-     "status": "rostered"
-    }
-   ],
-   "lastLines": [
-    {
-     "league": "NL",
-     "team": "Lausanne HC",
-     "gp": 46,
-     "g": 22,
-     "a": 21,
-     "pts": 43,
-     "pm": 12,
-     "pim": 14,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.459,
-     "status": "rostered"
-    },
-    {
-     "league": "International",
-     "team": "Switzerland (all)",
-     "gp": 23,
-     "g": 7,
-     "a": 10,
-     "pts": 17,
-     "pm": 9,
-     "pim": 6,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": null,
-     "status": "rostered"
-    },
-    {
-     "league": "WC",
-     "team": "Switzerland",
-     "gp": 10,
-     "g": 3,
-     "a": 3,
-     "pts": 6,
-     "pm": 4,
-     "pim": 2,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": null,
-     "status": "rostered"
-    }
-   ],
-   "seasons": [
-    {
-     "season": "2026-2027",
-     "lines": [
-      {
-       "league": "AHL",
-       "team": "Grand Rapids Griffins",
-       "gp": 2,
-       "g": 1,
-       "a": 2,
-       "pts": 3,
-       "pm": -3,
-       "pim": 0,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2025-2026",
-     "lines": [
-      {
-       "league": "NL",
-       "team": "Lausanne HC",
-       "gp": 46,
-       "g": 22,
-       "a": 21,
-       "pts": 43,
-       "pm": 12,
-       "pim": 14,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.459,
-       "status": "rostered"
-      },
-      {
-       "league": "International",
-       "team": "Switzerland (all)",
-       "gp": 23,
-       "g": 7,
-       "a": 10,
-       "pts": 17,
-       "pm": 9,
-       "pim": 6,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": null,
-       "status": "rostered"
-      },
-      {
-       "league": "WC",
-       "team": "Switzerland",
-       "gp": 10,
-       "g": 3,
-       "a": 3,
-       "pts": 6,
-       "pm": 4,
-       "pim": 2,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": null,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2024-2025",
-     "lines": [
-      {
-       "league": "NL",
-       "team": "Lausanne HC",
-       "gp": 38,
-       "g": 16,
-       "a": 15,
-       "pts": 31,
-       "pm": 8,
-       "pim": 10,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.459,
-       "status": "rostered"
-      },
-      {
-       "league": "International",
-       "team": "Switzerland (all)",
-       "gp": 3,
-       "g": 0,
-       "a": 0,
-       "pts": 0,
-       "pm": -3,
-       "pim": 0,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": null,
-       "status": "rostered"
-      }
-     ]
-    }
-   ],
-   "reason": "past the undrafted age window"
-  },
-  {
-   "epId": "253923",
-   "nhlId": 8480196,
-   "name": "Jacob Bryson",
-   "slug": "jacob-bryson",
-   "group": "D",
-   "position": "D",
-   "birthDate": "1997-11-18",
-   "age": 28,
-   "height": "5'9\"",
-   "weight": 176,
-   "shoots": "L",
-   "catches": null,
-   "contract": "26/27",
-   "rights": "signed",
-   "draft": {
-    "year": 2017,
-    "overall": 99,
-    "round": 4
-   },
-   "status": {
-    "prospect": false,
-    "rookieEligible": false,
-    "inWindow": false,
-    "window": "draft+9",
-    "draftYear": 2017,
-    "onNhlRoster": false
-   },
-   "scouting": "Cousins: Ella Vande Sompel, Mitchell Vande Sompel",
-   "currentLines": [
-    {
-     "league": "AHL",
-     "team": "Grand Rapids Griffins",
-     "gp": 2,
-     "g": 1,
-     "a": 1,
-     "pts": 2,
-     "pm": -1,
-     "pim": 0,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.389,
-     "status": "rostered"
-    }
-   ],
-   "lastLines": [
-    {
-     "league": "NHL",
-     "team": "Buffalo Sabres",
-     "gp": 35,
-     "g": 2,
-     "a": 3,
-     "pts": 5,
-     "pm": -1,
-     "pim": 8,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 1.0,
-     "status": "rostered"
-    },
-    {
-     "league": "NHL",
-     "team": "Winnipeg Jets",
-     "gp": 15,
-     "g": 0,
-     "a": 3,
-     "pts": 3,
-     "pm": -8,
-     "pim": 2,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 1.0,
-     "status": "rostered"
-    }
-   ],
-   "seasons": [
-    {
-     "season": "2026-2027",
-     "lines": [
-      {
-       "league": "AHL",
-       "team": "Grand Rapids Griffins",
-       "gp": 2,
-       "g": 1,
-       "a": 1,
-       "pts": 2,
-       "pm": -1,
-       "pim": 0,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2025-2026",
-     "lines": [
-      {
-       "league": "NHL",
-       "team": "Buffalo Sabres",
-       "gp": 35,
-       "g": 2,
-       "a": 3,
-       "pts": 5,
-       "pm": -1,
-       "pim": 8,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 1.0,
-       "status": "rostered"
-      },
-      {
-       "league": "NHL",
-       "team": "Winnipeg Jets",
-       "gp": 15,
-       "g": 0,
-       "a": 3,
-       "pts": 3,
-       "pm": -8,
-       "pim": 2,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 1.0,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2024-2025",
-     "lines": [
-      {
-       "league": "NHL",
-       "team": "Buffalo Sabres",
-       "gp": 48,
-       "g": 0,
-       "a": 7,
-       "pts": 7,
-       "pm": -9,
-       "pim": 10,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 1.0,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2023-2024",
-     "lines": [
-      {
-       "league": "NHL",
-       "team": "Buffalo Sabres",
-       "gp": 36,
-       "g": 1,
-       "a": 7,
-       "pts": 8,
-       "pm": 5,
-       "pim": 8,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 1.0,
-       "status": "rostered"
-      },
-      {
-       "league": "AHL",
-       "team": "Rochester Americans",
-       "gp": 10,
-       "g": 0,
-       "a": 3,
-       "pts": 3,
-       "pm": 5,
-       "pim": 2,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2022-2023",
-     "lines": [
-      {
-       "league": "NHL",
-       "team": "Buffalo Sabres",
-       "gp": 59,
-       "g": 1,
-       "a": 8,
-       "pts": 9,
-       "pm": -24,
-       "pim": 8,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 1.0,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2021-2022",
-     "lines": [
-      {
-       "league": "NHL",
-       "team": "Buffalo Sabres",
-       "gp": 73,
-       "g": 1,
-       "a": 9,
-       "pts": 10,
-       "pm": -9,
-       "pim": 12,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 1.0,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2020-2021",
-     "lines": [
-      {
-       "league": "NHL",
-       "team": "Buffalo Sabres",
-       "gp": 38,
-       "g": 1,
-       "a": 8,
-       "pts": 9,
-       "pm": -1,
-       "pim": 12,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 1.0,
-       "status": "rostered"
-      },
-      {
-       "league": "AHL",
-       "team": "Rochester Americans",
-       "gp": 5,
-       "g": 0,
-       "a": 3,
-       "pts": 3,
-       "pm": -3,
-       "pim": 2,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2019-2020",
-     "lines": [
-      {
-       "league": "AHL",
-       "team": "Rochester Americans",
-       "gp": 61,
-       "g": 4,
-       "a": 23,
-       "pts": 27,
-       "pm": 8,
-       "pim": 34,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2018-2019",
-     "lines": [
-      {
-       "league": "NCAA",
-       "team": "Providence College",
-       "gp": 42,
-       "g": 4,
-       "a": 24,
-       "pts": 28,
-       "pm": 17,
-       "pim": 8,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.194,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2017-2018",
-     "lines": [
-      {
-       "league": "NCAA",
-       "team": "Providence College",
-       "gp": 40,
-       "g": 4,
-       "a": 21,
-       "pts": 25,
-       "pm": 16,
-       "pim": 18,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.194,
-       "status": "rostered"
-      }
-     ]
-    }
-   ],
-   "reason": "lost rookie eligibility"
-  },
-  {
    "epId": "86158",
    "nhlId": 8478021,
    "name": "William Lagesson",
@@ -13549,11 +13125,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 2,
-     "g": 1,
-     "a": 0,
-     "pts": 1,
-     "pm": -1,
+     "gp": 5,
+     "g": 2,
+     "a": 2,
+     "pts": 4,
+     "pm": 2,
      "pim": 2,
      "gaa": null,
      "svp": null,
@@ -13590,11 +13166,11 @@
       {
        "league": "AHL",
        "team": "Grand Rapids Griffins",
-       "gp": 2,
-       "g": 1,
-       "a": 0,
-       "pts": 1,
-       "pm": -1,
+       "gp": 5,
+       "g": 2,
+       "a": 2,
+       "pts": 4,
+       "pm": 2,
        "pim": 2,
        "gaa": null,
        "svp": null,
@@ -14078,443 +13654,39 @@
    "reason": "lost rookie eligibility"
   },
   {
-   "epId": "45858",
-   "nhlId": 8479942,
-   "name": "Dominik Shine",
-   "slug": "dominik-shine",
+   "epId": "291301",
+   "nhlId": 8482184,
+   "name": "Th\u00e9o Rochette",
+   "slug": "theo-rochette",
    "group": "F",
-   "position": "RW/C",
-   "birthDate": "1993-04-18",
-   "age": 33,
+   "position": "C",
+   "birthDate": "2002-02-20",
+   "age": 24,
    "height": "5'11\"",
-   "weight": 181,
-   "shoots": "R",
-   "catches": null,
-   "contract": "27/28",
-   "rights": "signed",
-   "draft": null,
-   "status": {
-    "prospect": false,
-    "rookieEligible": false,
-    "inWindow": false,
-    "window": "undrafted",
-    "draftYear": null,
-    "onNhlRoster": false
-   },
-   "scouting": null,
-   "currentLines": [
-    {
-     "league": "AHL",
-     "team": "Grand Rapids Griffins",
-     "gp": 2,
-     "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": 0,
-     "pim": 0,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.389,
-     "status": "rostered"
-    }
-   ],
-   "lastLines": [
-    {
-     "league": "AHL",
-     "team": "Grand Rapids Griffins",
-     "gp": 40,
-     "g": 21,
-     "a": 18,
-     "pts": 39,
-     "pm": 25,
-     "pim": 41,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.389,
-     "status": "rostered"
-    },
-    {
-     "league": "NHL",
-     "team": "Detroit Red Wings",
-     "gp": 18,
-     "g": 3,
-     "a": 0,
-     "pts": 3,
-     "pm": 0,
-     "pim": 7,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 1.0,
-     "status": "rostered"
-    }
-   ],
-   "seasons": [
-    {
-     "season": "2026-2027",
-     "lines": [
-      {
-       "league": "AHL",
-       "team": "Grand Rapids Griffins",
-       "gp": 2,
-       "g": 0,
-       "a": 1,
-       "pts": 1,
-       "pm": 0,
-       "pim": 0,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2025-2026",
-     "lines": [
-      {
-       "league": "AHL",
-       "team": "Grand Rapids Griffins",
-       "gp": 40,
-       "g": 21,
-       "a": 18,
-       "pts": 39,
-       "pm": 25,
-       "pim": 41,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      },
-      {
-       "league": "NHL",
-       "team": "Detroit Red Wings",
-       "gp": 18,
-       "g": 3,
-       "a": 0,
-       "pts": 3,
-       "pm": 0,
-       "pim": 7,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 1.0,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2024-2025",
-     "lines": [
-      {
-       "league": "AHL",
-       "team": "Grand Rapids Griffins",
-       "gp": 61,
-       "g": 14,
-       "a": 32,
-       "pts": 46,
-       "pm": -13,
-       "pim": 76,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      },
-      {
-       "league": "NHL",
-       "team": "Detroit Red Wings",
-       "gp": 9,
-       "g": 0,
-       "a": 1,
-       "pts": 1,
-       "pm": -1,
-       "pim": 15,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 1.0,
-       "status": "rostered"
-      }
-     ]
-    }
-   ],
-   "reason": "lost rookie eligibility"
-  },
-  {
-   "epId": "512185",
-   "nhlId": 8482777,
-   "name": "Shai Buium",
-   "slug": "shai-buium",
-   "group": "D",
-   "position": "D",
-   "birthDate": "2003-03-26",
-   "age": 23,
-   "height": "6'3\"",
-   "weight": 220,
+   "weight": 172,
    "shoots": "L",
    "catches": null,
    "contract": "26/27",
    "rights": "signed",
-   "draft": {
-    "year": 2021,
-    "overall": 36,
-    "round": 2
-   },
+   "draft": null,
    "status": {
     "prospect": false,
     "rookieEligible": true,
     "inWindow": false,
-    "window": "draft+5",
-    "draftYear": 2021,
-    "onNhlRoster": false
-   },
-   "scouting": "His hands and feet work independently, each transmitting different information to opponents. With changes of pace, fakes shots, and constant eye deception, turns exits into inside-lane entries, creates passing lanes, and hits teammates through heavy pressure. Give-and-goes with a space-filling mentality allows him to create scoring chances for himself or his teammates. -EliteProspects 2021 NHL Draft Guide \r\n\r\n\r\nBrothers: Ben Buium & Zeev Buium",
-   "currentLines": [
-    {
-     "league": "AHL",
-     "team": "Grand Rapids Griffins",
-     "gp": 2,
-     "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": 1,
-     "pim": 0,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.389,
-     "status": "rostered"
-    }
-   ],
-   "lastLines": [
-    {
-     "league": "AHL",
-     "team": "Grand Rapids Griffins",
-     "gp": 36,
-     "g": 3,
-     "a": 11,
-     "pts": 14,
-     "pm": -2,
-     "pim": 8,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.389,
-     "status": "rostered"
-    }
-   ],
-   "seasons": [
-    {
-     "season": "2026-2027",
-     "lines": [
-      {
-       "league": "AHL",
-       "team": "Grand Rapids Griffins",
-       "gp": 2,
-       "g": 0,
-       "a": 1,
-       "pts": 1,
-       "pm": 1,
-       "pim": 0,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2025-2026",
-     "lines": [
-      {
-       "league": "AHL",
-       "team": "Grand Rapids Griffins",
-       "gp": 36,
-       "g": 3,
-       "a": 11,
-       "pts": 14,
-       "pm": -2,
-       "pim": 8,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2024-2025",
-     "lines": [
-      {
-       "league": "AHL",
-       "team": "Grand Rapids Griffins",
-       "gp": 67,
-       "g": 2,
-       "a": 23,
-       "pts": 25,
-       "pm": 2,
-       "pim": 22,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2023-2024",
-     "lines": [
-      {
-       "league": "NCAA",
-       "team": "Univ. of Denver",
-       "gp": 43,
-       "g": 7,
-       "a": 29,
-       "pts": 36,
-       "pm": 33,
-       "pim": 14,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.194,
-       "status": "rostered"
-      },
-      {
-       "league": "AHL",
-       "team": "Grand Rapids Griffins",
-       "gp": 1,
-       "g": 0,
-       "a": 0,
-       "pts": 0,
-       "pm": 0,
-       "pim": 0,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2022-2023",
-     "lines": [
-      {
-       "league": "NCAA",
-       "team": "Univ. of Denver",
-       "gp": 38,
-       "g": 4,
-       "a": 17,
-       "pts": 21,
-       "pm": 8,
-       "pim": 18,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.194,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2021-2022",
-     "lines": [
-      {
-       "league": "NCAA",
-       "team": "Univ. of Denver",
-       "gp": 39,
-       "g": 3,
-       "a": 15,
-       "pts": 18,
-       "pm": 20,
-       "pim": 12,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.194,
-       "status": "rostered"
-      }
-     ]
-    }
-   ],
-   "reason": "past draft+4"
-  },
-  {
-   "epId": "344665",
-   "nhlId": 8484380,
-   "name": "Wilmer Skoog",
-   "slug": "wilmer-skoog",
-   "group": "F",
-   "position": "C/LW",
-   "birthDate": "1999-07-17",
-   "age": 27,
-   "height": "6'2\"",
-   "weight": 196,
-   "shoots": "L",
-   "catches": null,
-   "contract": "26/27",
-   "rights": "signed",
-   "draft": null,
-   "status": {
-    "prospect": false,
-    "rookieEligible": false,
-    "inWindow": false,
     "window": "undrafted",
     "draftYear": null,
     "onNhlRoster": false
    },
-   "scouting": null,
+   "scouting": "Rochette consistently involves everyone on the ice and he looks to connect plays. His passing ability helps him achieve that -- he makes passes ahead of them with his backhand, with lobs, with slips...Name it, he does it. -EliteProspects 2022 NHL Draft Guide \r\n\r\nFamily relations:\r\nFather: St\u00e9phane Rochette",
    "currentLines": [
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 2,
-     "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": 2,
+     "gp": 4,
+     "g": 1,
+     "a": 2,
+     "pts": 3,
+     "pm": -4,
      "pim": 2,
      "gaa": null,
      "svp": null,
@@ -14527,37 +13699,54 @@
    ],
    "lastLines": [
     {
-     "league": "AHL",
-     "team": "Charlotte Checkers",
-     "gp": 61,
-     "g": 18,
-     "a": 19,
-     "pts": 37,
+     "league": "NL",
+     "team": "Lausanne HC",
+     "gp": 46,
+     "g": 22,
+     "a": 21,
+     "pts": 43,
      "pm": 12,
-     "pim": 51,
+     "pim": 14,
      "gaa": null,
      "svp": null,
      "w": null,
      "l": null,
      "so": null,
-     "coef": 0.389,
+     "coef": 0.459,
      "status": "rostered"
     },
     {
-     "league": "NHL",
-     "team": "Florida Panthers",
-     "gp": 3,
-     "g": 0,
-     "a": 2,
-     "pts": 2,
-     "pm": 3,
-     "pim": 4,
+     "league": "International",
+     "team": "Switzerland (all)",
+     "gp": 23,
+     "g": 7,
+     "a": 10,
+     "pts": 17,
+     "pm": 9,
+     "pim": 6,
      "gaa": null,
      "svp": null,
      "w": null,
      "l": null,
      "so": null,
-     "coef": 1.0,
+     "coef": null,
+     "status": "rostered"
+    },
+    {
+     "league": "WC",
+     "team": "Switzerland",
+     "gp": 10,
+     "g": 3,
+     "a": 3,
+     "pts": 6,
+     "pm": 4,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": null,
      "status": "rostered"
     }
    ],
@@ -14568,11 +13757,11 @@
       {
        "league": "AHL",
        "team": "Grand Rapids Griffins",
-       "gp": 2,
-       "g": 0,
-       "a": 1,
-       "pts": 1,
-       "pm": 2,
+       "gp": 4,
+       "g": 1,
+       "a": 2,
+       "pts": 3,
+       "pm": -4,
        "pim": 2,
        "gaa": null,
        "svp": null,
@@ -14588,37 +13777,54 @@
      "season": "2025-2026",
      "lines": [
       {
-       "league": "AHL",
-       "team": "Charlotte Checkers",
-       "gp": 61,
-       "g": 18,
-       "a": 19,
-       "pts": 37,
+       "league": "NL",
+       "team": "Lausanne HC",
+       "gp": 46,
+       "g": 22,
+       "a": 21,
+       "pts": 43,
        "pm": 12,
-       "pim": 51,
+       "pim": 14,
        "gaa": null,
        "svp": null,
        "w": null,
        "l": null,
        "so": null,
-       "coef": 0.389,
+       "coef": 0.459,
        "status": "rostered"
       },
       {
-       "league": "NHL",
-       "team": "Florida Panthers",
-       "gp": 3,
-       "g": 0,
-       "a": 2,
-       "pts": 2,
-       "pm": 3,
-       "pim": 4,
+       "league": "International",
+       "team": "Switzerland (all)",
+       "gp": 23,
+       "g": 7,
+       "a": 10,
+       "pts": 17,
+       "pm": 9,
+       "pim": 6,
        "gaa": null,
        "svp": null,
        "w": null,
        "l": null,
        "so": null,
-       "coef": 1.0,
+       "coef": null,
+       "status": "rostered"
+      },
+      {
+       "league": "WC",
+       "team": "Switzerland",
+       "gp": 10,
+       "g": 3,
+       "a": 3,
+       "pts": 6,
+       "pm": 4,
+       "pim": 2,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": null,
        "status": "rostered"
       }
      ]
@@ -14627,62 +13833,83 @@
      "season": "2024-2025",
      "lines": [
       {
-       "league": "AHL",
-       "team": "Charlotte Checkers",
-       "gp": 72,
-       "g": 9,
+       "league": "NL",
+       "team": "Lausanne HC",
+       "gp": 38,
+       "g": 16,
        "a": 15,
-       "pts": 24,
-       "pm": -10,
-       "pim": 63,
+       "pts": 31,
+       "pm": 8,
+       "pim": 10,
        "gaa": null,
        "svp": null,
        "w": null,
        "l": null,
        "so": null,
-       "coef": 0.389,
+       "coef": 0.459,
+       "status": "rostered"
+      },
+      {
+       "league": "International",
+       "team": "Switzerland (all)",
+       "gp": 3,
+       "g": 0,
+       "a": 0,
+       "pts": 0,
+       "pm": -3,
+       "pim": 0,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": null,
        "status": "rostered"
       }
      ]
     }
    ],
-   "reason": "lost rookie eligibility"
+   "reason": "past the undrafted age window"
   },
   {
-   "epId": "342193",
-   "nhlId": 8483045,
-   "name": "Cameron Butler",
-   "slug": "cameron-butler",
-   "group": "F",
-   "position": "RW/LW",
-   "birthDate": "2002-06-09",
-   "age": 24,
-   "height": "6'4\"",
-   "weight": 209,
-   "shoots": "R",
+   "epId": "253923",
+   "nhlId": 8480196,
+   "name": "Jacob Bryson",
+   "slug": "jacob-bryson",
+   "group": "D",
+   "position": "D",
+   "birthDate": "1997-11-18",
+   "age": 28,
+   "height": "5'9\"",
+   "weight": 176,
+   "shoots": "L",
    "catches": null,
    "contract": "26/27",
    "rights": "signed",
-   "draft": null,
+   "draft": {
+    "year": 2017,
+    "overall": 99,
+    "round": 4
+   },
    "status": {
     "prospect": false,
-    "rookieEligible": true,
+    "rookieEligible": false,
     "inWindow": false,
-    "window": "undrafted",
-    "draftYear": null,
+    "window": "draft+9",
+    "draftYear": 2017,
     "onNhlRoster": false
    },
-   "scouting": "He's physical on the forecheck, laying the body and winning puck battles. Defensively, he's in position and collapses well into the slot or the net front to lift sticks and take away opportunities. He moves with players and doesn't get caught drifting out of the play. With the puck, he makes safe plays back to the D for breakouts. -EliteProspects 2020 NHL Draft Guide",
+   "scouting": "Cousins: Ella Vande Sompel, Mitchell Vande Sompel",
    "currentLines": [
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 2,
-     "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": 0,
-     "pim": 6,
+     "gp": 5,
+     "g": 1,
+     "a": 2,
+     "pts": 3,
+     "pm": -2,
+     "pim": 0,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -14694,37 +13921,37 @@
    ],
    "lastLines": [
     {
-     "league": "ECHL",
-     "team": "Iowa Heartlanders",
-     "gp": 30,
-     "g": 9,
-     "a": 11,
-     "pts": 20,
-     "pm": -12,
-     "pim": 77,
+     "league": "NHL",
+     "team": "Buffalo Sabres",
+     "gp": 35,
+     "g": 2,
+     "a": 3,
+     "pts": 5,
+     "pm": -1,
+     "pim": 8,
      "gaa": null,
      "svp": null,
      "w": null,
      "l": null,
      "so": null,
-     "coef": 0.147,
+     "coef": 1.0,
      "status": "rostered"
     },
     {
-     "league": "AHL",
-     "team": "Iowa Wild",
-     "gp": 16,
-     "g": 1,
-     "a": 0,
-     "pts": 1,
-     "pm": -3,
-     "pim": 20,
+     "league": "NHL",
+     "team": "Winnipeg Jets",
+     "gp": 15,
+     "g": 0,
+     "a": 3,
+     "pts": 3,
+     "pm": -8,
+     "pim": 2,
      "gaa": null,
      "svp": null,
      "w": null,
      "l": null,
      "so": null,
-     "coef": 0.389,
+     "coef": 1.0,
      "status": "rostered"
     }
    ],
@@ -14735,12 +13962,12 @@
       {
        "league": "AHL",
        "team": "Grand Rapids Griffins",
-       "gp": 2,
-       "g": 0,
-       "a": 1,
-       "pts": 1,
-       "pm": 0,
-       "pim": 6,
+       "gp": 5,
+       "g": 1,
+       "a": 2,
+       "pts": 3,
+       "pm": -2,
+       "pim": 0,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -14755,31 +13982,92 @@
      "season": "2025-2026",
      "lines": [
       {
-       "league": "ECHL",
-       "team": "Iowa Heartlanders",
-       "gp": 30,
-       "g": 9,
-       "a": 11,
-       "pts": 20,
-       "pm": -12,
-       "pim": 77,
+       "league": "NHL",
+       "team": "Buffalo Sabres",
+       "gp": 35,
+       "g": 2,
+       "a": 3,
+       "pts": 5,
+       "pm": -1,
+       "pim": 8,
        "gaa": null,
        "svp": null,
        "w": null,
        "l": null,
        "so": null,
-       "coef": 0.147,
+       "coef": 1.0,
+       "status": "rostered"
+      },
+      {
+       "league": "NHL",
+       "team": "Winnipeg Jets",
+       "gp": 15,
+       "g": 0,
+       "a": 3,
+       "pts": 3,
+       "pm": -8,
+       "pim": 2,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 1.0,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2024-2025",
+     "lines": [
+      {
+       "league": "NHL",
+       "team": "Buffalo Sabres",
+       "gp": 48,
+       "g": 0,
+       "a": 7,
+       "pts": 7,
+       "pm": -9,
+       "pim": 10,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 1.0,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2023-2024",
+     "lines": [
+      {
+       "league": "NHL",
+       "team": "Buffalo Sabres",
+       "gp": 36,
+       "g": 1,
+       "a": 7,
+       "pts": 8,
+       "pm": 5,
+       "pim": 8,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 1.0,
        "status": "rostered"
       },
       {
        "league": "AHL",
-       "team": "Iowa Wild",
-       "gp": 16,
-       "g": 1,
-       "a": 0,
-       "pts": 1,
-       "pm": -3,
-       "pim": 20,
+       "team": "Rochester Americans",
+       "gp": 10,
+       "g": 0,
+       "a": 3,
+       "pts": 3,
+       "pm": 5,
+       "pim": 2,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -14791,17 +14079,78 @@
      ]
     },
     {
-     "season": "2024-2025",
+     "season": "2022-2023",
      "lines": [
       {
+       "league": "NHL",
+       "team": "Buffalo Sabres",
+       "gp": 59,
+       "g": 1,
+       "a": 8,
+       "pts": 9,
+       "pm": -24,
+       "pim": 8,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 1.0,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2021-2022",
+     "lines": [
+      {
+       "league": "NHL",
+       "team": "Buffalo Sabres",
+       "gp": 73,
+       "g": 1,
+       "a": 9,
+       "pts": 10,
+       "pm": -9,
+       "pim": 12,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 1.0,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2020-2021",
+     "lines": [
+      {
+       "league": "NHL",
+       "team": "Buffalo Sabres",
+       "gp": 38,
+       "g": 1,
+       "a": 8,
+       "pts": 9,
+       "pm": -1,
+       "pim": 12,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 1.0,
+       "status": "rostered"
+      },
+      {
        "league": "AHL",
-       "team": "Cleveland Monsters",
-       "gp": 37,
-       "g": 2,
-       "a": 1,
+       "team": "Rochester Americans",
+       "gp": 5,
+       "g": 0,
+       "a": 3,
        "pts": 3,
-       "pm": -5,
-       "pim": 74,
+       "pm": -3,
+       "pim": 2,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -14811,9 +14160,75 @@
        "status": "rostered"
       }
      ]
+    },
+    {
+     "season": "2019-2020",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Rochester Americans",
+       "gp": 61,
+       "g": 4,
+       "a": 23,
+       "pts": 27,
+       "pm": 8,
+       "pim": 34,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2018-2019",
+     "lines": [
+      {
+       "league": "NCAA",
+       "team": "Providence College",
+       "gp": 42,
+       "g": 4,
+       "a": 24,
+       "pts": 28,
+       "pm": 17,
+       "pim": 8,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.194,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2017-2018",
+     "lines": [
+      {
+       "league": "NCAA",
+       "team": "Providence College",
+       "gp": 40,
+       "g": 4,
+       "a": 21,
+       "pts": 25,
+       "pm": 16,
+       "pim": 18,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.194,
+       "status": "rostered"
+      }
+     ]
     }
    ],
-   "reason": "past the undrafted age window"
+   "reason": "lost rookie eligibility"
   },
   {
    "epId": "499518",
@@ -14848,11 +14263,11 @@
     {
      "league": "SHL",
      "team": "Malm\u00f6 Redhawks",
-     "gp": 5,
-     "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": -1,
+     "gp": 7,
+     "g": 1,
+     "a": 2,
+     "pts": 3,
+     "pm": 1,
      "pim": 6,
      "gaa": null,
      "svp": null,
@@ -14906,11 +14321,11 @@
       {
        "league": "SHL",
        "team": "Malm\u00f6 Redhawks",
-       "gp": 5,
-       "g": 0,
-       "a": 1,
-       "pts": 1,
-       "pm": -1,
+       "gp": 7,
+       "g": 1,
+       "a": 2,
+       "pts": 3,
+       "pm": 1,
        "pim": 6,
        "gaa": null,
        "svp": null,
@@ -15143,43 +14558,43 @@
    "reason": "past draft+4"
   },
   {
-   "epId": "284030",
-   "nhlId": 8481521,
-   "name": "Ronnie Attard",
-   "slug": "ronnie-attard",
+   "epId": "512185",
+   "nhlId": 8482777,
+   "name": "Shai Buium",
+   "slug": "shai-buium",
    "group": "D",
    "position": "D",
-   "birthDate": "1999-03-20",
-   "age": 27,
+   "birthDate": "2003-03-26",
+   "age": 23,
    "height": "6'3\"",
-   "weight": 207,
-   "shoots": "R",
+   "weight": 220,
+   "shoots": "L",
    "catches": null,
    "contract": "26/27",
    "rights": "signed",
    "draft": {
-    "year": 2019,
-    "overall": 72,
-    "round": 3
+    "year": 2021,
+    "overall": 36,
+    "round": 2
    },
    "status": {
     "prospect": false,
-    "rookieEligible": false,
+    "rookieEligible": true,
     "inWindow": false,
-    "window": "draft+7",
-    "draftYear": 2019,
+    "window": "draft+5",
+    "draftYear": 2021,
     "onNhlRoster": false
    },
-   "scouting": null,
+   "scouting": "His hands and feet work independently, each transmitting different information to opponents. With changes of pace, fakes shots, and constant eye deception, turns exits into inside-lane entries, creates passing lanes, and hits teammates through heavy pressure. Give-and-goes with a space-filling mentality allows him to create scoring chances for himself or his teammates. -EliteProspects 2021 NHL Draft Guide \r\n\r\n\r\nBrothers: Ben Buium & Zeev Buium",
    "currentLines": [
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 2,
+     "gp": 5,
      "g": 0,
-     "a": 0,
-     "pts": 0,
-     "pm": -1,
+     "a": 3,
+     "pts": 3,
+     "pm": 0,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -15193,13 +14608,13 @@
    "lastLines": [
     {
      "league": "AHL",
-     "team": "Colorado Eagles",
-     "gp": 44,
+     "team": "Grand Rapids Griffins",
+     "gp": 36,
      "g": 3,
-     "a": 14,
-     "pts": 17,
-     "pm": 3,
-     "pim": 38,
+     "a": 11,
+     "pts": 14,
+     "pm": -2,
+     "pim": 8,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -15216,11 +14631,11 @@
       {
        "league": "AHL",
        "team": "Grand Rapids Griffins",
-       "gp": 2,
+       "gp": 5,
        "g": 0,
-       "a": 0,
-       "pts": 0,
-       "pm": -1,
+       "a": 3,
+       "pts": 3,
+       "pm": 0,
        "pim": 0,
        "gaa": null,
        "svp": null,
@@ -15237,13 +14652,13 @@
      "lines": [
       {
        "league": "AHL",
-       "team": "Colorado Eagles",
-       "gp": 44,
+       "team": "Grand Rapids Griffins",
+       "gp": 36,
        "g": 3,
-       "a": 14,
-       "pts": 17,
-       "pm": 3,
-       "pim": 38,
+       "a": 11,
+       "pts": 14,
+       "pm": -2,
+       "pim": 8,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -15259,30 +14674,13 @@
      "lines": [
       {
        "league": "AHL",
-       "team": "Bakersfield Condors",
-       "gp": 59,
-       "g": 7,
-       "a": 10,
-       "pts": 17,
-       "pm": -5,
-       "pim": 61,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      },
-      {
-       "league": "AHL",
-       "team": "Lehigh Valley Phantoms",
-       "gp": 7,
-       "g": 0,
-       "a": 0,
-       "pts": 0,
-       "pm": -3,
-       "pim": 19,
+       "team": "Grand Rapids Griffins",
+       "gp": 67,
+       "g": 2,
+       "a": 23,
+       "pts": 25,
+       "pm": 2,
+       "pim": 22,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -15297,82 +14695,26 @@
      "season": "2023-2024",
      "lines": [
       {
-       "league": "AHL",
-       "team": "Lehigh Valley Phantoms",
-       "gp": 48,
-       "g": 10,
-       "a": 17,
-       "pts": 27,
-       "pm": 4,
-       "pim": 37,
+       "league": "NCAA",
+       "team": "Univ. of Denver",
+       "gp": 43,
+       "g": 7,
+       "a": 29,
+       "pts": 36,
+       "pm": 33,
+       "pim": 14,
        "gaa": null,
        "svp": null,
        "w": null,
        "l": null,
        "so": null,
-       "coef": 0.389,
+       "coef": 0.194,
        "status": "rostered"
       },
-      {
-       "league": "NHL",
-       "team": "Philadelphia Flyers",
-       "gp": 12,
-       "g": 0,
-       "a": 2,
-       "pts": 2,
-       "pm": 1,
-       "pim": 6,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 1.0,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2022-2023",
-     "lines": [
       {
        "league": "AHL",
-       "team": "Lehigh Valley Phantoms",
-       "gp": 68,
-       "g": 12,
-       "a": 20,
-       "pts": 32,
-       "pm": 10,
-       "pim": 41,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.389,
-       "status": "rostered"
-      },
-      {
-       "league": "WC",
-       "team": "USA",
-       "gp": 4,
-       "g": 1,
-       "a": 0,
-       "pts": 1,
-       "pm": 2,
-       "pim": 2,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": null,
-       "status": "rostered"
-      },
-      {
-       "league": "NHL",
-       "team": "Philadelphia Flyers",
-       "gp": 2,
+       "team": "Grand Rapids Griffins",
+       "gp": 1,
        "g": 0,
        "a": 0,
        "pts": 0,
@@ -15383,7 +14725,29 @@
        "w": null,
        "l": null,
        "so": null,
-       "coef": 1.0,
+       "coef": 0.389,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2022-2023",
+     "lines": [
+      {
+       "league": "NCAA",
+       "team": "Univ. of Denver",
+       "gp": 38,
+       "g": 4,
+       "a": 17,
+       "pts": 21,
+       "pm": 8,
+       "pim": 18,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.194,
        "status": "rostered"
       }
      ]
@@ -15393,13 +14757,13 @@
      "lines": [
       {
        "league": "NCAA",
-       "team": "Western Michigan Univ.",
+       "team": "Univ. of Denver",
        "gp": 39,
-       "g": 13,
-       "a": 23,
-       "pts": 36,
+       "g": 3,
+       "a": 15,
+       "pts": 18,
        "pm": 20,
-       "pim": 24,
+       "pim": 12,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -15407,16 +14771,144 @@
        "so": null,
        "coef": 0.194,
        "status": "rostered"
+      }
+     ]
+    }
+   ],
+   "reason": "past draft+4"
+  },
+  {
+   "epId": "45858",
+   "nhlId": 8479942,
+   "name": "Dominik Shine",
+   "slug": "dominik-shine",
+   "group": "F",
+   "position": "RW/C",
+   "birthDate": "1993-04-18",
+   "age": 33,
+   "height": "5'11\"",
+   "weight": 181,
+   "shoots": "R",
+   "catches": null,
+   "contract": "27/28",
+   "rights": "signed",
+   "draft": null,
+   "status": {
+    "prospect": false,
+    "rookieEligible": false,
+    "inWindow": false,
+    "window": "undrafted",
+    "draftYear": null,
+    "onNhlRoster": false
+   },
+   "scouting": null,
+   "currentLines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 5,
+     "g": 1,
+     "a": 1,
+     "pts": 2,
+     "pm": -3,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ],
+   "lastLines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 40,
+     "g": 21,
+     "a": 18,
+     "pts": 39,
+     "pm": 25,
+     "pim": 41,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    },
+    {
+     "league": "NHL",
+     "team": "Detroit Red Wings",
+     "gp": 18,
+     "g": 3,
+     "a": 0,
+     "pts": 3,
+     "pm": 0,
+     "pim": 7,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    }
+   ],
+   "seasons": [
+    {
+     "season": "2026-2027",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Grand Rapids Griffins",
+       "gp": 5,
+       "g": 1,
+       "a": 1,
+       "pts": 2,
+       "pm": -3,
+       "pim": 0,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2025-2026",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Grand Rapids Griffins",
+       "gp": 40,
+       "g": 21,
+       "a": 18,
+       "pts": 39,
+       "pm": 25,
+       "pim": 41,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
       },
       {
        "league": "NHL",
-       "team": "Philadelphia Flyers",
-       "gp": 15,
-       "g": 2,
-       "a": 2,
-       "pts": 4,
-       "pm": -2,
-       "pim": 8,
+       "team": "Detroit Red Wings",
+       "gp": 18,
+       "g": 3,
+       "a": 0,
+       "pts": 3,
+       "pm": 0,
+       "pim": 7,
        "gaa": null,
        "svp": null,
        "w": null,
@@ -15428,45 +14920,374 @@
      ]
     },
     {
-     "season": "2020-2021",
+     "season": "2024-2025",
      "lines": [
       {
-       "league": "NCAA",
-       "team": "Western Michigan Univ.",
-       "gp": 25,
-       "g": 8,
-       "a": 14,
-       "pts": 22,
-       "pm": -3,
-       "pim": 8,
+       "league": "AHL",
+       "team": "Grand Rapids Griffins",
+       "gp": 61,
+       "g": 14,
+       "a": 32,
+       "pts": 46,
+       "pm": -13,
+       "pim": 76,
        "gaa": null,
        "svp": null,
        "w": null,
        "l": null,
        "so": null,
-       "coef": 0.194,
+       "coef": 0.389,
+       "status": "rostered"
+      },
+      {
+       "league": "NHL",
+       "team": "Detroit Red Wings",
+       "gp": 9,
+       "g": 0,
+       "a": 1,
+       "pts": 1,
+       "pm": -1,
+       "pim": 15,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 1.0,
+       "status": "rostered"
+      }
+     ]
+    }
+   ],
+   "reason": "lost rookie eligibility"
+  },
+  {
+   "epId": "342193",
+   "nhlId": 8483045,
+   "name": "Cameron Butler",
+   "slug": "cameron-butler",
+   "group": "F",
+   "position": "RW/LW",
+   "birthDate": "2002-06-09",
+   "age": 24,
+   "height": "6'4\"",
+   "weight": 209,
+   "shoots": "R",
+   "catches": null,
+   "contract": "26/27",
+   "rights": "signed",
+   "draft": null,
+   "status": {
+    "prospect": false,
+    "rookieEligible": true,
+    "inWindow": false,
+    "window": "undrafted",
+    "draftYear": null,
+    "onNhlRoster": false
+   },
+   "scouting": "He's physical on the forecheck, laying the body and winning puck battles. Defensively, he's in position and collapses well into the slot or the net front to lift sticks and take away opportunities. He moves with players and doesn't get caught drifting out of the play. With the puck, he makes safe plays back to the D for breakouts. -EliteProspects 2020 NHL Draft Guide",
+   "currentLines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 5,
+     "g": 1,
+     "a": 1,
+     "pts": 2,
+     "pm": 0,
+     "pim": 11,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ],
+   "lastLines": [
+    {
+     "league": "ECHL",
+     "team": "Iowa Heartlanders",
+     "gp": 30,
+     "g": 9,
+     "a": 11,
+     "pts": 20,
+     "pm": -12,
+     "pim": 77,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.147,
+     "status": "rostered"
+    },
+    {
+     "league": "AHL",
+     "team": "Iowa Wild",
+     "gp": 16,
+     "g": 1,
+     "a": 0,
+     "pts": 1,
+     "pm": -3,
+     "pim": 20,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ],
+   "seasons": [
+    {
+     "season": "2026-2027",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Grand Rapids Griffins",
+       "gp": 5,
+       "g": 1,
+       "a": 1,
+       "pts": 2,
+       "pm": 0,
+       "pim": 11,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
        "status": "rostered"
       }
      ]
     },
     {
-     "season": "2019-2020",
+     "season": "2025-2026",
      "lines": [
       {
-       "league": "NCAA",
-       "team": "Western Michigan Univ.",
+       "league": "ECHL",
+       "team": "Iowa Heartlanders",
        "gp": 30,
-       "g": 6,
-       "a": 8,
-       "pts": 14,
-       "pm": 21,
-       "pim": 29,
+       "g": 9,
+       "a": 11,
+       "pts": 20,
+       "pm": -12,
+       "pim": 77,
        "gaa": null,
        "svp": null,
        "w": null,
        "l": null,
        "so": null,
-       "coef": 0.194,
+       "coef": 0.147,
+       "status": "rostered"
+      },
+      {
+       "league": "AHL",
+       "team": "Iowa Wild",
+       "gp": 16,
+       "g": 1,
+       "a": 0,
+       "pts": 1,
+       "pm": -3,
+       "pim": 20,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2024-2025",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Cleveland Monsters",
+       "gp": 37,
+       "g": 2,
+       "a": 1,
+       "pts": 3,
+       "pm": -5,
+       "pim": 74,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      }
+     ]
+    }
+   ],
+   "reason": "past the undrafted age window"
+  },
+  {
+   "epId": "344665",
+   "nhlId": 8484380,
+   "name": "Wilmer Skoog",
+   "slug": "wilmer-skoog",
+   "group": "F",
+   "position": "C/LW",
+   "birthDate": "1999-07-17",
+   "age": 27,
+   "height": "6'2\"",
+   "weight": 196,
+   "shoots": "L",
+   "catches": null,
+   "contract": "26/27",
+   "rights": "signed",
+   "draft": null,
+   "status": {
+    "prospect": false,
+    "rookieEligible": false,
+    "inWindow": false,
+    "window": "undrafted",
+    "draftYear": null,
+    "onNhlRoster": false
+   },
+   "scouting": null,
+   "currentLines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 5,
+     "g": 0,
+     "a": 2,
+     "pts": 2,
+     "pm": -1,
+     "pim": 6,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ],
+   "lastLines": [
+    {
+     "league": "AHL",
+     "team": "Charlotte Checkers",
+     "gp": 61,
+     "g": 18,
+     "a": 19,
+     "pts": 37,
+     "pm": 12,
+     "pim": 51,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    },
+    {
+     "league": "NHL",
+     "team": "Florida Panthers",
+     "gp": 3,
+     "g": 0,
+     "a": 2,
+     "pts": 2,
+     "pm": 3,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 1.0,
+     "status": "rostered"
+    }
+   ],
+   "seasons": [
+    {
+     "season": "2026-2027",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Grand Rapids Griffins",
+       "gp": 5,
+       "g": 0,
+       "a": 2,
+       "pts": 2,
+       "pm": -1,
+       "pim": 6,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2025-2026",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Charlotte Checkers",
+       "gp": 61,
+       "g": 18,
+       "a": 19,
+       "pts": 37,
+       "pm": 12,
+       "pim": 51,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      },
+      {
+       "league": "NHL",
+       "team": "Florida Panthers",
+       "gp": 3,
+       "g": 0,
+       "a": 2,
+       "pts": 2,
+       "pm": 3,
+       "pim": 4,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 1.0,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2024-2025",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Charlotte Checkers",
+       "gp": 72,
+       "g": 9,
+       "a": 15,
+       "pts": 24,
+       "pm": -10,
+       "pim": 63,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
        "status": "rostered"
       }
      ]
@@ -15503,7 +15324,25 @@
     "onNhlRoster": false
    },
    "scouting": "Father: John Leonard (External Link)\r\nBrother: Ryan Leonard",
-   "currentLines": [],
+   "currentLines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 1,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": 0,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ],
    "lastLines": [
     {
      "league": "AHL",
@@ -15541,6 +15380,28 @@
     }
    ],
    "seasons": [
+    {
+     "season": "2026-2027",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Grand Rapids Griffins",
+       "gp": 1,
+       "g": 0,
+       "a": 0,
+       "pts": 0,
+       "pm": 0,
+       "pim": 0,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      }
+     ]
+    },
     {
      "season": "2025-2026",
      "lines": [
@@ -15834,7 +15695,25 @@
     "onNhlRoster": false
    },
    "scouting": "Call it motor or energy or engagement or drive -- Stillman has it. He is willing to go above and beyond, willing to play whatever role needed to the maximum of his ability to give his team the win. He knows when to go after to try and retrieve it, and will head to the best areas of the ice to get a scoring chance off. -EliteProspects 2021 NHL Draft Guide \r\n\r\n\r\nGrandfather: Bud Stefanski\r\nFather: Cory Stillman\r\nBrother: Riley Stillman",
-   "currentLines": [],
+   "currentLines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 2,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": 2,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ],
    "lastLines": [
     {
      "league": "AHL",
@@ -15855,6 +15734,28 @@
     }
    ],
    "seasons": [
+    {
+     "season": "2026-2027",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Grand Rapids Griffins",
+       "gp": 2,
+       "g": 0,
+       "a": 0,
+       "pts": 0,
+       "pm": 2,
+       "pim": 4,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      }
+     ]
+    },
     {
      "season": "2025-2026",
      "lines": [
@@ -16003,6 +15904,338 @@
    "reason": "past draft+4"
   },
   {
+   "epId": "284030",
+   "nhlId": 8481521,
+   "name": "Ronnie Attard",
+   "slug": "ronnie-attard",
+   "group": "D",
+   "position": "D",
+   "birthDate": "1999-03-20",
+   "age": 27,
+   "height": "6'3\"",
+   "weight": 207,
+   "shoots": "R",
+   "catches": null,
+   "contract": "26/27",
+   "rights": "signed",
+   "draft": {
+    "year": 2019,
+    "overall": 72,
+    "round": 3
+   },
+   "status": {
+    "prospect": false,
+    "rookieEligible": false,
+    "inWindow": false,
+    "window": "draft+7",
+    "draftYear": 2019,
+    "onNhlRoster": false
+   },
+   "scouting": null,
+   "currentLines": [
+    {
+     "league": "AHL",
+     "team": "Grand Rapids Griffins",
+     "gp": 5,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -1,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ],
+   "lastLines": [
+    {
+     "league": "AHL",
+     "team": "Colorado Eagles",
+     "gp": 44,
+     "g": 3,
+     "a": 14,
+     "pts": 17,
+     "pm": 3,
+     "pim": 38,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.389,
+     "status": "rostered"
+    }
+   ],
+   "seasons": [
+    {
+     "season": "2026-2027",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Grand Rapids Griffins",
+       "gp": 5,
+       "g": 0,
+       "a": 0,
+       "pts": 0,
+       "pm": -1,
+       "pim": 2,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2025-2026",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Colorado Eagles",
+       "gp": 44,
+       "g": 3,
+       "a": 14,
+       "pts": 17,
+       "pm": 3,
+       "pim": 38,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2024-2025",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Bakersfield Condors",
+       "gp": 59,
+       "g": 7,
+       "a": 10,
+       "pts": 17,
+       "pm": -5,
+       "pim": 61,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      },
+      {
+       "league": "AHL",
+       "team": "Lehigh Valley Phantoms",
+       "gp": 7,
+       "g": 0,
+       "a": 0,
+       "pts": 0,
+       "pm": -3,
+       "pim": 19,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2023-2024",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Lehigh Valley Phantoms",
+       "gp": 48,
+       "g": 10,
+       "a": 17,
+       "pts": 27,
+       "pm": 4,
+       "pim": 37,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      },
+      {
+       "league": "NHL",
+       "team": "Philadelphia Flyers",
+       "gp": 12,
+       "g": 0,
+       "a": 2,
+       "pts": 2,
+       "pm": 1,
+       "pim": 6,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 1.0,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2022-2023",
+     "lines": [
+      {
+       "league": "AHL",
+       "team": "Lehigh Valley Phantoms",
+       "gp": 68,
+       "g": 12,
+       "a": 20,
+       "pts": 32,
+       "pm": 10,
+       "pim": 41,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.389,
+       "status": "rostered"
+      },
+      {
+       "league": "WC",
+       "team": "USA",
+       "gp": 4,
+       "g": 1,
+       "a": 0,
+       "pts": 1,
+       "pm": 2,
+       "pim": 2,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": null,
+       "status": "rostered"
+      },
+      {
+       "league": "NHL",
+       "team": "Philadelphia Flyers",
+       "gp": 2,
+       "g": 0,
+       "a": 0,
+       "pts": 0,
+       "pm": 0,
+       "pim": 0,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 1.0,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2021-2022",
+     "lines": [
+      {
+       "league": "NCAA",
+       "team": "Western Michigan Univ.",
+       "gp": 39,
+       "g": 13,
+       "a": 23,
+       "pts": 36,
+       "pm": 20,
+       "pim": 24,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.194,
+       "status": "rostered"
+      },
+      {
+       "league": "NHL",
+       "team": "Philadelphia Flyers",
+       "gp": 15,
+       "g": 2,
+       "a": 2,
+       "pts": 4,
+       "pm": -2,
+       "pim": 8,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 1.0,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2020-2021",
+     "lines": [
+      {
+       "league": "NCAA",
+       "team": "Western Michigan Univ.",
+       "gp": 25,
+       "g": 8,
+       "a": 14,
+       "pts": 22,
+       "pm": -3,
+       "pim": 8,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.194,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2019-2020",
+     "lines": [
+      {
+       "league": "NCAA",
+       "team": "Western Michigan Univ.",
+       "gp": 30,
+       "g": 6,
+       "a": 8,
+       "pts": 14,
+       "pm": 21,
+       "pim": 29,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.194,
+       "status": "rostered"
+      }
+     ]
+    }
+   ],
+   "reason": "lost rookie eligibility"
+  },
+  {
    "epId": "427991",
    "nhlId": 8485545,
    "name": "Michal Postava",
@@ -16031,15 +16264,15 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 1,
+     "gp": 3,
      "g": null,
      "a": null,
      "pts": null,
      "pm": null,
      "pim": null,
-     "gaa": "2.01",
-     "svp": ".900",
-     "w": 1,
+     "gaa": "1.34",
+     "svp": ".950",
+     "w": 3,
      "l": 0,
      "so": 0,
      "coef": 0.389,
@@ -16089,15 +16322,15 @@
       {
        "league": "AHL",
        "team": "Grand Rapids Griffins",
-       "gp": 1,
+       "gp": 3,
        "g": null,
        "a": null,
        "pts": null,
        "pm": null,
        "pim": null,
-       "gaa": "2.01",
-       "svp": ".900",
-       "w": 1,
+       "gaa": "1.34",
+       "svp": ".950",
+       "w": 3,
        "l": 0,
        "so": 0,
        "coef": 0.389,

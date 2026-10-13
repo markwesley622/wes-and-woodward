@@ -31,12 +31,12 @@
   {
    "league": "VHL",
    "team": "Khimik Voskresensk",
-   "gp": 10,
+   "gp": 12,
    "g": 0,
    "a": 1,
    "pts": 1,
-   "pm": -1,
-   "pim": 2,
+   "pm": -2,
+   "pim": 4,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -123,12 +123,12 @@
     {
      "league": "VHL",
      "team": "Khimik Voskresensk",
-     "gp": 10,
+     "gp": 12,
      "g": 0,
      "a": 1,
      "pts": 1,
-     "pm": -1,
-     "pim": 2,
+     "pm": -2,
+     "pim": 4,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -220,18 +220,18 @@
   "table": "VHL",
   "coef": 0.328,
   "team": "Khimik Voskresensk",
-  "gp": 10,
+  "gp": 12,
   "g": 0,
   "a": 1,
   "pts": 1,
-  "pgp": 0.1,
-  "lineGp": 10,
-  "nhle": 0.033,
-  "nhle82": 2.7,
+  "pgp": 0.083,
+  "lineGp": 12,
+  "nhle": 0.027,
+  "nhle82": 2.2,
   "lines": [
    "VHL"
   ],
-  "feature": 0.033
+  "feature": 0.027
  },
  "league": {
   "name": "VHL",
@@ -256,22 +256,22 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 12,
-   "gp": 10,
-   "value": 0.1,
+   "gp": 12,
+   "value": 0.0833,
    "percentile": 50.0,
-   "percentileAllAges": 40.9,
-   "allAgesN": 516
+   "percentileAllAges": 30.4,
+   "allAgesN": 530
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 5.0,
+  "expected": 6.4,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 20.7,
+  "p90": 22.4,
   "pRegular": 0.14,
-  "pTopLine": 0.0,
-  "pAboveAvg": 0.06,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.08,
   "pElite": 0.0,
   "poolN": 794,
   "group": "D",
@@ -280,36 +280,56 @@
   "tier": "replacement level",
   "pCeiling": 0.14,
   "featureBand": [
-   0.022,
-   0.044
+   0.016,
+   0.039
   ],
   "examples": [
    {
-    "name": "Carson Soucy",
-    "year": 2013,
-    "pick": 137,
+    "name": "Isaac MacLeod",
+    "year": 2010,
+    "pick": 136,
     "league": "NCAA",
-    "feature": 0.034,
-    "peak": 61.3,
-    "tier": "above average",
-    "nhlGp": 443
-   },
-   {
-    "name": "Simon Karlsson",
-    "year": 2011,
-    "pick": 142,
-    "league": "OHL",
-    "feature": 0.035,
+    "feature": 0.026,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Patrick Koudys",
+    "name": "Peter Andersson",
+    "year": 2009,
+    "pick": 143,
+    "league": "HockeyAllsvenskan",
+    "feature": 0.025,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Connor Clifton",
+    "year": 2013,
+    "pick": 133,
+    "league": "NCAA",
+    "feature": 0.026,
+    "peak": 54.1,
+    "tier": "above average",
+    "nhlGp": 438
+   },
+   {
+    "name": "Nikita Nesterov",
     "year": 2011,
-    "pick": 147,
-    "league": "USHL",
-    "feature": 0.034,
+    "pick": 148,
+    "league": "KHL",
+    "feature": 0.028,
+    "peak": 20.7,
+    "tier": "replacement level",
+    "nhlGp": 170
+   },
+   {
+    "name": "Ryan Zuhlsdorf",
+    "year": 2015,
+    "pick": 150,
+    "league": "NCAA",
+    "feature": 0.026,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -325,44 +345,24 @@
     "nhlGp": 0
    },
    {
-    "name": "Josh Brown",
+    "name": "Gage Ausmus",
     "year": 2013,
-    "pick": 152,
-    "league": "OHL",
-    "feature": 0.031,
-    "peak": 22.4,
-    "tier": "replacement level",
-    "nhlGp": 300
-   },
-   {
-    "name": "Anton Klementyev",
-    "year": 2009,
-    "pick": 122,
-    "league": "AHL",
-    "feature": 0.033,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
-   },
-   {
-    "name": "Nate Clurman",
-    "year": 2016,
-    "pick": 161,
-    "league": "USHL",
-    "feature": 0.033,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
-   },
-   {
-    "name": "Greg Pateryn",
-    "year": 2008,
-    "pick": 128,
+    "pick": 151,
     "league": "NCAA",
-    "feature": 0.035,
-    "peak": 19.0,
-    "tier": "replacement level",
-    "nhlGp": 290
+    "feature": 0.028,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Alex Lepkowski",
+    "year": 2011,
+    "pick": 137,
+    "league": "OHL",
+    "feature": 0.022,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -383,8 +383,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 5.0,
-  "expected": 5.5,
+  "cohortExpected": 6.4,
+  "expected": 6.6,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -404,9 +404,9 @@
  },
  "nhlSample": null,
  "availability": {
-  "gp": 10,
+  "gp": 12,
   "season": "2026-2027"
  },
- "rank": 23,
- "score": 5.5
+ "rank": 24,
+ "score": 6.6
 }
