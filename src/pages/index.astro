@@ -204,37 +204,40 @@ const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveI
   }
 
   // Analysis pin (Mark, 10/13): on wide screens the Analysis section pins once its bottom reaches the bottom of the
-  // viewport and the three thumbnails animate one at a time, one scroll gesture each. Arriving plays the first,
-  // the next scroll plays the second, the next the third, and the scroll after that releases the page. Scrolling
-  // back up runs the steps in reverse. Trackpad momentum is swallowed so one swipe is one step. Keyboard and
-  // scrollbar scrolling are never blocked; they move through the same steps by position. Stacked cards (900px and
-  // under), windows too short to show the whole section, and reduced motion keep each thumbnail's own scroll timing.
+  // viewport, and the three thumbnails play one after another as the reader keeps scrolling: the puck drops while the
+  // section rises into place, the next stretch of scroll turns the ghost, the stretch after that flips the letter,
+  // then the pin lets go. Scroll is never intercepted (a wheel-jacked version that played one card per gesture felt
+  // frozen on trackpads, so it was dropped): every scroll moves an animation, and each card's --p eases toward its
+  // scroll-linked target so wheel notches read as smooth motion. Stacked cards (900px and under), windows too short
+  // to show the whole section, and reduced motion keep each thumbnail's own scroll timing.
   const pinWrap = document.getElementById('an-pin');
   const pinSec = document.getElementById('analysis');
   const thumbs = ['thumb-predictions', 'thumb-kasper', 'thumb-two-way'].map((id) => document.getElementById(id));
   if (pinWrap && pinSec && thumbs.every(Boolean)) {
-    const DUR = [1100, 1500, 1200];                       // puck drop, ghost turn, letter flip (ms)
     const wide = matchMedia('(min-width: 901px)'), still = matchMedia('(prefers-reduced-motion: reduce)');
-    const t = [0, 0, 0], target = [0, 0, 0];
-    let on = false, step = 0, steps = [0, 0, 0], raf = 0, last = 0;
-    const ease = (x) => (x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2);
-    const paint = () => thumbs.forEach((el, i) => el.style.setProperty('--p', ease(t[i]).toFixed(3)));
+    const shown = [0, 0, 0], target = [0, 0, 0];
+    let on = false, s0 = 0, seg = 0, raf = 0, last = 0;
+    const clamp = (v) => Math.min(1, Math.max(0, v));
+    const paint = () => thumbs.forEach((el, i) => el.style.setProperty('--p', shown[i].toFixed(3)));
+    const aim = () => {
+      const y = scrollY;
+      target[0] = clamp((y - (s0 - seg)) / seg);            // the puck drops over the last stretch before the pin
+      target[1] = clamp((y - s0) / seg);                    // first stretch of the pin: the ghost turns
+      target[2] = clamp((y - s0 - seg) / seg);              // second stretch: the letter flips, then the pin releases
+    };
     const tick = (now) => {
       const dt = last ? Math.min(64, now - last) : 16;
       last = now;
+      const k = 1 - Math.pow(1 - 0.2, dt / 16.7);           // ease toward the scroll position, frame-rate independent
       let moving = false;
       for (let i = 0; i < 3; i++) {
-        if (t[i] === target[i]) continue;
-        const d = dt / DUR[i];
-        t[i] = target[i] > t[i] ? Math.min(target[i], t[i] + d) : Math.max(target[i], t[i] - d);
+        const d = target[i] - shown[i];
+        if (Math.abs(d) < 0.001) { shown[i] = target[i]; continue; }
+        shown[i] += d * k;
         moving = true;
       }
       paint();
       if (moving) raf = requestAnimationFrame(tick); else { raf = 0; last = 0; }
-    };
-    const aim = () => {
-      const y = scrollY;
-      for (let i = 0; i < 3; i++) target[i] = y >= steps[i] - step * 0.5 ? 1 : 0;
     };
     const update = () => { if (!on) return; aim(); if (!raf) raf = requestAnimationFrame(tick); };
     const layout = () => {
@@ -247,51 +250,18 @@ const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveI
         if (was) dispatchEvent(new Event('scroll'));          // hand each thumbnail back its own timing
         return;
       }
-      step = Math.round(vh * 0.45);                           // scroll distance behind each step
-      pinWrap.style.setProperty('--pin-h', `${h + 2 * step}px`);
+      seg = Math.round(vh * 0.55);                            // scroll distance behind each card (about one swipe)
+      pinWrap.style.setProperty('--pin-h', `${h + 2 * seg}px`);
       pinWrap.style.setProperty('--pin-top', `${vh - h}px`);
       pinWrap.classList.add('on');
-      const s0 = pinWrap.getBoundingClientRect().top + scrollY + h - vh;   // the section's bottom meets the viewport's
-      steps = [s0, s0 + step, s0 + 2 * step];                              // the last step is where the pin lets go
+      s0 = pinWrap.getBoundingClientRect().top + scrollY + h - vh;   // the section's bottom meets the viewport's
       thumbs.forEach((el) => { el.dataset.seq = '1'; });
       aim();
-      if (!was) { for (let i = 0; i < 3; i++) t[i] = target[i]; paint(); }   // no replay on load or resize
+      if (!was) { for (let i = 0; i < 3; i++) shown[i] = target[i]; paint(); }   // no replay on load or resize
     };
 
-    // one gesture, one step: a step locks out further wheel input until its animation has finished AND the wheel
-    // has gone quiet (trackpad momentum included), so a steadily spinning wheel still plays each card in full
-    let lock = false, lockAt = 0, lockFor = 0, quiet = 0;
-    const settle = () => {
-      clearTimeout(quiet);
-      quiet = setTimeout(() => { if (performance.now() - lockAt > lockFor) lock = false; else settle(); }, 180);
-    };
-    const go = (y, ms) => { lock = true; lockAt = performance.now(); lockFor = ms; scrollTo({ top: y, behavior: 'smooth' }); settle(); };
-    addEventListener('wheel', (e) => {
-      if (!on || e.ctrlKey) return;                           // pinch-zoom passes through
-      const dy = e.deltaY * (e.deltaMode === 1 ? 40 : e.deltaMode === 2 ? innerHeight : 1);
-      if (!dy || Math.abs(dy) < Math.abs(e.deltaX)) return;
-      const y = scrollY, first = steps[0], end = steps[2], tol = 2;
-      const near = y >= first - innerHeight && y <= end + innerHeight;
-      if (lock) { if (near) { e.preventDefault(); settle(); } return; }
-      if (dy > 0) {
-        if (y < first - tol) {                                // arriving: stop at the freeze point
-          if (near && y + dy >= first - tol) { e.preventDefault(); go(first, DUR[0]); }
-          return;
-        }
-        const k = steps.findIndex((s) => s > y + tol);
-        if (k >= 0) { e.preventDefault(); go(steps[k], DUR[k]); }     // past the last step the page scrolls on
-      } else {
-        if (y > end + tol) {                                  // coming back up: stop with all three played
-          if (near && y + dy <= end + tol) { e.preventDefault(); go(end, 700); }
-          return;
-        }
-        const prev = [...steps].reverse().find((s) => s < y - tol);
-        if (prev !== undefined) { e.preventDefault(); go(prev, 900); }
-      }
-    }, { passive: false });
-
-    // the hero's scroll cue jumps to the freeze point, not past it
-    document.querySelector('.cue')?.addEventListener('click', (e) => { if (on) { e.preventDefault(); scrollTo({ top: steps[0], behavior: 'smooth' }); } });
+    // the hero's scroll cue lands on the freeze point (puck down, ghost and letter still to come)
+    document.querySelector('.cue')?.addEventListener('click', (e) => { if (on) { e.preventDefault(); scrollTo({ top: s0, behavior: 'smooth' }); } });
 
     let rt = 0;
     addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(layout, 120); });
