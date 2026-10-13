@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import C from '../../../data/site/articles/marco-kasper-copy.json';
+import c1 from '../../../data/site/articles/marco-kasper/c1-trajectories.svg?raw';
+import c2 from '../../../data/site/articles/marco-kasper/c2-peak-before-after.svg?raw';
+import c3 from '../../../data/site/articles/marco-kasper/c3-where-the-points-went.svg?raw';
+import c4 from '../../../data/site/articles/marco-kasper/c4-sophomore-drop-rarity.svg?raw';
+import c6 from '../../../data/site/articles/marco-kasper/c6-what-2026-27-needs.svg?raw';
+import c7 from '../../../data/site/articles/marco-kasper/c7-similar-starts-year-three.svg?raw';
+import c8 from '../../../data/site/articles/marco-kasper/c8-season-quarters.svg?raw';
+
+const parts = C.parts, idx = C.idx;
+// each figure goes right after the paragraph its anchor names (anchors come from research/kasper/build_copy.py)
+const figs = [
+  [idx.fig_quarters, c8], [idx.fig_rarity, c4], [idx.fig_peak, c2], [idx.fig_lines, c1],
+  [idx.fig_points, c3], [idx.fig_needs, c6], [idx.fig_starts, c7],
+];
+const blocks = [];
+let start = 0;
+for (const [after, svg] of figs) {
+  blocks.push({ html: parts.slice(start, after + 1).join('') });
+  blocks.push({ svg });
+  start = after + 1;
+}
+blocks.push({ html: parts.slice(start).join('') });
+
+const URL = 'https://wesandwoodward.com/analysis/marco-kasper-year-three/';
+const DESC = 'Marco Kasper’s second season was worse than a sophomore slump. What the comps, the luck and the projections say he needs in year three.';
+---
+<Base ogType="article" schema={[{ '@type': 'Article', '@id': `${URL}#article`, url: URL, mainEntityOfPage: URL, headline: C.title, image: ['https://wesandwoodward.com/icon-512.png'], description: DESC,
+  datePublished: '2026-10-13', dateModified: '2026-10-13', inLanguage: 'en-US', author: { '@id': 'https://wesandwoodward.com/#org' }, publisher: { '@id': 'https://wesandwoodward.com/#org' }, isPartOf: { '@id': 'https://wesandwoodward.com/#website' },
+  about: [{ '@id': 'https://wesandwoodward.com/team/#team' }, { '@type': 'Person', name: 'Marco Kasper' }], articleSection: 'Analysis',
+  keywords: ['Marco Kasper', 'Detroit Red Wings', 'sophomore slump', 'player projections', 'expected goals', 'comparable players'], wordCount: C.words }]}
+  title={`${C.title} — Wes & Woodward`} description={DESC}>
+  <section class="sec">
+    <div class="shell">
+      <p class="kicker mono">Analysis · October 13, 2026</p>
+      <h1 class="page-title">{C.title}</h1>
+      {blocks.map((b) => b.html !== undefined
+        ? <div class="prose" set:html={b.html} />
+        : <figure class="fig" set:html={b.svg} />)}
+      <p class="note mono" style="margin-top:28px">Method: points are era-adjusted to 2025-26 scoring and scaled to 82 games unless noted. Comparison pools come from the NHL stats API: the 266 forwards since 1997-98 who were regulars at 20 or younger; the 172 forwards since 1997-98 who were 21 or younger as rookies, scored at a 30-to-55-point pace and played half of year two; and the forwards since 1980-81 who scored at a 28-point pace or better as rookies at 21 or younger, then kept 65% of that rate or less in year two. Projections are quantile regressions (20th, 50th and 80th percentiles) on forwards' first two seasons, with seasons out of the NHL counted as zero; the year-three targets come from a regression on 216 forwards with three straight regular seasons, and median-forward minutes are 15:22 a night. Goals, expected goals and on-ice numbers are MoneyPuck.com's. RAPM and expected goals above replacement are Evolving-Hockey's, with percentiles among forwards who played 41 or more games.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .kicker { color: var(--mute); margin: 0 0 18px; }
+  .page-title { font-size: clamp(36px, 5.2vw, 72px); line-height: .94; margin-bottom: 30px; max-width: 18ch; text-wrap: balance; }
+  .prose { max-width: 68ch; font-size: 18px; line-height: 1.65; }
+  .prose :global(p) { margin: 0 0 18px; }
+  .prose :global(ul.art) { margin: 0 0 18px; padding-left: 22px; display: grid; gap: 4px; }
+  .prose :global(h3.art) { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.1; letter-spacing: -.02em; text-transform: none; margin: 40px 0 16px; }
+  .prose :global(h3.art::before) { content: "// "; color: var(--red); }
+  .fig { margin: 26px 0 38px; max-width: 760px; }
+  .fig :global(svg) { width: 100%; height: auto; display: block; }
+  .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 68ch; }
+</style>
