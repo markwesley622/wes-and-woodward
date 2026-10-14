@@ -1,5 +1,6 @@
 #!/bin/zsh
-# Nightly stats refresh (launchd, 10:30 PM Pacific): pull NHL + MoneyPuck, rebuild team/site data and
+# Nightly stats refresh (launchd, 5:00 AM Pacific; MoneyPuck posts its per-game files ~3:30 AM PT, so the
+# previous night's game scores are complete by then): pull NHL + MoneyPuck, rebuild team/site data and
 # every player page, commit the data and push as markwesley622 so GitHub Actions redeploys the site.
 # Evolving-Hockey exports are subscriber files that stay local, which is why this runs on the Mac, not in CI.
 # It runs from the mirror clone at ~/.wesandwoodward/repo: launchd cannot read ~/Documents (macOS privacy
