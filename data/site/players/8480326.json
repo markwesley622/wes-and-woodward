@@ -20,15 +20,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 2,
+  "gp": 3,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "plusMinus": -2,
+  "plusMinus": -3,
   "pim": 0,
   "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": "10:23",
+  "toiPerGame": "11:00",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -41,11 +41,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 2,
+   "gp": 3,
    "goals": 0,
    "assists": 0,
    "points": 0,
-   "plusMinus": -2,
+   "plusMinus": -3,
    "pim": 0
   },
   {
@@ -64,21 +64,21 @@
   "name": "Sheldon Dries",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480326.png",
-  "gamesPlayed": 2,
+  "gamesPlayed": 3,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": 622.5,
-  "ixG": 0.46,
-  "goalsAboveExpected": -0.46,
-  "gameScore": 0.1,
+  "toiPerGame": 659.7,
+  "ixG": 0.62,
+  "goalsAboveExpected": -0.62,
+  "gameScore": -0.27,
   "fiveOnFive": {
-   "icetimeMinutes": 19.1,
-   "onIceXgPct": 0.45,
-   "onIceCorsiPct": 0.48,
-   "ixgPer60": 1.449,
+   "icetimeMinutes": 30.9,
+   "onIceXgPct": 0.43,
+   "onIceCorsiPct": 0.46,
+   "ixgPer60": 1.203,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -86,84 +86,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.23,
-   "percentile": 20
+   "value": -0.32,
+   "percentile": 17
   },
   "Offense": {
-   "value": -0.3,
-   "percentile": 39
+   "value": -0.5,
+   "percentile": 27
   },
   "Defense": {
-   "value": -0.2,
+   "value": -0.3,
    "percentile": 35
   },
   "Net": {
-   "value": -0.5,
-   "percentile": 33
+   "value": -0.8,
+   "percentile": 23
   }
  },
  "score": null,
  "standIn": {
-  "value": 32.6,
+  "value": 32.1,
   "gs": -0.18,
-  "gs60": -0.52,
+  "gs60": -0.33,
   "gameScore": -0.18,
-  "minutes": 21,
-  "gp": 2,
-  "rank": 511,
-  "pool": 661,
-  "percentile": 22.7,
+  "minutes": 33,
+  "gp": 3,
+  "rank": 531,
+  "pool": 673,
+  "percentile": 21.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 509,
+    "rank": 529,
+    "name": "Kyle Capobianco",
+    "team": "DAL",
+    "pos": "D",
+    "gp": 1,
+    "value": 32.2,
+    "gs60": -0.16,
+    "isMe": false
+   },
+   {
+    "rank": 530,
     "name": "Connor Zary",
     "team": "CGY",
     "pos": "C",
     "gp": 2,
-    "value": 32.7,
+    "value": 32.1,
     "gs60": -0.17,
     "isMe": false
    },
    {
-    "rank": 510,
-    "name": "Jason Dickinson",
-    "team": "EDM",
-    "pos": "C",
-    "gp": 2,
-    "value": 32.7,
-    "gs60": -0.18,
-    "isMe": false
-   },
-   {
-    "rank": 511,
+    "rank": 531,
     "name": "Sheldon Dries",
     "team": "DET",
     "pos": "C",
-    "gp": 2,
-    "value": 32.6,
+    "gp": 3,
+    "value": 32.1,
     "gs60": -0.18,
     "isMe": true
    },
    {
-    "rank": 512,
-    "name": "Nico Sturm",
-    "team": "MIN",
-    "pos": "C",
-    "gp": 2,
-    "value": 32.6,
-    "gs60": -0.18,
-    "isMe": false
-   },
-   {
-    "rank": 513,
+    "rank": 532,
     "name": "Bo Groulx",
     "team": "TOR",
     "pos": "C",
     "gp": 5,
-    "value": 32.5,
+    "value": 32.0,
     "gs60": -0.2,
+    "isMe": false
+   },
+   {
+    "rank": 533,
+    "name": "Aatu Rty",
+    "team": "VAN",
+    "pos": "C",
+    "gp": 4,
+    "value": 31.9,
+    "gs60": -0.21,
     "isMe": false
    }
   ],
@@ -312,6 +312,30 @@
     "moneypuck": -0.31,
     "hockeystatcards": 0.29
    }
+  },
+  {
+   "gameId": 2026020090,
+   "date": "2026-10-13",
+   "opponent": "NJD",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 12.2,
+   "ixg": 0.17,
+   "xgf": 0.38,
+   "xga": 0.53,
+   "gf": 0.0,
+   "ga": 1.0,
+   "blocks": 0.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": -0.52
+   }
   }
  ],
  "teamGameScore": null,
@@ -331,7 +355,7 @@
   "above2": 0,
   "below0": 2
  },
- "detGames": 2,
+ "detGames": 3,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {

@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 5,
-  "goals": 1,
-  "assists": 0,
-  "points": 1,
-  "plusMinus": 2,
+  "gp": 6,
+  "goals": 2,
+  "assists": 1,
+  "points": 3,
+  "plusMinus": 6,
   "pim": 0,
-  "shots": 9,
-  "shootingPct": 0.111111,
-  "toiPerGame": "16:32",
+  "shots": 13,
+  "shootingPct": 0.153846,
+  "toiPerGame": "16:50",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 5,
-   "goals": 1,
-   "assists": 0,
-   "points": 1,
-   "plusMinus": 2,
+   "gp": 6,
+   "goals": 2,
+   "assists": 1,
+   "points": 3,
+   "plusMinus": 6,
    "pim": 0
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Emmitt Finnie",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484471.png",
-  "gamesPlayed": 5,
-  "goals": 1,
-  "assists": 0,
-  "points": 1,
-  "shots": 9,
-  "shootingPct": 0.111111,
-  "toiPerGame": 991.8,
-  "ixG": 1.2,
-  "goalsAboveExpected": -0.2,
-  "gameScore": 2.04,
+  "gamesPlayed": 6,
+  "goals": 2,
+  "assists": 1,
+  "points": 3,
+  "shots": 13,
+  "shootingPct": 0.153846,
+  "toiPerGame": 1009.8,
+  "ixG": 1.57,
+  "goalsAboveExpected": 0.43,
+  "gameScore": 4.79,
   "fiveOnFive": {
-   "icetimeMinutes": 65.2,
-   "onIceXgPct": 0.64,
-   "onIceCorsiPct": 0.53,
-   "ixgPer60": 0.837,
+   "icetimeMinutes": 83.1,
+   "onIceXgPct": 0.6,
+   "onIceCorsiPct": 0.54,
+   "ixgPer60": 0.924,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,83 +82,83 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.69,
-   "percentile": 63
+   "value": 1.29,
+   "percentile": 87
   },
   "Offense": {
-   "value": -0.1,
-   "percentile": 53
+   "value": 0.9,
+   "percentile": 87
   },
   "Defense": {
    "value": 0.3,
-   "percentile": 72
+   "percentile": 64
   },
   "Net": {
-   "value": 0.3,
-   "percentile": 64
+   "value": 1.1,
+   "percentile": 86
   }
  },
  "score": null,
  "standIn": {
-  "value": 54.3,
+  "value": 51.4,
   "gs": 2.74,
-  "gs60": 1.99,
+  "gs60": 1.63,
   "gameScore": 2.74,
-  "minutes": 83,
-  "gp": 5,
-  "rank": 256,
-  "pool": 661,
-  "percentile": 61.3,
+  "minutes": 101,
+  "gp": 6,
+  "rank": 279,
+  "pool": 673,
+  "percentile": 58.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 254,
+    "rank": 277,
     "name": "Marat Khusnutdinov",
     "team": "BOS",
     "pos": "C",
     "gp": 6,
-    "value": 54.4,
+    "value": 51.5,
     "gs60": 2.76,
     "isMe": false
    },
    {
-    "rank": 255,
+    "rank": 278,
     "name": "Frederic Brunet",
     "team": "BOS",
     "pos": "D",
     "gp": 3,
-    "value": 54.3,
+    "value": 51.4,
     "gs60": 2.74,
     "isMe": false
    },
    {
-    "rank": 256,
+    "rank": 279,
     "name": "Emmitt Finnie",
     "team": "DET",
     "pos": "C",
-    "gp": 5,
-    "value": 54.3,
+    "gp": 6,
+    "value": 51.4,
     "gs60": 2.74,
     "isMe": true
    },
    {
-    "rank": 257,
-    "name": "Noah Hanifin",
-    "team": "VGK",
+    "rank": 280,
+    "name": "Brandon Carlo",
+    "team": "STL",
     "pos": "D",
     "gp": 6,
-    "value": 54.2,
-    "gs60": 2.73,
+    "value": 51.4,
+    "gs60": 2.74,
     "isMe": false
    },
    {
-    "rank": 258,
-    "name": "Adam Edstrom",
-    "team": "NSH",
-    "pos": "C",
-    "gp": 5,
-    "value": 54.2,
+    "rank": 281,
+    "name": "Anthony Beauvillier",
+    "team": "WSH",
+    "pos": "R",
+    "gp": 6,
+    "value": 51.3,
     "gs60": 2.73,
     "isMe": false
    }
@@ -305,6 +305,30 @@
     "moneypuck": -0.41,
     "hockeystatcards": -0.29
    }
+  },
+  {
+   "gameId": 2026020090,
+   "date": "2026-10-13",
+   "opponent": "NJD",
+   "home": true,
+   "goals": 1,
+   "assists": 1,
+   "points": 2,
+   "plusMinus": 4,
+   "shots": 4,
+   "pim": 0,
+   "toi": 18.3,
+   "ixg": 0.57,
+   "xgf": 1.3,
+   "xga": 1.4,
+   "gf": 4.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 4.28
+   }
   }
  ],
  "teamGameScore": null,
@@ -324,7 +348,7 @@
   "above2": 1,
   "below0": 3
  },
- "detGames": 5,
+ "detGames": 6,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {

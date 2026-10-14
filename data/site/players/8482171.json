@@ -67,14 +67,14 @@
   "shots": 3,
   "shootingPct": 0.333333,
   "toiPerGame": 821.5,
-  "ixG": 0.05,
-  "goalsAboveExpected": 0.95,
+  "ixG": 0.06,
+  "goalsAboveExpected": 0.94,
   "gameScore": 2.78,
   "fiveOnFive": {
    "icetimeMinutes": 24.1,
-   "onIceXgPct": 0.64,
+   "onIceXgPct": 0.65,
    "onIceCorsiPct": 0.69,
-   "ixgPer60": 0.1,
+   "ixgPer60": 0.125,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -86,80 +86,80 @@
    "percentile": 79
   },
   "Offense": {
-   "value": 0.7,
-   "percentile": 85
+   "value": 0.6,
+   "percentile": 83
   },
   "Defense": {
    "value": -0.4,
-   "percentile": 21
+   "percentile": 27
   },
   "Net": {
-   "value": 0.2,
-   "percentile": 64
+   "value": 0.3,
+   "percentile": 65
   }
  },
  "score": null,
  "standIn": {
-  "value": 51.7,
+  "value": 49.1,
   "gs": 2.41,
   "gs60": 5.28,
   "gameScore": 2.41,
   "minutes": 27,
   "gp": 2,
-  "rank": 273,
-  "pool": 661,
-  "percentile": 58.7,
+  "rank": 304,
+  "pool": 673,
+  "percentile": 54.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 271,
-    "name": "Jesper Boqvist",
-    "team": "NJD",
+    "rank": 302,
+    "name": "Dylan Larkin",
+    "team": "DET",
     "pos": "C",
-    "gp": 2,
-    "value": 52.0,
-    "gs60": 2.44,
+    "gp": 4,
+    "value": 49.1,
+    "gs60": 2.42,
     "isMe": false
    },
    {
-    "rank": 272,
-    "name": "Tyler Bertuzzi",
-    "team": "CHI",
-    "pos": "L",
+    "rank": 303,
+    "name": "Calum Ritchie",
+    "team": "NYI",
+    "pos": "C",
     "gp": 6,
-    "value": 51.9,
-    "gs60": 2.43,
+    "value": 49.1,
+    "gs60": 2.42,
     "isMe": false
    },
    {
-    "rank": 273,
+    "rank": 304,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 2,
-    "value": 51.7,
+    "value": 49.1,
     "gs60": 2.41,
     "isMe": true
    },
    {
-    "rank": 274,
-    "name": "Kiefer Sherwood",
-    "team": "SJS",
-    "pos": "L",
-    "gp": 5,
-    "value": 51.7,
+    "rank": 305,
+    "name": "Brent Burns",
+    "team": "COL",
+    "pos": "D",
+    "gp": 6,
+    "value": 49.0,
     "gs60": 2.41,
     "isMe": false
    },
    {
-    "rank": 275,
-    "name": "Nick Paul",
-    "team": "TOR",
+    "rank": 306,
+    "name": "Kiefer Sherwood",
+    "team": "SJS",
     "pos": "L",
-    "gp": 6,
-    "value": 51.3,
-    "gs60": 2.36,
+    "gp": 5,
+    "value": 49.0,
+    "gs60": 2.41,
     "isMe": false
    }
   ],

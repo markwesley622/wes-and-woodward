@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 5,
+  "gp": 6,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "plusMinus": -2,
-  "pim": 13,
+  "plusMinus": -3,
+  "pim": 15,
   "shots": 2,
   "shootingPct": 0.0,
-  "toiPerGame": "12:55",
+  "toiPerGame": "12:26",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 5,
+   "gp": 6,
    "goals": 0,
    "assists": 0,
    "points": 0,
-   "plusMinus": -2,
-   "pim": 13
+   "plusMinus": -3,
+   "pim": 15
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Keegan Kolesar",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478434.png",
-  "gamesPlayed": 5,
+  "gamesPlayed": 6,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 2,
   "shootingPct": 0.0,
-  "toiPerGame": 774.6,
+  "toiPerGame": 745.7,
   "ixG": 0.13,
   "goalsAboveExpected": -0.13,
-  "gameScore": 0.1,
+  "gameScore": -0.65,
   "fiveOnFive": {
-   "icetimeMinutes": 55.2,
-   "onIceXgPct": 0.52,
-   "onIceCorsiPct": 0.51,
-   "ixgPer60": 0.141,
+   "icetimeMinutes": 65.0,
+   "onIceXgPct": 0.42,
+   "onIceCorsiPct": 0.46,
+   "ixgPer60": 0.12,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.08,
-   "percentile": 33
+   "value": -0.19,
+   "percentile": 21
   },
   "Offense": {
-   "value": -1.0,
-   "percentile": 4
+   "value": -1.3,
+   "percentile": 2
   },
   "Defense": {
-   "value": 0.6,
-   "percentile": 84
+   "value": 0.3,
+   "percentile": 69
   },
   "Net": {
-   "value": -0.5,
-   "percentile": 33
+   "value": -1.0,
+   "percentile": 16
   }
  },
  "score": null,
  "standIn": {
-  "value": 35.5,
+  "value": 34.6,
   "gs": 0.24,
-  "gs60": 0.22,
+  "gs60": 0.19,
   "gameScore": 0.24,
-  "minutes": 65,
-  "gp": 5,
-  "rank": 470,
-  "pool": 661,
-  "percentile": 28.9,
+  "minutes": 75,
+  "gp": 6,
+  "rank": 495,
+  "pool": 673,
+  "percentile": 26.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 468,
+    "rank": 493,
     "name": "Connor Clifton",
     "team": "BOS",
     "pos": "D",
     "gp": 6,
-    "value": 35.5,
+    "value": 34.7,
     "gs60": 0.24,
     "isMe": false
    },
    {
-    "rank": 469,
+    "rank": 494,
     "name": "Alexey Toropchenko",
     "team": "STL",
     "pos": "R",
     "gp": 1,
-    "value": 35.5,
+    "value": 34.6,
     "gs60": 0.24,
     "isMe": false
    },
    {
-    "rank": 470,
+    "rank": 495,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
-    "gp": 5,
-    "value": 35.5,
+    "gp": 6,
+    "value": 34.6,
     "gs60": 0.24,
     "isMe": true
    },
    {
-    "rank": 471,
-    "name": "Sean Couturier",
-    "team": "PHI",
-    "pos": "C",
-    "gp": 7,
-    "value": 35.5,
-    "gs60": 0.24,
+    "rank": 496,
+    "name": "Braeden Bowman",
+    "team": "VGK",
+    "pos": "R",
+    "gp": 8,
+    "value": 34.4,
+    "gs60": 0.21,
     "isMe": false
    },
    {
-    "rank": 472,
-    "name": "Luke Schenn",
-    "team": "VAN",
-    "pos": "D",
-    "gp": 6,
-    "value": 35.5,
-    "gs60": 0.24,
+    "rank": 497,
+    "name": "Nic Dowd",
+    "team": "VGK",
+    "pos": "C",
+    "gp": 8,
+    "value": 34.4,
+    "gs60": 0.21,
     "isMe": false
    }
   ],
@@ -395,6 +395,30 @@
     "moneypuck": -0.15,
     "hockeystatcards": 0.19
    }
+  },
+  {
+   "gameId": 2026020090,
+   "date": "2026-10-13",
+   "opponent": "NJD",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "shots": 0,
+   "pim": 2,
+   "toi": 10.0,
+   "ixg": 0.0,
+   "xgf": 0.16,
+   "xga": 0.92,
+   "gf": 0.0,
+   "ga": 1.0,
+   "blocks": 1.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": -1.52
+   }
   }
  ],
  "teamGameScore": null,
@@ -414,7 +438,7 @@
   "above2": 0,
   "below0": 2
  },
- "detGames": 5,
+ "detGames": 6,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {

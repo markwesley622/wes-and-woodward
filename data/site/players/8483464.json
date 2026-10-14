@@ -83,11 +83,11 @@
  "hsc": {
   "Game score": {
    "value": 0.63,
-   "percentile": 61
+   "percentile": 63
   },
   "Offense": {
    "value": -0.2,
-   "percentile": 47
+   "percentile": 48
   },
   "Defense": {
    "value": 0.1,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": -0.1,
-   "percentile": 49
+   "percentile": 48
   }
  },
  "score": null,
  "standIn": {
-  "value": 39.0,
+  "value": 37.8,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 412,
-  "pool": 661,
-  "percentile": 37.7,
+  "rank": 438,
+  "pool": 673,
+  "percentile": 34.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 410,
-    "name": "Bryan Rust",
-    "team": "PIT",
-    "pos": "R",
-    "gp": 3,
-    "value": 39.2,
-    "gs60": 0.75,
+    "rank": 436,
+    "name": "Scott Mayfield",
+    "team": "NYI",
+    "pos": "D",
+    "gp": 2,
+    "value": 38.0,
+    "gs60": 0.77,
     "isMe": false
    },
    {
-    "rank": 411,
-    "name": "Aaron Ekblad",
-    "team": "FLA",
-    "pos": "D",
-    "gp": 3,
-    "value": 39.1,
+    "rank": 437,
+    "name": "Jordan Greenway",
+    "team": "CHI",
+    "pos": "L",
+    "gp": 7,
+    "value": 37.8,
     "gs60": 0.74,
     "isMe": false
    },
    {
-    "rank": 412,
+    "rank": 438,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
     "gp": 1,
-    "value": 39.0,
+    "value": 37.8,
     "gs60": 0.73,
     "isMe": true
    },
    {
-    "rank": 413,
-    "name": "Nic Dowd",
-    "team": "VGK",
+    "rank": 439,
+    "name": "Sean Monahan",
+    "team": "CBJ",
     "pos": "C",
-    "gp": 6,
-    "value": 39.0,
+    "gp": 5,
+    "value": 37.7,
     "gs60": 0.72,
     "isMe": false
    },
    {
-    "rank": 414,
-    "name": "Dawson Mercer",
-    "team": "NJD",
-    "pos": "C",
-    "gp": 4,
-    "value": 38.9,
-    "gs60": 0.71,
+    "rank": 440,
+    "name": "Zachary L'Heureux",
+    "team": "COL",
+    "pos": "L",
+    "gp": 3,
+    "value": 37.5,
+    "gs60": 0.69,
     "isMe": false
    }
   ],

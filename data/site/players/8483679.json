@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 5,
+  "gp": 6,
   "goals": 0,
-  "assists": 0,
-  "points": 0,
+  "assists": 1,
+  "points": 1,
   "plusMinus": 0,
   "pim": 4,
   "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": "16:04",
+  "toiPerGame": "15:45",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,10 +47,10 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 5,
+   "gp": 6,
    "goals": 0,
-   "assists": 0,
-   "points": 0,
+   "assists": 1,
+   "points": 1,
    "plusMinus": 0,
    "pim": 4
   }
@@ -60,21 +60,21 @@
   "name": "Anton Johansson",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8483679.png",
-  "gamesPlayed": 5,
+  "gamesPlayed": 6,
   "goals": 0,
-  "assists": 0,
-  "points": 0,
+  "assists": 1,
+  "points": 1,
   "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": 963.8,
+  "toiPerGame": 944.8,
   "ixG": 0.27,
   "goalsAboveExpected": -0.27,
-  "gameScore": 0.7,
+  "gameScore": 0.85,
   "fiveOnFive": {
-   "icetimeMinutes": 71.3,
-   "onIceXgPct": 0.43,
-   "onIceCorsiPct": 0.53,
-   "ixgPer60": 0.227,
+   "icetimeMinutes": 85.4,
+   "onIceXgPct": 0.35,
+   "onIceCorsiPct": 0.49,
+   "ixgPer60": 0.19,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,83 +82,83 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.31,
-   "percentile": 17
+   "value": -0.69,
+   "percentile": 8
   },
   "Offense": {
    "value": -0.7,
-   "percentile": 13
+   "percentile": 14
   },
   "Defense": {
-   "value": -0.1,
-   "percentile": 41
+   "value": -0.9,
+   "percentile": 8
   },
   "Net": {
-   "value": -0.8,
-   "percentile": 19
+   "value": -1.6,
+   "percentile": 5
   }
  },
  "score": null,
  "standIn": {
-  "value": 31.0,
+  "value": 30.6,
   "gs": -0.42,
-  "gs60": -0.31,
+  "gs60": -0.27,
   "gameScore": -0.42,
-  "minutes": 80,
-  "gp": 5,
-  "rank": 541,
-  "pool": 661,
-  "percentile": 18.2,
+  "minutes": 94,
+  "gp": 6,
+  "rank": 549,
+  "pool": 673,
+  "percentile": 18.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 539,
-    "name": "Will Smith",
-    "team": "SJS",
-    "pos": "C",
-    "gp": 5,
-    "value": 31.3,
-    "gs60": -0.39,
-    "isMe": false
-   },
-   {
-    "rank": 540,
+    "rank": 547,
     "name": "Alex Bump",
     "team": "PHI",
     "pos": "L",
     "gp": 3,
-    "value": 31.2,
+    "value": 30.7,
     "gs60": -0.4,
     "isMe": false
    },
    {
-    "rank": 541,
+    "rank": 548,
+    "name": "Aliaksei Protas",
+    "team": "WSH",
+    "pos": "L",
+    "gp": 6,
+    "value": 30.7,
+    "gs60": -0.41,
+    "isMe": false
+   },
+   {
+    "rank": 549,
     "name": "Anton Johansson",
     "team": "DET",
     "pos": "D",
-    "gp": 5,
-    "value": 31.0,
+    "gp": 6,
+    "value": 30.6,
     "gs60": -0.42,
     "isMe": true
    },
    {
-    "rank": 542,
+    "rank": 550,
+    "name": "Jayden Struble",
+    "team": "NSH",
+    "pos": "D",
+    "gp": 5,
+    "value": 30.6,
+    "gs60": -0.42,
+    "isMe": false
+   },
+   {
+    "rank": 551,
     "name": "Matt Grzelcyk",
     "team": "BUF",
     "pos": "D",
     "gp": 1,
-    "value": 30.9,
-    "gs60": -0.44,
-    "isMe": false
-   },
-   {
-    "rank": 543,
-    "name": "Owen Michaels",
-    "team": "EDM",
-    "pos": "R",
-    "gp": 5,
-    "value": 30.9,
+    "value": 30.5,
     "gs60": -0.44,
     "isMe": false
    }
@@ -289,6 +289,30 @@
     "moneypuck": -0.075,
     "hockeystatcards": 0.32
    }
+  },
+  {
+   "gameId": 2026020090,
+   "date": "2026-10-13",
+   "opponent": "NJD",
+   "home": true,
+   "goals": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 14.2,
+   "ixg": 0.0,
+   "xgf": 0.29,
+   "xga": 2.05,
+   "gf": 1.0,
+   "ga": 1.0,
+   "blocks": 2.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": -2.6
+   }
   }
  ],
  "teamGameScore": null,
@@ -308,7 +332,7 @@
   "above2": 0,
   "below0": 2
  },
- "detGames": 5,
+ "detGames": 6,
  "currentTeam": "DET",
  "prospect": true,
  "prospectStatus": {

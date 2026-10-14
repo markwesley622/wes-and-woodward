@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": 0,
-  "assists": 0,
-  "points": 0,
-  "plusMinus": 0,
+  "assists": 1,
+  "points": 1,
+  "plusMinus": -1,
   "pim": 2,
   "shots": 6,
   "shootingPct": 0.0,
-  "toiPerGame": "13:05",
+  "toiPerGame": "13:20",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 4,
+   "gp": 5,
    "goals": 0,
-   "assists": 0,
-   "points": 0,
-   "plusMinus": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": -1,
    "pim": 2
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Axel Sandin-Pellikka",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484223.png",
-  "gamesPlayed": 4,
+  "gamesPlayed": 5,
   "goals": 0,
-  "assists": 0,
-  "points": 0,
+  "assists": 1,
+  "points": 1,
   "shots": 6,
   "shootingPct": 0.0,
-  "toiPerGame": 785.2,
-  "ixG": 0.4,
-  "goalsAboveExpected": -0.4,
-  "gameScore": 0.8,
+  "toiPerGame": 799.8,
+  "ixG": 0.41,
+  "goalsAboveExpected": -0.41,
+  "gameScore": 1.2,
   "fiveOnFive": {
-   "icetimeMinutes": 41.6,
-   "onIceXgPct": 0.65,
-   "onIceCorsiPct": 0.51,
-   "ixgPer60": 0.072,
+   "icetimeMinutes": 55.7,
+   "onIceXgPct": 0.58,
+   "onIceCorsiPct": 0.47,
+   "ixgPer60": 0.075,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.22,
-   "percentile": 42
+   "value": 0.15,
+   "percentile": 38
   },
   "Offense": {
-   "value": 0.0,
-   "percentile": 59
+   "value": 0.1,
+   "percentile": 66
   },
   "Defense": {
-   "value": -0.2,
-   "percentile": 34
+   "value": -0.5,
+   "percentile": 21
   },
   "Net": {
-   "value": -0.2,
-   "percentile": 45
+   "value": -0.4,
+   "percentile": 38
   }
  },
  "score": null,
  "standIn": {
-  "value": 40.0,
+  "value": 38.6,
   "gs": 0.86,
-  "gs60": 0.99,
+  "gs60": 0.77,
   "gameScore": 0.86,
-  "minutes": 52,
-  "gp": 4,
-  "rank": 396,
-  "pool": 661,
-  "percentile": 40.1,
+  "minutes": 67,
+  "gp": 5,
+  "rank": 426,
+  "pool": 673,
+  "percentile": 36.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 394,
-    "name": "Jordan Greenway",
-    "team": "CHI",
+    "rank": 424,
+    "name": "Bokondji Imama",
+    "team": "FLA",
     "pos": "L",
-    "gp": 6,
-    "value": 40.1,
+    "gp": 7,
+    "value": 38.7,
     "gs60": 0.88,
     "isMe": false
    },
    {
-    "rank": 395,
-    "name": "Alex Newhook",
-    "team": "MTL",
-    "pos": "C",
-    "gp": 5,
-    "value": 40.1,
+    "rank": 425,
+    "name": "Rasmus Andersson",
+    "team": "VGK",
+    "pos": "D",
+    "gp": 8,
+    "value": 38.7,
     "gs60": 0.87,
     "isMe": false
    },
    {
-    "rank": 396,
+    "rank": 426,
     "name": "Axel Sandin-Pellikka",
     "team": "DET",
     "pos": "D",
-    "gp": 4,
-    "value": 40.0,
+    "gp": 5,
+    "value": 38.6,
     "gs60": 0.86,
     "isMe": true
    },
    {
-    "rank": 397,
-    "name": "Morgan Barron",
-    "team": "WPG",
-    "pos": "C",
-    "gp": 5,
-    "value": 40.0,
-    "gs60": 0.86,
-    "isMe": false
-   },
-   {
-    "rank": 398,
+    "rank": 427,
     "name": "Alexander Wennberg",
     "team": "SJS",
     "pos": "C",
     "gp": 5,
-    "value": 39.9,
+    "value": 38.5,
     "gs60": 0.85,
+    "isMe": false
+   },
+   {
+    "rank": 428,
+    "name": "Aaron Ekblad",
+    "team": "FLA",
+    "pos": "D",
+    "gp": 5,
+    "value": 38.5,
+    "gs60": 0.84,
     "isMe": false
    }
   ],
@@ -281,6 +281,30 @@
     "moneypuck": -0.3,
     "hockeystatcards": 0.07
    }
+  },
+  {
+   "gameId": 2026020090,
+   "date": "2026-10-13",
+   "opponent": "NJD",
+   "home": true,
+   "goals": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": -1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 14.3,
+   "ixg": 0.02,
+   "xgf": 0.46,
+   "xga": 1.09,
+   "gf": 1.0,
+   "ga": 1.0,
+   "blocks": 1.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": -0.17
+   }
   }
  ],
  "teamGameScore": null,
@@ -300,7 +324,7 @@
   "above2": 0,
   "below0": 2
  },
- "detGames": 4,
+ "detGames": 5,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {

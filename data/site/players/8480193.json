@@ -6,60 +6,60 @@
  "seasonLabel": "2026-27",
  "kind": "G",
  "standIn": {
-  "value": 76.4,
+  "value": 76.1,
   "gsax60": 4.04,
   "gsax": 4.04,
   "minutes": 91,
   "gp": 2,
-  "rank": 8,
-  "pool": 63,
-  "percentile": 87.3,
+  "rank": 9,
+  "pool": 64,
+  "percentile": 85.9,
   "group": "goalies",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 6,
+    "rank": 7,
     "name": "Sergei Bobrovsky",
     "team": "TOR",
     "gp": 4,
-    "value": 79.8,
+    "value": 79.4,
     "gsax60": 4.68,
     "isMe": false
    },
    {
-    "rank": 7,
-    "name": "Ilya Sorokin",
-    "team": "NYI",
-    "gp": 4,
-    "value": 78.8,
-    "gsax60": 4.49,
-    "isMe": false
-   },
-   {
     "rank": 8,
-    "name": "Daniil Tarasov",
-    "team": "DET",
-    "gp": 2,
-    "value": 76.4,
-    "gsax60": 4.04,
-    "isMe": true
+    "name": "Philipp Grubauer",
+    "team": "SEA",
+    "gp": 4,
+    "value": 76.2,
+    "gsax60": 4.05,
+    "isMe": false
    },
    {
     "rank": 9,
-    "name": "Sergei Murashov",
-    "team": "PIT",
+    "name": "Daniil Tarasov",
+    "team": "DET",
     "gp": 2,
-    "value": 71.3,
-    "gsax60": 3.17,
-    "isMe": false
+    "value": 76.1,
+    "gsax60": 4.04,
+    "isMe": true
    },
    {
     "rank": 10,
     "name": "Logan Thompson",
     "team": "WSH",
+    "gp": 5,
+    "value": 72.7,
+    "gsax60": 3.43,
+    "isMe": false
+   },
+   {
+    "rank": 11,
+    "name": "Stuart Skinner",
+    "team": "WPG",
     "gp": 4,
-    "value": 70.8,
-    "gsax60": 3.1,
+    "value": 71.9,
+    "gsax60": 3.3,
     "isMe": false
    }
   ],

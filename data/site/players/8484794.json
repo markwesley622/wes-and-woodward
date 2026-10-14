@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 5,
-  "goals": 1,
-  "assists": 2,
-  "points": 3,
-  "plusMinus": 2,
+  "gp": 6,
+  "goals": 2,
+  "assists": 3,
+  "points": 5,
+  "plusMinus": 6,
   "pim": 2,
-  "shots": 15,
-  "shootingPct": 0.066667,
-  "toiPerGame": "14:15",
+  "shots": 19,
+  "shootingPct": 0.105263,
+  "toiPerGame": "15:02",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 5,
-   "goals": 1,
-   "assists": 2,
-   "points": 3,
-   "plusMinus": 2,
+   "gp": 6,
+   "goals": 2,
+   "assists": 3,
+   "points": 5,
+   "plusMinus": 6,
    "pim": 2
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Michael Brandsegg-Nyg\u00e5rd",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484794.png",
-  "gamesPlayed": 5,
-  "goals": 1,
-  "assists": 2,
-  "points": 3,
-  "shots": 15,
-  "shootingPct": 0.066667,
-  "toiPerGame": 854.8,
-  "ixG": 2.62,
-  "goalsAboveExpected": -1.62,
-  "gameScore": 4.42,
+  "gamesPlayed": 6,
+  "goals": 2,
+  "assists": 3,
+  "points": 5,
+  "shots": 19,
+  "shootingPct": 0.105263,
+  "toiPerGame": 902.3,
+  "ixG": 3.17,
+  "goalsAboveExpected": -1.17,
+  "gameScore": 7.17,
   "fiveOnFive": {
-   "icetimeMinutes": 63.8,
-   "onIceXgPct": 0.7,
+   "icetimeMinutes": 82.3,
+   "onIceXgPct": 0.65,
    "onIceCorsiPct": 0.59,
-   "ixgPer60": 1.985,
+   "ixgPer60": 1.931,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 1.33,
-   "percentile": 87
+   "value": 1.74,
+   "percentile": 95
   },
   "Offense": {
-   "value": 0.5,
-   "percentile": 79
+   "value": 1.4,
+   "percentile": 93
   },
   "Defense": {
-   "value": 0.5,
-   "percentile": 82
+   "value": 0.4,
+   "percentile": 73
   },
   "Net": {
-   "value": 1.0,
-   "percentile": 86
+   "value": 1.8,
+   "percentile": 94
   }
  },
  "score": null,
  "standIn": {
-  "value": 73.6,
+  "value": 69.6,
   "gs": 5.53,
-  "gs60": 4.66,
+  "gs60": 3.68,
   "gameScore": 5.53,
-  "minutes": 71,
-  "gp": 5,
-  "rank": 95,
-  "pool": 661,
-  "percentile": 85.6,
+  "minutes": 90,
+  "gp": 6,
+  "rank": 126,
+  "pool": 673,
+  "percentile": 81.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 93,
-    "name": "Jack Hughes",
+    "rank": 124,
+    "name": "Filip Forsberg",
+    "team": "NSH",
+    "pos": "L",
+    "gp": 6,
+    "value": 69.8,
+    "gs60": 5.57,
+    "isMe": false
+   },
+   {
+    "rank": 125,
+    "name": "Dougie Hamilton",
     "team": "NJD",
-    "pos": "C",
-    "gp": 4,
-    "value": 73.9,
-    "gs60": 5.58,
-    "isMe": false
-   },
-   {
-    "rank": 94,
-    "name": "Thomas Harley",
-    "team": "DAL",
     "pos": "D",
-    "gp": 5,
-    "value": 73.9,
-    "gs60": 5.58,
+    "gp": 6,
+    "value": 69.8,
+    "gs60": 5.57,
     "isMe": false
    },
    {
-    "rank": 95,
+    "rank": 126,
     "name": "Michael Brandsegg-Nygrd",
     "team": "DET",
     "pos": "R",
-    "gp": 5,
-    "value": 73.6,
+    "gp": 6,
+    "value": 69.6,
     "gs60": 5.53,
     "isMe": true
    },
    {
-    "rank": 96,
-    "name": "Brandon Montour",
-    "team": "SEA",
+    "rank": 127,
+    "name": "Seth Jones",
+    "team": "FLA",
     "pos": "D",
-    "gp": 6,
-    "value": 73.4,
-    "gs60": 5.48,
+    "gp": 7,
+    "value": 69.3,
+    "gs60": 5.49,
     "isMe": false
    },
    {
-    "rank": 97,
-    "name": "Zachary Bolduc",
-    "team": "MTL",
-    "pos": "R",
-    "gp": 5,
-    "value": 73.3,
-    "gs60": 5.47,
+    "rank": 128,
+    "name": "Lars Eller",
+    "team": "FLA",
+    "pos": "C",
+    "gp": 7,
+    "value": 69.1,
+    "gs60": 5.45,
     "isMe": false
    }
   ],
@@ -305,6 +305,30 @@
     "moneypuck": -0.325,
     "hockeystatcards": 0.1
    }
+  },
+  {
+   "gameId": 2026020090,
+   "date": "2026-10-13",
+   "opponent": "NJD",
+   "home": true,
+   "goals": 1,
+   "assists": 1,
+   "points": 2,
+   "plusMinus": 4,
+   "shots": 4,
+   "pim": 0,
+   "toi": 19.0,
+   "ixg": 0.46,
+   "xgf": 1.18,
+   "xga": 1.56,
+   "gf": 4.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 3.82
+   }
   }
  ],
  "teamGameScore": null,
@@ -324,7 +348,7 @@
   "above2": 2,
   "below0": 1
  },
- "detGames": 5,
+ "detGames": 6,
  "currentTeam": "DET",
  "prospect": true,
  "prospectStatus": {

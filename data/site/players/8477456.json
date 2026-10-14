@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 31
+   "percentile": 32
   },
   "Defense": {
    "value": 0.2,
@@ -95,70 +95,70 @@
   },
   "Net": {
    "value": -0.2,
-   "percentile": 44
+   "percentile": 46
   }
  },
  "score": null,
  "standIn": {
-  "value": 37.6,
+  "value": 36.5,
   "gs": 0.53,
   "gs60": 1.08,
   "gameScore": 0.53,
   "minutes": 29,
   "gp": 2,
-  "rank": 434,
-  "pool": 661,
-  "percentile": 34.3,
+  "rank": 460,
+  "pool": 673,
+  "percentile": 31.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 432,
-    "name": "Simon Holmstrom",
-    "team": "NYI",
+    "rank": 458,
+    "name": "Frank Vatrano",
+    "team": "ANA",
     "pos": "R",
-    "gp": 5,
-    "value": 37.6,
-    "gs60": 0.53,
-    "isMe": false
-   },
-   {
-    "rank": 433,
-    "name": "Andre Lee",
-    "team": "LAK",
-    "pos": "L",
     "gp": 2,
-    "value": 37.6,
-    "gs60": 0.53,
+    "value": 36.6,
+    "gs60": 0.55,
     "isMe": false
    },
    {
-    "rank": 434,
+    "rank": 459,
+    "name": "Samuel Helenius",
+    "team": "LAK",
+    "pos": "C",
+    "gp": 2,
+    "value": 36.6,
+    "gs60": 0.55,
+    "isMe": false
+   },
+   {
+    "rank": 460,
     "name": "J.T. Compher",
     "team": "DET",
     "pos": "L",
     "gp": 2,
-    "value": 37.6,
+    "value": 36.5,
     "gs60": 0.53,
     "isMe": true
    },
    {
-    "rank": 435,
-    "name": "Braeden Bowman",
-    "team": "VGK",
-    "pos": "R",
-    "gp": 6,
-    "value": 37.5,
+    "rank": 461,
+    "name": "Dylan Peterson",
+    "team": "STL",
+    "pos": "C",
+    "gp": 1,
+    "value": 36.4,
     "gs60": 0.52,
     "isMe": false
    },
    {
-    "rank": 436,
-    "name": "Jordan Spence",
-    "team": "OTT",
-    "pos": "D",
-    "gp": 5,
-    "value": 37.4,
+    "rank": 462,
+    "name": "Frederick Gaudreau",
+    "team": "SEA",
+    "pos": "C",
+    "gp": 7,
+    "value": 36.4,
     "gs60": 0.51,
     "isMe": false
    }

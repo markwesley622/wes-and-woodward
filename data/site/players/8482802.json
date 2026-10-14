@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 2,
+  "gp": 3,
   "goals": 0,
   "assists": 1,
   "points": 1,
-  "plusMinus": 0,
+  "plusMinus": -2,
   "pim": 0,
   "shots": 3,
   "shootingPct": 0.0,
-  "toiPerGame": "9:31",
+  "toiPerGame": "8:24",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 2,
+   "gp": 3,
    "goals": 0,
    "assists": 1,
    "points": 1,
-   "plusMinus": 0,
+   "plusMinus": -2,
    "pim": 0
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Carter Mazur",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482802.png",
-  "gamesPlayed": 2,
+  "gamesPlayed": 3,
   "goals": 0,
   "assists": 1,
   "points": 1,
   "shots": 3,
   "shootingPct": 0.0,
-  "toiPerGame": 570.5,
-  "ixG": 0.47,
-  "goalsAboveExpected": -0.47,
-  "gameScore": 1.27,
+  "toiPerGame": 503.7,
+  "ixG": 0.46,
+  "goalsAboveExpected": -0.46,
+  "gameScore": 0.67,
   "fiveOnFive": {
-   "icetimeMinutes": 18.9,
-   "onIceXgPct": 0.6,
-   "onIceCorsiPct": 0.6,
-   "ixgPer60": 1.495,
+   "icetimeMinutes": 25.0,
+   "onIceXgPct": 0.43,
+   "onIceCorsiPct": 0.53,
+   "ixgPer60": 1.103,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.39,
-   "percentile": 49
+   "value": -0.68,
+   "percentile": 8
   },
   "Offense": {
-   "value": 0.1,
-   "percentile": 66
+   "value": -0.0,
+   "percentile": 60
   },
   "Defense": {
-   "value": -0.3,
-   "percentile": 29
+   "value": -1.0,
+   "percentile": 6
   },
   "Net": {
-   "value": -0.2,
-   "percentile": 47
+   "value": -1.1,
+   "percentile": 14
   }
  },
  "score": null,
  "standIn": {
-  "value": 41.2,
+  "value": 39.7,
   "gs": 1.03,
-  "gs60": 3.25,
+  "gs60": 2.45,
   "gameScore": 1.03,
-  "minutes": 19,
-  "gp": 2,
-  "rank": 381,
-  "pool": 661,
-  "percentile": 42.4,
+  "minutes": 25,
+  "gp": 3,
+  "rank": 407,
+  "pool": 673,
+  "percentile": 39.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 379,
-    "name": "John Tavares",
-    "team": "TOR",
-    "pos": "C",
-    "gp": 5,
-    "value": 41.6,
-    "gs60": 1.07,
-    "isMe": false
-   },
-   {
-    "rank": 380,
-    "name": "Dmitry Kulikov",
-    "team": "FLA",
+    "rank": 405,
+    "name": "Dennis Gilbert",
+    "team": "BUF",
     "pos": "D",
-    "gp": 5,
-    "value": 41.5,
-    "gs60": 1.06,
+    "gp": 1,
+    "value": 39.7,
+    "gs60": 1.04,
     "isMe": false
    },
    {
-    "rank": 381,
+    "rank": 406,
+    "name": "Justin Holl",
+    "team": "WSH",
+    "pos": "D",
+    "gp": 1,
+    "value": 39.7,
+    "gs60": 1.03,
+    "isMe": false
+   },
+   {
+    "rank": 407,
     "name": "Carter Mazur",
     "team": "DET",
     "pos": "L",
-    "gp": 2,
-    "value": 41.2,
+    "gp": 3,
+    "value": 39.7,
     "gs60": 1.03,
     "isMe": true
    },
    {
-    "rank": 382,
-    "name": "Carter Yakemchuk",
-    "team": "OTT",
-    "pos": "D",
-    "gp": 5,
-    "value": 41.2,
-    "gs60": 1.02,
-    "isMe": false
-   },
-   {
-    "rank": 383,
+    "rank": 408,
     "name": "Ivan Demidov",
     "team": "MTL",
     "pos": "R",
     "gp": 2,
-    "value": 41.1,
+    "value": 39.6,
     "gs60": 1.02,
+    "isMe": false
+   },
+   {
+    "rank": 409,
+    "name": "Jack Drury",
+    "team": "NSH",
+    "pos": "C",
+    "gp": 6,
+    "value": 39.6,
+    "gs60": 1.01,
     "isMe": false
    }
   ],
@@ -248,6 +248,30 @@
     "moneypuck": 0.45,
     "hockeystatcards": 0.03
    }
+  },
+  {
+   "gameId": 2026020090,
+   "date": "2026-10-13",
+   "opponent": "NJD",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -2,
+   "shots": 0,
+   "pim": 0,
+   "toi": 6.2,
+   "ixg": 0.0,
+   "xgf": 0.32,
+   "xga": 1.27,
+   "gf": 0.0,
+   "ga": 2.0,
+   "blocks": 0.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": -2.82
+   }
   }
  ],
  "teamGameScore": null,
@@ -267,7 +291,7 @@
   "above2": 0,
   "below0": 0
  },
- "detGames": 2,
+ "detGames": 3,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {

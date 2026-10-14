@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 3,
+  "gp": 4,
   "goals": 1,
   "assists": 1,
   "points": 2,
   "plusMinus": -1,
   "pim": 4,
-  "shots": 9,
-  "shootingPct": 0.111111,
-  "toiPerGame": "20:33",
+  "shots": 11,
+  "shootingPct": 0.090909,
+  "toiPerGame": "20:45",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 3,
+   "gp": 4,
    "goals": 1,
    "assists": 1,
    "points": 2,
@@ -60,21 +60,21 @@
   "name": "Dylan Larkin",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477946.png",
-  "gamesPlayed": 3,
+  "gamesPlayed": 4,
   "goals": 1,
   "assists": 1,
   "points": 2,
-  "shots": 9,
-  "shootingPct": 0.111111,
-  "toiPerGame": 1233.3,
-  "ixG": 1.14,
-  "goalsAboveExpected": -0.14,
-  "gameScore": 3.15,
+  "shots": 11,
+  "shootingPct": 0.090909,
+  "toiPerGame": 1244.5,
+  "ixG": 1.28,
+  "goalsAboveExpected": -0.28,
+  "gameScore": 2.81,
   "fiveOnFive": {
-   "icetimeMinutes": 41.6,
-   "onIceXgPct": 0.61,
-   "onIceCorsiPct": 0.6,
-   "ixgPer60": 1.039,
+   "icetimeMinutes": 60.8,
+   "onIceXgPct": 0.47,
+   "onIceCorsiPct": 0.53,
+   "ixgPer60": 0.859,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.99,
-   "percentile": 77
+   "value": 0.51,
+   "percentile": 56
   },
   "Offense": {
-   "value": 0.4,
-   "percentile": 75
+   "value": 0.0,
+   "percentile": 62
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 43
+   "percentile": 40
   },
   "Net": {
-   "value": 0.3,
-   "percentile": 65
+   "value": -0.1,
+   "percentile": 50
   }
  },
  "score": null,
  "standIn": {
-  "value": 56.7,
+  "value": 53.6,
   "gs": 3.06,
-  "gs60": 2.98,
+  "gs60": 2.21,
   "gameScore": 3.06,
-  "minutes": 62,
-  "gp": 3,
-  "rank": 235,
-  "pool": 661,
-  "percentile": 64.4,
+  "minutes": 83,
+  "gp": 4,
+  "rank": 261,
+  "pool": 673,
+  "percentile": 61.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 233,
-    "name": "Cutter Gauthier",
-    "team": "ANA",
-    "pos": "L",
-    "gp": 5,
-    "value": 56.8,
+    "rank": 259,
+    "name": "Nils Lundkvist",
+    "team": "DAL",
+    "pos": "D",
+    "gp": 6,
+    "value": 53.7,
     "gs60": 3.08,
     "isMe": false
    },
    {
-    "rank": 234,
-    "name": "Pavel Buchnevich",
-    "team": "STL",
+    "rank": 260,
+    "name": "Cutter Gauthier",
+    "team": "ANA",
     "pos": "L",
     "gp": 5,
-    "value": 56.7,
-    "gs60": 3.06,
+    "value": 53.7,
+    "gs60": 3.08,
     "isMe": false
    },
    {
-    "rank": 235,
+    "rank": 261,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
-    "gp": 3,
-    "value": 56.7,
+    "gp": 4,
+    "value": 53.6,
     "gs60": 3.06,
     "isMe": true
    },
    {
-    "rank": 236,
-    "name": "Jack McBain",
-    "team": "UTA",
-    "pos": "C",
+    "rank": 262,
+    "name": "Cam Fowler",
+    "team": "STL",
+    "pos": "D",
     "gp": 6,
-    "value": 56.6,
-    "gs60": 3.05,
+    "value": 53.6,
+    "gs60": 3.06,
     "isMe": false
    },
    {
-    "rank": 237,
-    "name": "Quinton Byfield",
-    "team": "LAK",
-    "pos": "R",
-    "gp": 4,
-    "value": 56.5,
-    "gs60": 3.04,
+    "rank": 263,
+    "name": "Dylan Holloway",
+    "team": "STL",
+    "pos": "L",
+    "gp": 6,
+    "value": 53.2,
+    "gs60": 3.01,
     "isMe": false
    }
   ],
@@ -407,6 +407,30 @@
     "moneypuck": -0.09,
     "hockeystatcards": 0.25
    }
+  },
+  {
+   "gameId": 2026020090,
+   "date": "2026-10-13",
+   "opponent": "NJD",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 2,
+   "pim": 0,
+   "toi": 21.3,
+   "ixg": 0.09,
+   "xgf": 0.37,
+   "xga": 1.37,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": -0.96
+   }
   }
  ],
  "teamGameScore": null,
@@ -426,7 +450,7 @@
   "above2": 1,
   "below0": 0
  },
- "detGames": 3,
+ "detGames": 4,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
