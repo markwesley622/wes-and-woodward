@@ -87,79 +87,79 @@
   },
   "Offense": {
    "value": 0.6,
-   "percentile": 83
+   "percentile": 82
   },
   "Defense": {
    "value": -0.4,
    "percentile": 27
   },
   "Net": {
-   "value": 0.3,
-   "percentile": 65
+   "value": 0.2,
+   "percentile": 64
   }
  },
  "score": null,
  "standIn": {
-  "value": 49.1,
+  "value": 48.7,
   "gs": 2.41,
   "gs60": 5.28,
   "gameScore": 2.41,
   "minutes": 27,
   "gp": 2,
-  "rank": 304,
-  "pool": 673,
-  "percentile": 54.8,
+  "rank": 305,
+  "pool": 677,
+  "percentile": 54.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 302,
-    "name": "Dylan Larkin",
-    "team": "DET",
-    "pos": "C",
-    "gp": 4,
-    "value": 49.1,
-    "gs60": 2.42,
-    "isMe": false
-   },
-   {
     "rank": 303,
-    "name": "Calum Ritchie",
-    "team": "NYI",
-    "pos": "C",
+    "name": "Lucas Raymond",
+    "team": "DET",
+    "pos": "L",
     "gp": 6,
-    "value": 49.1,
-    "gs60": 2.42,
+    "value": 48.8,
+    "gs60": 2.43,
     "isMe": false
    },
    {
     "rank": 304,
+    "name": "Brock Boeser",
+    "team": "VAN",
+    "pos": "R",
+    "gp": 8,
+    "value": 48.8,
+    "gs60": 2.42,
+    "isMe": false
+   },
+   {
+    "rank": 305,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 2,
-    "value": 49.1,
+    "value": 48.7,
     "gs60": 2.41,
     "isMe": true
    },
    {
-    "rank": 305,
+    "rank": 306,
     "name": "Brent Burns",
     "team": "COL",
     "pos": "D",
     "gp": 6,
-    "value": 49.0,
+    "value": 48.7,
     "gs60": 2.41,
     "isMe": false
    },
    {
-    "rank": 306,
-    "name": "Kiefer Sherwood",
-    "team": "SJS",
-    "pos": "L",
-    "gp": 5,
-    "value": 49.0,
-    "gs60": 2.41,
+    "rank": 307,
+    "name": "Sean Durzi",
+    "team": "NYR",
+    "pos": "D",
+    "gp": 8,
+    "value": 48.6,
+    "gs60": 2.4,
     "isMe": false
    }
   ],

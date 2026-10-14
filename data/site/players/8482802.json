@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.0,
-   "percentile": 60
+   "percentile": 59
   },
   "Defense": {
    "value": -1.0,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": -1.1,
-   "percentile": 14
+   "percentile": 15
   }
  },
  "score": null,
  "standIn": {
-  "value": 39.7,
-  "gs": 1.03,
-  "gs60": 2.45,
-  "gameScore": 1.03,
+  "value": 29.1,
+  "gs": -0.68,
+  "gs60": -1.62,
+  "gameScore": -0.68,
   "minutes": 25,
   "gp": 3,
-  "rank": 407,
-  "pool": 673,
-  "percentile": 39.5,
+  "rank": 573,
+  "pool": 677,
+  "percentile": 15.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 405,
-    "name": "Dennis Gilbert",
-    "team": "BUF",
-    "pos": "D",
+    "rank": 571,
+    "name": "Jansen Harkins",
+    "team": "TBL",
+    "pos": "C",
     "gp": 1,
-    "value": 39.7,
-    "gs60": 1.04,
+    "value": 29.2,
+    "gs60": -0.67,
     "isMe": false
    },
    {
-    "rank": 406,
-    "name": "Justin Holl",
-    "team": "WSH",
+    "rank": 572,
+    "name": "Darren Raddysh",
+    "team": "TOR",
     "pos": "D",
-    "gp": 1,
-    "value": 39.7,
-    "gs60": 1.03,
+    "gp": 7,
+    "value": 29.2,
+    "gs60": -0.68,
     "isMe": false
    },
    {
-    "rank": 407,
+    "rank": 573,
     "name": "Carter Mazur",
     "team": "DET",
     "pos": "L",
     "gp": 3,
-    "value": 39.7,
-    "gs60": 1.03,
+    "value": 29.1,
+    "gs60": -0.68,
     "isMe": true
    },
    {
-    "rank": 408,
-    "name": "Ivan Demidov",
-    "team": "MTL",
-    "pos": "R",
-    "gp": 2,
-    "value": 39.6,
-    "gs60": 1.02,
+    "rank": 574,
+    "name": "Jeffrey Viel",
+    "team": "TBL",
+    "pos": "L",
+    "gp": 5,
+    "value": 29.0,
+    "gs60": -0.71,
     "isMe": false
    },
    {
-    "rank": 409,
-    "name": "Jack Drury",
-    "team": "NSH",
-    "pos": "C",
+    "rank": 575,
+    "name": "Isaac Howard",
+    "team": "EDM",
+    "pos": "L",
     "gp": 6,
-    "value": 39.6,
-    "gs60": 1.01,
+    "value": 29.0,
+    "gs60": -0.71,
     "isMe": false
    }
   ],
@@ -267,29 +267,29 @@
    "gf": 0.0,
    "ga": 2.0,
    "blocks": 0.0,
-   "gameScore": null,
+   "gameScore": -1.71,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": -0.6,
     "hockeystatcards": -2.82
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.52,
-  "games": 2,
+  "average": -0.23,
+  "games": 3,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
    "value": 0.79
   },
   "worst": {
-   "date": "2026-10-09",
-   "opponent": "SEA",
-   "value": 0.24
+   "date": "2026-10-13",
+   "opponent": "NJD",
+   "value": -1.71
   },
   "above2": 0,
-  "below0": 0
+  "below0": 1
  },
  "detGames": 3,
  "currentTeam": "DET",

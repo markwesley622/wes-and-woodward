@@ -86,8 +86,8 @@
    "percentile": 8
   },
   "Offense": {
-   "value": -0.7,
-   "percentile": 14
+   "value": -0.8,
+   "percentile": 13
   },
   "Defense": {
    "value": -0.9,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": -1.6,
-   "percentile": 5
+   "percentile": 6
   }
  },
  "score": null,
  "standIn": {
-  "value": 30.6,
-  "gs": -0.42,
-  "gs60": -0.27,
-  "gameScore": -0.42,
+  "value": 24.0,
+  "gs": -1.65,
+  "gs60": -1.05,
+  "gameScore": -1.65,
   "minutes": 94,
   "gp": 6,
-  "rank": 549,
-  "pool": 673,
-  "percentile": 18.4,
+  "rank": 620,
+  "pool": 677,
+  "percentile": 8.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 547,
-    "name": "Alex Bump",
-    "team": "PHI",
-    "pos": "L",
-    "gp": 3,
-    "value": 30.7,
-    "gs60": -0.4,
+    "rank": 618,
+    "name": "Jake Christiansen",
+    "team": "CBJ",
+    "pos": "D",
+    "gp": 4,
+    "value": 24.1,
+    "gs60": -1.64,
     "isMe": false
    },
    {
-    "rank": 548,
-    "name": "Aliaksei Protas",
-    "team": "WSH",
-    "pos": "L",
-    "gp": 6,
-    "value": 30.7,
-    "gs60": -0.41,
+    "rank": 619,
+    "name": "Noah Laba",
+    "team": "NYR",
+    "pos": "C",
+    "gp": 8,
+    "value": 24.0,
+    "gs60": -1.65,
     "isMe": false
    },
    {
-    "rank": 549,
+    "rank": 620,
     "name": "Anton Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 6,
-    "value": 30.6,
-    "gs60": -0.42,
+    "value": 24.0,
+    "gs60": -1.65,
     "isMe": true
    },
    {
-    "rank": 550,
-    "name": "Jayden Struble",
-    "team": "NSH",
+    "rank": 621,
+    "name": "Dylan McIlrath",
+    "team": "WSH",
     "pos": "D",
-    "gp": 5,
-    "value": 30.6,
-    "gs60": -0.42,
+    "gp": 3,
+    "value": 24.0,
+    "gs60": -1.66,
     "isMe": false
    },
    {
-    "rank": 551,
-    "name": "Matt Grzelcyk",
-    "team": "BUF",
-    "pos": "D",
-    "gp": 1,
-    "value": 30.5,
-    "gs60": -0.44,
+    "rank": 622,
+    "name": "Kirby Dach",
+    "team": "MTL",
+    "pos": "C",
+    "gp": 6,
+    "value": 23.9,
+    "gs60": -1.67,
     "isMe": false
    }
   ],
@@ -308,29 +308,29 @@
    "gf": 1.0,
    "ga": 1.0,
    "blocks": 2.0,
-   "gameScore": null,
+   "gameScore": -1.23,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": 0.15,
     "hockeystatcards": -2.6
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.08,
-  "games": 5,
+  "average": -0.27,
+  "games": 6,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
    "value": 0.42
   },
   "worst": {
-   "date": "2026-10-09",
-   "opponent": "SEA",
-   "value": -1.0
+   "date": "2026-10-13",
+   "opponent": "NJD",
+   "value": -1.23
   },
   "above2": 0,
-  "below0": 2
+  "below0": 3
  },
  "detGames": 6,
  "currentTeam": "DET",

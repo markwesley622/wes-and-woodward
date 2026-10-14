@@ -69,7 +69,7 @@
   "toiPerGame": 1218.3,
   "ixG": 1.95,
   "goalsAboveExpected": -1.95,
-  "gameScore": 4.1,
+  "gameScore": 4.15,
   "fiveOnFive": {
    "icetimeMinutes": 90.1,
    "onIceXgPct": 0.44,
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.1,
-   "percentile": 56
+   "percentile": 55
   },
   "Net": {
    "value": -0.4,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 47.4,
-  "gs": 2.16,
-  "gs60": 1.06,
-  "gameScore": 2.16,
+  "value": 48.9,
+  "gs": 2.43,
+  "gs60": 1.2,
+  "gameScore": 2.43,
   "minutes": 122,
   "gp": 6,
-  "rank": 317,
-  "pool": 673,
-  "percentile": 52.9,
+  "rank": 303,
+  "pool": 677,
+  "percentile": 55.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 315,
-    "name": "Egor Chinakhov",
-    "team": "PIT",
-    "pos": "R",
-    "gp": 7,
-    "value": 47.8,
-    "gs60": 2.23,
-    "isMe": false
-   },
-   {
-    "rank": 316,
-    "name": "Eetu Luostarinen",
-    "team": "FLA",
+    "rank": 301,
+    "name": "Dylan Larkin",
+    "team": "DET",
     "pos": "C",
-    "gp": 7,
-    "value": 47.4,
-    "gs60": 2.17,
+    "gp": 4,
+    "value": 48.9,
+    "gs60": 2.44,
     "isMe": false
    },
    {
-    "rank": 317,
+    "rank": 302,
+    "name": "Raphael Lavoie",
+    "team": "VGK",
+    "pos": "C",
+    "gp": 4,
+    "value": 48.9,
+    "gs60": 2.44,
+    "isMe": false
+   },
+   {
+    "rank": 303,
     "name": "Lucas Raymond",
     "team": "DET",
     "pos": "L",
     "gp": 6,
-    "value": 47.4,
-    "gs60": 2.16,
+    "value": 48.9,
+    "gs60": 2.43,
     "isMe": true
    },
    {
-    "rank": 318,
-    "name": "Garnet Hathaway",
-    "team": "FLA",
+    "rank": 304,
+    "name": "Brock Boeser",
+    "team": "VAN",
     "pos": "R",
-    "gp": 7,
-    "value": 47.3,
-    "gs60": 2.15,
+    "gp": 8,
+    "value": 48.8,
+    "gs60": 2.42,
     "isMe": false
    },
    {
-    "rank": 319,
-    "name": "Simon Nemec",
-    "team": "CGY",
+    "rank": 305,
+    "name": "William Wallinder",
+    "team": "DET",
     "pos": "D",
-    "gp": 5,
-    "value": 47.1,
-    "gs60": 2.12,
+    "gp": 2,
+    "value": 48.8,
+    "gs60": 2.42,
     "isMe": false
    }
   ],
@@ -384,17 +384,17 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": null,
+   "gameScore": 0.27,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": -0.175,
     "hockeystatcards": 0.71
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.43,
-  "games": 5,
+  "average": 0.41,
+  "games": 6,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",

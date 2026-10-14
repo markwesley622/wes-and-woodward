@@ -87,11 +87,11 @@
   },
   "Offense": {
    "value": 1.4,
-   "percentile": 93
+   "percentile": 92
   },
   "Defense": {
    "value": 0.4,
-   "percentile": 73
+   "percentile": 72
   },
   "Net": {
    "value": 1.8,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 69.6,
-  "gs": 5.53,
-  "gs60": 3.68,
-  "gameScore": 5.53,
+  "value": 84.4,
+  "gs": 8.82,
+  "gs60": 5.86,
+  "gameScore": 8.82,
   "minutes": 90,
   "gp": 6,
-  "rank": 126,
-  "pool": 673,
-  "percentile": 81.3,
+  "rank": 35,
+  "pool": 677,
+  "percentile": 94.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 124,
-    "name": "Filip Forsberg",
-    "team": "NSH",
-    "pos": "L",
+    "rank": 33,
+    "name": "Nikita Kucherov",
+    "team": "TBL",
+    "pos": "R",
     "gp": 6,
-    "value": 69.8,
-    "gs60": 5.57,
+    "value": 85.9,
+    "gs60": 9.27,
     "isMe": false
    },
    {
-    "rank": 125,
-    "name": "Dougie Hamilton",
-    "team": "NJD",
+    "rank": 34,
+    "name": "Devon Toews",
+    "team": "COL",
     "pos": "D",
     "gp": 6,
-    "value": 69.8,
-    "gs60": 5.57,
+    "value": 85.1,
+    "gs60": 9.02,
     "isMe": false
    },
    {
-    "rank": 126,
+    "rank": 35,
     "name": "Michael Brandsegg-Nygrd",
     "team": "DET",
     "pos": "R",
     "gp": 6,
-    "value": 69.6,
-    "gs60": 5.53,
+    "value": 84.4,
+    "gs60": 8.82,
     "isMe": true
    },
    {
-    "rank": 127,
-    "name": "Seth Jones",
-    "team": "FLA",
-    "pos": "D",
+    "rank": 36,
+    "name": "Tage Thompson",
+    "team": "BUF",
+    "pos": "C",
     "gp": 7,
-    "value": 69.3,
-    "gs60": 5.49,
+    "value": 84.1,
+    "gs60": 8.73,
     "isMe": false
    },
    {
-    "rank": 128,
-    "name": "Lars Eller",
-    "team": "FLA",
-    "pos": "C",
-    "gp": 7,
-    "value": 69.1,
-    "gs60": 5.45,
+    "rank": 37,
+    "name": "Jaccob Slavin",
+    "team": "CAR",
+    "pos": "D",
+    "gp": 8,
+    "value": 84.0,
+    "gs60": 8.72,
     "isMe": false
    }
   ],
@@ -324,28 +324,28 @@
    "gf": 4.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": null,
+   "gameScore": 3.29,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": 2.75,
     "hockeystatcards": 3.82
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.11,
-  "games": 5,
+  "average": 1.47,
+  "games": 6,
   "best": {
-   "date": "2026-10-09",
-   "opponent": "SEA",
-   "value": 2.53
+   "date": "2026-10-13",
+   "opponent": "NJD",
+   "value": 3.29
   },
   "worst": {
    "date": "2026-10-10",
    "opponent": "MTL",
    "value": -0.11
   },
-  "above2": 2,
+  "above2": 3,
   "below0": 1
  },
  "detGames": 6,
