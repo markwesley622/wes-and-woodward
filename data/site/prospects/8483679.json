@@ -490,8 +490,11 @@
   "sinceDraft": 3,
   "pedigreeExpected": 12.3,
   "cohortExpected": 25.4,
-  "expected": 25.4,
-  "tier": "replacement level"
+  "expected": 26.7,
+  "tier": "replacement level",
+  "nhlW": 0.23,
+  "nhlExpected": 31.0,
+  "beforeNhl": 25.4
  },
  "trajectory": {
   "from": {
@@ -521,12 +524,127 @@
    "savePct": null
   }
  },
+ "nhlUsage": {
+  "n": 50,
+  "expected": 31.0,
+  "median": 23.5,
+  "p75": 56.1,
+  "p90": 82.5,
+  "pRegular": 0.66,
+  "pTopLine": 0.1,
+  "pAboveAvg": 0.32,
+  "pElite": 0.02,
+  "poolN": 258,
+  "group": "D",
+  "age": 22,
+  "gp": 6,
+  "toi": 945,
+  "ppg": 0.167,
+  "ppgShrunk": 0.187,
+  "toiBand": [
+   848,
+   1043
+  ],
+  "examples": [
+   {
+    "name": "Joe Morrow",
+    "season": "2015-2016",
+    "age": 22,
+    "gp": 33,
+    "toi": 954,
+    "ppg": 0.21,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 162
+   },
+   {
+    "name": "Dennis Gilbert",
+    "season": "2019-2020",
+    "age": 22,
+    "gp": 21,
+    "toi": 942,
+    "ppg": 0.14,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 119
+   },
+   {
+    "name": "Danny Biega",
+    "season": "2014-2015",
+    "age": 22,
+    "gp": 10,
+    "toi": 968,
+    "ppg": 0.2,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 10
+   },
+   {
+    "name": "Xavier Ouellet",
+    "season": "2015-2016",
+    "age": 22,
+    "gp": 5,
+    "toi": 975,
+    "ppg": 0.2,
+    "peak": 22.5,
+    "tier": "replacement level",
+    "nhlGp": 178
+   },
+   {
+    "name": "Brandon Gormley",
+    "season": "2014-2015",
+    "age": 22,
+    "gp": 27,
+    "toi": 919,
+    "ppg": 0.15,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 58
+   },
+   {
+    "name": "Patrik Nemeth",
+    "season": "2014-2015",
+    "age": 22,
+    "gp": 22,
+    "toi": 973,
+    "ppg": 0.14,
+    "peak": 32.0,
+    "tier": "below average",
+    "nhlGp": 504
+   },
+   {
+    "name": "Alexander Alexeyev",
+    "season": "2022-2023",
+    "age": 22,
+    "gp": 32,
+    "toi": 987,
+    "ppg": 0.16,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 80
+   },
+   {
+    "name": "J\u00e9r\u00e9my Lauzon",
+    "season": "2019-2020",
+    "age": 22,
+    "gp": 19,
+    "toi": 925,
+    "ppg": 0.11,
+    "peak": 28.4,
+    "tier": "below average",
+    "nhlGp": 387
+   }
+  ],
+  "w": 0.23,
+  "before": 25.4,
+  "after": 26.7
+ },
  "availability": {
   "gp": 42,
   "season": "2025-2026"
  },
  "rank": 9,
- "score": 25.4,
+ "score": 26.7,
  "rankStart": 10,
  "rankStartDate": "2026-10-06"
 }

@@ -353,6 +353,7 @@
     "delta": -0.009
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 53,
     "season": "2025-2026"
@@ -641,6 +642,7 @@
     "delta": 0.102
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 68,
     "season": "2025-2026"
@@ -1090,6 +1092,7 @@
     "delta": 0.0033
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 34,
     "season": "2025-2026"
@@ -1506,6 +1509,7 @@
     "delta": 0.212
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 43,
     "season": "2025-2026"
@@ -1924,6 +1928,7 @@
     "delta": 0.026
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 40,
     "season": "2025-2026"
@@ -2241,6 +2246,7 @@
    },
    "trajectory": null,
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 38,
     "season": "2025-2026"
@@ -2576,6 +2582,7 @@
    },
    "trajectory": null,
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 36,
     "season": "2025-2026"
@@ -3069,6 +3076,7 @@
     "delta": -0.172
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 54,
     "season": "2025-2026"
@@ -3570,8 +3578,11 @@
     "sinceDraft": 3,
     "pedigreeExpected": 12.3,
     "cohortExpected": 25.4,
-    "expected": 25.4,
-    "tier": "replacement level"
+    "expected": 26.7,
+    "tier": "replacement level",
+    "nhlW": 0.23,
+    "nhlExpected": 31.0,
+    "beforeNhl": 25.4
    },
    "trajectory": {
     "from": {
@@ -3601,12 +3612,127 @@
      "savePct": null
     }
    },
+   "nhlUsage": {
+    "n": 50,
+    "expected": 31.0,
+    "median": 23.5,
+    "p75": 56.1,
+    "p90": 82.5,
+    "pRegular": 0.66,
+    "pTopLine": 0.1,
+    "pAboveAvg": 0.32,
+    "pElite": 0.02,
+    "poolN": 258,
+    "group": "D",
+    "age": 22,
+    "gp": 6,
+    "toi": 945,
+    "ppg": 0.167,
+    "ppgShrunk": 0.187,
+    "toiBand": [
+     848,
+     1043
+    ],
+    "examples": [
+     {
+      "name": "Joe Morrow",
+      "season": "2015-2016",
+      "age": 22,
+      "gp": 33,
+      "toi": 954,
+      "ppg": 0.21,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 162
+     },
+     {
+      "name": "Dennis Gilbert",
+      "season": "2019-2020",
+      "age": 22,
+      "gp": 21,
+      "toi": 942,
+      "ppg": 0.14,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 119
+     },
+     {
+      "name": "Danny Biega",
+      "season": "2014-2015",
+      "age": 22,
+      "gp": 10,
+      "toi": 968,
+      "ppg": 0.2,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 10
+     },
+     {
+      "name": "Xavier Ouellet",
+      "season": "2015-2016",
+      "age": 22,
+      "gp": 5,
+      "toi": 975,
+      "ppg": 0.2,
+      "peak": 22.5,
+      "tier": "replacement level",
+      "nhlGp": 178
+     },
+     {
+      "name": "Brandon Gormley",
+      "season": "2014-2015",
+      "age": 22,
+      "gp": 27,
+      "toi": 919,
+      "ppg": 0.15,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 58
+     },
+     {
+      "name": "Patrik Nemeth",
+      "season": "2014-2015",
+      "age": 22,
+      "gp": 22,
+      "toi": 973,
+      "ppg": 0.14,
+      "peak": 32.0,
+      "tier": "below average",
+      "nhlGp": 504
+     },
+     {
+      "name": "Alexander Alexeyev",
+      "season": "2022-2023",
+      "age": 22,
+      "gp": 32,
+      "toi": 987,
+      "ppg": 0.16,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 80
+     },
+     {
+      "name": "J\u00e9r\u00e9my Lauzon",
+      "season": "2019-2020",
+      "age": 22,
+      "gp": 19,
+      "toi": 925,
+      "ppg": 0.11,
+      "peak": 28.4,
+      "tier": "below average",
+      "nhlGp": 387
+     }
+    ],
+    "w": 0.23,
+    "before": 25.4,
+    "after": 26.7
+   },
    "availability": {
     "gp": 42,
     "season": "2025-2026"
    },
    "rank": 9,
-   "score": 25.4,
+   "score": 26.7,
    "rankStart": 10,
    "rankStartDate": "2026-10-06"
   },
@@ -3915,6 +4041,7 @@
     "delta": 0.036
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 57,
     "season": "2025-2026"
@@ -4335,6 +4462,7 @@
     "delta": 0.046
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 10,
     "season": "2026-2027"
@@ -4759,6 +4887,7 @@
     "delta": 0.027
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 48,
     "season": "2025-2026"
@@ -5115,6 +5244,7 @@
     "delta": 0.049
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 36,
     "season": "2025-2026"
@@ -5427,6 +5557,7 @@
     "delta": 0.085
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 54,
     "season": "2025-2026"
@@ -5749,6 +5880,7 @@
     "delta": -0.0069
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 50,
     "season": "2025-2026"
@@ -6083,6 +6215,7 @@
     "delta": 0.05
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 60,
     "season": "2025-2026"
@@ -6371,6 +6504,7 @@
     "delta": -0.004
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 64,
     "season": "2025-2026"
@@ -6661,6 +6795,7 @@
     "delta": 0.081
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 60,
     "season": "2025-2026"
@@ -7112,6 +7247,7 @@
     "delta": -0.035
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 12,
     "season": "2025-2026"
@@ -7525,6 +7661,7 @@
     "delta": 0.054
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 40,
     "season": "2025-2026"
@@ -7874,6 +8011,7 @@
     "delta": 0.01
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 42,
     "season": "2025-2026"
@@ -8225,6 +8363,7 @@
     "delta": 0.001
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 30,
     "season": "2025-2026"
@@ -8639,6 +8778,7 @@
     "delta": 0.016
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 12,
     "season": "2026-2027"
@@ -8901,6 +9041,7 @@
     "delta": 0.016
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 38,
     "season": "2025-2026"
@@ -9233,6 +9374,7 @@
     "delta": -0.009
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 36,
     "season": "2025-2026"
@@ -9495,6 +9637,7 @@
     "delta": -0.01
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 55,
     "season": "2025-2026"
@@ -9827,6 +9970,7 @@
     "delta": 0.018
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 36,
     "season": "2025-2026"
@@ -10183,6 +10327,7 @@
     "delta": 0.11
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 37,
     "season": "2025-2026"
@@ -10515,6 +10660,7 @@
     "delta": -0.065
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 14,
     "season": "2025-2026"
@@ -10973,6 +11119,7 @@
     "delta": -0.039
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 21,
     "season": "2025-2026"
@@ -11301,6 +11448,7 @@
     "delta": -0.014
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 35,
     "season": "2025-2026"
@@ -11696,6 +11844,7 @@
     "delta": 0.008
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 32,
     "season": "2025-2026"
@@ -12052,6 +12201,7 @@
     "delta": -0.006
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 39,
     "season": "2025-2026"
@@ -12408,6 +12558,7 @@
     "delta": 0.025
    },
    "nhlSample": null,
+   "nhlUsage": null,
    "availability": {
     "gp": 37,
     "season": "2025-2026"
@@ -16213,7 +16364,8 @@
   "ceiling": "Nearest 50 drafted players (2008-2019 classes) at the same position and age. Skaters matched on NHLe points per game; goalies on save percentage above the league-season average and league strength. Draft slot enters with weight 2w (w below). Outcome = each one's peak NHL season as a percentile within position (skaters: points per game over seasons with at least half the games; goalies: save percentage over seasons with at least a quarter); busts count as 0. Cohort expected = mean, ceiling = 75th percentile. Tiers: elite 88+, top-line 73+, above average 50+, below average 27+.",
   "pedigree": "Diminishing returns: w = 0.5 in the draft year (or a pre-draft anchor season), 0.25 at draft+1, 0 from draft+2. Expected peak = w x pick-band prior + (1 - w) x cohort mean.",
   "trajectory": "Change in the production feature between the two most recent full seasons (skaters NHLe points per game; goalies save percentage above league average).",
-  "ranking": "By expected peak (the pedigree-blended cohort mean), then by the cohort 75th percentile.",
+  "nhlUsage": "Skaters with 3+ NHL games this season: the nearest 50 rookie NHL seasons (5+ games, 2008-2019 draft classes, seasons through 2022-2023) at the same position within a year of his age, matched on ice time per game and, at half weight, points per game shrunk toward the pool mean by 20 games. Their mean peak enters the expected peak at weight gp / (gp + 20). NHL API season totals. A season played mostly in the NHL is not used as the production anchor.",
+  "ranking": "By expected peak (the pedigree-blended cohort mean, then blended with NHL usage when there is one), then by the cohort 75th percentile.",
   "movement": "Rank now against the start-of-season ranking (data/site/prospect_ranks_start.json). The ranking rests on last season until a current-season line reaches 10 games."
  }
 }

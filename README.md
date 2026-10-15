@@ -93,6 +93,12 @@ Builder: `pipeline/build_prospects.py` -> `data/site/prospects.json` + `data/sit
   skaters of 2008-2019 at the same position and age by NHLe + draft slot; outcome = peak NHL P/GP
   percentile within position, busts = 0; expected / p75 / P(regular)), trajectory (NHLe change, last two
   full seasons). Rank = expected peak.
+- NHL usage (2026-10-15): a skater with 3+ NHL games this season is also matched to the 50 nearest rookie
+  NHL seasons of the 2008-2019 classes (5+ games, through 2022-23, same position, within a year of his age)
+  on ice time per game (NHL API `timeOnIcePerGame`, joined to EP by name + season + games) and, at half
+  weight, points per game shrunk 20 games toward the pool mean. Their mean peak blends into the expected
+  peak at weight gp / (gp + 20). A season played mostly in the NHL never becomes the production anchor.
+  Inputs are NHL API numbers, so this layer stays current even when the EP pull fails.
 - EliteProspects is pulled through a logged-in Chrome, never a bare script: `pipeline/ep_receiver.py` (local
   queue + sink on 127.0.0.1:8765) and `pipeline/ep_worker.js` (runs in an EP tab; fetches pages in-page, posts
   the embedded `__NEXT_DATA__` back). `ep_refresh.py` queues the DET system + its players; `ep_league_pull.py

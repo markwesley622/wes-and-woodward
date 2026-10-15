@@ -24,6 +24,12 @@ Decided with Mark 2026-10-06. Four layers, every one computed WITHIN POSITION (F
   prior and the cohort mean by w, and the comparable search weights draft slot by 2w (so at draft+2
   comparables are chosen on production alone).
 
+  NHL usage (Mark, 10/15): a skater with NHL games this season is also matched to rookie NHL seasons of
+  the cohort classes at his position and age, chiefly on ice time per game (how the coach uses him says
+  more over a few games than his points do). That group's mean peak blends into the expected peak at
+  weight gp / (gp + 20), so it takes over as the NHL sample grows. NHL seasons never serve as the
+  production anchor (the production cohort has no NHL rows).
+
 Prospect = rookie-eligible AND inside draft+4 where the draft year is year one (2021 -> through
 2025-26). NHL-roster players who meet that rule (Brandsegg-Nygård, Johansson) are ranked too; their one
 page keeps the NHL template while they are up, and that page is canonical.
@@ -42,6 +48,10 @@ YR = int(SEASON[:4])                            # 2026
 CUR = f"{YR}-{YR + 1}"; PREV = f"{YR - 1}-{YR}"; PREV2 = f"{YR - 2}-{YR - 1}"
 COHORT_YEARS = range(2008, 2020)
 K_NEIGHBOURS = 50
+USAGE_HALF = 20            # NHL usage weight = gp / (gp + USAGE_HALF): half at 20 games, 0.8 over a full season
+USAGE_MIN_GP = 3           # fewer NHL games this season than this and the usage read stays off
+USAGE_SHRINK = 20          # games of pool-average scoring his NHL points per game is shrunk toward
+USAGE_LAST_SEASON = "2022-2023"
 CTX = ssl.create_default_context(cafile=certifi.where())
 NHLE = json.loads((ROOT / "data" / "raw" / "nhle" / "hockeystats_nhle.json").read_text())
 sys.path.insert(0, str(ROOT / "pipeline"))
@@ -289,6 +299,66 @@ def load_cohort(pools, tabs):
     return rows
 
 
+def load_usage(pools):
+    """NHL usage comparables (Mark, 10/15): every rookie-eligible NHL season (5+ games, through 2022-23 so
+    the peak has three seasons to show) by a skater of the 2008-2019 draft classes, with ice time per game
+    from the NHL API season files joined on name + season + games. Outcome = the same peak percentile as
+    the ceiling cohort."""
+    nhl = {}
+    for f in sorted((ROOT / "data" / "raw" / "nhl_seasons").glob("skaters_*.json")):
+        sid = f.stem.split("_")[1]; season = f"{sid[:4]}-{sid[4:]}"
+        for r in json.load(f.open()).get("data", []):
+            nhl.setdefault((season, norm_name(r["skaterFullName"])), []).append(r)
+    picks = {}
+    for y in COHORT_YEARS:
+        f = EP / "draft" / f"{y}.json"
+        if not f.exists(): continue
+        for p in json.load(f.open())["picks"]:
+            if p.get("playerId"): picks[p["playerId"]] = p
+    rows = []
+    for pid, p in picks.items():
+        f = EP / "player" / f"{pid}.json"
+        if not f.exists(): continue
+        rec = json.load(f.open()); pl = rec["player"]
+        if not pl or not pl.get("dateOfBirth") or pos_group(pl) == "G": continue
+        g = pos_group(pl); gp = {}
+        for s in rec["seasons"]:
+            if s.get("league") == "NHL" and s.get("reg") and s.get("season"): gp[s["season"]] = gp.get(s["season"], 0) + (s["reg"].get("GP") or 0)
+        if not gp: continue
+        out = nhl_outcome(rec, g, pools); prior = {}
+        for season in sorted(gp):
+            rookie = age_at(season, pl["dateOfBirth"]) < 26 and all(v <= 25 for v in prior.values()) and sum(1 for v in prior.values() if v >= 6) < 2
+            if rookie and gp[season] >= 5 and season <= USAGE_LAST_SEASON:
+                hit = [r for r in nhl.get((season, norm_name(pl["name"])), []) if abs((r.get("gamesPlayed") or 0) - gp[season]) <= 2]
+                if len(hit) == 1 and hit[0].get("timeOnIcePerGame"):
+                    r = hit[0]
+                    rows.append({"name": pl["name"], "group": g, "age": int(age_at(season, pl["dateOfBirth"])), "season": season, "gp": r["gamesPlayed"], "toi": r["timeOnIcePerGame"],
+                                 "ppg": r["points"] / r["gamesPlayed"], "year": p["year"], "pick": p["overall"], "peak": out["peak"], "nhlGp": out["nhlGp"], "regular": out["peak"] is not None})
+            prior[season] = gp[season]
+    return rows
+
+
+def nhl_usage(usage, group, age, gp, toi, ppg):
+    """Nearest K rookie NHL seasons at the same position within a year of his age. Distance = |Δ ice time|
+    in pool SDs + 0.5 x |Δ points per game| in SDs + 0.5 per year of age apart. His points per game is
+    shrunk toward the pool mean by USAGE_SHRINK games first: a handful of games says more about how a
+    coach uses him than about his scoring."""
+    pool = [r for r in usage if r["group"] == group and abs(r["age"] - age) <= 1]
+    if len(pool) < 25: return None
+    sd_t = statistics.pstdev([r["toi"] for r in pool]) or 1.0
+    sd_p = statistics.pstdev([r["ppg"] for r in pool]) or 1.0
+    mean_p = statistics.mean([r["ppg"] for r in pool])
+    ppg_s = (gp * ppg + USAGE_SHRINK * mean_p) / (gp + USAGE_SHRINK)
+    for r in pool: r["_d"] = abs(r["toi"] - toi) / sd_t + 0.5 * abs(r["ppg"] - ppg_s) / sd_p + 0.5 * abs(r["age"] - age)
+    pool.sort(key=lambda r: r["_d"])
+    nbrs = pool[:K_NEIGHBOURS]
+    s = summarise(nbrs)
+    s.update({"poolN": len(pool), "group": group, "age": age, "gp": gp, "toi": round(toi), "ppg": round(ppg, 3), "ppgShrunk": round(ppg_s, 3),
+              "toiBand": [round(min(n["toi"] for n in nbrs)), round(max(n["toi"] for n in nbrs))],
+              "examples": [{"name": n["name"], "season": n["season"], "age": n["age"], "gp": n["gp"], "toi": round(n["toi"]), "ppg": round(n["ppg"], 2), "peak": n["peak"], "tier": tier(n["peak"]), "nhlGp": n["nhlGp"]} for n in nbrs[:8]]})
+    return s
+
+
 def summarise(nbrs):
     peaks = [n["peak"] if n["peak"] is not None else 0.0 for n in nbrs]
     if not peaks: return None
@@ -425,6 +495,8 @@ def main():
     print("NHL pools:", len(pools), "· league tables:", len(tabs))
     cohort = load_cohort(pools, tabs)
     print("cohort rows:", len(cohort), "players:", len({r['pid'] for r in cohort}), "goalie rows:", sum(1 for r in cohort if r["group"] == "G"))
+    usage = load_usage(pools)
+    print("NHL usage rows (rookie NHL seasons with ice time):", len(usage))
     system = json.load((EP / "system" / "DET.json").open())
     players = [p for p in system["skaters"] + system["goalies"] if (EP / "player" / f"{p['id']}.json").exists()]
     idm = id_map(players)
@@ -461,7 +533,9 @@ def main():
             spent = "graduated to the NHL" if (land and nhl_now and rookie_eligible(land, this_season=True)) else "lost rookie eligibility"
             excluded.append({**base, "reason": ("past draft+4" if st.get("draftYear") else "past the undrafted age window") if st.get("rookieEligible") else spent}); continue
         cur = primary_line(rec, CUR, g, tabs); prev = primary_line(rec, PREV, g, tabs); prev2 = primary_line(rec, PREV2, g, tabs)
-        anchor = cur if (cur and cur["lineGp"] >= 10) else prev
+        # an NHL season is read by the NHL usage layer against NHL comparables; the production cohort has no NHL
+        # rows, so a mostly-NHL current season would be matched to minor-league seasons (Mark, 10/15: Johansson)
+        anchor = cur if (cur and cur["lineGp"] >= 10 and (cur["league"] != "NHL" or not prev)) else prev
         anchor_season = CUR if anchor is cur else PREV
         n_since = (int(anchor_season[:4]) - dr["year"]) if (dr and anchor) else None
         w = pedigree_weight(n_since, g) if dr else 0.0
@@ -489,8 +563,20 @@ def main():
             if ped and w > 0:
                 score = round(w * ped["expected"] + (1 - w) * ceil["expected"], 1)
             blend = {"w": w, "sinceDraft": n_since, "pedigreeExpected": ped["expected"] if ped else None, "cohortExpected": ceil["expected"], "expected": score, "tier": tier(score) if ceil["pRegular"] > 0 else "did not stick"}
+        # NHL usage (Mark, 10/15): a prospect playing NHL games this season is also read against rookies who got the
+        # same ice time at his age, weighted by games so it takes over as the sample grows. NHL API numbers, not EP.
+        use = None; ts = (nhl_sample or {}).get("thisSeason") or {}
+        if g != "G" and (ts.get("gp") or 0) >= USAGE_MIN_GP and ts.get("toi"):
+            mm, ss = ts["toi"].split(":")
+            use = nhl_usage(usage, g, int(age_at(CUR, dob)), ts["gp"], int(mm) * 60 + int(ss), (ts.get("pts") or 0) / ts["gp"])
+        if use:
+            v = round(ts["gp"] / (ts["gp"] + USAGE_HALF), 2)
+            before = score
+            score = round(use["expected"] if score is None else (1 - v) * score + v * use["expected"], 1)
+            use.update({"w": v, "before": before, "after": score})
+            if blend: blend.update({"nhlW": v, "nhlExpected": use["expected"], "beforeNhl": before, "expected": score, "tier": tier(score)})
         prospects.append({**base, "anchor": {"season": anchor_season, **anchor} if anchor else None, "league": ({"name": anchor["league"], "table": anchor["table"], "coef": anchor["coef"], "source": NHLE["source"]} if anchor else None),
-                          "performance": {"last": perf_prev, "current": perf_cur}, "ceiling": ceil, "pedigree": ped, "blend": blend, "trajectory": traj, "nhlSample": nhl_sample,
+                          "performance": {"last": perf_prev, "current": perf_cur}, "ceiling": ceil, "pedigree": ped, "blend": blend, "trajectory": traj, "nhlSample": nhl_sample, "nhlUsage": use,
                           "availability": {"gp": anchor["lineGp"], "season": anchor_season} if anchor else None, "rank": None, "score": score})
     prospects.sort(key=lambda x: (-(x["score"] if x["score"] is not None else -1), -((x["ceiling"] or {}).get("p75") or 0)))
     for i, x in enumerate(prospects): x["rank"] = i + 1
@@ -514,7 +600,8 @@ def main():
                       "ceiling": f"Nearest {K_NEIGHBOURS} drafted players (2008-2019 classes) at the same position and age. Skaters matched on NHLe points per game; goalies on save percentage above the league-season average and league strength. Draft slot enters with weight 2w (w below). Outcome = each one's peak NHL season as a percentile within position (skaters: points per game over seasons with at least half the games; goalies: save percentage over seasons with at least a quarter); busts count as 0. Cohort expected = mean, ceiling = 75th percentile. Tiers: elite 88+, top-line 73+, above average 50+, below average 27+.",
                       "pedigree": "Diminishing returns: w = 0.5 in the draft year (or a pre-draft anchor season), 0.25 at draft+1, 0 from draft+2. Expected peak = w x pick-band prior + (1 - w) x cohort mean.",
                       "trajectory": "Change in the production feature between the two most recent full seasons (skaters NHLe points per game; goalies save percentage above league average).",
-                      "ranking": "By expected peak (the pedigree-blended cohort mean), then by the cohort 75th percentile.",
+                      "nhlUsage": f"Skaters with {USAGE_MIN_GP}+ NHL games this season: the nearest {K_NEIGHBOURS} rookie NHL seasons (5+ games, 2008-2019 draft classes, seasons through {USAGE_LAST_SEASON}) at the same position within a year of his age, matched on ice time per game and, at half weight, points per game shrunk toward the pool mean by {USAGE_SHRINK} games. Their mean peak enters the expected peak at weight gp / (gp + {USAGE_HALF}). NHL API season totals. A season played mostly in the NHL is not used as the production anchor.",
+                      "ranking": "By expected peak (the pedigree-blended cohort mean, then blended with NHL usage when there is one), then by the cohort 75th percentile.",
                       "movement": "Rank now against the start-of-season ranking (data/site/prospect_ranks_start.json). The ranking rests on last season until a current-season line reaches 10 games."}}
     site = ROOT / "data" / "site"; (site / "prospects").mkdir(parents=True, exist_ok=True)
     (site / "prospects.json").write_text(json.dumps(out, indent=1))
