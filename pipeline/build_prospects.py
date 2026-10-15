@@ -455,7 +455,11 @@ def main():
                 "status": {**st, "onNhlRoster": bool(nhl_id and nhl_id in roster)}, "scouting": re.sub(r"<[^>]+>", "", pl.get("profileDescriptionAsHTML") or "").strip() or None,
                 "currentLines": all_lines(rec, CUR), "lastLines": all_lines(rec, PREV), "seasons": seasons_since_draft(rec, dr["year"] if dr else None)}
         if not st["prospect"]:
-            excluded.append({**base, "reason": ("past draft+4" if st.get("draftYear") else "past the undrafted age window") if st.get("rookieEligible") else "lost rookie eligibility"}); continue
+            # graduated = a rookie this season whose NHL games this season spend his eligibility for next (rookie_eligible
+            # docstring); an age-out with no NHL games (Gylander) or a player spent before this season has lost it
+            nhl_now = sum(t.get("gamesPlayed") or 0 for t in (land or {}).get("seasonTotals", []) if t.get("leagueAbbrev") == "NHL" and t.get("gameTypeId") == 2 and t.get("season") == int(SEASON))
+            spent = "graduated to the NHL" if (land and nhl_now and rookie_eligible(land, this_season=True)) else "lost rookie eligibility"
+            excluded.append({**base, "reason": ("past draft+4" if st.get("draftYear") else "past the undrafted age window") if st.get("rookieEligible") else spent}); continue
         cur = primary_line(rec, CUR, g, tabs); prev = primary_line(rec, PREV, g, tabs); prev2 = primary_line(rec, PREV2, g, tabs)
         anchor = cur if (cur and cur["lineGp"] >= 10) else prev
         anchor_season = CUR if anchor is cur else PREV
@@ -516,6 +520,10 @@ def main():
     (site / "prospects.json").write_text(json.dumps(out, indent=1))
     for x in prospects + excluded:
         if x.get("nhlId"): (site / "prospects" / f"{x['nhlId']}.json").write_text(json.dumps(x, indent=1))
+    # a graduate on the NHL roster drops out of both lists; don't leave his old ranked block behind
+    keep = {f"{x['nhlId']}.json" for x in prospects + excluded if x.get("nhlId")}
+    for f in (site / "prospects").glob("*.json"):
+        if f.name not in keep: f.unlink()
     print(f"prospects: {len(prospects)} ranked, {len(excluded)} excluded")
     for x in prospects:
         c = x["ceiling"] or {}; pf = (x["performance"]["last"] or {}); b = x["blend"] or {}

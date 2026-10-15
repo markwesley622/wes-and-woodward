@@ -221,16 +221,20 @@ def season_line(land):
             "otLosses": t.get("otLosses"), "gaa": t.get("goalsAgainstAvg"), "savePct": t.get("savePctg"), "shutouts": t.get("shutouts")}
 
 
-def rookie_eligible(land):
-    """NHL rookie rule: under 26 on Sept 15 of the coming season, no prior season of 25+ NHL games,
-    and no more than one prior season above 6 games."""
-    yr = int(SEASON[:4]) + 1
+def rookie_eligible(land, this_season=False):
+    """NHL rookie rule, applied to NEXT season with this season's games counted: under 26 on Sept 15 of
+    the coming season, no season of more than 25 NHL games, and not 6+ games in each of two seasons.
+    A player who fails it while still a rookie this season has spent his eligibility (Mark, 10/15:
+    Brandsegg-Nygård, 14 games last season + 6 this one) and graduates off the prospect list; one who
+    would still be a rookie next year if sent down (Johansson, 6 games in one season) stays on it.
+    this_season=True asks the plain question for the current season (prior seasons only, age on this Sept 15)."""
+    yr = int(SEASON[:4]) + (0 if this_season else 1)
     age = (dt.date(yr, 9, 15) - dt.date.fromisoformat(land["birthDate"])).days / 365.25
     gp = {}
     for t in land.get("seasonTotals", []):
-        if t.get("leagueAbbrev") == "NHL" and t.get("gameTypeId") == 2 and t.get("season", 0) <= int(SEASON):
+        if t.get("leagueAbbrev") == "NHL" and t.get("gameTypeId") == 2 and (t.get("season", 0) < int(SEASON) if this_season else t.get("season", 0) <= int(SEASON)):
             gp[t["season"]] = gp.get(t["season"], 0) + (t.get("gamesPlayed") or 0)
-    return age < 26 and all(v < 25 for v in gp.values()) and sum(1 for v in gp.values() if v > 6) < 2
+    return age < 26 and all(v <= 25 for v in gp.values()) and sum(1 for v in gp.values() if v >= 6) < 2
 
 
 def has_art(pid):
