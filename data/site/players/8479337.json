@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 1.93,
-   "percentile": 96
+   "percentile": 97
   },
   "Offense": {
    "value": 1.8,
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.1,
-   "percentile": 57
+   "percentile": 56
   },
   "Net": {
    "value": 2.0,
@@ -100,26 +100,26 @@
  },
  "score": null,
  "standIn": {
-  "value": 89.9,
+  "value": 89.6,
   "gs": 10.68,
   "gs60": 5.3,
   "gameScore": 10.68,
   "minutes": 121,
   "gp": 6,
   "rank": 20,
-  "pool": 677,
-  "percentile": 97.0,
+  "pool": 679,
+  "percentile": 97.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
     "rank": 18,
-    "name": "Kyle Connor",
-    "team": "WPG",
-    "pos": "L",
-    "gp": 6,
-    "value": 90.7,
-    "gs60": 10.99,
+    "name": "Lane Hutson",
+    "team": "MTL",
+    "pos": "D",
+    "gp": 7,
+    "value": 90.1,
+    "gs60": 10.86,
     "isMe": false
    },
    {
@@ -128,7 +128,7 @@
     "team": "NJD",
     "pos": "C",
     "gp": 6,
-    "value": 90.3,
+    "value": 90.0,
     "gs60": 10.82,
     "isMe": false
    },
@@ -138,28 +138,28 @@
     "team": "DET",
     "pos": "R",
     "gp": 6,
-    "value": 89.9,
+    "value": 89.6,
     "gs60": 10.68,
     "isMe": true
    },
    {
     "rank": 21,
-    "name": "Mason McTavish",
-    "team": "STL",
+    "name": "Martin Necas",
+    "team": "COL",
     "pos": "C",
-    "gp": 6,
-    "value": 89.1,
-    "gs60": 10.37,
+    "gp": 7,
+    "value": 89.5,
+    "gs60": 10.61,
     "isMe": false
    },
    {
     "rank": 22,
-    "name": "Jackson Blake",
-    "team": "CAR",
-    "pos": "R",
-    "gp": 8,
+    "name": "Mason McTavish",
+    "team": "STL",
+    "pos": "C",
+    "gp": 6,
     "value": 88.8,
-    "gs60": 10.23,
+    "gs60": 10.37,
     "isMe": false
    }
   ],

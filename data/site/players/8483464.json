@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.1,
-   "percentile": 53
+   "percentile": 52
   },
   "Net": {
    "value": -0.1,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 37.6,
+  "value": 37.4,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 444,
-  "pool": 677,
-  "percentile": 34.4,
+  "rank": 447,
+  "pool": 679,
+  "percentile": 34.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 442,
+    "rank": 445,
     "name": "Jordan Greenway",
     "team": "CHI",
     "pos": "L",
     "gp": 7,
-    "value": 37.7,
-    "gs60": 0.74,
-    "isMe": false
-   },
-   {
-    "rank": 443,
-    "name": "Frank Vatrano",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 3,
-    "value": 37.7,
-    "gs60": 0.74,
-    "isMe": false
-   },
-   {
-    "rank": 444,
-    "name": "Marco Kasper",
-    "team": "DET",
-    "pos": "C",
-    "gp": 1,
-    "value": 37.6,
-    "gs60": 0.73,
-    "isMe": true
-   },
-   {
-    "rank": 445,
-    "name": "Sean Monahan",
-    "team": "CBJ",
-    "pos": "C",
-    "gp": 5,
     "value": 37.5,
-    "gs60": 0.72,
+    "gs60": 0.74,
     "isMe": false
    },
    {
     "rank": 446,
+    "name": "Frank Vatrano",
+    "team": "ANA",
+    "pos": "R",
+    "gp": 3,
+    "value": 37.5,
+    "gs60": 0.74,
+    "isMe": false
+   },
+   {
+    "rank": 447,
+    "name": "Marco Kasper",
+    "team": "DET",
+    "pos": "C",
+    "gp": 1,
+    "value": 37.4,
+    "gs60": 0.73,
+    "isMe": true
+   },
+   {
+    "rank": 448,
+    "name": "Sean Monahan",
+    "team": "CBJ",
+    "pos": "C",
+    "gp": 5,
+    "value": 37.4,
+    "gs60": 0.72,
+    "isMe": false
+   },
+   {
+    "rank": 449,
     "name": "Zachary L'Heureux",
     "team": "COL",
     "pos": "L",
     "gp": 3,
-    "value": 37.3,
+    "value": 37.2,
     "gs60": 0.69,
     "isMe": false
    }

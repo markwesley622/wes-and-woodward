@@ -87,11 +87,11 @@
   },
   "Offense": {
    "value": 0.1,
-   "percentile": 66
+   "percentile": 65
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 43
+   "percentile": 42
   },
   "Net": {
    "value": 0.0,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 56.5,
+  "value": 56.1,
   "gs": 3.56,
   "gs60": 1.9,
   "gameScore": 3.56,
   "minutes": 112,
   "gp": 6,
-  "rank": 231,
-  "pool": 677,
-  "percentile": 65.9,
+  "rank": 235,
+  "pool": 679,
+  "percentile": 65.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 229,
+    "rank": 233,
     "name": "Nick Seeler",
     "team": "PHI",
     "pos": "D",
     "gp": 8,
-    "value": 56.5,
+    "value": 56.2,
     "gs60": 3.57,
     "isMe": false
    },
    {
-    "rank": 230,
+    "rank": 234,
     "name": "Nils Hoglander",
     "team": "NSH",
     "pos": "L",
     "gp": 6,
-    "value": 56.5,
+    "value": 56.1,
     "gs60": 3.56,
     "isMe": false
    },
    {
-    "rank": 231,
+    "rank": 235,
     "name": "Viktor Arvidsson",
     "team": "DET",
     "pos": "L",
     "gp": 6,
-    "value": 56.5,
+    "value": 56.1,
     "gs60": 3.56,
     "isMe": true
    },
    {
-    "rank": 232,
-    "name": "Cole Caufield",
-    "team": "MTL",
-    "pos": "R",
-    "gp": 6,
-    "value": 56.4,
-    "gs60": 3.56,
-    "isMe": false
-   },
-   {
-    "rank": 233,
+    "rank": 236,
     "name": "Casey Cizikas",
     "team": "NYI",
     "pos": "C",
     "gp": 6,
-    "value": 56.4,
+    "value": 56.0,
     "gs60": 3.55,
+    "isMe": false
+   },
+   {
+    "rank": 237,
+    "name": "Erik Gustafsson",
+    "team": "LAK",
+    "pos": "D",
+    "gp": 3,
+    "value": 56.0,
+    "gs60": 3.54,
     "isMe": false
    }
   ],

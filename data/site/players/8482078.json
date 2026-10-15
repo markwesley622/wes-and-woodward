@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": 0.12,
-   "percentile": 37
+   "percentile": 36
   },
   "Offense": {
    "value": -0.5,
-   "percentile": 24
+   "percentile": 25
   },
   "Defense": {
    "value": 0.1,
-   "percentile": 55
+   "percentile": 54
   },
   "Net": {
    "value": -0.4,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 48.9,
+  "value": 48.6,
   "gs": 2.43,
   "gs60": 1.2,
   "gameScore": 2.43,
   "minutes": 122,
   "gp": 6,
-  "rank": 303,
-  "pool": 677,
-  "percentile": 55.2,
+  "rank": 306,
+  "pool": 679,
+  "percentile": 54.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 301,
+    "rank": 304,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
     "gp": 4,
-    "value": 48.9,
+    "value": 48.6,
     "gs60": 2.44,
-    "isMe": false
-   },
-   {
-    "rank": 302,
-    "name": "Raphael Lavoie",
-    "team": "VGK",
-    "pos": "C",
-    "gp": 4,
-    "value": 48.9,
-    "gs60": 2.44,
-    "isMe": false
-   },
-   {
-    "rank": 303,
-    "name": "Lucas Raymond",
-    "team": "DET",
-    "pos": "L",
-    "gp": 6,
-    "value": 48.9,
-    "gs60": 2.43,
-    "isMe": true
-   },
-   {
-    "rank": 304,
-    "name": "Brock Boeser",
-    "team": "VAN",
-    "pos": "R",
-    "gp": 8,
-    "value": 48.8,
-    "gs60": 2.42,
     "isMe": false
    },
    {
     "rank": 305,
+    "name": "Raphael Lavoie",
+    "team": "VGK",
+    "pos": "C",
+    "gp": 4,
+    "value": 48.6,
+    "gs60": 2.44,
+    "isMe": false
+   },
+   {
+    "rank": 306,
+    "name": "Lucas Raymond",
+    "team": "DET",
+    "pos": "L",
+    "gp": 6,
+    "value": 48.6,
+    "gs60": 2.43,
+    "isMe": true
+   },
+   {
+    "rank": 307,
+    "name": "Brock Boeser",
+    "team": "VAN",
+    "pos": "R",
+    "gp": 8,
+    "value": 48.5,
+    "gs60": 2.42,
+    "isMe": false
+   },
+   {
+    "rank": 308,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 2,
-    "value": 48.8,
+    "value": 48.5,
     "gs60": 2.42,
     "isMe": false
    }

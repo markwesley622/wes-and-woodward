@@ -87,11 +87,11 @@
   },
   "Offense": {
    "value": 0.0,
-   "percentile": 62
+   "percentile": 61
   },
   "Defense": {
-   "value": -0.1,
-   "percentile": 40
+   "value": -0.2,
+   "percentile": 39
   },
   "Net": {
    "value": -0.1,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 48.9,
+  "value": 48.6,
   "gs": 2.44,
   "gs60": 1.76,
   "gameScore": 2.44,
   "minutes": 83,
   "gp": 4,
-  "rank": 301,
-  "pool": 677,
-  "percentile": 55.5,
+  "rank": 304,
+  "pool": 679,
+  "percentile": 55.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 299,
-    "name": "Tony DeAngelo",
-    "team": "NYI",
+    "rank": 302,
+    "name": "Tyson Hinds",
+    "team": "ANA",
     "pos": "D",
     "gp": 6,
-    "value": 49.0,
-    "gs60": 2.46,
-    "isMe": false
-   },
-   {
-    "rank": 300,
-    "name": "Juraj Slafkovsk",
-    "team": "MTL",
-    "pos": "L",
-    "gp": 6,
-    "value": 48.9,
-    "gs60": 2.44,
-    "isMe": false
-   },
-   {
-    "rank": 301,
-    "name": "Dylan Larkin",
-    "team": "DET",
-    "pos": "C",
-    "gp": 4,
-    "value": 48.9,
-    "gs60": 2.44,
-    "isMe": true
-   },
-   {
-    "rank": 302,
-    "name": "Raphael Lavoie",
-    "team": "VGK",
-    "pos": "C",
-    "gp": 4,
-    "value": 48.9,
-    "gs60": 2.44,
+    "value": 48.8,
+    "gs60": 2.47,
     "isMe": false
    },
    {
     "rank": 303,
+    "name": "Tony DeAngelo",
+    "team": "NYI",
+    "pos": "D",
+    "gp": 6,
+    "value": 48.7,
+    "gs60": 2.46,
+    "isMe": false
+   },
+   {
+    "rank": 304,
+    "name": "Dylan Larkin",
+    "team": "DET",
+    "pos": "C",
+    "gp": 4,
+    "value": 48.6,
+    "gs60": 2.44,
+    "isMe": true
+   },
+   {
+    "rank": 305,
+    "name": "Raphael Lavoie",
+    "team": "VGK",
+    "pos": "C",
+    "gp": 4,
+    "value": 48.6,
+    "gs60": 2.44,
+    "isMe": false
+   },
+   {
+    "rank": 306,
     "name": "Lucas Raymond",
     "team": "DET",
     "pos": "L",
     "gp": 6,
-    "value": 48.8,
+    "value": 48.5,
     "gs60": 2.43,
     "isMe": false
    }

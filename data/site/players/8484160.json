@@ -83,82 +83,82 @@
  "hsc": {
   "Game score": {
    "value": 0.08,
-   "percentile": 34
+   "percentile": 33
   },
   "Offense": {
    "value": -0.5,
    "percentile": 27
   },
   "Defense": {
-   "value": -0.0,
+   "value": -0.1,
    "percentile": 45
   },
   "Net": {
-   "value": -0.5,
+   "value": -0.6,
    "percentile": 32
   }
  },
  "score": null,
  "standIn": {
-  "value": 36.7,
+  "value": 36.5,
   "gs": 0.59,
   "gs60": 0.77,
   "gameScore": 0.59,
   "minutes": 46,
   "gp": 5,
-  "rank": 458,
-  "pool": 677,
-  "percentile": 32.3,
+  "rank": 462,
+  "pool": 679,
+  "percentile": 32.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 456,
-    "name": "Sean Kuraly",
-    "team": "BOS",
+    "rank": 460,
+    "name": "Gavin Brindley",
+    "team": "COL",
     "pos": "C",
-    "gp": 3,
-    "value": 36.9,
+    "gp": 1,
+    "value": 36.7,
     "gs60": 0.61,
     "isMe": false
    },
    {
-    "rank": 457,
+    "rank": 461,
     "name": "Aleksander Barkov",
     "team": "FLA",
     "pos": "C",
     "gp": 2,
-    "value": 36.7,
+    "value": 36.6,
     "gs60": 0.59,
     "isMe": false
    },
    {
-    "rank": 458,
+    "rank": 462,
     "name": "Nate Danielson",
     "team": "DET",
     "pos": "C",
     "gp": 5,
-    "value": 36.7,
+    "value": 36.5,
     "gs60": 0.59,
     "isMe": true
    },
    {
-    "rank": 459,
+    "rank": 463,
     "name": "Braden Schneider",
     "team": "NYR",
     "pos": "D",
     "gp": 8,
-    "value": 36.7,
+    "value": 36.5,
     "gs60": 0.58,
     "isMe": false
    },
    {
-    "rank": 460,
+    "rank": 464,
     "name": "Tanner Jeannot",
     "team": "BOS",
     "pos": "L",
     "gp": 7,
-    "value": 36.6,
+    "value": 36.4,
     "gs60": 0.57,
     "isMe": false
    }

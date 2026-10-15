@@ -87,11 +87,11 @@
   },
   "Offense": {
    "value": 0.1,
-   "percentile": 66
+   "percentile": 65
   },
   "Defense": {
    "value": -0.5,
-   "percentile": 21
+   "percentile": 22
   },
   "Net": {
    "value": -0.4,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 39.2,
+  "value": 39.0,
   "gs": 0.98,
   "gs60": 0.88,
   "gameScore": 0.98,
   "minutes": 67,
   "gp": 5,
-  "rank": 416,
-  "pool": 677,
-  "percentile": 38.6,
+  "rank": 418,
+  "pool": 679,
+  "percentile": 38.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 414,
+    "rank": 416,
     "name": "Matthew Wood",
     "team": "NSH",
     "pos": "R",
     "gp": 6,
-    "value": 39.3,
+    "value": 39.1,
     "gs60": 0.99,
     "isMe": false
    },
    {
-    "rank": 415,
+    "rank": 417,
     "name": "Cameron Crotty",
     "team": "OTT",
     "pos": "D",
     "gp": 2,
-    "value": 39.2,
+    "value": 39.0,
     "gs60": 0.98,
-    "isMe": false
-   },
-   {
-    "rank": 416,
-    "name": "Axel Sandin-Pellikka",
-    "team": "DET",
-    "pos": "D",
-    "gp": 5,
-    "value": 39.2,
-    "gs60": 0.98,
-    "isMe": true
-   },
-   {
-    "rank": 417,
-    "name": "Sam Colangelo",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 4,
-    "value": 39.1,
-    "gs60": 0.96,
     "isMe": false
    },
    {
     "rank": 418,
+    "name": "Axel Sandin-Pellikka",
+    "team": "DET",
+    "pos": "D",
+    "gp": 5,
+    "value": 39.0,
+    "gs60": 0.98,
+    "isMe": true
+   },
+   {
+    "rank": 419,
+    "name": "Sam Colangelo",
+    "team": "ANA",
+    "pos": "R",
+    "gp": 4,
+    "value": 38.9,
+    "gs60": 0.96,
+    "isMe": false
+   },
+   {
+    "rank": 420,
     "name": "Mavrik Bourque",
     "team": "NSH",
     "pos": "C",
     "gp": 4,
-    "value": 39.1,
+    "value": 38.9,
     "gs60": 0.96,
     "isMe": false
    }

@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.02,
-   "percentile": 28
+   "percentile": 27
   },
   "Offense": {
    "value": -0.4,
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": -0.0,
-   "percentile": 48
+   "percentile": 47
   },
   "Net": {
    "value": -0.4,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 34.8,
+  "value": 34.7,
   "gs": 0.29,
   "gs60": 0.88,
   "gameScore": 0.29,
   "minutes": 20,
   "gp": 2,
-  "rank": 489,
-  "pool": 677,
-  "percentile": 27.8,
+  "rank": 491,
+  "pool": 679,
+  "percentile": 27.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 487,
+    "rank": 489,
     "name": "Jordan Spence",
     "team": "OTT",
     "pos": "D",
     "gp": 7,
-    "value": 34.9,
+    "value": 34.7,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 488,
+    "rank": 490,
     "name": "Emil Lilleberg",
     "team": "TBL",
     "pos": "D",
     "gp": 1,
-    "value": 34.9,
-    "gs60": 0.29,
-    "isMe": false
-   },
-   {
-    "rank": 489,
-    "name": "Mason Appleton",
-    "team": "DET",
-    "pos": "C",
-    "gp": 2,
-    "value": 34.8,
-    "gs60": 0.29,
-    "isMe": true
-   },
-   {
-    "rank": 490,
-    "name": "Jack St. Ivany",
-    "team": "WPG",
-    "pos": "D",
-    "gp": 2,
     "value": 34.7,
-    "gs60": 0.28,
+    "gs60": 0.29,
     "isMe": false
    },
    {
     "rank": 491,
-    "name": "Marc Gatcomb",
-    "team": "VGK",
+    "name": "Mason Appleton",
+    "team": "DET",
     "pos": "C",
-    "gp": 8,
+    "gp": 2,
     "value": 34.7,
+    "gs60": 0.29,
+    "isMe": true
+   },
+   {
+    "rank": 492,
+    "name": "Jack St. Ivany",
+    "team": "WPG",
+    "pos": "D",
+    "gp": 2,
+    "value": 34.6,
+    "gs60": 0.28,
+    "isMe": false
+   },
+   {
+    "rank": 493,
+    "name": "Justin Sourdif",
+    "team": "WSH",
+    "pos": "C",
+    "gp": 7,
+    "value": 34.6,
     "gs60": 0.27,
     "isMe": false
    }
