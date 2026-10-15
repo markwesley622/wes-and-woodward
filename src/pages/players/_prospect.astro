@@ -3,6 +3,7 @@
 // too small to rate), so the page is bio, draft pedigree, every line he played last season across
 // leagues, and the NHL game log if there is one.
 import Initials from '../../components/Initials.astro';
+import { pipelineWindow, pipelineSize, rankStartDate } from '../../lib/pipeline.js';
 const { P, prospect, twin = null } = Astro.props;   // twin: the player's NHL-level page, when he has one
 const B = P.bio, L = P.seasonLine || {}, G = P.gameLog || [], LINES = P.seasonLines || [];
 // prospect-system block (build_prospects.py): league strength, age-relative performance, cohort ceiling, trajectory
@@ -26,6 +27,13 @@ const POSN = { C: 'Center', L: 'Left wing', R: 'Right wing', D: 'Defense', G: 'G
 const ordinal = (n) => { n = Number(n); const s = (10 <= n % 100 && n % 100 <= 20) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'); return `${n}${s}`; };
 const nhlGp = LINES.filter((l) => l.league === 'NHL').reduce((a, l) => a + (l.gp || 0), 0);
 const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OHL: 'Ontario Hockey League', QMJHL: 'Quebec Maritimes Junior Hockey League', NCAA: 'NCAA', SHL: 'Swedish Hockey League', Liiga: 'Liiga', NL: 'Swiss National League', ECHL: 'ECHL', USHL: 'USHL', KHL: 'KHL', 'WJC-20': 'World Juniors' };
+// Pipeline Rankings: him plus the two ranked above and the two below
+const PW = pipelineWindow(R?.rank);
+const WORD = ['no', 'one', 'two', 'three', 'four'];
+const nAbove = PW.filter((x) => x.rank < R?.rank).length, nBelow = PW.filter((x) => x.rank > R?.rank).length;
+const around = nAbove && nBelow ? `the ${WORD[nAbove]} ranked above him and the ${WORD[nBelow]} below` : nAbove ? `the ${WORD[nAbove]} ranked above him` : `the ${WORD[nBelow]} ranked below him`;
+const sinceLabel = rankStartDate ? `Since ${mdy(rankStartDate)}` : 'Move';
+const lastLabel = `${Number(P.seasonLabel.slice(0, 4)) - 1}–${P.seasonLabel.slice(2, 4)}`;
 ---
 <section class="sec">
   <div class="shell">
@@ -55,6 +63,46 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
     </div>
   </div>
 </section>
+
+{PW.length > 0 && (
+<section class="sec" id="pipeline">
+  <div class="shell">
+    <h2>Pipeline Rankings</h2>
+    <p class="lede">{ordinal(R.rank)} of {pipelineSize} Red Wings prospects, shown with {around}.</p>
+    <div class="table-scroll pipe">
+      <table>
+        <thead><tr><th class="num">Rank</th><th>Player</th><th>Pos</th><th>League</th><th class="num" title="Network NHLe coefficient: a point in that league is worth this share of an NHL point">League strength</th><th class="num">GP</th><th class="num">G</th><th class="num">A</th><th class="num">P</th><th class="num" title={`Places moved since the start-of-season ranking on ${rankStartDate ? mdy(rankStartDate) : 'opening week'}`}>{sinceLabel}</th></tr></thead>
+        <tbody>
+          {PW.map((x) => {
+            const l = x.line;
+            return (
+              <tr class:list={{ me: x.rank === R.rank }}>
+                <td class="num">{x.rank}</td>
+                <td>{x.href && x.rank !== R.rank ? <a href={x.href}>{x.name}</a> : x.name}</td>
+                <td>{x.position}</td>
+                <td>{l ? <span class:list={['tip', { mute: !l.now }]} title={`${l.team}${LEAGUE[l.league] && LEAGUE[l.league] !== l.league ? ` · ${LEAGUE[l.league]}` : ''}${l.now ? '' : ` · ${lastLabel}, no games yet this season`}`}>{l.league}{l.now ? '' : ` · ${lastLabel}`}</span> : '—'}{l?.also?.length ? <span class="mute"> +{l.also.join(', ')}</span> : null}</td>
+                <td class="num">{l?.coef != null ? l.coef.toFixed(3) : '—'}</td>
+                <td class="num">{l?.now ? (l.gp ?? 0) : '—'}</td>
+                {x.group === 'G' ? (
+                  <td class="num" colspan="3">{l?.now && l.svp ? `${l.svp} sv%` : '—'}</td>
+                ) : (
+                  <>
+                    <td class="num">{l?.now ? (l.g ?? 0) : '—'}</td>
+                    <td class="num">{l?.now ? (l.a ?? 0) : '—'}</td>
+                    <td class="num">{l?.now ? (l.pts ?? 0) : '—'}</td>
+                  </>
+                )}
+                <td class:list={['num', 'move', { up: x.move > 0, down: x.move < 0 }]}>{x.move == null ? 'new' : x.move > 0 ? `▲ ${x.move}` : x.move < 0 ? `▼ ${-x.move}` : '–'}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+    <p class="note mono">This season's line in each player's main league (the one with the most games). League strength is the Network NHLe coefficient from hockeystats.com. The ranking runs on last season's numbers until a player's current line reaches 10 games, then on this season's. {sinceLabel} counts the places moved from the start-of-season ranking.{PW.some((x) => x.line && !x.line.now) ? ` A league in grey with ${lastLabel} beside it means no games yet this season.` : ''}</p>
+  </div>
+</section>
+)}
 
 {R && A && (
 <section class="sec" id="projection">
@@ -160,6 +208,11 @@ const LEAGUE = { AHL: 'American Hockey League', WHL: 'Western Hockey League', OH
   th.num, td.num { text-align: right; }
   tr.nhl td { font-weight: 600; }
   td.red { color: var(--red); font-weight: 600; }
+  .pipe tr.me td { background: rgba(206, 17, 38, .08); font-weight: 600; }
+  .pipe a { border-bottom: 1px solid var(--rule); }
+  .pipe .mute { color: var(--mute); }
+  .pipe td.move.up { color: var(--red); font-weight: 600; }
+  .pipe td.move.down { color: var(--mute); }
   @media (max-width: 900px) {
     .head { grid-template-columns: 1fr; }
     .art { width: min(100%, 420px); }

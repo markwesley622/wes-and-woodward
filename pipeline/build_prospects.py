@@ -490,6 +490,17 @@ def main():
                           "availability": {"gp": anchor["lineGp"], "season": anchor_season} if anchor else None, "rank": None, "score": score})
     prospects.sort(key=lambda x: (-(x["score"] if x["score"] is not None else -1), -((x["ceiling"] or {}).get("p75") or 0)))
     for i, x in enumerate(prospects): x["rank"] = i + 1
+    # rank movement (Mark, 10/15): measured against the season's first ranking, kept in data/site so the nightly
+    # mirror commits it. The first build of a new season writes the new baseline; rankStart None = not ranked then.
+    start_f = ROOT / "data" / "site" / "prospect_ranks_start.json"
+    start = json.loads(start_f.read_text()) if start_f.exists() else None
+    if not start or start.get("season") != SEASON:
+        start = {"season": SEASON, "date": dt.date.today().isoformat(), "note": "Start-of-season pipeline ranking. build_prospects.py measures rank movement against it and writes a fresh one on the first build of each new season.",
+                 "ranks": {x["epId"]: {"rank": x["rank"], "name": x["name"]} for x in prospects}}
+        start_f.write_text(json.dumps(start, indent=1, ensure_ascii=False))
+    for x in prospects:
+        x["rankStart"] = (start["ranks"].get(x["epId"]) or {}).get("rank")
+        x["rankStartDate"] = start["date"]
 
     out = {"season": SEASON, "built": dt.date.today().isoformat(), "cohort": {"years": [COHORT_YEARS.start, COHORT_YEARS.stop - 1], "rows": len(cohort), "players": len({r['pid'] for r in cohort}), "k": K_NEIGHBOURS},
            "nhle": {"source": NHLE["source"], "retrieved": NHLE["retrieved"]}, "prospects": prospects, "excluded": excluded,
@@ -499,7 +510,8 @@ def main():
                       "ceiling": f"Nearest {K_NEIGHBOURS} drafted players (2008-2019 classes) at the same position and age. Skaters matched on NHLe points per game; goalies on save percentage above the league-season average and league strength. Draft slot enters with weight 2w (w below). Outcome = each one's peak NHL season as a percentile within position (skaters: points per game over seasons with at least half the games; goalies: save percentage over seasons with at least a quarter); busts count as 0. Cohort expected = mean, ceiling = 75th percentile. Tiers: elite 88+, top-line 73+, above average 50+, below average 27+.",
                       "pedigree": "Diminishing returns: w = 0.5 in the draft year (or a pre-draft anchor season), 0.25 at draft+1, 0 from draft+2. Expected peak = w x pick-band prior + (1 - w) x cohort mean.",
                       "trajectory": "Change in the production feature between the two most recent full seasons (skaters NHLe points per game; goalies save percentage above league average).",
-                      "ranking": "By expected peak (the pedigree-blended cohort mean), then by the cohort 75th percentile."}}
+                      "ranking": "By expected peak (the pedigree-blended cohort mean), then by the cohort 75th percentile.",
+                      "movement": "Rank now against the start-of-season ranking (data/site/prospect_ranks_start.json). The ranking rests on last season until a current-season line reaches 10 games."}}
     site = ROOT / "data" / "site"; (site / "prospects").mkdir(parents=True, exist_ok=True)
     (site / "prospects.json").write_text(json.dumps(out, indent=1))
     for x in prospects + excluded:
