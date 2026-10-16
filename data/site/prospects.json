@@ -1,6 +1,6 @@
 {
  "season": "20262027",
- "built": "2026-10-15",
+ "built": "2026-10-16",
  "cohort": {
   "years": [
    2008,
@@ -3578,10 +3578,10 @@
     "sinceDraft": 3,
     "pedigreeExpected": 12.3,
     "cohortExpected": 25.4,
-    "expected": 26.7,
+    "expected": 26.1,
     "tier": "replacement level",
-    "nhlW": 0.23,
-    "nhlExpected": 31.0,
+    "nhlW": 0.26,
+    "nhlExpected": 28.1,
     "beforeNhl": 25.4
    },
    "trajectory": {
@@ -3600,40 +3600,84 @@
     "delta": 0.106
    },
    "nhlSample": {
-    "gp": 6,
-    "pts": 1,
+    "gp": 7,
+    "pts": 2,
     "seasons": [
      20262027
     ],
     "thisSeason": {
-     "gp": 6,
-     "pts": 1,
-     "toi": "15:45",
+     "gp": 7,
+     "pts": 2,
+     "toi": "15:00",
      "savePct": null
     }
    },
    "nhlUsage": {
     "n": 50,
-    "expected": 31.0,
-    "median": 23.5,
-    "p75": 56.1,
-    "p90": 82.5,
-    "pRegular": 0.66,
-    "pTopLine": 0.1,
-    "pAboveAvg": 0.32,
-    "pElite": 0.02,
+    "expected": 28.1,
+    "median": 28.2,
+    "p75": 52.6,
+    "p90": 63.6,
+    "pRegular": 0.58,
+    "pTopLine": 0.04,
+    "pAboveAvg": 0.28,
+    "pElite": 0.0,
     "poolN": 258,
     "group": "D",
     "age": 22,
-    "gp": 6,
-    "toi": 945,
-    "ppg": 0.167,
-    "ppgShrunk": 0.187,
+    "gp": 7,
+    "toi": 900,
+    "ppg": 0.286,
+    "ppgShrunk": 0.217,
     "toiBand": [
-     848,
-     1043
+     823,
+     1020
     ],
     "examples": [
+     {
+      "name": "Adam Clendening",
+      "season": "2015-2016",
+      "age": 22,
+      "gp": 29,
+      "toi": 888,
+      "ppg": 0.24,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 90
+     },
+     {
+      "name": "Jordan Schmaltz",
+      "season": "2016-2017",
+      "age": 22,
+      "gp": 9,
+      "toi": 860,
+      "ppg": 0.22,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 42
+     },
+     {
+      "name": "Joel Edmundson",
+      "season": "2015-2016",
+      "age": 22,
+      "gp": 67,
+      "toi": 896,
+      "ppg": 0.13,
+      "peak": 49.2,
+      "tier": "below average",
+      "nhlGp": 687
+     },
+     {
+      "name": "Caleb Jones",
+      "season": "2019-2020",
+      "age": 22,
+      "gp": 43,
+      "toi": 848,
+      "ppg": 0.21,
+      "peak": 45.5,
+      "tier": "below average",
+      "nhlGp": 255
+     },
      {
       "name": "Joe Morrow",
       "season": "2015-2016",
@@ -3646,37 +3690,15 @@
       "nhlGp": 162
      },
      {
-      "name": "Dennis Gilbert",
-      "season": "2019-2020",
+      "name": "Tyler Tucker",
+      "season": "2022-2023",
       "age": 22,
-      "gp": 21,
-      "toi": 942,
-      "ppg": 0.14,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 119
-     },
-     {
-      "name": "Danny Biega",
-      "season": "2014-2015",
-      "age": 22,
-      "gp": 10,
-      "toi": 968,
-      "ppg": 0.2,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 10
-     },
-     {
-      "name": "Xavier Ouellet",
-      "season": "2015-2016",
-      "age": 22,
-      "gp": 5,
-      "toi": 975,
-      "ppg": 0.2,
-      "peak": 22.5,
-      "tier": "replacement level",
-      "nhlGp": 178
+      "gp": 26,
+      "toi": 878,
+      "ppg": 0.15,
+      "peak": 38.1,
+      "tier": "below average",
+      "nhlGp": 159
      },
      {
       "name": "Brandon Gormley",
@@ -3690,49 +3712,27 @@
       "nhlGp": 58
      },
      {
-      "name": "Patrik Nemeth",
-      "season": "2014-2015",
+      "name": "Jake Bean",
+      "season": "2020-2021",
       "age": 22,
-      "gp": 22,
-      "toi": 973,
-      "ppg": 0.14,
-      "peak": 32.0,
-      "tier": "below average",
-      "nhlGp": 504
-     },
-     {
-      "name": "Alexander Alexeyev",
-      "season": "2022-2023",
-      "age": 22,
-      "gp": 32,
-      "toi": 987,
-      "ppg": 0.16,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 80
-     },
-     {
-      "name": "J\u00e9r\u00e9my Lauzon",
-      "season": "2019-2020",
-      "age": 22,
-      "gp": 19,
-      "toi": 925,
-      "ppg": 0.11,
-      "peak": 28.4,
-      "tier": "below average",
-      "nhlGp": 387
+      "gp": 42,
+      "toi": 872,
+      "ppg": 0.29,
+      "peak": 61.5,
+      "tier": "above average",
+      "nhlGp": 277
      }
     ],
-    "w": 0.23,
+    "w": 0.26,
     "before": 25.4,
-    "after": 26.7
+    "after": 26.1
    },
    "availability": {
     "gp": 42,
     "season": "2025-2026"
    },
    "rank": 9,
-   "score": 26.7,
+   "score": 26.1,
    "rankStart": 10,
    "rankStartDate": "2026-10-06"
   },

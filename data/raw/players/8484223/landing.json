@@ -56,7 +56,7 @@
    "subSeason": {
     "assists": 1,
     "gameWinningGoals": 0,
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 0,
     "otGoals": 0,
     "pim": 2,
@@ -72,7 +72,7 @@
    "career": {
     "assists": 15,
     "gameWinningGoals": 1,
-    "gamesPlayed": 73,
+    "gamesPlayed": 74,
     "goals": 7,
     "otGoals": 0,
     "pim": 20,
@@ -90,9 +90,9 @@
  "careerTotals": {
   "regularSeason": {
    "assists": 15,
-   "avgToi": "16:01",
+   "avgToi": "15:54",
    "gameWinningGoals": 1,
-   "gamesPlayed": 73,
+   "gamesPlayed": 74,
    "goals": 7,
    "otGoals": 0,
    "pim": 20,
@@ -110,6 +110,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-10-15",
+   "gameId": 2026020110,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "PHI",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 10,
+   "shorthandedGoals": 0,
+   "shots": 0,
+   "teamAbbrev": "DET",
+   "toi": "7:41"
+  },
   {
    "assists": 1,
    "gameDate": "2026-10-13",
@@ -181,24 +199,6 @@
    "shots": 3,
    "teamAbbrev": "DET",
    "toi": "15:37"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-10-02",
-   "gameId": 2026020017,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "H",
-   "opponentAbbrev": "NYR",
-   "pim": 2,
-   "plusMinus": 0,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 22,
-   "shorthandedGoals": 0,
-   "shots": 2,
-   "teamAbbrev": "DET",
-   "toi": "16:27"
   }
  ],
  "seasonTotals": [
@@ -734,11 +734,11 @@
   },
   {
    "assists": 1,
-   "avgToi": "13:20",
+   "avgToi": "12:23",
    "faceoffWinningPctg": 0.0,
    "gameTypeId": 2,
    "gameWinningGoals": 0,
-   "gamesPlayed": 5,
+   "gamesPlayed": 6,
    "goals": 0,
    "leagueAbbrev": "NHL",
    "otGoals": 0,

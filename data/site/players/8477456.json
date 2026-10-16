@@ -83,83 +83,83 @@
  "hsc": {
   "Game score": {
    "value": 0.24,
-   "percentile": 43
+   "percentile": 44
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 32
+   "percentile": 33
   },
   "Defense": {
    "value": 0.2,
    "percentile": 61
   },
   "Net": {
-   "value": -0.2,
+   "value": -0.3,
    "percentile": 46
   }
  },
  "score": null,
  "standIn": {
-  "value": 36.2,
+  "value": 35.8,
   "gs": 0.53,
   "gs60": 1.08,
   "gameScore": 0.53,
   "minutes": 29,
   "gp": 2,
-  "rank": 466,
-  "pool": 679,
-  "percentile": 31.4,
+  "rank": 467,
+  "pool": 684,
+  "percentile": 31.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
-   {
-    "rank": 464,
-    "name": "Tanner Jeannot",
-    "team": "BOS",
-    "pos": "L",
-    "gp": 7,
-    "value": 36.4,
-    "gs60": 0.57,
-    "isMe": false
-   },
    {
     "rank": 465,
     "name": "Scott Laughton",
     "team": "LAK",
     "pos": "C",
     "gp": 5,
-    "value": 36.4,
+    "value": 36.0,
     "gs60": 0.56,
     "isMe": false
    },
    {
     "rank": 466,
+    "name": "Vitali Pinchuk",
+    "team": "NSH",
+    "pos": "C",
+    "gp": 3,
+    "value": 35.9,
+    "gs60": 0.55,
+    "isMe": false
+   },
+   {
+    "rank": 467,
     "name": "J.T. Compher",
     "team": "DET",
     "pos": "L",
     "gp": 2,
-    "value": 36.2,
+    "value": 35.8,
     "gs60": 0.53,
     "isMe": true
    },
    {
-    "rank": 467,
-    "name": "Dylan Peterson",
-    "team": "STL",
+    "rank": 468,
+    "name": "Stephen Halliday",
+    "team": "OTT",
     "pos": "C",
-    "gp": 1,
-    "value": 36.1,
-    "gs60": 0.52,
+    "gp": 8,
+    "value": 35.8,
+    "gs60": 0.53,
     "isMe": false
    },
    {
-    "rank": 468,
-    "name": "Nikita Klepov",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 1,
-    "value": 36.0,
-    "gs60": 0.51,
+    "rank": 469,
+    "name": "Brandon Carlo",
+    "team": "STL",
+    "pos": "D",
+    "gp": 7,
+    "value": 35.8,
+    "gs60": 0.53,
     "isMe": false
    }
   ],

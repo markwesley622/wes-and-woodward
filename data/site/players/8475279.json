@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 6,
+  "gp": 7,
   "goals": 0,
   "assists": 1,
   "points": 1,
-  "plusMinus": 0,
+  "plusMinus": 1,
   "pim": 6,
   "shots": 6,
   "shootingPct": 0.0,
-  "toiPerGame": "18:35",
+  "toiPerGame": "18:49",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 6,
+   "gp": 7,
    "goals": 0,
    "assists": 1,
    "points": 1,
-   "plusMinus": 0,
+   "plusMinus": 1,
    "pim": 6
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Ben Chiarot",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475279.png",
-  "gamesPlayed": 6,
+  "gamesPlayed": 7,
   "goals": 0,
   "assists": 1,
   "points": 1,
   "shots": 6,
   "shootingPct": 0.0,
-  "toiPerGame": 1114.7,
+  "toiPerGame": 1128.6,
   "ixG": 0.18,
   "goalsAboveExpected": -0.18,
-  "gameScore": 1.1,
+  "gameScore": 2.15,
   "fiveOnFive": {
-   "icetimeMinutes": 94.7,
-   "onIceXgPct": 0.5,
-   "onIceCorsiPct": 0.49,
-   "ixgPer60": 0.114,
+   "icetimeMinutes": 112.3,
+   "onIceXgPct": 0.55,
+   "onIceCorsiPct": 0.53,
+   "ixgPer60": 0.096,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.13,
-   "percentile": 37
+   "value": 0.41,
+   "percentile": 52
   },
   "Offense": {
-   "value": 0.4,
-   "percentile": 75
+   "value": 0.3,
+   "percentile": 73
   },
   "Defense": {
-   "value": -0.7,
-   "percentile": 14
+   "value": -0.1,
+   "percentile": 41
   },
   "Net": {
-   "value": -0.3,
-   "percentile": 42
+   "value": 0.2,
+   "percentile": 62
   }
  },
  "score": null,
  "standIn": {
-  "value": 38.7,
-  "gs": 0.93,
-  "gs60": 0.5,
-  "gameScore": 0.93,
-  "minutes": 111,
-  "gp": 6,
-  "rank": 423,
-  "pool": 679,
-  "percentile": 37.7,
+  "value": 47.7,
+  "gs": 2.51,
+  "gs60": 1.14,
+  "gameScore": 2.51,
+  "minutes": 132,
+  "gp": 7,
+  "rank": 315,
+  "pool": 684,
+  "percentile": 53.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 421,
-    "name": "Matvei Gridin",
-    "team": "CGY",
-    "pos": "R",
-    "gp": 6,
-    "value": 38.8,
-    "gs60": 0.95,
-    "isMe": false
-   },
-   {
-    "rank": 422,
-    "name": "K'Andre Miller",
-    "team": "CAR",
+    "rank": 313,
+    "name": "Nick Seeler",
+    "team": "PHI",
     "pos": "D",
-    "gp": 8,
-    "value": 38.8,
-    "gs60": 0.94,
+    "gp": 9,
+    "value": 48.0,
+    "gs60": 2.56,
     "isMe": false
    },
    {
-    "rank": 423,
+    "rank": 314,
+    "name": "Alexander Wennberg",
+    "team": "SJS",
+    "pos": "C",
+    "gp": 7,
+    "value": 47.7,
+    "gs60": 2.51,
+    "isMe": false
+   },
+   {
+    "rank": 315,
     "name": "Ben Chiarot",
     "team": "DET",
     "pos": "D",
-    "gp": 6,
-    "value": 38.7,
-    "gs60": 0.93,
+    "gp": 7,
+    "value": 47.7,
+    "gs60": 2.51,
     "isMe": true
    },
    {
-    "rank": 424,
-    "name": "Judd Caulfield",
-    "team": "ANA",
-    "pos": "R",
+    "rank": 316,
+    "name": "Olli Maatta",
+    "team": "MIN",
+    "pos": "D",
     "gp": 6,
-    "value": 38.7,
-    "gs60": 0.93,
+    "value": 47.7,
+    "gs60": 2.51,
     "isMe": false
    },
    {
-    "rank": 425,
-    "name": "Adam Klapka",
-    "team": "CGY",
-    "pos": "R",
-    "gp": 6,
-    "value": 38.6,
-    "gs60": 0.92,
+    "rank": 317,
+    "name": "Gabriel Landeskog",
+    "team": "COL",
+    "pos": "L",
+    "gp": 7,
+    "value": 47.7,
+    "gs60": 2.5,
     "isMe": false
    }
   ],
@@ -509,16 +509,40 @@
     "moneypuck": 0.375,
     "hockeystatcards": 0.06
    }
+  },
+  {
+   "gameId": 2026020110,
+   "date": "2026-10-15",
+   "opponent": "PHI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 20.2,
+   "ixg": 0.0,
+   "xgf": 0.71,
+   "xga": 0.02,
+   "gf": 1.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 1.58,
+   "gameScoreParts": {
+    "moneypuck": 1.05,
+    "hockeystatcards": 2.12
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.15,
-  "games": 6,
+  "average": 0.36,
+  "games": 7,
   "best": {
-   "date": "2026-10-04",
-   "opponent": "WPG",
-   "value": 1.4
+   "date": "2026-10-15",
+   "opponent": "PHI",
+   "value": 1.58
   },
   "worst": {
    "date": "2026-10-06",
@@ -528,7 +552,7 @@
   "above2": 0,
   "below0": 2
  },
- "detGames": 6,
+ "detGames": 7,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {

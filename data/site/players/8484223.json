@@ -26,7 +26,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 5,
+  "gp": 6,
   "goals": 0,
   "assists": 1,
   "points": 1,
@@ -34,7 +34,7 @@
   "pim": 2,
   "shots": 6,
   "shootingPct": 0.0,
-  "toiPerGame": "13:20",
+  "toiPerGame": "12:23",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 5,
+   "gp": 6,
    "goals": 0,
    "assists": 1,
    "points": 1,
@@ -60,21 +60,21 @@
   "name": "Axel Sandin-Pellikka",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484223.png",
-  "gamesPlayed": 5,
+  "gamesPlayed": 6,
   "goals": 0,
   "assists": 1,
   "points": 1,
   "shots": 6,
   "shootingPct": 0.0,
-  "toiPerGame": 799.8,
+  "toiPerGame": 743.3,
   "ixG": 0.41,
   "goalsAboveExpected": -0.41,
-  "gameScore": 1.2,
+  "gameScore": 1.35,
   "fiveOnFive": {
-   "icetimeMinutes": 55.7,
-   "onIceXgPct": 0.58,
-   "onIceCorsiPct": 0.47,
-   "ixgPer60": 0.075,
+   "icetimeMinutes": 61.6,
+   "onIceXgPct": 0.59,
+   "onIceCorsiPct": 0.48,
+   "ixgPer60": 0.068,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -83,53 +83,53 @@
  "hsc": {
   "Game score": {
    "value": 0.15,
-   "percentile": 38
+   "percentile": 39
   },
   "Offense": {
-   "value": 0.1,
-   "percentile": 65
+   "value": -0.1,
+   "percentile": 56
   },
   "Defense": {
-   "value": -0.5,
-   "percentile": 22
+   "value": -0.4,
+   "percentile": 29
   },
   "Net": {
    "value": -0.4,
-   "percentile": 38
+   "percentile": 39
   }
  },
  "score": null,
  "standIn": {
-  "value": 39.0,
-  "gs": 0.98,
-  "gs60": 0.88,
-  "gameScore": 0.98,
-  "minutes": 67,
-  "gp": 5,
+  "value": 39.3,
+  "gs": 1.14,
+  "gs60": 0.92,
+  "gameScore": 1.14,
+  "minutes": 74,
+  "gp": 6,
   "rank": 418,
-  "pool": 679,
-  "percentile": 38.4,
+  "pool": 684,
+  "percentile": 38.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
     "rank": 416,
-    "name": "Matthew Wood",
-    "team": "NSH",
-    "pos": "R",
-    "gp": 6,
-    "value": 39.1,
-    "gs60": 0.99,
+    "name": "Dmitry Kulikov",
+    "team": "FLA",
+    "pos": "D",
+    "gp": 8,
+    "value": 39.5,
+    "gs60": 1.17,
     "isMe": false
    },
    {
     "rank": 417,
-    "name": "Cameron Crotty",
-    "team": "OTT",
-    "pos": "D",
-    "gp": 2,
-    "value": 39.0,
-    "gs60": 0.98,
+    "name": "Stefan Noesen",
+    "team": "NJD",
+    "pos": "R",
+    "gp": 4,
+    "value": 39.4,
+    "gs60": 1.16,
     "isMe": false
    },
    {
@@ -137,29 +137,29 @@
     "name": "Axel Sandin-Pellikka",
     "team": "DET",
     "pos": "D",
-    "gp": 5,
-    "value": 39.0,
-    "gs60": 0.98,
+    "gp": 6,
+    "value": 39.3,
+    "gs60": 1.14,
     "isMe": true
    },
    {
     "rank": 419,
-    "name": "Sam Colangelo",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 4,
+    "name": "Blake Coleman",
+    "team": "MIN",
+    "pos": "L",
+    "gp": 8,
     "value": 38.9,
-    "gs60": 0.96,
+    "gs60": 1.06,
     "isMe": false
    },
    {
     "rank": 420,
-    "name": "Mavrik Bourque",
-    "team": "NSH",
-    "pos": "C",
-    "gp": 4,
-    "value": 38.9,
-    "gs60": 0.96,
+    "name": "Beck Malenstyn",
+    "team": "BUF",
+    "pos": "L",
+    "gp": 8,
+    "value": 38.8,
+    "gs60": 1.06,
     "isMe": false
    }
   ],
@@ -305,12 +305,36 @@
     "moneypuck": 0.4,
     "hockeystatcards": -0.17
    }
+  },
+  {
+   "gameId": 2026020110,
+   "date": "2026-10-15",
+   "opponent": "PHI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 7.7,
+   "ixg": 0.0,
+   "xgf": 0.13,
+   "xga": 0.06,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 2.0,
+   "gameScore": 0.16,
+   "gameScoreParts": {
+    "moneypuck": 0.15,
+    "hockeystatcards": 0.17
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.2,
-  "games": 5,
+  "average": 0.19,
+  "games": 6,
   "best": {
    "date": "2026-10-04",
    "opponent": "WPG",
@@ -324,7 +348,7 @@
   "above2": 0,
   "below0": 2
  },
- "detGames": 5,
+ "detGames": 6,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
