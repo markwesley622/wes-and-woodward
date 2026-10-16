@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import { article, newsArticle, dateline } from '../../lib/articles.js';
 import C from '../../../data/site/articles/two-way-forwards-copy.json';
 import c1 from '../../../data/site/articles/two-way-forwards/c1-goals-vs-expected.svg?raw';
 import c2 from '../../../data/site/articles/two-way-forwards/c2-rank-card.svg?raw';
@@ -28,14 +29,13 @@ blocks.push({ html: parts.slice(start).join('') });
 const URL = 'https://wesandwoodward.com/analysis/two-way-forwards/';
 const DESC = 'Detroit built its forward group around compete and defensive responsibility. Three seasons of 5v5 scoring, the teams that made the archetype work, and where this roster was really headed.';
 ---
-<Base ogType="article" ogImage="/og/two-way-forwards.png" ogImageAlt="A block letter D in line art" schema={[{ '@type': 'Article', '@id': `${URL}#article`, url: URL, mainEntityOfPage: URL, headline: C.title, image: ['https://wesandwoodward.com/og/two-way-forwards.png'], description: DESC,
-  datePublished: '2026-10-07', dateModified: '2026-10-07', inLanguage: 'en-US', author: { '@id': 'https://wesandwoodward.com/#org' }, publisher: { '@id': 'https://wesandwoodward.com/#org' }, isPartOf: { '@id': 'https://wesandwoodward.com/#website' },
-  about: [{ '@id': 'https://wesandwoodward.com/team/#team' }, { '@type': 'Person', name: 'Dylan Larkin' }, { '@type': 'Person', name: 'Moritz Seider' }], articleSection: 'Analysis',
-  keywords: ['Detroit Red Wings', 'two-way forwards', '5v5 scoring', 'expected goals', 'Steve Yzerman', 'Anze Kopitar', 'Los Angeles Kings'], wordCount: C.words }]}
+<Base ogType="article" ogImage="/og/two-way-forwards.png" ogImageAlt="A block letter D in line art" schema={[newsArticle('two-way-forwards', { description: DESC,
+  about: [{ '@id': 'https://wesandwoodward.com/team/#team' }, { '@type': 'Person', name: 'Dylan Larkin' }, { '@type': 'Person', name: 'Moritz Seider' }],
+  keywords: ['Detroit Red Wings', 'two-way forwards', '5v5 scoring', 'expected goals', 'Steve Yzerman', 'Anze Kopitar', 'Los Angeles Kings'], wordCount: C.words })]}
   title={`${C.title} — Wes & Woodward`} description={DESC}>
   <section class="sec">
     <div class="shell">
-      <p class="kicker mono">Analysis · October 7, 2026</p>
+      <p class="kicker mono">Analysis · By <a href="/about/#author" rel="author">Mark Wesley</a> · {dateline(article('two-way-forwards'))}</p>
       <h1 class="page-title">{C.title}</h1>
       {blocks.map((b) => b.html !== undefined
         ? <div class="prose" set:html={b.html} />
@@ -47,6 +47,7 @@ const DESC = 'Detroit built its forward group around compete and defensive respo
 
 <style>
   .kicker { color: var(--mute); margin: 0 0 18px; }
+  .kicker a { color: inherit; text-decoration-color: var(--red); text-underline-offset: 3px; }
   .page-title { font-size: clamp(36px, 5.2vw, 72px); line-height: .94; margin-bottom: 30px; max-width: 18ch; text-wrap: balance; }
   .prose { max-width: 68ch; font-size: 18px; line-height: 1.65; }
   .prose :global(p) { margin: 0 0 18px; }

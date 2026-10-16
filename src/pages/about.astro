@@ -1,7 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
+import { AUTHOR } from '../lib/articles.js';
 ---
-<Base schema={[{ '@type': 'AboutPage', '@id': 'https://wesandwoodward.com/about/', url: 'https://wesandwoodward.com/about/', name: 'About Wes & Woodward', isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, mainEntity: { '@id': 'https://wesandwoodward.com/#org' } }]} title="About — Wes & Woodward">
+<Base schema={[{ '@type': 'AboutPage', '@id': 'https://wesandwoodward.com/about/', url: 'https://wesandwoodward.com/about/', name: 'About Wes & Woodward', isPartOf: { '@id': 'https://wesandwoodward.com/#website' }, mainEntity: { '@id': 'https://wesandwoodward.com/#org' } }, AUTHOR]} title="About — Wes & Woodward">
   <section class="sec">
     <div class="shell prose">
       <p class="kicker">About</p>
@@ -14,6 +15,9 @@ import Base from '../layouts/Base.astro';
       <p>
         The name: Wes is the byline. Woodward is Woodward Avenue, the street Little
         Caesars Arena sits on.
+      </p>
+      <p>
+        Every article is written by <span id="author">Mark Wesley</span>.
       </p>
       <p>
         Every number on this site is pulled nightly from the NHL's public API and

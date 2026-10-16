@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import { article, newsArticle, dateline } from '../../lib/articles.js';
 import A from '../../../data/site/articles/predictions-2026-27.json';
 import C from '../../../data/site/articles/predictions-2026-27-copy.json';
 
@@ -45,12 +46,12 @@ const fmt1 = (v) => v.toFixed(1);
 const rec = (R) => `${R.record[0]}-${R.record[1]}-${R.record[2]}, ${R.record[3]} points`;
 const slice = (a, b) => parts.slice(a, b);
 ---
-<Base ogType="article" ogImage="/og/2026-27-predictions.png" ogImageAlt="A line-art puck on the faceoff dot" schema={[{ '@type': 'Article', '@id': 'https://wesandwoodward.com/analysis/2026-27-predictions/#article', url: 'https://wesandwoodward.com/analysis/2026-27-predictions/', mainEntityOfPage: 'https://wesandwoodward.com/analysis/2026-27-predictions/', headline: C.title, image: ['https://wesandwoodward.com/og/2026-27-predictions.png'], description: 'Five hundred simulated seasons with Dylan Larkin and five hundred without, one of each played out game by game, and a prediction.',
-  datePublished: '2026-10-02', dateModified: '2026-10-02', inLanguage: 'en-US', author: { '@id': 'https://wesandwoodward.com/#org' }, publisher: { '@id': 'https://wesandwoodward.com/#org' }, isPartOf: { '@id': 'https://wesandwoodward.com/#website' },
-  about: [{ '@id': 'https://wesandwoodward.com/team/#team' }, { '@type': 'Person', name: 'Dylan Larkin' }], articleSection: 'Analysis', keywords: ['Detroit Red Wings', '2026-27 NHL season', 'season simulation', 'Dylan Larkin', 'MoneyPuck'], wordCount: 2766 }]} title="2026-27 Red Wings predictions — Wes & Woodward" description="Five hundred simulated seasons with Dylan Larkin and five hundred without, one of each played out game by game, and a prediction.">
+<Base ogType="article" ogImage="/og/2026-27-predictions.png" ogImageAlt="A line-art puck on the faceoff dot" schema={[newsArticle('2026-27-predictions', { description: 'Five hundred simulated seasons with Dylan Larkin and five hundred without, one of each played out game by game, and a prediction.',
+  about: [{ '@id': 'https://wesandwoodward.com/team/#team' }, { '@type': 'Person', name: 'Dylan Larkin' }],
+  keywords: ['Detroit Red Wings', '2026-27 NHL season', 'season simulation', 'Dylan Larkin', 'MoneyPuck'], wordCount: 2766 })]} title="2026-27 Red Wings predictions — Wes & Woodward" description="Five hundred simulated seasons with Dylan Larkin and five hundred without, one of each played out game by game, and a prediction.">
   <section class="sec">
     <div class="shell">
-      <p class="kicker mono">Analysis · October 2, 2026</p>
+      <p class="kicker mono">Analysis · By <a href="/about/#author" rel="author">Mark Wesley</a> · {dateline(article('2026-27-predictions'))}</p>
       <h1 class="page-title">{C.title}</h1>
       <div class="prose" set:html={slice(0, idx.method + 1).join('')} />
 
@@ -125,6 +126,7 @@ const slice = (a, b) => parts.slice(a, b);
 
 <style>
   .kicker { color: var(--mute); margin: 0 0 18px; }
+  .kicker a { color: inherit; text-decoration-color: var(--red); text-underline-offset: 3px; }
   .page-title { font-size: clamp(36px, 5.2vw, 72px); line-height: .94; margin-bottom: 30px; max-width: 18ch; text-wrap: balance; }
   .prose { max-width: 68ch; font-size: 18px; line-height: 1.65; }
   .prose :global(p) { margin: 0 0 18px; }
