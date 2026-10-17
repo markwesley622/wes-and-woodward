@@ -27,6 +27,7 @@ ARTICLES = {  # thumbnail element id on the homepage -> article slug
     "thumb-predictions": "2026-27-predictions",
     "thumb-kasper": "marco-kasper-year-three",
     "thumb-two-way": "two-way-forwards",
+    "thumb-larkin": "dylan-larkin-checked-out",
 }
 
 

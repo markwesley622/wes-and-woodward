@@ -1,0 +1,52 @@
+---
+import Base from '../../layouts/Base.astro';
+import { article, newsArticle, dateline } from '../../lib/articles.js';
+import C from '../../../data/site/articles/dylan-larkin-copy.json';
+import c1 from '../../../data/site/articles/dylan-larkin/c1-five-games-vs-career.svg?raw';
+import c2 from '../../../data/site/articles/dylan-larkin/c2-giveaway-percentile-by-season.svg?raw';
+import c3 from '../../../data/site/articles/dylan-larkin/c3-edge-speed.svg?raw';
+
+const SLUG = 'dylan-larkin-checked-out';
+const parts = C.parts, idx = C.idx;
+// each figure goes right after the paragraph its anchor names (anchors come from research/larkin/build_copy.py)
+const figs = [[idx.fig_career, c1], [idx.fig_speed, c3], [idx.fig_giveaways, c2]];
+const blocks = [];
+let start = 0;
+for (const [after, svg] of figs) {
+  blocks.push({ html: parts.slice(start, after + 1).join('') });
+  blocks.push({ svg });
+  start = after + 1;
+}
+blocks.push({ html: parts.slice(start).join('') });
+
+const DESC = article(SLUG).description;
+---
+<Base ogType="article" ogImage={`/og/${SLUG}.png`} ogImageAlt="The number 71 in line-art block numerals" schema={[newsArticle(SLUG, { description: DESC,
+  about: [{ '@id': 'https://wesandwoodward.com/team/#team' }, { '@type': 'Person', name: 'Dylan Larkin' }],
+  keywords: ['Dylan Larkin', 'Detroit Red Wings', 'trade request', 'giveaways', 'takeaways', 'NHL Edge', 'expected goals'], wordCount: C.words })]}
+  title={`${C.title} — Wes & Woodward`} description={DESC}>
+  <section class="sec">
+    <div class="shell">
+      <p class="kicker mono">Analysis · By <a href="/about/#author" rel="author">Mark Wesley</a> · {dateline(article(SLUG))}</p>
+      <h1 class="page-title">{C.title}</h1>
+      {blocks.map((b) => b.html !== undefined
+        ? <div class="prose" set:html={b.html} />
+        : <figure class="fig" set:html={b.svg} />)}
+      <p class="note mono" style="margin-top:28px">Method: the current stretch is Larkin's five games from Oct. 6 to Oct. 15, 2026, ranked against all 760 five-game stretches of his regular-season career (stretches never cross seasons). Giveaways and takeaways come from the NHL's play-by-play; because the league began recording about twice as many giveaways in 2024-25, giveaway rates are compared with each season's median for NHL forwards. Rink rankings count giveaways recorded per game, both teams, in each arena. Game score, expected goals and 5v5 expected-goal share are MoneyPuck.com's. Speed bursts and distance are NHL Edge tracking. Goals above replacement is Evolving-Hockey's, with percentiles among forwards who played 500 or more minutes. Injury returns are his first five games back after missing three or more.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .kicker { color: var(--mute); margin: 0 0 18px; }
+  .kicker a { color: inherit; text-decoration-color: var(--red); text-underline-offset: 3px; }
+  .page-title { font-size: clamp(36px, 5.2vw, 72px); line-height: .94; margin-bottom: 30px; max-width: 18ch; text-wrap: balance; }
+  .prose { max-width: 68ch; font-size: 18px; line-height: 1.65; }
+  .prose :global(p) { margin: 0 0 18px; }
+  .prose :global(ol.art) { margin: 0 0 18px; padding-left: 26px; display: grid; gap: 4px; }
+  .prose :global(h3.art) { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.1; letter-spacing: -.02em; text-transform: none; margin: 40px 0 16px; }
+  .prose :global(h3.art::before) { content: "// "; color: var(--red); }
+  .fig { margin: 26px 0 38px; max-width: 760px; }
+  .fig :global(svg) { width: 100%; height: auto; display: block; }
+  .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 68ch; }
+</style>

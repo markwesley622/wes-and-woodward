@@ -7,6 +7,7 @@
 import predictions from '../../data/site/articles/predictions-2026-27-copy.json';
 import twoWay from '../../data/site/articles/two-way-forwards-copy.json';
 import kasper from '../../data/site/articles/marco-kasper-copy.json';
+import larkin from '../../data/site/articles/dylan-larkin-copy.json';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -23,6 +24,8 @@ export const ARTICLES = [
     description: 'Detroit built its forward group around compete and defensive responsibility. Three seasons of 5v5 scoring, the teams that made the archetype work, and where this roster was really headed.' },
   { slug: 'marco-kasper-year-three', title: kasper.title, published: '2026-10-13T10:58:35-07:00', modified: '2026-10-13T10:58:35-07:00', thumb: 'ghost',
     description: 'Marco Kasper’s second season was worse than a sophomore slump. What the comps, the luck and the projections say he needs in year three.' },
+  { slug: 'dylan-larkin-checked-out', title: larkin.title, published: '2026-10-17T16:07:03-07:00', modified: '2026-10-17T16:07:03-07:00', thumb: 'seventyone',
+    description: 'Dylan Larkin’s first five games since his trade request, measured against every five-game stretch of his career. The giveaways, the takeaways, the shots and what his speed says.' },
 ];
 
 export const article = (slug) => ARTICLES.find((a) => a.slug === slug);

@@ -1,0 +1,44 @@
+---
+// A number in the same Initials-family block type as FlipLetter (stroke-only display face, extruded by stacking SVG
+// layers down the Z axis), for articles about one player: his sweater number. Instead of turning over, it rocks
+// back and forth on its vertical axis, a slight tilt each way (Mark, 10/17, for #71 on the Larkin piece). Same rules
+// as the other thumbnails: a CSS animation on an element transform, never an SVG attribute, running only while the
+// thumbnail is on screen. At rest (reduced motion, link-preview images, data-still / data-seq) it holds a slight
+// three-quarter angle so the depth still reads.
+const { id = 'blocknumber', text = '71' } = Astro.props;
+const N = 16, STEP = 4, depth = (N - 1) * STEP;
+const layers = Array.from({ length: N }, (_, i) => ({ z: -i * STEP + depth / 2, edge: i === 0 || i === N - 1 }));
+const SIZE = 196;
+---
+<div class="bn" id={id} aria-hidden="true">
+  <div class="block">
+    {layers.map((l) => (
+      <svg class:list={['layer', { edge: l.edge }]} viewBox="0 0 400 225" style={`transform:translateZ(${l.z.toFixed(1)}px)`}>
+        <text x="200" y="184" font-size={SIZE}>{text}</text>
+      </svg>
+    ))}
+  </div>
+</div>
+
+<style>
+  .bn { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--ghost); border-radius: 3px; perspective: 900px; perspective-origin: 50% 45%; }
+  .block { position: absolute; inset: 0; transform-style: preserve-3d; will-change: transform; transform: rotateX(8deg) rotateY(-8deg); }
+  .layer { position: absolute; inset: 0; width: 100%; height: 100%; }
+  text { font-family: var(--sans); font-weight: 700; letter-spacing: .06em; text-anchor: middle; fill: none; stroke: var(--ink); stroke-width: 1.1; stroke-linejoin: round; opacity: .42; }
+  .edge text { stroke-width: 2; opacity: 1; }
+  /* rock slightly left and right, easing into each end; paused until on screen */
+  .block { animation: bn-tilt 5.6s ease-in-out infinite alternate paused; }
+  .bn[data-live] .block { animation-play-state: running; }
+  .bn[data-still] .block, .bn[data-seq] .block { animation: none; }
+  @keyframes bn-tilt {
+    from { transform: rotateX(8deg) rotateY(-11deg); }
+    to { transform: rotateX(6deg) rotateY(11deg); }
+  }
+  @media (prefers-reduced-motion: reduce) { .block { animation: none; } }
+</style>
+
+<script define:vars={{ id }}>
+  // the rocking only runs while the thumbnail is on screen
+  const el = document.getElementById(id);
+  if (el) new IntersectionObserver(([e]) => el.toggleAttribute('data-live', e.isIntersecting)).observe(el);
+</script>
