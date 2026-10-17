@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.0,
-   "percentile": 52
+   "percentile": 53
   },
   "Net": {
    "value": -0.2,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 36.9,
+  "value": 36.8,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 449,
+  "rank": 450,
   "pool": 684,
-  "percentile": 34.4,
+  "percentile": 34.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 447,
-    "name": "Andre Lee",
-    "team": "LAK",
-    "pos": "L",
-    "gp": 3,
-    "value": 37.1,
-    "gs60": 0.75,
-    "isMe": false
-   },
-   {
     "rank": 448,
-    "name": "Frank Vatrano",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 3,
+    "name": "Michael Rasmussen",
+    "team": "DET",
+    "pos": "C",
+    "gp": 7,
     "value": 37.0,
-    "gs60": 0.74,
+    "gs60": 0.76,
     "isMe": false
    },
    {
     "rank": 449,
+    "name": "Andre Lee",
+    "team": "LAK",
+    "pos": "L",
+    "gp": 3,
+    "value": 36.9,
+    "gs60": 0.75,
+    "isMe": false
+   },
+   {
+    "rank": 450,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
     "gp": 1,
-    "value": 36.9,
+    "value": 36.8,
     "gs60": 0.73,
     "isMe": true
    },
    {
-    "rank": 450,
+    "rank": 451,
     "name": "Sean Monahan",
     "team": "CBJ",
     "pos": "C",
     "gp": 5,
-    "value": 36.9,
+    "value": 36.7,
     "gs60": 0.72,
     "isMe": false
    },
    {
-    "rank": 451,
+    "rank": 452,
     "name": "Kyle Palmieri",
     "team": "NYI",
     "pos": "C",
     "gp": 7,
-    "value": 36.7,
+    "value": 36.6,
     "gs60": 0.7,
     "isMe": false
    }

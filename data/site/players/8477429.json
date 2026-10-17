@@ -32,8 +32,8 @@
   "points": 2,
   "plusMinus": -4,
   "pim": 2,
-  "shots": 14,
-  "shootingPct": 0.071429,
+  "shots": 13,
+  "shootingPct": 0.076923,
   "toiPerGame": "19:18",
   "ppPoints": 1,
   "wins": null,
@@ -64,8 +64,8 @@
   "goals": 1,
   "assists": 1,
   "points": 2,
-  "shots": 14,
-  "shootingPct": 0.071429,
+  "shots": 13,
+  "shootingPct": 0.076923,
   "toiPerGame": 1158.1,
   "ixG": 1.94,
   "goalsAboveExpected": -0.94,
@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.47,
-   "percentile": 13
+   "percentile": 12
   },
   "Offense": {
    "value": -1.1,
@@ -91,10 +91,10 @@
   },
   "Defense": {
    "value": -0.6,
-   "percentile": 19
+   "percentile": 20
   },
   "Net": {
-   "value": -1.6,
+   "value": -1.7,
    "percentile": 6
   }
  },
@@ -106,24 +106,24 @@
   "gameScore": -0.99,
   "minutes": 135,
   "gp": 7,
-  "rank": 599,
+  "rank": 600,
   "pool": 684,
-  "percentile": 12.4,
+  "percentile": 12.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 597,
-    "name": "Helge Grans",
-    "team": "PHI",
+    "rank": 598,
+    "name": "Noah Juulsen",
+    "team": "COL",
     "pos": "D",
-    "gp": 1,
-    "value": 27.8,
-    "gs60": -0.94,
+    "gp": 6,
+    "value": 27.6,
+    "gs60": -0.99,
     "isMe": false
    },
    {
-    "rank": 598,
+    "rank": 599,
     "name": "Colton Dach",
     "team": "EDM",
     "pos": "C",
@@ -133,7 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 599,
+    "rank": 600,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
@@ -143,16 +143,6 @@
     "isMe": true
    },
    {
-    "rank": 600,
-    "name": "Andrei Kuzmenko",
-    "team": "PIT",
-    "pos": "L",
-    "gp": 3,
-    "value": 27.5,
-    "gs60": -1.01,
-    "isMe": false
-   },
-   {
     "rank": 601,
     "name": "Rasmus Ristolainen",
     "team": "PHI",
@@ -160,6 +150,16 @@
     "gp": 3,
     "value": 27.4,
     "gs60": -1.03,
+    "isMe": false
+   },
+   {
+    "rank": 602,
+    "name": "Jake Sanderson",
+    "team": "OTT",
+    "pos": "D",
+    "gp": 1,
+    "value": 27.3,
+    "gs60": -1.04,
     "isMe": false
    }
   ],
@@ -504,7 +504,7 @@
    "assists": 0,
    "points": 1,
    "plusMinus": 1,
-   "shots": 3,
+   "shots": 2,
    "pim": 0,
    "toi": 17.8,
    "ixg": 0.73,

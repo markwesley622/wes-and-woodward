@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": 0.4,
-   "percentile": 75
+   "percentile": 74
   },
   "Defense": {
    "value": -0.2,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": 0.2,
-   "percentile": 62
+   "percentile": 61
   }
  },
  "score": null,
  "standIn": {
-  "value": 47.1,
+  "value": 46.9,
   "gs": 2.42,
   "gs60": 3.28,
   "gameScore": 2.42,
   "minutes": 44,
   "gp": 3,
-  "rank": 327,
+  "rank": 329,
   "pool": 684,
-  "percentile": 52.2,
+  "percentile": 51.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 325,
+    "rank": 327,
+    "name": "Paul Cotter",
+    "team": "VAN",
+    "pos": "L",
+    "gp": 9,
+    "value": 47.0,
+    "gs60": 2.44,
+    "isMe": false
+   },
+   {
+    "rank": 328,
     "name": "Dalibor Dvorsky",
     "team": "STL",
     "pos": "R",
     "gp": 7,
-    "value": 47.1,
-    "gs60": 2.42,
-    "isMe": false
-   },
-   {
-    "rank": 326,
-    "name": "Dylan Samberg",
-    "team": "WPG",
-    "pos": "D",
-    "gp": 7,
-    "value": 47.1,
-    "gs60": 2.42,
-    "isMe": false
-   },
-   {
-    "rank": 327,
-    "name": "William Wallinder",
-    "team": "DET",
-    "pos": "D",
-    "gp": 3,
-    "value": 47.1,
-    "gs60": 2.42,
-    "isMe": true
-   },
-   {
-    "rank": 328,
-    "name": "Gustav Forsling",
-    "team": "FLA",
-    "pos": "D",
-    "gp": 7,
     "value": 46.9,
-    "gs60": 2.38,
+    "gs60": 2.42,
     "isMe": false
    },
    {
     "rank": 329,
-    "name": "Radek Faksa",
-    "team": "DAL",
-    "pos": "C",
+    "name": "William Wallinder",
+    "team": "DET",
+    "pos": "D",
+    "gp": 3,
+    "value": 46.9,
+    "gs60": 2.42,
+    "isMe": true
+   },
+   {
+    "rank": 330,
+    "name": "Dylan Samberg",
+    "team": "WPG",
+    "pos": "D",
+    "gp": 7,
+    "value": 46.9,
+    "gs60": 2.42,
+    "isMe": false
+   },
+   {
+    "rank": 331,
+    "name": "Gustav Forsling",
+    "team": "FLA",
+    "pos": "D",
     "gp": 7,
     "value": 46.7,
-    "gs60": 2.35,
+    "gs60": 2.38,
     "isMe": false
    }
   ],

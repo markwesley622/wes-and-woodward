@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": -0.0,
-   "percentile": 48
+   "percentile": 49
   },
   "Net": {
    "value": 0.1,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 55.1,
+  "value": 54.7,
   "gs": 3.69,
   "gs60": 2.08,
   "gameScore": 3.69,
   "minutes": 106,
   "gp": 5,
-  "rank": 242,
+  "rank": 247,
   "pool": 684,
-  "percentile": 64.6,
+  "percentile": 63.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 240,
+    "rank": 245,
+    "name": "Simon Nemec",
+    "team": "CGY",
+    "pos": "D",
+    "gp": 7,
+    "value": 54.9,
+    "gs60": 3.74,
+    "isMe": false
+   },
+   {
+    "rank": 246,
     "name": "Anton Lundell",
     "team": "FLA",
     "pos": "C",
     "gp": 8,
-    "value": 55.1,
+    "value": 54.7,
     "gs60": 3.7,
     "isMe": false
    },
    {
-    "rank": 241,
-    "name": "Noah Warren",
-    "team": "ANA",
-    "pos": "D",
-    "gp": 6,
-    "value": 55.1,
-    "gs60": 3.7,
-    "isMe": false
-   },
-   {
-    "rank": 242,
+    "rank": 247,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
     "gp": 5,
-    "value": 55.1,
+    "value": 54.7,
     "gs60": 3.69,
     "isMe": true
    },
    {
-    "rank": 243,
+    "rank": 248,
     "name": "Fabian Zetterlund",
     "team": "OTT",
     "pos": "L",
     "gp": 8,
-    "value": 55.0,
+    "value": 54.6,
     "gs60": 3.68,
     "isMe": false
    },
    {
-    "rank": 244,
+    "rank": 249,
     "name": "Cole Sillinger",
     "team": "CBJ",
     "pos": "C",
     "gp": 5,
-    "value": 55.0,
+    "value": 54.6,
     "gs60": 3.68,
     "isMe": false
    }
