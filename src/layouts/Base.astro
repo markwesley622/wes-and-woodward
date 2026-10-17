@@ -25,7 +25,7 @@ const pageNodes = schema ? (Array.isArray(schema) ? schema : [schema]) : [{ '@ty
 const TEAM = { '@type': 'SportsTeam', '@id': `${SITE}/team/#team`, name: 'Detroit Red Wings', sport: 'Ice hockey', url: `${SITE}/team/` };
 const teamNode = JSON.stringify(pageNodes).includes(TEAM['@id']) && !pageNodes.some((n) => n['@id'] === TEAM['@id']) ? [TEAM] : [];
 // breadcrumb trail from the URL: Home, then the section index where one exists, then this page (named from its title)
-const SECTIONS = { players: 'Players', prospects: 'Prospects', glossary: 'Glossary' };
+const SECTIONS = { players: 'Players', prospects: 'Prospects', glossary: 'Glossary', analysis: 'Analysis' };
 const here = new URL(Astro.url.pathname, SITE).href, segs = Astro.url.pathname.split('/').filter(Boolean);
 const crumbs = segs.length ? [{ name: 'Home', item: `${SITE}/` }, ...(segs.length > 1 && SECTIONS[segs[0]] ? [{ name: SECTIONS[segs[0]], item: `${SITE}/${segs[0]}/` }] : []),
   { name: Astro.props.crumb ?? title.replace(/ (—|\|) Wes & Woodward$/, '').replace(/ — Prospect$/, ''), item: here }] : [];
@@ -51,7 +51,7 @@ if (D.seasonState === 'offseason') {
 }
 // preseason and in-season: just `season · record` (Mark's copy, 9/23)
 // global footer: sections, reference (glossary lives here, not in the header), the glossary's pages, data credits
-const footSections = [['Team', `${base}team/`], ['Players', `${base}players/`], ['Prospects', `${base}prospects/`], ['Analysis', `${base}#analysis`]];
+const footSections = [['Team', `${base}team/`], ['Players', `${base}players/`], ['Prospects', `${base}prospects/`], ['Analysis', `${base}analysis/`]];
 const footReference = [['Glossary', `${base}glossary/`], ['About', `${base}about/`]];
 // eight pages the footer points at: the site's core analytics stats, then the biggest search themes (stat_themes.json)
 const FOOT_GLOSSARY = ['expected-goals', 'corsi', 'goals-saved-above-expected', 'pdo', 'shots-on-goal', 'penalty-minutes', 'plus-minus', 'save-percentage'];
@@ -59,7 +59,7 @@ const footGlossary = FOOT_GLOSSARY.map((slug) => glossary.find((g) => g.slug ===
 const footData = [['NHL API', 'https://api-web.nhle.com'], ['MoneyPuck', 'https://moneypuck.com'], ['HockeyStatCards', 'https://hockeystatcards.com'],
   ['Natural Stat Trick', 'https://www.naturalstattrick.com'], ['Evolving-Hockey', 'https://evolving-hockey.com'], ['Elite Prospects', 'https://www.eliteprospects.com']];
 const termData = JSON.stringify({ cards: termCards, labels: LABELS });
-const nav = [['Team', `${base}team/`], ['Players', `${base}players/`], ['Prospects', `${base}prospects/`], ['Analysis', `${base}#analysis`], ['About', `${base}about/`]];
+const nav = [['Team', `${base}team/`], ['Players', `${base}players/`], ['Prospects', `${base}prospects/`], ['Analysis', `${base}analysis/`], ['About', `${base}about/`]];
 ---
 <!doctype html>
 <html lang="en">

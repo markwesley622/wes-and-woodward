@@ -2,6 +2,8 @@
 // /news-sitemap.xml lists the ones published in the last two days (Google News reads nothing older).
 // Times are the real publish / last-content-edit times (the commits that shipped the copy), with their offset.
 // `modified` moves only when the words or the charts change, never for a markup-only commit.
+// `description` is the meta description and the dek on /analysis/; `thumb` picks the line-art thumbnail (ArticleThumb.astro);
+// the one `featured` article is pinned to the top of /analysis/, everything else runs newest first.
 import predictions from '../../data/site/articles/predictions-2026-27-copy.json';
 import twoWay from '../../data/site/articles/two-way-forwards-copy.json';
 import kasper from '../../data/site/articles/marco-kasper-copy.json';
@@ -15,9 +17,12 @@ export const AUTHOR = { '@type': 'Person', '@id': `${SITE}/about/#author`, name:
   worksFor: { '@id': `${SITE}/#org` }, knowsAbout: ['Detroit Red Wings', 'hockey analytics', 'expected goals'] };
 
 export const ARTICLES = [
-  { slug: '2026-27-predictions', title: predictions.title, published: '2026-10-02T16:19:22-07:00', modified: '2026-10-09T11:50:32-07:00' },
-  { slug: 'two-way-forwards', title: twoWay.title, published: '2026-10-07T12:32:59-07:00', modified: '2026-10-09T11:50:32-07:00' },
-  { slug: 'marco-kasper-year-three', title: kasper.title, published: '2026-10-13T10:58:35-07:00', modified: '2026-10-13T10:58:35-07:00' },
+  { slug: '2026-27-predictions', title: predictions.title, published: '2026-10-02T16:19:22-07:00', modified: '2026-10-09T11:50:32-07:00', featured: true, thumb: 'puck',
+    description: 'Five hundred simulated seasons with Dylan Larkin and five hundred without, one of each played out game by game, and a prediction.' },
+  { slug: 'two-way-forwards', title: twoWay.title, published: '2026-10-07T12:32:59-07:00', modified: '2026-10-09T11:50:32-07:00', thumb: 'flip',
+    description: 'Detroit built its forward group around compete and defensive responsibility. Three seasons of 5v5 scoring, the teams that made the archetype work, and where this roster was really headed.' },
+  { slug: 'marco-kasper-year-three', title: kasper.title, published: '2026-10-13T10:58:35-07:00', modified: '2026-10-13T10:58:35-07:00', thumb: 'ghost',
+    description: 'Marco Kasper’s second season was worse than a sophomore slump. What the comps, the luck and the projections say he needs in year three.' },
 ];
 
 export const article = (slug) => ARTICLES.find((a) => a.slug === slug);
@@ -37,6 +42,7 @@ export const dateline = (a) => {
   const upd = day(a.modified, { month: 'long', day: 'numeric', year: 'numeric' });
   return upd === pub ? pub : `${pub} · Updated ${day(a.modified, { month: 'long', day: 'numeric' })}`;
 };
+export const pubDay = (a) => day(a.published, { month: 'long', day: 'numeric', year: 'numeric' });
 
 // the article node for Base's @graph. NewsArticle, not Article: these are dated, time-sensitive pieces on the
 // current team (Google News and Top stories read the type, the times and the images from here).

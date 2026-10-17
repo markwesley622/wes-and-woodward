@@ -45,10 +45,11 @@ const ky = (p) => KH - 28 - (p / maxP) * (KH - 28 - TOP);
 const fmt1 = (v) => v.toFixed(1);
 const rec = (R) => `${R.record[0]}-${R.record[1]}-${R.record[2]}, ${R.record[3]} points`;
 const slice = (a, b) => parts.slice(a, b);
+const DESC = article('2026-27-predictions').description;
 ---
-<Base ogType="article" ogImage="/og/2026-27-predictions.png" ogImageAlt="A line-art puck on the faceoff dot" schema={[newsArticle('2026-27-predictions', { description: 'Five hundred simulated seasons with Dylan Larkin and five hundred without, one of each played out game by game, and a prediction.',
+<Base ogType="article" ogImage="/og/2026-27-predictions.png" ogImageAlt="A line-art puck on the faceoff dot" schema={[newsArticle('2026-27-predictions', { description: DESC,
   about: [{ '@id': 'https://wesandwoodward.com/team/#team' }, { '@type': 'Person', name: 'Dylan Larkin' }],
-  keywords: ['Detroit Red Wings', '2026-27 NHL season', 'season simulation', 'Dylan Larkin', 'MoneyPuck'], wordCount: 2766 })]} title="2026-27 Red Wings predictions — Wes & Woodward" description="Five hundred simulated seasons with Dylan Larkin and five hundred without, one of each played out game by game, and a prediction.">
+  keywords: ['Detroit Red Wings', '2026-27 NHL season', 'season simulation', 'Dylan Larkin', 'MoneyPuck'], wordCount: 2766 })]} title="2026-27 Red Wings predictions — Wes & Woodward" description={DESC}>
   <section class="sec">
     <div class="shell">
       <p class="kicker mono">Analysis · By <a href="/about/#author" rel="author">Mark Wesley</a> · {dateline(article('2026-27-predictions'))}</p>

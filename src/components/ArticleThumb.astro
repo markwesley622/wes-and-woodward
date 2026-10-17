@@ -1,0 +1,9 @@
+---
+// The line-art thumbnail for an article, by the `thumb` key in src/lib/articles.js. Used on the homepage Analysis
+// cards and on /analysis/; each instance needs its own id (the loop's on-screen observer finds it by id).
+import PuckDrop from './PuckDrop.astro';
+import GhostTurn from './GhostTurn.astro';
+import FlipLetter from './FlipLetter.astro';
+const { kind, id } = Astro.props;
+---
+{kind === 'puck' ? <PuckDrop id={id} /> : kind === 'ghost' ? <GhostTurn id={id} /> : <FlipLetter id={id} front="O" back="D" />}

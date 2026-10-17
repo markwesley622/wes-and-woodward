@@ -1,0 +1,94 @@
+---
+// Analysis index: the featured article pinned on top, then every other article newest first (src/lib/articles.js).
+import Base from '../../layouts/Base.astro';
+import ArticleThumb from '../../components/ArticleThumb.astro';
+import { ARTICLES, SITE, articleUrl, pubDay } from '../../lib/articles.js';
+
+const featured = ARTICLES.find((a) => a.featured);
+const rest = ARTICLES.filter((a) => a !== featured).sort((a, b) => Date.parse(b.published) - Date.parse(a.published));
+const ordered = [featured, ...rest].filter(Boolean);
+const DESC = 'Every Wes & Woodward analysis piece on the Detroit Red Wings: season predictions, player deep dives and roster-building reads, backed by expected goals and on-ice data.';
+const schema = [{
+  '@type': 'CollectionPage', '@id': `${SITE}/analysis/`, url: `${SITE}/analysis/`, name: 'Detroit Red Wings Analysis', description: DESC, inLanguage: 'en-US',
+  isPartOf: { '@id': `${SITE}/#website` }, about: { '@id': `${SITE}/team/#team` },
+  mainEntity: { '@type': 'ItemList', '@id': `${SITE}/analysis/#list`, numberOfItems: ordered.length,
+    itemListElement: ordered.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: articleUrl(a.slug), name: a.title })) },
+}];
+---
+<Base title="Detroit Red Wings Analysis — Wes & Woodward" description={DESC} schema={schema} crumb="Analysis">
+  <section class="sec">
+    <div class="shell">
+      <p class="kicker">Analysis</p>
+      <h1 class="page-title">Red Wings Analysis</h1>
+      <p class="lede">Long-form Red Wings analysis. Each piece takes one question about the team and works it through with the data.</p>
+
+      {featured && (
+        <a class="feat" href={`/analysis/${featured.slug}/`}>
+          <ArticleThumb kind={featured.thumb} id={`an-${featured.slug}`} />
+          <div class="txt">
+            <span class="eb mono red">Featured</span>
+            <h2 class="hl">{featured.title}</h2>
+            <p class="dek">{featured.description}</p>
+            <span class="meta mono">{pubDay(featured)} · Mark Wesley</span>
+            <span class="mono go">Read &rarr;</span>
+          </div>
+        </a>
+      )}
+
+      {rest.length > 0 && (
+        <div class="grp">
+          <p class="mono gl">Latest</p>
+          <div class="list">
+            {rest.map((a) => (
+              <a class="item" href={`/analysis/${a.slug}/`}>
+                <ArticleThumb kind={a.thumb} id={`an-${a.slug}`} />
+                <div class="txt">
+                  <span class="meta mono">{pubDay(a)}</span>
+                  <h3>{a.title}</h3>
+                  <p class="dek">{a.description}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-title { font-size: clamp(40px, 6vw, 84px); line-height: .92; margin-bottom: 22px; }
+  .lede { max-width: 68ch; font-size: 18px; line-height: 1.6; margin: 0 0 36px; }
+  .eb::before, .gl::before { content: "// "; }
+  .gl::before { color: var(--red); }
+  .meta { color: var(--mute); font-size: 11px; }
+  .dek { margin: 0; color: var(--mute); line-height: 1.55; }
+
+  /* featured: one wide card, red-ruled like the homepage's Featured card, thumbnail beside the copy */
+  .feat { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 32px; align-items: center; border: 1px solid var(--red); padding: 22px; }
+  .feat .txt { display: flex; flex-direction: column; gap: 14px; }
+  .feat .eb { display: block; }
+  .hl { margin: 0; font-size: clamp(28px, 3vw, 42px); line-height: 1.02; letter-spacing: -.03em; text-transform: none; }
+  .hl::before { content: none; }
+  .feat .dek { font-size: 17px; }
+  .feat .go { margin-top: 6px; }
+  .feat:hover .hl, .item:hover h3 { color: var(--red); }
+
+  /* everything else, newest first */
+  .grp { margin-top: 48px; }
+  .gl { color: var(--mute); margin: 0 0 10px; }
+  .list { border-top: 1px solid var(--rule); }
+  .item { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 28px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--rule); }
+  .item .txt { display: flex; flex-direction: column; gap: 10px; }
+  .item h3 { font-size: 26px; line-height: 1.08; }
+  .item .dek { font-size: 15px; max-width: 70ch; }
+
+  @media (max-width: 900px) {
+    .feat { grid-template-columns: 1fr; gap: 20px; padding: 16px; }
+  }
+  @media (max-width: 640px) {
+    .item { grid-template-columns: 120px minmax(0, 1fr); gap: 16px; padding: 16px 0; align-items: start; }
+    .item h3 { font-size: 18px; }
+    .item .dek { display: none; }
+  }
+</style>

@@ -1,9 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Wheel from '../components/Wheel.astro';
-import PuckDrop from '../components/PuckDrop.astro';
-import FlipLetter from '../components/FlipLetter.astro';
-import GhostTurn from '../components/GhostTurn.astro';
+import ArticleThumb from '../components/ArticleThumb.astro';
 import D from '../../data/site/dashboard.json';
 import skaters from '../../data/site/skaters.json';
 
@@ -79,13 +77,13 @@ const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveI
         {[['Featured', '2026–2027 Detroit Red Wings predictions', '/analysis/2026-27-predictions/', 'puck'], ['Latest', 'What does Marco Kasper need to do this year to get his career back on track?', '/analysis/marco-kasper-year-three/', 'ghost'], ['Previous', 'How committing to the 2-way forward archetype has worked out for the Red Wings', '/analysis/two-way-forwards/', 'flip']].map(([kind, title, href, thumb]) => (
           <a class:list={['card', 'article', { pin: kind === 'Featured' }]} href={href}>
             <span class:list={['eb', 'mono', { red: kind === 'Featured' }]}>{kind}</span>
-            {thumb === 'puck' ? <PuckDrop id="thumb-predictions" /> : thumb === 'ghost' ? <GhostTurn id="thumb-kasper" /> : <FlipLetter id="thumb-two-way" front="O" back="D" />}
+            <ArticleThumb kind={thumb} id={{ puck: 'thumb-predictions', ghost: 'thumb-kasper', flip: 'thumb-two-way' }[thumb]} />
             <h3>{title}</h3>
             <span class="mono" style="margin-top:auto">Read &rarr;</span>
           </a>
         ))}
       </div>
-      <div class="viewall mono"><a href="#">View all articles &rarr;</a></div>
+      <div class="viewall mono"><a href="/analysis/">View all articles &rarr;</a></div>
     </div>
   </section>
 
