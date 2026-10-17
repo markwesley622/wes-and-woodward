@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Link-preview images (og:image, 1200x630) for articles, player pages and prospect pages (Mark, 10/13).
 
-  articles   public/og/<article slug>.png      the homepage thumbnail at rest (puck down, ghost front, D)
+  articles   public/og/<article slug>.png      the article's /analysis/ thumbnail at rest (puck down, ghost front, D)
              public/og/<article slug>-16x9.png, -4x3.png, -1x1.png
                                                the same thumbnail for the NewsArticle `image` list (Google wants
                                                all three ratios, 1200 px wide; src/lib/articles.js)
@@ -23,12 +23,12 @@ W, H = 1200, 630
 PAPER = (0xE9, 0xE8, 0xE5)
 # article image ratios: name -> CSS frame (shot at 3x) and the width of the 16:9 thumbnail inside it
 RATIOS = {"16x9": (400, 225, 372), "4x3": (400, 300, 380), "1x1": (400, 400, 384)}
-ARTICLES = {  # thumbnail element id on the homepage -> article slug
-    "thumb-predictions": "2026-27-predictions",
-    "thumb-kasper": "marco-kasper-year-three",
-    "thumb-two-way": "two-way-forwards",
-    "thumb-larkin": "dylan-larkin-checked-out",
-}
+# articles are shot from /analysis/, which carries every article's thumbnail as #an-<slug> (the homepage only shows three)
+ANALYSIS = "analysis/index.html"
+
+
+def article_slugs():
+    return sorted(set(re.findall(r'id="an-([a-z0-9-]+)"', (DIST / ANALYSIS).read_text())))
 
 
 def player_art():
@@ -72,7 +72,7 @@ LIFT = """([sel, p, mode, fw, fh, tw]) => {
     background: mode === 'thumb' ? 'var(--ghost)' : 'var(--paper)' });
   document.body.appendChild(frame);
   frame.appendChild(el);
-  el.dataset.still = '1';                                 // homepage thumbs: hold the resting pose, no loop
+  el.dataset.still = '1';                                 // article thumbs: hold the resting pose, no loop
   if (mode === 'thumb') {                                 // keep the card's own 16:9 framing, inset on the same grey
     Object.assign(el.style, { position: 'relative', width: tw + 'px', height: 'auto', aspectRatio: '16 / 9', margin: '0', borderRadius: '0', transform: 'none', flex: 'none' });
   } else {                                                // initials: fill the frame (letters sit in a 4:3 viewBox, centred)
@@ -108,10 +108,10 @@ def line_art(articles_only=False):
         with sync_playwright() as pw:
             b = pw.chromium.launch()
             page = b.new_page(viewport={"width": 1200, "height": 800}, device_scale_factor=3, reduced_motion="no-preference")
-            for el_id, slug in ARTICLES.items():
-                done["articles"] += shoot(page, base + "/", f"#{el_id}", None, "thumb", OG / f"{slug}.png")
+            for slug in article_slugs():
+                done["articles"] += shoot(page, base + "/analysis/", f"#an-{slug}", None, "thumb", OG / f"{slug}.png")
                 for name, frame in RATIOS.items():
-                    done["articles"] += shoot(page, base + "/", f"#{el_id}", None, "thumb", OG / f"{slug}-{name}.png", frame)
+                    done["articles"] += shoot(page, base + "/analysis/", f"#an-{slug}", None, "thumb", OG / f"{slug}-{name}.png", frame)
             for kind in (() if articles_only else ("players", "prospects")):
                 for d in sorted((DIST / kind).iterdir()):
                     html = d / "index.html"
