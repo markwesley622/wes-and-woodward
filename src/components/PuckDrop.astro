@@ -1,10 +1,10 @@
 ---
 // Blueprint puck drop in real CSS 3D, built the way the wheel hero is: an ice plane tilted in
-// perspective, a puck made of stacked ring layers (its wall is a tread of circles at translateZ
-// steps, the way the wheel's tire is), two stick blades lying on the ice, and the official's hand
-// above. The puck falls along the ice's normal as the thumbnail climbs through the viewport, so
-// it lands on the dot as the card settles into view. Every per-frame change is an element-level
-// CSS transform driven by one custom property (--p), never an SVG attribute.
+// perspective and a puck made of stacked ring layers (its wall is a tread of circles at translateZ
+// steps, the way the wheel's tire is) sitting on the dot. While the thumbnail is on screen the puck
+// keeps hopping off the dot and landing back on it, its dashed shadow tightening as it rises. The
+// loop is a CSS animation on element transforms, never an SVG attribute, and it pauses off screen.
+// Scroll no longer drives it (Mark, 10/17: the scroll-linked version made the homepage feel glitchy).
 const { id = 'puckdrop' } = Astro.props;
 const N = 8, STEP = 2.4, R = 46;               // puck wall: 8 rings, 2.4px apart (~17px thick), radius 46
 const rings = Array.from({ length: N }, (_, i) => ({ z: i * STEP, edge: i === 0 || i === N - 1 }));
@@ -22,8 +22,8 @@ const grid = Array.from({ length: 11 }, (_, i) => 20 + i * 56);
         <line x1="20" y1="300" x2="580" y2="300" class="line faint" />
         {[-1, 1].map((sx) => [-1, 1].map((sy) => <line x1={300 + sx * 60} y1={300 + sy * 24} x2={300 + sx * 60} y2={300 + sy * 52} class="line" />))}
         <circle cx="300" cy="300" r="15" class="dot" />
-        <g class="shadow"><circle cx="300" cy="300" r="52" class="line dashed" /></g>
       </svg>
+      <svg viewBox="0 0 600 600" class="plane shadow"><circle cx="300" cy="300" r="52" class="line dashed" /></svg>
       <div class="puck">
         {rings.map((r) => (
           <svg viewBox="0 0 120 120" class="ring" style={`transform:translateZ(${r.z.toFixed(1)}px)`}><circle cx="60" cy="60" r={R} class:list={['line', { edge: r.edge }]} /></svg>
@@ -32,17 +32,13 @@ const grid = Array.from({ length: 11 }, (_, i) => 20 + i * 56);
           <circle cx="60" cy="60" r={R} class="line edge" /><circle cx="60" cy="60" r={R * 0.62} class="line faint" /><circle cx="60" cy="60" r="4" class="line faint" />
         </svg>
       </div>
-      <div class="hand">
-        <svg viewBox="0 0 120 120" class="ring"><path d="M28,0 q-16,30 -2,60" class="line" /><path d="M92,0 q16,30 2,60" class="line" /></svg>
-      </div>
     </div>
   </div>
 </div>
 
 <style>
   .pd { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--ghost); border-radius: 3px; perspective: 760px; perspective-origin: 50% 18%; }
-  .world { position: absolute; inset: 0; transform-style: preserve-3d; will-change: transform; transform: translateY(calc((1 - var(--p, 1)) * (1 - var(--p, 1)) * 300px * 0.58 + (1 - var(--p, 1)) * 4%)); }
-  .ice .plane:first-child { opacity: calc(0.35 + 0.65 * var(--p, 1)); }
+  .world { position: absolute; inset: 0; transform-style: preserve-3d; }
   /* the ice plane: a 600-unit square tilted away, its centre dot sitting low in the frame */
   .ice { position: absolute; left: 50%; top: 68%; width: 118%; aspect-ratio: 1; transform: translate(-50%, -50%) rotateX(66deg); transform-style: preserve-3d; }
   .plane { position: absolute; inset: 0; width: 100%; height: 100%; backface-visibility: hidden; }
@@ -52,31 +48,36 @@ const grid = Array.from({ length: 11 }, (_, i) => 20 + i * 56);
   .line.edge { stroke-width: 2; }
   .grid { fill: none; stroke: var(--ink); stroke-width: .6; opacity: .22; }
   .dot { fill: var(--red); stroke: none; }
-  /* puck: rings stacked along the ice normal (translateZ), standing on the dot; the fall is a translateZ driven by --p */
-  .puck { position: absolute; left: 50%; top: 50%; width: 20%; aspect-ratio: 1; transform-style: preserve-3d; will-change: transform;
-    transform: translate(-50%, -50%) translateZ(calc((1 - var(--p, 1)) * (1 - var(--p, 1)) * 300px)) rotateX(calc((1 - var(--p, 1)) * 30deg)) rotateY(calc((1 - var(--p, 1)) * -18deg)); }
+  /* the shadow is its own layer a hair above the ice (no z-fighting) so the hop scales an element, not SVG */
+  .shadow { transform: translateZ(.5px); opacity: .9; }
+  /* puck: rings stacked along the ice normal (translateZ), standing on the dot */
+  .puck { position: absolute; left: 50%; top: 50%; width: 20%; aspect-ratio: 1; transform-style: preserve-3d; transform: translate(-50%, -50%); }
   .ring { position: absolute; inset: 0; width: 100%; height: 100%; backface-visibility: hidden; }
-  .shadow { transform-origin: 300px 300px; transform: scale(calc(0.55 + 0.45 * var(--p, 1))); opacity: calc(0.2 + 0.7 * var(--p, 1)); will-change: transform, opacity; }
-  .hand { position: absolute; left: 50%; top: 50%; width: 20%; aspect-ratio: 1; transform: translate(-50%, -50%) translateZ(calc(330px + var(--p, 1) * 60px)) rotateX(-66deg) translateY(-30%); opacity: calc(1 - var(--p, 1) * 2.2); transform-style: preserve-3d; }
-  @media (prefers-reduced-motion: reduce) { .pd { --p: 1 !important; } }
+  /* the hop: rest, lift and hang, drop, a small bounce, rest; paused until the thumbnail is on screen */
+  .puck, .shadow { animation: 4s infinite paused; will-change: transform; }
+  .puck { animation-name: pd-hop; }
+  .shadow { animation-name: pd-shadow; }
+  .pd[data-live] .puck, .pd[data-live] .shadow { animation-play-state: running; }
+  .pd[data-still] .puck, .pd[data-still] .shadow { animation: none; }
+  @keyframes pd-hop {
+    0%, 30% { transform: translate(-50%, -50%) translateZ(0) rotateX(0deg) rotateY(0deg); animation-timing-function: cubic-bezier(.3, 0, .35, 1); }
+    62% { transform: translate(-50%, -50%) translateZ(30px) rotateX(10deg) rotateY(-7deg); animation-timing-function: cubic-bezier(.55, 0, .9, .45); }
+    82% { transform: translate(-50%, -50%) translateZ(0) rotateX(0deg) rotateY(0deg); animation-timing-function: cubic-bezier(.2, .6, .4, 1); }
+    89% { transform: translate(-50%, -50%) translateZ(5px) rotateX(-2deg) rotateY(1deg); animation-timing-function: cubic-bezier(.6, 0, .8, .4); }
+    96%, 100% { transform: translate(-50%, -50%) translateZ(0) rotateX(0deg) rotateY(0deg); }
+  }
+  @keyframes pd-shadow {
+    0%, 30% { transform: translateZ(.5px) scale(1); opacity: .9; animation-timing-function: cubic-bezier(.3, 0, .35, 1); }
+    62% { transform: translateZ(.5px) scale(.8); opacity: .45; animation-timing-function: cubic-bezier(.55, 0, .9, .45); }
+    82% { transform: translateZ(.5px) scale(1); opacity: .9; animation-timing-function: cubic-bezier(.2, .6, .4, 1); }
+    89% { transform: translateZ(.5px) scale(.96); opacity: .8; animation-timing-function: cubic-bezier(.6, 0, .8, .4); }
+    96%, 100% { transform: translateZ(.5px) scale(1); opacity: .9; }
+  }
+  @media (prefers-reduced-motion: reduce) { .puck, .shadow { animation: none; } }
 </style>
 
 <script define:vars={{ id }}>
+  // the loop only runs while the thumbnail is on screen
   const el = document.getElementById(id);
-  if (el) {
-    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let queued = false;
-    const frame = () => {
-      queued = false;
-      if (el.dataset.seq) return;   // the homepage Analysis pin drives --p itself (index.astro)
-      const top = el.getBoundingClientRect().top, vh = innerHeight;
-      // the thumbnail climbs from the bottom of the viewport (p = 0) to its upper third (p = 1)
-      const start = vh * 0.95, end = vh * 0.42;
-      const p = Math.min(1, Math.max(0, (start - top) / (start - end)));
-      el.style.setProperty('--p', (reduce ? 1 : p).toFixed(3));
-    };
-    frame();
-    addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(frame); } }, { passive: true });
-    addEventListener('resize', frame);
-  }
+  if (el) new IntersectionObserver(([e]) => el.toggleAttribute('data-live', e.isIntersecting)).observe(el);
 </script>
