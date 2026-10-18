@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.68,
-   "percentile": 8
+   "value": -0.76,
+   "percentile": 5
   },
   "Offense": {
-   "value": -0.0,
-   "percentile": 58
+   "value": -0.1,
+   "percentile": 56
   },
   "Defense": {
    "value": -1.1,
-   "percentile": 7
+   "percentile": 9
   },
   "Net": {
-   "value": -1.1,
+   "value": -1.2,
    "percentile": 16
   }
  },
  "score": null,
  "standIn": {
-  "value": 29.1,
-  "gs": -0.68,
-  "gs60": -1.62,
-  "gameScore": -0.68,
+  "value": 28.7,
+  "gs": -0.8,
+  "gs60": -1.91,
+  "gameScore": -0.8,
   "minutes": 25,
   "gp": 3,
-  "rank": 578,
-  "pool": 684,
-  "percentile": 15.5,
+  "rank": 590,
+  "pool": 691,
+  "percentile": 14.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 576,
-    "name": "Nick Perbix",
-    "team": "NSH",
-    "pos": "D",
-    "gp": 7,
-    "value": 29.2,
-    "gs60": -0.67,
-    "isMe": false
-   },
-   {
-    "rank": 577,
-    "name": "Nino Niederreiter",
-    "team": "WPG",
-    "pos": "R",
+    "rank": 588,
+    "name": "Colton Dach",
+    "team": "EDM",
+    "pos": "C",
     "gp": 4,
-    "value": 29.2,
-    "gs60": -0.68,
+    "value": 28.8,
+    "gs60": -0.79,
     "isMe": false
    },
    {
-    "rank": 578,
+    "rank": 589,
+    "name": "Jacob Melanson",
+    "team": "SEA",
+    "pos": "R",
+    "gp": 1,
+    "value": 28.7,
+    "gs60": -0.79,
+    "isMe": false
+   },
+   {
+    "rank": 590,
     "name": "Carter Mazur",
     "team": "DET",
     "pos": "L",
     "gp": 3,
-    "value": 29.1,
-    "gs60": -0.68,
+    "value": 28.7,
+    "gs60": -0.8,
     "isMe": true
    },
    {
-    "rank": 579,
-    "name": "Brenden Dillon",
-    "team": "NJD",
+    "rank": 591,
+    "name": "Emil Lilleberg",
+    "team": "TBL",
     "pos": "D",
-    "gp": 5,
-    "value": 28.9,
-    "gs60": -0.72,
+    "gp": 3,
+    "value": 28.7,
+    "gs60": -0.81,
     "isMe": false
    },
    {
-    "rank": 580,
-    "name": "Keegan Kolesar",
-    "team": "DET",
-    "pos": "R",
-    "gp": 7,
-    "value": 28.9,
-    "gs60": -0.73,
+    "rank": 592,
+    "name": "Nikita Zadorov",
+    "team": "BOS",
+    "pos": "D",
+    "gp": 8,
+    "value": 28.6,
+    "gs60": -0.83,
     "isMe": false
    }
   ],
@@ -237,16 +237,16 @@
    "shots": 2,
    "pim": 0,
    "toi": 11.6,
-   "ixg": 0.69,
-   "xgf": 1.42,
+   "ixg": 0.47,
+   "xgf": 1.29,
    "xga": 0.6,
    "gf": 0.0,
    "ga": 1.0,
    "blocks": 0.0,
-   "gameScore": 0.24,
+   "gameScore": 0.14,
    "gameScoreParts": {
     "moneypuck": 0.45,
-    "hockeystatcards": 0.03
+    "hockeystatcards": -0.17
    }
   },
   {
@@ -267,16 +267,16 @@
    "gf": 0.0,
    "ga": 2.0,
    "blocks": 0.0,
-   "gameScore": -1.71,
+   "gameScore": -1.73,
    "gameScoreParts": {
     "moneypuck": -0.6,
-    "hockeystatcards": -2.82
+    "hockeystatcards": -2.86
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.23,
+  "average": -0.27,
   "games": 3,
   "best": {
    "date": "2026-10-06",
@@ -286,7 +286,7 @@
   "worst": {
    "date": "2026-10-13",
    "opponent": "NJD",
-   "value": -1.71
+   "value": -1.73
   },
   "above2": 0,
   "below0": 1

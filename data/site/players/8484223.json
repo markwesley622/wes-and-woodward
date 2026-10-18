@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.15,
+   "value": 0.16,
    "percentile": 39
   },
   "Offense": {
    "value": -0.1,
-   "percentile": 56
+   "percentile": 58
   },
   "Defense": {
    "value": -0.4,
-   "percentile": 29
+   "percentile": 28
   },
   "Net": {
    "value": -0.4,
-   "percentile": 38
+   "percentile": 40
   }
  },
  "score": null,
  "standIn": {
-  "value": 39.2,
-  "gs": 1.14,
-  "gs60": 0.92,
-  "gameScore": 1.14,
+  "value": 38.5,
+  "gs": 1.16,
+  "gs60": 0.94,
+  "gameScore": 1.16,
   "minutes": 74,
   "gp": 6,
-  "rank": 421,
-  "pool": 684,
-  "percentile": 38.5,
+  "rank": 423,
+  "pool": 691,
+  "percentile": 38.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 419,
-    "name": "Dmitry Kulikov",
-    "team": "FLA",
-    "pos": "D",
-    "gp": 8,
-    "value": 39.3,
-    "gs60": 1.17,
-    "isMe": false
-   },
-   {
-    "rank": 420,
-    "name": "Stefan Noesen",
-    "team": "NJD",
-    "pos": "R",
-    "gp": 4,
-    "value": 39.3,
-    "gs60": 1.16,
-    "isMe": false
-   },
-   {
     "rank": 421,
-    "name": "Axel Sandin-Pellikka",
-    "team": "DET",
-    "pos": "D",
-    "gp": 6,
-    "value": 39.2,
-    "gs60": 1.14,
-    "isMe": true
+    "name": "Tyler Seguin",
+    "team": "DAL",
+    "pos": "C",
+    "gp": 8,
+    "value": 38.7,
+    "gs60": 1.19,
+    "isMe": false
    },
    {
     "rank": 422,
-    "name": "Blake Coleman",
-    "team": "MIN",
-    "pos": "L",
+    "name": "Noah Dobson",
+    "team": "MTL",
+    "pos": "D",
     "gp": 8,
     "value": 38.7,
-    "gs60": 1.06,
+    "gs60": 1.19,
     "isMe": false
    },
    {
     "rank": 423,
-    "name": "Beck Malenstyn",
-    "team": "BUF",
-    "pos": "L",
-    "gp": 8,
-    "value": 38.7,
-    "gs60": 1.06,
+    "name": "Axel Sandin-Pellikka",
+    "team": "DET",
+    "pos": "D",
+    "gp": 6,
+    "value": 38.5,
+    "gs60": 1.16,
+    "isMe": true
+   },
+   {
+    "rank": 424,
+    "name": "Bobby McMann",
+    "team": "SEA",
+    "pos": "C",
+    "gp": 9,
+    "value": 38.3,
+    "gs60": 1.1,
+    "isMe": false
+   },
+   {
+    "rank": 425,
+    "name": "Filip Hronek",
+    "team": "VAN",
+    "pos": "D",
+    "gp": 10,
+    "value": 38.2,
+    "gs60": 1.1,
     "isMe": false
    }
   ],
@@ -204,10 +204,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": 0.26,
+   "gameScore": 0.27,
    "gameScoreParts": {
     "moneypuck": 0.2,
-    "hockeystatcards": 0.32
+    "hockeystatcards": 0.33
    }
   },
   {
@@ -255,7 +255,7 @@
    "gameScore": -0.62,
    "gameScoreParts": {
     "moneypuck": -0.125,
-    "hockeystatcards": -1.12
+    "hockeystatcards": -1.11
    }
   },
   {
@@ -296,14 +296,14 @@
    "toi": 14.3,
    "ixg": 0.02,
    "xgf": 0.46,
-   "xga": 1.09,
+   "xga": 1.07,
    "gf": 1.0,
    "ga": 1.0,
    "blocks": 1.0,
    "gameScore": 0.12,
    "gameScoreParts": {
     "moneypuck": 0.4,
-    "hockeystatcards": -0.17
+    "hockeystatcards": -0.15
    }
   },
   {
@@ -324,10 +324,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 2.0,
-   "gameScore": 0.16,
+   "gameScore": 0.17,
    "gameScoreParts": {
     "moneypuck": 0.15,
-    "hockeystatcards": 0.17
+    "hockeystatcards": 0.19
    }
   }
  ],

@@ -6,60 +6,60 @@
  "seasonLabel": "2026-27",
  "kind": "G",
  "standIn": {
-  "value": 82.0,
+  "value": 79.8,
   "gsax60": 5.38,
   "gsax": 5.38,
   "minutes": 151,
   "gp": 3,
-  "rank": 5,
+  "rank": 7,
   "pool": 65,
-  "percentile": 92.3,
+  "percentile": 89.2,
   "group": "goalies",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 3,
+    "rank": 5,
     "name": "Jesper Wallstedt",
     "team": "MIN",
     "gp": 7,
-    "value": 84.8,
+    "value": 82.7,
     "gsax60": 6.08,
     "isMe": false
    },
    {
-    "rank": 4,
-    "name": "Ilya Sorokin",
-    "team": "NYI",
-    "gp": 5,
-    "value": 83.0,
-    "gsax60": 5.61,
-    "isMe": false
-   },
-   {
-    "rank": 5,
-    "name": "Daniil Tarasov",
-    "team": "DET",
-    "gp": 3,
-    "value": 82.0,
-    "gsax60": 5.38,
-    "isMe": true
-   },
-   {
     "rank": 6,
-    "name": "Igor Shesterkin",
-    "team": "NYR",
-    "gp": 5,
-    "value": 80.1,
-    "gsax60": 4.95,
+    "name": "Logan Thompson",
+    "team": "WSH",
+    "gp": 6,
+    "value": 80.3,
+    "gsax60": 5.5,
     "isMe": false
    },
    {
     "rank": 7,
-    "name": "Jeremy Swayman",
-    "team": "BOS",
-    "gp": 6,
-    "value": 80.1,
-    "gsax60": 4.93,
+    "name": "Daniil Tarasov",
+    "team": "DET",
+    "gp": 3,
+    "value": 79.8,
+    "gsax60": 5.38,
+    "isMe": true
+   },
+   {
+    "rank": 8,
+    "name": "Igor Shesterkin",
+    "team": "NYR",
+    "gp": 5,
+    "value": 77.9,
+    "gsax60": 4.95,
+    "isMe": false
+   },
+   {
+    "rank": 9,
+    "name": "Joseph Woll",
+    "team": "PHI",
+    "gp": 5,
+    "value": 75.0,
+    "gsax60": 4.34,
     "isMe": false
    }
   ],

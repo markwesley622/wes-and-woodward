@@ -83,83 +83,83 @@
  "hsc": {
   "Game score": {
    "value": 0.63,
-   "percentile": 64
+   "percentile": 65
   },
   "Offense": {
    "value": -0.2,
-   "percentile": 49
+   "percentile": 50
   },
   "Defense": {
    "value": 0.0,
-   "percentile": 53
+   "percentile": 52
   },
   "Net": {
    "value": -0.2,
-   "percentile": 49
+   "percentile": 51
   }
  },
  "score": null,
  "standIn": {
-  "value": 36.8,
+  "value": 36.3,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 450,
-  "pool": 684,
-  "percentile": 34.2,
+  "rank": 458,
+  "pool": 691,
+  "percentile": 33.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 448,
-    "name": "Michael Rasmussen",
-    "team": "DET",
+    "rank": 456,
+    "name": "Jacob Trouba",
+    "team": "SJS",
+    "pos": "D",
+    "gp": 8,
+    "value": 36.4,
+    "gs60": 0.74,
+    "isMe": false
+   },
+   {
+    "rank": 457,
+    "name": "Christian Dvorak",
+    "team": "PHI",
     "pos": "C",
-    "gp": 7,
-    "value": 37.0,
-    "gs60": 0.76,
+    "gp": 10,
+    "value": 36.3,
+    "gs60": 0.74,
     "isMe": false
    },
    {
-    "rank": 449,
-    "name": "Andre Lee",
-    "team": "LAK",
-    "pos": "L",
-    "gp": 3,
-    "value": 36.9,
-    "gs60": 0.75,
-    "isMe": false
-   },
-   {
-    "rank": 450,
+    "rank": 458,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
     "gp": 1,
-    "value": 36.8,
+    "value": 36.3,
     "gs60": 0.73,
     "isMe": true
    },
    {
-    "rank": 451,
-    "name": "Sean Monahan",
-    "team": "CBJ",
-    "pos": "C",
-    "gp": 5,
-    "value": 36.7,
-    "gs60": 0.72,
+    "rank": 459,
+    "name": "Dylan Coghlan",
+    "team": "VGK",
+    "pos": "D",
+    "gp": 4,
+    "value": 36.2,
+    "gs60": 0.71,
     "isMe": false
    },
    {
-    "rank": 452,
-    "name": "Kyle Palmieri",
-    "team": "NYI",
-    "pos": "C",
-    "gp": 7,
-    "value": 36.6,
-    "gs60": 0.7,
+    "rank": 460,
+    "name": "Bradly Nadeau",
+    "team": "CAR",
+    "pos": "L",
+    "gp": 1,
+    "value": 36.1,
+    "gs60": 0.69,
     "isMe": false
    }
   ],

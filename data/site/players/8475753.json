@@ -26,16 +26,16 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 7,
-  "goals": 1,
+  "gp": 8,
+  "goals": 2,
   "assists": 3,
-  "points": 4,
+  "points": 5,
   "plusMinus": 0,
-  "pim": 4,
-  "shots": 11,
-  "shootingPct": 0.090909,
-  "toiPerGame": "19:12",
-  "ppPoints": 1,
+  "pim": 6,
+  "shots": 15,
+  "shootingPct": 0.133333,
+  "toiPerGame": "19:16",
+  "ppPoints": 2,
   "wins": null,
   "losses": null,
   "otLosses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 7,
-   "goals": 1,
+   "gp": 8,
+   "goals": 2,
    "assists": 3,
-   "points": 4,
+   "points": 5,
    "plusMinus": 0,
-   "pim": 4
+   "pim": 6
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Justin Faulk",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475753.png",
-  "gamesPlayed": 7,
-  "goals": 1,
+  "gamesPlayed": 8,
+  "goals": 2,
   "assists": 3,
-  "points": 4,
-  "shots": 11,
-  "shootingPct": 0.090909,
-  "toiPerGame": 1151.6,
-  "ixG": 0.49,
-  "goalsAboveExpected": 0.51,
-  "gameScore": 4.03,
+  "points": 5,
+  "shots": 15,
+  "shootingPct": 0.133333,
+  "toiPerGame": 1155.5,
+  "ixG": 0.64,
+  "goalsAboveExpected": 1.36,
+  "gameScore": 5.28,
   "fiveOnFive": {
-   "icetimeMinutes": 111.9,
-   "onIceXgPct": 0.52,
-   "onIceCorsiPct": 0.55,
-   "ixgPer60": 0.236,
+   "icetimeMinutes": 126.8,
+   "onIceXgPct": 0.5,
+   "onIceCorsiPct": 0.54,
+   "ixgPer60": 0.265,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.13,
-   "percentile": 37
+   "value": 0.24,
+   "percentile": 44
   },
   "Offense": {
-   "value": -0.1,
-   "percentile": 56
+   "value": 0.1,
+   "percentile": 65
   },
   "Defense": {
-   "value": -0.4,
-   "percentile": 27
+   "value": -0.3,
+   "percentile": 30
   },
   "Net": {
-   "value": -0.5,
-   "percentile": 36
+   "value": -0.2,
+   "percentile": 50
   }
  },
  "score": null,
  "standIn": {
-  "value": 47.1,
-  "gs": 2.45,
-  "gs60": 1.09,
-  "gameScore": 2.45,
-  "minutes": 134,
-  "gp": 7,
-  "rank": 325,
-  "pool": 684,
-  "percentile": 52.3,
+  "value": 52.0,
+  "gs": 3.58,
+  "gs60": 1.39,
+  "gameScore": 3.58,
+  "minutes": 154,
+  "gp": 8,
+  "rank": 279,
+  "pool": 691,
+  "percentile": 59.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 323,
-    "name": "Adam Jiricek",
-    "team": "STL",
+    "rank": 277,
+    "name": "Jonas Siegenthaler",
+    "team": "NJD",
     "pos": "D",
-    "gp": 7,
-    "value": 47.3,
-    "gs60": 2.48,
+    "gp": 8,
+    "value": 52.3,
+    "gs60": 3.63,
     "isMe": false
    },
    {
-    "rank": 324,
-    "name": "Alex Killorn",
-    "team": "ANA",
+    "rank": 278,
+    "name": "Nils Hoglander",
+    "team": "NSH",
     "pos": "L",
-    "gp": 7,
-    "value": 47.2,
-    "gs60": 2.48,
+    "gp": 8,
+    "value": 52.3,
+    "gs60": 3.62,
     "isMe": false
    },
    {
-    "rank": 325,
+    "rank": 279,
     "name": "Justin Faulk",
     "team": "DET",
     "pos": "D",
-    "gp": 7,
-    "value": 47.1,
-    "gs60": 2.45,
+    "gp": 8,
+    "value": 52.0,
+    "gs60": 3.58,
     "isMe": true
    },
    {
-    "rank": 326,
-    "name": "Artyom Levshunov",
-    "team": "CHI",
+    "rank": 280,
+    "name": "Ryker Evans",
+    "team": "SEA",
     "pos": "D",
-    "gp": 8,
-    "value": 47.1,
-    "gs60": 2.45,
+    "gp": 9,
+    "value": 52.0,
+    "gs60": 3.58,
     "isMe": false
    },
    {
-    "rank": 327,
-    "name": "Paul Cotter",
-    "team": "VAN",
-    "pos": "L",
+    "rank": 281,
+    "name": "Anton Frondell",
+    "team": "CHI",
+    "pos": "C",
     "gp": 9,
-    "value": 47.0,
-    "gs60": 2.44,
+    "value": 52.0,
+    "gs60": 3.58,
     "isMe": false
    }
   ],
@@ -417,7 +417,7 @@
    "gameScore": -0.34,
    "gameScoreParts": {
     "moneypuck": -0.025,
-    "hockeystatcards": -0.66
+    "hockeystatcards": -0.65
    }
   },
   {
@@ -462,10 +462,10 @@
    "gf": 3.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": 3.88,
+   "gameScore": 3.89,
    "gameScoreParts": {
     "moneypuck": 2.575,
-    "hockeystatcards": 5.19
+    "hockeystatcards": 5.2
    }
   },
   {
@@ -481,15 +481,15 @@
    "pim": 0,
    "toi": 18.8,
    "ixg": 0.03,
-   "xgf": 0.72,
+   "xgf": 0.74,
    "xga": 0.54,
    "gf": 1.0,
    "ga": 4.0,
    "blocks": 0.0,
-   "gameScore": -1.39,
+   "gameScore": -1.38,
    "gameScoreParts": {
     "moneypuck": 0.35,
-    "hockeystatcards": -3.12
+    "hockeystatcards": -3.1
    }
   },
   {
@@ -530,14 +530,14 @@
    "toi": 19.6,
    "ixg": 0.0,
    "xgf": 0.43,
-   "xga": 1.3,
+   "xga": 1.24,
    "gf": 2.0,
    "ga": 2.0,
    "blocks": 0.0,
-   "gameScore": -0.49,
+   "gameScore": -0.44,
    "gameScoreParts": {
     "moneypuck": -0.05,
-    "hockeystatcards": -0.94
+    "hockeystatcards": -0.83
    }
   },
   {
@@ -558,31 +558,55 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": 0.81,
+   "gameScore": 0.84,
    "gameScoreParts": {
     "moneypuck": 1.05,
-    "hockeystatcards": 0.57
+    "hockeystatcards": 0.63
+   }
+  },
+  {
+   "gameId": 2026020127,
+   "date": "2026-10-17",
+   "opponent": "SJS",
+   "home": true,
+   "goals": 1,
+   "assists": 0,
+   "points": 1,
+   "plusMinus": 0,
+   "shots": 4,
+   "pim": 2,
+   "toi": 19.7,
+   "ixg": 0.16,
+   "xgf": 0.64,
+   "xga": 0.58,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 2.0,
+   "gameScore": 1.03,
+   "gameScoreParts": {
+    "moneypuck": 1.25,
+    "hockeystatcards": 0.81
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.35,
-  "games": 7,
+  "average": 0.45,
+  "games": 8,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
-   "value": 3.88
+   "value": 3.89
   },
   "worst": {
    "date": "2026-10-09",
    "opponent": "SEA",
-   "value": -1.39
+   "value": -1.38
   },
   "above2": 1,
   "below0": 4
  },
- "detGames": 7,
+ "detGames": 8,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {

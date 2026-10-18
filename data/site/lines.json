@@ -2,20 +2,20 @@
  "situation": "5on5",
  "forwardLines": [
   {
-   "name": "Debrincat-Finnie-Brandsegg-Nygrd",
+   "name": "Brandsegg-Nygrd-Finnie-Debrincat",
    "players": [
-    "Debrincat",
-    "Finnie",
     "Brandsegg",
-    "Nygrd"
+    "Nygrd",
+    "Finnie",
+    "Debrincat"
    ],
-   "gamesPlayed": 6,
-   "icetimeMinutes": 60.3,
-   "xGoalsPct": 0.66,
-   "corsiPct": 0.6,
-   "xGoalsFor": 4.54,
-   "xGoalsAgainst": 2.38,
-   "goalsFor": 7.0,
+   "gamesPlayed": 7,
+   "icetimeMinutes": 69.9,
+   "xGoalsPct": 0.65,
+   "corsiPct": 0.59,
+   "xGoalsFor": 5.09,
+   "xGoalsAgainst": 2.78,
+   "goalsFor": 8.0,
    "goalsAgainst": 1.0
   },
   {
@@ -25,12 +25,12 @@
     "Larkin",
     "Raymond"
    ],
-   "gamesPlayed": 5,
-   "icetimeMinutes": 51.7,
+   "gamesPlayed": 6,
+   "icetimeMinutes": 63.0,
    "xGoalsPct": 0.55,
-   "corsiPct": 0.58,
-   "xGoalsFor": 2.13,
-   "xGoalsAgainst": 1.77,
+   "corsiPct": 0.56,
+   "xGoalsFor": 2.73,
+   "xGoalsAgainst": 2.23,
    "goalsFor": 1.0,
    "goalsAgainst": 3.0
   },
@@ -41,12 +41,12 @@
     "Copp",
     "Kolesar"
    ],
-   "gamesPlayed": 5,
-   "icetimeMinutes": 39.9,
+   "gamesPlayed": 6,
+   "icetimeMinutes": 40.8,
    "xGoalsPct": 0.33,
-   "corsiPct": 0.37,
+   "corsiPct": 0.35,
    "xGoalsFor": 0.99,
-   "xGoalsAgainst": 1.97,
+   "xGoalsAgainst": 2.02,
    "goalsFor": 0.0,
    "goalsAgainst": 2.0
   },
@@ -64,6 +64,22 @@
    "xGoalsFor": 0.56,
    "xGoalsAgainst": 0.9,
    "goalsFor": 0.0,
+   "goalsAgainst": 0.0
+  },
+  {
+   "name": "Rasmussen-Copp-Danielson",
+   "players": [
+    "Rasmussen",
+    "Copp",
+    "Danielson"
+   ],
+   "gamesPlayed": 2,
+   "icetimeMinutes": 13.8,
+   "xGoalsPct": 0.5,
+   "corsiPct": 0.42,
+   "xGoalsFor": 0.72,
+   "xGoalsAgainst": 0.73,
+   "goalsFor": 1.0,
    "goalsAgainst": 0.0
   },
   {
@@ -85,49 +101,34 @@
  ],
  "defensePairs": [
   {
-   "name": "Johansson-Seider",
-   "players": [
-    "Johansson",
-    "Seider"
-   ],
-   "gamesPlayed": 7,
-   "icetimeMinutes": 52.3,
-   "xGoalsPct": 0.69,
-   "corsiPct": 0.61,
-   "xGoalsFor": 2.66,
-   "xGoalsAgainst": 1.17,
-   "goalsFor": 1.0,
-   "goalsAgainst": 1.0
-  },
-  {
    "name": "Chiarot-Seider",
    "players": [
     "Chiarot",
     "Seider"
    ],
-   "gamesPlayed": 7,
-   "icetimeMinutes": 44.2,
-   "xGoalsPct": 0.68,
-   "corsiPct": 0.55,
-   "xGoalsFor": 1.51,
-   "xGoalsAgainst": 0.72,
-   "goalsFor": 1.0,
+   "gamesPlayed": 8,
+   "icetimeMinutes": 59.0,
+   "xGoalsPct": 0.62,
+   "corsiPct": 0.52,
+   "xGoalsFor": 2.13,
+   "xGoalsAgainst": 1.28,
+   "goalsFor": 2.0,
    "goalsAgainst": 0.0
   },
   {
-   "name": "Faulk-Johansson",
+   "name": "Johansson-Seider",
    "players": [
-    "Faulk",
-    "Johansson"
+    "Johansson",
+    "Seider"
    ],
-   "gamesPlayed": 5,
-   "icetimeMinutes": 31.4,
-   "xGoalsPct": 0.57,
-   "corsiPct": 0.6,
-   "xGoalsFor": 1.22,
-   "xGoalsAgainst": 0.93,
+   "gamesPlayed": 8,
+   "icetimeMinutes": 52.6,
+   "xGoalsPct": 0.7,
+   "corsiPct": 0.62,
+   "xGoalsFor": 2.78,
+   "xGoalsAgainst": 1.17,
    "goalsFor": 1.0,
-   "goalsAgainst": 0.0
+   "goalsAgainst": 1.0
   },
   {
    "name": "Faulk-Wallinder",
@@ -135,14 +136,29 @@
     "Faulk",
     "Wallinder"
    ],
-   "gamesPlayed": 3,
-   "icetimeMinutes": 28.6,
-   "xGoalsPct": 0.72,
-   "corsiPct": 0.74,
+   "gamesPlayed": 4,
+   "icetimeMinutes": 34.2,
+   "xGoalsPct": 0.64,
+   "corsiPct": 0.67,
    "xGoalsFor": 1.56,
-   "xGoalsAgainst": 0.6,
+   "xGoalsAgainst": 0.87,
    "goalsFor": 3.0,
    "goalsAgainst": 3.0
+  },
+  {
+   "name": "Faulk-Johansson",
+   "players": [
+    "Faulk",
+    "Johansson"
+   ],
+   "gamesPlayed": 6,
+   "icetimeMinutes": 32.9,
+   "xGoalsPct": 0.51,
+   "corsiPct": 0.57,
+   "xGoalsFor": 1.23,
+   "xGoalsAgainst": 1.18,
+   "goalsFor": 1.0,
+   "goalsAgainst": 0.0
   },
   {
    "name": "Chiarot-Sandin-Pellikka",
@@ -166,12 +182,12 @@
     "Chiarot",
     "Johansson"
    ],
-   "gamesPlayed": 6,
-   "icetimeMinutes": 26.4,
+   "gamesPlayed": 7,
+   "icetimeMinutes": 26.9,
    "xGoalsPct": 0.36,
    "corsiPct": 0.48,
-   "xGoalsFor": 1.35,
-   "xGoalsAgainst": 2.4,
+   "xGoalsFor": 1.38,
+   "xGoalsAgainst": 2.43,
    "goalsFor": 1.0,
    "goalsAgainst": 2.0
   },
@@ -181,28 +197,27 @@
     "Johansson",
     "Faulk"
    ],
-   "gamesPlayed": 7,
-   "icetimeMinutes": 21.3,
-   "xGoalsPct": 0.26,
-   "corsiPct": 0.41,
-   "xGoalsFor": 0.39,
-   "xGoalsAgainst": 1.12,
+   "gamesPlayed": 8,
+   "icetimeMinutes": 24.7,
+   "xGoalsPct": 0.34,
+   "corsiPct": 0.44,
+   "xGoalsFor": 0.59,
+   "xGoalsAgainst": 1.13,
    "goalsFor": 1.0,
    "goalsAgainst": 2.0
   },
   {
-   "name": "Faulk-Sandin-Pellikka",
+   "name": "Johansson-Johansson",
    "players": [
-    "Faulk",
-    "Sandin",
-    "Pellikka"
+    "Johansson",
+    "Johansson"
    ],
    "gamesPlayed": 5,
-   "icetimeMinutes": 14.7,
-   "xGoalsPct": 0.52,
-   "corsiPct": 0.46,
-   "xGoalsFor": 0.66,
-   "xGoalsAgainst": 0.63,
+   "icetimeMinutes": 17.5,
+   "xGoalsPct": 0.32,
+   "corsiPct": 0.38,
+   "xGoalsFor": 0.86,
+   "xGoalsAgainst": 1.84,
    "goalsFor": 1.0,
    "goalsAgainst": 1.0
   }

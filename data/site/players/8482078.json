@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 7,
+  "gp": 8,
   "goals": 0,
   "assists": 4,
   "points": 4,
-  "plusMinus": -3,
+  "plusMinus": -2,
   "pim": 4,
-  "shots": 21,
+  "shots": 23,
   "shootingPct": 0.0,
-  "toiPerGame": "20:31",
+  "toiPerGame": "20:27",
   "ppPoints": 3,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 7,
+   "gp": 8,
    "goals": 0,
    "assists": 4,
    "points": 4,
-   "plusMinus": -3,
+   "plusMinus": -2,
    "pim": 4
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Lucas Raymond",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482078.png",
-  "gamesPlayed": 7,
+  "gamesPlayed": 8,
   "goals": 0,
   "assists": 4,
   "points": 4,
-  "shots": 21,
+  "shots": 23,
   "shootingPct": 0.0,
-  "toiPerGame": 1230.7,
-  "ixG": 2.34,
-  "goalsAboveExpected": -2.34,
+  "toiPerGame": 1227.1,
+  "ixG": 2.92,
+  "goalsAboveExpected": -2.92,
   "gameScore": 5.7,
   "fiveOnFive": {
-   "icetimeMinutes": 104.6,
+   "icetimeMinutes": 119.7,
    "onIceXgPct": 0.53,
-   "onIceCorsiPct": 0.57,
-   "ixgPer60": 0.579,
+   "onIceCorsiPct": 0.56,
+   "ixgPer60": 0.747,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,16 +82,16 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.4,
-   "percentile": 51
+   "value": 0.37,
+   "percentile": 50
   },
   "Offense": {
-   "value": -0.4,
-   "percentile": 33
+   "value": -0.6,
+   "percentile": 25
   },
   "Defense": {
-   "value": 0.4,
-   "percentile": 74
+   "value": 0.6,
+   "percentile": 80
   },
   "Net": {
    "value": -0.0,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 58.1,
-  "gs": 4.26,
-  "gs60": 1.78,
-  "gameScore": 4.26,
-  "minutes": 144,
-  "gp": 7,
-  "rank": 217,
-  "pool": 684,
-  "percentile": 68.3,
+  "value": 56.1,
+  "gs": 4.32,
+  "gs60": 1.58,
+  "gameScore": 4.32,
+  "minutes": 164,
+  "gp": 8,
+  "rank": 241,
+  "pool": 691,
+  "percentile": 65.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 215,
+    "rank": 239,
+    "name": "Matty Beniers",
+    "team": "SEA",
+    "pos": "C",
+    "gp": 9,
+    "value": 56.3,
+    "gs60": 4.35,
+    "isMe": false
+   },
+   {
+    "rank": 240,
+    "name": "Frederic Brunet",
+    "team": "BOS",
+    "pos": "D",
+    "gp": 6,
+    "value": 56.3,
+    "gs60": 4.34,
+    "isMe": false
+   },
+   {
+    "rank": 241,
+    "name": "Lucas Raymond",
+    "team": "DET",
+    "pos": "L",
+    "gp": 8,
+    "value": 56.1,
+    "gs60": 4.32,
+    "isMe": true
+   },
+   {
+    "rank": 242,
     "name": "Cutter Gauthier",
     "team": "ANA",
     "pos": "L",
     "gp": 6,
-    "value": 58.3,
-    "gs60": 4.29,
+    "value": 56.1,
+    "gs60": 4.31,
     "isMe": false
    },
    {
-    "rank": 216,
-    "name": "Sam Steel",
-    "team": "DAL",
-    "pos": "C",
-    "gp": 7,
-    "value": 58.3,
-    "gs60": 4.29,
-    "isMe": false
-   },
-   {
-    "rank": 217,
-    "name": "Lucas Raymond",
-    "team": "DET",
-    "pos": "L",
-    "gp": 7,
-    "value": 58.1,
-    "gs60": 4.26,
-    "isMe": true
-   },
-   {
-    "rank": 218,
-    "name": "Daniil But",
-    "team": "UTA",
-    "pos": "L",
-    "gp": 8,
-    "value": 58.0,
-    "gs60": 4.24,
-    "isMe": false
-   },
-   {
-    "rank": 219,
-    "name": "Tristan Luneau",
-    "team": "ANA",
+    "rank": 243,
+    "name": "Gustav Forsling",
+    "team": "FLA",
     "pos": "D",
-    "gp": 7,
-    "value": 58.0,
-    "gs60": 4.24,
+    "gp": 8,
+    "value": 56.0,
+    "gs60": 4.3,
     "isMe": false
    }
   ],
@@ -267,7 +267,7 @@
    "gameScore": -0.24,
    "gameScoreParts": {
     "moneypuck": 0.15,
-    "hockeystatcards": -0.63
+    "hockeystatcards": -0.64
    }
   },
   {
@@ -339,7 +339,7 @@
    "gameScore": 0.65,
    "gameScoreParts": {
     "moneypuck": 1.325,
-    "hockeystatcards": -0.02
+    "hockeystatcards": -0.03
    }
   },
   {
@@ -354,16 +354,16 @@
    "shots": 4,
    "pim": 2,
    "toi": 21.2,
-   "ixg": 0.52,
+   "ixg": 0.57,
    "xgf": 0.33,
    "xga": 0.56,
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": -0.06,
+   "gameScore": -0.05,
    "gameScoreParts": {
     "moneypuck": -0.3,
-    "hockeystatcards": 0.18
+    "hockeystatcards": 0.2
    }
   },
   {
@@ -384,10 +384,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": 0.27,
+   "gameScore": 0.25,
    "gameScoreParts": {
     "moneypuck": -0.175,
-    "hockeystatcards": 0.71
+    "hockeystatcards": 0.68
    }
   },
   {
@@ -403,22 +403,46 @@
    "pim": 0,
    "toi": 21.8,
    "ixg": 0.28,
-   "xgf": 1.05,
+   "xgf": 0.79,
    "xga": 0.08,
    "gf": 1.0,
    "ga": 0.0,
    "blocks": 2.0,
-   "gameScore": 1.83,
+   "gameScore": 1.75,
    "gameScoreParts": {
     "moneypuck": 1.55,
-    "hockeystatcards": 2.1
+    "hockeystatcards": 1.96
+   }
+  },
+  {
+   "gameId": 2026020127,
+   "date": "2026-10-17",
+   "opponent": "SJS",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 1,
+   "shots": 2,
+   "pim": 0,
+   "toi": 20.0,
+   "ixg": 0.34,
+   "xgf": 0.37,
+   "xga": 0.42,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 0.15,
+   "gameScoreParts": {
+    "moneypuck": 0.0,
+    "hockeystatcards": 0.3
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.61,
-  "games": 7,
+  "average": 0.54,
+  "games": 8,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
@@ -432,7 +456,7 @@
   "above2": 1,
   "below0": 3
  },
- "detGames": 7,
+ "detGames": 8,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {

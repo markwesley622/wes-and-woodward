@@ -82,16 +82,16 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.02,
-   "percentile": 28
+   "value": -0.01,
+   "percentile": 29
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 37
+   "percentile": 38
   },
   "Defense": {
    "value": -0.0,
-   "percentile": 47
+   "percentile": 48
   },
   "Net": {
    "value": -0.4,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 34.3,
-  "gs": 0.29,
-  "gs60": 0.88,
-  "gameScore": 0.29,
+  "value": 34.1,
+  "gs": 0.3,
+  "gs60": 0.91,
+  "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 489,
-  "pool": 684,
+  "rank": 494,
+  "pool": 691,
   "percentile": 28.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 487,
-    "name": "Maxim Tsyplakov",
-    "team": "CGY",
-    "pos": "R",
-    "gp": 6,
-    "value": 34.3,
-    "gs60": 0.3,
-    "isMe": false
-   },
-   {
-    "rank": 488,
-    "name": "Nikita Klepov",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 2,
-    "value": 34.3,
-    "gs60": 0.29,
-    "isMe": false
-   },
-   {
-    "rank": 489,
-    "name": "Mason Appleton",
-    "team": "DET",
-    "pos": "C",
-    "gp": 2,
-    "value": 34.3,
-    "gs60": 0.29,
-    "isMe": true
-   },
-   {
-    "rank": 490,
+    "rank": 492,
     "name": "Yakov Trenin",
     "team": "MIN",
     "pos": "C",
     "gp": 8,
-    "value": 34.3,
+    "value": 34.1,
+    "gs60": 0.31,
+    "isMe": false
+   },
+   {
+    "rank": 493,
+    "name": "Connor Clifton",
+    "team": "BOS",
+    "pos": "D",
+    "gp": 6,
+    "value": 34.1,
+    "gs60": 0.3,
+    "isMe": false
+   },
+   {
+    "rank": 494,
+    "name": "Mason Appleton",
+    "team": "DET",
+    "pos": "C",
+    "gp": 2,
+    "value": 34.1,
+    "gs60": 0.3,
+    "isMe": true
+   },
+   {
+    "rank": 495,
+    "name": "Nikita Klepov",
+    "team": "ANA",
+    "pos": "R",
+    "gp": 2,
+    "value": 34.0,
     "gs60": 0.29,
     "isMe": false
    },
    {
-    "rank": 491,
-    "name": "Justin Sourdif",
-    "team": "WSH",
+    "rank": 496,
+    "name": "Samuel Helenius",
+    "team": "LAK",
     "pos": "C",
-    "gp": 7,
-    "value": 34.2,
-    "gs60": 0.27,
+    "gp": 4,
+    "value": 33.9,
+    "gs60": 0.28,
     "isMe": false
    }
   ],
@@ -309,10 +309,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": 0.53,
+   "gameScore": 0.54,
    "gameScoreParts": {
     "moneypuck": 0.525,
-    "hockeystatcards": 0.54
+    "hockeystatcards": 0.55
    }
   },
   {
@@ -347,7 +347,7 @@
   "best": {
    "date": "2026-10-02",
    "opponent": "NYR",
-   "value": 0.53
+   "value": 0.54
   },
   "worst": {
    "date": "2026-10-04",

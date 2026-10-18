@@ -26,7 +26,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 7,
+  "gp": 8,
   "goals": 0,
   "assists": 0,
   "points": 0,
@@ -34,7 +34,7 @@
   "pim": 2,
   "shots": 12,
   "shootingPct": 0.0,
-  "toiPerGame": "16:07",
+  "toiPerGame": "15:53",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 7,
+   "gp": 8,
    "goals": 0,
    "assists": 0,
    "points": 0,
@@ -60,21 +60,21 @@
   "name": "Albert Johansson",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481607.png",
-  "gamesPlayed": 7,
+  "gamesPlayed": 8,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 12,
   "shootingPct": 0.0,
-  "toiPerGame": 967.4,
+  "toiPerGame": 952.8,
   "ixG": 0.42,
   "goalsAboveExpected": -0.42,
   "gameScore": 2.05,
   "fiveOnFive": {
-   "icetimeMinutes": 96.3,
-   "onIceXgPct": 0.54,
-   "onIceCorsiPct": 0.54,
-   "ixgPer60": 0.255,
+   "icetimeMinutes": 107.9,
+   "onIceXgPct": 0.55,
+   "onIceCorsiPct": 0.53,
+   "ixgPer60": 0.228,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.11,
-   "percentile": 36
+   "value": 0.14,
+   "percentile": 38
   },
   "Offense": {
    "value": -0.6,
-   "percentile": 27
+   "percentile": 25
   },
   "Defense": {
-   "value": 0.1,
-   "percentile": 55
+   "value": 0.2,
+   "percentile": 64
   },
   "Net": {
-   "value": -0.5,
-   "percentile": 35
+   "value": -0.4,
+   "percentile": 41
   }
  },
  "score": null,
  "standIn": {
-  "value": 40.7,
-  "gs": 1.4,
-  "gs60": 0.74,
-  "gameScore": 1.4,
-  "minutes": 113,
-  "gp": 7,
-  "rank": 401,
-  "pool": 684,
-  "percentile": 41.4,
+  "value": 41.0,
+  "gs": 1.61,
+  "gs60": 0.76,
+  "gameScore": 1.61,
+  "minutes": 127,
+  "gp": 8,
+  "rank": 394,
+  "pool": 691,
+  "percentile": 43.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 399,
-    "name": "Josh Norris",
-    "team": "BUF",
-    "pos": "C",
-    "gp": 8,
-    "value": 40.8,
-    "gs60": 1.42,
+    "rank": 392,
+    "name": "Aydar Suniev",
+    "team": "CGY",
+    "pos": "L",
+    "gp": 4,
+    "value": 41.2,
+    "gs60": 1.65,
     "isMe": false
    },
    {
-    "rank": 400,
-    "name": "Gabriel Vilardi",
-    "team": "WPG",
-    "pos": "C",
-    "gp": 7,
-    "value": 40.7,
-    "gs60": 1.4,
+    "rank": 393,
+    "name": "Dmitry Kulikov",
+    "team": "FLA",
+    "pos": "D",
+    "gp": 9,
+    "value": 41.2,
+    "gs60": 1.65,
     "isMe": false
    },
    {
-    "rank": 401,
+    "rank": 394,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
-    "gp": 7,
-    "value": 40.7,
-    "gs60": 1.4,
+    "gp": 8,
+    "value": 41.0,
+    "gs60": 1.61,
     "isMe": true
    },
    {
-    "rank": 402,
-    "name": "Marcus Foligno",
-    "team": "MIN",
-    "pos": "L",
-    "gp": 4,
-    "value": 40.6,
-    "gs60": 1.39,
+    "rank": 395,
+    "name": "Matthew Wood",
+    "team": "NSH",
+    "pos": "R",
+    "gp": 8,
+    "value": 40.8,
+    "gs60": 1.58,
     "isMe": false
    },
    {
-    "rank": 403,
-    "name": "Ryan Lomberg",
-    "team": "CBJ",
-    "pos": "L",
-    "gp": 5,
-    "value": 40.6,
-    "gs60": 1.38,
+    "rank": 396,
+    "name": "Calum Ritchie",
+    "team": "NYI",
+    "pos": "C",
+    "gp": 8,
+    "value": 40.8,
+    "gs60": 1.57,
     "isMe": false
    }
   ],
@@ -219,10 +219,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": 0.39,
+   "gameScore": 0.4,
    "gameScoreParts": {
     "moneypuck": 0.15,
-    "hockeystatcards": 0.62
+    "hockeystatcards": 0.64
    }
   },
   {
@@ -243,10 +243,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": -0.04,
+   "gameScore": -0.03,
    "gameScoreParts": {
     "moneypuck": 0.075,
-    "hockeystatcards": -0.15
+    "hockeystatcards": -0.14
    }
   },
   {
@@ -267,10 +267,10 @@
    "gf": 0.0,
    "ga": 1.0,
    "blocks": 2.0,
-   "gameScore": -0.27,
+   "gameScore": -0.26,
    "gameScoreParts": {
     "moneypuck": 0.575,
-    "hockeystatcards": -1.11
+    "hockeystatcards": -1.1
    }
   },
   {
@@ -286,15 +286,15 @@
    "pim": 0,
    "toi": 21.3,
    "ixg": 0.08,
-   "xgf": 1.09,
+   "xgf": 1.33,
    "xga": 0.43,
    "gf": 1.0,
    "ga": 1.0,
    "blocks": 1.0,
-   "gameScore": 1.21,
+   "gameScore": 1.41,
    "gameScoreParts": {
     "moneypuck": 1.025,
-    "hockeystatcards": 1.4
+    "hockeystatcards": 1.8
    }
   },
   {
@@ -318,7 +318,7 @@
    "gameScore": 0.93,
    "gameScoreParts": {
     "moneypuck": 0.3,
-    "hockeystatcards": 1.55
+    "hockeystatcards": 1.56
    }
   },
   {
@@ -335,14 +335,14 @@
    "toi": 13.5,
    "ixg": 0.1,
    "xgf": 0.57,
-   "xga": 1.36,
+   "xga": 1.28,
    "gf": 1.0,
    "ga": 1.0,
    "blocks": 1.0,
-   "gameScore": -0.54,
+   "gameScore": -0.46,
    "gameScoreParts": {
     "moneypuck": 0.2,
-    "hockeystatcards": -1.28
+    "hockeystatcards": -1.13
    }
   },
   {
@@ -358,36 +358,60 @@
    "pim": 2,
    "toi": 15.1,
    "ixg": 0.05,
-   "xgf": 1.03,
+   "xgf": 0.78,
    "xga": 0.69,
    "gf": 1.0,
    "ga": 1.0,
    "blocks": 1.0,
-   "gameScore": -0.28,
+   "gameScore": -0.46,
    "gameScoreParts": {
     "moneypuck": -0.275,
-    "hockeystatcards": -0.28
+    "hockeystatcards": -0.64
+   }
+  },
+  {
+   "gameId": 2026020127,
+   "date": "2026-10-17",
+   "opponent": "SJS",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 14.2,
+   "ixg": 0.0,
+   "xgf": 0.45,
+   "xga": 0.37,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 0.08,
+   "gameScoreParts": {
+    "moneypuck": 0.0,
+    "hockeystatcards": 0.16
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
   "average": 0.2,
-  "games": 7,
+  "games": 8,
   "best": {
    "date": "2026-10-09",
    "opponent": "SEA",
-   "value": 1.21
+   "value": 1.41
   },
   "worst": {
    "date": "2026-10-13",
    "opponent": "NJD",
-   "value": -0.54
+   "value": -0.46
   },
   "above2": 0,
   "below0": 4
  },
- "detGames": 7,
+ "detGames": 8,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {

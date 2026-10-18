@@ -490,10 +490,10 @@
   "sinceDraft": 3,
   "pedigreeExpected": 12.3,
   "cohortExpected": 25.4,
-  "expected": 26.1,
-  "tier": "replacement level",
-  "nhlW": 0.26,
-  "nhlExpected": 28.1,
+  "expected": 27.1,
+  "tier": "below average",
+  "nhlW": 0.29,
+  "nhlExpected": 31.1,
   "beforeNhl": 25.4
  },
  "trajectory": {
@@ -512,51 +512,40 @@
   "delta": 0.106
  },
  "nhlSample": {
-  "gp": 7,
+  "gp": 8,
   "pts": 2,
   "seasons": [
    20262027
   ],
   "thisSeason": {
-   "gp": 7,
+   "gp": 8,
    "pts": 2,
-   "toi": "15:00",
+   "toi": "14:36",
    "savePct": null
   }
  },
  "nhlUsage": {
   "n": 50,
-  "expected": 28.1,
-  "median": 28.2,
-  "p75": 52.6,
-  "p90": 63.6,
-  "pRegular": 0.58,
-  "pTopLine": 0.04,
-  "pAboveAvg": 0.28,
-  "pElite": 0.0,
+  "expected": 31.1,
+  "median": 28.4,
+  "p75": 53.6,
+  "p90": 72.9,
+  "pRegular": 0.64,
+  "pTopLine": 0.08,
+  "pAboveAvg": 0.3,
+  "pElite": 0.02,
   "poolN": 258,
   "group": "D",
   "age": 22,
-  "gp": 7,
-  "toi": 900,
-  "ppg": 0.286,
-  "ppgShrunk": 0.217,
+  "gp": 8,
+  "toi": 876,
+  "ppg": 0.25,
+  "ppgShrunk": 0.209,
   "toiBand": [
-   823,
-   1020
+   766,
+   1001
   ],
   "examples": [
-   {
-    "name": "Adam Clendening",
-    "season": "2015-2016",
-    "age": 22,
-    "gp": 29,
-    "toi": 888,
-    "ppg": 0.24,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 90
-   },
    {
     "name": "Jordan Schmaltz",
     "season": "2016-2017",
@@ -567,17 +556,6 @@
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 42
-   },
-   {
-    "name": "Joel Edmundson",
-    "season": "2015-2016",
-    "age": 22,
-    "gp": 67,
-    "toi": 896,
-    "ppg": 0.13,
-    "peak": 49.2,
-    "tier": "below average",
-    "nhlGp": 687
    },
    {
     "name": "Caleb Jones",
@@ -591,15 +569,15 @@
     "nhlGp": 255
    },
    {
-    "name": "Joe Morrow",
+    "name": "Adam Clendening",
     "season": "2015-2016",
     "age": 22,
-    "gp": 33,
-    "toi": 954,
-    "ppg": 0.21,
+    "gp": 29,
+    "toi": 888,
+    "ppg": 0.24,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 162
+    "nhlGp": 90
    },
    {
     "name": "Tyler Tucker",
@@ -613,15 +591,15 @@
     "nhlGp": 159
    },
    {
-    "name": "Brandon Gormley",
-    "season": "2014-2015",
+    "name": "Christian Jaros",
+    "season": "2018-2019",
     "age": 22,
-    "gp": 27,
-    "toi": 919,
-    "ppg": 0.15,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 58
+    "gp": 61,
+    "toi": 862,
+    "ppg": 0.16,
+    "peak": 13.7,
+    "tier": "replacement level",
+    "nhlGp": 94
    },
    {
     "name": "Jake Bean",
@@ -633,18 +611,40 @@
     "peak": 61.5,
     "tier": "above average",
     "nhlGp": 277
+   },
+   {
+    "name": "Lucas Carlsson",
+    "season": "2019-2020",
+    "age": 22,
+    "gp": 6,
+    "toi": 848,
+    "ppg": 0.17,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 73
+   },
+   {
+    "name": "Christian Wolanin",
+    "season": "2017-2018",
+    "age": 22,
+    "gp": 10,
+    "toi": 879,
+    "ppg": 0.3,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 86
    }
   ],
-  "w": 0.26,
+  "w": 0.29,
   "before": 25.4,
-  "after": 26.1
+  "after": 27.1
  },
  "availability": {
   "gp": 42,
   "season": "2025-2026"
  },
  "rank": 9,
- "score": 26.1,
+ "score": 27.1,
  "rankStart": 10,
  "rankStartDate": "2026-10-06"
 }

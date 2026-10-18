@@ -26,16 +26,16 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 7,
+  "gp": 8,
   "goals": 0,
-  "assists": 1,
-  "points": 1,
+  "assists": 2,
+  "points": 2,
   "plusMinus": -3,
   "pim": 2,
-  "shots": 8,
+  "shots": 9,
   "shootingPct": 0.0,
-  "toiPerGame": "16:50",
-  "ppPoints": 0,
+  "toiPerGame": "17:03",
+  "ppPoints": 1,
   "wins": null,
   "losses": null,
   "otLosses": null,
@@ -47,10 +47,10 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 7,
+   "gp": 8,
    "goals": 0,
-   "assists": 1,
-   "points": 1,
+   "assists": 2,
+   "points": 2,
    "plusMinus": -3,
    "pim": 2
   }
@@ -60,21 +60,21 @@
   "name": "Michael Rasmussen",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479992.png",
-  "gamesPlayed": 7,
+  "gamesPlayed": 8,
   "goals": 0,
-  "assists": 1,
-  "points": 1,
-  "shots": 8,
+  "assists": 2,
+  "points": 2,
+  "shots": 9,
   "shootingPct": 0.0,
-  "toiPerGame": 1009.7,
-  "ixG": 0.64,
-  "goalsAboveExpected": -0.64,
-  "gameScore": 1.65,
+  "toiPerGame": 1022.8,
+  "ixG": 0.69,
+  "goalsAboveExpected": -0.69,
+  "gameScore": 1.77,
   "fiveOnFive": {
-   "icetimeMinutes": 87.5,
-   "onIceXgPct": 0.51,
-   "onIceCorsiPct": 0.52,
-   "ixgPer60": 0.288,
+   "icetimeMinutes": 100.1,
+   "onIceXgPct": 0.48,
+   "onIceCorsiPct": 0.48,
+   "ixgPer60": 0.276,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.02,
-   "percentile": 29
+   "value": -0.03,
+   "percentile": 28
   },
   "Offense": {
-   "value": -1.1,
+   "value": -1.2,
    "percentile": 6
   },
   "Defense": {
-   "value": 0.3,
-   "percentile": 65
+   "value": 0.2,
+   "percentile": 64
   },
   "Net": {
-   "value": -0.9,
-   "percentile": 22
+   "value": -1.0,
+   "percentile": 21
   }
  },
  "score": null,
  "standIn": {
-  "value": 36.8,
+  "value": 36.3,
   "gs": 0.74,
-  "gs60": 0.38,
+  "gs60": 0.33,
   "gameScore": 0.74,
-  "minutes": 118,
-  "gp": 7,
-  "rank": 449,
-  "pool": 684,
-  "percentile": 34.4,
+  "minutes": 136,
+  "gp": 8,
+  "rank": 457,
+  "pool": 691,
+  "percentile": 33.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 447,
-    "name": "Charle-Edouard D'Astous",
-    "team": "TBL",
+    "rank": 455,
+    "name": "Jacob Trouba",
+    "team": "SJS",
     "pos": "D",
-    "gp": 6,
-    "value": 37.0,
-    "gs60": 0.77,
+    "gp": 8,
+    "value": 36.4,
+    "gs60": 0.74,
     "isMe": false
    },
    {
-    "rank": 448,
-    "name": "Andre Lee",
-    "team": "LAK",
-    "pos": "L",
-    "gp": 3,
-    "value": 36.9,
-    "gs60": 0.75,
+    "rank": 456,
+    "name": "Christian Dvorak",
+    "team": "PHI",
+    "pos": "C",
+    "gp": 10,
+    "value": 36.3,
+    "gs60": 0.74,
     "isMe": false
    },
    {
-    "rank": 449,
+    "rank": 457,
     "name": "Michael Rasmussen",
     "team": "DET",
     "pos": "C",
-    "gp": 7,
-    "value": 36.8,
+    "gp": 8,
+    "value": 36.3,
     "gs60": 0.74,
     "isMe": true
    },
    {
-    "rank": 450,
+    "rank": 458,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
     "gp": 1,
-    "value": 36.8,
+    "value": 36.3,
     "gs60": 0.73,
     "isMe": false
    },
    {
-    "rank": 451,
-    "name": "Sean Monahan",
-    "team": "CBJ",
-    "pos": "C",
-    "gp": 5,
-    "value": 36.7,
-    "gs60": 0.72,
+    "rank": 459,
+    "name": "Dylan Coghlan",
+    "team": "VGK",
+    "pos": "D",
+    "gp": 4,
+    "value": 36.2,
+    "gs60": 0.71,
     "isMe": false
    }
   ],
@@ -318,10 +318,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": 0.62,
+   "gameScore": 0.63,
    "gameScoreParts": {
     "moneypuck": 0.8,
-    "hockeystatcards": 0.45
+    "hockeystatcards": 0.46
    }
   },
   {
@@ -342,10 +342,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": 0.47,
+   "gameScore": 0.48,
    "gameScoreParts": {
     "moneypuck": 0.09,
-    "hockeystatcards": 0.86
+    "hockeystatcards": 0.87
    }
   },
   {
@@ -369,7 +369,7 @@
    "gameScore": -0.45,
    "gameScoreParts": {
     "moneypuck": 0.21,
-    "hockeystatcards": -1.1
+    "hockeystatcards": -1.11
    }
   },
   {
@@ -390,10 +390,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 3.0,
-   "gameScore": 0.3,
+   "gameScore": 0.29,
    "gameScoreParts": {
     "moneypuck": 0.16,
-    "hockeystatcards": 0.44
+    "hockeystatcards": 0.43
    }
   },
   {
@@ -410,14 +410,14 @@
    "toi": 17.6,
    "ixg": 0.0,
    "xgf": 0.11,
-   "xga": 1.37,
+   "xga": 1.31,
    "gf": 0.0,
    "ga": 2.0,
    "blocks": 0.0,
-   "gameScore": -1.76,
+   "gameScore": -1.72,
    "gameScoreParts": {
     "moneypuck": -1.025,
-    "hockeystatcards": -2.49
+    "hockeystatcards": -2.41
    }
   },
   {
@@ -433,36 +433,60 @@
    "pim": 0,
    "toi": 15.7,
    "ixg": 0.11,
-   "xgf": 0.92,
+   "xgf": 0.67,
    "xga": 0.22,
    "gf": 1.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": 1.24,
+   "gameScore": 1.17,
    "gameScoreParts": {
     "moneypuck": 1.065,
-    "hockeystatcards": 1.41
+    "hockeystatcards": 1.28
+   }
+  },
+  {
+   "gameId": 2026020127,
+   "date": "2026-10-17",
+   "opponent": "SJS",
+   "home": true,
+   "goals": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 0,
+   "toi": 18.6,
+   "ixg": 0.04,
+   "xgf": 0.42,
+   "xga": 0.71,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 3.0,
+   "gameScore": 0.02,
+   "gameScoreParts": {
+    "moneypuck": 0.125,
+    "hockeystatcards": -0.09
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.11,
-  "games": 7,
+  "average": 0.09,
+  "games": 8,
   "best": {
    "date": "2026-10-15",
    "opponent": "PHI",
-   "value": 1.24
+   "value": 1.17
   },
   "worst": {
    "date": "2026-10-13",
    "opponent": "NJD",
-   "value": -1.76
+   "value": -1.72
   },
   "above2": 0,
   "below0": 2
  },
- "detGames": 7,
+ "detGames": 8,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
