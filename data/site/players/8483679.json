@@ -83,11 +83,11 @@
  "hsc": {
   "Game score": {
    "value": -0.63,
-   "percentile": 9
+   "percentile": 8
   },
   "Offense": {
    "value": -0.5,
-   "percentile": 28
+   "percentile": 29
   },
   "Defense": {
    "value": -1.4,
@@ -100,7 +100,7 @@
  },
  "score": null,
  "standIn": {
-  "value": 23.1,
+  "value": 23.2,
   "gs": -2.1,
   "gs60": -1.08,
   "gameScore": -2.1,
@@ -114,12 +114,12 @@
   "neighbours": [
    {
     "rank": 650,
-    "name": "Nick Cousins",
-    "team": "OTT",
-    "pos": "C",
-    "gp": 9,
-    "value": 23.5,
-    "gs60": -2.0,
+    "name": "Erik Gudbranson",
+    "team": "CBJ",
+    "pos": "D",
+    "gp": 7,
+    "value": 23.3,
+    "gs60": -2.07,
     "isMe": false
    },
    {
@@ -128,7 +128,7 @@
     "team": "VGK",
     "pos": "C",
     "gp": 10,
-    "value": 23.1,
+    "value": 23.2,
     "gs60": -2.09,
     "isMe": false
    },
@@ -138,28 +138,28 @@
     "team": "DET",
     "pos": "D",
     "gp": 8,
-    "value": 23.1,
+    "value": 23.2,
     "gs60": -2.1,
     "isMe": true
    },
    {
     "rank": 653,
+    "name": "Yan Kuznetsov",
+    "team": "CGY",
+    "pos": "D",
+    "gp": 7,
+    "value": 23.1,
+    "gs60": -2.12,
+    "isMe": false
+   },
+   {
+    "rank": 654,
     "name": "Jaroslav Chmelar",
     "team": "NYR",
     "pos": "R",
     "gp": 7,
     "value": 22.9,
     "gs60": -2.16,
-    "isMe": false
-   },
-   {
-    "rank": 654,
-    "name": "Drew O'Connor",
-    "team": "VAN",
-    "pos": "L",
-    "gp": 10,
-    "value": 22.7,
-    "gs60": -2.2,
     "isMe": false
    }
   ],

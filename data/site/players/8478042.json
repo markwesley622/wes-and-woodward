@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.1,
-   "percentile": 57
+   "percentile": 56
   },
   "Defense": {
    "value": -0.3,
@@ -95,70 +95,70 @@
   },
   "Net": {
    "value": -0.4,
-   "percentile": 42
+   "percentile": 43
   }
  },
  "score": null,
  "standIn": {
-  "value": 52.0,
+  "value": 51.8,
   "gs": 3.58,
   "gs60": 1.4,
   "gameScore": 3.58,
   "minutes": 153,
   "gp": 8,
-  "rank": 281,
+  "rank": 283,
   "pool": 691,
-  "percentile": 59.3,
+  "percentile": 59.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 279,
+    "rank": 281,
     "name": "Justin Faulk",
     "team": "DET",
     "pos": "D",
     "gp": 8,
-    "value": 52.1,
+    "value": 51.9,
     "gs60": 3.59,
     "isMe": false
    },
    {
-    "rank": 280,
+    "rank": 282,
     "name": "Ryker Evans",
     "team": "SEA",
     "pos": "D",
     "gp": 9,
-    "value": 52.0,
-    "gs60": 3.58,
-    "isMe": false
-   },
-   {
-    "rank": 281,
-    "name": "Viktor Arvidsson",
-    "team": "DET",
-    "pos": "L",
-    "gp": 8,
-    "value": 52.0,
-    "gs60": 3.58,
-    "isMe": true
-   },
-   {
-    "rank": 282,
-    "name": "Anton Frondell",
-    "team": "CHI",
-    "pos": "C",
-    "gp": 9,
-    "value": 52.0,
+    "value": 51.8,
     "gs60": 3.58,
     "isMe": false
    },
    {
     "rank": 283,
+    "name": "Viktor Arvidsson",
+    "team": "DET",
+    "pos": "L",
+    "gp": 8,
+    "value": 51.8,
+    "gs60": 3.58,
+    "isMe": true
+   },
+   {
+    "rank": 284,
+    "name": "Anton Frondell",
+    "team": "CHI",
+    "pos": "C",
+    "gp": 9,
+    "value": 51.8,
+    "gs60": 3.58,
+    "isMe": false
+   },
+   {
+    "rank": 285,
     "name": "Michael Carcone",
     "team": "UTA",
     "pos": "L",
     "gp": 5,
-    "value": 52.0,
+    "value": 51.8,
     "gs60": 3.57,
     "isMe": false
    }
