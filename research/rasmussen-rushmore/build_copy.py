@@ -61,7 +61,7 @@ def find(s):  # index of the paragraph AFTER which a figure goes
     return hits[0]
 idx.update({
     "fig_fates": find("19 of the 47 streaks are left."),                   # c4: what happened to the other 45
-    "fig_trusted": find("so I gave the faces to the four longest by games."),  # c2: the seven at 13+ a night
+    "fig_trusted": find("merely the fifth-worst team in hockey"),              # c2: the seven at 13+ a night, after the Glendening reveal (Mark 10/19)
     "fig_onice": find("You’re on Mt. Rushmore!"),  # c3: on-ice goals, all 28 (closes his case)
 })
 words = len(re.sub("<[^>]+>", "", re.sub(r"</?(?:p|li|ul|ol|h3)\b[^>]*>", " ", title + " " + " ".join(parts))).split())
