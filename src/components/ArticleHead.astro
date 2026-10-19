@@ -1,0 +1,28 @@
+---
+// The headline block every article page opens with: the kicker, the title and the article's line-art thumbnail beside
+// it (Mark, 10/19): the thumbnail sits inside the prose column, right-aligned on the headline's row, and drops below
+// the headline on narrow screens. The thumbnail loops only while on screen, like the homepage cards.
+import ArticleThumb from './ArticleThumb.astro';
+import { article, dateline } from '../lib/articles.js';
+const { slug, title } = Astro.props;
+const a = article(slug);
+---
+<div class="ahead">
+  <p class="kicker mono">Analysis · By <a href="/about/#author" rel="author">Mark Wesley</a> · {dateline(a)}</p>
+  <div class="row">
+    <h1 class="page-title">{title}</h1>
+    <div class="art"><ArticleThumb kind={a.thumb} id={`head-${slug}`} /></div>
+  </div>
+</div>
+
+<style>
+  .ahead { max-width: 68ch; font-size: 18px; margin-bottom: 30px; }   /* same width as the prose column */
+  .kicker { color: var(--mute); margin: 0 0 18px; }
+  .kicker a { color: inherit; text-decoration-color: var(--red); text-underline-offset: 3px; }
+  .row { display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 28px; align-items: start; }
+  .page-title { font-size: clamp(36px, 5.2vw, 72px); line-height: .94; margin: 0; text-wrap: balance; }
+  .art { width: 100%; min-width: 0; }
+  @media (max-width: 640px) {
+    .row { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  }
+</style>

@@ -74,10 +74,10 @@ const top5 = PR.prospects.slice(0, 5).map((p) => ({ ...p, href: p.nhlId && liveI
     <div class="shell">
       <h2>Analysis</h2>
       <div class="row3">
-        {[['Featured', '2026–2027 Detroit Red Wings predictions', '/analysis/2026-27-predictions/', 'puck'], ['Latest', 'Has Dylan Larkin checked out on the Detroit Red Wings?', '/analysis/dylan-larkin-checked-out/', 'seventyone'], ['Previous', 'What does Marco Kasper need to do this year to get his career back on track?', '/analysis/marco-kasper-year-three/', 'ghost']].map(([kind, title, href, thumb]) => (
+        {[['Featured', '2026–2027 Detroit Red Wings predictions', '/analysis/2026-27-predictions/', 'puck'], ['Latest', 'Michael Rasmussen and the Mt. Rushmore of ineptitude', '/analysis/michael-rasmussen-mt-rushmore/', 'rushmore'], ['Previous', 'Has Dylan Larkin checked out on the Detroit Red Wings?', '/analysis/dylan-larkin-checked-out/', 'seventyone']].map(([kind, title, href, thumb]) => (
           <a class:list={['card', 'article', { pin: kind === 'Featured' }]} href={href}>
             <span class:list={['eb', 'mono', { red: kind === 'Featured' }]}>{kind}</span>
-            <ArticleThumb kind={thumb} id={{ puck: 'thumb-predictions', ghost: 'thumb-kasper', flip: 'thumb-two-way', seventyone: 'thumb-larkin' }[thumb]} />
+            <ArticleThumb kind={thumb} id={{ puck: 'thumb-predictions', ghost: 'thumb-kasper', flip: 'thumb-two-way', seventyone: 'thumb-larkin', rushmore: 'thumb-rasmussen' }[thumb]} />
             <h3>{title}</h3>
             <span class="mono" style="margin-top:auto">Read &rarr;</span>
           </a>

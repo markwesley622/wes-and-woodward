@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import ArticleHead from '../../components/ArticleHead.astro';
 import { article, newsArticle, dateline } from '../../lib/articles.js';
 import C from '../../../data/site/articles/two-way-forwards-copy.json';
 import c1 from '../../../data/site/articles/two-way-forwards/c1-goals-vs-expected.svg?raw';
@@ -35,8 +36,7 @@ const DESC = article('two-way-forwards').description;
   title={`${C.title} — Wes & Woodward`} description={DESC}>
   <section class="sec">
     <div class="shell">
-      <p class="kicker mono">Analysis · By <a href="/about/#author" rel="author">Mark Wesley</a> · {dateline(article('two-way-forwards'))}</p>
-      <h1 class="page-title">{C.title}</h1>
+      <ArticleHead slug={'two-way-forwards'} title={C.title} />
       {blocks.map((b) => b.html !== undefined
         ? <div class="prose" set:html={b.html} />
         : <figure class="fig" set:html={b.svg} />)}
@@ -46,9 +46,6 @@ const DESC = article('two-way-forwards').description;
 </Base>
 
 <style>
-  .kicker { color: var(--mute); margin: 0 0 18px; }
-  .kicker a { color: inherit; text-decoration-color: var(--red); text-underline-offset: 3px; }
-  .page-title { font-size: clamp(36px, 5.2vw, 72px); line-height: .94; margin-bottom: 30px; max-width: 18ch; text-wrap: balance; }
   .prose { max-width: 68ch; font-size: 18px; line-height: 1.65; }
   .prose :global(p) { margin: 0 0 18px; }
   .prose :global(h3.art) { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.1; letter-spacing: -.02em; text-transform: none; margin: 40px 0 16px; }

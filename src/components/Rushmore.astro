@@ -1,0 +1,68 @@
+---
+// Mt. Rushmore in line art, for the Rasmussen "Mt. Rushmore of ineptitude" column: four heads carved into a dome of
+// rock, extruded by stacking SVG layers down the Z axis the way GhostTurn builds its slab. The mountain sits on the
+// back layers only, so the heads stand proud of it, and the front layer's faces are filled with the ground color so
+// the rock behind them is hidden (relief, not wire). While the thumbnail is on screen the camera pans slowly back and
+// forth across the presidents (a slide plus a small turn, so the layers slip against each other). Same rules as the
+// other thumbnails: a CSS animation on an element transform, never an SVG attribute, paused off screen; at rest
+// (reduced motion, link-preview images, data-still / data-seq) it holds a slight three-quarter angle so the depth
+// still reads. Original drawing (10/19) from the monument's proportions: Washington, Jefferson, Roosevelt, Lincoln.
+const { id = 'rushmore' } = Astro.props;
+const N = 14, STEP = 3, ROCK_FROM = 6, depth = (N - 1) * STEP;
+// scene coordinates in a 400x225 frame; the rock runs past both edges so the camera can pan
+const HEADS = [
+  { outline: ["M 82 42 C 84 22 98 10 112 11 C 126 12 136 24 136 42 C 138 60 136 78 128 90 C 122 98 110 100 102 96 C 90 90 84 70 82 42 Z", "M 86 44 C 94 36 110 32 128 38", "M 128 38 C 134 44 136 52 136 60", "M 82 60 C 76 64 74 74 78 84", "M 83 60 C 77 60 76 76 82 80", "M 102 96 C 100 106 98 116 97 124", "M 124 94 C 126 104 128 112 129 120", "M 88 130 C 100 125 124 124 140 128"],
+    detail: ["M 92 47 C 98 42 106 42 111 46", "M 118 46 C 123 42 130 43 134 48", "M 94 53 C 99 50 104 50 108 53", "M 95 55 C 99 57 104 57 108 53", "M 120 53 C 124 50 129 51 132 54", "M 121 55 C 125 57 129 57 132 54", "M 112 48 C 112 58 111 66 108 72 C 112 76 120 75 121 70", "M 100 83 C 106 84 114 84 120 82", "M 132 70 C 130 80 126 88 120 94"] },
+  { outline: ["M 152 76 C 150 58 160 44 176 44 C 190 44 199 54 199 66 C 196 72 198 78 203 84 C 200 90 194 92 194 93 C 198 96 197 100 193 104 C 194 110 190 114 184 116 C 176 120 164 116 158 106 C 153 98 151 86 152 76 Z", "M 152 76 C 144 66 146 48 158 44 C 164 40 172 40 176 44", "M 160 52 C 170 46 184 46 194 54", "M 150 80 C 146 88 148 96 152 102", "M 158 72 C 152 70 150 82 156 86"],
+    detail: ["M 176 64 C 182 60 190 60 195 64", "M 179 71 C 183 68 189 69 193 72", "M 180 73 C 184 75 189 75 193 72", "M 192 88 C 196 90 199 88 200 86", "M 182 100 C 188 101 192 100 195 99", "M 166 92 C 168 100 172 106 178 110"] },
+  { outline: ["M 206 112 C 206 96 214 86 226 86 C 238 86 246 96 246 110 C 247 122 244 134 238 142 C 232 148 220 148 214 142 C 208 134 206 124 206 112 Z", "M 208 104 C 214 92 226 88 242 96"],
+    detail: ["M 212 103 C 217 100 222 100 225 103", "M 229 102 C 234 99 239 100 242 103", "M 211.5 111 a 6.5 6.5 0 1 0 13 0 a 6.5 6.5 0 1 0 -13 0", "M 227.5 110 a 6.5 6.5 0 1 0 13 0 a 6.5 6.5 0 1 0 -13 0", "M 224.5 111 L 227.5 110", "M 211.5 111 L 206 110", "M 227 108 C 227 116 226 122 224 126 C 227 128 232 128 234 125", "M 216 132 C 221 126 226 127 228 130 C 230 127 236 126 241 131", "M 218 134 C 224 136 232 136 240 133", "M 224 139 C 228 140 233 140 236 138"] },
+  { outline: ["M 272 112 C 272 92 282 80 296 80 C 310 80 320 90 320 108 C 322 124 318 140 314 152 C 314 170 306 178 296 176 C 288 174 282 166 280 158 C 274 144 272 128 272 112 Z", "M 274 104 C 280 88 292 82 306 84 C 312 86 318 92 320 100", "M 284 86 C 290 80 300 80 306 84", "M 276 96 C 282 92 284 88 288 86", "M 273 118 C 267 116 266 132 272 136", "M 314 152 C 318 150 320 150 322 146", "M 270 186 C 282 180 296 178 312 180 C 320 182 326 186 332 192"],
+    detail: ["M 280 112 C 286 108 292 108 297 112", "M 302 111 C 307 107 313 108 318 112", "M 283 120 C 287 117 292 117 296 120", "M 284 122 C 288 124 292 124 296 120", "M 304 119 C 308 116 313 117 317 120", "M 305 121 C 309 123 313 123 317 120", "M 298 114 C 298 124 297 132 295 138 C 298 141 305 141 307 137", "M 284 128 C 281 136 282 144 286 150", "M 314 126 C 317 134 317 142 313 148", "M 290 149 C 296 151 303 151 309 149", "M 284 156 L 287 163", "M 290 164 L 292 171", "M 298 168 L 299 175", "M 306 162 L 308 169", "M 311 156 L 314 160"] },
+];
+const ROCK = ["M -90 160 C -60 130 -20 112 20 100 C 50 90 70 60 90 30 C 100 16 120 8 140 20 C 160 30 170 40 180 42 C 200 44 206 70 220 78 C 232 84 246 86 258 88 C 272 90 280 80 292 78 C 310 76 324 72 340 66 C 356 60 370 66 390 80 C 420 100 450 110 490 126", "M 20 110 L 36 150 L 28 172", "M 354 70 C 358 96 352 120 346 158", "M 398 92 C 412 110 416 130 410 160", "M 150 120 L 160 140 L 156 160", "M 200 150 L 214 158 L 240 156", "M 252 128 L 262 150", "M -90 178 L -20 182 L 40 172 L 70 170", "M 152 168 L 200 172 L 240 168 L 270 178 L 334 184 L 360 192 L 400 188 L 440 198 L 490 192", "M -90 206 L -30 204 L 40 212 L 120 206 L 200 216 L 300 210 L 380 220 L 490 214"];
+const layers = Array.from({ length: N }, (_, i) => ({ z: -i * STEP + depth / 2, edge: i === 0 || i === N - 1, rock: i >= ROCK_FROM, rockface: i === ROCK_FROM, front: i === 0 }));
+---
+<div class="rm" id={id} aria-hidden="true">
+  <div class="block">
+    {layers.map((l) => (
+      <svg class:list={['layer', { edge: l.edge, rockface: l.rockface }]} viewBox="0 0 400 225" style={`transform:translateZ(${l.z.toFixed(1)}px)`}>
+        <g transform="translate(200 108) scale(1.12) translate(-200 -112)">
+          {l.rock && <g class="rock">{ROCK.map((d) => <path d={d} />)}</g>}
+          {HEADS.map((h) => (
+            <Fragment>
+              {h.outline.map((d, k) => <path d={d} class:list={{ face: l.front && k === 0 }} />)}
+              {l.front && <g class="detail">{h.detail.map((d) => <path d={d} />)}</g>}
+            </Fragment>
+          ))}
+        </g>
+      </svg>
+    ))}
+  </div>
+</div>
+
+<style>
+  .rm { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--ghost); border-radius: 3px; perspective: 900px; perspective-origin: 50% 45%; }
+  .block { position: absolute; inset: 0; transform-style: preserve-3d; will-change: transform; transform: translateX(0) rotateX(4deg) rotateY(-10deg); }
+  .layer { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .layer path { fill: none; stroke: var(--ink); stroke-width: 1.1; stroke-linecap: round; stroke-linejoin: round; opacity: .42; }
+  .edge path { stroke-width: 2; opacity: 1; }
+  .edge path.face { fill: var(--ghost); }
+  .rockface .rock path { stroke-width: 1.6; opacity: .9; }
+  .detail path { stroke-width: 1.6; }
+  /* the pan: slide across the heads while turning slightly, easing into each end; paused until on screen */
+  .block { animation: rm-pan 11s ease-in-out infinite alternate paused; }
+  .rm[data-live] .block { animation-play-state: running; }
+  .rm[data-still] .block, .rm[data-seq] .block { animation: none; }
+  @keyframes rm-pan {
+    from { transform: translateX(6%) rotateX(4deg) rotateY(-14deg); }
+    to { transform: translateX(-6%) rotateX(4deg) rotateY(14deg); }
+  }
+  @media (prefers-reduced-motion: reduce) { .block { animation: none; } }
+</style>
+
+<script define:vars={{ id }}>
+  // the pan only runs while the thumbnail is on screen
+  const el = document.getElementById(id);
+  if (el) new IntersectionObserver(([e]) => el.toggleAttribute('data-live', e.isIntersecting)).observe(el);
+</script>

@@ -8,6 +8,7 @@ import predictions from '../../data/site/articles/predictions-2026-27-copy.json'
 import twoWay from '../../data/site/articles/two-way-forwards-copy.json';
 import kasper from '../../data/site/articles/marco-kasper-copy.json';
 import larkin from '../../data/site/articles/dylan-larkin-copy.json';
+import rasmussen from '../../data/site/articles/michael-rasmussen-mt-rushmore-copy.json';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -26,6 +27,8 @@ export const ARTICLES = [
     description: 'Marco Kasper’s second season was worse than a sophomore slump. What the comps, the luck and the projections say he needs in year three.' },
   { slug: 'dylan-larkin-checked-out', title: larkin.title, published: '2026-10-17T16:07:03-07:00', modified: '2026-10-17T16:07:03-07:00', thumb: 'seventyone',
     description: 'Dylan Larkin’s first five games since his trade request, measured against every five-game stretch of his career. The giveaways, the takeaways, the shots and what his speed says.' },
+  { slug: 'michael-rasmussen-mt-rushmore', title: rasmussen.title, published: '2026-10-19T14:24:03-07:00', modified: '2026-10-19T14:24:03-07:00', thumb: 'rushmore',
+    description: 'Forty-seven forwards have gone 400 minutes without a point since the NHL started tracking ice time. Four kept a real role the whole way. Michael Rasmussen is one of them, and by goals scored with him on the ice, the worst.' },
 ];
 
 export const article = (slug) => ARTICLES.find((a) => a.slug === slug);
