@@ -1,5 +1,5 @@
 // Every published article in one place: the article pages build their NewsArticle node from here, and
-// /news-sitemap.xml lists the ones published in the last two days (Google News reads nothing older).
+// /news-sitemap.xml lists every one of them, newest first.
 // Times are the real publish / last-content-edit times (the commits that shipped the copy), with their offset.
 // `modified` moves only when the words or the charts change, never for a markup-only commit.
 // `description` is the meta description and the dek on /analysis/; `thumb` picks the line-art thumbnail (ArticleThumb.astro);
