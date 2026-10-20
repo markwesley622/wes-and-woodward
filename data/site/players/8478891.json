@@ -87,10 +87,10 @@
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 39
+   "percentile": 38
   },
   "Defense": {
-   "value": -0.0,
+   "value": -0.1,
    "percentile": 48
   },
   "Net": {
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 34.0,
+  "value": 33.9,
   "gs": 0.3,
   "gs60": 0.91,
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 492,
-  "pool": 691,
-  "percentile": 28.8,
+  "rank": 495,
+  "pool": 698,
+  "percentile": 29.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 490,
-    "name": "Drew Helleson",
-    "team": "ANA",
+    "rank": 493,
+    "name": "Nick DeSimone",
+    "team": "UTA",
     "pos": "D",
-    "gp": 2,
-    "value": 34.1,
+    "gp": 1,
+    "value": 34.0,
     "gs60": 0.32,
     "isMe": false
    },
    {
-    "rank": 491,
+    "rank": 494,
     "name": "Connor Clifton",
     "team": "BOS",
     "pos": "D",
     "gp": 6,
-    "value": 34.0,
+    "value": 33.9,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 492,
+    "rank": 495,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 34.0,
+    "value": 33.9,
     "gs60": 0.3,
     "isMe": true
    },
    {
-    "rank": 493,
-    "name": "Nikita Klepov",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 2,
-    "value": 34.0,
+    "rank": 496,
+    "name": "Oliver Ekman-Larsson",
+    "team": "TOR",
+    "pos": "D",
+    "gp": 10,
+    "value": 33.8,
     "gs60": 0.29,
     "isMe": false
    },
    {
-    "rank": 494,
-    "name": "Samuel Helenius",
-    "team": "LAK",
-    "pos": "C",
-    "gp": 4,
-    "value": 33.9,
+    "rank": 497,
+    "name": "Noah Cates",
+    "team": "PHI",
+    "pos": "L",
+    "gp": 11,
+    "value": 33.8,
     "gs60": 0.28,
     "isMe": false
    }

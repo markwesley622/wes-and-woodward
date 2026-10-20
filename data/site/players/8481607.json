@@ -86,8 +86,8 @@
    "percentile": 38
   },
   "Offense": {
-   "value": -0.6,
-   "percentile": 25
+   "value": -0.7,
+   "percentile": 24
   },
   "Defense": {
    "value": 0.2,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 40.9,
+  "value": 40.6,
   "gs": 1.61,
   "gs60": 0.76,
   "gameScore": 1.61,
   "minutes": 127,
   "gp": 8,
-  "rank": 397,
-  "pool": 691,
-  "percentile": 42.5,
+  "rank": 403,
+  "pool": 698,
+  "percentile": 42.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 395,
+    "rank": 401,
     "name": "Yakov Trenin",
     "team": "MIN",
     "pos": "C",
     "gp": 9,
-    "value": 41.2,
+    "value": 41.0,
     "gs60": 1.68,
     "isMe": false
    },
    {
-    "rank": 396,
+    "rank": 402,
     "name": "Dmitry Kulikov",
     "team": "FLA",
     "pos": "D",
     "gp": 9,
-    "value": 41.1,
+    "value": 40.8,
     "gs60": 1.65,
     "isMe": false
    },
    {
-    "rank": 397,
+    "rank": 403,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 8,
-    "value": 40.9,
+    "value": 40.6,
     "gs60": 1.61,
     "isMe": true
    },
    {
-    "rank": 398,
+    "rank": 404,
+    "name": "A.J. Greer",
+    "team": "ANA",
+    "pos": "L",
+    "gp": 7,
+    "value": 40.5,
+    "gs60": 1.59,
+    "isMe": false
+   },
+   {
+    "rank": 405,
     "name": "Matthew Wood",
     "team": "NSH",
     "pos": "R",
     "gp": 8,
-    "value": 40.7,
+    "value": 40.5,
     "gs60": 1.58,
-    "isMe": false
-   },
-   {
-    "rank": 399,
-    "name": "Calum Ritchie",
-    "team": "NYI",
-    "pos": "C",
-    "gp": 8,
-    "value": 40.7,
-    "gs60": 1.57,
     "isMe": false
    }
   ],

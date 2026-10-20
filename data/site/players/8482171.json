@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.1,
-   "percentile": 24
+   "percentile": 25
   },
   "Offense": {
    "value": 0.2,
@@ -95,70 +95,70 @@
   },
   "Net": {
    "value": -0.4,
-   "percentile": 41
+   "percentile": 42
   }
  },
  "score": null,
  "standIn": {
-  "value": 37.6,
+  "value": 37.4,
   "gs": 0.99,
   "gs60": 1.04,
   "gameScore": 0.99,
   "minutes": 57,
   "gp": 4,
-  "rank": 434,
-  "pool": 691,
-  "percentile": 37.2,
+  "rank": 443,
+  "pool": 698,
+  "percentile": 36.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 432,
+    "rank": 441,
     "name": "Ivan Demidov",
     "team": "MTL",
     "pos": "R",
     "gp": 2,
-    "value": 37.7,
+    "value": 37.5,
     "gs60": 1.0,
     "isMe": false
    },
    {
-    "rank": 433,
+    "rank": 442,
     "name": "Mathieu Olivier",
     "team": "CBJ",
     "pos": "R",
     "gp": 7,
-    "value": 37.7,
+    "value": 37.5,
     "gs60": 1.0,
     "isMe": false
    },
    {
-    "rank": 434,
+    "rank": 443,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 4,
-    "value": 37.6,
+    "value": 37.4,
     "gs60": 0.99,
     "isMe": true
    },
    {
-    "rank": 435,
+    "rank": 444,
     "name": "Mavrik Bourque",
     "team": "NSH",
     "pos": "C",
     "gp": 4,
-    "value": 37.4,
+    "value": 37.2,
     "gs60": 0.97,
     "isMe": false
    },
    {
-    "rank": 436,
+    "rank": 445,
     "name": "Rasmus Andersson",
     "team": "VGK",
     "pos": "D",
     "gp": 10,
-    "value": 37.4,
+    "value": 37.2,
     "gs60": 0.96,
     "isMe": false
    }

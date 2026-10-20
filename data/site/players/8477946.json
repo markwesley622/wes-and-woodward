@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": 0.46,
-   "percentile": 55
+   "percentile": 56
   },
   "Offense": {
    "value": -0.1,
-   "percentile": 56
+   "percentile": 55
   },
   "Defense": {
    "value": 0.0,
-   "percentile": 50
+   "percentile": 51
   },
   "Net": {
    "value": -0.1,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 50.4,
+  "value": 50.1,
   "gs": 3.33,
   "gs60": 1.53,
   "gameScore": 3.33,
   "minutes": 131,
   "gp": 6,
-  "rank": 294,
-  "pool": 691,
-  "percentile": 57.5,
+  "rank": 295,
+  "pool": 698,
+  "percentile": 57.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 292,
+    "rank": 293,
     "name": "Nils Lundkvist",
     "team": "DAL",
     "pos": "D",
     "gp": 8,
-    "value": 50.6,
+    "value": 50.3,
     "gs60": 3.37,
     "isMe": false
    },
    {
-    "rank": 293,
+    "rank": 294,
     "name": "William Eklund",
     "team": "OTT",
     "pos": "L",
     "gp": 4,
-    "value": 50.5,
+    "value": 50.1,
     "gs60": 3.34,
     "isMe": false
    },
    {
-    "rank": 294,
+    "rank": 295,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
     "gp": 6,
-    "value": 50.4,
+    "value": 50.1,
     "gs60": 3.33,
     "isMe": true
    },
    {
-    "rank": 295,
+    "rank": 296,
+    "name": "Eeli Tolvanen",
+    "team": "NYR",
+    "pos": "R",
+    "gp": 11,
+    "value": 49.9,
+    "gs60": 3.31,
+    "isMe": false
+   },
+   {
+    "rank": 297,
     "name": "Esa Lindell",
     "team": "DAL",
     "pos": "D",
     "gp": 8,
-    "value": 50.0,
+    "value": 49.7,
     "gs60": 3.26,
-    "isMe": false
-   },
-   {
-    "rank": 296,
-    "name": "Paul Cotter",
-    "team": "VAN",
-    "pos": "L",
-    "gp": 10,
-    "value": 50.0,
-    "gs60": 3.25,
     "isMe": false
    }
   ],

@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.2,
-   "percentile": 50
+   "percentile": 49
   },
   "Defense": {
    "value": 0.0,
@@ -95,70 +95,70 @@
   },
   "Net": {
    "value": -0.2,
-   "percentile": 50
+   "percentile": 51
   }
  },
  "score": null,
  "standIn": {
-  "value": 36.2,
+  "value": 36.0,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 460,
-  "pool": 691,
-  "percentile": 33.4,
+  "rank": 462,
+  "pool": 698,
+  "percentile": 33.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 458,
-    "name": "Jacob Trouba",
-    "team": "SJS",
-    "pos": "D",
-    "gp": 8,
-    "value": 36.3,
-    "gs60": 0.74,
-    "isMe": false
-   },
-   {
-    "rank": 459,
-    "name": "Christian Dvorak",
-    "team": "PHI",
+    "rank": 460,
+    "name": "Max Sasson",
+    "team": "VAN",
     "pos": "C",
     "gp": 10,
-    "value": 36.3,
-    "gs60": 0.74,
-    "isMe": false
-   },
-   {
-    "rank": 460,
-    "name": "Marco Kasper",
-    "team": "DET",
-    "pos": "C",
-    "gp": 1,
     "value": 36.2,
-    "gs60": 0.73,
-    "isMe": true
+    "gs60": 0.77,
+    "isMe": false
    },
    {
     "rank": 461,
-    "name": "Dylan Coghlan",
-    "team": "VGK",
-    "pos": "D",
-    "gp": 4,
+    "name": "Michael Rasmussen",
+    "team": "DET",
+    "pos": "C",
+    "gp": 8,
     "value": 36.1,
-    "gs60": 0.71,
+    "gs60": 0.75,
     "isMe": false
    },
    {
     "rank": 462,
+    "name": "Marco Kasper",
+    "team": "DET",
+    "pos": "C",
+    "gp": 1,
+    "value": 36.0,
+    "gs60": 0.73,
+    "isMe": true
+   },
+   {
+    "rank": 463,
+    "name": "Dylan Coghlan",
+    "team": "VGK",
+    "pos": "D",
+    "gp": 4,
+    "value": 35.9,
+    "gs60": 0.71,
+    "isMe": false
+   },
+   {
+    "rank": 464,
     "name": "Felix Unger Srum",
     "team": "CAR",
     "pos": "R",
     "gp": 2,
-    "value": 36.1,
+    "value": 35.9,
     "gs60": 0.7,
     "isMe": false
    }

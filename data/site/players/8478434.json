@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.11,
-   "percentile": 24
+   "percentile": 25
   },
   "Offense": {
    "value": -1.6,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": -1.1,
-   "percentile": 18
+   "percentile": 17
   }
  },
  "score": null,
  "standIn": {
-  "value": 28.5,
+  "value": 28.4,
   "gs": -0.86,
   "gs60": -0.59,
   "gameScore": -0.86,
   "minutes": 88,
   "gp": 8,
-  "rank": 594,
-  "pool": 691,
-  "percentile": 14.0,
+  "rank": 601,
+  "pool": 698,
+  "percentile": 13.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 592,
+    "rank": 599,
+    "name": "Emil Lilleberg",
+    "team": "TBL",
+    "pos": "D",
+    "gp": 3,
+    "value": 28.6,
+    "gs60": -0.81,
+    "isMe": false
+   },
+   {
+    "rank": 600,
     "name": "Nikita Zadorov",
     "team": "BOS",
     "pos": "D",
     "gp": 8,
-    "value": 28.6,
+    "value": 28.5,
     "gs60": -0.83,
     "isMe": false
    },
    {
-    "rank": 593,
-    "name": "Barclay Goodrow",
-    "team": "SJS",
-    "pos": "C",
-    "gp": 8,
-    "value": 28.5,
-    "gs60": -0.85,
-    "isMe": false
-   },
-   {
-    "rank": 594,
+    "rank": 601,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
     "gp": 8,
-    "value": 28.5,
+    "value": 28.4,
     "gs60": -0.86,
     "isMe": true
    },
    {
-    "rank": 595,
+    "rank": 602,
+    "name": "Michael Misa",
+    "team": "SJS",
+    "pos": "C",
+    "gp": 9,
+    "value": 28.3,
+    "gs60": -0.87,
+    "isMe": false
+   },
+   {
+    "rank": 603,
     "name": "Mike Matheson",
     "team": "MTL",
     "pos": "D",
     "gp": 5,
-    "value": 28.4,
-    "gs60": -0.88,
-    "isMe": false
-   },
-   {
-    "rank": 596,
-    "name": "Braeden Bowman",
-    "team": "VGK",
-    "pos": "R",
-    "gp": 10,
     "value": 28.3,
-    "gs60": -0.89,
+    "gs60": -0.88,
     "isMe": false
    }
   ],
