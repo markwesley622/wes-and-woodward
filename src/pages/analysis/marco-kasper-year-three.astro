@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ArticleHead from '../../components/ArticleHead.astro';
+import Subscribe from '../../components/Subscribe.astro';
 import { article, newsArticle, dateline } from '../../lib/articles.js';
 import C from '../../../data/site/articles/marco-kasper-copy.json';
 import c1 from '../../../data/site/articles/marco-kasper/c1-trajectories.svg?raw';
@@ -40,6 +41,9 @@ const DESC = article('marco-kasper-year-three').description;
         ? <div class="prose" set:html={b.html} />
         : <figure class="fig" set:html={b.svg} />)}
       <p class="note mono" style="margin-top:28px">Method: points are era-adjusted to 2025-26 scoring and scaled to 82 games unless noted. Comparison pools come from the NHL stats API: the 266 forwards since 1997-98 who were regulars at 20 or younger; the 172 forwards since 1997-98 who were 21 or younger as rookies, scored at a 30-to-55-point pace and played half of year two; and the forwards since 1980-81 who scored at a 28-point pace or better as rookies at 21 or younger, then kept 65% of that rate or less in year two. Projections are quantile regressions (20th, 50th and 80th percentiles) on forwards' first two seasons, with seasons out of the NHL counted as zero; the year-three targets come from a regression on 216 forwards with three straight regular seasons, and median-forward minutes are 15:22 a night. Goals, expected goals and on-ice numbers are MoneyPuck.com's. RAPM and expected goals above replacement are Evolving-Hockey's, with percentiles among forwards who played 41 or more games.</p>
+    </div>
+    <div class="shell">
+      <Subscribe />
     </div>
   </section>
 </Base>

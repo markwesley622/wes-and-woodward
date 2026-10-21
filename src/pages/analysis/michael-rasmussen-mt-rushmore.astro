@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ArticleHead from '../../components/ArticleHead.astro';
+import Subscribe from '../../components/Subscribe.astro';
 import { article, newsArticle } from '../../lib/articles.js';
 import C from '../../../data/site/articles/michael-rasmussen-mt-rushmore-copy.json';
 import c2 from '../../../data/site/articles/michael-rasmussen-mt-rushmore/c2-trusted-group.svg?raw';
@@ -33,6 +34,9 @@ const DESC = article(SLUG).description;
         ? <div class="prose" set:html={b.html} />
         : <figure class="fig" set:html={b.svg} />)}
       <p class="note mono" style="margin-top:28px">Method: a streak is every consecutive regular-season game a forward dressed for without a point, counted in minutes, and it may cross seasons and teams. The 47 streaks are every forward streak of 400 or more minutes since 1997-98, the first season the NHL recorded time on ice; game logs are the NHL API's. Goals for and against with the player on the ice are MoneyPuck's all-situations game files, which start in 2008-09. AHL games come from each player's season totals, so a demotion is matched to a season, not a date. Hits are the NHL's real-time stats. Rasmussen's streak ran from Jan. 8 to Oct. 13, 2026, with nine games missed to injury inside it. Stat line credit: Prashanth Iyer.</p>
+    </div>
+    <div class="shell">
+      <Subscribe />
     </div>
   </section>
 </Base>

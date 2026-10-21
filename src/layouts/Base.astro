@@ -5,6 +5,8 @@ import D from '../../data/site/dashboard.json';
 import { termCards, LABELS } from '../lib/terms.js';
 import { glossary } from '../lib/glossary.js';
 import { AUTHOR } from '../lib/articles.js';
+import { FEED, subscribeAction } from '../lib/follow.js';
+const subscribe = subscribeAction();
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -69,6 +71,7 @@ const nav = [['Team', `${base}team/`], ['Players', `${base}players/`], ['Prospec
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" type="application/rss+xml" title="Wes &amp; Woodward: new articles" href={FEED} />
     {/* default: index, follow, and let Google show large image previews (Discover, Top stories, News) */}
     <meta name="robots" content={Astro.props.robots ?? 'max-image-preview:large'} />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
@@ -129,6 +132,15 @@ const nav = [['Team', `${base}team/`], ['Players', `${base}players/`], ['Prospec
           <div class="foot-brand">
             <a class="foot-home" href={base} aria-label="Wes and Woodward, home" set:html={wordmark} />
             <p class="foot-tag">Detroit hockey, by the numbers. Dashboards rebuild every night.</p>
+            {subscribe && (
+              <form class="foot-sub" action={subscribe} method="post">
+                <label class="vh" for="foot-email">Email address</label>
+                <input id="foot-email" type="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+                <input type="hidden" name="embed" value="1" />
+                <button type="submit" class="mono">Subscribe</button>
+              </form>
+            )}
+            <p class="foot-sub-note mono lc">{subscribe ? 'One email per new article. ' : ''}<a href={FEED}>RSS feed</a></p>
           </div>
           <nav class="foot-cols" aria-label="Footer">
             <div class="foot-col">
@@ -318,6 +330,15 @@ const nav = [['Team', `${base}team/`], ['Players', `${base}players/`], ['Prospec
   .foot-home { color: var(--ink); display: inline-block; }
   .foot-home :global(.wm) { height: 28px; width: auto; }
   .foot-tag { margin: 14px 0 0; max-width: 30ch; color: var(--mute); font-size: 14px; line-height: 1.5; }
+  .foot-sub { display: flex; max-width: 340px; margin: 16px 0 0; }
+  .foot-sub input[type="email"] { flex: 1; min-width: 0; font: 14px var(--sans); padding: 9px 12px; border: 1px solid var(--ink); border-radius: 0; background: var(--paper); color: var(--ink); }
+  .foot-sub input[type="email"]:focus { outline: 2px solid var(--red); outline-offset: -1px; }
+  .foot-sub button { padding: 0 14px; border: 1px solid var(--ink); border-left: 0; border-radius: 0; background: var(--ink); color: var(--paper); cursor: pointer; }
+  .foot-sub button:hover { background: var(--red); border-color: var(--red); }
+  .foot-sub-note { margin: 10px 0 0; font-size: 12px; color: var(--mute); }
+  .foot-sub-note a { color: var(--ink); text-decoration: underline; }
+  .foot-sub-note a:hover { color: var(--red); }
+  .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .foot-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
   .foot-col { display: flex; flex-direction: column; gap: 9px; min-width: 0; }
   .foot-h { margin: 0 0 4px; color: var(--mute); }

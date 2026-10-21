@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ArticleHead from '../../components/ArticleHead.astro';
+import Subscribe from '../../components/Subscribe.astro';
 import { article, newsArticle, dateline } from '../../lib/articles.js';
 import C from '../../../data/site/articles/two-way-forwards-copy.json';
 import c1 from '../../../data/site/articles/two-way-forwards/c1-goals-vs-expected.svg?raw';
@@ -41,6 +42,9 @@ const DESC = article('two-way-forwards').description;
         ? <div class="prose" set:html={b.html} />
         : <figure class="fig" set:html={b.svg} />)}
       <p class="note mono" style="margin-top:28px">Method: 5v5 and all-situations goals and expected goals are MoneyPuck's; even-strength offense and defense, goals above replacement and RAPM are Evolving Hockey's, with percentiles and ranks taken among forwards or defensemen with 600+ minutes in that season. League ranks are within season, out of 30, 31 or 32 teams. The historical set is every team season from 2008-09 to 2025-26; a "low-scoring" team is one in the bottom third of 5v5 goals per 60. The comp distance is a Euclidean distance over ten rank percentiles: 5v5 scoring, chance creation, finishing, chances allowed, goaltending, forward defense, defensemen's defense, and the league rank of the best scorer, best forward by value and best defenseman. Front-office quotes are from DetroitRedWings.com, MLive and The Malik Report draft coverage.</p>
+    </div>
+    <div class="shell">
+      <Subscribe />
     </div>
   </section>
 </Base>
