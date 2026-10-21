@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Colorado College",
-   "gp": 2,
+   "gp": 4,
    "g": 0,
-   "a": 1,
-   "pts": 1,
-   "pm": 4,
+   "a": 3,
+   "pts": 3,
+   "pm": 7,
    "pim": 0,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Colorado College",
-     "gp": 2,
+     "gp": 4,
      "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": 4,
+     "a": 3,
+     "pts": 3,
+     "pm": 7,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -175,10 +175,12 @@
    "league": "ncaa",
    "season": "2026-2027",
    "ageBucket": "U23",
-   "cohortN": 34,
-   "gp": 2,
-   "percentile": null,
-   "note": "sample too small"
+   "cohortN": 84,
+   "gp": 4,
+   "value": 0.75,
+   "percentile": 88.1,
+   "percentileAllAges": 87.0,
+   "allAgesN": 1198
   }
  },
  "ceiling": {
