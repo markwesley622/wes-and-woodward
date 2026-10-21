@@ -93,7 +93,7 @@ const RECENT = 10;
             <>
               <span class="score">{SI.value.toFixed(1)}</span>
               <span class="mono range">{isG ? `${SI.gsax >= 0 ? '+' : ''}${SI.gsax} goals saved above expected` : `game score ${SI.gs}`} · {ordinal(SI.rank)} of {SI.pool}</span>
-              <span class="mono split">until the W-Value is computable · {SI.gp} gp, {SI.minutes} min{isG ? '' : ' · game score from MoneyPuck and HockeyStatCards, averaged, the same number as the log below'}</span>
+              <span class="mono split">until the W-Value is computable · {SI.gp} gp, {SI.minutes} min</span>
             </>
           ) : (
             <>

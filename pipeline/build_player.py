@@ -288,6 +288,15 @@ def write_player(pid, out):
     live = ROOT / "data" / "site" / "players"; arch = ROOT / "data" / "archive" / "players"
     live.mkdir(parents=True, exist_ok=True); arch.mkdir(parents=True, exist_ok=True)
     dest = live if publish else arch
+    # updatedAt feeds the page's ProfilePage dateModified (Mark, 10/21): it moves only when the file's values move.
+    # The W rank and pool shift on nights Detroit doesn't play (the other 700 skaters do), so this compares the
+    # whole output against the committed file instead of keying off Red Wings game dates; an unchanged file
+    # keeps its stamp, and the nightly commit then has nothing new to say about it.
+    prev_path = dest / f"{pid}.json"
+    prev = json.loads(prev_path.read_text()) if prev_path.exists() else {}
+    stamp = prev.pop("updatedAt", None); out.pop("updatedAt", None)
+    same = stamp and json.dumps(prev, sort_keys=True) == json.dumps(out, sort_keys=True)
+    out["updatedAt"] = stamp if same else dt.datetime.now().astimezone().isoformat(timespec="seconds")
     (dest / f"{pid}.json").write_text(json.dumps(out, indent=1))
     other = (arch if publish else live) / f"{pid}.json"
     if other.exists(): other.unlink()
