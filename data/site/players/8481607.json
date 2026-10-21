@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 8,
+  "gp": 9,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "plusMinus": -1,
+  "plusMinus": 0,
   "pim": 2,
-  "shots": 12,
+  "shots": 13,
   "shootingPct": 0.0,
-  "toiPerGame": "15:53",
+  "toiPerGame": "15:37",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 8,
+   "gp": 9,
    "goals": 0,
    "assists": 0,
    "points": 0,
-   "plusMinus": -1,
+   "plusMinus": 0,
    "pim": 2
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Albert Johansson",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481607.png",
-  "gamesPlayed": 8,
+  "gamesPlayed": 9,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "shots": 12,
+  "shots": 13,
   "shootingPct": 0.0,
-  "toiPerGame": 952.8,
-  "ixG": 0.42,
-  "goalsAboveExpected": -0.42,
-  "gameScore": 2.05,
+  "toiPerGame": 936.7,
+  "ixG": 0.49,
+  "goalsAboveExpected": -0.49,
+  "gameScore": 2.87,
   "fiveOnFive": {
-   "icetimeMinutes": 107.9,
-   "onIceXgPct": 0.55,
-   "onIceCorsiPct": 0.53,
-   "ixgPer60": 0.228,
+   "icetimeMinutes": 119.1,
+   "onIceXgPct": 0.54,
+   "onIceCorsiPct": 0.55,
+   "ixgPer60": 0.242,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.14,
-   "percentile": 38
+   "value": 0.28,
+   "percentile": 45
   },
   "Offense": {
-   "value": -0.7,
-   "percentile": 24
+   "value": -0.4,
+   "percentile": 40
   },
   "Defense": {
-   "value": 0.2,
-   "percentile": 64
+   "value": 0.3,
+   "percentile": 67
   },
   "Net": {
-   "value": -0.4,
-   "percentile": 42
+   "value": -0.0,
+   "percentile": 55
   }
  },
  "score": null,
  "standIn": {
-  "value": 40.6,
-  "gs": 1.61,
-  "gs60": 0.76,
-  "gameScore": 1.61,
-  "minutes": 127,
-  "gp": 8,
-  "rank": 403,
-  "pool": 698,
-  "percentile": 42.3,
+  "value": 45.7,
+  "gs": 2.71,
+  "gs60": 1.16,
+  "gameScore": 2.71,
+  "minutes": 140,
+  "gp": 9,
+  "rank": 343,
+  "pool": 704,
+  "percentile": 51.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 401,
-    "name": "Yakov Trenin",
-    "team": "MIN",
-    "pos": "C",
-    "gp": 9,
-    "value": 41.0,
-    "gs60": 1.68,
-    "isMe": false
-   },
-   {
-    "rank": 402,
-    "name": "Dmitry Kulikov",
+    "rank": 341,
+    "name": "Uvis Balinskis",
     "team": "FLA",
     "pos": "D",
-    "gp": 9,
-    "value": 40.8,
-    "gs60": 1.65,
+    "gp": 6,
+    "value": 45.9,
+    "gs60": 2.75,
     "isMe": false
    },
    {
-    "rank": 403,
+    "rank": 342,
+    "name": "Matvei Michkov",
+    "team": "PHI",
+    "pos": "R",
+    "gp": 11,
+    "value": 45.8,
+    "gs60": 2.74,
+    "isMe": false
+   },
+   {
+    "rank": 343,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
-    "gp": 8,
-    "value": 40.6,
-    "gs60": 1.61,
+    "gp": 9,
+    "value": 45.7,
+    "gs60": 2.71,
     "isMe": true
    },
    {
-    "rank": 404,
-    "name": "A.J. Greer",
-    "team": "ANA",
-    "pos": "L",
-    "gp": 7,
-    "value": 40.5,
-    "gs60": 1.59,
+    "rank": 344,
+    "name": "Matt Coronato",
+    "team": "CGY",
+    "pos": "R",
+    "gp": 8,
+    "value": 45.7,
+    "gs60": 2.7,
     "isMe": false
    },
    {
-    "rank": 405,
-    "name": "Matthew Wood",
-    "team": "NSH",
-    "pos": "R",
-    "gp": 8,
-    "value": 40.5,
-    "gs60": 1.58,
+    "rank": 345,
+    "name": "Alex Ovechkin",
+    "team": "WSH",
+    "pos": "L",
+    "gp": 9,
+    "value": 45.5,
+    "gs60": 2.67,
     "isMe": false
    }
   ],
@@ -339,9 +339,9 @@
    "gf": 1.0,
    "ga": 1.0,
    "blocks": 1.0,
-   "gameScore": -0.46,
+   "gameScore": -0.44,
    "gameScoreParts": {
-    "moneypuck": 0.2,
+    "moneypuck": 0.25,
     "hockeystatcards": -1.13
    }
   },
@@ -363,9 +363,9 @@
    "gf": 1.0,
    "ga": 1.0,
    "blocks": 1.0,
-   "gameScore": -0.46,
+   "gameScore": -0.48,
    "gameScoreParts": {
-    "moneypuck": -0.275,
+    "moneypuck": -0.325,
     "hockeystatcards": -0.64
    }
   },
@@ -392,26 +392,50 @@
     "moneypuck": 0.0,
     "hockeystatcards": 0.16
    }
+  },
+  {
+   "gameId": 2026020149,
+   "date": "2026-10-20",
+   "opponent": "SEA",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 1,
+   "shots": 1,
+   "pim": 0,
+   "toi": 13.5,
+   "ixg": 0.09,
+   "xgf": 0.9,
+   "xga": 0.55,
+   "gf": 1.0,
+   "ga": 0.0,
+   "blocks": 2.0,
+   "gameScore": 1.1,
+   "gameScoreParts": {
+    "moneypuck": 0.825,
+    "hockeystatcards": 1.38
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.2,
-  "games": 8,
+  "average": 0.3,
+  "games": 9,
   "best": {
    "date": "2026-10-09",
    "opponent": "SEA",
    "value": 1.41
   },
   "worst": {
-   "date": "2026-10-13",
-   "opponent": "NJD",
-   "value": -0.46
+   "date": "2026-10-15",
+   "opponent": "PHI",
+   "value": -0.48
   },
   "above2": 0,
   "below0": 4
  },
- "detGames": 8,
+ "detGames": 9,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {

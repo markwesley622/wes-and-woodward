@@ -20,7 +20,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 5,
+  "gp": 6,
   "goals": 0,
   "assists": 0,
   "points": 0,
@@ -28,7 +28,7 @@
   "pim": 0,
   "shots": 5,
   "shootingPct": 0.0,
-  "toiPerGame": "10:01",
+  "toiPerGame": "9:45",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -41,7 +41,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 5,
+   "gp": 6,
    "goals": 0,
    "assists": 0,
    "points": 0,
@@ -64,21 +64,21 @@
   "name": "Sheldon Dries",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480326.png",
-  "gamesPlayed": 5,
+  "gamesPlayed": 6,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 5,
   "shootingPct": 0.0,
-  "toiPerGame": 601.2,
-  "ixG": 0.96,
-  "goalsAboveExpected": -0.96,
-  "gameScore": 0.18,
+  "toiPerGame": 584.7,
+  "ixG": 0.97,
+  "goalsAboveExpected": -0.97,
+  "gameScore": 0.34,
   "fiveOnFive": {
-   "icetimeMinutes": 43.2,
+   "icetimeMinutes": 49.9,
    "onIceXgPct": 0.49,
-   "onIceCorsiPct": 0.48,
-   "ixgPer60": 1.333,
+   "onIceCorsiPct": 0.5,
+   "ixgPer60": 1.168,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -86,84 +86,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.11,
-   "percentile": 25
+   "value": -0.05,
+   "percentile": 27
   },
   "Offense": {
-   "value": -0.8,
-   "percentile": 19
+   "value": -0.9,
+   "percentile": 16
   },
   "Defense": {
-   "value": -0.1,
-   "percentile": 46
+   "value": 0.1,
+   "percentile": 55
   },
   "Net": {
-   "value": -0.8,
-   "percentile": 25
+   "value": -0.9,
+   "percentile": 26
   }
  },
  "score": null,
  "standIn": {
-  "value": 31.5,
-  "gs": -0.18,
-  "gs60": -0.22,
-  "gameScore": -0.18,
-  "minutes": 50,
-  "gp": 5,
-  "rank": 544,
-  "pool": 698,
-  "percentile": 22.1,
+  "value": 32.5,
+  "gs": 0.02,
+  "gs60": 0.02,
+  "gameScore": 0.02,
+  "minutes": 58,
+  "gp": 6,
+  "rank": 535,
+  "pool": 704,
+  "percentile": 24.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 542,
-    "name": "Ross Colton",
-    "team": "NSH",
-    "pos": "C",
-    "gp": 8,
-    "value": 31.6,
-    "gs60": -0.17,
+    "rank": 533,
+    "name": "Victor Mancini",
+    "team": "VAN",
+    "pos": "D",
+    "gp": 3,
+    "value": 32.6,
+    "gs60": 0.04,
     "isMe": false
    },
    {
-    "rank": 543,
-    "name": "Connor Zary",
-    "team": "CGY",
-    "pos": "C",
-    "gp": 2,
-    "value": 31.6,
-    "gs60": -0.17,
+    "rank": 534,
+    "name": "Nikita Klepov",
+    "team": "ANA",
+    "pos": "R",
+    "gp": 3,
+    "value": 32.6,
+    "gs60": 0.03,
     "isMe": false
    },
    {
-    "rank": 544,
+    "rank": 535,
     "name": "Sheldon Dries",
     "team": "DET",
     "pos": "C",
-    "gp": 5,
-    "value": 31.5,
-    "gs60": -0.18,
+    "gp": 6,
+    "value": 32.5,
+    "gs60": 0.02,
     "isMe": true
    },
    {
-    "rank": 545,
-    "name": "Aatu Rty",
-    "team": "VAN",
-    "pos": "C",
-    "gp": 4,
-    "value": 31.5,
-    "gs60": -0.2,
+    "rank": 536,
+    "name": "William Trudeau",
+    "team": "NSH",
+    "pos": "D",
+    "gp": 3,
+    "value": 32.5,
+    "gs60": 0.02,
     "isMe": false
    },
    {
-    "rank": 546,
-    "name": "Nicolas Hague",
-    "team": "NSH",
+    "rank": 537,
+    "name": "Ilya Solovyov",
+    "team": "PIT",
     "pos": "D",
-    "gp": 8,
-    "value": 31.3,
-    "gs60": -0.23,
+    "gp": 1,
+    "value": 32.4,
+    "gs60": 0.01,
     "isMe": false
    }
   ],
@@ -384,12 +384,36 @@
     "moneypuck": 0.265,
     "hockeystatcards": 0.23
    }
+  },
+  {
+   "gameId": 2026020149,
+   "date": "2026-10-20",
+   "opponent": "SEA",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 8.4,
+   "ixg": 0.11,
+   "xgf": 0.15,
+   "xga": 0.01,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 0.2,
+   "gameScoreParts": {
+    "moneypuck": 0.16,
+    "hockeystatcards": 0.23
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.04,
-  "games": 5,
+  "average": 0.0,
+  "games": 6,
   "best": {
    "date": "2026-10-17",
    "opponent": "SJS",
@@ -403,7 +427,7 @@
   "above2": 0,
   "below0": 3
  },
- "detGames": 5,
+ "detGames": 6,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {

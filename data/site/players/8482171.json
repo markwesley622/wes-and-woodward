@@ -83,82 +83,82 @@
  "hsc": {
   "Game score": {
    "value": -0.1,
-   "percentile": 25
+   "percentile": 24
   },
   "Offense": {
    "value": 0.2,
-   "percentile": 69
+   "percentile": 68
   },
   "Defense": {
    "value": -0.6,
-   "percentile": 19
+   "percentile": 21
   },
   "Net": {
    "value": -0.4,
-   "percentile": 42
+   "percentile": 43
   }
  },
  "score": null,
  "standIn": {
-  "value": 37.4,
+  "value": 37.0,
   "gs": 0.99,
   "gs60": 1.04,
   "gameScore": 0.99,
   "minutes": 57,
   "gp": 4,
-  "rank": 443,
-  "pool": 698,
-  "percentile": 36.5,
+  "rank": 452,
+  "pool": 704,
+  "percentile": 35.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 441,
+    "rank": 450,
     "name": "Ivan Demidov",
     "team": "MTL",
     "pos": "R",
     "gp": 2,
-    "value": 37.5,
+    "value": 37.1,
     "gs60": 1.0,
     "isMe": false
    },
    {
-    "rank": 442,
-    "name": "Mathieu Olivier",
-    "team": "CBJ",
-    "pos": "R",
-    "gp": 7,
-    "value": 37.5,
-    "gs60": 1.0,
+    "rank": 451,
+    "name": "Andrei Kuzmenko",
+    "team": "PIT",
+    "pos": "L",
+    "gp": 6,
+    "value": 37.0,
+    "gs60": 0.99,
     "isMe": false
    },
    {
-    "rank": 443,
+    "rank": 452,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 4,
-    "value": 37.4,
+    "value": 37.0,
     "gs60": 0.99,
     "isMe": true
    },
    {
-    "rank": 444,
+    "rank": 453,
     "name": "Mavrik Bourque",
     "team": "NSH",
     "pos": "C",
     "gp": 4,
-    "value": 37.2,
+    "value": 36.9,
     "gs60": 0.97,
     "isMe": false
    },
    {
-    "rank": 445,
-    "name": "Rasmus Andersson",
-    "team": "VGK",
-    "pos": "D",
-    "gp": 10,
-    "value": 37.2,
+    "rank": 454,
+    "name": "Beck Malenstyn",
+    "team": "BUF",
+    "pos": "L",
+    "gp": 9,
+    "value": 36.9,
     "gs60": 0.96,
     "isMe": false
    }

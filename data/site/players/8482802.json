@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 3,
+  "gp": 4,
   "goals": 0,
   "assists": 1,
   "points": 1,
-  "plusMinus": -2,
+  "plusMinus": -4,
   "pim": 0,
-  "shots": 3,
+  "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": "8:24",
+  "toiPerGame": "9:35",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 3,
+   "gp": 4,
    "goals": 0,
    "assists": 1,
    "points": 1,
-   "plusMinus": -2,
+   "plusMinus": -4,
    "pim": 0
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Carter Mazur",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482802.png",
-  "gamesPlayed": 3,
+  "gamesPlayed": 4,
   "goals": 0,
   "assists": 1,
   "points": 1,
-  "shots": 3,
+  "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": 503.7,
-  "ixG": 0.46,
-  "goalsAboveExpected": -0.46,
-  "gameScore": 0.67,
+  "toiPerGame": 574.5,
+  "ixG": 0.73,
+  "goalsAboveExpected": -0.73,
+  "gameScore": 0.2,
   "fiveOnFive": {
-   "icetimeMinutes": 25.0,
-   "onIceXgPct": 0.43,
-   "onIceCorsiPct": 0.53,
-   "ixgPer60": 1.103,
+   "icetimeMinutes": 37.6,
+   "onIceXgPct": 0.42,
+   "onIceCorsiPct": 0.49,
+   "ixgPer60": 1.163,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.76,
-   "percentile": 5
+   "value": -1.02,
+   "percentile": 3
   },
   "Offense": {
-   "value": -0.1,
-   "percentile": 55
+   "value": -0.3,
+   "percentile": 48
   },
   "Defense": {
-   "value": -1.1,
-   "percentile": 8
+   "value": -1.4,
+   "percentile": 3
   },
   "Net": {
-   "value": -1.2,
-   "percentile": 15
+   "value": -1.7,
+   "percentile": 9
   }
  },
  "score": null,
  "standIn": {
-  "value": 28.6,
-  "gs": -0.8,
-  "gs60": -1.91,
-  "gameScore": -0.8,
-  "minutes": 25,
-  "gp": 3,
-  "rank": 597,
-  "pool": 698,
-  "percentile": 14.5,
+  "value": 24.3,
+  "gs": -1.94,
+  "gs60": -3.04,
+  "gameScore": -1.94,
+  "minutes": 38,
+  "gp": 4,
+  "rank": 656,
+  "pool": 704,
+  "percentile": 6.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 595,
-    "name": "Noah Juulsen",
-    "team": "COL",
+    "rank": 654,
+    "name": "Curtis Douglas",
+    "team": "SEA",
+    "pos": "C",
+    "gp": 2,
+    "value": 24.4,
+    "gs60": -1.9,
+    "isMe": false
+   },
+   {
+    "rank": 655,
+    "name": "Jake Christiansen",
+    "team": "CBJ",
     "pos": "D",
     "gp": 7,
-    "value": 28.7,
-    "gs60": -0.79,
+    "value": 24.3,
+    "gs60": -1.93,
     "isMe": false
    },
    {
-    "rank": 596,
-    "name": "Jacob Melanson",
-    "team": "SEA",
-    "pos": "R",
-    "gp": 1,
-    "value": 28.7,
-    "gs60": -0.79,
-    "isMe": false
-   },
-   {
-    "rank": 597,
+    "rank": 656,
     "name": "Carter Mazur",
     "team": "DET",
     "pos": "L",
-    "gp": 3,
-    "value": 28.6,
-    "gs60": -0.8,
+    "gp": 4,
+    "value": 24.3,
+    "gs60": -1.94,
     "isMe": true
    },
    {
-    "rank": 598,
-    "name": "Conor Garland",
-    "team": "CBJ",
-    "pos": "R",
-    "gp": 7,
-    "value": 28.6,
-    "gs60": -0.81,
+    "rank": 657,
+    "name": "Samuel Honzek",
+    "team": "CGY",
+    "pos": "L",
+    "gp": 4,
+    "value": 24.1,
+    "gs60": -1.98,
     "isMe": false
    },
    {
-    "rank": 599,
-    "name": "Emil Lilleberg",
-    "team": "TBL",
+    "rank": 658,
+    "name": "Arber Xhekaj",
+    "team": "MTL",
     "pos": "D",
-    "gp": 3,
-    "value": 28.6,
-    "gs60": -0.81,
+    "gp": 9,
+    "value": 24.1,
+    "gs60": -1.98,
     "isMe": false
    }
   ],
@@ -272,12 +272,36 @@
     "moneypuck": -0.6,
     "hockeystatcards": -2.86
    }
+  },
+  {
+   "gameId": 2026020149,
+   "date": "2026-10-20",
+   "opponent": "SEA",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -2,
+   "shots": 1,
+   "pim": 0,
+   "toi": 13.1,
+   "ixg": 0.24,
+   "xgf": 0.4,
+   "xga": 0.9,
+   "gf": 0.0,
+   "ga": 2.0,
+   "blocks": 0.0,
+   "gameScore": -1.14,
+   "gameScoreParts": {
+    "moneypuck": -0.475,
+    "hockeystatcards": -1.8
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.27,
-  "games": 3,
+  "average": -0.48,
+  "games": 4,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
@@ -289,9 +313,9 @@
    "value": -1.73
   },
   "above2": 0,
-  "below0": 1
+  "below0": 2
  },
- "detGames": 3,
+ "detGames": 4,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {

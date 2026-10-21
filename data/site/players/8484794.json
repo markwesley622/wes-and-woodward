@@ -26,7 +26,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 8,
+  "gp": 9,
   "goals": 2,
   "assists": 4,
   "points": 6,
@@ -34,7 +34,7 @@
   "pim": 2,
   "shots": 22,
   "shootingPct": 0.090909,
-  "toiPerGame": "15:18",
+  "toiPerGame": "15:22",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 8,
+   "gp": 9,
    "goals": 2,
    "assists": 4,
    "points": 6,
@@ -60,21 +60,21 @@
   "name": "Michael Brandsegg-Nyg\u00e5rd",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484794.png",
-  "gamesPlayed": 8,
+  "gamesPlayed": 9,
   "goals": 2,
   "assists": 4,
   "points": 6,
   "shots": 22,
   "shootingPct": 0.090909,
-  "toiPerGame": 917.9,
+  "toiPerGame": 922.4,
   "ixG": 3.58,
   "goalsAboveExpected": -1.58,
-  "gameScore": 9.0,
+  "gameScore": 9.15,
   "fiveOnFive": {
-   "icetimeMinutes": 108.5,
-   "onIceXgPct": 0.65,
+   "icetimeMinutes": 122.8,
+   "onIceXgPct": 0.63,
    "onIceCorsiPct": 0.6,
-   "ixgPer60": 1.638,
+   "ixgPer60": 1.451,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 1.66,
-   "percentile": 96
+   "value": 1.5,
+   "percentile": 95
   },
   "Offense": {
-   "value": 1.5,
-   "percentile": 93
+   "value": 1.2,
+   "percentile": 88
   },
   "Defense": {
-   "value": 0.8,
-   "percentile": 87
+   "value": 1.0,
+   "percentile": 90
   },
   "Net": {
    "value": 2.3,
-   "percentile": 95
+   "percentile": 94
   }
  },
  "score": null,
  "standIn": {
-  "value": 85.0,
-  "gs": 11.14,
-  "gs60": 5.46,
-  "gameScore": 11.14,
-  "minutes": 122,
-  "gp": 8,
-  "rank": 39,
-  "pool": 698,
-  "percentile": 94.4,
+  "value": 83.3,
+  "gs": 11.29,
+  "gs60": 4.9,
+  "gameScore": 11.29,
+  "minutes": 138,
+  "gp": 9,
+  "rank": 48,
+  "pool": 704,
+  "percentile": 93.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 37,
-    "name": "Mattias Ekholm",
-    "team": "EDM",
-    "pos": "D",
-    "gp": 8,
-    "value": 85.1,
-    "gs60": 11.18,
+    "rank": 46,
+    "name": "Bo Horvat",
+    "team": "NYI",
+    "pos": "C",
+    "gp": 9,
+    "value": 83.8,
+    "gs60": 11.46,
     "isMe": false
    },
    {
-    "rank": 38,
-    "name": "Lane Hutson",
-    "team": "MTL",
-    "pos": "D",
-    "gp": 8,
-    "value": 85.1,
-    "gs60": 11.17,
+    "rank": 47,
+    "name": "Carter Verhaeghe",
+    "team": "FLA",
+    "pos": "C",
+    "gp": 9,
+    "value": 83.4,
+    "gs60": 11.3,
     "isMe": false
    },
    {
-    "rank": 39,
+    "rank": 48,
     "name": "Michael Brandsegg-Nygrd",
     "team": "DET",
     "pos": "R",
-    "gp": 8,
-    "value": 85.0,
-    "gs60": 11.14,
+    "gp": 9,
+    "value": 83.3,
+    "gs60": 11.29,
     "isMe": true
    },
    {
-    "rank": 40,
-    "name": "Artturi Lehkonen",
-    "team": "COL",
+    "rank": 49,
+    "name": "Ivan Barbashev",
+    "team": "VGK",
     "pos": "L",
-    "gp": 9,
-    "value": 84.9,
-    "gs60": 11.11,
+    "gp": 11,
+    "value": 83.1,
+    "gs60": 11.21,
     "isMe": false
    },
    {
-    "rank": 41,
-    "name": "Zach Benson",
-    "team": "BUF",
-    "pos": "L",
+    "rank": 50,
+    "name": "Jake Guentzel",
+    "team": "TBL",
+    "pos": "C",
     "gp": 9,
-    "value": 84.8,
-    "gs60": 11.09,
+    "value": 82.8,
+    "gs60": 11.12,
     "isMe": false
    }
   ],
@@ -377,12 +377,36 @@
     "moneypuck": 1.15,
     "hockeystatcards": 1.94
    }
+  },
+  {
+   "gameId": 2026020149,
+   "date": "2026-10-20",
+   "opponent": "SEA",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 16.0,
+   "ixg": 0.01,
+   "xgf": 0.42,
+   "xga": 0.31,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 0.15,
+   "gameScoreParts": {
+    "moneypuck": 0.15,
+    "hockeystatcards": 0.16
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.39,
-  "games": 8,
+  "average": 1.25,
+  "games": 9,
   "best": {
    "date": "2026-10-13",
    "opponent": "NJD",
@@ -396,7 +420,7 @@
   "above2": 3,
   "below0": 1
  },
- "detGames": 8,
+ "detGames": 9,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
