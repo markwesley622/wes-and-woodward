@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.27,
-   "percentile": 17
+   "percentile": 16
   },
   "Offense": {
    "value": -1.4,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 29.3,
+  "value": 29.2,
   "gs": -0.69,
   "gs60": -0.27,
   "gameScore": -0.69,
   "minutes": 152,
   "gp": 9,
-  "rank": 590,
-  "pool": 704,
-  "percentile": 16.2,
+  "rank": 592,
+  "pool": 706,
+  "percentile": 16.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 588,
+    "rank": 590,
     "name": "Jack St. Ivany",
     "team": "WPG",
     "pos": "D",
     "gp": 4,
-    "value": 29.4,
+    "value": 29.3,
     "gs60": -0.67,
     "isMe": false
    },
    {
-    "rank": 589,
+    "rank": 591,
     "name": "Jansen Harkins",
     "team": "TBL",
     "pos": "C",
     "gp": 1,
-    "value": 29.4,
+    "value": 29.3,
     "gs60": -0.67,
     "isMe": false
    },
    {
-    "rank": 590,
+    "rank": 592,
     "name": "Michael Rasmussen",
     "team": "DET",
     "pos": "C",
     "gp": 9,
-    "value": 29.3,
+    "value": 29.2,
     "gs60": -0.69,
     "isMe": true
    },
    {
-    "rank": 591,
+    "rank": 593,
     "name": "Jake Evans",
     "team": "MTL",
     "pos": "C",
     "gp": 9,
-    "value": 29.3,
+    "value": 29.2,
     "gs60": -0.69,
     "isMe": false
    },
    {
-    "rank": 592,
+    "rank": 594,
     "name": "Drew Doughty",
     "team": "LAK",
     "pos": "D",
     "gp": 7,
-    "value": 29.3,
+    "value": 29.2,
     "gs60": -0.7,
     "isMe": false
    }
@@ -522,5 +522,6 @@
   "onNhlRoster": true,
   "template": "nhl"
  },
- "art": true
+ "art": true,
+ "updatedAt": "2026-10-22T05:03:40-07:00"
 }

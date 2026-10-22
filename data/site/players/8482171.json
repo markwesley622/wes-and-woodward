@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 37.0,
+  "value": 36.9,
   "gs": 0.99,
   "gs60": 1.04,
   "gameScore": 0.99,
   "minutes": 57,
   "gp": 4,
-  "rank": 452,
-  "pool": 704,
-  "percentile": 35.8,
+  "rank": 456,
+  "pool": 706,
+  "percentile": 35.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 450,
+    "rank": 454,
+    "name": "Ivan Miroshnichenko",
+    "team": "WSH",
+    "pos": "L",
+    "gp": 3,
+    "value": 37.1,
+    "gs60": 1.02,
+    "isMe": false
+   },
+   {
+    "rank": 455,
     "name": "Ivan Demidov",
     "team": "MTL",
     "pos": "R",
     "gp": 2,
-    "value": 37.1,
+    "value": 37.0,
     "gs60": 1.0,
     "isMe": false
    },
    {
-    "rank": 451,
-    "name": "Andrei Kuzmenko",
-    "team": "PIT",
-    "pos": "L",
-    "gp": 6,
-    "value": 37.0,
-    "gs60": 0.99,
-    "isMe": false
-   },
-   {
-    "rank": 452,
+    "rank": 456,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 4,
-    "value": 37.0,
+    "value": 36.9,
     "gs60": 0.99,
     "isMe": true
    },
    {
-    "rank": 453,
+    "rank": 457,
+    "name": "Andrei Kuzmenko",
+    "team": "PIT",
+    "pos": "L",
+    "gp": 6,
+    "value": 36.9,
+    "gs60": 0.99,
+    "isMe": false
+   },
+   {
+    "rank": 458,
     "name": "Mavrik Bourque",
     "team": "NSH",
     "pos": "C",
     "gp": 4,
-    "value": 36.9,
+    "value": 36.8,
     "gs60": 0.97,
-    "isMe": false
-   },
-   {
-    "rank": 454,
-    "name": "Beck Malenstyn",
-    "team": "BUF",
-    "pos": "L",
-    "gp": 9,
-    "value": 36.9,
-    "gs60": 0.96,
     "isMe": false
    }
   ],
@@ -296,5 +296,6 @@
   "onNhlRoster": true,
   "template": "nhl"
  },
- "art": false
+ "art": false,
+ "updatedAt": "2026-10-22T05:05:31-07:00"
 }

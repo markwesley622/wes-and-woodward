@@ -94,20 +94,20 @@
    "percentile": 74
   },
   "Net": {
-   "value": 3.0,
+   "value": 2.9,
    "percentile": 97
   }
  },
  "score": null,
  "standIn": {
-  "value": 92.3,
+  "value": 92.2,
   "gs": 15.51,
   "gs60": 5.03,
   "gameScore": 15.51,
   "minutes": 185,
   "gp": 9,
   "rank": 17,
-  "pool": 704,
+  "pool": 706,
   "percentile": 97.6,
   "group": "skaters",
   "standIn": true,
@@ -118,7 +118,7 @@
     "team": "VGK",
     "pos": "R",
     "gp": 11,
-    "value": 93.0,
+    "value": 92.9,
     "gs60": 16.0,
     "isMe": false
    },
@@ -128,7 +128,7 @@
     "team": "COL",
     "pos": "C",
     "gp": 10,
-    "value": 93.0,
+    "value": 92.9,
     "gs60": 15.99,
     "isMe": false
    },
@@ -138,28 +138,28 @@
     "team": "DET",
     "pos": "R",
     "gp": 9,
-    "value": 92.3,
+    "value": 92.2,
     "gs60": 15.51,
     "isMe": true
    },
    {
     "rank": 18,
-    "name": "Joel Eriksson Ek",
-    "team": "MIN",
-    "pos": "C",
+    "name": "Matthew Tkachuk",
+    "team": "FLA",
+    "pos": "L",
     "gp": 10,
-    "value": 92.1,
-    "gs60": 15.34,
+    "value": 92.2,
+    "gs60": 15.5,
     "isMe": false
    },
    {
     "rank": 19,
-    "name": "Nick Suzuki",
-    "team": "MTL",
+    "name": "Joel Eriksson Ek",
+    "team": "MIN",
     "pos": "C",
-    "gp": 9,
-    "value": 91.6,
-    "gs60": 15.05,
+    "gp": 10,
+    "value": 92.0,
+    "gs60": 15.34,
     "isMe": false
    }
   ],
@@ -552,5 +552,6 @@
   "onNhlRoster": true,
   "template": "nhl"
  },
- "art": true
+ "art": true,
+ "updatedAt": "2026-10-22T05:02:07-07:00"
 }

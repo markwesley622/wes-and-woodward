@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": -0.68,
-   "percentile": 7
+   "percentile": 6
   },
   "Offense": {
    "value": -1.5,
-   "percentile": 3
+   "percentile": 4
   },
   "Defense": {
    "value": -1.1,
-   "percentile": 8
+   "percentile": 9
   },
   "Net": {
    "value": -2.6,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 20.1,
+  "value": 20.0,
   "gs": -3.11,
   "gs60": -1.09,
   "gameScore": -3.11,
   "minutes": 171,
   "gp": 9,
-  "rank": 687,
-  "pool": 704,
-  "percentile": 2.4,
+  "rank": 688,
+  "pool": 706,
+  "percentile": 2.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 685,
-    "name": "Lian Bichsel",
-    "team": "DAL",
-    "pos": "D",
-    "gp": 9,
-    "value": 20.3,
-    "gs60": -3.05,
-    "isMe": false
-   },
-   {
     "rank": 686,
-    "name": "Jake Middleton",
-    "team": "CGY",
-    "pos": "D",
-    "gp": 8,
-    "value": 20.1,
-    "gs60": -3.11,
+    "name": "Noel Acciari",
+    "team": "PHI",
+    "pos": "C",
+    "gp": 12,
+    "value": 20.0,
+    "gs60": -3.1,
     "isMe": false
    },
    {
     "rank": 687,
+    "name": "Jake Middleton",
+    "team": "CGY",
+    "pos": "D",
+    "gp": 8,
+    "value": 20.0,
+    "gs60": -3.11,
+    "isMe": false
+   },
+   {
+    "rank": 688,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
     "gp": 9,
-    "value": 20.1,
+    "value": 20.0,
     "gs60": -3.11,
     "isMe": true
    },
    {
-    "rank": 688,
-    "name": "Simon Benoit",
-    "team": "PHI",
+    "rank": 689,
+    "name": "Carter Yakemchuk",
+    "team": "OTT",
     "pos": "D",
-    "gp": 9,
-    "value": 19.9,
-    "gs60": -3.18,
+    "gp": 10,
+    "value": 20.0,
+    "gs60": -3.12,
     "isMe": false
    },
    {
-    "rank": 689,
-    "name": "Carson Soucy",
-    "team": "CBJ",
+    "rank": 690,
+    "name": "Simon Benoit",
+    "team": "PHI",
     "pos": "D",
-    "gp": 6,
-    "value": 19.7,
-    "gs60": -3.21,
+    "gp": 10,
+    "value": 19.9,
+    "gs60": -3.14,
     "isMe": false
    }
   ],
@@ -597,5 +597,6 @@
   "onNhlRoster": true,
   "template": "nhl"
  },
- "art": true
+ "art": true,
+ "updatedAt": "2026-10-22T05:01:42-07:00"
 }

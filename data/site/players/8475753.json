@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 54.5,
+  "value": 54.3,
   "gs": 4.41,
   "gs60": 1.53,
   "gameScore": 4.41,
   "minutes": 173,
   "gp": 9,
-  "rank": 257,
-  "pool": 704,
-  "percentile": 63.5,
+  "rank": 260,
+  "pool": 706,
+  "percentile": 63.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 255,
+    "rank": 258,
     "name": "Simon Nemec",
     "team": "CGY",
     "pos": "D",
     "gp": 8,
-    "value": 54.7,
+    "value": 54.5,
     "gs60": 4.45,
     "isMe": false
    },
    {
-    "rank": 256,
+    "rank": 259,
     "name": "Nicolas Roy",
     "team": "COL",
     "pos": "C",
     "gp": 6,
-    "value": 54.6,
+    "value": 54.4,
     "gs60": 4.42,
     "isMe": false
    },
    {
-    "rank": 257,
+    "rank": 260,
     "name": "Justin Faulk",
     "team": "DET",
     "pos": "D",
     "gp": 9,
-    "value": 54.5,
+    "value": 54.3,
     "gs60": 4.41,
     "isMe": true
    },
    {
-    "rank": 258,
-    "name": "Anton Lundell",
-    "team": "FLA",
-    "pos": "C",
-    "gp": 9,
-    "value": 54.4,
-    "gs60": 4.38,
-    "isMe": false
-   },
-   {
-    "rank": 259,
+    "rank": 261,
     "name": "Jakob Chychrun",
     "team": "WSH",
     "pos": "D",
     "gp": 9,
-    "value": 54.2,
+    "value": 54.0,
     "gs60": 4.35,
+    "isMe": false
+   },
+   {
+    "rank": 262,
+    "name": "Evan Rodrigues",
+    "team": "NJD",
+    "pos": "C",
+    "gp": 9,
+    "value": 53.8,
+    "gs60": 4.32,
     "isMe": false
    }
   ],
@@ -642,5 +642,6 @@
   "onNhlRoster": true,
   "template": "nhl"
  },
- "art": true
+ "art": true,
+ "updatedAt": "2026-10-22T05:04:26-07:00"
 }

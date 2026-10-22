@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.62,
-   "percentile": 65
+   "percentile": 64
   },
   "Offense": {
    "value": 0.2,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": 0.2,
-   "percentile": 63
+   "percentile": 62
   }
  },
  "score": null,
  "standIn": {
-  "value": 58.7,
+  "value": 58.5,
   "gs": 5.23,
   "gs60": 2.04,
   "gameScore": 5.23,
   "minutes": 154,
   "gp": 7,
-  "rank": 224,
-  "pool": 704,
-  "percentile": 68.2,
+  "rank": 225,
+  "pool": 706,
+  "percentile": 68.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 222,
+    "rank": 223,
     "name": "Jesperi Kotkaniemi",
     "team": "CAR",
     "pos": "C",
     "gp": 9,
-    "value": 58.7,
-    "gs60": 5.23,
-    "isMe": false
-   },
-   {
-    "rank": 223,
-    "name": "Pierre-Luc Dubois",
-    "team": "WSH",
-    "pos": "C",
-    "gp": 4,
-    "value": 58.7,
+    "value": 58.5,
     "gs60": 5.23,
     "isMe": false
    },
    {
     "rank": 224,
+    "name": "Pierre-Luc Dubois",
+    "team": "WSH",
+    "pos": "C",
+    "gp": 4,
+    "value": 58.5,
+    "gs60": 5.23,
+    "isMe": false
+   },
+   {
+    "rank": 225,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
     "gp": 7,
-    "value": 58.7,
+    "value": 58.5,
     "gs60": 5.23,
     "isMe": true
    },
    {
-    "rank": 225,
+    "rank": 226,
+    "name": "Warren Foegele",
+    "team": "OTT",
+    "pos": "L",
+    "gp": 10,
+    "value": 58.4,
+    "gs60": 5.21,
+    "isMe": false
+   },
+   {
+    "rank": 227,
     "name": "Sidney Crosby",
     "team": "PIT",
     "pos": "C",
     "gp": 10,
-    "value": 58.4,
+    "value": 58.2,
     "gs60": 5.17,
-    "isMe": false
-   },
-   {
-    "rank": 226,
-    "name": "Jordan Martinook",
-    "team": "CAR",
-    "pos": "L",
-    "gp": 11,
-    "value": 58.0,
-    "gs60": 5.09,
     "isMe": false
    }
   ],
@@ -534,5 +534,6 @@
   "onNhlRoster": true,
   "template": "nhl"
  },
- "art": true
+ "art": true,
+ "updatedAt": "2026-10-22T05:03:12-07:00"
 }

@@ -100,15 +100,15 @@
  },
  "score": null,
  "standIn": {
-  "value": 78.3,
+  "value": 78.1,
   "gs": 9.71,
   "gs60": 3.66,
   "gameScore": 9.71,
   "minutes": 159,
   "gp": 9,
   "rank": 73,
-  "pool": 704,
-  "percentile": 89.6,
+  "pool": 706,
+  "percentile": 89.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
@@ -118,7 +118,7 @@
     "team": "LAK",
     "pos": "L",
     "gp": 7,
-    "value": 78.8,
+    "value": 78.6,
     "gs60": 9.86,
     "isMe": false
    },
@@ -128,7 +128,7 @@
     "team": "NJD",
     "pos": "L",
     "gp": 9,
-    "value": 78.5,
+    "value": 78.3,
     "gs60": 9.77,
     "isMe": false
    },
@@ -138,7 +138,7 @@
     "team": "DET",
     "pos": "C",
     "gp": 9,
-    "value": 78.3,
+    "value": 78.1,
     "gs60": 9.71,
     "isMe": true
    },
@@ -148,18 +148,18 @@
     "team": "DAL",
     "pos": "C",
     "gp": 9,
-    "value": 78.1,
+    "value": 77.9,
     "gs60": 9.66,
     "isMe": false
    },
    {
     "rank": 75,
-    "name": "William Nylander",
-    "team": "TOR",
-    "pos": "R",
-    "gp": 11,
-    "value": 78.0,
-    "gs60": 9.64,
+    "name": "Sam Bennett",
+    "team": "FLA",
+    "pos": "C",
+    "gp": 10,
+    "value": 77.9,
+    "gs60": 9.66,
     "isMe": false
    }
   ],
@@ -432,5 +432,6 @@
   "onNhlRoster": true,
   "template": "nhl"
  },
- "art": true
+ "art": true,
+ "updatedAt": "2026-10-22T05:02:34-07:00"
 }

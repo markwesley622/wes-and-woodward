@@ -95,7 +95,7 @@
   },
   "Defense": {
    "value": 0.1,
-   "percentile": 55
+   "percentile": 56
   },
   "Net": {
    "value": -0.9,
@@ -104,65 +104,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 32.5,
+  "value": 32.4,
   "gs": 0.02,
   "gs60": 0.02,
   "gameScore": 0.02,
   "minutes": 58,
   "gp": 6,
-  "rank": 535,
-  "pool": 704,
-  "percentile": 24.0,
+  "rank": 537,
+  "pool": 706,
+  "percentile": 23.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 533,
+    "rank": 535,
     "name": "Victor Mancini",
     "team": "VAN",
     "pos": "D",
     "gp": 3,
-    "value": 32.6,
+    "value": 32.5,
     "gs60": 0.04,
     "isMe": false
    },
    {
-    "rank": 534,
+    "rank": 536,
     "name": "Nikita Klepov",
     "team": "ANA",
     "pos": "R",
     "gp": 3,
-    "value": 32.6,
+    "value": 32.4,
     "gs60": 0.03,
     "isMe": false
    },
    {
-    "rank": 535,
+    "rank": 537,
     "name": "Sheldon Dries",
     "team": "DET",
     "pos": "C",
     "gp": 6,
-    "value": 32.5,
+    "value": 32.4,
     "gs60": 0.02,
     "isMe": true
    },
    {
-    "rank": 536,
+    "rank": 538,
     "name": "William Trudeau",
     "team": "NSH",
     "pos": "D",
     "gp": 3,
-    "value": 32.5,
+    "value": 32.3,
     "gs60": 0.02,
     "isMe": false
    },
    {
-    "rank": 537,
+    "rank": 539,
     "name": "Ilya Solovyov",
     "team": "PIT",
     "pos": "D",
     "gp": 1,
-    "value": 32.4,
+    "value": 32.3,
     "gs60": 0.01,
     "isMe": false
    }
@@ -439,5 +439,6 @@
   "onNhlRoster": true,
   "template": "nhl"
  },
- "art": false
+ "art": false,
+ "updatedAt": "2026-10-22T05:02:21-07:00"
 }

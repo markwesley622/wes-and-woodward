@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.2,
-   "percentile": 51
+   "percentile": 50
   },
   "Defense": {
    "value": 0.0,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 35.8,
+  "value": 35.7,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 470,
-  "pool": 704,
-  "percentile": 33.2,
+  "rank": 475,
+  "pool": 706,
+  "percentile": 32.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 468,
+    "rank": 473,
     "name": "Kyle Capobianco",
     "team": "DAL",
     "pos": "D",
     "gp": 2,
-    "value": 35.9,
+    "value": 35.7,
     "gs60": 0.74,
     "isMe": false
    },
    {
-    "rank": 469,
+    "rank": 474,
     "name": "Alex Newhook",
     "team": "MTL",
     "pos": "C",
     "gp": 9,
-    "value": 35.8,
+    "value": 35.7,
     "gs60": 0.74,
     "isMe": false
    },
    {
-    "rank": 470,
+    "rank": 475,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
     "gp": 1,
-    "value": 35.8,
+    "value": 35.7,
     "gs60": 0.73,
     "isMe": true
    },
    {
-    "rank": 471,
+    "rank": 476,
     "name": "Adam Klapka",
     "team": "CGY",
     "pos": "R",
     "gp": 8,
-    "value": 35.7,
+    "value": 35.5,
     "gs60": 0.7,
     "isMe": false
    },
    {
-    "rank": 472,
+    "rank": 477,
     "name": "Jonny Brodzinski",
     "team": "WSH",
     "pos": "C",
     "gp": 2,
-    "value": 35.7,
+    "value": 35.5,
     "gs60": 0.7,
     "isMe": false
    }
@@ -270,5 +270,6 @@
   "onNhlRoster": true,
   "template": "nhl"
  },
- "art": true
+ "art": true,
+ "updatedAt": "2026-10-22T05:02:48-07:00"
 }

@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.1,
-   "percentile": 57
+   "percentile": 56
   },
   "Defense": {
    "value": -0.1,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 42.1,
+  "value": 42.0,
   "gs": 2.01,
   "gs60": 1.36,
   "gameScore": 2.01,
   "minutes": 89,
   "gp": 7,
-  "rank": 379,
-  "pool": 704,
-  "percentile": 46.2,
+  "rank": 384,
+  "pool": 706,
+  "percentile": 45.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 377,
-    "name": "Chandler Stephenson",
-    "team": "SEA",
-    "pos": "C",
-    "gp": 10,
-    "value": 42.2,
-    "gs60": 2.02,
-    "isMe": false
-   },
-   {
-    "rank": 378,
+    "rank": 382,
     "name": "Paul Cotter",
     "team": "VAN",
     "pos": "L",
     "gp": 11,
-    "value": 42.2,
+    "value": 42.0,
     "gs60": 2.02,
     "isMe": false
    },
    {
-    "rank": 379,
+    "rank": 383,
+    "name": "Josh Doan",
+    "team": "BUF",
+    "pos": "R",
+    "gp": 10,
+    "value": 42.0,
+    "gs60": 2.01,
+    "isMe": false
+   },
+   {
+    "rank": 384,
     "name": "Axel Sandin-Pellikka",
     "team": "DET",
     "pos": "D",
     "gp": 7,
-    "value": 42.1,
+    "value": 42.0,
     "gs60": 2.01,
     "isMe": true
    },
    {
-    "rank": 380,
+    "rank": 385,
     "name": "Zach Hyman",
     "team": "EDM",
     "pos": "L",
     "gp": 3,
-    "value": 42.0,
+    "value": 41.9,
     "gs60": 1.99,
     "isMe": false
    },
    {
-    "rank": 381,
+    "rank": 386,
     "name": "Stefan Noesen",
     "team": "NJD",
     "pos": "R",
     "gp": 5,
-    "value": 41.8,
+    "value": 41.6,
     "gs60": 1.95,
     "isMe": false
    }
@@ -384,5 +384,6 @@
   "onNhlRoster": true,
   "template": "nhl"
  },
- "art": true
+ "art": true,
+ "updatedAt": "2026-10-22T05:05:05-07:00"
 }

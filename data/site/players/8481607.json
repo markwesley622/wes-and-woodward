@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.28,
-   "percentile": 45
+   "percentile": 46
   },
   "Offense": {
    "value": -0.4,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": -0.0,
-   "percentile": 55
+   "percentile": 56
   }
  },
  "score": null,
  "standIn": {
-  "value": 45.7,
+  "value": 45.5,
   "gs": 2.71,
   "gs60": 1.16,
   "gameScore": 2.71,
   "minutes": 140,
   "gp": 9,
-  "rank": 343,
-  "pool": 704,
-  "percentile": 51.3,
+  "rank": 346,
+  "pool": 706,
+  "percentile": 51.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 341,
+    "rank": 344,
     "name": "Uvis Balinskis",
     "team": "FLA",
     "pos": "D",
     "gp": 6,
-    "value": 45.9,
+    "value": 45.7,
     "gs60": 2.75,
     "isMe": false
    },
    {
-    "rank": 342,
-    "name": "Matvei Michkov",
-    "team": "PHI",
-    "pos": "R",
+    "rank": 345,
+    "name": "K'Andre Miller",
+    "team": "CAR",
+    "pos": "D",
     "gp": 11,
-    "value": 45.8,
-    "gs60": 2.74,
+    "value": 45.7,
+    "gs60": 2.75,
     "isMe": false
    },
    {
-    "rank": 343,
+    "rank": 346,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 9,
-    "value": 45.7,
+    "value": 45.5,
     "gs60": 2.71,
     "isMe": true
    },
    {
-    "rank": 344,
+    "rank": 347,
     "name": "Matt Coronato",
     "team": "CGY",
     "pos": "R",
     "gp": 8,
-    "value": 45.7,
+    "value": 45.5,
     "gs60": 2.7,
     "isMe": false
    },
    {
-    "rank": 345,
-    "name": "Alex Ovechkin",
-    "team": "WSH",
-    "pos": "L",
-    "gp": 9,
+    "rank": 348,
+    "name": "Trevor Zegras",
+    "team": "PHI",
+    "pos": "C",
+    "gp": 12,
     "value": 45.5,
-    "gs60": 2.67,
+    "gs60": 2.69,
     "isMe": false
    }
   ],
@@ -447,5 +447,6 @@
   "onNhlRoster": true,
   "template": "nhl"
  },
- "art": true
+ "art": true,
+ "updatedAt": "2026-10-22T05:04:39-07:00"
 }

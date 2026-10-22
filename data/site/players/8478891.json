@@ -94,72 +94,72 @@
    "percentile": 47
   },
   "Net": {
-   "value": -0.5,
+   "value": -0.4,
    "percentile": 43
   }
  },
  "score": null,
  "standIn": {
-  "value": 33.8,
+  "value": 33.7,
   "gs": 0.3,
   "gs60": 0.91,
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 506,
-  "pool": 704,
-  "percentile": 28.1,
+  "rank": 511,
+  "pool": 706,
+  "percentile": 27.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 504,
+    "rank": 509,
     "name": "Aleksanteri Kaskimaki",
     "team": "STL",
     "pos": "C",
     "gp": 1,
-    "value": 33.9,
+    "value": 33.7,
     "gs60": 0.32,
     "isMe": false
    },
    {
-    "rank": 505,
+    "rank": 510,
     "name": "Connor Clifton",
     "team": "BOS",
     "pos": "D",
     "gp": 6,
-    "value": 33.8,
+    "value": 33.7,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 506,
+    "rank": 511,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 33.8,
+    "value": 33.7,
     "gs60": 0.3,
     "isMe": true
    },
    {
-    "rank": 507,
-    "name": "Noah Cates",
-    "team": "PHI",
-    "pos": "L",
-    "gp": 11,
-    "value": 33.7,
-    "gs60": 0.28,
-    "isMe": false
-   },
-   {
-    "rank": 508,
+    "rank": 512,
     "name": "Samuel Helenius",
     "team": "LAK",
     "pos": "C",
     "gp": 5,
-    "value": 33.7,
+    "value": 33.5,
     "gs60": 0.28,
+    "isMe": false
+   },
+   {
+    "rank": 513,
+    "name": "Brian Dumoulin",
+    "team": "LAK",
+    "pos": "D",
+    "gp": 7,
+    "value": 33.4,
+    "gs60": 0.25,
     "isMe": false
    }
   ],
@@ -369,5 +369,6 @@
   "onNhlRoster": true,
   "template": "nhl"
  },
- "art": true
+ "art": true,
+ "updatedAt": "2026-10-22T05:00:47-07:00"
 }
