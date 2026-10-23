@@ -39,9 +39,66 @@
  "playerSlug": "michal-postava-8485545",
  "inTop100AllTime": 0,
  "inHHOF": 0,
+ "featuredStats": {
+  "season": 20262027,
+  "regularSeason": {
+   "subSeason": {
+    "gamesPlayed": 1,
+    "goalsAgainstAvg": 3.037975,
+    "losses": 0,
+    "otLosses": 0,
+    "savePctg": 0.875,
+    "shutouts": 0,
+    "wins": 0
+   },
+   "career": {
+    "gamesPlayed": 1,
+    "goalsAgainstAvg": 3.037972,
+    "losses": 0,
+    "otLosses": 0,
+    "savePctg": 0.875,
+    "shutouts": 0,
+    "wins": 0
+   }
+  }
+ },
+ "careerTotals": {
+  "regularSeason": {
+   "assists": 0,
+   "gamesPlayed": 1,
+   "gamesStarted": 0,
+   "goals": 0,
+   "goalsAgainst": 1,
+   "goalsAgainstAvg": 3.037972,
+   "losses": 0,
+   "otLosses": 0,
+   "pim": 0,
+   "savePctg": 0.875,
+   "shotsAgainst": 8,
+   "shutouts": 0,
+   "timeOnIce": "19:45",
+   "wins": 0
+  }
+ },
  "shopLink": "#TODO",
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
+ "last5Games": [
+  {
+   "gameDate": "2026-10-22",
+   "gameId": 2026020165,
+   "gameTypeId": 2,
+   "gamesStarted": 0,
+   "goalsAgainst": 1,
+   "homeRoadFlag": "R",
+   "opponentAbbrev": "VAN",
+   "penaltyMins": 0,
+   "savePctg": 0.875,
+   "shotsAgainst": 8,
+   "teamAbbrev": "DET",
+   "toi": "19:45"
+  }
+ ],
  "seasonTotals": [
   {
    "gameTypeId": 2,
@@ -448,6 +505,37 @@
    "wins": 4
   },
   {
+   "assists": 0,
+   "gameTypeId": 2,
+   "gamesPlayed": 1,
+   "gamesStarted": 0,
+   "goals": 0,
+   "goalsAgainst": 1,
+   "goalsAgainstAvg": 3.037975,
+   "leagueAbbrev": "NHL",
+   "losses": 0,
+   "otLosses": 0,
+   "pim": 0,
+   "savePctg": 0.875,
+   "season": 20262027,
+   "sequence": 1,
+   "shotsAgainst": 8,
+   "shutouts": 0,
+   "teamCommonName": {
+    "default": "Red Wings"
+   },
+   "teamName": {
+    "default": "Detroit Red Wings",
+    "fr": "Red Wings de Detroit"
+   },
+   "teamPlaceNameWithPreposition": {
+    "default": "Detroit",
+    "fr": "de Detroit"
+   },
+   "timeOnIce": "19:45",
+   "wins": 0
+  },
+  {
    "gameTypeId": 2,
    "gamesPlayed": 4,
    "goalsAgainst": 5,
@@ -549,16 +637,6 @@
    "playerSlug": "alex-debrincat-8479337"
   },
   {
-   "playerId": 8480326,
-   "lastName": {
-    "default": "Dries"
-   },
-   "firstName": {
-    "default": "Sheldon"
-   },
-   "playerSlug": "sheldon-dries-8480326"
-  },
-  {
    "playerId": 8477971,
    "lastName": {
     "default": "Englund"
@@ -657,6 +735,16 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
+  },
+  {
+   "playerId": 8485545,
+   "lastName": {
+    "default": "Postava"
+   },
+   "firstName": {
+    "default": "Michal"
+   },
+   "playerSlug": "michal-postava-8485545"
   },
   {
    "playerId": 8479992,

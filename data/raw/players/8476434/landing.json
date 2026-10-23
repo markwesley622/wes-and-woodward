@@ -54,41 +54,41 @@
   "season": 20262027,
   "regularSeason": {
    "subSeason": {
-    "gamesPlayed": 6,
-    "goalsAgainstAvg": 3.575508,
+    "gamesPlayed": 7,
+    "goalsAgainstAvg": 3.354484,
     "losses": 3,
     "otLosses": 1,
-    "savePctg": 0.873418,
+    "savePctg": 0.871166,
     "shutouts": 0,
-    "wins": 2
+    "wins": 3
    },
    "career": {
-    "gamesPlayed": 569,
-    "goalsAgainstAvg": 2.879302,
+    "gamesPlayed": 570,
+    "goalsAgainstAvg": 2.877595,
     "losses": 242,
     "otLosses": 68,
-    "savePctg": 0.909032,
+    "savePctg": 0.909,
     "shutouts": 28,
-    "wins": 235
+    "wins": 236
    }
   }
  },
  "careerTotals": {
   "regularSeason": {
    "assists": 8,
-   "gamesPlayed": 569,
-   "gamesStarted": 557,
+   "gamesPlayed": 570,
+   "gamesStarted": 558,
    "goals": 0,
-   "goalsAgainst": 1551,
-   "goalsAgainstAvg": 2.879302,
+   "goalsAgainst": 1552,
+   "goalsAgainstAvg": 2.877595,
    "losses": 242,
    "otLosses": 68,
    "pim": 76,
-   "savePctg": 0.909032,
-   "shotsAgainst": 17039,
+   "savePctg": 0.909,
+   "shotsAgainst": 17044,
    "shutouts": 28,
-   "timeOnIce": "32320:20",
-   "wins": 235
+   "timeOnIce": "32360:20",
+   "wins": 236
   },
   "playoffs": {
    "assists": 0,
@@ -109,6 +109,21 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "decision": "W",
+   "gameDate": "2026-10-22",
+   "gameId": 2026020165,
+   "gameTypeId": 2,
+   "gamesStarted": 1,
+   "goalsAgainst": 1,
+   "homeRoadFlag": "R",
+   "opponentAbbrev": "VAN",
+   "penaltyMins": 0,
+   "savePctg": 0.8,
+   "shotsAgainst": 5,
+   "teamAbbrev": "DET",
+   "toi": "40:00"
+  },
   {
    "decision": "W",
    "gameDate": "2026-10-17",
@@ -168,21 +183,6 @@
    "shotsAgainst": 25,
    "teamAbbrev": "DET",
    "toi": "59:54"
-  },
-  {
-   "decision": "L",
-   "gameDate": "2026-10-04",
-   "gameId": 2026020035,
-   "gameTypeId": 2,
-   "gamesStarted": 1,
-   "goalsAgainst": 3,
-   "homeRoadFlag": "H",
-   "opponentAbbrev": "WPG",
-   "penaltyMins": 0,
-   "savePctg": 0.888889,
-   "shotsAgainst": 27,
-   "teamAbbrev": "DET",
-   "toi": "57:11"
   }
  ],
  "seasonTotals": [
@@ -1100,19 +1100,19 @@
   {
    "assists": 0,
    "gameTypeId": 2,
-   "gamesPlayed": 6,
-   "gamesStarted": 6,
+   "gamesPlayed": 7,
+   "gamesStarted": 7,
    "goals": 0,
-   "goalsAgainst": 20,
-   "goalsAgainstAvg": 3.575508,
+   "goalsAgainst": 21,
+   "goalsAgainstAvg": 3.354484,
    "leagueAbbrev": "NHL",
    "losses": 3,
    "otLosses": 1,
    "pim": 0,
-   "savePctg": 0.873418,
+   "savePctg": 0.871166,
    "season": 20262027,
    "sequence": 1,
-   "shotsAgainst": 158,
+   "shotsAgainst": 163,
    "shutouts": 0,
    "teamCommonName": {
     "default": "Red Wings"
@@ -1125,8 +1125,8 @@
     "default": "Detroit",
     "fr": "de Detroit"
    },
-   "timeOnIce": "335:37",
-   "wins": 2
+   "timeOnIce": "375:37",
+   "wins": 3
   }
  ],
  "awards": [
@@ -1231,16 +1231,6 @@
    "playerSlug": "alex-debrincat-8479337"
   },
   {
-   "playerId": 8480326,
-   "lastName": {
-    "default": "Dries"
-   },
-   "firstName": {
-    "default": "Sheldon"
-   },
-   "playerSlug": "sheldon-dries-8480326"
-  },
-  {
    "playerId": 8477971,
    "lastName": {
     "default": "Englund"
@@ -1339,6 +1329,16 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
+  },
+  {
+   "playerId": 8485545,
+   "lastName": {
+    "default": "Postava"
+   },
+   "firstName": {
+    "default": "Michal"
+   },
+   "playerSlug": "michal-postava-8485545"
   },
   {
    "playerId": 8479992,

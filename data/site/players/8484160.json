@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 7,
+  "gp": 8,
   "goals": 0,
   "assists": 2,
   "points": 2,
   "plusMinus": -1,
   "pim": 2,
-  "shots": 4,
+  "shots": 5,
   "shootingPct": 0.0,
-  "toiPerGame": "10:25",
+  "toiPerGame": "10:24",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 7,
+   "gp": 8,
    "goals": 0,
    "assists": 2,
    "points": 2,
@@ -60,21 +60,21 @@
   "name": "Nate Danielson",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484160.png",
-  "gamesPlayed": 7,
+  "gamesPlayed": 8,
   "goals": 0,
   "assists": 2,
   "points": 2,
-  "shots": 4,
+  "shots": 5,
   "shootingPct": 0.0,
-  "toiPerGame": 625.1,
-  "ixG": 0.26,
-  "goalsAboveExpected": -0.26,
-  "gameScore": 1.14,
+  "toiPerGame": 623.9,
+  "ixG": 0.29,
+  "goalsAboveExpected": -0.29,
+  "gameScore": 1.42,
   "fiveOnFive": {
-   "icetimeMinutes": 70.8,
+   "icetimeMinutes": 80.2,
    "onIceXgPct": 0.5,
-   "onIceCorsiPct": 0.49,
-   "ixgPer60": 0.22,
+   "onIceCorsiPct": 0.5,
+   "ixgPer60": 0.217,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.1,
-   "percentile": 35
+   "value": -0.0,
+   "percentile": 30
   },
   "Offense": {
-   "value": -0.6,
-   "percentile": 29
+   "value": -0.8,
+   "percentile": 21
   },
   "Defense": {
    "value": -0.1,
    "percentile": 46
   },
   "Net": {
-   "value": -0.7,
-   "percentile": 33
+   "value": -0.9,
+   "percentile": 26
   }
  },
  "score": null,
  "standIn": {
-  "value": 36.4,
-  "gs": 0.89,
-  "gs60": 0.73,
-  "gameScore": 0.89,
-  "minutes": 73,
-  "gp": 7,
-  "rank": 464,
-  "pool": 706,
-  "percentile": 34.3,
+  "value": 35.3,
+  "gs": 0.68,
+  "gs60": 0.49,
+  "gameScore": 0.68,
+  "minutes": 83,
+  "gp": 8,
+  "rank": 490,
+  "pool": 715,
+  "percentile": 31.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 462,
-    "name": "Jacob Trouba",
-    "team": "SJS",
-    "pos": "D",
-    "gp": 10,
-    "value": 36.6,
-    "gs60": 0.91,
-    "isMe": false
-   },
-   {
-    "rank": 463,
-    "name": "Zack Ostapchuk",
-    "team": "SJS",
+    "rank": 488,
+    "name": "Jonny Brodzinski",
+    "team": "WSH",
     "pos": "C",
-    "gp": 10,
-    "value": 36.5,
-    "gs60": 0.9,
+    "gp": 2,
+    "value": 35.4,
+    "gs60": 0.7,
     "isMe": false
    },
    {
-    "rank": 464,
+    "rank": 489,
+    "name": "Zachary L'Heureux",
+    "team": "COL",
+    "pos": "L",
+    "gp": 3,
+    "value": 35.3,
+    "gs60": 0.69,
+    "isMe": false
+   },
+   {
+    "rank": 490,
     "name": "Nate Danielson",
     "team": "DET",
     "pos": "C",
-    "gp": 7,
-    "value": 36.4,
-    "gs60": 0.89,
+    "gp": 8,
+    "value": 35.3,
+    "gs60": 0.68,
     "isMe": true
    },
    {
-    "rank": 465,
-    "name": "Ryan Greene",
-    "team": "CHI",
-    "pos": "C",
+    "rank": 491,
+    "name": "David Jiricek",
+    "team": "PHI",
+    "pos": "D",
     "gp": 9,
-    "value": 36.4,
-    "gs60": 0.88,
+    "value": 35.2,
+    "gs60": 0.67,
     "isMe": false
    },
    {
-    "rank": 466,
-    "name": "Connor Brown",
-    "team": "NJD",
-    "pos": "R",
-    "gp": 1,
-    "value": 36.3,
-    "gs60": 0.85,
+    "rank": 492,
+    "name": "Dylan Coghlan",
+    "team": "VGK",
+    "pos": "D",
+    "gp": 6,
+    "value": 35.2,
+    "gs60": 0.66,
     "isMe": false
    }
   ],
@@ -353,12 +353,36 @@
     "moneypuck": -0.45,
     "hockeystatcards": -0.92
    }
+  },
+  {
+   "gameId": 2026020165,
+   "date": "2026-10-22",
+   "opponent": "VAN",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 0,
+   "toi": 10.2,
+   "ixg": 0.04,
+   "xgf": 0.18,
+   "xga": 0.25,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": -0.21,
+   "gameScoreParts": {
+    "moneypuck": 0.275,
+    "hockeystatcards": -0.69
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.13,
-  "games": 7,
+  "average": 0.09,
+  "games": 8,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
@@ -370,9 +394,9 @@
    "value": -0.69
   },
   "above2": 0,
-  "below0": 4
+  "below0": 5
  },
- "detGames": 7,
+ "detGames": 8,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -385,5 +409,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-22T05:01:56-07:00"
+ "updatedAt": "2026-10-23T05:01:56-07:00"
 }

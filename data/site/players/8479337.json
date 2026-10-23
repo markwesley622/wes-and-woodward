@@ -26,16 +26,16 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 9,
+  "gp": 10,
   "goals": 6,
-  "assists": 5,
-  "points": 11,
-  "plusMinus": 9,
-  "pim": 4,
-  "shots": 35,
-  "shootingPct": 0.171429,
-  "toiPerGame": "20:33",
-  "ppPoints": 3,
+  "assists": 6,
+  "points": 12,
+  "plusMinus": 8,
+  "pim": 6,
+  "shots": 39,
+  "shootingPct": 0.153846,
+  "toiPerGame": "20:02",
+  "ppPoints": 4,
   "wins": null,
   "losses": null,
   "otLosses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 9,
+   "gp": 10,
    "goals": 6,
-   "assists": 5,
-   "points": 11,
-   "plusMinus": 9,
-   "pim": 4
+   "assists": 6,
+   "points": 12,
+   "plusMinus": 8,
+   "pim": 6
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Alex DeBrincat",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479337.png",
-  "gamesPlayed": 9,
+  "gamesPlayed": 10,
   "goals": 6,
-  "assists": 5,
-  "points": 11,
-  "shots": 35,
-  "shootingPct": 0.171429,
-  "toiPerGame": 1233.4,
-  "ixG": 4.88,
-  "goalsAboveExpected": 1.12,
-  "gameScore": 14.0,
+  "assists": 6,
+  "points": 12,
+  "shots": 39,
+  "shootingPct": 0.153846,
+  "toiPerGame": 1201.6,
+  "ixG": 5.24,
+  "goalsAboveExpected": 0.76,
+  "gameScore": 14.85,
   "fiveOnFive": {
-   "icetimeMinutes": 139.8,
-   "onIceXgPct": 0.57,
+   "icetimeMinutes": 152.3,
+   "onIceXgPct": 0.56,
    "onIceCorsiPct": 0.57,
-   "ixgPer60": 0.987,
+   "ixgPer60": 0.997,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 1.89,
-   "percentile": 98
+   "value": 1.71,
+   "percentile": 97
   },
   "Offense": {
-   "value": 2.5,
+   "value": 2.4,
    "percentile": 96
   },
   "Defense": {
    "value": 0.5,
-   "percentile": 74
+   "percentile": 73
   },
   "Net": {
-   "value": 2.9,
-   "percentile": 97
+   "value": 2.8,
+   "percentile": 96
   }
  },
  "score": null,
  "standIn": {
-  "value": 92.2,
-  "gs": 15.51,
-  "gs60": 5.03,
-  "gameScore": 15.51,
-  "minutes": 185,
-  "gp": 9,
-  "rank": 17,
-  "pool": 706,
-  "percentile": 97.6,
+  "value": 91.4,
+  "gs": 15.98,
+  "gs60": 4.79,
+  "gameScore": 15.98,
+  "minutes": 200,
+  "gp": 10,
+  "rank": 19,
+  "pool": 715,
+  "percentile": 97.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 15,
-    "name": "Mark Stone",
-    "team": "VGK",
-    "pos": "R",
+    "rank": 17,
+    "name": "Tim Sttzle",
+    "team": "OTT",
+    "pos": "C",
     "gp": 11,
-    "value": 92.9,
-    "gs60": 16.0,
+    "value": 91.4,
+    "gs60": 16.01,
     "isMe": false
    },
    {
-    "rank": 16,
+    "rank": 18,
     "name": "Nathan MacKinnon",
     "team": "COL",
     "pos": "C",
     "gp": 10,
-    "value": 92.9,
+    "value": 91.4,
     "gs60": 15.99,
     "isMe": false
    },
    {
-    "rank": 17,
+    "rank": 19,
     "name": "Alex DeBrincat",
     "team": "DET",
     "pos": "R",
-    "gp": 9,
-    "value": 92.2,
-    "gs60": 15.51,
+    "gp": 10,
+    "value": 91.4,
+    "gs60": 15.98,
     "isMe": true
    },
    {
-    "rank": 18,
-    "name": "Matthew Tkachuk",
-    "team": "FLA",
-    "pos": "L",
-    "gp": 10,
-    "value": 92.2,
-    "gs60": 15.5,
+    "rank": 20,
+    "name": "David Pastrnak",
+    "team": "BOS",
+    "pos": "R",
+    "gp": 11,
+    "value": 90.9,
+    "gs60": 15.64,
     "isMe": false
    },
    {
-    "rank": 19,
+    "rank": 21,
     "name": "Joel Eriksson Ek",
     "team": "MIN",
     "pos": "C",
-    "gp": 10,
-    "value": 92.0,
-    "gs60": 15.34,
+    "gp": 11,
+    "value": 90.8,
+    "gs60": 15.62,
     "isMe": false
    }
   ],
@@ -521,12 +521,36 @@
     "moneypuck": 2.675,
     "hockeystatcards": 3.27
    }
+  },
+  {
+   "gameId": 2026020165,
+   "date": "2026-10-22",
+   "opponent": "VAN",
+   "home": false,
+   "goals": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": -1,
+   "shots": 4,
+   "pim": 2,
+   "toi": 15.2,
+   "ixg": 0.38,
+   "xgf": 0.65,
+   "xga": 0.22,
+   "gf": 0.0,
+   "ga": 1.0,
+   "blocks": 0.0,
+   "gameScore": 0.47,
+   "gameScoreParts": {
+    "moneypuck": 0.85,
+    "hockeystatcards": 0.1
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.72,
-  "games": 9,
+  "average": 1.6,
+  "games": 10,
   "best": {
    "date": "2026-10-13",
    "opponent": "NJD",
@@ -540,7 +564,7 @@
   "above2": 4,
   "below0": 2
  },
- "detGames": 9,
+ "detGames": 10,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -553,5 +577,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-22T05:02:07-07:00"
+ "updatedAt": "2026-10-23T05:02:09-07:00"
 }

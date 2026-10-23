@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 9,
+  "gp": 10,
   "goals": 1,
-  "assists": 2,
-  "points": 3,
-  "plusMinus": 1,
-  "pim": 10,
-  "shots": 6,
-  "shootingPct": 0.166667,
-  "toiPerGame": "14:20",
+  "assists": 3,
+  "points": 4,
+  "plusMinus": 3,
+  "pim": 12,
+  "shots": 8,
+  "shootingPct": 0.125,
+  "toiPerGame": "14:41",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 9,
+   "gp": 10,
    "goals": 1,
-   "assists": 2,
-   "points": 3,
-   "plusMinus": 1,
-   "pim": 10
+   "assists": 3,
+   "points": 4,
+   "plusMinus": 3,
+   "pim": 12
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Anton Johansson",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8483679.png",
-  "gamesPlayed": 9,
+  "gamesPlayed": 10,
   "goals": 1,
-  "assists": 2,
-  "points": 3,
-  "shots": 6,
-  "shootingPct": 0.166667,
-  "toiPerGame": 860.3,
-  "ixG": 0.47,
-  "goalsAboveExpected": 0.53,
-  "gameScore": 1.4,
+  "assists": 3,
+  "points": 4,
+  "shots": 8,
+  "shootingPct": 0.125,
+  "toiPerGame": 881.1,
+  "ixG": 0.51,
+  "goalsAboveExpected": 0.49,
+  "gameScore": 2.8,
   "fiveOnFive": {
-   "icetimeMinutes": 119.2,
-   "onIceXgPct": 0.37,
-   "onIceCorsiPct": 0.46,
-   "ixgPer60": 0.237,
+   "icetimeMinutes": 135.3,
+   "onIceXgPct": 0.4,
+   "onIceCorsiPct": 0.48,
+   "ixgPer60": 0.226,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.51,
-   "percentile": 9
+   "value": -0.19,
+   "percentile": 20
   },
   "Offense": {
-   "value": -0.7,
-   "percentile": 24
+   "value": -0.1,
+   "percentile": 56
   },
   "Defense": {
-   "value": -1.2,
-   "percentile": 7
+   "value": -1.0,
+   "percentile": 11
   },
   "Net": {
-   "value": -1.9,
-   "percentile": 6
+   "value": -1.1,
+   "percentile": 21
   }
  },
  "score": null,
  "standIn": {
-  "value": 25.4,
-  "gs": -1.61,
-  "gs60": -0.75,
-  "gameScore": -1.61,
-  "minutes": 129,
-  "gp": 9,
-  "rank": 647,
-  "pool": 706,
-  "percentile": 8.4,
+  "value": 34.2,
+  "gs": 0.44,
+  "gs60": 0.18,
+  "gameScore": 0.44,
+  "minutes": 147,
+  "gp": 10,
+  "rank": 510,
+  "pool": 715,
+  "percentile": 28.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 645,
-    "name": "Marc Gatcomb",
-    "team": "VGK",
+    "rank": 508,
+    "name": "Nick Blankenburg",
+    "team": "TOR",
+    "pos": "D",
+    "gp": 6,
+    "value": 34.4,
+    "gs60": 0.48,
+    "isMe": false
+   },
+   {
+    "rank": 509,
+    "name": "Tyler Pitlick",
+    "team": "MIN",
     "pos": "C",
-    "gp": 11,
-    "value": 25.6,
-    "gs60": -1.58,
+    "gp": 5,
+    "value": 34.4,
+    "gs60": 0.47,
     "isMe": false
    },
    {
-    "rank": 646,
-    "name": "Michael Bunting",
-    "team": "PHI",
-    "pos": "L",
-    "gp": 7,
-    "value": 25.5,
-    "gs60": -1.59,
-    "isMe": false
-   },
-   {
-    "rank": 647,
+    "rank": 510,
     "name": "Anton Johansson",
     "team": "DET",
     "pos": "D",
-    "gp": 9,
-    "value": 25.4,
-    "gs60": -1.61,
+    "gp": 10,
+    "value": 34.2,
+    "gs60": 0.44,
     "isMe": true
    },
    {
-    "rank": 648,
-    "name": "Dylan McIlrath",
-    "team": "WSH",
-    "pos": "D",
-    "gp": 3,
-    "value": 25.3,
-    "gs60": -1.66,
+    "rank": 511,
+    "name": "Jonathan Castagna",
+    "team": "CGY",
+    "pos": "C",
+    "gp": 6,
+    "value": 34.2,
+    "gs60": 0.44,
     "isMe": false
    },
    {
-    "rank": 649,
-    "name": "Ty Emberson",
-    "team": "EDM",
-    "pos": "D",
-    "gp": 7,
-    "value": 25.2,
-    "gs60": -1.67,
+    "rank": 512,
+    "name": "Felix Unger Srum",
+    "team": "CAR",
+    "pos": "R",
+    "gp": 3,
+    "value": 33.9,
+    "gs60": 0.36,
     "isMe": false
    }
   ],
@@ -385,26 +385,50 @@
     "moneypuck": 0.575,
     "hockeystatcards": 0.4
    }
+  },
+  {
+   "gameId": 2026020165,
+   "date": "2026-10-22",
+   "opponent": "VAN",
+   "home": false,
+   "goals": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": 2,
+   "shots": 2,
+   "pim": 2,
+   "toi": 17.8,
+   "ixg": 0.06,
+   "xgf": 1.13,
+   "xga": 0.34,
+   "gf": 2.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 2.05,
+   "gameScoreParts": {
+    "moneypuck": 1.4,
+    "hockeystatcards": 2.71
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.18,
-  "games": 9,
+  "average": 0.04,
+  "games": 10,
   "best": {
-   "date": "2026-10-15",
-   "opponent": "PHI",
-   "value": 0.53
+   "date": "2026-10-22",
+   "opponent": "VAN",
+   "value": 2.05
   },
   "worst": {
    "date": "2026-10-13",
    "opponent": "NJD",
    "value": -1.24
   },
-  "above2": 0,
+  "above2": 1,
   "below0": 4
  },
- "detGames": 9,
+ "detGames": 10,
  "currentTeam": "DET",
  "prospect": true,
  "prospectStatus": {
@@ -417,5 +441,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-22T05:04:51-07:00"
+ "updatedAt": "2026-10-23T05:04:48-07:00"
 }

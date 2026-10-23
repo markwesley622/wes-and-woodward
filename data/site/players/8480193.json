@@ -6,14 +6,14 @@
  "seasonLabel": "2026-27",
  "kind": "G",
  "standIn": {
-  "value": 77.4,
+  "value": 77.0,
   "gsax60": 5.08,
   "gsax": 5.08,
   "minutes": 214,
   "gp": 4,
   "rank": 6,
-  "pool": 65,
-  "percentile": 90.8,
+  "pool": 68,
+  "percentile": 91.2,
   "group": "goalies",
   "standIn": true,
   "neighbours": [
@@ -22,7 +22,7 @@
     "name": "Jeremy Swayman",
     "team": "BOS",
     "gp": 8,
-    "value": 87.2,
+    "value": 86.6,
     "gsax60": 7.7,
     "isMe": false
    },
@@ -30,9 +30,9 @@
     "rank": 5,
     "name": "Jesper Wallstedt",
     "team": "MIN",
-    "gp": 9,
-    "value": 84.8,
-    "gsax60": 6.93,
+    "gp": 10,
+    "value": 84.1,
+    "gsax60": 6.9,
     "isMe": false
    },
    {
@@ -40,7 +40,7 @@
     "name": "Daniil Tarasov",
     "team": "DET",
     "gp": 4,
-    "value": 77.4,
+    "value": 77.0,
     "gsax60": 5.08,
     "isMe": true
    },
@@ -49,17 +49,17 @@
     "name": "Igor Shesterkin",
     "team": "NYR",
     "gp": 5,
-    "value": 76.8,
+    "value": 76.4,
     "gsax60": 4.95,
     "isMe": false
    },
    {
     "rank": 8,
-    "name": "Alex Nedeljkovic",
-    "team": "SJS",
-    "gp": 4,
-    "value": 75.3,
-    "gsax60": 4.64,
+    "name": "Stuart Skinner",
+    "team": "WPG",
+    "gp": 7,
+    "value": 76.4,
+    "gsax60": 4.95,
     "isMe": false
    }
   ],
@@ -117,7 +117,7 @@
   "gaa": 1.402634,
   "shutouts": 1,
   "gsax": 5.08,
-  "pctl_gsax": null,
+  "pctl_gsax": 0.0,
   "qualifiesForPercentiles": false
  },
  "gameLog": [
@@ -195,5 +195,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-22T05:05:33-07:00"
+ "updatedAt": "2026-10-23T05:05:26-07:00"
 }

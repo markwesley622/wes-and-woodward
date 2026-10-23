@@ -1320,7 +1320,7 @@
    "easternUTCOffset": "-04:00",
    "venueUTCOffset": "-07:00",
    "venueTimezone": "America/Vancouver",
-   "gameState": "FUT",
+   "gameState": "OFF",
    "gameScheduleState": "OK",
    "tvBroadcasts": [
     {
@@ -1354,7 +1354,7 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/DET_dark.svg",
     "awaySplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/DET/20262027/DET-radio.m3u8"
+    "score": 5
    },
    "homeTeam": {
     "id": 23,
@@ -1372,15 +1372,37 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/VAN_dark.svg",
     "homeSplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/VAN/20262027/VAN-radio.m3u8"
+    "score": 2
    },
    "periodDescriptor": {
-    "number": 1,
+    "number": 3,
     "periodType": "REG",
     "maxRegulationPeriods": 3
    },
-   "ticketsLink": "https://www.ticketmaster.ca/event/11006503F091BB53?brand=canucks&artistid=806037&wt.mc_id=NHL_TEAM_VAN_SCHEDULE_GM5&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_TEAM_VAN&utm_content=SCHEDULE_GM5",
-   "ticketsLinkFr": "https://www.ticketmaster.ca/event/11006503F091BB53?brand=canucks&artistid=806037&wt.mc_id=NHL_TEAM_VAN_SCHEDULE_GM5&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_TEAM_VAN&utm_content=SCHEDULE_GM5",
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   },
+   "winningGoalie": {
+    "playerId": 8476434,
+    "firstInitial": {
+     "default": "J."
+    },
+    "lastName": {
+     "default": "Gibson"
+    }
+   },
+   "winningGoalScorer": {
+    "playerId": 8482078,
+    "firstInitial": {
+     "default": "L."
+    },
+    "lastName": {
+     "default": "Raymond"
+    }
+   },
+   "threeMinRecap": "/video/det-at-van-recap-6407276497112",
+   "threeMinRecapFr": "/fr/video/det-vs-van-22-10-2026-resume-6407276296112",
+   "condensedGame": "/video/det-at-van-condensed-game-6407277003112",
    "gameCenterLink": "/gamecenter/det-vs-van/2026/10/22/2026020165"
   },
   {

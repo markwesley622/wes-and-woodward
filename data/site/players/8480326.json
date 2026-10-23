@@ -87,19 +87,19 @@
  "hsc": {
   "Game score": {
    "value": -0.05,
-   "percentile": 27
+   "percentile": 26
   },
   "Offense": {
-   "value": -0.9,
+   "value": -1.0,
    "percentile": 16
   },
   "Defense": {
-   "value": 0.1,
-   "percentile": 56
+   "value": 0.0,
+   "percentile": 53
   },
   "Net": {
    "value": -0.9,
-   "percentile": 26
+   "percentile": 25
   }
  },
  "score": null,
@@ -110,34 +110,34 @@
   "gameScore": 0.02,
   "minutes": 58,
   "gp": 6,
-  "rank": 537,
-  "pool": 706,
+  "rank": 544,
+  "pool": 715,
   "percentile": 23.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 535,
-    "name": "Victor Mancini",
-    "team": "VAN",
+    "rank": 542,
+    "name": "Jonathan Aspirot",
+    "team": "BOS",
     "pos": "D",
-    "gp": 3,
-    "value": 32.5,
-    "gs60": 0.04,
+    "gp": 4,
+    "value": 32.6,
+    "gs60": 0.06,
     "isMe": false
    },
    {
-    "rank": 536,
-    "name": "Nikita Klepov",
-    "team": "ANA",
+    "rank": 543,
+    "name": "Maxim Tsyplakov",
+    "team": "CGY",
     "pos": "R",
-    "gp": 3,
-    "value": 32.4,
-    "gs60": 0.03,
+    "gp": 6,
+    "value": 32.6,
+    "gs60": 0.06,
     "isMe": false
    },
    {
-    "rank": 537,
+    "rank": 544,
     "name": "Sheldon Dries",
     "team": "DET",
     "pos": "C",
@@ -147,23 +147,23 @@
     "isMe": true
    },
    {
-    "rank": 538,
+    "rank": 545,
     "name": "William Trudeau",
     "team": "NSH",
     "pos": "D",
     "gp": 3,
-    "value": 32.3,
+    "value": 32.4,
     "gs60": 0.02,
     "isMe": false
    },
    {
-    "rank": 539,
-    "name": "Ilya Solovyov",
-    "team": "PIT",
-    "pos": "D",
-    "gp": 1,
+    "rank": 546,
+    "name": "Matt Rempe",
+    "team": "NYR",
+    "pos": "C",
+    "gp": 2,
     "value": 32.3,
-    "gs60": 0.01,
+    "gs60": -0.0,
     "isMe": false
    }
   ],
@@ -436,9 +436,9 @@
   "inWindow": false,
   "window": "undrafted",
   "draftYear": null,
-  "onNhlRoster": true,
+  "onNhlRoster": false,
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-10-22T05:02:21-07:00"
+ "updatedAt": "2026-10-23T05:02:23-07:00"
 }

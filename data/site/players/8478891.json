@@ -91,75 +91,75 @@
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 47
+   "percentile": 46
   },
   "Net": {
-   "value": -0.4,
-   "percentile": 43
+   "value": -0.5,
+   "percentile": 44
   }
  },
  "score": null,
  "standIn": {
-  "value": 33.7,
+  "value": 33.6,
   "gs": 0.3,
   "gs60": 0.91,
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 511,
-  "pool": 706,
-  "percentile": 27.6,
+  "rank": 519,
+  "pool": 715,
+  "percentile": 27.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 509,
-    "name": "Aleksanteri Kaskimaki",
-    "team": "STL",
+    "rank": 517,
+    "name": "Justin Dowling",
+    "team": "NYR",
     "pos": "C",
-    "gp": 1,
-    "value": 33.7,
-    "gs60": 0.32,
+    "gp": 4,
+    "value": 33.6,
+    "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 510,
+    "rank": 518,
     "name": "Connor Clifton",
     "team": "BOS",
     "pos": "D",
     "gp": 6,
-    "value": 33.7,
+    "value": 33.6,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 511,
+    "rank": 519,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 33.7,
+    "value": 33.6,
     "gs60": 0.3,
     "isMe": true
    },
    {
-    "rank": 512,
-    "name": "Samuel Helenius",
-    "team": "LAK",
-    "pos": "C",
-    "gp": 5,
+    "rank": 520,
+    "name": "Brennan Othmann",
+    "team": "CGY",
+    "pos": "L",
+    "gp": 3,
     "value": 33.5,
-    "gs60": 0.28,
+    "gs60": 0.27,
     "isMe": false
    },
    {
-    "rank": 513,
-    "name": "Brian Dumoulin",
-    "team": "LAK",
-    "pos": "D",
-    "gp": 7,
-    "value": 33.4,
-    "gs60": 0.25,
+    "rank": 521,
+    "name": "Skyler Brind'Amour",
+    "team": "CAR",
+    "pos": "C",
+    "gp": 1,
+    "value": 33.5,
+    "gs60": 0.27,
     "isMe": false
    }
   ],
@@ -370,5 +370,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-22T05:00:47-07:00"
+ "updatedAt": "2026-10-23T05:00:47-07:00"
 }
