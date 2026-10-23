@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Univ. of Notre Dame",
-   "gp": 2,
+   "gp": 4,
    "g": 0,
    "a": 1,
    "pts": 1,
-   "pm": 1,
+   "pm": 0,
    "pim": 0,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Notre Dame",
-     "gp": 2,
+     "gp": 4,
      "g": 0,
      "a": 1,
      "pts": 1,
-     "pm": 1,
+     "pm": 0,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -103,7 +103,7 @@
   "pgp": 0.703,
   "lineGp": 64,
   "nhle": 0.101,
-  "nhle82": 8.3,
+  "nhlePace": 8.5,
   "lines": [
    "OHL"
   ],
@@ -131,10 +131,12 @@
    "league": "ncaa",
    "season": "2026-2027",
    "ageBucket": "U19",
-   "cohortN": 3,
-   "gp": 2,
-   "percentile": null,
-   "note": "sample too small"
+   "cohortN": 18,
+   "gp": 4,
+   "value": 0.25,
+   "percentile": 11.1,
+   "percentileAllAges": 23.2,
+   "allAgesN": 2159
   }
  },
  "ceiling": {

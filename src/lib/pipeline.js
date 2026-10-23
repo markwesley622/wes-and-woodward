@@ -27,6 +27,8 @@ const mainLine = (x) => {
 };
 
 export const pipelineSize = RANKED.length;
+// scheduled games per team this season (pipeline/config.json season_games): every NHLe pace is per this many games
+export const seasonGames = PIPE.seasonGames ?? 82;
 export const rankStartDate = RANKED.find((x) => x.rankStartDate)?.rankStartDate ?? null;
 
 export function pipelineWindow(rank, size = 5) {

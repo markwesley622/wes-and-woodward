@@ -19,7 +19,7 @@ const rebuilt = new Date(D.generatedAt).toLocaleString('en-US', { month: 'short'
 const live = P.available && P.points;
 let prog = null;
 if (live) {
-  const proj = P.points, pace = S.gamesPlayed ? S.points / S.gamesPlayed * 82 : 0, delta = pace - proj;
+  const proj = P.points, pace = S.gamesPlayed ? S.points / S.gamesPlayed * (D.seasonGames ?? 82) : 0, delta = pace - proj;
   const scale = Math.max(proj, pace) * 1.06;
   const pre = P.preseasonPoints ?? proj;
   const scale2 = Math.max(proj, pace, pre) * 1.06;

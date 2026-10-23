@@ -5,6 +5,7 @@ import path from 'node:path';
 const D = JSON.parse(fs.readFileSync(path.resolve('data/site/prospects.json'), 'utf8'));
 const live = new Set(fs.readdirSync(path.resolve('data/site/players')).filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', '')));
 const P = D.prospects, X = D.excluded;
+const NGP = D.seasonGames ?? 82;   // scheduled games per team: NHLe paces are per this many
 const season = `${D.season.slice(0, 4)}–${D.season.slice(6)}`;
 const lastSeason = `${Number(D.season.slice(0, 4)) - 1}–${D.season.slice(2, 4)}`;
 const signed = (v, d = 0) => (v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d));
@@ -15,9 +16,9 @@ const nhlLink = (p) => (p.nhlId && live.has(String(p.nhlId)) ? `/players/${p.slu
 const lineOf = (ls) => (ls && ls.length ? ls[0] : null);
 const lineText = (l, g) => (l ? (g === 'G' ? `${l.league} · ${l.gp ?? 0} gp${l.svp ? `, ${l.svp}` : ''}` : `${l.league} · ${l.gp ?? 0} gp, ${l.g ?? 0}–${l.a ?? 0}–${l.pts ?? 0}`) : '—');
 const anchorText = (p) => { const A = p.anchor; if (!A) return '—'; return p.group === 'G' ? `${A.league} · ${A.lineGp} gp, ${A.svp.toFixed(3).slice(1)}` : `${A.league} · ${A.lineGp} gp, ${A.g}–${A.a}–${A.pts}`; };
-const featureText = (p) => { const A = p.anchor; if (!A) return '—'; return p.group === 'G' ? signed(A.svDelta * 1000, 0) : A.nhle82.toFixed(1); };
-const featureVal = (p) => (p.anchor ? (p.group === 'G' ? p.anchor.svDelta * 1000 : p.anchor.nhle82) : -99);
-const trajText = (p) => (p.trajectory ? signed(p.trajectory.delta * (p.group === 'G' ? 1000 : 82), 0) : '—');
+const featureText = (p) => { const A = p.anchor; if (!A) return '—'; return p.group === 'G' ? signed(A.svDelta * 1000, 0) : A.nhlePace.toFixed(1); };
+const featureVal = (p) => (p.anchor ? (p.group === 'G' ? p.anchor.svDelta * 1000 : p.anchor.nhlePace) : -99);
+const trajText = (p) => (p.trajectory ? signed(p.trajectory.delta * (p.group === 'G' ? 1000 : NGP), 0) : '—');
 const tierClass = (t) => ({ 'elite': 'elite', 'top-line': 'top', 'above average': 'above' }[t] || '');
 const pctText = (pf) => (pf && pf.percentile != null ? ordinal(Math.round(pf.percentile)) : '—');
 const posWord = (g) => (g === 'D' ? 'defensemen' : g === 'G' ? 'goalies' : 'forwards');
@@ -43,7 +44,7 @@ const posWord = (g) => (g === 'D' ? 'defensemen' : g === 'G' ? 'goalies' : 'forw
         <table class="sortable">
           <thead><tr>
             <th class="num on" data-sort="num">#</th><th data-sort="text">Player</th><th data-sort="text">Pos</th><th class="num" data-sort="num">Age</th><th data-sort="num">Draft</th>
-            <th data-sort="text">{lastSeason} line</th><th class="num" data-sort="num">League coef.</th><th class="num" data-sort="num">NHLe / 82 · SV% vs lg</th>
+            <th data-sort="text">{lastSeason} line</th><th class="num" data-sort="num">League coef.</th><th class="num" data-sort="num">NHLe / {NGP} · SV% vs lg</th>
             <th class="num" data-sort="num">Same-year pct.</th><th class="num" data-sort="num">Expected peak</th><th data-sort="num">Ceiling</th><th class="num" data-sort="num">P(NHL regular)</th>
             <th class="num" data-sort="num">Trajectory</th><th data-sort="text">Now</th>
           </tr></thead>
@@ -69,7 +70,7 @@ const posWord = (g) => (g === 'D' ? 'defensemen' : g === 'G' ? 'goalies' : 'forw
           </tbody>
         </table>
       </div>
-      <p class="note mono">Rank: by expected NHL peak. League coef.: Network NHLe points coefficient (hockeystats.com, Patrick Bacon), the share of a point in that league worth an NHL point. NHLe / 82: last full season's points per game blended across every league he played, times the coefficient, times 82. For goalies the same column is save percentage above that league's average, in thousandths. Same-year pct.: percentile among players of the same position born the same year in that league and season (EliteProspects), on points per game for skaters and save percentage for goalies. Expected peak: the nearest {D.cohort.k} drafted players of the {D.cohort.years[0]}–{D.cohort.years[1]} classes at the same position and age, matched on production (and on draft slot while pedigree still counts), and where their best NHL season landed as a percentile among regulars at the position, with busts as zero; the mean of that group, blended with the pick-band prior at weight 0.5 in the draft year, 0.25 at draft+1 and 0 from draft+2. A skater playing NHL games this season is also matched to rookies who got the same NHL ice time at his age, and that group's mean blends in at weight games ÷ (games + 20). Ceiling: the upside case, the tier the group's 75th percentile reached, with the share of the group that got there or better; it is not the forecast. P(NHL regular): share of the group with at least one qualifying NHL season. Trajectory: change between the two most recent full seasons, in NHLe / 82 for skaters and thousandths of save percentage above league for goalies. NHL marks a prospect currently on the Red Wings roster; his page is the full NHL page while he is up. Now: this season's line to date.</p>
+      <p class="note mono">Rank: by expected NHL peak. League coef.: Network NHLe points coefficient (hockeystats.com, Patrick Bacon), the share of a point in that league worth an NHL point. NHLe / {NGP}: last full season's points per game blended across every league he played, times the coefficient, times {NGP}. For goalies the same column is save percentage above that league's average, in thousandths. Same-year pct.: percentile among players of the same position born the same year in that league and season (EliteProspects), on points per game for skaters and save percentage for goalies. Expected peak: the nearest {D.cohort.k} drafted players of the {D.cohort.years[0]}–{D.cohort.years[1]} classes at the same position and age, matched on production (and on draft slot while pedigree still counts), and where their best NHL season landed as a percentile among regulars at the position, with busts as zero; the mean of that group, blended with the pick-band prior at weight 0.5 in the draft year, 0.25 at draft+1 and 0 from draft+2. A skater playing NHL games this season is also matched to rookies who got the same NHL ice time at his age, and that group's mean blends in at weight games ÷ (games + 20). Ceiling: the upside case, the tier the group's 75th percentile reached, with the share of the group that got there or better; it is not the forecast. P(NHL regular): share of the group with at least one qualifying NHL season. Trajectory: change between the two most recent full seasons, in NHLe / {NGP} for skaters and thousandths of save percentage above league for goalies. NHL marks a prospect currently on the Red Wings roster; his page is the full NHL page while he is up. Now: this season's line to date.</p>
     </div>
   </section>
 

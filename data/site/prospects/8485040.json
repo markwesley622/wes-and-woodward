@@ -31,12 +31,12 @@
   {
    "league": "NCAA",
    "team": "Univ. of Minnesota",
-   "gp": 2,
+   "gp": 4,
    "g": 0,
    "a": 0,
    "pts": 0,
-   "pm": 0,
-   "pim": 0,
+   "pm": 2,
+   "pim": 2,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -72,12 +72,12 @@
     {
      "league": "NCAA",
      "team": "Univ. of Minnesota",
-     "gp": 2,
+     "gp": 4,
      "g": 0,
      "a": 0,
      "pts": 0,
-     "pm": 0,
-     "pim": 0,
+     "pm": 2,
+     "pim": 2,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -147,7 +147,7 @@
   "pgp": 0.056,
   "lineGp": 36,
   "nhle": 0.011,
-  "nhle82": 0.9,
+  "nhlePace": 0.9,
   "lines": [
    "NCAA"
   ],
@@ -175,10 +175,12 @@
    "league": "ncaa",
    "season": "2026-2027",
    "ageBucket": "U21",
-   "cohortN": 23,
-   "gp": 2,
-   "percentile": null,
-   "note": "sample too small"
+   "cohortN": 51,
+   "gp": 4,
+   "value": 0.0,
+   "percentile": 0.0,
+   "percentileAllAges": 0.0,
+   "allAgesN": 1198
   }
  },
  "ceiling": {

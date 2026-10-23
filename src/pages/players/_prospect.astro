@@ -3,7 +3,7 @@
 // too small to rate), so the page is bio, draft pedigree, every line he played last season across
 // leagues, and the NHL game log if there is one.
 import Initials from '../../components/Initials.astro';
-import { pipelineWindow, pipelineSize, rankStartDate } from '../../lib/pipeline.js';
+import { pipelineWindow, pipelineSize, rankStartDate, seasonGames as NGP } from '../../lib/pipeline.js';
 const { P, prospect, twin = null } = Astro.props;   // twin: the player's NHL-level page, when he has one
 const B = P.bio, L = P.seasonLine || {}, G = P.gameLog || [], LINES = P.seasonLines || [];
 // prospect-system block (build_prospects.py): league strength, age-relative performance, cohort ceiling, trajectory
@@ -15,8 +15,8 @@ const isGoalie = R?.group === 'G';
 const posWord = R ? (R.group === 'D' ? 'defensemen' : R.group === 'G' ? 'goalies' : 'forwards') : 'skaters';
 const seasonLabel = (s) => `${s.slice(0, 4)}–${s.slice(7)}`;
 const sv3 = (v) => (v == null ? '—' : Number(v).toFixed(3).replace(/^0/, ''));
-// the production feature in display units: skaters NHLe points per 82, goalies thousandths of save percentage above the league average
-const featText = (v) => (v == null ? '—' : isGoalie ? sgn(v * 1000, 0) : (v * 82).toFixed(1));
+// the production feature in display units: skaters NHLe points per scheduled season (NGP games), goalies thousandths of save percentage above the league average
+const featText = (v) => (v == null ? '—' : isGoalie ? sgn(v * 1000, 0) : (v * NGP).toFixed(1));
 const SEASONS = R?.seasons && R.seasons.length ? R.seasons : null;
 // NHL usage (build_prospects.py nhl_usage): rookies who got the same NHL ice time at his age, blended by games
 const NU = R?.nhlUsage || null;
@@ -115,14 +115,14 @@ const lastLabel = `${Number(P.seasonLabel.slice(0, 4)) - 1}–${P.seasonLabel.sl
     <p class="lede">Four reads, every one measured against {posWord} only, built on his {A.season.slice(0, 4)}–{A.season.slice(7)} season{A.lines && A.lines.length > 1 ? ` across the ${A.lines.join(' and ')}` : ` in the ${A.league}`}.</p>
     <div class="grid layers">
       <div class="tile"><span class="eb mono">League strength</span><span class="num">{A.coef.toFixed(3)}</span><span class="sub">{A.league} coefficient · a point there is worth {Math.round(A.coef * 100)}% of an NHL point</span></div>
-      <div class="tile"><span class="eb mono">{isGoalie ? 'Save percentage, age-relative' : 'Production, age-relative'}</span><span class="num">{pctWord(PF?.percentile)}</span><span class="sub">{PF && PF.percentile != null ? `percentile among ${PF.league.toUpperCase()} ${posWord} born ${R.birthDate.slice(0, 4)}, ${seasonLabel(PF.season)} (${PF.cohortN} of them)` : 'no same-year table for this league yet'}{isGoalie ? ` · ${sv3(A.svp)} against a league ${sv3(A.leagueSvp)}` : ` · NHLe ${A.nhle82.toFixed(1)} per 82`}</span></div>
+      <div class="tile"><span class="eb mono">{isGoalie ? 'Save percentage, age-relative' : 'Production, age-relative'}</span><span class="num">{pctWord(PF?.percentile)}</span><span class="sub">{PF && PF.percentile != null ? `percentile among ${PF.league.toUpperCase()} ${posWord} born ${R.birthDate.slice(0, 4)}, ${seasonLabel(PF.season)} (${PF.cohortN} of them)` : 'no same-year table for this league yet'}{isGoalie ? ` · ${sv3(A.svp)} against a league ${sv3(A.leagueSvp)}` : ` · NHLe ${A.nhlePace.toFixed(1)} per ${NGP}`}</span></div>
       <div class="tile"><span class="eb mono">Ceiling</span><span class:list={['num', 'word', tierClass(C?.tier)]}>{C ? C.tier : '—'}</span><span class="sub">{C ? `the upside case, not the forecast: ${Math.round((C.pCeiling ?? 0) * 100)}% of ${C.n} comparable paths reached ${C.tier} or better; the 75th percentile lands at the ${ordinal(Math.round(C.p75))} percentile of NHL ${posWord} · expected peak ${R.score != null ? R.score.toFixed(0) : C.expected.toFixed(0)}${peakParts.length ? ` (cohort ${C.expected.toFixed(0)}, ${peakParts.join(', ')})` : ''} · ${Math.round(C.pRegular * 100)}% became NHL regulars` : 'not enough same-age comparables'}</span></div>
-      <div class="tile"><span class="eb mono">Trajectory</span><span class="num">{TR ? (isGoalie ? featText(TR.delta) : sgn(TR.delta * 82, 1)) : '—'}</span><span class="sub">{TR ? `${isGoalie ? 'save percentage above league, in thousandths' : 'NHLe per 82'}: ${featText(TR.from.feature)} in the ${TR.from.league}, ${seasonLabel(TR.from.season)} to ${featText(TR.to.feature)} in the ${TR.to.league}, ${seasonLabel(TR.to.season)}` : 'needs two full seasons'}</span></div>
+      <div class="tile"><span class="eb mono">Trajectory</span><span class="num">{TR ? (isGoalie ? featText(TR.delta) : sgn(TR.delta * NGP, 1)) : '—'}</span><span class="sub">{TR ? `${isGoalie ? 'save percentage above league, in thousandths' : `NHLe per ${NGP}`}: ${featText(TR.from.feature)} in the ${TR.from.league}, ${seasonLabel(TR.from.season)} to ${featText(TR.to.feature)} in the ${TR.to.league}, ${seasonLabel(TR.to.season)}` : 'needs two full seasons'}</span></div>
     </div>
     {C && C.examples && C.examples.length > 0 && (
       <div class="table-scroll comps">
         <table>
-          <thead><tr><th>Closest paths at age {C.age}</th><th>Draft</th><th>League then</th><th class="num">{isGoalie ? 'SV% vs league' : 'NHLe / 82'}</th><th>NHL outcome</th><th class="num">NHL GP</th></tr></thead>
+          <thead><tr><th>Closest paths at age {C.age}</th><th>Draft</th><th>League then</th><th class="num">{isGoalie ? 'SV% vs league' : `NHLe / ${NGP}`}</th><th>NHL outcome</th><th class="num">NHL GP</th></tr></thead>
           <tbody>
             {C.examples.map((e) => (
               <tr><td>{e.name}</td><td>{e.year} · {e.pick}</td><td>{e.league}</td><td class="num">{featText(e.feature)}</td><td class:list={[tierClass(e.tier)]}>{e.tier}{e.peak != null ? <span class="mute"> · {ordinal(Math.round(e.peak))}</span> : null}</td><td class="num">{e.nhlGp}</td></tr>

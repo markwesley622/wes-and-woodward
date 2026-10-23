@@ -43,7 +43,8 @@ import certifi
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 EP = ROOT / "data" / "raw" / "ep"
 CFG = json.loads((ROOT / "pipeline" / "config.json").read_text())
-SEASON = CFG["nhl_season"]                      # 20262027
+SEASON = CFG["nhl_season"]
+SEASON_GAMES = int(CFG.get("season_games", 82))   # NHLe paces are per scheduled season (84 from 2026-27)                      # 20262027
 YR = int(SEASON[:4])                            # 2026
 CUR = f"{YR}-{YR + 1}"; PREV = f"{YR - 1}-{YR}"; PREV2 = f"{YR - 2}-{YR - 1}"
 COHORT_YEARS = range(2008, 2020)
@@ -145,7 +146,7 @@ def nhl_pools():
     for f in sorted((ROOT / "data" / "raw" / "nhl_seasons").glob("skaters_*.json")):
         rows = json.load(f.open()).get("data", [])
         sid = f.stem.split("_")[1]; season = f"{sid[:4]}-{sid[4:]}"
-        mx = max((r.get("gamesPlayed") or 0) for r in rows) if rows else 82
+        mx = max((r.get("gamesPlayed") or 0) for r in rows) if rows else SEASON_GAMES
         thr = max(20, int(round(0.5 * mx)))
         for g in ("F", "D"):
             vals = sorted((r["points"] / r["gamesPlayed"]) for r in rows if (r.get("gamesPlayed") or 0) >= thr and (("D" if r.get("positionCode") == "D" else "F") == g))
@@ -153,7 +154,7 @@ def nhl_pools():
     for f in sorted((ROOT / "data" / "raw" / "nhl_seasons").glob("goalies_*.json")):
         rows = json.load(f.open()).get("data", [])
         sid = f.stem.split("_")[1]; season = f"{sid[:4]}-{sid[4:]}"
-        mx = max((r.get("gamesPlayed") or 0) for r in rows) if rows else 82
+        mx = max((r.get("gamesPlayed") or 0) for r in rows) if rows else SEASON_GAMES
         thr = max(10, int(round(0.25 * mx)))                   # a quarter of the schedule: tandem goalies count
         vals = sorted(r["savePct"] for r in rows if (r.get("gamesPlayed") or 0) >= thr and r.get("savePct") is not None)
         pools[(season, "G")] = {"vals": vals, "threshold": thr, "n": len(vals)}
@@ -239,7 +240,7 @@ def primary_line(rec, season, group, tabs=None):
         best["feature"] = best["svDelta"]
     else:
         best["pgp"] = round(best["pts"] / best["gp"], 3); best["lineGp"] = best["gp"]; best["gp"] = gsum
-        best["nhle"] = round(wsum / gsum, 3); best["nhle82"] = round(best["nhle"] * 82, 1); best["lines"] = lines
+        best["nhle"] = round(wsum / gsum, 3); best["nhlePace"] = round(best["nhle"] * SEASON_GAMES, 1); best["lines"] = lines
         best["feature"] = best["nhle"]
     return best
 
@@ -592,7 +593,7 @@ def main():
         x["rankStart"] = (start["ranks"].get(x["epId"]) or {}).get("rank")
         x["rankStartDate"] = start["date"]
 
-    out = {"season": SEASON, "built": dt.date.today().isoformat(), "cohort": {"years": [COHORT_YEARS.start, COHORT_YEARS.stop - 1], "rows": len(cohort), "players": len({r['pid'] for r in cohort}), "k": K_NEIGHBOURS},
+    out = {"season": SEASON, "seasonGames": SEASON_GAMES, "built": dt.date.today().isoformat(), "cohort": {"years": [COHORT_YEARS.start, COHORT_YEARS.stop - 1], "rows": len(cohort), "players": len({r['pid'] for r in cohort}), "k": K_NEIGHBOURS},
            "nhle": {"source": NHLE["source"], "retrieved": NHLE["retrieved"]}, "prospects": prospects, "excluded": excluded,
            "method": {"prospect": "Rookie-eligible and inside draft+4 (draft year = year one). Undrafted: under 23 on Sept 15. NHL-roster players who qualify are ranked; their page keeps the NHL template while they are up.",
                       "league": "Network NHLe points coefficient per league, hockeystats.com (Patrick Bacon). Skaters: applied to points per game. Goalies: used to keep comparables in leagues of similar strength.",

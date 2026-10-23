@@ -4,5 +4,6 @@
   "mp_season": "2026",
   "game_type": 2,
   "standings_date": "now",
-  "_notes": "nhl_season/mp_season: bump to 20262027 / 2026 when the new season starts. standings_date: 'now' is safe year-round (the API redirects to the most recent standings date); pin a date only to freeze a snapshot. game_type: 2=regular, 3=playoffs."
+  "_notes": "nhl_season/mp_season: bump to 20262027 / 2026 when the new season starts. standings_date: 'now' is safe year-round (the API redirects to the most recent standings date); pin a date only to freeze a snapshot. game_type: 2=regular, 3=playoffs. season_games: scheduled regular-season games per team (84 from 2026-27; 82 before). Every per-season pace on the site reads it.",
+  "season_games": 84
 }

@@ -17,6 +17,7 @@ import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 CFG = json.loads((ROOT / "pipeline" / "config.json").read_text())
+SEASON_GAMES = int(CFG.get("season_games", 82))   # 84 from 2026-27; every per-season pace uses this
 RAW_NHL = ROOT / "data" / "raw" / "nhl"
 RAW_MP = ROOT / "data" / "raw" / "moneypuck"
 OUT = ROOT / "data" / "site"
@@ -302,7 +303,7 @@ def build_dashboard():
     gp = det["gamesPlayed"]
     max_gp = max(r["gamesPlayed"] for r in standings)
     # the season is on once any team has played (Detroit may still be at 0-0-0 on opening night)
-    state = "offseason" if max_gp >= 82 else ("preseason" if max_gp == 0 else "in_season")
+    state = "offseason" if max_gp >= SEASON_GAMES else ("preseason" if max_gp == 0 else "in_season")
 
     div_teams = [r for r in standings if r["divisionAbbrev"] == det["divisionAbbrev"]]
     conf_teams = [r for r in standings if r["conferenceAbbrev"] == det["conferenceAbbrev"]]
@@ -335,14 +336,14 @@ def build_dashboard():
             return None
         if not r or s["gamesPlayed"] == 0 or f(r, "xGoalsFor") + f(r, "xGoalsAgainst") == 0:
             # no games yet: keep the team in the table (every division lists all its teams), at the bottom
-            return {"team": abbr, "xgWinPct": 0.0, "xgPoints": 0.0, "xgPointsPer82": 0.0, "actualPoints": s["points"],
+            return {"team": abbr, "xgWinPct": 0.0, "xgPoints": 0.0, "xgPointsPerSeason": 0.0, "actualPoints": s["points"],
                     "division": s["divisionAbbrev"], "conference": s["conferenceAbbrev"], "noGames": True}
         xf, xa = f(r, "xGoalsFor"), f(r, "xGoalsAgainst")
         w = xf ** 2 / (xf ** 2 + xa ** 2)
         g = s["gamesPlayed"]
         pts = w * 2 * g + otl_rate * g
         return {"team": abbr, "xgWinPct": round(w, 4), "xgPoints": round(pts, 1),
-                "xgPointsPer82": round(pts / g * 82, 1), "actualPoints": s["points"],
+                "xgPointsPerSeason": round(pts / g * SEASON_GAMES, 1), "actualPoints": s["points"],
                 "division": s["divisionAbbrev"], "conference": s["conferenceAbbrev"]}
 
     table = [d for d in (deserved_for(a) for a in by_abbr) if d]
@@ -355,7 +356,7 @@ def build_dashboard():
         deserved = {
             "xgWinPct": mine["xgWinPct"],
             "xgPoints": mine["xgPoints"],
-            "xgPointsPer82": mine["xgPointsPer82"],
+            "xgPointsPerSeason": mine["xgPointsPerSeason"],
             "pointsAboveExpected": round(det["points"] - mine["xgPoints"], 1),
             "divisionPlace": place([d for d in table if d["division"] == mine["division"]]),
             "conferencePlace": place([d for d in table if d["conference"] == mine["conference"]]),
@@ -496,6 +497,7 @@ def build_dashboard():
         "generatedAt": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
         "season": CFG["nhl_season"],
         "seasonLabel": f'{CFG["nhl_season"][:4]}-{CFG["nhl_season"][6:]}',
+        "seasonGames": SEASON_GAMES,
         "seasonState": state,
         "standings": standings_block,
         "deserved": deserved,

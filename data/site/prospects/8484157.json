@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Univ. of Minnesota-Duluth",
-   "gp": 4,
+   "gp": 6,
    "g": 0,
    "a": 0,
    "pts": 0,
-   "pm": 2,
+   "pm": 3,
    "pim": 10,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Minnesota-Duluth",
-     "gp": 4,
+     "gp": 6,
      "g": 0,
      "a": 0,
      "pts": 0,
-     "pm": 2,
+     "pm": 3,
      "pim": 10,
      "gaa": null,
      "svp": null,
@@ -169,7 +169,7 @@
   "pgp": 0.051,
   "lineGp": 39,
   "nhle": 0.01,
-  "nhle82": 0.8,
+  "nhlePace": 0.8,
   "lines": [
    "NCAA"
   ],
@@ -197,12 +197,12 @@
    "league": "ncaa",
    "season": "2026-2027",
    "ageBucket": "U22",
-   "cohortN": 33,
-   "gp": 4,
+   "cohortN": 75,
+   "gp": 6,
    "value": 0.0,
    "percentile": 0.0,
    "percentileAllAges": 0.0,
-   "allAgesN": 467
+   "allAgesN": 1198
   }
  },
  "ceiling": {
@@ -350,7 +350,7 @@
   "gp": 39,
   "season": "2025-2026"
  },
- "rank": 33,
+ "rank": 32,
  "score": 0.2,
  "rankStart": 34,
  "rankStartDate": "2026-10-06"
