@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.19,
-   "percentile": 20
+   "percentile": 19
   },
   "Offense": {
    "value": -0.1,
@@ -95,7 +95,7 @@
   },
   "Net": {
    "value": -1.1,
-   "percentile": 21
+   "percentile": 20
   }
  },
  "score": null,
@@ -106,14 +106,14 @@
   "gameScore": 0.44,
   "minutes": 147,
   "gp": 10,
-  "rank": 510,
-  "pool": 715,
+  "rank": 511,
+  "pool": 717,
   "percentile": 28.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 508,
+    "rank": 509,
     "name": "Nick Blankenburg",
     "team": "TOR",
     "pos": "D",
@@ -123,17 +123,17 @@
     "isMe": false
    },
    {
-    "rank": 509,
+    "rank": 510,
     "name": "Tyler Pitlick",
     "team": "MIN",
     "pos": "C",
     "gp": 5,
-    "value": 34.4,
+    "value": 34.3,
     "gs60": 0.47,
     "isMe": false
    },
    {
-    "rank": 510,
+    "rank": 511,
     "name": "Anton Johansson",
     "team": "DET",
     "pos": "D",
@@ -143,7 +143,7 @@
     "isMe": true
    },
    {
-    "rank": 511,
+    "rank": 512,
     "name": "Jonathan Castagna",
     "team": "CGY",
     "pos": "C",
@@ -153,12 +153,12 @@
     "isMe": false
    },
    {
-    "rank": 512,
+    "rank": 513,
     "name": "Felix Unger Srum",
     "team": "CAR",
     "pos": "R",
     "gp": 3,
-    "value": 33.9,
+    "value": 33.8,
     "gs60": 0.36,
     "isMe": false
    }
@@ -441,5 +441,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-23T05:04:48-07:00"
+ "updatedAt": "2026-10-24T05:04:17-07:00"
 }

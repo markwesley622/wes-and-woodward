@@ -31,10 +31,10 @@
   {
    "league": "OHL",
    "team": "Windsor Spitfires",
-   "gp": 11,
-   "g": 3,
-   "a": 4,
-   "pts": 7,
+   "gp": 9,
+   "g": 1,
+   "a": 2,
+   "pts": 3,
    "pm": -2,
    "pim": 2,
    "gaa": null,
@@ -140,10 +140,10 @@
     {
      "league": "OHL",
      "team": "Windsor Spitfires",
-     "gp": 11,
-     "g": 3,
-     "a": 4,
-     "pts": 7,
+     "gp": 9,
+     "g": 1,
+     "a": 2,
+     "pts": 3,
      "pm": -2,
      "pim": 2,
      "gaa": null,
@@ -248,29 +248,32 @@
   }
  ],
  "anchor": {
-  "season": "2026-2027",
-  "league": "OHL",
-  "leagueSlug": "ohl",
-  "table": "OHL",
-  "coef": 0.144,
-  "team": "Windsor Spitfires",
-  "gp": 11,
-  "g": 3,
-  "a": 4,
-  "pts": 7,
-  "pgp": 0.636,
-  "lineGp": 11,
-  "nhle": 0.092,
-  "nhlePace": 7.7,
+  "season": "2025-2026",
+  "league": "SHL",
+  "leagueSlug": "shl",
+  "table": "SHL",
+  "coef": 0.566,
+  "team": "Bryn\u00e4s IF",
+  "gp": 38,
+  "g": 0,
+  "a": 0,
+  "pts": 0,
+  "pgp": 0.0,
+  "lineGp": 12,
+  "nhle": 0.057,
+  "nhlePace": 4.8,
   "lines": [
-   "OHL"
+   "U20 Nationell",
+   "SHL",
+   "HockeyAllsvenskan",
+   "WJC-20"
   ],
-  "feature": 0.092
+  "feature": 0.057
  },
  "league": {
-  "name": "OHL",
-  "table": "OHL",
-  "coef": 0.144,
+  "name": "SHL",
+  "table": "SHL",
+  "coef": 0.566,
   "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
  },
  "performance": {
@@ -289,81 +292,61 @@
    "league": "ohl",
    "season": "2026-2027",
    "ageBucket": "U20",
-   "cohortN": 77,
-   "gp": 11,
-   "value": 0.6364,
-   "percentile": 46.8,
-   "percentileAllAges": 63.1,
-   "allAgesN": 1875
+   "cohortN": 76,
+   "gp": 9,
+   "value": 0.3333,
+   "percentile": 19.7,
+   "percentileAllAges": 32.8,
+   "allAgesN": 1839
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 3.3,
+  "expected": 5.9,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 16.4,
-  "pRegular": 0.18,
-  "pTopLine": 0.0,
-  "pAboveAvg": 0.0,
+  "p90": 37.3,
+  "pRegular": 0.2,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.04,
   "pElite": 0.0,
-  "poolN": 1305,
+  "poolN": 1362,
   "group": "F",
-  "age": 19,
-  "pickWeight": 0.5,
+  "age": 18,
+  "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.18,
+  "pCeiling": 0.2,
   "featureBand": [
-   0.075,
-   0.109
+   0.04,
+   0.075
   ],
   "examples": [
    {
-    "name": "Chris Wagner",
-    "year": 2010,
-    "pick": 122,
-    "league": "NCAA",
-    "feature": 0.09,
-    "peak": 15.8,
-    "tier": "replacement level",
-    "nhlGp": 401
-   },
-   {
-    "name": "Clark Bishop",
-    "year": 2014,
-    "pick": 127,
-    "league": "QMJHL",
-    "feature": 0.088,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 53
-   },
-   {
-    "name": "Liam Coughlin",
-    "year": 2014,
-    "pick": 130,
-    "league": "BCHL",
-    "feature": 0.089,
+    "name": "Ludwig Blomstrand",
+    "year": 2011,
+    "pick": 120,
+    "league": "J20 SuperElit",
+    "feature": 0.057,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Taylor Stefishen",
-    "year": 2008,
-    "pick": 136,
-    "league": "NCAA",
-    "feature": 0.093,
+    "name": "Lucas Feuk",
+    "year": 2019,
+    "pick": 116,
+    "league": "J20 SuperElit",
+    "feature": 0.061,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Alexis P\u00e9pin",
-    "year": 2014,
-    "pick": 114,
-    "league": "QMJHL",
-    "feature": 0.086,
+    "name": "Luke Stevens",
+    "year": 2015,
+    "pick": 126,
+    "league": "USHS-Prep",
+    "feature": 0.055,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -372,31 +355,51 @@
     "name": "Rhett Gardner",
     "year": 2016,
     "pick": 116,
-    "league": "NCAA",
-    "feature": 0.085,
+    "league": "AJHL",
+    "feature": 0.062,
     "peak": 0.3,
     "tier": "replacement level",
     "nhlGp": 41
    },
    {
-    "name": "Yegor Spiridonov",
-    "year": 2019,
-    "pick": 108,
-    "league": "VHL",
-    "feature": 0.096,
+    "name": "Nick Petersen",
+    "year": 2009,
+    "pick": 121,
+    "league": "QMJHL",
+    "feature": 0.064,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Spencer Smallman",
-    "year": 2015,
-    "pick": 138,
-    "league": "QMJHL",
-    "feature": 0.09,
+    "name": "Sam Lafferty",
+    "year": 2014,
+    "pick": 113,
+    "league": "USHS-Prep",
+    "feature": 0.062,
+    "peak": 41.6,
+    "tier": "below average",
+    "nhlGp": 378
+   },
+   {
+    "name": "Max Willman",
+    "year": 2014,
+    "pick": 121,
+    "league": "USHS-Prep",
+    "feature": 0.049,
+    "peak": 3.7,
+    "tier": "replacement level",
+    "nhlGp": 68
+   },
+   {
+    "name": "Lane MacDermid",
+    "year": 2009,
+    "pick": 112,
+    "league": "OHL",
+    "feature": 0.052,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
+    "nhlGp": 21
    }
   ]
  },
@@ -414,11 +417,11 @@
   "group": "F"
  },
  "blend": {
-  "w": 0.25,
-  "sinceDraft": 1,
+  "w": 0.5,
+  "sinceDraft": 0,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 3.3,
-  "expected": 5.8,
+  "cohortExpected": 5.9,
+  "expected": 9.7,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -439,11 +442,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 11,
-  "season": "2026-2027"
+  "gp": 12,
+  "season": "2025-2026"
  },
- "rank": 23,
- "score": 5.8,
+ "rank": 19,
+ "score": 9.7,
  "rankStart": 19,
  "rankStartDate": "2026-10-06"
 }

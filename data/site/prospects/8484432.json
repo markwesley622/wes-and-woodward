@@ -31,7 +31,7 @@
   {
    "league": "DEL",
    "team": "Iserlohn Roosters",
-   "gp": 10,
+   "gp": 8,
    "g": 0,
    "a": 0,
    "pts": 0,
@@ -106,7 +106,7 @@
     {
      "league": "DEL",
      "team": "Iserlohn Roosters",
-     "gp": 10,
+     "gp": 8,
      "g": 0,
      "a": 0,
      "pts": 0,
@@ -258,24 +258,26 @@
   }
  ],
  "anchor": {
-  "season": "2026-2027",
+  "season": "2025-2026",
   "league": "DEL",
   "leagueSlug": "del",
   "table": "DEL",
   "coef": 0.352,
-  "team": "Iserlohn Roosters",
-  "gp": 10,
-  "g": 0,
-  "a": 0,
-  "pts": 0,
-  "pgp": 0.0,
-  "lineGp": 10,
-  "nhle": 0.0,
-  "nhlePace": 0.0,
+  "team": "L\u00f6wen Frankfurt",
+  "gp": 29,
+  "g": 2,
+  "a": 2,
+  "pts": 4,
+  "pgp": 0.19,
+  "lineGp": 21,
+  "nhle": 0.049,
+  "nhlePace": 4.1,
   "lines": [
-   "DEL"
+   "DEL",
+   "DEL",
+   "DEL2"
   ],
-  "feature": 0.0
+  "feature": 0.049
  },
  "league": {
   "name": "DEL",
@@ -298,50 +300,90 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 7,
-   "gp": 10,
+   "gp": 8,
    "value": 0.0,
    "percentile": 0.0,
    "percentileAllAges": 0.0,
-   "allAgesN": 163
+   "allAgesN": 151
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 0.0,
+  "expected": 1.9,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
-  "pRegular": 0.0,
-  "pTopLine": 0.0,
-  "pAboveAvg": 0.0,
-  "pElite": 0.0,
-  "poolN": 1122,
+  "pRegular": 0.04,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.02,
+  "pElite": 0.02,
+  "poolN": 1236,
   "group": "F",
-  "age": 21,
+  "age": 20,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.0,
+  "pCeiling": 0.04,
   "featureBand": [
-   0.0,
-   0.043
+   0.042,
+   0.057
   ],
   "examples": [
    {
-    "name": "Ashton Bernard",
-    "year": 2009,
-    "pick": 174,
-    "league": "LNAH",
-    "feature": 0.0,
+    "name": "Yasin Ciss\u00e9",
+    "year": 2010,
+    "pick": 150,
+    "league": "QMJHL",
+    "feature": 0.049,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Randy McNaught",
-    "year": 2010,
-    "pick": 190,
-    "league": "CIS",
-    "feature": 0.0,
+    "name": "Ben Johnson",
+    "year": 2012,
+    "pick": 90,
+    "league": "AHL",
+    "feature": 0.049,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Dwyer Tschantz",
+    "year": 2014,
+    "pick": 202,
+    "league": "NCAA",
+    "feature": 0.049,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jack Gorniak",
+    "year": 2018,
+    "pick": 123,
+    "league": "NCAA",
+    "feature": 0.049,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Danick Paquette",
+    "year": 2008,
+    "pick": 64,
+    "league": "ECHL",
+    "feature": 0.05,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Wes Myron",
+    "year": 2012,
+    "pick": 177,
+    "league": "NCAA",
+    "feature": 0.05,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -351,57 +393,17 @@
     "year": 2013,
     "pick": 71,
     "league": "AHL",
-    "feature": 0.0,
+    "feature": 0.05,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Reid Duke",
-    "year": 2014,
-    "pick": 169,
-    "league": "AHL",
-    "feature": 0.0,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Max Gardiner",
-    "year": 2010,
-    "pick": 74,
+    "name": "David Pope",
+    "year": 2013,
+    "pick": 109,
     "league": "NCAA",
-    "feature": 0.009,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Mitchell Mattson",
-    "year": 2016,
-    "pick": 126,
-    "league": "NCAA",
-    "feature": 0.009,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Bokondji Imama",
-    "year": 2015,
-    "pick": 180,
-    "league": "AHL",
-    "feature": 0.01,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 36
-   },
-   {
-    "name": "Jason Clark",
-    "year": 2010,
-    "pick": 82,
-    "league": "ECHL",
-    "feature": 0.011,
+    "feature": 0.05,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -423,11 +425,11 @@
  },
  "blend": {
   "w": 0.0,
-  "sinceDraft": 3,
+  "sinceDraft": 2,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 0.0,
-  "expected": 0.0,
-  "tier": "did not stick"
+  "cohortExpected": 1.9,
+  "expected": 1.9,
+  "tier": "replacement level"
  },
  "trajectory": {
   "from": {
@@ -447,11 +449,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 10,
-  "season": "2026-2027"
+  "gp": 21,
+  "season": "2025-2026"
  },
- "rank": 34,
- "score": 0.0,
+ "rank": 30,
+ "score": 1.9,
  "rankStart": 31,
  "rankStartDate": "2026-10-06"
 }

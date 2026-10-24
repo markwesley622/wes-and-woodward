@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.48,
-   "percentile": 57
+   "percentile": 58
   },
   "Offense": {
    "value": -0.0,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": 0.7,
-   "percentile": 72
+   "percentile": 73
   }
  },
  "score": null,
  "standIn": {
-  "value": 53.8,
+  "value": 53.6,
   "gs": 4.59,
   "gs60": 1.72,
   "gameScore": 4.59,
   "minutes": 160,
   "gp": 10,
-  "rank": 265,
-  "pool": 715,
-  "percentile": 62.9,
+  "rank": 264,
+  "pool": 717,
+  "percentile": 63.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 263,
+    "rank": 262,
     "name": "Jordan Kyrou",
     "team": "WSH",
     "pos": "R",
     "gp": 9,
-    "value": 54.0,
+    "value": 53.8,
     "gs60": 4.64,
     "isMe": false
    },
    {
-    "rank": 264,
+    "rank": 263,
     "name": "Ryan Winterton",
     "team": "SEA",
     "pos": "C",
     "gp": 11,
-    "value": 53.9,
+    "value": 53.7,
     "gs60": 4.61,
     "isMe": false
    },
    {
-    "rank": 265,
+    "rank": 264,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 10,
-    "value": 53.8,
+    "value": 53.6,
     "gs60": 4.59,
     "isMe": true
    },
    {
-    "rank": 266,
+    "rank": 265,
     "name": "Tim Washe",
     "team": "ANA",
     "pos": "C",
     "gp": 10,
-    "value": 53.8,
+    "value": 53.5,
     "gs60": 4.58,
     "isMe": false
    },
    {
-    "rank": 267,
-    "name": "Juuso Vlimki",
-    "team": "CAR",
-    "pos": "D",
-    "gp": 2,
-    "value": 53.6,
-    "gs60": 4.54,
+    "rank": 266,
+    "name": "Parker Kelly",
+    "team": "COL",
+    "pos": "C",
+    "gp": 11,
+    "value": 53.5,
+    "gs60": 4.57,
     "isMe": false
    }
   ],
@@ -472,5 +472,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-23T05:04:37-07:00"
+ "updatedAt": "2026-10-24T05:04:06-07:00"
 }

@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": -0.9,
-   "percentile": 12
+   "percentile": 13
   },
   "Net": {
    "value": -2.4,
@@ -100,20 +100,30 @@
  },
  "score": null,
  "standIn": {
-  "value": 23.3,
+  "value": 23.4,
   "gs": -2.33,
   "gs60": -0.75,
   "gameScore": -2.33,
   "minutes": 187,
   "gp": 10,
-  "rank": 681,
-  "pool": 715,
-  "percentile": 4.8,
+  "rank": 683,
+  "pool": 717,
+  "percentile": 4.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 679,
+    "rank": 681,
+    "name": "Max Jones",
+    "team": "EDM",
+    "pos": "L",
+    "gp": 5,
+    "value": 23.5,
+    "gs60": -2.29,
+    "isMe": false
+   },
+   {
+    "rank": 682,
     "name": "Tyson Foerster",
     "team": "PHI",
     "pos": "R",
@@ -123,27 +133,17 @@
     "isMe": false
    },
    {
-    "rank": 680,
-    "name": "Ethan Del Mastro",
-    "team": "CHI",
-    "pos": "D",
-    "gp": 3,
-    "value": 23.4,
-    "gs60": -2.31,
-    "isMe": false
-   },
-   {
-    "rank": 681,
+    "rank": 683,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
     "gp": 10,
-    "value": 23.3,
+    "value": 23.4,
     "gs60": -2.33,
     "isMe": true
    },
    {
-    "rank": 682,
+    "rank": 684,
     "name": "Hoyt Stanley",
     "team": "OTT",
     "pos": "D",
@@ -153,12 +153,12 @@
     "isMe": false
    },
    {
-    "rank": 683,
+    "rank": 685,
     "name": "Marc Gatcomb",
     "team": "VGK",
     "pos": "C",
     "gp": 12,
-    "value": 23.0,
+    "value": 23.1,
     "gs60": -2.42,
     "isMe": false
    }
@@ -622,5 +622,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-23T05:01:43-07:00"
+ "updatedAt": "2026-10-24T05:01:35-07:00"
 }

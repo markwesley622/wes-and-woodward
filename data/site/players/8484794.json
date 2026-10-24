@@ -86,8 +86,8 @@
    "percentile": 96
   },
   "Offense": {
-   "value": 1.8,
-   "percentile": 93
+   "value": 1.7,
+   "percentile": 92
   },
   "Defense": {
    "value": 1.2,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 87.2,
+  "value": 86.9,
   "gs": 13.71,
   "gs60": 5.31,
   "gameScore": 13.71,
   "minutes": 155,
   "gp": 10,
-  "rank": 32,
-  "pool": 715,
-  "percentile": 95.5,
+  "rank": 36,
+  "pool": 717,
+  "percentile": 95.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 30,
-    "name": "Matthew Schaefer",
-    "team": "NYI",
+    "rank": 34,
+    "name": "Cale Makar",
+    "team": "COL",
     "pos": "D",
     "gp": 10,
-    "value": 87.9,
-    "gs60": 14.04,
+    "value": 87.4,
+    "gs60": 13.93,
     "isMe": false
    },
    {
-    "rank": 31,
-    "name": "Nikita Kucherov",
-    "team": "TBL",
-    "pos": "R",
-    "gp": 9,
-    "value": 87.6,
-    "gs60": 13.88,
+    "rank": 35,
+    "name": "Artturi Lehkonen",
+    "team": "COL",
+    "pos": "L",
+    "gp": 11,
+    "value": 87.0,
+    "gs60": 13.75,
     "isMe": false
    },
    {
-    "rank": 32,
+    "rank": 36,
     "name": "Michael Brandsegg-Nygrd",
     "team": "DET",
     "pos": "R",
     "gp": 10,
-    "value": 87.2,
+    "value": 86.9,
     "gs60": 13.71,
     "isMe": true
    },
    {
-    "rank": 33,
+    "rank": 37,
     "name": "Clayton Keller",
     "team": "UTA",
     "pos": "R",
     "gp": 11,
-    "value": 87.2,
+    "value": 86.9,
     "gs60": 13.69,
     "isMe": false
    },
    {
-    "rank": 34,
-    "name": "Jack Quinn",
-    "team": "BUF",
-    "pos": "R",
+    "rank": 38,
+    "name": "Lane Hutson",
+    "team": "MTL",
+    "pos": "D",
     "gp": 10,
-    "value": 86.8,
-    "gs60": 13.51,
+    "value": 86.6,
+    "gs60": 13.58,
     "isMe": false
    }
   ],
@@ -457,5 +457,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-23T05:01:15-07:00"
+ "updatedAt": "2026-10-24T05:01:11-07:00"
 }

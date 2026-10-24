@@ -87,15 +87,15 @@
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 40
+   "percentile": 41
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 46
+   "percentile": 45
   },
   "Net": {
    "value": -0.5,
-   "percentile": 44
+   "percentile": 43
   }
  },
  "score": null,
@@ -106,14 +106,14 @@
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 519,
-  "pool": 715,
-  "percentile": 27.4,
+  "rank": 521,
+  "pool": 717,
+  "percentile": 27.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 517,
+    "rank": 519,
     "name": "Justin Dowling",
     "team": "NYR",
     "pos": "C",
@@ -123,7 +123,7 @@
     "isMe": false
    },
    {
-    "rank": 518,
+    "rank": 520,
     "name": "Connor Clifton",
     "team": "BOS",
     "pos": "D",
@@ -133,7 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 519,
+    "rank": 521,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
@@ -143,21 +143,21 @@
     "isMe": true
    },
    {
-    "rank": 520,
+    "rank": 522,
+    "name": "Mike Matheson",
+    "team": "MTL",
+    "pos": "D",
+    "gp": 6,
+    "value": 33.6,
+    "gs60": 0.29,
+    "isMe": false
+   },
+   {
+    "rank": 523,
     "name": "Brennan Othmann",
     "team": "CGY",
     "pos": "L",
     "gp": 3,
-    "value": 33.5,
-    "gs60": 0.27,
-    "isMe": false
-   },
-   {
-    "rank": 521,
-    "name": "Skyler Brind'Amour",
-    "team": "CAR",
-    "pos": "C",
-    "gp": 1,
     "value": 33.5,
     "gs60": 0.27,
     "isMe": false
@@ -370,5 +370,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-23T05:00:47-07:00"
+ "updatedAt": "2026-10-24T05:00:46-07:00"
 }

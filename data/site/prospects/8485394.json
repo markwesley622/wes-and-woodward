@@ -31,12 +31,12 @@
   {
    "league": "SHL",
    "team": "Timr\u00e5 IK",
-   "gp": 10,
-   "g": 3,
-   "a": 4,
-   "pts": 7,
+   "gp": 8,
+   "g": 2,
+   "a": 2,
+   "pts": 4,
    "pm": -1,
-   "pim": 6,
+   "pim": 4,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -123,12 +123,12 @@
     {
      "league": "SHL",
      "team": "Timr\u00e5 IK",
-     "gp": 10,
-     "g": 3,
-     "a": 4,
-     "pts": 7,
+     "gp": 8,
+     "g": 2,
+     "a": 2,
+     "pts": 4,
      "pm": -1,
-     "pim": 6,
+     "pim": 4,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -214,24 +214,26 @@
   }
  ],
  "anchor": {
-  "season": "2026-2027",
+  "season": "2025-2026",
   "league": "SHL",
   "leagueSlug": "shl",
   "table": "SHL",
   "coef": 0.566,
   "team": "Timr\u00e5 IK",
-  "gp": 10,
-  "g": 3,
-  "a": 4,
-  "pts": 7,
-  "pgp": 0.7,
-  "lineGp": 10,
-  "nhle": 0.396,
-  "nhlePace": 33.3,
+  "gp": 61,
+  "g": 9,
+  "a": 16,
+  "pts": 25,
+  "pgp": 0.581,
+  "lineGp": 43,
+  "nhle": 0.286,
+  "nhlePace": 24.0,
   "lines": [
-   "SHL"
+   "SHL",
+   "AHL",
+   "WJC-20"
   ],
-  "feature": 0.396
+  "feature": 0.286
  },
  "league": {
   "name": "SHL",
@@ -255,114 +257,114 @@
    "league": "shl",
    "season": "2026-2027",
    "ageBucket": "U20",
-   "cohortN": 15,
-   "gp": 10,
-   "value": 0.7,
-   "percentile": 86.7,
-   "percentileAllAges": 91.5,
-   "allAgesN": 234
+   "cohortN": 13,
+   "gp": 8,
+   "value": 0.5,
+   "percentile": 76.9,
+   "percentileAllAges": 78.1,
+   "allAgesN": 215
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 56.0,
-  "median": 66.8,
-  "p75": 83.5,
-  "p90": 94.3,
-  "pRegular": 0.84,
-  "pTopLine": 0.36,
-  "pAboveAvg": 0.64,
-  "pElite": 0.22,
-  "poolN": 1305,
+  "expected": 40.1,
+  "median": 42.6,
+  "p75": 70.2,
+  "p90": 91.3,
+  "pRegular": 0.7,
+  "pTopLine": 0.24,
+  "pAboveAvg": 0.44,
+  "pElite": 0.12,
+  "poolN": 1362,
   "group": "F",
-  "age": 19,
-  "pickWeight": 0.5,
-  "tier": "top-line",
-  "pCeiling": 0.36,
+  "age": 18,
+  "pickWeight": 1.0,
+  "tier": "above average",
+  "pCeiling": 0.44,
   "featureBand": [
-   0.292,
-   0.45
+   0.204,
+   0.328
   ],
   "examples": [
+   {
+    "name": "Samuel Fagemo",
+    "year": 2019,
+    "pick": 50,
+    "league": "SHL",
+    "feature": 0.285,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 21
+   },
+   {
+    "name": "Alex DeBrincat",
+    "year": 2016,
+    "pick": 39,
+    "league": "OHL",
+    "feature": 0.29,
+    "peak": 96.2,
+    "tier": "elite",
+    "nhlGp": 698
+   },
    {
     "name": "Aleksi Heponiemi",
     "year": 2017,
     "pick": 40,
-    "league": "Liiga",
-    "feature": 0.398,
+    "league": "WHL",
+    "feature": 0.277,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 25
    },
    {
-    "name": "Carl Grundstr\u00f6m",
-    "year": 2016,
-    "pick": 57,
-    "league": "SHL",
-    "feature": 0.399,
-    "peak": 30.5,
-    "tier": "below average",
-    "nhlGp": 343
+    "name": "Markus Granlund",
+    "year": 2011,
+    "pick": 45,
+    "league": "SM-liiga",
+    "feature": 0.307,
+    "peak": 56.2,
+    "tier": "above average",
+    "nhlGp": 335
    },
    {
-    "name": "Johan Larsson",
+    "name": "Calle J\u00e4rnkrok",
     "year": 2010,
-    "pick": 56,
+    "pick": 51,
     "league": "Elitserien",
-    "feature": 0.4,
-    "peak": 22.4,
-    "tier": "replacement level",
-    "nhlGp": 488
+    "feature": 0.302,
+    "peak": 67.2,
+    "tier": "above average",
+    "nhlGp": 774
    },
    {
-    "name": "Jesper Boqvist",
-    "year": 2017,
-    "pick": 36,
-    "league": "SHL",
-    "feature": 0.388,
-    "peak": 42.6,
-    "tier": "below average",
-    "nhlGp": 387
-   },
-   {
-    "name": "Philip Tomasino",
+    "name": "Nick Robertson",
     "year": 2019,
-    "pick": 24,
-    "league": "AHL",
-    "feature": 0.391,
-    "peak": 49.2,
-    "tier": "below average",
-    "nhlGp": 218
+    "pick": 53,
+    "league": "OHL",
+    "feature": 0.269,
+    "peak": 52.0,
+    "tier": "above average",
+    "nhlGp": 237
    },
    {
-    "name": "Marko Dano",
-    "year": 2013,
-    "pick": 27,
-    "league": "AHL",
-    "feature": 0.384,
+    "name": "Marcus Davidsson",
+    "year": 2017,
+    "pick": 37,
+    "league": "SHL",
+    "feature": 0.266,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 141
+    "nhlGp": 0
    },
    {
-    "name": "Jakob Silfverberg",
-    "year": 2009,
-    "pick": 39,
-    "league": "Elitserien",
-    "feature": 0.363,
-    "peak": 72.2,
-    "tier": "above average",
-    "nhlGp": 820
-   },
-   {
-    "name": "Jonathan Dahl\u00e9n",
+    "name": "Rasmus Asplund",
     "year": 2016,
-    "pick": 42,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.353,
-    "peak": 35.6,
+    "pick": 33,
+    "league": "SHL",
+    "feature": 0.275,
+    "peak": 43.5,
     "tier": "below average",
-    "nhlGp": 61
+    "nhlGp": 189
    }
   ]
  },
@@ -380,11 +382,11 @@
   "group": "F"
  },
  "blend": {
-  "w": 0.25,
-  "sinceDraft": 1,
+  "w": 0.5,
+  "sinceDraft": 0,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 56.0,
-  "expected": 47.9,
+  "cohortExpected": 40.1,
+  "expected": 31.9,
   "tier": "below average"
  },
  "trajectory": {
@@ -405,11 +407,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 10,
-  "season": "2026-2027"
+  "gp": 43,
+  "season": "2025-2026"
  },
- "rank": 3,
- "score": 47.9,
+ "rank": 4,
+ "score": 31.9,
  "rankStart": 5,
  "rankStartDate": "2026-10-06"
 }

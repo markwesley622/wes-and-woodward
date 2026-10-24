@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.5,
-   "percentile": 73
+   "percentile": 72
   },
   "Net": {
    "value": 2.8,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 91.4,
+  "value": 91.1,
   "gs": 15.98,
   "gs60": 4.79,
   "gameScore": 15.98,
   "minutes": 200,
   "gp": 10,
-  "rank": 19,
-  "pool": 715,
-  "percentile": 97.3,
+  "rank": 20,
+  "pool": 717,
+  "percentile": 97.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 17,
-    "name": "Tim Sttzle",
-    "team": "OTT",
-    "pos": "C",
-    "gp": 11,
-    "value": 91.4,
-    "gs60": 16.01,
-    "isMe": false
-   },
-   {
     "rank": 18,
-    "name": "Nathan MacKinnon",
-    "team": "COL",
-    "pos": "C",
-    "gp": 10,
-    "value": 91.4,
-    "gs60": 15.99,
+    "name": "Jackson Blake",
+    "team": "CAR",
+    "pos": "R",
+    "gp": 12,
+    "value": 91.6,
+    "gs60": 16.25,
     "isMe": false
    },
    {
     "rank": 19,
+    "name": "Tim Sttzle",
+    "team": "OTT",
+    "pos": "C",
+    "gp": 11,
+    "value": 91.2,
+    "gs60": 16.01,
+    "isMe": false
+   },
+   {
+    "rank": 20,
     "name": "Alex DeBrincat",
     "team": "DET",
     "pos": "R",
     "gp": 10,
-    "value": 91.4,
+    "value": 91.1,
     "gs60": 15.98,
     "isMe": true
    },
    {
-    "rank": 20,
+    "rank": 21,
     "name": "David Pastrnak",
     "team": "BOS",
     "pos": "R",
     "gp": 11,
-    "value": 90.9,
+    "value": 90.6,
     "gs60": 15.64,
     "isMe": false
    },
    {
-    "rank": 21,
+    "rank": 22,
     "name": "Joel Eriksson Ek",
     "team": "MIN",
     "pos": "C",
     "gp": 11,
-    "value": 90.8,
+    "value": 90.6,
     "gs60": 15.62,
     "isMe": false
    }
@@ -577,5 +577,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-23T05:02:09-07:00"
+ "updatedAt": "2026-10-24T05:01:57-07:00"
 }

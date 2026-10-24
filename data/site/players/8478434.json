@@ -91,59 +91,59 @@
   },
   "Defense": {
    "value": 0.8,
-   "percentile": 82
+   "percentile": 83
   },
   "Net": {
    "value": -1.3,
-   "percentile": 15
+   "percentile": 16
   }
  },
  "score": null,
  "standIn": {
-  "value": 29.3,
+  "value": 29.4,
   "gs": -0.72,
   "gs60": -0.39,
   "gameScore": -0.72,
   "minutes": 110,
   "gp": 10,
-  "rank": 601,
-  "pool": 715,
-  "percentile": 15.9,
+  "rank": 605,
+  "pool": 717,
+  "percentile": 15.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 599,
-    "name": "Jake Evans",
-    "team": "MTL",
-    "pos": "C",
-    "gp": 9,
-    "value": 29.5,
-    "gs60": -0.69,
-    "isMe": false
-   },
-   {
-    "rank": 600,
+    "rank": 603,
     "name": "Josh Mahura",
     "team": "SEA",
     "pos": "D",
     "gp": 8,
-    "value": 29.4,
+    "value": 29.5,
     "gs60": -0.7,
     "isMe": false
    },
    {
-    "rank": 601,
+    "rank": 604,
+    "name": "Taylor Makar",
+    "team": "COL",
+    "pos": "L",
+    "gp": 1,
+    "value": 29.4,
+    "gs60": -0.71,
+    "isMe": false
+   },
+   {
+    "rank": 605,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
     "gp": 10,
-    "value": 29.3,
+    "value": 29.4,
     "gs60": -0.72,
     "isMe": true
    },
    {
-    "rank": 602,
+    "rank": 606,
     "name": "Rieger Lorenz",
     "team": "MIN",
     "pos": "L",
@@ -153,7 +153,7 @@
     "isMe": false
    },
    {
-    "rank": 603,
+    "rank": 607,
     "name": "Travis Sanheim",
     "team": "PHI",
     "pos": "D",
@@ -547,5 +547,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-23T05:03:03-07:00"
+ "updatedAt": "2026-10-24T05:02:43-07:00"
 }

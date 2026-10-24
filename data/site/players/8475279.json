@@ -86,8 +86,8 @@
    "percentile": 39
   },
   "Offense": {
-   "value": 0.4,
-   "percentile": 70
+   "value": 0.3,
+   "percentile": 71
   },
   "Defense": {
    "value": -0.4,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 42.1,
+  "value": 42.0,
   "gs": 2.16,
   "gs60": 0.66,
   "gameScore": 2.16,
   "minutes": 197,
   "gp": 10,
-  "rank": 385,
-  "pool": 715,
-  "percentile": 46.2,
+  "rank": 389,
+  "pool": 717,
+  "percentile": 45.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 383,
+    "rank": 387,
     "name": "Ryan Strome",
     "team": "CGY",
     "pos": "C",
     "gp": 9,
-    "value": 42.2,
+    "value": 42.1,
     "gs60": 2.19,
     "isMe": false
    },
    {
-    "rank": 384,
+    "rank": 388,
     "name": "Mason Marchment",
     "team": "SJS",
     "pos": "L",
     "gp": 11,
-    "value": 42.1,
+    "value": 42.0,
     "gs60": 2.17,
     "isMe": false
    },
    {
-    "rank": 385,
+    "rank": 389,
     "name": "Ben Chiarot",
     "team": "DET",
     "pos": "D",
     "gp": 10,
-    "value": 42.1,
+    "value": 42.0,
     "gs60": 2.16,
     "isMe": true
    },
    {
-    "rank": 386,
+    "rank": 390,
     "name": "Jiri Kulich",
     "team": "BUF",
     "pos": "C",
     "gp": 8,
-    "value": 42.0,
+    "value": 41.9,
     "gs60": 2.14,
     "isMe": false
    },
    {
-    "rank": 387,
+    "rank": 391,
     "name": "Isak Rosen",
     "team": "WPG",
     "pos": "R",
     "gp": 10,
-    "value": 42.0,
+    "value": 41.9,
     "gs60": 2.14,
     "isMe": false
    }
@@ -637,5 +637,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-23T05:04:11-07:00"
+ "updatedAt": "2026-10-24T05:03:44-07:00"
 }
