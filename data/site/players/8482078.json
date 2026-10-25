@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 10,
+  "gp": 11,
   "goals": 3,
   "assists": 6,
   "points": 9,
   "plusMinus": 0,
   "pim": 6,
-  "shots": 32,
-  "shootingPct": 0.09375,
-  "toiPerGame": "20:33",
+  "shots": 34,
+  "shootingPct": 0.088235,
+  "toiPerGame": "20:34",
   "ppPoints": 6,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 10,
+   "gp": 11,
    "goals": 3,
    "assists": 6,
    "points": 9,
@@ -60,21 +60,21 @@
   "name": "Lucas Raymond",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482078.png",
-  "gamesPlayed": 10,
+  "gamesPlayed": 11,
   "goals": 3,
   "assists": 6,
   "points": 9,
-  "shots": 32,
-  "shootingPct": 0.09375,
-  "toiPerGame": 1232.7,
-  "ixG": 4.79,
-  "goalsAboveExpected": -1.79,
-  "gameScore": 11.15,
+  "shots": 34,
+  "shootingPct": 0.088235,
+  "toiPerGame": 1234.0,
+  "ixG": 4.94,
+  "goalsAboveExpected": -1.94,
+  "gameScore": 12.0,
   "fiveOnFive": {
-   "icetimeMinutes": 154.3,
-   "onIceXgPct": 0.54,
-   "onIceCorsiPct": 0.58,
-   "ixgPer60": 0.77,
+   "icetimeMinutes": 171.8,
+   "onIceXgPct": 0.56,
+   "onIceCorsiPct": 0.59,
+   "ixgPer60": 0.744,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.93,
-   "percentile": 80
+   "value": 0.89,
+   "percentile": 79
   },
   "Offense": {
-   "value": 0.6,
-   "percentile": 76
+   "value": 0.4,
+   "percentile": 72
   },
   "Defense": {
-   "value": 0.8,
-   "percentile": 85
+   "value": 1.1,
+   "percentile": 89
   },
   "Net": {
-   "value": 1.4,
+   "value": 1.5,
    "percentile": 83
   }
  },
  "score": null,
  "standIn": {
-  "value": 77.4,
-  "gs": 10.26,
-  "gs60": 3.0,
-  "gameScore": 10.26,
-  "minutes": 205,
-  "gp": 10,
-  "rank": 75,
-  "pool": 717,
-  "percentile": 89.5,
+  "value": 77.6,
+  "gs": 10.93,
+  "gs60": 2.9,
+  "gameScore": 10.93,
+  "minutes": 226,
+  "gp": 11,
+  "rank": 82,
+  "pool": 721,
+  "percentile": 88.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 73,
-    "name": "Brayden Point",
-    "team": "TBL",
-    "pos": "C",
-    "gp": 10,
-    "value": 77.8,
-    "gs60": 10.39,
-    "isMe": false
-   },
-   {
-    "rank": 74,
-    "name": "Mitch Marner",
-    "team": "VGK",
+    "rank": 80,
+    "name": "Zachary Bolduc",
+    "team": "MTL",
     "pos": "R",
-    "gp": 11,
-    "value": 77.7,
-    "gs60": 10.34,
+    "gp": 10,
+    "value": 77.9,
+    "gs60": 11.02,
     "isMe": false
    },
    {
-    "rank": 75,
+    "rank": 81,
+    "name": "Elias Lindholm",
+    "team": "BOS",
+    "pos": "C",
+    "gp": 12,
+    "value": 77.7,
+    "gs60": 10.96,
+    "isMe": false
+   },
+   {
+    "rank": 82,
     "name": "Lucas Raymond",
     "team": "DET",
     "pos": "L",
-    "gp": 10,
-    "value": 77.4,
-    "gs60": 10.26,
+    "gp": 11,
+    "value": 77.6,
+    "gs60": 10.93,
     "isMe": true
    },
    {
-    "rank": 76,
-    "name": "Mika Zibanejad",
-    "team": "NYR",
-    "pos": "C",
-    "gp": 12,
-    "value": 77.1,
-    "gs60": 10.18,
+    "rank": 83,
+    "name": "Jaccob Slavin",
+    "team": "CAR",
+    "pos": "D",
+    "gp": 13,
+    "value": 77.5,
+    "gs60": 10.9,
     "isMe": false
    },
    {
-    "rank": 77,
-    "name": "Berkly Catton",
-    "team": "SEA",
+    "rank": 84,
+    "name": "Cole Perfetti",
+    "team": "WPG",
     "pos": "C",
-    "gp": 11,
-    "value": 77.1,
-    "gs60": 10.18,
+    "gp": 10,
+    "value": 77.4,
+    "gs60": 10.88,
     "isMe": false
    }
   ],
@@ -485,12 +485,36 @@
     "moneypuck": 3.275,
     "hockeystatcards": 4.12
    }
+  },
+  {
+   "gameId": 2026020178,
+   "date": "2026-10-24",
+   "opponent": "CGY",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 2,
+   "pim": 0,
+   "toi": 20.8,
+   "ixg": 0.17,
+   "xgf": 0.98,
+   "xga": 0.3,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 0.67,
+   "gameScoreParts": {
+    "moneypuck": 0.85,
+    "hockeystatcards": 0.49
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.03,
-  "games": 10,
+  "average": 0.99,
+  "games": 11,
   "best": {
    "date": "2026-10-22",
    "opponent": "VAN",
@@ -504,7 +528,7 @@
   "above2": 3,
   "below0": 3
  },
- "detGames": 10,
+ "detGames": 11,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -517,5 +541,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-24T05:03:29-07:00"
+ "updatedAt": "2026-10-25T05:03:39-07:00"
 }

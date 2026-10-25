@@ -1,7 +1,7 @@
 {
  "season": "20262027",
  "seasonGames": 84,
- "built": "2026-10-24",
+ "built": "2026-10-25",
  "cohort": {
   "years": [
    2008,
@@ -3087,8 +3087,8 @@
     "cohortExpected": 25.4,
     "expected": 27.6,
     "tier": "below average",
-    "nhlW": 0.33,
-    "nhlExpected": 32.1,
+    "nhlW": 0.35,
+    "nhlExpected": 31.8,
     "beforeNhl": 25.4
    },
    "trajectory": {
@@ -3107,50 +3107,50 @@
     "delta": 0.106
    },
    "nhlSample": {
-    "gp": 10,
+    "gp": 11,
     "pts": 4,
     "seasons": [
      20262027
     ],
     "thisSeason": {
-     "gp": 10,
+     "gp": 11,
      "pts": 4,
-     "toi": "14:41",
+     "toi": "14:24",
      "savePct": null
     }
    },
    "nhlUsage": {
     "n": 50,
-    "expected": 32.1,
-    "median": 28.4,
-    "p75": 56.2,
-    "p90": 74.4,
-    "pRegular": 0.62,
-    "pTopLine": 0.1,
-    "pAboveAvg": 0.34,
+    "expected": 31.8,
+    "median": 34.5,
+    "p75": 56.1,
+    "p90": 71.1,
+    "pRegular": 0.64,
+    "pTopLine": 0.08,
+    "pAboveAvg": 0.32,
     "pElite": 0.0,
     "poolN": 258,
     "group": "D",
     "age": 22,
-    "gp": 10,
-    "toi": 881,
-    "ppg": 0.4,
-    "ppgShrunk": 0.262,
+    "gp": 11,
+    "toi": 864,
+    "ppg": 0.364,
+    "ppgShrunk": 0.254,
     "toiBand": [
-     766,
-     1029
+     725,
+     1001
     ],
     "examples": [
      {
-      "name": "Adam Clendening",
-      "season": "2015-2016",
+      "name": "Jordan Schmaltz",
+      "season": "2016-2017",
       "age": 22,
-      "gp": 29,
-      "toi": 888,
-      "ppg": 0.24,
+      "gp": 9,
+      "toi": 860,
+      "ppg": 0.22,
       "peak": null,
       "tier": "did not stick",
-      "nhlGp": 90
+      "nhlGp": 42
      },
      {
       "name": "Jake Bean",
@@ -3164,6 +3164,17 @@
       "nhlGp": 277
      },
      {
+      "name": "Adam Clendening",
+      "season": "2015-2016",
+      "age": 22,
+      "gp": 29,
+      "toi": 888,
+      "ppg": 0.24,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 90
+     },
+     {
       "name": "Christian Wolanin",
       "season": "2017-2018",
       "age": 22,
@@ -3173,39 +3184,6 @@
       "peak": null,
       "tier": "did not stick",
       "nhlGp": 86
-     },
-     {
-      "name": "Jordan Schmaltz",
-      "season": "2016-2017",
-      "age": 22,
-      "gp": 9,
-      "toi": 860,
-      "ppg": 0.22,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 42
-     },
-     {
-      "name": "Patrick Wey",
-      "season": "2013-2014",
-      "age": 22,
-      "gp": 9,
-      "toi": 875,
-      "ppg": 0.33,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 9
-     },
-     {
-      "name": "Dylan Samberg",
-      "season": "2021-2022",
-      "age": 22,
-      "gp": 15,
-      "toi": 891,
-      "ppg": 0.33,
-      "peak": 58.6,
-      "tier": "above average",
-      "nhlGp": 285
      },
      {
       "name": "Caleb Jones",
@@ -3219,18 +3197,40 @@
       "nhlGp": 255
      },
      {
-      "name": "Tyler Tucker",
-      "season": "2022-2023",
+      "name": "Madison Bowey",
+      "season": "2017-2018",
       "age": 22,
-      "gp": 26,
-      "toi": 878,
-      "ppg": 0.15,
-      "peak": 38.1,
-      "tier": "below average",
-      "nhlGp": 159
+      "gp": 51,
+      "toi": 823,
+      "ppg": 0.24,
+      "peak": 58.3,
+      "tier": "above average",
+      "nhlGp": 158
+     },
+     {
+      "name": "Christian Jaros",
+      "season": "2018-2019",
+      "age": 22,
+      "gp": 61,
+      "toi": 862,
+      "ppg": 0.16,
+      "peak": 13.7,
+      "tier": "replacement level",
+      "nhlGp": 94
+     },
+     {
+      "name": "Patrick Wey",
+      "season": "2013-2014",
+      "age": 22,
+      "gp": 9,
+      "toi": 875,
+      "ppg": 0.33,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 9
      }
     ],
-    "w": 0.33,
+    "w": 0.35,
     "before": 25.4,
     "after": 27.6
    },

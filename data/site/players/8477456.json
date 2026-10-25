@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 3,
+  "gp": 4,
   "goals": 0,
-  "assists": 1,
-  "points": 1,
-  "plusMinus": 1,
+  "assists": 2,
+  "points": 2,
+  "plusMinus": 0,
   "pim": 2,
   "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": "14:13",
+  "toiPerGame": "14:33",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 3,
+   "gp": 4,
    "goals": 0,
-   "assists": 1,
-   "points": 1,
-   "plusMinus": 1,
+   "assists": 2,
+   "points": 2,
+   "plusMinus": 0,
    "pim": 2
   }
  ],
@@ -60,21 +60,21 @@
   "name": "J.T. Compher",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477456.png",
-  "gamesPlayed": 3,
+  "gamesPlayed": 4,
   "goals": 0,
-  "assists": 1,
-  "points": 1,
+  "assists": 2,
+  "points": 2,
   "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": 853.0,
+  "toiPerGame": 872.8,
   "ixG": 0.17,
   "goalsAboveExpected": -0.17,
-  "gameScore": 1.65,
+  "gameScore": 2.2,
   "fiveOnFive": {
-   "icetimeMinutes": 35.6,
-   "onIceXgPct": 0.58,
-   "onIceCorsiPct": 0.63,
-   "ixgPer60": 0.286,
+   "icetimeMinutes": 50.8,
+   "onIceXgPct": 0.57,
+   "onIceCorsiPct": 0.59,
+   "ixgPer60": 0.201,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.65,
-   "percentile": 66
+   "value": 0.42,
+   "percentile": 54
   },
   "Offense": {
-   "value": -0.3,
-   "percentile": 47
+   "value": -0.1,
+   "percentile": 57
   },
   "Defense": {
-   "value": 0.4,
-   "percentile": 68
+   "value": 0.0,
+   "percentile": 53
   },
   "Net": {
-   "value": 0.1,
-   "percentile": 61
+   "value": -0.1,
+   "percentile": 55
   }
  },
  "score": null,
  "standIn": {
-  "value": 40.2,
-  "gs": 1.79,
-  "gs60": 2.52,
-  "gameScore": 1.79,
-  "minutes": 43,
-  "gp": 3,
-  "rank": 408,
-  "pool": 717,
-  "percentile": 43.1,
+  "value": 40.3,
+  "gs": 1.94,
+  "gs60": 2.0,
+  "gameScore": 1.94,
+  "minutes": 58,
+  "gp": 4,
+  "rank": 411,
+  "pool": 721,
+  "percentile": 43.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 406,
-    "name": "Chandler Stephenson",
-    "team": "SEA",
-    "pos": "C",
-    "gp": 11,
-    "value": 40.3,
-    "gs60": 1.8,
-    "isMe": false
-   },
-   {
-    "rank": 407,
-    "name": "Aleksanteri Kaskimaki",
-    "team": "STL",
-    "pos": "C",
-    "gp": 2,
-    "value": 40.3,
-    "gs60": 1.79,
-    "isMe": false
-   },
-   {
-    "rank": 408,
-    "name": "J.T. Compher",
-    "team": "DET",
-    "pos": "L",
-    "gp": 3,
-    "value": 40.2,
-    "gs60": 1.79,
-    "isMe": true
-   },
-   {
     "rank": 409,
-    "name": "Christian Dvorak",
+    "name": "Nick Seeler",
     "team": "PHI",
-    "pos": "C",
-    "gp": 12,
-    "value": 40.1,
-    "gs60": 1.76,
+    "pos": "D",
+    "gp": 13,
+    "value": 40.5,
+    "gs60": 1.98,
     "isMe": false
    },
    {
     "rank": 410,
-    "name": "Brett Kulak",
-    "team": "COL",
+    "name": "Stefan Noesen",
+    "team": "NJD",
+    "pos": "R",
+    "gp": 5,
+    "value": 40.3,
+    "gs60": 1.95,
+    "isMe": false
+   },
+   {
+    "rank": 411,
+    "name": "J.T. Compher",
+    "team": "DET",
+    "pos": "L",
+    "gp": 4,
+    "value": 40.3,
+    "gs60": 1.94,
+    "isMe": true
+   },
+   {
+    "rank": 412,
+    "name": "Stephen Halliday",
+    "team": "OTT",
+    "pos": "C",
+    "gp": 12,
+    "value": 40.2,
+    "gs60": 1.93,
+    "isMe": false
+   },
+   {
+    "rank": 413,
+    "name": "Ilya Solovyov",
+    "team": "PIT",
     "pos": "D",
-    "gp": 11,
-    "value": 40.1,
-    "gs60": 1.75,
+    "gp": 3,
+    "value": 40.0,
+    "gs60": 1.88,
     "isMe": false
    }
   ],
@@ -392,26 +392,50 @@
     "moneypuck": 1.065,
     "hockeystatcards": 1.45
    }
+  },
+  {
+   "gameId": 2026020178,
+   "date": "2026-10-24",
+   "opponent": "CGY",
+   "home": false,
+   "goals": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": -1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 15.5,
+   "ixg": 0.0,
+   "xgf": 0.74,
+   "xga": 0.73,
+   "gf": 1.0,
+   "ga": 2.0,
+   "blocks": 0.0,
+   "gameScore": 0.15,
+   "gameScoreParts": {
+    "moneypuck": 0.55,
+    "hockeystatcards": -0.25
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.6,
-  "games": 3,
+  "average": 0.48,
+  "games": 4,
   "best": {
    "date": "2026-10-22",
    "opponent": "VAN",
    "value": 1.26
   },
   "worst": {
-   "date": "2026-10-02",
-   "opponent": "NYR",
-   "value": 0.25
+   "date": "2026-10-24",
+   "opponent": "CGY",
+   "value": 0.15
   },
   "above2": 0,
   "below0": 0
  },
- "detGames": 3,
+ "detGames": 4,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -424,5 +448,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-24T05:01:23-07:00"
+ "updatedAt": "2026-10-25T05:01:28-07:00"
 }

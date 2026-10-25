@@ -6,33 +6,33 @@
  "seasonLabel": "2026-27",
  "kind": "G",
  "standIn": {
-  "value": 48.0,
+  "value": 48.3,
   "gsax60": -0.01,
   "gsax": -0.01,
   "minutes": 20,
   "gp": 1,
   "rank": 34,
-  "pool": 68,
-  "percentile": 50.0,
+  "pool": 69,
+  "percentile": 50.7,
   "group": "goalies",
   "standIn": true,
   "neighbours": [
    {
     "rank": 32,
-    "name": "Charlie Lindgren",
-    "team": "WSH",
-    "gp": 2,
-    "value": 50.0,
-    "gsax60": 0.3,
+    "name": "Colten Ellis",
+    "team": "BUF",
+    "gp": 3,
+    "value": 49.4,
+    "gsax60": 0.16,
     "isMe": false
    },
    {
     "rank": 33,
-    "name": "Colten Ellis",
-    "team": "BUF",
-    "gp": 3,
-    "value": 49.1,
-    "gsax60": 0.16,
+    "name": "Dylan Garand",
+    "team": "NYR",
+    "gp": 9,
+    "value": 48.6,
+    "gsax60": 0.04,
     "isMe": false
    },
    {
@@ -40,26 +40,26 @@
     "name": "Michal Postava",
     "team": "DET",
     "gp": 1,
-    "value": 48.0,
+    "value": 48.3,
     "gsax60": -0.01,
     "isMe": true
    },
    {
     "rank": 35,
-    "name": "Scott Wedgewood",
-    "team": "COL",
+    "name": "Dennis Hildeby",
+    "team": "TBL",
     "gp": 3,
-    "value": 46.8,
-    "gsax60": -0.2,
+    "value": 47.5,
+    "gsax60": -0.14,
     "isMe": false
    },
    {
     "rank": 36,
-    "name": "Devin Cooley",
-    "team": "CGY",
-    "gp": 4,
-    "value": 46.8,
-    "gsax60": -0.21,
+    "name": "Scott Wedgewood",
+    "team": "COL",
+    "gp": 3,
+    "value": 47.1,
+    "gsax60": -0.2,
     "isMe": false
    }
   ],
@@ -150,5 +150,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-10-24T05:04:52-07:00"
+ "updatedAt": "2026-10-25T05:05:11-07:00"
 }

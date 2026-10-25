@@ -51,12 +51,12 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 3,
-   "goals": 4,
-   "assists": 1,
-   "points": 5,
-   "plusMinus": 0,
-   "pim": 4
+   "gp": 4,
+   "goals": 5,
+   "assists": 3,
+   "points": 8,
+   "plusMinus": 4,
+   "pim": 6
   }
  ],
  "moneypuck": {
@@ -91,78 +91,78 @@
   },
   "Offense": {
    "value": -1.0,
-   "percentile": 16
+   "percentile": 18
   },
   "Defense": {
    "value": 0.0,
-   "percentile": 53
+   "percentile": 52
   },
   "Net": {
-   "value": -0.9,
-   "percentile": 25
+   "value": -1.0,
+   "percentile": 26
   }
  },
  "score": null,
  "standIn": {
-  "value": 32.4,
+  "value": 32.2,
   "gs": 0.02,
   "gs60": 0.02,
   "gameScore": 0.02,
   "minutes": 58,
   "gp": 6,
-  "rank": 546,
-  "pool": 717,
-  "percentile": 23.8,
+  "rank": 543,
+  "pool": 721,
+  "percentile": 24.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 544,
+    "rank": 541,
     "name": "Jonathan Aspirot",
     "team": "BOS",
     "pos": "D",
     "gp": 4,
-    "value": 32.6,
+    "value": 32.4,
     "gs60": 0.06,
     "isMe": false
    },
    {
-    "rank": 545,
+    "rank": 542,
     "name": "Maxim Tsyplakov",
     "team": "CGY",
     "pos": "R",
     "gp": 6,
-    "value": 32.6,
+    "value": 32.4,
     "gs60": 0.06,
     "isMe": false
    },
    {
-    "rank": 546,
+    "rank": 543,
     "name": "Sheldon Dries",
     "team": "DET",
     "pos": "C",
     "gp": 6,
-    "value": 32.4,
+    "value": 32.2,
     "gs60": 0.02,
     "isMe": true
    },
    {
-    "rank": 547,
+    "rank": 544,
     "name": "William Trudeau",
     "team": "NSH",
     "pos": "D",
     "gp": 3,
-    "value": 32.4,
+    "value": 32.2,
     "gs60": 0.02,
     "isMe": false
    },
    {
-    "rank": 548,
+    "rank": 545,
     "name": "Matt Rempe",
     "team": "NYR",
     "pos": "C",
     "gp": 2,
-    "value": 32.3,
+    "value": 32.1,
     "gs60": -0.0,
     "isMe": false
    }
@@ -440,5 +440,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-10-24T05:02:09-07:00"
+ "updatedAt": "2026-10-25T05:02:14-07:00"
 }

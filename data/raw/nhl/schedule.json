@@ -1422,7 +1422,7 @@
    "easternUTCOffset": "-04:00",
    "venueUTCOffset": "-06:00",
    "venueTimezone": "America/Edmonton",
-   "gameState": "FUT",
+   "gameState": "OFF",
    "gameScheduleState": "OK",
    "tvBroadcasts": [
     {
@@ -1463,7 +1463,7 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/DET_dark.svg",
     "awaySplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/DET/20262027/DET-radio.m3u8"
+    "score": 1
    },
    "homeTeam": {
     "id": 20,
@@ -1481,15 +1481,38 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/CGY_dark.svg",
     "homeSplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/CGY/20262027/CGY-radio.m3u8"
+    "score": 4
    },
    "periodDescriptor": {
-    "number": 1,
+    "number": 3,
     "periodType": "REG",
     "maxRegulationPeriods": 3
    },
-   "ticketsLink": "https://www.ticketmaster.ca/event/110064FBA5AF5431?brand=calgaryflames&artistid=805907&wt.mc_id=NHL_TEAM_CGY_SCHEDULE_GM6&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_TEAM_CGY&utm_content=SCHEDULE_GM6",
-   "ticketsLinkFr": "https://www.ticketmaster.ca/event/110064FBA5AF5431?brand=calgaryflames&artistid=805907&wt.mc_id=NHL_TEAM_CGY_SCHEDULE_GM6&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_TEAM_CGY&utm_content=SCHEDULE_GM6",
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   },
+   "winningGoalie": {
+    "playerId": 8482445,
+    "firstInitial": {
+     "default": "D."
+    },
+    "lastName": {
+     "default": "Cooley"
+    }
+   },
+   "winningGoalScorer": {
+    "playerId": 8484768,
+    "firstInitial": {
+     "default": "Z."
+    },
+    "lastName": {
+     "default": "Parekh"
+    }
+   },
+   "threeMinRecap": "/video/det-at-cgy-recap-6407369333112",
+   "threeMinRecapFr": "/fr/video/det-vs-cgy-24-10-2026-resume-6407369824112",
+   "condensedGame": "/video/det-at-cgy-condensed-game-6407367468112",
+   "condensedGameFr": "/fr/video/match-condense-red-wings-flames-24-10-2026-6407369732112",
    "gameCenterLink": "/gamecenter/det-vs-cgy/2026/10/24/2026020178"
   },
   {

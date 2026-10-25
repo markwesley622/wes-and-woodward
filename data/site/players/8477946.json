@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 8,
+  "gp": 9,
   "goals": 1,
   "assists": 4,
   "points": 5,
   "plusMinus": 2,
   "pim": 4,
-  "shots": 22,
-  "shootingPct": 0.045455,
-  "toiPerGame": "21:45",
+  "shots": 28,
+  "shootingPct": 0.035714,
+  "toiPerGame": "21:31",
   "ppPoints": 3,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 8,
+   "gp": 9,
    "goals": 1,
    "assists": 4,
    "points": 5,
@@ -60,21 +60,21 @@
   "name": "Dylan Larkin",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477946.png",
-  "gamesPlayed": 8,
+  "gamesPlayed": 9,
   "goals": 1,
   "assists": 4,
   "points": 5,
-  "shots": 22,
-  "shootingPct": 0.045455,
-  "toiPerGame": 1305.4,
-  "ixG": 1.88,
-  "goalsAboveExpected": -0.88,
-  "gameScore": 7.18,
+  "shots": 28,
+  "shootingPct": 0.035714,
+  "toiPerGame": 1290.8,
+  "ixG": 2.46,
+  "goalsAboveExpected": -1.46,
+  "gameScore": 8.43,
   "fiveOnFive": {
-   "icetimeMinutes": 123.1,
-   "onIceXgPct": 0.53,
-   "onIceCorsiPct": 0.56,
-   "ixgPer60": 0.536,
+   "icetimeMinutes": 139.1,
+   "onIceXgPct": 0.56,
+   "onIceCorsiPct": 0.58,
+   "ixgPer60": 0.66,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.76,
-   "percentile": 72
-  },
-  "Offense": {
-   "value": 0.4,
+   "value": 0.74,
    "percentile": 73
   },
+  "Offense": {
+   "value": 0.3,
+   "percentile": 70
+  },
   "Defense": {
-   "value": 0.2,
-   "percentile": 61
+   "value": 0.4,
+   "percentile": 69
   },
   "Net": {
-   "value": 0.6,
-   "percentile": 72
+   "value": 0.7,
+   "percentile": 73
   }
  },
  "score": null,
  "standIn": {
-  "value": 63.1,
-  "gs": 6.63,
-  "gs60": 2.29,
-  "gameScore": 6.63,
-  "minutes": 174,
-  "gp": 8,
-  "rank": 186,
-  "pool": 717,
-  "percentile": 74.1,
+  "value": 65.1,
+  "gs": 7.55,
+  "gs60": 2.34,
+  "gameScore": 7.55,
+  "minutes": 194,
+  "gp": 9,
+  "rank": 159,
+  "pool": 721,
+  "percentile": 77.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 184,
-    "name": "Jack McBain",
-    "team": "UTA",
-    "pos": "C",
-    "gp": 11,
-    "value": 63.1,
-    "gs60": 6.64,
+    "rank": 157,
+    "name": "Sean Walker",
+    "team": "CAR",
+    "pos": "D",
+    "gp": 13,
+    "value": 65.6,
+    "gs60": 7.67,
     "isMe": false
    },
    {
-    "rank": 185,
-    "name": "Michael McCarron",
-    "team": "MIN",
-    "pos": "C",
-    "gp": 11,
-    "value": 63.1,
-    "gs60": 6.63,
+    "rank": 158,
+    "name": "Alex Laferriere",
+    "team": "LAK",
+    "pos": "R",
+    "gp": 9,
+    "value": 65.3,
+    "gs60": 7.59,
     "isMe": false
    },
    {
-    "rank": 186,
+    "rank": 159,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
-    "gp": 8,
-    "value": 63.1,
-    "gs60": 6.63,
+    "gp": 9,
+    "value": 65.1,
+    "gs60": 7.55,
     "isMe": true
    },
    {
-    "rank": 187,
-    "name": "Erik Cernak",
+    "rank": 160,
+    "name": "Anthony Cirelli",
     "team": "TBL",
-    "pos": "D",
-    "gp": 10,
-    "value": 63.0,
-    "gs60": 6.62,
+    "pos": "C",
+    "gp": 11,
+    "value": 65.1,
+    "gs60": 7.54,
     "isMe": false
    },
    {
-    "rank": 188,
-    "name": "Ryan Leonard",
-    "team": "WSH",
-    "pos": "R",
-    "gp": 9,
-    "value": 62.9,
-    "gs60": 6.59,
+    "rank": 161,
+    "name": "Roman Josi",
+    "team": "NSH",
+    "pos": "D",
+    "gp": 10,
+    "value": 65.0,
+    "gs60": 7.52,
     "isMe": false
    }
   ],
@@ -527,12 +527,36 @@
     "moneypuck": 1.03,
     "hockeystatcards": 1.77
    }
+  },
+  {
+   "gameId": 2026020178,
+   "date": "2026-10-24",
+   "opponent": "CGY",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 6,
+   "pim": 0,
+   "toi": 19.6,
+   "ixg": 0.51,
+   "xgf": 1.05,
+   "xga": 0.3,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 0.92,
+   "gameScoreParts": {
+    "moneypuck": 1.25,
+    "hockeystatcards": 0.58
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.83,
-  "games": 8,
+  "average": 0.84,
+  "games": 9,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
@@ -546,7 +570,7 @@
   "above2": 1,
   "below0": 2
  },
- "detGames": 8,
+ "detGames": 9,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -559,5 +583,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-24T05:02:54-07:00"
+ "updatedAt": "2026-10-25T05:03:01-07:00"
 }

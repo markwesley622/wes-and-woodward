@@ -87,79 +87,79 @@
   },
   "Offense": {
    "value": -0.3,
-   "percentile": 48
+   "percentile": 49
   },
   "Defense": {
    "value": -1.5,
    "percentile": 4
   },
   "Net": {
-   "value": -1.7,
-   "percentile": 9
+   "value": -1.8,
+   "percentile": 11
   }
  },
  "score": null,
  "standIn": {
-  "value": 25.6,
+  "value": 25.8,
   "gs": -1.7,
   "gs60": -2.08,
   "gameScore": -1.7,
   "minutes": 49,
   "gp": 5,
-  "rank": 652,
-  "pool": 717,
-  "percentile": 8.9,
+  "rank": 659,
+  "pool": 721,
+  "percentile": 8.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 650,
-    "name": "Dylan McIlrath",
-    "team": "WSH",
-    "pos": "D",
-    "gp": 3,
-    "value": 25.8,
-    "gs60": -1.66,
+    "rank": 657,
+    "name": "Ty Dellandrea",
+    "team": "SJS",
+    "pos": "C",
+    "gp": 5,
+    "value": 26.2,
+    "gs60": -1.59,
     "isMe": false
    },
    {
-    "rank": 651,
+    "rank": 658,
     "name": "Alex Vlasic",
     "team": "CHI",
     "pos": "D",
     "gp": 10,
-    "value": 25.8,
+    "value": 25.9,
     "gs60": -1.66,
     "isMe": false
    },
    {
-    "rank": 652,
+    "rank": 659,
     "name": "Carter Mazur",
     "team": "DET",
     "pos": "L",
     "gp": 5,
-    "value": 25.6,
+    "value": 25.8,
     "gs60": -1.7,
     "isMe": true
    },
    {
-    "rank": 653,
-    "name": "Colton Dach",
-    "team": "EDM",
+    "rank": 660,
+    "name": "Vladislav Namestnikov",
+    "team": "WPG",
     "pos": "C",
     "gp": 6,
     "value": 25.6,
-    "gs60": -1.7,
+    "gs60": -1.75,
     "isMe": false
    },
    {
-    "rank": 654,
-    "name": "Nick Perbix",
-    "team": "NSH",
-    "pos": "D",
-    "gp": 8,
-    "value": 25.5,
-    "gs60": -1.73,
+    "rank": 661,
+    "name": "Colton Dach",
+    "team": "EDM",
+    "pos": "C",
+    "gp": 7,
+    "value": 25.4,
+    "gs60": -1.81,
     "isMe": false
    }
   ],
@@ -352,5 +352,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-24T05:03:06-07:00"
+ "updatedAt": "2026-10-25T05:03:14-07:00"
 }

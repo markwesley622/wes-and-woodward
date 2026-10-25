@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 10,
+  "gp": 11,
   "goals": 1,
   "assists": 2,
   "points": 3,
   "plusMinus": -4,
   "pim": 2,
-  "shots": 11,
-  "shootingPct": 0.090909,
-  "toiPerGame": "16:41",
+  "shots": 12,
+  "shootingPct": 0.083333,
+  "toiPerGame": "16:25",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 10,
+   "gp": 11,
    "goals": 1,
    "assists": 2,
    "points": 3,
@@ -60,21 +60,21 @@
   "name": "Michael Rasmussen",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479992.png",
-  "gamesPlayed": 10,
+  "gamesPlayed": 11,
   "goals": 1,
   "assists": 2,
   "points": 3,
-  "shots": 11,
-  "shootingPct": 0.090909,
-  "toiPerGame": 1000.5,
-  "ixG": 1.3,
-  "goalsAboveExpected": -0.3,
-  "gameScore": 2.38,
+  "shots": 12,
+  "shootingPct": 0.083333,
+  "toiPerGame": 984.5,
+  "ixG": 1.42,
+  "goalsAboveExpected": -0.42,
+  "gameScore": 2.51,
   "fiveOnFive": {
-   "icetimeMinutes": 124.4,
-   "onIceXgPct": 0.49,
-   "onIceCorsiPct": 0.47,
-   "ixgPer60": 0.482,
+   "icetimeMinutes": 136.8,
+   "onIceXgPct": 0.51,
+   "onIceCorsiPct": 0.48,
+   "ixgPer60": 0.491,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -83,83 +83,83 @@
  "hsc": {
   "Game score": {
    "value": -0.04,
-   "percentile": 27
+   "percentile": 26
   },
   "Offense": {
    "value": -1.2,
-   "percentile": 10
+   "percentile": 13
   },
   "Defense": {
-   "value": -0.0,
-   "percentile": 48
+   "value": -0.2,
+   "percentile": 39
   },
   "Net": {
-   "value": -1.2,
-   "percentile": 18
+   "value": -1.4,
+   "percentile": 17
   }
  },
  "score": null,
  "standIn": {
-  "value": 36.7,
+  "value": 36.3,
   "gs": 1.01,
-  "gs60": 0.36,
+  "gs60": 0.34,
   "gameScore": 1.01,
-  "minutes": 167,
-  "gp": 10,
-  "rank": 469,
-  "pool": 717,
-  "percentile": 34.6,
+  "minutes": 180,
+  "gp": 11,
+  "rank": 476,
+  "pool": 721,
+  "percentile": 34.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 467,
-    "name": "Pavel Mintyukov",
-    "team": "ANA",
-    "pos": "D",
-    "gp": 9,
-    "value": 36.9,
-    "gs60": 1.04,
-    "isMe": false
-   },
-   {
-    "rank": 468,
-    "name": "Ivan Miroshnichenko",
-    "team": "WSH",
-    "pos": "L",
+    "rank": 474,
+    "name": "Jared Wright",
+    "team": "LAK",
+    "pos": "R",
     "gp": 3,
-    "value": 36.8,
+    "value": 36.3,
     "gs60": 1.02,
     "isMe": false
    },
    {
-    "rank": 469,
+    "rank": 475,
+    "name": "Dakota Mermis",
+    "team": "TOR",
+    "pos": "D",
+    "gp": 1,
+    "value": 36.3,
+    "gs60": 1.02,
+    "isMe": false
+   },
+   {
+    "rank": 476,
     "name": "Michael Rasmussen",
     "team": "DET",
     "pos": "C",
-    "gp": 10,
-    "value": 36.7,
+    "gp": 11,
+    "value": 36.3,
     "gs60": 1.01,
     "isMe": true
    },
    {
-    "rank": 470,
+    "rank": 477,
     "name": "Ivan Demidov",
     "team": "MTL",
     "pos": "R",
     "gp": 2,
-    "value": 36.7,
+    "value": 36.3,
     "gs60": 1.0,
     "isMe": false
    },
    {
-    "rank": 471,
-    "name": "Joel Edmundson",
-    "team": "LAK",
-    "pos": "D",
-    "gp": 8,
-    "value": 36.6,
-    "gs60": 1.0,
+    "rank": 478,
+    "name": "Owen Beck",
+    "team": "MTL",
+    "pos": "C",
+    "gp": 3,
+    "value": 36.2,
+    "gs60": 0.99,
     "isMe": false
    }
   ],
@@ -515,12 +515,36 @@
     "moneypuck": 1.325,
     "hockeystatcards": 2.07
    }
+  },
+  {
+   "gameId": 2026020178,
+   "date": "2026-10-24",
+   "opponent": "CGY",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 0,
+   "toi": 13.8,
+   "ixg": 0.11,
+   "xgf": 0.71,
+   "xga": 0.5,
+   "gf": 1.0,
+   "ga": 1.0,
+   "blocks": 0.0,
+   "gameScore": -0.0,
+   "gameScoreParts": {
+    "moneypuck": 0.125,
+    "hockeystatcards": -0.13
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.1,
-  "games": 10,
+  "average": 0.09,
+  "games": 11,
   "best": {
    "date": "2026-10-22",
    "opponent": "VAN",
@@ -534,7 +558,7 @@
   "above2": 0,
   "below0": 3
  },
- "detGames": 10,
+ "detGames": 11,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -547,5 +571,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-24T05:03:18-07:00"
+ "updatedAt": "2026-10-25T05:03:26-07:00"
 }

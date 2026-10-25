@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 10,
+  "gp": 11,
   "goals": 4,
   "assists": 4,
   "points": 8,
   "plusMinus": -3,
   "pim": 2,
-  "shots": 26,
-  "shootingPct": 0.153846,
-  "toiPerGame": "18:48",
+  "shots": 27,
+  "shootingPct": 0.148148,
+  "toiPerGame": "18:56",
   "ppPoints": 4,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 10,
+   "gp": 11,
    "goals": 4,
    "assists": 4,
    "points": 8,
@@ -60,21 +60,21 @@
   "name": "Viktor Arvidsson",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478042.png",
-  "gamesPlayed": 10,
+  "gamesPlayed": 11,
   "goals": 4,
   "assists": 4,
   "points": 8,
-  "shots": 26,
-  "shootingPct": 0.153846,
-  "toiPerGame": 1127.8,
-  "ixG": 4.45,
-  "goalsAboveExpected": -0.45,
-  "gameScore": 9.68,
+  "shots": 27,
+  "shootingPct": 0.148148,
+  "toiPerGame": 1136.1,
+  "ixG": 4.81,
+  "goalsAboveExpected": -0.81,
+  "gameScore": 9.9,
   "fiveOnFive": {
-   "icetimeMinutes": 144.5,
-   "onIceXgPct": 0.49,
+   "icetimeMinutes": 161.8,
+   "onIceXgPct": 0.5,
    "onIceCorsiPct": 0.55,
-   "ixgPer60": 0.752,
+   "ixgPer60": 0.697,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,16 +82,16 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.65,
-   "percentile": 66
+   "value": 0.6,
+   "percentile": 65
   },
   "Offense": {
-   "value": 0.7,
-   "percentile": 80
+   "value": 0.5,
+   "percentile": 75
   },
   "Defense": {
-   "value": -0.2,
-   "percentile": 40
+   "value": 0.0,
+   "percentile": 51
   },
   "Net": {
    "value": 0.5,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 69.3,
-  "gs": 8.08,
-  "gs60": 2.58,
-  "gameScore": 8.08,
-  "minutes": 188,
-  "gp": 10,
-  "rank": 132,
-  "pool": 717,
-  "percentile": 81.6,
+  "value": 68.0,
+  "gs": 8.25,
+  "gs60": 2.38,
+  "gameScore": 8.25,
+  "minutes": 208,
+  "gp": 11,
+  "rank": 141,
+  "pool": 721,
+  "percentile": 80.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 130,
-    "name": "Jaden Schwartz",
-    "team": "COL",
-    "pos": "L",
-    "gp": 11,
-    "value": 69.4,
-    "gs60": 8.11,
+    "rank": 139,
+    "name": "Danila Yurov",
+    "team": "MIN",
+    "pos": "R",
+    "gp": 12,
+    "value": 68.2,
+    "gs60": 8.3,
     "isMe": false
    },
    {
-    "rank": 131,
-    "name": "Elias Lindholm",
-    "team": "BOS",
+    "rank": 140,
+    "name": "Jesperi Kotkaniemi",
+    "team": "CAR",
     "pos": "C",
     "gp": 11,
-    "value": 69.3,
-    "gs60": 8.08,
+    "value": 68.1,
+    "gs60": 8.27,
     "isMe": false
    },
    {
-    "rank": 132,
+    "rank": 141,
     "name": "Viktor Arvidsson",
     "team": "DET",
     "pos": "L",
-    "gp": 10,
-    "value": 69.3,
-    "gs60": 8.08,
+    "gp": 11,
+    "value": 68.0,
+    "gs60": 8.25,
     "isMe": true
    },
    {
-    "rank": 133,
-    "name": "Dylan Strome",
-    "team": "WSH",
-    "pos": "C",
-    "gp": 9,
-    "value": 69.2,
-    "gs60": 8.06,
+    "rank": 142,
+    "name": "Mattias Ekholm",
+    "team": "EDM",
+    "pos": "D",
+    "gp": 10,
+    "value": 67.9,
+    "gs60": 8.22,
     "isMe": false
    },
    {
-    "rank": 134,
-    "name": "Alex Laferriere",
-    "team": "LAK",
-    "pos": "R",
-    "gp": 8,
-    "value": 69.2,
-    "gs60": 8.06,
+    "rank": 143,
+    "name": "Kevin Bahl",
+    "team": "CGY",
+    "pos": "D",
+    "gp": 10,
+    "value": 67.7,
+    "gs60": 8.18,
     "isMe": false
    }
   ],
@@ -590,12 +590,36 @@
     "moneypuck": 2.05,
     "hockeystatcards": 2.06
    }
+  },
+  {
+   "gameId": 2026020178,
+   "date": "2026-10-24",
+   "opponent": "CGY",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 0,
+   "toi": 20.3,
+   "ixg": 0.43,
+   "xgf": 0.37,
+   "xga": 0.32,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 0.17,
+   "gameScoreParts": {
+    "moneypuck": 0.225,
+    "hockeystatcards": 0.12
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.81,
-  "games": 10,
+  "average": 0.75,
+  "games": 11,
   "best": {
    "date": "2026-10-20",
    "opponent": "SEA",
@@ -609,7 +633,7 @@
   "above2": 3,
   "below0": 2
  },
- "detGames": 10,
+ "detGames": 11,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -622,5 +646,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-24T05:00:58-07:00"
+ "updatedAt": "2026-10-25T05:01:00-07:00"
 }

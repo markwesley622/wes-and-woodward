@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 41
+   "percentile": 42
   },
   "Defense": {
    "value": -0.1,
@@ -100,15 +100,15 @@
  },
  "score": null,
  "standIn": {
-  "value": 33.6,
+  "value": 33.3,
   "gs": 0.3,
   "gs60": 0.91,
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
   "rank": 521,
-  "pool": 717,
-  "percentile": 27.3,
+  "pool": 721,
+  "percentile": 27.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
@@ -118,7 +118,7 @@
     "team": "NYR",
     "pos": "C",
     "gp": 4,
-    "value": 33.6,
+    "value": 33.4,
     "gs60": 0.3,
     "isMe": false
    },
@@ -128,7 +128,7 @@
     "team": "BOS",
     "pos": "D",
     "gp": 6,
-    "value": 33.6,
+    "value": 33.3,
     "gs60": 0.3,
     "isMe": false
    },
@@ -138,7 +138,7 @@
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 33.6,
+    "value": 33.3,
     "gs60": 0.3,
     "isMe": true
    },
@@ -148,18 +148,18 @@
     "team": "MTL",
     "pos": "D",
     "gp": 6,
-    "value": 33.6,
+    "value": 33.3,
     "gs60": 0.29,
     "isMe": false
    },
    {
     "rank": 523,
-    "name": "Brennan Othmann",
-    "team": "CGY",
-    "pos": "L",
-    "gp": 3,
-    "value": 33.5,
-    "gs60": 0.27,
+    "name": "Rutger McGroarty",
+    "team": "PIT",
+    "pos": "R",
+    "gp": 2,
+    "value": 33.3,
+    "gs60": 0.28,
     "isMe": false
    }
   ],
@@ -370,5 +370,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-24T05:00:46-07:00"
+ "updatedAt": "2026-10-25T05:00:46-07:00"
 }
