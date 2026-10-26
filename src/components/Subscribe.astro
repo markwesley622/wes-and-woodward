@@ -5,7 +5,7 @@ const action = subscribeAction();
 ---
 <aside class="sub" aria-labelledby="sub-h">
   <p class="mono sub-h" id="sub-h">Get the next one</p>
-  <p class="sub-p">One email when a new article is published. Nothing else, no schedule.</p>
+  <p class="sub-p">One email when a new article is published. Nothing else.</p>
   {action ? (
     <form class="sub-form" action={action} method="post">
       <label class="vh" for="sub-email">Email address</label>
