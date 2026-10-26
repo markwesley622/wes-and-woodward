@@ -9,6 +9,7 @@ import twoWay from '../../data/site/articles/two-way-forwards-copy.json';
 import kasper from '../../data/site/articles/marco-kasper-copy.json';
 import larkin from '../../data/site/articles/dylan-larkin-copy.json';
 import rasmussen from '../../data/site/articles/michael-rasmussen-mt-rushmore-copy.json';
+import mbn from '../../data/site/articles/michael-brandsegg-nygard-2026-glowup-copy.json';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -29,6 +30,8 @@ export const ARTICLES = [
     description: 'Dylan Larkin’s first five games since his trade request, measured against every five-game stretch of his career. The giveaways, the takeaways, the shots and what his speed says.' },
   { slug: 'michael-rasmussen-mt-rushmore', title: rasmussen.title, published: '2026-10-19T14:24:03-07:00', modified: '2026-10-19T14:24:03-07:00', thumb: 'rushmore',
     description: 'Forty-seven forwards have gone 400 minutes without a point since the NHL started tracking ice time. Four kept a real role the whole way. Michael Rasmussen is one of them, and by goals scored with him on the ice, the worst.' },
+  { slug: 'michael-brandsegg-nygard-2026-glowup', title: mbn.title, published: '2026-10-26T11:53:58-07:00', modified: '2026-10-26T11:53:58-07:00', thumb: 'web',
+    description: 'Michael Brandsegg-Nygård’s first 10 games this season against his first 10 last season: the same shot rate from seven feet closer, a second-line job, and a line that drives play in every score state. The glow-up is real. The plus-10 is not the proof.' },
 ];
 
 export const article = (slug) => ARTICLES.find((a) => a.slug === slug);

@@ -6,6 +6,7 @@ import GhostTurn from './GhostTurn.astro';
 import FlipLetter from './FlipLetter.astro';
 import BlockNumber from './BlockNumber.astro';
 import Rushmore from './Rushmore.astro';
+import SpiderWeb from './SpiderWeb.astro';
 const { kind, id } = Astro.props;
 ---
-{kind === 'puck' ? <PuckDrop id={id} /> : kind === 'ghost' ? <GhostTurn id={id} /> : kind === 'seventyone' ? <BlockNumber id={id} text="71" /> : kind === 'rushmore' ? <Rushmore id={id} /> : <FlipLetter id={id} front="O" back="D" />}
+{kind === 'puck' ? <PuckDrop id={id} /> : kind === 'ghost' ? <GhostTurn id={id} /> : kind === 'seventyone' ? <BlockNumber id={id} text="71" /> : kind === 'rushmore' ? <Rushmore id={id} /> : kind === 'web' ? <SpiderWeb id={id} /> : <FlipLetter id={id} front="O" back="D" />}

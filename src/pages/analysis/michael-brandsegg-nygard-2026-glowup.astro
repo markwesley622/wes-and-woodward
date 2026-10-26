@@ -1,0 +1,53 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleHead from '../../components/ArticleHead.astro';
+import Subscribe from '../../components/Subscribe.astro';
+import { article, newsArticle } from '../../lib/articles.js';
+import C from '../../../data/site/articles/michael-brandsegg-nygard-2026-glowup-copy.json';
+import c1 from '../../../data/site/articles/michael-brandsegg-nygard-2026-glowup/c1_shotmap.svg?raw';
+import c2 from '../../../data/site/articles/michael-brandsegg-nygard-2026-glowup/c2_deployment.svg?raw';
+import c3 from '../../../data/site/articles/michael-brandsegg-nygard-2026-glowup/c3_scorestate.svg?raw';
+import c4 from '../../../data/site/articles/michael-brandsegg-nygard-2026-glowup/c4_goals_vs_xg.svg?raw';
+
+const SLUG = 'michael-brandsegg-nygard-2026-glowup';
+const parts = C.parts, idx = C.idx;
+// each figure goes right after the paragraph its anchor names (anchors come from research/brandsegg-nygard/build_copy.py)
+const figs = [[idx.fig_shotmap, c1], [idx.fig_deploy, c2], [idx.fig_score, c3], [idx.fig_goals, c4]];  // in page order
+const blocks = [];
+let start = 0;
+for (const [after, svg] of figs) {
+  blocks.push({ html: parts.slice(start, after + 1).join('') });
+  blocks.push({ svg });
+  start = after + 1;
+}
+blocks.push({ html: parts.slice(start).join('') });
+
+const DESC = article(SLUG).description;
+---
+<Base ogType="article" ogImage={`/og/${SLUG}.png`} ogImageAlt="A spider web in line art" schema={[newsArticle(SLUG, { description: DESC,
+  about: [{ '@id': 'https://wesandwoodward.com/team/#team' }, { '@type': 'Person', name: 'Michael Brandsegg-Nygård' }],
+  keywords: ['Michael Brandsegg-Nygård', 'Detroit Red Wings', 'expected goals', 'shot map', 'rookie', 'Emmitt Finnie', 'Alex DeBrincat'], wordCount: C.words })]}
+  title={`${C.title} — Wes & Woodward`} description={DESC}>
+  <section class="sec">
+    <div class="shell">
+      <ArticleHead slug={SLUG} title={C.title} />
+      {blocks.map((b) => b.html !== undefined
+        ? <div class="prose" set:html={b.html} />
+        : <figure class="fig" set:html={b.svg} />)}
+      <p class="note mono" style="margin-top:28px">Method: both samples are his first 10 NHL games of the season (nine in October 2025 plus the March 8 game after his recall, and Oct. 2 through Oct. 22, 2026). Ice time, shifts, linemates, zone starts, score state and shot attempts are rebuilt second by second from the NHL's shift charts and play-by-play; expected goals are MoneyPuck's shot model joined to the same clock; shot and skating speed and zone time are NHL Edge; league percentiles are MoneyPuck's season tables. Last-five-minutes usage counts the final 5:00 of regulation with the score within a goal. Luck odds are binomial at the league's 5v5 shooting percentage.</p>
+    </div>
+    <div class="shell">
+      <Subscribe />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .prose { max-width: 68ch; font-size: 18px; line-height: 1.65; }
+  .prose :global(p) { margin: 0 0 18px; }
+  .prose :global(h3.art) { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.1; letter-spacing: -.02em; text-transform: none; margin: 40px 0 16px; }
+  .prose :global(h3.art::before) { content: "// "; color: var(--red); }
+  .fig { margin: 26px 0 38px; max-width: 760px; }
+  .fig :global(svg) { width: 100%; height: auto; display: block; }
+  .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 68ch; }
+</style>
