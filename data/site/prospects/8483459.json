@@ -31,10 +31,10 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 5,
-   "g": 1,
-   "a": 2,
-   "pts": 3,
+   "gp": 10,
+   "g": 2,
+   "a": 3,
+   "pts": 5,
    "pm": 2,
    "pim": 0,
    "gaa": null,
@@ -89,10 +89,10 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 5,
-     "g": 1,
-     "a": 2,
-     "pts": 3,
+     "gp": 10,
+     "g": 2,
+     "a": 3,
+     "pts": 5,
      "pm": 2,
      "pim": 0,
      "gaa": null,
@@ -212,30 +212,29 @@
   }
  ],
  "anchor": {
-  "season": "2025-2026",
-  "league": "NCAA",
-  "leagueSlug": "ncaa",
-  "table": "NCAA",
-  "coef": 0.194,
-  "team": "Univ. of North Dakota",
-  "gp": 42,
-  "g": 21,
-  "a": 11,
-  "pts": 32,
-  "pgp": 0.8,
-  "lineGp": 40,
-  "nhle": 0.166,
-  "nhlePace": 13.9,
+  "season": "2026-2027",
+  "league": "AHL",
+  "leagueSlug": "ahl",
+  "table": "AHL",
+  "coef": 0.389,
+  "team": "Grand Rapids Griffins",
+  "gp": 10,
+  "g": 2,
+  "a": 3,
+  "pts": 5,
+  "pgp": 0.5,
+  "lineGp": 10,
+  "nhle": 0.195,
+  "nhlePace": 16.4,
   "lines": [
-   "NCAA",
    "AHL"
   ],
-  "feature": 0.166
+  "feature": 0.195
  },
  "league": {
-  "name": "NCAA",
-  "table": "NCAA",
-  "coef": 0.194,
+  "name": "AHL",
+  "table": "AHL",
+  "coef": 0.389,
   "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
  },
  "performance": {
@@ -254,114 +253,114 @@
    "league": "ahl",
    "season": "2026-2027",
    "ageBucket": "U24",
-   "cohortN": 41,
-   "gp": 5,
-   "value": 0.6,
-   "percentile": 56.1,
-   "percentileAllAges": 60.0,
-   "allAgesN": 543
+   "cohortN": 52,
+   "gp": 10,
+   "value": 0.5,
+   "percentile": 51.9,
+   "percentileAllAges": 54.4,
+   "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 9.3,
+  "expected": 12.8,
   "median": 0.0,
-  "p75": 3.7,
-  "p90": 43.5,
-  "pRegular": 0.26,
-  "pTopLine": 0.06,
-  "pAboveAvg": 0.06,
-  "pElite": 0.02,
-  "poolN": 1122,
+  "p75": 16.0,
+  "p90": 56.9,
+  "pRegular": 0.3,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.1,
+  "pElite": 0.0,
+  "poolN": 1006,
   "group": "F",
-  "age": 21,
+  "age": 22,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.26,
+  "pCeiling": 0.3,
   "featureBand": [
-   0.16,
-   0.172
+   0.187,
+   0.204
   ],
   "examples": [
    {
-    "name": "Daniel Catenacci",
-    "year": 2011,
-    "pick": 77,
-    "league": "AHL",
-    "feature": 0.166,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 12
-   },
-   {
-    "name": "Marian Studenic",
-    "year": 2017,
-    "pick": 143,
-    "league": "Slovakia",
-    "feature": 0.166,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 46
-   },
-   {
-    "name": "Anders Lee",
+    "name": "Ryan Bourque",
     "year": 2009,
-    "pick": 152,
-    "league": "NCAA",
-    "feature": 0.165,
-    "peak": 82.6,
-    "tier": "top-line",
-    "nhlGp": 926
-   },
-   {
-    "name": "Caleb Herbert",
-    "year": 2010,
-    "pick": 142,
-    "league": "NCAA",
-    "feature": 0.167,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Bogdan Yakimov",
-    "year": 2013,
-    "pick": 83,
-    "league": "KHL",
-    "feature": 0.167,
+    "pick": 80,
+    "league": "AHL",
+    "feature": 0.195,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 1
    },
    {
-    "name": "Noah Rod",
-    "year": 2014,
-    "pick": 53,
-    "league": "NL",
-    "feature": 0.167,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Filip Ahl",
-    "year": 2015,
-    "pick": 109,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.167,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jack Kopacka",
-    "year": 2016,
-    "pick": 93,
+    "name": "Curtis Hamilton",
+    "year": 2010,
+    "pick": 48,
     "league": "AHL",
-    "feature": 0.167,
+    "feature": 0.195,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
+   },
+   {
+    "name": "Max Friberg",
+    "year": 2011,
+    "pick": 143,
+    "league": "AHL",
+    "feature": 0.195,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 6
+   },
+   {
+    "name": "Chandler Stephenson",
+    "year": 2012,
+    "pick": 77,
+    "league": "AHL",
+    "feature": 0.195,
+    "peak": 80.2,
+    "tier": "top-line",
+    "nhlGp": 656
+   },
+   {
+    "name": "Spencer Smallman",
+    "year": 2015,
+    "pick": 138,
+    "league": "AHL",
+    "feature": 0.195,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Axel Jonsson-Fj\u00e4llby",
+    "year": 2016,
+    "pick": 147,
+    "league": "AHL",
+    "feature": 0.195,
+    "peak": 22.7,
+    "tier": "replacement level",
+    "nhlGp": 99
+   },
+   {
+    "name": "Martin Pospisil",
+    "year": 2018,
+    "pick": 105,
+    "league": "AHL",
+    "feature": 0.195,
+    "peak": 37.0,
+    "tier": "below average",
+    "nhlGp": 169
+   },
+   {
+    "name": "Blake Coleman",
+    "year": 2011,
+    "pick": 75,
+    "league": "NCAA",
+    "feature": 0.194,
+    "peak": 72.0,
+    "tier": "above average",
+    "nhlGp": 695
    }
   ]
  },
@@ -380,10 +379,10 @@
  },
  "blend": {
   "w": 0.0,
-  "sinceDraft": 3,
+  "sinceDraft": 4,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 9.3,
-  "expected": 9.3,
+  "cohortExpected": 12.8,
+  "expected": 12.8,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -404,11 +403,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 40,
-  "season": "2025-2026"
+  "gp": 10,
+  "season": "2026-2027"
  },
- "rank": 20,
- "score": 9.3,
+ "rank": 16,
+ "score": 12.8,
  "rankStart": 20,
  "rankStartDate": "2026-10-06"
 }

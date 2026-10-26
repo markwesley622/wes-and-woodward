@@ -198,6 +198,13 @@ def slug_of(name):
     return re.sub(r"[^a-z0-9]+", "-", unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()).strip("-")
 
 
+def team_name(t):
+    """A seasonTotals row's team. The NHL API double-encodes some European names (TimrÃ¥ IK for Timrå IK)."""
+    n = (t.get("teamName") or {}).get("default")
+    try: return n.encode("latin-1").decode("utf-8")
+    except (AttributeError, UnicodeEncodeError, UnicodeDecodeError): return n
+
+
 def season_line(land):
     """Last season's line: the NHL regular season if he played one, else his biggest non-NHL season (league labelled)."""
     fs = land.get("featuredStats", {})
@@ -216,7 +223,7 @@ def season_line(land):
     rows = [t for t in land.get("seasonTotals", []) if t.get("season") == int(SEASON) and t.get("gameTypeId") == 2]
     if not rows: return {"league": None}
     t = max(rows, key=lambda r: (r.get("leagueAbbrev") == "NHL", r.get("gamesPlayed") or 0))
-    return {"league": t.get("leagueAbbrev"), "team": t.get("teamName", {}).get("default"), "gp": t.get("gamesPlayed"), "goals": t.get("goals"), "assists": t.get("assists"),
+    return {"league": t.get("leagueAbbrev"), "team": team_name(t), "gp": t.get("gamesPlayed"), "goals": t.get("goals"), "assists": t.get("assists"),
             "points": t.get("points"), "plusMinus": t.get("plusMinus"), "pim": t.get("pim"), "shots": t.get("shots"), "wins": t.get("wins"), "losses": t.get("losses"),
             "otLosses": t.get("otLosses"), "gaa": t.get("goalsAgainstAvg"), "savePct": t.get("savePctg"), "shutouts": t.get("shutouts")}
 
@@ -311,7 +318,7 @@ def det_games(nhl_log):
 def build_no_nhl(pid, raw, land, name, nhl_log=None):
     """A roster player with no NHL season on record last year: bio + the line he did play."""
     fs = season_line(land)
-    lines = [{"league": t.get("leagueAbbrev"), "team": t.get("teamName", {}).get("default"), "gp": t.get("gamesPlayed"), "goals": t.get("goals"), "assists": t.get("assists"),
+    lines = [{"league": t.get("leagueAbbrev"), "team": team_name(t), "gp": t.get("gamesPlayed"), "goals": t.get("goals"), "assists": t.get("assists"),
               "points": t.get("points"), "plusMinus": t.get("plusMinus"), "pim": t.get("pim")} for t in land.get("seasonTotals", []) if t.get("season") == int(SEASON) and t.get("gameTypeId") == 2]
     out = {"playerId": pid, "name": name, "slug": slug_of(name), "season": SEASON, "seasonLabel": f"{SEASON[:4]}-{SEASON[6:]}", "kind": "S",
            "bio": bio_block(land, pid), "seasonLine": fs, "seasonLines": lines, "score": None, "gameLog": [], "gameScore": None, "teamGameScore": None, "impact": [], "career": [], "comps": [],
@@ -573,7 +580,7 @@ def build(pid, fetch=False):
     team_gs = team_context(games, pid, ROOT / "data" / "site" / "team_gamescores.json")
     gs = [g["gameScore"] for g in games if g["gameScore"] is not None]
     fs = season_line(land)
-    lines = [{"league": t.get("leagueAbbrev"), "team": t.get("teamName", {}).get("default"), "gp": t.get("gamesPlayed"), "goals": t.get("goals"), "assists": t.get("assists"),
+    lines = [{"league": t.get("leagueAbbrev"), "team": team_name(t), "gp": t.get("gamesPlayed"), "goals": t.get("goals"), "assists": t.get("assists"),
               "points": t.get("points"), "plusMinus": t.get("plusMinus"), "pim": t.get("pim")} for t in land.get("seasonTotals", []) if t.get("season") == int(SEASON) and t.get("gameTypeId") == 2]
     out = {
         "playerId": pid, "name": name, "slug": slug_of(name), "season": SEASON, "seasonLabel": f"{SEASON[:4]}-{SEASON[6:]}",

@@ -31,12 +31,12 @@
   {
    "league": "QMJHL",
    "team": "Moncton Wildcats",
-   "gp": 8,
+   "gp": 11,
    "g": 3,
-   "a": 4,
-   "pts": 7,
+   "a": 6,
+   "pts": 9,
    "pm": -1,
-   "pim": 4,
+   "pim": 8,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -140,12 +140,12 @@
     {
      "league": "QMJHL",
      "team": "Moncton Wildcats",
-     "gp": 8,
+     "gp": 11,
      "g": 3,
-     "a": 4,
-     "pts": 7,
+     "a": 6,
+     "pts": 9,
      "pm": -1,
-     "pim": 4,
+     "pim": 8,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -158,32 +158,29 @@
   }
  ],
  "anchor": {
-  "season": "2025-2026",
-  "league": "USHS-Prep",
-  "leagueSlug": "ushs-prep",
-  "table": "USHS-Prep",
-  "coef": 0.028,
-  "team": "Dexter Southfield School",
-  "gp": 52,
-  "g": 7,
-  "a": 44,
-  "pts": 51,
-  "pgp": 1.7,
-  "lineGp": 30,
-  "nhle": 0.037,
-  "nhlePace": 3.1,
+  "season": "2026-2027",
+  "league": "QMJHL",
+  "leagueSlug": "qmjhl",
+  "table": "QMJHL",
+  "coef": 0.113,
+  "team": "Moncton Wildcats",
+  "gp": 11,
+  "g": 3,
+  "a": 6,
+  "pts": 9,
+  "pgp": 0.818,
+  "lineGp": 11,
+  "nhle": 0.092,
+  "nhlePace": 7.7,
   "lines": [
-   "18U AAA",
-   "NTDP",
-   "USHL",
-   "USHS-Prep"
+   "QMJHL"
   ],
-  "feature": 0.037
+  "feature": 0.092
  },
  "league": {
-  "name": "USHS-Prep",
-  "table": "USHS-Prep",
-  "coef": 0.028,
+  "name": "QMJHL",
+  "table": "QMJHL",
+  "coef": 0.113,
   "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
  },
  "performance": {
@@ -192,111 +189,111 @@
    "league": "qmjhl",
    "season": "2026-2027",
    "ageBucket": "U20",
-   "cohortN": 34,
-   "gp": 8,
-   "value": 0.875,
-   "percentile": 85.3,
-   "percentileAllAges": 90.3,
-   "allAgesN": 885
+   "cohortN": 37,
+   "gp": 11,
+   "value": 0.8182,
+   "percentile": 83.8,
+   "percentileAllAges": 89.3,
+   "allAgesN": 903
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 7.1,
+  "expected": 7.7,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 61.1,
-  "pRegular": 0.1,
-  "pTopLine": 0.04,
-  "pAboveAvg": 0.1,
-  "pElite": 0.0,
-  "poolN": 835,
+  "p90": 43.5,
+  "pRegular": 0.18,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.08,
+  "pElite": 0.02,
+  "poolN": 837,
   "group": "D",
-  "age": 17,
+  "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.1,
+  "pCeiling": 0.18,
   "featureBand": [
-   0.029,
-   0.044
+   0.072,
+   0.11
   ],
   "examples": [
    {
-    "name": "Nolan De Jong",
-    "year": 2013,
-    "pick": 197,
-    "league": "BCHL",
-    "feature": 0.038,
+    "name": "Axel Bergkvist",
+    "year": 2019,
+    "pick": 200,
+    "league": "HockeyAllsvenskan",
+    "feature": 0.092,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Cole Moberg",
+    "year": 2019,
+    "pick": 194,
+    "league": "WHL",
+    "feature": 0.09,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Benton Maass",
+    "year": 2017,
+    "pick": 182,
+    "league": "NCAA",
+    "feature": 0.092,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Zach Redmond",
+    "year": 2008,
+    "pick": 184,
+    "league": "USHL",
+    "feature": 0.093,
+    "peak": 63.5,
+    "tier": "above average",
+    "nhlGp": 133
+   },
+   {
+    "name": "Joakim Ryan",
+    "year": 2012,
+    "pick": 198,
+    "league": "NCAA",
+    "feature": 0.097,
+    "peak": 23.0,
+    "tier": "replacement level",
+    "nhlGp": 145
    },
    {
     "name": "Jesper Pettersson",
     "year": 2014,
     "pick": 198,
     "league": "J20 SuperElit",
-    "feature": 0.036,
+    "feature": 0.087,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Drew Daniels",
-    "year": 2008,
-    "pick": 194,
-    "league": "USHS-Prep",
-    "feature": 0.038,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Wyatt Kalynuk",
-    "year": 2017,
-    "pick": 196,
-    "league": "USHL",
-    "feature": 0.039,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 26
-   },
-   {
-    "name": "Xavier Bouchard",
-    "year": 2018,
-    "pick": 185,
-    "league": "QMJHL",
-    "feature": 0.037,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Matt Roy",
+    "name": "Gustav Bouramman",
     "year": 2015,
-    "pick": 194,
-    "league": "T1EHL 18U",
-    "feature": 0.035,
-    "peak": 61.1,
-    "tier": "above average",
-    "nhlGp": 519
-   },
-   {
-    "name": "Ziyat Paigin",
-    "year": 2015,
-    "pick": 209,
-    "league": "MHL",
-    "feature": 0.037,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Gianluca Curcuruto",
-    "year": 2012,
-    "pick": 182,
+    "pick": 201,
     "league": "OHL",
-    "feature": 0.037,
+    "feature": 0.097,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Nick Mattson",
+    "year": 2010,
+    "pick": 180,
+    "league": "USHL",
+    "feature": 0.09,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -318,10 +315,10 @@
  },
  "blend": {
   "w": 0.5,
-  "sinceDraft": -1,
+  "sinceDraft": 0,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 7.1,
-  "expected": 7.0,
+  "cohortExpected": 7.7,
+  "expected": 7.3,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -342,11 +339,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 30,
-  "season": "2025-2026"
+  "gp": 11,
+  "season": "2026-2027"
  },
- "rank": 22,
- "score": 7.0,
+ "rank": 21,
+ "score": 7.3,
  "rankStart": 22,
  "rankStartDate": "2026-10-06"
 }

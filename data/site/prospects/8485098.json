@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Miami Univ. (Ohio)",
-   "gp": 2,
+   "gp": 5,
    "g": 1,
    "a": 1,
    "pts": 2,
-   "pm": 0,
+   "pm": -1,
    "pim": 0,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Miami Univ. (Ohio)",
-     "gp": 2,
+     "gp": 5,
      "g": 1,
      "a": 1,
      "pts": 2,
-     "pm": 0,
+     "pm": -1,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -175,10 +175,12 @@
    "league": "ncaa",
    "season": "2026-2027",
    "ageBucket": "U21",
-   "cohortN": 27,
-   "gp": 2,
-   "percentile": null,
-   "note": "sample too small"
+   "cohortN": 84,
+   "gp": 5,
+   "value": 0.4,
+   "percentile": 50.0,
+   "percentileAllAges": 45.7,
+   "allAgesN": 2159
   }
  },
  "ceiling": {

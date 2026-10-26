@@ -56,7 +56,7 @@ USAGE_LAST_SEASON = "2022-2023"
 CTX = ssl.create_default_context(cafile=certifi.where())
 NHLE = json.loads((ROOT / "data" / "raw" / "nhle" / "hockeystats_nhle.json").read_text())
 sys.path.insert(0, str(ROOT / "pipeline"))
-from build_player import prospect_status, rookie_eligible, nhl_roster_ids, slug_of   # noqa  (same rule as the page builder)
+from build_player import prospect_status, rookie_eligible, nhl_roster_ids, slug_of, team_name   # noqa  (same rule as the page builder)
 
 # EP league name -> hockeystats table name. Anything not here (and not matched by normalisation)
 # carries no coefficient and is skipped as a primary line.
@@ -265,6 +265,45 @@ def seasons_since_draft(rec, draft_year):
     return [{"season": s, "lines": all_lines(rec, s)} for s in seasons]
 
 
+def with_nhl_lines(rec, land):
+    """This season's lines from the NHL API landing (build_player.py --fetch refreshes it every night) laid over the
+    EliteProspects record, which only moves when the EP pull clears Cloudflare (Mark, 10/25: the Pipeline Rankings
+    table showed Bear at 3 AHL games under a header tile that said 8). Per league, whichever source has more games
+    wins, so EP keeps the leagues the NHL API doesn't carry (DEL, international junior events). Every reader of the
+    current season (lines, the 10-game anchor, Where he played, the this-season percentile) sees the same numbers."""
+    nhl = [t for t in (land or {}).get("seasonTotals", []) if t.get("season") == int(SEASON) and t.get("gameTypeId") == 2]
+    if not nhl: return rec
+    key = lambda lg: coef_for(lg)[0] or (lg or "").lower()
+    ep_cur = [s for s in rec["seasons"] if s.get("season") == CUR and s.get("team") and s.get("reg")]
+    by_ep, by_nhl = {}, {}
+    for s in ep_cur: by_ep.setdefault(key(s["league"]), []).append(s)
+    for t in nhl: by_nhl.setdefault(key(t["leagueAbbrev"]), []).append(t)
+    lines = []
+    for k in list(by_ep) + [k for k in by_nhl if k not in by_ep]:
+        e, n = by_ep.get(k, []), by_nhl.get(k, [])
+        if sum(s["reg"].get("GP") or 0 for s in e) >= sum(t.get("gamesPlayed") or 0 for t in n):
+            lines += e; continue
+        # EP's league name and path (the league tables are keyed by the path), from this season or any other
+        same = e or [s for s in rec["seasons"] if key(s.get("league")) == k and s.get("leaguePath")]
+        for t in n:
+            sa, ga = t.get("shotsAgainst"), t.get("goalsAgainst")
+            lines.append({"season": CUR, "league": same[0]["league"] if same else t["leagueAbbrev"], "leaguePath": same[0].get("leaguePath") if same else None,
+                          "team": e[0]["team"] if len(e) == len(n) == 1 else team_name(t), "status": e[0].get("status") if e else None, "source": "nhl",
+                          "reg": {"GP": t.get("gamesPlayed"), "G": t.get("goals"), "A": t.get("assists"), "PTS": t.get("points"), "PM": t.get("plusMinus"), "PIM": t.get("pim"),
+                                  "GAA": f"{t['goalsAgainstAvg']:.2f}" if t.get("goalsAgainstAvg") is not None else None,
+                                  "SVP": f"{t['savePctg']:.3f}".lstrip("0") if t.get("savePctg") is not None else None,
+                                  "SVS": sa - ga if sa is not None and ga is not None else None, "GA": ga, "W": t.get("wins"), "L": t.get("losses"), "SO": t.get("shutouts")}})
+    return {**rec, "seasons": [s for s in rec["seasons"] if not any(s is x for x in ep_cur)] + lines}
+
+
+def league_reg(rec, season, slug):
+    """His line in one league-season from the record, summed over teams (the league tables sum a traded player)."""
+    rows = [s["reg"] for s in rec["seasons"] if s.get("season") == season and s.get("team") and s.get("reg") and (s.get("leaguePath") or "").split("/")[-1] == slug]
+    if not rows: return None
+    tot = lambda k: None if any(r.get(k) is None for r in rows) else sum(r[k] for r in rows)
+    return {k: tot(k) for k in ("GP", "G", "A", "PTS", "SVS", "GA")}
+
+
 # ---------------------------------------------------------------- cohort
 def load_cohort(pools, tabs):
     picks = {}
@@ -407,8 +446,10 @@ def pedigree(cohort, group, pick):
 
 
 # ---------------------------------------------------------------- age-relative performance
-def performance(tabs, pid, slug, season, group, min_gp):
-    buckets = sorted({k[3] for k in tabs if k[0] == slug and k[1] == season and k[2] == group and k[3] != "all"}, key=lambda a: int(a[1:]))
+def performance(tabs, pid, slug, season, group, min_gp, own=None):
+    """own: his line from the record when it has more games than his row in the league table (the NHL API
+    line laid over a stale EP table); his rate moves, the cohort stays the table's."""
+    buckets =sorted({k[3] for k in tabs if k[0] == slug and k[1] == season and k[2] == group and k[3] != "all"}, key=lambda a: int(a[1:]))
     mine = None
     for a in buckets:
         if pid in tabs[(slug, season, group, a)]: mine = a; break
@@ -419,12 +460,14 @@ def performance(tabs, pid, slug, season, group, min_gp):
         for k in tabs[(slug, season, group, buckets[i - 1])]: rows.pop(k, None)
     me = rows.get(pid)
     if not me or not me.get("reg"): return None
+    if own and (own.get("GP") or 0) > (me["reg"].get("GP") or 0) and (own.get("SVS") is not None if group == "G" else own.get("PTS") is not None):
+        me = rows[pid] = {**me, "reg": own}
     val = (lambda r: svpct(r["reg"])) if group == "G" else (lambda r: (r["reg"]["PTS"] or 0) / r["reg"]["GP"])
     pool = [val(r) for r in rows.values() if r.get("reg") and (r["reg"].get("GP") or 0) >= min_gp and val(r) is not None]
     gp = me["reg"].get("GP") or 0
     if gp < min_gp or len(pool) < 6: return {"league": slug, "season": season, "ageBucket": mine, "cohortN": len(pool), "gp": gp, "percentile": None, "note": "sample too small"}
     v = val(me)
-    allpool = [val(r) for a in buckets for r in tabs[(slug, season, group, a)].values() if r.get("reg") and (r["reg"].get("GP") or 0) >= min_gp and val(r) is not None]
+    allpool = [val(r) for a in buckets for r in (me if k == pid else r for k, r in tabs[(slug, season, group, a)].items()) if r.get("reg") and (r["reg"].get("GP") or 0) >= min_gp and val(r) is not None]
     return {"league": slug, "season": season, "ageBucket": mine, "cohortN": len(pool), "gp": gp, "value": round(v, 4), "percentile": pct(sorted(pool), v),
             "percentileAllAges": pct(sorted(allpool), v), "allAgesN": len(allpool)}
 
@@ -514,6 +557,7 @@ def main():
     for p in players:
         rec = json.load((EP / "player" / f"{p['id']}.json").open()); pl = rec["player"]
         nhl_id = idm.get(p["id"]); land = landing(nhl_id, fetch=False) if nhl_id else None
+        rec = with_nhl_lines(rec, land)
         g = pos_group(pl); dob = pl.get("dateOfBirth"); dr = draft_by_ep.get(p["id"])
         if land:
             st = prospect_status(land)
@@ -546,7 +590,7 @@ def main():
             if before: anchor["feature"] = round((anchor["feature"] + before["feature"]) / 2, 4); anchor["featureSeasons"] = 2
             else: anchor["featureSeasons"] = 1
         perf_prev = performance(tabs, p["id"], prev["leagueSlug"], PREV, g, 10) if prev else None
-        perf_cur = performance(tabs, p["id"], cur["leagueSlug"], CUR, g, 3) if cur else None
+        perf_cur = performance(tabs, p["id"], cur["leagueSlug"], CUR, g, 3, own=league_reg(rec, CUR, cur["leagueSlug"])) if cur else None
         ceil = ceiling(cohort, g, int(age_at(anchor_season, dob)), anchor["feature"], anchor["coef"], dr["overall"] if dr else None, 2 * w) if anchor else None
         ped = pedigree(cohort, g, dr["overall"] if dr else None)
         traj = None

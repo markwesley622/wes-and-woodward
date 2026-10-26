@@ -44,6 +44,23 @@
    "so": null,
    "coef": 0.328,
    "status": "rostered"
+  },
+  {
+   "league": "MHL",
+   "team": "MHK Spartak Moskva",
+   "gp": 2,
+   "g": 0,
+   "a": 0,
+   "pts": 0,
+   "pm": 0,
+   "pim": 2,
+   "gaa": null,
+   "svp": null,
+   "w": null,
+   "l": null,
+   "so": null,
+   "coef": 0.143,
+   "status": "rostered"
   }
  ],
  "lastLines": [
@@ -136,6 +153,23 @@
      "so": null,
      "coef": 0.328,
      "status": "rostered"
+    },
+    {
+     "league": "MHL",
+     "team": "MHK Spartak Moskva",
+     "gp": 2,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": 0,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.143,
+     "status": "rostered"
     }
    ]
   },
@@ -220,18 +254,19 @@
   "table": "VHL",
   "coef": 0.328,
   "team": "Khimik Voskresensk",
-  "gp": 12,
+  "gp": 14,
   "g": 0,
   "a": 1,
   "pts": 1,
   "pgp": 0.083,
   "lineGp": 12,
-  "nhle": 0.027,
-  "nhlePace": 2.3,
+  "nhle": 0.023,
+  "nhlePace": 1.9,
   "lines": [
-   "VHL"
+   "VHL",
+   "MHL"
   ],
-  "feature": 0.027
+  "feature": 0.023
  },
  "league": {
   "name": "VHL",
@@ -259,37 +294,47 @@
    "gp": 12,
    "value": 0.0833,
    "percentile": 50.0,
-   "percentileAllAges": 30.4,
-   "allAgesN": 530
+   "percentileAllAges": 31.4,
+   "allAgesN": 544
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 6.4,
+  "expected": 7.8,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 22.4,
-  "pRegular": 0.14,
+  "p90": 54.1,
+  "pRegular": 0.18,
   "pTopLine": 0.02,
-  "pAboveAvg": 0.08,
+  "pAboveAvg": 0.1,
   "pElite": 0.0,
   "poolN": 794,
   "group": "D",
   "age": 19,
   "pickWeight": 0.5,
   "tier": "replacement level",
-  "pCeiling": 0.14,
+  "pCeiling": 0.18,
   "featureBand": [
-   0.016,
-   0.039
+   0.012,
+   0.035
   ],
   "examples": [
    {
-    "name": "Isaac MacLeod",
-    "year": 2010,
-    "pick": 136,
-    "league": "NCAA",
-    "feature": 0.026,
+    "name": "Alex Lepkowski",
+    "year": 2011,
+    "pick": 137,
+    "league": "OHL",
+    "feature": 0.022,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Miro Karjalainen",
+    "year": 2014,
+    "pick": 135,
+    "league": "U20 SM-liiga",
+    "feature": 0.022,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -305,6 +350,26 @@
     "nhlGp": 0
    },
    {
+    "name": "Isaac MacLeod",
+    "year": 2010,
+    "pick": 136,
+    "league": "NCAA",
+    "feature": 0.026,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Doyle Somerby",
+    "year": 2012,
+    "pick": 125,
+    "league": "NCAA",
+    "feature": 0.023,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
     "name": "Connor Clifton",
     "year": 2013,
     "pick": 133,
@@ -315,51 +380,21 @@
     "nhlGp": 438
    },
    {
-    "name": "Nikita Nesterov",
-    "year": 2011,
-    "pick": 148,
-    "league": "KHL",
-    "feature": 0.028,
-    "peak": 20.7,
-    "tier": "replacement level",
-    "nhlGp": 170
-   },
-   {
-    "name": "Ryan Zuhlsdorf",
-    "year": 2015,
-    "pick": 150,
-    "league": "NCAA",
-    "feature": 0.026,
+    "name": "Kristoffer Gunnarsson",
+    "year": 2017,
+    "pick": 135,
+    "league": "HockeyAllsvenskan",
+    "feature": 0.019,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Clark Seymour",
-    "year": 2012,
-    "pick": 143,
-    "league": "OHL",
-    "feature": 0.03,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Gage Ausmus",
-    "year": 2013,
-    "pick": 151,
-    "league": "NCAA",
-    "feature": 0.028,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Alex Lepkowski",
-    "year": 2011,
-    "pick": 137,
-    "league": "OHL",
-    "feature": 0.022,
+    "name": "Casey Staum",
+    "year": 2016,
+    "pick": 124,
+    "league": "USHL",
+    "feature": 0.024,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -383,8 +418,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 6.4,
-  "expected": 6.6,
+  "cohortExpected": 7.8,
+  "expected": 7.6,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -408,8 +443,8 @@
   "gp": 12,
   "season": "2026-2027"
  },
- "rank": 23,
- "score": 6.6,
+ "rank": 20,
+ "score": 7.6,
  "rankStart": 23,
  "rankStartDate": "2026-10-06"
 }
