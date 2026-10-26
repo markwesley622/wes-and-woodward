@@ -87,79 +87,79 @@
   },
   "Offense": {
    "value": 1.1,
-   "percentile": 85
+   "percentile": 84
   },
   "Defense": {
    "value": 0.4,
-   "percentile": 70
+   "percentile": 69
   },
   "Net": {
    "value": 1.6,
-   "percentile": 85
+   "percentile": 84
   }
  },
  "score": null,
  "standIn": {
-  "value": 75.5,
+  "value": 74.7,
   "gs": 10.31,
   "gs60": 3.21,
   "gameScore": 10.31,
   "minutes": 193,
   "gp": 11,
-  "rank": 94,
-  "pool": 721,
-  "percentile": 87.0,
+  "rank": 100,
+  "pool": 724,
+  "percentile": 86.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 92,
+    "rank": 98,
     "name": "Brett Pesce",
     "team": "NJD",
     "pos": "D",
     "gp": 11,
-    "value": 76.0,
+    "value": 75.2,
     "gs60": 10.44,
     "isMe": false
    },
    {
-    "rank": 93,
+    "rank": 99,
     "name": "Mitch Marner",
     "team": "VGK",
     "pos": "R",
     "gp": 11,
-    "value": 75.6,
+    "value": 74.9,
     "gs60": 10.34,
     "isMe": false
    },
    {
-    "rank": 94,
+    "rank": 100,
     "name": "Emmitt Finnie",
     "team": "DET",
     "pos": "C",
     "gp": 11,
-    "value": 75.5,
+    "value": 74.7,
     "gs60": 10.31,
     "isMe": true
    },
    {
-    "rank": 95,
+    "rank": 101,
     "name": "Brandon Montour",
     "team": "SEA",
     "pos": "D",
     "gp": 11,
-    "value": 75.1,
+    "value": 74.3,
     "gs60": 10.18,
     "isMe": false
    },
    {
-    "rank": 96,
-    "name": "John Marino",
-    "team": "UTA",
+    "rank": 102,
+    "name": "Thomas Harley",
+    "team": "DAL",
     "pos": "D",
-    "gp": 9,
-    "value": 74.6,
-    "gs60": 10.04,
+    "gp": 11,
+    "value": 74.2,
+    "gs60": 10.15,
     "isMe": false
    }
   ],
@@ -481,5 +481,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:02:25-07:00"
+ "updatedAt": "2026-10-26T05:02:30-07:00"
 }

@@ -31,11 +31,11 @@
   {
    "league": "QMJHL",
    "team": "Moncton Wildcats",
-   "gp": 11,
+   "gp": 13,
    "g": 3,
    "a": 6,
    "pts": 9,
-   "pm": -1,
+   "pm": -2,
    "pim": 8,
    "gaa": null,
    "svp": null,
@@ -140,11 +140,11 @@
     {
      "league": "QMJHL",
      "team": "Moncton Wildcats",
-     "gp": 11,
+     "gp": 13,
      "g": 3,
      "a": 6,
      "pts": 9,
-     "pm": -1,
+     "pm": -2,
      "pim": 8,
      "gaa": null,
      "svp": null,
@@ -164,18 +164,18 @@
   "table": "QMJHL",
   "coef": 0.113,
   "team": "Moncton Wildcats",
-  "gp": 11,
+  "gp": 13,
   "g": 3,
   "a": 6,
   "pts": 9,
-  "pgp": 0.818,
-  "lineGp": 11,
-  "nhle": 0.092,
-  "nhlePace": 7.7,
+  "pgp": 0.692,
+  "lineGp": 13,
+  "nhle": 0.078,
+  "nhlePace": 6.6,
   "lines": [
    "QMJHL"
   ],
-  "feature": 0.092
+  "feature": 0.078
  },
  "league": {
   "name": "QMJHL",
@@ -190,110 +190,110 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 37,
-   "gp": 11,
-   "value": 0.8182,
-   "percentile": 83.8,
-   "percentileAllAges": 89.3,
+   "gp": 13,
+   "value": 0.6923,
+   "percentile": 81.1,
+   "percentileAllAges": 87.0,
    "allAgesN": 903
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 7.7,
+  "expected": 9.3,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 43.5,
-  "pRegular": 0.18,
-  "pTopLine": 0.02,
-  "pAboveAvg": 0.08,
+  "p90": 62.6,
+  "pRegular": 0.16,
+  "pTopLine": 0.06,
+  "pAboveAvg": 0.1,
   "pElite": 0.02,
   "poolN": 837,
   "group": "D",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.18,
+  "pCeiling": 0.16,
   "featureBand": [
-   0.072,
-   0.11
+   0.062,
+   0.093
   ],
   "examples": [
    {
-    "name": "Axel Bergkvist",
-    "year": 2019,
-    "pick": 200,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.092,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Cole Moberg",
-    "year": 2019,
-    "pick": 194,
+    "name": "Tyler Lewington",
+    "year": 2013,
+    "pick": 204,
     "league": "WHL",
-    "feature": 0.09,
+    "feature": 0.079,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
+    "nhlGp": 12
    },
    {
-    "name": "Benton Maass",
-    "year": 2017,
-    "pick": 182,
-    "league": "NCAA",
-    "feature": 0.092,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "name": "MacKenzie Weegar",
+    "year": 2013,
+    "pick": 206,
+    "league": "QMJHL",
+    "feature": 0.08,
+    "peak": 92.3,
+    "tier": "elite",
+    "nhlGp": 632
    },
    {
-    "name": "Zach Redmond",
-    "year": 2008,
-    "pick": 184,
-    "league": "USHL",
-    "feature": 0.093,
-    "peak": 63.5,
-    "tier": "above average",
-    "nhlGp": 133
-   },
-   {
-    "name": "Joakim Ryan",
-    "year": 2012,
-    "pick": 198,
-    "league": "NCAA",
-    "feature": 0.097,
-    "peak": 23.0,
-    "tier": "replacement level",
-    "nhlGp": 145
-   },
-   {
-    "name": "Jesper Pettersson",
-    "year": 2014,
-    "pick": 198,
-    "league": "J20 SuperElit",
-    "feature": 0.087,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Gustav Bouramman",
-    "year": 2015,
-    "pick": 201,
+    "name": "Stepan Falkovsky",
+    "year": 2016,
+    "pick": 186,
     "league": "OHL",
-    "feature": 0.097,
+    "feature": 0.08,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Nick Mattson",
-    "year": 2010,
-    "pick": 180,
+    "name": "Nick Pryor",
+    "year": 2008,
+    "pick": 208,
     "league": "USHL",
-    "feature": 0.09,
+    "feature": 0.08,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ben Marshall",
+    "year": 2010,
+    "pick": 201,
+    "league": "USHL",
+    "feature": 0.082,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matt Hellickson",
+    "year": 2017,
+    "pick": 214,
+    "league": "USHL",
+    "feature": 0.077,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kyle Burroughs",
+    "year": 2013,
+    "pick": 196,
+    "league": "WHL",
+    "feature": 0.084,
+    "peak": 5.3,
+    "tier": "replacement level",
+    "nhlGp": 201
+   },
+   {
+    "name": "Matt Brassard",
+    "year": 2017,
+    "pick": 188,
+    "league": "OHL",
+    "feature": 0.074,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -317,8 +317,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 7.7,
-  "expected": 7.3,
+  "cohortExpected": 9.3,
+  "expected": 8.2,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -339,11 +339,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 11,
+  "gp": 13,
   "season": "2026-2027"
  },
- "rank": 21,
- "score": 7.3,
+ "rank": 19,
+ "score": 8.2,
  "rankStart": 22,
  "rankStartDate": "2026-10-06"
 }

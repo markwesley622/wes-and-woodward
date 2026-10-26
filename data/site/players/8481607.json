@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.47,
-   "percentile": 57
+   "percentile": 58
   },
   "Offense": {
    "value": 0.2,
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 75
+   "percentile": 74
   },
   "Net": {
    "value": 0.8,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 54.0,
+  "value": 53.5,
   "gs": 4.99,
   "gs60": 1.74,
   "gameScore": 4.99,
   "minutes": 172,
   "gp": 11,
-  "rank": 269,
-  "pool": 721,
-  "percentile": 62.7,
+  "rank": 277,
+  "pool": 724,
+  "percentile": 61.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 267,
-    "name": "Kaiden Guhle",
-    "team": "MTL",
-    "pos": "D",
-    "gp": 6,
-    "value": 54.4,
-    "gs60": 5.07,
+    "rank": 275,
+    "name": "Brandon Duhaime",
+    "team": "TOR",
+    "pos": "L",
+    "gp": 13,
+    "value": 53.9,
+    "gs60": 5.08,
     "isMe": false
    },
    {
-    "rank": 268,
+    "rank": 276,
     "name": "Denver Barkey",
     "team": "PHI",
     "pos": "C",
     "gp": 10,
-    "value": 54.1,
+    "value": 53.6,
     "gs60": 5.01,
     "isMe": false
    },
    {
-    "rank": 269,
+    "rank": 277,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 54.0,
+    "value": 53.5,
     "gs60": 4.99,
     "isMe": true
    },
    {
-    "rank": 270,
-    "name": "Dawson Mercer",
-    "team": "NJD",
-    "pos": "C",
-    "gp": 10,
-    "value": 53.9,
-    "gs60": 4.96,
-    "isMe": false
-   },
-   {
-    "rank": 271,
+    "rank": 278,
     "name": "Ben Kindel",
     "team": "PIT",
     "pos": "C",
     "gp": 9,
-    "value": 53.8,
+    "value": 53.3,
     "gs60": 4.96,
+    "isMe": false
+   },
+   {
+    "rank": 279,
+    "name": "Will Smith",
+    "team": "SJS",
+    "pos": "C",
+    "gp": 12,
+    "value": 53.3,
+    "gs60": 4.95,
     "isMe": false
    }
   ],
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:04:22-07:00"
+ "updatedAt": "2026-10-26T05:04:27-07:00"
 }

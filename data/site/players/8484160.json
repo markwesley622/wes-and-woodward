@@ -91,11 +91,11 @@
   },
   "Defense": {
    "value": -0.2,
-   "percentile": 40
+   "percentile": 41
   },
   "Net": {
    "value": -1.3,
-   "percentile": 18
+   "percentile": 19
   }
  },
  "score": null,
@@ -106,14 +106,14 @@
   "gameScore": 0.14,
   "minutes": 95,
   "gp": 9,
-  "rank": 535,
-  "pool": 721,
-  "percentile": 25.7,
+  "rank": 539,
+  "pool": 724,
+  "percentile": 25.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 533,
+    "rank": 537,
     "name": "Konsta Helenius",
     "team": "BUF",
     "pos": "C",
@@ -123,7 +123,7 @@
     "isMe": false
    },
    {
-    "rank": 534,
+    "rank": 538,
     "name": "Andre Lee",
     "team": "LAK",
     "pos": "L",
@@ -133,7 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 535,
+    "rank": 539,
     "name": "Nate Danielson",
     "team": "DET",
     "pos": "C",
@@ -143,23 +143,23 @@
     "isMe": true
    },
    {
-    "rank": 536,
-    "name": "Andrew Mangiapane",
-    "team": "CHI",
-    "pos": "L",
-    "gp": 1,
-    "value": 32.7,
-    "gs60": 0.14,
-    "isMe": false
-   },
-   {
-    "rank": 537,
+    "rank": 540,
     "name": "Jason Dickinson",
     "team": "EDM",
     "pos": "C",
     "gp": 3,
     "value": 32.7,
     "gs60": 0.13,
+    "isMe": false
+   },
+   {
+    "rank": 541,
+    "name": "Justin Danforth",
+    "team": "BUF",
+    "pos": "R",
+    "gp": 6,
+    "value": 32.6,
+    "gs60": 0.1,
     "isMe": false
    }
   ],
@@ -433,5 +433,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:01:51-07:00"
+ "updatedAt": "2026-10-26T05:01:51-07:00"
 }

@@ -87,49 +87,49 @@
   },
   "Offense": {
    "value": -0.7,
-   "percentile": 27
+   "percentile": 28
   },
   "Defense": {
    "value": 2.3,
-   "percentile": 100
+   "percentile": 99
   },
   "Net": {
    "value": 1.6,
-   "percentile": 85
+   "percentile": 84
   }
  },
  "score": null,
  "standIn": {
-  "value": 67.7,
+  "value": 66.9,
   "gs": 8.17,
   "gs60": 1.74,
   "gameScore": 8.17,
   "minutes": 282,
   "gp": 11,
   "rank": 145,
-  "pool": 721,
-  "percentile": 79.9,
+  "pool": 724,
+  "percentile": 79.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
     "rank": 143,
-    "name": "Kevin Bahl",
-    "team": "CGY",
+    "name": "Neal Pionk",
+    "team": "WPG",
     "pos": "D",
-    "gp": 10,
-    "value": 67.7,
-    "gs60": 8.18,
+    "gp": 11,
+    "value": 67.1,
+    "gs60": 8.21,
     "isMe": false
    },
    {
     "rank": 144,
-    "name": "Brandt Clarke",
-    "team": "LAK",
+    "name": "Kevin Bahl",
+    "team": "CGY",
     "pos": "D",
-    "gp": 9,
-    "value": 67.7,
-    "gs60": 8.17,
+    "gp": 10,
+    "value": 67.0,
+    "gs60": 8.18,
     "isMe": false
    },
    {
@@ -138,28 +138,28 @@
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 67.7,
+    "value": 66.9,
     "gs60": 8.17,
     "isMe": true
    },
    {
     "rank": 146,
-    "name": "Pontus Holmberg",
-    "team": "TBL",
-    "pos": "R",
-    "gp": 11,
-    "value": 67.5,
-    "gs60": 8.14,
+    "name": "Brandt Clarke",
+    "team": "LAK",
+    "pos": "D",
+    "gp": 9,
+    "value": 66.9,
+    "gs60": 8.17,
     "isMe": false
    },
    {
     "rank": 147,
-    "name": "Ville Koivunen",
-    "team": "PIT",
+    "name": "Pontus Holmberg",
+    "team": "TBL",
     "pos": "R",
-    "gp": 10,
-    "value": 67.5,
-    "gs60": 8.13,
+    "gp": 11,
+    "value": 66.8,
+    "gs60": 8.14,
     "isMe": false
    }
   ],
@@ -541,5 +541,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:04:57-07:00"
+ "updatedAt": "2026-10-26T05:05:02-07:00"
 }

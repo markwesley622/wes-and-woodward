@@ -86,7 +86,7 @@
    "percentile": 94
   },
   "Offense": {
-   "value": 1.7,
+   "value": 1.6,
    "percentile": 90
   },
   "Defense": {
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": 2.9,
-   "percentile": 96
+   "percentile": 95
   }
  },
  "score": null,
  "standIn": {
-  "value": 85.8,
+  "value": 85.1,
   "gs": 14.01,
   "gs60": 4.91,
   "gameScore": 14.01,
   "minutes": 171,
   "gp": 11,
-  "rank": 38,
-  "pool": 721,
-  "percentile": 94.6,
+  "rank": 44,
+  "pool": 724,
+  "percentile": 93.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 36,
+    "rank": 42,
     "name": "Tomas Hertl",
     "team": "VGK",
     "pos": "C",
     "gp": 13,
-    "value": 86.1,
+    "value": 85.4,
     "gs60": 14.16,
     "isMe": false
    },
    {
-    "rank": 37,
-    "name": "Matthew Schaefer",
-    "team": "NYI",
-    "pos": "D",
-    "gp": 10,
-    "value": 85.9,
-    "gs60": 14.04,
-    "isMe": false
-   },
-   {
-    "rank": 38,
-    "name": "Michael Brandsegg-Nygrd",
-    "team": "DET",
-    "pos": "R",
-    "gp": 11,
-    "value": 85.8,
-    "gs60": 14.01,
-    "isMe": true
-   },
-   {
-    "rank": 39,
+    "rank": 43,
     "name": "Arseny Gritsyuk",
     "team": "NJD",
     "pos": "R",
     "gp": 11,
-    "value": 85.8,
+    "value": 85.1,
     "gs60": 14.01,
     "isMe": false
    },
    {
-    "rank": 40,
-    "name": "Cale Makar",
-    "team": "COL",
+    "rank": 44,
+    "name": "Michael Brandsegg-Nygrd",
+    "team": "DET",
+    "pos": "R",
+    "gp": 11,
+    "value": 85.1,
+    "gs60": 14.01,
+    "isMe": true
+   },
+   {
+    "rank": 45,
+    "name": "Shea Theodore",
+    "team": "VGK",
     "pos": "D",
-    "gp": 10,
-    "value": 85.6,
-    "gs60": 13.93,
+    "gp": 13,
+    "value": 84.6,
+    "gs60": 13.81,
+    "isMe": false
+   },
+   {
+    "rank": 46,
+    "name": "Brady Tkachuk",
+    "team": "FLA",
+    "pos": "L",
+    "gp": 12,
+    "value": 84.6,
+    "gs60": 13.79,
     "isMe": false
    }
   ],
@@ -481,5 +481,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:01:13-07:00"
+ "updatedAt": "2026-10-26T05:01:14-07:00"
 }

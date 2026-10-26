@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.1,
-   "percentile": 57
+   "percentile": 56
   },
   "Defense": {
    "value": 0.0,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 40.3,
+  "value": 40.1,
   "gs": 1.94,
   "gs60": 2.0,
   "gameScore": 1.94,
   "minutes": 58,
   "gp": 4,
-  "rank": 411,
-  "pool": 721,
+  "rank": 413,
+  "pool": 724,
   "percentile": 43.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 409,
+    "rank": 411,
     "name": "Nick Seeler",
     "team": "PHI",
     "pos": "D",
     "gp": 13,
-    "value": 40.5,
+    "value": 40.3,
     "gs60": 1.98,
     "isMe": false
    },
    {
-    "rank": 410,
+    "rank": 412,
     "name": "Stefan Noesen",
     "team": "NJD",
     "pos": "R",
     "gp": 5,
-    "value": 40.3,
+    "value": 40.1,
     "gs60": 1.95,
     "isMe": false
    },
    {
-    "rank": 411,
+    "rank": 413,
     "name": "J.T. Compher",
     "team": "DET",
     "pos": "L",
     "gp": 4,
-    "value": 40.3,
+    "value": 40.1,
     "gs60": 1.94,
     "isMe": true
    },
    {
-    "rank": 412,
+    "rank": 414,
     "name": "Stephen Halliday",
     "team": "OTT",
     "pos": "C",
     "gp": 12,
-    "value": 40.2,
+    "value": 40.1,
     "gs60": 1.93,
     "isMe": false
    },
    {
-    "rank": 413,
+    "rank": 415,
     "name": "Ilya Solovyov",
     "team": "PIT",
     "pos": "D",
     "gp": 3,
-    "value": 40.0,
+    "value": 39.8,
     "gs60": 1.88,
     "isMe": false
    }
@@ -448,5 +448,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:01:28-07:00"
+ "updatedAt": "2026-10-26T05:01:28-07:00"
 }

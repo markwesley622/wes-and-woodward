@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": 0.3,
-   "percentile": 48
+   "percentile": 47
   },
   "Offense": {
    "value": -0.2,
-   "percentile": 56
+   "percentile": 55
   },
   "Defense": {
    "value": -0.2,
-   "percentile": 41
+   "percentile": 42
   },
   "Net": {
    "value": -0.3,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 40.6,
+  "value": 40.4,
   "gs": 2.01,
   "gs60": 1.36,
   "gameScore": 2.01,
   "minutes": 89,
   "gp": 7,
-  "rank": 408,
-  "pool": 721,
+  "rank": 410,
+  "pool": 724,
   "percentile": 43.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 406,
+    "rank": 408,
     "name": "Josh Norris",
     "team": "BUF",
     "pos": "C",
     "gp": 11,
-    "value": 40.9,
+    "value": 40.7,
     "gs60": 2.09,
     "isMe": false
    },
    {
-    "rank": 407,
+    "rank": 409,
     "name": "Oliver Ekman-Larsson",
     "team": "TOR",
     "pos": "D",
     "gp": 13,
-    "value": 40.8,
+    "value": 40.6,
     "gs60": 2.06,
     "isMe": false
    },
    {
-    "rank": 408,
+    "rank": 410,
     "name": "Axel Sandin-Pellikka",
     "team": "DET",
     "pos": "D",
     "gp": 7,
-    "value": 40.6,
+    "value": 40.4,
     "gs60": 2.01,
     "isMe": true
    },
    {
-    "rank": 409,
+    "rank": 411,
     "name": "Nick Seeler",
     "team": "PHI",
     "pos": "D",
     "gp": 13,
-    "value": 40.5,
+    "value": 40.3,
     "gs60": 1.98,
     "isMe": false
    },
    {
-    "rank": 410,
+    "rank": 412,
     "name": "Stefan Noesen",
     "team": "NJD",
     "pos": "R",
     "gp": 5,
-    "value": 40.3,
+    "value": 40.1,
     "gs60": 1.95,
     "isMe": false
    }
@@ -385,5 +385,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:04:46-07:00"
+ "updatedAt": "2026-10-26T05:04:50-07:00"
 }

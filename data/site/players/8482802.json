@@ -87,78 +87,78 @@
   },
   "Offense": {
    "value": -0.3,
-   "percentile": 49
+   "percentile": 50
   },
   "Defense": {
    "value": -1.5,
-   "percentile": 4
+   "percentile": 5
   },
   "Net": {
    "value": -1.8,
-   "percentile": 11
+   "percentile": 10
   }
  },
  "score": null,
  "standIn": {
-  "value": 25.8,
+  "value": 26.0,
   "gs": -1.7,
   "gs60": -2.08,
   "gameScore": -1.7,
   "minutes": 49,
   "gp": 5,
-  "rank": 659,
-  "pool": 721,
-  "percentile": 8.6,
+  "rank": 666,
+  "pool": 724,
+  "percentile": 8.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 657,
-    "name": "Ty Dellandrea",
-    "team": "SJS",
-    "pos": "C",
-    "gp": 5,
-    "value": 26.2,
+    "rank": 664,
+    "name": "Michael Bunting",
+    "team": "PHI",
+    "pos": "L",
+    "gp": 7,
+    "value": 26.4,
     "gs60": -1.59,
     "isMe": false
    },
    {
-    "rank": 658,
-    "name": "Alex Vlasic",
-    "team": "CHI",
-    "pos": "D",
-    "gp": 10,
-    "value": 25.9,
-    "gs60": -1.66,
+    "rank": 665,
+    "name": "Ty Dellandrea",
+    "team": "SJS",
+    "pos": "C",
+    "gp": 5,
+    "value": 26.3,
+    "gs60": -1.59,
     "isMe": false
    },
    {
-    "rank": 659,
+    "rank": 666,
     "name": "Carter Mazur",
     "team": "DET",
     "pos": "L",
     "gp": 5,
-    "value": 25.8,
+    "value": 26.0,
     "gs60": -1.7,
     "isMe": true
    },
    {
-    "rank": 660,
+    "rank": 667,
     "name": "Vladislav Namestnikov",
     "team": "WPG",
     "pos": "C",
     "gp": 6,
-    "value": 25.6,
+    "value": 25.8,
     "gs60": -1.75,
     "isMe": false
    },
    {
-    "rank": 661,
+    "rank": 668,
     "name": "Colton Dach",
     "team": "EDM",
     "pos": "C",
     "gp": 7,
-    "value": 25.4,
+    "value": 25.6,
     "gs60": -1.81,
     "isMe": false
    }
@@ -352,5 +352,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:03:14-07:00"
+ "updatedAt": "2026-10-26T05:03:20-07:00"
 }

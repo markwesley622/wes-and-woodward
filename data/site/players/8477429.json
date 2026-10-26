@@ -83,14 +83,14 @@
  "hsc": {
   "Game score": {
    "value": -0.32,
-   "percentile": 14
+   "percentile": 13
   },
   "Offense": {
    "value": -1.3,
    "percentile": 10
   },
   "Defense": {
-   "value": -0.9,
+   "value": -0.8,
    "percentile": 15
   },
   "Net": {
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 28.7,
+  "value": 28.8,
   "gs": -0.9,
   "gs60": -0.27,
   "gameScore": -0.9,
   "minutes": 202,
   "gp": 11,
-  "rank": 626,
-  "pool": 721,
-  "percentile": 13.2,
+  "rank": 631,
+  "pool": 724,
+  "percentile": 12.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 624,
-    "name": "Nick Perbix",
-    "team": "NSH",
-    "pos": "D",
-    "gp": 9,
-    "value": 28.7,
-    "gs60": -0.89,
+    "rank": 629,
+    "name": "Andre Burakovsky",
+    "team": "OTT",
+    "pos": "L",
+    "gp": 6,
+    "value": 28.9,
+    "gs60": -0.88,
     "isMe": false
    },
    {
-    "rank": 625,
+    "rank": 630,
     "name": "Victor Mancini",
     "team": "VAN",
     "pos": "D",
     "gp": 4,
-    "value": 28.7,
+    "value": 28.8,
     "gs60": -0.89,
     "isMe": false
    },
    {
-    "rank": 626,
+    "rank": 631,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
     "gp": 11,
-    "value": 28.7,
+    "value": 28.8,
     "gs60": -0.9,
     "isMe": true
    },
    {
-    "rank": 627,
+    "rank": 632,
     "name": "Trevor van Riemsdyk",
     "team": "PIT",
     "pos": "D",
     "gp": 5,
-    "value": 28.6,
+    "value": 28.7,
     "gs60": -0.92,
     "isMe": false
    },
    {
-    "rank": 628,
-    "name": "Jonathan Marchessault",
-    "team": "NSH",
-    "pos": "R",
-    "gp": 10,
-    "value": 28.6,
+    "rank": 633,
+    "name": "Filip Chytil",
+    "team": "VAN",
+    "pos": "C",
+    "gp": 5,
+    "value": 28.7,
     "gs60": -0.92,
     "isMe": false
    }
@@ -646,5 +646,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:01:39-07:00"
+ "updatedAt": "2026-10-26T05:01:41-07:00"
 }

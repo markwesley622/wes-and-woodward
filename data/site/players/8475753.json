@@ -91,74 +91,74 @@
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 78
+   "percentile": 77
   },
   "Net": {
    "value": 0.6,
-   "percentile": 72
+   "percentile": 71
   }
  },
  "score": null,
  "standIn": {
-  "value": 56.1,
+  "value": 55.6,
   "gs": 5.47,
   "gs60": 1.54,
   "gameScore": 5.47,
   "minutes": 214,
   "gp": 11,
-  "rank": 241,
-  "pool": 721,
-  "percentile": 66.4,
+  "rank": 248,
+  "pool": 724,
+  "percentile": 65.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 239,
-    "name": "Brayden Schenn",
-    "team": "NYI",
-    "pos": "C",
-    "gp": 10,
-    "value": 56.4,
-    "gs60": 5.51,
-    "isMe": false
-   },
-   {
-    "rank": 240,
+    "rank": 246,
     "name": "Matty Beniers",
     "team": "SEA",
     "pos": "C",
     "gp": 12,
-    "value": 56.2,
+    "value": 55.7,
     "gs60": 5.49,
     "isMe": false
    },
    {
-    "rank": 241,
+    "rank": 247,
+    "name": "Adam Lowry",
+    "team": "WPG",
+    "pos": "C",
+    "gp": 11,
+    "value": 55.7,
+    "gs60": 5.48,
+    "isMe": false
+   },
+   {
+    "rank": 248,
     "name": "Justin Faulk",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 56.1,
+    "value": 55.6,
     "gs60": 5.47,
     "isMe": true
    },
    {
-    "rank": 242,
-    "name": "Jean-Gabriel Pageau",
-    "team": "NYI",
-    "pos": "C",
-    "gp": 10,
-    "value": 56.1,
-    "gs60": 5.47,
-    "isMe": false
-   },
-   {
-    "rank": 243,
+    "rank": 249,
     "name": "Erik Gustafsson",
     "team": "LAK",
     "pos": "D",
     "gp": 7,
-    "value": 56.1,
+    "value": 55.6,
+    "gs60": 5.46,
+    "isMe": false
+   },
+   {
+    "rank": 250,
+    "name": "Noah Hanifin",
+    "team": "VGK",
+    "pos": "D",
+    "gp": 13,
+    "value": 55.5,
     "gs60": 5.46,
     "isMe": false
    }
@@ -691,5 +691,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:04:09-07:00"
+ "updatedAt": "2026-10-26T05:04:14-07:00"
 }

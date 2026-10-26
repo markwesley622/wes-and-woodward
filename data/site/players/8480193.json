@@ -6,60 +6,60 @@
  "seasonLabel": "2026-27",
  "kind": "G",
  "standIn": {
-  "value": 76.9,
+  "value": 76.8,
   "gsax60": 5.08,
   "gsax": 5.08,
   "minutes": 214,
   "gp": 4,
-  "rank": 6,
+  "rank": 8,
   "pool": 69,
-  "percentile": 91.3,
+  "percentile": 88.4,
   "group": "goalies",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 4,
-    "name": "Ilya Sorokin",
-    "team": "NYI",
-    "gp": 7,
-    "value": 86.8,
-    "gsax60": 7.83,
-    "isMe": false
-   },
-   {
-    "rank": 5,
-    "name": "Jeremy Swayman",
-    "team": "BOS",
-    "gp": 9,
-    "value": 80.9,
-    "gsax60": 6.05,
-    "isMe": false
-   },
-   {
     "rank": 6,
-    "name": "Daniil Tarasov",
-    "team": "DET",
-    "gp": 4,
-    "value": 76.9,
-    "gsax60": 5.08,
-    "isMe": true
+    "name": "Stuart Skinner",
+    "team": "WPG",
+    "gp": 8,
+    "value": 80.1,
+    "gsax60": 5.85,
+    "isMe": false
    },
    {
     "rank": 7,
-    "name": "Igor Shesterkin",
-    "team": "NYR",
-    "gp": 5,
-    "value": 76.3,
-    "gsax60": 4.95,
+    "name": "Ilya Sorokin",
+    "team": "NYI",
+    "gp": 8,
+    "value": 79.5,
+    "gsax60": 5.71,
     "isMe": false
    },
    {
     "rank": 8,
-    "name": "Stuart Skinner",
-    "team": "WPG",
-    "gp": 7,
-    "value": 76.3,
+    "name": "Daniil Tarasov",
+    "team": "DET",
+    "gp": 4,
+    "value": 76.8,
+    "gsax60": 5.08,
+    "isMe": true
+   },
+   {
+    "rank": 9,
+    "name": "Igor Shesterkin",
+    "team": "NYR",
+    "gp": 5,
+    "value": 76.2,
     "gsax60": 4.95,
+    "isMe": false
+   },
+   {
+    "rank": 10,
+    "name": "Alex Nedeljkovic",
+    "team": "SJS",
+    "gp": 5,
+    "value": 74.6,
+    "gsax60": 4.59,
     "isMe": false
    }
   ],
@@ -195,5 +195,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:05:12-07:00"
+ "updatedAt": "2026-10-26T05:05:16-07:00"
 }

@@ -106,14 +106,24 @@
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 492,
-  "pool": 721,
-  "percentile": 31.8,
+  "rank": 496,
+  "pool": 724,
+  "percentile": 31.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 490,
+    "rank": 494,
+    "name": "Kyle Capobianco",
+    "team": "DAL",
+    "pos": "D",
+    "gp": 4,
+    "value": 35.3,
+    "gs60": 0.78,
+    "isMe": false
+   },
+   {
+    "rank": 495,
     "name": "Connor Brown",
     "team": "NJD",
     "pos": "R",
@@ -123,17 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 491,
-    "name": "Radko Gudas",
-    "team": "FLA",
-    "pos": "D",
-    "gp": 7,
-    "value": 35.2,
-    "gs60": 0.75,
-    "isMe": false
-   },
-   {
-    "rank": 492,
+    "rank": 496,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
@@ -143,23 +143,23 @@
     "isMe": true
    },
    {
-    "rank": 493,
-    "name": "Tyler Myers",
-    "team": "DAL",
-    "pos": "D",
-    "gp": 10,
-    "value": 35.0,
-    "gs60": 0.71,
-    "isMe": false
-   },
-   {
-    "rank": 494,
+    "rank": 497,
     "name": "Jonny Brodzinski",
     "team": "WSH",
     "pos": "C",
     "gp": 2,
-    "value": 35.0,
+    "value": 34.9,
     "gs60": 0.7,
+    "isMe": false
+   },
+   {
+    "rank": 498,
+    "name": "Zachary L'Heureux",
+    "team": "COL",
+    "pos": "L",
+    "gp": 3,
+    "value": 34.9,
+    "gs60": 0.69,
     "isMe": false
    }
   ],
@@ -271,5 +271,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:02:38-07:00"
+ "updatedAt": "2026-10-26T05:02:43-07:00"
 }

@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -2.3,
-   "percentile": 0
+   "percentile": 1
   },
   "Defense": {
    "value": 0.8,
@@ -95,70 +95,70 @@
   },
   "Net": {
    "value": -1.4,
-   "percentile": 15
+   "percentile": 16
   }
  },
  "score": null,
  "standIn": {
-  "value": 29.1,
+  "value": 29.2,
   "gs": -0.79,
   "gs60": -0.4,
   "gameScore": -0.79,
   "minutes": 118,
   "gp": 11,
-  "rank": 614,
-  "pool": 721,
-  "percentile": 14.8,
+  "rank": 621,
+  "pool": 724,
+  "percentile": 14.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 612,
+    "rank": 619,
     "name": "Alexander Romanov",
     "team": "NYI",
     "pos": "D",
     "gp": 3,
-    "value": 29.2,
+    "value": 29.3,
     "gs60": -0.76,
     "isMe": false
    },
    {
-    "rank": 613,
-    "name": "Filip Chytil",
-    "team": "VAN",
+    "rank": 620,
+    "name": "Barclay Goodrow",
+    "team": "SJS",
     "pos": "C",
-    "gp": 4,
-    "value": 29.1,
-    "gs60": -0.78,
+    "gp": 12,
+    "value": 29.3,
+    "gs60": -0.76,
     "isMe": false
    },
    {
-    "rank": 614,
+    "rank": 621,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
     "gp": 11,
-    "value": 29.1,
+    "value": 29.2,
     "gs60": -0.79,
     "isMe": true
    },
    {
-    "rank": 615,
+    "rank": 622,
     "name": "Jacob Melanson",
     "team": "SEA",
     "pos": "R",
     "gp": 1,
-    "value": 29.1,
+    "value": 29.2,
     "gs60": -0.79,
     "isMe": false
    },
    {
-    "rank": 616,
+    "rank": 623,
     "name": "Jeffrey Viel",
     "team": "TBL",
     "pos": "L",
     "gp": 8,
-    "value": 29.1,
+    "value": 29.2,
     "gs60": -0.79,
     "isMe": false
    }
@@ -571,5 +571,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:02:49-07:00"
+ "updatedAt": "2026-10-26T05:02:56-07:00"
 }

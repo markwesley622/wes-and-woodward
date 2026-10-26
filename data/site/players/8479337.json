@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": 2.1,
-   "percentile": 95
+   "percentile": 94
   },
   "Defense": {
    "value": 0.5,
@@ -95,70 +95,70 @@
   },
   "Net": {
    "value": 2.6,
-   "percentile": 94
+   "percentile": 93
   }
  },
  "score": null,
  "standIn": {
-  "value": 89.0,
+  "value": 88.4,
   "gs": 15.62,
   "gs60": 4.22,
   "gameScore": 15.62,
   "minutes": 222,
   "gp": 11,
-  "rank": 25,
-  "pool": 721,
-  "percentile": 96.5,
+  "rank": 29,
+  "pool": 724,
+  "percentile": 96.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 23,
-    "name": "Jack Hughes",
-    "team": "NJD",
-    "pos": "C",
-    "gp": 11,
-    "value": 89.9,
-    "gs60": 16.12,
-    "isMe": false
-   },
-   {
-    "rank": 24,
+    "rank": 27,
     "name": "Adam Fox",
     "team": "NYR",
     "pos": "D",
     "gp": 13,
-    "value": 89.5,
+    "value": 88.9,
     "gs60": 15.91,
     "isMe": false
    },
    {
-    "rank": 25,
+    "rank": 28,
+    "name": "Mikko Rantanen",
+    "team": "DAL",
+    "pos": "R",
+    "gp": 11,
+    "value": 88.7,
+    "gs60": 15.82,
+    "isMe": false
+   },
+   {
+    "rank": 29,
     "name": "Alex DeBrincat",
     "team": "DET",
     "pos": "R",
     "gp": 11,
-    "value": 89.0,
+    "value": 88.4,
     "gs60": 15.62,
     "isMe": true
    },
    {
-    "rank": 26,
-    "name": "Matthew Tkachuk",
-    "team": "FLA",
+    "rank": 30,
+    "name": "Kyle Connor",
+    "team": "WPG",
     "pos": "L",
     "gp": 11,
-    "value": 89.0,
-    "gs60": 15.59,
+    "value": 88.2,
+    "gs60": 15.5,
     "isMe": false
    },
    {
-    "rank": 27,
+    "rank": 31,
     "name": "Jake Guentzel",
     "team": "TBL",
     "pos": "C",
     "gp": 11,
-    "value": 88.7,
+    "value": 88.1,
     "gs60": 15.46,
     "isMe": false
    }
@@ -601,5 +601,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:02:02-07:00"
+ "updatedAt": "2026-10-26T05:02:05-07:00"
 }

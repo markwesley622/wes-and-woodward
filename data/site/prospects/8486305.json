@@ -31,11 +31,11 @@
   {
    "league": "OHL",
    "team": "Erie Otters",
-   "gp": 9,
-   "g": 3,
+   "gp": 11,
+   "g": 5,
    "a": 1,
-   "pts": 4,
-   "pm": -4,
+   "pts": 6,
+   "pm": -3,
    "pim": 0,
    "gaa": null,
    "svp": null,
@@ -123,11 +123,11 @@
     {
      "league": "OHL",
      "team": "Erie Otters",
-     "gp": 9,
-     "g": 3,
+     "gp": 11,
+     "g": 5,
      "a": 1,
-     "pts": 4,
-     "pm": -4,
+     "pts": 6,
+     "pm": -3,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -158,30 +158,29 @@
   }
  ],
  "anchor": {
-  "season": "2025-2026",
-  "league": "U20 SM-sarja",
-  "leagueSlug": "u20-sm-sarja",
-  "table": "U20 SM-Liiga",
-  "coef": 0.083,
-  "team": "Pelicans U20",
-  "gp": 46,
-  "g": 11,
-  "a": 14,
-  "pts": 25,
-  "pgp": 0.595,
-  "lineGp": 42,
-  "nhle": 0.052,
-  "nhlePace": 4.4,
+  "season": "2026-2027",
+  "league": "OHL",
+  "leagueSlug": "ohl",
+  "table": "OHL",
+  "coef": 0.144,
+  "team": "Erie Otters",
+  "gp": 11,
+  "g": 5,
+  "a": 1,
+  "pts": 6,
+  "pgp": 0.545,
+  "lineGp": 11,
+  "nhle": 0.079,
+  "nhlePace": 6.6,
   "lines": [
-   "U18 SM-sarja",
-   "U20 SM-sarja"
+   "OHL"
   ],
-  "feature": 0.052
+  "feature": 0.079
  },
  "league": {
-  "name": "U20 SM-sarja",
-  "table": "U20 SM-Liiga",
-  "coef": 0.083,
+  "name": "OHL",
+  "table": "OHL",
+  "coef": 0.144,
   "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
  },
  "performance": {
@@ -191,113 +190,113 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 86,
-   "gp": 9,
-   "value": 0.4444,
-   "percentile": 41.9,
-   "percentileAllAges": 46.1,
+   "gp": 11,
+   "value": 0.5455,
+   "percentile": 53.5,
+   "percentileAllAges": 56.3,
    "allAgesN": 1875
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 8.7,
+  "expected": 6.2,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 38.0,
-  "pRegular": 0.2,
-  "pTopLine": 0.06,
-  "pAboveAvg": 0.06,
-  "pElite": 0.02,
-  "poolN": 1374,
+  "p90": 31.0,
+  "pRegular": 0.16,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.04,
+  "pElite": 0.0,
+  "poolN": 1362,
   "group": "F",
-  "age": 17,
+  "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.2,
+  "pCeiling": 0.16,
   "featureBand": [
-   0.046,
-   0.06
+   0.066,
+   0.092
   ],
   "examples": [
    {
-    "name": "Tyler Moy",
-    "year": 2015,
-    "pick": 175,
-    "league": "USHL",
-    "feature": 0.051,
+    "name": "Eric Wellwood",
+    "year": 2009,
+    "pick": 172,
+    "league": "OHL",
+    "feature": 0.08,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
+    "nhlGp": 31
    },
    {
     "name": "Nikita Nesterenko",
     "year": 2019,
     "pick": 172,
-    "league": "USHS-Prep",
-    "feature": 0.053,
+    "league": "BCHL",
+    "feature": 0.08,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 63
    },
    {
-    "name": "Chase Balisy",
-    "year": 2011,
-    "pick": 170,
-    "league": "NTDP",
-    "feature": 0.051,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 8
-   },
-   {
-    "name": "Chase Lang",
-    "year": 2014,
-    "pick": 167,
-    "league": "WHL",
-    "feature": 0.052,
+    "name": "Greg Meireles",
+    "year": 2019,
+    "pick": 168,
+    "league": "OHL",
+    "feature": 0.079,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Rodrigo \u0100bols",
-    "year": 2016,
-    "pick": 184,
-    "league": "MHL",
-    "feature": 0.052,
-    "peak": 16.7,
+    "name": "Zac Rinaldo",
+    "year": 2008,
+    "pick": 178,
+    "league": "OHL",
+    "feature": 0.077,
+    "peak": 12.7,
     "tier": "replacement level",
-    "nhlGp": 64
+    "nhlGp": 374
    },
    {
-    "name": "Matej Stransky",
+    "name": "Josh Archibald",
     "year": 2011,
-    "pick": 165,
-    "league": "WHL",
-    "feature": 0.052,
+    "pick": 174,
+    "league": "NCAA",
+    "feature": 0.082,
+    "peak": 31.0,
+    "tier": "below average",
+    "nhlGp": 305
+   },
+   {
+    "name": "Gabriel Fontaine",
+    "year": 2016,
+    "pick": 171,
+    "league": "QMJHL",
+    "feature": 0.081,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Anton Blidh",
-    "year": 2013,
-    "pick": 180,
-    "league": "J20 SuperElit",
-    "feature": 0.05,
+    "name": "Garrett Mitchell",
+    "year": 2009,
+    "pick": 175,
+    "league": "WHL",
+    "feature": 0.075,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 89
+    "nhlGp": 1
    },
    {
-    "name": "Mitch Callahan",
-    "year": 2009,
-    "pick": 180,
-    "league": "WHL",
-    "feature": 0.054,
+    "name": "C.J. Yakimowicz",
+    "year": 2014,
+    "pick": 172,
+    "league": "OHL",
+    "feature": 0.075,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 5
+    "nhlGp": 0
    }
   ]
  },
@@ -316,10 +315,10 @@
  },
  "blend": {
   "w": 0.5,
-  "sinceDraft": -1,
+  "sinceDraft": 0,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 8.7,
-  "expected": 8.1,
+  "cohortExpected": 6.2,
+  "expected": 6.8,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -340,11 +339,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 42,
-  "season": "2025-2026"
+  "gp": 11,
+  "season": "2026-2027"
  },
- "rank": 19,
- "score": 8.1,
+ "rank": 21,
+ "score": 6.8,
  "rankStart": 21,
  "rankStartDate": "2026-10-06"
 }

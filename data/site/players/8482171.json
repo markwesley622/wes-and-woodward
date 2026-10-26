@@ -83,82 +83,82 @@
  "hsc": {
   "Game score": {
    "value": 0.18,
-   "percentile": 39
+   "percentile": 40
   },
   "Offense": {
-   "value": 0.5,
+   "value": 0.4,
    "percentile": 73
   },
   "Defense": {
    "value": -0.3,
-   "percentile": 35
+   "percentile": 36
   },
   "Net": {
-   "value": 0.2,
-   "percentile": 62
+   "value": 0.1,
+   "percentile": 61
   }
  },
  "score": null,
  "standIn": {
-  "value": 42.5,
+  "value": 42.3,
   "gs": 2.45,
   "gs60": 1.75,
   "gameScore": 2.45,
   "minutes": 84,
   "gp": 6,
-  "rank": 383,
-  "pool": 721,
-  "percentile": 46.9,
+  "rank": 386,
+  "pool": 724,
+  "percentile": 46.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 381,
-    "name": "Morgan Barron",
-    "team": "WPG",
-    "pos": "C",
-    "gp": 10,
-    "value": 42.7,
-    "gs60": 2.49,
-    "isMe": false
-   },
-   {
-    "rank": 382,
-    "name": "Anton Frondell",
-    "team": "CHI",
-    "pos": "C",
-    "gp": 10,
-    "value": 42.6,
-    "gs60": 2.48,
-    "isMe": false
-   },
-   {
-    "rank": 383,
-    "name": "William Wallinder",
-    "team": "DET",
-    "pos": "D",
-    "gp": 6,
-    "value": 42.5,
-    "gs60": 2.45,
-    "isMe": true
-   },
-   {
     "rank": 384,
-    "name": "Amadeus Lombardi",
-    "team": "NJD",
-    "pos": "C",
-    "gp": 9,
-    "value": 42.5,
-    "gs60": 2.45,
+    "name": "Jonatan Berggren",
+    "team": "STL",
+    "pos": "R",
+    "gp": 11,
+    "value": 42.6,
+    "gs60": 2.52,
     "isMe": false
    },
    {
     "rank": 385,
+    "name": "Scott Sabourin",
+    "team": "TBL",
+    "pos": "R",
+    "gp": 2,
+    "value": 42.5,
+    "gs60": 2.51,
+    "isMe": false
+   },
+   {
+    "rank": 386,
+    "name": "William Wallinder",
+    "team": "DET",
+    "pos": "D",
+    "gp": 6,
+    "value": 42.3,
+    "gs60": 2.45,
+    "isMe": true
+   },
+   {
+    "rank": 387,
+    "name": "Amadeus Lombardi",
+    "team": "NJD",
+    "pos": "C",
+    "gp": 9,
+    "value": 42.3,
+    "gs60": 2.45,
+    "isMe": false
+   },
+   {
+    "rank": 388,
     "name": "Valeri Nichushkin",
     "team": "CBJ",
     "pos": "R",
     "gp": 9,
-    "value": 42.4,
+    "value": 42.2,
     "gs60": 2.43,
     "isMe": false
    }
@@ -345,5 +345,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-25T05:05:09-07:00"
+ "updatedAt": "2026-10-26T05:05:14-07:00"
 }
