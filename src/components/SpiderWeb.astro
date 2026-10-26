@@ -1,14 +1,13 @@
 ---
 // A spider web shot at the viewer, in line art, for the Brandsegg-Nygård glow-up column (Peter Parker to Spider-Man).
-// Built the way the other thumbnails are: one drawing in a 400x225 frame, stacked down the Z axis as N layers so it
-// has a body, stroke-only on the card grey, red used once (the hub, where the web left the wrist). The loop is a CSS
-// animation on the block's transform and opacity, never an SVG attribute, and it pauses off screen. One cycle: the
-// web hangs far back and small, flies at the camera while turning (fast, then braking as it hits the glass), holds
-// across the whole frame with a small settle, fades, and resets. At rest (reduced motion, link-preview images,
-// data-still) it holds the splat pose at a slight three-quarter angle so the depth still reads. Drawing (10/26):
-// ten spokes, eight capture-spiral rings that sag toward the hub between spokes, two broken threads.
+// One flat drawing in a 400x225 frame, face on, black lines on the card grey, red used once (the hub, where the web
+// left the wrist). No stacked layers: a web is flat, so the only depth cue is size (Mark 10/26). The loop is a CSS
+// animation on the drawing's transform and opacity, never an SVG attribute, and it pauses off screen. One cycle: the
+// web appears small in the middle of the frame, grows faster and faster while it spins (coming at the camera),
+// overshoots the frame a little as it hits the glass, settles, holds, fades, and resets. At rest (reduced motion,
+// link-preview images, data-still) it holds the full-frame pose. Drawing (10/26): ten spokes, eight capture-spiral
+// rings that sag toward the hub between spokes, two broken threads.
 const { id = 'spiderweb' } = Astro.props;
-const N = 8, STEP = 4, depth = (N - 1) * STEP;
 const CX = 200, CY = 112, SPOKES = 10, RINGS = [16, 30, 48, 70, 96, 126, 160, 198];
 const pt = (r, k) => { const a = (-Math.PI / 2) + (k * 2 * Math.PI) / SPOKES + 0.11; return [CX + r * Math.cos(a), CY + r * Math.sin(a)]; };
 const f = (n) => n.toFixed(1);
@@ -26,42 +25,35 @@ const rings = RINGS.map((r, i) => {
   }
   return d.trim();
 });
-const layers = Array.from({ length: N }, (_, i) => ({ z: -i * STEP + depth / 2, edge: i === 0 || i === N - 1, front: i === 0 }));
 ---
 <div class="sw" id={id} aria-hidden="true">
-  <div class="block">
-    {layers.map((l) => (
-      <svg class:list={['layer', { edge: l.edge }]} viewBox="0 0 400 225" style={`transform:translateZ(${l.z.toFixed(1)}px)`}>
-        {spokes.map((d) => <path d={d} />)}
-        {rings.map((d) => <path d={d} />)}
-        {l.front && <circle cx={CX} cy={CY} r="3.2" class="hub" />}
-      </svg>
-    ))}
-  </div>
+  <svg class="web" viewBox="0 0 400 225">
+    {spokes.map((d) => <path d={d} />)}
+    {rings.map((d) => <path d={d} />)}
+    <circle cx={CX} cy={CY} r="3.2" class="hub" />
+  </svg>
 </div>
 
 <style>
-  .sw { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--ghost); border-radius: 3px; perspective: 900px; perspective-origin: 50% 50%; }
-  .block { position: absolute; inset: 0; transform-style: preserve-3d; will-change: transform, opacity; transform: translateZ(40px) rotateX(12deg) rotateY(-28deg) rotate(8deg); }
-  .layer { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-  .layer path { fill: none; stroke: var(--ink); stroke-width: 1.1; stroke-linecap: round; stroke-linejoin: round; opacity: .42; }
-  .edge path { stroke-width: 2; opacity: 1; }
+  .sw { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--ghost); border-radius: 3px; }
+  .web { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; will-change: transform, opacity; transform: rotate(8deg) scale(1); }
+  .web path { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
   .hub { fill: var(--red); stroke: none; }
-  /* the shot: far and small, fly at the glass while turning, splat and settle, fade out, reset; paused until on screen */
-  .block { animation: sw-shot 6.5s infinite paused; }
-  .sw[data-live] .block { animation-play-state: running; }
-  .sw[data-still] .block { animation: none; }
+  /* the shot: small in the middle, grow and spin faster and faster, hit the glass and settle, fade out, reset; paused until on screen */
+  .web { animation: sw-shot 6.5s infinite paused; }
+  .sw[data-live] .web { animation-play-state: running; }
+  .sw[data-still] .web { animation: none; }
   @keyframes sw-shot {
-    0%   { transform: translateZ(-1400px) rotateX(0deg) rotateY(0deg) rotate(-70deg); opacity: 0; animation-timing-function: linear; }
-    8%   { transform: translateZ(-1400px) rotateX(0deg) rotateY(0deg) rotate(-70deg); opacity: 1; animation-timing-function: cubic-bezier(.2, .7, .3, 1); }
-    38%  { transform: translateZ(60px) rotateX(12deg) rotateY(-28deg) rotate(10deg); opacity: 1; animation-timing-function: cubic-bezier(.3, 0, .4, 1); }
-    44%  { transform: translateZ(36px) rotateX(12deg) rotateY(-28deg) rotate(7deg); opacity: 1; animation-timing-function: cubic-bezier(.4, 0, .6, 1); }
-    50%  { transform: translateZ(40px) rotateX(12deg) rotateY(-28deg) rotate(8deg); opacity: 1; animation-timing-function: linear; }
-    88%  { transform: translateZ(40px) rotateX(12deg) rotateY(-28deg) rotate(8deg); opacity: 1; animation-timing-function: ease-in; }
-    96%  { transform: translateZ(40px) rotateX(12deg) rotateY(-28deg) rotate(8deg); opacity: 0; }
-    100% { transform: translateZ(-1400px) rotateX(0deg) rotateY(0deg) rotate(-70deg); opacity: 0; }
+    0%   { transform: rotate(-70deg) scale(.04); opacity: 0; animation-timing-function: linear; }
+    8%   { transform: rotate(-70deg) scale(.04); opacity: 1; animation-timing-function: cubic-bezier(.6, 0, .9, .45); }
+    38%  { transform: rotate(10deg) scale(1.08); opacity: 1; animation-timing-function: cubic-bezier(.3, 0, .4, 1); }
+    44%  { transform: rotate(7deg) scale(.98); opacity: 1; animation-timing-function: cubic-bezier(.4, 0, .6, 1); }
+    50%  { transform: rotate(8deg) scale(1); opacity: 1; animation-timing-function: linear; }
+    88%  { transform: rotate(8deg) scale(1); opacity: 1; animation-timing-function: ease-in; }
+    96%  { transform: rotate(8deg) scale(1); opacity: 0; }
+    100% { transform: rotate(-70deg) scale(.04); opacity: 0; }
   }
-  @media (prefers-reduced-motion: reduce) { .block { animation: none; } }
+  @media (prefers-reduced-motion: reduce) { .web { animation: none; } }
 </style>
 
 <script define:vars={{ id }}>
@@ -69,7 +61,7 @@ const layers = Array.from({ length: N }, (_, i) => ({ z: -i * STEP + depth / 2, 
   const el = document.getElementById(id);
   if (el) {
     const t = new URLSearchParams(location.search).get('t');
-    if (t !== null) { const b = el.querySelector('.block'); b.style.animationDelay = `${-(parseFloat(t) * 6.5)}s`; b.style.animationPlayState = 'paused'; el.setAttribute('data-live', ''); b.style.animationPlayState = 'paused'; }
+    if (t !== null) { const w = el.querySelector('.web'); w.style.animationDelay = `${-(parseFloat(t) * 6.5)}s`; el.setAttribute('data-live', ''); w.style.animationPlayState = 'paused'; }
     else new IntersectionObserver(([e]) => el.toggleAttribute('data-live', e.isIntersecting)).observe(el);
   }
 </script>
