@@ -67,7 +67,7 @@ def find(s):  # index of the paragraph AFTER which a figure goes
     assert len(hits) == 1, (s, hits)
     return hits[0]
 idx.update({
-    "fig_shotmap": find("the opportunities are presenting themselves more consistently."),   # c1 closes the shot-map section
+    "fig_shotmap": find("may be underselling his scoring potential."),   # c1 between the "second benefit" and "Finally" paragraphs (Mark 10/26)
     "fig_deploy": find("against the opponent’s top line a little more often."),              # c2 after zone starts / matchups
     "fig_score": find("He’s driving it no matter what the score is."),                       # c3 closes the tiebreaker argument
     "fig_goals": find("in front of a .978 goalie."),                      # c4 goals vs expected, both years
