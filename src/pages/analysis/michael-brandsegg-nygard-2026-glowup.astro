@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import ArticleHead from '../../components/ArticleHead.astro';
 import Subscribe from '../../components/Subscribe.astro';
+import MoreAnalysis from '../../components/MoreAnalysis.astro';
 import { article, newsArticle } from '../../lib/articles.js';
 import C from '../../../data/site/articles/michael-brandsegg-nygard-2026-glowup-copy.json';
 import c1 from '../../../data/site/articles/michael-brandsegg-nygard-2026-glowup/c1_shotmap.svg?raw';
@@ -37,6 +38,7 @@ const DESC = article(SLUG).description;
       <p class="note mono" style="margin-top:28px">Method: both samples are his first 10 NHL games of the season (nine in October 2025 plus the March 8 game after his recall, and Oct. 2 through Oct. 22, 2026). Ice time, shifts, linemates, zone starts, score state and shot attempts are rebuilt second by second from the NHL's shift charts and play-by-play; expected goals are MoneyPuck's shot model joined to the same clock; shot and skating speed and zone time are NHL Edge; league percentiles are MoneyPuck's season tables. Last-five-minutes usage counts the final 5:00 of regulation with the score within a goal. Luck odds are binomial at the league's 5v5 shooting percentage.</p>
     </div>
     <div class="shell">
+      <MoreAnalysis slug={SLUG} />
       <Subscribe />
     </div>
   </section>

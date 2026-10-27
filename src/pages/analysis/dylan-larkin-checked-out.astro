@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import ArticleHead from '../../components/ArticleHead.astro';
 import Subscribe from '../../components/Subscribe.astro';
+import MoreAnalysis from '../../components/MoreAnalysis.astro';
 import { article, newsArticle, dateline } from '../../lib/articles.js';
 import C from '../../../data/site/articles/dylan-larkin-copy.json';
 import c1 from '../../../data/site/articles/dylan-larkin/c1-five-games-vs-career.svg?raw';
@@ -36,6 +37,7 @@ const DESC = article(SLUG).description;
       <p class="note mono" style="margin-top:28px">Method: the current stretch is Larkin's five games from Oct. 6 to Oct. 15, 2026, ranked against all 760 five-game stretches of his regular-season career (stretches never cross seasons). Giveaways and takeaways come from the NHL's play-by-play; because the league began recording about twice as many giveaways in 2024-25, giveaway rates are compared with each season's median for NHL forwards. Rink rankings count giveaways recorded per game, both teams, in each arena. Game score, expected goals and 5v5 expected-goal share are MoneyPuck.com's. Speed bursts and distance are NHL Edge tracking. Goals above replacement is Evolving-Hockey's, with percentiles among forwards who played 500 or more minutes. Injury returns are his first five games back after missing three or more.</p>
     </div>
     <div class="shell">
+      <MoreAnalysis slug={'dylan-larkin-checked-out'} />
       <Subscribe />
     </div>
   </section>

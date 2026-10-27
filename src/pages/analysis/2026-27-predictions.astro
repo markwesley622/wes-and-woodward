@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import ArticleHead from '../../components/ArticleHead.astro';
 import Subscribe from '../../components/Subscribe.astro';
+import MoreAnalysis from '../../components/MoreAnalysis.astro';
 import { article, newsArticle, dateline } from '../../lib/articles.js';
 import A from '../../../data/site/articles/predictions-2026-27.json';
 import C from '../../../data/site/articles/predictions-2026-27-copy.json';
@@ -124,6 +125,7 @@ const DESC = article('2026-27-predictions').description;
       <p class="note mono" style="margin-top:28px">Method: the simulation plays every game shift by shift on the real 84-game schedule. Lineups, matchups, minutes, shots, goals, penalties and injuries are generated together, with player ratings from Evolving-Hockey and MoneyPuck. Across the 500 seasons Larkin is worth {A.paired.mean.toFixed(1)} points (standard error {A.paired.se.toFixed(1)}). The two seasons written up are random draws at each scenario's rounded mean. Award votes are stat-based stand-ins for a ballot.</p>
     </div>
     <div class="shell">
+      <MoreAnalysis slug={'2026-27-predictions'} />
       <Subscribe />
     </div>
   </section>

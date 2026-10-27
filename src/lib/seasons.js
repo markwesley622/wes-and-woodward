@@ -19,3 +19,12 @@ export const seasonMenu = (P) => [
   { key: P.season, label: dash(P.seasonLabel), href: `/players/${P.slug}/` },
   ...pastSeasons(P).map((S) => ({ key: S.season, label: dash(S.seasonLabel), href: `/players/${P.slug}/${S.seasonLabel}/` })),
 ];
+
+// Fallback (Mark, 10/27): a player with no NHL game and no NHL season line yet this season (Edvinsson, out injured)
+// shows his most recent Detroit season on his own URL instead of an empty page. The menu then lists only the seasons
+// that have something to show, with that one selected.
+export const fallbackSeason = (P) => {
+  const played = (Array.isArray(P.gameLog) && P.gameLog.length > 0) || ((P.seasonLine || {}).gp || 0) > 0;
+  return played ? null : (pastSeasons(P)[0] || null);
+};
+export const fallbackMenu = (P) => pastSeasons(P).map((S) => ({ key: S.season, label: dash(S.seasonLabel), href: `/players/${P.slug}/${S.seasonLabel}/` }));

@@ -1,0 +1,38 @@
+---
+// End-of-article "More analysis" (Mark, 10/27): the three most recent other articles, newest first, so every piece
+// links to its siblings instead of standing alone (before this, no article linked to another one).
+import ArticleThumb from './ArticleThumb.astro';
+import { ARTICLES, pubDay } from '../lib/articles.js';
+const { slug, count = 3 } = Astro.props;
+const more = ARTICLES.filter((a) => a.slug !== slug).sort((a, b) => Date.parse(b.published) - Date.parse(a.published)).slice(0, count);
+---
+{more.length > 0 && (
+  <nav class="more" aria-labelledby="more-h">
+    <p class="mono more-h" id="more-h">More analysis</p>
+    <div class="more-list">
+      {more.map((a) => (
+        <a class="more-item" href={`/analysis/${a.slug}/`}>
+          <ArticleThumb kind={a.thumb} id={`more-${a.slug}`} />
+          <span class="meta mono">{pubDay(a)}</span>
+          <h3>{a.title}</h3>
+        </a>
+      ))}
+    </div>
+    <p class="mono lc more-all"><a href="/analysis/">All articles &rarr;</a></p>
+  </nav>
+)}
+
+<style>
+  .more { margin: 48px 0 0; padding-top: 22px; border-top: 1px solid var(--ink); }
+  .more-h { margin: 0 0 16px; color: var(--mute); }
+  .more-h::before { content: "// "; color: var(--red); }
+  .more-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+  .more-item { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  .more-item :global(.thumb) { aspect-ratio: 16 / 9; background: var(--ghost); border-radius: 3px; }
+  .meta { color: var(--mute); font-size: 11px; }
+  .more-item h3 { margin: 0; font-size: 17px; line-height: 1.25; text-transform: none; letter-spacing: -.01em; }
+  .more-item h3::before { content: none; }
+  .more-item:hover h3 { color: var(--red); }
+  .more-all { margin: 20px 0 0; }
+  @media (max-width: 640px) { .more-list { grid-template-columns: 1fr; } }
+</style>
