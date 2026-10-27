@@ -1528,7 +1528,7 @@
    "easternUTCOffset": "-04:00",
    "venueUTCOffset": "-06:00",
    "venueTimezone": "America/Edmonton",
-   "gameState": "FUT",
+   "gameState": "OFF",
    "gameScheduleState": "OK",
    "tvBroadcasts": [
     {
@@ -1569,7 +1569,7 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/DET_dark.svg",
     "awaySplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/DET/20262027/DET-radio.m3u8"
+    "score": 4
    },
    "homeTeam": {
     "id": 22,
@@ -1587,15 +1587,29 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/EDM_dark.svg",
     "homeSplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/EDM/20262027/EDM-radio.m3u8"
+    "score": 3
    },
    "periodDescriptor": {
-    "number": 1,
-    "periodType": "REG",
+    "number": 5,
+    "periodType": "SO",
     "maxRegulationPeriods": 3
    },
-   "ticketsLink": "https://www.ticketmaster.ca/event/11006513A602A493?brand=edmontonoilers&artistid=805943&wt.mc_id=NHL_TEAM_EDM_SCHEDULE_GM7&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_TEAM_EDM&utm_content=SCHEDULE_GM7",
-   "ticketsLinkFr": "https://www.ticketmaster.ca/event/11006513A602A493?brand=edmontonoilers&artistid=805943&wt.mc_id=NHL_TEAM_EDM_SCHEDULE_GM7&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_TEAM_EDM&utm_content=SCHEDULE_GM7",
+   "gameOutcome": {
+    "lastPeriodType": "SO"
+   },
+   "winningGoalie": {
+    "playerId": 8485545,
+    "firstInitial": {
+     "default": "M."
+    },
+    "lastName": {
+     "default": "Postava"
+    }
+   },
+   "threeMinRecap": "/video/det-at-edm-recap-6407454661112",
+   "threeMinRecapFr": "/fr/video/det-vs-edm-26-10-2026-resume-6407454472112",
+   "condensedGame": "/video/det-at-edm-condensed-game-6407454092112",
+   "condensedGameFr": "/fr/video/match-condense-red-wings-oilers-26-10-2026-6407454665112",
    "gameCenterLink": "/gamecenter/det-vs-edm/2026/10/26/2026020187"
   },
   {

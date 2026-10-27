@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 42
+   "percentile": 43
   },
   "Defense": {
    "value": -0.1,
@@ -106,24 +106,24 @@
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 526,
-  "pool": 724,
-  "percentile": 27.3,
+  "rank": 531,
+  "pool": 725,
+  "percentile": 26.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 524,
+    "rank": 529,
     "name": "Justin Dowling",
     "team": "NYR",
     "pos": "C",
     "gp": 4,
-    "value": 33.4,
+    "value": 33.3,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 525,
+    "rank": 530,
     "name": "Connor Clifton",
     "team": "BOS",
     "pos": "D",
@@ -133,7 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 526,
+    "rank": 531,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
@@ -143,7 +143,7 @@
     "isMe": true
    },
    {
-    "rank": 527,
+    "rank": 532,
     "name": "Rutger McGroarty",
     "team": "PIT",
     "pos": "R",
@@ -153,12 +153,12 @@
     "isMe": false
    },
    {
-    "rank": 528,
+    "rank": 533,
     "name": "Michael Misa",
     "team": "SJS",
     "pos": "C",
     "gp": 12,
-    "value": 33.3,
+    "value": 33.2,
     "gs60": 0.28,
     "isMe": false
    }
@@ -370,5 +370,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-26T05:00:46-07:00"
+ "updatedAt": "2026-10-27T05:00:47-07:00"
 }

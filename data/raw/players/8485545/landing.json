@@ -43,47 +43,62 @@
   "season": 20262027,
   "regularSeason": {
    "subSeason": {
-    "gamesPlayed": 1,
-    "goalsAgainstAvg": 3.037975,
+    "gamesPlayed": 2,
+    "goalsAgainstAvg": 2.890986,
     "losses": 0,
     "otLosses": 0,
-    "savePctg": 0.875,
+    "savePctg": 0.888889,
     "shutouts": 0,
-    "wins": 0
+    "wins": 1
    },
    "career": {
-    "gamesPlayed": 1,
-    "goalsAgainstAvg": 3.037972,
+    "gamesPlayed": 2,
+    "goalsAgainstAvg": 2.890984,
     "losses": 0,
     "otLosses": 0,
-    "savePctg": 0.875,
+    "savePctg": 0.888889,
     "shutouts": 0,
-    "wins": 0
+    "wins": 1
    }
   }
  },
  "careerTotals": {
   "regularSeason": {
    "assists": 0,
-   "gamesPlayed": 1,
-   "gamesStarted": 0,
+   "gamesPlayed": 2,
+   "gamesStarted": 1,
    "goals": 0,
-   "goalsAgainst": 1,
-   "goalsAgainstAvg": 3.037972,
+   "goalsAgainst": 4,
+   "goalsAgainstAvg": 2.890984,
    "losses": 0,
    "otLosses": 0,
    "pim": 0,
-   "savePctg": 0.875,
-   "shotsAgainst": 8,
+   "savePctg": 0.888889,
+   "shotsAgainst": 36,
    "shutouts": 0,
-   "timeOnIce": "19:45",
-   "wins": 0
+   "timeOnIce": "83:01",
+   "wins": 1
   }
  },
  "shopLink": "#TODO",
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "decision": "W",
+   "gameDate": "2026-10-26",
+   "gameId": 2026020187,
+   "gameTypeId": 2,
+   "gamesStarted": 1,
+   "goalsAgainst": 3,
+   "homeRoadFlag": "R",
+   "opponentAbbrev": "EDM",
+   "penaltyMins": 0,
+   "savePctg": 0.892857,
+   "shotsAgainst": 28,
+   "teamAbbrev": "DET",
+   "toi": "63:16"
+  },
   {
    "gameDate": "2026-10-22",
    "gameId": 2026020165,
@@ -507,19 +522,19 @@
   {
    "assists": 0,
    "gameTypeId": 2,
-   "gamesPlayed": 1,
-   "gamesStarted": 0,
+   "gamesPlayed": 2,
+   "gamesStarted": 1,
    "goals": 0,
-   "goalsAgainst": 1,
-   "goalsAgainstAvg": 3.037975,
+   "goalsAgainst": 4,
+   "goalsAgainstAvg": 2.890986,
    "leagueAbbrev": "NHL",
    "losses": 0,
    "otLosses": 0,
    "pim": 0,
-   "savePctg": 0.875,
+   "savePctg": 0.888889,
    "season": 20262027,
    "sequence": 1,
-   "shotsAgainst": 8,
+   "shotsAgainst": 36,
    "shutouts": 0,
    "teamCommonName": {
     "default": "Red Wings"
@@ -532,8 +547,8 @@
     "default": "Detroit",
     "fr": "de Detroit"
    },
-   "timeOnIce": "19:45",
-   "wins": 0
+   "timeOnIce": "83:01",
+   "wins": 1
   },
   {
    "gameTypeId": 2,

@@ -26,16 +26,16 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 11,
-  "goals": 4,
-  "assists": 4,
-  "points": 8,
-  "plusMinus": -3,
-  "pim": 2,
-  "shots": 27,
-  "shootingPct": 0.148148,
-  "toiPerGame": "18:56",
-  "ppPoints": 4,
+  "gp": 12,
+  "goals": 5,
+  "assists": 5,
+  "points": 10,
+  "plusMinus": -2,
+  "pim": 4,
+  "shots": 31,
+  "shootingPct": 0.16129,
+  "toiPerGame": "18:52",
+  "ppPoints": 5,
   "wins": null,
   "losses": null,
   "otLosses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 11,
-   "goals": 4,
-   "assists": 4,
-   "points": 8,
-   "plusMinus": -3,
-   "pim": 2
+   "gp": 12,
+   "goals": 5,
+   "assists": 5,
+   "points": 10,
+   "plusMinus": -2,
+   "pim": 4
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Viktor Arvidsson",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478042.png",
-  "gamesPlayed": 11,
-  "goals": 4,
-  "assists": 4,
-  "points": 8,
-  "shots": 27,
-  "shootingPct": 0.148148,
-  "toiPerGame": 1136.1,
-  "ixG": 4.81,
-  "goalsAboveExpected": -0.81,
-  "gameScore": 9.9,
+  "gamesPlayed": 12,
+  "goals": 5,
+  "assists": 5,
+  "points": 10,
+  "shots": 31,
+  "shootingPct": 0.16129,
+  "toiPerGame": 1132.3,
+  "ixG": 6.02,
+  "goalsAboveExpected": -1.02,
+  "gameScore": 11.8,
   "fiveOnFive": {
-   "icetimeMinutes": 161.8,
-   "onIceXgPct": 0.5,
+   "icetimeMinutes": 174.5,
+   "onIceXgPct": 0.52,
    "onIceCorsiPct": 0.55,
-   "ixgPer60": 0.697,
+   "ixgPer60": 1.018,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.6,
-   "percentile": 65
+   "value": 0.79,
+   "percentile": 75
   },
   "Offense": {
-   "value": 0.5,
-   "percentile": 74
+   "value": 1.0,
+   "percentile": 82
   },
   "Defense": {
-   "value": 0.0,
-   "percentile": 52
+   "value": 0.1,
+   "percentile": 54
   },
   "Net": {
-   "value": 0.5,
-   "percentile": 70
+   "value": 1.1,
+   "percentile": 79
   }
  },
  "score": null,
  "standIn": {
-  "value": 67.2,
-  "gs": 8.25,
-  "gs60": 2.38,
-  "gameScore": 8.25,
-  "minutes": 208,
-  "gp": 11,
-  "rank": 141,
-  "pool": 724,
-  "percentile": 80.5,
+  "value": 75.2,
+  "gs": 10.62,
+  "gs60": 2.81,
+  "gameScore": 10.62,
+  "minutes": 226,
+  "gp": 12,
+  "rank": 98,
+  "pool": 725,
+  "percentile": 86.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 139,
-    "name": "Kaedan Korczak",
-    "team": "PIT",
-    "pos": "D",
-    "gp": 12,
-    "value": 67.5,
-    "gs60": 8.32,
-    "isMe": false
-   },
-   {
-    "rank": 140,
-    "name": "Jesperi Kotkaniemi",
-    "team": "CAR",
+    "rank": 96,
+    "name": "Mark Scheifele",
+    "team": "WPG",
     "pos": "C",
     "gp": 11,
-    "value": 67.3,
-    "gs60": 8.27,
+    "value": 75.5,
+    "gs60": 10.72,
     "isMe": false
    },
    {
-    "rank": 141,
+    "rank": 97,
+    "name": "James Hagens",
+    "team": "BOS",
+    "pos": "C",
+    "gp": 12,
+    "value": 75.4,
+    "gs60": 10.67,
+    "isMe": false
+   },
+   {
+    "rank": 98,
     "name": "Viktor Arvidsson",
     "team": "DET",
     "pos": "L",
-    "gp": 11,
-    "value": 67.2,
-    "gs60": 8.25,
+    "gp": 12,
+    "value": 75.2,
+    "gs60": 10.62,
     "isMe": true
    },
    {
-    "rank": 142,
-    "name": "Mattias Ekholm",
-    "team": "EDM",
+    "rank": 99,
+    "name": "Brett Pesce",
+    "team": "NJD",
     "pos": "D",
-    "gp": 10,
-    "value": 67.1,
-    "gs60": 8.22,
+    "gp": 11,
+    "value": 74.6,
+    "gs60": 10.44,
     "isMe": false
    },
    {
-    "rank": 143,
-    "name": "Neal Pionk",
-    "team": "WPG",
-    "pos": "D",
+    "rank": 100,
+    "name": "Mitch Marner",
+    "team": "VGK",
+    "pos": "R",
     "gp": 11,
-    "value": 67.1,
-    "gs60": 8.21,
+    "value": 74.3,
+    "gs60": 10.34,
     "isMe": false
    }
   ],
@@ -614,12 +614,36 @@
     "moneypuck": 0.225,
     "hockeystatcards": 0.12
    }
+  },
+  {
+   "gameId": 2026020187,
+   "date": "2026-10-26",
+   "opponent": "EDM",
+   "home": false,
+   "goals": 1,
+   "assists": 1,
+   "points": 2,
+   "plusMinus": 1,
+   "shots": 4,
+   "pim": 2,
+   "toi": 18.2,
+   "ixg": 0.59,
+   "xgf": 0.78,
+   "xga": 0.43,
+   "gf": 1.0,
+   "ga": 1.0,
+   "blocks": 0.0,
+   "gameScore": 2.37,
+   "gameScoreParts": {
+    "moneypuck": 1.9,
+    "hockeystatcards": 2.84
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.75,
-  "games": 11,
+  "average": 0.88,
+  "games": 12,
   "best": {
    "date": "2026-10-20",
    "opponent": "SEA",
@@ -630,10 +654,10 @@
    "opponent": "NJD",
    "value": -0.51
   },
-  "above2": 3,
+  "above2": 4,
   "below0": 2
  },
- "detGames": 11,
+ "detGames": 12,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -646,5 +670,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-26T05:01:00-07:00"
+ "updatedAt": "2026-10-27T05:00:59-07:00"
 }

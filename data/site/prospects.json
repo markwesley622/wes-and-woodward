@@ -1,7 +1,7 @@
 {
  "season": "20262027",
  "seasonGames": 84,
- "built": "2026-10-26",
+ "built": "2026-10-27",
  "cohort": {
   "years": [
    2008,
@@ -3119,7 +3119,7 @@
     {
      "league": "NHL",
      "team": "Detroit Red Wings",
-     "gp": 11,
+     "gp": 12,
      "g": 1,
      "a": 3,
      "pts": 4,
@@ -3177,7 +3177,7 @@
       {
        "league": "NHL",
        "team": "Detroit Red Wings",
-       "gp": 11,
+       "gp": 12,
        "g": 1,
        "a": 3,
        "pts": 4,
@@ -3580,8 +3580,8 @@
     "cohortExpected": 25.4,
     "expected": 27.6,
     "tier": "below average",
-    "nhlW": 0.35,
-    "nhlExpected": 31.8,
+    "nhlW": 0.38,
+    "nhlExpected": 31.2,
     "beforeNhl": 25.4
    },
    "trajectory": {
@@ -3600,84 +3600,40 @@
     "delta": 0.106
    },
    "nhlSample": {
-    "gp": 11,
+    "gp": 12,
     "pts": 4,
     "seasons": [
      20262027
     ],
     "thisSeason": {
-     "gp": 11,
+     "gp": 12,
      "pts": 4,
-     "toi": "14:24",
+     "toi": "14:07",
      "savePct": null
     }
    },
    "nhlUsage": {
     "n": 50,
-    "expected": 31.8,
+    "expected": 31.2,
     "median": 34.5,
     "p75": 56.1,
-    "p90": 71.1,
+    "p90": 70.7,
     "pRegular": 0.64,
-    "pTopLine": 0.08,
-    "pAboveAvg": 0.32,
+    "pTopLine": 0.06,
+    "pAboveAvg": 0.34,
     "pElite": 0.0,
     "poolN": 258,
     "group": "D",
     "age": 22,
-    "gp": 11,
-    "toi": 864,
-    "ppg": 0.364,
-    "ppgShrunk": 0.254,
+    "gp": 12,
+    "toi": 847,
+    "ppg": 0.333,
+    "ppgShrunk": 0.246,
     "toiBand": [
      725,
      1001
     ],
     "examples": [
-     {
-      "name": "Jordan Schmaltz",
-      "season": "2016-2017",
-      "age": 22,
-      "gp": 9,
-      "toi": 860,
-      "ppg": 0.22,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 42
-     },
-     {
-      "name": "Jake Bean",
-      "season": "2020-2021",
-      "age": 22,
-      "gp": 42,
-      "toi": 872,
-      "ppg": 0.29,
-      "peak": 61.5,
-      "tier": "above average",
-      "nhlGp": 277
-     },
-     {
-      "name": "Adam Clendening",
-      "season": "2015-2016",
-      "age": 22,
-      "gp": 29,
-      "toi": 888,
-      "ppg": 0.24,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 90
-     },
-     {
-      "name": "Christian Wolanin",
-      "season": "2017-2018",
-      "age": 22,
-      "gp": 10,
-      "toi": 879,
-      "ppg": 0.3,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 86
-     },
      {
       "name": "Caleb Jones",
       "season": "2019-2020",
@@ -3688,6 +3644,17 @@
       "peak": 45.5,
       "tier": "below average",
       "nhlGp": 255
+     },
+     {
+      "name": "Jordan Schmaltz",
+      "season": "2016-2017",
+      "age": 22,
+      "gp": 9,
+      "toi": 860,
+      "ppg": 0.22,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 42
      },
      {
       "name": "Madison Bowey",
@@ -3701,6 +3668,50 @@
       "nhlGp": 158
      },
      {
+      "name": "Adam Clendening",
+      "season": "2015-2016",
+      "age": 22,
+      "gp": 29,
+      "toi": 888,
+      "ppg": 0.24,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 90
+     },
+     {
+      "name": "Jake Bean",
+      "season": "2020-2021",
+      "age": 22,
+      "gp": 42,
+      "toi": 872,
+      "ppg": 0.29,
+      "peak": 61.5,
+      "tier": "above average",
+      "nhlGp": 277
+     },
+     {
+      "name": "Lucas Carlsson",
+      "season": "2019-2020",
+      "age": 22,
+      "gp": 6,
+      "toi": 848,
+      "ppg": 0.17,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 73
+     },
+     {
+      "name": "Christian Wolanin",
+      "season": "2017-2018",
+      "age": 22,
+      "gp": 10,
+      "toi": 879,
+      "ppg": 0.3,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 86
+     },
+     {
       "name": "Christian Jaros",
       "season": "2018-2019",
       "age": 22,
@@ -3710,20 +3721,9 @@
       "peak": 13.7,
       "tier": "replacement level",
       "nhlGp": 94
-     },
-     {
-      "name": "Patrick Wey",
-      "season": "2013-2014",
-      "age": 22,
-      "gp": 9,
-      "toi": 875,
-      "ppg": 0.33,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 9
      }
     ],
-    "w": 0.35,
+    "w": 0.38,
     "before": 25.4,
     "after": 27.6
    },
@@ -16035,15 +16035,15 @@
     {
      "league": "NHL",
      "team": "Detroit Red Wings",
-     "gp": 1,
+     "gp": 2,
      "g": 0,
      "a": 0,
      "pts": null,
      "pm": null,
      "pim": 0,
-     "gaa": "3.04",
-     "svp": ".875",
-     "w": 0,
+     "gaa": "2.89",
+     "svp": ".889",
+     "w": 1,
      "l": 0,
      "so": 0,
      "coef": 1.0,
@@ -16110,15 +16110,15 @@
       {
        "league": "NHL",
        "team": "Detroit Red Wings",
-       "gp": 1,
+       "gp": 2,
        "g": 0,
        "a": 0,
        "pts": null,
        "pm": null,
        "pim": 0,
-       "gaa": "3.04",
-       "svp": ".875",
-       "w": 0,
+       "gaa": "2.89",
+       "svp": ".889",
+       "w": 1,
        "l": 0,
        "so": 0,
        "coef": 1.0,

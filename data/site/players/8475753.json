@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 11,
+  "gp": 12,
   "goals": 2,
   "assists": 3,
   "points": 5,
   "plusMinus": 2,
-  "pim": 6,
-  "shots": 17,
-  "shootingPct": 0.117647,
-  "toiPerGame": "19:25",
+  "pim": 8,
+  "shots": 18,
+  "shootingPct": 0.111111,
+  "toiPerGame": "19:39",
   "ppPoints": 2,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 11,
+   "gp": 12,
    "goals": 2,
    "assists": 3,
    "points": 5,
    "plusMinus": 2,
-   "pim": 6
+   "pim": 8
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Justin Faulk",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475753.png",
-  "gamesPlayed": 11,
+  "gamesPlayed": 12,
   "goals": 2,
   "assists": 3,
   "points": 5,
-  "shots": 17,
-  "shootingPct": 0.117647,
-  "toiPerGame": 1164.5,
-  "ixG": 0.68,
-  "goalsAboveExpected": 1.32,
-  "gameScore": 6.58,
+  "shots": 18,
+  "shootingPct": 0.111111,
+  "toiPerGame": 1179.0,
+  "ixG": 0.75,
+  "goalsAboveExpected": 1.25,
+  "gameScore": 6.8,
   "fiveOnFive": {
-   "icetimeMinutes": 177.6,
-   "onIceXgPct": 0.54,
+   "icetimeMinutes": 195.3,
+   "onIceXgPct": 0.57,
    "onIceCorsiPct": 0.55,
-   "ixgPer60": 0.189,
+   "ixgPer60": 0.172,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.4,
-   "percentile": 53
+   "value": 0.53,
+   "percentile": 62
   },
   "Offense": {
    "value": -0.0,
-   "percentile": 61
+   "percentile": 62
   },
   "Defense": {
-   "value": 0.6,
-   "percentile": 77
+   "value": 1.0,
+   "percentile": 87
   },
   "Net": {
-   "value": 0.6,
-   "percentile": 71
+   "value": 1.0,
+   "percentile": 78
   }
  },
  "score": null,
  "standIn": {
-  "value": 55.6,
-  "gs": 5.47,
-  "gs60": 1.54,
-  "gameScore": 5.47,
-  "minutes": 214,
-  "gp": 11,
-  "rank": 248,
-  "pool": 724,
-  "percentile": 65.7,
+  "value": 59.9,
+  "gs": 6.57,
+  "gs60": 1.67,
+  "gameScore": 6.57,
+  "minutes": 236,
+  "gp": 12,
+  "rank": 208,
+  "pool": 725,
+  "percentile": 71.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 246,
-    "name": "Matty Beniers",
-    "team": "SEA",
+    "rank": 206,
+    "name": "Brock Nelson",
+    "team": "COL",
     "pos": "C",
     "gp": 12,
-    "value": 55.7,
-    "gs60": 5.49,
+    "value": 60.3,
+    "gs60": 6.67,
     "isMe": false
    },
    {
-    "rank": 247,
-    "name": "Adam Lowry",
-    "team": "WPG",
+    "rank": 207,
+    "name": "Marat Khusnutdinov",
+    "team": "BOS",
     "pos": "C",
-    "gp": 11,
-    "value": 55.7,
-    "gs60": 5.48,
+    "gp": 12,
+    "value": 60.2,
+    "gs60": 6.64,
     "isMe": false
    },
    {
-    "rank": 248,
+    "rank": 208,
     "name": "Justin Faulk",
     "team": "DET",
     "pos": "D",
-    "gp": 11,
-    "value": 55.6,
-    "gs60": 5.47,
+    "gp": 12,
+    "value": 59.9,
+    "gs60": 6.57,
     "isMe": true
    },
    {
-    "rank": 249,
-    "name": "Erik Gustafsson",
-    "team": "LAK",
-    "pos": "D",
-    "gp": 7,
-    "value": 55.6,
-    "gs60": 5.46,
+    "rank": 209,
+    "name": "Daniil But",
+    "team": "UTA",
+    "pos": "L",
+    "gp": 12,
+    "value": 59.9,
+    "gs60": 6.56,
     "isMe": false
    },
    {
-    "rank": 250,
-    "name": "Noah Hanifin",
-    "team": "VGK",
-    "pos": "D",
-    "gp": 13,
-    "value": 55.5,
-    "gs60": 5.46,
+    "rank": 210,
+    "name": "Ondrej Palat",
+    "team": "NYI",
+    "pos": "L",
+    "gp": 11,
+    "value": 59.8,
+    "gs60": 6.55,
     "isMe": false
    }
   ],
@@ -659,12 +659,36 @@
     "moneypuck": 0.125,
     "hockeystatcards": -0.38
    }
+  },
+  {
+   "gameId": 2026020187,
+   "date": "2026-10-26",
+   "opponent": "EDM",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 2,
+   "toi": 22.3,
+   "ixg": 0.02,
+   "xgf": 1.18,
+   "xga": 0.24,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 2.0,
+   "gameScore": 1.1,
+   "gameScoreParts": {
+    "moneypuck": 0.225,
+    "hockeystatcards": 1.98
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.5,
-  "games": 11,
+  "average": 0.55,
+  "games": 12,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
@@ -678,7 +702,7 @@
   "above2": 1,
   "below0": 5
  },
- "detGames": 11,
+ "detGames": 12,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -691,5 +715,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-26T05:04:14-07:00"
+ "updatedAt": "2026-10-27T05:04:07-07:00"
 }

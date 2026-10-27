@@ -26,7 +26,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 11,
+  "gp": 12,
   "goals": 0,
   "assists": 0,
   "points": 0,
@@ -34,7 +34,7 @@
   "pim": 20,
   "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": "10:46",
+  "toiPerGame": "10:34",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 11,
+   "gp": 12,
    "goals": 0,
    "assists": 0,
    "points": 0,
@@ -60,21 +60,21 @@
   "name": "Keegan Kolesar",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478434.png",
-  "gamesPlayed": 11,
+  "gamesPlayed": 12,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": 646.0,
-  "ixG": 0.45,
-  "goalsAboveExpected": -0.45,
-  "gameScore": -0.09,
+  "toiPerGame": 633.8,
+  "ixG": 0.51,
+  "goalsAboveExpected": -0.51,
+  "gameScore": -0.19,
   "fiveOnFive": {
-   "icetimeMinutes": 104.5,
+   "icetimeMinutes": 110.7,
    "onIceXgPct": 0.44,
-   "onIceCorsiPct": 0.48,
-   "ixgPer60": 0.172,
+   "onIceCorsiPct": 0.47,
+   "ixgPer60": 0.201,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.13,
-   "percentile": 23
+   "value": -0.14,
+   "percentile": 22
   },
   "Offense": {
-   "value": -2.3,
-   "percentile": 1
+   "value": -2.4,
+   "percentile": 0
   },
   "Defense": {
    "value": 0.8,
    "percentile": 83
   },
   "Net": {
-   "value": -1.4,
-   "percentile": 16
+   "value": -1.6,
+   "percentile": 13
   }
  },
  "score": null,
  "standIn": {
-  "value": 29.2,
-  "gs": -0.79,
-  "gs60": -0.4,
-  "gameScore": -0.79,
-  "minutes": 118,
-  "gp": 11,
-  "rank": 621,
-  "pool": 724,
-  "percentile": 14.2,
+  "value": 28.7,
+  "gs": -0.94,
+  "gs60": -0.44,
+  "gameScore": -0.94,
+  "minutes": 127,
+  "gp": 12,
+  "rank": 635,
+  "pool": 725,
+  "percentile": 12.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 619,
-    "name": "Alexander Romanov",
-    "team": "NYI",
+    "rank": 633,
+    "name": "Trevor van Riemsdyk",
+    "team": "PIT",
     "pos": "D",
-    "gp": 3,
-    "value": 29.3,
-    "gs60": -0.76,
+    "gp": 5,
+    "value": 28.8,
+    "gs60": -0.92,
     "isMe": false
    },
    {
-    "rank": 620,
-    "name": "Barclay Goodrow",
-    "team": "SJS",
+    "rank": 634,
+    "name": "Filip Chytil",
+    "team": "VAN",
     "pos": "C",
-    "gp": 12,
-    "value": 29.3,
-    "gs60": -0.76,
+    "gp": 5,
+    "value": 28.8,
+    "gs60": -0.92,
     "isMe": false
    },
    {
-    "rank": 621,
+    "rank": 635,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
-    "gp": 11,
-    "value": 29.2,
-    "gs60": -0.79,
+    "gp": 12,
+    "value": 28.7,
+    "gs60": -0.94,
     "isMe": true
    },
    {
-    "rank": 622,
-    "name": "Jacob Melanson",
-    "team": "SEA",
-    "pos": "R",
+    "rank": 636,
+    "name": "Helge Grans",
+    "team": "PHI",
+    "pos": "D",
     "gp": 1,
-    "value": 29.2,
-    "gs60": -0.79,
+    "value": 28.7,
+    "gs60": -0.94,
     "isMe": false
    },
    {
-    "rank": 623,
-    "name": "Jeffrey Viel",
-    "team": "TBL",
-    "pos": "L",
-    "gp": 8,
-    "value": 29.2,
-    "gs60": -0.79,
+    "rank": 637,
+    "name": "Artyom Levshunov",
+    "team": "CHI",
+    "pos": "D",
+    "gp": 11,
+    "value": 28.6,
+    "gs60": -0.96,
     "isMe": false
    }
   ],
@@ -539,12 +539,36 @@
     "moneypuck": 0.2,
     "hockeystatcards": -0.33
    }
+  },
+  {
+   "gameId": 2026020187,
+   "date": "2026-10-26",
+   "opponent": "EDM",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 8.3,
+   "ixg": 0.05,
+   "xgf": 0.07,
+   "xga": 0.06,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 2.0,
+   "gameScore": -0.15,
+   "gameScoreParts": {
+    "moneypuck": -0.1,
+    "hockeystatcards": -0.2
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.07,
-  "games": 11,
+  "average": -0.08,
+  "games": 12,
   "best": {
    "date": "2026-10-02",
    "opponent": "NYR",
@@ -556,9 +580,9 @@
    "value": -1.07
   },
   "above2": 0,
-  "below0": 6
+  "below0": 7
  },
- "detGames": 11,
+ "detGames": 12,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -571,5 +595,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-26T05:02:56-07:00"
+ "updatedAt": "2026-10-27T05:02:52-07:00"
 }

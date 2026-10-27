@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": 0,
   "assists": 2,
   "points": 2,
   "plusMinus": 0,
   "pim": 2,
-  "shots": 4,
+  "shots": 5,
   "shootingPct": 0.0,
-  "toiPerGame": "14:33",
+  "toiPerGame": "15:05",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 4,
+   "gp": 5,
    "goals": 0,
    "assists": 2,
    "points": 2,
@@ -60,21 +60,21 @@
   "name": "J.T. Compher",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477456.png",
-  "gamesPlayed": 4,
+  "gamesPlayed": 5,
   "goals": 0,
   "assists": 2,
   "points": 2,
-  "shots": 4,
+  "shots": 5,
   "shootingPct": 0.0,
-  "toiPerGame": 872.8,
-  "ixG": 0.17,
-  "goalsAboveExpected": -0.17,
-  "gameScore": 2.2,
+  "toiPerGame": 904.8,
+  "ixG": 0.18,
+  "goalsAboveExpected": -0.18,
+  "gameScore": 2.35,
   "fiveOnFive": {
-   "icetimeMinutes": 50.8,
-   "onIceXgPct": 0.57,
-   "onIceCorsiPct": 0.59,
-   "ixgPer60": 0.201,
+   "icetimeMinutes": 65.9,
+   "onIceXgPct": 0.6,
+   "onIceCorsiPct": 0.57,
+   "ixgPer60": 0.164,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.42,
+   "value": 0.4,
    "percentile": 54
   },
   "Offense": {
-   "value": -0.1,
-   "percentile": 56
+   "value": -0.4,
+   "percentile": 45
   },
   "Defense": {
-   "value": 0.0,
-   "percentile": 53
+   "value": 0.3,
+   "percentile": 63
   },
   "Net": {
    "value": -0.1,
-   "percentile": 55
+   "percentile": 56
   }
  },
  "score": null,
  "standIn": {
-  "value": 40.1,
-  "gs": 1.94,
-  "gs60": 2.0,
-  "gameScore": 1.94,
-  "minutes": 58,
-  "gp": 4,
-  "rank": 413,
-  "pool": 724,
-  "percentile": 43.0,
+  "value": 41.0,
+  "gs": 2.18,
+  "gs60": 1.73,
+  "gameScore": 2.18,
+  "minutes": 75,
+  "gp": 5,
+  "rank": 406,
+  "pool": 725,
+  "percentile": 44.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 411,
-    "name": "Nick Seeler",
-    "team": "PHI",
+    "rank": 404,
+    "name": "Tyler Kleven",
+    "team": "OTT",
     "pos": "D",
+    "gp": 12,
+    "value": 41.2,
+    "gs60": 2.23,
+    "isMe": false
+   },
+   {
+    "rank": 405,
+    "name": "Max Sasson",
+    "team": "VAN",
+    "pos": "C",
     "gp": 13,
-    "value": 40.3,
-    "gs60": 1.98,
+    "value": 41.1,
+    "gs60": 2.21,
     "isMe": false
    },
    {
-    "rank": 412,
-    "name": "Stefan Noesen",
-    "team": "NJD",
-    "pos": "R",
-    "gp": 5,
-    "value": 40.1,
-    "gs60": 1.95,
-    "isMe": false
-   },
-   {
-    "rank": 413,
+    "rank": 406,
     "name": "J.T. Compher",
     "team": "DET",
     "pos": "L",
-    "gp": 4,
-    "value": 40.1,
-    "gs60": 1.94,
+    "gp": 5,
+    "value": 41.0,
+    "gs60": 2.18,
     "isMe": true
    },
    {
-    "rank": 414,
-    "name": "Stephen Halliday",
-    "team": "OTT",
+    "rank": 407,
+    "name": "Jiri Kulich",
+    "team": "BUF",
     "pos": "C",
-    "gp": 12,
-    "value": 40.1,
-    "gs60": 1.93,
+    "gp": 8,
+    "value": 40.8,
+    "gs60": 2.14,
     "isMe": false
    },
    {
-    "rank": 415,
-    "name": "Ilya Solovyov",
-    "team": "PIT",
-    "pos": "D",
-    "gp": 3,
-    "value": 39.8,
-    "gs60": 1.88,
+    "rank": 408,
+    "name": "Mason Marchment",
+    "team": "SJS",
+    "pos": "L",
+    "gp": 12,
+    "value": 40.8,
+    "gs60": 2.14,
     "isMe": false
    }
   ],
@@ -416,12 +416,36 @@
     "moneypuck": 0.55,
     "hockeystatcards": -0.25
    }
+  },
+  {
+   "gameId": 2026020187,
+   "date": "2026-10-26",
+   "opponent": "EDM",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 0,
+   "toi": 17.2,
+   "ixg": 0.01,
+   "xgf": 0.57,
+   "xga": 0.25,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 0.24,
+   "gameScoreParts": {
+    "moneypuck": 0.155,
+    "hockeystatcards": 0.33
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.48,
-  "games": 4,
+  "average": 0.44,
+  "games": 5,
   "best": {
    "date": "2026-10-22",
    "opponent": "VAN",
@@ -435,7 +459,7 @@
   "above2": 0,
   "below0": 0
  },
- "detGames": 4,
+ "detGames": 5,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -448,5 +472,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-26T05:01:28-07:00"
+ "updatedAt": "2026-10-27T05:01:26-07:00"
 }
