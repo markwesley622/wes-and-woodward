@@ -32,8 +32,8 @@
   "points": 11,
   "plusMinus": 0,
   "pim": 6,
-  "shots": 38,
-  "shootingPct": 0.078947,
+  "shots": 37,
+  "shootingPct": 0.081081,
   "toiPerGame": "20:37",
   "ppPoints": 7,
   "wins": null,
@@ -64,17 +64,17 @@
   "goals": 3,
   "assists": 8,
   "points": 11,
-  "shots": 38,
-  "shootingPct": 0.078947,
+  "shots": 37,
+  "shootingPct": 0.081081,
   "toiPerGame": 1237.2,
-  "ixG": 5.24,
-  "goalsAboveExpected": -2.24,
+  "ixG": 5.29,
+  "goalsAboveExpected": -2.29,
   "gameScore": 13.53,
   "fiveOnFive": {
    "icetimeMinutes": 187.6,
    "onIceXgPct": 0.55,
    "onIceCorsiPct": 0.59,
-   "ixgPer60": 0.72,
+   "ixgPer60": 0.742,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -83,83 +83,83 @@
  "hsc": {
   "Game score": {
    "value": 0.94,
-   "percentile": 81
+   "percentile": 82
   },
   "Offense": {
-   "value": 0.5,
-   "percentile": 74
+   "value": 0.6,
+   "percentile": 76
   },
   "Defense": {
    "value": 1.2,
-   "percentile": 91
+   "percentile": 90
   },
   "Net": {
    "value": 1.7,
-   "percentile": 86
+   "percentile": 85
   }
  },
  "score": null,
  "standIn": {
-  "value": 80.6,
+  "value": 79.5,
   "gs": 12.42,
   "gs60": 3.01,
   "gameScore": 12.42,
   "minutes": 247,
   "gp": 12,
-  "rank": 62,
-  "pool": 725,
-  "percentile": 91.4,
+  "rank": 73,
+  "pool": 726,
+  "percentile": 89.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 60,
-    "name": "Jesper Bratt",
+    "rank": 71,
+    "name": "Brett Pesce",
     "team": "NJD",
-    "pos": "L",
-    "gp": 11,
-    "value": 81.2,
-    "gs60": 12.63,
-    "isMe": false
-   },
-   {
-    "rank": 61,
-    "name": "Drake Batherson",
-    "team": "OTT",
-    "pos": "R",
+    "pos": "D",
     "gp": 12,
-    "value": 81.1,
-    "gs60": 12.6,
+    "value": 80.0,
+    "gs60": 12.59,
     "isMe": false
    },
    {
-    "rank": 62,
+    "rank": 72,
+    "name": "Logan Cooley",
+    "team": "UTA",
+    "pos": "C",
+    "gp": 12,
+    "value": 79.5,
+    "gs60": 12.44,
+    "isMe": false
+   },
+   {
+    "rank": 73,
     "name": "Lucas Raymond",
     "team": "DET",
     "pos": "L",
     "gp": 12,
-    "value": 80.6,
+    "value": 79.5,
     "gs60": 12.42,
     "isMe": true
    },
    {
-    "rank": 63,
-    "name": "Tristan Luneau",
-    "team": "ANA",
-    "pos": "D",
+    "rank": 74,
+    "name": "Adrian Kempe",
+    "team": "LAK",
+    "pos": "R",
     "gp": 11,
-    "value": 80.5,
-    "gs60": 12.38,
+    "value": 79.5,
+    "gs60": 12.41,
     "isMe": false
    },
    {
-    "rank": 64,
+    "rank": 75,
     "name": "Jared Spurgeon",
     "team": "MIN",
     "pos": "D",
     "gp": 9,
-    "value": 80.3,
-    "gs60": 12.3,
+    "value": 79.4,
+    "gs60": 12.39,
     "isMe": false
    }
   ],
@@ -519,7 +519,7 @@
    "assists": 2,
    "points": 2,
    "plusMinus": 0,
-   "shots": 3,
+   "shots": 2,
    "pim": 0,
    "toi": 21.2,
    "ixg": 0.34,
@@ -565,5 +565,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:03:41-07:00"
+ "updatedAt": "2026-10-28T05:03:33-07:00"
 }

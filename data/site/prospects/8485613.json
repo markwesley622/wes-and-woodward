@@ -48,11 +48,11 @@
   {
    "league": "MHL",
    "team": "MHK Spartak Moskva",
-   "gp": 2,
+   "gp": 3,
    "g": 0,
-   "a": 0,
-   "pts": 0,
-   "pm": 0,
+   "a": 3,
+   "pts": 3,
+   "pm": 2,
    "pim": 2,
    "gaa": null,
    "svp": null,
@@ -157,11 +157,11 @@
     {
      "league": "MHL",
      "team": "MHK Spartak Moskva",
-     "gp": 2,
+     "gp": 3,
      "g": 0,
-     "a": 0,
-     "pts": 0,
-     "pm": 0,
+     "a": 3,
+     "pts": 3,
+     "pm": 2,
      "pim": 2,
      "gaa": null,
      "svp": null,
@@ -254,19 +254,19 @@
   "table": "VHL",
   "coef": 0.328,
   "team": "Khimik Voskresensk",
-  "gp": 14,
+  "gp": 15,
   "g": 0,
   "a": 1,
   "pts": 1,
   "pgp": 0.083,
   "lineGp": 12,
-  "nhle": 0.023,
-  "nhlePace": 1.9,
+  "nhle": 0.05,
+  "nhlePace": 4.2,
   "lines": [
    "VHL",
    "MHL"
   ],
-  "feature": 0.023
+  "feature": 0.05
  },
  "league": {
   "name": "VHL",
@@ -300,104 +300,104 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 7.8,
+  "expected": 3.2,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 54.1,
-  "pRegular": 0.18,
-  "pTopLine": 0.02,
-  "pAboveAvg": 0.1,
+  "p90": 0.0,
+  "pRegular": 0.08,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.02,
   "pElite": 0.0,
   "poolN": 794,
   "group": "D",
   "age": 19,
   "pickWeight": 0.5,
   "tier": "replacement level",
-  "pCeiling": 0.18,
+  "pCeiling": 0.08,
   "featureBand": [
-   0.012,
-   0.035
+   0.039,
+   0.061
   ],
   "examples": [
    {
-    "name": "Alex Lepkowski",
-    "year": 2011,
-    "pick": 137,
-    "league": "OHL",
-    "feature": 0.022,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Miro Karjalainen",
-    "year": 2014,
-    "pick": 135,
-    "league": "U20 SM-liiga",
-    "feature": 0.022,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Peter Andersson",
-    "year": 2009,
-    "pick": 143,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.025,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Isaac MacLeod",
-    "year": 2010,
-    "pick": 136,
-    "league": "NCAA",
-    "feature": 0.026,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Doyle Somerby",
-    "year": 2012,
-    "pick": 125,
-    "league": "NCAA",
-    "feature": 0.023,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Connor Clifton",
+    "name": "Blake Heinrich",
     "year": 2013,
+    "pick": 144,
+    "league": "WHL",
+    "feature": 0.05,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Cole Fraser",
+    "year": 2017,
+    "pick": 131,
+    "league": "OHL",
+    "feature": 0.05,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Thomas Larkin",
+    "year": 2009,
+    "pick": 137,
+    "league": "NCAA",
+    "feature": 0.052,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Nick Seeler",
+    "year": 2011,
+    "pick": 131,
+    "league": "NCAA",
+    "feature": 0.051,
+    "peak": 42.4,
+    "tier": "below average",
+    "nhlGp": 457
+   },
+   {
+    "name": "Joseph Cecconi",
+    "year": 2015,
     "pick": 133,
     "league": "NCAA",
-    "feature": 0.026,
-    "peak": 54.1,
-    "tier": "above average",
-    "nhlGp": 438
-   },
-   {
-    "name": "Kristoffer Gunnarsson",
-    "year": 2017,
-    "pick": 135,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.019,
+    "feature": 0.052,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Casey Staum",
-    "year": 2016,
-    "pick": 124,
-    "league": "USHL",
-    "feature": 0.024,
+    "name": "Sam Ruopp",
+    "year": 2015,
+    "pick": 129,
+    "league": "WHL",
+    "feature": 0.051,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Alex Kannok Leipert",
+    "year": 2018,
+    "pick": 161,
+    "league": "WHL",
+    "feature": 0.05,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Dalton Prout",
+    "year": 2010,
+    "pick": 154,
+    "league": "OHL",
+    "feature": 0.048,
+    "peak": 47.4,
+    "tier": "below average",
+    "nhlGp": 264
    }
   ]
  },
@@ -418,8 +418,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 7.8,
-  "expected": 7.6,
+  "cohortExpected": 3.2,
+  "expected": 4.2,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -443,8 +443,8 @@
   "gp": 12,
   "season": "2026-2027"
  },
- "rank": 20,
- "score": 7.6,
+ "rank": 27,
+ "score": 4.2,
  "rankStart": 23,
  "rankStartDate": "2026-10-06"
 }

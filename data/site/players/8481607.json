@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.47,
-   "percentile": 58
+   "percentile": 60
   },
   "Offense": {
    "value": 0.2,
@@ -94,71 +94,71 @@
    "percentile": 73
   },
   "Net": {
-   "value": 0.8,
+   "value": 0.7,
    "percentile": 73
   }
  },
  "score": null,
  "standIn": {
-  "value": 53.1,
+  "value": 52.4,
   "gs": 4.99,
   "gs60": 1.74,
   "gameScore": 4.99,
   "minutes": 172,
   "gp": 11,
-  "rank": 277,
-  "pool": 725,
-  "percentile": 61.8,
+  "rank": 280,
+  "pool": 726,
+  "percentile": 61.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 275,
-    "name": "Dawson Mercer",
-    "team": "WPG",
-    "pos": "C",
-    "gp": 11,
-    "value": 53.6,
-    "gs60": 5.08,
-    "isMe": false
-   },
-   {
-    "rank": 276,
-    "name": "Denver Barkey",
-    "team": "PHI",
-    "pos": "C",
-    "gp": 10,
-    "value": 53.2,
+    "rank": 278,
+    "name": "Adam Jiricek",
+    "team": "STL",
+    "pos": "D",
+    "gp": 12,
+    "value": 52.5,
     "gs60": 5.01,
     "isMe": false
    },
    {
-    "rank": 277,
+    "rank": 279,
+    "name": "Teuvo Teravainen",
+    "team": "CHI",
+    "pos": "C",
+    "gp": 10,
+    "value": 52.4,
+    "gs60": 5.0,
+    "isMe": false
+   },
+   {
+    "rank": 280,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 53.1,
+    "value": 52.4,
     "gs60": 4.99,
     "isMe": true
    },
    {
-    "rank": 278,
+    "rank": 281,
     "name": "Ben Kindel",
     "team": "PIT",
     "pos": "C",
     "gp": 9,
-    "value": 53.0,
+    "value": 52.2,
     "gs60": 4.96,
     "isMe": false
    },
    {
-    "rank": 279,
-    "name": "Will Smith",
-    "team": "SJS",
-    "pos": "C",
+    "rank": 282,
+    "name": "Noah Dobson",
+    "team": "MTL",
+    "pos": "D",
     "gp": 12,
-    "value": 52.9,
+    "value": 52.2,
     "gs60": 4.95,
     "isMe": false
    }
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:04:19-07:00"
+ "updatedAt": "2026-10-28T05:04:12-07:00"
 }

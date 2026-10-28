@@ -5,66 +5,7 @@
  "season": "20262027",
  "seasonLabel": "2026-27",
  "kind": "G",
- "standIn": {
-  "value": 77.0,
-  "gsax60": 5.08,
-  "gsax": 5.08,
-  "minutes": 214,
-  "gp": 4,
-  "rank": 8,
-  "pool": 70,
-  "percentile": 88.6,
-  "group": "goalies",
-  "standIn": true,
-  "neighbours": [
-   {
-    "rank": 6,
-    "name": "Stuart Skinner",
-    "team": "WPG",
-    "gp": 8,
-    "value": 80.2,
-    "gsax60": 5.85,
-    "isMe": false
-   },
-   {
-    "rank": 7,
-    "name": "Ilya Sorokin",
-    "team": "NYI",
-    "gp": 8,
-    "value": 79.7,
-    "gsax60": 5.71,
-    "isMe": false
-   },
-   {
-    "rank": 8,
-    "name": "Daniil Tarasov",
-    "team": "DET",
-    "gp": 4,
-    "value": 77.0,
-    "gsax60": 5.08,
-    "isMe": true
-   },
-   {
-    "rank": 9,
-    "name": "Igor Shesterkin",
-    "team": "NYR",
-    "gp": 5,
-    "value": 76.4,
-    "gsax60": 4.95,
-    "isMe": false
-   },
-   {
-    "rank": 10,
-    "name": "Alex Nedeljkovic",
-    "team": "SJS",
-    "gp": 5,
-    "value": 74.8,
-    "gsax60": 4.59,
-    "isMe": false
-   }
-  ],
-  "method": "Stand-in until the W-Value is computable: season goals saved above expected (MoneyPuck), scaled 0-100 the same way, among every NHL goalie who has played this season."
- },
+ "standIn": null,
  "bio": {
   "number": 80,
   "position": "G",
@@ -103,7 +44,22 @@
   "savePct": 0.940476,
   "shutouts": 1
  },
- "score": null,
+ "score": {
+  "value": 0.0,
+  "low": 0.0,
+  "high": 0.0,
+  "gsax": 5.1,
+  "xGoals": 10.1,
+  "goals": 5.0,
+  "minutes": 214,
+  "pool": 2,
+  "rank": null,
+  "percentile": 0.0,
+  "reliability": 0.12,
+  "group": "goalies",
+  "neighbours": [],
+  "method": "A 0-100 rating where 50 is the average NHL goalie with 600+ minutes; built on goals saved above expected (MoneyPuck, all situations), this season only."
+ },
  "moneypuck": {
   "playerId": 8480193,
   "name": "Daniil Tarasov",
@@ -195,5 +151,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:05:10-07:00"
+ "updatedAt": "2026-10-28T05:05:01-07:00"
 }

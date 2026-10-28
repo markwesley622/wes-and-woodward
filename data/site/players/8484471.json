@@ -83,83 +83,83 @@
  "hsc": {
   "Game score": {
    "value": 1.11,
-   "percentile": 87
+   "percentile": 88
   },
   "Offense": {
    "value": 1.4,
-   "percentile": 88
+   "percentile": 87
   },
   "Defense": {
-   "value": 0.6,
+   "value": 0.5,
    "percentile": 74
   },
   "Net": {
    "value": 2.0,
-   "percentile": 88
+   "percentile": 87
   }
  },
  "score": null,
  "standIn": {
-  "value": 79.1,
+  "value": 77.9,
   "gs": 11.88,
   "gs60": 3.34,
   "gameScore": 11.88,
   "minutes": 213,
   "gp": 12,
-  "rank": 75,
-  "pool": 725,
-  "percentile": 89.7,
+  "rank": 84,
+  "pool": 726,
+  "percentile": 88.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 73,
-    "name": "Nick Schmaltz",
-    "team": "UTA",
-    "pos": "C",
+    "rank": 82,
+    "name": "Nick Robertson",
+    "team": "PIT",
+    "pos": "L",
     "gp": 12,
-    "value": 79.3,
-    "gs60": 11.95,
+    "value": 78.3,
+    "gs60": 12.0,
     "isMe": false
    },
    {
-    "rank": 74,
-    "name": "Dylan Guenther",
-    "team": "UTA",
-    "pos": "R",
-    "gp": 12,
-    "value": 79.1,
-    "gs60": 11.91,
+    "rank": 83,
+    "name": "Owen Power",
+    "team": "BUF",
+    "pos": "D",
+    "gp": 11,
+    "value": 78.0,
+    "gs60": 11.89,
     "isMe": false
    },
    {
-    "rank": 75,
+    "rank": 84,
     "name": "Emmitt Finnie",
     "team": "DET",
     "pos": "C",
     "gp": 12,
-    "value": 79.1,
+    "value": 77.9,
     "gs60": 11.88,
     "isMe": true
    },
    {
-    "rank": 76,
-    "name": "Carter Verhaeghe",
-    "team": "FLA",
+    "rank": 85,
+    "name": "Nick Schmaltz",
+    "team": "UTA",
     "pos": "C",
     "gp": 12,
-    "value": 79.1,
+    "value": 77.9,
     "gs60": 11.88,
     "isMe": false
    },
    {
-    "rank": 77,
-    "name": "Kailer Yamamoto",
-    "team": "UTA",
-    "pos": "R",
-    "gp": 7,
-    "value": 79.0,
-    "gs60": 11.87,
+    "rank": 86,
+    "name": "Elias Pettersson",
+    "team": "VAN",
+    "pos": "C",
+    "gp": 13,
+    "value": 77.7,
+    "gs60": 11.81,
     "isMe": false
    }
   ],
@@ -505,5 +505,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:02:25-07:00"
+ "updatedAt": "2026-10-28T05:02:21-07:00"
 }

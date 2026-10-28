@@ -82,12 +82,12 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.4,
-   "percentile": 54
+   "value": 0.41,
+   "percentile": 55
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 45
+   "percentile": 46
   },
   "Defense": {
    "value": 0.3,
@@ -95,70 +95,70 @@
   },
   "Net": {
    "value": -0.1,
-   "percentile": 56
+   "percentile": 54
   }
  },
  "score": null,
  "standIn": {
-  "value": 41.0,
-  "gs": 2.18,
-  "gs60": 1.73,
-  "gameScore": 2.18,
+  "value": 40.6,
+  "gs": 2.19,
+  "gs60": 1.74,
+  "gameScore": 2.19,
   "minutes": 75,
   "gp": 5,
-  "rank": 406,
-  "pool": 725,
-  "percentile": 44.0,
+  "rank": 409,
+  "pool": 726,
+  "percentile": 43.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 404,
-    "name": "Tyler Kleven",
-    "team": "OTT",
-    "pos": "D",
-    "gp": 12,
-    "value": 41.2,
-    "gs60": 2.23,
-    "isMe": false
-   },
-   {
-    "rank": 405,
-    "name": "Max Sasson",
-    "team": "VAN",
+    "rank": 407,
+    "name": "Cody Glass",
+    "team": "NJD",
     "pos": "C",
-    "gp": 13,
-    "value": 41.1,
+    "gp": 12,
+    "value": 40.7,
     "gs60": 2.21,
     "isMe": false
    },
    {
-    "rank": 406,
+    "rank": 408,
+    "name": "Alex Killorn",
+    "team": "ANA",
+    "pos": "L",
+    "gp": 11,
+    "value": 40.7,
+    "gs60": 2.2,
+    "isMe": false
+   },
+   {
+    "rank": 409,
     "name": "J.T. Compher",
     "team": "DET",
     "pos": "L",
     "gp": 5,
-    "value": 41.0,
-    "gs60": 2.18,
+    "value": 40.6,
+    "gs60": 2.19,
     "isMe": true
    },
    {
-    "rank": 407,
+    "rank": 410,
+    "name": "Valeri Nichushkin",
+    "team": "CBJ",
+    "pos": "R",
+    "gp": 10,
+    "value": 40.6,
+    "gs60": 2.19,
+    "isMe": false
+   },
+   {
+    "rank": 411,
     "name": "Jiri Kulich",
     "team": "BUF",
     "pos": "C",
     "gp": 8,
-    "value": 40.8,
-    "gs60": 2.14,
-    "isMe": false
-   },
-   {
-    "rank": 408,
-    "name": "Mason Marchment",
-    "team": "SJS",
-    "pos": "L",
-    "gp": 12,
-    "value": 40.8,
+    "value": 40.4,
     "gs60": 2.14,
     "isMe": false
    }
@@ -435,10 +435,10 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": 0.24,
+   "gameScore": 0.25,
    "gameScoreParts": {
     "moneypuck": 0.155,
-    "hockeystatcards": 0.33
+    "hockeystatcards": 0.34
    }
   }
  ],
@@ -472,5 +472,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:01:26-07:00"
+ "updatedAt": "2026-10-28T05:01:23-07:00"
 }

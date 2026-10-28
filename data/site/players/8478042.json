@@ -67,12 +67,12 @@
   "shots": 31,
   "shootingPct": 0.16129,
   "toiPerGame": 1132.3,
-  "ixG": 6.02,
-  "goalsAboveExpected": -1.02,
+  "ixG": 6.01,
+  "goalsAboveExpected": -1.01,
   "gameScore": 11.8,
   "fiveOnFive": {
    "icetimeMinutes": 174.5,
-   "onIceXgPct": 0.52,
+   "onIceXgPct": 0.53,
    "onIceCorsiPct": 0.55,
    "ixgPer60": 1.018,
    "pctl_onIceXgPct": null,
@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": 1.0,
-   "percentile": 82
+   "percentile": 83
   },
   "Defense": {
    "value": 0.1,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 75.2,
+  "value": 74.1,
   "gs": 10.62,
   "gs60": 2.81,
   "gameScore": 10.62,
   "minutes": 226,
   "gp": 12,
-  "rank": 98,
-  "pool": 725,
-  "percentile": 86.5,
+  "rank": 101,
+  "pool": 726,
+  "percentile": 86.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 96,
-    "name": "Mark Scheifele",
-    "team": "WPG",
-    "pos": "C",
-    "gp": 11,
-    "value": 75.5,
-    "gs60": 10.72,
-    "isMe": false
-   },
-   {
-    "rank": 97,
-    "name": "James Hagens",
-    "team": "BOS",
-    "pos": "C",
-    "gp": 12,
-    "value": 75.4,
-    "gs60": 10.67,
-    "isMe": false
-   },
-   {
-    "rank": 98,
-    "name": "Viktor Arvidsson",
-    "team": "DET",
-    "pos": "L",
-    "gp": 12,
-    "value": 75.2,
-    "gs60": 10.62,
-    "isMe": true
-   },
-   {
     "rank": 99,
-    "name": "Brett Pesce",
-    "team": "NJD",
+    "name": "Roman Josi",
+    "team": "NSH",
     "pos": "D",
-    "gp": 11,
+    "gp": 12,
     "value": 74.6,
-    "gs60": 10.44,
+    "gs60": 10.78,
     "isMe": false
    },
    {
     "rank": 100,
+    "name": "Thomas Harley",
+    "team": "DAL",
+    "pos": "D",
+    "gp": 12,
+    "value": 74.2,
+    "gs60": 10.66,
+    "isMe": false
+   },
+   {
+    "rank": 101,
+    "name": "Viktor Arvidsson",
+    "team": "DET",
+    "pos": "L",
+    "gp": 12,
+    "value": 74.1,
+    "gs60": 10.62,
+    "isMe": true
+   },
+   {
+    "rank": 102,
+    "name": "Zach Werenski",
+    "team": "CBJ",
+    "pos": "D",
+    "gp": 10,
+    "value": 74.0,
+    "gs60": 10.62,
+    "isMe": false
+   },
+   {
+    "rank": 103,
     "name": "Mitch Marner",
     "team": "VGK",
     "pos": "R",
     "gp": 11,
-    "value": 74.3,
-    "gs60": 10.34,
+    "value": 73.8,
+    "gs60": 10.54,
     "isMe": false
    }
   ],
@@ -670,5 +670,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:00:59-07:00"
+ "updatedAt": "2026-10-28T05:00:58-07:00"
 }

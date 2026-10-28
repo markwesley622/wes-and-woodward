@@ -83,11 +83,11 @@
  "hsc": {
   "Game score": {
    "value": 0.63,
-   "percentile": 67
+   "percentile": 69
   },
   "Offense": {
    "value": -0.3,
-   "percentile": 52
+   "percentile": 51
   },
   "Defense": {
    "value": -0.0,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 35.0,
+  "value": 34.8,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 499,
-  "pool": 725,
-  "percentile": 31.2,
+  "rank": 497,
+  "pool": 726,
+  "percentile": 31.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 497,
-    "name": "Kyle Capobianco",
-    "team": "DAL",
-    "pos": "D",
-    "gp": 4,
+    "rank": 495,
+    "name": "Anthony Beauvillier",
+    "team": "WSH",
+    "pos": "R",
+    "gp": 10,
     "value": 35.2,
+    "gs60": 0.82,
+    "isMe": false
+   },
+   {
+    "rank": 496,
+    "name": "Erik Haula",
+    "team": "LAK",
+    "pos": "L",
+    "gp": 11,
+    "value": 35.0,
     "gs60": 0.78,
     "isMe": false
    },
    {
-    "rank": 498,
-    "name": "Connor Brown",
-    "team": "NJD",
-    "pos": "R",
-    "gp": 3,
-    "value": 35.1,
-    "gs60": 0.76,
-    "isMe": false
-   },
-   {
-    "rank": 499,
+    "rank": 497,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
     "gp": 1,
-    "value": 35.0,
+    "value": 34.8,
     "gs60": 0.73,
     "isMe": true
    },
    {
-    "rank": 500,
-    "name": "Jonny Brodzinski",
-    "team": "WSH",
-    "pos": "C",
-    "gp": 2,
-    "value": 34.9,
+    "rank": 498,
+    "name": "Paul Cotter",
+    "team": "VAN",
+    "pos": "L",
+    "gp": 12,
+    "value": 34.7,
     "gs60": 0.7,
     "isMe": false
    },
    {
-    "rank": 501,
-    "name": "Zachary L'Heureux",
-    "team": "COL",
-    "pos": "L",
-    "gp": 3,
-    "value": 34.9,
-    "gs60": 0.69,
+    "rank": 499,
+    "name": "Jonny Brodzinski",
+    "team": "WSH",
+    "pos": "C",
+    "gp": 2,
+    "value": 34.7,
+    "gs60": 0.7,
     "isMe": false
    }
   ],
@@ -271,5 +271,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:02:39-07:00"
+ "updatedAt": "2026-10-28T05:02:33-07:00"
 }

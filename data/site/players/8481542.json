@@ -72,7 +72,7 @@
   "gameScore": 8.83,
   "fiveOnFive": {
    "icetimeMinutes": 221.7,
-   "onIceXgPct": 0.53,
+   "onIceXgPct": 0.54,
    "onIceCorsiPct": 0.55,
    "ixgPer60": 0.054,
    "pctl_onIceXgPct": null,
@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -1.0,
-   "percentile": 18
+   "percentile": 19
   },
   "Defense": {
    "value": 2.1,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": 1.1,
-   "percentile": 79
+   "percentile": 80
   }
  },
  "score": null,
  "standIn": {
-  "value": 65.0,
+  "value": 64.0,
   "gs": 7.82,
   "gs60": 1.5,
   "gameScore": 7.82,
   "minutes": 313,
   "gp": 12,
-  "rank": 157,
-  "pool": 725,
-  "percentile": 78.3,
+  "rank": 167,
+  "pool": 726,
+  "percentile": 77.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 155,
-    "name": "Matias Maccelli",
-    "team": "NYI",
-    "pos": "L",
-    "gp": 8,
-    "value": 65.7,
-    "gs60": 7.99,
-    "isMe": false
-   },
-   {
-    "rank": 156,
-    "name": "Nate Schmidt",
-    "team": "UTA",
-    "pos": "D",
-    "gp": 12,
-    "value": 65.2,
-    "gs60": 7.87,
-    "isMe": false
-   },
-   {
-    "rank": 157,
-    "name": "Moritz Seider",
-    "team": "DET",
-    "pos": "D",
-    "gp": 12,
-    "value": 65.0,
-    "gs60": 7.82,
-    "isMe": true
-   },
-   {
-    "rank": 158,
-    "name": "Alexandre Carrier",
-    "team": "MTL",
-    "pos": "D",
-    "gp": 11,
-    "value": 64.9,
-    "gs60": 7.79,
-    "isMe": false
-   },
-   {
-    "rank": 159,
+    "rank": 165,
     "name": "Brett Howden",
     "team": "VGK",
     "pos": "C",
     "gp": 13,
-    "value": 64.9,
-    "gs60": 7.79,
+    "value": 64.3,
+    "gs60": 7.92,
+    "isMe": false
+   },
+   {
+    "rank": 166,
+    "name": "Beckett Sennecke",
+    "team": "ANA",
+    "pos": "R",
+    "gp": 11,
+    "value": 64.3,
+    "gs60": 7.9,
+    "isMe": false
+   },
+   {
+    "rank": 167,
+    "name": "Moritz Seider",
+    "team": "DET",
+    "pos": "D",
+    "gp": 12,
+    "value": 64.0,
+    "gs60": 7.82,
+    "isMe": true
+   },
+   {
+    "rank": 168,
+    "name": "Tyler Toffoli",
+    "team": "SJS",
+    "pos": "C",
+    "gp": 12,
+    "value": 64.0,
+    "gs60": 7.82,
+    "isMe": false
+   },
+   {
+    "rank": 169,
+    "name": "Danila Yurov",
+    "team": "MIN",
+    "pos": "R",
+    "gp": 13,
+    "value": 63.9,
+    "gs60": 7.8,
     "isMe": false
    }
   ],
@@ -565,5 +565,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:04:57-07:00"
+ "updatedAt": "2026-10-28T05:04:47-07:00"
 }

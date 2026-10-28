@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": 0.4,
-   "percentile": 73
+   "percentile": 72
   },
   "Defense": {
    "value": -0.2,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 43.7,
+  "value": 43.2,
   "gs": 2.82,
   "gs60": 1.66,
   "gameScore": 2.82,
   "minutes": 102,
   "gp": 7,
-  "rank": 374,
-  "pool": 725,
-  "percentile": 48.4,
+  "rank": 377,
+  "pool": 726,
+  "percentile": 48.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 372,
-    "name": "Eetu Luostarinen",
-    "team": "FLA",
-    "pos": "C",
-    "gp": 12,
-    "value": 43.7,
-    "gs60": 2.82,
-    "isMe": false
-   },
-   {
-    "rank": 373,
-    "name": "Kasperi Kapanen",
-    "team": "EDM",
-    "pos": "R",
-    "gp": 12,
-    "value": 43.7,
-    "gs60": 2.82,
-    "isMe": false
-   },
-   {
-    "rank": 374,
-    "name": "William Wallinder",
-    "team": "DET",
-    "pos": "D",
-    "gp": 7,
-    "value": 43.7,
-    "gs60": 2.82,
-    "isMe": true
-   },
-   {
     "rank": 375,
-    "name": "Frank Vatrano",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 7,
-    "value": 43.6,
-    "gs60": 2.81,
+    "name": "Zach Hyman",
+    "team": "EDM",
+    "pos": "L",
+    "gp": 6,
+    "value": 43.4,
+    "gs60": 2.86,
     "isMe": false
    },
    {
     "rank": 376,
-    "name": "Dylan DeMelo",
-    "team": "WPG",
+    "name": "Gage Goncalves",
+    "team": "TBL",
+    "pos": "C",
+    "gp": 10,
+    "value": 43.4,
+    "gs60": 2.85,
+    "isMe": false
+   },
+   {
+    "rank": 377,
+    "name": "William Wallinder",
+    "team": "DET",
     "pos": "D",
-    "gp": 11,
-    "value": 43.6,
-    "gs60": 2.79,
+    "gp": 7,
+    "value": 43.2,
+    "gs60": 2.82,
+    "isMe": true
+   },
+   {
+    "rank": 378,
+    "name": "Morgan Barron",
+    "team": "WPG",
+    "pos": "C",
+    "gp": 12,
+    "value": 43.2,
+    "gs60": 2.81,
+    "isMe": false
+   },
+   {
+    "rank": 379,
+    "name": "Frank Vatrano",
+    "team": "ANA",
+    "pos": "R",
+    "gp": 7,
+    "value": 43.2,
+    "gs60": 2.81,
     "isMe": false
    }
   ],
@@ -369,5 +369,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:05:08-07:00"
+ "updatedAt": "2026-10-28T05:04:58-07:00"
 }

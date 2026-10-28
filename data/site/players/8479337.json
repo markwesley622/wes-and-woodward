@@ -72,7 +72,7 @@
   "gameScore": 15.77,
   "fiveOnFive": {
    "icetimeMinutes": 184.7,
-   "onIceXgPct": 0.58,
+   "onIceXgPct": 0.59,
    "onIceCorsiPct": 0.57,
    "ixgPer60": 0.883,
    "pctl_onIceXgPct": null,
@@ -91,75 +91,75 @@
   },
   "Defense": {
    "value": 0.7,
-   "percentile": 79
+   "percentile": 78
   },
   "Net": {
    "value": 3.1,
-   "percentile": 96
+   "percentile": 95
   }
  },
  "score": null,
  "standIn": {
-  "value": 90.6,
+  "value": 89.7,
   "gs": 17.23,
   "gs60": 4.28,
   "gameScore": 17.23,
   "minutes": 242,
   "gp": 12,
-  "rank": 21,
-  "pool": 725,
-  "percentile": 97.1,
+  "rank": 23,
+  "pool": 726,
+  "percentile": 96.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 19,
+    "rank": 21,
+    "name": "Martin Necas",
+    "team": "COL",
+    "pos": "C",
+    "gp": 12,
+    "value": 90.6,
+    "gs60": 17.79,
+    "isMe": false
+   },
+   {
+    "rank": 22,
     "name": "Brandon Hagel",
     "team": "TBL",
     "pos": "L",
     "gp": 11,
-    "value": 90.9,
+    "value": 90.1,
     "gs60": 17.48,
     "isMe": false
    },
    {
-    "rank": 20,
-    "name": "David Pastrnak",
-    "team": "BOS",
-    "pos": "R",
-    "gp": 12,
-    "value": 90.7,
-    "gs60": 17.29,
-    "isMe": false
-   },
-   {
-    "rank": 21,
+    "rank": 23,
     "name": "Alex DeBrincat",
     "team": "DET",
     "pos": "R",
     "gp": 12,
-    "value": 90.6,
+    "value": 89.7,
     "gs60": 17.23,
     "isMe": true
    },
    {
-    "rank": 22,
+    "rank": 24,
     "name": "Adam Fox",
     "team": "NYR",
     "pos": "D",
     "gp": 14,
-    "value": 90.4,
-    "gs60": 17.12,
+    "value": 89.5,
+    "gs60": 17.11,
     "isMe": false
    },
    {
-    "rank": 23,
-    "name": "Alexis Lafrenire",
-    "team": "NYR",
-    "pos": "L",
+    "rank": 25,
+    "name": "Logan Stankoven",
+    "team": "CAR",
+    "pos": "C",
     "gp": 14,
-    "value": 90.1,
-    "gs60": 16.91,
+    "value": 89.3,
+    "gs60": 16.95,
     "isMe": false
    }
   ],
@@ -625,5 +625,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:02:01-07:00"
+ "updatedAt": "2026-10-28T05:01:57-07:00"
 }

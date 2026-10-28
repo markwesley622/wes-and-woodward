@@ -91,11 +91,11 @@
   },
   "Offense": {
    "value": -1.0,
-   "percentile": 18
+   "percentile": 19
   },
   "Defense": {
    "value": 0.0,
-   "percentile": 52
+   "percentile": 51
   },
   "Net": {
    "value": -1.0,
@@ -104,66 +104,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 32.2,
+  "value": 32.1,
   "gs": 0.02,
   "gs60": 0.02,
   "gameScore": 0.02,
   "minutes": 58,
   "gp": 6,
-  "rank": 546,
-  "pool": 725,
-  "percentile": 24.7,
+  "rank": 556,
+  "pool": 726,
+  "percentile": 23.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 544,
+    "rank": 554,
     "name": "Jonathan Aspirot",
     "team": "BOS",
     "pos": "D",
     "gp": 4,
-    "value": 32.4,
+    "value": 32.3,
     "gs60": 0.06,
     "isMe": false
    },
    {
-    "rank": 545,
+    "rank": 555,
     "name": "Maxim Tsyplakov",
     "team": "CGY",
     "pos": "R",
     "gp": 6,
-    "value": 32.4,
+    "value": 32.3,
     "gs60": 0.06,
     "isMe": false
    },
    {
-    "rank": 546,
+    "rank": 556,
     "name": "Sheldon Dries",
     "team": "DET",
     "pos": "C",
     "gp": 6,
-    "value": 32.2,
+    "value": 32.1,
     "gs60": 0.02,
     "isMe": true
    },
    {
-    "rank": 547,
+    "rank": 557,
     "name": "William Trudeau",
     "team": "NSH",
     "pos": "D",
     "gp": 3,
-    "value": 32.2,
+    "value": 32.1,
     "gs60": 0.02,
     "isMe": false
    },
    {
-    "rank": 548,
-    "name": "Matt Rempe",
-    "team": "NYR",
-    "pos": "C",
+    "rank": 558,
+    "name": "Matthew Seminoff",
+    "team": "DAL",
+    "pos": "R",
     "gp": 2,
-    "value": 32.2,
-    "gs60": -0.0,
+    "value": 32.1,
+    "gs60": 0.02,
     "isMe": false
    }
   ],
@@ -440,5 +440,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-10-27T05:02:14-07:00"
+ "updatedAt": "2026-10-28T05:02:09-07:00"
 }

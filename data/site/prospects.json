@@ -1,7 +1,7 @@
 {
  "season": "20262027",
  "seasonGames": 84,
- "built": "2026-10-27",
+ "built": "2026-10-28",
  "cohort": {
   "years": [
    2008,
@@ -7147,456 +7147,6 @@
    "rankStartDate": "2026-10-06"
   },
   {
-   "epId": "1073016",
-   "nhlId": 8485613,
-   "name": "Nikita Tyurin",
-   "slug": "nikita-tyurin",
-   "group": "D",
-   "position": "D",
-   "birthDate": "2007-07-02",
-   "age": 19,
-   "height": "6'1\"",
-   "weight": 190,
-   "shoots": "L",
-   "catches": null,
-   "contract": "28/29",
-   "rights": "unsigned",
-   "draft": {
-    "year": 2025,
-    "overall": 140,
-    "round": 5
-   },
-   "status": {
-    "prospect": true,
-    "rookieEligible": true,
-    "inWindow": true,
-    "window": "draft+1",
-    "draftYear": 2025,
-    "onNhlRoster": false
-   },
-   "scouting": "Tyurin is an effective, puck-moving defender. A smooth handler and mover, he can escape forecheckers, keep the puck away from them, and find passing targets as his team regroups around him. He lets his options come to him, slowing the play, and then connects with teammates as they get open. Defending off the rush, he closes his gap on opponents near the red line, removing passing plays, and stepping up on opponents as opportunities arise. -EliteProspects 2025 NHL Draft Guide",
-   "currentLines": [
-    {
-     "league": "VHL",
-     "team": "Khimik Voskresensk",
-     "gp": 12,
-     "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": -2,
-     "pim": 4,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.328,
-     "status": "rostered"
-    },
-    {
-     "league": "MHL",
-     "team": "MHK Spartak Moskva",
-     "gp": 2,
-     "g": 0,
-     "a": 0,
-     "pts": 0,
-     "pm": 0,
-     "pim": 2,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.143,
-     "status": "rostered"
-    }
-   ],
-   "lastLines": [
-    {
-     "league": "MHL",
-     "team": "MHK Spartak Moskva",
-     "gp": 48,
-     "g": 4,
-     "a": 25,
-     "pts": 29,
-     "pm": 15,
-     "pim": 40,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.143,
-     "status": "rostered"
-    },
-    {
-     "league": "KHL",
-     "team": "Spartak Moskva",
-     "gp": 7,
-     "g": 0,
-     "a": 0,
-     "pts": 0,
-     "pm": -1,
-     "pim": 0,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.772,
-     "status": "rostered"
-    },
-    {
-     "league": "MHL",
-     "team": "MHK Spartak-MAH Moskva",
-     "gp": 4,
-     "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": -2,
-     "pim": 0,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.143,
-     "status": "rostered"
-    },
-    {
-     "league": "VHL",
-     "team": "Khimik Voskresensk",
-     "gp": 1,
-     "g": 0,
-     "a": 0,
-     "pts": 0,
-     "pm": 0,
-     "pim": 2,
-     "gaa": null,
-     "svp": null,
-     "w": null,
-     "l": null,
-     "so": null,
-     "coef": 0.328,
-     "status": "rostered"
-    }
-   ],
-   "seasons": [
-    {
-     "season": "2026-2027",
-     "lines": [
-      {
-       "league": "VHL",
-       "team": "Khimik Voskresensk",
-       "gp": 12,
-       "g": 0,
-       "a": 1,
-       "pts": 1,
-       "pm": -2,
-       "pim": 4,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.328,
-       "status": "rostered"
-      },
-      {
-       "league": "MHL",
-       "team": "MHK Spartak Moskva",
-       "gp": 2,
-       "g": 0,
-       "a": 0,
-       "pts": 0,
-       "pm": 0,
-       "pim": 2,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.143,
-       "status": "rostered"
-      }
-     ]
-    },
-    {
-     "season": "2025-2026",
-     "lines": [
-      {
-       "league": "MHL",
-       "team": "MHK Spartak Moskva",
-       "gp": 48,
-       "g": 4,
-       "a": 25,
-       "pts": 29,
-       "pm": 15,
-       "pim": 40,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.143,
-       "status": "rostered"
-      },
-      {
-       "league": "KHL",
-       "team": "Spartak Moskva",
-       "gp": 7,
-       "g": 0,
-       "a": 0,
-       "pts": 0,
-       "pm": -1,
-       "pim": 0,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.772,
-       "status": "rostered"
-      },
-      {
-       "league": "MHL",
-       "team": "MHK Spartak-MAH Moskva",
-       "gp": 4,
-       "g": 0,
-       "a": 1,
-       "pts": 1,
-       "pm": -2,
-       "pim": 0,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.143,
-       "status": "rostered"
-      },
-      {
-       "league": "VHL",
-       "team": "Khimik Voskresensk",
-       "gp": 1,
-       "g": 0,
-       "a": 0,
-       "pts": 0,
-       "pm": 0,
-       "pim": 2,
-       "gaa": null,
-       "svp": null,
-       "w": null,
-       "l": null,
-       "so": null,
-       "coef": 0.328,
-       "status": "rostered"
-      }
-     ]
-    }
-   ],
-   "anchor": {
-    "season": "2026-2027",
-    "league": "VHL",
-    "leagueSlug": "vhl",
-    "table": "VHL",
-    "coef": 0.328,
-    "team": "Khimik Voskresensk",
-    "gp": 14,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "pgp": 0.083,
-    "lineGp": 12,
-    "nhle": 0.023,
-    "nhlePace": 1.9,
-    "lines": [
-     "VHL",
-     "MHL"
-    ],
-    "feature": 0.023
-   },
-   "league": {
-    "name": "VHL",
-    "table": "VHL",
-    "coef": 0.328,
-    "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
-   },
-   "performance": {
-    "last": {
-     "league": "mhl",
-     "season": "2025-2026",
-     "ageBucket": "U19",
-     "cohortN": 125,
-     "gp": 52,
-     "value": 0.5769,
-     "percentile": 94.4,
-     "percentileAllAges": 96.7,
-     "allAgesN": 2781
-    },
-    "current": {
-     "league": "vhl",
-     "season": "2026-2027",
-     "ageBucket": "U20",
-     "cohortN": 12,
-     "gp": 12,
-     "value": 0.0833,
-     "percentile": 50.0,
-     "percentileAllAges": 31.4,
-     "allAgesN": 544
-    }
-   },
-   "ceiling": {
-    "n": 50,
-    "expected": 7.8,
-    "median": 0.0,
-    "p75": 0.0,
-    "p90": 54.1,
-    "pRegular": 0.18,
-    "pTopLine": 0.02,
-    "pAboveAvg": 0.1,
-    "pElite": 0.0,
-    "poolN": 794,
-    "group": "D",
-    "age": 19,
-    "pickWeight": 0.5,
-    "tier": "replacement level",
-    "pCeiling": 0.18,
-    "featureBand": [
-     0.012,
-     0.035
-    ],
-    "examples": [
-     {
-      "name": "Alex Lepkowski",
-      "year": 2011,
-      "pick": 137,
-      "league": "OHL",
-      "feature": 0.022,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 0
-     },
-     {
-      "name": "Miro Karjalainen",
-      "year": 2014,
-      "pick": 135,
-      "league": "U20 SM-liiga",
-      "feature": 0.022,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 0
-     },
-     {
-      "name": "Peter Andersson",
-      "year": 2009,
-      "pick": 143,
-      "league": "HockeyAllsvenskan",
-      "feature": 0.025,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 0
-     },
-     {
-      "name": "Isaac MacLeod",
-      "year": 2010,
-      "pick": 136,
-      "league": "NCAA",
-      "feature": 0.026,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 0
-     },
-     {
-      "name": "Doyle Somerby",
-      "year": 2012,
-      "pick": 125,
-      "league": "NCAA",
-      "feature": 0.023,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 0
-     },
-     {
-      "name": "Connor Clifton",
-      "year": 2013,
-      "pick": 133,
-      "league": "NCAA",
-      "feature": 0.026,
-      "peak": 54.1,
-      "tier": "above average",
-      "nhlGp": 438
-     },
-     {
-      "name": "Kristoffer Gunnarsson",
-      "year": 2017,
-      "pick": 135,
-      "league": "HockeyAllsvenskan",
-      "feature": 0.019,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 0
-     },
-     {
-      "name": "Casey Staum",
-      "year": 2016,
-      "pick": 124,
-      "league": "USHL",
-      "feature": 0.024,
-      "peak": null,
-      "tier": "did not stick",
-      "nhlGp": 0
-     }
-    ]
-   },
-   "pedigree": {
-    "n": 380,
-    "expected": 7.0,
-    "median": 0.0,
-    "p75": 0.0,
-    "p90": 36.0,
-    "pRegular": 0.15,
-    "pTopLine": 0.03,
-    "pAboveAvg": 0.07,
-    "pElite": 0.01,
-    "band": "121-300",
-    "group": "D"
-   },
-   "blend": {
-    "w": 0.25,
-    "sinceDraft": 1,
-    "pedigreeExpected": 7.0,
-    "cohortExpected": 7.8,
-    "expected": 7.6,
-    "tier": "replacement level"
-   },
-   "trajectory": {
-    "from": {
-     "season": "2024-2025",
-     "league": "MHL",
-     "feature": 0.055,
-     "gp": 50
-    },
-    "to": {
-     "season": "2025-2026",
-     "league": "MHL",
-     "feature": 0.071,
-     "gp": 48
-    },
-    "delta": 0.016
-   },
-   "nhlSample": null,
-   "nhlUsage": null,
-   "availability": {
-    "gp": 12,
-    "season": "2026-2027"
-   },
-   "rank": 20,
-   "score": 7.6,
-   "rankStart": 23,
-   "rankStartDate": "2026-10-06"
-  },
-  {
    "epId": "959469",
    "nhlId": 8486305,
    "name": "Luka Arkko",
@@ -7940,7 +7490,7 @@
     "gp": 11,
     "season": "2026-2027"
    },
-   "rank": 21,
+   "rank": 20,
    "score": 6.8,
    "rankStart": 21,
    "rankStartDate": "2026-10-06"
@@ -8389,7 +7939,7 @@
     "gp": 13,
     "season": "2026-2027"
    },
-   "rank": 22,
+   "rank": 21,
    "score": 6.0,
    "rankStart": 19,
    "rankStartDate": "2026-10-06"
@@ -8652,7 +8202,7 @@
     "gp": 38,
     "season": "2025-2026"
    },
-   "rank": 23,
+   "rank": 22,
    "score": 5.3,
    "rankStart": 24,
    "rankStartDate": "2026-10-06"
@@ -8987,7 +8537,7 @@
     "gp": 36,
     "season": "2025-2026"
    },
-   "rank": 24,
+   "rank": 23,
    "score": 5.1,
    "rankStart": 25,
    "rankStartDate": "2026-10-06"
@@ -9250,7 +8800,7 @@
     "gp": 55,
     "season": "2025-2026"
    },
-   "rank": 25,
+   "rank": 24,
    "score": 4.7,
    "rankStart": 26,
    "rankStartDate": "2026-10-06"
@@ -9585,7 +9135,7 @@
     "gp": 36,
     "season": "2025-2026"
    },
-   "rank": 26,
+   "rank": 25,
    "score": 4.2,
    "rankStart": 28,
    "rankStartDate": "2026-10-06"
@@ -10010,9 +9560,459 @@
     "gp": 10,
     "season": "2026-2027"
    },
-   "rank": 27,
+   "rank": 26,
    "score": 4.2,
    "rankStart": 12,
+   "rankStartDate": "2026-10-06"
+  },
+  {
+   "epId": "1073016",
+   "nhlId": 8485613,
+   "name": "Nikita Tyurin",
+   "slug": "nikita-tyurin",
+   "group": "D",
+   "position": "D",
+   "birthDate": "2007-07-02",
+   "age": 19,
+   "height": "6'1\"",
+   "weight": 190,
+   "shoots": "L",
+   "catches": null,
+   "contract": "28/29",
+   "rights": "unsigned",
+   "draft": {
+    "year": 2025,
+    "overall": 140,
+    "round": 5
+   },
+   "status": {
+    "prospect": true,
+    "rookieEligible": true,
+    "inWindow": true,
+    "window": "draft+1",
+    "draftYear": 2025,
+    "onNhlRoster": false
+   },
+   "scouting": "Tyurin is an effective, puck-moving defender. A smooth handler and mover, he can escape forecheckers, keep the puck away from them, and find passing targets as his team regroups around him. He lets his options come to him, slowing the play, and then connects with teammates as they get open. Defending off the rush, he closes his gap on opponents near the red line, removing passing plays, and stepping up on opponents as opportunities arise. -EliteProspects 2025 NHL Draft Guide",
+   "currentLines": [
+    {
+     "league": "VHL",
+     "team": "Khimik Voskresensk",
+     "gp": 12,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": -2,
+     "pim": 4,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.328,
+     "status": "rostered"
+    },
+    {
+     "league": "MHL",
+     "team": "MHK Spartak Moskva",
+     "gp": 3,
+     "g": 0,
+     "a": 3,
+     "pts": 3,
+     "pm": 2,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.143,
+     "status": "rostered"
+    }
+   ],
+   "lastLines": [
+    {
+     "league": "MHL",
+     "team": "MHK Spartak Moskva",
+     "gp": 48,
+     "g": 4,
+     "a": 25,
+     "pts": 29,
+     "pm": 15,
+     "pim": 40,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.143,
+     "status": "rostered"
+    },
+    {
+     "league": "KHL",
+     "team": "Spartak Moskva",
+     "gp": 7,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": -1,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.772,
+     "status": "rostered"
+    },
+    {
+     "league": "MHL",
+     "team": "MHK Spartak-MAH Moskva",
+     "gp": 4,
+     "g": 0,
+     "a": 1,
+     "pts": 1,
+     "pm": -2,
+     "pim": 0,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.143,
+     "status": "rostered"
+    },
+    {
+     "league": "VHL",
+     "team": "Khimik Voskresensk",
+     "gp": 1,
+     "g": 0,
+     "a": 0,
+     "pts": 0,
+     "pm": 0,
+     "pim": 2,
+     "gaa": null,
+     "svp": null,
+     "w": null,
+     "l": null,
+     "so": null,
+     "coef": 0.328,
+     "status": "rostered"
+    }
+   ],
+   "seasons": [
+    {
+     "season": "2026-2027",
+     "lines": [
+      {
+       "league": "VHL",
+       "team": "Khimik Voskresensk",
+       "gp": 12,
+       "g": 0,
+       "a": 1,
+       "pts": 1,
+       "pm": -2,
+       "pim": 4,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.328,
+       "status": "rostered"
+      },
+      {
+       "league": "MHL",
+       "team": "MHK Spartak Moskva",
+       "gp": 3,
+       "g": 0,
+       "a": 3,
+       "pts": 3,
+       "pm": 2,
+       "pim": 2,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.143,
+       "status": "rostered"
+      }
+     ]
+    },
+    {
+     "season": "2025-2026",
+     "lines": [
+      {
+       "league": "MHL",
+       "team": "MHK Spartak Moskva",
+       "gp": 48,
+       "g": 4,
+       "a": 25,
+       "pts": 29,
+       "pm": 15,
+       "pim": 40,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.143,
+       "status": "rostered"
+      },
+      {
+       "league": "KHL",
+       "team": "Spartak Moskva",
+       "gp": 7,
+       "g": 0,
+       "a": 0,
+       "pts": 0,
+       "pm": -1,
+       "pim": 0,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.772,
+       "status": "rostered"
+      },
+      {
+       "league": "MHL",
+       "team": "MHK Spartak-MAH Moskva",
+       "gp": 4,
+       "g": 0,
+       "a": 1,
+       "pts": 1,
+       "pm": -2,
+       "pim": 0,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.143,
+       "status": "rostered"
+      },
+      {
+       "league": "VHL",
+       "team": "Khimik Voskresensk",
+       "gp": 1,
+       "g": 0,
+       "a": 0,
+       "pts": 0,
+       "pm": 0,
+       "pim": 2,
+       "gaa": null,
+       "svp": null,
+       "w": null,
+       "l": null,
+       "so": null,
+       "coef": 0.328,
+       "status": "rostered"
+      }
+     ]
+    }
+   ],
+   "anchor": {
+    "season": "2026-2027",
+    "league": "VHL",
+    "leagueSlug": "vhl",
+    "table": "VHL",
+    "coef": 0.328,
+    "team": "Khimik Voskresensk",
+    "gp": 15,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "pgp": 0.083,
+    "lineGp": 12,
+    "nhle": 0.05,
+    "nhlePace": 4.2,
+    "lines": [
+     "VHL",
+     "MHL"
+    ],
+    "feature": 0.05
+   },
+   "league": {
+    "name": "VHL",
+    "table": "VHL",
+    "coef": 0.328,
+    "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
+   },
+   "performance": {
+    "last": {
+     "league": "mhl",
+     "season": "2025-2026",
+     "ageBucket": "U19",
+     "cohortN": 125,
+     "gp": 52,
+     "value": 0.5769,
+     "percentile": 94.4,
+     "percentileAllAges": 96.7,
+     "allAgesN": 2781
+    },
+    "current": {
+     "league": "vhl",
+     "season": "2026-2027",
+     "ageBucket": "U20",
+     "cohortN": 12,
+     "gp": 12,
+     "value": 0.0833,
+     "percentile": 50.0,
+     "percentileAllAges": 31.4,
+     "allAgesN": 544
+    }
+   },
+   "ceiling": {
+    "n": 50,
+    "expected": 3.2,
+    "median": 0.0,
+    "p75": 0.0,
+    "p90": 0.0,
+    "pRegular": 0.08,
+    "pTopLine": 0.0,
+    "pAboveAvg": 0.02,
+    "pElite": 0.0,
+    "poolN": 794,
+    "group": "D",
+    "age": 19,
+    "pickWeight": 0.5,
+    "tier": "replacement level",
+    "pCeiling": 0.08,
+    "featureBand": [
+     0.039,
+     0.061
+    ],
+    "examples": [
+     {
+      "name": "Blake Heinrich",
+      "year": 2013,
+      "pick": 144,
+      "league": "WHL",
+      "feature": 0.05,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 0
+     },
+     {
+      "name": "Cole Fraser",
+      "year": 2017,
+      "pick": 131,
+      "league": "OHL",
+      "feature": 0.05,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 0
+     },
+     {
+      "name": "Thomas Larkin",
+      "year": 2009,
+      "pick": 137,
+      "league": "NCAA",
+      "feature": 0.052,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 0
+     },
+     {
+      "name": "Nick Seeler",
+      "year": 2011,
+      "pick": 131,
+      "league": "NCAA",
+      "feature": 0.051,
+      "peak": 42.4,
+      "tier": "below average",
+      "nhlGp": 457
+     },
+     {
+      "name": "Joseph Cecconi",
+      "year": 2015,
+      "pick": 133,
+      "league": "NCAA",
+      "feature": 0.052,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 0
+     },
+     {
+      "name": "Sam Ruopp",
+      "year": 2015,
+      "pick": 129,
+      "league": "WHL",
+      "feature": 0.051,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 0
+     },
+     {
+      "name": "Alex Kannok Leipert",
+      "year": 2018,
+      "pick": 161,
+      "league": "WHL",
+      "feature": 0.05,
+      "peak": null,
+      "tier": "did not stick",
+      "nhlGp": 0
+     },
+     {
+      "name": "Dalton Prout",
+      "year": 2010,
+      "pick": 154,
+      "league": "OHL",
+      "feature": 0.048,
+      "peak": 47.4,
+      "tier": "below average",
+      "nhlGp": 264
+     }
+    ]
+   },
+   "pedigree": {
+    "n": 380,
+    "expected": 7.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "p90": 36.0,
+    "pRegular": 0.15,
+    "pTopLine": 0.03,
+    "pAboveAvg": 0.07,
+    "pElite": 0.01,
+    "band": "121-300",
+    "group": "D"
+   },
+   "blend": {
+    "w": 0.25,
+    "sinceDraft": 1,
+    "pedigreeExpected": 7.0,
+    "cohortExpected": 3.2,
+    "expected": 4.2,
+    "tier": "replacement level"
+   },
+   "trajectory": {
+    "from": {
+     "season": "2024-2025",
+     "league": "MHL",
+     "feature": 0.055,
+     "gp": 50
+    },
+    "to": {
+     "season": "2025-2026",
+     "league": "MHL",
+     "feature": 0.071,
+     "gp": 48
+    },
+    "delta": 0.016
+   },
+   "nhlSample": null,
+   "nhlUsage": null,
+   "availability": {
+    "gp": 12,
+    "season": "2026-2027"
+   },
+   "rank": 27,
+   "score": 4.2,
+   "rankStart": 23,
    "rankStartDate": "2026-10-06"
   },
   {
@@ -14959,11 +14959,11 @@
     {
      "league": "SHL",
      "team": "Malm\u00f6 Redhawks",
-     "gp": 11,
+     "gp": 12,
      "g": 1,
      "a": 2,
      "pts": 3,
-     "pm": 3,
+     "pm": 5,
      "pim": 8,
      "gaa": null,
      "svp": null,
@@ -15017,11 +15017,11 @@
       {
        "league": "SHL",
        "team": "Malm\u00f6 Redhawks",
-       "gp": 11,
+       "gp": 12,
        "g": 1,
        "a": 2,
        "pts": 3,
-       "pm": 3,
+       "pm": 5,
        "pim": 8,
        "gaa": null,
        "svp": null,
@@ -16042,7 +16042,7 @@
      "pm": null,
      "pim": 0,
      "gaa": "2.89",
-     "svp": ".889",
+     "svp": ".886",
      "w": 1,
      "l": 0,
      "so": 0,
@@ -16117,7 +16117,7 @@
        "pm": null,
        "pim": 0,
        "gaa": "2.89",
-       "svp": ".889",
+       "svp": ".886",
        "w": 1,
        "l": 0,
        "so": 0,

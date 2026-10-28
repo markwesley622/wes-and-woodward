@@ -5,66 +5,7 @@
  "season": "20262027",
  "seasonLabel": "2026-27",
  "kind": "G",
- "standIn": {
-  "value": 24.5,
-  "gsax60": -4.23,
-  "gsax": -4.23,
-  "minutes": 436,
-  "gp": 8,
-  "rank": 62,
-  "pool": 70,
-  "percentile": 11.4,
-  "group": "goalies",
-  "standIn": true,
-  "neighbours": [
-   {
-    "rank": 60,
-    "name": "Jake Allen",
-    "team": "NJD",
-    "gp": 7,
-    "value": 28.1,
-    "gsax60": -3.5,
-    "isMe": false
-   },
-   {
-    "rank": 61,
-    "name": "Ukko-Pekka Luukkonen",
-    "team": "BUF",
-    "gp": 9,
-    "value": 27.4,
-    "gsax60": -3.63,
-    "isMe": false
-   },
-   {
-    "rank": 62,
-    "name": "John Gibson",
-    "team": "DET",
-    "gp": 8,
-    "value": 24.5,
-    "gsax60": -4.23,
-    "isMe": true
-   },
-   {
-    "rank": 63,
-    "name": "Brandon Bussi",
-    "team": "CAR",
-    "gp": 6,
-    "value": 22.8,
-    "gsax60": -4.61,
-    "isMe": false
-   },
-   {
-    "rank": 64,
-    "name": "Karel Vejmelka",
-    "team": "UTA",
-    "gp": 10,
-    "value": 22.6,
-    "gsax60": -4.65,
-    "isMe": false
-   }
-  ],
-  "method": "Stand-in until the W-Value is computable: season goals saved above expected (MoneyPuck), scaled 0-100 the same way, among every NHL goalie who has played this season."
- },
+ "standIn": null,
  "bio": {
   "number": 36,
   "position": "G",
@@ -103,7 +44,22 @@
   "savePct": 0.867021,
   "shutouts": 0
  },
- "score": null,
+ "score": {
+  "value": 0.0,
+  "low": 0.0,
+  "high": 0.0,
+  "gsax": -4.2,
+  "xGoals": 20.8,
+  "goals": 25.0,
+  "minutes": 436,
+  "pool": 2,
+  "rank": null,
+  "percentile": 0.0,
+  "reliability": 0.23,
+  "group": "goalies",
+  "neighbours": [],
+  "method": "A 0-100 rating where 50 is the average NHL goalie with 600+ minutes; built on goals saved above expected (MoneyPuck, all situations), this season only."
+ },
  "moneypuck": {
   "playerId": 8476434,
   "name": "John Gibson",
@@ -247,5 +203,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:05:09-07:00"
+ "updatedAt": "2026-10-28T05:04:59-07:00"
 }

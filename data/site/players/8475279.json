@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.07,
-   "percentile": 25
+   "percentile": 24
   },
   "Offense": {
    "value": -0.2,
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": -0.6,
-   "percentile": 23
+   "percentile": 24
   },
   "Net": {
    "value": -0.7,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 35.7,
+  "value": 35.4,
   "gs": 0.89,
   "gs60": 0.22,
   "gameScore": 0.89,
   "minutes": 239,
   "gp": 12,
-  "rank": 485,
-  "pool": 725,
-  "percentile": 33.1,
+  "rank": 488,
+  "pool": 726,
+  "percentile": 32.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 483,
-    "name": "Bobby McMann",
-    "team": "SEA",
-    "pos": "C",
+    "rank": 486,
+    "name": "Patrick Kane",
+    "team": "CHI",
+    "pos": "R",
     "gp": 12,
-    "value": 35.8,
+    "value": 35.6,
     "gs60": 0.92,
     "isMe": false
    },
    {
-    "rank": 484,
-    "name": "Liam Ohgren",
-    "team": "VAN",
-    "pos": "L",
+    "rank": 487,
+    "name": "Bobby McMann",
+    "team": "SEA",
+    "pos": "C",
     "gp": 12,
-    "value": 35.7,
-    "gs60": 0.91,
+    "value": 35.6,
+    "gs60": 0.92,
     "isMe": false
    },
    {
-    "rank": 485,
+    "rank": 488,
     "name": "Ben Chiarot",
     "team": "DET",
     "pos": "D",
     "gp": 12,
-    "value": 35.7,
+    "value": 35.4,
     "gs60": 0.89,
     "isMe": true
    },
    {
-    "rank": 486,
-    "name": "Paul Cotter",
-    "team": "VAN",
-    "pos": "L",
-    "gp": 12,
-    "value": 35.6,
-    "gs60": 0.88,
+    "rank": 489,
+    "name": "Alexander Holtz",
+    "team": "VGK",
+    "pos": "R",
+    "gp": 2,
+    "value": 35.4,
+    "gs60": 0.87,
     "isMe": false
    },
    {
-    "rank": 487,
-    "name": "Garnet Hathaway",
-    "team": "FLA",
+    "rank": 490,
+    "name": "Taylor Ward",
+    "team": "LAK",
     "pos": "R",
-    "gp": 12,
-    "value": 35.6,
-    "gs60": 0.87,
+    "gp": 2,
+    "value": 35.2,
+    "gs60": 0.84,
     "isMe": false
    }
   ],
@@ -685,5 +685,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:03:56-07:00"
+ "updatedAt": "2026-10-28T05:03:49-07:00"
 }

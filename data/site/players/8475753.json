@@ -91,75 +91,75 @@
   },
   "Defense": {
    "value": 1.0,
-   "percentile": 87
+   "percentile": 86
   },
   "Net": {
    "value": 1.0,
-   "percentile": 78
+   "percentile": 77
   }
  },
  "score": null,
  "standIn": {
-  "value": 59.9,
+  "value": 59.0,
   "gs": 6.57,
   "gs60": 1.67,
   "gameScore": 6.57,
   "minutes": 236,
   "gp": 12,
-  "rank": 208,
-  "pool": 725,
-  "percentile": 71.3,
+  "rank": 220,
+  "pool": 726,
+  "percentile": 69.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 206,
-    "name": "Brock Nelson",
-    "team": "COL",
-    "pos": "C",
-    "gp": 12,
-    "value": 60.3,
-    "gs60": 6.67,
-    "isMe": false
-   },
-   {
-    "rank": 207,
-    "name": "Marat Khusnutdinov",
+    "rank": 218,
+    "name": "Pavel Zacha",
     "team": "BOS",
     "pos": "C",
     "gp": 12,
-    "value": 60.2,
-    "gs60": 6.64,
+    "value": 59.1,
+    "gs60": 6.6,
     "isMe": false
    },
    {
-    "rank": 208,
+    "rank": 219,
+    "name": "Rasmus Dahlin",
+    "team": "BUF",
+    "pos": "D",
+    "gp": 8,
+    "value": 59.0,
+    "gs60": 6.57,
+    "isMe": false
+   },
+   {
+    "rank": 220,
     "name": "Justin Faulk",
     "team": "DET",
     "pos": "D",
     "gp": 12,
-    "value": 59.9,
+    "value": 59.0,
     "gs60": 6.57,
     "isMe": true
    },
    {
-    "rank": 209,
+    "rank": 221,
     "name": "Daniil But",
     "team": "UTA",
     "pos": "L",
     "gp": 12,
-    "value": 59.9,
+    "value": 58.9,
     "gs60": 6.56,
     "isMe": false
    },
    {
-    "rank": 210,
-    "name": "Ondrej Palat",
-    "team": "NYI",
-    "pos": "L",
-    "gp": 11,
-    "value": 59.8,
-    "gs60": 6.55,
+    "rank": 222,
+    "name": "Adam Edstrom",
+    "team": "NSH",
+    "pos": "C",
+    "gp": 12,
+    "value": 58.8,
+    "gs60": 6.53,
     "isMe": false
    }
   ],
@@ -715,5 +715,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:04:07-07:00"
+ "updatedAt": "2026-10-28T05:04:01-07:00"
 }

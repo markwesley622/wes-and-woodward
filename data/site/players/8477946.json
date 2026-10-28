@@ -67,14 +67,14 @@
   "shots": 32,
   "shootingPct": 0.0625,
   "toiPerGame": 1301.3,
-  "ixG": 3.03,
-  "goalsAboveExpected": -1.03,
-  "gameScore": 9.81,
+  "ixG": 3.05,
+  "goalsAboveExpected": -1.05,
+  "gameScore": 9.91,
   "fiveOnFive": {
    "icetimeMinutes": 153.5,
    "onIceXgPct": 0.56,
    "onIceCorsiPct": 0.58,
-   "ixgPer60": 0.661,
+   "ixgPer60": 0.668,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.5,
-   "percentile": 74
+   "percentile": 73
   },
   "Net": {
    "value": 0.9,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 69.0,
+  "value": 67.9,
   "gs": 8.86,
   "gs60": 2.45,
   "gameScore": 8.86,
   "minutes": 217,
   "gp": 10,
-  "rank": 134,
-  "pool": 725,
-  "percentile": 81.5,
+  "rank": 136,
+  "pool": 726,
+  "percentile": 81.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 132,
-    "name": "Luke Hughes",
-    "team": "NJD",
-    "pos": "D",
-    "gp": 11,
-    "value": 69.3,
-    "gs60": 8.92,
-    "isMe": false
-   },
-   {
-    "rank": 133,
-    "name": "Michael McCarron",
-    "team": "MIN",
-    "pos": "C",
-    "gp": 13,
-    "value": 69.1,
-    "gs60": 8.88,
-    "isMe": false
-   },
-   {
     "rank": 134,
-    "name": "Dylan Larkin",
-    "team": "DET",
-    "pos": "C",
-    "gp": 10,
-    "value": 69.0,
-    "gs60": 8.86,
-    "isMe": true
+    "name": "Alex Iafallo",
+    "team": "WPG",
+    "pos": "L",
+    "gp": 12,
+    "value": 68.0,
+    "gs60": 8.89,
+    "isMe": false
    },
    {
     "rank": 135,
-    "name": "Eric Robinson",
-    "team": "CAR",
-    "pos": "L",
-    "gp": 13,
-    "value": 68.8,
-    "gs60": 8.8,
+    "name": "Wyatt Johnston",
+    "team": "DAL",
+    "pos": "C",
+    "gp": 10,
+    "value": 68.0,
+    "gs60": 8.89,
     "isMe": false
    },
    {
     "rank": 136,
+    "name": "Dylan Larkin",
+    "team": "DET",
+    "pos": "C",
+    "gp": 10,
+    "value": 67.9,
+    "gs60": 8.86,
+    "isMe": true
+   },
+   {
+    "rank": 137,
     "name": "Connor Dewar",
     "team": "PIT",
     "pos": "C",
     "gp": 12,
-    "value": 68.8,
+    "value": 67.7,
+    "gs60": 8.79,
+    "isMe": false
+   },
+   {
+    "rank": 138,
+    "name": "Logan Stanley",
+    "team": "NYI",
+    "pos": "D",
+    "gp": 12,
+    "value": 67.6,
     "gs60": 8.79,
     "isMe": false
    }
@@ -607,5 +607,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:03:04-07:00"
+ "updatedAt": "2026-10-28T05:02:57-07:00"
 }

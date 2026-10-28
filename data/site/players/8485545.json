@@ -5,66 +5,7 @@
  "season": "20262027",
  "seasonLabel": "2026-27",
  "kind": "G",
- "standIn": {
-  "value": 46.6,
-  "gsax60": -0.29,
-  "gsax": -0.29,
-  "minutes": 83,
-  "gp": 2,
-  "rank": 34,
-  "pool": 70,
-  "percentile": 51.4,
-  "group": "goalies",
-  "standIn": true,
-  "neighbours": [
-   {
-    "rank": 32,
-    "name": "Colten Ellis",
-    "team": "BUF",
-    "gp": 3,
-    "value": 49.4,
-    "gsax60": 0.16,
-    "isMe": false
-   },
-   {
-    "rank": 33,
-    "name": "Dennis Hildeby",
-    "team": "TBL",
-    "gp": 3,
-    "value": 47.5,
-    "gsax60": -0.14,
-    "isMe": false
-   },
-   {
-    "rank": 34,
-    "name": "Michal Postava",
-    "team": "DET",
-    "gp": 2,
-    "value": 46.6,
-    "gsax60": -0.29,
-    "isMe": true
-   },
-   {
-    "rank": 35,
-    "name": "Charlie Lindgren",
-    "team": "WSH",
-    "gp": 3,
-    "value": 46.2,
-    "gsax60": -0.36,
-    "isMe": false
-   },
-   {
-    "rank": 36,
-    "name": "Dylan Garand",
-    "team": "NYR",
-    "gp": 10,
-    "value": 46.0,
-    "gsax60": -0.38,
-    "isMe": false
-   }
-  ],
-  "method": "Stand-in until the W-Value is computable: season goals saved above expected (MoneyPuck), scaled 0-100 the same way, among every NHL goalie who has played this season."
- },
+ "standIn": null,
  "bio": {
   "number": 35,
   "position": "G",
@@ -94,10 +35,25 @@
   "losses": 0,
   "otLosses": 0,
   "gaa": 2.890986,
-  "savePct": 0.888889,
+  "savePct": 0.885714,
   "shutouts": 0
  },
- "score": null,
+ "score": {
+  "value": 0.0,
+  "low": 0.0,
+  "high": 0.0,
+  "gsax": -0.3,
+  "xGoals": 3.7,
+  "goals": 4.0,
+  "minutes": 83,
+  "pool": 2,
+  "rank": null,
+  "percentile": 0.0,
+  "reliability": 0.05,
+  "group": "goalies",
+  "neighbours": [],
+  "method": "A 0-100 rating where 50 is the average NHL goalie with 600+ minutes; built on goals saved above expected (MoneyPuck, all situations), this season only."
+ },
  "moneypuck": {
   "playerId": 8485545,
   "name": "Michal Postava",
@@ -107,7 +63,7 @@
   "wins": 1,
   "losses": 0,
   "otLosses": 0,
-  "savePct": 0.888889,
+  "savePct": 0.885714,
   "gaa": 2.890986,
   "shutouts": 0,
   "gsax": -0.29,
@@ -135,9 +91,9 @@
    "home": false,
    "started": 1,
    "decision": "W",
-   "shotsAgainst": 28,
+   "shotsAgainst": 27,
    "goalsAgainst": 3,
-   "savePct": 0.892857,
+   "savePct": 0.888889,
    "shutout": 0,
    "toi": 63.3
   }
@@ -163,5 +119,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-10-27T05:05:10-07:00"
+ "updatedAt": "2026-10-28T05:05:00-07:00"
 }

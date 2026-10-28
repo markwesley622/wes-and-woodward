@@ -95,70 +95,70 @@
   },
   "Net": {
    "value": -1.4,
-   "percentile": 17
+   "percentile": 18
   }
  },
  "score": null,
  "standIn": {
-  "value": 32.4,
+  "value": 32.3,
   "gs": 0.07,
   "gs60": 0.02,
   "gameScore": 0.07,
   "minutes": 169,
   "gp": 12,
-  "rank": 543,
-  "pool": 725,
-  "percentile": 25.1,
+  "rank": 552,
+  "pool": 726,
+  "percentile": 24.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 541,
-    "name": "Jason Dickinson",
-    "team": "EDM",
-    "pos": "C",
-    "gp": 3,
-    "value": 32.7,
-    "gs60": 0.13,
-    "isMe": false
-   },
-   {
-    "rank": 542,
-    "name": "Justin Danforth",
-    "team": "BUF",
+    "rank": 550,
+    "name": "Dylan Hryckowian",
+    "team": "DAL",
     "pos": "R",
-    "gp": 6,
-    "value": 32.6,
+    "gp": 2,
+    "value": 32.4,
     "gs60": 0.1,
     "isMe": false
    },
    {
-    "rank": 543,
+    "rank": 551,
+    "name": "Nick Perbix",
+    "team": "NSH",
+    "pos": "D",
+    "gp": 11,
+    "value": 32.4,
+    "gs60": 0.09,
+    "isMe": false
+   },
+   {
+    "rank": 552,
     "name": "Anton Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 12,
-    "value": 32.4,
+    "value": 32.3,
     "gs60": 0.07,
     "isMe": true
    },
    {
-    "rank": 544,
-    "name": "Jonathan Aspirot",
-    "team": "BOS",
+    "rank": 553,
+    "name": "Jeremy Lauzon",
+    "team": "VGK",
     "pos": "D",
-    "gp": 4,
-    "value": 32.4,
+    "gp": 13,
+    "value": 32.3,
     "gs60": 0.06,
     "isMe": false
    },
    {
-    "rank": 545,
-    "name": "Maxim Tsyplakov",
-    "team": "CGY",
-    "pos": "R",
-    "gp": 6,
-    "value": 32.4,
+    "rank": 554,
+    "name": "Jonathan Aspirot",
+    "team": "BOS",
+    "pos": "D",
+    "gp": 4,
+    "value": 32.3,
     "gs60": 0.06,
     "isMe": false
    }
@@ -489,5 +489,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-27T05:04:32-07:00"
+ "updatedAt": "2026-10-28T05:04:23-07:00"
 }
