@@ -4,14 +4,10 @@ OUT = sys.argv[1]
 S = json.load(open(f"{OUT}/summary.json")); G = json.load(open(f"{OUT}/onice_games.json")); T = json.load(open(f"{OUT}/team_table.json"))
 A, B = "20252026", "20262027"; LA, LB = "2025-26", "2026-27"
 STYLE = """<style>
-.a{fill:var(--c-a,#2f55a8)}.b{fill:var(--c-b,#ce1126)}.sa{stroke:var(--c-a,#2f55a8)}.sb{stroke:var(--c-b,#ce1126)}
-.ink{fill:var(--ink,#141414)}.mut{fill:var(--muted,#5f5e5a)}.grid{stroke:var(--rule,#c4c3bf);stroke-width:1}.ax{stroke:var(--ink,#141414);stroke-width:1}
-.surf{fill:var(--panel,#e7e6e3)}.rink{stroke:var(--rule,#c4c3bf);fill:none;stroke-width:1.5}
-text{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:11px}
-.t{font-family:"Space Grotesk",system-ui,sans-serif;font-size:14px;font-weight:600}.sub{font-size:11px}
+.wwc .a{fill:var(--c-a,#2f55a8)}.wwc .b{fill:var(--c-b,#ce1126)}.wwc .sa{stroke:var(--c-a,#2f55a8)}.wwc .sb{stroke:var(--c-b,#ce1126)}.wwc .ink{fill:var(--ink,#141414)}.wwc .mut{fill:var(--muted,#5f5e5a)}.wwc .grid{stroke:var(--rule,#c4c3bf);stroke-width:1}.wwc .ax{stroke:var(--ink,#141414);stroke-width:1}.wwc .surf{fill:var(--panel,#e7e6e3)}.wwc .rink{stroke:var(--rule,#c4c3bf);fill:none;stroke-width:1.5}.wwc text{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:11px}.wwc .t{font-family:"Space Grotesk",system-ui,sans-serif;font-size:14px;font-weight:600}.wwc .sub{font-size:11px}
 </style>"""
 def svg(w, h, body, title, desc):
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-labelledby="t d"><title id="t">{html.escape(title)}</title><desc id="d">{html.escape(desc)}</desc>{STYLE}{body}</svg>'
+    return f'<svg class="wwc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-labelledby="t d"><title id="t">{html.escape(title)}</title><desc id="d">{html.escape(desc)}</desc>{STYLE}{body}</svg>'
 def txt(x, y, s, cls="ink", anchor="start", extra=""):
     return f'<text x="{x:.1f}" y="{y:.1f}" class="{cls}" text-anchor="{anchor}" {extra}>{html.escape(str(s))}</text>'
 def legend(x, y):

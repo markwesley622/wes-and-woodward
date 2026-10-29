@@ -13,15 +13,10 @@ SITE = ROOT / "data/site/articles/red-wings-finishing-problem"; SITE.mkdir(paren
 SHOTS26, SHOTS25 = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
 
 STYLE = """<style>
-.a{fill:var(--c-a,#2f55a8)}.b{fill:var(--c-b,#ce1126)}.sa{stroke:var(--c-a,#2f55a8)}.sb{stroke:var(--c-b,#ce1126)}
-.ink{fill:var(--ink,#141414)}.mut{fill:var(--muted,#5f5e5a)}.grid{stroke:var(--rule,#c4c3bf);stroke-width:1}.ax{stroke:var(--ink,#141414);stroke-width:1}
-.surf{fill:var(--panel,#e7e6e3)}.paper{fill:var(--paper,#e9e8e5)}.bar{fill:var(--muted,#5f5e5a);opacity:.55}
-.lbl{font-size:12px;letter-spacing:.08em;text-transform:uppercase;fill:var(--ink,#141414)}
-text{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:11px}
-.t{font-family:"Space Grotesk",system-ui,sans-serif;font-size:14px;font-weight:600}.sub{font-size:11px}
+.wwc .a{fill:var(--c-a,#2f55a8)}.wwc .b{fill:var(--c-b,#ce1126)}.wwc .sa{stroke:var(--c-a,#2f55a8)}.wwc .sb{stroke:var(--c-b,#ce1126)}.wwc .ink{fill:var(--ink,#141414)}.wwc .mut{fill:var(--muted,#5f5e5a)}.wwc .grid{stroke:var(--rule,#c4c3bf);stroke-width:1}.wwc .ax{stroke:var(--ink,#141414);stroke-width:1}.wwc .surf{fill:var(--panel,#e7e6e3)}.wwc .paper{fill:var(--paper,#e9e8e5)}.wwc .bar{fill:var(--muted,#5f5e5a);opacity:.55}.wwc .lbl{font-size:12px;letter-spacing:.08em;text-transform:uppercase;fill:var(--ink,#141414)}.wwc text{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:11px}.wwc .t{font-family:"Space Grotesk",system-ui,sans-serif;font-size:14px;font-weight:600}.wwc .sub{font-size:11px}
 </style>"""
 def svg(w, h, body, title, desc):
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-labelledby="t d"><title id="t">{html.escape(title)}</title><desc id="d">{html.escape(desc)}</desc>{STYLE}{body}</svg>'
+    return f'<svg class="wwc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-labelledby="t d"><title id="t">{html.escape(title)}</title><desc id="d">{html.escape(desc)}</desc>{STYLE}{body}</svg>'
 def txt(x, y, s, cls="ink", anchor="start", extra=""):
     return f'<text x="{x:.1f}" y="{y:.1f}" class="{cls}" text-anchor="{anchor}" {extra}>{html.escape(str(s))}</text>'
 def f(r, k): return float(r[k])

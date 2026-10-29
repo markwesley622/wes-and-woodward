@@ -13,11 +13,11 @@ const size = initials.length > 1 ? 210 : 250;
 ---
 <div class="initials" aria-hidden="true" data-initials>
   <div class="block">
-    <svg class="layer back" viewBox="0 0 400 300" style={`transform:translateZ(${-depth}px)`}><text x="200" y="212" font-size={size}>{initials}</text></svg>
+    <svg class="layer back" viewBox="0 0 400 300" style={`transform:translateZ(${-depth}px)`}><text x="200" y="212" style={`font-size:${size}px`}>{initials}</text></svg>
     {layers.map((z) => (
-      <svg class="layer mid" viewBox="0 0 400 300" style={`transform:translateZ(${z}px)`}><text x="200" y="212" font-size={size}>{initials}</text></svg>
+      <svg class="layer mid" viewBox="0 0 400 300" style={`transform:translateZ(${z}px)`}><text x="200" y="212" style={`font-size:${size}px`}>{initials}</text></svg>
     ))}
-    <svg class="layer face" viewBox="0 0 400 300" style="transform:translateZ(1px)"><text x="200" y="212" font-size={size}>{initials}</text></svg>
+    <svg class="layer face" viewBox="0 0 400 300" style="transform:translateZ(1px)"><text x="200" y="212" style={`font-size:${size}px`}>{initials}</text></svg>
   </div>
   {label && <span class="mono tag">{label}</span>}
 </div>

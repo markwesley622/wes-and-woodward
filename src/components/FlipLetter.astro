@@ -22,7 +22,7 @@ const SIZE = 250;
     {layers.map((l) => (
       <svg class:list={['layer', { edge: l.edge }]} viewBox="0 0 400 225"
         style={l.isBack ? `transform:translateZ(${(l.z + depth / 2).toFixed(1)}px) rotateY(180deg)` : `transform:translateZ(${(l.z + depth / 2).toFixed(1)}px)`}>
-        <text x="200" y="202" font-size={SIZE}>{l.isBack ? back : front}</text>
+        <text x="200" y="202" style={`font-size:${SIZE}px`}>{l.isBack ? back : front}</text>
       </svg>
     ))}
   </div>

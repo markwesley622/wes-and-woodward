@@ -14,7 +14,7 @@ const SIZE = 196;
   <div class="block">
     {layers.map((l) => (
       <svg class:list={['layer', { edge: l.edge }]} viewBox="0 0 400 225" style={`transform:translateZ(${l.z.toFixed(1)}px)`}>
-        <text x="200" y="184" font-size={SIZE}>{text}</text>
+        <text x="200" y="184" style={`font-size:${SIZE}px`}>{text}</text>
       </svg>
     ))}
   </div>
