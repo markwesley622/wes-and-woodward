@@ -5,8 +5,24 @@ import Subscribe from '../../components/Subscribe.astro';
 import MoreAnalysis from '../../components/MoreAnalysis.astro';
 import { article, newsArticle } from '../../lib/articles.js';
 import C from '../../../data/site/articles/red-wings-finishing-problem-copy.json';
+import c1 from '../../../data/site/articles/red-wings-finishing-problem/c1_radar.svg?raw';
+import c2 from '../../../data/site/articles/red-wings-finishing-problem/c2_md_conversion.svg?raw';
+import c3 from '../../../data/site/articles/red-wings-finishing-problem/c3_shooters.svg?raw';
+import c4 from '../../../data/site/articles/red-wings-finishing-problem/c4_gibson_pk.svg?raw';
 
 const SLUG = 'red-wings-finishing-problem';
+const parts = C.parts, idx = C.idx;
+// each figure goes right after the paragraph its anchor names (anchors come from research/powerplay-finishing/build_copy.py);
+// the charts are frozen to the Oct 29 pull (research/powerplay-finishing/make_charts.py) so they never move under the copy
+const figs = [[idx.fig_radar, c1], [idx.fig_conv, c2], [idx.fig_shooters, c3], [idx.fig_gibson, c4]];  // in page order
+const blocks = [];
+let start = 0;
+for (const [after, svg] of figs) {
+  blocks.push({ html: parts.slice(start, after + 1).join('') });
+  blocks.push({ svg });
+  start = after + 1;
+}
+blocks.push({ html: parts.slice(start).join('') });
 const DESC = article(SLUG).description;
 ---
 <Base ogType="article" ogImage={`/og/${SLUG}.png`} ogImageAlt="A rocket lifting off its pad in line art" schema={[newsArticle(SLUG, { description: DESC,
@@ -16,7 +32,9 @@ const DESC = article(SLUG).description;
   <section class="sec">
     <div class="shell">
       <ArticleHead slug={SLUG} title={C.title} />
-      <div class="prose" set:html={C.parts.join('')} />
+      {blocks.map((b) => b.html !== undefined
+        ? <div class="prose" set:html={b.html} />
+        : <figure class="fig" set:html={b.svg} />)}
       <p class="note mono" style="margin-top:28px">Method: season numbers are MoneyPuck's team, skater and goalie tables and shot-level data through Oct. 28, 2026 (regular season, shootouts excluded), with ranks against all 32 teams; the Edmonton game is MoneyPuck's shot log joined to the NHL play-by-play; penalty-kill rates are 4-on-5; the goalie save percentages on the kill are shots on goal while shorthanded; Gibson's 2025-26 kill numbers are rebuilt game by game from last season's shot file. Danger bands are MoneyPuck's (an expected goal under .08 is low, .08 to .20 medium, .20 and up high). The 160 twelve-game openings are every team's first 12 games of 2021-22 through 2026-27, compared as goals per expected goal against that season's league. Year-to-year correlations are 2024-25 to 2025-26 full seasons, 32 teams. The record splits and the three-game swing use the NHL's standings as of Oct. 29.</p>
     </div>
     <div class="shell">
@@ -34,5 +52,7 @@ const DESC = article(SLUG).description;
   .prose :global(h3.art) { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.1; letter-spacing: -.02em; text-transform: none; margin: 40px 0 16px; }
   .prose :global(h3.art::before) { content: "// "; color: var(--red); }
   .prose :global(h4.art) { font-size: clamp(18px, 2vw, 22px); line-height: 1.15; letter-spacing: -.01em; text-transform: none; margin: 28px 0 12px; }
+  .fig { margin: 26px 0 38px; max-width: 760px; }
+  .fig :global(svg) { width: 100%; height: auto; display: block; }
   .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 68ch; }
 </style>

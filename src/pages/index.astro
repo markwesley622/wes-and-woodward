@@ -28,9 +28,9 @@ if (live) {
   prog = { proj, pre, pace, delta: opened ? delta : 0, fill: S.points / scale2 * 100, paceW: opened ? Math.max(0, pace - S.points) / scale2 * 100 : 0, tick: proj / scale2 * 100, preTick: pre / scale2 * 100,
     verdict: !opened ? 'no games yet' : delta >= 0.5 ? 'outperforming the projection' : delta <= -0.5 ? 'underperforming the projection' : 'tracking the projection' };
 }
-// Analysis cards (Mark, 10/27): every article, the featured one pinned first, then newest first (src/lib/articles.js).
+// Analysis cards (Mark, 10/29): the featured article pinned first, then the two most recent; the rest live on /analysis/ (src/lib/articles.js).
 const featuredArticle = ARTICLES.find((a) => a.featured);
-const restArticles = ARTICLES.filter((a) => a !== featuredArticle).sort((a, b) => Date.parse(b.published) - Date.parse(a.published));
+const restArticles = ARTICLES.filter((a) => a !== featuredArticle).sort((a, b) => Date.parse(b.published) - Date.parse(a.published)).slice(0, 2);
 const homeArticles = [...(featuredArticle ? [{ kind: 'Featured', a: featuredArticle }] : []), ...restArticles.map((a, i) => ({ kind: i === 0 ? 'Latest' : pubDay(a), a }))];
 const projWhen = NG ? `before the opener ${mdy(NG.date)}` : 'once the season opens';
 

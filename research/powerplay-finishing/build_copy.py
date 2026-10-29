@@ -82,6 +82,16 @@ for ctx, anchor, href in LINKS:
     a = f'<a href="{href}"{" rel=\"noopener\"" if href.startswith("http") else ""}>{anchor}</a>'
     parts[i] = parts[i].replace(ctx, ctx.replace(anchor, a, 1), 1)
 
+def find(s):  # index of the paragraph AFTER which a figure goes
+    hits = [i for i, p in enumerate(parts) if s in p]
+    assert len(hits) == 1, (s, hits)
+    return hits[0]
+idx.update({
+    "fig_radar": find("-shaped cloud hanging around the organization."),   # c1 the team-page radar as of Oct 29, closes the opening
+    "fig_conv": find("Detroit finishes nowhere else."),                                # c2 medium-danger conversion, all 32 teams
+    "fig_shooters": find("where the model expected 8.5."),                            # c3 the shooters, goals vs expected
+    "fig_gibson": find("he was 2.7 goals better than average."),                       # c4 Gibson's running PK save percentage
+})
 words = len(re.sub("<[^>]+>", "", re.sub(r"</?(?:p|li|ul|ol|h3|h4)\b[^>]*>", " ", title + " " + " ".join(parts))).split())
 json.dump(dict(title=title, parts=parts, idx=idx, words=words), open(OUT, "w"), indent=1, ensure_ascii=False)
 print(title, "|", len(parts), "parts |", words, "words |", idx)
