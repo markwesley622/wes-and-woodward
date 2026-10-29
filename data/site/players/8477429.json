@@ -91,29 +91,29 @@
   },
   "Defense": {
    "value": -0.7,
-   "percentile": 21
+   "percentile": 20
   },
   "Net": {
-   "value": -2.1,
+   "value": -2.2,
    "percentile": 7
   }
  },
  "score": null,
  "standIn": {
-  "value": 29.3,
+  "value": 29.2,
   "gs": -0.77,
   "gs60": -0.21,
   "gameScore": -0.77,
   "minutes": 219,
   "gp": 12,
-  "rank": 621,
-  "pool": 726,
-  "percentile": 14.5,
+  "rank": 628,
+  "pool": 729,
+  "percentile": 13.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 619,
+    "rank": 626,
     "name": "Mitchell Chaffee",
     "team": "NYI",
     "pos": "R",
@@ -123,43 +123,43 @@
     "isMe": false
    },
    {
-    "rank": 620,
+    "rank": 627,
     "name": "Alexander Romanov",
     "team": "NYI",
     "pos": "D",
     "gp": 3,
-    "value": 29.3,
+    "value": 29.2,
     "gs60": -0.76,
     "isMe": false
    },
    {
-    "rank": 621,
+    "rank": 628,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
     "gp": 12,
-    "value": 29.3,
+    "value": 29.2,
     "gs60": -0.77,
     "isMe": true
    },
    {
-    "rank": 622,
+    "rank": 629,
     "name": "Cole Koepke",
     "team": "WPG",
     "pos": "L",
     "gp": 9,
-    "value": 29.3,
+    "value": 29.2,
     "gs60": -0.77,
     "isMe": false
    },
    {
-    "rank": 623,
-    "name": "Alexey Toropchenko",
-    "team": "STL",
+    "rank": 630,
+    "name": "Jacob Melanson",
+    "team": "SEA",
     "pos": "R",
-    "gp": 2,
-    "value": 29.3,
-    "gs60": -0.78,
+    "gp": 1,
+    "value": 29.1,
+    "gs60": -0.79,
     "isMe": false
    }
   ],
@@ -670,5 +670,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:01:34-07:00"
+ "updatedAt": "2026-10-29T05:11:44-07:00"
 }

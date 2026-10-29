@@ -45,16 +45,16 @@
   "shutouts": 0
  },
  "score": {
-  "value": 0.0,
-  "low": 0.0,
-  "high": 0.0,
+  "value": 25.2,
+  "low": 9.8,
+  "high": 50.9,
   "gsax": -4.2,
   "xGoals": 20.8,
   "goals": 25.0,
   "minutes": 436,
-  "pool": 2,
+  "pool": 4,
   "rank": null,
-  "percentile": 0.0,
+  "percentile": 25.0,
   "reliability": 0.23,
   "group": "goalies",
   "neighbours": [],
@@ -73,7 +73,7 @@
   "gaa": 3.443394,
   "shutouts": 0,
   "gsax": -4.23,
-  "pctl_gsax": 0.0,
+  "pctl_gsax": 25.0,
   "qualifiesForPercentiles": false
  },
  "gameLog": [
@@ -203,5 +203,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:04:59-07:00"
+ "updatedAt": "2026-10-29T05:15:44-07:00"
 }

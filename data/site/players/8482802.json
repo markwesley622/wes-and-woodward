@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.5,
-   "percentile": 42
+   "percentile": 41
   },
   "Defense": {
    "value": -1.6,
@@ -100,30 +100,20 @@
  },
  "score": null,
  "standIn": {
-  "value": 25.0,
-  "gs": -2.04,
-  "gs60": -2.25,
-  "gameScore": -2.04,
+  "value": 24.9,
+  "gs": -2.08,
+  "gs60": -2.3,
+  "gameScore": -2.08,
   "minutes": 54,
   "gp": 6,
-  "rank": 670,
-  "pool": 726,
-  "percentile": 7.7,
+  "rank": 674,
+  "pool": 729,
+  "percentile": 7.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 668,
-    "name": "Ty Dellandrea",
-    "team": "SJS",
-    "pos": "C",
-    "gp": 5,
-    "value": 25.2,
-    "gs60": -1.98,
-    "isMe": false
-   },
-   {
-    "rank": 669,
+    "rank": 672,
     "name": "Samuel Honzek",
     "team": "CGY",
     "pos": "L",
@@ -133,17 +123,7 @@
     "isMe": false
    },
    {
-    "rank": 670,
-    "name": "Carter Mazur",
-    "team": "DET",
-    "pos": "L",
-    "gp": 6,
-    "value": 25.0,
-    "gs60": -2.04,
-    "isMe": true
-   },
-   {
-    "rank": 671,
+    "rank": 673,
     "name": "Curtis Douglas",
     "team": "SEA",
     "pos": "C",
@@ -153,12 +133,32 @@
     "isMe": false
    },
    {
-    "rank": 672,
+    "rank": 674,
+    "name": "Carter Mazur",
+    "team": "DET",
+    "pos": "L",
+    "gp": 6,
+    "value": 24.9,
+    "gs60": -2.08,
+    "isMe": true
+   },
+   {
+    "rank": 675,
     "name": "Arber Xhekaj",
     "team": "MTL",
     "pos": "D",
     "gp": 11,
     "value": 24.9,
+    "gs60": -2.1,
+    "isMe": false
+   },
+   {
+    "rank": 676,
+    "name": "Ty Dellandrea",
+    "team": "SJS",
+    "pos": "C",
+    "gp": 6,
+    "value": 24.8,
     "gs60": -2.1,
     "isMe": false
    }
@@ -291,9 +291,9 @@
    "gf": 0.0,
    "ga": 2.0,
    "blocks": 0.0,
-   "gameScore": -1.14,
+   "gameScore": -1.18,
    "gameScoreParts": {
-    "moneypuck": -0.475,
+    "moneypuck": -0.55,
     "hockeystatcards": -1.8
    }
   },
@@ -348,7 +348,7 @@
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.34,
+  "average": -0.35,
   "games": 6,
   "best": {
    "date": "2026-10-06",
@@ -376,5 +376,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:03:09-07:00"
+ "updatedAt": "2026-10-29T05:13:36-07:00"
 }

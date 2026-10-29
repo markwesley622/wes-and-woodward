@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.14,
-   "percentile": 22
+   "percentile": 21
   },
   "Offense": {
    "value": -2.4,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 28.7,
+  "value": 28.6,
   "gs": -0.94,
   "gs60": -0.44,
   "gameScore": -0.94,
   "minutes": 127,
   "gp": 12,
-  "rank": 633,
-  "pool": 726,
-  "percentile": 12.7,
+  "rank": 637,
+  "pool": 729,
+  "percentile": 12.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 631,
-    "name": "Trent Frederic",
-    "team": "EDM",
-    "pos": "C",
-    "gp": 11,
-    "value": 28.8,
-    "gs60": -0.91,
-    "isMe": false
-   },
-   {
-    "rank": 632,
+    "rank": 635,
     "name": "Trevor van Riemsdyk",
     "team": "PIT",
     "pos": "D",
     "gp": 5,
-    "value": 28.8,
+    "value": 28.7,
     "gs60": -0.92,
     "isMe": false
    },
    {
-    "rank": 633,
+    "rank": 636,
+    "name": "Isaac Howard",
+    "team": "EDM",
+    "pos": "L",
+    "gp": 12,
+    "value": 28.7,
+    "gs60": -0.93,
+    "isMe": false
+   },
+   {
+    "rank": 637,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
     "gp": 12,
-    "value": 28.7,
+    "value": 28.6,
     "gs60": -0.94,
     "isMe": true
    },
    {
-    "rank": 634,
+    "rank": 638,
     "name": "Helge Grans",
     "team": "PHI",
     "pos": "D",
     "gp": 1,
-    "value": 28.7,
+    "value": 28.6,
     "gs60": -0.94,
     "isMe": false
    },
    {
-    "rank": 635,
-    "name": "Isaac Howard",
+    "rank": 639,
+    "name": "Trent Frederic",
     "team": "EDM",
-    "pos": "L",
-    "gp": 11,
-    "value": 28.5,
-    "gs60": -1.0,
+    "pos": "C",
+    "gp": 12,
+    "value": 28.4,
+    "gs60": -1.02,
     "isMe": false
    }
   ],
@@ -595,5 +595,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:02:45-07:00"
+ "updatedAt": "2026-10-29T05:13:08-07:00"
 }

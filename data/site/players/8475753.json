@@ -75,15 +75,15 @@
    "onIceXgPct": 0.57,
    "onIceCorsiPct": 0.55,
    "ixgPer60": 0.172,
-   "pctl_onIceXgPct": null,
-   "pctl_ixgPer60": null,
+   "pctl_onIceXgPct": 0.0,
+   "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": 0.53,
-   "percentile": 62
+   "percentile": 63
   },
   "Offense": {
    "value": -0.0,
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 1.0,
-   "percentile": 86
+   "percentile": 87
   },
   "Net": {
    "value": 1.0,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 59.0,
+  "value": 58.3,
   "gs": 6.57,
   "gs60": 1.67,
   "gameScore": 6.57,
   "minutes": 236,
   "gp": 12,
-  "rank": 220,
-  "pool": 726,
-  "percentile": 69.7,
+  "rank": 228,
+  "pool": 729,
+  "percentile": 68.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 218,
-    "name": "Pavel Zacha",
-    "team": "BOS",
+    "rank": 226,
+    "name": "Shane Pinto",
+    "team": "OTT",
     "pos": "C",
-    "gp": 12,
-    "value": 59.1,
+    "gp": 13,
+    "value": 58.4,
     "gs60": 6.6,
     "isMe": false
    },
    {
-    "rank": 219,
-    "name": "Rasmus Dahlin",
-    "team": "BUF",
-    "pos": "D",
-    "gp": 8,
-    "value": 59.0,
-    "gs60": 6.57,
-    "isMe": false
-   },
-   {
-    "rank": 220,
-    "name": "Justin Faulk",
-    "team": "DET",
-    "pos": "D",
-    "gp": 12,
-    "value": 59.0,
-    "gs60": 6.57,
-    "isMe": true
-   },
-   {
-    "rank": 221,
-    "name": "Daniil But",
-    "team": "UTA",
-    "pos": "L",
-    "gp": 12,
-    "value": 58.9,
-    "gs60": 6.56,
-    "isMe": false
-   },
-   {
-    "rank": 222,
+    "rank": 227,
     "name": "Adam Edstrom",
     "team": "NSH",
     "pos": "C",
     "gp": 12,
-    "value": 58.8,
+    "value": 58.3,
+    "gs60": 6.58,
+    "isMe": false
+   },
+   {
+    "rank": 228,
+    "name": "Justin Faulk",
+    "team": "DET",
+    "pos": "D",
+    "gp": 12,
+    "value": 58.3,
+    "gs60": 6.57,
+    "isMe": true
+   },
+   {
+    "rank": 229,
+    "name": "Daniil But",
+    "team": "UTA",
+    "pos": "L",
+    "gp": 12,
+    "value": 58.3,
+    "gs60": 6.56,
+    "isMe": false
+   },
+   {
+    "rank": 230,
+    "name": "Jean-Gabriel Pageau",
+    "team": "NYI",
+    "pos": "C",
+    "gp": 12,
+    "value": 58.1,
     "gs60": 6.53,
     "isMe": false
    }
@@ -715,5 +715,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:04:01-07:00"
+ "updatedAt": "2026-10-29T05:14:39-07:00"
 }

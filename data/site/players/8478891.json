@@ -83,11 +83,11 @@
  "hsc": {
   "Game score": {
    "value": -0.01,
-   "percentile": 29
+   "percentile": 27
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 44
+   "percentile": 43
   },
   "Defense": {
    "value": -0.1,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": -0.5,
-   "percentile": 42
+   "percentile": 43
   }
  },
  "score": null,
  "standIn": {
-  "value": 33.2,
+  "value": 33.0,
   "gs": 0.3,
   "gs60": 0.91,
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 541,
-  "pool": 726,
-  "percentile": 25.5,
+  "rank": 550,
+  "pool": 729,
+  "percentile": 24.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 539,
+    "rank": 548,
     "name": "Justin Dowling",
     "team": "NYR",
     "pos": "C",
     "gp": 4,
-    "value": 33.2,
+    "value": 33.0,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 540,
+    "rank": 549,
     "name": "Connor Clifton",
     "team": "BOS",
     "pos": "D",
     "gp": 6,
-    "value": 33.2,
+    "value": 33.0,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 541,
+    "rank": 550,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 33.2,
+    "value": 33.0,
     "gs60": 0.3,
     "isMe": true
    },
    {
-    "rank": 542,
+    "rank": 551,
     "name": "Cody Ceci",
     "team": "LAK",
     "pos": "D",
     "gp": 7,
-    "value": 33.1,
+    "value": 32.9,
     "gs60": 0.28,
     "isMe": false
    },
    {
-    "rank": 543,
-    "name": "Ryan McLeod",
-    "team": "BUF",
-    "pos": "C",
-    "gp": 11,
-    "value": 33.1,
-    "gs60": 0.28,
+    "rank": 552,
+    "name": "Brett Kulak",
+    "team": "COL",
+    "pos": "D",
+    "gp": 13,
+    "value": 32.8,
+    "gs60": 0.24,
     "isMe": false
    }
   ],
@@ -370,5 +370,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:00:46-07:00"
+ "updatedAt": "2026-10-29T05:10:44-07:00"
 }

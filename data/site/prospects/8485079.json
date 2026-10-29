@@ -31,10 +31,10 @@
   {
    "league": "HockeyAllsvenskan",
    "team": "Almtuna IS",
-   "gp": 14,
-   "g": 1,
+   "gp": 15,
+   "g": 2,
    "a": 6,
-   "pts": 7,
+   "pts": 8,
    "pm": -7,
    "pim": 4,
    "gaa": null,
@@ -106,10 +106,10 @@
     {
      "league": "HockeyAllsvenskan",
      "team": "Almtuna IS",
-     "gp": 14,
-     "g": 1,
+     "gp": 15,
+     "g": 2,
      "a": 6,
-     "pts": 7,
+     "pts": 8,
      "pm": -7,
      "pim": 4,
      "gaa": null,
@@ -225,19 +225,19 @@
   "table": "Allsvenskan",
   "coef": 0.351,
   "team": "Almtuna IS",
-  "gp": 19,
-  "g": 1,
+  "gp": 20,
+  "g": 2,
   "a": 6,
-  "pts": 7,
-  "pgp": 0.5,
-  "lineGp": 14,
-  "nhle": 0.159,
-  "nhlePace": 13.4,
+  "pts": 8,
+  "pgp": 0.533,
+  "lineGp": 15,
+  "nhle": 0.169,
+  "nhlePace": 14.2,
   "lines": [
    "SHL",
    "HockeyAllsvenskan"
   ],
-  "feature": 0.159
+  "feature": 0.169
  },
  "league": {
   "name": "HockeyAllsvenskan",
@@ -262,113 +262,113 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 11,
-   "gp": 14,
-   "value": 0.5,
+   "gp": 15,
+   "value": 0.5333,
    "percentile": 36.4,
-   "percentileAllAges": 63.6,
+   "percentileAllAges": 68.1,
    "allAgesN": 357
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 13.4,
+  "expected": 7.9,
   "median": 0.0,
-  "p75": 14.2,
-  "p90": 62.9,
-  "pRegular": 0.26,
-  "pTopLine": 0.08,
-  "pAboveAvg": 0.14,
-  "pElite": 0.02,
+  "p75": 6.8,
+  "p90": 36.7,
+  "pRegular": 0.28,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.04,
+  "pElite": 0.0,
   "poolN": 1236,
   "group": "F",
   "age": 20,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.26,
+  "pCeiling": 0.28,
   "featureBand": [
-   0.155,
-   0.164
+   0.165,
+   0.174
   ],
   "examples": [
    {
-    "name": "Maxim Letunov",
-    "year": 2014,
-    "pick": 52,
-    "league": "NCAA",
-    "feature": 0.159,
+    "name": "Anton R\u00f6din",
+    "year": 2009,
+    "pick": 53,
+    "league": "AHL",
+    "feature": 0.169,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 3
    },
    {
-    "name": "Vitaly Abramov",
-    "year": 2016,
-    "pick": 65,
+    "name": "Micha\u00ebl Bournival",
+    "year": 2010,
+    "pick": 71,
     "league": "AHL",
-    "feature": 0.159,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 5
+    "feature": 0.169,
+    "peak": 19.4,
+    "tier": "replacement level",
+    "nhlGp": 113
    },
    {
-    "name": "Ross Colton",
-    "year": 2016,
-    "pick": 118,
-    "league": "NCAA",
-    "feature": 0.159,
-    "peak": 54.8,
-    "tier": "above average",
-    "nhlGp": 406
-   },
-   {
-    "name": "Zach Gallant",
-    "year": 2017,
-    "pick": 83,
-    "league": "OHL",
-    "feature": 0.159,
+    "name": "Josh Nicholls",
+    "year": 2010,
+    "pick": 182,
+    "league": "WHL",
+    "feature": 0.169,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Danny Kristo",
+    "name": "Zack Phillips",
+    "year": 2011,
+    "pick": 28,
+    "league": "AHL",
+    "feature": 0.169,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Stefan Matteau",
+    "year": 2012,
+    "pick": 29,
+    "league": "AHL",
+    "feature": 0.169,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 92
+   },
+   {
+    "name": "Derek Grant",
     "year": 2008,
-    "pick": 56,
+    "pick": 119,
     "league": "NCAA",
-    "feature": 0.16,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "feature": 0.168,
+    "peak": 43.2,
+    "tier": "below average",
+    "nhlGp": 427
    },
    {
-    "name": "Zach Budish",
-    "year": 2009,
-    "pick": 41,
+    "name": "Mark Olver",
+    "year": 2008,
+    "pick": 140,
     "league": "NCAA",
-    "feature": 0.158,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "feature": 0.17,
+    "peak": 15.6,
+    "tier": "replacement level",
+    "nhlGp": 74
    },
    {
-    "name": "Max Gardiner",
+    "name": "Petr Straka",
     "year": 2010,
-    "pick": 74,
-    "league": "NCAA",
-    "feature": 0.158,
+    "pick": 55,
+    "league": "QMJHL",
+    "feature": 0.168,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Andrew Yogan",
-    "year": 2010,
-    "pick": 100,
-    "league": "AHL",
-    "feature": 0.158,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "nhlGp": 3
    }
   ]
  },
@@ -389,8 +389,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 13.4,
-  "expected": 13.4,
+  "cohortExpected": 7.9,
+  "expected": 7.9,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -411,11 +411,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 14,
+  "gp": 15,
   "season": "2026-2027"
  },
- "rank": 15,
- "score": 13.4,
+ "rank": 19,
+ "score": 7.9,
  "rankStart": 27,
  "rankStartDate": "2026-10-06"
 }

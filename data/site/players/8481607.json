@@ -75,15 +75,15 @@
    "onIceXgPct": 0.57,
    "onIceCorsiPct": 0.57,
    "ixgPer60": 0.224,
-   "pctl_onIceXgPct": null,
-   "pctl_ixgPer60": null,
+   "pctl_onIceXgPct": 0.0,
+   "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": 0.47,
-   "percentile": 60
+   "percentile": 59
   },
   "Offense": {
    "value": 0.2,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 52.4,
+  "value": 51.8,
   "gs": 4.99,
   "gs60": 1.74,
   "gameScore": 4.99,
   "minutes": 172,
   "gp": 11,
-  "rank": 280,
-  "pool": 726,
-  "percentile": 61.4,
+  "rank": 285,
+  "pool": 729,
+  "percentile": 60.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 278,
-    "name": "Adam Jiricek",
-    "team": "STL",
-    "pos": "D",
-    "gp": 12,
-    "value": 52.5,
-    "gs60": 5.01,
-    "isMe": false
-   },
-   {
-    "rank": 279,
+    "rank": 283,
     "name": "Teuvo Teravainen",
     "team": "CHI",
     "pos": "C",
     "gp": 10,
-    "value": 52.4,
+    "value": 51.8,
     "gs60": 5.0,
     "isMe": false
    },
    {
-    "rank": 280,
+    "rank": 284,
+    "name": "Colton Sissons",
+    "team": "TOR",
+    "pos": "C",
+    "gp": 15,
+    "value": 51.8,
+    "gs60": 4.99,
+    "isMe": false
+   },
+   {
+    "rank": 285,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 52.4,
+    "value": 51.8,
     "gs60": 4.99,
     "isMe": true
    },
    {
-    "rank": 281,
-    "name": "Ben Kindel",
-    "team": "PIT",
+    "rank": 286,
+    "name": "Ryan Strome",
+    "team": "CGY",
     "pos": "C",
-    "gp": 9,
-    "value": 52.2,
+    "gp": 12,
+    "value": 51.7,
     "gs60": 4.96,
     "isMe": false
    },
    {
-    "rank": 282,
-    "name": "Noah Dobson",
-    "team": "MTL",
-    "pos": "D",
-    "gp": 12,
-    "value": 52.2,
-    "gs60": 4.95,
+    "rank": 287,
+    "name": "Ben Kindel",
+    "team": "PIT",
+    "pos": "C",
+    "gp": 9,
+    "value": 51.7,
+    "gs60": 4.96,
     "isMe": false
    }
   ],
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:04:12-07:00"
+ "updatedAt": "2026-10-29T05:14:52-07:00"
 }

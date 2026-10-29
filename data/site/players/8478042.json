@@ -100,47 +100,27 @@
  },
  "score": null,
  "standIn": {
-  "value": 74.1,
+  "value": 73.3,
   "gs": 10.62,
   "gs60": 2.81,
   "gameScore": 10.62,
   "minutes": 226,
   "gp": 12,
-  "rank": 101,
-  "pool": 726,
-  "percentile": 86.1,
+  "rank": 103,
+  "pool": 729,
+  "percentile": 85.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 99,
-    "name": "Roman Josi",
-    "team": "NSH",
-    "pos": "D",
-    "gp": 12,
-    "value": 74.6,
-    "gs60": 10.78,
-    "isMe": false
-   },
-   {
-    "rank": 100,
+    "rank": 101,
     "name": "Thomas Harley",
     "team": "DAL",
     "pos": "D",
     "gp": 12,
-    "value": 74.2,
+    "value": 73.4,
     "gs60": 10.66,
     "isMe": false
-   },
-   {
-    "rank": 101,
-    "name": "Viktor Arvidsson",
-    "team": "DET",
-    "pos": "L",
-    "gp": 12,
-    "value": 74.1,
-    "gs60": 10.62,
-    "isMe": true
    },
    {
     "rank": 102,
@@ -148,18 +128,38 @@
     "team": "CBJ",
     "pos": "D",
     "gp": 10,
-    "value": 74.0,
-    "gs60": 10.62,
+    "value": 73.3,
+    "gs60": 10.64,
     "isMe": false
    },
    {
     "rank": 103,
-    "name": "Mitch Marner",
-    "team": "VGK",
-    "pos": "R",
+    "name": "Viktor Arvidsson",
+    "team": "DET",
+    "pos": "L",
+    "gp": 12,
+    "value": 73.3,
+    "gs60": 10.62,
+    "isMe": true
+   },
+   {
+    "rank": 104,
+    "name": "Olen Zellweger",
+    "team": "BUF",
+    "pos": "D",
     "gp": 11,
-    "value": 73.8,
-    "gs60": 10.54,
+    "value": 72.9,
+    "gs60": 10.5,
+    "isMe": false
+   },
+   {
+    "rank": 105,
+    "name": "Vincent Trocheck",
+    "team": "UTA",
+    "pos": "C",
+    "gp": 13,
+    "value": 72.8,
+    "gs60": 10.48,
     "isMe": false
    }
   ],
@@ -670,5 +670,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:00:58-07:00"
+ "updatedAt": "2026-10-29T05:10:58-07:00"
 }

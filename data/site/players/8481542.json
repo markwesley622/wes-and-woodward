@@ -75,8 +75,8 @@
    "onIceXgPct": 0.54,
    "onIceCorsiPct": 0.55,
    "ixgPer60": 0.054,
-   "pctl_onIceXgPct": null,
-   "pctl_ixgPer60": null,
+   "pctl_onIceXgPct": 0.0,
+   "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
  },
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": 1.1,
-   "percentile": 80
+   "percentile": 79
   }
  },
  "score": null,
  "standIn": {
-  "value": 64.0,
+  "value": 63.3,
   "gs": 7.82,
   "gs60": 1.5,
   "gameScore": 7.82,
   "minutes": 313,
   "gp": 12,
-  "rank": 167,
-  "pool": 726,
-  "percentile": 77.0,
+  "rank": 175,
+  "pool": 729,
+  "percentile": 76.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 165,
-    "name": "Brett Howden",
-    "team": "VGK",
-    "pos": "C",
-    "gp": 13,
-    "value": 64.3,
+    "rank": 173,
+    "name": "Danila Yurov",
+    "team": "MIN",
+    "pos": "R",
+    "gp": 14,
+    "value": 63.6,
     "gs60": 7.92,
     "isMe": false
    },
    {
-    "rank": 166,
-    "name": "Beckett Sennecke",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 11,
-    "value": 64.3,
-    "gs60": 7.9,
+    "rank": 174,
+    "name": "Nate Schmidt",
+    "team": "UTA",
+    "pos": "D",
+    "gp": 13,
+    "value": 63.6,
+    "gs60": 7.91,
     "isMe": false
    },
    {
-    "rank": 167,
+    "rank": 175,
     "name": "Moritz Seider",
     "team": "DET",
     "pos": "D",
     "gp": 12,
-    "value": 64.0,
+    "value": 63.3,
     "gs60": 7.82,
     "isMe": true
    },
    {
-    "rank": 168,
-    "name": "Tyler Toffoli",
-    "team": "SJS",
+    "rank": 176,
+    "name": "Linus Karlsson",
+    "team": "VAN",
     "pos": "C",
-    "gp": 12,
-    "value": 64.0,
+    "gp": 14,
+    "value": 63.2,
     "gs60": 7.82,
     "isMe": false
    },
    {
-    "rank": 169,
-    "name": "Danila Yurov",
-    "team": "MIN",
-    "pos": "R",
-    "gp": 13,
-    "value": 63.9,
-    "gs60": 7.8,
+    "rank": 177,
+    "name": "Adam Fantilli",
+    "team": "CBJ",
+    "pos": "C",
+    "gp": 10,
+    "value": 63.2,
+    "gs60": 7.81,
     "isMe": false
    }
   ],
@@ -565,5 +565,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:04:47-07:00"
+ "updatedAt": "2026-10-29T05:15:31-07:00"
 }

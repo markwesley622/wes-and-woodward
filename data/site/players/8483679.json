@@ -75,15 +75,15 @@
    "onIceXgPct": 0.41,
    "onIceCorsiPct": 0.48,
    "ixgPer60": 0.207,
-   "pctl_onIceXgPct": null,
-   "pctl_ixgPer60": null,
+   "pctl_onIceXgPct": 0.0,
+   "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": -0.24,
-   "percentile": 17
+   "percentile": 16
   },
   "Offense": {
    "value": -0.2,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 32.3,
+  "value": 32.2,
   "gs": 0.07,
   "gs60": 0.02,
   "gameScore": 0.07,
   "minutes": 169,
   "gp": 12,
-  "rank": 552,
-  "pool": 726,
-  "percentile": 24.0,
+  "rank": 560,
+  "pool": 729,
+  "percentile": 23.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 550,
+    "rank": 558,
     "name": "Dylan Hryckowian",
     "team": "DAL",
     "pos": "R",
     "gp": 2,
-    "value": 32.4,
+    "value": 32.3,
     "gs60": 0.1,
     "isMe": false
    },
    {
-    "rank": 551,
+    "rank": 559,
     "name": "Nick Perbix",
     "team": "NSH",
     "pos": "D",
     "gp": 11,
-    "value": 32.4,
+    "value": 32.3,
     "gs60": 0.09,
     "isMe": false
    },
    {
-    "rank": 552,
+    "rank": 560,
     "name": "Anton Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 12,
-    "value": 32.3,
+    "value": 32.2,
     "gs60": 0.07,
     "isMe": true
    },
    {
-    "rank": 553,
-    "name": "Jeremy Lauzon",
-    "team": "VGK",
-    "pos": "D",
-    "gp": 13,
-    "value": 32.3,
-    "gs60": 0.06,
-    "isMe": false
-   },
-   {
-    "rank": 554,
+    "rank": 561,
     "name": "Jonathan Aspirot",
     "team": "BOS",
     "pos": "D",
     "gp": 4,
-    "value": 32.3,
+    "value": 32.1,
+    "gs60": 0.06,
+    "isMe": false
+   },
+   {
+    "rank": 562,
+    "name": "Maxim Tsyplakov",
+    "team": "CGY",
+    "pos": "R",
+    "gp": 6,
+    "value": 32.1,
     "gs60": 0.06,
     "isMe": false
    }
@@ -489,5 +489,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:04:23-07:00"
+ "updatedAt": "2026-10-29T05:15:05-07:00"
 }

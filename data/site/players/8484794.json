@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": 2.7,
-   "percentile": 94
+   "percentile": 93
   }
  },
  "score": null,
  "standIn": {
-  "value": 82.9,
+  "value": 82.2,
   "gs": 13.76,
   "gs60": 4.42,
   "gameScore": 13.76,
   "minutes": 187,
   "gp": 12,
-  "rank": 53,
-  "pool": 726,
-  "percentile": 92.7,
+  "rank": 56,
+  "pool": 729,
+  "percentile": 92.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 51,
-    "name": "Jack Quinn",
-    "team": "BUF",
-    "pos": "R",
-    "gp": 11,
-    "value": 83.6,
-    "gs60": 14.02,
-    "isMe": false
-   },
-   {
-    "rank": 52,
-    "name": "Ivan Barbashev",
-    "team": "VGK",
-    "pos": "L",
-    "gp": 13,
-    "value": 83.5,
-    "gs60": 13.99,
-    "isMe": false
-   },
-   {
-    "rank": 53,
-    "name": "Michael Brandsegg-Nygrd",
-    "team": "DET",
-    "pos": "R",
-    "gp": 12,
-    "value": 82.9,
-    "gs60": 13.76,
-    "isMe": true
-   },
-   {
     "rank": 54,
-    "name": "Jesper Bratt",
-    "team": "NJD",
-    "pos": "L",
-    "gp": 12,
-    "value": 82.9,
-    "gs60": 13.73,
+    "name": "Clayton Keller",
+    "team": "UTA",
+    "pos": "R",
+    "gp": 13,
+    "value": 83.0,
+    "gs60": 14.09,
     "isMe": false
    },
    {
     "rank": 55,
+    "name": "Jack Quinn",
+    "team": "BUF",
+    "pos": "R",
+    "gp": 12,
+    "value": 82.8,
+    "gs60": 14.01,
+    "isMe": false
+   },
+   {
+    "rank": 56,
+    "name": "Michael Brandsegg-Nygrd",
+    "team": "DET",
+    "pos": "R",
+    "gp": 12,
+    "value": 82.2,
+    "gs60": 13.76,
+    "isMe": true
+   },
+   {
+    "rank": 57,
+    "name": "Nikita Kucherov",
+    "team": "TBL",
+    "pos": "R",
+    "gp": 11,
+    "value": 81.9,
+    "gs60": 13.62,
+    "isMe": false
+   },
+   {
+    "rank": 58,
     "name": "Steven Stamkos",
     "team": "NSH",
     "pos": "C",
     "gp": 12,
-    "value": 82.8,
-    "gs60": 13.7,
+    "value": 81.8,
+    "gs60": 13.57,
     "isMe": false
    }
   ],
@@ -505,5 +505,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:01:11-07:00"
+ "updatedAt": "2026-10-29T05:11:13-07:00"
 }

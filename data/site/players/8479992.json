@@ -83,83 +83,83 @@
  "hsc": {
   "Game score": {
    "value": 0.02,
-   "percentile": 30
+   "percentile": 29
   },
   "Offense": {
    "value": -1.3,
-   "percentile": 10
+   "percentile": 11
   },
   "Defense": {
    "value": 0.0,
-   "percentile": 53
+   "percentile": 52
   },
   "Net": {
    "value": -1.3,
-   "percentile": 21
+   "percentile": 20
   }
  },
  "score": null,
  "standIn": {
-  "value": 38.2,
+  "value": 38.0,
   "gs": 1.6,
   "gs60": 0.48,
   "gameScore": 1.6,
   "minutes": 200,
   "gp": 12,
-  "rank": 441,
-  "pool": 726,
-  "percentile": 39.3,
+  "rank": 450,
+  "pool": 729,
+  "percentile": 38.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 439,
-    "name": "Colin Blackwell",
-    "team": "DAL",
-    "pos": "C",
-    "gp": 10,
-    "value": 38.4,
-    "gs60": 1.64,
+    "rank": 448,
+    "name": "Tony DeAngelo",
+    "team": "NYI",
+    "pos": "D",
+    "gp": 12,
+    "value": 38.1,
+    "gs60": 1.63,
     "isMe": false
    },
    {
-    "rank": 440,
+    "rank": 449,
     "name": "Taylor Raddysh",
     "team": "NYR",
     "pos": "R",
     "gp": 5,
-    "value": 38.3,
+    "value": 38.1,
     "gs60": 1.62,
     "isMe": false
    },
    {
-    "rank": 441,
+    "rank": 450,
     "name": "Michael Rasmussen",
     "team": "DET",
     "pos": "C",
     "gp": 12,
-    "value": 38.2,
+    "value": 38.0,
     "gs60": 1.6,
     "isMe": true
    },
    {
-    "rank": 442,
-    "name": "Alex Formenton",
-    "team": "EDM",
-    "pos": "L",
-    "gp": 12,
-    "value": 38.1,
-    "gs60": 1.58,
+    "rank": 451,
+    "name": "Justin Sourdif",
+    "team": "WSH",
+    "pos": "C",
+    "gp": 9,
+    "value": 37.8,
+    "gs60": 1.55,
     "isMe": false
    },
    {
-    "rank": 443,
-    "name": "Nick Paul",
-    "team": "TOR",
-    "pos": "L",
-    "gp": 14,
-    "value": 38.0,
-    "gs60": 1.55,
+    "rank": 452,
+    "name": "Calum Ritchie",
+    "team": "NYI",
+    "pos": "C",
+    "gp": 8,
+    "value": 37.7,
+    "gs60": 1.52,
     "isMe": false
    }
   ],
@@ -595,5 +595,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:03:21-07:00"
+ "updatedAt": "2026-10-29T05:13:51-07:00"
 }

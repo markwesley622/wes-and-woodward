@@ -75,15 +75,15 @@
    "onIceXgPct": 0.61,
    "onIceCorsiPct": 0.53,
    "ixgPer60": 0.056,
-   "pctl_onIceXgPct": null,
-   "pctl_ixgPer60": null,
+   "pctl_onIceXgPct": 0.0,
+   "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": 0.3,
-   "percentile": 48
+   "percentile": 49
   },
   "Offense": {
    "value": -0.2,
@@ -94,72 +94,72 @@
    "percentile": 40
   },
   "Net": {
-   "value": -0.3,
+   "value": -0.4,
    "percentile": 48
   }
  },
  "score": null,
  "standIn": {
-  "value": 39.9,
+  "value": 39.6,
   "gs": 2.01,
   "gs60": 1.36,
   "gameScore": 2.01,
   "minutes": 89,
   "gp": 7,
-  "rank": 417,
-  "pool": 726,
-  "percentile": 42.6,
+  "rank": 425,
+  "pool": 729,
+  "percentile": 41.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 415,
-    "name": "Adam Klapka",
-    "team": "CGY",
-    "pos": "R",
+    "rank": 423,
+    "name": "Mikey Anderson",
+    "team": "LAK",
+    "pos": "D",
     "gp": 11,
-    "value": 39.9,
-    "gs60": 2.02,
+    "value": 39.7,
+    "gs60": 2.03,
     "isMe": false
    },
    {
-    "rank": 416,
+    "rank": 424,
     "name": "Justin Hryckowian",
     "team": "DAL",
     "pos": "C",
     "gp": 12,
-    "value": 39.9,
+    "value": 39.6,
     "gs60": 2.02,
     "isMe": false
    },
    {
-    "rank": 417,
+    "rank": 425,
     "name": "Axel Sandin-Pellikka",
     "team": "DET",
     "pos": "D",
     "gp": 7,
-    "value": 39.9,
+    "value": 39.6,
     "gs60": 2.01,
     "isMe": true
    },
    {
-    "rank": 418,
-    "name": "Dmitri Simashev",
-    "team": "UTA",
-    "pos": "D",
+    "rank": 426,
+    "name": "Alex Killorn",
+    "team": "ANA",
+    "pos": "L",
     "gp": 12,
-    "value": 39.9,
+    "value": 39.5,
     "gs60": 2.0,
     "isMe": false
    },
    {
-    "rank": 419,
-    "name": "Beck Malenstyn",
-    "team": "BUF",
-    "pos": "L",
-    "gp": 11,
-    "value": 39.7,
-    "gs60": 1.97,
+    "rank": 427,
+    "name": "Adam Pelech",
+    "team": "NYI",
+    "pos": "D",
+    "gp": 12,
+    "value": 39.5,
+    "gs60": 1.98,
     "isMe": false
    }
   ],
@@ -385,5 +385,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:04:35-07:00"
+ "updatedAt": "2026-10-29T05:15:19-07:00"
 }

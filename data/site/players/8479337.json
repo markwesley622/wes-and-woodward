@@ -87,78 +87,78 @@
   },
   "Offense": {
    "value": 2.3,
-   "percentile": 95
+   "percentile": 94
   },
   "Defense": {
    "value": 0.7,
    "percentile": 78
   },
   "Net": {
-   "value": 3.1,
+   "value": 3.0,
    "percentile": 95
   }
  },
  "score": null,
  "standIn": {
-  "value": 89.7,
+  "value": 89.2,
   "gs": 17.23,
   "gs60": 4.28,
   "gameScore": 17.23,
   "minutes": 242,
   "gp": 12,
-  "rank": 23,
-  "pool": 726,
-  "percentile": 96.8,
+  "rank": 25,
+  "pool": 729,
+  "percentile": 96.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 21,
-    "name": "Martin Necas",
+    "rank": 23,
+    "name": "Artturi Lehkonen",
     "team": "COL",
-    "pos": "C",
-    "gp": 12,
-    "value": 90.6,
-    "gs60": 17.79,
+    "pos": "L",
+    "gp": 13,
+    "value": 89.8,
+    "gs60": 17.62,
     "isMe": false
    },
    {
-    "rank": 22,
+    "rank": 24,
     "name": "Brandon Hagel",
     "team": "TBL",
     "pos": "L",
     "gp": 11,
-    "value": 90.1,
+    "value": 89.6,
     "gs60": 17.48,
     "isMe": false
    },
    {
-    "rank": 23,
+    "rank": 25,
     "name": "Alex DeBrincat",
     "team": "DET",
     "pos": "R",
     "gp": 12,
-    "value": 89.7,
+    "value": 89.2,
     "gs60": 17.23,
     "isMe": true
    },
    {
-    "rank": 24,
+    "rank": 26,
     "name": "Adam Fox",
     "team": "NYR",
     "pos": "D",
     "gp": 14,
-    "value": 89.5,
+    "value": 89.0,
     "gs60": 17.11,
     "isMe": false
    },
    {
-    "rank": 25,
+    "rank": 27,
     "name": "Logan Stankoven",
     "team": "CAR",
     "pos": "C",
     "gp": 14,
-    "value": 89.3,
+    "value": 88.7,
     "gs60": 16.95,
     "isMe": false
    }
@@ -625,5 +625,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:01:57-07:00"
+ "updatedAt": "2026-10-29T05:12:11-07:00"
 }

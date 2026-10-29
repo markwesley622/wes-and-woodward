@@ -75,90 +75,90 @@
    "onIceXgPct": 0.53,
    "onIceCorsiPct": 0.53,
    "ixgPer60": 0.088,
-   "pctl_onIceXgPct": null,
-   "pctl_ixgPer60": null,
+   "pctl_onIceXgPct": 0.0,
+   "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": -0.07,
-   "percentile": 24
+   "percentile": 23
   },
   "Offense": {
    "value": -0.2,
-   "percentile": 55
+   "percentile": 56
   },
   "Defense": {
    "value": -0.6,
-   "percentile": 24
+   "percentile": 23
   },
   "Net": {
-   "value": -0.7,
+   "value": -0.8,
    "percentile": 35
   }
  },
  "score": null,
  "standIn": {
-  "value": 35.4,
+  "value": 35.2,
   "gs": 0.89,
   "gs60": 0.22,
   "gameScore": 0.89,
   "minutes": 239,
   "gp": 12,
-  "rank": 488,
-  "pool": 726,
-  "percentile": 32.8,
+  "rank": 499,
+  "pool": 729,
+  "percentile": 31.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 486,
-    "name": "Patrick Kane",
-    "team": "CHI",
-    "pos": "R",
-    "gp": 12,
-    "value": 35.6,
-    "gs60": 0.92,
-    "isMe": false
-   },
-   {
-    "rank": 487,
-    "name": "Bobby McMann",
-    "team": "SEA",
+    "rank": 497,
+    "name": "Nico Sturm",
+    "team": "MIN",
     "pos": "C",
-    "gp": 12,
-    "value": 35.6,
-    "gs60": 0.92,
+    "gp": 8,
+    "value": 35.3,
+    "gs60": 0.91,
     "isMe": false
    },
    {
-    "rank": 488,
+    "rank": 498,
+    "name": "Alex Bump",
+    "team": "PHI",
+    "pos": "L",
+    "gp": 8,
+    "value": 35.3,
+    "gs60": 0.91,
+    "isMe": false
+   },
+   {
+    "rank": 499,
     "name": "Ben Chiarot",
     "team": "DET",
     "pos": "D",
     "gp": 12,
-    "value": 35.4,
+    "value": 35.2,
     "gs60": 0.89,
     "isMe": true
    },
    {
-    "rank": 489,
+    "rank": 500,
     "name": "Alexander Holtz",
     "team": "VGK",
     "pos": "R",
     "gp": 2,
-    "value": 35.4,
+    "value": 35.1,
     "gs60": 0.87,
     "isMe": false
    },
    {
-    "rank": 490,
+    "rank": 501,
     "name": "Taylor Ward",
     "team": "LAK",
     "pos": "R",
     "gp": 2,
-    "value": 35.2,
+    "value": 35.0,
     "gs60": 0.84,
     "isMe": false
    }
@@ -685,5 +685,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-28T05:03:49-07:00"
+ "updatedAt": "2026-10-29T05:14:25-07:00"
 }
