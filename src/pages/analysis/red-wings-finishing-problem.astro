@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleHead from '../../components/ArticleHead.astro';
+import Subscribe from '../../components/Subscribe.astro';
+import MoreAnalysis from '../../components/MoreAnalysis.astro';
+import { article, newsArticle } from '../../lib/articles.js';
+import C from '../../../data/site/articles/red-wings-finishing-problem-copy.json';
+
+const SLUG = 'red-wings-finishing-problem';
+const DESC = article(SLUG).description;
+---
+<Base ogType="article" ogImage={`/og/${SLUG}.png`} ogImageAlt="A rocket lifting off its pad in line art" schema={[newsArticle(SLUG, { description: DESC,
+  about: [{ '@id': 'https://wesandwoodward.com/team/#team' }, { '@type': 'Person', name: 'Lucas Raymond' }, { '@type': 'Person', name: 'John Gibson' }],
+  keywords: ['Detroit Red Wings', 'finishing', 'expected goals', 'medium danger', 'penalty kill', 'John Gibson', 'Michal Postava', 'Lucas Raymond', 'Edmonton Oilers'], wordCount: C.words })]}
+  title={`${C.title} — Wes & Woodward`} description={DESC}>
+  <section class="sec">
+    <div class="shell">
+      <ArticleHead slug={SLUG} title={C.title} />
+      <div class="prose" set:html={C.parts.join('')} />
+      <p class="note mono" style="margin-top:28px">Method: season numbers are MoneyPuck's team, skater and goalie tables and shot-level data through Oct. 28, 2026 (regular season, shootouts excluded), with ranks against all 32 teams; the Edmonton game is MoneyPuck's shot log joined to the NHL play-by-play; penalty-kill rates are 4-on-5; the goalie save percentages on the kill are shots on goal while shorthanded; Gibson's 2025-26 kill numbers are rebuilt game by game from last season's shot file. Danger bands are MoneyPuck's (an expected goal under .08 is low, .08 to .20 medium, .20 and up high). The 160 twelve-game openings are every team's first 12 games of 2021-22 through 2026-27, compared as goals per expected goal against that season's league. Year-to-year correlations are 2024-25 to 2025-26 full seasons, 32 teams. The record splits and the three-game swing use the NHL's standings as of Oct. 29.</p>
+    </div>
+    <div class="shell">
+      <MoreAnalysis slug={SLUG} />
+      <Subscribe />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .prose { max-width: 68ch; font-size: 18px; line-height: 1.65; }
+  .prose :global(p) { margin: 0 0 18px; }
+  .prose :global(ul) { margin: 0 0 18px; padding-left: 24px; }
+  .prose :global(li) { margin: 0 0 6px; }
+  .prose :global(h3.art) { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.1; letter-spacing: -.02em; text-transform: none; margin: 40px 0 16px; }
+  .prose :global(h3.art::before) { content: "// "; color: var(--red); }
+  .prose :global(h4.art) { font-size: clamp(18px, 2vw, 22px); line-height: 1.15; letter-spacing: -.01em; text-transform: none; margin: 28px 0 12px; }
+  .note { color: var(--mute); font-size: 11px; margin: 10px 0 0; text-transform: none; letter-spacing: 0; max-width: 68ch; }
+</style>

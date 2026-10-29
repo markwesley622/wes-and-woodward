@@ -1,0 +1,106 @@
+---
+// A rocket lifting off its pad, in line art, for the finishing-problem column (the process is the launch; the results
+// have to catch up). One flat drawing in a 400x225 frame, black lines on the card grey, red used once (the porthole).
+// Three layers stacked as full-frame SVGs so each animates on its own element transform, never an SVG attribute:
+// the pad and gantry (static), the smoke at the base, and the rocket with its flame. The loop is a CSS animation that
+// pauses off screen. One cycle (6.5s): the rocket sits on the pad, rumbles, the flame lights and the smoke blooms,
+// it climbs slowly, then accelerates out of the top of the frame; the smoke drifts and fades; the rocket is back on
+// the pad for the next count. At rest (reduced motion, link-preview images, data-still) it holds the liftoff pose:
+// a few feet off the pad, flame lit, smoke out to both sides.
+const { id = 'rocket' } = Astro.props;
+---
+<div class="rk" id={id} aria-hidden="true">
+  <svg class="layer pad" viewBox="0 0 400 225">
+    <line x1="30" y1="200" x2="370" y2="200" />
+    <path d="M158 200 L158 206 L242 206 L242 200" />
+    <line x1="170" y1="206" x2="170" y2="200" class="faint" /><line x1="230" y1="206" x2="230" y2="200" class="faint" />
+    <!-- gantry tower, left of the rocket -->
+    <path d="M132 200 L132 92 L150 92 L150 200" />
+    <path d="M132 110 L150 110 M132 128 L150 128 M132 146 L150 146 M132 164 L150 164 M132 182 L150 182" class="faint" />
+    <path d="M132 110 L150 128 M132 146 L150 164" class="faint" />
+    <path d="M150 104 L178 104 M150 152 L178 152" />
+    <!-- horizon marks -->
+    <path d="M30 214 L70 214 M330 214 L370 214" class="faint" />
+  </svg>
+  <svg class="layer smoke" viewBox="0 0 400 225">
+    <path d="M170 198 Q160 184 146 190 Q134 180 124 192 Q110 190 110 200" />
+    <path d="M230 198 Q240 182 254 188 Q268 178 278 192 Q292 190 292 200" />
+    <path d="M100 200 Q96 192 88 196" class="faint" /><path d="M300 200 Q306 192 314 196" class="faint" />
+  </svg>
+  <svg class="layer rocket" viewBox="0 0 400 225">
+    <!-- body, nose, fins, nozzle -->
+    <path d="M184 112 Q200 66 216 112 L216 182 L184 182 Z" />
+    <path d="M184 150 L168 186 L184 178 Z" /><path d="M216 150 L232 186 L216 178 Z" />
+    <path d="M190 182 L186 192 L214 192 L210 182" />
+    <line x1="184" y1="148" x2="216" y2="148" class="faint" />
+    <line x1="200" y1="76" x2="200" y2="84" class="faint" />
+    <circle cx="200" cy="126" r="8" /><circle cx="200" cy="126" r="5" class="port" />
+    <!-- flame: outer tongue and inner tongue, scaled from the nozzle -->
+    <g class="flame">
+      <path d="M188 193 L193 212 L200 198 L207 214 L212 193" />
+      <path d="M194 193 L198 204 L202 196 L206 193" class="faint" />
+    </g>
+  </svg>
+</div>
+
+<style>
+  .rk { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--ghost); border-radius: 3px; }
+  .layer { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .layer path, .layer line, .layer circle { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .layer .faint { stroke-width: 1; opacity: .55; }
+  .layer .port { fill: var(--red); stroke: none; }
+  /* the resting pose: just off the pad, flame lit, smoke out to the sides */
+  .rocket { transform: translateY(-9%); will-change: transform, opacity; }
+  .flame { transform-box: fill-box; transform-origin: 50% 0; opacity: 1; }
+  .smoke { transform-origin: 50% 89%; transform: scale(1.15); opacity: .85; will-change: transform, opacity; }
+  /* the launch: paused until the thumbnail is on screen */
+  .rocket { animation: rk-lift 6.5s infinite paused; }
+  .flame { animation: rk-flame 6.5s infinite paused; }
+  .smoke { animation: rk-smoke 6.5s infinite paused; }
+  .rk[data-live] .rocket, .rk[data-live] .flame, .rk[data-live] .smoke { animation-play-state: running; }
+  .rk[data-still] .rocket, .rk[data-still] .flame, .rk[data-still] .smoke { animation: none; }
+  @keyframes rk-lift {
+    0%   { transform: translate(0, 0); opacity: 1; animation-timing-function: linear; }
+    10%  { transform: translate(0, 0); opacity: 1; animation-timing-function: steps(2, jump-none); }
+    12%  { transform: translate(-.3%, 0); }
+    14%  { transform: translate(.3%, 0); }
+    16%  { transform: translate(-.3%, .2%); }
+    18%  { transform: translate(0, 0); opacity: 1; animation-timing-function: cubic-bezier(.5, 0, .9, .3); }
+    34%  { transform: translate(0, -9%); opacity: 1; animation-timing-function: cubic-bezier(.6, 0, .95, .4); }
+    56%  { transform: translate(0, -150%); opacity: 1; animation-timing-function: linear; }
+    57%  { transform: translate(0, -150%); opacity: 0; }
+    88%  { transform: translate(0, -150%); opacity: 0; }
+    89%  { transform: translate(0, 0); opacity: 0; animation-timing-function: ease-out; }
+    96%, 100% { transform: translate(0, 0); opacity: 1; }
+  }
+  @keyframes rk-flame {
+    0%, 15% { opacity: 0; transform: scaleY(.3); }
+    18%  { opacity: 1; transform: scaleY(1); }
+    24%  { transform: scaleY(.8); }
+    30%  { transform: scaleY(1.15); }
+    38%  { transform: scaleY(.9); }
+    46%  { transform: scaleY(1.3); }
+    56%  { opacity: 1; transform: scaleY(1.4); }
+    57%, 100% { opacity: 0; transform: scaleY(.3); }
+  }
+  @keyframes rk-smoke {
+    0%, 15% { transform: scale(.3); opacity: 0; animation-timing-function: ease-out; }
+    22%  { transform: scale(1); opacity: .9; }
+    34%  { transform: scale(1.15); opacity: .85; animation-timing-function: linear; }
+    62%  { transform: scale(1.7); opacity: .45; }
+    80%  { transform: scale(2.1); opacity: 0; }
+    100% { transform: scale(.3); opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { .rocket, .flame, .smoke { animation: none; } }
+</style>
+
+<script define:vars={{ id }}>
+  // the loop only runs while the thumbnail is on screen; ?t=0..1 freezes it at that point of the cycle for screenshots
+  const el = document.getElementById(id);
+  if (el) {
+    const t = new URLSearchParams(location.search).get('t');
+    const parts = el.querySelectorAll('.rocket, .flame, .smoke');
+    if (t !== null) { parts.forEach((p) => { p.style.animationDelay = `${-(parseFloat(t) * 6.5)}s`; p.style.animationPlayState = 'paused'; }); el.setAttribute('data-live', ''); }
+    else new IntersectionObserver(([e]) => el.toggleAttribute('data-live', e.isIntersecting)).observe(el);
+  }
+</script>

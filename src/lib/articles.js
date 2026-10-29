@@ -10,6 +10,7 @@ import kasper from '../../data/site/articles/marco-kasper-copy.json';
 import larkin from '../../data/site/articles/dylan-larkin-copy.json';
 import rasmussen from '../../data/site/articles/michael-rasmussen-mt-rushmore-copy.json';
 import mbn from '../../data/site/articles/michael-brandsegg-nygard-2026-glowup-copy.json';
+import finishing from '../../data/site/articles/red-wings-finishing-problem-copy.json';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -32,6 +33,8 @@ export const ARTICLES = [
     description: 'Forty-seven forwards have gone 400 minutes without a point since the NHL started tracking ice time. Four kept a real role the whole way. Michael Rasmussen is one of them, and by goals scored with him on the ice, the worst.' },
   { slug: 'michael-brandsegg-nygard-2026-glowup', title: mbn.title, published: '2026-10-26T11:53:58-07:00', modified: '2026-10-26T11:53:58-07:00', thumb: 'web',
     description: 'Michael Brandsegg-Nygård’s first 10 games this season against his first 10 last season: the same shot rate from seven feet closer, a second-line job, and a line that drives play in every score state. The glow-up is real. The plus-10 is not the proof.' },
+  { slug: 'red-wings-finishing-problem', title: finishing.title, published: '2026-10-29T12:40:35-07:00', modified: '2026-10-29T12:40:35-07:00', thumb: 'rocket',
+    description: 'Edmonton was the process working: zero high-danger shots against, three goals on three expected, a rookie goalie’s first win. Underneath it, a medium-danger conversion rate of 6.6%, 30th in the league, and a penalty kill behind a .633 goalie. What is real, what fixes itself, and what it costs in the standings.' },
 ];
 
 export const article = (slug) => ARTICLES.find((a) => a.slug === slug);
