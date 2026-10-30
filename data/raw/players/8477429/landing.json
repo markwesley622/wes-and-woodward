@@ -55,34 +55,34 @@
    "subSeason": {
     "assists": 1,
     "gameWinningGoals": 1,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 2,
     "otGoals": 0,
     "pim": 4,
-    "plusMinus": -5,
+    "plusMinus": -6,
     "points": 3,
     "powerPlayGoals": 0,
     "powerPlayPoints": 1,
-    "shootingPctg": 0.090909,
+    "shootingPctg": 0.086957,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 22
+    "shots": 23
    },
    "career": {
     "assists": 221,
     "gameWinningGoals": 23,
-    "gamesPlayed": 791,
+    "gamesPlayed": 792,
     "goals": 125,
     "otGoals": 3,
     "pim": 177,
-    "plusMinus": 71,
+    "plusMinus": 70,
     "points": 346,
     "powerPlayGoals": 13,
     "powerPlayPoints": 41,
-    "shootingPctg": 0.1072,
+    "shootingPctg": 0.10710000000000001,
     "shorthandedGoals": 9,
     "shorthandedPoints": 17,
-    "shots": 1166
+    "shots": 1167
    }
   }
  },
@@ -90,20 +90,20 @@
   "regularSeason": {
    "assists": 221,
    "avgToi": "15:11",
-   "faceoffWinningPctg": 0.5197999999999999,
+   "faceoffWinningPctg": 0.5196000000000001,
    "gameWinningGoals": 23,
-   "gamesPlayed": 791,
+   "gamesPlayed": 792,
    "goals": 125,
    "otGoals": 3,
    "pim": 177,
-   "plusMinus": 71,
+   "plusMinus": 70,
    "points": 346,
    "powerPlayGoals": 13,
    "powerPlayPoints": 41,
-   "shootingPctg": 0.1072,
+   "shootingPctg": 0.10710000000000001,
    "shorthandedGoals": 9,
    "shorthandedPoints": 17,
-   "shots": 1166
+   "shots": 1167
   },
   "playoffs": {
    "assists": 17,
@@ -128,6 +128,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-10-29",
+   "gameId": 2026020203,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "CHI",
+   "pim": 0,
+   "plusMinus": -1,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 24,
+   "shorthandedGoals": 0,
+   "shots": 1,
+   "teamAbbrev": "DET",
+   "toi": "18:08"
+  },
   {
    "assists": 0,
    "gameDate": "2026-10-26",
@@ -199,24 +217,6 @@
    "shots": 0,
    "teamAbbrev": "DET",
    "toi": "15:27"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-10-17",
-   "gameId": 2026020127,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "H",
-   "opponentAbbrev": "SJS",
-   "pim": 2,
-   "plusMinus": 0,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 26,
-   "shorthandedGoals": 0,
-   "shots": 2,
-   "teamAbbrev": "DET",
-   "toi": "20:53"
   }
  ],
  "seasonTotals": [
@@ -1101,25 +1101,25 @@
   },
   {
    "assists": 1,
-   "avgToi": "18:17",
-   "faceoffWinningPctg": 0.533708,
+   "avgToi": "18:16",
+   "faceoffWinningPctg": 0.52551,
    "gameTypeId": 2,
    "gameWinningGoals": 1,
-   "gamesPlayed": 12,
+   "gamesPlayed": 13,
    "goals": 2,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
    "pim": 4,
-   "plusMinus": -5,
+   "plusMinus": -6,
    "points": 3,
    "powerPlayGoals": 0,
    "powerPlayPoints": 1,
    "season": 20262027,
    "sequence": 1,
-   "shootingPctg": 0.090909,
+   "shootingPctg": 0.086957,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 22,
+   "shots": 23,
    "teamCommonName": {
     "default": "Red Wings"
    },
@@ -1215,6 +1215,16 @@
    "playerSlug": "alex-debrincat-8479337"
   },
   {
+   "playerId": 8480326,
+   "lastName": {
+    "default": "Dries"
+   },
+   "firstName": {
+    "default": "Sheldon"
+   },
+   "playerSlug": "sheldon-dries-8480326"
+  },
+  {
    "playerId": 8477971,
    "lastName": {
     "default": "Englund"
@@ -1295,16 +1305,6 @@
    "playerSlug": "keegan-kolesar-8478434"
   },
   {
-   "playerId": 8477946,
-   "lastName": {
-    "default": "Larkin"
-   },
-   "firstName": {
-    "default": "Dylan"
-   },
-   "playerSlug": "dylan-larkin-8477946"
-  },
-  {
    "playerId": 8482802,
    "lastName": {
     "default": "Mazur"
@@ -1313,16 +1313,6 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
-  },
-  {
-   "playerId": 8485545,
-   "lastName": {
-    "default": "Postava"
-   },
-   "firstName": {
-    "default": "Michal"
-   },
-   "playerSlug": "michal-postava-8485545"
   },
   {
    "playerId": 8479992,

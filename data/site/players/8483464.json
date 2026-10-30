@@ -83,83 +83,83 @@
  "hsc": {
   "Game score": {
    "value": 0.63,
-   "percentile": 69
+   "percentile": 68
   },
   "Offense": {
    "value": -0.3,
-   "percentile": 51
+   "percentile": 52
   },
   "Defense": {
    "value": -0.0,
-   "percentile": 50
+   "percentile": 49
   },
   "Net": {
    "value": -0.3,
-   "percentile": 50
+   "percentile": 51
   }
  },
  "score": null,
  "standIn": {
-  "value": 34.6,
+  "value": 34.3,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 509,
-  "pool": 729,
-  "percentile": 30.2,
+  "rank": 504,
+  "pool": 732,
+  "percentile": 31.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 507,
-    "name": "Noah Warren",
-    "team": "ANA",
+    "rank": 502,
+    "name": "Dylan DeMelo",
+    "team": "WPG",
     "pos": "D",
-    "gp": 12,
-    "value": 34.9,
-    "gs60": 0.81,
+    "gp": 13,
+    "value": 34.5,
+    "gs60": 0.77,
     "isMe": false
    },
    {
-    "rank": 508,
-    "name": "Erik Haula",
-    "team": "LAK",
+    "rank": 503,
+    "name": "Paul Cotter",
+    "team": "VAN",
     "pos": "L",
-    "gp": 11,
-    "value": 34.8,
-    "gs60": 0.78,
+    "gp": 14,
+    "value": 34.4,
+    "gs60": 0.75,
     "isMe": false
    },
    {
-    "rank": 509,
+    "rank": 504,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
     "gp": 1,
-    "value": 34.6,
+    "value": 34.3,
     "gs60": 0.73,
     "isMe": true
    },
    {
-    "rank": 510,
+    "rank": 505,
     "name": "Jonny Brodzinski",
     "team": "WSH",
     "pos": "C",
     "gp": 2,
-    "value": 34.5,
+    "value": 34.2,
     "gs60": 0.7,
     "isMe": false
    },
    {
-    "rank": 511,
-    "name": "Hunter McDonald",
-    "team": "PHI",
-    "pos": "D",
+    "rank": 506,
+    "name": "Tyson Kozak",
+    "team": "BUF",
+    "pos": "C",
     "gp": 5,
-    "value": 34.5,
-    "gs60": 0.69,
+    "value": 34.2,
+    "gs60": 0.7,
     "isMe": false
    }
   ],
@@ -271,5 +271,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-29T05:12:53-07:00"
+ "updatedAt": "2026-10-30T05:02:42-07:00"
 }

@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 7,
+  "gp": 8,
   "goals": 2,
-  "assists": 1,
-  "points": 3,
-  "plusMinus": -1,
+  "assists": 2,
+  "points": 4,
+  "plusMinus": 0,
   "pim": 0,
   "shots": 7,
   "shootingPct": 0.285714,
-  "toiPerGame": "14:32",
+  "toiPerGame": "14:54",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 7,
+   "gp": 8,
    "goals": 2,
-   "assists": 1,
-   "points": 3,
-   "plusMinus": -1,
+   "assists": 2,
+   "points": 4,
+   "plusMinus": 0,
    "pim": 0
   }
  ],
@@ -60,21 +60,21 @@
   "name": "William Wallinder",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482171.png",
-  "gamesPlayed": 7,
+  "gamesPlayed": 8,
   "goals": 2,
-  "assists": 1,
-  "points": 3,
+  "assists": 2,
+  "points": 4,
   "shots": 7,
   "shootingPct": 0.285714,
-  "toiPerGame": 871.7,
-  "ixG": 0.24,
-  "goalsAboveExpected": 1.76,
-  "gameScore": 3.93,
+  "toiPerGame": 893.6,
+  "ixG": 0.25,
+  "goalsAboveExpected": 1.75,
+  "gameScore": 4.78,
   "fiveOnFive": {
-   "icetimeMinutes": 89.7,
-   "onIceXgPct": 0.66,
-   "onIceCorsiPct": 0.57,
-   "ixgPer60": 0.147,
+   "icetimeMinutes": 106.7,
+   "onIceXgPct": 0.67,
+   "onIceCorsiPct": 0.56,
+   "ixgPer60": 0.135,
    "pctl_onIceXgPct": 100.0,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.24,
-   "percentile": 44
+   "value": 0.26,
+   "percentile": 45
   },
   "Offense": {
-   "value": 0.4,
-   "percentile": 72
+   "value": 0.6,
+   "percentile": 75
   },
   "Defense": {
    "value": -0.2,
    "percentile": 39
   },
   "Net": {
-   "value": 0.2,
-   "percentile": 64
+   "value": 0.4,
+   "percentile": 68
   }
  },
  "score": null,
  "standIn": {
-  "value": 42.8,
-  "gs": 2.82,
-  "gs60": 1.66,
-  "gameScore": 2.82,
-  "minutes": 102,
-  "gp": 7,
-  "rank": 382,
-  "pool": 729,
-  "percentile": 47.6,
+  "value": 44.6,
+  "gs": 3.44,
+  "gs60": 1.73,
+  "gameScore": 3.44,
+  "minutes": 119,
+  "gp": 8,
+  "rank": 356,
+  "pool": 732,
+  "percentile": 51.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 380,
-    "name": "Josh Norris",
-    "team": "BUF",
-    "pos": "C",
-    "gp": 12,
-    "value": 42.9,
-    "gs60": 2.83,
-    "isMe": false
-   },
-   {
-    "rank": 381,
-    "name": "Alex Ovechkin",
-    "team": "WSH",
+    "rank": 354,
+    "name": "J.T. Compher",
+    "team": "DET",
     "pos": "L",
-    "gp": 11,
-    "value": 42.9,
-    "gs60": 2.83,
+    "gp": 6,
+    "value": 44.7,
+    "gs60": 3.46,
     "isMe": false
    },
    {
-    "rank": 382,
+    "rank": 355,
+    "name": "Raphael Lavoie",
+    "team": "VGK",
+    "pos": "C",
+    "gp": 10,
+    "value": 44.6,
+    "gs60": 3.45,
+    "isMe": false
+   },
+   {
+    "rank": 356,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
-    "gp": 7,
-    "value": 42.8,
-    "gs60": 2.82,
+    "gp": 8,
+    "value": 44.6,
+    "gs60": 3.44,
     "isMe": true
    },
    {
-    "rank": 383,
-    "name": "Colton Parayko",
-    "team": "STL",
-    "pos": "D",
+    "rank": 357,
+    "name": "Trevor Moore",
+    "team": "LAK",
+    "pos": "L",
     "gp": 12,
-    "value": 42.8,
-    "gs60": 2.81,
+    "value": 44.5,
+    "gs60": 3.44,
     "isMe": false
    },
    {
-    "rank": 384,
-    "name": "Ilya Protas",
-    "team": "WSH",
-    "pos": "L",
-    "gp": 11,
-    "value": 42.8,
-    "gs60": 2.81,
+    "rank": 358,
+    "name": "Casey Cizikas",
+    "team": "NYI",
+    "pos": "C",
+    "gp": 13,
+    "value": 44.5,
+    "gs60": 3.43,
     "isMe": false
    }
   ],
@@ -337,12 +337,36 @@
     "moneypuck": 0.075,
     "hockeystatcards": 0.66
    }
+  },
+  {
+   "gameId": 2026020203,
+   "date": "2026-10-29",
+   "opponent": "CHI",
+   "home": true,
+   "goals": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": 1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 17.4,
+   "ixg": 0.01,
+   "xgf": 0.69,
+   "xga": 0.43,
+   "gf": 1.0,
+   "ga": 1.0,
+   "blocks": 1.0,
+   "gameScore": 0.62,
+   "gameScoreParts": {
+    "moneypuck": 0.85,
+    "hockeystatcards": 0.4
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.4,
-  "games": 7,
+  "average": 0.43,
+  "games": 8,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
@@ -356,7 +380,7 @@
   "above2": 1,
   "below0": 1
  },
- "detGames": 7,
+ "detGames": 8,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -369,5 +393,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-29T05:15:43-07:00"
+ "updatedAt": "2026-10-30T05:05:24-07:00"
 }

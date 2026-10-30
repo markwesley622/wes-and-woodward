@@ -83,82 +83,82 @@
  "hsc": {
   "Game score": {
    "value": 0.47,
-   "percentile": 59
+   "percentile": 60
   },
   "Offense": {
    "value": 0.2,
-   "percentile": 68
+   "percentile": 66
   },
   "Defense": {
    "value": 0.5,
-   "percentile": 73
+   "percentile": 72
   },
   "Net": {
    "value": 0.7,
-   "percentile": 73
+   "percentile": 72
   }
  },
  "score": null,
  "standIn": {
-  "value": 51.8,
+  "value": 50.7,
   "gs": 4.99,
   "gs60": 1.74,
   "gameScore": 4.99,
   "minutes": 172,
   "gp": 11,
-  "rank": 285,
-  "pool": 729,
-  "percentile": 60.9,
+  "rank": 293,
+  "pool": 732,
+  "percentile": 59.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 283,
-    "name": "Teuvo Teravainen",
-    "team": "CHI",
-    "pos": "C",
-    "gp": 10,
-    "value": 51.8,
-    "gs60": 5.0,
+    "rank": 291,
+    "name": "Charle-Edouard D'Astous",
+    "team": "TBL",
+    "pos": "D",
+    "gp": 11,
+    "value": 51.0,
+    "gs60": 5.06,
     "isMe": false
    },
    {
-    "rank": 284,
-    "name": "Colton Sissons",
-    "team": "TOR",
+    "rank": 292,
+    "name": "Ross Colton",
+    "team": "NSH",
     "pos": "C",
-    "gp": 15,
-    "value": 51.8,
-    "gs60": 4.99,
+    "gp": 13,
+    "value": 50.9,
+    "gs60": 5.05,
     "isMe": false
    },
    {
-    "rank": 285,
+    "rank": 293,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 51.8,
+    "value": 50.7,
     "gs60": 4.99,
     "isMe": true
    },
    {
-    "rank": 286,
+    "rank": 294,
+    "name": "Colton Sissons",
+    "team": "TOR",
+    "pos": "C",
+    "gp": 15,
+    "value": 50.7,
+    "gs60": 4.99,
+    "isMe": false
+   },
+   {
+    "rank": 295,
     "name": "Ryan Strome",
     "team": "CGY",
     "pos": "C",
     "gp": 12,
-    "value": 51.7,
-    "gs60": 4.96,
-    "isMe": false
-   },
-   {
-    "rank": 287,
-    "name": "Ben Kindel",
-    "team": "PIT",
-    "pos": "C",
-    "gp": 9,
-    "value": 51.7,
+    "value": 50.6,
     "gs60": 4.96,
     "isMe": false
    }
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-29T05:14:52-07:00"
+ "updatedAt": "2026-10-30T05:04:32-07:00"
 }

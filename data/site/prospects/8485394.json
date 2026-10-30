@@ -31,11 +31,11 @@
   {
    "league": "SHL",
    "team": "Timr\u00e5 IK",
-   "gp": 12,
+   "gp": 13,
    "g": 4,
    "a": 4,
    "pts": 8,
-   "pm": -3,
+   "pm": -2,
    "pim": 6,
    "gaa": null,
    "svp": null,
@@ -123,11 +123,11 @@
     {
      "league": "SHL",
      "team": "Timr\u00e5 IK",
-     "gp": 12,
+     "gp": 13,
      "g": 4,
      "a": 4,
      "pts": 8,
-     "pm": -3,
+     "pm": -2,
      "pim": 6,
      "gaa": null,
      "svp": null,
@@ -220,18 +220,18 @@
   "table": "SHL",
   "coef": 0.566,
   "team": "Timr\u00e5 IK",
-  "gp": 12,
+  "gp": 13,
   "g": 4,
   "a": 4,
   "pts": 8,
-  "pgp": 0.667,
-  "lineGp": 12,
-  "nhle": 0.377,
-  "nhlePace": 31.7,
+  "pgp": 0.615,
+  "lineGp": 13,
+  "nhle": 0.348,
+  "nhlePace": 29.2,
   "lines": [
    "SHL"
   ],
-  "feature": 0.377
+  "feature": 0.348
  },
  "league": {
   "name": "SHL",
@@ -256,8 +256,8 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 15,
-   "gp": 12,
-   "value": 0.6667,
+   "gp": 13,
+   "value": 0.6154,
    "percentile": 86.7,
    "percentileAllAges": 91.5,
    "allAgesN": 234
@@ -265,55 +265,25 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 55.9,
-  "median": 67.2,
-  "p75": 85.7,
+  "expected": 49.8,
+  "median": 54.7,
+  "p75": 82.0,
   "p90": 94.3,
-  "pRegular": 0.82,
-  "pTopLine": 0.38,
-  "pAboveAvg": 0.64,
-  "pElite": 0.24,
+  "pRegular": 0.76,
+  "pTopLine": 0.34,
+  "pAboveAvg": 0.56,
+  "pElite": 0.22,
   "poolN": 1305,
   "group": "F",
   "age": 19,
   "pickWeight": 0.5,
   "tier": "top-line",
-  "pCeiling": 0.38,
+  "pCeiling": 0.34,
   "featureBand": [
-   0.281,
-   0.45
+   0.267,
+   0.4
   ],
   "examples": [
-   {
-    "name": "Jakob Silfverberg",
-    "year": 2009,
-    "pick": 39,
-    "league": "Elitserien",
-    "feature": 0.363,
-    "peak": 72.2,
-    "tier": "above average",
-    "nhlGp": 820
-   },
-   {
-    "name": "Jesper Boqvist",
-    "year": 2017,
-    "pick": 36,
-    "league": "SHL",
-    "feature": 0.388,
-    "peak": 42.6,
-    "tier": "below average",
-    "nhlGp": 387
-   },
-   {
-    "name": "Aleksi Heponiemi",
-    "year": 2017,
-    "pick": 40,
-    "league": "Liiga",
-    "feature": 0.398,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 25
-   },
    {
     "name": "Jonathan Dahl\u00e9n",
     "year": 2016,
@@ -325,36 +295,6 @@
     "nhlGp": 61
    },
    {
-    "name": "Marko Dano",
-    "year": 2013,
-    "pick": 27,
-    "league": "AHL",
-    "feature": 0.384,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 141
-   },
-   {
-    "name": "Carl Grundstr\u00f6m",
-    "year": 2016,
-    "pick": 57,
-    "league": "SHL",
-    "feature": 0.399,
-    "peak": 30.5,
-    "tier": "below average",
-    "nhlGp": 343
-   },
-   {
-    "name": "Johan Larsson",
-    "year": 2010,
-    "pick": 56,
-    "league": "Elitserien",
-    "feature": 0.4,
-    "peak": 22.4,
-    "tier": "replacement level",
-    "nhlGp": 488
-   },
-   {
     "name": "Alexandre Texier",
     "year": 2017,
     "pick": 45,
@@ -363,6 +303,66 @@
     "peak": 51.0,
     "tier": "above average",
     "nhlGp": 285
+   },
+   {
+    "name": "Kirill Marchenko",
+    "year": 2018,
+    "pick": 49,
+    "league": "KHL",
+    "feature": 0.344,
+    "peak": 90.1,
+    "tier": "elite",
+    "nhlGp": 295
+   },
+   {
+    "name": "Pontus \u00c5berg",
+    "year": 2012,
+    "pick": 37,
+    "league": "SHL",
+    "feature": 0.337,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 132
+   },
+   {
+    "name": "Jakob Silfverberg",
+    "year": 2009,
+    "pick": 39,
+    "league": "Elitserien",
+    "feature": 0.363,
+    "peak": 72.2,
+    "tier": "above average",
+    "nhlGp": 820
+   },
+   {
+    "name": "Joni Ikonen",
+    "year": 2017,
+    "pick": 58,
+    "league": "Liiga",
+    "feature": 0.339,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jori Lehter\u00e4",
+    "year": 2008,
+    "pick": 65,
+    "league": "SM-liiga",
+    "feature": 0.343,
+    "peak": 73.4,
+    "tier": "top-line",
+    "nhlGp": 307
+   },
+   {
+    "name": "Maxime Comtois",
+    "year": 2017,
+    "pick": 50,
+    "league": "QMJHL",
+    "feature": 0.328,
+    "peak": 70.2,
+    "tier": "above average",
+    "nhlGp": 211
    }
   ]
  },
@@ -383,8 +383,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 55.9,
-  "expected": 47.8,
+  "cohortExpected": 49.8,
+  "expected": 43.3,
   "tier": "below average"
  },
  "trajectory": {
@@ -405,11 +405,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 12,
+  "gp": 13,
   "season": "2026-2027"
  },
  "rank": 3,
- "score": 47.8,
+ "score": 43.3,
  "rankStart": 5,
  "rankStartDate": "2026-10-06"
 }

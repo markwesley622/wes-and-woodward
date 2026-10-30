@@ -27,7 +27,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 8,
+  "gp": 9,
   "goals": null,
   "assists": null,
   "points": null,
@@ -37,25 +37,25 @@
   "shootingPct": null,
   "toiPerGame": null,
   "ppPoints": null,
-  "wins": 3,
+  "wins": 4,
   "losses": 4,
   "otLosses": 1,
-  "gaa": 3.443394,
-  "savePct": 0.867021,
+  "gaa": 3.147594,
+  "savePct": 0.874396,
   "shutouts": 0
  },
  "score": {
-  "value": 25.2,
-  "low": 9.8,
-  "high": 50.9,
-  "gsax": -4.2,
-  "xGoals": 20.8,
-  "goals": 25.0,
-  "minutes": 436,
-  "pool": 4,
+  "value": 19.9,
+  "low": 7.6,
+  "high": 43.0,
+  "gsax": -3.3,
+  "xGoals": 22.7,
+  "goals": 26.0,
+  "minutes": 496,
+  "pool": 7,
   "rank": null,
-  "percentile": 25.0,
-  "reliability": 0.23,
+  "percentile": 14.3,
+  "reliability": 0.25,
   "group": "goalies",
   "neighbours": [],
   "method": "A 0-100 rating where 50 is the average NHL goalie with 600+ minutes; built on goals saved above expected (MoneyPuck, all situations), this season only."
@@ -64,16 +64,16 @@
   "playerId": 8476434,
   "name": "John Gibson",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8476434.png",
-  "gamesPlayed": 8,
-  "gamesStarted": 8,
-  "wins": 3,
+  "gamesPlayed": 9,
+  "gamesStarted": 9,
+  "wins": 4,
   "losses": 4,
   "otLosses": 1,
-  "savePct": 0.867021,
-  "gaa": 3.443394,
+  "savePct": 0.874396,
+  "gaa": 3.147594,
   "shutouts": 0,
-  "gsax": -4.23,
-  "pctl_gsax": 25.0,
+  "gsax": -3.3,
+  "pctl_gsax": 14.3,
   "qualifiesForPercentiles": false
  },
  "gameLog": [
@@ -180,6 +180,19 @@
    "savePct": 0.84,
    "shutout": 0,
    "toi": 60.0
+  },
+  {
+   "gameId": 2026020203,
+   "date": "2026-10-29",
+   "opponent": "CHI",
+   "home": true,
+   "started": 1,
+   "decision": "W",
+   "shotsAgainst": 19,
+   "goalsAgainst": 1,
+   "savePct": 0.947368,
+   "shutout": 0,
+   "toi": 60.0
   }
  ],
  "gameScore": null,
@@ -190,7 +203,7 @@
  "myComponents": null,
  "hsc": {},
  "note": null,
- "detGames": 8,
+ "detGames": 9,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -203,5 +216,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-29T05:15:44-07:00"
+ "updatedAt": "2026-10-30T05:05:25-07:00"
 }

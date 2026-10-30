@@ -87,79 +87,79 @@
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 43
+   "percentile": 44
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 46
+   "percentile": 44
   },
   "Net": {
-   "value": -0.5,
+   "value": -0.6,
    "percentile": 43
   }
  },
  "score": null,
  "standIn": {
-  "value": 33.0,
+  "value": 32.8,
   "gs": 0.3,
   "gs60": 0.91,
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 550,
-  "pool": 729,
-  "percentile": 24.6,
+  "rank": 546,
+  "pool": 732,
+  "percentile": 25.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 548,
+    "rank": 544,
+    "name": "Jonathan Marchessault",
+    "team": "NSH",
+    "pos": "R",
+    "gp": 13,
+    "value": 32.9,
+    "gs60": 0.31,
+    "isMe": false
+   },
+   {
+    "rank": 545,
     "name": "Justin Dowling",
     "team": "NYR",
     "pos": "C",
     "gp": 4,
-    "value": 33.0,
+    "value": 32.8,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 549,
-    "name": "Connor Clifton",
-    "team": "BOS",
-    "pos": "D",
-    "gp": 6,
-    "value": 33.0,
-    "gs60": 0.3,
-    "isMe": false
-   },
-   {
-    "rank": 550,
+    "rank": 546,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 33.0,
+    "value": 32.8,
     "gs60": 0.3,
     "isMe": true
    },
    {
-    "rank": 551,
-    "name": "Cody Ceci",
-    "team": "LAK",
-    "pos": "D",
-    "gp": 7,
-    "value": 32.9,
+    "rank": 547,
+    "name": "Mavrik Bourque",
+    "team": "NSH",
+    "pos": "C",
+    "gp": 9,
+    "value": 32.8,
     "gs60": 0.28,
     "isMe": false
    },
    {
-    "rank": 552,
-    "name": "Brett Kulak",
-    "team": "COL",
-    "pos": "D",
-    "gp": 13,
+    "rank": 548,
+    "name": "Ryan Lomberg",
+    "team": "CBJ",
+    "pos": "L",
+    "gp": 11,
     "value": 32.8,
-    "gs60": 0.24,
+    "gs60": 0.28,
     "isMe": false
    }
   ],
@@ -370,5 +370,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-29T05:10:44-07:00"
+ "updatedAt": "2026-10-30T05:00:47-07:00"
 }

@@ -31,11 +31,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 12,
+   "gp": 13,
    "g": 1,
    "a": 3,
    "pts": 4,
-   "pm": 2,
+   "pm": 3,
    "pim": 12,
    "gaa": null,
    "svp": null,
@@ -89,11 +89,11 @@
     {
      "league": "NHL",
      "team": "Detroit Red Wings",
-     "gp": 12,
+     "gp": 13,
      "g": 1,
      "a": 3,
      "pts": 4,
-     "pm": 2,
+     "pm": 3,
      "pim": 12,
      "gaa": null,
      "svp": null,
@@ -490,10 +490,10 @@
   "sinceDraft": 3,
   "pedigreeExpected": 12.3,
   "cohortExpected": 25.4,
-  "expected": 27.6,
+  "expected": 28.5,
   "tier": "below average",
-  "nhlW": 0.38,
-  "nhlExpected": 31.2,
+  "nhlW": 0.39,
+  "nhlExpected": 33.4,
   "beforeNhl": 25.4
  },
  "trajectory": {
@@ -512,51 +512,40 @@
   "delta": 0.106
  },
  "nhlSample": {
-  "gp": 12,
+  "gp": 13,
   "pts": 4,
   "seasons": [
    20262027
   ],
   "thisSeason": {
-   "gp": 12,
+   "gp": 13,
    "pts": 4,
-   "toi": "14:07",
+   "toi": "14:14",
    "savePct": null
   }
  },
  "nhlUsage": {
   "n": 50,
-  "expected": 31.2,
-  "median": 34.5,
-  "p75": 56.1,
-  "p90": 70.7,
-  "pRegular": 0.64,
-  "pTopLine": 0.06,
-  "pAboveAvg": 0.34,
+  "expected": 33.4,
+  "median": 38.1,
+  "p75": 56.2,
+  "p90": 71.1,
+  "pRegular": 0.66,
+  "pTopLine": 0.08,
+  "pAboveAvg": 0.36,
   "pElite": 0.0,
   "poolN": 258,
   "group": "D",
   "age": 22,
-  "gp": 12,
-  "toi": 847,
-  "ppg": 0.333,
-  "ppgShrunk": 0.246,
+  "gp": 13,
+  "toi": 854,
+  "ppg": 0.308,
+  "ppgShrunk": 0.238,
   "toiBand": [
    725,
    1001
   ],
   "examples": [
-   {
-    "name": "Caleb Jones",
-    "season": "2019-2020",
-    "age": 22,
-    "gp": 43,
-    "toi": 848,
-    "ppg": 0.21,
-    "peak": 45.5,
-    "tier": "below average",
-    "nhlGp": 255
-   },
    {
     "name": "Jordan Schmaltz",
     "season": "2016-2017",
@@ -567,6 +556,17 @@
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 42
+   },
+   {
+    "name": "Caleb Jones",
+    "season": "2019-2020",
+    "age": 22,
+    "gp": 43,
+    "toi": 848,
+    "ppg": 0.21,
+    "peak": 45.5,
+    "tier": "below average",
+    "nhlGp": 255
    },
    {
     "name": "Madison Bowey",
@@ -613,17 +613,6 @@
     "nhlGp": 73
    },
    {
-    "name": "Christian Wolanin",
-    "season": "2017-2018",
-    "age": 22,
-    "gp": 10,
-    "toi": 879,
-    "ppg": 0.3,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 86
-   },
-   {
     "name": "Christian Jaros",
     "season": "2018-2019",
     "age": 22,
@@ -633,18 +622,29 @@
     "peak": 13.7,
     "tier": "replacement level",
     "nhlGp": 94
+   },
+   {
+    "name": "Brett Kulak",
+    "season": "2016-2017",
+    "age": 22,
+    "gp": 21,
+    "toi": 855,
+    "ppg": 0.14,
+    "peak": 51.5,
+    "tier": "above average",
+    "nhlGp": 665
    }
   ],
-  "w": 0.38,
+  "w": 0.39,
   "before": 25.4,
-  "after": 27.6
+  "after": 28.5
  },
  "availability": {
   "gp": 42,
   "season": "2025-2026"
  },
- "rank": 9,
- "score": 27.6,
+ "rank": 8,
+ "score": 28.5,
  "rankStart": 10,
  "rankStartDate": "2026-10-06"
 }

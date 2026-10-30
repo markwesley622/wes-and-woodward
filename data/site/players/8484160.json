@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 10,
+  "gp": 11,
   "goals": 0,
   "assists": 2,
   "points": 2,
   "plusMinus": -3,
   "pim": 2,
-  "shots": 5,
+  "shots": 6,
   "shootingPct": 0.0,
-  "toiPerGame": "10:16",
+  "toiPerGame": "10:46",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 10,
+   "gp": 11,
    "goals": 0,
    "assists": 2,
    "points": 2,
@@ -60,21 +60,21 @@
   "name": "Nate Danielson",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484160.png",
-  "gamesPlayed": 10,
+  "gamesPlayed": 11,
   "goals": 0,
   "assists": 2,
   "points": 2,
-  "shots": 5,
+  "shots": 6,
   "shootingPct": 0.0,
-  "toiPerGame": 616.2,
-  "ixG": 0.29,
-  "goalsAboveExpected": -0.29,
-  "gameScore": 1.09,
+  "toiPerGame": 646.2,
+  "ixG": 0.61,
+  "goalsAboveExpected": -0.61,
+  "gameScore": 1.41,
   "fiveOnFive": {
-   "icetimeMinutes": 98.5,
-   "onIceXgPct": 0.47,
+   "icetimeMinutes": 111.8,
+   "onIceXgPct": 0.5,
    "onIceCorsiPct": 0.5,
-   "ixgPer60": 0.177,
+   "ixgPer60": 0.268,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -83,83 +83,83 @@
  "hsc": {
   "Game score": {
    "value": -0.16,
-   "percentile": 20
+   "percentile": 19
   },
   "Offense": {
-   "value": -1.3,
-   "percentile": 11
+   "value": -1.4,
+   "percentile": 9
   },
   "Defense": {
    "value": -0.2,
-   "percentile": 38
+   "percentile": 39
   },
   "Net": {
-   "value": -1.5,
+   "value": -1.7,
    "percentile": 15
   }
  },
  "score": null,
  "standIn": {
-  "value": 30.9,
-  "gs": -0.29,
-  "gs60": -0.17,
-  "gameScore": -0.29,
-  "minutes": 103,
-  "gp": 10,
-  "rank": 584,
-  "pool": 729,
-  "percentile": 19.9,
+  "value": 31.1,
+  "gs": -0.2,
+  "gs60": -0.1,
+  "gameScore": -0.2,
+  "minutes": 118,
+  "gp": 11,
+  "rank": 590,
+  "pool": 732,
+  "percentile": 19.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 582,
-    "name": "Dylan Peterson",
-    "team": "STL",
+    "rank": 588,
+    "name": "Travis Sanheim",
+    "team": "PHI",
+    "pos": "D",
+    "gp": 15,
+    "value": 31.1,
+    "gs60": -0.2,
+    "isMe": false
+   },
+   {
+    "rank": 589,
+    "name": "Connor Clifton",
+    "team": "BOS",
+    "pos": "D",
+    "gp": 7,
+    "value": 31.1,
+    "gs60": -0.2,
+    "isMe": false
+   },
+   {
+    "rank": 590,
+    "name": "Nate Danielson",
+    "team": "DET",
     "pos": "C",
-    "gp": 3,
-    "value": 31.0,
+    "gp": 11,
+    "value": 31.1,
+    "gs60": -0.2,
+    "isMe": true
+   },
+   {
+    "rank": 591,
+    "name": "Anton Johansson",
+    "team": "DET",
+    "pos": "D",
+    "gp": 13,
+    "value": 30.9,
     "gs60": -0.25,
     "isMe": false
    },
    {
-    "rank": 583,
-    "name": "Nikita Klepov",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 4,
-    "value": 30.9,
-    "gs60": -0.29,
-    "isMe": false
-   },
-   {
-    "rank": 584,
-    "name": "Nate Danielson",
-    "team": "DET",
+    "rank": 592,
+    "name": "Dylan Peterson",
+    "team": "STL",
     "pos": "C",
-    "gp": 10,
+    "gp": 3,
     "value": 30.9,
-    "gs60": -0.29,
-    "isMe": true
-   },
-   {
-    "rank": 585,
-    "name": "Mats Zuccarello",
-    "team": "LAK",
-    "pos": "R",
-    "gp": 6,
-    "value": 30.8,
-    "gs60": -0.3,
-    "isMe": false
-   },
-   {
-    "rank": 586,
-    "name": "Daemon Hunt",
-    "team": "NSH",
-    "pos": "D",
-    "gp": 13,
-    "value": 30.8,
-    "gs60": -0.31,
+    "gs60": -0.25,
     "isMe": false
    }
   ],
@@ -425,12 +425,36 @@
     "moneypuck": -0.34,
     "hockeystatcards": -0.52
    }
+  },
+  {
+   "gameId": 2026020203,
+   "date": "2026-10-29",
+   "opponent": "CHI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 0,
+   "toi": 15.8,
+   "ixg": 0.11,
+   "xgf": 0.74,
+   "xga": 0.59,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 0.09,
+   "gameScoreParts": {
+    "moneypuck": 0.325,
+    "hockeystatcards": -0.15
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.03,
-  "games": 10,
+  "average": -0.02,
+  "games": 11,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
@@ -444,7 +468,7 @@
   "above2": 0,
   "below0": 7
  },
- "detGames": 10,
+ "detGames": 11,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -457,5 +481,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-29T05:11:55-07:00"
+ "updatedAt": "2026-10-30T05:01:49-07:00"
 }

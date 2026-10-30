@@ -83,83 +83,83 @@
  "hsc": {
   "Game score": {
    "value": 0.79,
-   "percentile": 76
+   "percentile": 75
   },
   "Offense": {
    "value": 0.4,
-   "percentile": 71
+   "percentile": 70
   },
   "Defense": {
    "value": 0.5,
-   "percentile": 73
+   "percentile": 72
   },
   "Net": {
    "value": 0.9,
-   "percentile": 76
+   "percentile": 75
   }
  },
  "score": null,
  "standIn": {
-  "value": 67.4,
+  "value": 65.7,
   "gs": 8.91,
   "gs60": 2.46,
   "gameScore": 8.91,
   "minutes": 217,
   "gp": 10,
-  "rank": 139,
-  "pool": 729,
-  "percentile": 80.9,
+  "rank": 159,
+  "pool": 732,
+  "percentile": 78.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 137,
-    "name": "Mattias Ekholm",
-    "team": "EDM",
+    "rank": 157,
+    "name": "Justin Barron",
+    "team": "STL",
     "pos": "D",
-    "gp": 11,
-    "value": 68.4,
-    "gs60": 9.2,
+    "gp": 10,
+    "value": 65.8,
+    "gs60": 8.93,
     "isMe": false
    },
    {
-    "rank": 138,
-    "name": "A.J. Greer",
-    "team": "ANA",
+    "rank": 158,
+    "name": "Juraj Slafkovsk",
+    "team": "MTL",
     "pos": "L",
-    "gp": 11,
-    "value": 67.5,
-    "gs60": 8.94,
+    "gp": 13,
+    "value": 65.8,
+    "gs60": 8.93,
     "isMe": false
    },
    {
-    "rank": 139,
+    "rank": 159,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
     "gp": 10,
-    "value": 67.4,
+    "value": 65.7,
     "gs60": 8.91,
     "isMe": true
    },
    {
-    "rank": 140,
-    "name": "Alex Iafallo",
-    "team": "WPG",
+    "rank": 160,
+    "name": "Connor McMichael",
+    "team": "STL",
     "pos": "L",
-    "gp": 12,
-    "value": 67.3,
-    "gs60": 8.89,
+    "gp": 13,
+    "value": 65.4,
+    "gs60": 8.84,
     "isMe": false
    },
    {
-    "rank": 141,
-    "name": "Wyatt Johnston",
-    "team": "DAL",
-    "pos": "C",
-    "gp": 10,
-    "value": 67.3,
-    "gs60": 8.89,
+    "rank": 161,
+    "name": "Vladislav Gavrikov",
+    "team": "NYR",
+    "pos": "D",
+    "gp": 14,
+    "value": 65.2,
+    "gs60": 8.77,
     "isMe": false
    }
   ],
@@ -603,9 +603,9 @@
   "inWindow": false,
   "window": "draft+12",
   "draftYear": 2014,
-  "onNhlRoster": true,
+  "onNhlRoster": false,
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-29T05:13:22-07:00"
+ "updatedAt": "2026-10-30T05:03:09-07:00"
 }

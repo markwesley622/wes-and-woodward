@@ -55,7 +55,7 @@
    "subSeason": {
     "assists": 1,
     "gameWinningGoals": 0,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 0,
     "otGoals": 0,
     "pim": 17,
@@ -71,7 +71,7 @@
    "career": {
     "assists": 136,
     "gameWinningGoals": 6,
-    "gamesPlayed": 817,
+    "gamesPlayed": 818,
     "goals": 50,
     "otGoals": 4,
     "pim": 619,
@@ -91,7 +91,7 @@
    "assists": 136,
    "avgToi": "19:25",
    "gameWinningGoals": 6,
-   "gamesPlayed": 817,
+   "gamesPlayed": 818,
    "goals": 50,
    "otGoals": 4,
    "pim": 619,
@@ -126,6 +126,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-10-29",
+   "gameId": 2026020203,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "CHI",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 27,
+   "shorthandedGoals": 0,
+   "shots": 0,
+   "teamAbbrev": "DET",
+   "toi": "21:09"
+  },
   {
    "assists": 0,
    "gameDate": "2026-10-26",
@@ -197,24 +215,6 @@
    "shots": 0,
    "teamAbbrev": "DET",
    "toi": "19:43"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-10-17",
-   "gameId": 2026020127,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "H",
-   "opponentAbbrev": "SJS",
-   "pim": 2,
-   "plusMinus": 1,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 27,
-   "shorthandedGoals": 0,
-   "shots": 1,
-   "teamAbbrev": "DET",
-   "toi": "22:42"
   }
  ],
  "seasonTotals": [
@@ -1200,11 +1200,11 @@
   },
   {
    "assists": 1,
-   "avgToi": "19:54",
+   "avgToi": "19:59",
    "faceoffWinningPctg": 0.0,
    "gameTypeId": 2,
    "gameWinningGoals": 0,
-   "gamesPlayed": 12,
+   "gamesPlayed": 13,
    "goals": 0,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
@@ -1314,6 +1314,16 @@
    "playerSlug": "alex-debrincat-8479337"
   },
   {
+   "playerId": 8480326,
+   "lastName": {
+    "default": "Dries"
+   },
+   "firstName": {
+    "default": "Sheldon"
+   },
+   "playerSlug": "sheldon-dries-8480326"
+  },
+  {
    "playerId": 8477971,
    "lastName": {
     "default": "Englund"
@@ -1394,16 +1404,6 @@
    "playerSlug": "keegan-kolesar-8478434"
   },
   {
-   "playerId": 8477946,
-   "lastName": {
-    "default": "Larkin"
-   },
-   "firstName": {
-    "default": "Dylan"
-   },
-   "playerSlug": "dylan-larkin-8477946"
-  },
-  {
    "playerId": 8482802,
    "lastName": {
     "default": "Mazur"
@@ -1412,16 +1412,6 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
-  },
-  {
-   "playerId": 8485545,
-   "lastName": {
-    "default": "Postava"
-   },
-   "firstName": {
-    "default": "Michal"
-   },
-   "playerSlug": "michal-postava-8485545"
   },
   {
    "playerId": 8479992,

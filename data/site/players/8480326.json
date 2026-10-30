@@ -20,15 +20,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 6,
+  "gp": 7,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "plusMinus": -3,
   "pim": 0,
-  "shots": 5,
+  "shots": 6,
   "shootingPct": 0.0,
-  "toiPerGame": "9:45",
+  "toiPerGame": "10:12",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -41,7 +41,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 6,
+   "gp": 7,
    "goals": 0,
    "assists": 0,
    "points": 0,
@@ -64,21 +64,21 @@
   "name": "Sheldon Dries",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480326.png",
-  "gamesPlayed": 6,
+  "gamesPlayed": 7,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "shots": 5,
+  "shots": 6,
   "shootingPct": 0.0,
-  "toiPerGame": 584.7,
-  "ixG": 0.97,
-  "goalsAboveExpected": -0.97,
-  "gameScore": 0.34,
+  "toiPerGame": 612.1,
+  "ixG": 0.99,
+  "goalsAboveExpected": -0.99,
+  "gameScore": 0.27,
   "fiveOnFive": {
-   "icetimeMinutes": 49.9,
-   "onIceXgPct": 0.49,
-   "onIceCorsiPct": 0.5,
-   "ixgPer60": 1.168,
+   "icetimeMinutes": 61.4,
+   "onIceXgPct": 0.57,
+   "onIceCorsiPct": 0.48,
+   "ixgPer60": 0.967,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -86,16 +86,16 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.05,
-   "percentile": 24
+   "value": -0.03,
+   "percentile": 25
   },
   "Offense": {
-   "value": -1.0,
-   "percentile": 19
+   "value": -1.2,
+   "percentile": 14
   },
   "Defense": {
-   "value": 0.0,
-   "percentile": 51
+   "value": 0.2,
+   "percentile": 59
   },
   "Net": {
    "value": -1.0,
@@ -104,36 +104,36 @@
  },
  "score": null,
  "standIn": {
-  "value": 32.0,
-  "gs": 0.02,
-  "gs60": 0.02,
-  "gameScore": 0.02,
-  "minutes": 58,
-  "gp": 6,
+  "value": 31.9,
+  "gs": 0.03,
+  "gs60": 0.03,
+  "gameScore": 0.03,
+  "minutes": 71,
+  "gp": 7,
   "rank": 565,
-  "pool": 729,
-  "percentile": 22.5,
+  "pool": 732,
+  "percentile": 22.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
     "rank": 563,
-    "name": "Jason Zucker",
-    "team": "BUF",
-    "pos": "L",
-    "gp": 3,
-    "value": 32.1,
+    "name": "Liam O'Brien",
+    "team": "UTA",
+    "pos": "C",
+    "gp": 1,
+    "value": 31.9,
     "gs60": 0.04,
     "isMe": false
    },
    {
     "rank": 564,
-    "name": "Liam O'Brien",
-    "team": "UTA",
-    "pos": "C",
-    "gp": 1,
-    "value": 32.0,
-    "gs60": 0.04,
+    "name": "Arshdeep Bains",
+    "team": "VAN",
+    "pos": "L",
+    "gp": 13,
+    "value": 31.9,
+    "gs60": 0.03,
     "isMe": false
    },
    {
@@ -141,28 +141,28 @@
     "name": "Sheldon Dries",
     "team": "DET",
     "pos": "C",
-    "gp": 6,
-    "value": 32.0,
-    "gs60": 0.02,
+    "gp": 7,
+    "value": 31.9,
+    "gs60": 0.03,
     "isMe": true
    },
    {
     "rank": 566,
-    "name": "Oliver Ekman-Larsson",
-    "team": "TOR",
-    "pos": "D",
-    "gp": 15,
-    "value": 32.0,
-    "gs60": 0.02,
+    "name": "Ryan McLeod",
+    "team": "BUF",
+    "pos": "C",
+    "gp": 13,
+    "value": 31.9,
+    "gs60": 0.03,
     "isMe": false
    },
    {
     "rank": 567,
-    "name": "William Trudeau",
-    "team": "NSH",
+    "name": "Oliver Ekman-Larsson",
+    "team": "TOR",
     "pos": "D",
-    "gp": 3,
-    "value": 32.0,
+    "gp": 15,
+    "value": 31.8,
     "gs60": 0.02,
     "isMe": false
    }
@@ -408,12 +408,36 @@
     "moneypuck": 0.16,
     "hockeystatcards": 0.23
    }
+  },
+  {
+   "gameId": 2026020203,
+   "date": "2026-10-29",
+   "opponent": "CHI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 0,
+   "toi": 12.9,
+   "ixg": 0.02,
+   "xgf": 0.39,
+   "xga": 0.21,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 2.0,
+   "gameScore": 0.01,
+   "gameScoreParts": {
+    "moneypuck": -0.075,
+    "hockeystatcards": 0.1
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
   "average": 0.0,
-  "games": 6,
+  "games": 7,
   "best": {
    "date": "2026-10-17",
    "opponent": "SJS",
@@ -427,7 +451,7 @@
   "above2": 0,
   "below0": 3
  },
- "detGames": 6,
+ "detGames": 7,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -436,9 +460,9 @@
   "inWindow": false,
   "window": "undrafted",
   "draftYear": null,
-  "onNhlRoster": false,
+  "onNhlRoster": true,
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-10-29T05:12:25-07:00"
+ "updatedAt": "2026-10-30T05:02:15-07:00"
 }

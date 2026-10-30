@@ -55,11 +55,11 @@
    "subSeason": {
     "assists": 3,
     "gameWinningGoals": 1,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 2,
     "otGoals": 0,
-    "pim": 8,
-    "plusMinus": 2,
+    "pim": 10,
+    "plusMinus": 3,
     "points": 5,
     "powerPlayGoals": 1,
     "powerPlayPoints": 2,
@@ -71,11 +71,11 @@
    "career": {
     "assists": 355,
     "gameWinningGoals": 37,
-    "gamesPlayed": 1070,
+    "gamesPlayed": 1071,
     "goals": 148,
     "otGoals": 4,
-    "pim": 528,
-    "plusMinus": -72,
+    "pim": 530,
+    "plusMinus": -71,
     "points": 503,
     "powerPlayGoals": 50,
     "powerPlayPoints": 157,
@@ -92,11 +92,11 @@
    "avgToi": "22:53",
    "faceoffWinningPctg": 0.0,
    "gameWinningGoals": 37,
-   "gamesPlayed": 1070,
+   "gamesPlayed": 1071,
    "goals": 148,
    "otGoals": 4,
-   "pim": 528,
-   "plusMinus": -72,
+   "pim": 530,
+   "plusMinus": -71,
    "points": 503,
    "powerPlayGoals": 50,
    "powerPlayPoints": 157,
@@ -127,6 +127,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-10-29",
+   "gameId": 2026020203,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "CHI",
+   "pim": 2,
+   "plusMinus": 1,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 28,
+   "shorthandedGoals": 0,
+   "shots": 0,
+   "teamAbbrev": "DET",
+   "toi": "20:26"
+  },
   {
    "assists": 0,
    "gameDate": "2026-10-26",
@@ -198,24 +216,6 @@
    "shots": 0,
    "teamAbbrev": "DET",
    "toi": "18:42"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-10-17",
-   "gameId": 2026020127,
-   "gameTypeId": 2,
-   "goals": 1,
-   "homeRoadFlag": "H",
-   "opponentAbbrev": "SJS",
-   "pim": 2,
-   "plusMinus": 0,
-   "points": 1,
-   "powerPlayGoals": 1,
-   "shifts": 27,
-   "shorthandedGoals": 0,
-   "shots": 4,
-   "teamAbbrev": "DET",
-   "toi": "19:43"
   }
  ],
  "seasonTotals": [
@@ -1257,16 +1257,16 @@
   },
   {
    "assists": 3,
-   "avgToi": "19:39",
+   "avgToi": "19:43",
    "faceoffWinningPctg": 0.0,
    "gameTypeId": 2,
    "gameWinningGoals": 1,
-   "gamesPlayed": 12,
+   "gamesPlayed": 13,
    "goals": 2,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
-   "pim": 8,
-   "plusMinus": 2,
+   "pim": 10,
+   "plusMinus": 3,
    "points": 5,
    "powerPlayGoals": 1,
    "powerPlayPoints": 2,
@@ -1371,6 +1371,16 @@
    "playerSlug": "alex-debrincat-8479337"
   },
   {
+   "playerId": 8480326,
+   "lastName": {
+    "default": "Dries"
+   },
+   "firstName": {
+    "default": "Sheldon"
+   },
+   "playerSlug": "sheldon-dries-8480326"
+  },
+  {
    "playerId": 8477971,
    "lastName": {
     "default": "Englund"
@@ -1451,16 +1461,6 @@
    "playerSlug": "keegan-kolesar-8478434"
   },
   {
-   "playerId": 8477946,
-   "lastName": {
-    "default": "Larkin"
-   },
-   "firstName": {
-    "default": "Dylan"
-   },
-   "playerSlug": "dylan-larkin-8477946"
-  },
-  {
    "playerId": 8482802,
    "lastName": {
     "default": "Mazur"
@@ -1469,16 +1469,6 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
-  },
-  {
-   "playerId": 8485545,
-   "lastName": {
-    "default": "Postava"
-   },
-   "firstName": {
-    "default": "Michal"
-   },
-   "playerSlug": "michal-postava-8485545"
   },
   {
    "playerId": 8479992,
