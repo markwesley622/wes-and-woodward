@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.79,
-   "percentile": 75
+   "percentile": 76
   },
   "Offense": {
    "value": 0.4,
@@ -95,70 +95,70 @@
   },
   "Net": {
    "value": 0.9,
-   "percentile": 75
+   "percentile": 74
   }
  },
  "score": null,
  "standIn": {
-  "value": 65.7,
+  "value": 65.3,
   "gs": 8.91,
   "gs60": 2.46,
   "gameScore": 8.91,
   "minutes": 217,
   "gp": 10,
-  "rank": 159,
-  "pool": 732,
-  "percentile": 78.3,
+  "rank": 164,
+  "pool": 733,
+  "percentile": 77.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 157,
+    "rank": 162,
     "name": "Justin Barron",
     "team": "STL",
     "pos": "D",
     "gp": 10,
-    "value": 65.8,
+    "value": 65.4,
     "gs60": 8.93,
     "isMe": false
    },
    {
-    "rank": 158,
+    "rank": 163,
     "name": "Juraj Slafkovsk",
     "team": "MTL",
     "pos": "L",
     "gp": 13,
-    "value": 65.8,
+    "value": 65.4,
     "gs60": 8.93,
     "isMe": false
    },
    {
-    "rank": 159,
+    "rank": 164,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
     "gp": 10,
-    "value": 65.7,
+    "value": 65.3,
     "gs60": 8.91,
     "isMe": true
    },
    {
-    "rank": 160,
+    "rank": 165,
     "name": "Connor McMichael",
     "team": "STL",
     "pos": "L",
     "gp": 13,
-    "value": 65.4,
+    "value": 65.1,
     "gs60": 8.84,
     "isMe": false
    },
    {
-    "rank": 161,
-    "name": "Vladislav Gavrikov",
-    "team": "NYR",
-    "pos": "D",
-    "gp": 14,
-    "value": 65.2,
+    "rank": 166,
+    "name": "Dylan Holloway",
+    "team": "STL",
+    "pos": "L",
+    "gp": 13,
+    "value": 64.8,
     "gs60": 8.77,
     "isMe": false
    }
@@ -607,5 +607,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-30T05:03:09-07:00"
+ "updatedAt": "2026-10-31T05:03:34-07:00"
 }

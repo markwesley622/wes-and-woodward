@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 1.04,
-   "percentile": 84
+   "percentile": 85
   },
   "Offense": {
    "value": 2.1,
@@ -91,74 +91,74 @@
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 46
+   "percentile": 45
   },
   "Net": {
    "value": 2.0,
-   "percentile": 86
+   "percentile": 87
   }
  },
  "score": null,
  "standIn": {
-  "value": 82.5,
+  "value": 82.1,
   "gs": 14.58,
   "gs60": 3.59,
   "gameScore": 14.58,
   "minutes": 244,
   "gp": 13,
-  "rank": 58,
-  "pool": 732,
-  "percentile": 92.1,
+  "rank": 59,
+  "pool": 733,
+  "percentile": 92.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 56,
-    "name": "Tomas Hertl",
-    "team": "VGK",
+    "rank": 57,
+    "name": "Nico Hischier",
+    "team": "NJD",
     "pos": "C",
     "gp": 14,
-    "value": 82.6,
-    "gs60": 14.64,
-    "isMe": false
-   },
-   {
-    "rank": 57,
-    "name": "Ivan Barbashev",
-    "team": "VGK",
-    "pos": "L",
-    "gp": 14,
-    "value": 82.6,
-    "gs60": 14.63,
+    "value": 82.3,
+    "gs60": 14.68,
     "isMe": false
    },
    {
     "rank": 58,
+    "name": "Roman Josi",
+    "team": "NSH",
+    "pos": "D",
+    "gp": 13,
+    "value": 82.3,
+    "gs60": 14.66,
+    "isMe": false
+   },
+   {
+    "rank": 59,
     "name": "Viktor Arvidsson",
     "team": "DET",
     "pos": "L",
     "gp": 13,
-    "value": 82.5,
+    "value": 82.1,
     "gs60": 14.58,
     "isMe": true
    },
    {
-    "rank": 59,
+    "rank": 60,
     "name": "Artemi Panarin",
     "team": "LAK",
     "pos": "L",
     "gp": 12,
-    "value": 82.1,
+    "value": 81.8,
     "gs60": 14.44,
     "isMe": false
    },
    {
-    "rank": 60,
+    "rank": 61,
     "name": "Nikolaj Ehlers",
     "team": "CAR",
     "pos": "L",
     "gp": 15,
-    "value": 82.0,
+    "value": 81.7,
     "gs60": 14.39,
     "isMe": false
    }
@@ -694,5 +694,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-30T05:00:58-07:00"
+ "updatedAt": "2026-10-31T05:01:25-07:00"
 }

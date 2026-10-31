@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.63,
-   "percentile": 68
+   "percentile": 67
   },
   "Offense": {
    "value": -0.3,
@@ -91,11 +91,11 @@
   },
   "Defense": {
    "value": -0.0,
-   "percentile": 49
+   "percentile": 48
   },
   "Net": {
    "value": -0.3,
-   "percentile": 51
+   "percentile": 50
   }
  },
  "score": null,
@@ -106,34 +106,34 @@
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 504,
-  "pool": 732,
-  "percentile": 31.1,
+  "rank": 503,
+  "pool": 733,
+  "percentile": 31.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 502,
-    "name": "Dylan DeMelo",
-    "team": "WPG",
+    "rank": 501,
+    "name": "Dennis Gilbert",
+    "team": "BUF",
     "pos": "D",
-    "gp": 13,
+    "gp": 5,
     "value": 34.5,
-    "gs60": 0.77,
+    "gs60": 0.81,
     "isMe": false
    },
    {
-    "rank": 503,
+    "rank": 502,
     "name": "Paul Cotter",
     "team": "VAN",
     "pos": "L",
     "gp": 14,
-    "value": 34.4,
+    "value": 34.3,
     "gs60": 0.75,
     "isMe": false
    },
    {
-    "rank": 504,
+    "rank": 503,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
@@ -143,22 +143,22 @@
     "isMe": true
    },
    {
-    "rank": 505,
+    "rank": 504,
     "name": "Jonny Brodzinski",
     "team": "WSH",
     "pos": "C",
     "gp": 2,
-    "value": 34.2,
+    "value": 34.1,
     "gs60": 0.7,
     "isMe": false
    },
    {
-    "rank": 506,
+    "rank": 505,
     "name": "Tyson Kozak",
     "team": "BUF",
     "pos": "C",
     "gp": 5,
-    "value": 34.2,
+    "value": 34.1,
     "gs60": 0.7,
     "isMe": false
    }
@@ -271,5 +271,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-30T05:02:42-07:00"
+ "updatedAt": "2026-10-31T05:03:09-07:00"
 }

@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.12,
-   "percentile": 21
+   "percentile": 22
   },
   "Offense": {
    "value": -2.6,
@@ -107,29 +107,29 @@
   "minutes": 138,
   "gp": 13,
   "rank": 632,
-  "pool": 732,
-  "percentile": 13.7,
+  "pool": 733,
+  "percentile": 13.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
     "rank": 630,
-    "name": "Isaac Howard",
-    "team": "EDM",
-    "pos": "L",
-    "gp": 12,
-    "value": 28.7,
-    "gs60": -0.93,
-    "isMe": false
-   },
-   {
-    "rank": 631,
     "name": "Helge Grans",
     "team": "PHI",
     "pos": "D",
     "gp": 1,
     "value": 28.6,
     "gs60": -0.94,
+    "isMe": false
+   },
+   {
+    "rank": 631,
+    "name": "Bokondji Imama",
+    "team": "FLA",
+    "pos": "L",
+    "gp": 14,
+    "value": 28.6,
+    "gs60": -0.95,
     "isMe": false
    },
    {
@@ -619,5 +619,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-30T05:02:56-07:00"
+ "updatedAt": "2026-10-31T05:03:23-07:00"
 }

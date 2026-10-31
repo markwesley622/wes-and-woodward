@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": 0.47,
-   "percentile": 60
+   "percentile": 59
   },
   "Offense": {
    "value": 0.2,
-   "percentile": 66
+   "percentile": 67
   },
   "Defense": {
    "value": 0.5,
-   "percentile": 72
+   "percentile": 71
   },
   "Net": {
    "value": 0.7,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 50.7,
+  "value": 50.4,
   "gs": 4.99,
   "gs60": 1.74,
   "gameScore": 4.99,
   "minutes": 172,
   "gp": 11,
-  "rank": 293,
-  "pool": 732,
-  "percentile": 59.8,
+  "rank": 301,
+  "pool": 733,
+  "percentile": 58.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 291,
-    "name": "Charle-Edouard D'Astous",
-    "team": "TBL",
-    "pos": "D",
-    "gp": 11,
-    "value": 51.0,
-    "gs60": 5.06,
-    "isMe": false
-   },
-   {
-    "rank": 292,
-    "name": "Ross Colton",
-    "team": "NSH",
+    "rank": 299,
+    "name": "Frederick Gaudreau",
+    "team": "SEA",
     "pos": "C",
-    "gp": 13,
-    "value": 50.9,
-    "gs60": 5.05,
+    "gp": 14,
+    "value": 50.5,
+    "gs60": 5.02,
     "isMe": false
    },
    {
-    "rank": 293,
-    "name": "Albert Johansson",
-    "team": "DET",
-    "pos": "D",
-    "gp": 11,
-    "value": 50.7,
-    "gs60": 4.99,
-    "isMe": true
-   },
-   {
-    "rank": 294,
+    "rank": 300,
     "name": "Colton Sissons",
     "team": "TOR",
     "pos": "C",
     "gp": 15,
-    "value": 50.7,
+    "value": 50.4,
     "gs60": 4.99,
     "isMe": false
    },
    {
-    "rank": 295,
-    "name": "Ryan Strome",
-    "team": "CGY",
+    "rank": 301,
+    "name": "Albert Johansson",
+    "team": "DET",
+    "pos": "D",
+    "gp": 11,
+    "value": 50.4,
+    "gs60": 4.99,
+    "isMe": true
+   },
+   {
+    "rank": 302,
+    "name": "Jack Drury",
+    "team": "NSH",
     "pos": "C",
-    "gp": 12,
-    "value": 50.6,
+    "gp": 13,
+    "value": 50.3,
     "gs60": 4.96,
+    "isMe": false
+   },
+   {
+    "rank": 303,
+    "name": "Pius Suter",
+    "team": "STL",
+    "pos": "C",
+    "gp": 13,
+    "value": 50.2,
+    "gs60": 4.93,
     "isMe": false
    }
   ],
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-30T05:04:32-07:00"
+ "updatedAt": "2026-10-31T05:04:58-07:00"
 }

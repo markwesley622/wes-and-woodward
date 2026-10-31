@@ -86,12 +86,12 @@
    "percentile": 64
   },
   "Offense": {
-   "value": -0.2,
-   "percentile": 57
+   "value": -0.1,
+   "percentile": 58
   },
   "Defense": {
    "value": 0.3,
-   "percentile": 63
+   "percentile": 64
   },
   "Net": {
    "value": 0.1,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 44.6,
+  "value": 44.4,
   "gs": 3.46,
   "gs60": 2.37,
   "gameScore": 3.46,
   "minutes": 88,
   "gp": 6,
-  "rank": 354,
-  "pool": 732,
-  "percentile": 51.6,
+  "rank": 360,
+  "pool": 733,
+  "percentile": 50.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 352,
+    "rank": 358,
     "name": "Liam Ohgren",
     "team": "VAN",
     "pos": "L",
     "gp": 14,
-    "value": 44.8,
+    "value": 44.6,
     "gs60": 3.5,
     "isMe": false
    },
    {
-    "rank": 353,
+    "rank": 359,
     "name": "Frederic Brunet",
     "team": "BOS",
     "pos": "D",
     "gp": 10,
-    "value": 44.8,
+    "value": 44.6,
     "gs60": 3.49,
     "isMe": false
    },
    {
-    "rank": 354,
+    "rank": 360,
     "name": "J.T. Compher",
     "team": "DET",
     "pos": "L",
     "gp": 6,
-    "value": 44.6,
+    "value": 44.4,
     "gs60": 3.46,
     "isMe": true
    },
    {
-    "rank": 355,
-    "name": "William Wallinder",
-    "team": "DET",
-    "pos": "D",
-    "gp": 8,
-    "value": 44.6,
-    "gs60": 3.45,
-    "isMe": false
-   },
-   {
-    "rank": 356,
+    "rank": 361,
     "name": "Raphael Lavoie",
     "team": "VGK",
     "pos": "C",
     "gp": 10,
-    "value": 44.6,
+    "value": 44.4,
+    "gs60": 3.45,
+    "isMe": false
+   },
+   {
+    "rank": 362,
+    "name": "William Wallinder",
+    "team": "DET",
+    "pos": "D",
+    "gp": 8,
+    "value": 44.4,
     "gs60": 3.45,
     "isMe": false
    }
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-30T05:01:25-07:00"
+ "updatedAt": "2026-10-31T05:01:52-07:00"
 }

@@ -91,75 +91,75 @@
   },
   "Defense": {
    "value": 0.5,
-   "percentile": 73
+   "percentile": 72
   },
   "Net": {
    "value": 3.5,
-   "percentile": 96
+   "percentile": 95
   }
  },
  "score": null,
  "standIn": {
-  "value": 90.8,
+  "value": 90.6,
   "gs": 19.29,
   "gs60": 4.46,
   "gameScore": 19.29,
   "minutes": 260,
   "gp": 13,
-  "rank": 19,
-  "pool": 732,
-  "percentile": 97.4,
+  "rank": 20,
+  "pool": 733,
+  "percentile": 97.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
-   {
-    "rank": 17,
-    "name": "Shayne Gostisbehere",
-    "team": "CAR",
-    "pos": "D",
-    "gp": 15,
-    "value": 91.1,
-    "gs60": 19.52,
-    "isMe": false
-   },
    {
     "rank": 18,
     "name": "Matthew Tkachuk",
     "team": "FLA",
     "pos": "L",
-    "gp": 13,
-    "value": 91.0,
-    "gs60": 19.45,
+    "gp": 14,
+    "value": 91.2,
+    "gs60": 19.8,
     "isMe": false
    },
    {
     "rank": 19,
+    "name": "Shayne Gostisbehere",
+    "team": "CAR",
+    "pos": "D",
+    "gp": 15,
+    "value": 90.9,
+    "gs60": 19.52,
+    "isMe": false
+   },
+   {
+    "rank": 20,
     "name": "Alex DeBrincat",
     "team": "DET",
     "pos": "R",
     "gp": 13,
-    "value": 90.8,
+    "value": 90.6,
     "gs60": 19.29,
     "isMe": true
    },
    {
-    "rank": 20,
+    "rank": 21,
     "name": "Vasily Podkolzin",
     "team": "EDM",
     "pos": "R",
     "gp": 13,
-    "value": 90.8,
+    "value": 90.6,
     "gs60": 19.28,
     "isMe": false
    },
    {
-    "rank": 21,
-    "name": "Mark Stone",
-    "team": "VGK",
+    "rank": 22,
+    "name": "Arseny Gritsyuk",
+    "team": "NJD",
     "pos": "R",
     "gp": 14,
-    "value": 90.5,
-    "gs60": 19.02,
+    "value": 90.1,
+    "gs60": 18.95,
     "isMe": false
    }
   ],
@@ -649,5 +649,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-30T05:02:01-07:00"
+ "updatedAt": "2026-10-31T05:02:31-07:00"
 }

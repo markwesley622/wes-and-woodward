@@ -24,9 +24,34 @@
   "silhouette": "/players/8485641.png"
  },
  "seasonLine": {
-  "league": null
+  "league": "QMJHL",
+  "team": "Cape Breton Eagles",
+  "gp": 1,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "plusMinus": 0,
+  "pim": 4,
+  "shots": null,
+  "wins": null,
+  "losses": null,
+  "otLosses": null,
+  "gaa": null,
+  "savePct": null,
+  "shutouts": null
  },
- "seasonLines": [],
+ "seasonLines": [
+  {
+   "league": "QMJHL",
+   "team": "Cape Breton Eagles",
+   "gp": 1,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "pim": 4
+  }
+ ],
  "score": null,
  "gameLog": [],
  "gameScore": null,
@@ -37,7 +62,7 @@
  "myComponents": null,
  "moneypuck": {},
  "hsc": {},
- "note": "No NHL games in 2026-27; the line shown is his most recent season.",
+ "note": "No NHL games in 2026-27; the line shown is his QMJHL season.",
  "detGames": 0,
  "currentTeam": "DET",
  "prospect": true,
@@ -51,5 +76,5 @@
   "template": "prospect"
  },
  "art": false,
- "updatedAt": "2026-10-22T05:05:47-07:00"
+ "updatedAt": "2026-10-31T05:06:01-07:00"
 }

@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.1,
-   "percentile": 57
+   "percentile": 58
   },
   "Defense": {
    "value": -1.4,
@@ -100,18 +100,28 @@
  },
  "score": null,
  "standIn": {
-  "value": 30.9,
+  "value": 30.8,
   "gs": -0.27,
   "gs60": -0.09,
   "gameScore": -0.27,
   "minutes": 185,
   "gp": 13,
-  "rank": 593,
-  "pool": 732,
-  "percentile": 19.0,
+  "rank": 592,
+  "pool": 733,
+  "percentile": 19.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
+   {
+    "rank": 590,
+    "name": "Vince Dunn",
+    "team": "SEA",
+    "pos": "D",
+    "gp": 14,
+    "value": 31.0,
+    "gs60": -0.21,
+    "isMe": false
+   },
    {
     "rank": 591,
     "name": "Dylan Peterson",
@@ -124,23 +134,23 @@
    },
    {
     "rank": 592,
-    "name": "Sam Carrick",
-    "team": "BUF",
-    "pos": "C",
-    "gp": 5,
-    "value": 30.9,
-    "gs60": -0.27,
-    "isMe": false
-   },
-   {
-    "rank": 593,
     "name": "Anton Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 13,
-    "value": 30.9,
+    "value": 30.8,
     "gs60": -0.27,
     "isMe": true
+   },
+   {
+    "rank": 593,
+    "name": "Sam Carrick",
+    "team": "BUF",
+    "pos": "C",
+    "gp": 5,
+    "value": 30.8,
+    "gs60": -0.27,
+    "isMe": false
    },
    {
     "rank": 594,
@@ -148,18 +158,8 @@
     "team": "NSH",
     "pos": "D",
     "gp": 13,
-    "value": 30.9,
-    "gs60": -0.27,
-    "isMe": false
-   },
-   {
-    "rank": 595,
-    "name": "Brian Dumoulin",
-    "team": "LAK",
-    "pos": "D",
-    "gp": 12,
     "value": 30.8,
-    "gs60": -0.28,
+    "gs60": -0.27,
     "isMe": false
    }
   ],
@@ -513,5 +513,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-30T05:04:46-07:00"
+ "updatedAt": "2026-10-31T05:05:10-07:00"
 }

@@ -31,7 +31,7 @@
   {
    "league": "OHL",
    "team": "Erie Otters",
-   "gp": 12,
+   "gp": 13,
    "g": 5,
    "a": 1,
    "pts": 6,
@@ -123,7 +123,7 @@
     {
      "league": "OHL",
      "team": "Erie Otters",
-     "gp": 12,
+     "gp": 13,
      "g": 5,
      "a": 1,
      "pts": 6,
@@ -164,18 +164,18 @@
   "table": "OHL",
   "coef": 0.144,
   "team": "Erie Otters",
-  "gp": 12,
+  "gp": 13,
   "g": 5,
   "a": 1,
   "pts": 6,
-  "pgp": 0.5,
-  "lineGp": 12,
-  "nhle": 0.072,
-  "nhlePace": 6.0,
+  "pgp": 0.462,
+  "lineGp": 13,
+  "nhle": 0.066,
+  "nhlePace": 5.5,
   "lines": [
    "OHL"
   ],
-  "feature": 0.072
+  "feature": 0.066
  },
  "league": {
   "name": "OHL",
@@ -190,53 +190,73 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 86,
-   "gp": 12,
-   "value": 0.5,
-   "percentile": 50.0,
-   "percentileAllAges": 52.3,
+   "gp": 13,
+   "value": 0.4615,
+   "percentile": 48.8,
+   "percentileAllAges": 51.9,
    "allAgesN": 1875
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 5.4,
+  "expected": 4.4,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 26.5,
-  "pRegular": 0.16,
-  "pTopLine": 0.02,
+  "p90": 12.3,
+  "pRegular": 0.1,
+  "pTopLine": 0.04,
   "pAboveAvg": 0.04,
-  "pElite": 0.0,
+  "pElite": 0.02,
   "poolN": 1362,
   "group": "F",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.16,
+  "pCeiling": 0.1,
   "featureBand": [
-   0.059,
-   0.085
+   0.053,
+   0.08
   ],
   "examples": [
    {
-    "name": "Tyler Moy",
-    "year": 2015,
-    "pick": 175,
+    "name": "Hunter Fejes",
+    "year": 2012,
+    "pick": 178,
     "league": "NCAA",
-    "feature": 0.072,
+    "feature": 0.066,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Pavel Koltygin",
-    "year": 2017,
+    "name": "Tyler Randell",
+    "year": 2009,
     "pick": 176,
-    "league": "QMJHL",
-    "feature": 0.074,
+    "league": "OHL",
+    "feature": 0.064,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 27
+   },
+   {
+    "name": "Arsen Khisamutdinov",
+    "year": 2019,
+    "pick": 170,
+    "league": "MHL",
+    "feature": 0.064,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Hunter Drew",
+    "year": 2018,
+    "pick": 178,
+    "league": "QMJHL",
+    "feature": 0.069,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 2
    },
    {
     "name": "David Pacan",
@@ -259,41 +279,21 @@
     "nhlGp": 0
    },
    {
-    "name": "Garrett Mitchell",
+    "name": "Scott Timmins",
     "year": 2009,
-    "pick": 175,
-    "league": "WHL",
-    "feature": 0.075,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
-   },
-   {
-    "name": "Jonathan Davidsson",
-    "year": 2017,
-    "pick": 170,
-    "league": "J20 SuperElit",
-    "feature": 0.07,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 6
-   },
-   {
-    "name": "Hunter Drew",
-    "year": 2018,
-    "pick": 178,
-    "league": "QMJHL",
-    "feature": 0.069,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 2
-   },
-   {
-    "name": "C.J. Yakimowicz",
-    "year": 2014,
-    "pick": 172,
+    "pick": 165,
     "league": "OHL",
-    "feature": 0.075,
+    "feature": 0.067,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 24
+   },
+   {
+    "name": "Tyler Moy",
+    "year": 2015,
+    "pick": 175,
+    "league": "NCAA",
+    "feature": 0.072,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -317,8 +317,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 5.4,
-  "expected": 6.5,
+  "cohortExpected": 4.4,
+  "expected": 6.0,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -339,11 +339,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 12,
+  "gp": 13,
   "season": "2026-2027"
  },
  "rank": 20,
- "score": 6.5,
+ "score": 6.0,
  "rankStart": 21,
  "rankStartDate": "2026-10-06"
 }

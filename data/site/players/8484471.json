@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 1.11,
-   "percentile": 87
+   "percentile": 88
   },
   "Offense": {
    "value": 1.7,
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.4,
-   "percentile": 71
+   "percentile": 70
   },
   "Net": {
    "value": 2.1,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 78.8,
+  "value": 78.4,
   "gs": 13.11,
   "gs60": 3.4,
   "gameScore": 13.11,
   "minutes": 231,
   "gp": 13,
-  "rank": 75,
-  "pool": 732,
-  "percentile": 89.8,
+  "rank": 78,
+  "pool": 733,
+  "percentile": 89.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 73,
+    "rank": 76,
     "name": "Adrian Kempe",
     "team": "LAK",
     "pos": "R",
     "gp": 12,
-    "value": 78.9,
+    "value": 78.5,
     "gs60": 13.14,
     "isMe": false
    },
    {
-    "rank": 74,
+    "rank": 77,
     "name": "Cole Caufield",
     "team": "MTL",
     "pos": "R",
     "gp": 13,
-    "value": 78.8,
+    "value": 78.4,
     "gs60": 13.11,
     "isMe": false
    },
    {
-    "rank": 75,
+    "rank": 78,
     "name": "Emmitt Finnie",
     "team": "DET",
     "pos": "C",
     "gp": 13,
-    "value": 78.8,
+    "value": 78.4,
     "gs60": 13.11,
     "isMe": true
    },
    {
-    "rank": 76,
+    "rank": 79,
     "name": "Vincent Trocheck",
     "team": "UTA",
     "pos": "C",
     "gp": 14,
-    "value": 78.8,
+    "value": 78.4,
     "gs60": 13.11,
     "isMe": false
    },
    {
-    "rank": 77,
-    "name": "Berkly Catton",
-    "team": "SEA",
-    "pos": "C",
-    "gp": 13,
-    "value": 78.7,
-    "gs60": 13.06,
+    "rank": 80,
+    "name": "Clayton Keller",
+    "team": "UTA",
+    "pos": "R",
+    "gp": 14,
+    "value": 78.1,
+    "gs60": 12.98,
     "isMe": false
    }
   ],
@@ -529,5 +529,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-30T05:02:28-07:00"
+ "updatedAt": "2026-10-31T05:02:56-07:00"
 }

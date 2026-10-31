@@ -87,11 +87,11 @@
   },
   "Offense": {
    "value": -0.3,
-   "percentile": 52
+   "percentile": 53
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 44
+   "percentile": 42
   },
   "Net": {
    "value": -0.4,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 37.7,
+  "value": 37.6,
   "gs": 1.66,
   "gs60": 0.38,
   "gameScore": 1.66,
   "minutes": 260,
   "gp": 13,
-  "rank": 451,
-  "pool": 732,
-  "percentile": 38.4,
+  "rank": 452,
+  "pool": 733,
+  "percentile": 38.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
-   {
-    "rank": 449,
-    "name": "Erik Haula",
-    "team": "LAK",
-    "pos": "L",
-    "gp": 12,
-    "value": 37.8,
-    "gs60": 1.69,
-    "isMe": false
-   },
    {
     "rank": 450,
     "name": "Konsta Helenius",
     "team": "BUF",
     "pos": "C",
     "gp": 11,
-    "value": 37.8,
+    "value": 37.7,
     "gs60": 1.68,
     "isMe": false
    },
    {
     "rank": 451,
+    "name": "Bobby McMann",
+    "team": "SEA",
+    "pos": "C",
+    "gp": 14,
+    "value": 37.7,
+    "gs60": 1.68,
+    "isMe": false
+   },
+   {
+    "rank": 452,
     "name": "Ben Chiarot",
     "team": "DET",
     "pos": "D",
     "gp": 13,
-    "value": 37.7,
+    "value": 37.6,
     "gs60": 1.66,
     "isMe": true
    },
    {
-    "rank": 452,
+    "rank": 453,
     "name": "Michael Rasmussen",
     "team": "DET",
     "pos": "C",
     "gp": 13,
-    "value": 37.7,
+    "value": 37.6,
     "gs60": 1.64,
     "isMe": false
    },
    {
-    "rank": 453,
+    "rank": 454,
     "name": "Taylor Raddysh",
     "team": "NYR",
     "pos": "R",
     "gp": 5,
-    "value": 37.6,
+    "value": 37.5,
     "gs60": 1.62,
     "isMe": false
    }
@@ -709,5 +709,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-30T05:04:03-07:00"
+ "updatedAt": "2026-10-31T05:04:33-07:00"
 }

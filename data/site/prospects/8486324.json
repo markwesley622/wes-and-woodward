@@ -31,7 +31,7 @@
   {
    "league": "QMJHL",
    "team": "Moncton Wildcats",
-   "gp": 13,
+   "gp": 14,
    "g": 3,
    "a": 6,
    "pts": 9,
@@ -140,7 +140,7 @@
     {
      "league": "QMJHL",
      "team": "Moncton Wildcats",
-     "gp": 13,
+     "gp": 14,
      "g": 3,
      "a": 6,
      "pts": 9,
@@ -164,18 +164,18 @@
   "table": "QMJHL",
   "coef": 0.113,
   "team": "Moncton Wildcats",
-  "gp": 13,
+  "gp": 14,
   "g": 3,
   "a": 6,
   "pts": 9,
-  "pgp": 0.692,
-  "lineGp": 13,
-  "nhle": 0.078,
-  "nhlePace": 6.6,
+  "pgp": 0.643,
+  "lineGp": 14,
+  "nhle": 0.073,
+  "nhlePace": 6.1,
   "lines": [
    "QMJHL"
   ],
-  "feature": 0.078
+  "feature": 0.073
  },
  "league": {
   "name": "QMJHL",
@@ -190,22 +190,22 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 37,
-   "gp": 13,
-   "value": 0.6923,
-   "percentile": 81.1,
-   "percentileAllAges": 87.0,
+   "gp": 14,
+   "value": 0.6429,
+   "percentile": 78.4,
+   "percentileAllAges": 86.4,
    "allAgesN": 903
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 9.3,
+  "expected": 9.9,
   "median": 0.0,
   "p75": 0.0,
   "p90": 62.6,
   "pRegular": 0.16,
   "pTopLine": 0.06,
-  "pAboveAvg": 0.1,
+  "pAboveAvg": 0.14,
   "pElite": 0.02,
   "poolN": 837,
   "group": "D",
@@ -214,79 +214,29 @@
   "tier": "replacement level",
   "pCeiling": 0.16,
   "featureBand": [
-   0.062,
-   0.093
+   0.058,
+   0.087
   ],
   "examples": [
    {
-    "name": "Tyler Lewington",
-    "year": 2013,
-    "pick": 204,
-    "league": "WHL",
-    "feature": 0.079,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 12
-   },
-   {
-    "name": "MacKenzie Weegar",
-    "year": 2013,
-    "pick": 206,
-    "league": "QMJHL",
-    "feature": 0.08,
-    "peak": 92.3,
-    "tier": "elite",
-    "nhlGp": 632
-   },
-   {
-    "name": "Stepan Falkovsky",
-    "year": 2016,
-    "pick": 186,
-    "league": "OHL",
-    "feature": 0.08,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Nick Pryor",
-    "year": 2008,
-    "pick": 208,
-    "league": "USHL",
-    "feature": 0.08,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Ben Marshall",
+    "name": "Maxim Chudinov",
     "year": 2010,
-    "pick": 201,
-    "league": "USHL",
-    "feature": 0.082,
+    "pick": 195,
+    "league": "KHL",
+    "feature": 0.072,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Matt Hellickson",
-    "year": 2017,
-    "pick": 214,
-    "league": "USHL",
-    "feature": 0.077,
+    "name": "Maxence Gu\u00e9nette",
+    "year": 2019,
+    "pick": 187,
+    "league": "QMJHL",
+    "feature": 0.073,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kyle Burroughs",
-    "year": 2013,
-    "pick": 196,
-    "league": "WHL",
-    "feature": 0.084,
-    "peak": 5.3,
-    "tier": "replacement level",
-    "nhlGp": 201
+    "nhlGp": 8
    },
    {
     "name": "Matt Brassard",
@@ -294,6 +244,56 @@
     "pick": 188,
     "league": "OHL",
     "feature": 0.074,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kyle Jenkins",
+    "year": 2014,
+    "pick": 187,
+    "league": "OHL",
+    "feature": 0.074,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Petter Hansson",
+    "year": 2015,
+    "pick": 202,
+    "league": "J20 SuperElit",
+    "feature": 0.069,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jocktan Chainey",
+    "year": 2017,
+    "pick": 191,
+    "league": "QMJHL",
+    "feature": 0.068,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jeff Taylor",
+    "year": 2014,
+    "pick": 203,
+    "league": "USHL",
+    "feature": 0.068,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Olivier LeBlanc",
+    "year": 2014,
+    "pick": 197,
+    "league": "QMJHL",
+    "feature": 0.066,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -317,8 +317,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 9.3,
-  "expected": 8.2,
+  "cohortExpected": 9.9,
+  "expected": 8.4,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -339,11 +339,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 13,
+  "gp": 14,
   "season": "2026-2027"
  },
- "rank": 18,
- "score": 8.2,
+ "rank": 19,
+ "score": 8.4,
  "rankStart": 22,
  "rankStartDate": "2026-10-06"
 }

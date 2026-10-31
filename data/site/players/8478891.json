@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 44
+   "percentile": 43
   },
   "Defense": {
    "value": -0.1,
@@ -95,7 +95,7 @@
   },
   "Net": {
    "value": -0.6,
-   "percentile": 43
+   "percentile": 42
   }
  },
  "score": null,
@@ -106,24 +106,24 @@
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 546,
-  "pool": 732,
-  "percentile": 25.4,
+  "rank": 543,
+  "pool": 733,
+  "percentile": 25.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 544,
+    "rank": 541,
     "name": "Jonathan Marchessault",
     "team": "NSH",
     "pos": "R",
     "gp": 13,
-    "value": 32.9,
+    "value": 32.8,
     "gs60": 0.31,
     "isMe": false
    },
    {
-    "rank": 545,
+    "rank": 542,
     "name": "Justin Dowling",
     "team": "NYR",
     "pos": "C",
@@ -133,7 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 546,
+    "rank": 543,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
@@ -143,22 +143,22 @@
     "isMe": true
    },
    {
-    "rank": 547,
+    "rank": 544,
     "name": "Mavrik Bourque",
     "team": "NSH",
     "pos": "C",
     "gp": 9,
-    "value": 32.8,
+    "value": 32.7,
     "gs60": 0.28,
     "isMe": false
    },
    {
-    "rank": 548,
+    "rank": 545,
     "name": "Ryan Lomberg",
     "team": "CBJ",
     "pos": "L",
     "gp": 11,
-    "value": 32.8,
+    "value": 32.7,
     "gs60": 0.28,
     "isMe": false
    }
@@ -370,5 +370,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-30T05:00:47-07:00"
+ "updatedAt": "2026-10-31T05:01:13-07:00"
 }

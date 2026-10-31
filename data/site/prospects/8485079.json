@@ -31,10 +31,10 @@
   {
    "league": "HockeyAllsvenskan",
    "team": "Almtuna IS",
-   "gp": 15,
+   "gp": 16,
    "g": 2,
-   "a": 6,
-   "pts": 8,
+   "a": 7,
+   "pts": 9,
    "pm": -7,
    "pim": 4,
    "gaa": null,
@@ -106,10 +106,10 @@
     {
      "league": "HockeyAllsvenskan",
      "team": "Almtuna IS",
-     "gp": 15,
+     "gp": 16,
      "g": 2,
-     "a": 6,
-     "pts": 8,
+     "a": 7,
+     "pts": 9,
      "pm": -7,
      "pim": 4,
      "gaa": null,
@@ -225,19 +225,19 @@
   "table": "Allsvenskan",
   "coef": 0.351,
   "team": "Almtuna IS",
-  "gp": 20,
+  "gp": 21,
   "g": 2,
-  "a": 6,
-  "pts": 8,
-  "pgp": 0.533,
-  "lineGp": 15,
-  "nhle": 0.169,
-  "nhlePace": 14.2,
+  "a": 7,
+  "pts": 9,
+  "pgp": 0.562,
+  "lineGp": 16,
+  "nhle": 0.177,
+  "nhlePace": 14.9,
   "lines": [
    "SHL",
    "HockeyAllsvenskan"
   ],
-  "feature": 0.169
+  "feature": 0.177
  },
  "league": {
   "name": "HockeyAllsvenskan",
@@ -262,113 +262,113 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 11,
-   "gp": 15,
-   "value": 0.5333,
+   "gp": 16,
+   "value": 0.5625,
    "percentile": 36.4,
-   "percentileAllAges": 68.1,
+   "percentileAllAges": 69.5,
    "allAgesN": 357
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 7.9,
+  "expected": 9.1,
   "median": 0.0,
-  "p75": 6.8,
-  "p90": 36.7,
-  "pRegular": 0.28,
-  "pTopLine": 0.0,
-  "pAboveAvg": 0.04,
+  "p75": 0.0,
+  "p90": 51.3,
+  "pRegular": 0.22,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.1,
   "pElite": 0.0,
   "poolN": 1236,
   "group": "F",
   "age": 20,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.28,
+  "pCeiling": 0.22,
   "featureBand": [
-   0.165,
-   0.174
+   0.173,
+   0.182
   ],
   "examples": [
    {
-    "name": "Anton R\u00f6din",
-    "year": 2009,
-    "pick": 53,
-    "league": "AHL",
-    "feature": 0.169,
+    "name": "Allan McShane",
+    "year": 2018,
+    "pick": 97,
+    "league": "Slovakia",
+    "feature": 0.177,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 3
+    "nhlGp": 0
    },
    {
-    "name": "Micha\u00ebl Bournival",
-    "year": 2010,
-    "pick": 71,
+    "name": "Nicholas Baptiste",
+    "year": 2013,
+    "pick": 69,
     "league": "AHL",
-    "feature": 0.169,
-    "peak": 19.4,
-    "tier": "replacement level",
-    "nhlGp": 113
+    "feature": 0.176,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 47
    },
    {
-    "name": "Josh Nicholls",
-    "year": 2010,
-    "pick": 182,
+    "name": "Giorgio Estephan",
+    "year": 2015,
+    "pick": 152,
     "league": "WHL",
-    "feature": 0.169,
+    "feature": 0.176,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Zack Phillips",
-    "year": 2011,
-    "pick": 28,
+    "name": "Dominik Bokk",
+    "year": 2018,
+    "pick": 25,
     "league": "AHL",
-    "feature": 0.169,
+    "feature": 0.178,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Stefan Matteau",
-    "year": 2012,
-    "pick": 29,
+    "name": "Ilya Nikolayev",
+    "year": 2019,
+    "pick": 88,
+    "league": "USHL",
+    "feature": 0.178,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Alexander Daryin",
+    "year": 2019,
+    "pick": 107,
+    "league": "MHL",
+    "feature": 0.176,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matvei Guskov",
+    "year": 2019,
+    "pick": 149,
+    "league": "KHL",
+    "feature": 0.178,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kris Foucault",
+    "year": 2009,
+    "pick": 103,
     "league": "AHL",
-    "feature": 0.169,
+    "feature": 0.175,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 92
-   },
-   {
-    "name": "Derek Grant",
-    "year": 2008,
-    "pick": 119,
-    "league": "NCAA",
-    "feature": 0.168,
-    "peak": 43.2,
-    "tier": "below average",
-    "nhlGp": 427
-   },
-   {
-    "name": "Mark Olver",
-    "year": 2008,
-    "pick": 140,
-    "league": "NCAA",
-    "feature": 0.17,
-    "peak": 15.6,
-    "tier": "replacement level",
-    "nhlGp": 74
-   },
-   {
-    "name": "Petr Straka",
-    "year": 2010,
-    "pick": 55,
-    "league": "QMJHL",
-    "feature": 0.168,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 3
+    "nhlGp": 1
    }
   ]
  },
@@ -389,8 +389,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 7.9,
-  "expected": 7.9,
+  "cohortExpected": 9.1,
+  "expected": 9.1,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -411,11 +411,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 15,
+  "gp": 16,
   "season": "2026-2027"
  },
- "rank": 19,
- "score": 7.9,
+ "rank": 18,
+ "score": 9.1,
  "rankStart": 27,
  "rankStartDate": "2026-10-06"
 }

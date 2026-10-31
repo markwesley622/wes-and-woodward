@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 1.0,
-   "percentile": 87
+   "percentile": 86
   },
   "Net": {
    "value": 1.0,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 56.6,
+  "value": 56.3,
   "gs": 6.5,
   "gs60": 1.52,
   "gameScore": 6.5,
   "minutes": 256,
   "gp": 13,
-  "rank": 244,
-  "pool": 732,
-  "percentile": 66.7,
+  "rank": 249,
+  "pool": 733,
+  "percentile": 65.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 242,
+    "rank": 247,
+    "name": "Morgan Frost",
+    "team": "CGY",
+    "pos": "C",
+    "gp": 13,
+    "value": 56.5,
+    "gs60": 6.54,
+    "isMe": false
+   },
+   {
+    "rank": 248,
     "name": "Troy Stecher",
     "team": "TOR",
     "pos": "D",
     "gp": 15,
-    "value": 56.7,
+    "value": 56.4,
     "gs60": 6.52,
     "isMe": false
    },
    {
-    "rank": 243,
-    "name": "Blake Lizotte",
-    "team": "PIT",
-    "pos": "C",
-    "gp": 13,
-    "value": 56.6,
-    "gs60": 6.5,
-    "isMe": false
-   },
-   {
-    "rank": 244,
+    "rank": 249,
     "name": "Justin Faulk",
     "team": "DET",
     "pos": "D",
     "gp": 13,
-    "value": 56.6,
+    "value": 56.3,
     "gs60": 6.5,
     "isMe": true
    },
    {
-    "rank": 245,
+    "rank": 250,
+    "name": "Blake Lizotte",
+    "team": "PIT",
+    "pos": "C",
+    "gp": 13,
+    "value": 56.3,
+    "gs60": 6.5,
+    "isMe": false
+   },
+   {
+    "rank": 251,
     "name": "Jakob Chychrun",
     "team": "WSH",
     "pos": "D",
     "gp": 12,
-    "value": 56.6,
+    "value": 56.3,
     "gs60": 6.49,
-    "isMe": false
-   },
-   {
-    "rank": 246,
-    "name": "T.J. Hughes",
-    "team": "COL",
-    "pos": "R",
-    "gp": 13,
-    "value": 56.2,
-    "gs60": 6.39,
     "isMe": false
    }
   ],
@@ -739,5 +739,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-30T05:04:17-07:00"
+ "updatedAt": "2026-10-31T05:04:46-07:00"
 }
