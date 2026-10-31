@@ -1,0 +1,20 @@
+---
+// The two pages a new subscriber lands on (Mark's mom, 10/30: Buttondown's own pages named the list "Mark Wesley" and
+// left her stranded off the site). Buttondown redirects here: /subscribed/ after the form, /confirmed/ after the
+// confirmation click (Settings, both redirect URLs). Noindex, out of the sitemap.
+import Base from '../layouts/Base.astro';
+import { ARTICLES } from '../lib/articles.js';
+const { kicker, heading, title } = Astro.props;
+const latest = [...ARTICLES].sort((a, b) => Date.parse(b.published) - Date.parse(a.published))[0];
+---
+<Base title={`${title} — Wes & Woodward`} robots="noindex">
+  <section class="sec">
+    <div class="shell prose">
+      <p class="kicker">{kicker}</p>
+      <h1 class="page-title">{heading}</h1>
+      <slot />
+      <p>The latest: <a href={`/analysis/${latest.slug}/`}>{latest.title}</a></p>
+      <p><a href="/">Back to Wes &amp; Woodward</a></p>
+    </div>
+  </section>
+</Base>
