@@ -26,16 +26,16 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 13,
-  "goals": 4,
-  "assists": 8,
-  "points": 12,
-  "plusMinus": -1,
+  "gp": 14,
+  "goals": 5,
+  "assists": 9,
+  "points": 14,
+  "plusMinus": 0,
   "pim": 6,
-  "shots": 39,
-  "shootingPct": 0.102564,
-  "toiPerGame": "20:29",
-  "ppPoints": 8,
+  "shots": 43,
+  "shootingPct": 0.116279,
+  "toiPerGame": "20:24",
+  "ppPoints": 9,
   "wins": null,
   "losses": null,
   "otLosses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 13,
-   "goals": 4,
-   "assists": 8,
-   "points": 12,
-   "plusMinus": -1,
+   "gp": 14,
+   "goals": 5,
+   "assists": 9,
+   "points": 14,
+   "plusMinus": 0,
    "pim": 6
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Lucas Raymond",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482078.png",
-  "gamesPlayed": 13,
-  "goals": 4,
-  "assists": 8,
-  "points": 12,
-  "shots": 39,
-  "shootingPct": 0.102564,
-  "toiPerGame": 1228.8,
-  "ixG": 5.51,
-  "goalsAboveExpected": -1.51,
-  "gameScore": 14.83,
+  "gamesPlayed": 14,
+  "goals": 5,
+  "assists": 9,
+  "points": 14,
+  "shots": 43,
+  "shootingPct": 0.116279,
+  "toiPerGame": 1223.8,
+  "ixG": 5.67,
+  "goalsAboveExpected": -0.67,
+  "gameScore": 16.98,
   "fiveOnFive": {
-   "icetimeMinutes": 201.6,
-   "onIceXgPct": 0.57,
+   "icetimeMinutes": 216.2,
+   "onIceXgPct": 0.56,
    "onIceCorsiPct": 0.59,
-   "ixgPer60": 0.732,
+   "ixgPer60": 0.71,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.89,
-   "percentile": 80
+   "value": 1.03,
+   "percentile": 84
   },
   "Offense": {
-   "value": 0.6,
-   "percentile": 74
+   "value": 0.9,
+   "percentile": 79
   },
   "Defense": {
-   "value": 1.1,
-   "percentile": 88
+   "value": 1.3,
+   "percentile": 91
   },
   "Net": {
-   "value": 1.7,
-   "percentile": 83
+   "value": 2.3,
+   "percentile": 88
   }
  },
  "score": null,
  "standIn": {
-  "value": 78.8,
-  "gs": 13.23,
-  "gs60": 2.98,
-  "gameScore": 13.23,
-  "minutes": 266,
-  "gp": 13,
-  "rank": 75,
-  "pool": 733,
-  "percentile": 89.8,
+  "value": 83.5,
+  "gs": 15.7,
+  "gs60": 3.3,
+  "gameScore": 15.7,
+  "minutes": 286,
+  "gp": 14,
+  "rank": 52,
+  "pool": 740,
+  "percentile": 93.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 73,
-    "name": "Jaccob Slavin",
-    "team": "CAR",
+    "rank": 50,
+    "name": "Roman Josi",
+    "team": "NSH",
     "pos": "D",
-    "gp": 15,
-    "value": 79.3,
-    "gs60": 13.43,
+    "gp": 14,
+    "value": 84.1,
+    "gs60": 15.98,
     "isMe": false
    },
    {
-    "rank": 74,
-    "name": "Sam Reinhart",
-    "team": "FLA",
+    "rank": 51,
+    "name": "Barrett Hayton",
+    "team": "UTA",
     "pos": "C",
     "gp": 14,
-    "value": 79.0,
-    "gs60": 13.31,
+    "value": 83.9,
+    "gs60": 15.89,
     "isMe": false
    },
    {
-    "rank": 75,
+    "rank": 52,
     "name": "Lucas Raymond",
     "team": "DET",
     "pos": "L",
-    "gp": 13,
-    "value": 78.8,
-    "gs60": 13.23,
+    "gp": 14,
+    "value": 83.5,
+    "gs60": 15.7,
     "isMe": true
    },
    {
-    "rank": 76,
-    "name": "Adrian Kempe",
-    "team": "LAK",
+    "rank": 53,
+    "name": "Alex Tuch",
+    "team": "WSH",
     "pos": "R",
     "gp": 12,
-    "value": 78.5,
-    "gs60": 13.14,
+    "value": 82.9,
+    "gs60": 15.44,
     "isMe": false
    },
    {
-    "rank": 77,
-    "name": "Cole Caufield",
-    "team": "MTL",
-    "pos": "R",
-    "gp": 13,
-    "value": 78.4,
-    "gs60": 13.11,
+    "rank": 54,
+    "name": "Jesper Bratt",
+    "team": "NJD",
+    "pos": "L",
+    "gp": 14,
+    "value": 82.8,
+    "gs60": 15.39,
     "isMe": false
    }
   ],
@@ -557,12 +557,36 @@
     "moneypuck": 1.3,
     "hockeystatcards": 0.31
    }
+  },
+  {
+   "gameId": 2026020218,
+   "date": "2026-10-31",
+   "opponent": "STL",
+   "home": true,
+   "goals": 1,
+   "assists": 1,
+   "points": 2,
+   "plusMinus": 1,
+   "shots": 4,
+   "pim": 0,
+   "toi": 19.3,
+   "ixg": 0.16,
+   "xgf": 0.6,
+   "xga": 0.44,
+   "gf": 1.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 2.47,
+   "gameScoreParts": {
+    "moneypuck": 2.15,
+    "hockeystatcards": 2.8
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.02,
-  "games": 13,
+  "average": 1.12,
+  "games": 14,
   "best": {
    "date": "2026-10-22",
    "opponent": "VAN",
@@ -573,10 +597,10 @@
    "opponent": "WPG",
    "value": -0.48
   },
-  "above2": 3,
+  "above2": 4,
   "below0": 3
  },
- "detGames": 13,
+ "detGames": 14,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -589,5 +613,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-31T05:04:16-07:00"
+ "updatedAt": "2026-11-01T05:03:51-08:00"
 }

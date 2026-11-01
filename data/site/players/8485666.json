@@ -24,9 +24,34 @@
   "silhouette": "/players/8485666.png"
  },
  "seasonLine": {
-  "league": null
+  "league": "NCAA",
+  "team": "Dartmouth College",
+  "gp": 1,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "plusMinus": 0,
+  "pim": 0,
+  "shots": null,
+  "wins": null,
+  "losses": null,
+  "otLosses": null,
+  "gaa": null,
+  "savePct": null,
+  "shutouts": null
  },
- "seasonLines": [],
+ "seasonLines": [
+  {
+   "league": "NCAA",
+   "team": "Dartmouth College",
+   "gp": 1,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "pim": 0
+  }
+ ],
  "score": null,
  "gameLog": [],
  "gameScore": null,
@@ -37,7 +62,7 @@
  "myComponents": null,
  "moneypuck": {},
  "hsc": {},
- "note": "No NHL games in 2026-27; the line shown is his most recent season.",
+ "note": "No NHL games in 2026-27; the line shown is his NCAA season.",
  "detGames": 0,
  "currentTeam": "DET",
  "prospect": true,
@@ -51,5 +76,5 @@
   "template": "prospect"
  },
  "art": false,
- "updatedAt": "2026-10-22T05:05:46-07:00"
+ "updatedAt": "2026-11-01T05:05:34-08:00"
 }

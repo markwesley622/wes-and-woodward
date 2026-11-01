@@ -86,80 +86,80 @@
    "percentile": 27
   },
   "Offense": {
-   "value": -0.4,
-   "percentile": 43
+   "value": -0.5,
+   "percentile": 44
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 44
+   "percentile": 45
   },
   "Net": {
    "value": -0.6,
-   "percentile": 42
+   "percentile": 43
   }
  },
  "score": null,
  "standIn": {
-  "value": 32.8,
+  "value": 32.6,
   "gs": 0.3,
   "gs60": 0.91,
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 543,
-  "pool": 733,
-  "percentile": 25.9,
+  "rank": 552,
+  "pool": 740,
+  "percentile": 25.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 541,
-    "name": "Jonathan Marchessault",
-    "team": "NSH",
-    "pos": "R",
-    "gp": 13,
-    "value": 32.8,
-    "gs60": 0.31,
-    "isMe": false
-   },
-   {
-    "rank": 542,
+    "rank": 550,
     "name": "Justin Dowling",
     "team": "NYR",
     "pos": "C",
     "gp": 4,
-    "value": 32.8,
+    "value": 32.6,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 543,
+    "rank": 551,
+    "name": "Jonathan Castagna",
+    "team": "CGY",
+    "pos": "C",
+    "gp": 11,
+    "value": 32.6,
+    "gs60": 0.3,
+    "isMe": false
+   },
+   {
+    "rank": 552,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 32.8,
+    "value": 32.6,
     "gs60": 0.3,
     "isMe": true
    },
    {
-    "rank": 544,
-    "name": "Mavrik Bourque",
-    "team": "NSH",
-    "pos": "C",
-    "gp": 9,
-    "value": 32.7,
+    "rank": 553,
+    "name": "Cody Ceci",
+    "team": "LAK",
+    "pos": "D",
+    "gp": 7,
+    "value": 32.5,
     "gs60": 0.28,
     "isMe": false
    },
    {
-    "rank": 545,
-    "name": "Ryan Lomberg",
+    "rank": 554,
+    "name": "Ivan Provorov",
     "team": "CBJ",
-    "pos": "L",
-    "gp": 11,
-    "value": 32.7,
-    "gs60": 0.28,
+    "pos": "D",
+    "gp": 1,
+    "value": 32.3,
+    "gs60": 0.23,
     "isMe": false
    }
   ],
@@ -370,5 +370,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-31T05:01:13-07:00"
+ "updatedAt": "2026-11-01T05:00:49-08:00"
 }

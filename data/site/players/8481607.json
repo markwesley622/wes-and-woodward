@@ -83,82 +83,82 @@
  "hsc": {
   "Game score": {
    "value": 0.47,
-   "percentile": 59
+   "percentile": 58
   },
   "Offense": {
    "value": 0.2,
    "percentile": 67
   },
   "Defense": {
-   "value": 0.5,
-   "percentile": 71
+   "value": 0.6,
+   "percentile": 75
   },
   "Net": {
-   "value": 0.7,
-   "percentile": 72
+   "value": 0.8,
+   "percentile": 73
   }
  },
  "score": null,
  "standIn": {
-  "value": 50.4,
+  "value": 49.7,
   "gs": 4.99,
   "gs60": 1.74,
   "gameScore": 4.99,
   "minutes": 172,
   "gp": 11,
-  "rank": 301,
-  "pool": 733,
-  "percentile": 58.9,
+  "rank": 312,
+  "pool": 740,
+  "percentile": 57.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 299,
-    "name": "Frederick Gaudreau",
-    "team": "SEA",
-    "pos": "C",
-    "gp": 14,
-    "value": 50.5,
+    "rank": 310,
+    "name": "Joel Armia",
+    "team": "LAK",
+    "pos": "R",
+    "gp": 13,
+    "value": 49.8,
     "gs60": 5.02,
     "isMe": false
    },
    {
-    "rank": 300,
-    "name": "Colton Sissons",
-    "team": "TOR",
+    "rank": 311,
+    "name": "Kyle Palmieri",
+    "team": "NYI",
     "pos": "C",
-    "gp": 15,
-    "value": 50.4,
-    "gs60": 4.99,
+    "gp": 14,
+    "value": 49.8,
+    "gs60": 5.0,
     "isMe": false
    },
    {
-    "rank": 301,
+    "rank": 312,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 50.4,
+    "value": 49.7,
     "gs60": 4.99,
     "isMe": true
    },
    {
-    "rank": 302,
-    "name": "Jack Drury",
-    "team": "NSH",
-    "pos": "C",
-    "gp": 13,
-    "value": 50.3,
-    "gs60": 4.96,
+    "rank": 313,
+    "name": "Kaiden Guhle",
+    "team": "MTL",
+    "pos": "D",
+    "gp": 10,
+    "value": 49.6,
+    "gs60": 4.97,
     "isMe": false
    },
    {
-    "rank": 303,
-    "name": "Pius Suter",
-    "team": "STL",
+    "rank": 314,
+    "name": "Jack Drury",
+    "team": "NSH",
     "pos": "C",
-    "gp": 13,
-    "value": 50.2,
+    "gp": 14,
+    "value": 49.5,
     "gs60": 4.93,
     "isMe": false
    }
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-31T05:04:58-07:00"
+ "updatedAt": "2026-11-01T05:04:36-08:00"
 }

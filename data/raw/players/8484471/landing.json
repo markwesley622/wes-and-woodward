@@ -55,61 +55,79 @@
    "subSeason": {
     "assists": 4,
     "gameWinningGoals": 0,
-    "gamesPlayed": 13,
-    "goals": 5,
+    "gamesPlayed": 14,
+    "goals": 6,
     "otGoals": 0,
-    "pim": 2,
-    "plusMinus": 10,
-    "points": 9,
-    "powerPlayGoals": 0,
-    "powerPlayPoints": 1,
-    "shootingPctg": 0.178571,
+    "pim": 4,
+    "plusMinus": 8,
+    "points": 10,
+    "powerPlayGoals": 1,
+    "powerPlayPoints": 2,
+    "shootingPctg": 0.181818,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 28
+    "shots": 33
    },
    "career": {
     "assists": 21,
     "gameWinningGoals": 1,
-    "gamesPlayed": 95,
-    "goals": 18,
+    "gamesPlayed": 96,
+    "goals": 19,
     "otGoals": 0,
-    "pim": 8,
-    "plusMinus": 0,
-    "points": 39,
-    "powerPlayGoals": 4,
-    "powerPlayPoints": 9,
-    "shootingPctg": 0.1216,
+    "pim": 10,
+    "plusMinus": -2,
+    "points": 40,
+    "powerPlayGoals": 5,
+    "powerPlayPoints": 10,
+    "shootingPctg": 0.1241,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 148
+    "shots": 153
    }
   }
  },
  "careerTotals": {
   "regularSeason": {
    "assists": 21,
-   "avgToi": "15:49",
-   "faceoffWinningPctg": 0.4705,
+   "avgToi": "15:52",
+   "faceoffWinningPctg": 0.4606,
    "gameWinningGoals": 1,
-   "gamesPlayed": 95,
-   "goals": 18,
+   "gamesPlayed": 96,
+   "goals": 19,
    "otGoals": 0,
-   "pim": 8,
-   "plusMinus": 0,
-   "points": 39,
-   "powerPlayGoals": 4,
-   "powerPlayPoints": 9,
-   "shootingPctg": 0.1216,
+   "pim": 10,
+   "plusMinus": -2,
+   "points": 40,
+   "powerPlayGoals": 5,
+   "powerPlayPoints": 10,
+   "shootingPctg": 0.1241,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 148
+   "shots": 153
   }
  },
  "shopLink": "#TODO",
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-10-31",
+   "gameId": 2026020218,
+   "gameTypeId": 2,
+   "goals": 1,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "STL",
+   "pim": 2,
+   "plusMinus": -2,
+   "points": 1,
+   "powerPlayGoals": 1,
+   "shifts": 23,
+   "shorthandedGoals": 0,
+   "shots": 5,
+   "teamAbbrev": "DET",
+   "toi": "21:13"
+  },
   {
    "assists": 1,
    "gameDate": "2026-10-29",
@@ -181,24 +199,6 @@
    "shots": 2,
    "teamAbbrev": "DET",
    "toi": "15:00"
-  },
-  {
-   "assists": 1,
-   "gameDate": "2026-10-20",
-   "gameId": 2026020149,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "SEA",
-   "pim": 0,
-   "plusMinus": 1,
-   "points": 1,
-   "powerPlayGoals": 0,
-   "shifts": 27,
-   "shorthandedGoals": 0,
-   "shots": 1,
-   "teamAbbrev": "DET",
-   "toi": "23:20"
   }
  ],
  "seasonTotals": [
@@ -471,25 +471,25 @@
   },
   {
    "assists": 4,
-   "avgToi": "17:48",
-   "faceoffWinningPctg": 0.493151,
+   "avgToi": "18:02",
+   "faceoffWinningPctg": 0.474684,
    "gameTypeId": 2,
    "gameWinningGoals": 0,
-   "gamesPlayed": 13,
-   "goals": 5,
+   "gamesPlayed": 14,
+   "goals": 6,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
-   "pim": 2,
-   "plusMinus": 10,
-   "points": 9,
-   "powerPlayGoals": 0,
-   "powerPlayPoints": 1,
+   "pim": 4,
+   "plusMinus": 8,
+   "points": 10,
+   "powerPlayGoals": 1,
+   "powerPlayPoints": 2,
    "season": 20262027,
    "sequence": 1,
-   "shootingPctg": 0.178571,
+   "shootingPctg": 0.181818,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 28,
+   "shots": 33,
    "teamCommonName": {
     "default": "Red Wings"
    },
@@ -523,6 +523,16 @@
     "default": "Viktor"
    },
    "playerSlug": "viktor-arvidsson-8478042"
+  },
+  {
+   "playerId": 8480879,
+   "lastName": {
+    "default": "Bernard-Docker"
+   },
+   "firstName": {
+    "default": "Jacob"
+   },
+   "playerSlug": "jacob-bernard-docker-8480879"
   },
   {
    "playerId": 8484794,

@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.3,
-   "percentile": 48
+   "percentile": 47
   },
   "Offense": {
    "value": -0.2,
@@ -91,75 +91,75 @@
   },
   "Defense": {
    "value": -0.2,
-   "percentile": 39
+   "percentile": 42
   },
   "Net": {
    "value": -0.4,
-   "percentile": 47
+   "percentile": 49
   }
  },
  "score": null,
  "standIn": {
-  "value": 38.9,
+  "value": 38.5,
   "gs": 2.01,
   "gs60": 1.36,
   "gameScore": 2.01,
   "minutes": 89,
   "gp": 7,
-  "rank": 434,
-  "pool": 733,
-  "percentile": 40.8,
+  "rank": 447,
+  "pool": 740,
+  "percentile": 39.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 432,
-    "name": "Noah Cates",
-    "team": "PHI",
-    "pos": "L",
-    "gp": 15,
-    "value": 39.1,
-    "gs60": 2.05,
+    "rank": 445,
+    "name": "Scott Mayfield",
+    "team": "NYI",
+    "pos": "D",
+    "gp": 5,
+    "value": 38.7,
+    "gs60": 2.04,
     "isMe": false
    },
    {
-    "rank": 433,
-    "name": "Adam Klapka",
-    "team": "CGY",
-    "pos": "R",
-    "gp": 13,
-    "value": 39.0,
-    "gs60": 2.03,
+    "rank": 446,
+    "name": "Josh Norris",
+    "team": "BUF",
+    "pos": "C",
+    "gp": 14,
+    "value": 38.6,
+    "gs60": 2.04,
     "isMe": false
    },
    {
-    "rank": 434,
+    "rank": 447,
     "name": "Axel Sandin-Pellikka",
     "team": "DET",
     "pos": "D",
     "gp": 7,
-    "value": 38.9,
+    "value": 38.5,
     "gs60": 2.01,
     "isMe": true
    },
    {
-    "rank": 435,
-    "name": "Justin Hryckowian",
-    "team": "DAL",
-    "pos": "C",
-    "gp": 13,
-    "value": 38.8,
-    "gs60": 1.97,
+    "rank": 448,
+    "name": "Stefan Noesen",
+    "team": "NJD",
+    "pos": "R",
+    "gp": 5,
+    "value": 38.3,
+    "gs60": 1.95,
     "isMe": false
    },
    {
-    "rank": 436,
-    "name": "Josh Norris",
-    "team": "BUF",
-    "pos": "C",
-    "gp": 13,
-    "value": 38.7,
-    "gs60": 1.96,
+    "rank": 449,
+    "name": "Cole Knuble",
+    "team": "PHI",
+    "pos": "R",
+    "gp": 5,
+    "value": 38.2,
+    "gs60": 1.91,
     "isMe": false
    }
   ],
@@ -385,5 +385,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-10-31T05:05:24-07:00"
+ "updatedAt": "2026-11-01T05:05:00-08:00"
 }

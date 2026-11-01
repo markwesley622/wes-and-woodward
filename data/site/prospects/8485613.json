@@ -48,12 +48,12 @@
   {
    "league": "MHL",
    "team": "MHK Spartak Moskva",
-   "gp": 3,
+   "gp": 4,
    "g": 0,
    "a": 3,
    "pts": 3,
    "pm": 2,
-   "pim": 2,
+   "pim": 4,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -157,12 +157,12 @@
     {
      "league": "MHL",
      "team": "MHK Spartak Moskva",
-     "gp": 3,
+     "gp": 4,
      "g": 0,
      "a": 3,
      "pts": 3,
      "pm": 2,
-     "pim": 2,
+     "pim": 4,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -254,19 +254,19 @@
   "table": "VHL",
   "coef": 0.328,
   "team": "Khimik Voskresensk",
-  "gp": 15,
+  "gp": 16,
   "g": 0,
   "a": 1,
   "pts": 1,
   "pgp": 0.083,
   "lineGp": 12,
-  "nhle": 0.05,
-  "nhlePace": 4.2,
+  "nhle": 0.047,
+  "nhlePace": 3.9,
   "lines": [
    "VHL",
    "MHL"
   ],
-  "feature": 0.05
+  "feature": 0.047
  },
  "league": {
   "name": "VHL",
@@ -300,7 +300,7 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 3.2,
+  "expected": 3.4,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
@@ -315,10 +315,30 @@
   "tier": "replacement level",
   "pCeiling": 0.08,
   "featureBand": [
-   0.039,
-   0.061
+   0.035,
+   0.057
   ],
   "examples": [
+   {
+    "name": "Brian Cooper",
+    "year": 2012,
+    "pick": 127,
+    "league": "NCAA",
+    "feature": 0.047,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Stefan Warg",
+    "year": 2008,
+    "pick": 143,
+    "league": "WHL",
+    "feature": 0.044,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
    {
     "name": "Blake Heinrich",
     "year": 2013,
@@ -330,61 +350,21 @@
     "nhlGp": 0
    },
    {
-    "name": "Cole Fraser",
-    "year": 2017,
-    "pick": 131,
-    "league": "OHL",
-    "feature": 0.05,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Thomas Larkin",
-    "year": 2009,
-    "pick": 137,
+    "name": "Jake Massie",
+    "year": 2015,
+    "pick": 156,
     "league": "NCAA",
-    "feature": 0.052,
+    "feature": 0.047,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Nick Seeler",
+    "name": "Troy Vance",
     "year": 2011,
-    "pick": 131,
-    "league": "NCAA",
-    "feature": 0.051,
-    "peak": 42.4,
-    "tier": "below average",
-    "nhlGp": 457
-   },
-   {
-    "name": "Joseph Cecconi",
-    "year": 2015,
-    "pick": 133,
-    "league": "NCAA",
-    "feature": 0.052,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Sam Ruopp",
-    "year": 2015,
-    "pick": 129,
-    "league": "WHL",
-    "feature": 0.051,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Alex Kannok Leipert",
-    "year": 2018,
-    "pick": 161,
-    "league": "WHL",
-    "feature": 0.05,
+    "pick": 135,
+    "league": "QMJHL",
+    "feature": 0.044,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -398,6 +378,26 @@
     "peak": 47.4,
     "tier": "below average",
     "nhlGp": 264
+   },
+   {
+    "name": "Sergei Boikov",
+    "year": 2015,
+    "pick": 161,
+    "league": "QMJHL",
+    "feature": 0.047,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Miska Kukkonen",
+    "year": 2018,
+    "pick": 125,
+    "league": "Liiga",
+    "feature": 0.046,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -418,8 +418,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 3.2,
-  "expected": 4.2,
+  "cohortExpected": 3.4,
+  "expected": 4.3,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -443,8 +443,8 @@
   "gp": 12,
   "season": "2026-2027"
  },
- "rank": 27,
- "score": 4.2,
+ "rank": 25,
+ "score": 4.3,
  "rankStart": 23,
  "rankStartDate": "2026-10-06"
 }
