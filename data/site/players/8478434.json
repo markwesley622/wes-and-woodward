@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": -0.04,
-   "percentile": 25
+   "percentile": 24
   },
   "Offense": {
    "value": -2.5,
-   "percentile": 0
+   "percentile": 1
   },
   "Defense": {
    "value": 0.9,
-   "percentile": 84
+   "percentile": 83
   },
   "Net": {
    "value": -1.6,
@@ -106,14 +106,14 @@
   "gameScore": 0.07,
   "minutes": 149,
   "gp": 14,
-  "rank": 570,
-  "pool": 740,
-  "percentile": 23.0,
+  "rank": 575,
+  "pool": 741,
+  "percentile": 22.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 568,
+    "rank": 573,
     "name": "Taylor Ward",
     "team": "LAK",
     "pos": "R",
@@ -123,7 +123,7 @@
     "isMe": false
    },
    {
-    "rank": 569,
+    "rank": 574,
     "name": "Cole Smith",
     "team": "CHI",
     "pos": "R",
@@ -133,7 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 570,
+    "rank": 575,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
@@ -143,7 +143,7 @@
     "isMe": true
    },
    {
-    "rank": 571,
+    "rank": 576,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
@@ -153,13 +153,13 @@
     "isMe": false
    },
    {
-    "rank": 572,
-    "name": "Liam O'Brien",
-    "team": "UTA",
-    "pos": "C",
-    "gp": 1,
+    "rank": 577,
+    "name": "Arshdeep Bains",
+    "team": "VAN",
+    "pos": "L",
+    "gp": 13,
     "value": 31.7,
-    "gs60": 0.04,
+    "gs60": 0.03,
     "isMe": false
    }
   ],
@@ -643,5 +643,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:03:02-08:00"
+ "updatedAt": "2026-11-02T05:12:27-08:00"
 }

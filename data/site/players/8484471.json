@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.5,
-   "percentile": 70
+   "percentile": 71
   },
   "Net": {
    "value": 2.1,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 78.2,
+  "value": 77.3,
   "gs": 13.44,
   "gs60": 3.19,
   "gameScore": 13.44,
   "minutes": 253,
   "gp": 14,
-  "rank": 78,
-  "pool": 740,
-  "percentile": 89.5,
+  "rank": 83,
+  "pool": 741,
+  "percentile": 88.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 76,
+    "rank": 81,
     "name": "Filip Forsberg",
     "team": "NSH",
     "pos": "L",
     "gp": 14,
-    "value": 78.2,
+    "value": 77.3,
     "gs60": 13.46,
     "isMe": false
    },
    {
-    "rank": 77,
+    "rank": 82,
     "name": "Joel Farabee",
     "team": "CGY",
     "pos": "L",
     "gp": 14,
-    "value": 78.2,
+    "value": 77.3,
     "gs60": 13.45,
     "isMe": false
    },
    {
-    "rank": 78,
+    "rank": 83,
     "name": "Emmitt Finnie",
     "team": "DET",
     "pos": "C",
     "gp": 14,
-    "value": 78.2,
+    "value": 77.3,
     "gs60": 13.44,
     "isMe": true
    },
    {
-    "rank": 79,
-    "name": "Jaccob Slavin",
-    "team": "CAR",
-    "pos": "D",
-    "gp": 15,
-    "value": 78.2,
-    "gs60": 13.43,
-    "isMe": false
-   },
-   {
-    "rank": 80,
+    "rank": 84,
     "name": "Elias Lindholm",
     "team": "BOS",
     "pos": "C",
     "gp": 15,
-    "value": 78.1,
+    "value": 77.2,
     "gs60": 13.43,
+    "isMe": false
+   },
+   {
+    "rank": 85,
+    "name": "Mark Scheifele",
+    "team": "WPG",
+    "pos": "C",
+    "gp": 15,
+    "value": 77.2,
+    "gs60": 13.41,
     "isMe": false
    }
   ],
@@ -553,5 +553,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:02:33-08:00"
+ "updatedAt": "2026-11-02T05:11:58-08:00"
 }

@@ -83,10 +83,10 @@
  "hsc": {
   "Game score": {
    "value": 1.19,
-   "percentile": 89
+   "percentile": 90
   },
   "Offense": {
-   "value": 1.3,
+   "value": 1.2,
    "percentile": 83
   },
   "Defense": {
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": 2.7,
-   "percentile": 92
+   "percentile": 91
   }
  },
  "score": null,
  "standIn": {
-  "value": 80.7,
+  "value": 79.8,
   "gs": 14.43,
   "gs60": 3.98,
   "gameScore": 14.43,
   "minutes": 218,
   "gp": 14,
-  "rank": 63,
-  "pool": 740,
-  "percentile": 91.5,
+  "rank": 66,
+  "pool": 741,
+  "percentile": 91.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 61,
-    "name": "Bo Horvat",
-    "team": "NYI",
-    "pos": "C",
-    "gp": 14,
-    "value": 81.3,
-    "gs60": 14.68,
-    "isMe": false
-   },
-   {
-    "rank": 62,
+    "rank": 64,
     "name": "Nico Hischier",
     "team": "NJD",
     "pos": "C",
     "gp": 14,
-    "value": 81.2,
+    "value": 80.4,
     "gs60": 14.68,
     "isMe": false
    },
    {
-    "rank": 63,
+    "rank": 65,
+    "name": "Vincent Trocheck",
+    "team": "UTA",
+    "pos": "C",
+    "gp": 15,
+    "value": 79.9,
+    "gs60": 14.47,
+    "isMe": false
+   },
+   {
+    "rank": 66,
     "name": "Michael Brandsegg-Nygrd",
     "team": "DET",
     "pos": "R",
     "gp": 14,
-    "value": 80.7,
+    "value": 79.8,
     "gs60": 14.43,
     "isMe": true
    },
    {
-    "rank": 64,
+    "rank": 67,
     "name": "Steven Stamkos",
     "team": "NSH",
     "pos": "C",
     "gp": 14,
-    "value": 80.6,
+    "value": 79.7,
     "gs60": 14.39,
     "isMe": false
    },
    {
-    "rank": 65,
-    "name": "Nikolaj Ehlers",
-    "team": "CAR",
+    "rank": 68,
+    "name": "Ivan Barbashev",
+    "team": "VGK",
     "pos": "L",
     "gp": 15,
-    "value": 80.6,
-    "gs60": 14.39,
+    "value": 79.6,
+    "gs60": 14.36,
     "isMe": false
    }
   ],
@@ -553,5 +553,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:01:15-08:00"
+ "updatedAt": "2026-11-02T05:10:38-08:00"
 }

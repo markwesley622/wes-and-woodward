@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": 2.7,
-   "percentile": 95
+   "percentile": 94
   },
   "Defense": {
    "value": 0.6,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 89.3,
+  "value": 88.6,
   "gs": 19.0,
   "gs60": 4.09,
   "gameScore": 19.0,
   "minutes": 278,
   "gp": 14,
-  "rank": 26,
-  "pool": 740,
-  "percentile": 96.5,
+  "rank": 28,
+  "pool": 741,
+  "percentile": 96.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 24,
-    "name": "Shayne Gostisbehere",
-    "team": "CAR",
-    "pos": "D",
-    "gp": 15,
-    "value": 90.1,
-    "gs60": 19.52,
-    "isMe": false
-   },
-   {
-    "rank": 25,
+    "rank": 26,
     "name": "Cale Makar",
     "team": "COL",
     "pos": "D",
     "gp": 13,
-    "value": 90.0,
+    "value": 89.3,
     "gs60": 19.5,
     "isMe": false
    },
    {
-    "rank": 26,
-    "name": "Alex DeBrincat",
-    "team": "DET",
-    "pos": "R",
-    "gp": 14,
-    "value": 89.3,
-    "gs60": 19.0,
-    "isMe": true
-   },
-   {
     "rank": 27,
-    "name": "Jake Guentzel",
-    "team": "TBL",
+    "name": "Logan Cooley",
+    "team": "UTA",
     "pos": "C",
-    "gp": 13,
-    "value": 89.3,
-    "gs60": 18.99,
+    "gp": 15,
+    "value": 88.6,
+    "gs60": 19.0,
     "isMe": false
    },
    {
     "rank": 28,
+    "name": "Alex DeBrincat",
+    "team": "DET",
+    "pos": "R",
+    "gp": 14,
+    "value": 88.6,
+    "gs60": 19.0,
+    "isMe": true
+   },
+   {
+    "rank": 29,
+    "name": "Jake Guentzel",
+    "team": "TBL",
+    "pos": "C",
+    "gp": 13,
+    "value": 88.6,
+    "gs60": 18.99,
+    "isMe": false
+   },
+   {
+    "rank": 30,
     "name": "Arseny Gritsyuk",
     "team": "NJD",
     "pos": "R",
     "gp": 14,
-    "value": 89.3,
+    "value": 88.5,
     "gs60": 18.95,
     "isMe": false
    }
@@ -673,5 +673,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:02:06-08:00"
+ "updatedAt": "2026-11-02T05:11:33-08:00"
 }

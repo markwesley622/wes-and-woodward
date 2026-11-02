@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.01,
-   "percentile": 27
+   "percentile": 26
   },
   "Offense": {
    "value": -0.5,
@@ -95,7 +95,7 @@
   },
   "Net": {
    "value": -0.6,
-   "percentile": 43
+   "percentile": 42
   }
  },
  "score": null,
@@ -106,14 +106,14 @@
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 552,
-  "pool": 740,
-  "percentile": 25.4,
+  "rank": 556,
+  "pool": 741,
+  "percentile": 25.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 550,
+    "rank": 554,
     "name": "Justin Dowling",
     "team": "NYR",
     "pos": "C",
@@ -123,7 +123,7 @@
     "isMe": false
    },
    {
-    "rank": 551,
+    "rank": 555,
     "name": "Jonathan Castagna",
     "team": "CGY",
     "pos": "C",
@@ -133,7 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 552,
+    "rank": 556,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
@@ -143,7 +143,7 @@
     "isMe": true
    },
    {
-    "rank": 553,
+    "rank": 557,
     "name": "Cody Ceci",
     "team": "LAK",
     "pos": "D",
@@ -153,12 +153,12 @@
     "isMe": false
    },
    {
-    "rank": 554,
+    "rank": 558,
     "name": "Ivan Provorov",
     "team": "CBJ",
     "pos": "D",
     "gp": 1,
-    "value": 32.3,
+    "value": 32.4,
     "gs60": 0.23,
     "isMe": false
    }
@@ -370,5 +370,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:00:49-08:00"
+ "updatedAt": "2026-11-02T05:10:07-08:00"
 }

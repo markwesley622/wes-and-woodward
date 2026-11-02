@@ -75,7 +75,7 @@
    "onIceXgPct": 0.57,
    "onIceCorsiPct": 0.56,
    "ixgPer60": 0.063,
-   "pctl_onIceXgPct": 0.0,
+   "pctl_onIceXgPct": 50.0,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -83,10 +83,10 @@
  "hsc": {
   "Game score": {
    "value": 0.65,
-   "percentile": 68
+   "percentile": 69
   },
   "Offense": {
-   "value": -0.4,
+   "value": -0.5,
    "percentile": 44
   },
   "Defense": {
@@ -94,72 +94,72 @@
    "percentile": 98
   },
   "Net": {
-   "value": 1.7,
+   "value": 1.6,
    "percentile": 83
   }
  },
  "score": null,
  "standIn": {
-  "value": 68.2,
+  "value": 67.4,
   "gs": 10.08,
   "gs60": 1.67,
   "gameScore": 10.08,
   "minutes": 361,
   "gp": 14,
-  "rank": 150,
-  "pool": 740,
-  "percentile": 79.7,
+  "rank": 153,
+  "pool": 741,
+  "percentile": 79.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 148,
-    "name": "Matt Coronato",
-    "team": "CGY",
-    "pos": "R",
-    "gp": 14,
-    "value": 68.3,
-    "gs60": 10.09,
-    "isMe": false
-   },
-   {
-    "rank": 149,
+    "rank": 151,
     "name": "Pontus Holmberg",
     "team": "TBL",
     "pos": "R",
     "gp": 13,
-    "value": 68.3,
+    "value": 67.4,
     "gs60": 10.09,
     "isMe": false
    },
    {
-    "rank": 150,
+    "rank": 152,
+    "name": "Matt Coronato",
+    "team": "CGY",
+    "pos": "R",
+    "gp": 14,
+    "value": 67.4,
+    "gs60": 10.09,
+    "isMe": false
+   },
+   {
+    "rank": 153,
     "name": "Moritz Seider",
     "team": "DET",
     "pos": "D",
     "gp": 14,
-    "value": 68.2,
+    "value": 67.4,
     "gs60": 10.08,
     "isMe": true
    },
    {
-    "rank": 151,
+    "rank": 154,
     "name": "Justin Barron",
     "team": "STL",
     "pos": "D",
     "gp": 11,
-    "value": 68.2,
+    "value": 67.4,
     "gs60": 10.08,
     "isMe": false
    },
    {
-    "rank": 152,
-    "name": "John Marino",
-    "team": "UTA",
+    "rank": 155,
+    "name": "Jalen Chatfield",
+    "team": "CAR",
     "pos": "D",
-    "gp": 9,
-    "value": 68.1,
-    "gs60": 10.04,
+    "gp": 16,
+    "value": 67.3,
+    "gs60": 10.05,
     "isMe": false
    }
   ],
@@ -613,5 +613,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:05:12-08:00"
+ "updatedAt": "2026-11-02T05:14:41-08:00"
 }

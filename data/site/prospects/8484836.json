@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 10,
+   "gp": 11,
    "g": 2,
-   "a": 5,
-   "pts": 7,
-   "pm": 1,
+   "a": 6,
+   "pts": 8,
+   "pm": 2,
    "pim": 4,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 10,
+     "gp": 11,
      "g": 2,
-     "a": 5,
-     "pts": 7,
-     "pm": 1,
+     "a": 6,
+     "pts": 8,
+     "pm": 2,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -140,18 +140,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 10,
+  "gp": 11,
   "g": 2,
-  "a": 5,
-  "pts": 7,
-  "pgp": 0.7,
-  "lineGp": 10,
-  "nhle": 0.272,
-  "nhlePace": 22.8,
+  "a": 6,
+  "pts": 8,
+  "pgp": 0.727,
+  "lineGp": 11,
+  "nhle": 0.283,
+  "nhlePace": 23.8,
   "lines": [
    "AHL"
   ],
-  "feature": 0.272
+  "feature": 0.283
  },
  "league": {
   "name": "AHL",
@@ -176,113 +176,113 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 44,
-   "gp": 10,
-   "value": 0.7,
+   "gp": 11,
+   "value": 0.7273,
    "percentile": 63.6,
-   "percentileAllAges": 72.0,
+   "percentileAllAges": 72.7,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 15.9,
+  "expected": 16.6,
   "median": 0.0,
-  "p75": 33.9,
-  "p90": 51.7,
-  "pRegular": 0.36,
-  "pTopLine": 0.04,
-  "pAboveAvg": 0.1,
+  "p75": 36.0,
+  "p90": 57.1,
+  "pRegular": 0.38,
+  "pTopLine": 0.06,
+  "pAboveAvg": 0.16,
   "pElite": 0.02,
   "poolN": 1006,
   "group": "F",
   "age": 22,
   "pickWeight": 0.0,
   "tier": "below average",
-  "pCeiling": 0.3,
+  "pCeiling": 0.28,
   "featureBand": [
-   0.261,
-   0.285
+   0.268,
+   0.297
   ],
   "examples": [
    {
-    "name": "Saku M\u00e4enalanen",
-    "year": 2013,
-    "pick": 125,
-    "league": "Liiga",
-    "feature": 0.272,
-    "peak": 3.7,
-    "tier": "replacement level",
-    "nhlGp": 98
+    "name": "Zach Hyman",
+    "year": 2010,
+    "pick": 123,
+    "league": "NCAA",
+    "feature": 0.283,
+    "peak": 93.8,
+    "tier": "elite",
+    "nhlGp": 712
    },
    {
-    "name": "Tommy Novak",
-    "year": 2015,
-    "pick": 85,
+    "name": "Taylor Leier",
+    "year": 2012,
+    "pick": 117,
     "league": "AHL",
-    "feature": 0.272,
-    "peak": 82.8,
-    "tier": "top-line",
-    "nhlGp": 288
-   },
-   {
-    "name": "Graeme Clarke",
-    "year": 2019,
-    "pick": 80,
-    "league": "AHL",
-    "feature": 0.272,
+    "feature": 0.283,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 3
+    "nhlGp": 55
    },
    {
-    "name": "Travis Boyd",
-    "year": 2011,
-    "pick": 177,
+    "name": "Colin Smith",
+    "year": 2012,
+    "pick": 192,
     "league": "AHL",
-    "feature": 0.271,
-    "peak": 51.7,
-    "tier": "above average",
-    "nhlGp": 299
+    "feature": 0.283,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
    },
    {
-    "name": "Andrei Svetlakov",
-    "year": 2017,
-    "pick": 178,
+    "name": "Mat\u011bj Bl\u00fcmel",
+    "year": 2019,
+    "pick": 100,
+    "league": "AHL",
+    "feature": 0.283,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 17
+   },
+   {
+    "name": "Joshua Ho-Sang",
+    "year": 2014,
+    "pick": 28,
+    "league": "AHL",
+    "feature": 0.284,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 53
+   },
+   {
+    "name": "Alexander Kadeikin",
+    "year": 2014,
+    "pick": 201,
     "league": "KHL",
-    "feature": 0.273,
+    "feature": 0.282,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Jimmy Vesey",
-    "year": 2012,
-    "pick": 66,
-    "league": "NCAA",
-    "feature": 0.27,
-    "peak": 49.5,
-    "tier": "below average",
-    "nhlGp": 626
-   },
-   {
-    "name": "Samuel Poulin",
-    "year": 2019,
-    "pick": 21,
+    "name": "Joachim Blichfeld",
+    "year": 2016,
+    "pick": 210,
     "league": "AHL",
-    "feature": 0.274,
+    "feature": 0.282,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 15
+    "nhlGp": 8
    },
    {
-    "name": "Gemel Smith",
-    "year": 2012,
-    "pick": 104,
-    "league": "AHL",
-    "feature": 0.269,
-    "peak": 14.9,
-    "tier": "replacement level",
-    "nhlGp": 91
+    "name": "Karel Plasek",
+    "year": 2019,
+    "pick": 175,
+    "league": "Czechia",
+    "feature": 0.282,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -303,8 +303,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 15.9,
-  "expected": 15.9,
+  "cohortExpected": 16.6,
+  "expected": 16.6,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -325,11 +325,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 10,
+  "gp": 11,
   "season": "2026-2027"
  },
- "rank": 12,
- "score": 15.9,
+ "rank": 11,
+ "score": 16.6,
  "rankStart": 16,
  "rankStartDate": "2026-10-06"
 }

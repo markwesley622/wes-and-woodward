@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -1.8,
-   "percentile": 5
+   "percentile": 6
   },
   "Defense": {
    "value": -0.4,
@@ -106,14 +106,14 @@
   "gameScore": 0.06,
   "minutes": 258,
   "gp": 14,
-  "rank": 571,
-  "pool": 740,
-  "percentile": 22.8,
+  "rank": 576,
+  "pool": 741,
+  "percentile": 22.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 569,
+    "rank": 574,
     "name": "Taylor Ward",
     "team": "LAK",
     "pos": "R",
@@ -123,7 +123,7 @@
     "isMe": false
    },
    {
-    "rank": 570,
+    "rank": 575,
     "name": "Cole Smith",
     "team": "CHI",
     "pos": "R",
@@ -133,7 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 571,
+    "rank": 576,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
@@ -143,21 +143,21 @@
     "isMe": true
    },
    {
-    "rank": 572,
-    "name": "Liam O'Brien",
-    "team": "UTA",
-    "pos": "C",
-    "gp": 1,
-    "value": 31.7,
-    "gs60": 0.04,
-    "isMe": false
-   },
-   {
-    "rank": 573,
+    "rank": 577,
     "name": "Arshdeep Bains",
     "team": "VAN",
     "pos": "L",
     "gp": 13,
+    "value": 31.7,
+    "gs60": 0.03,
+    "isMe": false
+   },
+   {
+    "rank": 578,
+    "name": "Ryan McLeod",
+    "team": "BUF",
+    "pos": "C",
+    "gp": 14,
     "value": 31.7,
     "gs60": 0.03,
     "isMe": false
@@ -718,5 +718,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:01:41-08:00"
+ "updatedAt": "2026-11-02T05:11:07-08:00"
 }

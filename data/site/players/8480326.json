@@ -87,19 +87,19 @@
  "hsc": {
   "Game score": {
    "value": 0.08,
-   "percentile": 33
+   "percentile": 34
   },
   "Offense": {
    "value": -1.2,
-   "percentile": 15
+   "percentile": 16
   },
   "Defense": {
-   "value": 0.3,
-   "percentile": 63
+   "value": 0.2,
+   "percentile": 64
   },
   "Net": {
    "value": -1.0,
-   "percentile": 30
+   "percentile": 31
   }
  },
  "score": null,
@@ -110,14 +110,24 @@
   "gameScore": 0.66,
   "minutes": 81,
   "gp": 8,
-  "rank": 527,
-  "pool": 740,
-  "percentile": 28.8,
+  "rank": 530,
+  "pool": 741,
+  "percentile": 28.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 525,
+    "rank": 528,
+    "name": "Matthew Wood",
+    "team": "NSH",
+    "pos": "R",
+    "gp": 14,
+    "value": 33.8,
+    "gs60": 0.67,
+    "isMe": false
+   },
+   {
+    "rank": 529,
     "name": "Alex Vlasic",
     "team": "CHI",
     "pos": "D",
@@ -127,17 +137,7 @@
     "isMe": false
    },
    {
-    "rank": 526,
-    "name": "Yakov Trenin",
-    "team": "MIN",
-    "pos": "C",
-    "gp": 15,
-    "value": 33.8,
-    "gs60": 0.66,
-    "isMe": false
-   },
-   {
-    "rank": 527,
+    "rank": 530,
     "name": "Sheldon Dries",
     "team": "DET",
     "pos": "C",
@@ -147,7 +147,7 @@
     "isMe": true
    },
    {
-    "rank": 528,
+    "rank": 531,
     "name": "Oliver Kapanen",
     "team": "MTL",
     "pos": "C",
@@ -157,7 +157,7 @@
     "isMe": false
    },
    {
-    "rank": 529,
+    "rank": 532,
     "name": "Logan O'Connor",
     "team": "COL",
     "pos": "R",
@@ -488,5 +488,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-11-01T05:02:20-08:00"
+ "updatedAt": "2026-11-02T05:11:47-08:00"
 }

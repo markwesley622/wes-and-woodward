@@ -75,7 +75,7 @@
    "onIceXgPct": 0.44,
    "onIceCorsiPct": 0.48,
    "ixgPer60": 0.213,
-   "pctl_onIceXgPct": 0.0,
+   "pctl_onIceXgPct": 50.0,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 27.5,
+  "value": 27.6,
   "gs": -1.29,
   "gs60": -0.39,
   "gameScore": -1.29,
   "minutes": 198,
   "gp": 14,
-  "rank": 659,
-  "pool": 740,
-  "percentile": 10.9,
+  "rank": 662,
+  "pool": 741,
+  "percentile": 10.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 657,
+    "rank": 660,
     "name": "Andre Burakovsky",
     "team": "OTT",
     "pos": "L",
     "gp": 8,
-    "value": 27.5,
+    "value": 27.6,
     "gs60": -1.28,
     "isMe": false
    },
    {
-    "rank": 658,
+    "rank": 661,
     "name": "Jake Christiansen",
     "team": "CBJ",
     "pos": "D",
     "gp": 11,
-    "value": 27.5,
+    "value": 27.6,
     "gs60": -1.29,
     "isMe": false
    },
    {
-    "rank": 659,
+    "rank": 662,
     "name": "Anton Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 14,
-    "value": 27.5,
+    "value": 27.6,
     "gs60": -1.29,
     "isMe": true
    },
    {
-    "rank": 660,
+    "rank": 663,
     "name": "Cole Koepke",
     "team": "WPG",
     "pos": "L",
     "gp": 11,
-    "value": 27.4,
+    "value": 27.5,
     "gs60": -1.32,
     "isMe": false
    },
    {
-    "rank": 661,
+    "rank": 664,
     "name": "Michael Bunting",
     "team": "PHI",
     "pos": "L",
     "gp": 8,
-    "value": 27.3,
+    "value": 27.5,
     "gs60": -1.35,
     "isMe": false
    }
@@ -537,5 +537,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:04:49-08:00"
+ "updatedAt": "2026-11-02T05:14:16-08:00"
 }

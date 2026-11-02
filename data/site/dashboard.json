@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-01T13:00+00:00",
+ "generatedAt": "2026-11-02T13:09+00:00",
  "season": "20262027",
  "seasonLabel": "2026-27",
  "seasonGames": 84,
@@ -24,174 +24,174 @@
   },
   "conference": {
    "name": "Eastern",
-   "place": 13,
+   "place": 12,
    "teams": 16
   },
   "league": {
-   "place": 21,
+   "place": 20,
    "teams": 32
   },
-  "wildcard": 7,
+  "wildcard": 6,
   "clinch": null,
-  "asOf": "2026-10-31"
+  "asOf": "2026-11-01"
  },
  "deserved": {
   "xgWinPct": 0.5634,
-  "xgPoints": 17.4,
-  "xgPointsPerSeason": 104.1,
-  "pointsAboveExpected": -2.4,
+  "xgPoints": 17.3,
+  "xgPointsPerSeason": 103.9,
+  "pointsAboveExpected": -2.3,
   "divisionPlace": 4,
   "conferencePlace": 6,
-  "leaguePlace": 10,
-  "loserPointRate": 0.1128,
+  "leaguePlace": 11,
+  "loserPointRate": 0.1104,
   "table": [
    {
     "team": "CAR",
-    "xgWinPct": 0.7066,
-    "xgPoints": 22.9,
+    "xgWinPct": 0.7079,
+    "xgPoints": 24.4,
     "xgPointsPerSeason": 128.2,
-    "actualPoints": 24,
+    "actualPoints": 26,
     "division": "M",
     "conference": "E",
     "leaguePlace": 1
    },
    {
     "team": "MIN",
-    "xgWinPct": 0.6708,
-    "xgPoints": 21.8,
-    "xgPointsPerSeason": 122.2,
-    "actualPoints": 21,
+    "xgWinPct": 0.6626,
+    "xgPoints": 23.0,
+    "xgPointsPerSeason": 120.6,
+    "actualPoints": 23,
     "division": "C",
     "conference": "W",
     "leaguePlace": 2
    },
    {
+    "team": "UTA",
+    "xgWinPct": 0.6382,
+    "xgPoints": 20.8,
+    "xgPointsPerSeason": 116.5,
+    "actualPoints": 18,
+    "division": "C",
+    "conference": "W",
+    "leaguePlace": 3
+   },
+   {
     "team": "NJD",
     "xgWinPct": 0.6697,
     "xgPoints": 20.3,
-    "xgPointsPerSeason": 122.0,
+    "xgPointsPerSeason": 121.8,
     "actualPoints": 18,
     "division": "M",
     "conference": "E",
-    "leaguePlace": 3
+    "leaguePlace": 4
    },
    {
     "team": "VGK",
     "xgWinPct": 0.6195,
-    "xgPoints": 20.3,
-    "xgPointsPerSeason": 113.6,
+    "xgPoints": 20.2,
+    "xgPointsPerSeason": 113.4,
     "actualPoints": 19,
     "division": "P",
-    "conference": "W",
-    "leaguePlace": 4
-   },
-   {
-    "team": "UTA",
-    "xgWinPct": 0.6419,
-    "xgPoints": 19.6,
-    "xgPointsPerSeason": 117.3,
-    "actualPoints": 18,
-    "division": "C",
     "conference": "W",
     "leaguePlace": 5
    },
    {
-    "team": "COL",
-    "xgWinPct": 0.6061,
-    "xgPoints": 18.6,
-    "xgPointsPerSeason": 111.3,
-    "actualPoints": 17,
-    "division": "C",
-    "conference": "W",
-    "leaguePlace": 6
-   },
-   {
     "team": "OTT",
-    "xgWinPct": 0.5304,
-    "xgPoints": 17.6,
-    "xgPointsPerSeason": 98.6,
+    "xgWinPct": 0.5294,
+    "xgPoints": 18.7,
+    "xgPointsPerSeason": 98.2,
     "actualPoints": 19,
     "division": "A",
     "conference": "E",
+    "leaguePlace": 6
+   },
+   {
+    "team": "COL",
+    "xgWinPct": 0.6061,
+    "xgPoints": 18.5,
+    "xgPointsPerSeason": 111.1,
+    "actualPoints": 17,
+    "division": "C",
+    "conference": "W",
     "leaguePlace": 7
+   },
+   {
+    "team": "EDM",
+    "xgWinPct": 0.5627,
+    "xgPoints": 18.5,
+    "xgPointsPerSeason": 103.8,
+    "actualPoints": 24,
+    "division": "P",
+    "conference": "W",
+    "leaguePlace": 8
    },
    {
     "team": "TBL",
     "xgWinPct": 0.6156,
-    "xgPoints": 17.5,
-    "xgPointsPerSeason": 112.9,
-    "actualPoints": 18,
-    "division": "A",
-    "conference": "E",
-    "leaguePlace": 8
-   },
-   {
-    "team": "FLA",
-    "xgWinPct": 0.5676,
-    "xgPoints": 17.5,
-    "xgPointsPerSeason": 104.8,
+    "xgPoints": 17.4,
+    "xgPointsPerSeason": 112.7,
     "actualPoints": 18,
     "division": "A",
     "conference": "E",
     "leaguePlace": 9
    },
    {
-    "team": "DET",
-    "xgWinPct": 0.5634,
+    "team": "FLA",
+    "xgWinPct": 0.5676,
     "xgPoints": 17.4,
-    "xgPointsPerSeason": 104.1,
-    "actualPoints": 15,
+    "xgPointsPerSeason": 104.6,
+    "actualPoints": 18,
     "division": "A",
     "conference": "E",
     "leaguePlace": 10
    },
    {
-    "team": "EDM",
-    "xgWinPct": 0.5581,
-    "xgPoints": 17.2,
-    "xgPointsPerSeason": 103.2,
-    "actualPoints": 22,
-    "division": "P",
-    "conference": "W",
+    "team": "DET",
+    "xgWinPct": 0.5634,
+    "xgPoints": 17.3,
+    "xgPointsPerSeason": 103.9,
+    "actualPoints": 15,
+    "division": "A",
+    "conference": "E",
     "leaguePlace": 11
+   },
+   {
+    "team": "NYR",
+    "xgWinPct": 0.5149,
+    "xgPoints": 17.1,
+    "xgPointsPerSeason": 95.8,
+    "actualPoints": 15,
+    "division": "M",
+    "conference": "E",
+    "leaguePlace": 12
    },
    {
     "team": "DAL",
     "xgWinPct": 0.5464,
-    "xgPoints": 16.9,
-    "xgPointsPerSeason": 101.3,
+    "xgPoints": 16.8,
+    "xgPointsPerSeason": 101.1,
     "actualPoints": 17,
     "division": "C",
     "conference": "W",
-    "leaguePlace": 12
+    "leaguePlace": 13
    },
    {
     "team": "BOS",
     "xgWinPct": 0.5059,
-    "xgPoints": 16.9,
-    "xgPointsPerSeason": 94.5,
+    "xgPoints": 16.8,
+    "xgPointsPerSeason": 94.3,
     "actualPoints": 21,
-    "division": "A",
-    "conference": "E",
-    "leaguePlace": 13
-   },
-   {
-    "team": "TOR",
-    "xgWinPct": 0.4591,
-    "xgPoints": 16.5,
-    "xgPointsPerSeason": 86.6,
-    "actualPoints": 18,
     "division": "A",
     "conference": "E",
     "leaguePlace": 14
    },
    {
-    "team": "NYR",
-    "xgWinPct": 0.524,
-    "xgPoints": 16.3,
-    "xgPointsPerSeason": 97.5,
-    "actualPoints": 15,
-    "division": "M",
+    "team": "TOR",
+    "xgWinPct": 0.4591,
+    "xgPoints": 16.5,
+    "xgPointsPerSeason": 86.4,
+    "actualPoints": 18,
+    "division": "A",
     "conference": "E",
     "leaguePlace": 15
    },
@@ -199,7 +199,7 @@
     "team": "STL",
     "xgWinPct": 0.5083,
     "xgPoints": 15.8,
-    "xgPointsPerSeason": 94.9,
+    "xgPointsPerSeason": 94.7,
     "actualPoints": 15,
     "division": "C",
     "conference": "W",
@@ -209,7 +209,7 @@
     "team": "MTL",
     "xgWinPct": 0.4983,
     "xgPoints": 15.5,
-    "xgPointsPerSeason": 93.2,
+    "xgPointsPerSeason": 93.0,
     "actualPoints": 20,
     "division": "A",
     "conference": "E",
@@ -219,7 +219,7 @@
     "team": "NSH",
     "xgWinPct": 0.4865,
     "xgPoints": 15.2,
-    "xgPointsPerSeason": 91.2,
+    "xgPointsPerSeason": 91.0,
     "actualPoints": 15,
     "division": "C",
     "conference": "W",
@@ -229,7 +229,7 @@
     "team": "BUF",
     "xgWinPct": 0.4773,
     "xgPoints": 14.9,
-    "xgPointsPerSeason": 89.7,
+    "xgPointsPerSeason": 89.5,
     "actualPoints": 17,
     "division": "A",
     "conference": "E",
@@ -239,117 +239,117 @@
     "team": "PIT",
     "xgWinPct": 0.4692,
     "xgPoints": 14.7,
-    "xgPointsPerSeason": 88.3,
+    "xgPointsPerSeason": 88.1,
     "actualPoints": 12,
     "division": "M",
     "conference": "E",
     "leaguePlace": 20
    },
    {
+    "team": "WSH",
+    "xgWinPct": 0.5047,
+    "xgPoints": 14.6,
+    "xgPointsPerSeason": 94.1,
+    "actualPoints": 16,
+    "division": "M",
+    "conference": "E",
+    "leaguePlace": 21
+   },
+   {
     "team": "LAK",
     "xgWinPct": 0.4931,
     "xgPoints": 14.3,
-    "xgPointsPerSeason": 92.3,
+    "xgPointsPerSeason": 92.1,
     "actualPoints": 10,
     "division": "P",
     "conference": "W",
-    "leaguePlace": 21
+    "leaguePlace": 22
+   },
+   {
+    "team": "WPG",
+    "xgWinPct": 0.3999,
+    "xgPoints": 13.7,
+    "xgPointsPerSeason": 76.5,
+    "actualPoints": 11,
+    "division": "C",
+    "conference": "W",
+    "leaguePlace": 23
    },
    {
     "team": "NYI",
     "xgWinPct": 0.4306,
     "xgPoints": 13.6,
-    "xgPointsPerSeason": 81.8,
+    "xgPointsPerSeason": 81.6,
     "actualPoints": 16,
     "division": "M",
     "conference": "E",
-    "leaguePlace": 22
-   },
-   {
-    "team": "WSH",
-    "xgWinPct": 0.5079,
-    "xgPoints": 13.5,
-    "xgPointsPerSeason": 94.8,
-    "actualPoints": 16,
-    "division": "M",
-    "conference": "E",
-    "leaguePlace": 23
-   },
-   {
-    "team": "WPG",
-    "xgWinPct": 0.4115,
-    "xgPoints": 13.1,
-    "xgPointsPerSeason": 78.6,
-    "actualPoints": 11,
-    "division": "C",
-    "conference": "W",
     "leaguePlace": 24
    },
    {
-    "team": "CGY",
-    "xgWinPct": 0.4097,
-    "xgPoints": 13.1,
-    "xgPointsPerSeason": 78.3,
-    "actualPoints": 12,
+    "team": "ANA",
+    "xgWinPct": 0.4218,
+    "xgPoints": 13.4,
+    "xgPointsPerSeason": 80.1,
+    "actualPoints": 13,
     "division": "P",
     "conference": "W",
     "leaguePlace": 25
    },
    {
-    "team": "SEA",
-    "xgWinPct": 0.4008,
-    "xgPoints": 12.8,
-    "xgPointsPerSeason": 76.8,
-    "actualPoints": 17,
+    "team": "CGY",
+    "xgWinPct": 0.4097,
+    "xgPoints": 13.0,
+    "xgPointsPerSeason": 78.1,
+    "actualPoints": 12,
     "division": "P",
     "conference": "W",
     "leaguePlace": 26
    },
    {
-    "team": "ANA",
-    "xgWinPct": 0.4174,
-    "xgPoints": 12.3,
-    "xgPointsPerSeason": 79.6,
-    "actualPoints": 11,
+    "team": "SEA",
+    "xgWinPct": 0.4008,
+    "xgPoints": 12.8,
+    "xgPointsPerSeason": 76.6,
+    "actualPoints": 17,
     "division": "P",
     "conference": "W",
     "leaguePlace": 27
    },
    {
+    "team": "PHI",
+    "xgWinPct": 0.3404,
+    "xgPoints": 12.7,
+    "xgPointsPerSeason": 66.5,
+    "actualPoints": 12,
+    "division": "M",
+    "conference": "E",
+    "leaguePlace": 28
+   },
+   {
     "team": "SJS",
     "xgWinPct": 0.3517,
     "xgPoints": 12.2,
-    "xgPointsPerSeason": 68.6,
+    "xgPointsPerSeason": 68.4,
     "actualPoints": 15,
     "division": "P",
     "conference": "W",
-    "leaguePlace": 28
+    "leaguePlace": 29
    },
    {
     "team": "CHI",
     "xgWinPct": 0.3723,
     "xgPoints": 12.0,
-    "xgPointsPerSeason": 72.0,
+    "xgPointsPerSeason": 71.8,
     "actualPoints": 9,
     "division": "C",
     "conference": "W",
-    "leaguePlace": 29
-   },
-   {
-    "team": "PHI",
-    "xgWinPct": 0.3356,
-    "xgPoints": 11.8,
-    "xgPointsPerSeason": 65.9,
-    "actualPoints": 10,
-    "division": "M",
-    "conference": "E",
     "leaguePlace": 30
    },
    {
     "team": "VAN",
     "xgWinPct": 0.2884,
     "xgPoints": 11.0,
-    "xgPointsPerSeason": 57.9,
+    "xgPointsPerSeason": 57.7,
     "actualPoints": 7,
     "division": "P",
     "conference": "W",
@@ -359,7 +359,7 @@
     "team": "CBJ",
     "xgWinPct": 0.3956,
     "xgPoints": 10.8,
-    "xgPointsPerSeason": 75.9,
+    "xgPointsPerSeason": 75.7,
     "actualPoints": 10,
     "division": "M",
     "conference": "E",
@@ -371,30 +371,30 @@
  "projected": {
   "source": "MoneyPuck season simulation",
   "available": true,
-  "points": 94.3,
-  "playoffOdds": 0.3609,
-  "divisionOdds": 0.039,
-  "wildcardOdds": 0.17099999999999999,
-  "cupOdds": 0.019,
-  "lotteryOdds": 0.016,
+  "points": 92.6,
+  "playoffOdds": 0.3005,
+  "divisionOdds": 0.026,
+  "wildcardOdds": 0.156,
+  "cupOdds": 0.014,
+  "lotteryOdds": 0.02,
   "preseasonPoints": 88.6,
   "preseasonPlayoffOdds": 0.2553,
   "nextGame": {
    "WINREG": {
     "points": 1.0,
-    "playoffOdds": 0.0424
+    "playoffOdds": 0.0417
    },
    "WINOT": {
-    "points": 0.9,
-    "playoffOdds": 0.0371
+    "points": 1.0,
+    "playoffOdds": 0.0324
    },
    "LOSSOT": {
-    "points": -0.1,
-    "playoffOdds": -0.0129
+    "points": 0.1,
+    "playoffOdds": -0.0025
    },
    "LOSSREG": {
     "points": -0.9,
-    "playoffOdds": -0.0354
+    "playoffOdds": -0.032
    }
   }
  },
@@ -410,20 +410,20 @@
    "label": "5v5 expected-goal share",
    "value": 55.0,
    "unit": "%",
-   "rank": 6,
+   "rank": 4,
    "of": 32,
    "note": "MoneyPuck, five-on-five",
-   "rankLabel": "6th of 32"
+   "rankLabel": "4th of 32"
   },
   {
    "key": "xg_share_5v5_adj",
    "label": "5v5 xG share, score & venue adjusted",
    "value": 52.9,
    "unit": "%",
-   "rank": 12,
+   "rank": 13,
    "of": 32,
    "note": "flurry, score and venue adjusted",
-   "rankLabel": "12th of 32"
+   "rankLabel": "13th of 32"
   },
   {
    "key": "finishing",
@@ -441,11 +441,11 @@
    "label": "Goaltending, goals saved above expected",
    "value": -0.2,
    "unit": "",
-   "rank": 18,
+   "rank": 16,
    "of": 32,
    "signed": true,
    "note": "team GSAx, all situations",
-   "rankLabel": "18th of 32"
+   "rankLabel": "16th of 32"
   },
   {
    "key": "pp_xgf60",
@@ -462,10 +462,10 @@
    "label": "Penalty kill xG against per 60",
    "value": 7.91,
    "unit": "",
-   "rank": 18,
+   "rank": 19,
    "of": 32,
    "note": "4v5, lower is better",
-   "rankLabel": "18th of 32"
+   "rankLabel": "19th of 32"
   }
  ],
  "radar": {
@@ -481,17 +481,17 @@
     "note": "goals above expected, all situations",
     "det": 9.7,
     "detRaw": "-7.4",
-    "top3": 48.4,
-    "top3Raw": "+0.7"
+    "top3": 55.9,
+    "top3Raw": "+2.2"
    },
    {
     "key": "goaltending",
     "label": "Goaltending",
     "note": "goals saved above expected, all situations",
-    "det": 45.2,
+    "det": 51.6,
     "detRaw": "-0.2",
-    "top3": 60.2,
-    "top3Raw": "+1.6"
+    "top3": 71.0,
+    "top3Raw": "+3.9"
    },
    {
     "key": "attacking",
@@ -508,8 +508,8 @@
     "note": "5v5 expected goals against per 60 (lower is better)",
     "det": 83.9,
     "detRaw": "2.20",
-    "top3": 80.6,
-    "top3Raw": "2.20"
+    "top3": 77.4,
+    "top3Raw": "2.24"
    },
    {
     "key": "possession",
@@ -518,7 +518,7 @@
     "det": 80.6,
     "detRaw": "54.0%",
     "top3": 66.7,
-    "top3Raw": "53.7%"
+    "top3Raw": "53.3%"
    },
    {
     "key": "powerplay",
@@ -526,17 +526,17 @@
     "note": "5v4 expected goals for per 60",
     "det": 83.9,
     "detRaw": "9.08",
-    "top3": 82.8,
-    "top3Raw": "9.01"
+    "top3": 83.9,
+    "top3Raw": "9.17"
    },
    {
     "key": "penaltykill",
     "label": "Penalty kill",
     "note": "4v5 expected goals against per 60 (lower is better)",
-    "det": 45.2,
+    "det": 41.9,
     "detRaw": "7.91",
     "top3": 73.1,
-    "top3Raw": "6.63"
+    "top3Raw": "6.68"
    }
   ],
   "available": true

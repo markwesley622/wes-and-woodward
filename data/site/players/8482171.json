@@ -75,7 +75,7 @@
    "onIceXgPct": 0.59,
    "onIceCorsiPct": 0.55,
    "ixgPer60": 0.135,
-   "pctl_onIceXgPct": 0.0,
+   "pctl_onIceXgPct": 50.0,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": 0.28,
-   "percentile": 46
+   "percentile": 45
   },
   "Offense": {
-   "value": 0.4,
+   "value": 0.3,
    "percentile": 70
   },
   "Defense": {
    "value": 0.0,
-   "percentile": 53
+   "percentile": 52
   },
   "Net": {
    "value": 0.4,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 45.1,
+  "value": 44.8,
   "gs": 3.79,
   "gs60": 1.63,
   "gameScore": 3.79,
   "minutes": 139,
   "gp": 9,
-  "rank": 353,
-  "pool": 740,
-  "percentile": 52.3,
+  "rank": 363,
+  "pool": 741,
+  "percentile": 51.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 351,
-    "name": "Joel Edmundson",
-    "team": "LAK",
-    "pos": "D",
-    "gp": 13,
-    "value": 45.3,
-    "gs60": 3.83,
-    "isMe": false
-   },
-   {
-    "rank": 352,
-    "name": "Casey Cizikas",
-    "team": "NYI",
+    "rank": 361,
+    "name": "Gabriel Vilardi",
+    "team": "WPG",
     "pos": "C",
-    "gp": 14,
-    "value": 45.2,
+    "gp": 15,
+    "value": 44.9,
     "gs60": 3.82,
     "isMe": false
    },
    {
-    "rank": 353,
+    "rank": 362,
+    "name": "Casey Cizikas",
+    "team": "NYI",
+    "pos": "C",
+    "gp": 14,
+    "value": 44.9,
+    "gs60": 3.82,
+    "isMe": false
+   },
+   {
+    "rank": 363,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 9,
-    "value": 45.1,
+    "value": 44.8,
     "gs60": 3.79,
     "isMe": true
    },
    {
-    "rank": 354,
-    "name": "Nick Seeler",
-    "team": "PHI",
-    "pos": "D",
-    "gp": 15,
-    "value": 45.1,
-    "gs60": 3.77,
+    "rank": 364,
+    "name": "Filip Hallander",
+    "team": "EDM",
+    "pos": "C",
+    "gp": 9,
+    "value": 44.8,
+    "gs60": 3.79,
     "isMe": false
    },
    {
-    "rank": 355,
-    "name": "Porter Martone",
-    "team": "PHI",
-    "pos": "R",
-    "gp": 15,
-    "value": 45.0,
-    "gs60": 3.76,
+    "rank": 365,
+    "name": "Declan Carlile",
+    "team": "PIT",
+    "pos": "D",
+    "gp": 14,
+    "value": 44.6,
+    "gs60": 3.73,
     "isMe": false
    }
   ],
@@ -417,5 +417,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:05:23-08:00"
+ "updatedAt": "2026-11-02T05:14:54-08:00"
 }

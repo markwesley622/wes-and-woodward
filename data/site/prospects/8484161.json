@@ -31,10 +31,10 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 10,
-   "g": 0,
+   "gp": 11,
+   "g": 1,
    "a": 3,
-   "pts": 3,
+   "pts": 4,
    "pm": -6,
    "pim": 0,
    "gaa": null,
@@ -72,10 +72,10 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 10,
-     "g": 0,
+     "gp": 11,
+     "g": 1,
      "a": 3,
-     "pts": 3,
+     "pts": 4,
      "pm": -6,
      "pim": 0,
      "gaa": null,
@@ -230,18 +230,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 10,
-  "g": 0,
+  "gp": 11,
+  "g": 1,
   "a": 3,
-  "pts": 3,
-  "pgp": 0.3,
-  "lineGp": 10,
-  "nhle": 0.117,
-  "nhlePace": 9.8,
+  "pts": 4,
+  "pgp": 0.364,
+  "lineGp": 11,
+  "nhle": 0.141,
+  "nhlePace": 11.8,
   "lines": [
    "AHL"
   ],
-  "feature": 0.117
+  "feature": 0.141
  },
  "league": {
   "name": "AHL",
@@ -266,20 +266,20 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 41,
-   "gp": 10,
-   "value": 0.3,
-   "percentile": 48.8,
-   "percentileAllAges": 39.1,
+   "gp": 11,
+   "value": 0.3636,
+   "percentile": 58.5,
+   "percentileAllAges": 49.7,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 4.2,
+  "expected": 1.8,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 19.8,
-  "pRegular": 0.22,
+  "p90": 8.3,
+  "pRegular": 0.1,
   "pTopLine": 0.0,
   "pAboveAvg": 0.0,
   "pElite": 0.0,
@@ -288,91 +288,91 @@
   "age": 21,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.22,
+  "pCeiling": 0.1,
   "featureBand": [
-   0.113,
-   0.121
+   0.136,
+   0.146
   ],
   "examples": [
    {
-    "name": "David Gilbert",
-    "year": 2009,
-    "pick": 209,
+    "name": "Logan Shaw",
+    "year": 2011,
+    "pick": 76,
     "league": "AHL",
-    "feature": 0.117,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Chris Wagner",
-    "year": 2010,
-    "pick": 122,
-    "league": "AHL",
-    "feature": 0.117,
-    "peak": 15.8,
+    "feature": 0.141,
+    "peak": 12.9,
     "tier": "replacement level",
-    "nhlGp": 401
+    "nhlGp": 232
    },
    {
-    "name": "Adam Gilmour",
-    "year": 2012,
-    "pick": 98,
+    "name": "Sean Kuraly",
+    "year": 2011,
+    "pick": 133,
     "league": "NCAA",
-    "feature": 0.117,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "feature": 0.141,
+    "peak": 37.9,
+    "tier": "below average",
+    "nhlGp": 647
    },
    {
-    "name": "Judd Peterson",
-    "year": 2012,
-    "pick": 204,
-    "league": "NCAA",
-    "feature": 0.117,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Radel Fazleyev",
-    "year": 2014,
-    "pick": 168,
+    "name": "Tobias Lindberg",
+    "year": 2013,
+    "pick": 102,
     "league": "AHL",
-    "feature": 0.117,
+    "feature": 0.141,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 6
+   },
+   {
+    "name": "Isaac Ratcliffe",
+    "year": 2017,
+    "pick": 35,
+    "league": "AHL",
+    "feature": 0.141,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 10
+   },
+   {
+    "name": "Justin Almeida",
+    "year": 2018,
+    "pick": 129,
+    "league": "AHL",
+    "feature": 0.141,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Deven Sideroff",
-    "year": 2015,
+    "name": "Gabriel Fontaine",
+    "year": 2016,
+    "pick": 171,
+    "league": "AHL",
+    "feature": 0.14,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jonathan Gruden",
+    "year": 2018,
+    "pick": 95,
+    "league": "AHL",
+    "feature": 0.14,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 16
+   },
+   {
+    "name": "Nicolas Deslauriers",
+    "year": 2009,
     "pick": 84,
     "league": "AHL",
-    "feature": 0.117,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kody Clark",
-    "year": 2018,
-    "pick": 47,
-    "league": "AHL",
-    "feature": 0.117,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Graham Black",
-    "year": 2012,
-    "pick": 135,
-    "league": "AHL",
-    "feature": 0.118,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "feature": 0.142,
+    "peak": 16.2,
+    "tier": "replacement level",
+    "nhlGp": 710
    }
   ]
  },
@@ -393,8 +393,8 @@
   "w": 0.0,
   "sinceDraft": 3,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 4.2,
-  "expected": 4.2,
+  "cohortExpected": 1.8,
+  "expected": 1.8,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -415,11 +415,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 10,
+  "gp": 11,
   "season": "2026-2027"
  },
- "rank": 27,
- "score": 4.2,
+ "rank": 29,
+ "score": 1.8,
  "rankStart": 12,
  "rankStartDate": "2026-10-06"
 }

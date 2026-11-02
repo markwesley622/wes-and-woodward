@@ -90,75 +90,75 @@
    "percentile": 41
   },
   "Defense": {
-   "value": -1.4,
+   "value": -1.5,
    "percentile": 7
   },
   "Net": {
-   "value": -1.9,
-   "percentile": 11
+   "value": -2.0,
+   "percentile": 10
   }
  },
  "score": null,
  "standIn": {
-  "value": 28.5,
+  "value": 28.6,
   "gs": -0.97,
   "gs60": -0.82,
   "gameScore": -0.97,
   "minutes": 71,
   "gp": 8,
-  "rank": 641,
-  "pool": 740,
-  "percentile": 13.4,
+  "rank": 643,
+  "pool": 741,
+  "percentile": 13.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 639,
-    "name": "Bokondji Imama",
-    "team": "FLA",
-    "pos": "L",
-    "gp": 14,
-    "value": 28.5,
-    "gs60": -0.95,
-    "isMe": false
-   },
-   {
-    "rank": 640,
-    "name": "Sam Rinzel",
-    "team": "CHI",
-    "pos": "D",
-    "gp": 13,
-    "value": 28.5,
+    "rank": 641,
+    "name": "Nino Niederreiter",
+    "team": "WPG",
+    "pos": "R",
+    "gp": 9,
+    "value": 28.6,
     "gs60": -0.96,
     "isMe": false
    },
    {
-    "rank": 641,
-    "name": "Carter Mazur",
-    "team": "DET",
-    "pos": "L",
-    "gp": 8,
-    "value": 28.5,
-    "gs60": -0.97,
-    "isMe": true
-   },
-   {
     "rank": 642,
-    "name": "Kyle MacLean",
-    "team": "NYI",
-    "pos": "C",
-    "gp": 5,
-    "value": 28.4,
-    "gs60": -0.99,
+    "name": "Sam Rinzel",
+    "team": "CHI",
+    "pos": "D",
+    "gp": 13,
+    "value": 28.6,
+    "gs60": -0.96,
     "isMe": false
    },
    {
     "rank": 643,
-    "name": "Isaac Howard",
-    "team": "EDM",
+    "name": "Carter Mazur",
+    "team": "DET",
     "pos": "L",
-    "gp": 13,
-    "value": 28.3,
+    "gp": 8,
+    "value": 28.6,
+    "gs60": -0.97,
+    "isMe": true
+   },
+   {
+    "rank": 644,
+    "name": "Kyle MacLean",
+    "team": "NYI",
+    "pos": "C",
+    "gp": 5,
+    "value": 28.5,
+    "gs60": -0.99,
+    "isMe": false
+   },
+   {
+    "rank": 645,
+    "name": "Alexey Toropchenko",
+    "team": "STL",
+    "pos": "R",
+    "gp": 4,
+    "value": 28.4,
     "gs60": -1.02,
     "isMe": false
    }
@@ -424,5 +424,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:03:25-08:00"
+ "updatedAt": "2026-11-02T05:12:52-08:00"
 }

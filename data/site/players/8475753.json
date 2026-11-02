@@ -75,7 +75,7 @@
    "onIceXgPct": 0.56,
    "onIceCorsiPct": 0.55,
    "ixgPer60": 0.152,
-   "pctl_onIceXgPct": 0.0,
+   "pctl_onIceXgPct": 50.0,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.6,
-   "percentile": 66
+   "percentile": 67
   },
   "Offense": {
    "value": -0.1,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 61.5,
+  "value": 60.7,
   "gs": 8.13,
   "gs60": 1.75,
   "gameScore": 8.13,
   "minutes": 278,
   "gp": 14,
-  "rank": 199,
-  "pool": 740,
-  "percentile": 73.1,
+  "rank": 209,
+  "pool": 741,
+  "percentile": 71.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 197,
-    "name": "Will Borgen",
-    "team": "BOS",
-    "pos": "D",
-    "gp": 15,
-    "value": 61.6,
-    "gs60": 8.16,
-    "isMe": false
-   },
-   {
-    "rank": 198,
-    "name": "Brett Howden",
-    "team": "VGK",
+    "rank": 207,
+    "name": "Trevor Zegras",
+    "team": "PHI",
     "pos": "C",
-    "gp": 15,
-    "value": 61.5,
+    "gp": 16,
+    "value": 60.8,
     "gs60": 8.15,
     "isMe": false
    },
    {
-    "rank": 199,
+    "rank": 208,
+    "name": "Brett Howden",
+    "team": "VGK",
+    "pos": "C",
+    "gp": 15,
+    "value": 60.8,
+    "gs60": 8.15,
+    "isMe": false
+   },
+   {
+    "rank": 209,
     "name": "Justin Faulk",
     "team": "DET",
     "pos": "D",
     "gp": 14,
-    "value": 61.5,
+    "value": 60.7,
     "gs60": 8.13,
     "isMe": true
    },
    {
-    "rank": 200,
-    "name": "Pierre-Luc Dubois",
-    "team": "WSH",
-    "pos": "C",
-    "gp": 7,
-    "value": 61.4,
-    "gs60": 8.12,
+    "rank": 210,
+    "name": "Gabe Perreault",
+    "team": "NYR",
+    "pos": "R",
+    "gp": 15,
+    "value": 60.5,
+    "gs60": 8.08,
     "isMe": false
    },
    {
-    "rank": 201,
-    "name": "Alex Iafallo",
-    "team": "WPG",
-    "pos": "L",
-    "gp": 14,
-    "value": 61.2,
-    "gs60": 8.07,
+    "rank": 211,
+    "name": "Connor Bedard",
+    "team": "CHI",
+    "pos": "C",
+    "gp": 8,
+    "value": 60.5,
+    "gs60": 8.05,
     "isMe": false
    }
   ],
@@ -763,5 +763,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:04:24-08:00"
+ "updatedAt": "2026-11-02T05:13:51-08:00"
 }

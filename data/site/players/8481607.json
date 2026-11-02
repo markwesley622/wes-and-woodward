@@ -75,7 +75,7 @@
    "onIceXgPct": 0.57,
    "onIceCorsiPct": 0.57,
    "ixgPer60": 0.224,
-   "pctl_onIceXgPct": 0.0,
+   "pctl_onIceXgPct": 50.0,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -87,78 +87,78 @@
   },
   "Offense": {
    "value": 0.2,
-   "percentile": 67
+   "percentile": 66
   },
   "Defense": {
    "value": 0.6,
    "percentile": 75
   },
   "Net": {
-   "value": 0.8,
+   "value": 0.7,
    "percentile": 73
   }
  },
  "score": null,
  "standIn": {
-  "value": 49.7,
+  "value": 49.2,
   "gs": 4.99,
   "gs60": 1.74,
   "gameScore": 4.99,
   "minutes": 172,
   "gp": 11,
-  "rank": 312,
-  "pool": 740,
-  "percentile": 57.8,
+  "rank": 319,
+  "pool": 741,
+  "percentile": 57.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 310,
-    "name": "Joel Armia",
-    "team": "LAK",
-    "pos": "R",
-    "gp": 13,
-    "value": 49.8,
+    "rank": 317,
+    "name": "Frederick Gaudreau",
+    "team": "SEA",
+    "pos": "C",
+    "gp": 14,
+    "value": 49.3,
     "gs60": 5.02,
     "isMe": false
    },
    {
-    "rank": 311,
+    "rank": 318,
     "name": "Kyle Palmieri",
     "team": "NYI",
     "pos": "C",
     "gp": 14,
-    "value": 49.8,
+    "value": 49.3,
     "gs60": 5.0,
     "isMe": false
    },
    {
-    "rank": 312,
+    "rank": 319,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 49.7,
+    "value": 49.2,
     "gs60": 4.99,
     "isMe": true
    },
    {
-    "rank": 313,
+    "rank": 320,
     "name": "Kaiden Guhle",
     "team": "MTL",
     "pos": "D",
     "gp": 10,
-    "value": 49.6,
+    "value": 49.2,
     "gs60": 4.97,
     "isMe": false
    },
    {
-    "rank": 314,
+    "rank": 321,
     "name": "Jack Drury",
     "team": "NSH",
     "pos": "C",
     "gp": 14,
-    "value": 49.5,
+    "value": 49.0,
     "gs60": 4.93,
     "isMe": false
    }
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:04:36-08:00"
+ "updatedAt": "2026-11-02T05:14:04-08:00"
 }

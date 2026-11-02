@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.29,
-   "percentile": 46
+   "percentile": 45
   },
   "Offense": {
    "value": -0.0,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": -0.4,
-   "percentile": 48
+   "percentile": 47
   }
  },
  "score": null,
  "standIn": {
-  "value": 41.6,
+  "value": 41.3,
   "gs": 2.84,
   "gs60": 1.68,
   "gameScore": 2.84,
   "minutes": 102,
   "gp": 7,
-  "rank": 407,
-  "pool": 740,
-  "percentile": 45.0,
+  "rank": 409,
+  "pool": 741,
+  "percentile": 44.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 405,
-    "name": "Zach Hyman",
-    "team": "EDM",
+    "rank": 407,
+    "name": "Nick Foligno",
+    "team": "MIN",
     "pos": "L",
-    "gp": 6,
-    "value": 41.7,
+    "gp": 3,
+    "value": 41.4,
     "gs60": 2.86,
     "isMe": false
    },
    {
-    "rank": 406,
-    "name": "Tyler Kleven",
-    "team": "OTT",
-    "pos": "D",
-    "gp": 15,
-    "value": 41.6,
-    "gs60": 2.84,
-    "isMe": false
-   },
-   {
-    "rank": 407,
-    "name": "J.T. Compher",
-    "team": "DET",
-    "pos": "L",
-    "gp": 7,
-    "value": 41.6,
-    "gs60": 2.84,
-    "isMe": true
-   },
-   {
     "rank": 408,
-    "name": "Andre Lee",
-    "team": "LAK",
+    "name": "Zach Hyman",
+    "team": "EDM",
     "pos": "L",
-    "gp": 11,
-    "value": 41.5,
-    "gs60": 2.81,
+    "gp": 6,
+    "value": 41.4,
+    "gs60": 2.86,
     "isMe": false
    },
    {
     "rank": 409,
-    "name": "Scott Sabourin",
-    "team": "TBL",
-    "pos": "R",
-    "gp": 3,
+    "name": "J.T. Compher",
+    "team": "DET",
+    "pos": "L",
+    "gp": 7,
     "value": 41.3,
-    "gs60": 2.78,
+    "gs60": 2.84,
+    "isMe": true
+   },
+   {
+    "rank": 410,
+    "name": "David Spacek",
+    "team": "MIN",
+    "pos": "D",
+    "gp": 8,
+    "value": 41.3,
+    "gs60": 2.84,
+    "isMe": false
+   },
+   {
+    "rank": 411,
+    "name": "Andre Lee",
+    "team": "LAK",
+    "pos": "L",
+    "gp": 11,
+    "value": 41.3,
+    "gs60": 2.81,
     "isMe": false
    }
   ],
@@ -520,5 +520,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-01T05:01:28-08:00"
+ "updatedAt": "2026-11-02T05:10:53-08:00"
 }
