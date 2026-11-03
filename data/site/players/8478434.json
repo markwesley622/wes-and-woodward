@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 14,
+  "gp": 15,
   "goals": 1,
   "assists": 0,
   "points": 1,
-  "plusMinus": -3,
+  "plusMinus": -2,
   "pim": 20,
   "shots": 6,
   "shootingPct": 0.166667,
-  "toiPerGame": "10:37",
+  "toiPerGame": "10:26",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 14,
+   "gp": 15,
    "goals": 1,
    "assists": 0,
    "points": 1,
-   "plusMinus": -3,
+   "plusMinus": -2,
    "pim": 20
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Keegan Kolesar",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478434.png",
-  "gamesPlayed": 14,
+  "gamesPlayed": 15,
   "goals": 1,
   "assists": 0,
   "points": 1,
   "shots": 6,
   "shootingPct": 0.166667,
-  "toiPerGame": 636.5,
+  "toiPerGame": 626.5,
   "ixG": 0.85,
   "goalsAboveExpected": 0.15,
-  "gameScore": 0.76,
+  "gameScore": 0.56,
   "fiveOnFive": {
-   "icetimeMinutes": 128.9,
-   "onIceXgPct": 0.46,
-   "onIceCorsiPct": 0.47,
-   "ixgPer60": 0.331,
+   "icetimeMinutes": 136.2,
+   "onIceXgPct": 0.45,
+   "onIceCorsiPct": 0.46,
+   "ixgPer60": 0.313,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,8 +82,8 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.04,
-   "percentile": 24
+   "value": -0.01,
+   "percentile": 27
   },
   "Offense": {
    "value": -2.5,
@@ -104,16 +104,26 @@
   "gs": 0.07,
   "gs60": 0.03,
   "gameScore": 0.07,
-  "minutes": 149,
-  "gp": 14,
-  "rank": 575,
-  "pool": 741,
-  "percentile": 22.4,
+  "minutes": 157,
+  "gp": 15,
+  "rank": 577,
+  "pool": 743,
+  "percentile": 22.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 573,
+    "rank": 575,
+    "name": "Dylan Hryckowian",
+    "team": "DAL",
+    "pos": "R",
+    "gp": 2,
+    "value": 31.9,
+    "gs60": 0.1,
+    "isMe": false
+   },
+   {
+    "rank": 576,
     "name": "Taylor Ward",
     "team": "LAK",
     "pos": "R",
@@ -123,41 +133,31 @@
     "isMe": false
    },
    {
-    "rank": 574,
-    "name": "Cole Smith",
-    "team": "CHI",
-    "pos": "R",
-    "gp": 14,
-    "value": 31.9,
-    "gs60": 0.09,
-    "isMe": false
-   },
-   {
-    "rank": 575,
+    "rank": 577,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
-    "gp": 14,
+    "gp": 15,
     "value": 31.8,
     "gs60": 0.07,
     "isMe": true
    },
    {
-    "rank": 576,
-    "name": "Andrew Copp",
-    "team": "DET",
-    "pos": "C",
-    "gp": 14,
-    "value": 31.8,
-    "gs60": 0.06,
-    "isMe": false
-   },
-   {
-    "rank": 577,
+    "rank": 578,
     "name": "Arshdeep Bains",
     "team": "VAN",
     "pos": "L",
     "gp": 13,
+    "value": 31.7,
+    "gs60": 0.03,
+    "isMe": false
+   },
+   {
+    "rank": 579,
+    "name": "Ryan McLeod",
+    "team": "BUF",
+    "pos": "C",
+    "gp": 14,
     "value": 31.7,
     "gs60": 0.03,
     "isMe": false
@@ -611,6 +611,30 @@
     "moneypuck": 1.1,
     "hockeystatcards": 1.0
    }
+  },
+  {
+   "gameId": 2026020233,
+   "date": "2026-11-02",
+   "opponent": "FLA",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 8.1,
+   "ixg": 0.0,
+   "xgf": 0.02,
+   "xga": 0.36,
+   "gf": 1.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.42
+   }
   }
  ],
  "teamGameScore": null,
@@ -630,7 +654,7 @@
   "above2": 0,
   "below0": 8
  },
- "detGames": 14,
+ "detGames": 15,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -643,5 +667,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-02T05:12:27-08:00"
+ "updatedAt": "2026-11-03T05:04:18-08:00"
 }

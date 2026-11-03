@@ -27,7 +27,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 4,
+  "gp": 5,
   "goals": null,
   "assists": null,
   "points": null,
@@ -37,25 +37,25 @@
   "shootingPct": null,
   "toiPerGame": null,
   "ppPoints": null,
-  "wins": 1,
+  "wins": 2,
   "losses": 0,
   "otLosses": 2,
-  "gaa": 1.402634,
-  "savePct": 0.940476,
+  "gaa": 1.752571,
+  "savePct": 0.927273,
   "shutouts": 1
  },
  "score": {
-  "value": 56.3,
-  "low": 27.9,
-  "high": 81.0,
-  "gsax": 5.1,
-  "xGoals": 10.1,
-  "goals": 5.0,
-  "minutes": 214,
-  "pool": 9,
+  "value": 59.3,
+  "low": 31.0,
+  "high": 82.6,
+  "gsax": 5.4,
+  "xGoals": 13.4,
+  "goals": 8.0,
+  "minutes": 274,
+  "pool": 10,
   "rank": null,
-  "percentile": 55.6,
-  "reliability": 0.12,
+  "percentile": 60.0,
+  "reliability": 0.15,
   "group": "goalies",
   "neighbours": [],
   "method": "A 0-100 rating where 50 is the average NHL goalie with 600+ minutes; built on goals saved above expected (MoneyPuck, all situations), this season only."
@@ -64,16 +64,16 @@
   "playerId": 8480193,
   "name": "Daniil Tarasov",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480193.png",
-  "gamesPlayed": 4,
-  "gamesStarted": 3,
-  "wins": 1,
+  "gamesPlayed": 5,
+  "gamesStarted": 4,
+  "wins": 2,
   "losses": 0,
   "otLosses": 2,
-  "savePct": 0.940476,
-  "gaa": 1.402634,
+  "savePct": 0.927273,
+  "gaa": 1.752571,
   "shutouts": 1,
-  "gsax": 5.08,
-  "pctl_gsax": 55.6,
+  "gsax": 5.38,
+  "pctl_gsax": 60.0,
   "qualifiesForPercentiles": false
  },
  "gameLog": [
@@ -128,6 +128,19 @@
    "savePct": 0.888889,
    "shutout": 0,
    "toi": 63.0
+  },
+  {
+   "gameId": 2026020233,
+   "date": "2026-11-02",
+   "opponent": "FLA",
+   "home": false,
+   "started": 1,
+   "decision": "W",
+   "shotsAgainst": 26,
+   "goalsAgainst": 3,
+   "savePct": 0.884615,
+   "shutout": 0,
+   "toi": 60.0
   }
  ],
  "gameScore": null,
@@ -138,7 +151,7 @@
  "myComponents": null,
  "hsc": {},
  "note": null,
- "detGames": 4,
+ "detGames": 5,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -151,5 +164,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-02T05:14:57-08:00"
+ "updatedAt": "2026-11-03T05:07:17-08:00"
 }

@@ -86,12 +86,12 @@
    "percentile": 58
   },
   "Offense": {
-   "value": 0.2,
+   "value": 0.1,
    "percentile": 66
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 75
+   "percentile": 74
   },
   "Net": {
    "value": 0.7,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 49.2,
+  "value": 49.0,
   "gs": 4.99,
   "gs60": 1.74,
   "gameScore": 4.99,
   "minutes": 172,
   "gp": 11,
-  "rank": 319,
-  "pool": 741,
-  "percentile": 57.0,
+  "rank": 320,
+  "pool": 743,
+  "percentile": 56.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 317,
-    "name": "Frederick Gaudreau",
-    "team": "SEA",
-    "pos": "C",
-    "gp": 14,
-    "value": 49.3,
+    "rank": 318,
+    "name": "Joel Armia",
+    "team": "LAK",
+    "pos": "R",
+    "gp": 13,
+    "value": 49.1,
     "gs60": 5.02,
     "isMe": false
    },
    {
-    "rank": 318,
+    "rank": 319,
     "name": "Kyle Palmieri",
     "team": "NYI",
     "pos": "C",
     "gp": 14,
-    "value": 49.3,
+    "value": 49.1,
     "gs60": 5.0,
     "isMe": false
    },
    {
-    "rank": 319,
+    "rank": 320,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 49.2,
+    "value": 49.0,
     "gs60": 4.99,
     "isMe": true
    },
    {
-    "rank": 320,
+    "rank": 321,
     "name": "Kaiden Guhle",
     "team": "MTL",
     "pos": "D",
     "gp": 10,
-    "value": 49.2,
+    "value": 48.9,
     "gs60": 4.97,
     "isMe": false
    },
    {
-    "rank": 321,
+    "rank": 322,
     "name": "Jack Drury",
     "team": "NSH",
     "pos": "C",
     "gp": 14,
-    "value": 49.0,
+    "value": 48.8,
     "gs60": 4.93,
     "isMe": false
    }
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-02T05:14:04-08:00"
+ "updatedAt": "2026-11-03T05:06:25-08:00"
 }

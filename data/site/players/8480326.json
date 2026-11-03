@@ -20,15 +20,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 8,
+  "gp": 9,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "plusMinus": -2,
+  "plusMinus": 0,
   "pim": 0,
-  "shots": 7,
+  "shots": 8,
   "shootingPct": 0.0,
-  "toiPerGame": "10:04",
+  "toiPerGame": "10:15",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -41,11 +41,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 8,
+   "gp": 9,
    "goals": 0,
    "assists": 0,
    "points": 0,
-   "plusMinus": -2,
+   "plusMinus": 0,
    "pim": 0
   },
   {
@@ -64,21 +64,21 @@
   "name": "Sheldon Dries",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480326.png",
-  "gamesPlayed": 8,
+  "gamesPlayed": 9,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "shots": 7,
+  "shots": 8,
   "shootingPct": 0.0,
-  "toiPerGame": 604.2,
-  "ixG": 1.1,
-  "goalsAboveExpected": -1.1,
-  "gameScore": 0.68,
+  "toiPerGame": 615.3,
+  "ixG": 1.14,
+  "goalsAboveExpected": -1.14,
+  "gameScore": 0.97,
   "fiveOnFive": {
-   "icetimeMinutes": 68.4,
-   "onIceXgPct": 0.53,
-   "onIceCorsiPct": 0.5,
-   "ixgPer60": 0.965,
+   "icetimeMinutes": 76.4,
+   "onIceXgPct": 0.51,
+   "onIceCorsiPct": 0.48,
+   "ixgPer60": 0.896,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -86,84 +86,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.08,
-   "percentile": 34
+   "value": 0.15,
+   "percentile": 38
   },
   "Offense": {
    "value": -1.2,
-   "percentile": 16
+   "percentile": 17
   },
   "Defense": {
-   "value": 0.2,
-   "percentile": 64
+   "value": 0.3,
+   "percentile": 65
   },
   "Net": {
-   "value": -1.0,
-   "percentile": 31
+   "value": -0.9,
+   "percentile": 33
   }
  },
  "score": null,
  "standIn": {
-  "value": 33.8,
+  "value": 33.7,
   "gs": 0.66,
-  "gs60": 0.49,
+  "gs60": 0.43,
   "gameScore": 0.66,
-  "minutes": 81,
-  "gp": 8,
-  "rank": 530,
-  "pool": 741,
-  "percentile": 28.5,
+  "minutes": 92,
+  "gp": 9,
+  "rank": 528,
+  "pool": 743,
+  "percentile": 28.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 528,
+    "rank": 526,
     "name": "Matthew Wood",
     "team": "NSH",
     "pos": "R",
     "gp": 14,
-    "value": 33.8,
+    "value": 33.7,
     "gs60": 0.67,
     "isMe": false
    },
    {
-    "rank": 529,
-    "name": "Alex Vlasic",
-    "team": "CHI",
+    "rank": 527,
+    "name": "David Jiricek",
+    "team": "PHI",
     "pos": "D",
-    "gp": 14,
-    "value": 33.8,
+    "gp": 9,
+    "value": 33.7,
     "gs60": 0.67,
     "isMe": false
    },
    {
-    "rank": 530,
+    "rank": 528,
     "name": "Sheldon Dries",
     "team": "DET",
     "pos": "C",
-    "gp": 8,
-    "value": 33.8,
+    "gp": 9,
+    "value": 33.7,
     "gs60": 0.66,
     "isMe": true
    },
    {
-    "rank": 531,
+    "rank": 529,
     "name": "Oliver Kapanen",
     "team": "MTL",
     "pos": "C",
     "gp": 7,
-    "value": 33.8,
+    "value": 33.7,
     "gs60": 0.66,
     "isMe": false
    },
    {
-    "rank": 532,
-    "name": "Logan O'Connor",
-    "team": "COL",
-    "pos": "R",
-    "gp": 3,
-    "value": 33.8,
-    "gs60": 0.66,
+    "rank": 530,
+    "name": "Ross Johnston",
+    "team": "STL",
+    "pos": "L",
+    "gp": 6,
+    "value": 33.7,
+    "gs60": 0.65,
     "isMe": false
    }
   ],
@@ -456,6 +456,30 @@
     "moneypuck": 0.415,
     "hockeystatcards": 0.85
    }
+  },
+  {
+   "gameId": 2026020233,
+   "date": "2026-11-02",
+   "opponent": "FLA",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 2,
+   "shots": 1,
+   "pim": 0,
+   "toi": 11.7,
+   "ixg": 0.08,
+   "xgf": 0.21,
+   "xga": 0.38,
+   "gf": 1.0,
+   "ga": 0.0,
+   "blocks": 3.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": 0.75
+   }
   }
  ],
  "teamGameScore": null,
@@ -475,7 +499,7 @@
   "above2": 0,
   "below0": 3
  },
- "detGames": 8,
+ "detGames": 9,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -488,5 +512,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-11-02T05:11:47-08:00"
+ "updatedAt": "2026-11-03T05:03:42-08:00"
 }

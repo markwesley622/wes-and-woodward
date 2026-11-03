@@ -26,16 +26,16 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 14,
+  "gp": 15,
   "goals": 2,
-  "assists": 1,
-  "points": 3,
-  "plusMinus": -5,
+  "assists": 3,
+  "points": 5,
+  "plusMinus": -4,
   "pim": 4,
   "shots": 24,
   "shootingPct": 0.083333,
-  "toiPerGame": "18:26",
-  "ppPoints": 1,
+  "toiPerGame": "18:20",
+  "ppPoints": 2,
   "wins": null,
   "losses": null,
   "otLosses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 14,
+   "gp": 15,
    "goals": 2,
-   "assists": 1,
-   "points": 3,
-   "plusMinus": -5,
+   "assists": 3,
+   "points": 5,
+   "plusMinus": -4,
    "pim": 4
   }
  ],
@@ -60,21 +60,21 @@
   "name": "Andrew Copp",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477429.png",
-  "gamesPlayed": 14,
+  "gamesPlayed": 15,
   "goals": 2,
-  "assists": 1,
-  "points": 3,
+  "assists": 3,
+  "points": 5,
   "shots": 24,
   "shootingPct": 0.083333,
-  "toiPerGame": 1106.1,
-  "ixG": 3.34,
-  "goalsAboveExpected": -1.34,
-  "gameScore": 2.69,
+  "toiPerGame": 1099.6,
+  "ixG": 3.35,
+  "goalsAboveExpected": -1.35,
+  "gameScore": 4.08,
   "fiveOnFive": {
-   "icetimeMinutes": 192.4,
-   "onIceXgPct": 0.48,
+   "icetimeMinutes": 205.4,
+   "onIceXgPct": 0.49,
    "onIceCorsiPct": 0.47,
-   "ixgPer60": 0.942,
+   "ixgPer60": 0.885,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.18,
-   "percentile": 18
+   "value": -0.1,
+   "percentile": 21
   },
   "Offense": {
-   "value": -1.8,
-   "percentile": 6
+   "value": -1.4,
+   "percentile": 11
   },
   "Defense": {
-   "value": -0.4,
-   "percentile": 32
+   "value": -0.6,
+   "percentile": 22
   },
   "Net": {
-   "value": -2.2,
-   "percentile": 8
+   "value": -2.0,
+   "percentile": 10
   }
  },
  "score": null,
  "standIn": {
-  "value": 31.8,
-  "gs": 0.06,
-  "gs60": 0.01,
-  "gameScore": 0.06,
-  "minutes": 258,
-  "gp": 14,
-  "rank": 576,
-  "pool": 741,
-  "percentile": 22.3,
+  "value": 35.7,
+  "gs": 1.27,
+  "gs60": 0.28,
+  "gameScore": 1.27,
+  "minutes": 275,
+  "gp": 15,
+  "rank": 492,
+  "pool": 743,
+  "percentile": 33.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 574,
-    "name": "Taylor Ward",
-    "team": "LAK",
-    "pos": "R",
-    "gp": 4,
-    "value": 31.9,
-    "gs60": 0.09,
+    "rank": 490,
+    "name": "Mason Marchment",
+    "team": "SJS",
+    "pos": "L",
+    "gp": 16,
+    "value": 35.9,
+    "gs60": 1.31,
     "isMe": false
    },
    {
-    "rank": 575,
-    "name": "Cole Smith",
-    "team": "CHI",
-    "pos": "R",
-    "gp": 14,
-    "value": 31.9,
-    "gs60": 0.09,
+    "rank": 491,
+    "name": "Gavin Brindley",
+    "team": "COL",
+    "pos": "C",
+    "gp": 5,
+    "value": 35.8,
+    "gs60": 1.29,
     "isMe": false
    },
    {
-    "rank": 576,
+    "rank": 492,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
-    "gp": 14,
-    "value": 31.8,
-    "gs60": 0.06,
+    "gp": 15,
+    "value": 35.7,
+    "gs60": 1.27,
     "isMe": true
    },
    {
-    "rank": 577,
-    "name": "Arshdeep Bains",
-    "team": "VAN",
-    "pos": "L",
-    "gp": 13,
-    "value": 31.7,
-    "gs60": 0.03,
+    "rank": 493,
+    "name": "Jacob Gaucher",
+    "team": "PHI",
+    "pos": "C",
+    "gp": 4,
+    "value": 35.7,
+    "gs60": 1.27,
     "isMe": false
    },
    {
-    "rank": 578,
-    "name": "Ryan McLeod",
-    "team": "BUF",
+    "rank": 494,
+    "name": "Skyler Brind'Amour",
+    "team": "CAR",
     "pos": "C",
-    "gp": 14,
-    "value": 31.7,
-    "gs60": 0.03,
+    "gp": 2,
+    "value": 35.6,
+    "gs60": 1.23,
     "isMe": false
    }
   ],
@@ -686,12 +686,36 @@
     "moneypuck": 0.715,
     "hockeystatcards": 1.66
    }
+  },
+  {
+   "gameId": 2026020233,
+   "date": "2026-11-02",
+   "opponent": "FLA",
+   "home": false,
+   "goals": 0,
+   "assists": 2,
+   "points": 2,
+   "plusMinus": 1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 16.8,
+   "ixg": 0.05,
+   "xgf": 1.09,
+   "xga": 1.04,
+   "gf": 1.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 1.21,
+   "gameScoreParts": {
+    "moneypuck": 1.39,
+    "hockeystatcards": 1.04
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.0,
-  "games": 14,
+  "average": 0.08,
+  "games": 15,
   "best": {
    "date": "2026-10-15",
    "opponent": "PHI",
@@ -705,7 +729,7 @@
   "above2": 0,
   "below0": 6
  },
- "detGames": 14,
+ "detGames": 15,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -718,5 +742,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-02T05:11:07-08:00"
+ "updatedAt": "2026-11-03T05:02:59-08:00"
 }

@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.63,
-   "percentile": 68
+   "percentile": 69
   },
   "Offense": {
    "value": -0.3,
@@ -95,35 +95,35 @@
   },
   "Net": {
    "value": -0.3,
-   "percentile": 49
+   "percentile": 50
   }
  },
  "score": null,
  "standIn": {
-  "value": 34.0,
+  "value": 33.9,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 519,
-  "pool": 741,
-  "percentile": 30.0,
+  "rank": 521,
+  "pool": 743,
+  "percentile": 29.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 517,
-    "name": "Ben Chiarot",
-    "team": "DET",
+    "rank": 519,
+    "name": "Tom Willander",
+    "team": "VAN",
     "pos": "D",
-    "gp": 14,
+    "gp": 16,
     "value": 34.1,
-    "gs60": 0.77,
+    "gs60": 0.78,
     "isMe": false
    },
    {
-    "rank": 518,
+    "rank": 520,
     "name": "Nico Sturm",
     "team": "MIN",
     "pos": "C",
@@ -133,33 +133,33 @@
     "isMe": false
    },
    {
-    "rank": 519,
+    "rank": 521,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
     "gp": 1,
-    "value": 34.0,
+    "value": 33.9,
     "gs60": 0.73,
     "isMe": true
    },
    {
-    "rank": 520,
-    "name": "Patrick Kane",
-    "team": "CHI",
-    "pos": "R",
-    "gp": 14,
-    "value": 34.0,
-    "gs60": 0.72,
-    "isMe": false
-   },
-   {
-    "rank": 521,
+    "rank": 522,
     "name": "Jonny Brodzinski",
     "team": "WSH",
     "pos": "C",
     "gp": 2,
-    "value": 33.9,
+    "value": 33.8,
     "gs60": 0.7,
+    "isMe": false
+   },
+   {
+    "rank": 523,
+    "name": "Hunter McDonald",
+    "team": "PHI",
+    "pos": "D",
+    "gp": 5,
+    "value": 33.8,
+    "gs60": 0.69,
     "isMe": false
    }
   ],
@@ -271,5 +271,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-02T05:12:13-08:00"
+ "updatedAt": "2026-11-03T05:04:05-08:00"
 }

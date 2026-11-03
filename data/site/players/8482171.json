@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 9,
+  "gp": 10,
   "goals": 2,
   "assists": 2,
   "points": 4,
-  "plusMinus": 0,
+  "plusMinus": -1,
   "pim": 0,
   "shots": 9,
   "shootingPct": 0.222222,
-  "toiPerGame": "15:29",
+  "toiPerGame": "15:39",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 9,
+   "gp": 10,
    "goals": 2,
    "assists": 2,
    "points": 4,
-   "plusMinus": 0,
+   "plusMinus": -1,
    "pim": 0
   }
  ],
@@ -60,21 +60,21 @@
   "name": "William Wallinder",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482171.png",
-  "gamesPlayed": 9,
+  "gamesPlayed": 10,
   "goals": 2,
   "assists": 2,
   "points": 4,
   "shots": 9,
   "shootingPct": 0.222222,
-  "toiPerGame": 928.6,
+  "toiPerGame": 938.5,
   "ixG": 0.3,
   "goalsAboveExpected": 1.7,
-  "gameScore": 5.03,
+  "gameScore": 4.98,
   "fiveOnFive": {
-   "icetimeMinutes": 124.4,
-   "onIceXgPct": 0.59,
-   "onIceCorsiPct": 0.55,
-   "ixgPer60": 0.135,
+   "icetimeMinutes": 139.1,
+   "onIceXgPct": 0.57,
+   "onIceCorsiPct": 0.53,
+   "ixgPer60": 0.121,
    "pctl_onIceXgPct": 50.0,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
@@ -82,83 +82,83 @@
  },
  "hsc": {
   "Game score": {
-   "value": 0.28,
-   "percentile": 45
+   "value": 0.25,
+   "percentile": 43
   },
   "Offense": {
-   "value": 0.3,
+   "value": 0.4,
    "percentile": 70
   },
   "Defense": {
-   "value": 0.0,
-   "percentile": 52
+   "value": -0.1,
+   "percentile": 43
   },
   "Net": {
-   "value": 0.4,
-   "percentile": 67
+   "value": 0.2,
+   "percentile": 65
   }
  },
  "score": null,
  "standIn": {
-  "value": 44.8,
+  "value": 44.6,
   "gs": 3.79,
-  "gs60": 1.63,
+  "gs60": 1.45,
   "gameScore": 3.79,
-  "minutes": 139,
-  "gp": 9,
-  "rank": 363,
-  "pool": 741,
+  "minutes": 156,
+  "gp": 10,
+  "rank": 364,
+  "pool": 743,
   "percentile": 51.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 361,
+    "rank": 362,
     "name": "Gabriel Vilardi",
     "team": "WPG",
     "pos": "C",
     "gp": 15,
-    "value": 44.9,
-    "gs60": 3.82,
-    "isMe": false
-   },
-   {
-    "rank": 362,
-    "name": "Casey Cizikas",
-    "team": "NYI",
-    "pos": "C",
-    "gp": 14,
-    "value": 44.9,
+    "value": 44.7,
     "gs60": 3.82,
     "isMe": false
    },
    {
     "rank": 363,
+    "name": "Casey Cizikas",
+    "team": "NYI",
+    "pos": "C",
+    "gp": 14,
+    "value": 44.7,
+    "gs60": 3.82,
+    "isMe": false
+   },
+   {
+    "rank": 364,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
-    "gp": 9,
-    "value": 44.8,
+    "gp": 10,
+    "value": 44.6,
     "gs60": 3.79,
     "isMe": true
    },
    {
-    "rank": 364,
+    "rank": 365,
     "name": "Filip Hallander",
     "team": "EDM",
     "pos": "C",
     "gp": 9,
-    "value": 44.8,
+    "value": 44.6,
     "gs60": 3.79,
     "isMe": false
    },
    {
-    "rank": 365,
+    "rank": 366,
     "name": "Declan Carlile",
     "team": "PIT",
     "pos": "D",
     "gp": 14,
-    "value": 44.6,
+    "value": 44.4,
     "gs60": 3.73,
     "isMe": false
    }
@@ -385,6 +385,30 @@
     "moneypuck": 0.25,
     "hockeystatcards": 0.45
    }
+  },
+  {
+   "gameId": 2026020233,
+   "date": "2026-11-02",
+   "opponent": "FLA",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 17.1,
+   "ixg": 0.0,
+   "xgf": 0.77,
+   "xga": 0.75,
+   "gf": 1.0,
+   "ga": 1.0,
+   "blocks": 4.0,
+   "gameScore": null,
+   "gameScoreParts": {
+    "moneypuck": null,
+    "hockeystatcards": -0.1
+   }
   }
  ],
  "teamGameScore": null,
@@ -404,7 +428,7 @@
   "above2": 1,
   "below0": 1
  },
- "detGames": 9,
+ "detGames": 10,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -417,5 +441,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-02T05:14:54-08:00"
+ "updatedAt": "2026-11-03T05:07:15-08:00"
 }

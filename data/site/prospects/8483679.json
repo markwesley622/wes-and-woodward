@@ -31,11 +31,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 14,
+   "gp": 15,
    "g": 1,
    "a": 3,
    "pts": 4,
-   "pm": 1,
+   "pm": 2,
    "pim": 12,
    "gaa": null,
    "svp": null,
@@ -89,11 +89,11 @@
     {
      "league": "NHL",
      "team": "Detroit Red Wings",
-     "gp": 14,
+     "gp": 15,
      "g": 1,
      "a": 3,
      "pts": 4,
-     "pm": 1,
+     "pm": 2,
      "pim": 12,
      "gaa": null,
      "svp": null,
@@ -490,10 +490,10 @@
   "sinceDraft": 3,
   "pedigreeExpected": 12.3,
   "cohortExpected": 25.4,
-  "expected": 28.1,
-  "tier": "below average",
-  "nhlW": 0.41,
-  "nhlExpected": 32.0,
+  "expected": 26.9,
+  "tier": "replacement level",
+  "nhlW": 0.43,
+  "nhlExpected": 28.8,
   "beforeNhl": 25.4
  },
  "trajectory": {
@@ -512,38 +512,38 @@
   "delta": 0.106
  },
  "nhlSample": {
-  "gp": 14,
+  "gp": 15,
   "pts": 4,
   "seasons": [
    20262027
   ],
   "thisSeason": {
-   "gp": 14,
+   "gp": 15,
    "pts": 4,
-   "toi": "14:10",
+   "toi": "14:03",
    "savePct": null
   }
  },
  "nhlUsage": {
   "n": 50,
-  "expected": 32.0,
-  "median": 34.5,
+  "expected": 28.8,
+  "median": 24.5,
   "p75": 56.1,
   "p90": 70.7,
-  "pRegular": 0.68,
+  "pRegular": 0.62,
   "pTopLine": 0.06,
-  "pAboveAvg": 0.34,
+  "pAboveAvg": 0.28,
   "pElite": 0.0,
   "poolN": 258,
   "group": "D",
   "age": 22,
-  "gp": 14,
-  "toi": 850,
-  "ppg": 0.286,
-  "ppgShrunk": 0.231,
+  "gp": 15,
+  "toi": 843,
+  "ppg": 0.267,
+  "ppgShrunk": 0.225,
   "toiBand": [
    725,
-   979
+   975
   ],
   "examples": [
    {
@@ -613,17 +613,6 @@
     "nhlGp": 94
    },
    {
-    "name": "Jake Bean",
-    "season": "2020-2021",
-    "age": 22,
-    "gp": 42,
-    "toi": 872,
-    "ppg": 0.29,
-    "peak": 61.5,
-    "tier": "above average",
-    "nhlGp": 277
-   },
-   {
     "name": "Brett Kulak",
     "season": "2016-2017",
     "age": 22,
@@ -633,18 +622,29 @@
     "peak": 51.5,
     "tier": "above average",
     "nhlGp": 665
+   },
+   {
+    "name": "Jake Bean",
+    "season": "2020-2021",
+    "age": 22,
+    "gp": 42,
+    "toi": 872,
+    "ppg": 0.29,
+    "peak": 61.5,
+    "tier": "above average",
+    "nhlGp": 277
    }
   ],
-  "w": 0.41,
+  "w": 0.43,
   "before": 25.4,
-  "after": 28.1
+  "after": 26.9
  },
  "availability": {
   "gp": 42,
   "season": "2025-2026"
  },
- "rank": 8,
- "score": 28.1,
+ "rank": 9,
+ "score": 26.9,
  "rankStart": 10,
  "rankStartDate": "2026-10-06"
 }
