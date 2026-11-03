@@ -16,7 +16,7 @@ the reliability standard error mapped back to percentiles. Two versions: sustain
 
 Usage: python3 pipeline/build_player.py 8481542 [--fetch]
 """
-import csv, datetime as dt, io, json, math, pathlib, re, ssl, sys, time, unicodedata, urllib.error, urllib.request
+import csv, datetime as dt, io, json, math, pathlib, re, ssl, subprocess, sys, time, unicodedata, urllib.error, urllib.request
 import certifi
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -597,19 +597,54 @@ def build(pid, fetch=False):
     print(f"site/players/{pid}.json written: {name} " + (f"value {score['value']} rank {score['rank']}/{score['pool']}" if score else f"no EH row yet · {len(games)} NHL games"))
 
 
+def new_arrivals(known):
+    """Rows for roster_pages.json: Detroit players no page covers yet (Mark, 11/3). roster_pages.json was kept by hand
+    and the nightly only rebuilds who is on it, so Englund played 10 games with no page. Anyone on the NHL roster feed
+    or with a game for Detroit this season (data/raw/nhl, refreshed nightly by fetch_nhl.py) now gets a row. src/lib/pages.js
+    still decides what shows: no Detroit game yet means off the Players list, and noindex if he has no NHL game at all."""
+    raw = ROOT / "data" / "raw" / "nhl"
+    roster = json.load((raw / "roster.json").open()); club = json.load((raw / "club_stats.json").open())
+    people = [(x["id"], x, x["positionCode"]) for k in ("forwards", "defensemen", "goalies") for x in roster.get(k, [])]
+    people += [(x["playerId"], x, x["positionCode"]) for x in club.get("skaters", [])]
+    people += [(x["playerId"], x, "G") for x in club.get("goalies", [])]          # the goalie rows carry no positionCode
+    rows = {}
+    for pid, x, pos in people:
+        if pid not in known and pid not in rows:
+            rows[pid] = {"playerId": pid, "name": f'{x["firstName"]["default"]} {x["lastName"]["default"]}', "position": pos, "returning": False,
+                         "note": f"auto-added from the NHL feed {dt.date.today().isoformat()}"}
+    return list(rows.values())
+
+
+def add_new_arrivals(path, roster, known):
+    """Writes any new arrivals to roster_pages.json and says so. Never fatal: a problem here must not stop the stats refresh."""
+    try:
+        rows = new_arrivals(known)
+        if not rows: return []
+        path.write_text(json.dumps(roster + rows, indent=1))
+        names = ", ".join(r["name"] for r in rows)
+        print(f"new arrivals added to roster_pages.json: {names}")
+        subprocess.run(["osascript", "-e", f'display notification "{names}" with title "New Red Wings page: needs an illustration"'], check=False)
+        return rows
+    except Exception as e:
+        print("new arrival check FAILED, continuing with the list on disk:", repr(e))
+        return []
+
+
 if __name__ == "__main__":
     if "--fetch" in sys.argv or not HSC_LEAGUE.exists():   # league-wide HSC season totals for the stand-in pool
         sys.path.insert(0, str(ROOT / "research" / "sandin-pellikka" / "raw" / "hsc")); import fetch_hsc as h
         HSC_LEAGUE.parent.mkdir(parents=True, exist_ok=True)
         HSC_LEAGUE.write_text(json.dumps(h.league_gamescores(SEASON), indent=1))
     if sys.argv[1] == "--roster":
-        roster = json.load((ROOT / "data" / "raw" / "players" / "roster_pages.json").open())
+        roster_path = ROOT / "data" / "raw" / "players" / "roster_pages.json"
+        roster = json.load(roster_path.open())
         ids = [(r["playerId"], r["name"]) for r in roster]
         # plus everyone in the Detroit system on EliteProspects with a matched NHL id (build_prospects.id_map)
         idmap = ROOT / "data" / "raw" / "ep" / "idmap.json"
         if idmap.exists():
             have = {p for p, _ in ids}
             ids += [(v, f"ep {k}") for k, v in json.load(idmap.open()).items() if v and v not in have]
+        ids += [(r["playerId"], r["name"]) for r in add_new_arrivals(roster_path, roster, {p for p, _ in ids})]
         for pid, name in ids:
             try: build(pid, fetch="--fetch" in sys.argv)
             except Exception as e: print("FAILED", name, repr(e))
