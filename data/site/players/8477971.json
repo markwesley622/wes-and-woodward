@@ -1,0 +1,566 @@
+{
+ "playerId": 8477971,
+ "name": "Andreas Englund",
+ "slug": "andreas-englund",
+ "season": "20262027",
+ "seasonLabel": "2026-27",
+ "bio": {
+  "number": 24,
+  "position": "D",
+  "shoots": "L",
+  "heightIn": 76,
+  "weightLb": 200,
+  "birthDate": "1996-01-21",
+  "birthplace": "Stockholm, SWE",
+  "draft": {
+   "year": 2014,
+   "teamAbbrev": "OTT",
+   "round": 2,
+   "pickInRound": 10,
+   "overallPick": 40
+  },
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477971.png",
+  "silhouette": "/players/8477971.png"
+ },
+ "kind": "S",
+ "seasonLine": {
+  "league": "NHL",
+  "team": null,
+  "gp": 10,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "plusMinus": 4,
+  "pim": 2,
+  "shots": 4,
+  "shootingPct": 0.0,
+  "toiPerGame": "13:05",
+  "ppPoints": 0,
+  "wins": null,
+  "losses": null,
+  "otLosses": null,
+  "gaa": null,
+  "savePct": null,
+  "shutouts": null
+ },
+ "seasonLines": [
+  {
+   "league": "NHL",
+   "team": "Detroit Red Wings",
+   "gp": 10,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 4,
+   "pim": 2
+  }
+ ],
+ "moneypuck": {
+  "playerId": 8477971,
+  "name": "Andreas Englund",
+  "position": "D",
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477971.png",
+  "gamesPlayed": 10,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "shots": 4,
+  "shootingPct": 0.0,
+  "toiPerGame": 785.3,
+  "ixG": 0.17,
+  "goalsAboveExpected": -0.17,
+  "gameScore": 1.65,
+  "fiveOnFive": {
+   "icetimeMinutes": 118.7,
+   "onIceXgPct": 0.62,
+   "onIceCorsiPct": 0.51,
+   "ixgPer60": 0.086,
+   "pctl_onIceXgPct": 100.0,
+   "pctl_ixgPer60": 0.0,
+   "qualifiesForPercentiles": false
+  }
+ },
+ "hsc": {
+  "Game score": {
+   "value": 0.3,
+   "percentile": 47
+  },
+  "Offense": {
+   "value": -0.8,
+   "percentile": 29
+  },
+  "Defense": {
+   "value": 0.7,
+   "percentile": 78
+  },
+  "Net": {
+   "value": -0.1,
+   "percentile": 56
+  }
+ },
+ "score": null,
+ "standIn": {
+  "value": 39.5,
+  "gs": 2.35,
+  "gs60": 1.08,
+  "gameScore": 2.35,
+  "minutes": 131,
+  "gp": 10,
+  "rank": 435,
+  "pool": 743,
+  "percentile": 41.5,
+  "group": "skaters",
+  "standIn": true,
+  "neighbours": [
+   {
+    "rank": 433,
+    "name": "Jonatan Berggren",
+    "team": "STL",
+    "pos": "R",
+    "gp": 14,
+    "value": 39.7,
+    "gs60": 2.42,
+    "isMe": false
+   },
+   {
+    "rank": 434,
+    "name": "Adam Pelech",
+    "team": "NYI",
+    "pos": "D",
+    "gp": 14,
+    "value": 39.6,
+    "gs60": 2.38,
+    "isMe": false
+   },
+   {
+    "rank": 435,
+    "name": "Andreas Englund",
+    "team": "DET",
+    "pos": "D",
+    "gp": 10,
+    "value": 39.5,
+    "gs60": 2.35,
+    "isMe": true
+   },
+   {
+    "rank": 436,
+    "name": "Jason Dickinson",
+    "team": "EDM",
+    "pos": "C",
+    "gp": 6,
+    "value": 39.4,
+    "gs60": 2.33,
+    "isMe": false
+   },
+   {
+    "rank": 437,
+    "name": "Matt Roy",
+    "team": "WSH",
+    "pos": "D",
+    "gp": 7,
+    "value": 39.4,
+    "gs60": 2.33,
+    "isMe": false
+   }
+  ],
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+ },
+ "impact": [],
+ "career": [
+  {
+   "season": "16-17",
+   "gp": 5,
+   "toi": 53,
+   "components": {
+    "EVO": -0.2,
+    "EVD": -0.5,
+    "PPO": 0.0,
+    "SHD": 0.0,
+    "Pens": 0.1
+   },
+   "total": -0.6,
+   "xGAR": -0.6,
+   "GAR": -0.6
+  },
+  {
+   "season": "17-18",
+   "gp": 1,
+   "toi": 11,
+   "components": {
+    "EVO": 0.0,
+    "EVD": 0.0,
+    "PPO": 0.0,
+    "SHD": 0.0,
+    "Pens": 0.0
+   },
+   "total": 0.0,
+   "xGAR": 0.0,
+   "GAR": 0.1
+  },
+  {
+   "season": "18-19",
+   "gp": 3,
+   "toi": 40,
+   "components": {
+    "EVO": -0.3,
+    "EVD": 0.4,
+    "PPO": 0.0,
+    "SHD": 0.0,
+    "Pens": 0.2
+   },
+   "total": 0.3,
+   "xGAR": 0.5,
+   "GAR": 0.0
+  },
+  {
+   "season": "19-20",
+   "gp": 24,
+   "toi": 262,
+   "components": {
+    "EVO": -2.2,
+    "EVD": -0.4,
+    "PPO": 0.0,
+    "SHD": -0.3,
+    "Pens": 0.6
+   },
+   "total": -2.3,
+   "xGAR": -1.1,
+   "GAR": -3.8
+  },
+  {
+   "season": "22-23",
+   "gp": 11,
+   "toi": 164,
+   "components": {
+    "EVO": -1.7,
+    "EVD": -0.6,
+    "PPO": 0.0,
+    "SHD": -0.1,
+    "Pens": 0.3
+   },
+   "total": -2.1,
+   "xGAR": -1.4,
+   "GAR": -3.0
+  },
+  {
+   "season": "23-24",
+   "gp": 82,
+   "toi": 1084,
+   "components": {
+    "EVO": -4.5,
+    "EVD": -1.6,
+    "PPO": 0.0,
+    "SHD": 0.1,
+    "Pens": 1.4
+   },
+   "total": -4.6,
+   "xGAR": -5.6,
+   "GAR": -3.0
+  },
+  {
+   "season": "24-25",
+   "gp": 11,
+   "toi": 114,
+   "components": {
+    "EVO": -0.9,
+    "EVD": 0.4,
+    "PPO": 0.0,
+    "SHD": 0.1,
+    "Pens": -0.1
+   },
+   "total": -0.5,
+   "xGAR": -0.1,
+   "GAR": -1.1
+  },
+  {
+   "season": "25-26",
+   "gp": 3,
+   "toi": 26,
+   "components": {
+    "EVO": 0.0,
+    "EVD": 0.2,
+    "PPO": 0.0,
+    "SHD": 0.0,
+    "Pens": 0.0
+   },
+   "total": 0.2,
+   "xGAR": 0.4,
+   "GAR": -0.2
+  }
+ ],
+ "comps": [],
+ "myComponents": null,
+ "gameLog": [
+  {
+   "gameId": 2026020035,
+   "date": "2026-10-04",
+   "opponent": "WPG",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 7.2,
+   "ixg": 0.0,
+   "xgf": 0.24,
+   "xga": 0.1,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 0.33,
+   "gameScoreParts": {
+    "moneypuck": 0.5,
+    "hockeystatcards": 0.16
+   }
+  },
+  {
+   "gameId": 2026020075,
+   "date": "2026-10-10",
+   "opponent": "MTL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 0,
+   "toi": 14.3,
+   "ixg": 0.01,
+   "xgf": 0.23,
+   "xga": 0.62,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": -0.39,
+   "gameScoreParts": {
+    "moneypuck": -0.425,
+    "hockeystatcards": -0.36
+   }
+  },
+  {
+   "gameId": 2026020090,
+   "date": "2026-10-13",
+   "opponent": "NJD",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 0,
+   "toi": 15.2,
+   "ixg": 0.0,
+   "xgf": 0.54,
+   "xga": 0.88,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 3.0,
+   "gameScore": 0.21,
+   "gameScoreParts": {
+    "moneypuck": 0.175,
+    "hockeystatcards": 0.24
+   }
+  },
+  {
+   "gameId": 2026020127,
+   "date": "2026-10-17",
+   "opponent": "SJS",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 2,
+   "pim": 2,
+   "toi": 9.0,
+   "ixg": 0.06,
+   "xgf": 0.2,
+   "xga": 0.09,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 0.22,
+   "gameScoreParts": {
+    "moneypuck": 0.25,
+    "hockeystatcards": 0.19
+   }
+  },
+  {
+   "gameId": 2026020149,
+   "date": "2026-10-20",
+   "opponent": "SEA",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 11.4,
+   "ixg": 0.0,
+   "xgf": 0.1,
+   "xga": 0.29,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 2.0,
+   "gameScore": -0.29,
+   "gameScoreParts": {
+    "moneypuck": -0.25,
+    "hockeystatcards": -0.32
+   }
+  },
+  {
+   "gameId": 2026020178,
+   "date": "2026-10-24",
+   "opponent": "CGY",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 14.1,
+   "ixg": 0.05,
+   "xgf": 0.26,
+   "xga": 0.03,
+   "gf": 1.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 0.94,
+   "gameScoreParts": {
+    "moneypuck": 0.75,
+    "hockeystatcards": 1.14
+   }
+  },
+  {
+   "gameId": 2026020187,
+   "date": "2026-10-26",
+   "opponent": "EDM",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 13.4,
+   "ixg": 0.0,
+   "xgf": 0.41,
+   "xga": 0.08,
+   "gf": 1.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 0.68,
+   "gameScoreParts": {
+    "moneypuck": 0.35,
+    "hockeystatcards": 1.01
+   }
+  },
+  {
+   "gameId": 2026020203,
+   "date": "2026-10-29",
+   "opponent": "CHI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 15.2,
+   "ixg": 0.0,
+   "xgf": 0.8,
+   "xga": 1.33,
+   "gf": 1.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": -0.46,
+   "gameScoreParts": {
+    "moneypuck": -0.1,
+    "hockeystatcards": -0.83
+   }
+  },
+  {
+   "gameId": 2026020218,
+   "date": "2026-10-31",
+   "opponent": "STL",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 14.3,
+   "ixg": 0.0,
+   "xgf": 0.82,
+   "xga": 0.32,
+   "gf": 1.0,
+   "ga": 2.0,
+   "blocks": 1.0,
+   "gameScore": 0.14,
+   "gameScoreParts": {
+    "moneypuck": 0.2,
+    "hockeystatcards": 0.07
+   }
+  },
+  {
+   "gameId": 2026020233,
+   "date": "2026-11-02",
+   "opponent": "FLA",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 2,
+   "shots": 0,
+   "pim": 0,
+   "toi": 16.7,
+   "ixg": 0.0,
+   "xgf": 0.8,
+   "xga": 0.19,
+   "gf": 1.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 0.97,
+   "gameScoreParts": {
+    "moneypuck": 0.2,
+    "hockeystatcards": 1.74
+   }
+  }
+ ],
+ "teamGameScore": null,
+ "gameScore": {
+  "average": 0.24,
+  "games": 10,
+  "best": {
+   "date": "2026-11-02",
+   "opponent": "FLA",
+   "value": 0.97
+  },
+  "worst": {
+   "date": "2026-10-29",
+   "opponent": "CHI",
+   "value": -0.46
+  },
+  "above2": 0,
+  "below0": 3
+ },
+ "detGames": 10,
+ "currentTeam": "DET",
+ "prospect": false,
+ "prospectStatus": {
+  "prospect": false,
+  "rookieEligible": false,
+  "inWindow": false,
+  "window": "draft+12",
+  "draftYear": 2014,
+  "onNhlRoster": true,
+  "template": "nhl"
+ },
+ "art": true,
+ "updatedAt": "2026-11-03T11:38:39-08:00"
+}
