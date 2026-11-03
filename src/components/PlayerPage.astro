@@ -72,7 +72,7 @@ const RECENT = 10;
         )}
         <div class="who">
           <h1 class="page-title">{P.name}</h1>
-          <p class="mono bio">#{B.number ?? '—'} · {POSN[B.position] ?? B.position} · {isG ? 'catches' : 'shoots'} {B.shoots} · {ht}, {B.weightLb} lb · age {age} · {B.birthplace}{B.draft ? ` · drafted ${B.draft.year}, ${B.draft.overallPick}th overall` : ''}</p>
+          <p class="mono bio">#{B.number ?? '—'} · {POSN[B.position] ?? B.position} · {isG ? 'catches' : 'shoots'} {B.shoots} · {ht}, {B.weightLb} lb · age {age} · {B.birthplace}{B.draft ? ` · drafted ${B.draft.year}, ${ordinal(B.draft.overallPick)} overall` : ''}</p>
           {seasons.length > 1 && (
             <label class="season-pick mono">Season
               <select id="season-pick" aria-label="Season">
