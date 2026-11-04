@@ -83,15 +83,15 @@
  "hsc": {
   "Game score": {
    "value": -0.01,
-   "percentile": 26
+   "percentile": 27
   },
   "Offense": {
    "value": -0.5,
-   "percentile": 44
+   "percentile": 45
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 45
+   "percentile": 46
   },
   "Net": {
    "value": -0.6,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 32.5,
+  "value": 32.4,
   "gs": 0.3,
   "gs60": 0.91,
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 558,
-  "pool": 743,
-  "percentile": 24.9,
+  "rank": 559,
+  "pool": 745,
+  "percentile": 25.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
-   {
-    "rank": 556,
-    "name": "Tyson Kozak",
-    "team": "BUF",
-    "pos": "C",
-    "gp": 6,
-    "value": 32.6,
-    "gs60": 0.31,
-    "isMe": false
-   },
    {
     "rank": 557,
     "name": "Justin Dowling",
     "team": "NYR",
     "pos": "C",
     "gp": 4,
-    "value": 32.5,
+    "value": 32.4,
     "gs60": 0.3,
     "isMe": false
    },
    {
     "rank": 558,
+    "name": "Sean Monahan",
+    "team": "CBJ",
+    "pos": "C",
+    "gp": 13,
+    "value": 32.4,
+    "gs60": 0.3,
+    "isMe": false
+   },
+   {
+    "rank": 559,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 32.5,
+    "value": 32.4,
     "gs60": 0.3,
     "isMe": true
    },
    {
-    "rank": 559,
+    "rank": 560,
+    "name": "Alexey Toropchenko",
+    "team": "STL",
+    "pos": "R",
+    "gp": 5,
+    "value": 32.3,
+    "gs60": 0.29,
+    "isMe": false
+   },
+   {
+    "rank": 561,
     "name": "Cody Ceci",
     "team": "LAK",
     "pos": "D",
     "gp": 7,
-    "value": 32.5,
+    "value": 32.3,
     "gs60": 0.28,
-    "isMe": false
-   },
-   {
-    "rank": 560,
-    "name": "Ben Chiarot",
-    "team": "DET",
-    "pos": "D",
-    "gp": 15,
-    "value": 32.4,
-    "gs60": 0.27,
     "isMe": false
    }
   ],
@@ -370,5 +370,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-03T05:01:55-08:00"
+ "updatedAt": "2026-11-04T05:00:57-08:00"
 }

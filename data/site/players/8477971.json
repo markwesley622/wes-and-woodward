@@ -26,7 +26,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 10,
+  "gp": 11,
   "goals": 0,
   "assists": 0,
   "points": 0,
@@ -34,7 +34,7 @@
   "pim": 2,
   "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": "13:05",
+  "toiPerGame": "13:09",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 10,
+   "gp": 11,
    "goals": 0,
    "assists": 0,
    "points": 0,
@@ -60,106 +60,106 @@
   "name": "Andreas Englund",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477971.png",
-  "gamesPlayed": 10,
+  "gamesPlayed": 11,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "shots": 4,
   "shootingPct": 0.0,
-  "toiPerGame": 785.3,
+  "toiPerGame": 789.5,
   "ixG": 0.17,
   "goalsAboveExpected": -0.17,
-  "gameScore": 1.65,
+  "gameScore": 1.2,
   "fiveOnFive": {
-   "icetimeMinutes": 118.7,
-   "onIceXgPct": 0.62,
-   "onIceCorsiPct": 0.51,
-   "ixgPer60": 0.086,
-   "pctl_onIceXgPct": 100.0,
+   "icetimeMinutes": 130.7,
+   "onIceXgPct": 0.57,
+   "onIceCorsiPct": 0.49,
+   "ixgPer60": 0.078,
+   "pctl_onIceXgPct": 78.6,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
-   "value": 0.3,
-   "percentile": 47
+   "value": 0.28,
+   "percentile": 44
   },
   "Offense": {
-   "value": -0.8,
-   "percentile": 29
+   "value": -1.1,
+   "percentile": 20
   },
   "Defense": {
-   "value": 0.7,
-   "percentile": 78
+   "value": 0.8,
+   "percentile": 80
   },
   "Net": {
-   "value": -0.1,
-   "percentile": 56
+   "value": -0.2,
+   "percentile": 53
   }
  },
  "score": null,
  "standIn": {
-  "value": 39.5,
-  "gs": 2.35,
-  "gs60": 1.08,
-  "gameScore": 2.35,
-  "minutes": 131,
-  "gp": 10,
-  "rank": 435,
-  "pool": 743,
-  "percentile": 41.5,
+  "value": 38.3,
+  "gs": 2.13,
+  "gs60": 0.88,
+  "gameScore": 2.13,
+  "minutes": 145,
+  "gp": 11,
+  "rank": 450,
+  "pool": 745,
+  "percentile": 39.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 433,
-    "name": "Jonatan Berggren",
-    "team": "STL",
-    "pos": "R",
-    "gp": 14,
-    "value": 39.7,
-    "gs60": 2.42,
-    "isMe": false
-   },
-   {
-    "rank": 434,
-    "name": "Adam Pelech",
-    "team": "NYI",
+    "rank": 448,
+    "name": "David Spacek",
+    "team": "MIN",
     "pos": "D",
-    "gp": 14,
-    "value": 39.6,
-    "gs60": 2.38,
+    "gp": 9,
+    "value": 38.3,
+    "gs60": 2.14,
     "isMe": false
    },
    {
-    "rank": 435,
+    "rank": 449,
+    "name": "Ivan Provorov",
+    "team": "CBJ",
+    "pos": "D",
+    "gp": 2,
+    "value": 38.3,
+    "gs60": 2.13,
+    "isMe": false
+   },
+   {
+    "rank": 450,
     "name": "Andreas Englund",
     "team": "DET",
     "pos": "D",
-    "gp": 10,
-    "value": 39.5,
-    "gs60": 2.35,
+    "gp": 11,
+    "value": 38.3,
+    "gs60": 2.13,
     "isMe": true
    },
    {
-    "rank": 436,
-    "name": "Jason Dickinson",
-    "team": "EDM",
-    "pos": "C",
-    "gp": 6,
-    "value": 39.4,
-    "gs60": 2.33,
+    "rank": 451,
+    "name": "Gustav Forsling",
+    "team": "FLA",
+    "pos": "D",
+    "gp": 14,
+    "value": 38.2,
+    "gs60": 2.12,
     "isMe": false
    },
    {
-    "rank": 437,
-    "name": "Matt Roy",
-    "team": "WSH",
-    "pos": "D",
-    "gp": 7,
-    "value": 39.4,
-    "gs60": 2.33,
+    "rank": 452,
+    "name": "Chandler Stephenson",
+    "team": "SEA",
+    "pos": "C",
+    "gp": 14,
+    "value": 38.2,
+    "gs60": 2.12,
     "isMe": false
    }
   ],
@@ -530,12 +530,36 @@
     "moneypuck": 0.2,
     "hockeystatcards": 1.74
    }
+  },
+  {
+   "gameId": 2026020238,
+   "date": "2026-11-03",
+   "opponent": "TBL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 0,
+   "toi": 13.8,
+   "ixg": 0.0,
+   "xgf": 0.26,
+   "xga": 0.72,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": -0.22,
+   "gameScoreParts": {
+    "moneypuck": -0.45,
+    "hockeystatcards": 0.01
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.24,
-  "games": 10,
+  "average": 0.19,
+  "games": 11,
   "best": {
    "date": "2026-11-02",
    "opponent": "FLA",
@@ -547,9 +571,9 @@
    "value": -0.46
   },
   "above2": 0,
-  "below0": 3
+  "below0": 4
  },
- "detGames": 10,
+ "detGames": 11,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -562,5 +586,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-03T11:38:39-08:00"
+ "updatedAt": "2026-11-04T05:06:48-08:00"
 }

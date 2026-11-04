@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 1,
+  "gp": 2,
   "goals": 0,
   "assists": 0,
   "points": 0,
   "plusMinus": -2,
   "pim": 0,
-  "shots": 1,
+  "shots": 3,
   "shootingPct": 0.0,
-  "toiPerGame": "12:17",
+  "toiPerGame": "11:40",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 1,
+   "gp": 2,
    "goals": 0,
    "assists": 0,
    "points": 0,
@@ -70,21 +70,21 @@
   "name": "John Leonard",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481077.png",
-  "gamesPlayed": 1,
+  "gamesPlayed": 2,
   "goals": 0,
   "assists": 0,
   "points": 0,
-  "shots": 1,
+  "shots": 3,
   "shootingPct": 0.0,
-  "toiPerGame": 737.0,
-  "ixG": 0.16,
-  "goalsAboveExpected": -0.16,
-  "gameScore": 0.01,
+  "toiPerGame": 700.0,
+  "ixG": 0.42,
+  "goalsAboveExpected": -0.42,
+  "gameScore": -0.43,
   "fiveOnFive": {
-   "icetimeMinutes": 11.9,
-   "onIceXgPct": 0.62,
-   "onIceCorsiPct": 0.48,
-   "ixgPer60": 0.806,
+   "icetimeMinutes": 21.4,
+   "onIceXgPct": 0.32,
+   "onIceCorsiPct": 0.32,
+   "ixgPer60": 0.646,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -92,24 +92,89 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.46,
-   "percentile": 10
+   "value": -0.29,
+   "percentile": 15
   },
   "Offense": {
-   "value": -0.4,
-   "percentile": 49
+   "value": -0.6,
+   "percentile": 39
   },
   "Defense": {
-   "value": -0.2,
-   "percentile": 41
+   "value": -0.1,
+   "percentile": 44
   },
   "Net": {
-   "value": -0.6,
-   "percentile": 44
+   "value": -0.7,
+   "percentile": 39
   }
  },
  "score": null,
- "standIn": null,
+ "standIn": {
+  "value": 30.0,
+  "gs": -0.5,
+  "gs60": -1.29,
+  "gameScore": -0.5,
+  "minutes": 23,
+  "gp": 2,
+  "rank": 621,
+  "pool": 745,
+  "percentile": 16.6,
+  "group": "skaters",
+  "standIn": true,
+  "neighbours": [
+   {
+    "rank": 619,
+    "name": "Matt Grzelcyk",
+    "team": "BUF",
+    "pos": "D",
+    "gp": 1,
+    "value": 30.1,
+    "gs60": -0.43,
+    "isMe": false
+   },
+   {
+    "rank": 620,
+    "name": "Nate Danielson",
+    "team": "DET",
+    "pos": "C",
+    "gp": 12,
+    "value": 30.0,
+    "gs60": -0.5,
+    "isMe": false
+   },
+   {
+    "rank": 621,
+    "name": "John Leonard",
+    "team": "DET",
+    "pos": "L",
+    "gp": 2,
+    "value": 30.0,
+    "gs60": -0.5,
+    "isMe": true
+   },
+   {
+    "rank": 622,
+    "name": "Jason Zucker",
+    "team": "BUF",
+    "pos": "L",
+    "gp": 5,
+    "value": 29.7,
+    "gs60": -0.6,
+    "isMe": false
+   },
+   {
+    "rank": 623,
+    "name": "Ryan Ufko",
+    "team": "NSH",
+    "pos": "D",
+    "gp": 1,
+    "value": 29.6,
+    "gs60": -0.6,
+    "isMe": false
+   }
+  ],
+  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+ },
  "impact": [],
  "career": [
   {
@@ -209,31 +274,55 @@
    "gf": 0.0,
    "ga": 1.0,
    "blocks": 0.0,
-   "gameScore": null,
+   "gameScore": -0.22,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": 0.015,
     "hockeystatcards": -0.46
+   }
+  },
+  {
+   "gameId": 2026020238,
+   "date": "2026-11-03",
+   "opponent": "TBL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 2,
+   "pim": 0,
+   "toi": 11.1,
+   "ixg": 0.14,
+   "xgf": 0.04,
+   "xga": 0.6,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": -0.28,
+   "gameScoreParts": {
+    "moneypuck": -0.45,
+    "hockeystatcards": -0.11
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.0,
-  "games": 0,
+  "average": -0.25,
+  "games": 2,
   "best": {
    "date": "2026-11-02",
    "opponent": "FLA",
-   "value": 0
+   "value": -0.22
   },
   "worst": {
-   "date": "2026-11-02",
-   "opponent": "FLA",
-   "value": 0
+   "date": "2026-11-03",
+   "opponent": "TBL",
+   "value": -0.28
   },
   "above2": 0,
-  "below0": 0
+  "below0": 2
  },
- "detGames": 1,
+ "detGames": 2,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -246,5 +335,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-11-03T05:04:50-08:00"
+ "updatedAt": "2026-11-04T05:03:54-08:00"
 }

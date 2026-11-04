@@ -1949,7 +1949,7 @@
    "easternUTCOffset": "-05:00",
    "venueUTCOffset": "-05:00",
    "venueTimezone": "US/Eastern",
-   "gameState": "FUT",
+   "gameState": "OFF",
    "gameScheduleState": "OK",
    "tvBroadcasts": [
     {
@@ -1983,7 +1983,7 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/DET_dark.svg",
     "awaySplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/DET/20262027/DET-radio.m3u8"
+    "score": 2
    },
    "homeTeam": {
     "id": 14,
@@ -2001,15 +2001,40 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/TBL_dark.svg",
     "homeSplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/TBL/20262027/TBL-radio.m3u8"
+    "score": 4
    },
    "periodDescriptor": {
-    "number": 1,
+    "number": 3,
     "periodType": "REG",
     "maxRegulationPeriods": 3
    },
-   "ticketsLink": "https://www.ticketmaster.com/event/0D0064F8CF609DBB?brand=tblightning&artistid=806028&landing=s&wt.mc_id=NHL_TEAM_TBL_SCHEDULE_GM7&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_TBL&utm_content=SCHEDULE_GM7",
-   "ticketsLinkFr": "https://www.ticketmaster.com/event/0D0064F8CF609DBB?brand=tblightning&artistid=806028&landing=s&wt.mc_id=NHL_TEAM_TBL_SCHEDULE_GM7&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_TBL&utm_content=SCHEDULE_GM7",
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   },
+   "winningGoalie": {
+    "playerId": 8476883,
+    "firstInitial": {
+     "default": "A."
+    },
+    "lastName": {
+     "default": "Vasilevskiy",
+     "cs": "Vasilevskij",
+     "fi": "Vasilevski",
+     "sk": "Vasilevskij"
+    }
+   },
+   "winningGoalScorer": {
+    "playerId": 8478519,
+    "firstInitial": {
+     "default": "A."
+    },
+    "lastName": {
+     "default": "Cirelli"
+    }
+   },
+   "threeMinRecap": "/video/det-at-tbl-recap-6407878533112",
+   "threeMinRecapFr": "/fr/video/det-vs-tbl-03-11-2026-resume-6407880480112",
+   "condensedGame": "/video/det-at-tbl-condensed-game-6407880566112",
    "gameCenterLink": "/gamecenter/det-vs-tbl/2026/11/03/2026020238"
   },
   {

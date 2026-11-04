@@ -75,91 +75,91 @@
    "onIceXgPct": 0.57,
    "onIceCorsiPct": 0.57,
    "ixgPer60": 0.224,
-   "pctl_onIceXgPct": 50.0,
-   "pctl_ixgPer60": 0.0,
+   "pctl_onIceXgPct": 78.6,
+   "pctl_ixgPer60": 57.1,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": 0.47,
-   "percentile": 58
+   "percentile": 57
   },
   "Offense": {
    "value": 0.1,
-   "percentile": 66
+   "percentile": 67
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 74
+   "percentile": 75
   },
   "Net": {
-   "value": 0.7,
+   "value": 0.8,
    "percentile": 73
   }
  },
  "score": null,
  "standIn": {
-  "value": 49.0,
+  "value": 48.1,
   "gs": 4.99,
   "gs60": 1.74,
   "gameScore": 4.99,
   "minutes": 172,
   "gp": 11,
-  "rank": 320,
-  "pool": 743,
-  "percentile": 56.9,
+  "rank": 333,
+  "pool": 745,
+  "percentile": 55.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 318,
+    "rank": 331,
     "name": "Joel Armia",
     "team": "LAK",
     "pos": "R",
     "gp": 13,
-    "value": 49.1,
+    "value": 48.2,
     "gs60": 5.02,
     "isMe": false
    },
    {
-    "rank": 319,
+    "rank": 332,
     "name": "Kyle Palmieri",
     "team": "NYI",
     "pos": "C",
     "gp": 14,
-    "value": 49.1,
+    "value": 48.2,
     "gs60": 5.0,
     "isMe": false
    },
    {
-    "rank": 320,
+    "rank": 333,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 49.0,
+    "value": 48.1,
     "gs60": 4.99,
     "isMe": true
    },
    {
-    "rank": 321,
-    "name": "Kaiden Guhle",
-    "team": "MTL",
-    "pos": "D",
-    "gp": 10,
-    "value": 48.9,
-    "gs60": 4.97,
+    "rank": 334,
+    "name": "Warren Foegele",
+    "team": "OTT",
+    "pos": "L",
+    "gp": 13,
+    "value": 47.8,
+    "gs60": 4.91,
     "isMe": false
    },
    {
-    "rank": 322,
-    "name": "Jack Drury",
-    "team": "NSH",
+    "rank": 335,
+    "name": "Ryan Winterton",
+    "team": "SEA",
     "pos": "C",
     "gp": 14,
-    "value": 48.8,
-    "gs60": 4.93,
+    "value": 47.6,
+    "gs60": 4.86,
     "isMe": false
    }
   ],
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-03T05:06:25-08:00"
+ "updatedAt": "2026-11-04T05:05:45-08:00"
 }

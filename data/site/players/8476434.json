@@ -27,7 +27,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 10,
+  "gp": 11,
   "goals": null,
   "assists": null,
   "points": null,
@@ -40,22 +40,22 @@
   "wins": 4,
   "losses": 5,
   "otLosses": 1,
-  "gaa": 3.365805,
-  "savePct": 0.86036,
+  "gaa": 3.457811,
+  "savePct": 0.859574,
   "shutouts": 0
  },
  "score": {
-  "value": 19.2,
-  "low": 7.3,
-  "high": 41.5,
-  "gsax": -5.7,
-  "xGoals": 25.3,
-  "goals": 31.0,
-  "minutes": 553,
-  "pool": 10,
+  "value": 14.6,
+  "low": 5.4,
+  "high": 33.7,
+  "gsax": -5.9,
+  "xGoals": 27.1,
+  "goals": 33.0,
+  "minutes": 573,
+  "pool": 14,
   "rank": null,
-  "percentile": 10.0,
-  "reliability": 0.27,
+  "percentile": 7.1,
+  "reliability": 0.28,
   "group": "goalies",
   "neighbours": [],
   "method": "A 0-100 rating where 50 is the average NHL goalie with 600+ minutes; built on goals saved above expected (MoneyPuck, all situations), this season only."
@@ -64,16 +64,16 @@
   "playerId": 8476434,
   "name": "John Gibson",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8476434.png",
-  "gamesPlayed": 10,
-  "gamesStarted": 10,
+  "gamesPlayed": 11,
+  "gamesStarted": 11,
   "wins": 4,
   "losses": 5,
   "otLosses": 1,
-  "savePct": 0.86036,
-  "gaa": 3.365805,
+  "savePct": 0.859574,
+  "gaa": 3.457811,
   "shutouts": 0,
-  "gsax": -5.73,
-  "pctl_gsax": 10.0,
+  "gsax": -5.89,
+  "pctl_gsax": 7.1,
   "qualifiesForPercentiles": false
  },
  "gameLog": [
@@ -206,6 +206,19 @@
    "savePct": 0.666667,
    "shutout": 0,
    "toi": 57.0
+  },
+  {
+   "gameId": 2026020238,
+   "date": "2026-11-03",
+   "opponent": "TBL",
+   "home": false,
+   "started": 1,
+   "decision": null,
+   "shotsAgainst": 13,
+   "goalsAgainst": 2,
+   "savePct": 0.846154,
+   "shutout": 0,
+   "toi": 20.0
   }
  ],
  "gameScore": null,
@@ -216,7 +229,7 @@
  "myComponents": null,
  "hsc": {},
  "note": null,
- "detGames": 10,
+ "detGames": 11,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -229,5 +242,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-03T05:07:16-08:00"
+ "updatedAt": "2026-11-04T05:06:35-08:00"
 }

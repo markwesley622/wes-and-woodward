@@ -87,15 +87,15 @@
   },
   "Offense": {
    "value": -1.5,
-   "percentile": 9
+   "percentile": 10
   },
   "Defense": {
    "value": -0.4,
-   "percentile": 33
+   "percentile": 34
   },
   "Net": {
    "value": -1.9,
-   "percentile": 12
+   "percentile": 13
   }
  },
  "score": null,
@@ -106,34 +106,34 @@
   "gameScore": -0.52,
   "minutes": 130,
   "gp": 12,
-  "rank": 622,
-  "pool": 743,
-  "percentile": 16.3,
+  "rank": 621,
+  "pool": 745,
+  "percentile": 16.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 620,
+    "rank": 619,
     "name": "Matt Grzelcyk",
     "team": "BUF",
     "pos": "D",
     "gp": 1,
-    "value": 30.2,
+    "value": 30.1,
     "gs60": -0.43,
     "isMe": false
    },
    {
-    "rank": 621,
-    "name": "Braden Schneider",
-    "team": "NYR",
-    "pos": "D",
-    "gp": 15,
-    "value": 30.1,
-    "gs60": -0.47,
+    "rank": 620,
+    "name": "John Leonard",
+    "team": "DET",
+    "pos": "L",
+    "gp": 2,
+    "value": 30.0,
+    "gs60": -0.5,
     "isMe": false
    },
    {
-    "rank": 622,
+    "rank": 621,
     "name": "Nate Danielson",
     "team": "DET",
     "pos": "C",
@@ -143,22 +143,22 @@
     "isMe": true
    },
    {
-    "rank": 623,
-    "name": "Dominic James",
-    "team": "TBL",
-    "pos": "C",
-    "gp": 5,
-    "value": 29.8,
-    "gs60": -0.58,
-    "isMe": false
-   },
-   {
-    "rank": 624,
+    "rank": 622,
     "name": "Jason Zucker",
     "team": "BUF",
     "pos": "L",
     "gp": 5,
     "value": 29.7,
+    "gs60": -0.6,
+    "isMe": false
+   },
+   {
+    "rank": 623,
+    "name": "Ryan Ufko",
+    "team": "NSH",
+    "pos": "D",
+    "gp": 1,
+    "value": 29.6,
     "gs60": -0.6,
     "isMe": false
    }
@@ -505,5 +505,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-03T05:03:11-08:00"
+ "updatedAt": "2026-11-04T05:02:13-08:00"
 }

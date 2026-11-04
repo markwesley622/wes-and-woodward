@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 15,
+  "gp": 16,
   "goals": 3,
   "assists": 7,
   "points": 10,
   "plusMinus": 10,
-  "pim": 10,
+  "pim": 12,
   "shots": 30,
   "shootingPct": 0.1,
-  "toiPerGame": "15:38",
+  "toiPerGame": "15:32",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 15,
+   "gp": 16,
    "goals": 3,
    "assists": 7,
    "points": 10,
    "plusMinus": 10,
-   "pim": 10
+   "pim": 12
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Michael Brandsegg-Nyg\u00e5rd",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484794.png",
-  "gamesPlayed": 15,
+  "gamesPlayed": 16,
   "goals": 3,
   "assists": 7,
   "points": 10,
   "shots": 30,
   "shootingPct": 0.1,
-  "toiPerGame": 938.3,
-  "ixG": 5.27,
-  "goalsAboveExpected": -2.27,
-  "gameScore": 13.58,
+  "toiPerGame": 932.0,
+  "ixG": 5.46,
+  "goalsAboveExpected": -2.46,
+  "gameScore": 13.02,
   "fiveOnFive": {
-   "icetimeMinutes": 207.9,
-   "onIceXgPct": 0.62,
-   "onIceCorsiPct": 0.59,
-   "ixgPer60": 1.284,
+   "icetimeMinutes": 219.1,
+   "onIceXgPct": 0.59,
+   "onIceCorsiPct": 0.58,
+   "ixgPer60": 1.271,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,84 +82,84 @@
  },
  "hsc": {
   "Game score": {
-   "value": 1.21,
-   "percentile": 90
+   "value": 1.09,
+   "percentile": 87
   },
   "Offense": {
-   "value": 1.7,
-   "percentile": 88
+   "value": 1.5,
+   "percentile": 85
   },
   "Defense": {
-   "value": 1.2,
-   "percentile": 89
+   "value": 1.1,
+   "percentile": 86
   },
   "Net": {
-   "value": 2.9,
-   "percentile": 93
+   "value": 2.6,
+   "percentile": 90
   }
  },
  "score": null,
  "standIn": {
-  "value": 79.4,
-  "gs": 14.43,
-  "gs60": 3.69,
-  "gameScore": 14.43,
-  "minutes": 235,
-  "gp": 15,
-  "rank": 73,
-  "pool": 743,
-  "percentile": 90.2,
+  "value": 79.6,
+  "gs": 15.21,
+  "gs60": 3.67,
+  "gameScore": 15.21,
+  "minutes": 249,
+  "gp": 16,
+  "rank": 71,
+  "pool": 745,
+  "percentile": 90.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 71,
-    "name": "Sam Reinhart",
+    "rank": 69,
+    "name": "Carter Verhaeghe",
     "team": "FLA",
     "pos": "C",
     "gp": 15,
-    "value": 79.7,
-    "gs60": 14.56,
+    "value": 80.2,
+    "gs60": 15.45,
     "isMe": false
    },
    {
-    "rank": 72,
-    "name": "Vincent Trocheck",
-    "team": "UTA",
+    "rank": 70,
+    "name": "James Hagens",
+    "team": "BOS",
     "pos": "C",
-    "gp": 15,
-    "value": 79.5,
-    "gs60": 14.47,
+    "gp": 16,
+    "value": 79.8,
+    "gs60": 15.26,
+    "isMe": false
+   },
+   {
+    "rank": 71,
+    "name": "Michael Brandsegg-Nygrd",
+    "team": "DET",
+    "pos": "R",
+    "gp": 16,
+    "value": 79.6,
+    "gs60": 15.21,
+    "isMe": true
+   },
+   {
+    "rank": 72,
+    "name": "Viktor Arvidsson",
+    "team": "DET",
+    "pos": "L",
+    "gp": 16,
+    "value": 79.6,
+    "gs60": 15.21,
     "isMe": false
    },
    {
     "rank": 73,
-    "name": "Michael Brandsegg-Nygrd",
-    "team": "DET",
-    "pos": "R",
-    "gp": 15,
-    "value": 79.4,
-    "gs60": 14.43,
-    "isMe": true
-   },
-   {
-    "rank": 74,
-    "name": "Steven Stamkos",
-    "team": "NSH",
+    "name": "Nick Suzuki",
+    "team": "MTL",
     "pos": "C",
-    "gp": 14,
+    "gp": 9,
     "value": 79.3,
-    "gs60": 14.39,
-    "isMe": false
-   },
-   {
-    "rank": 75,
-    "name": "Elias Pettersson",
-    "team": "VAN",
-    "pos": "C",
-    "gp": 16,
-    "value": 79.1,
-    "gs60": 14.29,
+    "gs60": 15.08,
     "isMe": false
    }
   ],
@@ -540,31 +540,55 @@
    "gf": 1.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": null,
+   "gameScore": 1.38,
    "gameScoreParts": {
-    "moneypuck": null,
+    "moneypuck": 1.36,
     "hockeystatcards": 1.39
+   }
+  },
+  {
+   "gameId": 2026020238,
+   "date": "2026-11-03",
+   "opponent": "TBL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 0,
+   "pim": 2,
+   "toi": 14.0,
+   "ixg": 0.12,
+   "xgf": 0.19,
+   "xga": 0.87,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": -0.6,
+   "gameScoreParts": {
+    "moneypuck": -0.56,
+    "hockeystatcards": -0.65
    }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.03,
-  "games": 14,
+  "average": 0.95,
+  "games": 16,
   "best": {
    "date": "2026-10-13",
    "opponent": "NJD",
    "value": 3.3
   },
   "worst": {
-   "date": "2026-10-26",
-   "opponent": "EDM",
-   "value": -0.25
+   "date": "2026-11-03",
+   "opponent": "TBL",
+   "value": -0.6
   },
   "above2": 4,
-  "below0": 3
+  "below0": 4
  },
- "detGames": 15,
+ "detGames": 16,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -577,5 +601,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-03T05:02:23-08:00"
+ "updatedAt": "2026-11-04T05:01:29-08:00"
 }

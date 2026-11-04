@@ -85,7 +85,7 @@
    "onIceXgPct": 0.61,
    "onIceCorsiPct": 0.53,
    "ixgPer60": 0.056,
-   "pctl_onIceXgPct": 50.0,
+   "pctl_onIceXgPct": 92.9,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -93,7 +93,7 @@
  "hsc": {
   "Game score": {
    "value": 0.3,
-   "percentile": 46
+   "percentile": 47
   },
   "Offense": {
    "value": -0.2,
@@ -110,66 +110,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 38.3,
+  "value": 37.9,
   "gs": 2.01,
   "gs60": 1.36,
   "gameScore": 2.01,
   "minutes": 89,
   "gp": 7,
-  "rank": 458,
-  "pool": 743,
+  "rank": 459,
+  "pool": 745,
   "percentile": 38.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 456,
-    "name": "Josh Norris",
-    "team": "BUF",
-    "pos": "C",
-    "gp": 14,
-    "value": 38.4,
+    "rank": 457,
+    "name": "Scott Mayfield",
+    "team": "NYI",
+    "pos": "D",
+    "gp": 5,
+    "value": 38.0,
     "gs60": 2.04,
     "isMe": false
    },
    {
-    "rank": 457,
-    "name": "Mathieu Joseph",
-    "team": "EDM",
-    "pos": "R",
-    "gp": 15,
-    "value": 38.3,
-    "gs60": 2.02,
+    "rank": 458,
+    "name": "Josh Norris",
+    "team": "BUF",
+    "pos": "C",
+    "gp": 14,
+    "value": 37.9,
+    "gs60": 2.04,
     "isMe": false
    },
    {
-    "rank": 458,
+    "rank": 459,
     "name": "Axel Sandin-Pellikka",
     "team": "DET",
     "pos": "D",
     "gp": 7,
-    "value": 38.3,
+    "value": 37.9,
     "gs60": 2.01,
     "isMe": true
    },
    {
-    "rank": 459,
-    "name": "Stefan Noesen",
-    "team": "NJD",
-    "pos": "R",
-    "gp": 5,
-    "value": 38.0,
-    "gs60": 1.95,
+    "rank": 460,
+    "name": "Teddy Blueger",
+    "team": "TOR",
+    "pos": "C",
+    "gp": 17,
+    "value": 37.8,
+    "gs60": 2.01,
     "isMe": false
    },
    {
-    "rank": 460,
-    "name": "Scott Morrow",
-    "team": "NYR",
+    "rank": 461,
+    "name": "Dylan DeMelo",
+    "team": "WPG",
     "pos": "D",
-    "gp": 1,
-    "value": 38.0,
-    "gs60": 1.94,
+    "gp": 16,
+    "value": 37.8,
+    "gs60": 1.99,
     "isMe": false
    }
   ],
@@ -395,5 +395,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-03T05:06:49-08:00"
+ "updatedAt": "2026-11-04T05:06:11-08:00"
 }

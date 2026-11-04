@@ -2,6 +2,22 @@
  "situation": "5on5",
  "forwardLines": [
   {
+   "name": "Arvidsson-Finnie-Debrincat",
+   "players": [
+    "Arvidsson",
+    "Finnie",
+    "Debrincat"
+   ],
+   "gamesPlayed": 10,
+   "icetimeMinutes": 85.0,
+   "xGoalsPct": 0.62,
+   "corsiPct": 0.51,
+   "xGoalsFor": 4.5,
+   "xGoalsAgainst": 2.82,
+   "goalsFor": 4.0,
+   "goalsAgainst": 5.0
+  },
+  {
    "name": "Debrincat-Finnie-Brandsegg-Nygrd",
    "players": [
     "Debrincat",
@@ -19,22 +35,6 @@
    "goalsAgainst": 1.0
   },
   {
-   "name": "Arvidsson-Finnie-Debrincat",
-   "players": [
-    "Arvidsson",
-    "Finnie",
-    "Debrincat"
-   ],
-   "gamesPlayed": 9,
-   "icetimeMinutes": 73.9,
-   "xGoalsPct": 0.62,
-   "corsiPct": 0.53,
-   "xGoalsFor": 4.06,
-   "xGoalsAgainst": 2.46,
-   "goalsFor": 4.0,
-   "goalsAgainst": 4.0
-  },
-  {
    "name": "Arvidsson-Larkin-Raymond",
    "players": [
     "Arvidsson",
@@ -49,6 +49,23 @@
    "xGoalsAgainst": 2.6,
    "goalsFor": 1.0,
    "goalsAgainst": 3.0
+  },
+  {
+   "name": "Raymond-Copp-Brandsegg-Nygrd",
+   "players": [
+    "Raymond",
+    "Copp",
+    "Brandsegg",
+    "Nygrd"
+   ],
+   "gamesPlayed": 6,
+   "icetimeMinutes": 44.3,
+   "xGoalsPct": 0.43,
+   "corsiPct": 0.45,
+   "xGoalsFor": 1.66,
+   "xGoalsAgainst": 2.2,
+   "goalsFor": 2.0,
+   "goalsAgainst": 2.0
   },
   {
    "name": "Rasmussen-Copp-Kolesar",
@@ -84,35 +101,34 @@
    "goalsAgainst": 0.0
   },
   {
-   "name": "Raymond-Copp-Brandsegg-Nygrd",
-   "players": [
-    "Raymond",
-    "Copp",
-    "Brandsegg",
-    "Nygrd"
-   ],
-   "gamesPlayed": 5,
-   "icetimeMinutes": 38.0,
-   "xGoalsPct": 0.55,
-   "corsiPct": 0.54,
-   "xGoalsFor": 1.65,
-   "xGoalsAgainst": 1.38,
-   "goalsFor": 2.0,
-   "goalsAgainst": 2.0
-  },
-  {
    "name": "Rasmussen-Compher-Copp",
    "players": [
     "Rasmussen",
     "Compher",
     "Copp"
    ],
-   "gamesPlayed": 3,
-   "icetimeMinutes": 30.1,
-   "xGoalsPct": 0.77,
-   "corsiPct": 0.61,
-   "xGoalsFor": 1.79,
+   "gamesPlayed": 4,
+   "icetimeMinutes": 30.6,
+   "xGoalsPct": 0.81,
+   "corsiPct": 0.64,
+   "xGoalsFor": 2.28,
    "xGoalsAgainst": 0.54,
+   "goalsFor": 2.0,
+   "goalsAgainst": 0.0
+  },
+  {
+   "name": "Mazur-Dries-Kolesar",
+   "players": [
+    "Mazur",
+    "Dries",
+    "Kolesar"
+   ],
+   "gamesPlayed": 5,
+   "icetimeMinutes": 25.7,
+   "xGoalsPct": 0.33,
+   "corsiPct": 0.36,
+   "xGoalsFor": 0.52,
+   "xGoalsAgainst": 1.06,
    "goalsFor": 2.0,
    "goalsAgainst": 0.0
   },
@@ -130,22 +146,6 @@
    "xGoalsFor": 0.56,
    "xGoalsAgainst": 0.97,
    "goalsFor": 0.0,
-   "goalsAgainst": 0.0
-  },
-  {
-   "name": "Mazur-Dries-Kolesar",
-   "players": [
-    "Mazur",
-    "Dries",
-    "Kolesar"
-   ],
-   "gamesPlayed": 4,
-   "icetimeMinutes": 22.0,
-   "xGoalsPct": 0.34,
-   "corsiPct": 0.41,
-   "xGoalsFor": 0.52,
-   "xGoalsAgainst": 1.01,
-   "goalsFor": 2.0,
    "goalsAgainst": 0.0
   },
   {
@@ -172,14 +172,14 @@
     "Chiarot",
     "Seider"
    ],
-   "gamesPlayed": 15,
-   "icetimeMinutes": 170.0,
-   "xGoalsPct": 0.54,
-   "corsiPct": 0.52,
-   "xGoalsFor": 5.78,
-   "xGoalsAgainst": 4.94,
-   "goalsFor": 4.0,
-   "goalsAgainst": 7.0
+   "gamesPlayed": 16,
+   "icetimeMinutes": 184.9,
+   "xGoalsPct": 0.51,
+   "corsiPct": 0.5,
+   "xGoalsFor": 6.32,
+   "xGoalsAgainst": 6.09,
+   "goalsFor": 5.0,
+   "goalsAgainst": 8.0
   },
   {
    "name": "Faulk-Wallinder",
@@ -187,14 +187,14 @@
     "Faulk",
     "Wallinder"
    ],
-   "gamesPlayed": 10,
-   "icetimeMinutes": 114.4,
-   "xGoalsPct": 0.61,
-   "corsiPct": 0.57,
-   "xGoalsFor": 5.23,
-   "xGoalsAgainst": 3.29,
+   "gamesPlayed": 11,
+   "icetimeMinutes": 125.8,
+   "xGoalsPct": 0.59,
+   "corsiPct": 0.54,
+   "xGoalsFor": 5.56,
+   "xGoalsAgainst": 3.81,
    "goalsFor": 6.0,
-   "goalsAgainst": 5.0
+   "goalsAgainst": 6.0
   },
   {
    "name": "Englund-Johansson",
@@ -202,12 +202,12 @@
     "Englund",
     "Johansson"
    ],
-   "gamesPlayed": 9,
-   "icetimeMinutes": 68.8,
-   "xGoalsPct": 0.64,
-   "corsiPct": 0.47,
-   "xGoalsFor": 4.12,
-   "xGoalsAgainst": 2.35,
+   "gamesPlayed": 10,
+   "icetimeMinutes": 77.5,
+   "xGoalsPct": 0.55,
+   "corsiPct": 0.45,
+   "xGoalsFor": 4.28,
+   "xGoalsAgainst": 3.44,
    "goalsFor": 3.0,
    "goalsAgainst": 2.0
   },
@@ -277,12 +277,12 @@
     "Chiarot",
     "Johansson"
    ],
-   "gamesPlayed": 12,
-   "icetimeMinutes": 33.3,
+   "gamesPlayed": 13,
+   "icetimeMinutes": 33.7,
    "xGoalsPct": 0.36,
-   "corsiPct": 0.48,
+   "corsiPct": 0.47,
    "xGoalsFor": 1.58,
-   "xGoalsAgainst": 2.76,
+   "xGoalsAgainst": 2.83,
    "goalsFor": 2.0,
    "goalsAgainst": 3.0
   }
