@@ -91,11 +91,11 @@
   },
   "Offense": {
    "value": -1.4,
-   "percentile": 12
+   "percentile": 13
   },
   "Defense": {
    "value": 0.5,
-   "percentile": 70
+   "percentile": 71
   },
   "Net": {
    "value": -0.9,
@@ -110,14 +110,14 @@
   "gameScore": 1.23,
   "minutes": 103,
   "gp": 10,
-  "rank": 495,
-  "pool": 745,
-  "percentile": 33.6,
+  "rank": 496,
+  "pool": 749,
+  "percentile": 33.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 493,
+    "rank": 494,
     "name": "Gavin Brindley",
     "team": "COL",
     "pos": "C",
@@ -127,7 +127,7 @@
     "isMe": false
    },
    {
-    "rank": 494,
+    "rank": 495,
     "name": "Jacob Gaucher",
     "team": "PHI",
     "pos": "C",
@@ -137,7 +137,7 @@
     "isMe": false
    },
    {
-    "rank": 495,
+    "rank": 496,
     "name": "Sheldon Dries",
     "team": "DET",
     "pos": "C",
@@ -147,7 +147,7 @@
     "isMe": true
    },
    {
-    "rank": 496,
+    "rank": 497,
     "name": "Skyler Brind'Amour",
     "team": "CAR",
     "pos": "C",
@@ -157,12 +157,12 @@
     "isMe": false
    },
    {
-    "rank": 497,
+    "rank": 498,
     "name": "Cameron Crotty",
     "team": "OTT",
     "pos": "D",
     "gp": 3,
-    "value": 35.3,
+    "value": 35.2,
     "gs60": 1.22,
     "isMe": false
    }
@@ -536,5 +536,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-11-04T05:02:43-08:00"
+ "updatedAt": "2026-11-05T05:02:19-08:00"
 }

@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.01,
-   "percentile": 27
+   "percentile": 28
   },
   "Offense": {
    "value": -0.5,
@@ -106,14 +106,14 @@
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 559,
-  "pool": 745,
-  "percentile": 25.0,
+  "rank": 560,
+  "pool": 749,
+  "percentile": 25.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 557,
+    "rank": 558,
     "name": "Justin Dowling",
     "team": "NYR",
     "pos": "C",
@@ -123,7 +123,7 @@
     "isMe": false
    },
    {
-    "rank": 558,
+    "rank": 559,
     "name": "Sean Monahan",
     "team": "CBJ",
     "pos": "C",
@@ -133,7 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 559,
+    "rank": 560,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
@@ -143,23 +143,23 @@
     "isMe": true
    },
    {
-    "rank": 560,
+    "rank": 561,
+    "name": "Zack Ostapchuk",
+    "team": "SJS",
+    "pos": "C",
+    "gp": 16,
+    "value": 32.4,
+    "gs60": 0.3,
+    "isMe": false
+   },
+   {
+    "rank": 562,
     "name": "Alexey Toropchenko",
     "team": "STL",
     "pos": "R",
     "gp": 5,
     "value": 32.3,
     "gs60": 0.29,
-    "isMe": false
-   },
-   {
-    "rank": 561,
-    "name": "Cody Ceci",
-    "team": "LAK",
-    "pos": "D",
-    "gp": 7,
-    "value": 32.3,
-    "gs60": 0.28,
     "isMe": false
    }
   ],
@@ -370,5 +370,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-04T05:00:57-08:00"
+ "updatedAt": "2026-11-05T05:00:48-08:00"
 }

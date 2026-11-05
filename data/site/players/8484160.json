@@ -83,11 +83,11 @@
  "hsc": {
   "Game score": {
    "value": -0.18,
-   "percentile": 18
+   "percentile": 19
   },
   "Offense": {
    "value": -1.5,
-   "percentile": 10
+   "percentile": 11
   },
   "Defense": {
    "value": -0.4,
@@ -95,7 +95,7 @@
   },
   "Net": {
    "value": -1.9,
-   "percentile": 13
+   "percentile": 14
   }
  },
  "score": null,
@@ -106,24 +106,24 @@
   "gameScore": -0.52,
   "minutes": 130,
   "gp": 12,
-  "rank": 621,
-  "pool": 745,
-  "percentile": 16.6,
+  "rank": 623,
+  "pool": 749,
+  "percentile": 16.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 619,
-    "name": "Matt Grzelcyk",
-    "team": "BUF",
-    "pos": "D",
-    "gp": 1,
-    "value": 30.1,
-    "gs60": -0.43,
+    "rank": 621,
+    "name": "Martin Chromiak",
+    "team": "LAK",
+    "pos": "R",
+    "gp": 2,
+    "value": 30.0,
+    "gs60": -0.49,
     "isMe": false
    },
    {
-    "rank": 620,
+    "rank": 622,
     "name": "John Leonard",
     "team": "DET",
     "pos": "L",
@@ -133,7 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 621,
+    "rank": 623,
     "name": "Nate Danielson",
     "team": "DET",
     "pos": "C",
@@ -143,23 +143,23 @@
     "isMe": true
    },
    {
-    "rank": 622,
-    "name": "Jason Zucker",
-    "team": "BUF",
-    "pos": "L",
-    "gp": 5,
+    "rank": 624,
+    "name": "Ryan Ufko",
+    "team": "NSH",
+    "pos": "D",
+    "gp": 1,
     "value": 29.7,
     "gs60": -0.6,
     "isMe": false
    },
    {
-    "rank": 623,
-    "name": "Ryan Ufko",
-    "team": "NSH",
+    "rank": 625,
+    "name": "Brett Kulak",
+    "team": "COL",
     "pos": "D",
-    "gp": 1,
+    "gp": 16,
     "value": 29.6,
-    "gs60": -0.6,
+    "gs60": -0.62,
     "isMe": false
    }
   ],
@@ -505,5 +505,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-04T05:02:13-08:00"
+ "updatedAt": "2026-11-05T05:01:55-08:00"
 }

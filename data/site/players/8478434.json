@@ -95,7 +95,7 @@
   },
   "Net": {
    "value": -1.6,
-   "percentile": 18
+   "percentile": 19
   }
  },
  "score": null,
@@ -106,14 +106,24 @@
   "gameScore": 0.23,
   "minutes": 167,
   "gp": 16,
-  "rank": 564,
-  "pool": 745,
-  "percentile": 24.3,
+  "rank": 565,
+  "pool": 749,
+  "percentile": 24.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 562,
+    "rank": 563,
+    "name": "Cody Ceci",
+    "team": "LAK",
+    "pos": "D",
+    "gp": 7,
+    "value": 32.3,
+    "gs60": 0.28,
+    "isMe": false
+   },
+   {
+    "rank": 564,
     "name": "Jeremy Lauzon",
     "team": "VGK",
     "pos": "D",
@@ -123,17 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 563,
-    "name": "Zack Ostapchuk",
-    "team": "SJS",
-    "pos": "C",
-    "gp": 15,
-    "value": 32.3,
-    "gs60": 0.26,
-    "isMe": false
-   },
-   {
-    "rank": 564,
+    "rank": 565,
     "name": "Keegan Kolesar",
     "team": "DET",
     "pos": "R",
@@ -143,7 +143,7 @@
     "isMe": true
    },
    {
-    "rank": 565,
+    "rank": 566,
     "name": "Brady Skjei",
     "team": "NSH",
     "pos": "D",
@@ -153,13 +153,13 @@
     "isMe": false
    },
    {
-    "rank": 566,
-    "name": "Alex Vlasic",
-    "team": "CHI",
+    "rank": 567,
+    "name": "Eric Pohlkamp",
+    "team": "SJS",
     "pos": "D",
-    "gp": 15,
+    "gp": 1,
     "value": 32.0,
-    "gs60": 0.18,
+    "gs60": 0.17,
     "isMe": false
    }
   ],
@@ -691,5 +691,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-04T05:03:27-08:00"
+ "updatedAt": "2026-11-05T05:03:01-08:00"
 }

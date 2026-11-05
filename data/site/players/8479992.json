@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": -1.5,
-   "percentile": 20
+   "percentile": 21
   }
  },
  "score": null,
  "standIn": {
-  "value": 40.7,
+  "value": 40.6,
   "gs": 2.86,
   "gs60": 0.66,
   "gameScore": 2.86,
   "minutes": 261,
   "gp": 16,
-  "rank": 416,
-  "pool": 745,
+  "rank": 418,
+  "pool": 749,
   "percentile": 44.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 414,
+    "rank": 416,
     "name": "Nick Foligno",
     "team": "MIN",
     "pos": "L",
     "gp": 3,
-    "value": 40.7,
+    "value": 40.6,
     "gs60": 2.86,
     "isMe": false
    },
    {
-    "rank": 415,
+    "rank": 417,
     "name": "Zach Hyman",
     "team": "EDM",
     "pos": "L",
     "gp": 6,
-    "value": 40.7,
-    "gs60": 2.86,
-    "isMe": false
-   },
-   {
-    "rank": 416,
-    "name": "Michael Rasmussen",
-    "team": "DET",
-    "pos": "C",
-    "gp": 16,
-    "value": 40.7,
-    "gs60": 2.86,
-    "isMe": true
-   },
-   {
-    "rank": 417,
-    "name": "Matt Roy",
-    "team": "WSH",
-    "pos": "D",
-    "gp": 8,
     "value": 40.6,
-    "gs60": 2.83,
+    "gs60": 2.86,
     "isMe": false
    },
    {
     "rank": 418,
-    "name": "Andre Lee",
-    "team": "LAK",
-    "pos": "L",
-    "gp": 11,
+    "name": "Michael Rasmussen",
+    "team": "DET",
+    "pos": "C",
+    "gp": 16,
     "value": 40.6,
-    "gs60": 2.81,
+    "gs60": 2.86,
+    "isMe": true
+   },
+   {
+    "rank": 419,
+    "name": "Matt Roy",
+    "team": "WSH",
+    "pos": "D",
+    "gp": 8,
+    "value": 40.5,
+    "gs60": 2.83,
+    "isMe": false
+   },
+   {
+    "rank": 420,
+    "name": "Dmitri Simashev",
+    "team": "UTA",
+    "pos": "D",
+    "gp": 16,
+    "value": 40.4,
+    "gs60": 2.8,
     "isMe": false
    }
   ],
@@ -691,5 +691,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-04T05:04:23-08:00"
+ "updatedAt": "2026-11-05T05:03:54-08:00"
 }

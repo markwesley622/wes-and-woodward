@@ -31,12 +31,12 @@
   {
    "league": "OHL",
    "team": "Erie Otters",
-   "gp": 13,
-   "g": 5,
-   "a": 1,
-   "pts": 6,
-   "pm": -3,
-   "pim": 0,
+   "gp": 14,
+   "g": 7,
+   "a": 2,
+   "pts": 9,
+   "pm": 0,
+   "pim": 2,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -123,12 +123,12 @@
     {
      "league": "OHL",
      "team": "Erie Otters",
-     "gp": 13,
-     "g": 5,
-     "a": 1,
-     "pts": 6,
-     "pm": -3,
-     "pim": 0,
+     "gp": 14,
+     "g": 7,
+     "a": 2,
+     "pts": 9,
+     "pm": 0,
+     "pim": 2,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -164,18 +164,18 @@
   "table": "OHL",
   "coef": 0.144,
   "team": "Erie Otters",
-  "gp": 13,
-  "g": 5,
-  "a": 1,
-  "pts": 6,
-  "pgp": 0.462,
-  "lineGp": 13,
-  "nhle": 0.066,
-  "nhlePace": 5.5,
+  "gp": 14,
+  "g": 7,
+  "a": 2,
+  "pts": 9,
+  "pgp": 0.643,
+  "lineGp": 14,
+  "nhle": 0.093,
+  "nhlePace": 7.8,
   "lines": [
    "OHL"
   ],
-  "feature": 0.066
+  "feature": 0.093
  },
  "league": {
   "name": "OHL",
@@ -190,113 +190,113 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 86,
-   "gp": 13,
-   "value": 0.4615,
-   "percentile": 48.8,
-   "percentileAllAges": 51.9,
+   "gp": 14,
+   "value": 0.6429,
+   "percentile": 62.8,
+   "percentileAllAges": 65.4,
    "allAgesN": 1875
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 4.4,
+  "expected": 8.2,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 12.3,
-  "pRegular": 0.1,
-  "pTopLine": 0.04,
+  "p90": 37.2,
+  "pRegular": 0.22,
+  "pTopLine": 0.02,
   "pAboveAvg": 0.04,
-  "pElite": 0.02,
+  "pElite": 0.0,
   "poolN": 1362,
   "group": "F",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.1,
+  "pCeiling": 0.22,
   "featureBand": [
-   0.053,
-   0.08
+   0.081,
+   0.106
   ],
   "examples": [
    {
-    "name": "Hunter Fejes",
-    "year": 2012,
-    "pick": 178,
-    "league": "NCAA",
-    "feature": 0.066,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Tyler Randell",
-    "year": 2009,
-    "pick": 176,
-    "league": "OHL",
-    "feature": 0.064,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 27
-   },
-   {
-    "name": "Arsen Khisamutdinov",
-    "year": 2019,
-    "pick": 170,
-    "league": "MHL",
-    "feature": 0.064,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Hunter Drew",
-    "year": 2018,
-    "pick": 178,
-    "league": "QMJHL",
-    "feature": 0.069,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 2
-   },
-   {
-    "name": "David Pacan",
-    "year": 2009,
-    "pick": 177,
-    "league": "NCAA",
-    "feature": 0.07,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "C\u00e9dric Par\u00e9",
-    "year": 2017,
-    "pick": 173,
-    "league": "QMJHL",
-    "feature": 0.07,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Scott Timmins",
-    "year": 2009,
-    "pick": 165,
-    "league": "OHL",
-    "feature": 0.067,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 24
-   },
-   {
-    "name": "Tyler Moy",
+    "name": "Lukas Jasek",
     "year": 2015,
-    "pick": 175,
-    "league": "NCAA",
-    "feature": 0.072,
+    "pick": 174,
+    "league": "Czechia",
+    "feature": 0.093,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Cole Guttman",
+    "year": 2017,
+    "pick": 180,
+    "league": "USHL",
+    "feature": 0.093,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 41
+   },
+   {
+    "name": "Justin Sch\u00fctz",
+    "year": 2018,
+    "pick": 170,
+    "league": "AlpsHL",
+    "feature": 0.093,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ryan McGregor",
+    "year": 2017,
+    "pick": 172,
+    "league": "OHL",
+    "feature": 0.092,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Brooks Macek",
+    "year": 2010,
+    "pick": 171,
+    "league": "WHL",
+    "feature": 0.092,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Mitch Callahan",
+    "year": 2009,
+    "pick": 180,
+    "league": "WHL",
+    "feature": 0.092,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 5
+   },
+   {
+    "name": "Anton Blidh",
+    "year": 2013,
+    "pick": 180,
+    "league": "J20 SuperElit",
+    "feature": 0.094,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 89
+   },
+   {
+    "name": "Iiro Pakarinen",
+    "year": 2011,
+    "pick": 184,
+    "league": "SM-liiga",
+    "feature": 0.092,
+    "peak": 18.9,
+    "tier": "replacement level",
+    "nhlGp": 134
    }
   ]
  },
@@ -317,8 +317,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 4.4,
-  "expected": 6.0,
+  "cohortExpected": 8.2,
+  "expected": 7.8,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -339,11 +339,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 13,
+  "gp": 14,
   "season": "2026-2027"
  },
- "rank": 21,
- "score": 6.0,
+ "rank": 20,
+ "score": 7.8,
  "rankStart": 21,
  "rankStartDate": "2026-10-06"
 }

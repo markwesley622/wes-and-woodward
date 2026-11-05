@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 11,
-   "g": 2,
-   "a": 5,
-   "pts": 7,
-   "pm": 3,
+   "gp": 12,
+   "g": 3,
+   "a": 6,
+   "pts": 9,
+   "pm": 4,
    "pim": 0,
    "gaa": null,
    "svp": null,
@@ -89,11 +89,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 11,
-     "g": 2,
-     "a": 5,
-     "pts": 7,
-     "pm": 3,
+     "gp": 12,
+     "g": 3,
+     "a": 6,
+     "pts": 9,
+     "pm": 4,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -218,18 +218,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 11,
-  "g": 2,
-  "a": 5,
-  "pts": 7,
-  "pgp": 0.636,
-  "lineGp": 11,
-  "nhle": 0.248,
-  "nhlePace": 20.8,
+  "gp": 12,
+  "g": 3,
+  "a": 6,
+  "pts": 9,
+  "pgp": 0.75,
+  "lineGp": 12,
+  "nhle": 0.292,
+  "nhlePace": 24.5,
   "lines": [
    "AHL"
   ],
-  "feature": 0.248
+  "feature": 0.292
  },
  "league": {
   "name": "AHL",
@@ -254,113 +254,113 @@
    "season": "2026-2027",
    "ageBucket": "U24",
    "cohortN": 52,
-   "gp": 11,
-   "value": 0.6364,
-   "percentile": 63.5,
-   "percentileAllAges": 64.5,
+   "gp": 12,
+   "value": 0.75,
+   "percentile": 71.2,
+   "percentileAllAges": 72.9,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 11.0,
+  "expected": 14.4,
   "median": 0.0,
-  "p75": 0.0,
-  "p90": 53.5,
-  "pRegular": 0.24,
-  "pTopLine": 0.02,
-  "pAboveAvg": 0.12,
+  "p75": 32.3,
+  "p90": 56.2,
+  "pRegular": 0.34,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.14,
   "pElite": 0.02,
   "poolN": 1006,
   "group": "F",
   "age": 22,
   "pickWeight": 0.0,
-  "tier": "replacement level",
-  "pCeiling": 0.24,
+  "tier": "below average",
+  "pCeiling": 0.26,
   "featureBand": [
-   0.238,
-   0.259
+   0.273,
+   0.309
   ],
   "examples": [
    {
-    "name": "Teemu Hartikainen",
-    "year": 2008,
-    "pick": 163,
-    "league": "AHL",
-    "feature": 0.248,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 52
-   },
-   {
-    "name": "Mike Hoffman",
+    "name": "Anton Lander",
     "year": 2009,
-    "pick": 130,
+    "pick": 40,
     "league": "AHL",
-    "feature": 0.248,
-    "peak": 92.1,
-    "tier": "elite",
-    "nhlGp": 745
+    "feature": 0.291,
+    "peak": 6.4,
+    "tier": "replacement level",
+    "nhlGp": 215
    },
    {
-    "name": "Rocco Grimaldi",
-    "year": 2011,
-    "pick": 33,
-    "league": "AHL",
-    "feature": 0.248,
-    "peak": 51.3,
-    "tier": "above average",
-    "nhlGp": 203
-   },
-   {
-    "name": "T.J. Tynan",
-    "year": 2011,
-    "pick": 66,
-    "league": "AHL",
-    "feature": 0.249,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 31
-   },
-   {
-    "name": "Morgan Klimchuk",
-    "year": 2013,
-    "pick": 28,
-    "league": "AHL",
-    "feature": 0.247,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
-   },
-   {
-    "name": "Filip Sveningsson",
-    "year": 2017,
-    "pick": 202,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.249,
+    "name": "Alexander Daryin",
+    "year": 2019,
+    "pick": 107,
+    "league": "KHL",
+    "feature": 0.291,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Jakob Pelletier",
-    "year": 2019,
-    "pick": 26,
+    "name": "Brandon Kozun",
+    "year": 2009,
+    "pick": 179,
     "league": "AHL",
-    "feature": 0.247,
+    "feature": 0.294,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 91
+    "nhlGp": 20
    },
    {
-    "name": "Michael Latta",
-    "year": 2009,
-    "pick": 72,
+    "name": "Martin Frk",
+    "year": 2012,
+    "pick": 49,
     "league": "AHL",
-    "feature": 0.25,
-    "peak": 10.0,
-    "tier": "replacement level",
-    "nhlGp": 113
+    "feature": 0.29,
+    "peak": 36.7,
+    "tier": "below average",
+    "nhlGp": 124
+   },
+   {
+    "name": "Francis Perron",
+    "year": 2014,
+    "pick": 190,
+    "league": "AHL",
+    "feature": 0.29,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matej Paulovic",
+    "year": 2013,
+    "pick": 149,
+    "league": "Slovakia",
+    "feature": 0.295,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Sonny Milano",
+    "year": 2014,
+    "pick": 16,
+    "league": "AHL",
+    "feature": 0.295,
+    "peak": 56.2,
+    "tier": "above average",
+    "nhlGp": 344
+   },
+   {
+    "name": "John Quenneville",
+    "year": 2014,
+    "pick": 30,
+    "league": "AHL",
+    "feature": 0.289,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 42
    }
   ]
  },
@@ -381,8 +381,8 @@
   "w": 0.0,
   "sinceDraft": 4,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 11.0,
-  "expected": 11.0,
+  "cohortExpected": 14.4,
+  "expected": 14.4,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -403,11 +403,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 11,
+  "gp": 12,
   "season": "2026-2027"
  },
- "rank": 17,
- "score": 11.0,
+ "rank": 13,
+ "score": 14.4,
  "rankStart": 20,
  "rankStartDate": "2026-10-06"
 }

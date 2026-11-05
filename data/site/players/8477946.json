@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 73
+   "percentile": 74
   },
   "Net": {
    "value": 0.9,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 61.7,
+  "value": 61.5,
   "gs": 8.91,
   "gs60": 2.46,
   "gameScore": 8.91,
   "minutes": 217,
   "gp": 10,
-  "rank": 196,
-  "pool": 745,
-  "percentile": 73.7,
+  "rank": 199,
+  "pool": 749,
+  "percentile": 73.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 194,
-    "name": "Mark Jankowski",
-    "team": "CAR",
-    "pos": "L",
-    "gp": 13,
-    "value": 61.8,
-    "gs60": 8.95,
-    "isMe": false
-   },
-   {
-    "rank": 195,
-    "name": "Shane Pinto",
-    "team": "OTT",
-    "pos": "C",
-    "gp": 16,
-    "value": 61.8,
-    "gs60": 8.93,
-    "isMe": false
-   },
-   {
-    "rank": 196,
-    "name": "Dylan Larkin",
-    "team": "DET",
-    "pos": "C",
-    "gp": 10,
-    "value": 61.7,
-    "gs60": 8.91,
-    "isMe": true
-   },
-   {
     "rank": 197,
-    "name": "Linus Karlsson",
-    "team": "VAN",
+    "name": "Jake Evans",
+    "team": "MTL",
     "pos": "C",
-    "gp": 17,
-    "value": 61.4,
-    "gs60": 8.81,
+    "gp": 15,
+    "value": 62.1,
+    "gs60": 9.12,
     "isMe": false
    },
    {
     "rank": 198,
-    "name": "Niko Mikkola",
-    "team": "FLA",
-    "pos": "D",
-    "gp": 15,
-    "value": 61.2,
-    "gs60": 8.77,
+    "name": "Mark Jankowski",
+    "team": "CAR",
+    "pos": "L",
+    "gp": 13,
+    "value": 61.6,
+    "gs60": 8.95,
+    "isMe": false
+   },
+   {
+    "rank": 199,
+    "name": "Dylan Larkin",
+    "team": "DET",
+    "pos": "C",
+    "gp": 10,
+    "value": 61.5,
+    "gs60": 8.91,
+    "isMe": true
+   },
+   {
+    "rank": 200,
+    "name": "Quinton Byfield",
+    "team": "LAK",
+    "pos": "R",
+    "gp": 12,
+    "value": 61.4,
+    "gs60": 8.91,
+    "isMe": false
+   },
+   {
+    "rank": 201,
+    "name": "Linus Karlsson",
+    "team": "VAN",
+    "pos": "C",
+    "gp": 17,
+    "value": 61.1,
+    "gs60": 8.81,
     "isMe": false
    }
   ],
@@ -607,5 +607,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-04T05:03:42-08:00"
+ "updatedAt": "2026-11-05T05:03:13-08:00"
 }

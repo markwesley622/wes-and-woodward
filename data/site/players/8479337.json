@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": 2.5,
-   "percentile": 94
+   "percentile": 93
   },
   "Defense": {
    "value": 1.1,
@@ -100,36 +100,36 @@
  },
  "score": null,
  "standIn": {
-  "value": 89.4,
+  "value": 89.2,
   "gs": 20.68,
   "gs60": 3.88,
   "gameScore": 20.68,
   "minutes": 320,
   "gp": 16,
   "rank": 25,
-  "pool": 745,
-  "percentile": 96.6,
+  "pool": 749,
+  "percentile": 96.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
     "rank": 23,
-    "name": "Devon Toews",
+    "name": "Cale Makar",
     "team": "COL",
     "pos": "D",
-    "gp": 16,
-    "value": 89.5,
-    "gs60": 20.76,
+    "gp": 15,
+    "value": 89.4,
+    "gs60": 20.8,
     "isMe": false
    },
    {
     "rank": 24,
-    "name": "Matthew Tkachuk",
-    "team": "FLA",
-    "pos": "L",
-    "gp": 15,
-    "value": 89.5,
-    "gs60": 20.7,
+    "name": "Devon Toews",
+    "team": "COL",
+    "pos": "D",
+    "gp": 16,
+    "value": 89.3,
+    "gs60": 20.76,
     "isMe": false
    },
    {
@@ -138,7 +138,7 @@
     "team": "DET",
     "pos": "R",
     "gp": 16,
-    "value": 89.4,
+    "value": 89.2,
     "gs60": 20.68,
     "isMe": true
    },
@@ -148,18 +148,18 @@
     "team": "TBL",
     "pos": "L",
     "gp": 14,
-    "value": 89.4,
+    "value": 89.2,
     "gs60": 20.66,
     "isMe": false
    },
    {
     "rank": 27,
-    "name": "Martin Necas",
-    "team": "COL",
-    "pos": "C",
+    "name": "Seth Jones",
+    "team": "FLA",
+    "pos": "D",
     "gp": 16,
-    "value": 88.8,
-    "gs60": 20.2,
+    "value": 88.9,
+    "gs60": 20.43,
     "isMe": false
    }
   ],
@@ -721,5 +721,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-04T05:02:31-08:00"
+ "updatedAt": "2026-11-05T05:02:07-08:00"
 }

@@ -75,7 +75,7 @@
    "onIceXgPct": 0.57,
    "onIceCorsiPct": 0.49,
    "ixgPer60": 0.078,
-   "pctl_onIceXgPct": 78.6,
+   "pctl_onIceXgPct": 76.5,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 0.28,
-   "percentile": 44
+   "percentile": 45
   },
   "Offense": {
    "value": -1.1,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": -0.2,
-   "percentile": 53
+   "percentile": 54
   }
  },
  "score": null,
  "standIn": {
-  "value": 38.3,
+  "value": 38.2,
   "gs": 2.13,
   "gs60": 0.88,
   "gameScore": 2.13,
   "minutes": 145,
   "gp": 11,
-  "rank": 450,
-  "pool": 745,
-  "percentile": 39.6,
+  "rank": 449,
+  "pool": 749,
+  "percentile": 40.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 448,
+    "rank": 447,
     "name": "David Spacek",
     "team": "MIN",
     "pos": "D",
     "gp": 9,
-    "value": 38.3,
+    "value": 38.2,
     "gs60": 2.14,
     "isMe": false
    },
    {
-    "rank": 449,
+    "rank": 448,
     "name": "Ivan Provorov",
     "team": "CBJ",
     "pos": "D",
     "gp": 2,
-    "value": 38.3,
+    "value": 38.2,
     "gs60": 2.13,
     "isMe": false
    },
    {
-    "rank": 450,
+    "rank": 449,
     "name": "Andreas Englund",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 38.3,
+    "value": 38.2,
     "gs60": 2.13,
     "isMe": true
    },
    {
-    "rank": 451,
-    "name": "Gustav Forsling",
-    "team": "FLA",
-    "pos": "D",
-    "gp": 14,
-    "value": 38.2,
-    "gs60": 2.12,
+    "rank": 450,
+    "name": "Alex Formenton",
+    "team": "EDM",
+    "pos": "L",
+    "gp": 16,
+    "value": 38.1,
+    "gs60": 2.1,
     "isMe": false
    },
    {
-    "rank": 452,
-    "name": "Chandler Stephenson",
-    "team": "SEA",
-    "pos": "C",
+    "rank": 451,
+    "name": "Martin Fehrvry",
+    "team": "WSH",
+    "pos": "D",
     "gp": 14,
-    "value": 38.2,
-    "gs60": 2.12,
+    "value": 38.1,
+    "gs60": 2.09,
     "isMe": false
    }
   ],
@@ -586,5 +586,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-04T05:06:48-08:00"
+ "updatedAt": "2026-11-05T05:05:57-08:00"
 }

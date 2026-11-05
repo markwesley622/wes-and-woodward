@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 11,
-   "g": 1,
+   "gp": 12,
+   "g": 2,
    "a": 3,
-   "pts": 4,
-   "pm": -6,
+   "pts": 5,
+   "pm": -7,
    "pim": 0,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 11,
-     "g": 1,
+     "gp": 12,
+     "g": 2,
      "a": 3,
-     "pts": 4,
-     "pm": -6,
+     "pts": 5,
+     "pm": -7,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -230,18 +230,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 11,
-  "g": 1,
+  "gp": 12,
+  "g": 2,
   "a": 3,
-  "pts": 4,
-  "pgp": 0.364,
-  "lineGp": 11,
-  "nhle": 0.141,
-  "nhlePace": 11.8,
+  "pts": 5,
+  "pgp": 0.417,
+  "lineGp": 12,
+  "nhle": 0.162,
+  "nhlePace": 13.6,
   "lines": [
    "AHL"
   ],
-  "feature": 0.141
+  "feature": 0.162
  },
  "league": {
   "name": "AHL",
@@ -266,113 +266,113 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 41,
-   "gp": 11,
-   "value": 0.3636,
+   "gp": 12,
+   "value": 0.4167,
    "percentile": 58.5,
-   "percentileAllAges": 49.7,
+   "percentileAllAges": 52.0,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 1.8,
+  "expected": 7.5,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 8.3,
-  "pRegular": 0.1,
-  "pTopLine": 0.0,
-  "pAboveAvg": 0.0,
-  "pElite": 0.0,
+  "p90": 34.2,
+  "pRegular": 0.22,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.04,
+  "pElite": 0.02,
   "poolN": 1122,
   "group": "F",
   "age": 21,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.1,
+  "pCeiling": 0.22,
   "featureBand": [
-   0.136,
-   0.146
+   0.156,
+   0.169
   ],
   "examples": [
    {
-    "name": "Logan Shaw",
-    "year": 2011,
-    "pick": 76,
-    "league": "AHL",
-    "feature": 0.141,
-    "peak": 12.9,
-    "tier": "replacement level",
-    "nhlGp": 232
+    "name": "Mats Fr\u00f8shaug",
+    "year": 2008,
+    "pick": 161,
+    "league": "Norway",
+    "feature": 0.162,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    },
    {
-    "name": "Sean Kuraly",
-    "year": 2011,
-    "pick": 133,
-    "league": "NCAA",
-    "feature": 0.141,
-    "peak": 37.9,
-    "tier": "below average",
-    "nhlGp": 647
-   },
-   {
-    "name": "Tobias Lindberg",
+    "name": "Ryan Fitzgerald",
     "year": 2013,
-    "pick": 102,
-    "league": "AHL",
-    "feature": 0.141,
+    "pick": 120,
+    "league": "NCAA",
+    "feature": 0.162,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 6
+    "nhlGp": 0
    },
    {
-    "name": "Isaac Ratcliffe",
+    "name": "Logan Cockerill",
     "year": 2017,
-    "pick": 35,
-    "league": "AHL",
-    "feature": 0.141,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 10
-   },
-   {
-    "name": "Justin Almeida",
-    "year": 2018,
-    "pick": 129,
-    "league": "AHL",
-    "feature": 0.141,
+    "pick": 201,
+    "league": "NCAA",
+    "feature": 0.162,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Gabriel Fontaine",
-    "year": 2016,
-    "pick": 171,
-    "league": "AHL",
-    "feature": 0.14,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jonathan Gruden",
-    "year": 2018,
-    "pick": 95,
-    "league": "AHL",
-    "feature": 0.14,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 16
-   },
-   {
-    "name": "Nicolas Deslauriers",
+    "name": "Jerry D'Amigo",
     "year": 2009,
-    "pick": 84,
+    "pick": 158,
     "league": "AHL",
-    "feature": 0.142,
-    "peak": 16.2,
+    "feature": 0.161,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 31
+   },
+   {
+    "name": "Markus S\u00f8berg",
+    "year": 2013,
+    "pick": 165,
+    "league": "Norway",
+    "feature": 0.161,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Max Willman",
+    "year": 2014,
+    "pick": 121,
+    "league": "NCAA",
+    "feature": 0.163,
+    "peak": 3.7,
     "tier": "replacement level",
-    "nhlGp": 710
+    "nhlGp": 68
+   },
+   {
+    "name": "Denis Yan",
+    "year": 2015,
+    "pick": 64,
+    "league": "AHL",
+    "feature": 0.161,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Joona Koppanen",
+    "year": 2016,
+    "pick": 135,
+    "league": "AHL",
+    "feature": 0.161,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 33
    }
   ]
  },
@@ -393,8 +393,8 @@
   "w": 0.0,
   "sinceDraft": 3,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 1.8,
-  "expected": 1.8,
+  "cohortExpected": 7.5,
+  "expected": 7.5,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -415,11 +415,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 11,
+  "gp": 12,
   "season": "2026-2027"
  },
- "rank": 29,
- "score": 1.8,
+ "rank": 21,
+ "score": 7.5,
  "rankStart": 12,
  "rankStartDate": "2026-10-06"
 }

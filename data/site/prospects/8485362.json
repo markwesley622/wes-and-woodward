@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 9,
+   "gp": 10,
    "g": 3,
-   "a": 6,
-   "pts": 9,
-   "pm": 7,
+   "a": 7,
+   "pts": 10,
+   "pm": 8,
    "pim": 6,
    "gaa": null,
    "svp": null,
@@ -89,11 +89,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 9,
+     "gp": 10,
      "g": 3,
-     "a": 6,
-     "pts": 9,
-     "pm": 7,
+     "a": 7,
+     "pts": 10,
+     "pm": 8,
      "pim": 6,
      "gaa": null,
      "svp": null,
@@ -146,30 +146,29 @@
   }
  ],
  "anchor": {
-  "season": "2025-2026",
-  "league": "WHL",
-  "leagueSlug": "whl",
-  "table": "WHL",
-  "coef": 0.141,
-  "team": "Everett Silvertips",
-  "gp": 55,
-  "g": 36,
-  "a": 41,
-  "pts": 77,
-  "pgp": 1.453,
-  "lineGp": 53,
-  "nhle": 0.197,
-  "nhlePace": 16.5,
+  "season": "2026-2027",
+  "league": "AHL",
+  "leagueSlug": "ahl",
+  "table": "AHL",
+  "coef": 0.389,
+  "team": "Grand Rapids Griffins",
+  "gp": 10,
+  "g": 3,
+  "a": 7,
+  "pts": 10,
+  "pgp": 1.0,
+  "lineGp": 10,
+  "nhle": 0.389,
+  "nhlePace": 32.7,
   "lines": [
-   "WHL",
-   "WJC-20"
+   "AHL"
   ],
-  "feature": 0.197
+  "feature": 0.389
  },
  "league": {
-  "name": "WHL",
-  "table": "WHL",
-  "coef": 0.141,
+  "name": "AHL",
+  "table": "AHL",
+  "coef": 0.389,
   "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
  },
  "performance": {
@@ -189,7 +188,7 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 30,
-   "gp": 9,
+   "gp": 10,
    "value": 1.0,
    "percentile": 90.0,
    "percentileAllAges": 84.9,
@@ -198,104 +197,104 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 53.6,
-  "median": 56.9,
-  "p75": 85.2,
-  "p90": 95.6,
-  "pRegular": 0.8,
-  "pTopLine": 0.36,
-  "pAboveAvg": 0.56,
-  "pElite": 0.2,
-  "poolN": 1362,
+  "expected": 58.8,
+  "median": 70.2,
+  "p75": 90.1,
+  "p90": 95.8,
+  "pRegular": 0.82,
+  "pTopLine": 0.46,
+  "pAboveAvg": 0.66,
+  "pElite": 0.28,
+  "poolN": 1305,
   "group": "F",
-  "age": 18,
-  "pickWeight": 1.0,
-  "tier": "top-line",
-  "pCeiling": 0.36,
+  "age": 19,
+  "pickWeight": 0.5,
+  "tier": "elite",
+  "pCeiling": 0.28,
   "featureBand": [
-   0.144,
-   0.242
+   0.258,
+   0.489
   ],
   "examples": [
    {
-    "name": "Mikhail Grigorenko",
-    "year": 2012,
-    "pick": 12,
-    "league": "QMJHL",
-    "feature": 0.196,
-    "peak": 40.3,
-    "tier": "below average",
-    "nhlGp": 249
-   },
-   {
-    "name": "Zach Boychuk",
-    "year": 2008,
-    "pick": 14,
-    "league": "WHL",
-    "feature": 0.195,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 127
-   },
-   {
-    "name": "Brendan Perlini",
-    "year": 2014,
-    "pick": 12,
-    "league": "OHL",
-    "feature": 0.201,
-    "peak": 42.0,
-    "tier": "below average",
-    "nhlGp": 262
-   },
-   {
-    "name": "Peter Holland",
-    "year": 2009,
-    "pick": 15,
-    "league": "OHL",
-    "feature": 0.195,
-    "peak": 47.8,
-    "tier": "below average",
-    "nhlGp": 266
-   },
-   {
-    "name": "Joel Farabee",
-    "year": 2018,
-    "pick": 14,
-    "league": "NCAA",
-    "feature": 0.189,
-    "peak": 77.6,
-    "tier": "top-line",
-    "nhlGp": 500
-   },
-   {
-    "name": "Grigori Denisenko",
-    "year": 2018,
-    "pick": 15,
-    "league": "KHL",
-    "feature": 0.202,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 33
-   },
-   {
-    "name": "Sonny Milano",
-    "year": 2014,
-    "pick": 16,
-    "league": "OHL",
-    "feature": 0.197,
-    "peak": 56.2,
+    "name": "Sven B\u00e4rtschi",
+    "year": 2011,
+    "pick": 13,
+    "league": "AHL",
+    "feature": 0.387,
+    "peak": 62.1,
     "tier": "above average",
-    "nhlGp": 344
+    "nhlGp": 292
    },
    {
-    "name": "Vasili Podkolzin",
+    "name": "Jakub Vr\u00e1na",
+    "year": 2014,
+    "pick": 13,
+    "league": "AHL",
+    "feature": 0.367,
+    "peak": 82.0,
+    "tier": "top-line",
+    "nhlGp": 406
+   },
+   {
+    "name": "Joel Eriksson Ek",
+    "year": 2015,
+    "pick": 20,
+    "league": "SHL",
+    "feature": 0.385,
+    "peak": 83.5,
+    "tier": "top-line",
+    "nhlGp": 616
+   },
+   {
+    "name": "Teuvo Ter\u00e4v\u00e4inen",
+    "year": 2012,
+    "pick": 18,
+    "league": "Liiga",
+    "feature": 0.378,
+    "peak": 91.4,
+    "tier": "elite",
+    "nhlGp": 829
+   },
+   {
+    "name": "Philip Tomasino",
     "year": 2019,
-    "pick": 10,
-    "league": "KHL",
-    "feature": 0.195,
-    "peak": 47.0,
+    "pick": 24,
+    "league": "AHL",
+    "feature": 0.391,
+    "peak": 49.2,
     "tier": "below average",
-    "nhlGp": 304
+    "nhlGp": 218
+   },
+   {
+    "name": "Cole Caufield",
+    "year": 2019,
+    "pick": 15,
+    "league": "NCAA",
+    "feature": 0.36,
+    "peak": 94.3,
+    "tier": "elite",
+    "nhlGp": 370
+   },
+   {
+    "name": "Nazem Kadri",
+    "year": 2009,
+    "pick": 7,
+    "league": "AHL",
+    "feature": 0.383,
+    "peak": 96.0,
+    "tier": "elite",
+    "nhlGp": 1064
+   },
+   {
+    "name": "Marko Dano",
+    "year": 2013,
+    "pick": 27,
+    "league": "AHL",
+    "feature": 0.384,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 141
    }
   ]
  },
@@ -313,11 +312,11 @@
   "group": "F"
  },
  "blend": {
-  "w": 0.5,
-  "sinceDraft": 0,
+  "w": 0.25,
+  "sinceDraft": 1,
   "pedigreeExpected": 65.9,
-  "cohortExpected": 53.6,
-  "expected": 59.8,
+  "cohortExpected": 58.8,
+  "expected": 60.6,
   "tier": "above average"
  },
  "trajectory": {
@@ -338,11 +337,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 53,
-  "season": "2025-2026"
+  "gp": 10,
+  "season": "2026-2027"
  },
  "rank": 1,
- "score": 59.8,
+ "score": 60.6,
  "rankStart": 1,
  "rankStartDate": "2026-10-06"
 }

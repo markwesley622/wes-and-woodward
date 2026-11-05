@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": -0.13,
-   "percentile": 20
+   "percentile": 21
   },
   "Offense": {
    "value": -1.4,
@@ -95,7 +95,7 @@
   },
   "Net": {
    "value": -2.3,
-   "percentile": 8
+   "percentile": 9
   }
  },
  "score": null,
@@ -106,14 +106,14 @@
   "gameScore": 1.15,
   "minutes": 294,
   "gp": 16,
-  "rank": 500,
-  "pool": 745,
-  "percentile": 32.9,
+  "rank": 502,
+  "pool": 749,
+  "percentile": 33.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 498,
+    "rank": 500,
     "name": "Dmitri Voronkov",
     "team": "CBJ",
     "pos": "L",
@@ -123,7 +123,7 @@
     "isMe": false
    },
    {
-    "rank": 499,
+    "rank": 501,
     "name": "Brandon Carlo",
     "team": "STL",
     "pos": "D",
@@ -133,7 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 500,
+    "rank": 502,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
@@ -143,23 +143,23 @@
     "isMe": true
    },
    {
-    "rank": 501,
+    "rank": 503,
     "name": "Colin Blackwell",
     "team": "DAL",
     "pos": "C",
     "gp": 12,
-    "value": 35.0,
+    "value": 34.9,
     "gs60": 1.12,
     "isMe": false
    },
    {
-    "rank": 502,
-    "name": "Josh Mahura",
-    "team": "SEA",
-    "pos": "D",
-    "gp": 11,
+    "rank": 504,
+    "name": "Mason Marchment",
+    "team": "SJS",
+    "pos": "L",
+    "gp": 17,
     "value": 34.8,
-    "gs60": 1.08,
+    "gs60": 1.09,
     "isMe": false
    }
   ],
@@ -766,5 +766,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-04T05:02:01-08:00"
+ "updatedAt": "2026-11-05T05:01:43-08:00"
 }

@@ -75,7 +75,7 @@
    "onIceXgPct": 0.53,
    "onIceCorsiPct": 0.51,
    "ixgPer60": 0.074,
-   "pctl_onIceXgPct": 57.1,
+   "pctl_onIceXgPct": 52.9,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.4,
-   "percentile": 46
+   "percentile": 47
   },
   "Defense": {
    "value": -0.9,
@@ -106,14 +106,14 @@
   "gameScore": -0.19,
   "minutes": 321,
   "gp": 16,
-  "rank": 599,
-  "pool": 745,
-  "percentile": 19.6,
+  "rank": 601,
+  "pool": 749,
+  "percentile": 19.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 597,
+    "rank": 599,
     "name": "Connor Zary",
     "team": "CGY",
     "pos": "C",
@@ -123,7 +123,7 @@
     "isMe": false
    },
    {
-    "rank": 598,
+    "rank": 600,
     "name": "Matthew Seminoff",
     "team": "DAL",
     "pos": "R",
@@ -133,7 +133,7 @@
     "isMe": false
    },
    {
-    "rank": 599,
+    "rank": 601,
     "name": "Ben Chiarot",
     "team": "DET",
     "pos": "D",
@@ -143,7 +143,7 @@
     "isMe": true
    },
    {
-    "rank": 600,
+    "rank": 602,
     "name": "Aatu Rty",
     "team": "VAN",
     "pos": "C",
@@ -153,7 +153,7 @@
     "isMe": false
    },
    {
-    "rank": 601,
+    "rank": 603,
     "name": "Connor Clifton",
     "team": "BOS",
     "pos": "D",
@@ -781,5 +781,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-04T05:05:01-08:00"
+ "updatedAt": "2026-11-05T05:04:25-08:00"
 }

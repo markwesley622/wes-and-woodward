@@ -31,7 +31,7 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 11,
+   "gp": 12,
    "g": 6,
    "a": 5,
    "pts": 11,
@@ -89,7 +89,7 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 11,
+     "gp": 12,
      "g": 6,
      "a": 5,
      "pts": 11,
@@ -298,18 +298,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 11,
+  "gp": 12,
   "g": 6,
   "a": 5,
   "pts": 11,
-  "pgp": 1.0,
-  "lineGp": 11,
-  "nhle": 0.389,
-  "nhlePace": 32.7,
+  "pgp": 0.917,
+  "lineGp": 12,
+  "nhle": 0.357,
+  "nhlePace": 30.0,
   "lines": [
    "AHL"
   ],
-  "feature": 0.389
+  "feature": 0.357
  },
  "league": {
   "name": "AHL",
@@ -334,8 +334,8 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 41,
-   "gp": 11,
-   "value": 1.0,
+   "gp": 12,
+   "value": 0.9167,
    "percentile": 82.9,
    "percentileAllAges": 85.7,
    "allAgesN": 642
@@ -343,104 +343,104 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 32.5,
-  "median": 29.5,
-  "p75": 58.2,
-  "p90": 83.7,
-  "pRegular": 0.6,
-  "pTopLine": 0.16,
-  "pAboveAvg": 0.3,
-  "pElite": 0.08,
+  "expected": 30.5,
+  "median": 29.7,
+  "p75": 52.2,
+  "p90": 70.3,
+  "pRegular": 0.62,
+  "pTopLine": 0.08,
+  "pAboveAvg": 0.26,
+  "pElite": 0.04,
   "poolN": 1122,
   "group": "F",
   "age": 21,
   "pickWeight": 0.0,
   "tier": "above average",
-  "pCeiling": 0.3,
+  "pCeiling": 0.26,
   "featureBand": [
-   0.338,
-   0.431
+   0.322,
+   0.389
   ],
   "examples": [
    {
-    "name": "Devin Shore",
-    "year": 2012,
-    "pick": 61,
+    "name": "Morgan Geekie",
+    "year": 2017,
+    "pick": 67,
     "league": "AHL",
-    "feature": 0.389,
-    "peak": 46.7,
-    "tier": "below average",
-    "nhlGp": 498
+    "feature": 0.357,
+    "peak": 83.5,
+    "tier": "top-line",
+    "nhlGp": 418
    },
    {
-    "name": "Cooper Marody",
-    "year": 2015,
-    "pick": 158,
+    "name": "Max Reinhart",
+    "year": 2010,
+    "pick": 64,
     "league": "AHL",
-    "feature": 0.389,
+    "feature": 0.358,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 7
+    "nhlGp": 23
    },
    {
-    "name": "Ivan Morozov",
+    "name": "Jordan Weal",
+    "year": 2010,
+    "pick": 70,
+    "league": "AHL",
+    "feature": 0.358,
+    "peak": 27.9,
+    "tier": "below average",
+    "nhlGp": 218
+   },
+   {
+    "name": "Jonatan Berggren",
     "year": 2018,
-    "pick": 61,
-    "league": "KHL",
-    "feature": 0.387,
+    "pick": 33,
+    "league": "AHL",
+    "feature": 0.356,
+    "peak": 42.9,
+    "tier": "below average",
+    "nhlGp": 207
+   },
+   {
+    "name": "Nikola Pasic",
+    "year": 2019,
+    "pick": 189,
+    "league": "HockeyAllsvenskan",
+    "feature": 0.358,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Yegor Korshkov",
-    "year": 2016,
-    "pick": 31,
-    "league": "KHL",
-    "feature": 0.386,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
-   },
-   {
-    "name": "Logan Brown",
-    "year": 2016,
-    "pick": 11,
+    "name": "Shane Prince",
+    "year": 2011,
+    "pick": 61,
     "league": "AHL",
-    "feature": 0.394,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 99
+    "feature": 0.355,
+    "peak": 39.9,
+    "tier": "below average",
+    "nhlGp": 128
    },
    {
-    "name": "Troy Terry",
+    "name": "Robin Kov\u00e1cs",
     "year": 2015,
-    "pick": 148,
-    "league": "AHL",
-    "feature": 0.397,
-    "peak": 90.1,
-    "tier": "elite",
-    "nhlGp": 488
+    "pick": 62,
+    "league": "SHL",
+    "feature": 0.359,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    },
    {
-    "name": "Brandon Pirri",
-    "year": 2009,
-    "pick": 59,
-    "league": "AHL",
-    "feature": 0.379,
-    "peak": 58.2,
-    "tier": "above average",
-    "nhlGp": 276
-   },
-   {
-    "name": "Ryan Spooner",
-    "year": 2010,
-    "pick": 45,
-    "league": "AHL",
-    "feature": 0.401,
-    "peak": 72.2,
-    "tier": "above average",
-    "nhlGp": 325
+    "name": "Valtteri Puustinen",
+    "year": 2019,
+    "pick": 203,
+    "league": "Liiga",
+    "feature": 0.355,
+    "peak": 37.8,
+    "tier": "below average",
+    "nhlGp": 66
    }
   ]
  },
@@ -461,8 +461,8 @@
   "w": 0.0,
   "sinceDraft": 3,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 32.5,
-  "expected": 32.5,
+  "cohortExpected": 30.5,
+  "expected": 30.5,
   "tier": "below average"
  },
  "trajectory": {
@@ -483,11 +483,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 11,
+  "gp": 12,
   "season": "2026-2027"
  },
- "rank": 5,
- "score": 32.5,
+ "rank": 6,
+ "score": 30.5,
  "rankStart": 9,
  "rankStartDate": "2026-10-06"
 }

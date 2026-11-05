@@ -75,8 +75,8 @@
    "onIceXgPct": 0.56,
    "onIceCorsiPct": 0.51,
    "ixgPer60": 0.109,
-   "pctl_onIceXgPct": 78.6,
-   "pctl_ixgPer60": 21.4,
+   "pctl_onIceXgPct": 76.5,
+   "pctl_ixgPer60": 17.6,
    "qualifiesForPercentiles": false
   }
  },
@@ -91,75 +91,75 @@
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 46
+   "percentile": 47
   },
   "Net": {
    "value": -0.1,
-   "percentile": 58
+   "percentile": 59
   }
  },
  "score": null,
  "standIn": {
-  "value": 41.6,
+  "value": 41.5,
   "gs": 3.12,
   "gs60": 1.09,
   "gameScore": 3.12,
   "minutes": 172,
   "gp": 11,
-  "rank": 406,
-  "pool": 745,
+  "rank": 407,
+  "pool": 749,
   "percentile": 45.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 404,
-    "name": "John Tavares",
-    "team": "TOR",
-    "pos": "C",
-    "gp": 7,
-    "value": 41.6,
-    "gs60": 3.12,
-    "isMe": false
-   },
-   {
     "rank": 405,
-    "name": "Scott Morrow",
-    "team": "NYR",
-    "pos": "D",
-    "gp": 2,
-    "value": 41.6,
-    "gs60": 3.12,
+    "name": "Anthony Duclair",
+    "team": "NYI",
+    "pos": "L",
+    "gp": 14,
+    "value": 41.7,
+    "gs60": 3.17,
     "isMe": false
    },
    {
     "rank": 406,
+    "name": "John Tavares",
+    "team": "TOR",
+    "pos": "C",
+    "gp": 7,
+    "value": 41.5,
+    "gs60": 3.12,
+    "isMe": false
+   },
+   {
+    "rank": 407,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 41.6,
+    "value": 41.5,
     "gs60": 3.12,
     "isMe": true
    },
    {
-    "rank": 407,
+    "rank": 408,
+    "name": "Scott Morrow",
+    "team": "NYR",
+    "pos": "D",
+    "gp": 2,
+    "value": 41.5,
+    "gs60": 3.12,
+    "isMe": false
+   },
+   {
+    "rank": 409,
     "name": "Braeden Bowman",
     "team": "VGK",
     "pos": "R",
     "gp": 17,
-    "value": 41.5,
+    "value": 41.4,
     "gs60": 3.08,
-    "isMe": false
-   },
-   {
-    "rank": 408,
-    "name": "Isak Rosen",
-    "team": "WPG",
-    "pos": "R",
-    "gp": 15,
-    "value": 41.3,
-    "gs60": 3.04,
     "isMe": false
    }
   ],
@@ -465,5 +465,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-04T05:06:34-08:00"
+ "updatedAt": "2026-11-05T05:05:43-08:00"
 }

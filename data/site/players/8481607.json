@@ -75,15 +75,15 @@
    "onIceXgPct": 0.57,
    "onIceCorsiPct": 0.57,
    "ixgPer60": 0.224,
-   "pctl_onIceXgPct": 78.6,
-   "pctl_ixgPer60": 57.1,
+   "pctl_onIceXgPct": 76.5,
+   "pctl_ixgPer60": 58.8,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": 0.47,
-   "percentile": 57
+   "percentile": 58
   },
   "Offense": {
    "value": 0.1,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 48.1,
+  "value": 48.0,
   "gs": 4.99,
   "gs60": 1.74,
   "gameScore": 4.99,
   "minutes": 172,
   "gp": 11,
-  "rank": 333,
-  "pool": 745,
-  "percentile": 55.3,
+  "rank": 332,
+  "pool": 749,
+  "percentile": 55.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 331,
-    "name": "Joel Armia",
-    "team": "LAK",
+    "rank": 330,
+    "name": "Roman Kantserov",
+    "team": "CHI",
     "pos": "R",
-    "gp": 13,
-    "value": 48.2,
+    "gp": 16,
+    "value": 48.1,
     "gs60": 5.02,
     "isMe": false
    },
    {
-    "rank": 332,
+    "rank": 331,
     "name": "Kyle Palmieri",
     "team": "NYI",
     "pos": "C",
     "gp": 14,
-    "value": 48.2,
+    "value": 48.0,
     "gs60": 5.0,
     "isMe": false
    },
    {
-    "rank": 333,
+    "rank": 332,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 48.1,
+    "value": 48.0,
     "gs60": 4.99,
     "isMe": true
    },
    {
-    "rank": 334,
-    "name": "Warren Foegele",
-    "team": "OTT",
-    "pos": "L",
-    "gp": 13,
-    "value": 47.8,
-    "gs60": 4.91,
+    "rank": 333,
+    "name": "Anton Frondell",
+    "team": "CHI",
+    "pos": "C",
+    "gp": 16,
+    "value": 47.9,
+    "gs60": 4.98,
     "isMe": false
    },
    {
-    "rank": 335,
+    "rank": 334,
     "name": "Ryan Winterton",
     "team": "SEA",
     "pos": "C",
-    "gp": 14,
-    "value": 47.6,
-    "gs60": 4.86,
+    "gp": 15,
+    "value": 47.8,
+    "gs60": 4.94,
     "isMe": false
    }
   ],
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-04T05:05:45-08:00"
+ "updatedAt": "2026-11-05T05:04:52-08:00"
 }

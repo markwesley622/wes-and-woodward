@@ -75,7 +75,7 @@
    "onIceXgPct": 0.53,
    "onIceCorsiPct": 0.52,
    "ixgPer60": 0.056,
-   "pctl_onIceXgPct": 57.1,
+   "pctl_onIceXgPct": 52.9,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 2.2,
-   "percentile": 98
+   "percentile": 99
   },
   "Net": {
    "value": 1.4,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 66.8,
+  "value": 66.6,
   "gs": 10.5,
   "gs60": 1.5,
   "gameScore": 10.5,
   "minutes": 419,
   "gp": 16,
-  "rank": 156,
-  "pool": 745,
-  "percentile": 79.1,
+  "rank": 161,
+  "pool": 749,
+  "percentile": 78.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 154,
-    "name": "Jordan Kyrou",
-    "team": "WSH",
-    "pos": "R",
-    "gp": 14,
-    "value": 67.0,
-    "gs60": 10.55,
+    "rank": 159,
+    "name": "Shane Pinto",
+    "team": "OTT",
+    "pos": "C",
+    "gp": 17,
+    "value": 66.7,
+    "gs60": 10.52,
     "isMe": false
    },
    {
-    "rank": 155,
+    "rank": 160,
     "name": "Robert Thomas",
     "team": "STL",
     "pos": "C",
     "gp": 15,
-    "value": 66.8,
+    "value": 66.6,
     "gs60": 10.5,
     "isMe": false
    },
    {
-    "rank": 156,
+    "rank": 161,
     "name": "Moritz Seider",
     "team": "DET",
     "pos": "D",
     "gp": 16,
-    "value": 66.8,
+    "value": 66.6,
     "gs60": 10.5,
     "isMe": true
    },
    {
-    "rank": 157,
+    "rank": 162,
+    "name": "Sandis Vilmanis",
+    "team": "FLA",
+    "pos": "L",
+    "gp": 15,
+    "value": 66.5,
+    "gs60": 10.47,
+    "isMe": false
+   },
+   {
+    "rank": 163,
     "name": "Fraser Minten",
     "team": "BOS",
     "pos": "C",
     "gp": 16,
-    "value": 66.6,
+    "value": 66.4,
     "gs60": 10.44,
-    "isMe": false
-   },
-   {
-    "rank": 158,
-    "name": "Morgan Rielly",
-    "team": "TOR",
-    "pos": "D",
-    "gp": 17,
-    "value": 66.5,
-    "gs60": 10.41,
     "isMe": false
    }
   ],
@@ -661,5 +661,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-04T05:06:22-08:00"
+ "updatedAt": "2026-11-05T05:05:30-08:00"
 }
