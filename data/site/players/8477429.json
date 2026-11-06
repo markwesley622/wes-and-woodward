@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 16,
+  "gp": 17,
   "goals": 2,
   "assists": 4,
   "points": 6,
   "plusMinus": -5,
-  "pim": 4,
-  "shots": 25,
-  "shootingPct": 0.08,
-  "toiPerGame": "18:23",
+  "pim": 6,
+  "shots": 27,
+  "shootingPct": 0.074074,
+  "toiPerGame": "18:33",
   "ppPoints": 3,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 16,
+   "gp": 17,
    "goals": 2,
    "assists": 4,
    "points": 6,
    "plusMinus": -5,
-   "pim": 4
+   "pim": 6
   }
  ],
  "moneypuck": {
@@ -60,21 +60,21 @@
   "name": "Andrew Copp",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477429.png",
-  "gamesPlayed": 16,
+  "gamesPlayed": 17,
   "goals": 2,
   "assists": 4,
   "points": 6,
-  "shots": 25,
-  "shootingPct": 0.08,
-  "toiPerGame": 1102.9,
-  "ixG": 3.43,
-  "goalsAboveExpected": -1.43,
-  "gameScore": 4.32,
+  "shots": 27,
+  "shootingPct": 0.074074,
+  "toiPerGame": 1112.8,
+  "ixG": 3.56,
+  "goalsAboveExpected": -1.56,
+  "gameScore": 4.18,
   "fiveOnFive": {
-   "icetimeMinutes": 217.3,
-   "onIceXgPct": 0.47,
+   "icetimeMinutes": 232.8,
+   "onIceXgPct": 0.48,
    "onIceCorsiPct": 0.46,
-   "ixgPer60": 0.839,
+   "ixgPer60": 0.817,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,83 +82,83 @@
  },
  "hsc": {
   "Game score": {
-   "value": -0.13,
+   "value": -0.11,
    "percentile": 21
   },
   "Offense": {
-   "value": -1.4,
-   "percentile": 13
+   "value": -1.7,
+   "percentile": 10
   },
   "Defense": {
-   "value": -0.9,
-   "percentile": 16
+   "value": -0.7,
+   "percentile": 21
   },
   "Net": {
-   "value": -2.3,
-   "percentile": 9
+   "value": -2.4,
+   "percentile": 8
   }
  },
  "score": null,
  "standIn": {
-  "value": 35.0,
-  "gs": 1.15,
-  "gs60": 0.23,
-  "gameScore": 1.15,
-  "minutes": 294,
-  "gp": 16,
-  "rank": 502,
+  "value": 34.8,
+  "gs": 1.18,
+  "gs60": 0.22,
+  "gameScore": 1.18,
+  "minutes": 315,
+  "gp": 17,
+  "rank": 501,
   "pool": 749,
-  "percentile": 33.0,
+  "percentile": 33.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
+    "rank": 499,
+    "name": "Cameron Crotty",
+    "team": "OTT",
+    "pos": "D",
+    "gp": 3,
+    "value": 34.9,
+    "gs60": 1.22,
+    "isMe": false
+   },
+   {
     "rank": 500,
-    "name": "Dmitri Voronkov",
-    "team": "CBJ",
-    "pos": "L",
-    "gp": 8,
-    "value": 35.2,
+    "name": "Ville Ottavainen",
+    "team": "SEA",
+    "pos": "D",
+    "gp": 9,
+    "value": 34.9,
     "gs60": 1.21,
     "isMe": false
    },
    {
     "rank": 501,
-    "name": "Brandon Carlo",
-    "team": "STL",
-    "pos": "D",
-    "gp": 15,
-    "value": 35.2,
-    "gs60": 1.2,
-    "isMe": false
-   },
-   {
-    "rank": 502,
     "name": "Andrew Copp",
     "team": "DET",
     "pos": "C",
-    "gp": 16,
-    "value": 35.0,
-    "gs60": 1.15,
+    "gp": 17,
+    "value": 34.8,
+    "gs60": 1.18,
     "isMe": true
    },
    {
-    "rank": 503,
-    "name": "Colin Blackwell",
-    "team": "DAL",
-    "pos": "C",
+    "rank": 502,
+    "name": "Jeffrey Viel",
+    "team": "TBL",
+    "pos": "L",
     "gp": 12,
-    "value": 34.9,
+    "value": 34.6,
     "gs60": 1.12,
     "isMe": false
    },
    {
-    "rank": 504,
+    "rank": 503,
     "name": "Mason Marchment",
     "team": "SJS",
     "pos": "L",
     "gp": 17,
-    "value": 34.8,
+    "value": 34.5,
     "gs60": 1.09,
     "isMe": false
    }
@@ -734,12 +734,36 @@
     "moneypuck": 0.235,
     "hockeystatcards": -0.47
    }
+  },
+  {
+   "gameId": 2026020252,
+   "date": "2026-11-05",
+   "opponent": "VGK",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 2,
+   "pim": 2,
+   "toi": 21.2,
+   "ixg": 0.14,
+   "xgf": 0.48,
+   "xga": 0.68,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 2.0,
+   "gameScore": 0.03,
+   "gameScoreParts": {
+    "moneypuck": -0.14,
+    "hockeystatcards": 0.21
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
   "average": 0.07,
-  "games": 16,
+  "games": 17,
   "best": {
    "date": "2026-10-15",
    "opponent": "PHI",
@@ -753,7 +777,7 @@
   "above2": 0,
   "below0": 7
  },
- "detGames": 16,
+ "detGames": 17,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -766,5 +790,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-05T05:01:43-08:00"
+ "updatedAt": "2026-11-06T05:02:14-08:00"
 }

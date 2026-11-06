@@ -93,83 +93,83 @@
  "hsc": {
   "Game score": {
    "value": -0.29,
-   "percentile": 15
+   "percentile": 14
   },
   "Offense": {
    "value": -0.6,
    "percentile": 39
   },
   "Defense": {
-   "value": -0.1,
+   "value": -0.2,
    "percentile": 44
   },
   "Net": {
-   "value": -0.7,
-   "percentile": 39
+   "value": -0.8,
+   "percentile": 40
   }
  },
  "score": null,
  "standIn": {
-  "value": 30.0,
+  "value": 29.8,
   "gs": -0.5,
   "gs60": -1.29,
   "gameScore": -0.5,
   "minutes": 23,
   "gp": 2,
-  "rank": 623,
+  "rank": 629,
   "pool": 749,
-  "percentile": 16.8,
+  "percentile": 16.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 621,
+    "rank": 627,
+    "name": "Michael Misa",
+    "team": "SJS",
+    "pos": "C",
+    "gp": 17,
+    "value": 29.9,
+    "gs60": -0.46,
+    "isMe": false
+   },
+   {
+    "rank": 628,
     "name": "Martin Chromiak",
     "team": "LAK",
     "pos": "R",
     "gp": 2,
-    "value": 30.0,
+    "value": 29.9,
     "gs60": -0.49,
     "isMe": false
    },
    {
-    "rank": 622,
-    "name": "Nate Danielson",
-    "team": "DET",
-    "pos": "C",
-    "gp": 12,
-    "value": 30.0,
-    "gs60": -0.5,
-    "isMe": false
-   },
-   {
-    "rank": 623,
+    "rank": 629,
     "name": "John Leonard",
     "team": "DET",
     "pos": "L",
     "gp": 2,
-    "value": 30.0,
+    "value": 29.8,
     "gs60": -0.5,
     "isMe": true
    },
    {
-    "rank": 624,
+    "rank": 630,
+    "name": "Rasmus Andersson",
+    "team": "VGK",
+    "pos": "D",
+    "gp": 18,
+    "value": 29.6,
+    "gs60": -0.58,
+    "isMe": false
+   },
+   {
+    "rank": 631,
     "name": "Ryan Ufko",
     "team": "NSH",
     "pos": "D",
     "gp": 1,
-    "value": 29.7,
+    "value": 29.5,
     "gs60": -0.6,
-    "isMe": false
-   },
-   {
-    "rank": 625,
-    "name": "Brett Kulak",
-    "team": "COL",
-    "pos": "D",
-    "gp": 16,
-    "value": 29.6,
-    "gs60": -0.62,
     "isMe": false
    }
   ],
@@ -335,5 +335,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-11-05T05:03:25-08:00"
+ "updatedAt": "2026-11-06T05:04:00-08:00"
 }

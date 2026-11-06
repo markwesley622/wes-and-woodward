@@ -90,8 +90,8 @@
    "percentile": 52
   },
   "Defense": {
-   "value": -0.0,
-   "percentile": 49
+   "value": -0.1,
+   "percentile": 50
   },
   "Net": {
    "value": -0.4,
@@ -100,7 +100,7 @@
  },
  "score": null,
  "standIn": {
-  "value": 33.7,
+  "value": 33.4,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
@@ -114,21 +114,21 @@
   "neighbours": [
    {
     "rank": 521,
-    "name": "Dakota Joshua",
-    "team": "TOR",
-    "pos": "C",
-    "gp": 2,
-    "value": 33.9,
-    "gs60": 0.8,
-    "isMe": false
-   },
-   {
-    "rank": 522,
     "name": "Tom Willander",
     "team": "VAN",
     "pos": "D",
     "gp": 16,
-    "value": 33.9,
+    "value": 33.6,
+    "gs60": 0.78,
+    "isMe": false
+   },
+   {
+    "rank": 522,
+    "name": "Mathieu Joseph",
+    "team": "EDM",
+    "pos": "R",
+    "gp": 17,
+    "value": 33.6,
     "gs60": 0.78,
     "isMe": false
    },
@@ -138,28 +138,28 @@
     "team": "DET",
     "pos": "C",
     "gp": 1,
-    "value": 33.7,
+    "value": 33.4,
     "gs60": 0.73,
     "isMe": true
    },
    {
     "rank": 524,
-    "name": "Jonny Brodzinski",
-    "team": "WSH",
+    "name": "Jason Dickinson",
+    "team": "EDM",
     "pos": "C",
-    "gp": 2,
-    "value": 33.6,
-    "gs60": 0.7,
+    "gp": 8,
+    "value": 33.4,
+    "gs60": 0.71,
     "isMe": false
    },
    {
     "rank": 525,
-    "name": "Hunter McDonald",
-    "team": "PHI",
-    "pos": "D",
-    "gp": 5,
-    "value": 33.6,
-    "gs60": 0.69,
+    "name": "Carter Mazur",
+    "team": "DET",
+    "pos": "L",
+    "gp": 11,
+    "value": 33.4,
+    "gs60": 0.71,
     "isMe": false
    }
   ],
@@ -271,5 +271,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-05T05:02:46-08:00"
+ "updatedAt": "2026-11-06T05:03:21-08:00"
 }

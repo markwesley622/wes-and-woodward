@@ -75,90 +75,90 @@
    "onIceXgPct": 0.57,
    "onIceCorsiPct": 0.57,
    "ixgPer60": 0.224,
-   "pctl_onIceXgPct": 76.5,
-   "pctl_ixgPer60": 58.8,
+   "pctl_onIceXgPct": 68.8,
+   "pctl_ixgPer60": 53.1,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": 0.47,
-   "percentile": 58
+   "percentile": 59
   },
   "Offense": {
    "value": 0.1,
-   "percentile": 67
+   "percentile": 66
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 75
+   "percentile": 76
   },
   "Net": {
    "value": 0.8,
-   "percentile": 73
+   "percentile": 72
   }
  },
  "score": null,
  "standIn": {
-  "value": 48.0,
+  "value": 47.2,
   "gs": 4.99,
   "gs60": 1.74,
   "gameScore": 4.99,
   "minutes": 172,
   "gp": 11,
-  "rank": 332,
+  "rank": 334,
   "pool": 749,
-  "percentile": 55.7,
+  "percentile": 55.4,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 330,
-    "name": "Roman Kantserov",
-    "team": "CHI",
-    "pos": "R",
+    "rank": 332,
+    "name": "Shane Wright",
+    "team": "NSH",
+    "pos": "C",
     "gp": 16,
-    "value": 48.1,
+    "value": 47.3,
+    "gs60": 5.03,
+    "isMe": false
+   },
+   {
+    "rank": 333,
+    "name": "Darren Raddysh",
+    "team": "TOR",
+    "pos": "D",
+    "gp": 17,
+    "value": 47.3,
     "gs60": 5.02,
     "isMe": false
    },
    {
-    "rank": 331,
-    "name": "Kyle Palmieri",
-    "team": "NYI",
-    "pos": "C",
-    "gp": 14,
-    "value": 48.0,
-    "gs60": 5.0,
-    "isMe": false
-   },
-   {
-    "rank": 332,
+    "rank": 334,
     "name": "Albert Johansson",
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 48.0,
+    "value": 47.2,
     "gs60": 4.99,
     "isMe": true
    },
    {
-    "rank": 333,
-    "name": "Anton Frondell",
-    "team": "CHI",
-    "pos": "C",
-    "gp": 16,
-    "value": 47.9,
+    "rank": 335,
+    "name": "Pavel Mintyukov",
+    "team": "ANA",
+    "pos": "D",
+    "gp": 12,
+    "value": 47.2,
     "gs60": 4.98,
     "isMe": false
    },
    {
-    "rank": 334,
+    "rank": 336,
     "name": "Ryan Winterton",
     "team": "SEA",
     "pos": "C",
     "gp": 15,
-    "value": 47.8,
+    "value": 47.0,
     "gs60": 4.94,
     "isMe": false
    }
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-05T05:04:52-08:00"
+ "updatedAt": "2026-11-06T05:05:27-08:00"
 }

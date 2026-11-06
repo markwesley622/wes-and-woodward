@@ -83,11 +83,11 @@
  "hsc": {
   "Game score": {
    "value": -0.01,
-   "percentile": 28
+   "percentile": 26
   },
   "Offense": {
    "value": -0.5,
-   "percentile": 45
+   "percentile": 44
   },
   "Defense": {
    "value": -0.1,
@@ -95,71 +95,71 @@
   },
   "Net": {
    "value": -0.6,
-   "percentile": 43
+   "percentile": 44
   }
  },
  "score": null,
  "standIn": {
-  "value": 32.4,
+  "value": 32.1,
   "gs": 0.3,
   "gs60": 0.91,
   "gameScore": 0.3,
   "minutes": 20,
   "gp": 2,
-  "rank": 560,
+  "rank": 571,
   "pool": 749,
-  "percentile": 25.2,
+  "percentile": 23.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 558,
+    "rank": 569,
+    "name": "Ivan Provorov",
+    "team": "CBJ",
+    "pos": "D",
+    "gp": 3,
+    "value": 32.2,
+    "gs60": 0.31,
+    "isMe": false
+   },
+   {
+    "rank": 570,
     "name": "Justin Dowling",
     "team": "NYR",
     "pos": "C",
     "gp": 4,
-    "value": 32.4,
+    "value": 32.2,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 559,
-    "name": "Sean Monahan",
-    "team": "CBJ",
-    "pos": "C",
-    "gp": 13,
-    "value": 32.4,
-    "gs60": 0.3,
-    "isMe": false
-   },
-   {
-    "rank": 560,
+    "rank": 571,
     "name": "Mason Appleton",
     "team": "DET",
     "pos": "C",
     "gp": 2,
-    "value": 32.4,
+    "value": 32.1,
     "gs60": 0.3,
     "isMe": true
    },
    {
-    "rank": 561,
-    "name": "Zack Ostapchuk",
-    "team": "SJS",
-    "pos": "C",
-    "gp": 16,
-    "value": 32.4,
+    "rank": 572,
+    "name": "Brett Kulak",
+    "team": "COL",
+    "pos": "D",
+    "gp": 17,
+    "value": 32.1,
     "gs60": 0.3,
     "isMe": false
    },
    {
-    "rank": 562,
-    "name": "Alexey Toropchenko",
-    "team": "STL",
-    "pos": "R",
-    "gp": 5,
-    "value": 32.3,
-    "gs60": 0.29,
+    "rank": 573,
+    "name": "Zack Ostapchuk",
+    "team": "SJS",
+    "pos": "C",
+    "gp": 16,
+    "value": 32.1,
+    "gs60": 0.3,
     "isMe": false
    }
   ],
@@ -370,5 +370,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-05T05:00:48-08:00"
+ "updatedAt": "2026-11-06T05:01:21-08:00"
 }

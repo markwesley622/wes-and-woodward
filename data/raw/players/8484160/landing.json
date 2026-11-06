@@ -55,11 +55,11 @@
    "subSeason": {
     "assists": 2,
     "gameWinningGoals": 0,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 0,
     "otGoals": 0,
     "pim": 2,
-    "plusMinus": -4,
+    "plusMinus": -5,
     "points": 2,
     "powerPlayGoals": 0,
     "powerPlayPoints": 0,
@@ -71,11 +71,11 @@
    "career": {
     "assists": 7,
     "gameWinningGoals": 0,
-    "gamesPlayed": 40,
+    "gamesPlayed": 41,
     "goals": 2,
     "otGoals": 0,
     "pim": 6,
-    "plusMinus": -11,
+    "plusMinus": -12,
     "points": 9,
     "powerPlayGoals": 0,
     "powerPlayPoints": 3,
@@ -92,11 +92,11 @@
    "avgToi": "11:00",
    "faceoffWinningPctg": 0.40090000000000003,
    "gameWinningGoals": 0,
-   "gamesPlayed": 40,
+   "gamesPlayed": 41,
    "goals": 2,
    "otGoals": 0,
    "pim": 6,
-   "plusMinus": -11,
+   "plusMinus": -12,
    "points": 9,
    "powerPlayGoals": 0,
    "powerPlayPoints": 3,
@@ -110,6 +110,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-11-05",
+   "gameId": 2026020252,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "VGK",
+   "pim": 0,
+   "plusMinus": -1,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 17,
+   "shorthandedGoals": 0,
+   "shots": 0,
+   "teamAbbrev": "DET",
+   "toi": "10:53"
+  },
   {
    "assists": 0,
    "gameDate": "2026-10-31",
@@ -181,24 +199,6 @@
    "shots": 0,
    "teamAbbrev": "DET",
    "toi": "11:20"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-10-22",
-   "gameId": 2026020165,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "VAN",
-   "pim": 0,
-   "plusMinus": 0,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 16,
-   "shorthandedGoals": 0,
-   "shots": 1,
-   "teamAbbrev": "DET",
-   "toi": "10:15"
   }
  ],
  "seasonTotals": [
@@ -562,12 +562,12 @@
    "faceoffWinningPctg": 0.464286,
    "gameTypeId": 2,
    "gameWinningGoals": 0,
-   "gamesPlayed": 12,
+   "gamesPlayed": 13,
    "goals": 0,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
    "pim": 2,
-   "plusMinus": -4,
+   "plusMinus": -5,
    "points": 2,
    "powerPlayGoals": 0,
    "powerPlayPoints": 0,
@@ -790,6 +790,16 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
+  },
+  {
+   "playerId": 8485545,
+   "lastName": {
+    "default": "Postava"
+   },
+   "firstName": {
+    "default": "Michal"
+   },
+   "playerSlug": "michal-postava-8485545"
   },
   {
    "playerId": 8479992,

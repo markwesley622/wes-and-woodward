@@ -31,12 +31,12 @@
   {
    "league": "OHL",
    "team": "Peterborough Petes",
-   "gp": 13,
+   "gp": 14,
    "g": 5,
-   "a": 7,
-   "pts": 12,
-   "pm": -2,
-   "pim": 13,
+   "a": 8,
+   "pts": 13,
+   "pm": -1,
+   "pim": 15,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -72,12 +72,12 @@
     {
      "league": "OHL",
      "team": "Peterborough Petes",
-     "gp": 13,
+     "gp": 14,
      "g": 5,
-     "a": 7,
-     "pts": 12,
-     "pm": -2,
-     "pim": 13,
+     "a": 8,
+     "pts": 13,
+     "pm": -1,
+     "pim": 15,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -96,18 +96,18 @@
   "table": "OHL",
   "coef": 0.144,
   "team": "Peterborough Petes",
-  "gp": 13,
+  "gp": 14,
   "g": 5,
-  "a": 7,
-  "pts": 12,
-  "pgp": 0.923,
-  "lineGp": 13,
-  "nhle": 0.133,
-  "nhlePace": 11.2,
+  "a": 8,
+  "pts": 13,
+  "pgp": 0.929,
+  "lineGp": 14,
+  "nhle": 0.134,
+  "nhlePace": 11.3,
   "lines": [
    "OHL"
   ],
-  "feature": 0.133
+  "feature": 0.134
  },
  "league": {
   "name": "OHL",
@@ -132,8 +132,8 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 86,
-   "gp": 13,
-   "value": 0.9231,
+   "gp": 14,
+   "value": 0.9286,
    "percentile": 81.4,
    "percentileAllAges": 80.7,
    "allAgesN": 1875
@@ -141,11 +141,11 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 11.4,
+  "expected": 12.1,
   "median": 0.0,
-  "p75": 13.6,
+  "p75": 14.9,
   "p90": 52.5,
-  "pRegular": 0.28,
+  "pRegular": 0.3,
   "pTopLine": 0.04,
   "pAboveAvg": 0.1,
   "pElite": 0.0,
@@ -154,10 +154,10 @@
   "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.28,
+  "pCeiling": 0.3,
   "featureBand": [
    0.116,
-   0.147
+   0.151
   ],
   "examples": [
    {
@@ -181,16 +181,6 @@
     "nhlGp": 87
    },
    {
-    "name": "Aidan Dudas",
-    "year": 2018,
-    "pick": 113,
-    "league": "OHL",
-    "feature": 0.131,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
     "name": "Andr\u00e9 Petersson",
     "year": 2008,
     "pick": 109,
@@ -206,6 +196,16 @@
     "pick": 111,
     "league": "HockeyAllsvenskan",
     "feature": 0.137,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Aidan Dudas",
+    "year": 2018,
+    "pick": 113,
+    "league": "OHL",
+    "feature": 0.131,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -259,8 +259,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 11.4,
-  "expected": 12.4,
+  "cohortExpected": 12.1,
+  "expected": 12.8,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -281,11 +281,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 13,
+  "gp": 14,
   "season": "2026-2027"
  },
- "rank": 16,
- "score": 12.4,
+ "rank": 15,
+ "score": 12.8,
  "rankStart": 18,
  "rankStartDate": "2026-10-06"
 }

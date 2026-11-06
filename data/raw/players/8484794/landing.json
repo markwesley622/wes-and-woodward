@@ -52,7 +52,7 @@
    "subSeason": {
     "assists": 7,
     "gameWinningGoals": 1,
-    "gamesPlayed": 16,
+    "gamesPlayed": 17,
     "goals": 3,
     "otGoals": 0,
     "pim": 12,
@@ -68,7 +68,7 @@
    "career": {
     "assists": 8,
     "gameWinningGoals": 1,
-    "gamesPlayed": 30,
+    "gamesPlayed": 31,
     "goals": 3,
     "otGoals": 0,
     "pim": 14,
@@ -86,10 +86,10 @@
  "careerTotals": {
   "regularSeason": {
    "assists": 8,
-   "avgToi": "14:08",
-   "faceoffWinningPctg": 0.6666,
+   "avgToi": "14:13",
+   "faceoffWinningPctg": 0.5714,
    "gameWinningGoals": 1,
-   "gamesPlayed": 30,
+   "gamesPlayed": 31,
    "goals": 3,
    "otGoals": 0,
    "pim": 14,
@@ -107,6 +107,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-11-05",
+   "gameId": 2026020252,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "VGK",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 22,
+   "shorthandedGoals": 0,
+   "shots": 0,
+   "teamAbbrev": "DET",
+   "toi": "16:48"
+  },
   {
    "assists": 0,
    "gameDate": "2026-11-03",
@@ -178,24 +196,6 @@
    "shots": 0,
    "teamAbbrev": "DET",
    "toi": "15:23"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-10-26",
-   "gameId": 2026020187,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "EDM",
-   "pim": 2,
-   "plusMinus": -1,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 21,
-   "shorthandedGoals": 0,
-   "shots": 1,
-   "teamAbbrev": "DET",
-   "toi": "15:18"
   }
  ],
  "seasonTotals": [
@@ -754,11 +754,11 @@
   },
   {
    "assists": 7,
-   "avgToi": "15:32",
-   "faceoffWinningPctg": 0.666667,
+   "avgToi": "15:36",
+   "faceoffWinningPctg": 0.571429,
    "gameTypeId": 2,
    "gameWinningGoals": 1,
-   "gamesPlayed": 16,
+   "gamesPlayed": 17,
    "goals": 3,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
@@ -986,6 +986,16 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
+  },
+  {
+   "playerId": 8485545,
+   "lastName": {
+    "default": "Postava"
+   },
+   "firstName": {
+    "default": "Michal"
+   },
+   "playerSlug": "michal-postava-8485545"
   },
   {
    "playerId": 8479992,

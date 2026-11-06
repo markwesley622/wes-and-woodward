@@ -53,7 +53,7 @@
    "subSeason": {
     "assists": 0,
     "gameWinningGoals": 0,
-    "gamesPlayed": 11,
+    "gamesPlayed": 12,
     "goals": 0,
     "otGoals": 0,
     "pim": 2,
@@ -64,12 +64,12 @@
     "shootingPctg": 0.0,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 4
+    "shots": 5
    },
    "career": {
     "assists": 18,
     "gameWinningGoals": 0,
-    "gamesPlayed": 211,
+    "gamesPlayed": 212,
     "goals": 2,
     "otGoals": 0,
     "pim": 192,
@@ -77,10 +77,10 @@
     "points": 20,
     "powerPlayGoals": 0,
     "powerPlayPoints": 0,
-    "shootingPctg": 0.0181,
+    "shootingPctg": 0.018000000000000002,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 110
+    "shots": 111
    }
   }
  },
@@ -89,7 +89,7 @@
    "assists": 18,
    "avgToi": "12:35",
    "gameWinningGoals": 0,
-   "gamesPlayed": 211,
+   "gamesPlayed": 212,
    "goals": 2,
    "otGoals": 0,
    "pim": 192,
@@ -97,10 +97,10 @@
    "points": 20,
    "powerPlayGoals": 0,
    "powerPlayPoints": 0,
-   "shootingPctg": 0.0181,
+   "shootingPctg": 0.018000000000000002,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 110
+   "shots": 111
   },
   "playoffs": {
    "assists": 1,
@@ -123,6 +123,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-11-05",
+   "gameId": 2026020252,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "VGK",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 16,
+   "shorthandedGoals": 0,
+   "shots": 1,
+   "teamAbbrev": "DET",
+   "toi": "11:48"
+  },
   {
    "assists": 0,
    "gameDate": "2026-11-03",
@@ -194,24 +212,6 @@
    "shots": 0,
    "teamAbbrev": "DET",
    "toi": "15:09"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-10-26",
-   "gameId": 2026020187,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "EDM",
-   "pim": 0,
-   "plusMinus": 1,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 18,
-   "shorthandedGoals": 0,
-   "shots": 0,
-   "teamAbbrev": "DET",
-   "toi": "13:26"
   }
  ],
  "seasonTotals": [
@@ -1027,11 +1027,11 @@
   },
   {
    "assists": 0,
-   "avgToi": "13:09",
+   "avgToi": "13:03",
    "faceoffWinningPctg": 0.0,
    "gameTypeId": 2,
    "gameWinningGoals": 0,
-   "gamesPlayed": 11,
+   "gamesPlayed": 12,
    "goals": 0,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
@@ -1045,7 +1045,7 @@
    "shootingPctg": 0.0,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 4,
+   "shots": 5,
    "teamCommonName": {
     "default": "Red Wings"
    },
@@ -1259,6 +1259,16 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
+  },
+  {
+   "playerId": 8485545,
+   "lastName": {
+    "default": "Postava"
+   },
+   "firstName": {
+    "default": "Michal"
+   },
+   "playerSlug": "michal-postava-8485545"
   },
   {
    "playerId": 8479992,

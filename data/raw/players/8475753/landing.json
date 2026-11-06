@@ -55,7 +55,7 @@
    "subSeason": {
     "assists": 6,
     "gameWinningGoals": 1,
-    "gamesPlayed": 16,
+    "gamesPlayed": 17,
     "goals": 3,
     "otGoals": 0,
     "pim": 10,
@@ -71,7 +71,7 @@
    "career": {
     "assists": 358,
     "gameWinningGoals": 37,
-    "gamesPlayed": 1074,
+    "gamesPlayed": 1075,
     "goals": 149,
     "otGoals": 4,
     "pim": 530,
@@ -92,7 +92,7 @@
    "avgToi": "22:53",
    "faceoffWinningPctg": 0.0,
    "gameWinningGoals": 37,
-   "gamesPlayed": 1074,
+   "gamesPlayed": 1075,
    "goals": 149,
    "otGoals": 4,
    "pim": 530,
@@ -127,6 +127,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-11-05",
+   "gameId": 2026020252,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "VGK",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 25,
+   "shorthandedGoals": 0,
+   "shots": 0,
+   "teamAbbrev": "DET",
+   "toi": "22:43"
+  },
   {
    "assists": 1,
    "gameDate": "2026-11-03",
@@ -198,24 +216,6 @@
    "shots": 0,
    "teamAbbrev": "DET",
    "toi": "20:26"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-10-26",
-   "gameId": 2026020187,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "EDM",
-   "pim": 2,
-   "plusMinus": 0,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 29,
-   "shorthandedGoals": 0,
-   "shots": 1,
-   "teamAbbrev": "DET",
-   "toi": "22:18"
   }
  ],
  "seasonTotals": [
@@ -1257,11 +1257,11 @@
   },
   {
    "assists": 6,
-   "avgToi": "19:55",
+   "avgToi": "20:05",
    "faceoffWinningPctg": 0.0,
    "gameTypeId": 2,
    "gameWinningGoals": 1,
-   "gamesPlayed": 16,
+   "gamesPlayed": 17,
    "goals": 3,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
@@ -1489,6 +1489,16 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
+  },
+  {
+   "playerId": 8485545,
+   "lastName": {
+    "default": "Postava"
+   },
+   "firstName": {
+    "default": "Michal"
+   },
+   "playerSlug": "michal-postava-8485545"
   },
   {
    "playerId": 8479992,

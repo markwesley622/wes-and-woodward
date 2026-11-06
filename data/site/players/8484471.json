@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 16,
+  "gp": 17,
   "goals": 7,
   "assists": 4,
   "points": 11,
   "plusMinus": 9,
   "pim": 4,
-  "shots": 35,
-  "shootingPct": 0.2,
-  "toiPerGame": "18:10",
+  "shots": 37,
+  "shootingPct": 0.189189,
+  "toiPerGame": "18:22",
   "ppPoints": 2,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 16,
+   "gp": 17,
    "goals": 7,
    "assists": 4,
    "points": 11,
@@ -60,21 +60,21 @@
   "name": "Emmitt Finnie",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484471.png",
-  "gamesPlayed": 16,
+  "gamesPlayed": 17,
   "goals": 7,
   "assists": 4,
   "points": 11,
-  "shots": 35,
-  "shootingPct": 0.2,
-  "toiPerGame": 1090.4,
-  "ixG": 4.74,
-  "goalsAboveExpected": 2.26,
-  "gameScore": 12.96,
+  "shots": 37,
+  "shootingPct": 0.189189,
+  "toiPerGame": 1102.0,
+  "ixG": 5.34,
+  "goalsAboveExpected": 1.66,
+  "gameScore": 13.7,
   "fiveOnFive": {
-   "icetimeMinutes": 223.4,
+   "icetimeMinutes": 238.9,
    "onIceXgPct": 0.59,
-   "onIceCorsiPct": 0.52,
-   "ixgPer60": 0.792,
+   "onIceCorsiPct": 0.53,
+   "ixgPer60": 0.816,
    "pctl_onIceXgPct": null,
    "pctl_ixgPer60": null,
    "qualifiesForPercentiles": false
@@ -82,16 +82,16 @@
  },
  "hsc": {
   "Game score": {
-   "value": 1.06,
-   "percentile": 86
+   "value": 1.04,
+   "percentile": 85
   },
   "Offense": {
-   "value": 1.7,
-   "percentile": 87
+   "value": 1.5,
+   "percentile": 85
   },
   "Defense": {
-   "value": 0.8,
-   "percentile": 79
+   "value": 1.0,
+   "percentile": 82
   },
   "Net": {
    "value": 2.5,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 78.9,
-  "gs": 15.0,
-  "gs60": 3.1,
-  "gameScore": 15.0,
-  "minutes": 291,
-  "gp": 16,
-  "rank": 77,
+  "value": 79.1,
+  "gs": 15.65,
+  "gs60": 3.01,
+  "gameScore": 15.65,
+  "minutes": 312,
+  "gp": 17,
+  "rank": 79,
   "pool": 749,
-  "percentile": 89.7,
+  "percentile": 89.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 75,
-    "name": "Viktor Arvidsson",
-    "team": "DET",
-    "pos": "L",
-    "gp": 16,
-    "value": 79.4,
-    "gs60": 15.21,
-    "isMe": false
-   },
-   {
-    "rank": 76,
-    "name": "Nick Suzuki",
-    "team": "MTL",
-    "pos": "C",
-    "gp": 9,
-    "value": 79.1,
-    "gs60": 15.08,
-    "isMe": false
-   },
-   {
     "rank": 77,
-    "name": "Emmitt Finnie",
-    "team": "DET",
+    "name": "Elias Pettersson",
+    "team": "VAN",
     "pos": "C",
-    "gp": 16,
-    "value": 78.9,
-    "gs60": 15.0,
-    "isMe": true
+    "gp": 18,
+    "value": 79.4,
+    "gs60": 15.79,
+    "isMe": false
    },
    {
     "rank": 78,
-    "name": "Shea Theodore",
-    "team": "VGK",
-    "pos": "D",
+    "name": "Viktor Arvidsson",
+    "team": "DET",
+    "pos": "L",
     "gp": 17,
-    "value": 78.8,
-    "gs60": 14.95,
+    "value": 79.3,
+    "gs60": 15.71,
     "isMe": false
    },
    {
     "rank": 79,
-    "name": "Brett Pesce",
-    "team": "NJD",
-    "pos": "D",
-    "gp": 15,
-    "value": 78.4,
-    "gs60": 14.79,
+    "name": "Emmitt Finnie",
+    "team": "DET",
+    "pos": "C",
+    "gp": 17,
+    "value": 79.1,
+    "gs60": 15.65,
+    "isMe": true
+   },
+   {
+    "rank": 80,
+    "name": "Wyatt Johnston",
+    "team": "DAL",
+    "pos": "C",
+    "gp": 14,
+    "value": 78.8,
+    "gs60": 15.52,
+    "isMe": false
+   },
+   {
+    "rank": 81,
+    "name": "Michael Brandsegg-Nygrd",
+    "team": "DET",
+    "pos": "R",
+    "gp": 17,
+    "value": 78.3,
+    "gs60": 15.28,
     "isMe": false
    }
   ],
@@ -569,12 +569,36 @@
     "moneypuck": -0.03,
     "hockeystatcards": 0.24
    }
+  },
+  {
+   "gameId": 2026020252,
+   "date": "2026-11-05",
+   "opponent": "VGK",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 2,
+   "pim": 0,
+   "toi": 21.4,
+   "ixg": 0.8,
+   "xgf": 0.73,
+   "xga": 0.74,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 0.0,
+   "gameScore": 0.65,
+   "gameScoreParts": {
+    "moneypuck": 0.74,
+    "hockeystatcards": 0.56
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.94,
-  "games": 16,
+  "average": 0.92,
+  "games": 17,
   "best": {
    "date": "2026-10-13",
    "opponent": "NJD",
@@ -588,7 +612,7 @@
   "above2": 3,
   "below0": 5
  },
- "detGames": 16,
+ "detGames": 17,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -601,5 +625,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-05T05:02:32-08:00"
+ "updatedAt": "2026-11-06T05:03:07-08:00"
 }
