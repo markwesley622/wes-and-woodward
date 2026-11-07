@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Univ. of Minnesota-Duluth",
-   "gp": 10,
+   "gp": 11,
    "g": 1,
    "a": 4,
    "pts": 5,
-   "pm": 5,
+   "pm": 4,
    "pim": 0,
    "gaa": null,
    "svp": null,
@@ -106,11 +106,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Minnesota-Duluth",
-     "gp": 10,
+     "gp": 11,
      "g": 1,
      "a": 4,
      "pts": 5,
-     "pm": 5,
+     "pm": 4,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -130,18 +130,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Univ. of Minnesota-Duluth",
-  "gp": 10,
+  "gp": 11,
   "g": 1,
   "a": 4,
   "pts": 5,
-  "pgp": 0.5,
-  "lineGp": 10,
-  "nhle": 0.097,
-  "nhlePace": 8.1,
+  "pgp": 0.455,
+  "lineGp": 11,
+  "nhle": 0.088,
+  "nhlePace": 7.4,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.097
+  "feature": 0.088
  },
  "league": {
   "name": "NCAA",
@@ -156,8 +156,8 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 18,
-   "gp": 10,
-   "value": 0.5,
+   "gp": 11,
+   "value": 0.4545,
    "percentile": 38.9,
    "percentileAllAges": 48.1,
    "allAgesN": 2159
@@ -165,54 +165,34 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 15.1,
+  "expected": 12.9,
   "median": 0.0,
-  "p75": 32.3,
+  "p75": 15.8,
   "p90": 56.9,
-  "pRegular": 0.42,
-  "pTopLine": 0.02,
+  "pRegular": 0.32,
+  "pTopLine": 0.04,
   "pAboveAvg": 0.12,
-  "pElite": 0.02,
+  "pElite": 0.04,
   "poolN": 1362,
   "group": "F",
   "age": 18,
   "pickWeight": 1.0,
-  "tier": "below average",
-  "pCeiling": 0.28,
+  "tier": "replacement level",
+  "pCeiling": 0.32,
   "featureBand": [
-   0.072,
-   0.123
+   0.059,
+   0.116
   ],
   "examples": [
    {
-    "name": "Givani Smith",
-    "year": 2016,
-    "pick": 46,
-    "league": "OHL",
-    "feature": 0.095,
-    "peak": 4.5,
-    "tier": "replacement level",
-    "nhlGp": 168
-   },
-   {
-    "name": "Kenneth Ryan",
-    "year": 2009,
-    "pick": 50,
-    "league": "OHL",
-    "feature": 0.097,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Sebastian W\u00e4nnstr\u00f6m",
-    "year": 2010,
-    "pick": 44,
-    "league": "J20 SuperElit",
-    "feature": 0.098,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "name": "Kirill Marchenko",
+    "year": 2018,
+    "pick": 49,
+    "league": "VHL",
+    "feature": 0.089,
+    "peak": 90.1,
+    "tier": "elite",
+    "nhlGp": 295
    },
    {
     "name": "Alexander Volkov",
@@ -225,44 +205,64 @@
     "nhlGp": 46
    },
    {
-    "name": "Teodors Blugers",
-    "year": 2012,
-    "pick": 52,
+    "name": "Drew Shore",
+    "year": 2009,
+    "pick": 44,
     "league": "NCAA",
-    "feature": 0.098,
-    "peak": 59.3,
-    "tier": "above average",
-    "nhlGp": 456
+    "feature": 0.09,
+    "peak": 33.9,
+    "tier": "below average",
+    "nhlGp": 98
    },
    {
-    "name": "Artur Kayumov",
+    "name": "Givani Smith",
     "year": 2016,
-    "pick": 50,
-    "league": "MHL",
-    "feature": 0.102,
+    "pick": 46,
+    "league": "OHL",
+    "feature": 0.095,
+    "peak": 4.5,
+    "tier": "replacement level",
+    "nhlGp": 168
+   },
+   {
+    "name": "Phil Lane",
+    "year": 2010,
+    "pick": 52,
+    "league": "OHL",
+    "feature": 0.091,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Jared Staal",
-    "year": 2008,
-    "pick": 49,
-    "league": "OHL",
-    "feature": 0.104,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 2
+    "name": "Dmitrij Jaskin",
+    "year": 2011,
+    "pick": 41,
+    "league": "Czechia",
+    "feature": 0.087,
+    "peak": 31.6,
+    "tier": "below average",
+    "nhlGp": 315
    },
    {
-    "name": "Brock McGinn",
-    "year": 2012,
-    "pick": 47,
+    "name": "Eetu Luostarinen",
+    "year": 2017,
+    "pick": 42,
+    "league": "Liiga",
+    "feature": 0.085,
+    "peak": 56.9,
+    "tier": "above average",
+    "nhlGp": 450
+   },
+   {
+    "name": "Graham Knott",
+    "year": 2015,
+    "pick": 54,
     "league": "OHL",
-    "feature": 0.108,
-    "peak": 37.4,
-    "tier": "below average",
-    "nhlGp": 534
+    "feature": 0.089,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -283,8 +283,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 15.1,
-  "expected": 19.4,
+  "cohortExpected": 12.9,
+  "expected": 18.3,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -305,11 +305,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 10,
+  "gp": 11,
   "season": "2026-2027"
  },
  "rank": 10,
- "score": 19.4,
+ "score": 18.3,
  "rankStart": 11,
  "rankStartDate": "2026-10-06"
 }

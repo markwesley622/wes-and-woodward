@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 74
+   "percentile": 73
   },
   "Net": {
    "value": 0.9,
@@ -100,65 +100,65 @@
  },
  "score": null,
  "standIn": {
-  "value": 60.3,
+  "value": 60.1,
   "gs": 8.91,
   "gs60": 2.46,
   "gameScore": 8.91,
   "minutes": 217,
   "gp": 10,
-  "rank": 208,
-  "pool": 749,
-  "percentile": 72.2,
+  "rank": 211,
+  "pool": 752,
+  "percentile": 71.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 206,
-    "name": "Anthony Mantha",
-    "team": "NJD",
-    "pos": "R",
-    "gp": 16,
-    "value": 60.6,
-    "gs60": 8.99,
-    "isMe": false
-   },
-   {
-    "rank": 207,
+    "rank": 209,
     "name": "Linus Karlsson",
     "team": "VAN",
     "pos": "C",
     "gp": 18,
-    "value": 60.6,
+    "value": 60.3,
     "gs60": 8.99,
     "isMe": false
    },
    {
-    "rank": 208,
+    "rank": 210,
+    "name": "Anthony Mantha",
+    "team": "NJD",
+    "pos": "R",
+    "gp": 16,
+    "value": 60.3,
+    "gs60": 8.99,
+    "isMe": false
+   },
+   {
+    "rank": 211,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
     "gp": 10,
-    "value": 60.3,
+    "value": 60.1,
     "gs60": 8.91,
     "isMe": true
    },
    {
-    "rank": 209,
+    "rank": 212,
     "name": "Quinton Byfield",
     "team": "LAK",
     "pos": "R",
     "gp": 12,
-    "value": 60.3,
+    "value": 60.0,
     "gs60": 8.91,
     "isMe": false
    },
    {
-    "rank": 210,
+    "rank": 213,
     "name": "Will Borgen",
     "team": "BOS",
     "pos": "D",
     "gp": 17,
-    "value": 60.3,
+    "value": 60.0,
     "gs60": 8.9,
     "isMe": false
    }
@@ -607,5 +607,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-06T05:03:47-08:00"
+ "updatedAt": "2026-11-07T05:04:34-08:00"
 }

@@ -83,7 +83,7 @@
  "hsc": {
   "Game score": {
    "value": 1.04,
-   "percentile": 86
+   "percentile": 85
   },
   "Offense": {
    "value": 1.2,
@@ -95,70 +95,70 @@
   },
   "Net": {
    "value": 2.5,
-   "percentile": 89
+   "percentile": 88
   }
  },
  "score": null,
  "standIn": {
-  "value": 78.2,
+  "value": 77.9,
   "gs": 15.26,
   "gs60": 3.45,
   "gameScore": 15.26,
   "minutes": 265,
   "gp": 17,
-  "rank": 81,
-  "pool": 749,
-  "percentile": 89.1,
+  "rank": 83,
+  "pool": 752,
+  "percentile": 88.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 79,
+    "rank": 81,
     "name": "Emmitt Finnie",
     "team": "DET",
     "pos": "C",
     "gp": 17,
-    "value": 79.1,
+    "value": 78.8,
     "gs60": 15.65,
     "isMe": false
    },
    {
-    "rank": 80,
+    "rank": 82,
     "name": "Wyatt Johnston",
     "team": "DAL",
     "pos": "C",
     "gp": 14,
-    "value": 78.8,
+    "value": 78.5,
     "gs60": 15.52,
     "isMe": false
    },
    {
-    "rank": 81,
+    "rank": 83,
     "name": "Michael Brandsegg-Nygrd",
     "team": "DET",
     "pos": "R",
     "gp": 17,
-    "value": 78.2,
+    "value": 77.9,
     "gs60": 15.26,
     "isMe": true
    },
    {
-    "rank": 82,
+    "rank": 84,
     "name": "Brett Pesce",
     "team": "NJD",
     "pos": "D",
     "gp": 16,
-    "value": 78.2,
+    "value": 77.9,
     "gs60": 15.26,
     "isMe": false
    },
    {
-    "rank": 83,
+    "rank": 85,
     "name": "Kaedan Korczak",
     "team": "PIT",
     "pos": "D",
     "gp": 16,
-    "value": 78.1,
+    "value": 77.8,
     "gs60": 15.21,
     "isMe": false
    }
@@ -625,5 +625,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-06T05:01:49-08:00"
+ "updatedAt": "2026-11-07T05:02:43-08:00"
 }

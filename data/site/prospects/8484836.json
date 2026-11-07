@@ -31,7 +31,7 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 12,
+   "gp": 13,
    "g": 2,
    "a": 8,
    "pts": 10,
@@ -72,7 +72,7 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 12,
+     "gp": 13,
      "g": 2,
      "a": 8,
      "pts": 10,
@@ -140,18 +140,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 12,
+  "gp": 13,
   "g": 2,
   "a": 8,
   "pts": 10,
-  "pgp": 0.833,
-  "lineGp": 12,
-  "nhle": 0.324,
-  "nhlePace": 27.2,
+  "pgp": 0.769,
+  "lineGp": 13,
+  "nhle": 0.299,
+  "nhlePace": 25.1,
   "lines": [
    "AHL"
   ],
-  "feature": 0.324
+  "feature": 0.299
  },
  "league": {
   "name": "AHL",
@@ -176,113 +176,113 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 44,
-   "gp": 12,
-   "value": 0.8333,
-   "percentile": 68.2,
-   "percentileAllAges": 77.6,
+   "gp": 13,
+   "value": 0.7692,
+   "percentile": 65.9,
+   "percentileAllAges": 75.5,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 12.0,
+  "expected": 13.7,
   "median": 0.0,
-  "p75": 15.6,
-  "p90": 44.8,
-  "pRegular": 0.4,
+  "p75": 15.8,
+  "p90": 56.2,
+  "pRegular": 0.34,
   "pTopLine": 0.04,
-  "pAboveAvg": 0.08,
+  "pAboveAvg": 0.14,
   "pElite": 0.02,
   "poolN": 1006,
   "group": "F",
   "age": 22,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.4,
+  "pCeiling": 0.34,
   "featureBand": [
-   0.3,
-   0.351
+   0.279,
+   0.318
   ],
   "examples": [
    {
-    "name": "Tyce Thompson",
-    "year": 2019,
-    "pick": 96,
+    "name": "Jaret Anderson-Dolan",
+    "year": 2017,
+    "pick": 41,
     "league": "AHL",
-    "feature": 0.324,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 11
+    "feature": 0.3,
+    "peak": 32.3,
+    "tier": "below average",
+    "nhlGp": 134
    },
    {
-    "name": "Aku R\u00e4ty",
-    "year": 2019,
-    "pick": 151,
+    "name": "Michael Bunting",
+    "year": 2014,
+    "pick": 117,
     "league": "AHL",
-    "feature": 0.324,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
+    "feature": 0.297,
+    "peak": 79.2,
+    "tier": "top-line",
+    "nhlGp": 418
    },
    {
-    "name": "Mark Olver",
-    "year": 2008,
-    "pick": 140,
-    "league": "AHL",
-    "feature": 0.323,
-    "peak": 15.6,
-    "tier": "replacement level",
-    "nhlGp": 74
-   },
-   {
-    "name": "Roman Hor\u00e1k",
-    "year": 2009,
-    "pick": 127,
-    "league": "AHL",
-    "feature": 0.325,
-    "peak": 14.4,
-    "tier": "replacement level",
-    "nhlGp": 84
-   },
-   {
-    "name": "Joseph Blandisi",
-    "year": 2012,
-    "pick": 162,
-    "league": "AHL",
-    "feature": 0.323,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 101
-   },
-   {
-    "name": "Jansen Harkins",
+    "name": "Jeremy Bracco",
     "year": 2015,
-    "pick": 47,
+    "pick": 61,
     "league": "AHL",
-    "feature": 0.323,
-    "peak": 8.4,
-    "tier": "replacement level",
-    "nhlGp": 306
-   },
-   {
-    "name": "Filip Ahl",
-    "year": 2015,
-    "pick": 109,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.323,
+    "feature": 0.301,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Carter Verhaeghe",
-    "year": 2013,
-    "pick": 82,
+    "name": "Dylan Gambrell",
+    "year": 2016,
+    "pick": 60,
     "league": "AHL",
-    "feature": 0.322,
-    "peak": 91.2,
-    "tier": "elite",
-    "nhlGp": 491
+    "feature": 0.297,
+    "peak": 15.8,
+    "tier": "replacement level",
+    "nhlGp": 233
+   },
+   {
+    "name": "Jack Studnicka",
+    "year": 2017,
+    "pick": 53,
+    "league": "AHL",
+    "feature": 0.297,
+    "peak": 5.2,
+    "tier": "replacement level",
+    "nhlGp": 126
+   },
+   {
+    "name": "Zach Boychuk",
+    "year": 2008,
+    "pick": 14,
+    "league": "AHL",
+    "feature": 0.302,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 127
+   },
+   {
+    "name": "Zac Dalpe",
+    "year": 2008,
+    "pick": 45,
+    "league": "AHL",
+    "feature": 0.302,
+    "peak": 7.5,
+    "tier": "replacement level",
+    "nhlGp": 168
+   },
+   {
+    "name": "Andrei Loktionov",
+    "year": 2008,
+    "pick": 123,
+    "league": "AHL",
+    "feature": 0.302,
+    "peak": 50.8,
+    "tier": "above average",
+    "nhlGp": 155
    }
   ]
  },
@@ -303,8 +303,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 12.0,
-  "expected": 12.0,
+  "cohortExpected": 13.7,
+  "expected": 13.7,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -325,11 +325,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 12,
+  "gp": 13,
   "season": "2026-2027"
  },
- "rank": 17,
- "score": 12.0,
+ "rank": 13,
+ "score": 13.7,
  "rankStart": 16,
  "rankStartDate": "2026-10-06"
 }

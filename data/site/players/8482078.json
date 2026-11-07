@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 1.1,
-   "percentile": 84
+   "percentile": 85
   },
   "Net": {
    "value": 2.1,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 81.7,
+  "value": 81.4,
   "gs": 16.89,
   "gs60": 2.93,
   "gameScore": 16.89,
   "minutes": 346,
   "gp": 17,
-  "rank": 67,
-  "pool": 749,
-  "percentile": 91.1,
+  "rank": 70,
+  "pool": 752,
+  "percentile": 90.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 65,
-    "name": "Nick Suzuki",
-    "team": "MTL",
-    "pos": "C",
-    "gp": 10,
-    "value": 82.4,
-    "gs60": 17.2,
-    "isMe": false
-   },
-   {
-    "rank": 66,
-    "name": "Leo Carlsson",
-    "team": "ANA",
-    "pos": "C",
-    "gp": 16,
-    "value": 82.2,
-    "gs60": 17.11,
-    "isMe": false
-   },
-   {
-    "rank": 67,
-    "name": "Lucas Raymond",
-    "team": "DET",
-    "pos": "L",
-    "gp": 17,
-    "value": 81.7,
-    "gs60": 16.89,
-    "isMe": true
-   },
-   {
     "rank": 68,
-    "name": "Beckett Sennecke",
-    "team": "ANA",
-    "pos": "R",
-    "gp": 16,
-    "value": 81.5,
-    "gs60": 16.75,
+    "name": "Brayden McNabb",
+    "team": "VGK",
+    "pos": "D",
+    "gp": 18,
+    "value": 82.1,
+    "gs60": 17.22,
     "isMe": false
    },
    {
     "rank": 69,
-    "name": "Jack Quinn",
+    "name": "Nick Suzuki",
+    "team": "MTL",
+    "pos": "C",
+    "gp": 10,
+    "value": 82.0,
+    "gs60": 17.2,
+    "isMe": false
+   },
+   {
+    "rank": 70,
+    "name": "Lucas Raymond",
+    "team": "DET",
+    "pos": "L",
+    "gp": 17,
+    "value": 81.4,
+    "gs60": 16.89,
+    "isMe": true
+   },
+   {
+    "rank": 71,
+    "name": "Owen Power",
     "team": "BUF",
-    "pos": "R",
-    "gp": 15,
-    "value": 81.0,
-    "gs60": 16.52,
+    "pos": "D",
+    "gp": 16,
+    "value": 80.7,
+    "gs60": 16.55,
+    "isMe": false
+   },
+   {
+    "rank": 72,
+    "name": "Elias Lindholm",
+    "team": "BOS",
+    "pos": "C",
+    "gp": 17,
+    "value": 80.6,
+    "gs60": 16.51,
     "isMe": false
    }
   ],
@@ -685,5 +685,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-06T05:04:41-08:00"
+ "updatedAt": "2026-11-07T05:05:24-08:00"
 }

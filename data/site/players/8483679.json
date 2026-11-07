@@ -75,8 +75,8 @@
    "onIceXgPct": 0.45,
    "onIceCorsiPct": 0.48,
    "ixgPer60": 0.219,
-   "pctl_onIceXgPct": 18.8,
-   "pctl_ixgPer60": 50.0,
+   "pctl_onIceXgPct": 22.9,
+   "pctl_ixgPer60": 51.4,
    "qualifiesForPercentiles": false
   }
  },
@@ -95,7 +95,7 @@
   },
   "Net": {
    "value": -1.7,
-   "percentile": 19
+   "percentile": 18
   }
  },
  "score": null,
@@ -106,34 +106,34 @@
   "gameScore": 0.87,
   "minutes": 230,
   "gp": 17,
-  "rank": 514,
-  "pool": 749,
-  "percentile": 31.4,
+  "rank": 515,
+  "pool": 752,
+  "percentile": 31.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 512,
+    "rank": 513,
     "name": "Vitali Pinchuk",
     "team": "NSH",
     "pos": "C",
     "gp": 7,
-    "value": 33.9,
-    "gs60": 0.9,
-    "isMe": false
-   },
-   {
-    "rank": 513,
-    "name": "Chris Tanev",
-    "team": "TOR",
-    "pos": "D",
-    "gp": 8,
-    "value": 33.9,
+    "value": 34.0,
     "gs60": 0.9,
     "isMe": false
    },
    {
     "rank": 514,
+    "name": "Chris Tanev",
+    "team": "TOR",
+    "pos": "D",
+    "gp": 8,
+    "value": 34.0,
+    "gs60": 0.9,
+    "isMe": false
+   },
+   {
+    "rank": 515,
     "name": "Anton Johansson",
     "team": "DET",
     "pos": "D",
@@ -143,7 +143,7 @@
     "isMe": true
    },
    {
-    "rank": 515,
+    "rank": 516,
     "name": "Alexander Holtz",
     "team": "VGK",
     "pos": "R",
@@ -153,12 +153,12 @@
     "isMe": false
    },
    {
-    "rank": 516,
+    "rank": 517,
     "name": "Liam O'Brien",
     "team": "UTA",
     "pos": "C",
     "gp": 4,
-    "value": 33.8,
+    "value": 33.9,
     "gs60": 0.86,
     "isMe": false
    }
@@ -609,5 +609,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-06T05:05:39-08:00"
+ "updatedAt": "2026-11-07T05:06:16-08:00"
 }

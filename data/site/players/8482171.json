@@ -75,8 +75,8 @@
    "onIceXgPct": 0.56,
    "onIceCorsiPct": 0.5,
    "ixgPer60": 0.133,
-   "pctl_onIceXgPct": 65.6,
-   "pctl_ixgPer60": 18.8,
+   "pctl_onIceXgPct": 68.6,
+   "pctl_ixgPer60": 17.1,
    "qualifiesForPercentiles": false
   }
  },
@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": -0.2,
-   "percentile": 57
+   "percentile": 58
   },
   "Defense": {
    "value": 0.0,
@@ -100,20 +100,20 @@
  },
  "score": null,
  "standIn": {
-  "value": 42.0,
+  "value": 41.9,
   "gs": 3.42,
   "gs60": 1.07,
   "gameScore": 3.42,
   "minutes": 192,
   "gp": 12,
-  "rank": 403,
-  "pool": 749,
-  "percentile": 46.2,
+  "rank": 405,
+  "pool": 752,
+  "percentile": 46.1,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 401,
+    "rank": 403,
     "name": "Conor Geekie",
     "team": "TBL",
     "pos": "C",
@@ -123,27 +123,27 @@
     "isMe": false
    },
    {
-    "rank": 402,
+    "rank": 404,
     "name": "Florian Xhekaj",
     "team": "MTL",
     "pos": "L",
     "gp": 7,
-    "value": 42.0,
+    "value": 41.9,
     "gs60": 3.43,
     "isMe": false
    },
    {
-    "rank": 403,
+    "rank": 405,
     "name": "William Wallinder",
     "team": "DET",
     "pos": "D",
     "gp": 12,
-    "value": 42.0,
+    "value": 41.9,
     "gs60": 3.42,
     "isMe": true
    },
    {
-    "rank": 404,
+    "rank": 406,
     "name": "Dmitri Simashev",
     "team": "UTA",
     "pos": "D",
@@ -153,7 +153,7 @@
     "isMe": false
    },
    {
-    "rank": 405,
+    "rank": 407,
     "name": "Owen Beck",
     "team": "MTL",
     "pos": "C",
@@ -489,5 +489,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-06T05:06:16-08:00"
+ "updatedAt": "2026-11-07T05:06:52-08:00"
 }

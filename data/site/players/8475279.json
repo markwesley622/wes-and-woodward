@@ -75,15 +75,15 @@
    "onIceXgPct": 0.52,
    "onIceCorsiPct": 0.51,
    "ixgPer60": 0.071,
-   "pctl_onIceXgPct": 34.4,
-   "pctl_ixgPer60": 6.2,
+   "pctl_onIceXgPct": 40.0,
+   "pctl_ixgPer60": 5.7,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": -0.23,
-   "percentile": 16
+   "percentile": 17
   },
   "Offense": {
    "value": -0.9,
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": -1.0,
-   "percentile": 13
+   "percentile": 14
   },
   "Net": {
    "value": -1.9,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 28.5,
+  "value": 28.6,
   "gs": -0.98,
   "gs60": -0.17,
   "gameScore": -0.98,
   "minutes": 343,
   "gp": 17,
-  "rank": 652,
-  "pool": 749,
-  "percentile": 13.0,
+  "rank": 656,
+  "pool": 752,
+  "percentile": 12.8,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 650,
+    "rank": 654,
     "name": "Artem Duda",
     "team": "UTA",
     "pos": "D",
     "gp": 2,
-    "value": 28.6,
+    "value": 28.7,
     "gs60": -0.92,
     "isMe": false
    },
    {
-    "rank": 651,
+    "rank": 655,
     "name": "Helge Grans",
     "team": "PHI",
     "pos": "D",
     "gp": 1,
-    "value": 28.6,
+    "value": 28.7,
     "gs60": -0.94,
     "isMe": false
    },
    {
-    "rank": 652,
+    "rank": 656,
     "name": "Ben Chiarot",
     "team": "DET",
     "pos": "D",
     "gp": 17,
-    "value": 28.5,
+    "value": 28.6,
     "gs60": -0.98,
     "isMe": true
    },
    {
-    "rank": 653,
+    "rank": 657,
     "name": "Vince Dunn",
     "team": "SEA",
     "pos": "D",
     "gp": 15,
-    "value": 28.5,
+    "value": 28.6,
     "gs60": -0.99,
     "isMe": false
    },
    {
-    "rank": 654,
-    "name": "Zach Metsa",
-    "team": "BUF",
-    "pos": "D",
+    "rank": 658,
+    "name": "Isaac Howard",
+    "team": "EDM",
+    "pos": "L",
     "gp": 13,
-    "value": 28.4,
-    "gs60": -1.01,
+    "value": 28.5,
+    "gs60": -1.02,
     "isMe": false
    }
   ],
@@ -805,5 +805,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-06T05:04:59-08:00"
+ "updatedAt": "2026-11-07T05:05:41-08:00"
 }

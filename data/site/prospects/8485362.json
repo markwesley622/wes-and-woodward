@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 10,
+   "gp": 11,
    "g": 3,
-   "a": 7,
-   "pts": 10,
-   "pm": 8,
+   "a": 9,
+   "pts": 12,
+   "pm": 9,
    "pim": 6,
    "gaa": null,
    "svp": null,
@@ -89,11 +89,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 10,
+     "gp": 11,
      "g": 3,
-     "a": 7,
-     "pts": 10,
-     "pm": 8,
+     "a": 9,
+     "pts": 12,
+     "pm": 9,
      "pim": 6,
      "gaa": null,
      "svp": null,
@@ -152,18 +152,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 10,
+  "gp": 11,
   "g": 3,
-  "a": 7,
-  "pts": 10,
-  "pgp": 1.0,
-  "lineGp": 10,
-  "nhle": 0.389,
-  "nhlePace": 32.7,
+  "a": 9,
+  "pts": 12,
+  "pgp": 1.091,
+  "lineGp": 11,
+  "nhle": 0.424,
+  "nhlePace": 35.6,
   "lines": [
    "AHL"
   ],
-  "feature": 0.389
+  "feature": 0.424
  },
  "league": {
   "name": "AHL",
@@ -188,22 +188,22 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 30,
-   "gp": 10,
-   "value": 1.0,
-   "percentile": 90.0,
-   "percentileAllAges": 84.9,
+   "gp": 11,
+   "value": 1.0909,
+   "percentile": 93.3,
+   "percentileAllAges": 90.5,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 58.8,
-  "median": 70.2,
-  "p75": 90.1,
-  "p90": 95.8,
-  "pRegular": 0.82,
-  "pTopLine": 0.46,
-  "pAboveAvg": 0.66,
+  "expected": 58.6,
+  "median": 68.0,
+  "p75": 91.4,
+  "p90": 96.0,
+  "pRegular": 0.84,
+  "pTopLine": 0.44,
+  "pAboveAvg": 0.64,
   "pElite": 0.28,
   "poolN": 1305,
   "group": "F",
@@ -212,8 +212,8 @@
   "tier": "elite",
   "pCeiling": 0.28,
   "featureBand": [
-   0.258,
-   0.489
+   0.272,
+   0.504
   ],
   "examples": [
    {
@@ -225,6 +225,16 @@
     "peak": 62.1,
     "tier": "above average",
     "nhlGp": 292
+   },
+   {
+    "name": "Tyler Ennis",
+    "year": 2008,
+    "pick": 26,
+    "league": "AHL",
+    "feature": 0.434,
+    "peak": 77.2,
+    "tier": "top-line",
+    "nhlGp": 700
    },
    {
     "name": "Jakub Vr\u00e1na",
@@ -285,16 +295,6 @@
     "peak": 96.0,
     "tier": "elite",
     "nhlGp": 1064
-   },
-   {
-    "name": "Marko Dano",
-    "year": 2013,
-    "pick": 27,
-    "league": "AHL",
-    "feature": 0.384,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 141
    }
   ]
  },
@@ -315,8 +315,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 65.9,
-  "cohortExpected": 58.8,
-  "expected": 60.6,
+  "cohortExpected": 58.6,
+  "expected": 60.4,
   "tier": "above average"
  },
  "trajectory": {
@@ -337,11 +337,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 10,
+  "gp": 11,
   "season": "2026-2027"
  },
  "rank": 1,
- "score": 60.6,
+ "score": 60.4,
  "rankStart": 1,
  "rankStartDate": "2026-10-06"
 }

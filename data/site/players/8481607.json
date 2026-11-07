@@ -75,8 +75,8 @@
    "onIceXgPct": 0.57,
    "onIceCorsiPct": 0.57,
    "ixgPer60": 0.224,
-   "pctl_onIceXgPct": 68.8,
-   "pctl_ixgPer60": 53.1,
+   "pctl_onIceXgPct": 71.4,
+   "pctl_ixgPer60": 57.1,
    "qualifiesForPercentiles": false
   }
  },
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 76
+   "percentile": 75
   },
   "Net": {
    "value": 0.8,
@@ -100,15 +100,15 @@
  },
  "score": null,
  "standIn": {
-  "value": 47.2,
+  "value": 47.1,
   "gs": 4.99,
   "gs60": 1.74,
   "gameScore": 4.99,
   "minutes": 172,
   "gp": 11,
   "rank": 334,
-  "pool": 749,
-  "percentile": 55.4,
+  "pool": 752,
+  "percentile": 55.6,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
@@ -118,7 +118,7 @@
     "team": "NSH",
     "pos": "C",
     "gp": 16,
-    "value": 47.3,
+    "value": 47.2,
     "gs60": 5.03,
     "isMe": false
    },
@@ -128,7 +128,7 @@
     "team": "TOR",
     "pos": "D",
     "gp": 17,
-    "value": 47.3,
+    "value": 47.2,
     "gs60": 5.02,
     "isMe": false
    },
@@ -138,18 +138,18 @@
     "team": "DET",
     "pos": "D",
     "gp": 11,
-    "value": 47.2,
+    "value": 47.1,
     "gs60": 4.99,
     "isMe": true
    },
    {
     "rank": 335,
-    "name": "Pavel Mintyukov",
-    "team": "ANA",
-    "pos": "D",
-    "gp": 12,
-    "value": 47.2,
-    "gs60": 4.98,
+    "name": "Valeri Nichushkin",
+    "team": "CBJ",
+    "pos": "R",
+    "gp": 15,
+    "value": 46.9,
+    "gs60": 4.95,
     "isMe": false
    },
    {
@@ -158,7 +158,7 @@
     "team": "SEA",
     "pos": "C",
     "gp": 15,
-    "value": 47.0,
+    "value": 46.9,
     "gs60": 4.94,
     "isMe": false
    }
@@ -496,5 +496,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-06T05:05:27-08:00"
+ "updatedAt": "2026-11-07T05:06:04-08:00"
 }

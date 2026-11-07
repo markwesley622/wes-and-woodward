@@ -31,10 +31,10 @@
   {
    "league": "OHL",
    "team": "Windsor Spitfires",
-   "gp": 17,
-   "g": 5,
+   "gp": 18,
+   "g": 6,
    "a": 6,
-   "pts": 11,
+   "pts": 12,
    "pm": -1,
    "pim": 6,
    "gaa": null,
@@ -140,10 +140,10 @@
     {
      "league": "OHL",
      "team": "Windsor Spitfires",
-     "gp": 17,
-     "g": 5,
+     "gp": 18,
+     "g": 6,
      "a": 6,
-     "pts": 11,
+     "pts": 12,
      "pm": -1,
      "pim": 6,
      "gaa": null,
@@ -254,18 +254,18 @@
   "table": "OHL",
   "coef": 0.144,
   "team": "Windsor Spitfires",
-  "gp": 17,
-  "g": 5,
+  "gp": 18,
+  "g": 6,
   "a": 6,
-  "pts": 11,
-  "pgp": 0.647,
-  "lineGp": 17,
-  "nhle": 0.093,
-  "nhlePace": 7.8,
+  "pts": 12,
+  "pgp": 0.667,
+  "lineGp": 18,
+  "nhle": 0.096,
+  "nhlePace": 8.1,
   "lines": [
    "OHL"
   ],
-  "feature": 0.093
+  "feature": 0.096
  },
  "league": {
   "name": "OHL",
@@ -290,8 +290,8 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 77,
-   "gp": 17,
-   "value": 0.6471,
+   "gp": 18,
+   "value": 0.6667,
    "percentile": 51.9,
    "percentileAllAges": 65.4,
    "allAgesN": 1875
@@ -299,11 +299,11 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 3.3,
+  "expected": 2.2,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 16.4,
-  "pRegular": 0.18,
+  "p90": 15.8,
+  "pRegular": 0.16,
   "pTopLine": 0.0,
   "pAboveAvg": 0.0,
   "pElite": 0.0,
@@ -312,58 +312,18 @@
   "age": 19,
   "pickWeight": 0.5,
   "tier": "replacement level",
-  "pCeiling": 0.18,
+  "pCeiling": 0.16,
   "featureBand": [
-   0.075,
-   0.109
+   0.079,
+   0.111
   ],
   "examples": [
-   {
-    "name": "Chris Wagner",
-    "year": 2010,
-    "pick": 122,
-    "league": "NCAA",
-    "feature": 0.09,
-    "peak": 15.8,
-    "tier": "replacement level",
-    "nhlGp": 401
-   },
-   {
-    "name": "Taylor Stefishen",
-    "year": 2008,
-    "pick": 136,
-    "league": "NCAA",
-    "feature": 0.093,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
    {
     "name": "Yegor Spiridonov",
     "year": 2019,
     "pick": 108,
     "league": "VHL",
     "feature": 0.096,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Clark Bishop",
-    "year": 2014,
-    "pick": 127,
-    "league": "QMJHL",
-    "feature": 0.088,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 53
-   },
-   {
-    "name": "Liam Coughlin",
-    "year": 2014,
-    "pick": 130,
-    "league": "BCHL",
-    "feature": 0.089,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -379,24 +339,64 @@
     "nhlGp": 95
    },
    {
-    "name": "Alexis P\u00e9pin",
-    "year": 2014,
-    "pick": 114,
+    "name": "Christophe Lalancette",
+    "year": 2012,
+    "pick": 109,
     "league": "QMJHL",
-    "feature": 0.086,
+    "feature": 0.098,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Rhett Gardner",
-    "year": 2016,
-    "pick": 116,
-    "league": "NCAA",
-    "feature": 0.085,
-    "peak": 0.3,
+    "name": "Alexei Toropchenko",
+    "year": 2017,
+    "pick": 113,
+    "league": "OHL",
+    "feature": 0.1,
+    "peak": 21.7,
     "tier": "replacement level",
-    "nhlGp": 41
+    "nhlGp": 325
+   },
+   {
+    "name": "Chris Wagner",
+    "year": 2010,
+    "pick": 122,
+    "league": "NCAA",
+    "feature": 0.09,
+    "peak": 15.8,
+    "tier": "replacement level",
+    "nhlGp": 401
+   },
+   {
+    "name": "Kale Kessy",
+    "year": 2011,
+    "pick": 111,
+    "league": "WHL",
+    "feature": 0.101,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Fabrice Herzog",
+    "year": 2013,
+    "pick": 142,
+    "league": "NLA",
+    "feature": 0.096,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Taylor Stefishen",
+    "year": 2008,
+    "pick": 136,
+    "league": "NCAA",
+    "feature": 0.093,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -417,8 +417,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 3.3,
-  "expected": 5.8,
+  "cohortExpected": 2.2,
+  "expected": 5.0,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -439,11 +439,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 17,
+  "gp": 18,
   "season": "2026-2027"
  },
  "rank": 22,
- "score": 5.8,
+ "score": 5.0,
  "rankStart": 19,
  "rankStartDate": "2026-10-06"
 }

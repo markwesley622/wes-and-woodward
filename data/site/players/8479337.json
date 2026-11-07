@@ -87,7 +87,7 @@
   },
   "Offense": {
    "value": 2.4,
-   "percentile": 92
+   "percentile": 91
   },
   "Defense": {
    "value": 1.2,
@@ -95,19 +95,19 @@
   },
   "Net": {
    "value": 3.6,
-   "percentile": 94
+   "percentile": 95
   }
  },
  "score": null,
  "standIn": {
-  "value": 88.9,
+  "value": 88.6,
   "gs": 21.21,
   "gs60": 3.75,
   "gameScore": 21.21,
   "minutes": 340,
   "gp": 17,
   "rank": 28,
-  "pool": 749,
+  "pool": 752,
   "percentile": 96.3,
   "group": "skaters",
   "standIn": true,
@@ -118,7 +118,7 @@
     "team": "COL",
     "pos": "D",
     "gp": 17,
-    "value": 89.3,
+    "value": 89.0,
     "gs60": 21.45,
     "isMe": false
    },
@@ -128,7 +128,7 @@
     "team": "FLA",
     "pos": "L",
     "gp": 16,
-    "value": 89.0,
+    "value": 88.7,
     "gs60": 21.29,
     "isMe": false
    },
@@ -138,7 +138,7 @@
     "team": "DET",
     "pos": "R",
     "gp": 17,
-    "value": 88.9,
+    "value": 88.6,
     "gs60": 21.21,
     "isMe": true
    },
@@ -148,18 +148,18 @@
     "team": "TBL",
     "pos": "L",
     "gp": 15,
-    "value": 88.8,
+    "value": 88.5,
     "gs60": 21.11,
     "isMe": false
    },
    {
     "rank": 30,
-    "name": "Jake Guentzel",
-    "team": "TBL",
+    "name": "Tage Thompson",
+    "team": "BUF",
     "pos": "C",
-    "gp": 15,
-    "value": 88.6,
-    "gs60": 20.96,
+    "gp": 16,
+    "value": 88.4,
+    "gs60": 21.01,
     "isMe": false
    }
   ],
@@ -745,5 +745,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-06T05:02:40-08:00"
+ "updatedAt": "2026-11-07T05:03:31-08:00"
 }

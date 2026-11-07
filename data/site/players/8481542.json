@@ -75,7 +75,7 @@
    "onIceXgPct": 0.52,
    "onIceCorsiPct": 0.52,
    "ixgPer60": 0.062,
-   "pctl_onIceXgPct": 34.4,
+   "pctl_onIceXgPct": 40.0,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": true
   }
@@ -100,57 +100,47 @@
  },
  "score": null,
  "standIn": {
-  "value": 63.5,
+  "value": 63.3,
   "gs": 9.92,
   "gs60": 1.33,
   "gameScore": 9.92,
   "minutes": 447,
   "gp": 17,
-  "rank": 185,
-  "pool": 749,
+  "rank": 186,
+  "pool": 752,
   "percentile": 75.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 183,
+    "rank": 184,
     "name": "Jake DeBrusk",
     "team": "VAN",
     "pos": "L",
     "gp": 16,
-    "value": 63.7,
+    "value": 63.4,
     "gs60": 9.97,
     "isMe": false
    },
    {
-    "rank": 184,
+    "rank": 185,
     "name": "Jared McCann",
     "team": "SEA",
     "pos": "L",
     "gp": 11,
-    "value": 63.6,
+    "value": 63.3,
     "gs60": 9.93,
     "isMe": false
    },
    {
-    "rank": 185,
+    "rank": 186,
     "name": "Moritz Seider",
     "team": "DET",
     "pos": "D",
     "gp": 17,
-    "value": 63.5,
+    "value": 63.3,
     "gs60": 9.92,
     "isMe": true
-   },
-   {
-    "rank": 186,
-    "name": "Michael McCarron",
-    "team": "MIN",
-    "pos": "C",
-    "gp": 17,
-    "value": 63.4,
-    "gs60": 9.89,
-    "isMe": false
    },
    {
     "rank": 187,
@@ -158,8 +148,18 @@
     "team": "NJD",
     "pos": "C",
     "gp": 14,
-    "value": 63.3,
+    "value": 63.1,
     "gs60": 9.86,
+    "isMe": false
+   },
+   {
+    "rank": 188,
+    "name": "Ryan McDonagh",
+    "team": "TBL",
+    "pos": "D",
+    "gp": 15,
+    "value": 62.8,
+    "gs60": 9.76,
     "isMe": false
    }
   ],
@@ -685,5 +685,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-06T05:06:04-08:00"
+ "updatedAt": "2026-11-07T05:06:41-08:00"
 }
