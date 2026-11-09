@@ -31,10 +31,10 @@
   {
    "league": "NCAA",
    "team": "Univ. of Notre Dame",
-   "gp": 8,
+   "gp": 10,
    "g": 1,
-   "a": 1,
-   "pts": 2,
+   "a": 2,
+   "pts": 3,
    "pm": -1,
    "pim": 2,
    "gaa": null,
@@ -72,10 +72,10 @@
     {
      "league": "NCAA",
      "team": "Univ. of Notre Dame",
-     "gp": 8,
+     "gp": 10,
      "g": 1,
-     "a": 1,
-     "pts": 2,
+     "a": 2,
+     "pts": 3,
      "pm": -1,
      "pim": 2,
      "gaa": null,
@@ -90,29 +90,29 @@
   }
  ],
  "anchor": {
-  "season": "2025-2026",
-  "league": "OHL",
-  "leagueSlug": "ohl",
-  "table": "OHL",
-  "coef": 0.144,
-  "team": "Sarnia Sting",
-  "gp": 64,
-  "g": 19,
-  "a": 26,
-  "pts": 45,
-  "pgp": 0.703,
-  "lineGp": 64,
-  "nhle": 0.101,
-  "nhlePace": 8.5,
+  "season": "2026-2027",
+  "league": "NCAA",
+  "leagueSlug": "ncaa",
+  "table": "NCAA",
+  "coef": 0.194,
+  "team": "Univ. of Notre Dame",
+  "gp": 10,
+  "g": 1,
+  "a": 2,
+  "pts": 3,
+  "pgp": 0.3,
+  "lineGp": 10,
+  "nhle": 0.058,
+  "nhlePace": 4.9,
   "lines": [
-   "OHL"
+   "NCAA"
   ],
-  "feature": 0.101
+  "feature": 0.058
  },
  "league": {
-  "name": "OHL",
-  "table": "OHL",
-  "coef": 0.144,
+  "name": "NCAA",
+  "table": "NCAA",
+  "coef": 0.194,
   "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
  },
  "performance": {
@@ -132,113 +132,113 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 18,
-   "gp": 8,
-   "value": 0.25,
-   "percentile": 11.1,
-   "percentileAllAges": 23.2,
+   "gp": 10,
+   "value": 0.3,
+   "percentile": 27.8,
+   "percentileAllAges": 35.6,
    "allAgesN": 2159
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 13.2,
+  "expected": 5.5,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 65.8,
-  "pRegular": 0.24,
-  "pTopLine": 0.06,
-  "pAboveAvg": 0.14,
-  "pElite": 0.04,
-  "poolN": 1374,
+  "p90": 22.7,
+  "pRegular": 0.12,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.04,
+  "pElite": 0.02,
+  "poolN": 1362,
   "group": "F",
-  "age": 17,
+  "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.24,
+  "pCeiling": 0.12,
   "featureBand": [
-   0.087,
-   0.114
+   0.043,
+   0.076
   ],
   "examples": [
    {
-    "name": "Joel Broda",
-    "year": 2008,
-    "pick": 144,
-    "league": "WHL",
-    "feature": 0.102,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jacob Lagac\u00e9",
-    "year": 2008,
-    "pick": 134,
-    "league": "QMJHL",
-    "feature": 0.1,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Rudolfs Balcers",
-    "year": 2015,
+    "name": "Nicholas Porco",
+    "year": 2019,
     "pick": 142,
-    "league": "Norway",
-    "feature": 0.106,
-    "peak": 47.8,
-    "tier": "below average",
-    "nhlGp": 170
-   },
-   {
-    "name": "Anthony Nigro",
-    "year": 2008,
-    "pick": 155,
     "league": "OHL",
-    "feature": 0.103,
+    "feature": 0.058,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Jordan Stallard",
-    "year": 2016,
-    "pick": 127,
+    "name": "Darian Dziurzynski",
+    "year": 2011,
+    "pick": 141,
     "league": "WHL",
-    "feature": 0.102,
+    "feature": 0.058,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Tim Gettinger",
-    "year": 2016,
+    "name": "Mason Primeau",
+    "year": 2019,
     "pick": 141,
     "league": "OHL",
-    "feature": 0.094,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 16
-   },
-   {
-    "name": "Michael Pelech",
-    "year": 2009,
-    "pick": 156,
-    "league": "OHL",
-    "feature": 0.104,
+    "feature": 0.061,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Dakota Joshua",
+    "name": "Wade Megan",
+    "year": 2009,
+    "pick": 138,
+    "league": "USHS-Prep",
+    "feature": 0.055,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 15
+   },
+   {
+    "name": "Miguel Fidler",
     "year": 2014,
-    "pick": 128,
+    "pick": 143,
     "league": "USHL",
-    "feature": 0.099,
-    "peak": 56.0,
-    "tier": "above average",
-    "nhlGp": 296
+    "feature": 0.064,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Mikael Hakkarainen",
+    "year": 2018,
+    "pick": 139,
+    "league": "USHL",
+    "feature": 0.054,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matej Paulovic",
+    "year": 2013,
+    "pick": 149,
+    "league": "USHL",
+    "feature": 0.061,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jonny Brodzinski",
+    "year": 2013,
+    "pick": 148,
+    "league": "USHL",
+    "feature": 0.054,
+    "peak": 37.3,
+    "tier": "below average",
+    "nhlGp": 264
    }
   ]
  },
@@ -257,10 +257,10 @@
  },
  "blend": {
   "w": 0.5,
-  "sinceDraft": -1,
+  "sinceDraft": 0,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 13.2,
-  "expected": 10.3,
+  "cohortExpected": 5.5,
+  "expected": 6.5,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -281,11 +281,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 64,
-  "season": "2025-2026"
+  "gp": 10,
+  "season": "2026-2027"
  },
- "rank": 17,
- "score": 10.3,
+ "rank": 21,
+ "score": 6.5,
  "rankStart": 17,
  "rankStartDate": "2026-10-06"
 }

@@ -20,15 +20,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 11,
+  "gp": 12,
   "goals": 0,
   "assists": 1,
   "points": 1,
   "plusMinus": 0,
   "pim": 0,
-  "shots": 9,
+  "shots": 11,
   "shootingPct": 0.0,
-  "toiPerGame": "10:07",
+  "toiPerGame": "10:20",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -41,7 +41,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 11,
+   "gp": 12,
    "goals": 0,
    "assists": 1,
    "points": 1,
@@ -64,106 +64,106 @@
   "name": "Sheldon Dries",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480326.png",
-  "gamesPlayed": 11,
+  "gamesPlayed": 12,
   "goals": 0,
   "assists": 1,
   "points": 1,
-  "shots": 9,
+  "shots": 11,
   "shootingPct": 0.0,
-  "toiPerGame": 607.1,
-  "ixG": 1.17,
-  "goalsAboveExpected": -1.17,
-  "gameScore": 1.38,
+  "toiPerGame": 620.4,
+  "ixG": 1.28,
+  "goalsAboveExpected": -1.28,
+  "gameScore": 2.0,
   "fiveOnFive": {
-   "icetimeMinutes": 91.1,
-   "onIceXgPct": 0.48,
-   "onIceCorsiPct": 0.46,
-   "ixgPer60": 0.771,
-   "pctl_onIceXgPct": null,
-   "pctl_ixgPer60": null,
+   "icetimeMinutes": 100.5,
+   "onIceXgPct": 0.49,
+   "onIceCorsiPct": 0.48,
+   "ixgPer60": 0.728,
+   "pctl_onIceXgPct": 0.0,
+   "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
-   "value": 0.24,
-   "percentile": 44
+   "value": 0.29,
+   "percentile": 47
   },
   "Offense": {
-   "value": -1.3,
-   "percentile": 16
+   "value": -1.5,
+   "percentile": 15
   },
   "Defense": {
-   "value": 0.4,
-   "percentile": 68
+   "value": 0.6,
+   "percentile": 75
   },
   "Net": {
-   "value": -0.9,
-   "percentile": 36
+   "value": -0.8,
+   "percentile": 40
   }
  },
  "score": null,
  "standIn": {
-  "value": 37.4,
-  "gs": 2.02,
-  "gs60": 1.09,
-  "gameScore": 2.02,
-  "minutes": 111,
-  "gp": 11,
-  "rank": 464,
-  "pool": 752,
-  "percentile": 38.3,
+  "value": 39.2,
+  "gs": 2.75,
+  "gs60": 1.33,
+  "gameScore": 2.75,
+  "minutes": 124,
+  "gp": 12,
+  "rank": 434,
+  "pool": 758,
+  "percentile": 42.7,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 462,
-    "name": "Owen Tippett",
-    "team": "PHI",
+    "rank": 432,
+    "name": "Scott Sabourin",
+    "team": "TBL",
     "pos": "R",
-    "gp": 12,
-    "value": 37.6,
-    "gs60": 2.08,
+    "gp": 4,
+    "value": 39.4,
+    "gs60": 2.83,
     "isMe": false
    },
    {
-    "rank": 463,
-    "name": "Kenny Connors",
-    "team": "LAK",
-    "pos": "C",
-    "gp": 1,
-    "value": 37.5,
-    "gs60": 2.05,
+    "rank": 433,
+    "name": "Nikolas Matinpalo",
+    "team": "OTT",
+    "pos": "D",
+    "gp": 16,
+    "value": 39.4,
+    "gs60": 2.8,
     "isMe": false
    },
    {
-    "rank": 464,
+    "rank": 434,
     "name": "Sheldon Dries",
     "team": "DET",
     "pos": "C",
-    "gp": 11,
-    "value": 37.4,
-    "gs60": 2.02,
+    "gp": 12,
+    "value": 39.2,
+    "gs60": 2.75,
     "isMe": true
    },
    {
-    "rank": 465,
-    "name": "Gustav Forsling",
-    "team": "FLA",
-    "pos": "D",
-    "gp": 15,
-    "value": 37.4,
-    "gs60": 2.02,
+    "rank": 435,
+    "name": "Bobby McMann",
+    "team": "SEA",
+    "pos": "C",
+    "gp": 16,
+    "value": 39.2,
+    "gs60": 2.75,
     "isMe": false
    },
    {
-    "rank": 466,
-    "name": "Axel Sandin-Pellikka",
-    "team": "DET",
-    "pos": "D",
-    "gp": 7,
-    "value": 37.4,
-    "gs60": 2.01,
+    "rank": 436,
+    "name": "John Tavares",
+    "team": "TOR",
+    "pos": "C",
+    "gp": 9,
+    "value": 39.2,
+    "gs60": 2.73,
     "isMe": false
    }
   ],
@@ -528,12 +528,36 @@
     "moneypuck": 0.695,
     "hockeystatcards": 0.88
    }
+  },
+  {
+   "gameId": 2026020274,
+   "date": "2026-11-07",
+   "opponent": "COL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 2,
+   "pim": 0,
+   "toi": 12.8,
+   "ixg": 0.07,
+   "xgf": 0.24,
+   "xga": 0.11,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 0.73,
+   "gameScoreParts": {
+    "moneypuck": 0.62,
+    "hockeystatcards": 0.84
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.18,
-  "games": 11,
+  "average": 0.23,
+  "games": 12,
   "best": {
    "date": "2026-11-05",
    "opponent": "VGK",
@@ -547,7 +571,7 @@
   "above2": 0,
   "below0": 3
  },
- "detGames": 11,
+ "detGames": 12,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -560,5 +584,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-11-07T05:03:45-08:00"
+ "updatedAt": "2026-11-09T05:02:54-08:00"
 }

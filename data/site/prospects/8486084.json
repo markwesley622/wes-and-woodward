@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Univ. of Minnesota-Duluth",
-   "gp": 11,
+   "gp": 12,
    "g": 1,
    "a": 4,
    "pts": 5,
-   "pm": 4,
+   "pm": 3,
    "pim": 0,
    "gaa": null,
    "svp": null,
@@ -106,11 +106,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Minnesota-Duluth",
-     "gp": 11,
+     "gp": 12,
      "g": 1,
      "a": 4,
      "pts": 5,
-     "pm": 4,
+     "pm": 3,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -130,18 +130,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Univ. of Minnesota-Duluth",
-  "gp": 11,
+  "gp": 12,
   "g": 1,
   "a": 4,
   "pts": 5,
-  "pgp": 0.455,
-  "lineGp": 11,
-  "nhle": 0.088,
-  "nhlePace": 7.4,
+  "pgp": 0.417,
+  "lineGp": 12,
+  "nhle": 0.081,
+  "nhlePace": 6.8,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.088
+  "feature": 0.081
  },
  "league": {
   "name": "NCAA",
@@ -156,34 +156,54 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 18,
-   "gp": 11,
-   "value": 0.4545,
+   "gp": 12,
+   "value": 0.4167,
    "percentile": 38.9,
-   "percentileAllAges": 48.1,
+   "percentileAllAges": 47.9,
    "allAgesN": 2159
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 12.9,
+  "expected": 12.0,
   "median": 0.0,
-  "p75": 15.8,
+  "p75": 15.0,
   "p90": 56.9,
-  "pRegular": 0.32,
+  "pRegular": 0.3,
   "pTopLine": 0.04,
-  "pAboveAvg": 0.12,
-  "pElite": 0.04,
+  "pAboveAvg": 0.1,
+  "pElite": 0.02,
   "poolN": 1362,
   "group": "F",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.32,
+  "pCeiling": 0.3,
   "featureBand": [
    0.059,
-   0.116
+   0.11
   ],
   "examples": [
+   {
+    "name": "V\u00e1clav Karab\u00e1\u010dek",
+    "year": 2014,
+    "pick": 49,
+    "league": "QMJHL",
+    "feature": 0.077,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Alexander Ruuttu",
+    "year": 2011,
+    "pick": 51,
+    "league": "Mestis",
+    "feature": 0.079,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
    {
     "name": "Kirill Marchenko",
     "year": 2018,
@@ -193,6 +213,16 @@
     "peak": 90.1,
     "tier": "elite",
     "nhlGp": 295
+   },
+   {
+    "name": "Noah Rod",
+    "year": 2014,
+    "pick": 53,
+    "league": "NLA",
+    "feature": 0.078,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    },
    {
     "name": "Alexander Volkov",
@@ -205,46 +235,6 @@
     "nhlGp": 46
    },
    {
-    "name": "Drew Shore",
-    "year": 2009,
-    "pick": 44,
-    "league": "NCAA",
-    "feature": 0.09,
-    "peak": 33.9,
-    "tier": "below average",
-    "nhlGp": 98
-   },
-   {
-    "name": "Givani Smith",
-    "year": 2016,
-    "pick": 46,
-    "league": "OHL",
-    "feature": 0.095,
-    "peak": 4.5,
-    "tier": "replacement level",
-    "nhlGp": 168
-   },
-   {
-    "name": "Phil Lane",
-    "year": 2010,
-    "pick": 52,
-    "league": "OHL",
-    "feature": 0.091,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Dmitrij Jaskin",
-    "year": 2011,
-    "pick": 41,
-    "league": "Czechia",
-    "feature": 0.087,
-    "peak": 31.6,
-    "tier": "below average",
-    "nhlGp": 315
-   },
-   {
     "name": "Eetu Luostarinen",
     "year": 2017,
     "pick": 42,
@@ -255,14 +245,24 @@
     "nhlGp": 450
    },
    {
-    "name": "Graham Knott",
-    "year": 2015,
-    "pick": 54,
-    "league": "OHL",
-    "feature": 0.089,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "name": "Connor Brickley",
+    "year": 2010,
+    "pick": 50,
+    "league": "NCAA",
+    "feature": 0.072,
+    "peak": 21.8,
+    "tier": "replacement level",
+    "nhlGp": 81
+   },
+   {
+    "name": "Drew Shore",
+    "year": 2009,
+    "pick": 44,
+    "league": "NCAA",
+    "feature": 0.09,
+    "peak": 33.9,
+    "tier": "below average",
+    "nhlGp": 98
    }
   ]
  },
@@ -283,8 +283,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 12.9,
-  "expected": 18.3,
+  "cohortExpected": 12.0,
+  "expected": 17.9,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -305,11 +305,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 11,
+  "gp": 12,
   "season": "2026-2027"
  },
- "rank": 10,
- "score": 18.3,
+ "rank": 11,
+ "score": 17.9,
  "rankStart": 11,
  "rankStartDate": "2026-10-06"
 }

@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Colorado College",
-   "gp": 9,
+   "gp": 10,
    "g": 0,
    "a": 5,
    "pts": 5,
-   "pm": 8,
+   "pm": 7,
    "pim": 4,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Colorado College",
-     "gp": 9,
+     "gp": 10,
      "g": 0,
      "a": 5,
      "pts": 5,
-     "pm": 8,
+     "pm": 7,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -134,24 +134,24 @@
   }
  ],
  "anchor": {
-  "season": "2025-2026",
+  "season": "2026-2027",
   "league": "NCAA",
   "leagueSlug": "ncaa",
   "table": "NCAA",
   "coef": 0.194,
   "team": "Colorado College",
-  "gp": 36,
-  "g": 2,
-  "a": 12,
-  "pts": 14,
-  "pgp": 0.389,
-  "lineGp": 36,
-  "nhle": 0.075,
-  "nhlePace": 6.3,
+  "gp": 10,
+  "g": 0,
+  "a": 5,
+  "pts": 5,
+  "pgp": 0.5,
+  "lineGp": 10,
+  "nhle": 0.097,
+  "nhlePace": 8.1,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.075
+  "feature": 0.097
  },
  "league": {
   "name": "NCAA",
@@ -176,113 +176,113 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 84,
-   "gp": 9,
-   "value": 0.5556,
-   "percentile": 79.8,
-   "percentileAllAges": 79.5,
+   "gp": 10,
+   "value": 0.5,
+   "percentile": 65.5,
+   "percentileAllAges": 68.9,
    "allAgesN": 1198
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 3.2,
+  "expected": 9.0,
   "median": 0.0,
-  "p75": 0.0,
-  "p90": 0.0,
-  "pRegular": 0.08,
+  "p75": 4.0,
+  "p90": 43.5,
+  "pRegular": 0.26,
   "pTopLine": 0.0,
   "pAboveAvg": 0.04,
   "pElite": 0.0,
-  "poolN": 756,
+  "poolN": 694,
   "group": "D",
-  "age": 20,
-  "pickWeight": 0.5,
+  "age": 21,
+  "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.08,
+  "pCeiling": 0.26,
   "featureBand": [
-   0.056,
-   0.092
+   0.091,
+   0.104
   ],
   "examples": [
    {
-    "name": "Croix Evingson",
-    "year": 2017,
-    "pick": 211,
-    "league": "NCAA",
-    "feature": 0.073,
+    "name": "Taylor Doherty",
+    "year": 2009,
+    "pick": 57,
+    "league": "AHL",
+    "feature": 0.097,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Jake Ryczek",
-    "year": 2016,
-    "pick": 203,
-    "league": "QMJHL",
-    "feature": 0.073,
+    "name": "Fredrik Claesson",
+    "year": 2011,
+    "pick": 126,
+    "league": "AHL",
+    "feature": 0.097,
+    "peak": 4.0,
+    "tier": "replacement level",
+    "nhlGp": 170
+   },
+   {
+    "name": "Peter Ceresnak",
+    "year": 2011,
+    "pick": 172,
+    "league": "Czechia",
+    "feature": 0.097,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Petter Hansson",
+    "name": "Niko Mikkola",
     "year": 2015,
-    "pick": 202,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.073,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Ville R\u00e4s\u00e4nen",
-    "year": 2017,
-    "pick": 197,
-    "league": "Mestis",
-    "feature": 0.076,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Matt Hellickson",
-    "year": 2017,
-    "pick": 214,
-    "league": "NCAA",
-    "feature": 0.078,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Santeri Airola",
-    "year": 2019,
-    "pick": 211,
+    "pick": 127,
     "league": "Liiga",
-    "feature": 0.071,
+    "feature": 0.097,
+    "peak": 49.5,
+    "tier": "below average",
+    "nhlGp": 399
+   },
+   {
+    "name": "Tyler Tucker",
+    "year": 2018,
+    "pick": 200,
+    "league": "AHL",
+    "feature": 0.097,
+    "peak": 38.1,
+    "tier": "below average",
+    "nhlGp": 159
+   },
+   {
+    "name": "Ludwig Bystr\u00f6m",
+    "year": 2012,
+    "pick": 43,
+    "league": "AHL",
+    "feature": 0.096,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Daniel Bukac",
-    "year": 2017,
-    "pick": 204,
-    "league": "Czechia2",
-    "feature": 0.071,
+    "name": "Mark Friedman",
+    "year": 2014,
+    "pick": 86,
+    "league": "AHL",
+    "feature": 0.096,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
+    "nhlGp": 93
    },
    {
-    "name": "Jacob Friend",
+    "name": "Cam Dineen",
     "year": 2016,
-    "pick": 202,
-    "league": "OHL",
-    "feature": 0.071,
+    "pick": 68,
+    "league": "AHL",
+    "feature": 0.096,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
+    "nhlGp": 38
    }
   ]
  },
@@ -300,11 +300,11 @@
   "group": "D"
  },
  "blend": {
-  "w": 0.25,
-  "sinceDraft": 1,
+  "w": 0.0,
+  "sinceDraft": 2,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 3.2,
-  "expected": 4.2,
+  "cohortExpected": 9.0,
+  "expected": 9.0,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -325,11 +325,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 36,
-  "season": "2025-2026"
+  "gp": 10,
+  "season": "2026-2027"
  },
- "rank": 26,
- "score": 4.2,
+ "rank": 18,
+ "score": 9.0,
  "rankStart": 28,
  "rankStartDate": "2026-10-06"
 }

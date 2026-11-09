@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 10,
+  "gp": 11,
   "goals": 2,
   "assists": 4,
   "points": 6,
   "plusMinus": -4,
   "pim": 2,
-  "shots": 14,
-  "shootingPct": 0.142857,
-  "toiPerGame": "15:12",
+  "shots": 16,
+  "shootingPct": 0.125,
+  "toiPerGame": "15:17",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 10,
+   "gp": 11,
    "goals": 2,
    "assists": 4,
    "points": 6,
@@ -60,23 +60,23 @@
   "name": "J.T. Compher",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477456.png",
-  "gamesPlayed": 10,
+  "gamesPlayed": 11,
   "goals": 2,
   "assists": 4,
   "points": 6,
-  "shots": 14,
-  "shootingPct": 0.142857,
-  "toiPerGame": 911.6,
-  "ixG": 1.18,
-  "goalsAboveExpected": 0.82,
-  "gameScore": 4.59,
+  "shots": 16,
+  "shootingPct": 0.125,
+  "toiPerGame": 917.5,
+  "ixG": 1.47,
+  "goalsAboveExpected": 0.53,
+  "gameScore": 4.92,
   "fiveOnFive": {
-   "icetimeMinutes": 125.0,
-   "onIceXgPct": 0.55,
-   "onIceCorsiPct": 0.49,
-   "ixgPer60": 0.451,
-   "pctl_onIceXgPct": null,
-   "pctl_ixgPer60": null,
+   "icetimeMinutes": 136.8,
+   "onIceXgPct": 0.56,
+   "onIceCorsiPct": 0.5,
+   "ixgPer60": 0.539,
+   "pctl_onIceXgPct": 0.0,
+   "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
  },
@@ -86,50 +86,50 @@
    "percentile": 51
   },
   "Offense": {
-   "value": -0.1,
-   "percentile": 61
+   "value": -0.2,
+   "percentile": 58
   },
   "Defense": {
-   "value": -0.4,
-   "percentile": 36
+   "value": -0.3,
+   "percentile": 37
   },
   "Net": {
-   "value": -0.4,
-   "percentile": 48
+   "value": -0.5,
+   "percentile": 47
   }
  },
  "score": null,
  "standIn": {
-  "value": 44.0,
-  "gs": 4.06,
-  "gs60": 1.6,
-  "gameScore": 4.06,
-  "minutes": 152,
-  "gp": 10,
+  "value": 44.2,
+  "gs": 4.38,
+  "gs60": 1.56,
+  "gameScore": 4.38,
+  "minutes": 168,
+  "gp": 11,
   "rank": 375,
-  "pool": 752,
-  "percentile": 50.1,
+  "pool": 758,
+  "percentile": 50.5,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
     "rank": 373,
-    "name": "Zayne Parekh",
-    "team": "CGY",
-    "pos": "D",
-    "gp": 17,
-    "value": 44.1,
-    "gs60": 4.08,
+    "name": "Tim Washe",
+    "team": "ANA",
+    "pos": "C",
+    "gp": 18,
+    "value": 44.3,
+    "gs60": 4.42,
     "isMe": false
    },
    {
     "rank": 374,
-    "name": "Kirby Dach",
+    "name": "Adam Engstrom",
     "team": "MTL",
-    "pos": "C",
-    "gp": 14,
-    "value": 44.1,
-    "gs60": 4.08,
+    "pos": "D",
+    "gp": 11,
+    "value": 44.3,
+    "gs60": 4.4,
     "isMe": false
    },
    {
@@ -137,29 +137,29 @@
     "name": "J.T. Compher",
     "team": "DET",
     "pos": "L",
-    "gp": 10,
-    "value": 44.0,
-    "gs60": 4.06,
+    "gp": 11,
+    "value": 44.2,
+    "gs60": 4.38,
     "isMe": true
    },
    {
     "rank": 376,
-    "name": "Kyle Palmieri",
-    "team": "NYI",
+    "name": "Marco Rossi",
+    "team": "VAN",
     "pos": "C",
-    "gp": 15,
-    "value": 44.0,
-    "gs60": 4.05,
+    "gp": 17,
+    "value": 44.2,
+    "gs60": 4.37,
     "isMe": false
    },
    {
     "rank": 377,
-    "name": "Christian Dvorak",
-    "team": "PHI",
-    "pos": "C",
-    "gp": 18,
-    "value": 43.9,
-    "gs60": 4.04,
+    "name": "Adam Jiricek",
+    "team": "STL",
+    "pos": "D",
+    "gp": 17,
+    "value": 44.1,
+    "gs60": 4.34,
     "isMe": false
    }
   ],
@@ -560,12 +560,36 @@
     "moneypuck": -0.46,
     "hockeystatcards": -1.13
    }
+  },
+  {
+   "gameId": 2026020274,
+   "date": "2026-11-07",
+   "opponent": "COL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 2,
+   "pim": 0,
+   "toi": 16.3,
+   "ixg": 0.32,
+   "xgf": 0.8,
+   "xga": 0.58,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": 0.32,
+   "gameScoreParts": {
+    "moneypuck": 0.33,
+    "hockeystatcards": 0.3
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.41,
-  "games": 10,
+  "average": 0.4,
+  "games": 11,
   "best": {
    "date": "2026-11-03",
    "opponent": "TBL",
@@ -579,7 +603,7 @@
   "above2": 1,
   "below0": 3
  },
- "detGames": 10,
+ "detGames": 11,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -592,5 +616,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-07T05:02:57-08:00"
+ "updatedAt": "2026-11-09T05:02:02-08:00"
 }

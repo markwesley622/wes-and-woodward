@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 17,
+  "gp": 18,
   "goals": 0,
   "assists": 10,
   "points": 10,
-  "plusMinus": -3,
-  "pim": 6,
+  "plusMinus": -4,
+  "pim": 15,
   "shots": 32,
   "shootingPct": 0.0,
-  "toiPerGame": "26:17",
+  "toiPerGame": "25:54",
   "ppPoints": 4,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 17,
+   "gp": 18,
    "goals": 0,
    "assists": 10,
    "points": 10,
-   "plusMinus": -3,
-   "pim": 6
+   "plusMinus": -4,
+   "pim": 15
   }
  ],
  "moneypuck": {
@@ -60,106 +60,106 @@
   "name": "Moritz Seider",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481542.png",
-  "gamesPlayed": 17,
+  "gamesPlayed": 18,
   "goals": 0,
   "assists": 10,
   "points": 10,
   "shots": 32,
   "shootingPct": 0.0,
-  "toiPerGame": 1576.8,
+  "toiPerGame": 1553.9,
   "ixG": 1.57,
   "goalsAboveExpected": -1.57,
-  "gameScore": 11.85,
+  "gameScore": 11.8,
   "fiveOnFive": {
-   "icetimeMinutes": 318.0,
+   "icetimeMinutes": 332.5,
    "onIceXgPct": 0.52,
    "onIceCorsiPct": 0.52,
-   "ixgPer60": 0.062,
-   "pctl_onIceXgPct": 40.0,
+   "ixgPer60": 0.06,
+   "pctl_onIceXgPct": 50.8,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": true
   }
  },
  "hsc": {
   "Game score": {
-   "value": 0.47,
-   "percentile": 59
+   "value": 0.4,
+   "percentile": 54
   },
   "Offense": {
    "value": -1.2,
-   "percentile": 18
+   "percentile": 22
   },
   "Defense": {
-   "value": 2.1,
-   "percentile": 97
+   "value": 1.6,
+   "percentile": 92
   },
   "Net": {
-   "value": 0.9,
-   "percentile": 74
+   "value": 0.5,
+   "percentile": 68
   }
  },
  "score": null,
  "standIn": {
-  "value": 63.3,
-  "gs": 9.92,
-  "gs60": 1.33,
-  "gameScore": 9.92,
-  "minutes": 447,
-  "gp": 17,
-  "rank": 186,
-  "pool": 752,
-  "percentile": 75.3,
+  "value": 60.1,
+  "gs": 9.46,
+  "gs60": 1.22,
+  "gameScore": 9.46,
+  "minutes": 466,
+  "gp": 18,
+  "rank": 211,
+  "pool": 758,
+  "percentile": 72.0,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 184,
+    "rank": 209,
     "name": "Jake DeBrusk",
     "team": "VAN",
     "pos": "L",
-    "gp": 16,
-    "value": 63.4,
-    "gs60": 9.97,
+    "gp": 17,
+    "value": 60.2,
+    "gs60": 9.5,
     "isMe": false
    },
    {
-    "rank": 185,
-    "name": "Jared McCann",
-    "team": "SEA",
-    "pos": "L",
-    "gp": 11,
-    "value": 63.3,
-    "gs60": 9.93,
+    "rank": 210,
+    "name": "Oliver Bjorkstrand",
+    "team": "NYR",
+    "pos": "R",
+    "gp": 18,
+    "value": 60.1,
+    "gs60": 9.47,
     "isMe": false
    },
    {
-    "rank": 186,
+    "rank": 211,
     "name": "Moritz Seider",
     "team": "DET",
     "pos": "D",
-    "gp": 17,
-    "value": 63.3,
-    "gs60": 9.92,
+    "gp": 18,
+    "value": 60.1,
+    "gs60": 9.46,
     "isMe": true
    },
    {
-    "rank": 187,
-    "name": "Jesper Boqvist",
-    "team": "NJD",
-    "pos": "C",
-    "gp": 14,
-    "value": 63.1,
-    "gs60": 9.86,
+    "rank": 212,
+    "name": "Quinton Byfield",
+    "team": "LAK",
+    "pos": "R",
+    "gp": 13,
+    "value": 60.1,
+    "gs60": 9.46,
     "isMe": false
    },
    {
-    "rank": 188,
-    "name": "Ryan McDonagh",
-    "team": "TBL",
-    "pos": "D",
-    "gp": 15,
-    "value": 62.8,
-    "gs60": 9.76,
+    "rank": 213,
+    "name": "Connor Dewar",
+    "team": "PIT",
+    "pos": "C",
+    "gp": 18,
+    "value": 60.1,
+    "gs60": 9.45,
     "isMe": false
    }
   ],
@@ -653,12 +653,36 @@
     "moneypuck": 0.05,
     "hockeystatcards": -1.22
    }
+  },
+  {
+   "gameId": 2026020274,
+   "date": "2026-11-07",
+   "opponent": "COL",
+   "home": false,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "shots": 0,
+   "pim": 9,
+   "toi": 19.4,
+   "ixg": 0.0,
+   "xgf": 1.0,
+   "xga": 1.16,
+   "gf": 0.0,
+   "ga": 1.0,
+   "blocks": 4.0,
+   "gameScore": -0.46,
+   "gameScoreParts": {
+    "moneypuck": -0.05,
+    "hockeystatcards": -0.86
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.58,
-  "games": 17,
+  "average": 0.53,
+  "games": 18,
   "best": {
    "date": "2026-10-09",
    "opponent": "SEA",
@@ -670,9 +694,9 @@
    "value": -0.96
   },
   "above2": 2,
-  "below0": 7
+  "below0": 8
  },
- "detGames": 17,
+ "detGames": 18,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -685,5 +709,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-07T05:06:41-08:00"
+ "updatedAt": "2026-11-09T05:05:57-08:00"
 }

@@ -31,12 +31,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 17,
+   "gp": 18,
    "g": 2,
    "a": 3,
    "pts": 5,
    "pm": 2,
-   "pim": 12,
+   "pim": 14,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -89,12 +89,12 @@
     {
      "league": "NHL",
      "team": "Detroit Red Wings",
-     "gp": 17,
+     "gp": 18,
      "g": 2,
      "a": 3,
      "pts": 5,
      "pm": 2,
-     "pim": 12,
+     "pim": 14,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -490,10 +490,10 @@
   "sinceDraft": 3,
   "pedigreeExpected": 12.3,
   "cohortExpected": 25.4,
-  "expected": 27.7,
+  "expected": 28.4,
   "tier": "below average",
-  "nhlW": 0.46,
-  "nhlExpected": 30.5,
+  "nhlW": 0.47,
+  "nhlExpected": 31.8,
   "beforeNhl": 25.4
  },
  "trajectory": {
@@ -512,35 +512,35 @@
   "delta": 0.106
  },
  "nhlSample": {
-  "gp": 17,
+  "gp": 18,
   "pts": 5,
   "seasons": [
    20262027
   ],
   "thisSeason": {
-   "gp": 17,
+   "gp": 18,
    "pts": 5,
-   "toi": "13:33",
+   "toi": "13:31",
    "savePct": null
   }
  },
  "nhlUsage": {
   "n": 50,
-  "expected": 30.5,
-  "median": 31.1,
-  "p75": 56.2,
-  "p90": 71.1,
+  "expected": 31.8,
+  "median": 31.3,
+  "p75": 58.3,
+  "p90": 72.5,
   "pRegular": 0.66,
-  "pTopLine": 0.06,
-  "pAboveAvg": 0.3,
+  "pTopLine": 0.08,
+  "pAboveAvg": 0.32,
   "pElite": 0.0,
   "poolN": 258,
   "group": "D",
   "age": 22,
-  "gp": 17,
-  "toi": 813,
-  "ppg": 0.294,
-  "ppgShrunk": 0.239,
+  "gp": 18,
+  "toi": 811,
+  "ppg": 0.278,
+  "ppgShrunk": 0.233,
   "toiBand": [
    725,
    954
@@ -591,17 +591,6 @@
     "nhlGp": 63
    },
    {
-    "name": "Adam Clendening",
-    "season": "2015-2016",
-    "age": 22,
-    "gp": 29,
-    "toi": 888,
-    "ppg": 0.24,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 90
-   },
-   {
     "name": "Lucas Carlsson",
     "season": "2019-2020",
     "age": 22,
@@ -624,27 +613,38 @@
     "nhlGp": 41
    },
    {
-    "name": "Jake Bean",
-    "season": "2020-2021",
+    "name": "Adam Clendening",
+    "season": "2015-2016",
     "age": 22,
-    "gp": 42,
-    "toi": 872,
-    "ppg": 0.29,
-    "peak": 61.5,
-    "tier": "above average",
-    "nhlGp": 277
+    "gp": 29,
+    "toi": 888,
+    "ppg": 0.24,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 90
+   },
+   {
+    "name": "Gustav Olofsson",
+    "season": "2016-2017",
+    "age": 21,
+    "gp": 13,
+    "toi": 809,
+    "ppg": 0.23,
+    "peak": 24.5,
+    "tier": "replacement level",
+    "nhlGp": 63
    }
   ],
-  "w": 0.46,
+  "w": 0.47,
   "before": 25.4,
-  "after": 27.7
+  "after": 28.4
  },
  "availability": {
   "gp": 42,
   "season": "2025-2026"
  },
  "rank": 8,
- "score": 27.7,
+ "score": 28.4,
  "rankStart": 10,
  "rankStartDate": "2026-10-06"
 }

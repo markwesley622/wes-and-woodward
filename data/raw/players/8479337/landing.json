@@ -55,7 +55,7 @@
    "subSeason": {
     "assists": 9,
     "gameWinningGoals": 0,
-    "gamesPlayed": 17,
+    "gamesPlayed": 18,
     "goals": 7,
     "otGoals": 0,
     "pim": 10,
@@ -63,15 +63,15 @@
     "points": 16,
     "powerPlayGoals": 2,
     "powerPlayPoints": 5,
-    "shootingPctg": 0.109375,
+    "shootingPctg": 0.106061,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 64
+    "shots": 66
    },
    "career": {
     "assists": 310,
     "gameWinningGoals": 38,
-    "gamesPlayed": 713,
+    "gamesPlayed": 714,
     "goals": 301,
     "otGoals": 14,
     "pim": 204,
@@ -79,10 +79,10 @@
     "points": 611,
     "powerPlayGoals": 104,
     "powerPlayPoints": 204,
-    "shootingPctg": 0.1414,
+    "shootingPctg": 0.1413,
     "shorthandedGoals": 1,
     "shorthandedPoints": 1,
-    "shots": 2128
+    "shots": 2130
    }
   }
  },
@@ -92,7 +92,7 @@
    "avgToi": "18:15",
    "faceoffWinningPctg": 0.4128,
    "gameWinningGoals": 38,
-   "gamesPlayed": 713,
+   "gamesPlayed": 714,
    "goals": 301,
    "otGoals": 14,
    "pim": 204,
@@ -100,10 +100,10 @@
    "points": 611,
    "powerPlayGoals": 104,
    "powerPlayPoints": 204,
-   "shootingPctg": 0.1414,
+   "shootingPctg": 0.1413,
    "shorthandedGoals": 1,
    "shorthandedPoints": 1,
-   "shots": 2128
+   "shots": 2130
   },
   "playoffs": {
    "assists": 4,
@@ -128,6 +128,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-11-07",
+   "gameId": 2026020274,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "R",
+   "opponentAbbrev": "COL",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 20,
+   "shorthandedGoals": 0,
+   "shots": 2,
+   "teamAbbrev": "DET",
+   "toi": "15:59"
+  },
   {
    "assists": 0,
    "gameDate": "2026-11-05",
@@ -199,24 +217,6 @@
    "shots": 3,
    "teamAbbrev": "DET",
    "toi": "18:50"
-  },
-  {
-   "assists": 2,
-   "gameDate": "2026-10-29",
-   "gameId": 2026020203,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "H",
-   "opponentAbbrev": "CHI",
-   "pim": 0,
-   "plusMinus": 3,
-   "points": 2,
-   "powerPlayGoals": 0,
-   "shifts": 21,
-   "shorthandedGoals": 0,
-   "shots": 4,
-   "teamAbbrev": "DET",
-   "toi": "18:00"
   }
  ],
  "seasonTotals": [
@@ -833,11 +833,11 @@
   },
   {
    "assists": 9,
-   "avgToi": "19:59",
+   "avgToi": "19:46",
    "faceoffWinningPctg": 0.285714,
    "gameTypeId": 2,
    "gameWinningGoals": 0,
-   "gamesPlayed": 17,
+   "gamesPlayed": 18,
    "goals": 7,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
@@ -848,10 +848,10 @@
    "powerPlayPoints": 5,
    "season": 20262027,
    "sequence": 1,
-   "shootingPctg": 0.109375,
+   "shootingPctg": 0.106061,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 64,
+   "shots": 66,
    "teamCommonName": {
     "default": "Red Wings"
    },
@@ -935,16 +935,6 @@
     "default": "Andrew"
    },
    "playerSlug": "andrew-copp-8477429"
-  },
-  {
-   "playerId": 8484160,
-   "lastName": {
-    "default": "Danielson"
-   },
-   "firstName": {
-    "default": "Nate"
-   },
-   "playerSlug": "nate-danielson-8484160"
   },
   {
    "playerId": 8479337,
@@ -1047,16 +1037,6 @@
    "playerSlug": "keegan-kolesar-8478434"
   },
   {
-   "playerId": 8481077,
-   "lastName": {
-    "default": "Leonard"
-   },
-   "firstName": {
-    "default": "John"
-   },
-   "playerSlug": "john-leonard-8481077"
-  },
-  {
    "playerId": 8482802,
    "lastName": {
     "default": "Mazur"
@@ -1065,16 +1045,6 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
-  },
-  {
-   "playerId": 8485545,
-   "lastName": {
-    "default": "Postava"
-   },
-   "firstName": {
-    "default": "Michal"
-   },
-   "playerSlug": "michal-postava-8485545"
   },
   {
    "playerId": 8479992,

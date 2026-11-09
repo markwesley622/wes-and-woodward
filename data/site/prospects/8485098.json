@@ -31,7 +31,7 @@
   {
    "league": "NCAA",
    "team": "Miami Univ. (Ohio)",
-   "gp": 9,
+   "gp": 10,
    "g": 1,
    "a": 1,
    "pts": 2,
@@ -72,7 +72,7 @@
     {
      "league": "NCAA",
      "team": "Miami Univ. (Ohio)",
-     "gp": 9,
+     "gp": 10,
      "g": 1,
      "a": 1,
      "pts": 2,
@@ -134,24 +134,24 @@
   }
  ],
  "anchor": {
-  "season": "2025-2026",
+  "season": "2026-2027",
   "league": "NCAA",
   "leagueSlug": "ncaa",
   "table": "NCAA",
   "coef": 0.194,
-  "team": "Michigan State Univ.",
-  "gp": 14,
-  "g": 0,
+  "team": "Miami Univ. (Ohio)",
+  "gp": 10,
+  "g": 1,
   "a": 1,
-  "pts": 1,
-  "pgp": 0.071,
-  "lineGp": 14,
-  "nhle": 0.014,
-  "nhlePace": 1.2,
+  "pts": 2,
+  "pgp": 0.2,
+  "lineGp": 10,
+  "nhle": 0.039,
+  "nhlePace": 3.3,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.014
+  "feature": 0.039
  },
  "league": {
   "name": "NCAA",
@@ -176,110 +176,110 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 84,
-   "gp": 9,
-   "value": 0.2222,
-   "percentile": 23.8,
-   "percentileAllAges": 23.2,
+   "gp": 10,
+   "value": 0.2,
+   "percentile": 20.2,
+   "percentileAllAges": 21.4,
    "allAgesN": 2159
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 0.1,
+  "expected": 2.2,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
-  "pRegular": 0.02,
-  "pTopLine": 0.0,
-  "pAboveAvg": 0.0,
-  "pElite": 0.0,
-  "poolN": 1305,
+  "pRegular": 0.04,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.02,
+  "pElite": 0.02,
+  "poolN": 1236,
   "group": "F",
-  "age": 19,
-  "pickWeight": 0.5,
+  "age": 20,
+  "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.02,
+  "pCeiling": 0.04,
   "featureBand": [
-   0.0,
-   0.055
+   0.029,
+   0.049
   ],
   "examples": [
    {
-    "name": "Rasmus Bodin",
-    "year": 2012,
-    "pick": 200,
-    "league": "J20 SuperElit",
-    "feature": 0.013,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jared Fiegl",
-    "year": 2014,
-    "pick": 191,
-    "league": "NCAA",
-    "feature": 0.013,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Maxwell Tardy",
-    "year": 2009,
-    "pick": 202,
-    "league": "NCAA",
-    "feature": 0.022,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Petr Placek",
-    "year": 2011,
+    "name": "Liam Dunda",
+    "year": 2015,
     "pick": 176,
-    "league": "NCAA",
-    "feature": 0.013,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Riley Hughes",
-    "year": 2018,
-    "pick": 216,
-    "league": "NCAA",
-    "feature": 0.023,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Ashton Bernard",
-    "year": 2009,
-    "pick": 174,
     "league": "QMJHL",
-    "feature": 0.019,
+    "feature": 0.039,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Hunter Fejes",
-    "year": 2012,
-    "pick": 178,
-    "league": "NCAA",
-    "feature": 0.007,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Christian Isackson",
+    "name": "Tanner Lane",
     "year": 2010,
-    "pick": 203,
+    "pick": 160,
     "league": "NCAA",
-    "feature": 0.0,
+    "feature": 0.038,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Christopher Crane",
+    "year": 2010,
+    "pick": 200,
+    "league": "NCAA",
+    "feature": 0.038,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Mitchell Dempsey",
+    "year": 2013,
+    "pick": 210,
+    "league": "MJAHL",
+    "feature": 0.038,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Yegor Spiridonov",
+    "year": 2019,
+    "pick": 108,
+    "league": "VHL",
+    "feature": 0.038,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Patrick Johnson",
+    "year": 2008,
+    "pick": 206,
+    "league": "NCAA",
+    "feature": 0.037,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Dan DeLisle",
+    "year": 2009,
+    "pick": 89,
+    "league": "NCAA",
+    "feature": 0.041,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Gregg Sutch",
+    "year": 2010,
+    "pick": 143,
+    "league": "OHL",
+    "feature": 0.041,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -300,11 +300,11 @@
   "group": "F"
  },
  "blend": {
-  "w": 0.25,
-  "sinceDraft": 1,
+  "w": 0.0,
+  "sinceDraft": 2,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 0.1,
-  "expected": 1.9,
+  "cohortExpected": 2.2,
+  "expected": 2.2,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -325,11 +325,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 14,
-  "season": "2025-2026"
+  "gp": 10,
+  "season": "2026-2027"
  },
  "rank": 28,
- "score": 1.9,
+ "score": 2.2,
  "rankStart": 30,
  "rankStartDate": "2026-10-06"
 }

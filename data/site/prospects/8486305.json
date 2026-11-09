@@ -31,11 +31,11 @@
   {
    "league": "OHL",
    "team": "Erie Otters",
-   "gp": 15,
+   "gp": 16,
    "g": 7,
    "a": 2,
    "pts": 9,
-   "pm": 0,
+   "pm": -1,
    "pim": 2,
    "gaa": null,
    "svp": null,
@@ -123,11 +123,11 @@
     {
      "league": "OHL",
      "team": "Erie Otters",
-     "gp": 15,
+     "gp": 16,
      "g": 7,
      "a": 2,
      "pts": 9,
-     "pm": 0,
+     "pm": -1,
      "pim": 2,
      "gaa": null,
      "svp": null,
@@ -164,18 +164,18 @@
   "table": "OHL",
   "coef": 0.144,
   "team": "Erie Otters",
-  "gp": 15,
+  "gp": 16,
   "g": 7,
   "a": 2,
   "pts": 9,
-  "pgp": 0.6,
-  "lineGp": 15,
-  "nhle": 0.086,
-  "nhlePace": 7.2,
+  "pgp": 0.562,
+  "lineGp": 16,
+  "nhle": 0.081,
+  "nhlePace": 6.8,
   "lines": [
    "OHL"
   ],
-  "feature": 0.086
+  "feature": 0.081
  },
  "league": {
   "name": "OHL",
@@ -190,20 +190,20 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 86,
-   "gp": 15,
-   "value": 0.6,
+   "gp": 16,
+   "value": 0.5625,
    "percentile": 59.3,
-   "percentileAllAges": 61.5,
+   "percentileAllAges": 60.5,
    "allAgesN": 1875
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 6.7,
+  "expected": 5.2,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 31.0,
-  "pRegular": 0.18,
+  "p90": 26.5,
+  "pRegular": 0.14,
   "pTopLine": 0.02,
   "pAboveAvg": 0.04,
   "pElite": 0.0,
@@ -212,42 +212,12 @@
   "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.18,
+  "pCeiling": 0.14,
   "featureBand": [
-   0.074,
-   0.095
+   0.069,
+   0.093
   ],
   "examples": [
-   {
-    "name": "Tommy Wingels",
-    "year": 2008,
-    "pick": 177,
-    "league": "USHL",
-    "feature": 0.085,
-    "peak": 58.2,
-    "tier": "above average",
-    "nhlGp": 448
-   },
-   {
-    "name": "C\u00e9drick Henley",
-    "year": 2010,
-    "pick": 173,
-    "league": "QMJHL",
-    "feature": 0.087,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Mitchell Hoelscher",
-    "year": 2018,
-    "pick": 172,
-    "league": "OHL",
-    "feature": 0.085,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
    {
     "name": "Josh Archibald",
     "year": 2011,
@@ -259,44 +229,74 @@
     "nhlGp": 305
    },
    {
-    "name": "Victor Olofsson",
-    "year": 2014,
-    "pick": 181,
-    "league": "J20 SuperElit",
-    "feature": 0.088,
-    "peak": 83.9,
-    "tier": "top-line",
-    "nhlGp": 451
+    "name": "Gabriel Fontaine",
+    "year": 2016,
+    "pick": 171,
+    "league": "QMJHL",
+    "feature": 0.081,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    },
    {
-    "name": "Dustin Walsh",
+    "name": "Eric Wellwood",
     "year": 2009,
+    "pick": 172,
+    "league": "OHL",
+    "feature": 0.08,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 31
+   },
+   {
+    "name": "Nikita Nesterenko",
+    "year": 2019,
+    "pick": 172,
+    "league": "BCHL",
+    "feature": 0.08,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 63
+   },
+   {
+    "name": "Ben Smith",
+    "year": 2008,
     "pick": 169,
     "league": "NCAA",
-    "feature": 0.088,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "feature": 0.083,
+    "peak": 38.0,
+    "tier": "below average",
+    "nhlGp": 237
    },
    {
-    "name": "John Leonard",
-    "year": 2018,
-    "pick": 182,
-    "league": "USHL",
-    "feature": 0.084,
-    "peak": 26.5,
-    "tier": "replacement level",
-    "nhlGp": 81
-   },
-   {
-    "name": "Stephen Johnston",
+    "name": "Tommy Wingels",
     "year": 2008,
-    "pick": 181,
+    "pick": 177,
+    "league": "USHL",
+    "feature": 0.085,
+    "peak": 58.2,
+    "tier": "above average",
+    "nhlGp": 448
+   },
+   {
+    "name": "Greg Meireles",
+    "year": 2019,
+    "pick": 168,
     "league": "OHL",
-    "feature": 0.089,
+    "feature": 0.079,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Zac Rinaldo",
+    "year": 2008,
+    "pick": 178,
+    "league": "OHL",
+    "feature": 0.077,
+    "peak": 12.7,
+    "tier": "replacement level",
+    "nhlGp": 374
    }
   ]
  },
@@ -317,8 +317,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 6.7,
-  "expected": 7.1,
+  "cohortExpected": 5.2,
+  "expected": 6.3,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -339,11 +339,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 15,
+  "gp": 16,
   "season": "2026-2027"
  },
- "rank": 19,
- "score": 7.1,
+ "rank": 22,
+ "score": 6.3,
  "rankStart": 21,
  "rankStartDate": "2026-10-06"
 }

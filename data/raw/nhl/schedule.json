@@ -2148,7 +2148,7 @@
    "easternUTCOffset": "-05:00",
    "venueUTCOffset": "-07:00",
    "venueTimezone": "America/Denver",
-   "gameState": "FUT",
+   "gameState": "OFF",
    "gameScheduleState": "OK",
    "tvBroadcasts": [
     {
@@ -2182,13 +2182,11 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/DET_dark.svg",
     "awaySplitSquad": false,
-    "promoLink": "",
-    "promoDesc": "",
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/DET/20262027/DET-radio.m3u8",
     "airlineLink": "",
     "airlineDesc": "",
     "hotelLink": "",
-    "hotelDesc": ""
+    "hotelDesc": "",
+    "score": 0
    },
    "homeTeam": {
     "id": 21,
@@ -2206,21 +2204,43 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/COL_dark.svg",
     "homeSplitSquad": false,
-    "promoLink": "https://avalanchepremium.com/events/Colorado-Avalanche-vs-Detroit-Red-Wings-125245/",
-    "promoDesc": "Premium Spaces",
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/COL/20262027/COL-radio.m3u8",
     "airlineLink": "",
     "airlineDesc": "",
     "hotelLink": "",
-    "hotelDesc": ""
+    "hotelDesc": "",
+    "score": 4
    },
    "periodDescriptor": {
-    "number": 1,
+    "number": 3,
     "periodType": "REG",
     "maxRegulationPeriods": 3
    },
-   "ticketsLink": "https://avs.social/2627_SCHEDULE_GM10",
-   "ticketsLinkFr": "https://avs.social/2627_SCHEDULE_GM10",
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   },
+   "winningGoalie": {
+    "playerId": 8478406,
+    "firstInitial": {
+     "default": "M."
+    },
+    "lastName": {
+     "default": "Blackwood"
+    }
+   },
+   "winningGoalScorer": {
+    "playerId": 8480039,
+    "firstInitial": {
+     "default": "M."
+    },
+    "lastName": {
+     "default": "Necas",
+     "cs": "Ne\u010das",
+     "sk": "Ne\u010das"
+    }
+   },
+   "threeMinRecap": "/video/det-at-col-recap-6408089728112",
+   "threeMinRecapFr": "/fr/video/det-vs-col-07-11-2026-resume-6408091675112",
+   "condensedGame": "/video/det-at-col-condensed-game-6408090021112",
    "gameCenterLink": "/gamecenter/det-vs-col/2026/11/07/2026020274"
   },
   {

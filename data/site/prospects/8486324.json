@@ -31,12 +31,12 @@
   {
    "league": "QMJHL",
    "team": "Moncton Wildcats",
-   "gp": 17,
+   "gp": 18,
    "g": 4,
    "a": 7,
    "pts": 11,
    "pm": -2,
-   "pim": 8,
+   "pim": 12,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -140,12 +140,12 @@
     {
      "league": "QMJHL",
      "team": "Moncton Wildcats",
-     "gp": 17,
+     "gp": 18,
      "g": 4,
      "a": 7,
      "pts": 11,
      "pm": -2,
-     "pim": 8,
+     "pim": 12,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -164,18 +164,18 @@
   "table": "QMJHL",
   "coef": 0.113,
   "team": "Moncton Wildcats",
-  "gp": 17,
+  "gp": 18,
   "g": 4,
   "a": 7,
   "pts": 11,
-  "pgp": 0.647,
-  "lineGp": 17,
-  "nhle": 0.073,
-  "nhlePace": 6.1,
+  "pgp": 0.611,
+  "lineGp": 18,
+  "nhle": 0.069,
+  "nhlePace": 5.8,
   "lines": [
    "QMJHL"
   ],
-  "feature": 0.073
+  "feature": 0.069
  },
  "league": {
   "name": "QMJHL",
@@ -190,74 +190,34 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 37,
-   "gp": 17,
-   "value": 0.6471,
-   "percentile": 78.4,
-   "percentileAllAges": 86.4,
+   "gp": 18,
+   "value": 0.6111,
+   "percentile": 75.7,
+   "percentileAllAges": 85.7,
    "allAgesN": 903
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 9.9,
+  "expected": 8.2,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 62.6,
-  "pRegular": 0.16,
-  "pTopLine": 0.06,
-  "pAboveAvg": 0.14,
+  "p90": 57.5,
+  "pRegular": 0.14,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.12,
   "pElite": 0.02,
   "poolN": 837,
   "group": "D",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.16,
+  "pCeiling": 0.14,
   "featureBand": [
-   0.058,
-   0.087
+   0.054,
+   0.084
   ],
   "examples": [
-   {
-    "name": "Maxim Chudinov",
-    "year": 2010,
-    "pick": 195,
-    "league": "KHL",
-    "feature": 0.072,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Maxence Gu\u00e9nette",
-    "year": 2019,
-    "pick": 187,
-    "league": "QMJHL",
-    "feature": 0.073,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 8
-   },
-   {
-    "name": "Matt Brassard",
-    "year": 2017,
-    "pick": 188,
-    "league": "OHL",
-    "feature": 0.074,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kyle Jenkins",
-    "year": 2014,
-    "pick": 187,
-    "league": "OHL",
-    "feature": 0.074,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
    {
     "name": "Petter Hansson",
     "year": 2015,
@@ -297,6 +257,46 @@
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Maxim Chudinov",
+    "year": 2010,
+    "pick": 195,
+    "league": "KHL",
+    "feature": 0.072,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Victor Berglund",
+    "year": 2017,
+    "pick": 195,
+    "league": "HockeyAllsvenskan",
+    "feature": 0.066,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jaynen Rissling",
+    "year": 2012,
+    "pick": 197,
+    "league": "WHL",
+    "feature": 0.065,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Radim Salda",
+    "year": 2018,
+    "pick": 206,
+    "league": "QMJHL",
+    "feature": 0.067,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -317,8 +317,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 9.9,
-  "expected": 8.4,
+  "cohortExpected": 8.2,
+  "expected": 7.6,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -339,11 +339,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 17,
+  "gp": 18,
   "season": "2026-2027"
  },
- "rank": 18,
- "score": 8.4,
+ "rank": 20,
+ "score": 7.6,
  "rankStart": 22,
  "rankStartDate": "2026-10-06"
 }

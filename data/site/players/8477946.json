@@ -75,8 +75,8 @@
    "onIceXgPct": 0.56,
    "onIceCorsiPct": 0.58,
    "ixgPer60": 0.668,
-   "pctl_onIceXgPct": null,
-   "pctl_ixgPer60": null,
+   "pctl_onIceXgPct": 0.0,
+   "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
  },
@@ -91,75 +91,75 @@
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 73
+   "percentile": 72
   },
   "Net": {
    "value": 0.9,
-   "percentile": 74
+   "percentile": 73
   }
  },
  "score": null,
  "standIn": {
-  "value": 60.1,
+  "value": 58.4,
   "gs": 8.91,
   "gs60": 2.46,
   "gameScore": 8.91,
   "minutes": 217,
   "gp": 10,
-  "rank": 211,
-  "pool": 752,
-  "percentile": 71.9,
+  "rank": 240,
+  "pool": 758,
+  "percentile": 68.3,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 209,
-    "name": "Linus Karlsson",
-    "team": "VAN",
+    "rank": 238,
+    "name": "Matty Beniers",
+    "team": "SEA",
     "pos": "C",
-    "gp": 18,
-    "value": 60.3,
-    "gs60": 8.99,
-    "isMe": false
-   },
-   {
-    "rank": 210,
-    "name": "Anthony Mantha",
-    "team": "NJD",
-    "pos": "R",
     "gp": 16,
-    "value": 60.3,
-    "gs60": 8.99,
+    "value": 58.6,
+    "gs60": 8.96,
     "isMe": false
    },
    {
-    "rank": 211,
+    "rank": 239,
+    "name": "Spencer Stastney",
+    "team": "PIT",
+    "pos": "D",
+    "gp": 13,
+    "value": 58.5,
+    "gs60": 8.94,
+    "isMe": false
+   },
+   {
+    "rank": 240,
     "name": "Dylan Larkin",
     "team": "DET",
     "pos": "C",
     "gp": 10,
-    "value": 60.1,
+    "value": 58.4,
     "gs60": 8.91,
     "isMe": true
    },
    {
-    "rank": 212,
-    "name": "Quinton Byfield",
+    "rank": 241,
+    "name": "Erik Gustafsson",
     "team": "LAK",
-    "pos": "R",
-    "gp": 12,
-    "value": 60.0,
-    "gs60": 8.91,
+    "pos": "D",
+    "gp": 13,
+    "value": 58.4,
+    "gs60": 8.9,
     "isMe": false
    },
    {
-    "rank": 213,
-    "name": "Will Borgen",
-    "team": "BOS",
-    "pos": "D",
+    "rank": 242,
+    "name": "Juraj Slafkovsk",
+    "team": "MTL",
+    "pos": "L",
     "gp": 17,
-    "value": 60.0,
-    "gs60": 8.9,
+    "value": 58.3,
+    "gs60": 8.86,
     "isMe": false
    }
   ],
@@ -607,5 +607,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-07T05:04:34-08:00"
+ "updatedAt": "2026-11-09T05:03:45-08:00"
 }

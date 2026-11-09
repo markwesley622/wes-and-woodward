@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 13,
+   "gp": 14,
    "g": 2,
    "a": 8,
    "pts": 10,
-   "pm": 1,
+   "pm": 0,
    "pim": 4,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 13,
+     "gp": 14,
      "g": 2,
      "a": 8,
      "pts": 10,
-     "pm": 1,
+     "pm": 0,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -140,18 +140,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 13,
+  "gp": 14,
   "g": 2,
   "a": 8,
   "pts": 10,
-  "pgp": 0.769,
-  "lineGp": 13,
-  "nhle": 0.299,
-  "nhlePace": 25.1,
+  "pgp": 0.714,
+  "lineGp": 14,
+  "nhle": 0.278,
+  "nhlePace": 23.4,
   "lines": [
    "AHL"
   ],
-  "feature": 0.299
+  "feature": 0.278
  },
  "league": {
   "name": "AHL",
@@ -176,113 +176,113 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 44,
-   "gp": 13,
-   "value": 0.7692,
-   "percentile": 65.9,
-   "percentileAllAges": 75.5,
+   "gp": 14,
+   "value": 0.7143,
+   "percentile": 63.6,
+   "percentileAllAges": 72.0,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 13.7,
+  "expected": 12.9,
   "median": 0.0,
-  "p75": 15.8,
-  "p90": 56.2,
-  "pRegular": 0.34,
+  "p75": 14.9,
+  "p90": 51.7,
+  "pRegular": 0.3,
   "pTopLine": 0.04,
-  "pAboveAvg": 0.14,
+  "pAboveAvg": 0.1,
   "pElite": 0.02,
   "poolN": 1006,
   "group": "F",
   "age": 22,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.34,
+  "pCeiling": 0.3,
   "featureBand": [
-   0.279,
-   0.318
+   0.265,
+   0.291
   ],
   "examples": [
    {
-    "name": "Jaret Anderson-Dolan",
-    "year": 2017,
-    "pick": 41,
+    "name": "Alex Turcotte",
+    "year": 2019,
+    "pick": 5,
     "league": "AHL",
-    "feature": 0.3,
+    "feature": 0.278,
+    "peak": 36.5,
+    "tier": "below average",
+    "nhlGp": 164
+   },
+   {
+    "name": "Jimmy Hayes",
+    "year": 2008,
+    "pick": 60,
+    "league": "AHL",
+    "feature": 0.279,
+    "peak": 57.1,
+    "tier": "above average",
+    "nhlGp": 334
+   },
+   {
+    "name": "Brett Ritchie",
+    "year": 2011,
+    "pick": 44,
+    "league": "AHL",
+    "feature": 0.277,
     "peak": 32.3,
     "tier": "below average",
-    "nhlGp": 134
+    "nhlGp": 391
    },
    {
-    "name": "Michael Bunting",
-    "year": 2014,
-    "pick": 117,
-    "league": "AHL",
-    "feature": 0.297,
-    "peak": 79.2,
-    "tier": "top-line",
-    "nhlGp": 418
+    "name": "Fredrik Karlstr\u00f6m",
+    "year": 2016,
+    "pick": 90,
+    "league": "SHL",
+    "feature": 0.277,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 8
    },
    {
-    "name": "Jeremy Bracco",
-    "year": 2015,
-    "pick": 61,
+    "name": "Otto Somppi",
+    "year": 2016,
+    "pick": 206,
     "league": "AHL",
-    "feature": 0.301,
+    "feature": 0.279,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Dylan Gambrell",
+    "name": "Damien Riat",
     "year": 2016,
-    "pick": 60,
-    "league": "AHL",
-    "feature": 0.297,
-    "peak": 15.8,
-    "tier": "replacement level",
-    "nhlGp": 233
-   },
-   {
-    "name": "Jack Studnicka",
-    "year": 2017,
-    "pick": 53,
-    "league": "AHL",
-    "feature": 0.297,
-    "peak": 5.2,
-    "tier": "replacement level",
-    "nhlGp": 126
-   },
-   {
-    "name": "Zach Boychuk",
-    "year": 2008,
-    "pick": 14,
-    "league": "AHL",
-    "feature": 0.302,
+    "pick": 117,
+    "league": "NL",
+    "feature": 0.281,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 127
+    "nhlGp": 0
    },
    {
-    "name": "Zac Dalpe",
-    "year": 2008,
-    "pick": 45,
+    "name": "Mathias Emilio Pettersen",
+    "year": 2018,
+    "pick": 167,
     "league": "AHL",
-    "feature": 0.302,
-    "peak": 7.5,
-    "tier": "replacement level",
-    "nhlGp": 168
+    "feature": 0.281,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    },
    {
-    "name": "Andrei Loktionov",
-    "year": 2008,
-    "pick": 123,
-    "league": "AHL",
-    "feature": 0.302,
-    "peak": 50.8,
-    "tier": "above average",
-    "nhlGp": 155
+    "name": "Alexander Kadeikin",
+    "year": 2014,
+    "pick": 201,
+    "league": "KHL",
+    "feature": 0.282,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -303,8 +303,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 13.7,
-  "expected": 13.7,
+  "cohortExpected": 12.9,
+  "expected": 12.9,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -325,11 +325,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 13,
+  "gp": 14,
   "season": "2026-2027"
  },
- "rank": 13,
- "score": 13.7,
+ "rank": 15,
+ "score": 12.9,
  "rankStart": 16,
  "rankStartDate": "2026-10-06"
 }

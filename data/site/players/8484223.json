@@ -57,12 +57,12 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 3,
-   "goals": 0,
+   "gp": 4,
+   "goals": 1,
    "assists": 2,
-   "points": 2,
-   "plusMinus": 0,
-   "pim": 0
+   "points": 3,
+   "plusMinus": -1,
+   "pim": 2
   }
  ],
  "moneypuck": {
@@ -85,7 +85,7 @@
    "onIceXgPct": 0.61,
    "onIceCorsiPct": 0.53,
    "ixgPer60": 0.056,
-   "pctl_onIceXgPct": 94.3,
+   "pctl_onIceXgPct": 96.6,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -93,10 +93,10 @@
  "hsc": {
   "Game score": {
    "value": 0.3,
-   "percentile": 47
+   "percentile": 48
   },
   "Offense": {
-   "value": -0.2,
+   "value": -0.3,
    "percentile": 56
   },
   "Defense": {
@@ -110,66 +110,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 37.4,
+  "value": 37.0,
   "gs": 2.01,
   "gs60": 1.36,
   "gameScore": 2.01,
   "minutes": 89,
   "gp": 7,
-  "rank": 465,
-  "pool": 752,
-  "percentile": 38.0,
+  "rank": 471,
+  "pool": 758,
+  "percentile": 37.9,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 463,
-    "name": "Kenny Connors",
-    "team": "LAK",
+    "rank": 469,
+    "name": "Roger McQueen",
+    "team": "ANA",
     "pos": "C",
-    "gp": 1,
-    "value": 37.5,
-    "gs60": 2.05,
+    "gp": 13,
+    "value": 37.1,
+    "gs60": 2.06,
     "isMe": false
    },
    {
-    "rank": 464,
-    "name": "Gustav Forsling",
-    "team": "FLA",
+    "rank": 470,
+    "name": "Sam Dickinson",
+    "team": "SJS",
     "pos": "D",
-    "gp": 15,
-    "value": 37.4,
+    "gp": 17,
+    "value": 37.1,
     "gs60": 2.02,
     "isMe": false
    },
    {
-    "rank": 465,
+    "rank": 471,
     "name": "Axel Sandin-Pellikka",
     "team": "DET",
     "pos": "D",
     "gp": 7,
-    "value": 37.4,
+    "value": 37.0,
     "gs60": 2.01,
     "isMe": true
    },
    {
-    "rank": 466,
-    "name": "Sheldon Dries",
-    "team": "DET",
+    "rank": 472,
+    "name": "Jason Dickinson",
+    "team": "EDM",
     "pos": "C",
-    "gp": 11,
-    "value": 37.4,
-    "gs60": 2.01,
+    "gp": 9,
+    "value": 36.9,
+    "gs60": 1.98,
     "isMe": false
    },
    {
-    "rank": 467,
-    "name": "Teddy Blueger",
-    "team": "TOR",
-    "pos": "C",
-    "gp": 17,
-    "value": 37.4,
-    "gs60": 2.01,
+    "rank": 473,
+    "name": "Stefan Noesen",
+    "team": "NJD",
+    "pos": "R",
+    "gp": 5,
+    "value": 36.8,
+    "gs60": 1.95,
     "isMe": false
    }
   ],
@@ -395,5 +395,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-07T05:06:30-08:00"
+ "updatedAt": "2026-11-09T05:05:46-08:00"
 }

@@ -75,8 +75,8 @@
    "onIceXgPct": 0.71,
    "onIceCorsiPct": 0.78,
    "ixgPer60": 1.787,
-   "pctl_onIceXgPct": null,
-   "pctl_ixgPer60": null,
+   "pctl_onIceXgPct": 100.0,
+   "pctl_ixgPer60": 100.0,
    "qualifiesForPercentiles": false
   }
  },
@@ -87,11 +87,11 @@
   },
   "Offense": {
    "value": -0.3,
-   "percentile": 52
+   "percentile": 53
   },
   "Defense": {
    "value": -0.1,
-   "percentile": 50
+   "percentile": 49
   },
   "Net": {
    "value": -0.4,
@@ -100,66 +100,66 @@
  },
  "score": null,
  "standIn": {
-  "value": 33.5,
+  "value": 33.3,
   "gs": 0.73,
   "gs60": 4.04,
   "gameScore": 0.73,
   "minutes": 11,
   "gp": 1,
-  "rank": 527,
-  "pool": 752,
-  "percentile": 29.9,
+  "rank": 537,
+  "pool": 758,
+  "percentile": 29.2,
   "group": "skaters",
   "standIn": true,
   "neighbours": [
    {
-    "rank": 525,
+    "rank": 535,
     "name": "Tom Willander",
     "team": "VAN",
     "pos": "D",
     "gp": 16,
-    "value": 33.6,
+    "value": 33.5,
     "gs60": 0.78,
     "isMe": false
    },
    {
-    "rank": 526,
-    "name": "Mathieu Joseph",
-    "team": "EDM",
-    "pos": "R",
-    "gp": 17,
-    "value": 33.6,
-    "gs60": 0.78,
+    "rank": 536,
+    "name": "Sam Carrick",
+    "team": "BUF",
+    "pos": "C",
+    "gp": 9,
+    "value": 33.4,
+    "gs60": 0.77,
     "isMe": false
    },
    {
-    "rank": 527,
+    "rank": 537,
     "name": "Marco Kasper",
     "team": "DET",
     "pos": "C",
     "gp": 1,
-    "value": 33.5,
+    "value": 33.3,
     "gs60": 0.73,
     "isMe": true
    },
    {
-    "rank": 528,
-    "name": "Jason Dickinson",
-    "team": "EDM",
-    "pos": "C",
-    "gp": 8,
-    "value": 33.4,
-    "gs60": 0.71,
+    "rank": 538,
+    "name": "Keegan Kolesar",
+    "team": "DET",
+    "pos": "R",
+    "gp": 18,
+    "value": 33.3,
+    "gs60": 0.73,
     "isMe": false
    },
    {
-    "rank": 529,
-    "name": "Carter Mazur",
-    "team": "DET",
-    "pos": "L",
-    "gp": 11,
-    "value": 33.4,
-    "gs60": 0.71,
+    "rank": 539,
+    "name": "Scott Laughton",
+    "team": "LAK",
+    "pos": "C",
+    "gp": 15,
+    "value": 33.3,
+    "gs60": 0.72,
     "isMe": false
    }
   ],
@@ -271,5 +271,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-07T05:04:09-08:00"
+ "updatedAt": "2026-11-09T05:03:22-08:00"
 }
