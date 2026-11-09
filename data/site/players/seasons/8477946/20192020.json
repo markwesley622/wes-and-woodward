@@ -400,6 +400,26 @@
    "me": false
   },
   {
+   "name": "Andrew Agozzino",
+   "team": "ANA",
+   "pos": "L",
+   "off": -0.016,
+   "def": 0.037,
+   "toi": 45,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Andrew Agozzino",
+   "team": "PIT",
+   "pos": "L",
+   "off": -0.066,
+   "def": 0.076,
+   "toi": 104,
+   "det": false,
+   "me": false
+  },
+  {
    "name": "Andrew Cogliano",
    "team": "DAL",
    "pos": "C",
@@ -2820,6 +2840,16 @@
    "me": false
   },
   {
+   "name": "Jeremy Lauzon",
+   "team": "BOS",
+   "pos": "D",
+   "off": -0.004,
+   "def": 0.008,
+   "toi": 256,
+   "det": false,
+   "me": false
+  },
+  {
    "name": "Jesper Boqvist",
    "team": "N.J",
    "pos": "C",
@@ -2970,6 +3000,16 @@
    "me": false
   },
   {
+   "name": "Joey Anderson",
+   "team": "N.J",
+   "pos": "R",
+   "off": 0.05,
+   "def": 0.134,
+   "toi": 195,
+   "det": false,
+   "me": false
+  },
+  {
    "name": "Johan Larsson",
    "team": "BUF",
    "pos": "L",
@@ -3097,6 +3137,16 @@
    "def": -0.049,
    "toi": 343,
    "det": false,
+   "me": false
+  },
+  {
+   "name": "Jonathan Ericsson",
+   "team": "DET",
+   "pos": "D",
+   "off": -0.065,
+   "def": -0.122,
+   "toi": 227,
+   "det": true,
    "me": false
   },
   {
@@ -3620,6 +3670,16 @@
    "me": false
   },
   {
+   "name": "Lias Andersson",
+   "team": "NYR",
+   "pos": "C",
+   "off": -0.076,
+   "def": -0.036,
+   "toi": 126,
+   "det": false,
+   "me": false
+  },
+  {
    "name": "Libor Hajek",
    "team": "NYR",
    "pos": "D",
@@ -3900,6 +3960,16 @@
    "me": false
   },
   {
+   "name": "Martin Frk",
+   "team": "L.A",
+   "pos": "R",
+   "off": 0.026,
+   "def": -0.127,
+   "toi": 204,
+   "det": false,
+   "me": false
+  },
+  {
    "name": "Martin Marincin",
    "team": "TOR",
    "pos": "D",
@@ -4036,6 +4106,16 @@
    "off": -0.088,
    "def": -0.0,
    "toi": 313,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matt Luff",
+   "team": "L.A",
+   "pos": "R",
+   "off": 0.005,
+   "def": -0.04,
+   "toi": 184,
    "det": false,
    "me": false
   },
@@ -5620,6 +5700,16 @@
    "me": false
   },
   {
+   "name": "Sami Niku",
+   "team": "WPG",
+   "pos": "D",
+   "off": -0.126,
+   "def": -0.138,
+   "toi": 264,
+   "det": false,
+   "me": false
+  },
+  {
    "name": "Sami Vatanen",
    "team": "N.J",
    "pos": "D",
@@ -5836,6 +5926,16 @@
    "off": 0.042,
    "def": 0.115,
    "toi": 373,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Stephen Johns",
+   "team": "DAL",
+   "pos": "D",
+   "off": -0.081,
+   "def": 0.021,
+   "toi": 283,
    "det": false,
    "me": false
   },
@@ -6580,6 +6680,16 @@
    "me": false
   },
   {
+   "name": "Zac Rinaldo",
+   "team": "CGY",
+   "pos": "C",
+   "off": 0.036,
+   "def": -0.069,
+   "toi": 154,
+   "det": false,
+   "me": false
+  },
+  {
    "name": "Zach Aston-Reese",
    "team": "PIT",
    "pos": "C",
@@ -6640,6 +6750,16 @@
    "me": false
   },
   {
+   "name": "Zack MacEwen",
+   "team": "VAN",
+   "pos": "C",
+   "off": -0.045,
+   "def": -0.004,
+   "toi": 161,
+   "det": false,
+   "me": false
+  },
+  {
    "name": "Zack Smith",
    "team": "CHI",
    "pos": "C",
@@ -6677,7 +6797,7 @@
    "pos": "C",
    "gp": 62,
    "distance": 0.63,
-   "value": 69.8,
+   "value": 70.2,
    "goals": 8.1,
    "components": {
     "EVO": 6.0,
@@ -6692,8 +6812,8 @@
    "team": "WSH",
    "pos": "C",
    "gp": 61,
-   "distance": 1.13,
-   "value": 65.4,
+   "distance": 1.14,
+   "value": 65.8,
    "goals": 7.0,
    "components": {
     "EVO": 5.1,
@@ -6709,7 +6829,7 @@
    "pos": "C",
    "gp": 66,
    "distance": 1.16,
-   "value": 76.7,
+   "value": 77.0,
    "goals": 10.1,
    "components": {
     "EVO": 8.9,
@@ -6732,12 +6852,12 @@
  "teamGameScore": null,
  "hasLogSeason": false,
  "score": {
-  "value": 69.1,
-  "low": 45.9,
-  "high": 85.5,
-  "sustainable": 58.5,
-  "results": 80.6,
-  "percentile": 80.1,
+  "value": 69.4,
+  "low": 46.3,
+  "high": 85.7,
+  "sustainable": 58.9,
+  "results": 80.9,
+  "percentile": 80.5,
   "goalsBlended": 7.9,
   "goalsSustainable": 5.6,
   "goalsResults": 11.4,
@@ -6764,7 +6884,8 @@
    "Pens": 0.536
   },
   "reliability": 0.43,
-  "pool": 669,
+  "pool": 683,
+  "minGp": 17,
   "group": "skaters",
   "position": "F",
   "components": [
@@ -6842,7 +6963,7 @@
     "team": "PHI",
     "gp": 68,
     "pos": "D",
-    "value": 69.5,
+    "value": 69.9,
     "goals": 8.0,
     "isMe": false
    },
@@ -6852,7 +6973,7 @@
     "team": "MTL",
     "gp": 65,
     "pos": "D",
-    "value": 69.1,
+    "value": 69.5,
     "goals": 7.9,
     "isMe": false
    },
@@ -6862,7 +6983,7 @@
     "team": "DET",
     "gp": 71,
     "pos": "C",
-    "value": 69.1,
+    "value": 69.4,
     "goals": 7.9,
     "isMe": true
    },
@@ -6872,7 +6993,7 @@
     "team": "L.A",
     "gp": 65,
     "pos": "D",
-    "value": 68.7,
+    "value": 69.1,
     "goals": 7.8,
     "isMe": false
    },
@@ -6882,12 +7003,12 @@
     "team": "VGK",
     "gp": 71,
     "pos": "C",
-    "value": 68.7,
+    "value": 69.1,
     "goals": 7.8,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (17+ GP, forwards and defensemen together; the full-season gate of 20 GP scaled to the share of the schedule played so far) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
  },
  "moneypuck": {
   "playerId": 8477946,

@@ -373,16 +373,26 @@ def build_goalie(pid, raw, land, nhl_log, name):
 COMP_CLASS = {"C": "C", "L": "W", "R": "W", "D": "D"}
 
 
+def season_gate(rows):
+    """GP gate for a season's W-Value pool: 20 GP over a full 82-game schedule, scaled to how much of the
+    schedule the league has played (the most GP any skater has that season), never below 5."""
+    max_gp = max((int(r["GP"]) for r in rows), default=82)
+    return min(20, max(5, round(20 * max_gp / 82)))
+
+
 def skater_value(name, group, ehs, pos):
     """W-Value, isolated-impact map and player comps for one Evolving-Hockey season (ehs = '25-26').
-    Pools are that season's skaters with 20+ GP; when a midseason move split him, his Detroit row counts.
+    Pools are that season's skaters with 20+ GP (a quarter of the schedule; early in a season the gate scales
+    with the share of the schedule played, floor 5 GP); when a midseason move split him, his Detroit row counts.
     pos = his NHL position (C/L/R/D), which picks the comps pool."""
     def eh_rows(fn):
         return [r for r in csv.DictReader((EH / fn).open()) if r["Season"] == ehs]
     xg_rows, g_rows = eh_rows("xgar_all_seasons.csv"), eh_rows("gar_all_seasons.csv")
     rapm = {r["Player"]: r for r in eh_rows("rapm_ev_rates_all_seasons.csv")}
-    # positionless: every NHL skater with 20+ GP is in the same pool (Mark, 9/23)
-    grp = lambda r: int(r["GP"]) >= 20
+    # positionless: every NHL skater with 20+ GP is in the same pool (Mark, 9/23); before anyone can have 20 GP the
+    # gate is the same share of the schedule played so far (20/82), never below 5 GP, so the pool exists in-season
+    min_gp = season_gate(xg_rows)
+    grp = lambda r: int(r["GP"]) >= min_gp
     g_by = {norm(r["Player"]) + r["Team"]: r for r in g_rows}
     def g_for(rx): return g_by.get(norm(rx["Player"]) + rx["Team"]) or eh_row(g_rows, rx["Player"], rx["Team"])
     def blended(rx):
@@ -410,7 +420,7 @@ def skater_value(name, group, ehs, pos):
           "sustainable": qbr(xs_pool, vx), "results": qbr(g_pool, vg), "percentile": percentile(x_pool, vb),
           "goalsBlended": round(vb, 1), "goalsSustainable": round(vx, 1), "goalsResults": round(vg, 1),
           "blend": {k: round(v, 2) for k, v in BLEND.items()}, "blendMeasured": {k: round(v, 2) for k, v in BLEND_MEASURED.items()}, "k": K, "repeatability": REPEAT,
-          "reliability": round(rel, 3), "pool": len(x_pool), "group": "skaters", "position": group,
+          "reliability": round(rel, 3), "pool": len(x_pool), "minGp": min_gp, "group": "skaters", "position": group,
           "components": [
               {"key": c, "label": {"EVO": "Even-strength offense", "EVD": "Even-strength defense", "PPO": "Power play", "SHD": "Penalty kill", "Pens": "Penalties drawn minus taken"}[c],
                "sustainable": f(me_x[XK[c]]), "results": f(me_g[GK[c]]), "shrink": round(shrink(toi, K[c]), 2), "repeat": REPEAT[c],
@@ -421,7 +431,7 @@ def skater_value(name, group, ehs, pos):
           "neighbours": (lambda mi: [
               {"rank": i + 1, "name": t[1], "team": t[2], "gp": t[3], "pos": t[4], "value": qbr(x_pool, t[0]), "goals": round(t[0], 1), "isMe": norm(t[1]) == norm(name)}
               for i, t in enumerate(ranked) if abs(i - mi) <= 2] if mi is not None else [])(next((j for j, u in enumerate(ranked) if norm(u[1]) == norm(name)), None)),
-          "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
+          "method": f"A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater ({min_gp}+ GP, forwards and defensemen together" + (f"; the full-season gate of 20 GP scaled to the share of the schedule played so far" if min_gp < 20 else "") + ") and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD × sqrt(1 − mean reliability)) at 80%, mapped through the same scale.",
       }
 
     # ---- isolated impact map: every skater's even-strength RAPM impact this season
@@ -429,8 +439,8 @@ def skater_value(name, group, ehs, pos):
     gp_by = {r["Player"]: int(r["GP"]) for r in xg_rows}
     impact = [{"name": r["Player"], "team": r["Team"], "pos": r["Position"], "off": f(r["xGF/60"]), "def": -f(r["xGA/60"]),
                "toi": round(f(r["TOI"])), "det": r["Team"] == "DET", "me": norm(r["Player"]) == norm(name)}
-              for r in rapm_rows if gp_by.get(r["Player"], 0) >= 20]
-    if not any(d["me"] for d in impact):  # under 20 GP: still plot him
+              for r in rapm_rows if gp_by.get(r["Player"], 0) >= min_gp]
+    if not any(d["me"] for d in impact):  # under the gate: still plot him
         rm = eh_row(rapm_rows, name, "DET")
         if rm: impact.append({"name": rm["Player"], "team": rm["Team"], "pos": rm["Position"], "off": f(rm["xGF/60"]), "def": -f(rm["xGA/60"]), "toi": round(f(rm["TOI"])), "det": True, "me": True})
 

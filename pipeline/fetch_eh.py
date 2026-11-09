@@ -51,6 +51,63 @@ def merge(target, text):
     return len(rows), "ok"
 
 
+def dismiss_modal(pg):
+    """Close a SweetAlert popup if one is up and say what it said (the "Subscriber Only" alert appears when
+    Submit is clicked before the app has finished checking the login; the click-blocking overlay stays otherwise)."""
+    if not pg.locator(".swal2-container").count(): return None
+    text = " ".join(pg.locator(".swal2-popup").inner_text().split())
+    try:
+        pg.locator(".swal2-confirm").first.click(timeout=3000)
+    except PWTimeout:
+        pg.keyboard.press("Escape")
+    pg.wait_for_timeout(500)
+    return text
+
+
+def submit(pg, prefix):
+    """Run the query, retrying when the subscriber check had not finished yet. Returns True once the table is up."""
+    for attempt in range(4):
+        pg.click(f"#{prefix}_submit")
+        pg.wait_for_timeout(4000)
+        said = dismiss_modal(pg)
+        if said is None:
+            try:
+                pg.wait_for_selector("table tbody tr", timeout=30000); return True
+            except PWTimeout:
+                print(f"EH {prefix}: table did not render (attempt {attempt + 1})")
+        else:
+            print(f"EH {prefix}: popup on submit (attempt {attempt + 1}): {said[:120]}")
+        pg.wait_for_timeout(5000 * (attempt + 1))
+    return False
+
+
+def fetch_table(pg, name, page, prefix, extra, dl_id, target):
+    pg.goto(page_url(page, prefix, extra), wait_until="domcontentloaded")
+    try:
+        pg.wait_for_selector(f"#{prefix}_season", timeout=30000)
+    except PWTimeout:
+        if "login" in pg.url or pg.locator("text=Log In").count():
+            print("EH: session expired; run python3 pipeline/eh_login.py again"); return "expired"
+        print(f"EH {name}: page did not load"); return "skip"
+    offered = pg.eval_on_selector(f"#{prefix}_season", "e => [...e.options].map(o => o.value)")
+    if SEASON not in offered:
+        print(f"EH: {SEASON} not published yet for {name} (latest {offered[0] if offered else '?'})"); return "skip"
+    # the app checks the subscription asynchronously after the inputs render; submitting before it finishes
+    # trips a "Subscriber Only" popup whose overlay then swallows the Download click (11/9 nightly)
+    try: pg.wait_for_load_state("networkidle", timeout=15000)
+    except PWTimeout: pass
+    pg.wait_for_timeout(3000)
+    if not submit(pg, prefix):
+        print(f"EH {name}: gave up after repeated popups"); return "skip"
+    dismiss_modal(pg)
+    with pg.expect_download(timeout=60000) as dl:
+        pg.click(f"#{dl_id}")
+    text = pathlib.Path(dl.value.path()).read_text()
+    n, note = merge(target, text)
+    print(f"EH {name}: {n} rows for {EH_SEASON} -> {target} ({note})")
+    return "ok"
+
+
 def main():
     if not STATE.exists():
         print("EH: no saved session; run python3 pipeline/eh_login.py once"); return 0
@@ -60,23 +117,11 @@ def main():
         ctx = browser.new_context(storage_state=str(STATE), accept_downloads=True)
         pg = ctx.new_page()
         for name, (page, prefix, extra, dl_id, target) in TABLES.items():
-            pg.goto(page_url(page, prefix, extra), wait_until="domcontentloaded")
             try:
-                pg.wait_for_selector(f"#{prefix}_season", timeout=30000)
-            except PWTimeout:
-                if "login" in pg.url or pg.locator("text=Log In").count():
-                    print("EH: session expired; run python3 pipeline/eh_login.py again"); browser.close(); return 0
-                print(f"EH {name}: page did not load"); continue
-            offered = pg.eval_on_selector(f"#{prefix}_season", "e => [...e.options].map(o => o.value)")
-            if SEASON not in offered:
-                print(f"EH: {SEASON} not published yet for {name} (latest {offered[0] if offered else '?'})"); continue
-            pg.click(f"#{prefix}_submit")
-            pg.wait_for_timeout(4000)
-            with pg.expect_download(timeout=60000) as dl:
-                pg.click(f"#{dl_id}")
-            text = pathlib.Path(dl.value.path()).read_text()
-            n, note = merge(target, text)
-            print(f"EH {name}: {n} rows for {EH_SEASON} -> {target} ({note})")
+                if fetch_table(pg, name, page, prefix, extra, dl_id, target) == "expired": break
+            except Exception as e:  # one table failing must not take the others (or the nightly) down with it
+                print(f"EH {name}: failed: {type(e).__name__}: {str(e).splitlines()[0][:200]}")
+                dismiss_modal(pg)
         browser.close()
     return 0
 

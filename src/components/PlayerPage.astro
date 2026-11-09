@@ -86,7 +86,7 @@ const RECENT = 10;
           {hasScore ? (
             <>
               <span class="score">{SC.value.toFixed(1)}</span>
-              <span class="mono range">likely {SC.low.toFixed(1)}–{SC.high.toFixed(1)}{tier ? ` · ${tier}` : ''}{!isG && (L.gp ?? 0) < 20 ? ' · under 20 games' : ''}</span>
+              <span class="mono range">likely {SC.low.toFixed(1)}–{SC.high.toFixed(1)}{tier ? ` · ${tier}` : ''}{!isG && (L.gp ?? 0) < (SC.minGp ?? 20) ? ` · under ${SC.minGp ?? 20} games` : ''}</span>
               {isG ? <span class="mono split">{SC.gsax >= 0 ? '+' : ''}{SC.gsax} goals saved above expected · {SC.minutes} min</span> : <span class="mono split">sustainable {SC.sustainable.toFixed(1)} · results {SC.results.toFixed(1)}</span>}
             </>
           ) : SI ? (
@@ -165,7 +165,7 @@ const RECENT = 10;
           <p class="note mono">Sustainable = Evolving-Hockey xGAR (chances). Results = GAR (goals). Counted = a {Math.round(SC.blend.sustainable * 100)}/{Math.round(SC.blend.results * 100)} blend of the two, leaning toward chances because they repeat better year to year; {current ? 'this season' : season} only, nothing regressed. Repeats = that component's year-to-year repeatability, which sets the likely range, not the number.</p>
         </div>
         <div class="rankwrap">
-        <p class="eb mono">Where he ranks · all NHL skaters, {SC.pool} with 20+ games</p>
+        <p class="eb mono">Where he ranks · all NHL skaters, {SC.pool} with {SC.minGp ?? 20}+ games</p>
         <table class="rank">
           <thead><tr><th>Rank</th><th>Player</th><th>Team</th><th>Pos</th><th class="num">GP</th><th class="num">W-Value</th><th class="num">Goals counted</th></tr></thead>
           <tbody>

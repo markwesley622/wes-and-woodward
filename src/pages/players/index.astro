@@ -9,6 +9,7 @@ const all = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JS
 // prospects sit with the skaters for now (Mark, 10/3)
 const val = (p) => p.score?.value ?? p.standIn?.value ?? -1;
 const skaters = all.filter((p) => (p.kind === 'S' || p.kind === 'P') && p.bio.position !== 'G').sort((a, b) => val(b) - val(a));
+const minGp = skaters.find((p) => p.score?.minGp)?.score.minGp ?? 20;
 const goalies = all.filter((p) => p.kind === 'G' || (p.kind === 'P' && p.bio.position === 'G')).sort((a, b) => val(b) - val(a));
 const season = all.length ? `${all[0].seasonLabel.slice(0, 4)}–${all[0].seasonLabel.slice(5)}` : '';
 const POS = { C: 'C', L: 'LW', R: 'RW', D: 'D', G: 'G' };
@@ -87,7 +88,7 @@ const sv = (v) => (v == null ? '—' : `.${Math.round(v * 1000)}`);
         </table>
       </div>
 
-      <p class="note mono">W-Value: a 0–100 rating where 50 is the average NHL player at the position group (skaters positionless, goalies on goals saved above expected), this season only. NHL rank counts skaters with 20+ games and goalies with 600+ minutes. A prospect is rookie-eligible and inside draft+4; while he is on the NHL roster he is rated here like everyone else, and when he is in Grand Rapids his page switches to the prospect read. The whole pipeline, ranked, is on the <a href="/prospects/">Prospects</a> page.</p>
+      <p class="note mono">W-Value: a 0–100 rating where 50 is the average NHL player at the position group (skaters positionless, goalies on goals saved above expected), this season only. NHL rank counts skaters with {minGp}+ games{minGp < 20 ? ' (the 20-game full-season gate, scaled to the share of the schedule played so far)' : ''} and goalies with 600+ minutes. A prospect is rookie-eligible and inside draft+4; while he is on the NHL roster he is rated here like everyone else, and when he is in Grand Rapids his page switches to the prospect read. The whole pipeline, ranked, is on the <a href="/prospects/">Prospects</a> page.</p>
     </div>
   </section>
 </Base>

@@ -98,74 +98,6798 @@
    "percentile": 82
   }
  },
- "score": null,
- "standIn": {
-  "value": 77.3,
-  "gs": 15.94,
-  "gs60": 2.84,
-  "gameScore": 15.94,
-  "minutes": 336,
-  "gp": 18,
-  "rank": 88,
-  "pool": 758,
-  "percentile": 88.4,
+ "score": {
+  "value": 40.1,
+  "low": 17.0,
+  "high": 68.5,
+  "sustainable": 47.8,
+  "results": 30.0,
+  "percentile": 37.2,
+  "goalsBlended": -0.0,
+  "goalsSustainable": 0.7,
+  "goalsResults": -1.1,
+  "blend": {
+   "sustainable": 0.6,
+   "results": 0.4
+  },
+  "blendMeasured": {
+   "sustainable": 0.53,
+   "results": 0.47
+  },
+  "k": {
+   "EVO": 1531,
+   "EVD": 1746,
+   "PPO": 2256,
+   "SHD": 5292,
+   "Pens": 1149
+  },
+  "repeatability": {
+   "EVO": 0.465,
+   "EVD": 0.432,
+   "PPO": 0.371,
+   "SHD": 0.201,
+   "Pens": 0.536
+  },
+  "reliability": 0.152,
+  "pool": 662,
+  "minGp": 5,
   "group": "skaters",
-  "standIn": true,
+  "position": "F",
+  "components": [
+   {
+    "key": "EVO",
+    "label": "Even-strength offense",
+    "sustainable": 0.2,
+    "results": -0.6,
+    "shrink": 0.18,
+    "repeat": 0.465,
+    "counted": -0.1
+   },
+   {
+    "key": "EVD",
+    "label": "Even-strength defense",
+    "sustainable": -1.0,
+    "results": -1.1,
+    "shrink": 0.16,
+    "repeat": 0.432,
+    "counted": -1.0
+   },
+   {
+    "key": "PPO",
+    "label": "Power play",
+    "sustainable": 1.1,
+    "results": 0.2,
+    "shrink": 0.13,
+    "repeat": 0.371,
+    "counted": 0.7
+   },
+   {
+    "key": "SHD",
+    "label": "Penalty kill",
+    "sustainable": 0.0,
+    "results": 0.0,
+    "shrink": 0.06,
+    "repeat": 0.201,
+    "counted": 0.0
+   },
+   {
+    "key": "Pens",
+    "label": "Penalties drawn minus taken",
+    "sustainable": 0.4,
+    "results": 0.4,
+    "shrink": 0.23,
+    "repeat": 0.536,
+    "counted": 0.4
+   }
+  ],
+  "raw": {
+   "xGAR": 0.7,
+   "GAR": -1.2,
+   "WAR": -0.2,
+   "xWAR": 0.1,
+   "toiAll": 336.4
+  },
+  "rapm": {
+   "GP": 18.0,
+   "TOI": 258.2,
+   "G\u00b1/60": -0.096,
+   "xG\u00b1/60": 0.061,
+   "C\u00b1/60": 0.85,
+   "GF/60": -0.075,
+   "GA/60": 0.021,
+   "xGF/60": 0.199,
+   "xGA/60": 0.138,
+   "CF/60": 2.07,
+   "CA/60": 1.22
+  },
+  "rank": 416,
   "neighbours": [
    {
-    "rank": 86,
-    "name": "James Hagens",
-    "team": "BOS",
-    "pos": "C",
+    "rank": 414,
+    "name": "Cole Koepke",
+    "team": "WPG",
+    "gp": 14,
+    "pos": "L",
+    "value": 40.1,
+    "goals": -0.0,
+    "isMe": false
+   },
+   {
+    "rank": 415,
+    "name": "Sam Dickinson",
+    "team": "S.J",
     "gp": 17,
-    "value": 77.4,
-    "gs60": 15.99,
-    "isMe": false
-   },
-   {
-    "rank": 87,
-    "name": "Luke Hughes",
-    "team": "NJD",
     "pos": "D",
-    "gp": 18,
-    "value": 77.4,
-    "gs60": 15.97,
+    "value": 40.1,
+    "goals": -0.0,
     "isMe": false
    },
    {
-    "rank": 88,
+    "rank": 416,
     "name": "Viktor Arvidsson",
     "team": "DET",
-    "pos": "L",
     "gp": 18,
-    "value": 77.3,
-    "gs60": 15.94,
+    "pos": "L",
+    "value": 40.1,
+    "goals": -0.0,
     "isMe": true
    },
    {
-    "rank": 89,
-    "name": "Pontus Holmberg",
-    "team": "TBL",
-    "pos": "R",
-    "gp": 17,
-    "value": 77.3,
-    "gs60": 15.92,
+    "rank": 417,
+    "name": "Tyson Kozak",
+    "team": "BUF",
+    "gp": 9,
+    "pos": "C",
+    "value": 40.1,
+    "goals": -0.0,
     "isMe": false
    },
    {
-    "rank": 90,
-    "name": "JJ Peterka",
-    "team": "BOS",
-    "pos": "R",
-    "gp": 18,
-    "value": 77.3,
-    "gs60": 15.91,
+    "rank": 418,
+    "name": "Ty Emberson",
+    "team": "EDM",
+    "gp": 14,
+    "pos": "D",
+    "value": 39.9,
+    "goals": -0.0,
     "isMe": false
    }
   ],
-  "method": "Stand-in until the W-Value is computable: season game score (the average of MoneyPuck's and HockeyStatCards' versions, the same number as the game log), scaled 0-100 the same way, among every NHL skater who has played this season."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (5+ GP, forwards and defensemen together; the full-season gate of 20 GP scaled to the share of the schedule played so far) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
  },
- "impact": [],
+ "standIn": null,
+ "impact": [
+  {
+   "name": "A.J. Greer",
+   "team": "ANA",
+   "pos": "L",
+   "off": 0.15,
+   "def": -0.066,
+   "toi": 156,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Aaron Ekblad",
+   "team": "FLA",
+   "pos": "D",
+   "off": 0.065,
+   "def": 0.237,
+   "toi": 249,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Adam Edstrom",
+   "team": "NSH",
+   "pos": "C",
+   "off": 0.091,
+   "def": 0.102,
+   "toi": 222,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Adam Engstrom",
+   "team": "MTL",
+   "pos": "D",
+   "off": 0.151,
+   "def": -0.085,
+   "toi": 118,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Adam Fantilli",
+   "team": "CBJ",
+   "pos": "C",
+   "off": -0.083,
+   "def": 0.033,
+   "toi": 248,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Adam Fox",
+   "team": "NYR",
+   "pos": "D",
+   "off": 0.153,
+   "def": 0.112,
+   "toi": 311,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Adam Gaudette",
+   "team": "S.J",
+   "pos": "R",
+   "off": -0.108,
+   "def": -0.046,
+   "toi": 49,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Adam Jiricek",
+   "team": "STL",
+   "pos": "D",
+   "off": 0.028,
+   "def": 0.038,
+   "toi": 243,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Adam Klapka",
+   "team": "CGY",
+   "pos": "R",
+   "off": -0.058,
+   "def": -0.013,
+   "toi": 196,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Adam Larsson",
+   "team": "SEA",
+   "pos": "D",
+   "off": -0.107,
+   "def": -0.032,
+   "toi": 297,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Adam Lowry",
+   "team": "WPG",
+   "pos": "C",
+   "off": -0.099,
+   "def": 0.014,
+   "toi": 231,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Adam Pelech",
+   "team": "NYI",
+   "pos": "D",
+   "off": -0.136,
+   "def": -0.194,
+   "toi": 266,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Adam Wilsby",
+   "team": "NSH",
+   "pos": "D",
+   "off": 0.159,
+   "def": 0.051,
+   "toi": 303,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Adrian Kempe",
+   "team": "L.A",
+   "pos": "R",
+   "off": 0.193,
+   "def": 0.092,
+   "toi": 217,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Albert Johansson",
+   "team": "DET",
+   "pos": "D",
+   "off": 0.165,
+   "def": -0.007,
+   "toi": 148,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Alberts Smits",
+   "team": "NYR",
+   "pos": "D",
+   "off": -0.111,
+   "def": -0.064,
+   "toi": 241,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Aleksanteri Kaskimaki",
+   "team": "STL",
+   "pos": "C",
+   "off": -0.005,
+   "def": 0.113,
+   "toi": 89,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Bump",
+   "team": "PHI",
+   "pos": "L",
+   "off": 0.056,
+   "def": -0.038,
+   "toi": 92,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Carrier",
+   "team": "MTL",
+   "pos": "D",
+   "off": -0.205,
+   "def": 0.07,
+   "toi": 282,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Debrincat",
+   "team": "DET",
+   "pos": "R",
+   "off": 0.099,
+   "def": 0.081,
+   "toi": 273,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Alex Formenton",
+   "team": "EDM",
+   "pos": "L",
+   "off": -0.143,
+   "def": 0.025,
+   "toi": 200,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Iafallo",
+   "team": "WPG",
+   "pos": "L",
+   "off": -0.009,
+   "def": 0.213,
+   "toi": 203,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Kerfoot",
+   "team": "NSH",
+   "pos": "C",
+   "off": 0.127,
+   "def": 0.072,
+   "toi": 207,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Killorn",
+   "team": "ANA",
+   "pos": "L",
+   "off": 0.022,
+   "def": -0.016,
+   "toi": 214,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Laferriere",
+   "team": "L.A",
+   "pos": "R",
+   "off": 0.188,
+   "def": 0.087,
+   "toi": 225,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Newhook",
+   "team": "MTL",
+   "pos": "C",
+   "off": -0.132,
+   "def": -0.321,
+   "toi": 201,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Ovechkin",
+   "team": "WSH",
+   "pos": "L",
+   "off": 0.198,
+   "def": -0.116,
+   "toi": 149,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Texier",
+   "team": "MTL",
+   "pos": "L",
+   "off": -0.062,
+   "def": 0.109,
+   "toi": 198,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Tuch",
+   "team": "WSH",
+   "pos": "R",
+   "off": 0.293,
+   "def": -0.07,
+   "toi": 203,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Vlasic",
+   "team": "CHI",
+   "pos": "D",
+   "off": -0.173,
+   "def": 0.036,
+   "toi": 316,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Wennberg",
+   "team": "S.J",
+   "pos": "C",
+   "off": 0.028,
+   "def": 0.046,
+   "toi": 123,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alexei Toropchenko",
+   "team": "STL",
+   "pos": "R",
+   "off": 0.006,
+   "def": -0.057,
+   "toi": 65,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alexis Lafreni\u00e8re",
+   "team": "NYR",
+   "pos": "L",
+   "off": 0.05,
+   "def": 0.148,
+   "toi": 269,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Aliaksei Protas",
+   "team": "WSH",
+   "pos": "L",
+   "off": -0.006,
+   "def": 0.066,
+   "toi": 203,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Amadeus Lombardi",
+   "team": "N.J",
+   "pos": "C",
+   "off": 0.067,
+   "def": -0.1,
+   "toi": 177,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Anders Lee",
+   "team": "UTA",
+   "pos": "L",
+   "off": 0.214,
+   "def": -0.0,
+   "toi": 224,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Andre Burakovsky",
+   "team": "OTT",
+   "pos": "L",
+   "off": -0.145,
+   "def": 0.063,
+   "toi": 70,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Andre Lee",
+   "team": "L.A",
+   "pos": "L",
+   "off": -0.111,
+   "def": -0.043,
+   "toi": 125,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Andreas Englund",
+   "team": "DET",
+   "pos": "D",
+   "off": 0.06,
+   "def": 0.17,
+   "toi": 156,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Andrei Kuzmenko",
+   "team": "PIT",
+   "pos": "L",
+   "off": -0.123,
+   "def": -0.015,
+   "toi": 131,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Andrei Svechnikov",
+   "team": "CAR",
+   "pos": "R",
+   "off": 0.183,
+   "def": 0.091,
+   "toi": 253,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Andrew Copp",
+   "team": "DET",
+   "pos": "C",
+   "off": -0.109,
+   "def": -0.08,
+   "toi": 250,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Andrew Mangiapane",
+   "team": "CHI",
+   "pos": "L",
+   "off": 0.035,
+   "def": 0.112,
+   "toi": 48,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Andrew Peeke",
+   "team": "UTA",
+   "pos": "D",
+   "off": -0.164,
+   "def": 0.138,
+   "toi": 285,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Anthony Beauvillier",
+   "team": "WSH",
+   "pos": "R",
+   "off": -0.108,
+   "def": -0.066,
+   "toi": 162,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Anthony Cirelli",
+   "team": "T.B",
+   "pos": "C",
+   "off": 0.153,
+   "def": 0.058,
+   "toi": 212,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Anthony Duclair",
+   "team": "NYI",
+   "pos": "L",
+   "off": -0.094,
+   "def": -0.155,
+   "toi": 195,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Anthony Mantha",
+   "team": "N.J",
+   "pos": "R",
+   "off": -0.099,
+   "def": 0.044,
+   "toi": 202,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Anton Frondell",
+   "team": "CHI",
+   "pos": "C",
+   "off": -0.113,
+   "def": -0.124,
+   "toi": 232,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Anton Johansson",
+   "team": "DET",
+   "pos": "D",
+   "off": -0.047,
+   "def": -0.272,
+   "toi": 227,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Anton Lundell",
+   "team": "FLA",
+   "pos": "C",
+   "off": -0.095,
+   "def": 0.214,
+   "toi": 199,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Arber Xhekaj",
+   "team": "MTL",
+   "pos": "D",
+   "off": 0.095,
+   "def": -0.078,
+   "toi": 162,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Arseny Gritsyuk",
+   "team": "N.J",
+   "pos": "R",
+   "off": 0.131,
+   "def": 0.049,
+   "toi": 249,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Arshdeep Bains",
+   "team": "VAN",
+   "pos": "L",
+   "off": -0.004,
+   "def": -0.054,
+   "toi": 143,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Artem Zub",
+   "team": "OTT",
+   "pos": "D",
+   "off": -0.021,
+   "def": 0.059,
+   "toi": 177,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Artemi Panarin",
+   "team": "L.A",
+   "pos": "L",
+   "off": 0.285,
+   "def": -0.0,
+   "toi": 246,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Arttu Hyry",
+   "team": "DAL",
+   "pos": "R",
+   "off": 0.017,
+   "def": 0.1,
+   "toi": 207,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Artturi Lehkonen",
+   "team": "COL",
+   "pos": "L",
+   "off": 0.113,
+   "def": -0.053,
+   "toi": 261,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Artyom Levshunov",
+   "team": "CHI",
+   "pos": "D",
+   "off": -0.015,
+   "def": -0.26,
+   "toi": 328,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Auston Matthews",
+   "team": "TOR",
+   "pos": "C",
+   "off": 0.275,
+   "def": 0.036,
+   "toi": 304,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Axel Sandin-Pellikka",
+   "team": "DET",
+   "pos": "D",
+   "off": 0.077,
+   "def": -0.039,
+   "toi": 76,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Aydar Suniev",
+   "team": "CGY",
+   "pos": "L",
+   "off": 0.044,
+   "def": -0.092,
+   "toi": 181,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Barclay Goodrow",
+   "team": "S.J",
+   "pos": "C",
+   "off": -0.123,
+   "def": -0.069,
+   "toi": 163,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Barrett Hayton",
+   "team": "UTA",
+   "pos": "C",
+   "off": 0.35,
+   "def": 0.098,
+   "toi": 231,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Beck Malenstyn",
+   "team": "BUF",
+   "pos": "L",
+   "off": -0.158,
+   "def": 0.179,
+   "toi": 147,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Beckett Sennecke",
+   "team": "ANA",
+   "pos": "R",
+   "off": -0.006,
+   "def": -0.107,
+   "toi": 270,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ben Chiarot",
+   "team": "DET",
+   "pos": "D",
+   "off": 0.084,
+   "def": -0.101,
+   "toi": 314,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Ben Kindel",
+   "team": "PIT",
+   "pos": "C",
+   "off": -0.033,
+   "def": 0.03,
+   "toi": 184,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ben Meyers",
+   "team": "SEA",
+   "pos": "C",
+   "off": -0.117,
+   "def": 0.008,
+   "toi": 150,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Benoit-Olivier Groulx",
+   "team": "TOR",
+   "pos": "C",
+   "off": -0.072,
+   "def": -0.02,
+   "toi": 53,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Berkly Catton",
+   "team": "SEA",
+   "pos": "C",
+   "off": 0.043,
+   "def": 0.176,
+   "toi": 196,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Blake Coleman",
+   "team": "MIN",
+   "pos": "L",
+   "off": 0.028,
+   "def": -0.043,
+   "toi": 233,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Blake Lizotte",
+   "team": "PIT",
+   "pos": "C",
+   "off": -0.019,
+   "def": 0.162,
+   "toi": 197,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Bo Horvat",
+   "team": "NYI",
+   "pos": "C",
+   "off": 0.154,
+   "def": -0.149,
+   "toi": 232,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Bobby Brink",
+   "team": "MIN",
+   "pos": "R",
+   "off": -0.006,
+   "def": 0.109,
+   "toi": 228,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Bobby McMann",
+   "team": "SEA",
+   "pos": "C",
+   "off": -0.083,
+   "def": -0.043,
+   "toi": 225,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Bokondji Imama",
+   "team": "FLA",
+   "pos": "L",
+   "off": -0.167,
+   "def": 0.152,
+   "toi": 132,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Boone Jenner",
+   "team": "WSH",
+   "pos": "C",
+   "off": 0.036,
+   "def": 0.003,
+   "toi": 185,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Bowen Byram",
+   "team": "CHI",
+   "pos": "D",
+   "off": -0.018,
+   "def": -0.05,
+   "toi": 120,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brad Lambert",
+   "team": "WPG",
+   "pos": "C",
+   "off": -0.237,
+   "def": -0.093,
+   "toi": 98,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Braden Schneider",
+   "team": "NYR",
+   "pos": "D",
+   "off": 0.183,
+   "def": -0.01,
+   "toi": 276,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brady Skjei",
+   "team": "NSH",
+   "pos": "D",
+   "off": -0.071,
+   "def": -0.04,
+   "toi": 262,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brady Tkachuk",
+   "team": "FLA",
+   "pos": "L",
+   "off": 0.123,
+   "def": 0.054,
+   "toi": 207,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Braeden Bowman",
+   "team": "VGK",
+   "pos": "R",
+   "off": 0.025,
+   "def": -0.081,
+   "toi": 218,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brandon Carlo",
+   "team": "STL",
+   "pos": "D",
+   "off": 0.125,
+   "def": -0.013,
+   "toi": 259,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brandon Duhaime",
+   "team": "TOR",
+   "pos": "L",
+   "off": -0.17,
+   "def": 0.11,
+   "toi": 182,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brandon Hagel",
+   "team": "T.B",
+   "pos": "L",
+   "off": 0.277,
+   "def": 0.058,
+   "toi": 238,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brandon Montour",
+   "team": "SEA",
+   "pos": "D",
+   "off": 0.073,
+   "def": 0.081,
+   "toi": 298,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brandt Clarke",
+   "team": "L.A",
+   "pos": "D",
+   "off": 0.186,
+   "def": 0.099,
+   "toi": 238,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brayden McNabb",
+   "team": "VGK",
+   "pos": "D",
+   "off": 0.173,
+   "def": 0.194,
+   "toi": 325,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brayden Point",
+   "team": "T.B",
+   "pos": "C",
+   "off": 0.206,
+   "def": -0.057,
+   "toi": 233,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brayden Schenn",
+   "team": "NYI",
+   "pos": "C",
+   "off": 0.052,
+   "def": -0.169,
+   "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brendan Gallagher",
+   "team": "VAN",
+   "pos": "R",
+   "off": -0.012,
+   "def": -0.154,
+   "toi": 166,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brenden Dillon",
+   "team": "N.J",
+   "pos": "D",
+   "off": -0.046,
+   "def": 0.083,
+   "toi": 120,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brennan Othmann",
+   "team": "CGY",
+   "pos": "L",
+   "off": -0.083,
+   "def": -0.031,
+   "toi": 55,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brent Burns",
+   "team": "COL",
+   "pos": "D",
+   "off": -0.012,
+   "def": -0.058,
+   "toi": 258,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brett Howden",
+   "team": "VGK",
+   "pos": "C",
+   "off": 0.008,
+   "def": 0.048,
+   "toi": 265,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brett Kulak",
+   "team": "COL",
+   "pos": "D",
+   "off": -0.082,
+   "def": -0.032,
+   "toi": 309,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brett Pesce",
+   "team": "N.J",
+   "pos": "D",
+   "off": 0.052,
+   "def": 0.218,
+   "toi": 341,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brian Dumoulin",
+   "team": "L.A",
+   "pos": "D",
+   "off": -0.05,
+   "def": -0.09,
+   "toi": 225,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brock Boeser",
+   "team": "VAN",
+   "pos": "R",
+   "off": -0.133,
+   "def": -0.161,
+   "toi": 254,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Brock Nelson",
+   "team": "COL",
+   "pos": "C",
+   "off": 0.027,
+   "def": 0.206,
+   "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Bryan Rust",
+   "team": "PIT",
+   "pos": "R",
+   "off": 0.031,
+   "def": -0.211,
+   "toi": 93,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cale Fleury",
+   "team": "SEA",
+   "pos": "D",
+   "off": -0.086,
+   "def": 0.127,
+   "toi": 77,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cale Makar",
+   "team": "COL",
+   "pos": "D",
+   "off": 0.315,
+   "def": -0.07,
+   "toi": 275,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Calum Ritchie",
+   "team": "NYI",
+   "pos": "C",
+   "off": -0.092,
+   "def": -0.001,
+   "toi": 86,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cam Fowler",
+   "team": "STL",
+   "pos": "D",
+   "off": -0.019,
+   "def": -0.016,
+   "toi": 284,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cam York",
+   "team": "PHI",
+   "pos": "D",
+   "off": -0.016,
+   "def": -0.159,
+   "toi": 181,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Carl Grundstrom",
+   "team": "PHI",
+   "pos": "R",
+   "off": -0.059,
+   "def": -0.188,
+   "toi": 56,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Carson Soucy",
+   "team": "CBJ",
+   "pos": "D",
+   "off": -0.127,
+   "def": -0.054,
+   "toi": 93,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Carter Mazur",
+   "team": "DET",
+   "pos": "L",
+   "off": 0.033,
+   "def": -0.169,
+   "toi": 101,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Carter Verhaeghe",
+   "team": "FLA",
+   "pos": "C",
+   "off": 0.007,
+   "def": -0.03,
+   "toi": 243,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Carter Yakemchuk",
+   "team": "OTT",
+   "pos": "D",
+   "off": -0.239,
+   "def": -0.13,
+   "toi": 204,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Casey Cizikas",
+   "team": "NYI",
+   "pos": "C",
+   "off": -0.051,
+   "def": 0.155,
+   "toi": 167,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Casey Mittelstadt",
+   "team": "BOS",
+   "pos": "C",
+   "off": 0.097,
+   "def": 0.092,
+   "toi": 224,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Chandler Stephenson",
+   "team": "SEA",
+   "pos": "C",
+   "off": -0.04,
+   "def": -0.237,
+   "toi": 212,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Charle-Edouard D'astous",
+   "team": "T.B",
+   "pos": "D",
+   "off": -0.036,
+   "def": -0.015,
+   "toi": 225,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Charlie Coyle",
+   "team": "CBJ",
+   "pos": "C",
+   "off": 0.19,
+   "def": 0.143,
+   "toi": 209,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Charlie McAvoy",
+   "team": "BOS",
+   "pos": "D",
+   "off": 0.099,
+   "def": 0.099,
+   "toi": 214,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Chris Kreider",
+   "team": "MTL",
+   "pos": "L",
+   "off": -0.053,
+   "def": -0.256,
+   "toi": 184,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Chris Tanev",
+   "team": "TOR",
+   "pos": "D",
+   "off": -0.122,
+   "def": -0.065,
+   "toi": 127,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Christian Dvorak",
+   "team": "PHI",
+   "pos": "C",
+   "off": 0.002,
+   "def": -0.043,
+   "toi": 273,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Claude Giroux",
+   "team": "OTT",
+   "pos": "R",
+   "off": 0.046,
+   "def": 0.118,
+   "toi": 230,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Clayton Keller",
+   "team": "UTA",
+   "pos": "R",
+   "off": -0.022,
+   "def": -0.075,
+   "toi": 253,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cody Ceci",
+   "team": "L.A",
+   "pos": "D",
+   "off": -0.035,
+   "def": -0.051,
+   "toi": 100,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cody Glass",
+   "team": "N.J",
+   "pos": "C",
+   "off": -0.08,
+   "def": 0.06,
+   "toi": 186,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cole Caufield",
+   "team": "MTL",
+   "pos": "R",
+   "off": 0.118,
+   "def": -0.191,
+   "toi": 247,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cole Hutson",
+   "team": "WSH",
+   "pos": "D",
+   "off": 0.297,
+   "def": -0.161,
+   "toi": 252,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cole Knuble",
+   "team": "PHI",
+   "pos": "R",
+   "off": 0.082,
+   "def": -0.045,
+   "toi": 105,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cole Koepke",
+   "team": "WPG",
+   "pos": "L",
+   "off": -0.129,
+   "def": -0.052,
+   "toi": 120,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cole Perfetti",
+   "team": "WPG",
+   "pos": "C",
+   "off": 0.093,
+   "def": -0.038,
+   "toi": 253,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cole Schwindt",
+   "team": "FLA",
+   "pos": "R",
+   "off": -0.067,
+   "def": -0.114,
+   "toi": 68,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cole Sillinger",
+   "team": "CBJ",
+   "pos": "C",
+   "off": 0.096,
+   "def": -0.172,
+   "toi": 210,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cole Smith",
+   "team": "CHI",
+   "pos": "R",
+   "off": 0.003,
+   "def": 0.05,
+   "toi": 203,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Colin Blackwell",
+   "team": "DAL",
+   "pos": "C",
+   "off": -0.096,
+   "def": 0.071,
+   "toi": 112,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Collin Graf",
+   "team": "S.J",
+   "pos": "R",
+   "off": -0.065,
+   "def": 0.006,
+   "toi": 234,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Colton Dach",
+   "team": "EDM",
+   "pos": "C",
+   "off": -0.017,
+   "def": -0.183,
+   "toi": 170,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Colton Parayko",
+   "team": "STL",
+   "pos": "D",
+   "off": -0.011,
+   "def": 0.055,
+   "toi": 259,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Colton Sissons",
+   "team": "TOR",
+   "pos": "C",
+   "off": -0.12,
+   "def": 0.224,
+   "toi": 220,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Connor Bedard",
+   "team": "CHI",
+   "pos": "C",
+   "off": 0.078,
+   "def": -0.095,
+   "toi": 190,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Connor Brown",
+   "team": "N.J",
+   "pos": "R",
+   "off": -0.138,
+   "def": 0.031,
+   "toi": 117,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Connor Clifton",
+   "team": "BOS",
+   "pos": "D",
+   "off": -0.083,
+   "def": 0.118,
+   "toi": 122,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Connor Dewar",
+   "team": "PIT",
+   "pos": "C",
+   "off": -0.116,
+   "def": 0.265,
+   "toi": 201,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Connor McDavid",
+   "team": "EDM",
+   "pos": "C",
+   "off": 0.144,
+   "def": 0.124,
+   "toi": 310,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Connor McMichael",
+   "team": "STL",
+   "pos": "L",
+   "off": 0.172,
+   "def": -0.086,
+   "toi": 200,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Connor Murphy",
+   "team": "EDM",
+   "pos": "D",
+   "off": -0.301,
+   "def": -0.049,
+   "toi": 322,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Garland",
+   "team": "CBJ",
+   "pos": "R",
+   "off": -0.112,
+   "def": -0.018,
+   "toi": 182,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Geekie",
+   "team": "T.B",
+   "pos": "C",
+   "off": -0.171,
+   "def": 0.014,
+   "toi": 177,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Corey Perry",
+   "team": "L.A",
+   "pos": "R",
+   "off": 0.034,
+   "def": 0.072,
+   "toi": 139,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Cutter Gauthier",
+   "team": "ANA",
+   "pos": "L",
+   "off": 0.079,
+   "def": -0.368,
+   "toi": 219,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Daemon Hunt",
+   "team": "MIN",
+   "pos": "D",
+   "off": -0.166,
+   "def": -0.09,
+   "toi": 138,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Daemon Hunt",
+   "team": "NSH",
+   "pos": "D",
+   "off": 0.061,
+   "def": 0.026,
+   "toi": 91,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dalibor Dvorsky",
+   "team": "STL",
+   "pos": "R",
+   "off": 0.011,
+   "def": -0.028,
+   "toi": 187,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Damon Severson",
+   "team": "CBJ",
+   "pos": "D",
+   "off": 0.126,
+   "def": -0.079,
+   "toi": 257,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Daniil but",
+   "team": "UTA",
+   "pos": "L",
+   "off": -0.058,
+   "def": 0.014,
+   "toi": 129,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Danila Yurov",
+   "team": "MIN",
+   "pos": "R",
+   "off": 0.018,
+   "def": 0.104,
+   "toi": 223,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dante Fabbro",
+   "team": "CBJ",
+   "pos": "D",
+   "off": -0.082,
+   "def": 0.011,
+   "toi": 79,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Danton Heinen",
+   "team": "CBJ",
+   "pos": "L",
+   "off": -0.052,
+   "def": 0.035,
+   "toi": 92,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Darnell Nurse",
+   "team": "S.J",
+   "pos": "D",
+   "off": -0.054,
+   "def": -0.209,
+   "toi": 315,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Darren Raddysh",
+   "team": "TOR",
+   "pos": "D",
+   "off": 0.0,
+   "def": -0.038,
+   "toi": 363,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "David Jiricek",
+   "team": "PHI",
+   "pos": "D",
+   "off": -0.024,
+   "def": 0.025,
+   "toi": 112,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "David Pastrnak",
+   "team": "BOS",
+   "pos": "R",
+   "off": 0.073,
+   "def": -0.004,
+   "toi": 287,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "David Spacek",
+   "team": "MIN",
+   "pos": "D",
+   "off": -0.133,
+   "def": 0.137,
+   "toi": 119,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dawson Mercer",
+   "team": "N.J",
+   "pos": "C",
+   "off": -0.02,
+   "def": 0.022,
+   "toi": 125,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dawson Mercer",
+   "team": "WPG",
+   "pos": "C",
+   "off": -0.074,
+   "def": 0.104,
+   "toi": 104,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Declan Carlile",
+   "team": "PIT",
+   "pos": "D",
+   "off": 0.213,
+   "def": -0.046,
+   "toi": 282,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Declan Chisholm",
+   "team": "N.J",
+   "pos": "D",
+   "off": 0.001,
+   "def": 0.093,
+   "toi": 222,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dennis Gilbert",
+   "team": "BUF",
+   "pos": "D",
+   "off": -0.081,
+   "def": -0.044,
+   "toi": 46,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Denton Mateychuk",
+   "team": "CBJ",
+   "pos": "D",
+   "off": 0.024,
+   "def": 0.055,
+   "toi": 293,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Denver Barkey",
+   "team": "PHI",
+   "pos": "C",
+   "off": 0.044,
+   "def": 0.154,
+   "toi": 183,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Devon Toews",
+   "team": "COL",
+   "pos": "D",
+   "off": 0.123,
+   "def": 0.193,
+   "toi": 305,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dmitri Simashev",
+   "team": "UTA",
+   "pos": "D",
+   "off": 0.019,
+   "def": -0.118,
+   "toi": 264,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dmitri Voronkov",
+   "team": "CBJ",
+   "pos": "L",
+   "off": 0.068,
+   "def": -0.007,
+   "toi": 88,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dmitry Kulikov",
+   "team": "FLA",
+   "pos": "D",
+   "off": -0.264,
+   "def": -0.063,
+   "toi": 237,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dmitry Orlov",
+   "team": "S.J",
+   "pos": "D",
+   "off": -0.134,
+   "def": -0.177,
+   "toi": 271,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dominic James",
+   "team": "T.B",
+   "pos": "C",
+   "off": -0.134,
+   "def": -0.247,
+   "toi": 69,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dougie Hamilton",
+   "team": "N.J",
+   "pos": "D",
+   "off": 0.232,
+   "def": -0.02,
+   "toi": 307,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Drake Batherson",
+   "team": "OTT",
+   "pos": "R",
+   "off": 0.041,
+   "def": 0.083,
+   "toi": 237,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Drew Doughty",
+   "team": "L.A",
+   "pos": "D",
+   "off": -0.16,
+   "def": 0.075,
+   "toi": 246,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Drew Helleson",
+   "team": "ANA",
+   "pos": "D",
+   "off": -0.182,
+   "def": 0.054,
+   "toi": 181,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Drew O'Connor",
+   "team": "VAN",
+   "pos": "L",
+   "off": 0.052,
+   "def": -0.172,
+   "toi": 248,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dylan Coghlan",
+   "team": "VGK",
+   "pos": "D",
+   "off": 0.026,
+   "def": -0.157,
+   "toi": 155,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dylan Cozens",
+   "team": "OTT",
+   "pos": "C",
+   "off": -0.133,
+   "def": 0.092,
+   "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dylan Demelo",
+   "team": "WPG",
+   "pos": "D",
+   "off": 0.058,
+   "def": -0.026,
+   "toi": 320,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dylan Guenther",
+   "team": "UTA",
+   "pos": "R",
+   "off": -0.129,
+   "def": 0.027,
+   "toi": 231,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dylan Holloway",
+   "team": "STL",
+   "pos": "L",
+   "off": 0.087,
+   "def": -0.018,
+   "toi": 249,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dylan Larkin",
+   "team": "DET",
+   "pos": "C",
+   "off": 0.042,
+   "def": 0.037,
+   "toi": 155,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Dylan Samberg",
+   "team": "WPG",
+   "pos": "D",
+   "off": 0.038,
+   "def": 0.3,
+   "toi": 348,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Dylan Strome",
+   "team": "WSH",
+   "pos": "C",
+   "off": 0.067,
+   "def": -0.056,
+   "toi": 208,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Easton Cowan",
+   "team": "TOR",
+   "pos": "R",
+   "off": 0.086,
+   "def": 0.102,
+   "toi": 261,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Eeli Tolvanen",
+   "team": "NYR",
+   "pos": "R",
+   "off": 0.027,
+   "def": 0.009,
+   "toi": 184,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Eetu Luostarinen",
+   "team": "FLA",
+   "pos": "C",
+   "off": -0.084,
+   "def": 0.211,
+   "toi": 207,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Elias Lindholm",
+   "team": "BOS",
+   "pos": "C",
+   "off": 0.01,
+   "def": 0.111,
+   "toi": 210,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Elias Pettersson",
+   "team": "VAN",
+   "pos": "C",
+   "off": -0.006,
+   "def": 0.043,
+   "toi": 262,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Elias Pettersson (D)",
+   "team": "VAN",
+   "pos": "D",
+   "off": -0.096,
+   "def": 0.148,
+   "toi": 307,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Elias Salomonsson",
+   "team": "WPG",
+   "pos": "D",
+   "off": 0.026,
+   "def": -0.093,
+   "toi": 91,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Elmer Soderblom",
+   "team": "PIT",
+   "pos": "L",
+   "off": 0.031,
+   "def": 0.201,
+   "toi": 64,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Emil Andrae",
+   "team": "CBJ",
+   "pos": "D",
+   "off": -0.075,
+   "def": 0.042,
+   "toi": 53,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Emil Heineman",
+   "team": "NYI",
+   "pos": "L",
+   "off": 0.169,
+   "def": 0.021,
+   "toi": 199,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Emil Martinsen Lilleberg",
+   "team": "T.B",
+   "pos": "D",
+   "off": -0.001,
+   "def": -0.077,
+   "toi": 73,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Emmitt Finnie",
+   "team": "DET",
+   "pos": "C",
+   "off": 0.102,
+   "def": 0.012,
+   "toi": 256,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Eric Robinson",
+   "team": "CAR",
+   "pos": "L",
+   "off": -0.127,
+   "def": -0.069,
+   "toi": 205,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Erik Cernak",
+   "team": "T.B",
+   "pos": "D",
+   "off": 0.011,
+   "def": 0.31,
+   "toi": 249,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Erik Gudbranson",
+   "team": "CBJ",
+   "pos": "D",
+   "off": -0.195,
+   "def": 0.152,
+   "toi": 157,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Erik Gustafsson (D)",
+   "team": "L.A",
+   "pos": "D",
+   "off": 0.06,
+   "def": 0.042,
+   "toi": 216,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Erik Haula",
+   "team": "L.A",
+   "pos": "L",
+   "off": -0.175,
+   "def": -0.075,
+   "toi": 177,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Erik Karlsson",
+   "team": "PIT",
+   "pos": "D",
+   "off": 0.012,
+   "def": -0.237,
+   "toi": 310,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Esa Lindell",
+   "team": "DAL",
+   "pos": "D",
+   "off": -0.089,
+   "def": 0.039,
+   "toi": 211,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ethan Del Mastro",
+   "team": "CHI",
+   "pos": "D",
+   "off": 0.093,
+   "def": -0.022,
+   "toi": 102,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Evan Bouchard",
+   "team": "EDM",
+   "pos": "D",
+   "off": 0.189,
+   "def": 0.166,
+   "toi": 361,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Evan Rodrigues",
+   "team": "N.J",
+   "pos": "C",
+   "off": -0.222,
+   "def": 0.046,
+   "toi": 222,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Evgeni Malkin",
+   "team": "PIT",
+   "pos": "C",
+   "off": 0.093,
+   "def": -0.126,
+   "toi": 221,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Fabian Zetterlund",
+   "team": "OTT",
+   "pos": "L",
+   "off": 0.122,
+   "def": 0.222,
+   "toi": 218,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Fedor Svechkov",
+   "team": "COL",
+   "pos": "C",
+   "off": -0.173,
+   "def": 0.057,
+   "toi": 211,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Filip Bystedt",
+   "team": "S.J",
+   "pos": "C",
+   "off": -0.04,
+   "def": 0.04,
+   "toi": 46,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Filip Chytil",
+   "team": "VAN",
+   "pos": "C",
+   "off": -0.168,
+   "def": -0.15,
+   "toi": 107,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Filip Forsberg",
+   "team": "NSH",
+   "pos": "L",
+   "off": -0.01,
+   "def": -0.112,
+   "toi": 271,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Filip Hronek",
+   "team": "VAN",
+   "pos": "D",
+   "off": -0.199,
+   "def": -0.119,
+   "toi": 356,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Florian Xhekaj",
+   "team": "MTL",
+   "pos": "L",
+   "off": 0.102,
+   "def": 0.082,
+   "toi": 55,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Frank Nazar",
+   "team": "CHI",
+   "pos": "C",
+   "off": 0.092,
+   "def": 0.059,
+   "toi": 218,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Frank Vatrano",
+   "team": "ANA",
+   "pos": "R",
+   "off": -0.117,
+   "def": 0.012,
+   "toi": 93,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Fraser Minten",
+   "team": "BOS",
+   "pos": "C",
+   "off": 0.099,
+   "def": -0.071,
+   "toi": 236,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Frederic Brunet",
+   "team": "BOS",
+   "pos": "D",
+   "off": -0.021,
+   "def": -0.13,
+   "toi": 176,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Frederick Gaudreau",
+   "team": "SEA",
+   "pos": "C",
+   "off": -0.055,
+   "def": -0.09,
+   "toi": 207,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Gabe Perreault",
+   "team": "NYR",
+   "pos": "R",
+   "off": 0.097,
+   "def": -0.076,
+   "toi": 266,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Gabriel Landeskog",
+   "team": "COL",
+   "pos": "L",
+   "off": 0.016,
+   "def": 0.102,
+   "toi": 229,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Gabriel Vilardi",
+   "team": "WPG",
+   "pos": "C",
+   "off": 0.069,
+   "def": -0.161,
+   "toi": 249,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Gage Goncalves",
+   "team": "T.B",
+   "pos": "C",
+   "off": 0.055,
+   "def": 0.15,
+   "toi": 209,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Garnet Hathaway",
+   "team": "FLA",
+   "pos": "R",
+   "off": -0.082,
+   "def": 0.082,
+   "toi": 134,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Gavin Brindley",
+   "team": "COL",
+   "pos": "C",
+   "off": 0.035,
+   "def": 0.054,
+   "toi": 45,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Gavin McKenna",
+   "team": "TOR",
+   "pos": "L",
+   "off": -0.155,
+   "def": -0.138,
+   "toi": 213,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Guillaume Brisebois",
+   "team": "VAN",
+   "pos": "D",
+   "off": -0.107,
+   "def": -0.162,
+   "toi": 68,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Gustav Forsling",
+   "team": "FLA",
+   "pos": "D",
+   "off": 0.075,
+   "def": 0.046,
+   "toi": 286,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Hampus Lindholm",
+   "team": "BOS",
+   "pos": "D",
+   "off": 0.178,
+   "def": 0.19,
+   "toi": 311,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Hayden Hodgson",
+   "team": "OTT",
+   "pos": "R",
+   "off": -0.084,
+   "def": -0.008,
+   "toi": 36,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Haydn Fleury",
+   "team": "WPG",
+   "pos": "D",
+   "off": -0.194,
+   "def": -0.166,
+   "toi": 174,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Hendrix Lapierre",
+   "team": "PIT",
+   "pos": "C",
+   "off": 0.009,
+   "def": -0.08,
+   "toi": 152,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Hunter McDonald",
+   "team": "PHI",
+   "pos": "D",
+   "off": -0.091,
+   "def": 0.108,
+   "toi": 61,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ian Cole",
+   "team": "CHI",
+   "pos": "D",
+   "off": -0.106,
+   "def": 0.238,
+   "toi": 275,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Igor Chernyshov",
+   "team": "S.J",
+   "pos": "L",
+   "off": 0.068,
+   "def": -0.053,
+   "toi": 130,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ilya Mikheyev",
+   "team": "T.B",
+   "pos": "R",
+   "off": -0.036,
+   "def": 0.061,
+   "toi": 212,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ilya Protas",
+   "team": "WSH",
+   "pos": "L",
+   "off": 0.086,
+   "def": 0.07,
+   "toi": 141,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Isaac Howard",
+   "team": "EDM",
+   "pos": "L",
+   "off": -0.125,
+   "def": -0.046,
+   "toi": 100,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Isak Rosen",
+   "team": "WPG",
+   "pos": "R",
+   "off": -0.119,
+   "def": 0.047,
+   "toi": 189,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ivan Barbashev",
+   "team": "VGK",
+   "pos": "L",
+   "off": 0.132,
+   "def": 0.197,
+   "toi": 277,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ivar Stenberg",
+   "team": "S.J",
+   "pos": "L",
+   "off": -0.194,
+   "def": 0.01,
+   "toi": 227,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "J.T. Compher",
+   "team": "DET",
+   "pos": "L",
+   "off": 0.167,
+   "def": 0.003,
+   "toi": 136,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "J.T. Miller",
+   "team": "NYR",
+   "pos": "C",
+   "off": 0.448,
+   "def": 0.02,
+   "toi": 255,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jaccob Slavin",
+   "team": "CAR",
+   "pos": "D",
+   "off": -0.017,
+   "def": 0.139,
+   "toi": 343,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jack Drury",
+   "team": "NSH",
+   "pos": "C",
+   "off": -0.04,
+   "def": 0.092,
+   "toi": 237,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jack Eichel",
+   "team": "VGK",
+   "pos": "C",
+   "off": 0.159,
+   "def": -0.009,
+   "toi": 280,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jack Hughes",
+   "team": "N.J",
+   "pos": "C",
+   "off": 0.256,
+   "def": 0.073,
+   "toi": 296,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jack McBain",
+   "team": "UTA",
+   "pos": "C",
+   "off": -0.002,
+   "def": 0.077,
+   "toi": 200,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jack Quinn",
+   "team": "BUF",
+   "pos": "R",
+   "off": 0.105,
+   "def": -0.039,
+   "toi": 248,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jack Roslovic",
+   "team": "TOR",
+   "pos": "C",
+   "off": -0.03,
+   "def": -0.015,
+   "toi": 271,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jack St. Ivany",
+   "team": "WPG",
+   "pos": "D",
+   "off": -0.037,
+   "def": 0.037,
+   "toi": 54,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jack St. Ivany",
+   "team": "WSH",
+   "pos": "D",
+   "off": 0.064,
+   "def": -0.004,
+   "toi": 69,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jackson Blake",
+   "team": "CAR",
+   "pos": "R",
+   "off": 0.291,
+   "def": 0.079,
+   "toi": 257,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jackson Lacombe",
+   "team": "ANA",
+   "pos": "D",
+   "off": -0.262,
+   "def": -0.193,
+   "toi": 334,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jacob Middleton",
+   "team": "CGY",
+   "pos": "D",
+   "off": -0.041,
+   "def": -0.097,
+   "toi": 282,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jacob Trouba",
+   "team": "S.J",
+   "pos": "D",
+   "off": -0.057,
+   "def": 0.067,
+   "toi": 325,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jaden Schwartz",
+   "team": "COL",
+   "pos": "L",
+   "off": 0.042,
+   "def": 0.003,
+   "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jake Christiansen",
+   "team": "CBJ",
+   "pos": "D",
+   "off": -0.107,
+   "def": -0.079,
+   "toi": 182,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jake Debrusk",
+   "team": "VAN",
+   "pos": "L",
+   "off": 0.062,
+   "def": -0.085,
+   "toi": 217,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jake Evans",
+   "team": "MTL",
+   "pos": "C",
+   "off": 0.067,
+   "def": 0.214,
+   "toi": 184,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jake Guentzel",
+   "team": "T.B",
+   "pos": "C",
+   "off": 0.174,
+   "def": 0.036,
+   "toi": 246,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jake McCabe",
+   "team": "TOR",
+   "pos": "D",
+   "off": -0.259,
+   "def": 0.043,
+   "toi": 305,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jake Neighbours",
+   "team": "STL",
+   "pos": "L",
+   "off": -0.269,
+   "def": -0.008,
+   "toi": 204,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jake Sanderson",
+   "team": "OTT",
+   "pos": "D",
+   "off": 0.03,
+   "def": 0.008,
+   "toi": 163,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jake Walman",
+   "team": "EDM",
+   "pos": "D",
+   "off": 0.053,
+   "def": -0.086,
+   "toi": 135,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jakob Chychrun",
+   "team": "WSH",
+   "pos": "D",
+   "off": 0.189,
+   "def": -0.091,
+   "toi": 293,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jalen Chatfield",
+   "team": "CAR",
+   "pos": "D",
+   "off": 0.133,
+   "def": 0.018,
+   "toi": 327,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "James Hagens",
+   "team": "BOS",
+   "pos": "C",
+   "off": -0.012,
+   "def": 0.078,
+   "toi": 197,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jamie Benn",
+   "team": "DAL",
+   "pos": "L",
+   "off": 0.008,
+   "def": 0.162,
+   "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jamie Drysdale",
+   "team": "PHI",
+   "pos": "D",
+   "off": -0.204,
+   "def": -0.045,
+   "toi": 348,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jamie Oleksiak",
+   "team": "VAN",
+   "pos": "D",
+   "off": -0.099,
+   "def": -0.0,
+   "toi": 265,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Janis Moser",
+   "team": "T.B",
+   "pos": "D",
+   "off": 0.083,
+   "def": 0.081,
+   "toi": 264,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jared McCann",
+   "team": "SEA",
+   "pos": "L",
+   "off": 0.093,
+   "def": 0.061,
+   "toi": 138,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jared Spurgeon",
+   "team": "MIN",
+   "pos": "D",
+   "off": 0.132,
+   "def": 0.143,
+   "toi": 157,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jaroslav Chmelar",
+   "team": "NYR",
+   "pos": "R",
+   "off": -0.145,
+   "def": 0.063,
+   "toi": 81,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jason Dickinson",
+   "team": "EDM",
+   "pos": "C",
+   "off": -0.184,
+   "def": 0.135,
+   "toi": 97,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jason Robertson",
+   "team": "DAL",
+   "pos": "L",
+   "off": 0.013,
+   "def": 0.126,
+   "toi": 262,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jason Zucker",
+   "team": "BUF",
+   "pos": "L",
+   "off": -0.055,
+   "def": -0.11,
+   "toi": 88,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jayden Struble",
+   "team": "MTL",
+   "pos": "D",
+   "off": -0.067,
+   "def": -0.101,
+   "toi": 34,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jayden Struble",
+   "team": "NSH",
+   "pos": "D",
+   "off": -0.114,
+   "def": -0.108,
+   "toi": 198,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jean-Gabriel Pageau",
+   "team": "NYI",
+   "pos": "C",
+   "off": -0.152,
+   "def": 0.108,
+   "toi": 199,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jeff Malott",
+   "team": "ANA",
+   "pos": "L",
+   "off": 0.005,
+   "def": 0.163,
+   "toi": 163,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jeffrey Viel",
+   "team": "T.B",
+   "pos": "L",
+   "off": -0.06,
+   "def": 0.044,
+   "toi": 134,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jeremy Lauzon",
+   "team": "VGK",
+   "pos": "D",
+   "off": -0.258,
+   "def": 0.225,
+   "toi": 294,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jesper Boqvist",
+   "team": "N.J",
+   "pos": "C",
+   "off": -0.052,
+   "def": 0.146,
+   "toi": 185,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jesper Bratt",
+   "team": "N.J",
+   "pos": "L",
+   "off": 0.293,
+   "def": 0.057,
+   "toi": 242,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jesperi Kotkaniemi",
+   "team": "CAR",
+   "pos": "C",
+   "off": -0.007,
+   "def": 0.05,
+   "toi": 183,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jimmy Snuggerud",
+   "team": "STL",
+   "pos": "R",
+   "off": -0.023,
+   "def": 0.109,
+   "toi": 244,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jiri Kulich",
+   "team": "BUF",
+   "pos": "C",
+   "off": 0.157,
+   "def": 0.045,
+   "toi": 114,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jj Peterka",
+   "team": "BOS",
+   "pos": "R",
+   "off": 0.266,
+   "def": -0.057,
+   "toi": 271,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Joel Armia",
+   "team": "L.A",
+   "pos": "R",
+   "off": -0.01,
+   "def": 0.187,
+   "toi": 175,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Joel Edmundson",
+   "team": "L.A",
+   "pos": "D",
+   "off": -0.093,
+   "def": 0.115,
+   "toi": 224,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Joel Eriksson Ek",
+   "team": "MIN",
+   "pos": "C",
+   "off": 0.185,
+   "def": -0.018,
+   "toi": 269,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Joel Farabee",
+   "team": "CGY",
+   "pos": "L",
+   "off": 0.089,
+   "def": 0.03,
+   "toi": 249,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Joel Kiviranta",
+   "team": "DAL",
+   "pos": "L",
+   "off": -0.039,
+   "def": -0.038,
+   "toi": 129,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "John Carlson",
+   "team": "T.B",
+   "pos": "D",
+   "off": 0.066,
+   "def": -0.049,
+   "toi": 257,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "John Marino",
+   "team": "UTA",
+   "pos": "D",
+   "off": 0.095,
+   "def": 0.031,
+   "toi": 164,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "John Tavares",
+   "team": "TOR",
+   "pos": "C",
+   "off": -0.02,
+   "def": -0.207,
+   "toi": 117,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Johnathan Kovacevic",
+   "team": "N.J",
+   "pos": "D",
+   "off": 0.041,
+   "def": 0.125,
+   "toi": 178,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jonas Brodin",
+   "team": "MIN",
+   "pos": "D",
+   "off": -0.031,
+   "def": 0.012,
+   "toi": 353,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jonas Siegenthaler",
+   "team": "N.J",
+   "pos": "D",
+   "off": 0.067,
+   "def": -0.021,
+   "toi": 316,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jonatan Berggren",
+   "team": "STL",
+   "pos": "R",
+   "off": 0.138,
+   "def": -0.128,
+   "toi": 192,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jonathan Aspirot",
+   "team": "BOS",
+   "pos": "D",
+   "off": -0.098,
+   "def": 0.053,
+   "toi": 89,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jonathan Castagna",
+   "team": "CGY",
+   "pos": "C",
+   "off": -0.103,
+   "def": 0.15,
+   "toi": 170,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jonathan Lekkerimaki",
+   "team": "VAN",
+   "pos": "R",
+   "off": -0.086,
+   "def": -0.093,
+   "toi": 227,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jonathan Marchessault",
+   "team": "NSH",
+   "pos": "R",
+   "off": -0.253,
+   "def": -0.16,
+   "toi": 180,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jordan Eberle",
+   "team": "SEA",
+   "pos": "R",
+   "off": -0.049,
+   "def": 0.009,
+   "toi": 215,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jordan Greenway",
+   "team": "CHI",
+   "pos": "L",
+   "off": -0.075,
+   "def": -0.05,
+   "toi": 182,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jordan Kyrou",
+   "team": "WSH",
+   "pos": "R",
+   "off": 0.068,
+   "def": -0.104,
+   "toi": 181,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jordan Martinook",
+   "team": "CAR",
+   "pos": "L",
+   "off": 0.113,
+   "def": 0.199,
+   "toi": 230,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jordan Spence",
+   "team": "OTT",
+   "pos": "D",
+   "off": 0.149,
+   "def": 0.15,
+   "toi": 342,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Jordan Staal",
+   "team": "CAR",
+   "pos": "C",
+   "off": -0.191,
+   "def": 0.098,
+   "toi": 65,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Josh Anderson",
+   "team": "MTL",
+   "pos": "R",
+   "off": 0.075,
+   "def": -0.134,
+   "toi": 187,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Josh Doan",
+   "team": "BUF",
+   "pos": "R",
+   "off": 0.079,
+   "def": -0.304,
+   "toi": 230,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Josh Mahura",
+   "team": "SEA",
+   "pos": "D",
+   "off": 0.04,
+   "def": -0.125,
+   "toi": 166,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Josh Manson",
+   "team": "COL",
+   "pos": "D",
+   "off": 0.051,
+   "def": 0.039,
+   "toi": 171,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Josh Norris",
+   "team": "BUF",
+   "pos": "C",
+   "off": -0.028,
+   "def": 0.072,
+   "toi": 193,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Josh Samanski",
+   "team": "EDM",
+   "pos": "C",
+   "off": -0.077,
+   "def": -0.002,
+   "toi": 44,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Judd Caulfield",
+   "team": "ANA",
+   "pos": "R",
+   "off": 0.017,
+   "def": 0.016,
+   "toi": 177,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Juraj Slafkovsky",
+   "team": "MTL",
+   "pos": "L",
+   "off": -0.009,
+   "def": -0.045,
+   "toi": 238,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Justin Barron",
+   "team": "STL",
+   "pos": "D",
+   "off": 0.002,
+   "def": 0.114,
+   "toi": 216,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Justin Danforth",
+   "team": "BUF",
+   "pos": "R",
+   "off": -0.028,
+   "def": -0.045,
+   "toi": 49,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Justin Faulk",
+   "team": "DET",
+   "pos": "D",
+   "off": -0.009,
+   "def": 0.165,
+   "toi": 303,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Justin Hryckowian",
+   "team": "DAL",
+   "pos": "C",
+   "off": -0.233,
+   "def": 0.044,
+   "toi": 205,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Justin Sourdif",
+   "team": "WSH",
+   "pos": "C",
+   "off": 0.153,
+   "def": 0.089,
+   "toi": 161,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Juuso Valimaki",
+   "team": "CAR",
+   "pos": "D",
+   "off": 0.199,
+   "def": 0.124,
+   "toi": 105,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "K'Andre Miller",
+   "team": "CAR",
+   "pos": "D",
+   "off": 0.113,
+   "def": 0.113,
+   "toi": 353,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kaapo Kakko",
+   "team": "SEA",
+   "pos": "R",
+   "off": 0.007,
+   "def": -0.129,
+   "toi": 187,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kaedan Korczak",
+   "team": "PIT",
+   "pos": "D",
+   "off": 0.166,
+   "def": 0.012,
+   "toi": 283,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kaiden Guhle",
+   "team": "MTL",
+   "pos": "D",
+   "off": -0.118,
+   "def": 0.089,
+   "toi": 246,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kailer Yamamoto",
+   "team": "UTA",
+   "pos": "R",
+   "off": 0.247,
+   "def": 0.11,
+   "toi": 119,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kasperi Kapanen",
+   "team": "EDM",
+   "pos": "R",
+   "off": -0.087,
+   "def": 0.081,
+   "toi": 242,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Keegan Kolesar",
+   "team": "DET",
+   "pos": "R",
+   "off": -0.353,
+   "def": 0.182,
+   "toi": 161,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Kent Johnson",
+   "team": "CBJ",
+   "pos": "C",
+   "off": -0.004,
+   "def": 0.071,
+   "toi": 213,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kevin Bahl",
+   "team": "CGY",
+   "pos": "D",
+   "off": 0.066,
+   "def": 0.088,
+   "toi": 303,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kevin Korchinski",
+   "team": "CHI",
+   "pos": "D",
+   "off": 0.091,
+   "def": -0.225,
+   "toi": 61,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kevin Stenlund",
+   "team": "UTA",
+   "pos": "C",
+   "off": -0.068,
+   "def": 0.138,
+   "toi": 194,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kiefer Sherwood",
+   "team": "S.J",
+   "pos": "L",
+   "off": -0.019,
+   "def": 0.05,
+   "toi": 235,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kirby Dach",
+   "team": "MTL",
+   "pos": "C",
+   "off": -0.129,
+   "def": 0.049,
+   "toi": 145,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kirill Kaprizov",
+   "team": "MIN",
+   "pos": "L",
+   "off": 0.206,
+   "def": 0.152,
+   "toi": 311,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kirill Marchenko",
+   "team": "TOR",
+   "pos": "R",
+   "off": 0.037,
+   "def": 0.147,
+   "toi": 192,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Konsta Helenius",
+   "team": "BUF",
+   "pos": "C",
+   "off": -0.038,
+   "def": 0.016,
+   "toi": 128,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kris Letang",
+   "team": "PIT",
+   "pos": "D",
+   "off": 0.037,
+   "def": 0.123,
+   "toi": 311,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kyle Capobianco",
+   "team": "DAL",
+   "pos": "D",
+   "off": 0.114,
+   "def": -0.057,
+   "toi": 55,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kyle Connor",
+   "team": "WPG",
+   "pos": "L",
+   "off": 0.266,
+   "def": -0.152,
+   "toi": 287,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kyle MacLean",
+   "team": "NYI",
+   "pos": "C",
+   "off": -0.107,
+   "def": -0.022,
+   "toi": 67,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Kyle Palmieri",
+   "team": "NYI",
+   "pos": "C",
+   "off": 0.192,
+   "def": -0.144,
+   "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Lane Hutson",
+   "team": "MTL",
+   "pos": "D",
+   "off": 0.2,
+   "def": 0.185,
+   "toi": 351,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Lars Eller",
+   "team": "FLA",
+   "pos": "C",
+   "off": -0.145,
+   "def": 0.078,
+   "toi": 208,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Lawson Crouse",
+   "team": "UTA",
+   "pos": "L",
+   "off": 0.108,
+   "def": 0.146,
+   "toi": 225,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Leo Carlsson",
+   "team": "ANA",
+   "pos": "C",
+   "off": 0.119,
+   "def": -0.08,
+   "toi": 249,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Leon Draisaitl",
+   "team": "EDM",
+   "pos": "C",
+   "off": 0.143,
+   "def": 0.13,
+   "toi": 299,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Liam O'Brien",
+   "team": "UTA",
+   "pos": "C",
+   "off": 0.045,
+   "def": 0.066,
+   "toi": 41,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Liam Ohgren",
+   "team": "VAN",
+   "pos": "L",
+   "off": -0.089,
+   "def": -0.056,
+   "toi": 221,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Lian Bichsel",
+   "team": "DAL",
+   "pos": "D",
+   "off": -0.134,
+   "def": -0.078,
+   "toi": 250,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Linus Karlsson",
+   "team": "VAN",
+   "pos": "C",
+   "off": -0.171,
+   "def": 0.126,
+   "toi": 232,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Logan Cooley",
+   "team": "UTA",
+   "pos": "C",
+   "off": 0.112,
+   "def": 0.068,
+   "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Logan O'Connor",
+   "team": "COL",
+   "pos": "R",
+   "off": 0.052,
+   "def": -0.008,
+   "toi": 68,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Logan Stankoven",
+   "team": "CAR",
+   "pos": "C",
+   "off": 0.336,
+   "def": -0.038,
+   "toi": 265,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Logan Stanley",
+   "team": "NYI",
+   "pos": "D",
+   "off": 0.07,
+   "def": 0.092,
+   "toi": 290,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Louis Crevier",
+   "team": "BUF",
+   "pos": "D",
+   "off": -0.074,
+   "def": -0.15,
+   "toi": 163,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Luca Cagnoni",
+   "team": "S.J",
+   "pos": "D",
+   "off": -0.054,
+   "def": 0.007,
+   "toi": 128,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Luca Del Bel Belluz",
+   "team": "CBJ",
+   "pos": "C",
+   "off": -0.124,
+   "def": -0.033,
+   "toi": 61,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Lucas Raymond",
+   "team": "DET",
+   "pos": "L",
+   "off": -0.097,
+   "def": 0.114,
+   "toi": 274,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Luke Evangelista",
+   "team": "N.J",
+   "pos": "R",
+   "off": 0.133,
+   "def": 0.164,
+   "toi": 205,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Luke Hughes",
+   "team": "N.J",
+   "pos": "D",
+   "off": -0.032,
+   "def": -0.04,
+   "toi": 346,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Luke Schenn",
+   "team": "VAN",
+   "pos": "D",
+   "off": -0.022,
+   "def": -0.148,
+   "toi": 126,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "MacKenzie Weegar",
+   "team": "UTA",
+   "pos": "D",
+   "off": 0.261,
+   "def": 0.225,
+   "toi": 339,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mackie Samoskevich",
+   "team": "SEA",
+   "pos": "R",
+   "off": -0.035,
+   "def": -0.0,
+   "toi": 207,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Macklin Celebrini",
+   "team": "S.J",
+   "pos": "C",
+   "off": 0.256,
+   "def": 0.047,
+   "toi": 286,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Marat Khusnutdinov",
+   "team": "BOS",
+   "pos": "C",
+   "off": -0.13,
+   "def": 0.01,
+   "toi": 204,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Marc Gatcomb",
+   "team": "VGK",
+   "pos": "C",
+   "off": -0.258,
+   "def": -0.064,
+   "toi": 199,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Marco Rossi",
+   "team": "VAN",
+   "pos": "C",
+   "off": -0.114,
+   "def": 0.001,
+   "toi": 212,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Marcus Foligno",
+   "team": "MIN",
+   "pos": "L",
+   "off": -0.025,
+   "def": -0.037,
+   "toi": 53,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Marcus Pettersson",
+   "team": "NYR",
+   "pos": "D",
+   "off": 0.005,
+   "def": 0.02,
+   "toi": 323,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mario Ferraro",
+   "team": "WPG",
+   "pos": "D",
+   "off": -0.113,
+   "def": -0.069,
+   "toi": 306,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mark Jankowski",
+   "team": "CAR",
+   "pos": "L",
+   "off": 0.156,
+   "def": -0.034,
+   "toi": 166,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mark Kastelic",
+   "team": "BOS",
+   "pos": "C",
+   "off": -0.068,
+   "def": 0.064,
+   "toi": 167,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mark Scheifele",
+   "team": "WPG",
+   "pos": "C",
+   "off": 0.256,
+   "def": -0.071,
+   "toi": 305,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mark Stone",
+   "team": "VGK",
+   "pos": "R",
+   "off": -0.096,
+   "def": -0.024,
+   "toi": 262,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Martin Fehervary",
+   "team": "WSH",
+   "pos": "D",
+   "off": 0.022,
+   "def": 0.169,
+   "toi": 258,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Martin Necas",
+   "team": "COL",
+   "pos": "C",
+   "off": 0.161,
+   "def": 0.03,
+   "toi": 280,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Martin Pospisil",
+   "team": "CGY",
+   "pos": "C",
+   "off": -0.054,
+   "def": -0.011,
+   "toi": 213,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mason Lohrei",
+   "team": "BOS",
+   "pos": "D",
+   "off": 0.003,
+   "def": -0.085,
+   "toi": 277,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mason Marchment",
+   "team": "S.J",
+   "pos": "L",
+   "off": -0.091,
+   "def": -0.114,
+   "toi": 237,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mason McTavish",
+   "team": "STL",
+   "pos": "C",
+   "off": 0.111,
+   "def": 0.003,
+   "toi": 220,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mathieu Joseph",
+   "team": "EDM",
+   "pos": "R",
+   "off": -0.134,
+   "def": -0.016,
+   "toi": 210,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mathieu Olivier",
+   "team": "CBJ",
+   "pos": "R",
+   "off": 0.057,
+   "def": -0.017,
+   "toi": 205,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matias MacCelli",
+   "team": "NYI",
+   "pos": "L",
+   "off": -0.101,
+   "def": 0.123,
+   "toi": 86,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mats Zuccarello",
+   "team": "L.A",
+   "pos": "R",
+   "off": -0.175,
+   "def": -0.0,
+   "toi": 77,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matt Boldy",
+   "team": "MIN",
+   "pos": "L",
+   "off": 0.207,
+   "def": 0.118,
+   "toi": 289,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matt Coronato",
+   "team": "CGY",
+   "pos": "R",
+   "off": -0.093,
+   "def": -0.131,
+   "toi": 265,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matt Kiersted",
+   "team": "MIN",
+   "pos": "D",
+   "off": 0.061,
+   "def": 0.135,
+   "toi": 124,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matt Rempe",
+   "team": "NYR",
+   "pos": "C",
+   "off": 0.006,
+   "def": 0.032,
+   "toi": 34,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matt Roy",
+   "team": "WSH",
+   "pos": "D",
+   "off": 0.161,
+   "def": 0.074,
+   "toi": 155,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matthew Kessel",
+   "team": "NYI",
+   "pos": "D",
+   "off": 0.114,
+   "def": 0.057,
+   "toi": 119,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matthew Knies",
+   "team": "CBJ",
+   "pos": "L",
+   "off": -0.099,
+   "def": 0.041,
+   "toi": 220,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matthew Poitras",
+   "team": "BOS",
+   "pos": "C",
+   "off": 0.055,
+   "def": -0.048,
+   "toi": 119,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matthew Schaefer",
+   "team": "NYI",
+   "pos": "D",
+   "off": 0.06,
+   "def": 0.013,
+   "toi": 352,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matthew Tkachuk",
+   "team": "FLA",
+   "pos": "L",
+   "off": 0.14,
+   "def": 0.067,
+   "toi": 231,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mattias Ekholm",
+   "team": "EDM",
+   "pos": "D",
+   "off": -0.038,
+   "def": -0.028,
+   "toi": 282,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mattias Samuelsson",
+   "team": "BUF",
+   "pos": "D",
+   "off": -0.022,
+   "def": -0.042,
+   "toi": 341,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matty Beniers",
+   "team": "SEA",
+   "pos": "C",
+   "off": 0.004,
+   "def": 0.046,
+   "toi": 228,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matvei Gridin",
+   "team": "CGY",
+   "pos": "R",
+   "off": 0.093,
+   "def": -0.012,
+   "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Matvei Michkov",
+   "team": "PHI",
+   "pos": "R",
+   "off": -0.157,
+   "def": -0.13,
+   "toi": 228,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mavrik Bourque",
+   "team": "NSH",
+   "pos": "C",
+   "off": -0.218,
+   "def": 0.011,
+   "toi": 184,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Max Jones",
+   "team": "EDM",
+   "pos": "L",
+   "off": -0.09,
+   "def": 0.079,
+   "toi": 81,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Max Sasson",
+   "team": "VAN",
+   "pos": "C",
+   "off": 0.105,
+   "def": 0.101,
+   "toi": 211,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Max Shabanov",
+   "team": "MIN",
+   "pos": "R",
+   "off": -0.073,
+   "def": -0.033,
+   "toi": 201,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Maxim Tsyplakov",
+   "team": "CGY",
+   "pos": "R",
+   "off": -0.103,
+   "def": -0.008,
+   "toi": 83,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Maxwell Crozier",
+   "team": "T.B",
+   "pos": "D",
+   "off": 0.102,
+   "def": -0.105,
+   "toi": 164,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Michael Amadio",
+   "team": "OTT",
+   "pos": "R",
+   "off": -0.039,
+   "def": -0.018,
+   "toi": 244,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Michael Brandsegg-Nyg\u00e5rd",
+   "team": "DET",
+   "pos": "R",
+   "off": 0.077,
+   "def": 0.102,
+   "toi": 248,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Michael Bunting",
+   "team": "PHI",
+   "pos": "L",
+   "off": -0.228,
+   "def": 0.087,
+   "toi": 78,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Michael Carcone",
+   "team": "UTA",
+   "pos": "L",
+   "off": 0.05,
+   "def": -0.021,
+   "toi": 94,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Michael Kesselring",
+   "team": "S.J",
+   "pos": "D",
+   "off": 0.058,
+   "def": -0.066,
+   "toi": 313,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Michael McCarron",
+   "team": "MIN",
+   "pos": "C",
+   "off": 0.044,
+   "def": 0.162,
+   "toi": 191,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Michael Misa",
+   "team": "S.J",
+   "pos": "C",
+   "off": -0.062,
+   "def": -0.392,
+   "toi": 231,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Michael Rasmussen",
+   "team": "DET",
+   "pos": "C",
+   "off": 0.114,
+   "def": 0.029,
+   "toi": 218,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Mika Zibanejad",
+   "team": "NYR",
+   "pos": "C",
+   "off": -0.014,
+   "def": 0.094,
+   "toi": 280,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mikael Backlund",
+   "team": "CGY",
+   "pos": "C",
+   "off": 0.041,
+   "def": -0.091,
+   "toi": 243,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mikael Granlund",
+   "team": "ANA",
+   "pos": "C",
+   "off": -0.147,
+   "def": -0.148,
+   "toi": 209,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mike Matheson",
+   "team": "MTL",
+   "pos": "D",
+   "off": -0.08,
+   "def": 0.154,
+   "toi": 144,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mike Reilly",
+   "team": "CAR",
+   "pos": "D",
+   "off": 0.15,
+   "def": 0.011,
+   "toi": 95,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mikey Anderson",
+   "team": "L.A",
+   "pos": "D",
+   "off": -0.144,
+   "def": 0.114,
+   "toi": 233,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mikhail Sergachev",
+   "team": "UTA",
+   "pos": "D",
+   "off": 0.215,
+   "def": 0.067,
+   "toi": 313,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mikko Rantanen",
+   "team": "DAL",
+   "pos": "R",
+   "off": 0.107,
+   "def": 0.131,
+   "toi": 267,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Miro Heiskanen",
+   "team": "DAL",
+   "pos": "D",
+   "off": 0.091,
+   "def": 0.169,
+   "toi": 266,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mitch Marner",
+   "team": "VGK",
+   "pos": "R",
+   "off": 0.035,
+   "def": 0.02,
+   "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Mitchell Chaffee",
+   "team": "NYI",
+   "pos": "R",
+   "off": -0.108,
+   "def": -0.013,
+   "toi": 77,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Morgan Barron",
+   "team": "WPG",
+   "pos": "C",
+   "off": -0.254,
+   "def": 0.208,
+   "toi": 214,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Morgan Frost",
+   "team": "CGY",
+   "pos": "C",
+   "off": 0.041,
+   "def": -0.208,
+   "toi": 224,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Morgan Geekie",
+   "team": "BOS",
+   "pos": "C",
+   "off": -0.01,
+   "def": -0.023,
+   "toi": 230,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Morgan Rielly",
+   "team": "TOR",
+   "pos": "D",
+   "off": 0.005,
+   "def": -0.068,
+   "toi": 304,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Moritz Seider",
+   "team": "DET",
+   "pos": "D",
+   "off": -0.257,
+   "def": 0.172,
+   "toi": 334,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Nate Danielson",
+   "team": "DET",
+   "pos": "C",
+   "off": -0.092,
+   "def": -0.0,
+   "toi": 134,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Nate Schmidt",
+   "team": "UTA",
+   "pos": "D",
+   "off": 0.102,
+   "def": 0.192,
+   "toi": 287,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nathan MacKinnon",
+   "team": "COL",
+   "pos": "C",
+   "off": 0.167,
+   "def": -0.149,
+   "toi": 281,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nazem Kadri",
+   "team": "COL",
+   "pos": "C",
+   "off": 0.071,
+   "def": -0.065,
+   "toi": 253,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Neal Pionk",
+   "team": "WPG",
+   "pos": "D",
+   "off": -0.091,
+   "def": -0.093,
+   "toi": 331,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nic Dowd",
+   "team": "VGK",
+   "pos": "C",
+   "off": -0.232,
+   "def": -0.125,
+   "toi": 198,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nicholas Robertson",
+   "team": "PIT",
+   "pos": "L",
+   "off": 0.164,
+   "def": 0.157,
+   "toi": 208,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nick Blankenburg",
+   "team": "TOR",
+   "pos": "D",
+   "off": -0.033,
+   "def": -0.021,
+   "toi": 75,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nick Cousins",
+   "team": "OTT",
+   "pos": "C",
+   "off": -0.245,
+   "def": -0.113,
+   "toi": 164,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nick Desimone",
+   "team": "UTA",
+   "pos": "D",
+   "off": 0.031,
+   "def": 0.039,
+   "toi": 92,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nick Lardis",
+   "team": "CHI",
+   "pos": "L",
+   "off": -0.073,
+   "def": -0.073,
+   "toi": 56,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nick Paul",
+   "team": "TOR",
+   "pos": "L",
+   "off": -0.111,
+   "def": -0.014,
+   "toi": 254,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nick Perbix",
+   "team": "NSH",
+   "pos": "D",
+   "off": -0.125,
+   "def": 0.11,
+   "toi": 238,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nick Schmaltz",
+   "team": "UTA",
+   "pos": "C",
+   "off": 0.009,
+   "def": -0.156,
+   "toi": 227,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nick Seeler",
+   "team": "PHI",
+   "pos": "D",
+   "off": -0.084,
+   "def": 0.047,
+   "toi": 298,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nick Suzuki",
+   "team": "MTL",
+   "pos": "C",
+   "off": 0.262,
+   "def": 0.132,
+   "toi": 180,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nico Hischier",
+   "team": "N.J",
+   "pos": "C",
+   "off": 0.192,
+   "def": 0.111,
+   "toi": 233,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nico Sturm",
+   "team": "MIN",
+   "pos": "C",
+   "off": -0.117,
+   "def": 0.107,
+   "toi": 112,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nicolas Deslauriers",
+   "team": "CAR",
+   "pos": "L",
+   "off": -0.154,
+   "def": -0.102,
+   "toi": 106,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nicolas Hague",
+   "team": "NSH",
+   "pos": "D",
+   "off": -0.181,
+   "def": -0.086,
+   "toi": 205,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nicolas Roy",
+   "team": "COL",
+   "pos": "C",
+   "off": 0.037,
+   "def": 0.031,
+   "toi": 129,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nikita Kucherov",
+   "team": "T.B",
+   "pos": "R",
+   "off": 0.121,
+   "def": -0.064,
+   "toi": 261,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nikita Nesterenko",
+   "team": "ANA",
+   "pos": "C",
+   "off": 0.003,
+   "def": 0.185,
+   "toi": 154,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nikita Zadorov",
+   "team": "BOS",
+   "pos": "D",
+   "off": 0.078,
+   "def": -0.053,
+   "toi": 284,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Niko Mikkola",
+   "team": "FLA",
+   "pos": "D",
+   "off": -0.089,
+   "def": 0.056,
+   "toi": 288,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nikolaj Ehlers",
+   "team": "CAR",
+   "pos": "L",
+   "off": 0.087,
+   "def": -0.062,
+   "toi": 234,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nikolas Matinpalo",
+   "team": "OTT",
+   "pos": "D",
+   "off": 0.027,
+   "def": 0.146,
+   "toi": 201,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nils Hoglander",
+   "team": "NSH",
+   "pos": "L",
+   "off": 0.111,
+   "def": -0.005,
+   "toi": 170,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nils Lundkvist",
+   "team": "DAL",
+   "pos": "D",
+   "off": 0.01,
+   "def": 0.164,
+   "toi": 290,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nino Niederreiter",
+   "team": "WPG",
+   "pos": "R",
+   "off": -0.055,
+   "def": 0.019,
+   "toi": 102,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Noah Cates",
+   "team": "PHI",
+   "pos": "L",
+   "off": -0.164,
+   "def": 0.366,
+   "toi": 207,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Noah Dobson",
+   "team": "MTL",
+   "pos": "D",
+   "off": 0.063,
+   "def": -0.122,
+   "toi": 279,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Noah Hanifin",
+   "team": "VGK",
+   "pos": "D",
+   "off": -0.019,
+   "def": -0.068,
+   "toi": 349,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Noah Juulsen",
+   "team": "COL",
+   "pos": "D",
+   "off": -0.035,
+   "def": -0.023,
+   "toi": 152,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Noah Laba",
+   "team": "NYR",
+   "pos": "C",
+   "off": -0.274,
+   "def": -0.05,
+   "toi": 221,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Noah Ostlund",
+   "team": "BUF",
+   "pos": "C",
+   "off": 0.149,
+   "def": -0.037,
+   "toi": 246,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Noah Warren",
+   "team": "ANA",
+   "pos": "D",
+   "off": -0.129,
+   "def": -0.11,
+   "toi": 241,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Noel Acciari",
+   "team": "PHI",
+   "pos": "C",
+   "off": -0.048,
+   "def": 0.088,
+   "toi": 203,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Nolan Allan",
+   "team": "S.J",
+   "pos": "D",
+   "off": -0.083,
+   "def": -0.087,
+   "toi": 135,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Olen Zellweger",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.061,
+   "def": 0.111,
+   "toi": 286,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Oliver Bjorkstrand",
+   "team": "NYR",
+   "pos": "R",
+   "off": 0.084,
+   "def": -0.0,
+   "toi": 187,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Oliver Bonk",
+   "team": "PHI",
+   "pos": "D",
+   "off": -0.061,
+   "def": 0.113,
+   "toi": 222,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Oliver Ekman-Larsson",
+   "team": "TOR",
+   "pos": "D",
+   "off": 0.056,
+   "def": 0.008,
+   "toi": 299,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Oliver Kapanen",
+   "team": "MTL",
+   "pos": "C",
+   "off": 0.101,
+   "def": 0.02,
+   "toi": 99,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Oliver Moore",
+   "team": "CHI",
+   "pos": "C",
+   "off": -0.037,
+   "def": -0.082,
+   "toi": 188,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Olli Maatta",
+   "team": "MIN",
+   "pos": "D",
+   "off": -0.038,
+   "def": 0.084,
+   "toi": 245,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ondrej Palat",
+   "team": "NYI",
+   "pos": "L",
+   "off": 0.078,
+   "def": 0.038,
+   "toi": 199,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Oskar Back",
+   "team": "DAL",
+   "pos": "C",
+   "off": -0.057,
+   "def": -0.034,
+   "toi": 61,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Owen Beck",
+   "team": "MTL",
+   "pos": "C",
+   "off": 0.035,
+   "def": 0.028,
+   "toi": 54,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Owen Michaels",
+   "team": "EDM",
+   "pos": "R",
+   "off": -0.25,
+   "def": -0.051,
+   "toi": 197,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Owen Power",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.277,
+   "def": -0.061,
+   "toi": 355,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Owen Tippett",
+   "team": "PHI",
+   "pos": "R",
+   "off": -0.043,
+   "def": -0.13,
+   "toi": 177,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Parker Kelly",
+   "team": "COL",
+   "pos": "C",
+   "off": -0.077,
+   "def": 0.078,
+   "toi": 191,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Parker Wotherspoon",
+   "team": "VGK",
+   "pos": "D",
+   "off": 0.018,
+   "def": -0.024,
+   "toi": 97,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Patrick Kane",
+   "team": "CHI",
+   "pos": "R",
+   "off": -0.028,
+   "def": -0.288,
+   "toi": 209,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Paul Cotter",
+   "team": "VAN",
+   "pos": "L",
+   "off": -0.216,
+   "def": -0.15,
+   "toi": 218,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Pavel Buchnevich",
+   "team": "STL",
+   "pos": "L",
+   "off": 0.124,
+   "def": 0.062,
+   "toi": 203,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Pavel Dorofeyev",
+   "team": "NYR",
+   "pos": "R",
+   "off": 0.108,
+   "def": -0.035,
+   "toi": 243,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Pavel Mintyukov",
+   "team": "ANA",
+   "pos": "D",
+   "off": 0.134,
+   "def": -0.142,
+   "toi": 219,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Pavel Zacha",
+   "team": "BOS",
+   "pos": "C",
+   "off": 0.06,
+   "def": -0.246,
+   "toi": 247,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Peyton Krebs",
+   "team": "BUF",
+   "pos": "C",
+   "off": -0.032,
+   "def": -0.013,
+   "toi": 230,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Philip Broberg",
+   "team": "STL",
+   "pos": "D",
+   "off": -0.072,
+   "def": -0.028,
+   "toi": 322,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Phillip Danault",
+   "team": "MTL",
+   "pos": "C",
+   "off": -0.056,
+   "def": 0.164,
+   "toi": 211,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Pierre-Luc Dubois",
+   "team": "WSH",
+   "pos": "C",
+   "off": 0.089,
+   "def": 0.128,
+   "toi": 135,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Pius Suter",
+   "team": "STL",
+   "pos": "C",
+   "off": -0.056,
+   "def": 0.033,
+   "toi": 181,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Pontus Holmberg",
+   "team": "T.B",
+   "pos": "R",
+   "off": -0.029,
+   "def": 0.014,
+   "toi": 226,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Porter Martone",
+   "team": "PHI",
+   "pos": "R",
+   "off": -0.03,
+   "def": -0.02,
+   "toi": 213,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Quinn Hughes",
+   "team": "MIN",
+   "pos": "D",
+   "off": 0.195,
+   "def": 0.051,
+   "toi": 437,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Quinton Byfield",
+   "team": "L.A",
+   "pos": "R",
+   "off": 0.034,
+   "def": 0.04,
+   "toi": 179,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Radek Faksa",
+   "team": "DAL",
+   "pos": "C",
+   "off": -0.103,
+   "def": 0.117,
+   "toi": 109,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Radko Gudas",
+   "team": "FLA",
+   "pos": "D",
+   "off": -0.09,
+   "def": -0.017,
+   "toi": 151,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Raphael Lavoie",
+   "team": "VGK",
+   "pos": "C",
+   "off": -0.154,
+   "def": 0.054,
+   "toi": 116,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Rasmus Andersson",
+   "team": "VGK",
+   "pos": "D",
+   "off": -0.127,
+   "def": -0.006,
+   "toi": 333,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Rasmus Dahlin",
+   "team": "BUF",
+   "pos": "D",
+   "off": -0.098,
+   "def": 0.148,
+   "toi": 283,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Reid Schaefer",
+   "team": "NSH",
+   "pos": "L",
+   "off": -0.042,
+   "def": 0.007,
+   "toi": 102,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Rickard Rakell",
+   "team": "PIT",
+   "pos": "R",
+   "off": 0.112,
+   "def": -0.185,
+   "toi": 258,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ridly Greig",
+   "team": "OTT",
+   "pos": "C",
+   "off": -0.006,
+   "def": -0.089,
+   "toi": 183,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Rieger Lorenz",
+   "team": "MIN",
+   "pos": "L",
+   "off": 0.015,
+   "def": -0.01,
+   "toi": 52,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Robert Thomas",
+   "team": "STL",
+   "pos": "C",
+   "off": -0.068,
+   "def": 0.151,
+   "toi": 258,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Roger McQueen",
+   "team": "ANA",
+   "pos": "C",
+   "off": -0.078,
+   "def": -0.042,
+   "toi": 133,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Roman Josi",
+   "team": "NSH",
+   "pos": "D",
+   "off": 0.105,
+   "def": 0.089,
+   "toi": 324,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Roman Kantserov",
+   "team": "CHI",
+   "pos": "R",
+   "off": -0.073,
+   "def": -0.167,
+   "toi": 260,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Roope Hintz",
+   "team": "DAL",
+   "pos": "C",
+   "off": 0.006,
+   "def": 0.105,
+   "toi": 220,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ross Colton",
+   "team": "NSH",
+   "pos": "C",
+   "off": 0.05,
+   "def": 0.092,
+   "toi": 213,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ross Johnston",
+   "team": "STL",
+   "pos": "L",
+   "off": -0.045,
+   "def": 0.091,
+   "toi": 78,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan Donato",
+   "team": "CHI",
+   "pos": "C",
+   "off": -0.119,
+   "def": -0.125,
+   "toi": 201,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan Greene",
+   "team": "CHI",
+   "pos": "C",
+   "off": -0.137,
+   "def": -0.029,
+   "toi": 225,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan Hartman",
+   "team": "MIN",
+   "pos": "R",
+   "off": -0.286,
+   "def": -0.142,
+   "toi": 221,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan Leonard",
+   "team": "WSH",
+   "pos": "R",
+   "off": 0.122,
+   "def": -0.04,
+   "toi": 175,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan Lomberg",
+   "team": "CBJ",
+   "pos": "L",
+   "off": -0.072,
+   "def": 0.046,
+   "toi": 117,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan McDonagh",
+   "team": "T.B",
+   "pos": "D",
+   "off": -0.085,
+   "def": 0.093,
+   "toi": 228,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan McLeod",
+   "team": "BUF",
+   "pos": "C",
+   "off": 0.057,
+   "def": -0.088,
+   "toi": 170,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan Nugent-Hopkins",
+   "team": "EDM",
+   "pos": "C",
+   "off": 0.025,
+   "def": -0.039,
+   "toi": 122,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan O'Reilly",
+   "team": "NSH",
+   "pos": "C",
+   "off": 0.067,
+   "def": -0.063,
+   "toi": 245,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan Poehling",
+   "team": "ANA",
+   "pos": "C",
+   "off": 0.021,
+   "def": 0.033,
+   "toi": 56,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan Pulock",
+   "team": "NYI",
+   "pos": "D",
+   "off": -0.178,
+   "def": -0.017,
+   "toi": 181,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan Shea",
+   "team": "EDM",
+   "pos": "D",
+   "off": -0.063,
+   "def": 0.193,
+   "toi": 341,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan Strome",
+   "team": "CGY",
+   "pos": "C",
+   "off": 0.0,
+   "def": -0.001,
+   "toi": 231,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryan Winterton",
+   "team": "SEA",
+   "pos": "C",
+   "off": -0.026,
+   "def": 0.044,
+   "toi": 181,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ryker Evans",
+   "team": "SEA",
+   "pos": "D",
+   "off": -0.122,
+   "def": 0.006,
+   "toi": 325,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sam Bennett",
+   "team": "FLA",
+   "pos": "C",
+   "off": 0.159,
+   "def": -0.002,
+   "toi": 252,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sam Carrick",
+   "team": "BUF",
+   "pos": "C",
+   "off": -0.104,
+   "def": 0.074,
+   "toi": 73,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sam Colangelo",
+   "team": "ANA",
+   "pos": "R",
+   "off": -0.196,
+   "def": -0.083,
+   "toi": 130,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sam Dickinson",
+   "team": "S.J",
+   "pos": "D",
+   "off": -0.049,
+   "def": -0.044,
+   "toi": 279,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sam Lafferty",
+   "team": "FLA",
+   "pos": "C",
+   "off": -0.096,
+   "def": -0.09,
+   "toi": 47,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sam Malinski",
+   "team": "COL",
+   "pos": "D",
+   "off": 0.012,
+   "def": -0.003,
+   "toi": 282,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sam Reinhart",
+   "team": "FLA",
+   "pos": "C",
+   "off": -0.119,
+   "def": -0.156,
+   "toi": 234,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sam Rinzel",
+   "team": "CHI",
+   "pos": "D",
+   "off": -0.028,
+   "def": -0.12,
+   "toi": 273,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sam Steel",
+   "team": "DAL",
+   "pos": "C",
+   "off": -0.116,
+   "def": -0.053,
+   "toi": 187,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Samuel Girard",
+   "team": "PIT",
+   "pos": "D",
+   "off": -0.011,
+   "def": -0.006,
+   "toi": 255,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Samuel Helenius",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.144,
+   "def": 0.065,
+   "toi": 91,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sandis Vilmanis",
+   "team": "FLA",
+   "pos": "L",
+   "off": 0.089,
+   "def": 0.209,
+   "toi": 193,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Scott Laughton",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.051,
+   "def": -0.033,
+   "toi": 185,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Scott Mayfield",
+   "team": "NYI",
+   "pos": "D",
+   "off": -0.061,
+   "def": 0.107,
+   "toi": 54,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sean Couturier",
+   "team": "PHI",
+   "pos": "C",
+   "off": -0.083,
+   "def": -0.061,
+   "toi": 241,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sean Durzi",
+   "team": "NYR",
+   "pos": "D",
+   "off": -0.068,
+   "def": -0.083,
+   "toi": 234,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sean Kuraly",
+   "team": "BOS",
+   "pos": "C",
+   "off": -0.045,
+   "def": 0.182,
+   "toi": 68,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sean Monahan",
+   "team": "CBJ",
+   "pos": "C",
+   "off": 0.011,
+   "def": -0.232,
+   "toi": 192,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sean Walker",
+   "team": "CAR",
+   "pos": "D",
+   "off": 0.043,
+   "def": -0.107,
+   "toi": 342,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sebastian Aho",
+   "team": "CAR",
+   "pos": "C",
+   "off": 0.07,
+   "def": 0.11,
+   "toi": 263,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Seth Jarvis",
+   "team": "CAR",
+   "pos": "R",
+   "off": 0.114,
+   "def": 0.104,
+   "toi": 105,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Seth Jones",
+   "team": "FLA",
+   "pos": "D",
+   "off": 0.019,
+   "def": 0.082,
+   "toi": 288,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Shakir Mukhamadullin",
+   "team": "EDM",
+   "pos": "D",
+   "off": -0.239,
+   "def": 0.084,
+   "toi": 174,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Shane Pinto",
+   "team": "OTT",
+   "pos": "C",
+   "off": 0.027,
+   "def": -0.013,
+   "toi": 250,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Shane Wright",
+   "team": "NSH",
+   "pos": "C",
+   "off": -0.011,
+   "def": 0.004,
+   "toi": 37,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Shane Wright",
+   "team": "SEA",
+   "pos": "C",
+   "off": -0.069,
+   "def": -0.037,
+   "toi": 169,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Shayne Gostisbehere",
+   "team": "CAR",
+   "pos": "D",
+   "off": 0.117,
+   "def": 0.103,
+   "toi": 261,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Shea Theodore",
+   "team": "VGK",
+   "pos": "D",
+   "off": 0.17,
+   "def": 0.113,
+   "toi": 339,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Sheldon Dries",
+   "team": "DET",
+   "pos": "C",
+   "off": -0.004,
+   "def": 0.045,
+   "toi": 100,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Sidney Crosby",
+   "team": "PIT",
+   "pos": "C",
+   "off": 0.195,
+   "def": -0.241,
+   "toi": 266,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Simon Benoit",
+   "team": "PHI",
+   "pos": "D",
+   "off": -0.143,
+   "def": 0.009,
+   "toi": 180,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Simon Holmstrom",
+   "team": "NYI",
+   "pos": "R",
+   "off": 0.102,
+   "def": -0.083,
+   "toi": 208,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Simon Nemec",
+   "team": "CGY",
+   "pos": "D",
+   "off": -0.08,
+   "def": -0.179,
+   "toi": 349,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Spencer Stastney",
+   "team": "PIT",
+   "pos": "D",
+   "off": -0.014,
+   "def": 0.188,
+   "toi": 219,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Stefan Noesen",
+   "team": "N.J",
+   "pos": "R",
+   "off": 0.012,
+   "def": -0.027,
+   "toi": 45,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Stephen Halliday",
+   "team": "OTT",
+   "pos": "C",
+   "off": -0.021,
+   "def": -0.018,
+   "toi": 153,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Steven Stamkos",
+   "team": "NSH",
+   "pos": "C",
+   "off": -0.002,
+   "def": -0.09,
+   "toi": 241,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "T.J. Hughes",
+   "team": "COL",
+   "pos": "R",
+   "off": -0.031,
+   "def": -0.138,
+   "toi": 194,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tage Thompson",
+   "team": "BUF",
+   "pos": "C",
+   "off": 0.114,
+   "def": -0.06,
+   "toi": 258,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tanner Jeannot",
+   "team": "BOS",
+   "pos": "L",
+   "off": -0.087,
+   "def": 0.1,
+   "toi": 174,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Taylor Hall",
+   "team": "CAR",
+   "pos": "L",
+   "off": 0.203,
+   "def": 0.033,
+   "toi": 116,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Taylor Raddysh",
+   "team": "NYR",
+   "pos": "R",
+   "off": 0.09,
+   "def": 0.003,
+   "toi": 45,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Teddy Blueger",
+   "team": "TOR",
+   "pos": "C",
+   "off": -0.133,
+   "def": -0.074,
+   "toi": 191,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Teuvo Teravainen",
+   "team": "CHI",
+   "pos": "C",
+   "off": -0.061,
+   "def": 0.028,
+   "toi": 160,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Theo Lindstein",
+   "team": "STL",
+   "pos": "D",
+   "off": -0.085,
+   "def": -0.078,
+   "toi": 80,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Thomas Chabot",
+   "team": "OTT",
+   "pos": "D",
+   "off": 0.092,
+   "def": 0.051,
+   "toi": 264,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Thomas Harley",
+   "team": "DAL",
+   "pos": "D",
+   "off": -0.067,
+   "def": 0.152,
+   "toi": 359,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Thomas Novak",
+   "team": "PIT",
+   "pos": "C",
+   "off": 0.128,
+   "def": -0.048,
+   "toi": 232,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tim St\u00fctzle",
+   "team": "OTT",
+   "pos": "C",
+   "off": 0.061,
+   "def": 0.067,
+   "toi": 259,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tim Washe",
+   "team": "ANA",
+   "pos": "C",
+   "off": -0.125,
+   "def": -0.007,
+   "toi": 205,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Timo Meier",
+   "team": "N.J",
+   "pos": "R",
+   "off": 0.067,
+   "def": 0.05,
+   "toi": 254,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Timothy Liljegren",
+   "team": "WSH",
+   "pos": "D",
+   "off": -0.041,
+   "def": -0.065,
+   "toi": 221,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tom Willander",
+   "team": "VAN",
+   "pos": "D",
+   "off": 0.045,
+   "def": 0.072,
+   "toi": 301,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tom Wilson",
+   "team": "WSH",
+   "pos": "R",
+   "off": 0.082,
+   "def": -0.044,
+   "toi": 180,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tomas Hertl",
+   "team": "VGK",
+   "pos": "C",
+   "off": 0.083,
+   "def": 0.265,
+   "toi": 220,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tony Deangelo",
+   "team": "NYI",
+   "pos": "D",
+   "off": -0.019,
+   "def": -0.128,
+   "toi": 256,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Travis Konecny",
+   "team": "PHI",
+   "pos": "R",
+   "off": 0.05,
+   "def": -0.029,
+   "toi": 124,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Travis Mitchell",
+   "team": "ANA",
+   "pos": "D",
+   "off": -0.175,
+   "def": -0.112,
+   "toi": 161,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Travis Sanheim",
+   "team": "PHI",
+   "pos": "D",
+   "off": 0.011,
+   "def": -0.121,
+   "toi": 387,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Trent Frederic",
+   "team": "EDM",
+   "pos": "C",
+   "off": -0.105,
+   "def": 0.032,
+   "toi": 125,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Trevor Connelly",
+   "team": "VGK",
+   "pos": "L",
+   "off": 0.134,
+   "def": 0.073,
+   "toi": 219,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Trevor Moore",
+   "team": "L.A",
+   "pos": "L",
+   "off": -0.139,
+   "def": -0.051,
+   "toi": 203,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Trevor Van Riemsdyk",
+   "team": "PIT",
+   "pos": "D",
+   "off": -0.073,
+   "def": -0.062,
+   "toi": 78,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Trevor Zegras",
+   "team": "PHI",
+   "pos": "C",
+   "off": -0.049,
+   "def": -0.183,
+   "toi": 281,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tristan Luneau",
+   "team": "ANA",
+   "pos": "D",
+   "off": 0.379,
+   "def": 0.009,
+   "toi": 315,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Troy Stecher",
+   "team": "TOR",
+   "pos": "D",
+   "off": 0.036,
+   "def": -0.0,
+   "toi": 301,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ty Dellandrea",
+   "team": "S.J",
+   "pos": "C",
+   "off": -0.146,
+   "def": -0.051,
+   "toi": 122,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ty Emberson",
+   "team": "EDM",
+   "pos": "D",
+   "off": -0.121,
+   "def": 0.054,
+   "toi": 169,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tye Kartye",
+   "team": "NYR",
+   "pos": "L",
+   "off": -0.055,
+   "def": 0.031,
+   "toi": 248,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tyler Bertuzzi",
+   "team": "CHI",
+   "pos": "L",
+   "off": -0.056,
+   "def": -0.13,
+   "toi": 241,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tyler Kleven",
+   "team": "OTT",
+   "pos": "D",
+   "off": -0.082,
+   "def": -0.0,
+   "toi": 284,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tyler Myers",
+   "team": "DAL",
+   "pos": "D",
+   "off": -0.201,
+   "def": 0.001,
+   "toi": 234,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tyler Pitlick",
+   "team": "MIN",
+   "pos": "C",
+   "off": -0.022,
+   "def": 0.05,
+   "toi": 91,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tyler Seguin",
+   "team": "DAL",
+   "pos": "C",
+   "off": -0.018,
+   "def": -0.079,
+   "toi": 232,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tyler Toffoli",
+   "team": "S.J",
+   "pos": "C",
+   "off": 0.027,
+   "def": -0.011,
+   "toi": 202,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tyrel Bauer",
+   "team": "WPG",
+   "pos": "D",
+   "off": -0.166,
+   "def": 0.017,
+   "toi": 109,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tyson Foerster",
+   "team": "PHI",
+   "pos": "R",
+   "off": -0.094,
+   "def": -0.009,
+   "toi": 233,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tyson Hinds",
+   "team": "ANA",
+   "pos": "D",
+   "off": 0.094,
+   "def": 0.134,
+   "toi": 194,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Tyson Kozak",
+   "team": "BUF",
+   "pos": "C",
+   "off": -0.097,
+   "def": 0.119,
+   "toi": 82,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Uvis Balinskis",
+   "team": "FLA",
+   "pos": "D",
+   "off": -0.039,
+   "def": -0.115,
+   "toi": 127,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Valeri Nichushkin",
+   "team": "CBJ",
+   "pos": "R",
+   "off": -0.037,
+   "def": -0.01,
+   "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Vasily Podkolzin",
+   "team": "EDM",
+   "pos": "R",
+   "off": 0.195,
+   "def": 0.066,
+   "toi": 269,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Victor Eklund",
+   "team": "NYI",
+   "pos": "R",
+   "off": 0.039,
+   "def": -0.04,
+   "toi": 200,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Victor Hedman",
+   "team": "T.B",
+   "pos": "D",
+   "off": 0.006,
+   "def": -0.08,
+   "toi": 196,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Victor Mancini",
+   "team": "VAN",
+   "pos": "D",
+   "off": -0.049,
+   "def": -0.128,
+   "toi": 88,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Victor Olofsson",
+   "team": "VGK",
+   "pos": "L",
+   "off": 0.164,
+   "def": 0.071,
+   "toi": 64,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Viggo Bj\u00f6rck",
+   "team": "WPG",
+   "pos": "C",
+   "off": -0.012,
+   "def": 0.06,
+   "toi": 213,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Viktor Arvidsson",
+   "team": "DET",
+   "pos": "L",
+   "off": 0.199,
+   "def": -0.138,
+   "toi": 258,
+   "det": true,
+   "me": true
+  },
+  {
+   "name": "Ville Koivunen",
+   "team": "PIT",
+   "pos": "R",
+   "off": 0.138,
+   "def": -0.098,
+   "toi": 176,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Ville Ottavainen",
+   "team": "SEA",
+   "pos": "D",
+   "off": -0.052,
+   "def": -0.141,
+   "toi": 113,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Vince Dunn",
+   "team": "SEA",
+   "pos": "D",
+   "off": -0.027,
+   "def": -0.095,
+   "toi": 293,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Vincent Desharnais",
+   "team": "WSH",
+   "pos": "D",
+   "off": 0.02,
+   "def": 0.037,
+   "toi": 136,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Vincent Trocheck",
+   "team": "UTA",
+   "pos": "C",
+   "off": 0.296,
+   "def": 0.147,
+   "toi": 253,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Vinni Lettieri",
+   "team": "TOR",
+   "pos": "C",
+   "off": -0.176,
+   "def": -0.066,
+   "toi": 79,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Vitali Pinchuk",
+   "team": "NSH",
+   "pos": "C",
+   "off": -0.067,
+   "def": -0.021,
+   "toi": 60,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Vladislav Gavrikov",
+   "team": "NYR",
+   "pos": "D",
+   "off": -0.048,
+   "def": 0.11,
+   "toi": 332,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Vladislav Namestnikov",
+   "team": "WPG",
+   "pos": "C",
+   "off": -0.053,
+   "def": -0.177,
+   "toi": 56,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Warren Foegele",
+   "team": "OTT",
+   "pos": "L",
+   "off": -0.124,
+   "def": 0.064,
+   "toi": 149,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Will Cuylle",
+   "team": "NYR",
+   "pos": "L",
+   "off": 0.054,
+   "def": -0.061,
+   "toi": 225,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Will Smith",
+   "team": "S.J",
+   "pos": "C",
+   "off": 0.16,
+   "def": -0.199,
+   "toi": 275,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "William Borgen",
+   "team": "BOS",
+   "pos": "D",
+   "off": 0.027,
+   "def": -0.037,
+   "toi": 298,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "William Carrier",
+   "team": "CAR",
+   "pos": "L",
+   "off": 0.217,
+   "def": 0.149,
+   "toi": 242,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "William Karlsson",
+   "team": "VGK",
+   "pos": "C",
+   "off": 0.013,
+   "def": -0.076,
+   "toi": 266,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "William Nylander",
+   "team": "TOR",
+   "pos": "R",
+   "off": -0.099,
+   "def": -0.25,
+   "toi": 296,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "William Wallinder",
+   "team": "DET",
+   "pos": "D",
+   "off": -0.039,
+   "def": 0.075,
+   "toi": 192,
+   "det": true,
+   "me": false
+  },
+  {
+   "name": "Wyatt Johnston",
+   "team": "DAL",
+   "pos": "C",
+   "off": 0.065,
+   "def": 0.11,
+   "toi": 234,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Wyatt Kaiser",
+   "team": "CHI",
+   "pos": "D",
+   "off": -0.268,
+   "def": -0.184,
+   "toi": 316,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Yakov Trenin",
+   "team": "MIN",
+   "pos": "C",
+   "off": -0.144,
+   "def": 0.061,
+   "toi": 218,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Yan Kuznetsov",
+   "team": "CGY",
+   "pos": "D",
+   "off": -0.085,
+   "def": 0.068,
+   "toi": 266,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Yegor Chinakhov",
+   "team": "PIT",
+   "pos": "R",
+   "off": -0.127,
+   "def": 0.03,
+   "toi": 182,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Yegor Sharangovich",
+   "team": "CGY",
+   "pos": "C",
+   "off": -0.091,
+   "def": 0.011,
+   "toi": 228,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Zach Benson",
+   "team": "BUF",
+   "pos": "L",
+   "off": 0.168,
+   "def": 0.079,
+   "toi": 243,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Zach Bogosian",
+   "team": "MIN",
+   "pos": "D",
+   "off": -0.014,
+   "def": -0.063,
+   "toi": 253,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Zach Hyman",
+   "team": "EDM",
+   "pos": "L",
+   "off": -0.058,
+   "def": -0.027,
+   "toi": 100,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Zach Metsa",
+   "team": "BUF",
+   "pos": "D",
+   "off": -0.045,
+   "def": 0.053,
+   "toi": 159,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Zach Werenski",
+   "team": "CBJ",
+   "pos": "D",
+   "off": 0.07,
+   "def": -0.108,
+   "toi": 329,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Zach Whitecloud",
+   "team": "CGY",
+   "pos": "D",
+   "off": -0.063,
+   "def": -0.07,
+   "toi": 305,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Zachary Bolduc",
+   "team": "MTL",
+   "pos": "R",
+   "off": 0.154,
+   "def": 0.205,
+   "toi": 201,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Zack MacEwen",
+   "team": "TOR",
+   "pos": "R",
+   "off": -0.05,
+   "def": 0.248,
+   "toi": 106,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Zack Ostapchuk",
+   "team": "S.J",
+   "pos": "C",
+   "off": -0.113,
+   "def": 0.005,
+   "toi": 146,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Zayne Parekh",
+   "team": "CGY",
+   "pos": "D",
+   "off": -0.043,
+   "def": 0.017,
+   "toi": 278,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Zeev Buium",
+   "team": "VAN",
+   "pos": "D",
+   "off": -0.191,
+   "def": -0.27,
+   "toi": 361,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Zemgus Girgensons",
+   "team": "T.B",
+   "pos": "C",
+   "off": 0.017,
+   "def": 0.114,
+   "toi": 166,
+   "det": false,
+   "me": false
+  }
+ ],
  "career": [
   {
    "season": "14-15",
@@ -346,10 +7070,80 @@
    "total": 10.5,
    "xGAR": 8.9,
    "GAR": 12.9
+  },
+  {
+   "season": "26-27",
+   "gp": 18,
+   "toi": 336,
+   "components": {
+    "EVO": -0.1,
+    "EVD": -1.0,
+    "PPO": 0.7,
+    "SHD": 0.0,
+    "Pens": 0.4
+   },
+   "total": -0.0,
+   "xGAR": 0.7,
+   "GAR": -1.2
   }
  ],
- "comps": [],
- "myComponents": null,
+ "comps": [
+  {
+   "name": "Matt Coronato",
+   "team": "CGY",
+   "pos": "R",
+   "gp": 18,
+   "distance": 0.5,
+   "value": 34.2,
+   "goals": -0.6,
+   "components": {
+    "EVO": -0.5,
+    "EVD": -1.0,
+    "PPO": 0.7,
+    "SHD": 0.0,
+    "Pens": 0.2
+   }
+  },
+  {
+   "name": "Porter Martone",
+   "team": "PHI",
+   "pos": "R",
+   "gp": 19,
+   "distance": 0.59,
+   "value": 45.2,
+   "goals": 0.5,
+   "components": {
+    "EVO": -0.1,
+    "EVD": -0.5,
+    "PPO": 0.6,
+    "SHD": 0.0,
+    "Pens": 0.4
+   }
+  },
+  {
+   "name": "Paul Cotter",
+   "team": "VAN",
+   "pos": "L",
+   "gp": 18,
+   "distance": 0.99,
+   "value": 25.4,
+   "goals": -1.6,
+   "components": {
+    "EVO": -0.5,
+    "EVD": -1.6,
+    "PPO": 0.2,
+    "SHD": -0.0,
+    "Pens": 0.3
+   }
+  }
+ ],
+ "myComponents": {
+  "EVO": -0.1,
+  "EVD": -1.0,
+  "PPO": 0.7,
+  "SHD": 0.0,
+  "Pens": 0.4
+ },
  "gameLog": [
   {
    "gameId": 2026020017,
@@ -814,5 +7608,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-09T05:01:36-08:00"
+ "updatedAt": "2026-11-09T10:20:41-08:00"
 }
