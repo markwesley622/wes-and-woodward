@@ -7383,14 +7383,18 @@
  "hasLogSeason": false,
  "score": {
   "value": 20.0,
-  "low": 8.7,
-  "high": 39.5,
+  "low": 11.7,
+  "high": 32.1,
+  "isolated": 20.0,
+  "production": null,
+  "weightIsolated": 1.0,
   "sustainable": 17.3,
   "results": 28.0,
   "percentile": 4.4,
   "goalsBlended": -5.6,
   "goalsSustainable": -7.7,
   "goalsResults": -2.5,
+  "gameScore": null,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -7406,6 +7410,9 @@
    "SHD": 5292,
    "Pens": 1149
   },
+  "kGameScore": 293,
+  "refToi": 1036,
+  "targetIsolated": 0.6,
   "repeatability": {
    "EVO": 0.465,
    "EVD": 0.432,
@@ -7414,6 +7421,7 @@
    "Pens": 0.536
   },
   "reliability": 0.439,
+  "reliabilityProduction": 0.0,
   "pool": 730,
   "minGp": 20,
   "group": "skaters",
@@ -7486,7 +7494,7 @@
    "CA/60": 5.65
   },
   "rank": 698,
-  "neighbours": [
+  "neighbors": [
    {
     "rank": 696,
     "name": "Miles Wood",
@@ -7494,7 +7502,9 @@
     "gp": 76,
     "pos": "L",
     "value": 20.2,
-    "goals": -5.5,
+    "isolated": 20.2,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7504,7 +7514,9 @@
     "gp": 43,
     "pos": "R",
     "value": 20.0,
-    "goals": -5.6,
+    "isolated": 31.0,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7514,7 +7526,9 @@
     "gp": 76,
     "pos": "D",
     "value": 20.0,
-    "goals": -5.6,
+    "isolated": 20.0,
+    "production": null,
+    "weight": 1.0,
     "isMe": true
    },
    {
@@ -7524,7 +7538,9 @@
     "gp": 81,
     "pos": "C",
     "value": 19.7,
-    "goals": -5.7,
+    "isolated": 19.7,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7534,11 +7550,13 @@
     "gp": 24,
     "pos": "D",
     "value": 19.6,
-    "goals": -5.8,
+    "isolated": 19.6,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation is about 23 points. Two halves, each standardized over the same pool: isolated impact (Evolving-Hockey xGAR and GAR blended 60/40: EV offense, EV defense, power play, penalty kill, penalties) and production (season W&W game score, the same number as the game log). The isolated half carries 60% of the headline at a typical full-season workload (1036 minutes) and less before that, in proportion to its measured reliability at the player's minutes; production carries the rest. Nothing is regressed; the likely range is the 80% band from each half's reliability. Production is unavailable for this season, so the headline is the isolated half alone."
  },
  "moneypuck": {
   "playerId": 8475279,

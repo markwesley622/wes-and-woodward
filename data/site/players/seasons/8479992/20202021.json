@@ -7113,14 +7113,18 @@
  "hasLogSeason": false,
  "score": {
   "value": 22.7,
-  "low": 8.7,
-  "high": 47.3,
+  "low": 14.5,
+  "high": 33.6,
+  "isolated": 22.7,
+  "production": null,
+  "weightIsolated": 1.0,
   "sustainable": 16.1,
   "results": 41.1,
   "percentile": 5.4,
   "goalsBlended": -2.9,
   "goalsSustainable": -5.4,
   "goalsResults": 0.9,
+  "gameScore": null,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -7136,6 +7140,9 @@
    "SHD": 5292,
    "Pens": 1149
   },
+  "kGameScore": 293,
+  "refToi": 1036,
+  "targetIsolated": 0.6,
   "repeatability": {
    "EVO": 0.465,
    "EVD": 0.432,
@@ -7144,6 +7151,7 @@
    "Pens": 0.536
   },
   "reliability": 0.236,
+  "reliabilityProduction": 0.0,
   "pool": 702,
   "minGp": 14,
   "group": "skaters",
@@ -7216,7 +7224,7 @@
    "CA/60": 2.93
   },
   "rank": 664,
-  "neighbours": [
+  "neighbors": [
    {
     "rank": 662,
     "name": "Carl Grundstrom",
@@ -7224,7 +7232,9 @@
     "gp": 47,
     "pos": "R",
     "value": 22.9,
-    "goals": -2.8,
+    "isolated": 22.9,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7234,7 +7244,9 @@
     "gp": 38,
     "pos": "D",
     "value": 22.8,
-    "goals": -2.9,
+    "isolated": 22.8,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7244,31 +7256,37 @@
     "gp": 40,
     "pos": "C",
     "value": 22.7,
-    "goals": -2.9,
+    "isolated": 22.7,
+    "production": null,
+    "weight": 1.0,
     "isMe": true
    },
    {
     "rank": 665,
-    "name": "Oliver Ekman-Larsson",
-    "team": "ARI",
-    "gp": 46,
-    "pos": "D",
-    "value": 22.6,
-    "goals": -2.9,
-    "isMe": false
-   },
-   {
-    "rank": 666,
     "name": "Nic Dowd",
     "team": "WSH",
     "gp": 56,
     "pos": "C",
     "value": 22.6,
-    "goals": -2.9,
+    "isolated": 22.6,
+    "production": null,
+    "weight": 1.0,
+    "isMe": false
+   },
+   {
+    "rank": 666,
+    "name": "Oliver Ekman-Larsson",
+    "team": "ARI",
+    "gp": 46,
+    "pos": "D",
+    "value": 22.6,
+    "isolated": 22.6,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (14+ GP, forwards and defensemen together; the full-season gate of 20 GP scaled to the share of the schedule played so far) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (14+ GP, forwards and defensemen together, the full-season gate of 20 GP scaled to the share of the schedule played so far) and each standard deviation is about 23 points. Two halves, each standardized over the same pool: isolated impact (Evolving-Hockey xGAR and GAR blended 60/40: EV offense, EV defense, power play, penalty kill, penalties) and production (season W&W game score, the same number as the game log). The isolated half carries 60% of the headline at a typical full-season workload (1036 minutes) and less before that, in proportion to its measured reliability at the player's minutes; production carries the rest. Nothing is regressed; the likely range is the 80% band from each half's reliability. Production is unavailable for this season, so the headline is the isolated half alone."
  },
  "moneypuck": {
   "playerId": 8479992,

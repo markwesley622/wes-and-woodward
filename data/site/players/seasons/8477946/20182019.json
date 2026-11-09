@@ -7403,14 +7403,18 @@
  "hasLogSeason": false,
  "score": {
   "value": 76.0,
-  "low": 55.1,
-  "high": 89.1,
+  "low": 62.6,
+  "high": 85.7,
+  "isolated": 76.0,
+  "production": null,
+  "weightIsolated": 1.0,
   "sustainable": 80.1,
   "results": 65.6,
   "percentile": 87.6,
   "goalsBlended": 10.8,
   "goalsSustainable": 13.0,
   "goalsResults": 7.6,
+  "gameScore": null,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -7426,6 +7430,9 @@
    "SHD": 5292,
    "Pens": 1149
   },
+  "kGameScore": 293,
+  "refToi": 1036,
+  "targetIsolated": 0.6,
   "repeatability": {
    "EVO": 0.465,
    "EVD": 0.432,
@@ -7434,6 +7441,7 @@
    "Pens": 0.536
   },
   "reliability": 0.452,
+  "reliabilityProduction": 0.0,
   "pool": 728,
   "minGp": 20,
   "group": "skaters",
@@ -7506,7 +7514,7 @@
    "CA/60": -1.89
   },
   "rank": 90,
-  "neighbours": [
+  "neighbors": [
    {
     "rank": 88,
     "name": "Will Butcher",
@@ -7514,7 +7522,9 @@
     "gp": 78,
     "pos": "D",
     "value": 76.5,
-    "goals": 11.0,
+    "isolated": 76.5,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7524,7 +7534,9 @@
     "gp": 81,
     "pos": "L",
     "value": 76.3,
-    "goals": 10.9,
+    "isolated": 76.3,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7534,7 +7546,9 @@
     "gp": 76,
     "pos": "C",
     "value": 76.0,
-    "goals": 10.8,
+    "isolated": 76.0,
+    "production": null,
+    "weight": 1.0,
     "isMe": true
    },
    {
@@ -7544,7 +7558,9 @@
     "gp": 82,
     "pos": "D",
     "value": 75.7,
-    "goals": 10.7,
+    "isolated": 75.7,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7554,11 +7570,13 @@
     "gp": 53,
     "pos": "D",
     "value": 75.3,
-    "goals": 10.6,
+    "isolated": 75.3,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation is about 23 points. Two halves, each standardized over the same pool: isolated impact (Evolving-Hockey xGAR and GAR blended 60/40: EV offense, EV defense, power play, penalty kill, penalties) and production (season W&W game score, the same number as the game log). The isolated half carries 60% of the headline at a typical full-season workload (1036 minutes) and less before that, in proportion to its measured reliability at the player's minutes; production carries the rest. Nothing is regressed; the likely range is the 80% band from each half's reliability. Production is unavailable for this season, so the headline is the isolated half alone."
  },
  "moneypuck": {
   "playerId": 8477946,

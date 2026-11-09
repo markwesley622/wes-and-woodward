@@ -7443,14 +7443,18 @@
  "hasLogSeason": false,
  "score": {
   "value": 91.9,
-  "low": 81.1,
-  "high": 96.8,
+  "low": 85.8,
+  "high": 95.5,
+  "isolated": 91.9,
+  "production": null,
+  "weightIsolated": 1.0,
   "sustainable": 92.9,
   "results": 87.1,
   "percentile": 97.6,
   "goalsBlended": 19.5,
   "goalsSustainable": 22.0,
   "goalsResults": 15.8,
+  "gameScore": null,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -7466,6 +7470,9 @@
    "SHD": 5292,
    "Pens": 1149
   },
+  "kGameScore": 293,
+  "refToi": 1036,
+  "targetIsolated": 0.6,
   "repeatability": {
    "EVO": 0.465,
    "EVD": 0.432,
@@ -7474,6 +7481,7 @@
    "Pens": 0.536
   },
   "reliability": 0.423,
+  "reliabilityProduction": 0.0,
   "pool": 721,
   "minGp": 20,
   "group": "skaters",
@@ -7532,9 +7540,21 @@
    "xWAR": 3.6,
    "toiAll": 1464.9
   },
-  "rapm": {},
+  "rapm": {
+   "GP": 82.0,
+   "TOI": 1170.35,
+   "G\u00b1/60": 0.089,
+   "xG\u00b1/60": 0.05,
+   "C\u00b1/60": 3.15,
+   "GF/60": 0.126,
+   "GA/60": 0.037,
+   "xGF/60": 0.062,
+   "xGA/60": 0.012,
+   "CF/60": 3.54,
+   "CA/60": 0.39
+  },
   "rank": 17,
-  "neighbours": [
+  "neighbors": [
    {
     "rank": 15,
     "name": "Dylan Holloway",
@@ -7542,7 +7562,9 @@
     "gp": 77,
     "pos": "L",
     "value": 92.0,
-    "goals": 19.6,
+    "isolated": 92.0,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7552,7 +7574,9 @@
     "gp": 62,
     "pos": "C",
     "value": 92.0,
-    "goals": 19.6,
+    "isolated": 92.0,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7562,7 +7586,9 @@
     "gp": 82,
     "pos": "R",
     "value": 91.9,
-    "goals": 19.5,
+    "isolated": 91.9,
+    "production": null,
+    "weight": 1.0,
     "isMe": true
    },
    {
@@ -7572,7 +7598,9 @@
     "gp": 82,
     "pos": "C",
     "value": 91.8,
-    "goals": 19.5,
+    "isolated": 91.8,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7582,11 +7610,13 @@
     "gp": 74,
     "pos": "D",
     "value": 91.8,
-    "goals": 19.4,
+    "isolated": 91.8,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation is about 23 points. Two halves, each standardized over the same pool: isolated impact (Evolving-Hockey xGAR and GAR blended 60/40: EV offense, EV defense, power play, penalty kill, penalties) and production (season W&W game score, the same number as the game log). The isolated half carries 60% of the headline at a typical full-season workload (1036 minutes) and less before that, in proportion to its measured reliability at the player's minutes; production carries the rest. Nothing is regressed; the likely range is the 80% band from each half's reliability. Production is unavailable for this season, so the headline is the isolated half alone."
  },
  "moneypuck": {
   "playerId": 8479337,

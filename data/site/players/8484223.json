@@ -109,15 +109,19 @@
   }
  },
  "score": {
-  "value": 37.1,
-  "low": 14.4,
-  "high": 67.3,
+  "value": 34.9,
+  "low": 24.2,
+  "high": 47.3,
+  "isolated": 37.1,
+  "production": 34.8,
+  "weightIsolated": 0.08,
   "sustainable": 41.3,
   "results": 32.7,
-  "percentile": 30.7,
+  "percentile": 30.8,
   "goalsBlended": -0.3,
   "goalsSustainable": -0.0,
   "goalsResults": -0.8,
+  "gameScore": 2.01,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -133,6 +137,9 @@
    "SHD": 5292,
    "Pens": 1149
   },
+  "kGameScore": 293,
+  "refToi": 1036,
+  "targetIsolated": 0.6,
   "repeatability": {
    "EVO": 0.465,
    "EVD": 0.432,
@@ -141,6 +148,7 @@
    "Pens": 0.536
   },
   "reliability": 0.046,
+  "reliabilityProduction": 0.233,
   "pool": 662,
   "minGp": 5,
   "group": "skaters",
@@ -212,60 +220,70 @@
    "CF/60": 0.25,
    "CA/60": 0.5
   },
-  "rank": 459,
-  "neighbours": [
+  "rank": 458,
+  "neighbors": [
+   {
+    "rank": 456,
+    "name": "John Tavares",
+    "team": "TOR",
+    "gp": 9,
+    "pos": "C",
+    "value": 35.2,
+    "isolated": 25.8,
+    "production": 36.8,
+    "weight": 0.13,
+    "isMe": false
+   },
    {
     "rank": 457,
-    "name": "Simon Benoit",
-    "team": "PHI",
-    "gp": 14,
+    "name": "Vince Dunn",
+    "team": "SEA",
+    "gp": 16,
     "pos": "D",
-    "value": 37.1,
-    "goals": -0.3,
+    "value": 35.0,
+    "isolated": 41.1,
+    "production": 32.8,
+    "weight": 0.29,
     "isMe": false
    },
    {
     "rank": 458,
-    "name": "Colin Blackwell",
-    "team": "DAL",
-    "gp": 13,
-    "pos": "C",
-    "value": 37.1,
-    "goals": -0.3,
-    "isMe": false
-   },
-   {
-    "rank": 459,
     "name": "Axel Sandin-Pellikka",
     "team": "DET",
     "gp": 7,
     "pos": "D",
-    "value": 37.1,
-    "goals": -0.3,
+    "value": 34.9,
+    "isolated": 37.1,
+    "production": 34.8,
+    "weight": 0.08,
     "isMe": true
    },
    {
-    "rank": 460,
-    "name": "Benoit-Olivier Groulx",
-    "team": "TOR",
-    "gp": 7,
-    "pos": "C",
-    "value": 36.9,
-    "goals": -0.3,
+    "rank": 459,
+    "name": "Stefan Noesen",
+    "team": "N.J",
+    "gp": 5,
+    "pos": "R",
+    "value": 34.8,
+    "isolated": 42.9,
+    "production": 34.6,
+    "weight": 0.04,
     "isMe": false
    },
    {
-    "rank": 461,
-    "name": "Rieger Lorenz",
-    "team": "MIN",
-    "gp": 6,
-    "pos": "L",
-    "value": 36.9,
-    "goals": -0.3,
+    "rank": 460,
+    "name": "Bryan Rust",
+    "team": "PIT",
+    "gp": 7,
+    "pos": "R",
+    "value": 34.8,
+    "isolated": 30.9,
+    "production": 35.4,
+    "weight": 0.11,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (5+ GP, forwards and defensemen together; the full-season gate of 20 GP scaled to the share of the schedule played so far) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (5+ GP, forwards and defensemen together, the full-season gate of 20 GP scaled to the share of the schedule played so far) and each standard deviation is about 23 points. Two halves, each standardized over the same pool: isolated impact (Evolving-Hockey xGAR and GAR blended 60/40: EV offense, EV defense, power play, penalty kill, penalties) and production (season W&W game score, the same number as the game log). The isolated half carries 60% of the headline at a typical full-season workload (1036 minutes) and less before that, in proportion to its measured reliability at the player's minutes; production carries the rest. Nothing is regressed; the likely range is the 80% band from each half's reliability."
  },
  "standIn": null,
  "impact": [
@@ -7189,5 +7207,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-09T10:20:46-08:00"
+ "updatedAt": "2026-11-09T14:12:23-08:00"
 }

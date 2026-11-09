@@ -99,15 +99,19 @@
   }
  },
  "score": {
-  "value": 56.7,
-  "low": 28.8,
-  "high": 80.9,
+  "value": 80.0,
+  "low": 70.9,
+  "high": 86.8,
+  "isolated": 56.7,
+  "production": 84.8,
+  "weightIsolated": 0.275,
   "sustainable": 42.2,
   "results": 76.7,
-  "percentile": 66.0,
+  "percentile": 90.2,
   "goalsBlended": 1.6,
   "goalsSustainable": 0.1,
   "goalsResults": 3.8,
+  "gameScore": 21.02,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -123,6 +127,9 @@
    "SHD": 5292,
    "Pens": 1149
   },
+  "kGameScore": 293,
+  "refToi": 1036,
+  "targetIsolated": 0.6,
   "repeatability": {
    "EVO": 0.465,
    "EVD": 0.432,
@@ -131,6 +138,7 @@
    "Pens": 0.536
   },
   "reliability": 0.159,
+  "reliabilityProduction": 0.548,
   "pool": 662,
   "minGp": 5,
   "group": "skaters",
@@ -189,61 +197,83 @@
    "xWAR": 0.0,
    "toiAll": 355.8
   },
-  "rapm": {},
-  "rank": 225,
-  "neighbours": [
+  "rapm": {
+   "GP": 18.0,
+   "TOI": 273.03,
+   "G\u00b1/60": 0.204,
+   "xG\u00b1/60": 0.181,
+   "C\u00b1/60": 2.01,
+   "GF/60": 0.098,
+   "GA/60": -0.106,
+   "xGF/60": 0.099,
+   "xGA/60": -0.081,
+   "CF/60": 0.57,
+   "CA/60": -1.43
+  },
+  "rank": 65,
+  "neighbors": [
    {
-    "rank": 223,
-    "name": "Adam Engstrom",
-    "team": "MTL",
-    "gp": 11,
-    "pos": "D",
-    "value": 56.9,
-    "goals": 1.6,
-    "isMe": false
-   },
-   {
-    "rank": 224,
-    "name": "Gabe Perreault",
-    "team": "NYR",
-    "gp": 18,
+    "rank": 63,
+    "name": "Adrian Kempe",
+    "team": "L.A",
+    "gp": 14,
     "pos": "R",
-    "value": 56.9,
-    "goals": 1.6,
+    "value": 80.3,
+    "isolated": 80.3,
+    "production": 78.8,
+    "weight": 0.23,
     "isMe": false
    },
    {
-    "rank": 225,
+    "rank": 64,
+    "name": "Berkly Catton",
+    "team": "SEA",
+    "gp": 16,
+    "pos": "C",
+    "value": 80.1,
+    "isolated": 91.6,
+    "production": 74.3,
+    "weight": 0.2,
+    "isMe": false
+   },
+   {
+    "rank": 65,
     "name": "Alex Debrincat",
     "team": "DET",
     "gp": 18,
     "pos": "R",
-    "value": 56.7,
-    "goals": 1.6,
+    "value": 80.0,
+    "isolated": 56.7,
+    "production": 84.8,
+    "weight": 0.28,
     "isMe": true
    },
    {
-    "rank": 226,
-    "name": "Gabriel Landeskog",
-    "team": "COL",
-    "gp": 18,
-    "pos": "L",
-    "value": 56.5,
-    "goals": 1.6,
+    "rank": 66,
+    "name": "Nikita Kucherov",
+    "team": "T.B",
+    "gp": 17,
+    "pos": "R",
+    "value": 79.8,
+    "isolated": 44.8,
+    "production": 86.9,
+    "weight": 0.28,
     "isMe": false
    },
    {
-    "rank": 227,
-    "name": "Alex Wennberg",
-    "team": "S.J",
-    "gp": 9,
+    "rank": 67,
+    "name": "Steven Stamkos",
+    "team": "NSH",
+    "gp": 17,
     "pos": "C",
-    "value": 56.5,
-    "goals": 1.6,
+    "value": 79.3,
+    "isolated": 78.5,
+    "production": 78.1,
+    "weight": 0.25,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (5+ GP, forwards and defensemen together; the full-season gate of 20 GP scaled to the share of the schedule played so far) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (5+ GP, forwards and defensemen together, the full-season gate of 20 GP scaled to the share of the schedule played so far) and each standard deviation is about 23 points. Two halves, each standardized over the same pool: isolated impact (Evolving-Hockey xGAR and GAR blended 60/40: EV offense, EV defense, power play, penalty kill, penalties) and production (season W&W game score, the same number as the game log). The isolated half carries 60% of the headline at a typical full-season workload (1036 minutes) and less before that, in proportion to its measured reliability at the player's minutes; production carries the rest. Nothing is regressed; the likely range is the 80% band from each half's reliability."
  },
  "standIn": null,
  "impact": [
@@ -7551,5 +7581,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-09T10:20:42-08:00"
+ "updatedAt": "2026-11-09T14:12:17-08:00"
 }

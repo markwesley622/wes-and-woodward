@@ -6853,14 +6853,18 @@
  "hasLogSeason": false,
  "score": {
   "value": 69.4,
-  "low": 46.3,
-  "high": 85.7,
+  "low": 54.6,
+  "high": 81.1,
+  "isolated": 69.4,
+  "production": null,
+  "weightIsolated": 1.0,
   "sustainable": 58.9,
   "results": 80.9,
   "percentile": 80.5,
   "goalsBlended": 7.9,
   "goalsSustainable": 5.6,
   "goalsResults": 11.4,
+  "gameScore": null,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -6876,6 +6880,9 @@
    "SHD": 5292,
    "Pens": 1149
   },
+  "kGameScore": 293,
+  "refToi": 1036,
+  "targetIsolated": 0.6,
   "repeatability": {
    "EVO": 0.465,
    "EVD": 0.432,
@@ -6884,6 +6891,7 @@
    "Pens": 0.536
   },
   "reliability": 0.43,
+  "reliabilityProduction": 0.0,
   "pool": 683,
   "minGp": 17,
   "group": "skaters",
@@ -6956,7 +6964,7 @@
    "CA/60": 0.32
   },
   "rank": 133,
-  "neighbours": [
+  "neighbors": [
    {
     "rank": 131,
     "name": "Matt Niskanen",
@@ -6964,7 +6972,9 @@
     "gp": 68,
     "pos": "D",
     "value": 69.9,
-    "goals": 8.0,
+    "isolated": 69.9,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -6974,7 +6984,9 @@
     "gp": 65,
     "pos": "D",
     "value": 69.5,
-    "goals": 7.9,
+    "isolated": 69.5,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -6984,7 +6996,9 @@
     "gp": 71,
     "pos": "C",
     "value": 69.4,
-    "goals": 7.9,
+    "isolated": 69.4,
+    "production": null,
+    "weight": 1.0,
     "isMe": true
    },
    {
@@ -6994,7 +7008,9 @@
     "gp": 65,
     "pos": "D",
     "value": 69.1,
-    "goals": 7.8,
+    "isolated": 69.1,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7004,11 +7020,13 @@
     "gp": 71,
     "pos": "C",
     "value": 69.1,
-    "goals": 7.8,
+    "isolated": 69.1,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (17+ GP, forwards and defensemen together; the full-season gate of 20 GP scaled to the share of the schedule played so far) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (17+ GP, forwards and defensemen together, the full-season gate of 20 GP scaled to the share of the schedule played so far) and each standard deviation is about 23 points. Two halves, each standardized over the same pool: isolated impact (Evolving-Hockey xGAR and GAR blended 60/40: EV offense, EV defense, power play, penalty kill, penalties) and production (season W&W game score, the same number as the game log). The isolated half carries 60% of the headline at a typical full-season workload (1036 minutes) and less before that, in proportion to its measured reliability at the player's minutes; production carries the rest. Nothing is regressed; the likely range is the 80% band from each half's reliability. Production is unavailable for this season, so the headline is the isolated half alone."
  },
  "moneypuck": {
   "playerId": 8477946,

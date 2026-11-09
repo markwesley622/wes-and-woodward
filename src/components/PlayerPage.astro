@@ -87,7 +87,7 @@ const RECENT = 10;
             <>
               <span class="score">{SC.value.toFixed(1)}</span>
               <span class="mono range">likely {SC.low.toFixed(1)}–{SC.high.toFixed(1)}{tier ? ` · ${tier}` : ''}{!isG && (L.gp ?? 0) < (SC.minGp ?? 20) ? ` · under ${SC.minGp ?? 20} games` : ''}</span>
-              {isG ? <span class="mono split">{SC.gsax >= 0 ? '+' : ''}{SC.gsax} goals saved above expected · {SC.minutes} min</span> : <span class="mono split">sustainable {SC.sustainable.toFixed(1)} · results {SC.results.toFixed(1)}</span>}
+              {isG ? <span class="mono split">{SC.gsax >= 0 ? '+' : ''}{SC.gsax} goals saved above expected · {SC.minutes} min</span> : <span class="mono split">{SC.production != null ? `isolated ${SC.isolated.toFixed(1)} · production ${SC.production.toFixed(1)} · ${Math.round(SC.weightIsolated * 100)}% isolated` : `sustainable ${SC.sustainable.toFixed(1)} · results ${SC.results.toFixed(1)}`}</span>}
             </>
           ) : SI ? (
             <>
@@ -135,7 +135,7 @@ const RECENT = 10;
           <p class="eb mono">NHL goalies with 600+ minutes, {SC.pool} of them</p>
           <table class="rank">
             <thead><tr><th>Rank</th><th>Goalie</th><th class="num">GSAx</th><th class="num">W-Value</th></tr></thead>
-            <tbody>{SC.neighbours.map((n) => <tr class:list={{ me: n.isMe }}><td class="rk">{n.rank}</td><td>{n.name}</td><td class="num">{n.gsax > 0 ? '+' : ''}{n.gsax}</td><td class:list={['num', { red: n.isMe }]}>{n.value.toFixed(1)}</td></tr>)}</tbody>
+            <tbody>{SC.neighbors.map((n) => <tr class:list={{ me: n.isMe }}><td class="rk">{n.rank}</td><td>{n.name}</td><td class="num">{n.gsax > 0 ? '+' : ''}{n.gsax}</td><td class:list={['num', { red: n.isMe }]}>{n.value.toFixed(1)}</td></tr>)}</tbody>
           </table>
         </div>
         <div class="prose-sm">
@@ -162,24 +162,24 @@ const RECENT = 10;
               <tr class="total"><td>Total, goals above replacement</td><td class="num">{signed(SC.raw.xGAR)}</td><td class="num">{signed(SC.raw.GAR)}</td><td class="num">{Math.round(SC.reliability * 100)}%</td><td class="num red">{signed(SC.goalsBlended)}</td></tr>
             </tbody>
           </table>
-          <p class="note mono">Sustainable = Evolving-Hockey xGAR (chances). Results = GAR (goals). Counted = a {Math.round(SC.blend.sustainable * 100)}/{Math.round(SC.blend.results * 100)} blend of the two, leaning toward chances because they repeat better year to year; {current ? 'this season' : season} only, nothing regressed. Repeats = that component's year-to-year repeatability, which sets the likely range, not the number.</p>
+          <p class="note mono">Sustainable = Evolving-Hockey xGAR (chances). Results = GAR (goals). Counted = a {Math.round(SC.blend.sustainable * 100)}/{Math.round(SC.blend.results * 100)} blend of the two, leaning toward chances because they repeat better year to year; {current ? 'this season' : season} only, nothing regressed. Repeats = that component's year-to-year repeatability, which sets the likely range, not the number.{SC.production != null ? ` This isolated read, ${SC.isolated.toFixed(1)} on the same scale, carries ${Math.round(SC.weightIsolated * 100)}% of the headline; the other ${100 - Math.round(SC.weightIsolated * 100)}% is production, his season game score (${SC.gameScore}, the same number as the game log), ${SC.production.toFixed(1)} on the scale. The isolated share grows with his minutes and tops out at ${Math.round(SC.targetIsolated * 100)}% at a full-season workload.` : ''}</p>
         </div>
         <div class="rankwrap">
         <p class="eb mono">Where he ranks · all NHL skaters, {SC.pool} with {SC.minGp ?? 20}+ games</p>
         <table class="rank">
-          <thead><tr><th>Rank</th><th>Player</th><th>Team</th><th>Pos</th><th class="num">GP</th><th class="num">W-Value</th><th class="num">Goals counted</th></tr></thead>
+          <thead><tr><th>Rank</th><th>Player</th><th>Team</th><th>Pos</th><th class="num">GP</th><th class="num">W-Value</th><th class="num">Isolated</th><th class="num">Production</th></tr></thead>
           <tbody>
-            {(SC.neighbours || []).map((n) => (
-              <tr class:list={{ me: n.isMe }}><td class="rk">{n.rank}</td><td>{n.name}</td><td>{n.team}</td><td>{n.pos}</td><td class="num">{n.gp}</td><td class:list={['num', { red: n.isMe }]}>{n.value.toFixed(1)}</td><td class="num">{n.goals > 0 ? '+' : ''}{n.goals.toFixed(1)}</td></tr>
+            {(SC.neighbors || []).map((n) => (
+              <tr class:list={{ me: n.isMe }}><td class="rk">{n.rank}</td><td>{n.name}</td><td>{n.team}</td><td>{n.pos}</td><td class="num">{n.gp}</td><td class:list={['num', { red: n.isMe }]}>{n.value.toFixed(1)}</td><td class="num">{n.isolated != null ? n.isolated.toFixed(1) : '—'}</td><td class="num">{n.production != null ? n.production.toFixed(1) : '—'}</td></tr>
             ))}
           </tbody>
         </table>
-        <p class="note mono">Two above and two below on the same score.{SC.rank ? ` Rank ${SC.rank} of ${SC.pool}.` : ' Under 20 games, so rated but not ranked.'}</p>
+        <p class="note mono">Two above and two below on the same score.{SC.rank ? ` Rank ${SC.rank} of ${SC.pool}.` : ` Under ${SC.minGp ?? 20} games, so rated but not ranked.`}</p>
         </div>
 
         </div>
         <div class="prose-sm">
-          <p><strong>W-Value {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with twenty or more games {thisSeason}, forwards and defensemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {last(P.name)} sits {Math.abs(Math.log(SC.value / (100 - SC.value))).toFixed(1)} standard deviations {SC.value >= 50 ? 'above' : 'below'} the average of {SC.pool} skaters, which is the {ordinal(Math.max(1, Math.round(SC.percentile)))} percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how much of that is noise given how well each component repeats at his minutes; the number itself is {current ? "this season's" : `${season}'s`} delivered value, not a projection.</p>
+          <p><strong>W-Value {SC.value.toFixed(1)}</strong> is on a 0 to 100 scale where 50 is the average NHL skater with {SC.minGp ?? 20} or more games {thisSeason}, forwards and defensemen on one scale. Around the middle a standard deviation of value is worth about 23 points, and the scale compresses toward the ends, so it reads like QBR rather than a percentile: {last(P.name)} sits {Math.abs(Math.log(SC.value / (100 - SC.value))).toFixed(1)} standard deviations {SC.value >= 50 ? 'above' : 'below'} the average of {SC.pool} skaters, which is the {ordinal(Math.max(1, Math.round(SC.percentile)))} percentile. The likely range, {SC.low.toFixed(1)} to {SC.high.toFixed(1)}, is how much of that is noise given how well each half repeats at his minutes; the number itself is {current ? "this season's" : `${season}'s`} delivered value, not a projection.</p>
           <p>{HS.Net ? `Two outside checks. HockeyStatCards' Luszczyszyn model puts his net rating in the ${ordinal(HS.Net.percentile)} percentile (${HS.Net.value}). ` : 'For an outside check, '}Evolving-Hockey's own headline number is {SC.raw.WAR} wins above replacement.</p>
         </div>
       </div>

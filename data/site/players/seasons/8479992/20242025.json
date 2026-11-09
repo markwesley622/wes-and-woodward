@@ -7443,14 +7443,18 @@
  "hasLogSeason": false,
  "score": {
   "value": 34.1,
-  "low": 15.5,
-  "high": 59.4,
+  "low": 22.0,
+  "high": 48.8,
+  "isolated": 34.1,
+  "production": null,
+  "weightIsolated": 1.0,
   "sustainable": 32.2,
   "results": 39.4,
-  "percentile": 25.1,
+  "percentile": 25.0,
   "goalsBlended": -0.2,
   "goalsSustainable": -1.2,
   "goalsResults": 1.2,
+  "gameScore": null,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -7466,6 +7470,9 @@
    "SHD": 5292,
    "Pens": 1149
   },
+  "kGameScore": 293,
+  "refToi": 1036,
+  "targetIsolated": 0.6,
   "repeatability": {
    "EVO": 0.465,
    "EVD": 0.432,
@@ -7474,6 +7481,7 @@
    "Pens": 0.536
   },
   "reliability": 0.345,
+  "reliabilityProduction": 0.0,
   "pool": 721,
   "minGp": 20,
   "group": "skaters",
@@ -7545,60 +7553,70 @@
    "CF/60": -1.7,
    "CA/60": -0.32
   },
-  "rank": 540,
-  "neighbours": [
+  "rank": 541,
+  "neighbors": [
    {
-    "rank": 538,
+    "rank": 539,
     "name": "Scott Laughton",
     "team": "TOR",
     "gp": 20,
     "pos": "C",
     "value": 34.2,
-    "goals": -0.2,
-    "isMe": false
-   },
-   {
-    "rank": 539,
-    "name": "Eetu Luostarinen",
-    "team": "FLA",
-    "gp": 80,
-    "pos": "C",
-    "value": 34.2,
-    "goals": -0.2,
+    "isolated": 34.2,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
     "rank": 540,
-    "name": "Michael Rasmussen",
-    "team": "DET",
-    "gp": 77,
-    "pos": "C",
-    "value": 34.1,
-    "goals": -0.2,
-    "isMe": true
-   },
-   {
-    "rank": 541,
     "name": "Akil Thomas",
     "team": "L.A",
     "gp": 25,
     "pos": "C",
     "value": 34.1,
-    "goals": -0.2,
+    "isolated": 34.1,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
+    "rank": 541,
+    "name": "Michael Rasmussen",
+    "team": "DET",
+    "gp": 77,
+    "pos": "C",
+    "value": 34.1,
+    "isolated": 34.1,
+    "production": null,
+    "weight": 1.0,
+    "isMe": true
+   },
+   {
     "rank": 542,
-    "name": "Jesse Puljujarvi",
-    "team": "PIT",
-    "gp": 26,
+    "name": "Aaron Ekblad",
+    "team": "FLA",
+    "gp": 56,
+    "pos": "D",
+    "value": 34.1,
+    "isolated": 34.1,
+    "production": null,
+    "weight": 1.0,
+    "isMe": false
+   },
+   {
+    "rank": 543,
+    "name": "Jack Quinn",
+    "team": "BUF",
+    "gp": 74,
     "pos": "R",
     "value": 34.1,
-    "goals": -0.3,
+    "isolated": 34.1,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation is about 23 points. Two halves, each standardized over the same pool: isolated impact (Evolving-Hockey xGAR and GAR blended 60/40: EV offense, EV defense, power play, penalty kill, penalties) and production (season W&W game score, the same number as the game log). The isolated half carries 60% of the headline at a typical full-season workload (1036 minutes) and less before that, in proportion to its measured reliability at the player's minutes; production carries the rest. Nothing is regressed; the likely range is the 80% band from each half's reliability. Production is unavailable for this season, so the headline is the isolated half alone."
  },
  "moneypuck": {
   "playerId": 8479992,

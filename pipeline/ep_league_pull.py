@@ -3,7 +3,7 @@
 
 For every (league, season, position, age bucket) we pull page 1, read totalCount, then queue the rest.
 EP's age filter is cumulative (U19 = everyone under 19), so exact-age cohorts are set differences
-between neighbouring buckets; build_prospects.py does that. Rows carry EP player ids, position,
+between neighboring buckets; build_prospects.py does that. Rows carry EP player ids, position,
 GP/G/A/PTS. Usage: python3 pipeline/ep_league_pull.py [season ...]   (default: both current seasons)
 """
 import json, sys, time, urllib.request

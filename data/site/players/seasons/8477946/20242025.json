@@ -7443,14 +7443,18 @@
  "hasLogSeason": false,
  "score": {
   "value": 81.2,
-  "low": 62.6,
-  "high": 91.8,
+  "low": 69.5,
+  "high": 89.1,
+  "isolated": 81.2,
+  "production": null,
+  "weightIsolated": 1.0,
   "sustainable": 77.1,
   "results": 84.8,
   "percentile": 91.1,
   "goalsBlended": 13.3,
   "goalsSustainable": 12.5,
   "goalsResults": 14.6,
+  "gameScore": null,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -7466,6 +7470,9 @@
    "SHD": 5292,
    "Pens": 1149
   },
+  "kGameScore": 293,
+  "refToi": 1036,
+  "targetIsolated": 0.6,
   "repeatability": {
    "EVO": 0.465,
    "EVD": 0.432,
@@ -7474,6 +7481,7 @@
    "Pens": 0.536
   },
   "reliability": 0.45,
+  "reliabilityProduction": 0.0,
   "pool": 721,
   "minGp": 20,
   "group": "skaters",
@@ -7546,7 +7554,7 @@
    "CA/60": -2.21
   },
   "rank": 64,
-  "neighbours": [
+  "neighbors": [
    {
     "rank": 62,
     "name": "Clayton Keller",
@@ -7554,7 +7562,9 @@
     "gp": 81,
     "pos": "R",
     "value": 81.8,
-    "goals": 13.6,
+    "isolated": 81.8,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7564,7 +7574,9 @@
     "gp": 75,
     "pos": "C",
     "value": 81.4,
-    "goals": 13.4,
+    "isolated": 81.4,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7574,7 +7586,9 @@
     "gp": 82,
     "pos": "C",
     "value": 81.2,
-    "goals": 13.3,
+    "isolated": 81.2,
+    "production": null,
+    "weight": 1.0,
     "isMe": true
    },
    {
@@ -7584,7 +7598,9 @@
     "gp": 54,
     "pos": "C",
     "value": 80.8,
-    "goals": 13.2,
+    "isolated": 80.8,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
@@ -7594,11 +7610,13 @@
     "gp": 80,
     "pos": "D",
     "value": 80.3,
-    "goals": 13.0,
+    "isolated": 80.3,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation is about 23 points. Two halves, each standardized over the same pool: isolated impact (Evolving-Hockey xGAR and GAR blended 60/40: EV offense, EV defense, power play, penalty kill, penalties) and production (season W&W game score, the same number as the game log). The isolated half carries 60% of the headline at a typical full-season workload (1036 minutes) and less before that, in proportion to its measured reliability at the player's minutes; production carries the rest. Nothing is regressed; the likely range is the 80% band from each half's reliability. Production is unavailable for this season, so the headline is the isolated half alone."
  },
  "moneypuck": {
   "playerId": 8477946,

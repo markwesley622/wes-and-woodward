@@ -7443,14 +7443,18 @@
  "hasLogSeason": false,
  "score": {
   "value": 35.8,
-  "low": 16.4,
-  "high": 61.3,
+  "low": 23.4,
+  "high": 50.6,
+  "isolated": 35.8,
+  "production": null,
+  "weightIsolated": 1.0,
   "sustainable": 40.0,
   "results": 30.6,
-  "percentile": 29.0,
+  "percentile": 28.8,
   "goalsBlended": 0.2,
   "goalsSustainable": 1.2,
   "goalsResults": -1.2,
+  "gameScore": null,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -7466,6 +7470,9 @@
    "SHD": 5292,
    "Pens": 1149
   },
+  "kGameScore": 293,
+  "refToi": 1036,
+  "targetIsolated": 0.6,
   "repeatability": {
    "EVO": 0.465,
    "EVD": 0.432,
@@ -7474,6 +7481,7 @@
    "Pens": 0.536
   },
   "reliability": 0.338,
+  "reliabilityProduction": 0.0,
   "pool": 721,
   "minGp": 20,
   "group": "skaters",
@@ -7545,8 +7553,20 @@
    "CF/60": -2.24,
    "CA/60": -0.88
   },
-  "rank": 512,
-  "neighbours": [
+  "rank": 511,
+  "neighbors": [
+   {
+    "rank": 509,
+    "name": "Yakov Trenin",
+    "team": "MIN",
+    "gp": 76,
+    "pos": "C",
+    "value": 35.9,
+    "isolated": 35.9,
+    "production": null,
+    "weight": 1.0,
+    "isMe": false
+   },
    {
     "rank": 510,
     "name": "Dmitry Kulikov",
@@ -7554,51 +7574,49 @@
     "gp": 70,
     "pos": "D",
     "value": 35.9,
-    "goals": 0.3,
+    "isolated": 35.9,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
     "rank": 511,
-    "name": "Tyler Kleven",
-    "team": "OTT",
-    "gp": 79,
-    "pos": "D",
-    "value": 35.8,
-    "goals": 0.2,
-    "isMe": false
-   },
-   {
-    "rank": 512,
     "name": "Albert Johansson",
     "team": "DET",
     "gp": 61,
     "pos": "D",
     "value": 35.8,
-    "goals": 0.2,
+    "isolated": 35.8,
+    "production": null,
+    "weight": 1.0,
     "isMe": true
    },
    {
-    "rank": 513,
+    "rank": 512,
     "name": "Carl Grundstrom",
     "team": "S.J",
     "gp": 56,
     "pos": "R",
     "value": 35.8,
-    "goals": 0.2,
+    "isolated": 35.8,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    },
    {
-    "rank": 514,
-    "name": "Brandon Duhaime",
-    "team": "WSH",
-    "gp": 82,
-    "pos": "R",
+    "rank": 513,
+    "name": "Tyler Kleven",
+    "team": "OTT",
+    "gp": 79,
+    "pos": "D",
     "value": 35.8,
-    "goals": 0.2,
+    "isolated": 35.8,
+    "production": null,
+    "weight": 1.0,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (20+ GP, forwards and defensemen together) and each standard deviation is about 23 points. Two halves, each standardized over the same pool: isolated impact (Evolving-Hockey xGAR and GAR blended 60/40: EV offense, EV defense, power play, penalty kill, penalties) and production (season W&W game score, the same number as the game log). The isolated half carries 60% of the headline at a typical full-season workload (1036 minutes) and less before that, in proportion to its measured reliability at the player's minutes; production carries the rest. Nothing is regressed; the likely range is the 80% band from each half's reliability. Production is unavailable for this season, so the headline is the isolated half alone."
  },
  "moneypuck": {
   "playerId": 8481607,

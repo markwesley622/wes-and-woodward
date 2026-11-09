@@ -103,15 +103,19 @@
   }
  },
  "score": {
-  "value": 49.8,
-  "low": 22.3,
-  "high": 77.4,
+  "value": 38.3,
+  "low": 26.5,
+  "high": 51.6,
+  "isolated": 49.8,
+  "production": 36.9,
+  "weightIsolated": 0.109,
   "sustainable": 48.7,
   "results": 51.7,
-  "percentile": 56.3,
+  "percentile": 36.4,
   "goalsBlended": 0.9,
   "goalsSustainable": 0.8,
   "goalsResults": 1.1,
+  "gameScore": 2.75,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -127,6 +131,9 @@
    "SHD": 5292,
    "Pens": 1149
   },
+  "kGameScore": 293,
+  "refToi": 1036,
+  "targetIsolated": 0.6,
   "repeatability": {
    "EVO": 0.465,
    "EVD": 0.432,
@@ -135,6 +142,7 @@
    "Pens": 0.536
   },
   "reliability": 0.063,
+  "reliabilityProduction": 0.298,
   "pool": 662,
   "minGp": 5,
   "group": "skaters",
@@ -206,60 +214,70 @@
    "CF/60": -0.99,
    "CA/60": -0.07
   },
-  "rank": 289,
-  "neighbours": [
+  "rank": 421,
+  "neighbors": [
    {
-    "rank": 287,
-    "name": "Florian Xhekaj",
-    "team": "MTL",
-    "gp": 7,
+    "rank": 419,
+    "name": "Alex Ovechkin",
+    "team": "WSH",
+    "gp": 15,
     "pos": "L",
-    "value": 50.0,
-    "goals": 0.9,
+    "value": 38.6,
+    "isolated": 29.5,
+    "production": 40.6,
+    "weight": 0.17,
     "isMe": false
    },
    {
-    "rank": 288,
-    "name": "Eetu Luostarinen",
+    "rank": 420,
+    "name": "Gustav Forsling",
     "team": "FLA",
-    "gp": 18,
-    "pos": "C",
-    "value": 49.8,
-    "goals": 0.9,
+    "gp": 17,
+    "pos": "D",
+    "value": 38.5,
+    "isolated": 44.8,
+    "production": 36.1,
+    "weight": 0.28,
     "isMe": false
    },
    {
-    "rank": 289,
+    "rank": 421,
     "name": "Sheldon Dries",
     "team": "DET",
     "gp": 12,
     "pos": "C",
-    "value": 49.8,
-    "goals": 0.9,
+    "value": 38.3,
+    "isolated": 49.8,
+    "production": 36.9,
+    "weight": 0.11,
     "isMe": true
    },
    {
-    "rank": 290,
-    "name": "Konsta Helenius",
-    "team": "BUF",
-    "gp": 11,
+    "rank": 422,
+    "name": "Anton Frondell",
+    "team": "CHI",
+    "gp": 18,
     "pos": "C",
-    "value": 49.6,
-    "goals": 0.9,
+    "value": 38.0,
+    "isolated": 22.1,
+    "production": 44.0,
+    "weight": 0.24,
     "isMe": false
    },
    {
-    "rank": 291,
-    "name": "Warren Foegele",
-    "team": "OTT",
-    "gp": 13,
-    "pos": "L",
-    "value": 49.6,
-    "goals": 0.9,
+    "rank": 423,
+    "name": "Sean Kuraly",
+    "team": "BOS",
+    "gp": 6,
+    "pos": "C",
+    "value": 37.8,
+    "isolated": 52.5,
+    "production": 36.8,
+    "weight": 0.07,
     "isMe": false
    }
   ],
-  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (5+ GP, forwards and defensemen together; the full-season gate of 20 GP scaled to the share of the schedule played so far) and each standard deviation of value is about 23 points, on a shrunken goals-above-replacement composite. Components: Evolving-Hockey xGAR (sustainable) or GAR (results): EV offense, EV defense, power play, penalty kill, penalties. The likely range uses each component's measured year-over-year repeatability at the player's minutes; the headline itself is not shrunk. Likely range = the reliability standard error (pool SD \u00d7 sqrt(1 \u2212 mean reliability)) at 80%, mapped through the same scale."
+  "method": "A 0-100 rating, not a percentile, positionless: 50 is the average NHL skater (5+ GP, forwards and defensemen together, the full-season gate of 20 GP scaled to the share of the schedule played so far) and each standard deviation is about 23 points. Two halves, each standardized over the same pool: isolated impact (Evolving-Hockey xGAR and GAR blended 60/40: EV offense, EV defense, power play, penalty kill, penalties) and production (season W&W game score, the same number as the game log). The isolated half carries 60% of the headline at a typical full-season workload (1036 minutes) and less before that, in proportion to its measured reliability at the player's minutes; production carries the rest. Nothing is regressed; the likely range is the 80% band from each half's reliability."
  },
  "standIn": null,
  "impact": [
@@ -7378,5 +7396,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-11-09T10:20:43-08:00"
+ "updatedAt": "2026-11-09T14:12:18-08:00"
 }
