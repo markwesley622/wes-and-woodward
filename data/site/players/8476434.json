@@ -27,7 +27,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 11,
+  "gp": 12,
   "goals": null,
   "assists": null,
   "points": null,
@@ -38,43 +38,79 @@
   "toiPerGame": null,
   "ppPoints": null,
   "wins": 4,
-  "losses": 5,
+  "losses": 6,
   "otLosses": 1,
-  "gaa": 3.457811,
-  "savePct": 0.859574,
+  "gaa": 3.427302,
+  "savePct": 0.865672,
   "shutouts": 0
  },
  "score": {
-  "value": 16.3,
-  "low": 6.1,
-  "high": 36.6,
-  "gsax": -5.9,
-  "xGoals": 27.1,
-  "goals": 33.0,
-  "minutes": 573,
-  "pool": 22,
-  "rank": null,
-  "percentile": 4.5,
-  "reliability": 0.28,
+  "value": 21.2,
+  "low": 8.4,
+  "high": 44.0,
+  "gsax": -5.7,
+  "xGoals": 30.3,
+  "goals": 36.0,
+  "minutes": 630,
+  "pool": 24,
+  "rank": 22,
+  "percentile": 8.3,
+  "reliability": 0.3,
   "group": "goalies",
-  "neighbors": [],
+  "neighbors": [
+   {
+    "rank": 20,
+    "name": "Leevi Merilinen",
+    "value": 31.9,
+    "gsax": -2.3,
+    "isMe": false
+   },
+   {
+    "rank": 21,
+    "name": "Arturs Silovs",
+    "value": 31.7,
+    "gsax": -2.3,
+    "isMe": false
+   },
+   {
+    "rank": 22,
+    "name": "John Gibson",
+    "value": 21.2,
+    "gsax": -5.7,
+    "isMe": true
+   },
+   {
+    "rank": 23,
+    "name": "Jake Allen",
+    "value": 21.1,
+    "gsax": -5.7,
+    "isMe": false
+   },
+   {
+    "rank": 24,
+    "name": "Karel Vejmelka",
+    "value": 15.7,
+    "gsax": -8.0,
+    "isMe": false
+   }
+  ],
   "method": "A 0-100 rating where 50 is the average NHL goalie with 600+ minutes; built on goals saved above expected (MoneyPuck, all situations), this season only."
  },
  "moneypuck": {
   "playerId": 8476434,
   "name": "John Gibson",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8476434.png",
-  "gamesPlayed": 11,
-  "gamesStarted": 11,
+  "gamesPlayed": 12,
+  "gamesStarted": 12,
   "wins": 4,
-  "losses": 5,
+  "losses": 6,
   "otLosses": 1,
-  "savePct": 0.859574,
-  "gaa": 3.457811,
+  "savePct": 0.865672,
+  "gaa": 3.427302,
   "shutouts": 0,
-  "gsax": -5.89,
-  "pctl_gsax": 4.5,
-  "qualifiesForPercentiles": false
+  "gsax": -5.69,
+  "pctl_gsax": 8.3,
+  "qualifiesForPercentiles": true
  },
  "gameLog": [
   {
@@ -219,6 +255,19 @@
    "savePct": 0.846154,
    "shutout": 0,
    "toi": 20.0
+  },
+  {
+   "gameId": 2026020290,
+   "date": "2026-11-10",
+   "opponent": "STL",
+   "home": false,
+   "started": 1,
+   "decision": "L",
+   "shotsAgainst": 33,
+   "goalsAgainst": 3,
+   "savePct": 0.909091,
+   "shutout": 0,
+   "toi": 57.6
   }
  ],
  "gameScore": null,
@@ -229,7 +278,7 @@
  "myComponents": null,
  "hsc": {},
  "note": null,
- "detGames": 11,
+ "detGames": 12,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -242,5 +291,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-10T05:06:42-08:00"
+ "updatedAt": "2026-11-11T05:06:06-08:00"
 }

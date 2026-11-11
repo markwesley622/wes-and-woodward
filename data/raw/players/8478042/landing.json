@@ -54,7 +54,7 @@
    "subSeason": {
     "assists": 7,
     "gameWinningGoals": 0,
-    "gamesPlayed": 18,
+    "gamesPlayed": 19,
     "goals": 8,
     "otGoals": 0,
     "pim": 6,
@@ -62,15 +62,15 @@
     "points": 15,
     "powerPlayGoals": 4,
     "powerPlayPoints": 6,
-    "shootingPctg": 0.156863,
+    "shootingPctg": 0.145455,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 51
+    "shots": 55
    },
    "career": {
     "assists": 231,
     "gameWinningGoals": 39,
-    "gamesPlayed": 700,
+    "gamesPlayed": 701,
     "goals": 227,
     "otGoals": 3,
     "pim": 286,
@@ -78,10 +78,10 @@
     "points": 458,
     "powerPlayGoals": 41,
     "powerPlayPoints": 89,
-    "shootingPctg": 0.1128,
+    "shootingPctg": 0.1125,
     "shorthandedGoals": 11,
     "shorthandedPoints": 14,
-    "shots": 2012
+    "shots": 2016
    }
   }
  },
@@ -89,9 +89,9 @@
   "regularSeason": {
    "assists": 231,
    "avgToi": "16:23",
-   "faceoffWinningPctg": 0.3624,
+   "faceoffWinningPctg": 0.36,
    "gameWinningGoals": 39,
-   "gamesPlayed": 700,
+   "gamesPlayed": 701,
    "goals": 227,
    "otGoals": 3,
    "pim": 286,
@@ -99,10 +99,10 @@
    "points": 458,
    "powerPlayGoals": 41,
    "powerPlayPoints": 89,
-   "shootingPctg": 0.1128,
+   "shootingPctg": 0.1125,
    "shorthandedGoals": 11,
    "shorthandedPoints": 14,
-   "shots": 2012
+   "shots": 2016
   },
   "playoffs": {
    "assists": 29,
@@ -127,6 +127,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-11-10",
+   "gameId": 2026020290,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "R",
+   "opponentAbbrev": "STL",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 20,
+   "shorthandedGoals": 0,
+   "shots": 4,
+   "teamAbbrev": "DET",
+   "toi": "16:29"
+  },
   {
    "assists": 0,
    "gameDate": "2026-11-07",
@@ -198,24 +216,6 @@
    "shots": 5,
    "teamAbbrev": "DET",
    "toi": "18:11"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-10-31",
-   "gameId": 2026020218,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "H",
-   "opponentAbbrev": "STL",
-   "pim": 2,
-   "plusMinus": -2,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 22,
-   "shorthandedGoals": 0,
-   "shots": 1,
-   "teamAbbrev": "DET",
-   "toi": "20:01"
   }
  ],
  "seasonTotals": [
@@ -1290,11 +1290,11 @@
   },
   {
    "assists": 7,
-   "avgToi": "18:41",
-   "faceoffWinningPctg": 0.454545,
+   "avgToi": "18:34",
+   "faceoffWinningPctg": 0.384615,
    "gameTypeId": 2,
    "gameWinningGoals": 0,
-   "gamesPlayed": 18,
+   "gamesPlayed": 19,
    "goals": 8,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
@@ -1305,10 +1305,10 @@
    "powerPlayPoints": 6,
    "season": 20262027,
    "sequence": 1,
-   "shootingPctg": 0.156863,
+   "shootingPctg": 0.145455,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 51,
+   "shots": 55,
    "teamCommonName": {
     "default": "Red Wings"
    },

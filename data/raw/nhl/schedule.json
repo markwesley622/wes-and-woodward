@@ -2256,7 +2256,7 @@
    "easternUTCOffset": "-05:00",
    "venueUTCOffset": "-06:00",
    "venueTimezone": "US/Central",
-   "gameState": "FUT",
+   "gameState": "OFF",
    "gameScheduleState": "OK",
    "tvBroadcasts": [
     {
@@ -2297,13 +2297,11 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/DET_dark.svg",
     "awaySplitSquad": false,
-    "promoLink": "",
-    "promoDesc": "",
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/DET/20262027/DET-radio.m3u8",
     "airlineLink": "",
     "airlineDesc": "",
     "hotelLink": "",
-    "hotelDesc": ""
+    "hotelDesc": "",
+    "score": 2
    },
    "homeTeam": {
     "id": 19,
@@ -2321,21 +2319,41 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/STL_dark.svg",
     "homeSplitSquad": false,
-    "promoLink": "",
-    "promoDesc": "",
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/STL/20262027/STL-radio.m3u8",
     "airlineLink": "",
     "airlineDesc": "",
     "hotelLink": "https://www.stlouisunionstation.com/hotel-packages",
-    "hotelDesc": "Stay at Union Station"
+    "hotelDesc": "Stay at Union Station",
+    "score": 3
    },
    "periodDescriptor": {
-    "number": 1,
+    "number": 3,
     "periodType": "REG",
     "maxRegulationPeriods": 3
    },
-   "ticketsLink": "https://www.ticketmaster.com/event/060064EECE0D1B3E?brand=blues&artistid=806025&wt.mc_id=NHL_TEAM_STL_SCHEDULE_GM8&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_STL&utm_content=SCHEDULE_GM8",
-   "ticketsLinkFr": "https://www.ticketmaster.com/event/060064EECE0D1B3E?brand=blues&artistid=806025&wt.mc_id=NHL_TEAM_STL_SCHEDULE_GM8&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_STL&utm_content=SCHEDULE_GM8",
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   },
+   "winningGoalie": {
+    "playerId": 8480981,
+    "firstInitial": {
+     "default": "J."
+    },
+    "lastName": {
+     "default": "Hofer"
+    }
+   },
+   "winningGoalScorer": {
+    "playerId": 8483516,
+    "firstInitial": {
+     "default": "J."
+    },
+    "lastName": {
+     "default": "Snuggerud"
+    }
+   },
+   "threeMinRecap": "/video/det-at-stl-recap-6408216652112",
+   "threeMinRecapFr": "/fr/video/det-vs-stl-10-11-2026-resume-6408218210112",
+   "condensedGame": "/video/det-at-stl-condensed-game-6408218407112",
    "gameCenterLink": "/gamecenter/det-vs-stl/2026/11/10/2026020290"
   },
   {
@@ -4661,6 +4679,13 @@
      "sequenceNumber": 117
     },
     {
+     "id": 281,
+     "market": "N",
+     "countryCode": "CA",
+     "network": "TVAS",
+     "sequenceNumber": 120
+    },
+    {
      "id": 645,
      "market": "H",
      "countryCode": "US",
@@ -4910,6 +4935,13 @@
      "countryCode": "CA",
      "network": "SN",
      "sequenceNumber": 107
+    },
+    {
+     "id": 281,
+     "market": "N",
+     "countryCode": "CA",
+     "network": "TVAS",
+     "sequenceNumber": 120
     },
     {
      "id": 645,
