@@ -31,7 +31,7 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 14,
+   "gp": 15,
    "g": 4,
    "a": 3,
    "pts": 7,
@@ -72,7 +72,7 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 14,
+     "gp": 15,
      "g": 4,
      "a": 3,
      "pts": 7,
@@ -230,18 +230,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 14,
+  "gp": 15,
   "g": 4,
   "a": 3,
   "pts": 7,
-  "pgp": 0.5,
-  "lineGp": 14,
-  "nhle": 0.194,
-  "nhlePace": 16.3,
+  "pgp": 0.467,
+  "lineGp": 15,
+  "nhle": 0.182,
+  "nhlePace": 15.3,
   "lines": [
    "AHL"
   ],
-  "feature": 0.194
+  "feature": 0.182
  },
  "league": {
   "name": "AHL",
@@ -266,8 +266,8 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 41,
-   "gp": 14,
-   "value": 0.5,
+   "gp": 15,
+   "value": 0.4667,
    "percentile": 61.0,
    "percentileAllAges": 53.7,
    "allAgesN": 642
@@ -275,104 +275,104 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 21.1,
+  "expected": 6.4,
   "median": 0.0,
-  "p75": 33.2,
-  "p90": 72.0,
-  "pRegular": 0.48,
-  "pTopLine": 0.08,
-  "pAboveAvg": 0.2,
-  "pElite": 0.04,
+  "p75": 0.0,
+  "p90": 37.3,
+  "pRegular": 0.2,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.04,
+  "pElite": 0.0,
   "poolN": 1122,
   "group": "F",
   "age": 21,
   "pickWeight": 0.0,
-  "tier": "below average",
-  "pCeiling": 0.34,
+  "tier": "replacement level",
+  "pCeiling": 0.2,
   "featureBand": [
-   0.187,
-   0.201
+   0.176,
+   0.188
   ],
   "examples": [
    {
-    "name": "Kellen Jones",
-    "year": 2010,
-    "pick": 202,
+    "name": "Matthew Peca",
+    "year": 2011,
+    "pick": 201,
     "league": "NCAA",
-    "feature": 0.194,
+    "feature": 0.182,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
+    "nhlGp": 83
    },
    {
-    "name": "Logan Hutsko",
-    "year": 2018,
-    "pick": 89,
-    "league": "NCAA",
-    "feature": 0.194,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Hugh McGing",
-    "year": 2018,
-    "pick": 138,
-    "league": "NCAA",
-    "feature": 0.194,
+    "name": "Christoph Bertschy",
+    "year": 2012,
+    "pick": 158,
+    "league": "AHL",
+    "feature": 0.182,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 9
    },
    {
-    "name": "Antti Saarela",
-    "year": 2019,
-    "pick": 123,
-    "league": "Liiga",
-    "feature": 0.194,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Michael Latta",
-    "year": 2009,
-    "pick": 72,
-    "league": "AHL",
-    "feature": 0.195,
-    "peak": 10.0,
-    "tier": "replacement level",
-    "nhlGp": 113
-   },
-   {
-    "name": "Tyler Pitlick",
-    "year": 2010,
-    "pick": 31,
-    "league": "AHL",
-    "feature": 0.195,
-    "peak": 32.3,
-    "tier": "below average",
-    "nhlGp": 452
-   },
-   {
-    "name": "Jujhar Khaira",
-    "year": 2012,
+    "name": "Robbie Czarnik",
+    "year": 2008,
     "pick": 63,
     "league": "AHL",
-    "feature": 0.195,
-    "peak": 27.9,
-    "tier": "below average",
-    "nhlGp": 337
-   },
-   {
-    "name": "Ryan McGregor",
-    "year": 2017,
-    "pick": 172,
-    "league": "AHL",
-    "feature": 0.195,
+    "feature": 0.183,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Grant Besse",
+    "year": 2013,
+    "pick": 147,
+    "league": "NCAA",
+    "feature": 0.183,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Sammy Walker",
+    "year": 2017,
+    "pick": 200,
+    "league": "NCAA",
+    "feature": 0.181,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 13
+   },
+   {
+    "name": "Tuukka Tieksola",
+    "year": 2019,
+    "pick": 121,
+    "league": "AHL",
+    "feature": 0.183,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Christian Thomas",
+    "year": 2010,
+    "pick": 40,
+    "league": "AHL",
+    "feature": 0.184,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 27
+   },
+   {
+    "name": "Craig Cunningham",
+    "year": 2010,
+    "pick": 97,
+    "league": "AHL",
+    "feature": 0.184,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 63
    }
   ]
  },
@@ -393,8 +393,8 @@
   "w": 0.0,
   "sinceDraft": 3,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 21.1,
-  "expected": 21.1,
+  "cohortExpected": 6.4,
+  "expected": 6.4,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -415,11 +415,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 14,
+  "gp": 15,
   "season": "2026-2027"
  },
- "rank": 10,
- "score": 21.1,
+ "rank": 20,
+ "score": 6.4,
  "rankStart": 12,
  "rankStartDate": "2026-10-06"
 }

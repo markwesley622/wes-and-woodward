@@ -31,11 +31,11 @@
   {
    "league": "HockeyAllsvenskan",
    "team": "Almtuna IS",
-   "gp": 17,
+   "gp": 18,
    "g": 3,
    "a": 7,
    "pts": 10,
-   "pm": -7,
+   "pm": -8,
    "pim": 4,
    "gaa": null,
    "svp": null,
@@ -106,11 +106,11 @@
     {
      "league": "HockeyAllsvenskan",
      "team": "Almtuna IS",
-     "gp": 17,
+     "gp": 18,
      "g": 3,
      "a": 7,
      "pts": 10,
-     "pm": -7,
+     "pm": -8,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -225,19 +225,19 @@
   "table": "Allsvenskan",
   "coef": 0.351,
   "team": "Almtuna IS",
-  "gp": 22,
+  "gp": 23,
   "g": 3,
   "a": 7,
   "pts": 10,
-  "pgp": 0.588,
-  "lineGp": 17,
-  "nhle": 0.185,
-  "nhlePace": 15.5,
+  "pgp": 0.556,
+  "lineGp": 18,
+  "nhle": 0.177,
+  "nhlePace": 14.9,
   "lines": [
    "SHL",
    "HockeyAllsvenskan"
   ],
-  "feature": 0.185
+  "feature": 0.177
  },
  "league": {
   "name": "HockeyAllsvenskan",
@@ -262,113 +262,113 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 11,
-   "gp": 17,
-   "value": 0.5882,
+   "gp": 18,
+   "value": 0.5556,
    "percentile": 36.4,
-   "percentileAllAges": 71.4,
+   "percentileAllAges": 69.2,
    "allAgesN": 357
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 15.2,
+  "expected": 9.1,
   "median": 0.0,
-  "p75": 19.8,
-  "p90": 67.2,
-  "pRegular": 0.28,
-  "pTopLine": 0.08,
-  "pAboveAvg": 0.18,
-  "pElite": 0.02,
+  "p75": 0.0,
+  "p90": 51.3,
+  "pRegular": 0.22,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.1,
+  "pElite": 0.0,
   "poolN": 1236,
   "group": "F",
   "age": 20,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.28,
+  "pCeiling": 0.22,
   "featureBand": [
-   0.18,
-   0.19
+   0.173,
+   0.182
   ],
   "examples": [
    {
-    "name": "Zach Sanford",
-    "year": 2013,
-    "pick": 61,
-    "league": "NCAA",
-    "feature": 0.185,
-    "peak": 56.8,
-    "tier": "above average",
-    "nhlGp": 334
-   },
-   {
-    "name": "Jordan Greenway",
-    "year": 2015,
-    "pick": 50,
-    "league": "NCAA",
-    "feature": 0.185,
-    "peak": 67.2,
-    "tier": "above average",
-    "nhlGp": 478
-   },
-   {
-    "name": "Jack Dugan",
-    "year": 2017,
-    "pick": 142,
-    "league": "NCAA",
-    "feature": 0.185,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Pontus Holmberg",
+    "name": "Allan McShane",
     "year": 2018,
-    "pick": 156,
-    "league": "SHL",
-    "feature": 0.185,
-    "peak": 28.2,
-    "tier": "below average",
-    "nhlGp": 232
-   },
-   {
-    "name": "Aidan McDonough",
-    "year": 2019,
-    "pick": 195,
-    "league": "NCAA",
-    "feature": 0.185,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 6
-   },
-   {
-    "name": "Christian Thomas",
-    "year": 2010,
-    "pick": 40,
-    "league": "AHL",
-    "feature": 0.184,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 27
-   },
-   {
-    "name": "Alex Guptill",
-    "year": 2010,
-    "pick": 77,
-    "league": "NCAA",
-    "feature": 0.184,
+    "pick": 97,
+    "league": "Slovakia",
+    "feature": 0.177,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Matthew Peca",
-    "year": 2011,
-    "pick": 201,
-    "league": "NCAA",
-    "feature": 0.184,
+    "name": "Nicholas Baptiste",
+    "year": 2013,
+    "pick": 69,
+    "league": "AHL",
+    "feature": 0.176,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 83
+    "nhlGp": 47
+   },
+   {
+    "name": "Giorgio Estephan",
+    "year": 2015,
+    "pick": 152,
+    "league": "WHL",
+    "feature": 0.176,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Dominik Bokk",
+    "year": 2018,
+    "pick": 25,
+    "league": "AHL",
+    "feature": 0.178,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ilya Nikolayev",
+    "year": 2019,
+    "pick": 88,
+    "league": "USHL",
+    "feature": 0.178,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Alexander Daryin",
+    "year": 2019,
+    "pick": 107,
+    "league": "MHL",
+    "feature": 0.176,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matvei Guskov",
+    "year": 2019,
+    "pick": 149,
+    "league": "KHL",
+    "feature": 0.178,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kris Foucault",
+    "year": 2009,
+    "pick": 103,
+    "league": "AHL",
+    "feature": 0.175,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
    }
   ]
  },
@@ -389,8 +389,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 15.2,
-  "expected": 15.2,
+  "cohortExpected": 9.1,
+  "expected": 9.1,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -411,11 +411,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 17,
+  "gp": 18,
   "season": "2026-2027"
  },
- "rank": 12,
- "score": 15.2,
+ "rank": 16,
+ "score": 9.1,
  "rankStart": 27,
  "rankStartDate": "2026-10-06"
 }

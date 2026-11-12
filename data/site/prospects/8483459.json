@@ -31,7 +31,7 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 14,
+   "gp": 15,
    "g": 5,
    "a": 7,
    "pts": 12,
@@ -89,7 +89,7 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 14,
+     "gp": 15,
      "g": 5,
      "a": 7,
      "pts": 12,
@@ -218,18 +218,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 14,
+  "gp": 15,
   "g": 5,
   "a": 7,
   "pts": 12,
-  "pgp": 0.857,
-  "lineGp": 14,
-  "nhle": 0.333,
-  "nhlePace": 28.0,
+  "pgp": 0.8,
+  "lineGp": 15,
+  "nhle": 0.311,
+  "nhlePace": 26.1,
   "lines": [
    "AHL"
   ],
-  "feature": 0.333
+  "feature": 0.311
  },
  "league": {
   "name": "AHL",
@@ -254,113 +254,113 @@
    "season": "2026-2027",
    "ageBucket": "U24",
    "cohortN": 52,
-   "gp": 14,
-   "value": 0.8571,
-   "percentile": 82.7,
-   "percentileAllAges": 84.9,
+   "gp": 15,
+   "value": 0.8,
+   "percentile": 73.1,
+   "percentileAllAges": 75.7,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 12.8,
+  "expected": 12.3,
   "median": 0.0,
-  "p75": 16.7,
-  "p90": 44.9,
-  "pRegular": 0.4,
+  "p75": 15.6,
+  "p90": 50.8,
+  "pRegular": 0.44,
   "pTopLine": 0.04,
-  "pAboveAvg": 0.06,
+  "pAboveAvg": 0.1,
   "pElite": 0.02,
   "poolN": 1006,
   "group": "F",
   "age": 22,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.4,
+  "pCeiling": 0.44,
   "featureBand": [
-   0.305,
-   0.362
+   0.287,
+   0.334
   ],
   "examples": [
    {
-    "name": "Nicolas Petan",
-    "year": 2013,
-    "pick": 43,
-    "league": "AHL",
-    "feature": 0.332,
-    "peak": 20.7,
-    "tier": "replacement level",
-    "nhlGp": 170
-   },
-   {
-    "name": "Viktor Lodin",
-    "year": 2019,
-    "pick": 94,
-    "league": "SHL",
-    "feature": 0.334,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
-   },
-   {
-    "name": "Nick Cousins",
-    "year": 2011,
-    "pick": 68,
-    "league": "AHL",
-    "feature": 0.335,
-    "peak": 38.8,
-    "tier": "below average",
-    "nhlGp": 725
-   },
-   {
-    "name": "Mark Jankowski",
-    "year": 2012,
-    "pick": 21,
-    "league": "AHL",
-    "feature": 0.335,
-    "peak": 44.8,
-    "tier": "below average",
-    "nhlGp": 485
-   },
-   {
-    "name": "Bulat Shafigullin",
-    "year": 2018,
-    "pick": 82,
-    "league": "KHL",
-    "feature": 0.335,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Allan McShane",
-    "year": 2018,
+    "name": "Mason Shaw",
+    "year": 2017,
     "pick": 97,
-    "league": "ICEHL",
-    "feature": 0.331,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Phil Varone",
-    "year": 2009,
-    "pick": 147,
     "league": "AHL",
-    "feature": 0.33,
-    "peak": 3.1,
+    "feature": 0.311,
+    "peak": 23.2,
     "tier": "replacement level",
-    "nhlGp": 97
+    "nhlGp": 82
    },
    {
-    "name": "Kirill Petrov",
+    "name": "Rafa\u00ebl Harvey-Pinard",
+    "year": 2019,
+    "pick": 201,
+    "league": "AHL",
+    "feature": 0.312,
+    "peak": 12.8,
+    "tier": "replacement level",
+    "nhlGp": 85
+   },
+   {
+    "name": "Gr\u00e9gory Hofmann",
+    "year": 2011,
+    "pick": 103,
+    "league": "NLA",
+    "feature": 0.309,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 24
+   },
+   {
+    "name": "Pontus \u00c5berg",
+    "year": 2012,
+    "pick": 37,
+    "league": "AHL",
+    "feature": 0.313,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 132
+   },
+   {
+    "name": "Kole Lind",
+    "year": 2017,
+    "pick": 33,
+    "league": "AHL",
+    "feature": 0.313,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 31
+   },
+   {
+    "name": "Jerome Flaake",
     "year": 2008,
-    "pick": 73,
-    "league": "KHL",
-    "feature": 0.329,
+    "pick": 130,
+    "league": "DEL",
+    "feature": 0.305,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "David Labrecque",
+    "year": 2009,
+    "pick": 153,
+    "league": "Ligue Magnus",
+    "feature": 0.317,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Vitaly Abramov",
+    "year": 2016,
+    "pick": 65,
+    "league": "AHL",
+    "feature": 0.318,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 5
    }
   ]
  },
@@ -381,8 +381,8 @@
   "w": 0.0,
   "sinceDraft": 4,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 12.8,
-  "expected": 12.8,
+  "cohortExpected": 12.3,
+  "expected": 12.3,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -403,11 +403,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 14,
+  "gp": 15,
   "season": "2026-2027"
  },
- "rank": 16,
- "score": 12.8,
+ "rank": 15,
+ "score": 12.3,
  "rankStart": 20,
  "rankStartDate": "2026-10-06"
 }

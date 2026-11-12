@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 14,
+   "gp": 15,
    "g": 6,
-   "a": 6,
-   "pts": 12,
-   "pm": 5,
+   "a": 8,
+   "pts": 14,
+   "pm": 6,
    "pim": 9,
    "gaa": null,
    "svp": null,
@@ -89,11 +89,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 14,
+     "gp": 15,
      "g": 6,
-     "a": 6,
-     "pts": 12,
-     "pm": 5,
+     "a": 8,
+     "pts": 14,
+     "pm": 6,
      "pim": 9,
      "gaa": null,
      "svp": null,
@@ -298,18 +298,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 14,
+  "gp": 15,
   "g": 6,
-  "a": 6,
-  "pts": 12,
-  "pgp": 0.857,
-  "lineGp": 14,
-  "nhle": 0.333,
-  "nhlePace": 28.0,
+  "a": 8,
+  "pts": 14,
+  "pgp": 0.933,
+  "lineGp": 15,
+  "nhle": 0.363,
+  "nhlePace": 30.5,
   "lines": [
    "AHL"
   ],
-  "feature": 0.333
+  "feature": 0.363
  },
  "league": {
   "name": "AHL",
@@ -334,113 +334,113 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 41,
-   "gp": 14,
-   "value": 0.8571,
+   "gp": 15,
+   "value": 0.9333,
    "percentile": 82.9,
-   "percentileAllAges": 85.2,
+   "percentileAllAges": 85.7,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 29.2,
-  "median": 28.7,
-  "p75": 48.6,
-  "p90": 79.1,
+  "expected": 32.9,
+  "median": 32.5,
+  "p75": 54.7,
+  "p90": 83.7,
   "pRegular": 0.62,
-  "pTopLine": 0.1,
-  "pAboveAvg": 0.24,
-  "pElite": 0.04,
+  "pTopLine": 0.12,
+  "pAboveAvg": 0.3,
+  "pElite": 0.08,
   "poolN": 1122,
   "group": "F",
   "age": 21,
   "pickWeight": 0.0,
-  "tier": "below average",
-  "pCeiling": 0.52,
+  "tier": "above average",
+  "pCeiling": 0.3,
   "featureBand": [
-   0.308,
-   0.358
+   0.325,
+   0.401
   ],
   "examples": [
    {
-    "name": "Tomas Tatar",
-    "year": 2009,
-    "pick": 60,
-    "league": "AHL",
-    "feature": 0.333,
-    "peak": 90.1,
-    "tier": "elite",
-    "nhlGp": 927
-   },
-   {
-    "name": "Joshua Ho-Sang",
-    "year": 2014,
-    "pick": 28,
-    "league": "AHL",
-    "feature": 0.334,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 53
-   },
-   {
-    "name": "Graeme Clarke",
+    "name": "Jakob Pelletier",
     "year": 2019,
-    "pick": 80,
+    "pick": 26,
     "league": "AHL",
-    "feature": 0.332,
+    "feature": 0.363,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 3
+    "nhlGp": 91
    },
    {
-    "name": "Klim Kostin",
-    "year": 2017,
-    "pick": 31,
-    "league": "KHL",
-    "feature": 0.331,
-    "peak": 35.5,
-    "tier": "below average",
-    "nhlGp": 190
-   },
-   {
-    "name": "Rudolfs Balcers",
-    "year": 2015,
-    "pick": 142,
+    "name": "Devante Smith-Pelly",
+    "year": 2010,
+    "pick": 42,
     "league": "AHL",
-    "feature": 0.33,
-    "peak": 47.8,
+    "feature": 0.361,
+    "peak": 29.5,
     "tier": "below average",
-    "nhlGp": 170
+    "nhlGp": 395
    },
    {
-    "name": "Viktor Tikhonov",
-    "year": 2008,
-    "pick": 28,
-    "league": "KHL",
-    "feature": 0.337,
-    "peak": 25.3,
-    "tier": "replacement level",
-    "nhlGp": 111
+    "name": "Pierre Engvall",
+    "year": 2014,
+    "pick": 188,
+    "league": "SHL",
+    "feature": 0.361,
+    "peak": 49.0,
+    "tier": "below average",
+    "nhlGp": 380
    },
    {
-    "name": "Pathrik Westerholm",
-    "year": 2011,
-    "pick": 180,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.337,
+    "name": "Andrew Mangiapane",
+    "year": 2015,
+    "pick": 166,
+    "league": "AHL",
+    "feature": 0.365,
+    "peak": 70.3,
+    "tier": "above average",
+    "nhlGp": 561
+   },
+   {
+    "name": "Oliver Bjorkstrand",
+    "year": 2013,
+    "pick": 89,
+    "league": "AHL",
+    "feature": 0.367,
+    "peak": 83.7,
+    "tier": "top-line",
+    "nhlGp": 708
+   },
+   {
+    "name": "Robin Kov\u00e1cs",
+    "year": 2015,
+    "pick": 62,
+    "league": "SHL",
+    "feature": 0.359,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Richard P\u00e1nik",
-    "year": 2009,
-    "pick": 52,
+    "name": "Max Reinhart",
+    "year": 2010,
+    "pick": 64,
     "league": "AHL",
-    "feature": 0.328,
-    "peak": 63.3,
-    "tier": "above average",
-    "nhlGp": 521
+    "feature": 0.358,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 23
+   },
+   {
+    "name": "Jordan Weal",
+    "year": 2010,
+    "pick": 70,
+    "league": "AHL",
+    "feature": 0.358,
+    "peak": 27.9,
+    "tier": "below average",
+    "nhlGp": 218
    }
   ]
  },
@@ -461,8 +461,8 @@
   "w": 0.0,
   "sinceDraft": 3,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 29.2,
-  "expected": 29.2,
+  "cohortExpected": 32.9,
+  "expected": 32.9,
   "tier": "below average"
  },
  "trajectory": {
@@ -483,11 +483,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 14,
+  "gp": 15,
   "season": "2026-2027"
  },
- "rank": 6,
- "score": 29.2,
+ "rank": 5,
+ "score": 32.9,
  "rankStart": 9,
  "rankStartDate": "2026-10-06"
 }

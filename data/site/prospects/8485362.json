@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 12,
-   "g": 3,
-   "a": 11,
-   "pts": 14,
-   "pm": 8,
+   "gp": 13,
+   "g": 5,
+   "a": 13,
+   "pts": 18,
+   "pm": 9,
    "pim": 8,
    "gaa": null,
    "svp": null,
@@ -89,11 +89,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 12,
-     "g": 3,
-     "a": 11,
-     "pts": 14,
-     "pm": 8,
+     "gp": 13,
+     "g": 5,
+     "a": 13,
+     "pts": 18,
+     "pm": 9,
      "pim": 8,
      "gaa": null,
      "svp": null,
@@ -152,18 +152,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 12,
-  "g": 3,
-  "a": 11,
-  "pts": 14,
-  "pgp": 1.167,
-  "lineGp": 12,
-  "nhle": 0.454,
-  "nhlePace": 38.1,
+  "gp": 13,
+  "g": 5,
+  "a": 13,
+  "pts": 18,
+  "pgp": 1.385,
+  "lineGp": 13,
+  "nhle": 0.539,
+  "nhlePace": 45.3,
   "lines": [
    "AHL"
   ],
-  "feature": 0.454
+  "feature": 0.539
  },
  "league": {
   "name": "AHL",
@@ -188,43 +188,43 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 30,
-   "gp": 12,
-   "value": 1.1667,
+   "gp": 13,
+   "value": 1.3846,
    "percentile": 93.3,
-   "percentileAllAges": 92.1,
+   "percentileAllAges": 96.0,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 58.6,
-  "median": 68.0,
-  "p75": 91.4,
-  "p90": 96.0,
-  "pRegular": 0.84,
-  "pTopLine": 0.44,
-  "pAboveAvg": 0.64,
-  "pElite": 0.28,
+  "expected": 62.5,
+  "median": 72.2,
+  "p75": 94.0,
+  "p90": 96.8,
+  "pRegular": 0.88,
+  "pTopLine": 0.48,
+  "pAboveAvg": 0.66,
+  "pElite": 0.34,
   "poolN": 1305,
   "group": "F",
   "age": 19,
   "pickWeight": 0.5,
   "tier": "elite",
-  "pCeiling": 0.28,
+  "pCeiling": 0.34,
   "featureBand": [
    0.272,
-   0.504
+   0.672
   ],
   "examples": [
    {
-    "name": "Nikita Filatov",
-    "year": 2008,
-    "pick": 6,
-    "league": "KHL",
-    "feature": 0.458,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 53
+    "name": "William Nylander",
+    "year": 2014,
+    "pick": 8,
+    "league": "AHL",
+    "feature": 0.504,
+    "peak": 97.0,
+    "tier": "elite",
+    "nhlGp": 753
    },
    {
     "name": "Mikael Granlund",
@@ -237,6 +237,36 @@
     "nhlGp": 962
    },
    {
+    "name": "Nikita Filatov",
+    "year": 2008,
+    "pick": 6,
+    "league": "KHL",
+    "feature": 0.458,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 53
+   },
+   {
+    "name": "Yevgeni Kuznetsov",
+    "year": 2010,
+    "pick": 26,
+    "league": "KHL",
+    "feature": 0.628,
+    "peak": 96.8,
+    "tier": "elite",
+    "nhlGp": 743
+   },
+   {
+    "name": "Nikolai Prokhorkin",
+    "year": 2012,
+    "pick": 121,
+    "league": "KHL",
+    "feature": 0.549,
+    "peak": 29.4,
+    "tier": "below average",
+    "nhlGp": 43
+   },
+   {
     "name": "Tyler Ennis",
     "year": 2008,
     "pick": 26,
@@ -247,6 +277,16 @@
     "nhlGp": 700
    },
    {
+    "name": "Vladimir Tarasenko",
+    "year": 2010,
+    "pick": 16,
+    "league": "KHL",
+    "feature": 0.672,
+    "peak": 96.8,
+    "tier": "elite",
+    "nhlGp": 906
+   },
+   {
     "name": "Sven B\u00e4rtschi",
     "year": 2011,
     "pick": 13,
@@ -255,46 +295,6 @@
     "peak": 62.1,
     "tier": "above average",
     "nhlGp": 292
-   },
-   {
-    "name": "William Nylander",
-    "year": 2014,
-    "pick": 8,
-    "league": "AHL",
-    "feature": 0.504,
-    "peak": 97.0,
-    "tier": "elite",
-    "nhlGp": 753
-   },
-   {
-    "name": "Calle J\u00e4rnkrok",
-    "year": 2010,
-    "pick": 51,
-    "league": "Elitserien",
-    "feature": 0.441,
-    "peak": 67.2,
-    "tier": "above average",
-    "nhlGp": 774
-   },
-   {
-    "name": "Jakub Vr\u00e1na",
-    "year": 2014,
-    "pick": 13,
-    "league": "AHL",
-    "feature": 0.367,
-    "peak": 82.0,
-    "tier": "top-line",
-    "nhlGp": 406
-   },
-   {
-    "name": "Joel Eriksson Ek",
-    "year": 2015,
-    "pick": 20,
-    "league": "SHL",
-    "feature": 0.385,
-    "peak": 83.5,
-    "tier": "top-line",
-    "nhlGp": 616
    }
   ]
  },
@@ -315,8 +315,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 65.9,
-  "cohortExpected": 58.6,
-  "expected": 60.4,
+  "cohortExpected": 62.5,
+  "expected": 63.4,
   "tier": "above average"
  },
  "trajectory": {
@@ -337,11 +337,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 12,
+  "gp": 13,
   "season": "2026-2027"
  },
  "rank": 1,
- "score": 60.4,
+ "score": 63.4,
  "rankStart": 1,
  "rankStartDate": "2026-10-06"
 }

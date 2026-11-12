@@ -31,7 +31,7 @@
   {
    "league": "QMJHL",
    "team": "Moncton Wildcats",
-   "gp": 18,
+   "gp": 19,
    "g": 4,
    "a": 7,
    "pts": 11,
@@ -140,7 +140,7 @@
     {
      "league": "QMJHL",
      "team": "Moncton Wildcats",
-     "gp": 18,
+     "gp": 19,
      "g": 4,
      "a": 7,
      "pts": 11,
@@ -164,18 +164,18 @@
   "table": "QMJHL",
   "coef": 0.113,
   "team": "Moncton Wildcats",
-  "gp": 18,
+  "gp": 19,
   "g": 4,
   "a": 7,
   "pts": 11,
-  "pgp": 0.611,
-  "lineGp": 18,
-  "nhle": 0.069,
-  "nhlePace": 5.8,
+  "pgp": 0.579,
+  "lineGp": 19,
+  "nhle": 0.065,
+  "nhlePace": 5.5,
   "lines": [
    "QMJHL"
   ],
-  "feature": 0.069
+  "feature": 0.065
  },
  "league": {
   "name": "QMJHL",
@@ -190,60 +190,40 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 37,
-   "gp": 18,
-   "value": 0.6111,
+   "gp": 19,
+   "value": 0.5789,
    "percentile": 75.7,
-   "percentileAllAges": 85.7,
+   "percentileAllAges": 85.2,
    "allAgesN": 903
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 8.2,
+  "expected": 5.0,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 57.5,
-  "pRegular": 0.14,
-  "pTopLine": 0.04,
-  "pAboveAvg": 0.12,
-  "pElite": 0.02,
+  "p90": 0.0,
+  "pRegular": 0.08,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.08,
+  "pElite": 0.0,
   "poolN": 837,
   "group": "D",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.14,
+  "pCeiling": 0.08,
   "featureBand": [
-   0.054,
-   0.084
+   0.051,
+   0.079
   ],
   "examples": [
    {
-    "name": "Petter Hansson",
-    "year": 2015,
-    "pick": 202,
-    "league": "J20 SuperElit",
-    "feature": 0.069,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jocktan Chainey",
-    "year": 2017,
-    "pick": 191,
-    "league": "QMJHL",
-    "feature": 0.068,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jeff Taylor",
-    "year": 2014,
-    "pick": 203,
-    "league": "USHL",
-    "feature": 0.068,
+    "name": "Jaynen Rissling",
+    "year": 2012,
+    "pick": 197,
+    "league": "WHL",
+    "feature": 0.065,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -259,16 +239,6 @@
     "nhlGp": 0
    },
    {
-    "name": "Maxim Chudinov",
-    "year": 2010,
-    "pick": 195,
-    "league": "KHL",
-    "feature": 0.072,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
     "name": "Victor Berglund",
     "year": 2017,
     "pick": 195,
@@ -279,11 +249,31 @@
     "nhlGp": 0
    },
    {
-    "name": "Jaynen Rissling",
-    "year": 2012,
-    "pick": 197,
-    "league": "WHL",
+    "name": "Jack Sadek",
+    "year": 2015,
+    "pick": 204,
+    "league": "NCAA",
     "feature": 0.065,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Yegor Zaitsev",
+    "year": 2017,
+    "pick": 205,
+    "league": "VHL",
+    "feature": 0.064,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jocktan Chainey",
+    "year": 2017,
+    "pick": 191,
+    "league": "QMJHL",
+    "feature": 0.068,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -294,6 +284,16 @@
     "pick": 206,
     "league": "QMJHL",
     "feature": 0.067,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jeff Taylor",
+    "year": 2014,
+    "pick": 203,
+    "league": "USHL",
+    "feature": 0.068,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -317,8 +317,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 8.2,
-  "expected": 7.6,
+  "cohortExpected": 5.0,
+  "expected": 6.0,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -339,11 +339,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 18,
+  "gp": 19,
   "season": "2026-2027"
  },
- "rank": 20,
- "score": 7.6,
+ "rank": 22,
+ "score": 6.0,
  "rankStart": 22,
  "rankStartDate": "2026-10-06"
 }

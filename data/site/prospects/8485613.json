@@ -31,11 +31,11 @@
   {
    "league": "VHL",
    "team": "Khimik Voskresensk",
-   "gp": 12,
+   "gp": 13,
    "g": 0,
    "a": 1,
    "pts": 1,
-   "pm": -2,
+   "pm": -1,
    "pim": 4,
    "gaa": null,
    "svp": null,
@@ -140,11 +140,11 @@
     {
      "league": "VHL",
      "team": "Khimik Voskresensk",
-     "gp": 12,
+     "gp": 13,
      "g": 0,
      "a": 1,
      "pts": 1,
-     "pm": -2,
+     "pm": -1,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -254,19 +254,19 @@
   "table": "VHL",
   "coef": 0.328,
   "team": "Khimik Voskresensk",
-  "gp": 16,
+  "gp": 17,
   "g": 0,
   "a": 1,
   "pts": 1,
-  "pgp": 0.083,
-  "lineGp": 12,
-  "nhle": 0.047,
-  "nhlePace": 3.9,
+  "pgp": 0.077,
+  "lineGp": 13,
+  "nhle": 0.045,
+  "nhlePace": 3.8,
   "lines": [
    "VHL",
    "MHL"
   ],
-  "feature": 0.047
+  "feature": 0.045
  },
  "league": {
   "name": "VHL",
@@ -291,20 +291,20 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 12,
-   "gp": 12,
-   "value": 0.0833,
+   "gp": 13,
+   "value": 0.0769,
    "percentile": 50.0,
-   "percentileAllAges": 31.4,
+   "percentileAllAges": 30.3,
    "allAgesN": 544
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 3.4,
+  "expected": 3.6,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 0.0,
-  "pRegular": 0.08,
+  "p90": 11.2,
+  "pRegular": 0.1,
   "pTopLine": 0.0,
   "pAboveAvg": 0.02,
   "pElite": 0.0,
@@ -313,48 +313,18 @@
   "age": 19,
   "pickWeight": 0.5,
   "tier": "replacement level",
-  "pCeiling": 0.08,
+  "pCeiling": 0.1,
   "featureBand": [
-   0.035,
+   0.034,
    0.057
   ],
   "examples": [
-   {
-    "name": "Brian Cooper",
-    "year": 2012,
-    "pick": 127,
-    "league": "NCAA",
-    "feature": 0.047,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
    {
     "name": "Stefan Warg",
     "year": 2008,
     "pick": 143,
     "league": "WHL",
     "feature": 0.044,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Blake Heinrich",
-    "year": 2013,
-    "pick": 144,
-    "league": "WHL",
-    "feature": 0.05,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jake Massie",
-    "year": 2015,
-    "pick": 156,
-    "league": "NCAA",
-    "feature": 0.047,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -370,24 +340,44 @@
     "nhlGp": 0
    },
    {
-    "name": "Dalton Prout",
-    "year": 2010,
-    "pick": 154,
-    "league": "OHL",
-    "feature": 0.048,
-    "peak": 47.4,
-    "tier": "below average",
-    "nhlGp": 264
-   },
-   {
-    "name": "Sergei Boikov",
-    "year": 2015,
-    "pick": 161,
-    "league": "QMJHL",
-    "feature": 0.047,
+    "name": "Reece Willcox",
+    "year": 2012,
+    "pick": 141,
+    "league": "NCAA",
+    "feature": 0.042,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Joe Rogalski",
+    "year": 2010,
+    "pick": 152,
+    "league": "OHL",
+    "feature": 0.044,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Patrick Kudla",
+    "year": 2016,
+    "pick": 158,
+    "league": "OJHL",
+    "feature": 0.045,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kevin Gravel",
+    "year": 2010,
+    "pick": 148,
+    "league": "NCAA",
+    "feature": 0.042,
+    "peak": 11.2,
+    "tier": "replacement level",
+    "nhlGp": 139
    },
    {
     "name": "Miska Kukkonen",
@@ -395,6 +385,16 @@
     "pick": 125,
     "league": "Liiga",
     "feature": 0.046,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Brian Cooper",
+    "year": 2012,
+    "pick": 127,
+    "league": "NCAA",
+    "feature": 0.047,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -418,8 +418,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 3.4,
-  "expected": 4.3,
+  "cohortExpected": 3.6,
+  "expected": 4.5,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -440,11 +440,11 @@
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 12,
+  "gp": 13,
   "season": "2026-2027"
  },
  "rank": 26,
- "score": 4.3,
+ "score": 4.5,
  "rankStart": 23,
  "rankStartDate": "2026-10-06"
 }
