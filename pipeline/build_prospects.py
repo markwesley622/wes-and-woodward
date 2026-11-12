@@ -16,7 +16,7 @@ Decided with Mark 2026-10-06. Four layers, every one computed WITHIN POSITION (F
                         NHL season as a percentile among NHL regulars at the position (skaters: points per
                         game; goalies: save percentage); busts count as 0. Expected = mean, ceiling = 75th
                         percentile. Tier words match the NHL page W-Value.
-  4. Trajectory         change in the production feature between the last two full seasons.
+  4. Trajectory         change in the production feature between the anchor season and the one before it.
 
   Draft pedigree (same cohort, by pick band) enters with DIMINISHING RETURNS (Mark, 10/6): it is
   strongest in the draft year and neutral by draft+2. w = 0.5 in the draft year (and for a pre-draft
@@ -593,9 +593,12 @@ def main():
         perf_cur = performance(tabs, p["id"], cur["leagueSlug"], CUR, g, 3, own=league_reg(rec, CUR, cur["leagueSlug"])) if cur else None
         ceil = ceiling(cohort, g, int(age_at(anchor_season, dob)), anchor["feature"], anchor["coef"], dr["overall"] if dr else None, 2 * w) if anchor else None
         ped = pedigree(cohort, g, dr["overall"] if dr else None)
+        # trajectory follows the anchor (Mark, 11/12: Bear read -0.8 off two WHL seasons while tearing up the AHL):
+        # once this season carries the ranking it is the "to" side, measured against last season
         traj = None
-        if prev and prev2:
-            traj = {"from": {"season": PREV2, "league": prev2["league"], "feature": prev2["feature"], "gp": prev2["lineGp"]}, "to": {"season": PREV, "league": prev["league"], "feature": prev["feature"], "gp": prev["lineGp"]}, "delta": round(prev["feature"] - prev2["feature"], 4)}
+        t_to, t_from, s_to, s_from = (cur, prev, CUR, PREV) if anchor is cur else (prev, prev2, PREV, PREV2)
+        if t_to and t_from:
+            traj = {"from": {"season": s_from, "league": t_from["league"], "feature": t_from["feature"], "gp": t_from["lineGp"]}, "to": {"season": s_to, "league": t_to["league"], "feature": t_to["feature"], "gp": t_to["lineGp"]}, "delta": round(t_to["feature"] - t_from["feature"], 4)}
         nhl_sample = None
         if land:
             rows = [t for t in land.get("seasonTotals", []) if t.get("leagueAbbrev") == "NHL" and t.get("gameTypeId") == 2]
@@ -644,7 +647,7 @@ def main():
                       "performance": "Skaters: points per game percentile among skaters of the same position born the same year, same league and season. Goalies: save percentage percentile among goalies born the same year, same league and season. (EliteProspects tables.) Full season needs 10+ GP; the current season 3+.",
                       "ceiling": f"Nearest {K_NEIGHBOURS} drafted players (2008-2019 classes) at the same position and age. Skaters matched on NHLe points per game; goalies on save percentage above the league-season average and league strength. Draft slot enters with weight 2w (w below). Outcome = each one's peak NHL season as a percentile within position (skaters: points per game over seasons with at least half the games; goalies: save percentage over seasons with at least a quarter); busts count as 0. Cohort expected = mean, ceiling = 75th percentile. Tiers: elite 88+, top-line 73+, above average 50+, below average 27+.",
                       "pedigree": "Diminishing returns: w = 0.5 in the draft year (or a pre-draft anchor season), 0.25 at draft+1, 0 from draft+2. Expected peak = w x pick-band prior + (1 - w) x cohort mean.",
-                      "trajectory": "Change in the production feature between the two most recent full seasons (skaters NHLe points per game; goalies save percentage above league average).",
+                      "trajectory": "Change in the production feature between the season the ranking rests on and the one before it: this season against last once a current-season line reaches 10 games, otherwise the two most recent full seasons (skaters NHLe points per game; goalies save percentage above league average).",
                       "nhlUsage": f"Skaters with {USAGE_MIN_GP}+ NHL games this season: the nearest {K_NEIGHBOURS} rookie NHL seasons (5+ games, 2008-2019 draft classes, seasons through {USAGE_LAST_SEASON}) at the same position within a year of his age, matched on ice time per game and, at half weight, points per game shrunk toward the pool mean by {USAGE_SHRINK} games. Their mean peak enters the expected peak at weight gp / (gp + {USAGE_HALF}). NHL API season totals. A season played mostly in the NHL is not used as the production anchor.",
                       "ranking": "By expected peak (the pedigree-blended cohort mean, then blended with NHL usage when there is one), then by the cohort 75th percentile.",
                       "movement": "Rank now against the start-of-season ranking (data/site/prospect_ranks_start.json). The ranking rests on last season until a current-season line reaches 10 games."}}
