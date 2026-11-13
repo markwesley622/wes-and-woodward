@@ -31,11 +31,11 @@
   {
    "league": "OHL",
    "team": "Peterborough Petes",
-   "gp": 15,
-   "g": 5,
-   "a": 10,
-   "pts": 15,
-   "pm": 1,
+   "gp": 16,
+   "g": 7,
+   "a": 11,
+   "pts": 18,
+   "pm": 3,
    "pim": 15,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "OHL",
      "team": "Peterborough Petes",
-     "gp": 15,
-     "g": 5,
-     "a": 10,
-     "pts": 15,
-     "pm": 1,
+     "gp": 16,
+     "g": 7,
+     "a": 11,
+     "pts": 18,
+     "pm": 3,
      "pim": 15,
      "gaa": null,
      "svp": null,
@@ -96,18 +96,18 @@
   "table": "OHL",
   "coef": 0.144,
   "team": "Peterborough Petes",
-  "gp": 15,
-  "g": 5,
-  "a": 10,
-  "pts": 15,
-  "pgp": 1.0,
-  "lineGp": 15,
-  "nhle": 0.144,
-  "nhlePace": 12.1,
+  "gp": 16,
+  "g": 7,
+  "a": 11,
+  "pts": 18,
+  "pgp": 1.125,
+  "lineGp": 16,
+  "nhle": 0.162,
+  "nhlePace": 13.6,
   "lines": [
    "OHL"
   ],
-  "feature": 0.144
+  "feature": 0.162
  },
  "league": {
   "name": "OHL",
@@ -132,110 +132,110 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 86,
-   "gp": 15,
-   "value": 1.0,
-   "percentile": 81.4,
-   "percentileAllAges": 80.7,
+   "gp": 16,
+   "value": 1.125,
+   "percentile": 89.5,
+   "percentileAllAges": 89.3,
    "allAgesN": 1875
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 13.8,
+  "expected": 17.3,
   "median": 0.0,
-  "p75": 29.7,
-  "p90": 47.3,
-  "pRegular": 0.34,
-  "pTopLine": 0.04,
-  "pAboveAvg": 0.08,
-  "pElite": 0.0,
+  "p75": 36.1,
+  "p90": 64.5,
+  "pRegular": 0.38,
+  "pTopLine": 0.08,
+  "pAboveAvg": 0.16,
+  "pElite": 0.02,
   "poolN": 1362,
   "group": "F",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "below average",
-  "pCeiling": 0.28,
+  "pCeiling": 0.3,
   "featureBand": [
-   0.131,
-   0.164
+   0.141,
+   0.179
   ],
   "examples": [
    {
-    "name": "Tyler Shattock",
-    "year": 2009,
-    "pick": 108,
-    "league": "WHL",
-    "feature": 0.143,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Tom K\u00fchnhackl",
-    "year": 2010,
-    "pick": 110,
-    "league": "OHL",
-    "feature": 0.146,
-    "peak": 38.9,
-    "tier": "below average",
-    "nhlGp": 232
-   },
-   {
-    "name": "Andreas Athanasiou",
-    "year": 2012,
-    "pick": 110,
-    "league": "OHL",
-    "feature": 0.146,
-    "peak": 77.2,
-    "tier": "top-line",
-    "nhlGp": 495
-   },
-   {
-    "name": "Mikhail Maltsev",
-    "year": 2016,
-    "pick": 102,
-    "league": "VHL",
-    "feature": 0.144,
-    "peak": 21.9,
-    "tier": "replacement level",
-    "nhlGp": 56
-   },
-   {
-    "name": "Jachym Kondelik",
-    "year": 2018,
-    "pick": 111,
-    "league": "NCAA",
-    "feature": 0.147,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jesse Gabrielle",
-    "year": 2015,
-    "pick": 105,
-    "league": "WHL",
-    "feature": 0.141,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Andr\u00e9 Petersson",
-    "year": 2008,
+    "name": "Adam Ruzicka",
+    "year": 2017,
     "pick": 109,
-    "league": "J20 SuperElit",
-    "feature": 0.138,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
+    "league": "OHL",
+    "feature": 0.16,
+    "peak": 47.3,
+    "tier": "below average",
+    "nhlGp": 117
    },
    {
-    "name": "Andrew Yogan",
-    "year": 2010,
-    "pick": 100,
+    "name": "Maxim Sushko",
+    "year": 2017,
+    "pick": 107,
     "league": "OHL",
-    "feature": 0.145,
+    "feature": 0.164,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 2
+   },
+   {
+    "name": "Noah Gregor",
+    "year": 2016,
+    "pick": 111,
+    "league": "WHL",
+    "feature": 0.165,
+    "peak": 36.1,
+    "tier": "below average",
+    "nhlGp": 330
+   },
+   {
+    "name": "Michael Mersch",
+    "year": 2011,
+    "pick": 110,
+    "league": "NCAA",
+    "feature": 0.157,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 17
+   },
+   {
+    "name": "Jimmy Mullin",
+    "year": 2010,
+    "pick": 118,
+    "league": "USHL",
+    "feature": 0.165,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Allan McShane",
+    "year": 2018,
+    "pick": 97,
+    "league": "OHL",
+    "feature": 0.16,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jean-Gabriel Pageau",
+    "year": 2011,
+    "pick": 96,
+    "league": "QMJHL",
+    "feature": 0.16,
+    "peak": 74.5,
+    "tier": "top-line",
+    "nhlGp": 873
+   },
+   {
+    "name": "Matthew Strome",
+    "year": 2017,
+    "pick": 106,
+    "league": "OHL",
+    "feature": 0.151,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -259,8 +259,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 13.8,
-  "expected": 13.6,
+  "cohortExpected": 17.3,
+  "expected": 15.4,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -273,19 +273,19 @@
   "to": {
    "season": "2026-2027",
    "league": "OHL",
-   "feature": 0.144,
-   "gp": 15
+   "feature": 0.162,
+   "gp": 16
   },
-  "delta": 0.038
+  "delta": 0.056
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 15,
+  "gp": 16,
   "season": "2026-2027"
  },
- "rank": 12,
- "score": 13.6,
+ "rank": 11,
+ "score": 15.4,
  "rankStart": 18,
  "rankStartDate": "2026-10-06"
 }

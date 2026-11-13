@@ -27,7 +27,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 12,
+  "gp": 13,
   "goals": null,
   "assists": null,
   "points": null,
@@ -38,60 +38,46 @@
   "toiPerGame": null,
   "ppPoints": null,
   "wins": 4,
-  "losses": 6,
+  "losses": 7,
   "otLosses": 1,
-  "gaa": 3.427302,
-  "savePct": 0.865672,
+  "gaa": 3.578095,
+  "savePct": 0.861953,
   "shutouts": 0
  },
  "score": {
-  "value": 21.7,
-  "low": 8.6,
-  "high": 44.9,
-  "gsax": -5.7,
-  "xGoals": 30.3,
-  "goals": 36.0,
-  "minutes": 630,
-  "pool": 24,
-  "rank": 22,
-  "percentile": 8.3,
-  "reliability": 0.3,
+  "value": 18.6,
+  "low": 7.3,
+  "high": 39.7,
+  "gsax": -7.6,
+  "xGoals": 33.4,
+  "goals": 41.0,
+  "minutes": 688,
+  "pool": 25,
+  "rank": 25,
+  "percentile": 0.0,
+  "reliability": 0.31,
   "group": "goalies",
   "neighbors": [
    {
-    "rank": 20,
-    "name": "Arturs Silovs",
-    "value": 32.2,
-    "gsax": -2.3,
-    "isMe": false
-   },
-   {
-    "rank": 21,
-    "name": "Ukko-Pekka Luukkonen",
-    "value": 28.9,
-    "gsax": -3.3,
-    "isMe": false
-   },
-   {
-    "rank": 22,
-    "name": "John Gibson",
-    "value": 21.7,
-    "gsax": -5.7,
-    "isMe": true
-   },
-   {
     "rank": 23,
     "name": "Jake Allen",
-    "value": 21.7,
+    "value": 23.4,
     "gsax": -5.7,
     "isMe": false
    },
    {
     "rank": 24,
-    "name": "Karel Vejmelka",
-    "value": 16.2,
-    "gsax": -8.0,
+    "name": "Darcy Kuemper",
+    "value": 19.1,
+    "gsax": -7.4,
     "isMe": false
+   },
+   {
+    "rank": 25,
+    "name": "John Gibson",
+    "value": 18.6,
+    "gsax": -7.6,
+    "isMe": true
    }
   ],
   "method": "A 0-100 rating where 50 is the average NHL goalie with 600+ minutes; built on goals saved above expected (MoneyPuck, all situations), this season only."
@@ -100,16 +86,16 @@
   "playerId": 8476434,
   "name": "John Gibson",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8476434.png",
-  "gamesPlayed": 12,
-  "gamesStarted": 12,
+  "gamesPlayed": 13,
+  "gamesStarted": 13,
   "wins": 4,
-  "losses": 6,
+  "losses": 7,
   "otLosses": 1,
-  "savePct": 0.865672,
-  "gaa": 3.427302,
+  "savePct": 0.861953,
+  "gaa": 3.578095,
   "shutouts": 0,
-  "gsax": -5.69,
-  "pctl_gsax": 8.3,
+  "gsax": -7.61,
+  "pctl_gsax": 0.0,
   "qualifiesForPercentiles": true
  },
  "gameLog": [
@@ -268,6 +254,19 @@
    "savePct": 0.909091,
    "shutout": 0,
    "toi": 57.6
+  },
+  {
+   "gameId": 2026020302,
+   "date": "2026-11-12",
+   "opponent": "FLA",
+   "home": false,
+   "started": 1,
+   "decision": "L",
+   "shotsAgainst": 29,
+   "goalsAgainst": 5,
+   "savePct": 0.827586,
+   "shutout": 0,
+   "toi": 57.3
   }
  ],
  "gameScore": null,
@@ -278,7 +277,7 @@
  "myComponents": null,
  "hsc": {},
  "note": null,
- "detGames": 12,
+ "detGames": 13,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -291,5 +290,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-12T05:06:21-08:00"
+ "updatedAt": "2026-11-13T05:06:25-08:00"
 }

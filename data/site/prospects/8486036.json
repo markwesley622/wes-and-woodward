@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Univ. of Notre Dame",
-   "gp": 10,
+   "gp": 11,
    "g": 1,
    "a": 2,
    "pts": 3,
-   "pm": -1,
+   "pm": -2,
    "pim": 2,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Notre Dame",
-     "gp": 10,
+     "gp": 11,
      "g": 1,
      "a": 2,
      "pts": 3,
-     "pm": -1,
+     "pm": -2,
      "pim": 2,
      "gaa": null,
      "svp": null,
@@ -96,18 +96,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Univ. of Notre Dame",
-  "gp": 10,
+  "gp": 11,
   "g": 1,
   "a": 2,
   "pts": 3,
-  "pgp": 0.3,
-  "lineGp": 10,
-  "nhle": 0.058,
-  "nhlePace": 4.9,
+  "pgp": 0.273,
+  "lineGp": 11,
+  "nhle": 0.053,
+  "nhlePace": 4.5,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.058
+  "feature": 0.053
  },
  "league": {
   "name": "NCAA",
@@ -132,80 +132,40 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 18,
-   "gp": 10,
-   "value": 0.3,
+   "gp": 11,
+   "value": 0.2727,
    "percentile": 27.8,
-   "percentileAllAges": 35.6,
+   "percentileAllAges": 35.5,
    "allAgesN": 2159
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 5.5,
+  "expected": 6.6,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 22.7,
-  "pRegular": 0.12,
+  "p90": 28.2,
+  "pRegular": 0.16,
   "pTopLine": 0.04,
-  "pAboveAvg": 0.04,
+  "pAboveAvg": 0.06,
   "pElite": 0.02,
   "poolN": 1362,
   "group": "F",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.12,
+  "pCeiling": 0.16,
   "featureBand": [
-   0.043,
-   0.076
+   0.039,
+   0.07
   ],
   "examples": [
    {
-    "name": "Nicholas Porco",
-    "year": 2019,
-    "pick": 142,
-    "league": "OHL",
-    "feature": 0.058,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Darian Dziurzynski",
-    "year": 2011,
-    "pick": 141,
+    "name": "Zach Fischer",
+    "year": 2017,
+    "pick": 140,
     "league": "WHL",
-    "feature": 0.058,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Mason Primeau",
-    "year": 2019,
-    "pick": 141,
-    "league": "OHL",
-    "feature": 0.061,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Wade Megan",
-    "year": 2009,
-    "pick": 138,
-    "league": "USHS-Prep",
-    "feature": 0.055,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 15
-   },
-   {
-    "name": "Miguel Fidler",
-    "year": 2014,
-    "pick": 143,
-    "league": "USHL",
-    "feature": 0.064,
+    "feature": 0.052,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -221,16 +181,6 @@
     "nhlGp": 0
    },
    {
-    "name": "Matej Paulovic",
-    "year": 2013,
-    "pick": 149,
-    "league": "USHL",
-    "feature": 0.061,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
     "name": "Jonny Brodzinski",
     "year": 2013,
     "pick": 148,
@@ -239,6 +189,56 @@
     "peak": 37.3,
     "tier": "below average",
     "nhlGp": 264
+   },
+   {
+    "name": "Daniel Brodin",
+    "year": 2010,
+    "pick": 146,
+    "league": "J20 SuperElit",
+    "feature": 0.05,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Wade Megan",
+    "year": 2009,
+    "pick": 138,
+    "league": "USHS-Prep",
+    "feature": 0.055,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 15
+   },
+   {
+    "name": "Anders Lee",
+    "year": 2009,
+    "pick": 152,
+    "league": "USHS-MN",
+    "feature": 0.053,
+    "peak": 82.6,
+    "tier": "top-line",
+    "nhlGp": 926
+   },
+   {
+    "name": "Jack Dugan",
+    "year": 2017,
+    "pick": 142,
+    "league": "USHS-Prep",
+    "feature": 0.048,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Nicholas Porco",
+    "year": 2019,
+    "pick": 142,
+    "league": "OHL",
+    "feature": 0.058,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -259,8 +259,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 5.5,
-  "expected": 6.5,
+  "cohortExpected": 6.6,
+  "expected": 7.0,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -273,19 +273,19 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.058,
-   "gp": 10
+   "feature": 0.053,
+   "gp": 11
   },
-  "delta": -0.043
+  "delta": -0.048
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 10,
+  "gp": 11,
   "season": "2026-2027"
  },
- "rank": 19,
- "score": 6.5,
+ "rank": 20,
+ "score": 7.0,
  "rankStart": 17,
  "rankStartDate": "2026-10-06"
 }

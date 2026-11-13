@@ -31,11 +31,11 @@
   {
    "league": "SHL",
    "team": "Timr\u00e5 IK",
-   "gp": 14,
+   "gp": 15,
    "g": 4,
    "a": 4,
    "pts": 8,
-   "pm": -1,
+   "pm": -3,
    "pim": 8,
    "gaa": null,
    "svp": null,
@@ -123,11 +123,11 @@
     {
      "league": "SHL",
      "team": "Timr\u00e5 IK",
-     "gp": 14,
+     "gp": 15,
      "g": 4,
      "a": 4,
      "pts": 8,
-     "pm": -1,
+     "pm": -3,
      "pim": 8,
      "gaa": null,
      "svp": null,
@@ -220,18 +220,18 @@
   "table": "SHL",
   "coef": 0.566,
   "team": "Timr\u00e5 IK",
-  "gp": 14,
+  "gp": 15,
   "g": 4,
   "a": 4,
   "pts": 8,
-  "pgp": 0.571,
-  "lineGp": 14,
-  "nhle": 0.323,
-  "nhlePace": 27.1,
+  "pgp": 0.533,
+  "lineGp": 15,
+  "nhle": 0.302,
+  "nhlePace": 25.4,
   "lines": [
    "SHL"
   ],
-  "feature": 0.323
+  "feature": 0.302
  },
  "league": {
   "name": "SHL",
@@ -256,8 +256,8 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 15,
-   "gp": 14,
-   "value": 0.5714,
+   "gp": 15,
+   "value": 0.5333,
    "percentile": 86.7,
    "percentileAllAges": 89.3,
    "allAgesN": 234
@@ -265,104 +265,104 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 49.0,
-  "median": 52.7,
-  "p75": 81.6,
+  "expected": 45.9,
+  "median": 48.4,
+  "p75": 83.7,
   "p90": 95.7,
-  "pRegular": 0.76,
-  "pTopLine": 0.32,
-  "pAboveAvg": 0.56,
+  "pRegular": 0.72,
+  "pTopLine": 0.3,
+  "pAboveAvg": 0.48,
   "pElite": 0.24,
   "poolN": 1305,
   "group": "F",
   "age": 19,
   "pickWeight": 0.5,
   "tier": "top-line",
-  "pCeiling": 0.32,
+  "pCeiling": 0.3,
   "featureBand": [
-   0.254,
-   0.363
+   0.246,
+   0.353
   ],
   "examples": [
    {
-    "name": "Samuel Fagemo",
-    "year": 2019,
-    "pick": 50,
-    "league": "SHL",
-    "feature": 0.325,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 21
-   },
-   {
-    "name": "Maxime Comtois",
-    "year": 2017,
-    "pick": 50,
-    "league": "QMJHL",
-    "feature": 0.328,
-    "peak": 70.2,
-    "tier": "above average",
-    "nhlGp": 211
-   },
-   {
-    "name": "Alexandre Texier",
-    "year": 2017,
-    "pick": 45,
+    "name": "Roope Hintz",
+    "year": 2015,
+    "pick": 49,
     "league": "Liiga",
-    "feature": 0.341,
-    "peak": 51.0,
+    "feature": 0.301,
+    "peak": 95.7,
+    "tier": "elite",
+    "nhlGp": 524
+   },
+   {
+    "name": "Derek Stepan",
+    "year": 2008,
+    "pick": 51,
+    "league": "NCAA",
+    "feature": 0.302,
+    "peak": 92.9,
+    "tier": "elite",
+    "nhlGp": 890
+   },
+   {
+    "name": "Markus Granlund",
+    "year": 2011,
+    "pick": 45,
+    "league": "SM-liiga",
+    "feature": 0.294,
+    "peak": 56.2,
     "tier": "above average",
-    "nhlGp": 285
+    "nhlGp": 335
    },
    {
-    "name": "Rasmus Asplund",
-    "year": 2016,
-    "pick": 33,
-    "league": "SHL",
-    "feature": 0.317,
-    "peak": 43.5,
-    "tier": "below average",
-    "nhlGp": 189
-   },
-   {
-    "name": "Arthur Kaliyev",
-    "year": 2019,
-    "pick": 33,
-    "league": "AHL",
-    "feature": 0.317,
-    "peak": 52.7,
-    "tier": "above average",
-    "nhlGp": 204
-   },
-   {
-    "name": "Pontus \u00c5berg",
-    "year": 2012,
+    "name": "Marcus Davidsson",
+    "year": 2017,
     "pick": 37,
     "league": "SHL",
-    "feature": 0.337,
+    "feature": 0.294,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 132
+    "nhlGp": 0
    },
    {
-    "name": "Shane Pinto",
-    "year": 2019,
-    "pick": 32,
-    "league": "NCAA",
-    "feature": 0.33,
-    "peak": 68.5,
-    "tier": "above average",
-    "nhlGp": 284
-   },
-   {
-    "name": "Kirill Marchenko",
-    "year": 2018,
-    "pick": 49,
-    "league": "KHL",
-    "feature": 0.344,
-    "peak": 90.1,
+    "name": "William Karlsson",
+    "year": 2011,
+    "pick": 53,
+    "league": "Elitserien",
+    "feature": 0.293,
+    "peak": 91.3,
     "tier": "elite",
-    "nhlGp": 295
+    "nhlGp": 755
+   },
+   {
+    "name": "Christian Dvorak",
+    "year": 2014,
+    "pick": 58,
+    "league": "OHL",
+    "feature": 0.297,
+    "peak": 68.2,
+    "tier": "above average",
+    "nhlGp": 618
+   },
+   {
+    "name": "Jordan Kyrou",
+    "year": 2016,
+    "pick": 35,
+    "league": "OHL",
+    "feature": 0.292,
+    "peak": 90.6,
+    "tier": "elite",
+    "nhlGp": 490
+   },
+   {
+    "name": "Filip H\u00e5llander",
+    "year": 2018,
+    "pick": 58,
+    "league": "SHL",
+    "feature": 0.293,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 18
    }
   ]
  },
@@ -383,8 +383,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 49.0,
-  "expected": 42.7,
+  "cohortExpected": 45.9,
+  "expected": 40.3,
   "tier": "below average"
  },
  "trajectory": {
@@ -397,19 +397,19 @@
   "to": {
    "season": "2026-2027",
    "league": "SHL",
-   "feature": 0.323,
-   "gp": 14
+   "feature": 0.302,
+   "gp": 15
   },
-  "delta": 0.037
+  "delta": 0.016
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 14,
+  "gp": 15,
   "season": "2026-2027"
  },
  "rank": 3,
- "score": 42.7,
+ "score": 40.3,
  "rankStart": 5,
  "rankStartDate": "2026-10-06"
 }

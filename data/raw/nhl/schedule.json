@@ -2369,7 +2369,7 @@
    "easternUTCOffset": "-05:00",
    "venueUTCOffset": "-05:00",
    "venueTimezone": "US/Eastern",
-   "gameState": "FUT",
+   "gameState": "OFF",
    "gameScheduleState": "OK",
    "tvBroadcasts": [
     {
@@ -2417,13 +2417,11 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/DET_dark.svg",
     "awaySplitSquad": false,
-    "promoLink": "",
-    "promoDesc": "",
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/DET/20262027/DET-radio.m3u8",
     "airlineLink": "",
     "airlineDesc": "",
     "hotelLink": "",
-    "hotelDesc": ""
+    "hotelDesc": "",
+    "score": 4
    },
    "homeTeam": {
     "id": 13,
@@ -2442,21 +2440,41 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/FLA_dark.svg",
     "homeSplitSquad": false,
-    "promoLink": "",
-    "promoDesc": "",
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/FLA/20262027/FLA-radio.m3u8",
     "airlineLink": "https://www.jetblue.com/",
     "airlineDesc": "Fly with JetBlue",
     "hotelLink": "",
-    "hotelDesc": ""
+    "hotelDesc": "",
+    "score": 5
    },
    "periodDescriptor": {
-    "number": 1,
+    "number": 3,
     "periodType": "REG",
     "maxRegulationPeriods": 3
    },
-   "ticketsLink": "https://www.nhl.com/panthers/tickets/",
-   "ticketsLinkFr": "https://www.nhl.com/panthers/tickets/",
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   },
+   "winningGoalie": {
+    "playerId": 8481033,
+    "firstInitial": {
+     "default": "A."
+    },
+    "lastName": {
+     "default": "Schmid"
+    }
+   },
+   "winningGoalScorer": {
+    "playerId": 8482113,
+    "firstInitial": {
+     "default": "A."
+    },
+    "lastName": {
+     "default": "Lundell"
+    }
+   },
+   "threeMinRecap": "/video/det-at-fla-recap-6408319316112",
+   "threeMinRecapFr": "/fr/video/det-vs-fla-12-11-2026-resume-6408319317112",
+   "condensedGame": "/video/det-at-fla-condensed-game-6408318768112",
    "gameCenterLink": "/gamecenter/det-vs-fla/2026/11/12/2026020302"
   },
   {
@@ -2606,6 +2624,13 @@
     "number": 1,
     "periodType": "REG",
     "maxRegulationPeriods": 3
+   },
+   "specialEvent": {
+    "parentId": 44,
+    "name": {
+     "default": "Original 6 Series",
+     "fr": "S\u00e9rie des six \u00e9quipes originales"
+    }
    },
    "ticketsLink": "https://www.ticketmaster.com/event/080064EED7D87FD6?brand=redwings&artistid=805938&wt.mc_id=NHL_TEAM_DET_SCHEDULE_GM11&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_DET&utm_content=SCHEDULE_GM11",
    "ticketsLinkFr": "https://www.ticketmaster.com/event/080064EED7D87FD6?brand=redwings&artistid=805938&wt.mc_id=NHL_TEAM_DET_SCHEDULE_GM11&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_DET&utm_content=SCHEDULE_GM11",
