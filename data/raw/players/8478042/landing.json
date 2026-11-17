@@ -54,7 +54,7 @@
    "subSeason": {
     "assists": 7,
     "gameWinningGoals": 0,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 8,
     "otGoals": 0,
     "pim": 6,
@@ -62,15 +62,15 @@
     "points": 15,
     "powerPlayGoals": 4,
     "powerPlayPoints": 6,
-    "shootingPctg": 0.142857,
+    "shootingPctg": 0.140351,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 56
+    "shots": 57
    },
    "career": {
     "assists": 231,
     "gameWinningGoals": 39,
-    "gamesPlayed": 702,
+    "gamesPlayed": 703,
     "goals": 227,
     "otGoals": 3,
     "pim": 286,
@@ -78,10 +78,10 @@
     "points": 458,
     "powerPlayGoals": 41,
     "powerPlayPoints": 89,
-    "shootingPctg": 0.1125,
+    "shootingPctg": 0.1124,
     "shorthandedGoals": 11,
     "shorthandedPoints": 14,
-    "shots": 2017
+    "shots": 2018
    }
   }
  },
@@ -89,9 +89,9 @@
   "regularSeason": {
    "assists": 231,
    "avgToi": "16:23",
-   "faceoffWinningPctg": 0.36,
+   "faceoffWinningPctg": 0.36210000000000003,
    "gameWinningGoals": 39,
-   "gamesPlayed": 702,
+   "gamesPlayed": 703,
    "goals": 227,
    "otGoals": 3,
    "pim": 286,
@@ -99,10 +99,10 @@
    "points": 458,
    "powerPlayGoals": 41,
    "powerPlayPoints": 89,
-   "shootingPctg": 0.1125,
+   "shootingPctg": 0.1124,
    "shorthandedGoals": 11,
    "shorthandedPoints": 14,
-   "shots": 2017
+   "shots": 2018
   },
   "playoffs": {
    "assists": 29,
@@ -127,6 +127,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-11-14",
+   "gameId": 2026020316,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "R",
+   "opponentAbbrev": "TBL",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 22,
+   "shorthandedGoals": 0,
+   "shots": 1,
+   "teamAbbrev": "DET",
+   "toi": "17:21"
+  },
   {
    "assists": 0,
    "gameDate": "2026-11-12",
@@ -198,24 +216,6 @@
    "shots": 4,
    "teamAbbrev": "DET",
    "toi": "17:25"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-11-03",
-   "gameId": 2026020238,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "TBL",
-   "pim": 0,
-   "plusMinus": -1,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 20,
-   "shorthandedGoals": 0,
-   "shots": 1,
-   "teamAbbrev": "DET",
-   "toi": "20:36"
   }
  ],
  "seasonTotals": [
@@ -1290,11 +1290,11 @@
   },
   {
    "assists": 7,
-   "avgToi": "18:33",
-   "faceoffWinningPctg": 0.384615,
+   "avgToi": "18:30",
+   "faceoffWinningPctg": 0.428571,
    "gameTypeId": 2,
    "gameWinningGoals": 0,
-   "gamesPlayed": 20,
+   "gamesPlayed": 21,
    "goals": 8,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
@@ -1305,10 +1305,10 @@
    "powerPlayPoints": 6,
    "season": 20262027,
    "sequence": 1,
-   "shootingPctg": 0.142857,
+   "shootingPctg": 0.140351,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 56,
+   "shots": 57,
    "teamCommonName": {
     "default": "Red Wings"
    },

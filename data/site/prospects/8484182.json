@@ -31,12 +31,12 @@
   {
    "league": "NCAA",
    "team": "Univ. of Massachusetts",
-   "gp": 11,
+   "gp": 13,
    "g": 2,
    "a": 0,
    "pts": 2,
-   "pm": 2,
-   "pim": 6,
+   "pm": 1,
+   "pim": 8,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -72,12 +72,12 @@
     {
      "league": "NCAA",
      "team": "Univ. of Massachusetts",
-     "gp": 11,
+     "gp": 13,
      "g": 2,
      "a": 0,
      "pts": 2,
-     "pm": 2,
-     "pim": 6,
+     "pm": 1,
+     "pim": 8,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -162,18 +162,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Univ. of Massachusetts",
-  "gp": 11,
+  "gp": 13,
   "g": 2,
   "a": 0,
   "pts": 2,
-  "pgp": 0.182,
-  "lineGp": 11,
-  "nhle": 0.035,
-  "nhlePace": 2.9,
+  "pgp": 0.154,
+  "lineGp": 13,
+  "nhle": 0.03,
+  "nhlePace": 2.5,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.035
+  "feature": 0.03
  },
  "league": {
   "name": "NCAA",
@@ -198,10 +198,10 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 75,
-   "gp": 11,
-   "value": 0.1818,
-   "percentile": 36.0,
-   "percentileAllAges": 36.3,
+   "gp": 13,
+   "value": 0.1538,
+   "percentile": 34.7,
+   "percentileAllAges": 33.0,
    "allAgesN": 1198
   }
  },
@@ -222,86 +222,86 @@
   "tier": "replacement level",
   "pCeiling": 0.04,
   "featureBand": [
-   0.029,
-   0.042
+   0.024,
+   0.036
   ],
   "examples": [
    {
-    "name": "Reid McNeill",
-    "year": 2010,
-    "pick": 170,
-    "league": "AHL",
-    "feature": 0.035,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Martin Has",
-    "year": 2019,
-    "pick": 153,
-    "league": "ECHL",
-    "feature": 0.035,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Cole Moberg",
-    "year": 2019,
-    "pick": 194,
-    "league": "ECHL",
-    "feature": 0.035,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kendall McFaull",
-    "year": 2010,
-    "pick": 155,
-    "league": "CIS",
-    "feature": 0.036,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Ryan Rehill",
-    "year": 2014,
-    "pick": 131,
-    "league": "USports",
-    "feature": 0.036,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kyle Jenkins",
-    "year": 2014,
-    "pick": 187,
-    "league": "USports",
-    "feature": 0.036,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Josh Anderson",
-    "year": 2016,
-    "pick": 71,
-    "league": "ECHL",
-    "feature": 0.036,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Stefan Warg",
+    "name": "Jordan Bendfeld",
     "year": 2008,
-    "pick": 143,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.034,
+    "pick": 193,
+    "league": "ECHL",
+    "feature": 0.03,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Nelson Nogier",
+    "year": 2014,
+    "pick": 101,
+    "league": "AHL",
+    "feature": 0.03,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 11
+   },
+   {
+    "name": "Luke Green",
+    "year": 2016,
+    "pick": 79,
+    "league": "AHL",
+    "feature": 0.03,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Dominik Bielke",
+    "year": 2009,
+    "pick": 207,
+    "league": "DEL",
+    "feature": 0.029,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Dmitri Semykin",
+    "year": 2018,
+    "pick": 90,
+    "league": "ECHL",
+    "feature": 0.029,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Cade Webber",
+    "year": 2019,
+    "pick": 99,
+    "league": "NCAA",
+    "feature": 0.029,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Max Everson",
+    "year": 2011,
+    "pick": 203,
+    "league": "NCAA",
+    "feature": 0.031,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Gianluca Curcuruto",
+    "year": 2012,
+    "pick": 182,
+    "league": "CIS",
+    "feature": 0.031,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -339,15 +339,15 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.035,
-   "gp": 11
+   "feature": 0.03,
+   "gp": 13
   },
-  "delta": -0.067
+  "delta": -0.072
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 11,
+  "gp": 13,
   "season": "2026-2027"
  },
  "rank": 30,

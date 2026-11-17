@@ -31,7 +31,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 20,
+   "gp": 21,
    "g": 2,
    "a": 3,
    "pts": 5,
@@ -89,7 +89,7 @@
     {
      "league": "NHL",
      "team": "Detroit Red Wings",
-     "gp": 20,
+     "gp": 21,
      "g": 2,
      "a": 3,
      "pts": 5,
@@ -490,10 +490,10 @@
   "sinceDraft": 3,
   "pedigreeExpected": 12.3,
   "cohortExpected": 25.4,
-  "expected": 28.6,
+  "expected": 27.9,
   "tier": "below average",
-  "nhlW": 0.5,
-  "nhlExpected": 31.9,
+  "nhlW": 0.51,
+  "nhlExpected": 30.4,
   "beforeNhl": 25.4
  },
  "trajectory": {
@@ -512,35 +512,35 @@
   "delta": 0.106
  },
  "nhlSample": {
-  "gp": 20,
+  "gp": 21,
   "pts": 5,
   "seasons": [
    20262027
   ],
   "thisSeason": {
-   "gp": 20,
+   "gp": 21,
    "pts": 5,
-   "toi": "13:30",
+   "toi": "13:34",
    "savePct": null
   }
  },
  "nhlUsage": {
   "n": 50,
-  "expected": 31.9,
-  "median": 31.3,
-  "p75": 58.3,
-  "p90": 72.5,
-  "pRegular": 0.66,
-  "pTopLine": 0.08,
-  "pAboveAvg": 0.32,
+  "expected": 30.4,
+  "median": 31.1,
+  "p75": 56.2,
+  "p90": 71.1,
+  "pRegular": 0.64,
+  "pTopLine": 0.06,
+  "pAboveAvg": 0.3,
   "pElite": 0.0,
   "poolN": 258,
   "group": "D",
   "age": 22,
-  "gp": 20,
-  "toi": 810,
-  "ppg": 0.25,
-  "ppgShrunk": 0.221,
+  "gp": 21,
+  "toi": 814,
+  "ppg": 0.238,
+  "ppgShrunk": 0.216,
   "toiBand": [
    725,
    954
@@ -613,38 +613,38 @@
     "nhlGp": 41
    },
    {
-    "name": "Slater Koekkoek",
-    "season": "2016-2017",
+    "name": "Christian Jaros",
+    "season": "2018-2019",
     "age": 22,
-    "gp": 29,
-    "toi": 779,
-    "ppg": 0.14,
-    "peak": 38.2,
-    "tier": "below average",
-    "nhlGp": 186
+    "gp": 61,
+    "toi": 862,
+    "ppg": 0.16,
+    "peak": 13.7,
+    "tier": "replacement level",
+    "nhlGp": 94
    },
    {
-    "name": "Conor Timmins",
-    "season": "2020-2021",
-    "age": 21,
-    "gp": 31,
-    "toi": 813,
-    "ppg": 0.23,
-    "peak": 34.5,
-    "tier": "below average",
-    "nhlGp": 198
+    "name": "Dylan DeMelo",
+    "season": "2015-2016",
+    "age": 22,
+    "gp": 45,
+    "toi": 817,
+    "ppg": 0.09,
+    "peak": 67.3,
+    "tier": "above average",
+    "nhlGp": 721
    }
   ],
-  "w": 0.5,
+  "w": 0.51,
   "before": 25.4,
-  "after": 28.6
+  "after": 27.9
  },
  "availability": {
   "gp": 42,
   "season": "2025-2026"
  },
  "rank": 8,
- "score": 28.6,
+ "score": 27.9,
  "rankStart": 10,
  "rankStartDate": "2026-10-06"
 }

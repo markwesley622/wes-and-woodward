@@ -31,7 +31,7 @@
   {
    "league": "VHL",
    "team": "Khimik Voskresensk",
-   "gp": 13,
+   "gp": 14,
    "g": 0,
    "a": 1,
    "pts": 1,
@@ -48,11 +48,11 @@
   {
    "league": "MHL",
    "team": "MHK Spartak Moskva",
-   "gp": 4,
+   "gp": 5,
    "g": 0,
    "a": 3,
    "pts": 3,
-   "pm": 2,
+   "pm": -1,
    "pim": 4,
    "gaa": null,
    "svp": null,
@@ -140,7 +140,7 @@
     {
      "league": "VHL",
      "team": "Khimik Voskresensk",
-     "gp": 13,
+     "gp": 14,
      "g": 0,
      "a": 1,
      "pts": 1,
@@ -157,11 +157,11 @@
     {
      "league": "MHL",
      "team": "MHK Spartak Moskva",
-     "gp": 4,
+     "gp": 5,
      "g": 0,
      "a": 3,
      "pts": 3,
-     "pm": 2,
+     "pm": -1,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -254,19 +254,19 @@
   "table": "VHL",
   "coef": 0.328,
   "team": "Khimik Voskresensk",
-  "gp": 17,
+  "gp": 19,
   "g": 0,
   "a": 1,
   "pts": 1,
-  "pgp": 0.077,
-  "lineGp": 13,
-  "nhle": 0.045,
-  "nhlePace": 3.8,
+  "pgp": 0.071,
+  "lineGp": 14,
+  "nhle": 0.04,
+  "nhlePace": 3.4,
   "lines": [
    "VHL",
    "MHL"
   ],
-  "feature": 0.045
+  "feature": 0.04
  },
  "league": {
   "name": "VHL",
@@ -291,16 +291,16 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 12,
-   "gp": 13,
-   "value": 0.0769,
+   "gp": 14,
+   "value": 0.0714,
    "percentile": 50.0,
-   "percentileAllAges": 30.3,
+   "percentileAllAges": 29.2,
    "allAgesN": 544
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 3.6,
+  "expected": 3.2,
   "median": 0.0,
   "p75": 0.0,
   "p90": 11.2,
@@ -315,26 +315,16 @@
   "tier": "replacement level",
   "pCeiling": 0.1,
   "featureBand": [
-   0.034,
-   0.057
+   0.03,
+   0.052
   ],
   "examples": [
    {
-    "name": "Stefan Warg",
-    "year": 2008,
-    "pick": 143,
-    "league": "WHL",
-    "feature": 0.044,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Troy Vance",
-    "year": 2011,
-    "pick": 135,
-    "league": "QMJHL",
-    "feature": 0.044,
+    "name": "Tyler Inamoto",
+    "year": 2017,
+    "pick": 133,
+    "league": "NCAA",
+    "feature": 0.04,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -350,21 +340,31 @@
     "nhlGp": 0
    },
    {
-    "name": "Joe Rogalski",
-    "year": 2010,
-    "pick": 152,
-    "league": "OHL",
-    "feature": 0.044,
+    "name": "Anton Cederholm",
+    "year": 2013,
+    "pick": 145,
+    "league": "WHL",
+    "feature": 0.039,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Patrick Kudla",
-    "year": 2016,
-    "pick": 158,
-    "league": "OJHL",
-    "feature": 0.045,
+    "name": "Jacob Golden",
+    "year": 2017,
+    "pick": 147,
+    "league": "OHL",
+    "feature": 0.039,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Toni Utunen",
+    "year": 2018,
+    "pick": 130,
+    "league": "Liiga",
+    "feature": 0.041,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -380,21 +380,21 @@
     "nhlGp": 139
    },
    {
-    "name": "Miska Kukkonen",
-    "year": 2018,
-    "pick": 125,
-    "league": "Liiga",
-    "feature": 0.046,
+    "name": "Gabriel Beaupr\u00e9",
+    "year": 2011,
+    "pick": 153,
+    "league": "AHL",
+    "feature": 0.041,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Brian Cooper",
-    "year": 2012,
-    "pick": 127,
-    "league": "NCAA",
-    "feature": 0.047,
+    "name": "Stefan Warg",
+    "year": 2008,
+    "pick": 143,
+    "league": "WHL",
+    "feature": 0.044,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -418,8 +418,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 3.6,
-  "expected": 4.5,
+  "cohortExpected": 3.2,
+  "expected": 4.2,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -432,19 +432,19 @@
   "to": {
    "season": "2026-2027",
    "league": "VHL",
-   "feature": 0.045,
-   "gp": 13
+   "feature": 0.04,
+   "gp": 14
   },
-  "delta": -0.026
+  "delta": -0.031
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 13,
+  "gp": 14,
   "season": "2026-2027"
  },
  "rank": 26,
- "score": 4.5,
+ "score": 4.2,
  "rankStart": 23,
  "rankStartDate": "2026-10-06"
 }

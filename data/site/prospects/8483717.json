@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Ferris State Univ.",
-   "gp": 8,
+   "gp": 10,
    "g": 2,
-   "a": 2,
-   "pts": 4,
-   "pm": -5,
+   "a": 3,
+   "pts": 5,
+   "pm": -4,
    "pim": 6,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Ferris State Univ.",
-     "gp": 8,
+     "gp": 10,
      "g": 2,
-     "a": 2,
-     "pts": 4,
-     "pm": -5,
+     "a": 3,
+     "pts": 5,
+     "pm": -4,
      "pim": 6,
      "gaa": null,
      "svp": null,
@@ -195,24 +195,24 @@
   }
  ],
  "anchor": {
-  "season": "2025-2026",
+  "season": "2026-2027",
   "league": "NCAA",
   "leagueSlug": "ncaa",
   "table": "NCAA",
   "coef": 0.194,
-  "team": "UMass",
-  "gp": 32,
-  "g": 3,
-  "a": 6,
-  "pts": 9,
-  "pgp": 0.281,
-  "lineGp": 32,
-  "nhle": 0.055,
-  "nhlePace": 4.6,
+  "team": "Ferris State Univ.",
+  "gp": 10,
+  "g": 2,
+  "a": 3,
+  "pts": 5,
+  "pgp": 0.5,
+  "lineGp": 10,
+  "nhle": 0.097,
+  "nhlePace": 8.1,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.055
+  "feature": 0.097
  },
  "league": {
   "name": "NCAA",
@@ -237,7 +237,7 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 167,
-   "gp": 8,
+   "gp": 10,
    "value": 0.5,
    "percentile": 48.5,
    "percentileAllAges": 48.0,
@@ -246,104 +246,104 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 0.3,
+  "expected": 1.2,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
-  "pRegular": 0.02,
+  "pRegular": 0.06,
   "pTopLine": 0.0,
   "pAboveAvg": 0.0,
   "pElite": 0.0,
-  "poolN": 1122,
+  "poolN": 1006,
   "group": "F",
-  "age": 21,
+  "age": 22,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.02,
+  "pCeiling": 0.06,
   "featureBand": [
-   0.048,
-   0.062
+   0.093,
+   0.1
   ],
   "examples": [
    {
-    "name": "Josh Birkholz",
-    "year": 2009,
-    "pick": 67,
-    "league": "ECHL",
-    "feature": 0.055,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Christopher Crane",
-    "year": 2010,
-    "pick": 200,
-    "league": "ECHL",
-    "feature": 0.055,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Colin Jacobs",
-    "year": 2011,
-    "pick": 107,
-    "league": "ECHL",
-    "feature": 0.055,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jared Fiegl",
-    "year": 2014,
-    "pick": 191,
-    "league": "NCAA",
-    "feature": 0.055,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Gustav Olhaver",
-    "year": 2015,
-    "pick": 191,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.055,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Stefan Della Rovere",
+    "name": "David Wohlberg",
     "year": 2008,
-    "pick": 204,
+    "pick": 172,
     "league": "AHL",
-    "feature": 0.056,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 7
-   },
-   {
-    "name": "Sebastian W\u00e4nnstr\u00f6m",
-    "year": 2010,
-    "pick": 44,
-    "league": "AHL",
-    "feature": 0.056,
+    "feature": 0.097,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Chase Lang",
-    "year": 2014,
-    "pick": 167,
+    "name": "Ethan Werek",
+    "year": 2009,
+    "pick": 47,
     "league": "AHL",
-    "feature": 0.056,
+    "feature": 0.097,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "David Pacan",
+    "year": 2009,
+    "pick": 177,
+    "league": "ECHL",
+    "feature": 0.097,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Connor Crisp",
+    "year": 2013,
+    "pick": 71,
+    "league": "ECHL",
+    "feature": 0.097,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Quentin Shore",
+    "year": 2013,
+    "pick": 168,
+    "league": "ECHL",
+    "feature": 0.097,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Riley Tufte",
+    "year": 2016,
+    "pick": 25,
+    "league": "AHL",
+    "feature": 0.097,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 28
+   },
+   {
+    "name": "Tanner Kaspick",
+    "year": 2016,
+    "pick": 119,
+    "league": "AHL",
+    "feature": 0.097,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Michael Pezzetta",
+    "year": 2016,
+    "pick": 160,
+    "league": "AHL",
+    "feature": 0.097,
+    "peak": 14.0,
+    "tier": "replacement level",
+    "nhlGp": 209
    }
   ]
  },
@@ -362,35 +362,35 @@
  },
  "blend": {
   "w": 0.0,
-  "sinceDraft": 3,
+  "sinceDraft": 4,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 0.3,
-  "expected": 0.3,
+  "cohortExpected": 1.2,
+  "expected": 1.2,
   "tier": "replacement level"
  },
  "trajectory": {
   "from": {
-   "season": "2024-2025",
-   "league": "NCAA",
-   "feature": 0.047,
-   "gp": 25
-  },
-  "to": {
    "season": "2025-2026",
    "league": "NCAA",
    "feature": 0.055,
    "gp": 32
   },
-  "delta": 0.008
+  "to": {
+   "season": "2026-2027",
+   "league": "NCAA",
+   "feature": 0.097,
+   "gp": 10
+  },
+  "delta": 0.042
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 32,
-  "season": "2025-2026"
+  "gp": 10,
+  "season": "2026-2027"
  },
- "rank": 31,
- "score": 0.3,
+ "rank": 28,
+ "score": 1.2,
  "rankStart": 33,
  "rankStartDate": "2026-10-06"
 }

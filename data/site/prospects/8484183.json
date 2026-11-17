@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 15,
+   "gp": 17,
    "g": 6,
-   "a": 8,
-   "pts": 14,
-   "pm": 6,
+   "a": 10,
+   "pts": 16,
+   "pm": 7,
    "pim": 9,
    "gaa": null,
    "svp": null,
@@ -89,11 +89,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 15,
+     "gp": 17,
      "g": 6,
-     "a": 8,
-     "pts": 14,
-     "pm": 6,
+     "a": 10,
+     "pts": 16,
+     "pm": 7,
      "pim": 9,
      "gaa": null,
      "svp": null,
@@ -298,18 +298,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 15,
+  "gp": 17,
   "g": 6,
-  "a": 8,
-  "pts": 14,
-  "pgp": 0.933,
-  "lineGp": 15,
-  "nhle": 0.363,
-  "nhlePace": 30.5,
+  "a": 10,
+  "pts": 16,
+  "pgp": 0.941,
+  "lineGp": 17,
+  "nhle": 0.366,
+  "nhlePace": 30.7,
   "lines": [
    "AHL"
   ],
-  "feature": 0.363
+  "feature": 0.366
  },
  "league": {
   "name": "AHL",
@@ -334,8 +334,8 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 41,
-   "gp": 15,
-   "value": 0.9333,
+   "gp": 17,
+   "value": 0.9412,
    "percentile": 82.9,
    "percentileAllAges": 85.7,
    "allAgesN": 642
@@ -343,11 +343,11 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 32.9,
+  "expected": 33.4,
   "median": 32.5,
   "p75": 54.7,
   "p90": 83.7,
-  "pRegular": 0.62,
+  "pRegular": 0.64,
   "pTopLine": 0.12,
   "pAboveAvg": 0.3,
   "pElite": 0.08,
@@ -358,10 +358,30 @@
   "tier": "above average",
   "pCeiling": 0.3,
   "featureBand": [
-   0.325,
-   0.401
+   0.328,
+   0.405
   ],
   "examples": [
+   {
+    "name": "Oliver Bjorkstrand",
+    "year": 2013,
+    "pick": 89,
+    "league": "AHL",
+    "feature": 0.367,
+    "peak": 83.7,
+    "tier": "top-line",
+    "nhlGp": 708
+   },
+   {
+    "name": "Andrew Mangiapane",
+    "year": 2015,
+    "pick": 166,
+    "league": "AHL",
+    "feature": 0.365,
+    "peak": 70.3,
+    "tier": "above average",
+    "nhlGp": 561
+   },
    {
     "name": "Jakob Pelletier",
     "year": 2019,
@@ -371,6 +391,26 @@
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 91
+   },
+   {
+    "name": "Mattias Janmark",
+    "year": 2013,
+    "pick": 79,
+    "league": "SHL",
+    "feature": 0.37,
+    "peak": 54.7,
+    "tier": "above average",
+    "nhlGp": 680
+   },
+   {
+    "name": "Filip Cederqvist",
+    "year": 2019,
+    "pick": 143,
+    "league": "SHL",
+    "feature": 0.37,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    },
    {
     "name": "Devante Smith-Pelly",
@@ -393,26 +433,6 @@
     "nhlGp": 380
    },
    {
-    "name": "Andrew Mangiapane",
-    "year": 2015,
-    "pick": 166,
-    "league": "AHL",
-    "feature": 0.365,
-    "peak": 70.3,
-    "tier": "above average",
-    "nhlGp": 561
-   },
-   {
-    "name": "Oliver Bjorkstrand",
-    "year": 2013,
-    "pick": 89,
-    "league": "AHL",
-    "feature": 0.367,
-    "peak": 83.7,
-    "tier": "top-line",
-    "nhlGp": 708
-   },
-   {
     "name": "Robin Kov\u00e1cs",
     "year": 2015,
     "pick": 62,
@@ -421,26 +441,6 @@
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
-   },
-   {
-    "name": "Max Reinhart",
-    "year": 2010,
-    "pick": 64,
-    "league": "AHL",
-    "feature": 0.358,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 23
-   },
-   {
-    "name": "Jordan Weal",
-    "year": 2010,
-    "pick": 70,
-    "league": "AHL",
-    "feature": 0.358,
-    "peak": 27.9,
-    "tier": "below average",
-    "nhlGp": 218
    }
   ]
  },
@@ -461,8 +461,8 @@
   "w": 0.0,
   "sinceDraft": 3,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 32.9,
-  "expected": 32.9,
+  "cohortExpected": 33.4,
+  "expected": 33.4,
   "tier": "below average"
  },
  "trajectory": {
@@ -475,19 +475,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.363,
-   "gp": 15
+   "feature": 0.366,
+   "gp": 17
   },
-  "delta": 0.133
+  "delta": 0.136
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 15,
+  "gp": 17,
   "season": "2026-2027"
  },
  "rank": 5,
- "score": 32.9,
+ "score": 33.4,
  "rankStart": 9,
  "rankStartDate": "2026-10-06"
 }

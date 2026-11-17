@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 15,
+   "gp": 17,
    "g": 2,
    "a": 8,
    "pts": 10,
-   "pm": 0,
+   "pm": 1,
    "pim": 4,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 15,
+     "gp": 17,
      "g": 2,
      "a": 8,
      "pts": 10,
-     "pm": 0,
+     "pm": 1,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -140,18 +140,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 15,
+  "gp": 17,
   "g": 2,
   "a": 8,
   "pts": 10,
-  "pgp": 0.667,
-  "lineGp": 15,
-  "nhle": 0.259,
-  "nhlePace": 21.8,
+  "pgp": 0.588,
+  "lineGp": 17,
+  "nhle": 0.229,
+  "nhlePace": 19.2,
   "lines": [
    "AHL"
   ],
-  "feature": 0.259
+  "feature": 0.229
  },
  "league": {
   "name": "AHL",
@@ -176,113 +176,113 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 44,
-   "gp": 15,
-   "value": 0.6667,
+   "gp": 17,
+   "value": 0.5882,
    "percentile": 56.8,
-   "percentileAllAges": 64.3,
+   "percentileAllAges": 62.5,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 13.0,
+  "expected": 7.7,
   "median": 0.0,
-  "p75": 25.0,
-  "p90": 48.2,
-  "pRegular": 0.32,
-  "pTopLine": 0.02,
+  "p75": 0.0,
+  "p90": 37.8,
+  "pRegular": 0.24,
+  "pTopLine": 0.0,
   "pAboveAvg": 0.08,
-  "pElite": 0.02,
+  "pElite": 0.0,
   "poolN": 1006,
   "group": "F",
   "age": 22,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.32,
+  "pCeiling": 0.24,
   "featureBand": [
-   0.248,
-   0.269
+   0.219,
+   0.239
   ],
   "examples": [
    {
-    "name": "Dale Weise",
-    "year": 2008,
-    "pick": 111,
+    "name": "Ryan Suzuki",
+    "year": 2019,
+    "pick": 28,
     "league": "AHL",
-    "feature": 0.259,
-    "peak": 53.5,
-    "tier": "above average",
-    "nhlGp": 513
-   },
-   {
-    "name": "Henrik Bj\u00f6rklund",
-    "year": 2009,
-    "pick": 111,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.259,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Noah Cates",
-    "year": 2017,
-    "pick": 137,
-    "league": "NCAA",
-    "feature": 0.258,
-    "peak": 62.1,
-    "tier": "above average",
-    "nhlGp": 321
-   },
-   {
-    "name": "Angus Crookshank",
-    "year": 2018,
-    "pick": 126,
-    "league": "AHL",
-    "feature": 0.258,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 29
-   },
-   {
-    "name": "Philippe Cornet",
-    "year": 2008,
-    "pick": 133,
-    "league": "AHL",
-    "feature": 0.257,
+    "feature": 0.229,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 2
    },
    {
-    "name": "Justin Azevedo",
+    "name": "Danny Kristo",
     "year": 2008,
-    "pick": 153,
-    "league": "AHL",
-    "feature": 0.261,
+    "pick": 56,
+    "league": "NCAA",
+    "feature": 0.23,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Matthew Peca",
-    "year": 2011,
-    "pick": 201,
+    "name": "Alexander Volkov",
+    "year": 2017,
+    "pick": 48,
     "league": "AHL",
-    "feature": 0.257,
+    "feature": 0.23,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 83
+    "nhlGp": 46
    },
    {
-    "name": "Emil Galimov",
+    "name": "Grigori Denisenko",
+    "year": 2018,
+    "pick": 15,
+    "league": "AHL",
+    "feature": 0.23,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 33
+   },
+   {
+    "name": "Mikhail Stefanovich",
+    "year": 2008,
+    "pick": 98,
+    "league": "Belarus",
+    "feature": 0.227,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "David Pope",
     "year": 2013,
-    "pick": 207,
-    "league": "KHL",
-    "feature": 0.257,
+    "pick": 109,
+    "league": "NCAA",
+    "feature": 0.227,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Nikita Korostelyov",
+    "year": 2015,
+    "pick": 185,
+    "league": "KHL",
+    "feature": 0.231,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Oskar Steen",
+    "year": 2016,
+    "pick": 165,
+    "league": "AHL",
+    "feature": 0.227,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 60
    }
   ]
  },
@@ -303,8 +303,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 13.0,
-  "expected": 13.0,
+  "cohortExpected": 7.7,
+  "expected": 7.7,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -317,19 +317,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.259,
-   "gp": 15
+   "feature": 0.229,
+   "gp": 17
   },
-  "delta": 0.077
+  "delta": 0.047
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 15,
+  "gp": 17,
   "season": "2026-2027"
  },
- "rank": 13,
- "score": 13.0,
+ "rank": 18,
+ "score": 7.7,
  "rankStart": 16,
  "rankStartDate": "2026-10-06"
 }

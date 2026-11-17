@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Colorado College",
-   "gp": 10,
+   "gp": 12,
    "g": 0,
    "a": 5,
    "pts": 5,
-   "pm": 7,
+   "pm": 5,
    "pim": 4,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Colorado College",
-     "gp": 10,
+     "gp": 12,
      "g": 0,
      "a": 5,
      "pts": 5,
-     "pm": 7,
+     "pm": 5,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -140,18 +140,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Colorado College",
-  "gp": 10,
+  "gp": 12,
   "g": 0,
   "a": 5,
   "pts": 5,
-  "pgp": 0.5,
-  "lineGp": 10,
-  "nhle": 0.097,
-  "nhlePace": 8.1,
+  "pgp": 0.417,
+  "lineGp": 12,
+  "nhle": 0.081,
+  "nhlePace": 6.8,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.097
+  "feature": 0.081
  },
  "league": {
   "name": "NCAA",
@@ -176,8 +176,8 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 84,
-   "gp": 10,
-   "value": 0.5,
+   "gp": 12,
+   "value": 0.4167,
    "percentile": 65.5,
    "percentileAllAges": 68.9,
    "allAgesN": 1198
@@ -185,104 +185,104 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 9.0,
+  "expected": 11.3,
   "median": 0.0,
-  "p75": 4.0,
-  "p90": 43.5,
-  "pRegular": 0.26,
-  "pTopLine": 0.0,
-  "pAboveAvg": 0.04,
+  "p75": 13.6,
+  "p90": 52.7,
+  "pRegular": 0.28,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.12,
   "pElite": 0.0,
   "poolN": 694,
   "group": "D",
   "age": 21,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.26,
+  "pCeiling": 0.28,
   "featureBand": [
-   0.091,
-   0.104
+   0.075,
+   0.087
   ],
   "examples": [
    {
-    "name": "Taylor Doherty",
-    "year": 2009,
-    "pick": 57,
-    "league": "AHL",
-    "feature": 0.097,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Fredrik Claesson",
-    "year": 2011,
-    "pick": 126,
-    "league": "AHL",
-    "feature": 0.097,
-    "peak": 4.0,
-    "tier": "replacement level",
-    "nhlGp": 170
-   },
-   {
-    "name": "Peter Ceresnak",
-    "year": 2011,
-    "pick": 172,
-    "league": "Czechia",
-    "feature": 0.097,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Niko Mikkola",
-    "year": 2015,
-    "pick": 127,
-    "league": "Liiga",
-    "feature": 0.097,
-    "peak": 49.5,
-    "tier": "below average",
-    "nhlGp": 399
-   },
-   {
-    "name": "Tyler Tucker",
-    "year": 2018,
-    "pick": 200,
-    "league": "AHL",
-    "feature": 0.097,
-    "peak": 38.1,
-    "tier": "below average",
-    "nhlGp": 159
-   },
-   {
-    "name": "Ludwig Bystr\u00f6m",
+    "name": "Calle Andersson",
     "year": 2012,
-    "pick": 43,
+    "pick": 119,
     "league": "AHL",
-    "feature": 0.096,
+    "feature": 0.081,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Mark Friedman",
-    "year": 2014,
-    "pick": 86,
-    "league": "AHL",
-    "feature": 0.096,
+    "name": "Simon Fernholm",
+    "year": 2012,
+    "pick": 164,
+    "league": "HockeyAllsvenskan",
+    "feature": 0.081,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 93
+    "nhlGp": 0
    },
    {
-    "name": "Cam Dineen",
-    "year": 2016,
-    "pick": 68,
+    "name": "Petteri Lindbohm",
+    "year": 2012,
+    "pick": 176,
     "league": "AHL",
-    "feature": 0.096,
+    "feature": 0.081,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 38
+    "nhlGp": 49
+   },
+   {
+    "name": "Jonatan Nielsen",
+    "year": 2012,
+    "pick": 194,
+    "league": "HockeyEttan",
+    "feature": 0.081,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Justin Hach\u00e9",
+    "year": 2012,
+    "pick": 208,
+    "league": "AHL",
+    "feature": 0.081,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Tim Berni",
+    "year": 2018,
+    "pick": 159,
+    "league": "AHL",
+    "feature": 0.081,
+    "peak": 0.5,
+    "tier": "replacement level",
+    "nhlGp": 59
+   },
+   {
+    "name": "Cooper Moore",
+    "year": 2019,
+    "pick": 128,
+    "league": "NCAA",
+    "feature": 0.081,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "William Wrenn",
+    "year": 2009,
+    "pick": 43,
+    "league": "ECHL",
+    "feature": 0.08,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -303,8 +303,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 9.0,
-  "expected": 9.0,
+  "cohortExpected": 11.3,
+  "expected": 11.3,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -317,19 +317,19 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.097,
-   "gp": 10
+   "feature": 0.081,
+   "gp": 12
   },
-  "delta": 0.022
+  "delta": 0.006
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 10,
+  "gp": 12,
   "season": "2026-2027"
  },
- "rank": 17,
- "score": 9.0,
+ "rank": 16,
+ "score": 11.3,
  "rankStart": 28,
  "rankStartDate": "2026-10-06"
 }

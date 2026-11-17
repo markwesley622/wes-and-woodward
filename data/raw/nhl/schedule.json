@@ -2490,7 +2490,7 @@
    "easternUTCOffset": "-05:00",
    "venueUTCOffset": "-05:00",
    "venueTimezone": "US/Eastern",
-   "gameState": "FUT",
+   "gameState": "OFF",
    "gameScheduleState": "OK",
    "tvBroadcasts": [
     {
@@ -2524,7 +2524,7 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/DET_dark.svg",
     "awaySplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/DET/20262027/DET-radio.m3u8"
+    "score": 2
    },
    "homeTeam": {
     "id": 14,
@@ -2542,15 +2542,37 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/TBL_dark.svg",
     "homeSplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/TBL/20262027/TBL-radio.m3u8"
+    "score": 0
    },
    "periodDescriptor": {
-    "number": 1,
+    "number": 3,
     "periodType": "REG",
     "maxRegulationPeriods": 3
    },
-   "ticketsLink": "https://www.ticketmaster.com/event/0D0064F8CF689DCB?brand=tblightning&artistid=806028&landing=s&wt.mc_id=NHL_TEAM_TBL_SCHEDULE_GM9&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_TBL&utm_content=SCHEDULE_GM9",
-   "ticketsLinkFr": "https://www.ticketmaster.com/event/0D0064F8CF689DCB?brand=tblightning&artistid=806028&landing=s&wt.mc_id=NHL_TEAM_TBL_SCHEDULE_GM9&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_TBL&utm_content=SCHEDULE_GM9",
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   },
+   "winningGoalie": {
+    "playerId": 8480193,
+    "firstInitial": {
+     "default": "D."
+    },
+    "lastName": {
+     "default": "Tarasov"
+    }
+   },
+   "winningGoalScorer": {
+    "playerId": 8482078,
+    "firstInitial": {
+     "default": "L."
+    },
+    "lastName": {
+     "default": "Raymond"
+    }
+   },
+   "threeMinRecap": "/video/det-at-tbl-recap-6408400733112",
+   "threeMinRecapFr": "/fr/video/det-vs-tbl-14-11-2026-resume-6408400842112",
+   "condensedGame": "/video/det-at-tbl-condensed-game-6408400262112",
    "gameCenterLink": "/gamecenter/det-vs-tbl/2026/11/14/2026020316"
   },
   {

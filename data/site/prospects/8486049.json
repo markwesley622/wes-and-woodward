@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Univ. of Michigan",
-   "gp": 9,
-   "g": 2,
+   "gp": 11,
+   "g": 4,
    "a": 2,
-   "pts": 4,
-   "pm": 0,
+   "pts": 6,
+   "pm": 1,
    "pim": 6,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Michigan",
-     "gp": 9,
-     "g": 2,
+     "gp": 11,
+     "g": 4,
      "a": 2,
-     "pts": 4,
-     "pm": 0,
+     "pts": 6,
+     "pm": 1,
      "pim": 6,
      "gaa": null,
      "svp": null,
@@ -90,29 +90,29 @@
   }
  ],
  "anchor": {
-  "season": "2025-2026",
-  "league": "WHL",
-  "leagueSlug": "whl",
-  "table": "WHL",
-  "coef": 0.141,
-  "team": "Kamloops Blazers",
-  "gp": 68,
-  "g": 42,
-  "a": 55,
-  "pts": 97,
-  "pgp": 1.426,
-  "lineGp": 68,
-  "nhle": 0.201,
-  "nhlePace": 16.9,
+  "season": "2026-2027",
+  "league": "NCAA",
+  "leagueSlug": "ncaa",
+  "table": "NCAA",
+  "coef": 0.194,
+  "team": "Univ. of Michigan",
+  "gp": 11,
+  "g": 4,
+  "a": 2,
+  "pts": 6,
+  "pgp": 0.545,
+  "lineGp": 11,
+  "nhle": 0.106,
+  "nhlePace": 8.9,
   "lines": [
-   "WHL"
+   "NCAA"
   ],
-  "feature": 0.201
+  "feature": 0.106
  },
  "league": {
-  "name": "WHL",
-  "table": "WHL",
-  "coef": 0.141,
+  "name": "NCAA",
+  "table": "NCAA",
+  "coef": 0.194,
   "source": "https://hockeystats.com/methodology/nhle (Patrick Bacon, Network NHLe, points)"
  },
  "performance": {
@@ -132,113 +132,113 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 18,
-   "gp": 9,
-   "value": 0.4444,
-   "percentile": 38.9,
-   "percentileAllAges": 48.1,
+   "gp": 11,
+   "value": 0.5455,
+   "percentile": 50.0,
+   "percentileAllAges": 63.4,
    "allAgesN": 2159
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 56.8,
-  "median": 58.0,
-  "p75": 92.1,
-  "p90": 96.8,
-  "pRegular": 0.8,
-  "pTopLine": 0.42,
-  "pAboveAvg": 0.62,
-  "pElite": 0.32,
-  "poolN": 1374,
+  "expected": 31.1,
+  "median": 12.2,
+  "p75": 65.7,
+  "p90": 83.9,
+  "pRegular": 0.56,
+  "pTopLine": 0.22,
+  "pAboveAvg": 0.32,
+  "pElite": 0.06,
+  "poolN": 1362,
   "group": "F",
-  "age": 17,
+  "age": 18,
   "pickWeight": 1.0,
-  "tier": "elite",
+  "tier": "above average",
   "pCeiling": 0.32,
   "featureBand": [
-   0.151,
-   0.226
+   0.074,
+   0.146
   ],
   "examples": [
    {
-    "name": "David Pastr\u0148\u00e1k",
-    "year": 2014,
-    "pick": 25,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.206,
-    "peak": 99.0,
-    "tier": "elite",
-    "nhlGp": 837
-   },
-   {
-    "name": "Nikolai Goldobin",
-    "year": 2014,
-    "pick": 27,
-    "league": "OHL",
-    "feature": 0.202,
-    "peak": 48.4,
+    "name": "Henrik Borgstr\u00f6m",
+    "year": 2016,
+    "pick": 23,
+    "league": "U20 SM-liiga",
+    "feature": 0.114,
+    "peak": 36.8,
     "tier": "below average",
-    "nhlGp": 125
+    "nhlGp": 111
    },
    {
-    "name": "Hunter Shinkaruk",
+    "name": "Riley Sheahan",
+    "year": 2010,
+    "pick": 21,
+    "league": "NCAA",
+    "feature": 0.107,
+    "peak": 68.7,
+    "tier": "above average",
+    "nhlGp": 637
+   },
+   {
+    "name": "Mark Jankowski",
+    "year": 2012,
+    "pick": 21,
+    "league": "NCAA",
+    "feature": 0.103,
+    "peak": 44.8,
+    "tier": "below average",
+    "nhlGp": 485
+   },
+   {
+    "name": "Fr\u00e9d\u00e9rik Gauthier",
     "year": 2013,
-    "pick": 24,
-    "league": "WHL",
-    "feature": 0.189,
+    "pick": 21,
+    "league": "QMJHL",
+    "feature": 0.101,
+    "peak": 9.6,
+    "tier": "replacement level",
+    "nhlGp": 178
+   },
+   {
+    "name": "German Rubtsov",
+    "year": 2016,
+    "pick": 22,
+    "league": "QMJHL",
+    "feature": 0.091,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 15
+    "nhlGp": 4
    },
    {
-    "name": "Kailer Yamamoto",
-    "year": 2017,
+    "name": "Tyler Biggs",
+    "year": 2011,
     "pick": 22,
-    "league": "WHL",
-    "feature": 0.215,
-    "peak": 54.5,
-    "tier": "above average",
-    "nhlGp": 374
+    "league": "NCAA",
+    "feature": 0.089,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    },
    {
-    "name": "Isac Lundestr\u00f6m",
-    "year": 2018,
+    "name": "Simon Holmstr\u00f6m",
+    "year": 2019,
     "pick": 23,
-    "league": "SHL",
-    "feature": 0.184,
-    "peak": 35.9,
-    "tier": "below average",
-    "nhlGp": 405
-   },
-   {
-    "name": "Kyle Connor",
-    "year": 2015,
-    "pick": 17,
-    "league": "USHL",
-    "feature": 0.204,
-    "peak": 98.0,
-    "tier": "elite",
-    "nhlGp": 698
-   },
-   {
-    "name": "Robby Fabbri",
-    "year": 2014,
-    "pick": 21,
-    "league": "OHL",
-    "feature": 0.216,
-    "peak": 70.2,
+    "league": "AHL",
+    "feature": 0.127,
+    "peak": 65.7,
     "tier": "above average",
-    "nhlGp": 463
+    "nhlGp": 281
    },
    {
-    "name": "Yevgeni Kuznetsov",
+    "name": "Kevin Hayes",
     "year": 2010,
-    "pick": 26,
-    "league": "KHL",
-    "feature": 0.186,
-    "peak": 96.8,
-    "tier": "elite",
-    "nhlGp": 743
+    "pick": 24,
+    "league": "NCAA",
+    "feature": 0.088,
+    "peak": 83.9,
+    "tier": "top-line",
+    "nhlGp": 805
    }
   ]
  },
@@ -257,35 +257,35 @@
  },
  "blend": {
   "w": 0.5,
-  "sinceDraft": -1,
+  "sinceDraft": 0,
   "pedigreeExpected": 42.0,
-  "cohortExpected": 56.8,
-  "expected": 49.4,
+  "cohortExpected": 31.1,
+  "expected": 36.5,
   "tier": "below average"
  },
  "trajectory": {
   "from": {
-   "season": "2024-2025",
-   "league": "NTDP",
-   "feature": 0.099,
-   "gp": 56
-  },
-  "to": {
    "season": "2025-2026",
    "league": "WHL",
    "feature": 0.201,
    "gp": 68
   },
-  "delta": 0.102
+  "to": {
+   "season": "2026-2027",
+   "league": "NCAA",
+   "feature": 0.106,
+   "gp": 11
+  },
+  "delta": -0.095
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 68,
-  "season": "2025-2026"
+  "gp": 11,
+  "season": "2026-2027"
  },
- "rank": 2,
- "score": 49.4,
+ "rank": 4,
+ "score": 36.5,
  "rankStart": 3,
  "rankStartDate": "2026-10-06"
 }

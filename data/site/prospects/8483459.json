@@ -31,7 +31,7 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 15,
+   "gp": 17,
    "g": 5,
    "a": 7,
    "pts": 12,
@@ -89,7 +89,7 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 15,
+     "gp": 17,
      "g": 5,
      "a": 7,
      "pts": 12,
@@ -218,18 +218,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 15,
+  "gp": 17,
   "g": 5,
   "a": 7,
   "pts": 12,
-  "pgp": 0.8,
-  "lineGp": 15,
-  "nhle": 0.311,
-  "nhlePace": 26.1,
+  "pgp": 0.706,
+  "lineGp": 17,
+  "nhle": 0.275,
+  "nhlePace": 23.1,
   "lines": [
    "AHL"
   ],
-  "feature": 0.311
+  "feature": 0.275
  },
  "league": {
   "name": "AHL",
@@ -254,20 +254,20 @@
    "season": "2026-2027",
    "ageBucket": "U24",
    "cohortN": 52,
-   "gp": 15,
-   "value": 0.8,
-   "percentile": 73.1,
-   "percentileAllAges": 75.7,
+   "gp": 17,
+   "value": 0.7059,
+   "percentile": 71.2,
+   "percentileAllAges": 72.1,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 12.3,
+  "expected": 15.1,
   "median": 0.0,
-  "p75": 15.6,
-  "p90": 50.8,
-  "pRegular": 0.44,
+  "p75": 32.3,
+  "p90": 51.7,
+  "pRegular": 0.34,
   "pTopLine": 0.04,
   "pAboveAvg": 0.1,
   "pElite": 0.02,
@@ -275,92 +275,92 @@
   "group": "F",
   "age": 22,
   "pickWeight": 0.0,
-  "tier": "replacement level",
-  "pCeiling": 0.44,
+  "tier": "below average",
+  "pCeiling": 0.28,
   "featureBand": [
-   0.287,
-   0.334
+   0.262,
+   0.288
   ],
   "examples": [
    {
-    "name": "Mason Shaw",
-    "year": 2017,
-    "pick": 97,
-    "league": "AHL",
-    "feature": 0.311,
-    "peak": 23.2,
-    "tier": "replacement level",
-    "nhlGp": 82
-   },
-   {
-    "name": "Rafa\u00ebl Harvey-Pinard",
+    "name": "Samuel Poulin",
     "year": 2019,
-    "pick": 201,
+    "pick": 21,
     "league": "AHL",
-    "feature": 0.312,
-    "peak": 12.8,
-    "tier": "replacement level",
-    "nhlGp": 85
+    "feature": 0.274,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 15
    },
    {
-    "name": "Gr\u00e9gory Hofmann",
+    "name": "Brett Ritchie",
     "year": 2011,
-    "pick": 103,
-    "league": "NLA",
-    "feature": 0.309,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 24
-   },
-   {
-    "name": "Pontus \u00c5berg",
-    "year": 2012,
-    "pick": 37,
+    "pick": 44,
     "league": "AHL",
-    "feature": 0.313,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 132
+    "feature": 0.277,
+    "peak": 32.3,
+    "tier": "below average",
+    "nhlGp": 391
    },
    {
-    "name": "Kole Lind",
-    "year": 2017,
-    "pick": 33,
-    "league": "AHL",
-    "feature": 0.313,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 31
-   },
-   {
-    "name": "Jerome Flaake",
-    "year": 2008,
-    "pick": 130,
-    "league": "DEL",
-    "feature": 0.305,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "David Labrecque",
-    "year": 2009,
-    "pick": 153,
-    "league": "Ligue Magnus",
-    "feature": 0.317,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Vitaly Abramov",
+    "name": "Fredrik Karlstr\u00f6m",
     "year": 2016,
-    "pick": 65,
-    "league": "AHL",
-    "feature": 0.318,
+    "pick": 90,
+    "league": "SHL",
+    "feature": 0.277,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 5
+    "nhlGp": 8
+   },
+   {
+    "name": "Andrei Svetlakov",
+    "year": 2017,
+    "pick": 178,
+    "league": "KHL",
+    "feature": 0.273,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Saku M\u00e4enalanen",
+    "year": 2013,
+    "pick": 125,
+    "league": "Liiga",
+    "feature": 0.272,
+    "peak": 3.7,
+    "tier": "replacement level",
+    "nhlGp": 98
+   },
+   {
+    "name": "Tommy Novak",
+    "year": 2015,
+    "pick": 85,
+    "league": "AHL",
+    "feature": 0.272,
+    "peak": 82.8,
+    "tier": "top-line",
+    "nhlGp": 288
+   },
+   {
+    "name": "Alex Turcotte",
+    "year": 2019,
+    "pick": 5,
+    "league": "AHL",
+    "feature": 0.278,
+    "peak": 36.5,
+    "tier": "below average",
+    "nhlGp": 164
+   },
+   {
+    "name": "Graeme Clarke",
+    "year": 2019,
+    "pick": 80,
+    "league": "AHL",
+    "feature": 0.272,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 3
    }
   ]
  },
@@ -381,8 +381,8 @@
   "w": 0.0,
   "sinceDraft": 4,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 12.3,
-  "expected": 12.3,
+  "cohortExpected": 15.1,
+  "expected": 15.1,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -395,19 +395,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.311,
-   "gp": 15
+   "feature": 0.275,
+   "gp": 17
   },
-  "delta": 0.145
+  "delta": 0.109
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 15,
+  "gp": 17,
   "season": "2026-2027"
  },
- "rank": 15,
- "score": 12.3,
+ "rank": 13,
+ "score": 15.1,
  "rankStart": 20,
  "rankStartDate": "2026-10-06"
 }
