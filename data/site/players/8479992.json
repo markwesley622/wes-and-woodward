@@ -67,23 +67,23 @@
   "shots": 29,
   "shootingPct": 0.034483,
   "toiPerGame": 928.1,
-  "ixG": 4.21,
-  "goalsAboveExpected": -3.21,
-  "gameScore": 4.16,
+  "ixG": 4.19,
+  "goalsAboveExpected": -3.19,
+  "gameScore": 4.08,
   "fiveOnFive": {
    "icetimeMinutes": 238.8,
    "onIceXgPct": 0.51,
    "onIceCorsiPct": 0.47,
-   "ixgPer60": 0.844,
-   "pctl_onIceXgPct": 19.6,
-   "pctl_ixgPer60": 73.9,
+   "ixgPer60": 0.839,
+   "pctl_onIceXgPct": 36.8,
+   "pctl_ixgPer60": 70.6,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": -0.05,
-   "percentile": 25
+   "percentile": 24
   },
   "Offense": {
    "value": -2.1,
@@ -91,27 +91,27 @@
   },
   "Defense": {
    "value": -0.6,
-   "percentile": 29
+   "percentile": 28
   },
   "Net": {
    "value": -2.7,
-   "percentile": 9
+   "percentile": 10
   }
  },
  "score": {
   "value": 31.7,
   "low": 21.7,
   "high": 43.7,
-  "isolated": 29.4,
-  "production": 32.7,
+  "isolated": 29.9,
+  "production": 32.5,
   "weightIsolated": 0.245,
   "sustainable": 35.3,
-  "results": 23.5,
-  "percentile": 24.6,
+  "results": 24.5,
+  "percentile": 22.8,
   "goalsBlended": -1.2,
   "goalsSustainable": -0.7,
-  "goalsResults": -2.0,
-  "gameScore": 1.57,
+  "goalsResults": -1.9,
+  "gameScore": 1.54,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -139,7 +139,7 @@
   },
   "reliability": 0.141,
   "reliabilityProduction": 0.514,
-  "pool": 670,
+  "pool": 672,
   "minGp": 6,
   "group": "skaters",
   "position": "F",
@@ -148,7 +148,7 @@
     "key": "EVO",
     "label": "Even-strength offense",
     "sustainable": -0.1,
-    "results": -1.1,
+    "results": -1.0,
     "shrink": 0.17,
     "repeat": 0.465,
     "counted": -0.5
@@ -210,66 +210,66 @@
    "CF/60": 0.68,
    "CA/60": 1.22
   },
-  "rank": 505,
+  "rank": 519,
   "neighbors": [
    {
-    "rank": 503,
-    "name": "Nico Sturm",
-    "team": "MIN",
-    "gp": 13,
-    "pos": "C",
-    "value": 31.8,
-    "isolated": 37.8,
-    "production": 31.2,
-    "weight": 0.12,
+    "rank": 517,
+    "name": "Michael Bunting",
+    "team": "PHI",
+    "gp": 12,
+    "pos": "L",
+    "value": 31.7,
+    "isolated": 38.4,
+    "production": 31.1,
+    "weight": 0.11,
     "isMe": false
    },
    {
-    "rank": 504,
-    "name": "David Perron",
-    "team": "DAL",
-    "gp": 7,
-    "pos": "L",
-    "value": 31.8,
-    "isolated": 36.6,
-    "production": 31.6,
+    "rank": 518,
+    "name": "Sam Carrick",
+    "team": "BUF",
+    "gp": 10,
+    "pos": "C",
+    "value": 31.7,
+    "isolated": 35.6,
+    "production": 31.5,
     "weight": 0.07,
     "isMe": false
    },
    {
-    "rank": 505,
+    "rank": 519,
     "name": "Michael Rasmussen",
     "team": "DET",
     "gp": 20,
     "pos": "C",
     "value": 31.7,
-    "isolated": 29.4,
-    "production": 32.7,
+    "isolated": 29.9,
+    "production": 32.5,
     "weight": 0.25,
     "isMe": true
    },
    {
-    "rank": 506,
+    "rank": 520,
     "name": "Carter Mazur",
     "team": "DET",
     "gp": 14,
     "pos": "L",
-    "value": 31.7,
-    "isolated": 29.6,
-    "production": 32.2,
+    "value": 31.6,
+    "isolated": 29.7,
+    "production": 32.1,
     "weight": 0.12,
     "isMe": false
    },
    {
-    "rank": 507,
-    "name": "Cam Fowler",
-    "team": "STL",
-    "gp": 20,
-    "pos": "D",
-    "value": 31.7,
-    "isolated": 32.8,
-    "production": 31.4,
-    "weight": 0.31,
+    "rank": 521,
+    "name": "Nico Sturm",
+    "team": "MIN",
+    "gp": 13,
+    "pos": "C",
+    "value": 31.6,
+    "isolated": 37.5,
+    "production": 31.0,
+    "weight": 0.12,
     "isMe": false
    }
   ],
@@ -564,6 +564,16 @@
    "off": 0.316,
    "def": -0.077,
    "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Turcotte",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.04,
+   "def": -0.016,
+   "toi": 59,
    "det": false,
    "me": false
   },
@@ -1764,6 +1774,16 @@
    "off": -0.159,
    "def": -0.001,
    "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Timmins",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.003,
+   "def": -0.144,
+   "toi": 64,
    "det": false,
    "me": false
   },
@@ -7102,19 +7122,19 @@
  ],
  "comps": [
   {
-   "name": "Adam Lowry",
-   "team": "WPG",
+   "name": "Yegor Sharangovich",
+   "team": "CGY",
    "pos": "C",
-   "gp": 21,
-   "distance": 1.08,
-   "value": 38.3,
-   "goals": -0.2,
+   "gp": 22,
+   "distance": 1.09,
+   "value": 29.7,
+   "goals": -1.2,
    "components": {
-    "EVO": -0.3,
-    "EVD": -0.3,
+    "EVO": -0.8,
+    "EVD": -0.6,
     "PPO": 0.0,
-    "SHD": -0.5,
-    "Pens": 0.9
+    "SHD": -0.4,
+    "Pens": 0.6
    }
   },
   {
@@ -7122,11 +7142,11 @@
    "team": "UTA",
    "pos": "C",
    "gp": 22,
-   "distance": 1.17,
-   "value": 43.5,
-   "goals": 0.4,
+   "distance": 1.11,
+   "value": 42.8,
+   "goals": 0.3,
    "components": {
-    "EVO": 0.8,
+    "EVO": 0.7,
     "EVD": -0.1,
     "PPO": 0.0,
     "SHD": -0.6,
@@ -7134,18 +7154,18 @@
    }
   },
   {
-   "name": "Yegor Sharangovich",
-   "team": "CGY",
+   "name": "Mark Kastelic",
+   "team": "BOS",
    "pos": "C",
    "gp": 21,
-   "distance": 1.19,
-   "value": 36.2,
-   "goals": -0.4,
+   "distance": 1.31,
+   "value": 40.5,
+   "goals": 0.1,
    "components": {
     "EVO": -0.3,
-    "EVD": -0.3,
-    "PPO": -0.0,
-    "SHD": -0.4,
+    "EVD": 0.1,
+    "PPO": 0.0,
+    "SHD": -0.3,
     "Pens": 0.6
    }
   }
@@ -7608,9 +7628,9 @@
    "gf": 0.0,
    "ga": 1.0,
    "blocks": 0.0,
-   "gameScore": -1.14,
+   "gameScore": -1.17,
    "gameScoreParts": {
-    "moneypuck": -0.25,
+    "moneypuck": -0.325,
     "hockeystatcards": -2.02
    }
   },
@@ -7669,5 +7689,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-17T05:31:44-08:00"
+ "updatedAt": "2026-11-18T05:58:14-08:00"
 }

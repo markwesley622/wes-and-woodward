@@ -69,29 +69,29 @@
   "toiPerGame": 928.4,
   "ixG": 1.62,
   "goalsAboveExpected": 1.38,
-  "gameScore": 4.06,
+  "gameScore": 4.16,
   "fiveOnFive": {
    "icetimeMinutes": 178.7,
    "onIceXgPct": 0.48,
-   "onIceCorsiPct": 0.45,
+   "onIceCorsiPct": 0.46,
    "ixgPer60": 0.463,
-   "pctl_onIceXgPct": 17.4,
-   "pctl_ixgPer60": 6.5,
+   "pctl_onIceXgPct": 25.0,
+   "pctl_ixgPer60": 5.9,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": 0.08,
-   "percentile": 34
+   "percentile": 33
   },
   "Offense": {
-   "value": -0.6,
-   "percentile": 42
+   "value": -0.7,
+   "percentile": 41
   },
   "Defense": {
    "value": -1.0,
-   "percentile": 18
+   "percentile": 19
   },
   "Net": {
    "value": -1.6,
@@ -99,19 +99,19 @@
   }
  },
  "score": {
-  "value": 37.1,
-  "low": 25.5,
-  "high": 50.4,
-  "isolated": 45.3,
-  "production": 35.3,
+  "value": 36.9,
+  "low": 25.4,
+  "high": 50.2,
+  "isolated": 45.2,
+  "production": 35.2,
   "weightIsolated": 0.18,
-  "sustainable": 45.8,
-  "results": 45.3,
-  "percentile": 34.9,
+  "sustainable": 45.7,
+  "results": 45.2,
+  "percentile": 34.2,
   "goalsBlended": 0.6,
   "goalsSustainable": 0.6,
   "goalsResults": 0.6,
-  "gameScore": 2.63,
+  "gameScore": 2.68,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -139,7 +139,7 @@
   },
   "reliability": 0.104,
   "reliabilityProduction": 0.425,
-  "pool": 670,
+  "pool": 672,
   "minGp": 6,
   "group": "skaters",
   "position": "F",
@@ -210,66 +210,66 @@
    "CF/60": -0.87,
    "CA/60": 0.05
   },
-  "rank": 436,
+  "rank": 442,
   "neighbors": [
    {
-    "rank": 434,
-    "name": "Raphael Lavoie",
-    "team": "VGK",
-    "gp": 12,
-    "pos": "C",
-    "value": 37.1,
-    "isolated": 41.4,
-    "production": 36.6,
-    "weight": 0.11,
+    "rank": 440,
+    "name": "Florian Xhekaj",
+    "team": "MTL",
+    "gp": 9,
+    "pos": "L",
+    "value": 37.0,
+    "isolated": 47.8,
+    "production": 36.2,
+    "weight": 0.06,
     "isMe": false
    },
    {
-    "rank": 435,
-    "name": "Dylan Coghlan",
-    "team": "VGK",
-    "gp": 14,
-    "pos": "D",
-    "value": 37.1,
-    "isolated": 29.6,
-    "production": 38.8,
-    "weight": 0.17,
+    "rank": 441,
+    "name": "Reid Schaefer",
+    "team": "NSH",
+    "gp": 15,
+    "pos": "L",
+    "value": 36.9,
+    "isolated": 47.6,
+    "production": 35.3,
+    "weight": 0.14,
     "isMe": false
    },
    {
-    "rank": 436,
+    "rank": 442,
     "name": "J.T. Compher",
     "team": "DET",
     "gp": 14,
     "pos": "L",
-    "value": 37.1,
-    "isolated": 45.3,
-    "production": 35.3,
+    "value": 36.9,
+    "isolated": 45.2,
+    "production": 35.2,
     "weight": 0.18,
     "isMe": true
    },
    {
-    "rank": 437,
-    "name": "Darren Raddysh",
-    "team": "TOR",
-    "gp": 22,
-    "pos": "D",
-    "value": 37.1,
-    "isolated": 33.3,
-    "production": 39.4,
-    "weight": 0.38,
+    "rank": 443,
+    "name": "Frank Vatrano",
+    "team": "ANA",
+    "gp": 9,
+    "pos": "R",
+    "value": 36.9,
+    "isolated": 44.1,
+    "production": 36.2,
+    "weight": 0.09,
     "isMe": false
    },
    {
-    "rank": 438,
-    "name": "Noah Dobson",
-    "team": "MTL",
-    "gp": 21,
-    "pos": "D",
-    "value": 37.0,
-    "isolated": 14.0,
-    "production": 52.3,
-    "weight": 0.33,
+    "rank": 444,
+    "name": "Stephen Halliday",
+    "team": "OTT",
+    "gp": 22,
+    "pos": "C",
+    "value": 36.8,
+    "isolated": 34.1,
+    "production": 37.5,
+    "weight": 0.2,
     "isMe": false
    }
   ],
@@ -564,6 +564,16 @@
    "off": 0.316,
    "def": -0.077,
    "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Turcotte",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.04,
+   "def": -0.016,
+   "toi": 59,
    "det": false,
    "me": false
   },
@@ -1764,6 +1774,16 @@
    "off": -0.159,
    "def": -0.001,
    "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Timmins",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.003,
+   "def": -0.144,
+   "toi": 64,
    "det": false,
    "me": false
   },
@@ -7147,51 +7167,51 @@
  ],
  "comps": [
   {
-   "name": "Cole Knuble",
-   "team": "PHI",
-   "pos": "R",
-   "gp": 10,
-   "distance": 0.35,
-   "value": 48.2,
-   "goals": 0.9,
+   "name": "Marcus Foligno",
+   "team": "MIN",
+   "pos": "L",
+   "gp": 9,
+   "distance": 0.36,
+   "value": 41.9,
+   "goals": 0.2,
    "components": {
-    "EVO": 1.1,
-    "EVD": -0.4,
+    "EVO": 0.5,
+    "EVD": -0.5,
     "PPO": 0.0,
     "SHD": 0.0,
     "Pens": 0.2
    }
   },
   {
-   "name": "Marcus Foligno",
-   "team": "MIN",
-   "pos": "L",
-   "gp": 8,
-   "distance": 0.58,
-   "value": 37.1,
-   "goals": -0.3,
+   "name": "Cole Knuble",
+   "team": "PHI",
+   "pos": "R",
+   "gp": 11,
+   "distance": 0.56,
+   "value": 46.1,
+   "goals": 0.7,
    "components": {
-    "EVO": 0.3,
-    "EVD": -0.6,
+    "EVO": 1.4,
+    "EVD": -0.7,
     "PPO": 0.0,
     "SHD": 0.0,
     "Pens": 0.0
    }
   },
   {
-   "name": "Stefan Noesen",
-   "team": "N.J",
+   "name": "Jonatan Berggren",
+   "team": "STL",
    "pos": "R",
-   "gp": 7,
-   "distance": 0.62,
-   "value": 49.3,
-   "goals": 1.0,
+   "gp": 18,
+   "distance": 0.58,
+   "value": 35.8,
+   "goals": -0.5,
    "components": {
-    "EVO": 1.6,
-    "EVD": -0.5,
-    "PPO": 0.0,
-    "SHD": 0.0,
-    "Pens": 0.0
+    "EVO": 0.2,
+    "EVD": -1.0,
+    "PPO": 0.1,
+    "SHD": 0.1,
+    "Pens": 0.2
    }
   }
  ],
@@ -7509,9 +7529,9 @@
    "gf": 1.0,
    "ga": 1.0,
    "blocks": 1.0,
-   "gameScore": 0.65,
+   "gameScore": 0.7,
    "gameScoreParts": {
-    "moneypuck": 0.56,
+    "moneypuck": 0.66,
     "hockeystatcards": 0.73
    }
   },
@@ -7570,5 +7590,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-17T05:29:33-08:00"
+ "updatedAt": "2026-11-18T05:39:15-08:00"
 }

@@ -69,21 +69,21 @@
   "toiPerGame": 565.1,
   "ixG": 1.81,
   "goalsAboveExpected": -0.81,
-  "gameScore": 2.72,
+  "gameScore": 2.77,
   "fiveOnFive": {
    "icetimeMinutes": 127.9,
    "onIceXgPct": 0.39,
-   "onIceCorsiPct": 0.44,
+   "onIceCorsiPct": 0.45,
    "ixgPer60": 0.807,
-   "pctl_onIceXgPct": 4.3,
-   "pctl_ixgPer60": 60.9,
+   "pctl_onIceXgPct": 2.9,
+   "pctl_ixgPer60": 67.6,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": -0.0,
-   "percentile": 28
+   "percentile": 27
   },
   "Offense": {
    "value": -0.8,
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": -1.2,
-   "percentile": 14
+   "percentile": 15
   },
   "Net": {
    "value": -1.9,
@@ -99,19 +99,19 @@
   }
  },
  "score": {
-  "value": 31.7,
-  "low": 21.2,
-  "high": 44.5,
-  "isolated": 29.6,
-  "production": 32.2,
+  "value": 31.6,
+  "low": 21.1,
+  "high": 44.4,
+  "isolated": 29.7,
+  "production": 32.1,
   "weightIsolated": 0.115,
-  "sustainable": 27.3,
-  "results": 37.0,
-  "percentile": 24.5,
+  "sustainable": 27.5,
+  "results": 37.1,
+  "percentile": 22.6,
   "goalsBlended": -1.2,
   "goalsSustainable": -1.8,
   "goalsResults": -0.3,
-  "gameScore": 1.35,
+  "gameScore": 1.37,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -139,7 +139,7 @@
   },
   "reliability": 0.066,
   "reliabilityProduction": 0.31,
-  "pool": 670,
+  "pool": 672,
   "minGp": 6,
   "group": "skaters",
   "position": "F",
@@ -210,66 +210,66 @@
    "CF/60": -1.09,
    "CA/60": 1.04
   },
-  "rank": 506,
+  "rank": 520,
   "neighbors": [
    {
-    "rank": 504,
-    "name": "David Perron",
-    "team": "DAL",
-    "gp": 7,
-    "pos": "L",
-    "value": 31.8,
-    "isolated": 36.6,
-    "production": 31.6,
+    "rank": 518,
+    "name": "Sam Carrick",
+    "team": "BUF",
+    "gp": 10,
+    "pos": "C",
+    "value": 31.7,
+    "isolated": 35.6,
+    "production": 31.5,
     "weight": 0.07,
     "isMe": false
    },
    {
-    "rank": 505,
+    "rank": 519,
     "name": "Michael Rasmussen",
     "team": "DET",
     "gp": 20,
     "pos": "C",
     "value": 31.7,
-    "isolated": 29.4,
-    "production": 32.8,
+    "isolated": 29.9,
+    "production": 32.5,
     "weight": 0.25,
     "isMe": false
    },
    {
-    "rank": 506,
+    "rank": 520,
     "name": "Carter Mazur",
     "team": "DET",
     "gp": 14,
     "pos": "L",
-    "value": 31.7,
-    "isolated": 29.6,
-    "production": 32.2,
+    "value": 31.6,
+    "isolated": 29.7,
+    "production": 32.1,
     "weight": 0.12,
     "isMe": true
    },
    {
-    "rank": 507,
-    "name": "Cam Fowler",
-    "team": "STL",
-    "gp": 20,
-    "pos": "D",
-    "value": 31.7,
-    "isolated": 32.8,
-    "production": 31.4,
-    "weight": 0.31,
+    "rank": 521,
+    "name": "Nico Sturm",
+    "team": "MIN",
+    "gp": 13,
+    "pos": "C",
+    "value": 31.6,
+    "isolated": 37.5,
+    "production": 31.0,
+    "weight": 0.12,
     "isMe": false
    },
    {
-    "rank": 508,
-    "name": "Adam Klapka",
-    "team": "CGY",
-    "gp": 21,
-    "pos": "R",
-    "value": 31.7,
-    "isolated": 28.6,
-    "production": 32.7,
-    "weight": 0.21,
+    "rank": 522,
+    "name": "Dakota Mermis",
+    "team": "TOR",
+    "gp": 7,
+    "pos": "D",
+    "value": 31.5,
+    "isolated": 43.0,
+    "production": 30.7,
+    "weight": 0.08,
     "isMe": false
    }
   ],
@@ -564,6 +564,16 @@
    "off": 0.316,
    "def": -0.077,
    "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Turcotte",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.04,
+   "def": -0.016,
+   "toi": 59,
    "det": false,
    "me": false
   },
@@ -1764,6 +1774,16 @@
    "off": -0.159,
    "def": -0.001,
    "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Timmins",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.003,
+   "def": -0.144,
+   "toi": 64,
    "det": false,
    "me": false
   },
@@ -7030,16 +7050,32 @@
    "name": "Adam Klapka",
    "team": "CGY",
    "pos": "R",
-   "gp": 21,
-   "distance": 0.69,
-   "value": 28.6,
-   "goals": -1.3,
+   "gp": 22,
+   "distance": 0.6,
+   "value": 23.7,
+   "goals": -2.0,
    "components": {
-    "EVO": 0.4,
-    "EVD": -1.4,
+    "EVO": -0.2,
+    "EVD": -1.9,
     "PPO": 0.2,
     "SHD": 0.0,
-    "Pens": -0.4
+    "Pens": -0.2
+   }
+  },
+  {
+   "name": "Jonatan Berggren",
+   "team": "STL",
+   "pos": "R",
+   "gp": 18,
+   "distance": 0.91,
+   "value": 35.8,
+   "goals": -0.5,
+   "components": {
+    "EVO": 0.2,
+    "EVD": -1.0,
+    "PPO": 0.1,
+    "SHD": 0.1,
+    "Pens": 0.2
    }
   },
   {
@@ -7047,31 +7083,15 @@
    "team": "UTA",
    "pos": "L",
    "gp": 13,
-   "distance": 0.94,
-   "value": 30.2,
-   "goals": -1.1,
+   "distance": 0.93,
+   "value": 30.0,
+   "goals": -1.2,
    "components": {
-    "EVO": 0.0,
+    "EVO": -0.0,
     "EVD": -0.8,
     "PPO": -0.1,
     "SHD": 0.0,
     "Pens": -0.2
-   }
-  },
-  {
-   "name": "Kaapo Kakko",
-   "team": "SEA",
-   "pos": "R",
-   "gp": 18,
-   "distance": 1.01,
-   "value": 46.7,
-   "goals": 0.7,
-   "components": {
-    "EVO": 1.9,
-    "EVD": -1.1,
-    "PPO": -0.1,
-    "SHD": 0.0,
-    "Pens": 0.0
    }
   }
  ],
@@ -7389,9 +7409,9 @@
    "gf": 1.0,
    "ga": 1.0,
    "blocks": 2.0,
-   "gameScore": 0.52,
+   "gameScore": 0.54,
    "gameScoreParts": {
-    "moneypuck": 0.35,
+    "moneypuck": 0.4,
     "hockeystatcards": 0.69
    }
   },
@@ -7450,5 +7470,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-17T05:31:32-08:00"
+ "updatedAt": "2026-11-18T05:57:59-08:00"
 }

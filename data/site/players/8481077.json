@@ -85,15 +85,15 @@
    "onIceXgPct": 0.44,
    "onIceCorsiPct": 0.42,
    "ixgPer60": 0.725,
-   "pctl_onIceXgPct": 10.9,
-   "pctl_ixgPer60": 37.0,
+   "pctl_onIceXgPct": 10.3,
+   "pctl_ixgPer60": 41.2,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": 0.03,
-   "percentile": 30
+   "percentile": 29
   },
   "Offense": {
    "value": -0.7,
@@ -105,19 +105,19 @@
   },
   "Net": {
    "value": -0.8,
-   "percentile": 43
+   "percentile": 42
   }
  },
  "score": {
   "value": 29.4,
-  "low": 22.0,
-  "high": 38.2,
+  "low": 21.9,
+  "high": 38.1,
   "isolated": 39.1,
-  "production": 29.4,
+  "production": 29.3,
   "weightIsolated": 0.031,
   "sustainable": 40.8,
-  "results": 37.9,
-  "percentile": 19.1,
+  "results": 38.0,
+  "percentile": 18.5,
   "goalsBlended": -0.1,
   "goalsSustainable": 0.0,
   "goalsResults": -0.2,
@@ -149,7 +149,7 @@
   },
   "reliability": 0.018,
   "reliabilityProduction": 0.103,
-  "pool": 670,
+  "pool": 672,
   "minGp": 6,
   "group": "skaters",
   "position": "F",
@@ -513,6 +513,16 @@
    "off": 0.316,
    "def": -0.077,
    "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Turcotte",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.04,
+   "def": -0.016,
+   "toi": 59,
    "det": false,
    "me": false
   },
@@ -1713,6 +1723,16 @@
    "off": -0.159,
    "def": -0.001,
    "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Timmins",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.003,
+   "def": -0.144,
+   "toi": 64,
    "det": false,
    "me": false
   },
@@ -7031,19 +7051,19 @@
  ],
  "comps": [
   {
-   "name": "Mitchell Chaffee",
-   "team": "NYI",
+   "name": "Sam Colangelo",
+   "team": "ANA",
    "pos": "R",
-   "gp": 11,
-   "distance": 0.24,
-   "value": 42.9,
-   "goals": 0.3,
+   "gp": 16,
+   "distance": 0.36,
+   "value": 34.6,
+   "goals": -0.6,
    "components": {
-    "EVO": 0.2,
-    "EVD": -0.0,
-    "PPO": 0.0,
+    "EVO": -0.7,
+    "EVD": -0.2,
+    "PPO": -0.0,
     "SHD": 0.0,
-    "Pens": 0.2
+    "Pens": 0.3
    }
   },
   {
@@ -7068,7 +7088,7 @@
    "pos": "R",
    "gp": 6,
    "distance": 0.42,
-   "value": 38.0,
+   "value": 38.4,
    "goals": -0.2,
    "components": {
     "EVO": -0.3,
@@ -7190,5 +7210,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-11-17T05:31:20-08:00"
+ "updatedAt": "2026-11-18T05:57:46-08:00"
 }

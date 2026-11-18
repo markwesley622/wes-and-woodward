@@ -69,14 +69,14 @@
   "toiPerGame": 1119.8,
   "ixG": 6.55,
   "goalsAboveExpected": 0.45,
-  "gameScore": 13.79,
+  "gameScore": 13.74,
   "fiveOnFive": {
    "icetimeMinutes": 301.2,
    "onIceXgPct": 0.57,
-   "onIceCorsiPct": 0.52,
+   "onIceCorsiPct": 0.51,
    "ixgPer60": 0.801,
-   "pctl_onIceXgPct": 69.6,
-   "pctl_ixgPer60": 54.3,
+   "pctl_onIceXgPct": 76.5,
+   "pctl_ixgPer60": 63.2,
    "qualifiesForPercentiles": true
   }
  },
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 1.6,
-   "percentile": 90
+   "percentile": 89
   },
   "Net": {
    "value": 2.9,
@@ -99,19 +99,19 @@
   }
  },
  "score": {
-  "value": 72.6,
-  "low": 61.9,
-  "high": 81.1,
-  "isolated": 67.6,
-  "production": 73.0,
+  "value": 71.8,
+  "low": 61.0,
+  "high": 80.5,
+  "isolated": 67.9,
+  "production": 71.8,
   "weightIsolated": 0.298,
-  "sustainable": 68.5,
-  "results": 63.1,
-  "percentile": 84.6,
-  "goalsBlended": 3.0,
-  "goalsSustainable": 3.4,
-  "goalsResults": 2.5,
-  "gameScore": 17.39,
+  "sustainable": 68.7,
+  "results": 63.6,
+  "percentile": 84.2,
+  "goalsBlended": 3.1,
+  "goalsSustainable": 3.5,
+  "goalsResults": 2.6,
+  "gameScore": 17.36,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -139,7 +139,7 @@
   },
   "reliability": 0.172,
   "reliabilityProduction": 0.572,
-  "pool": 670,
+  "pool": 672,
   "minGp": 6,
   "group": "skaters",
   "position": "F",
@@ -148,7 +148,7 @@
     "key": "EVO",
     "label": "Even-strength offense",
     "sustainable": 2.6,
-    "results": 2.3,
+    "results": 2.4,
     "shrink": 0.2,
     "repeat": 0.465,
     "counted": 2.5
@@ -174,11 +174,11 @@
    {
     "key": "SHD",
     "label": "Penalty kill",
-    "sustainable": -0.3,
+    "sustainable": -0.2,
     "results": -0.2,
     "shrink": 0.07,
     "repeat": 0.201,
-    "counted": -0.3
+    "counted": -0.2
    },
    {
     "key": "Pens",
@@ -192,7 +192,7 @@
   ],
   "raw": {
    "xGAR": 3.3,
-   "GAR": 2.5,
+   "GAR": 2.6,
    "WAR": 0.4,
    "xWAR": 0.5,
    "toiAll": 391.9
@@ -210,66 +210,66 @@
    "CF/60": 0.38,
    "CA/60": 0.48
   },
-  "rank": 103,
+  "rank": 106,
   "neighbors": [
    {
-    "rank": 101,
-    "name": "Cole Caufield",
-    "team": "MTL",
-    "gp": 21,
-    "pos": "R",
-    "value": 72.8,
-    "isolated": 70.1,
-    "production": 72.3,
-    "weight": 0.3,
-    "isMe": false
-   },
-   {
-    "rank": 102,
+    "rank": 104,
     "name": "Simon Holmstrom",
     "team": "NYI",
-    "gp": 19,
+    "gp": 20,
     "pos": "R",
-    "value": 72.7,
-    "isolated": 79.3,
-    "production": 68.3,
-    "weight": 0.27,
-    "isMe": false
-   },
-   {
-    "rank": 103,
-    "name": "Emmitt Finnie",
-    "team": "DET",
-    "gp": 21,
-    "pos": "C",
-    "value": 72.6,
-    "isolated": 67.6,
-    "production": 73.0,
-    "weight": 0.3,
-    "isMe": true
-   },
-   {
-    "rank": 104,
-    "name": "Brayden McNabb",
-    "team": "VGK",
-    "gp": 22,
-    "pos": "D",
-    "value": 72.5,
-    "isolated": 76.6,
-    "production": 68.7,
-    "weight": 0.33,
+    "value": 71.9,
+    "isolated": 77.3,
+    "production": 67.9,
+    "weight": 0.28,
     "isMe": false
    },
    {
     "rank": 105,
-    "name": "Anders Lee",
-    "team": "UTA",
-    "gp": 22,
-    "pos": "L",
-    "value": 72.4,
-    "isolated": 58.9,
-    "production": 74.8,
-    "weight": 0.25,
+    "name": "Cole Caufield",
+    "team": "MTL",
+    "gp": 21,
+    "pos": "R",
+    "value": 71.8,
+    "isolated": 69.5,
+    "production": 71.2,
+    "weight": 0.3,
+    "isMe": false
+   },
+   {
+    "rank": 106,
+    "name": "Emmitt Finnie",
+    "team": "DET",
+    "gp": 21,
+    "pos": "C",
+    "value": 71.8,
+    "isolated": 67.9,
+    "production": 71.8,
+    "weight": 0.3,
+    "isMe": true
+   },
+   {
+    "rank": 107,
+    "name": "Luke Hughes",
+    "team": "N.J",
+    "gp": 21,
+    "pos": "D",
+    "value": 71.6,
+    "isolated": 70.6,
+    "production": 70.5,
+    "weight": 0.37,
+    "isMe": false
+   },
+   {
+    "rank": 108,
+    "name": "Luke Evangelista",
+    "team": "N.J",
+    "gp": 18,
+    "pos": "R",
+    "value": 71.5,
+    "isolated": 63.9,
+    "production": 72.3,
+    "weight": 0.24,
     "isMe": false
    }
   ],
@@ -564,6 +564,16 @@
    "off": 0.316,
    "def": -0.077,
    "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Turcotte",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.04,
+   "def": -0.016,
+   "toi": 59,
    "det": false,
    "me": false
   },
@@ -1764,6 +1774,16 @@
    "off": -0.159,
    "def": -0.001,
    "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Timmins",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.003,
+   "def": -0.144,
+   "toi": 64,
    "det": false,
    "me": false
   },
@@ -7002,38 +7022,22 @@
     "EVO": 2.5,
     "EVD": 0.9,
     "PPO": -0.3,
-    "SHD": -0.3,
+    "SHD": -0.2,
     "Pens": 0.2
    },
-   "total": 3.0,
+   "total": 3.1,
    "xGAR": 3.3,
-   "GAR": 2.5
+   "GAR": 2.6
   }
  ],
  "comps": [
-  {
-   "name": "Charlie Coyle",
-   "team": "CBJ",
-   "pos": "C",
-   "gp": 18,
-   "distance": 0.81,
-   "value": 65.4,
-   "goals": 2.8,
-   "components": {
-    "EVO": 1.6,
-    "EVD": 1.3,
-    "PPO": -0.2,
-    "SHD": -0.1,
-    "Pens": 0.1
-   }
-  },
   {
    "name": "Jesper Boqvist",
    "team": "N.J",
    "pos": "C",
    "gp": 19,
-   "distance": 0.87,
-   "value": 75.7,
+   "distance": 0.75,
+   "value": 74.8,
    "goals": 4.1,
    "components": {
     "EVO": 2.6,
@@ -7044,19 +7048,35 @@
    }
   },
   {
-   "name": "Josh Norris",
-   "team": "BUF",
+   "name": "Charlie Coyle",
+   "team": "CBJ",
    "pos": "C",
-   "gp": 20,
+   "gp": 19,
    "distance": 0.95,
-   "value": 65.1,
-   "goals": 2.7,
+   "value": 66.4,
+   "goals": 3.0,
    "components": {
     "EVO": 1.5,
-    "EVD": 1.7,
-    "PPO": -0.5,
-    "SHD": -0.3,
-    "Pens": 0.3
+    "EVD": 1.5,
+    "PPO": -0.2,
+    "SHD": 0.0,
+    "Pens": 0.1
+   }
+  },
+  {
+   "name": "Pius Suter",
+   "team": "STL",
+   "pos": "C",
+   "gp": 21,
+   "distance": 1.02,
+   "value": 52.2,
+   "goals": 1.4,
+   "components": {
+    "EVO": 1.0,
+    "EVD": 0.5,
+    "PPO": 0.0,
+    "SHD": -0.4,
+    "Pens": 0.2
    }
   }
  ],
@@ -7064,7 +7084,7 @@
   "EVO": 2.5,
   "EVD": 0.9,
   "PPO": -0.3,
-  "SHD": -0.3,
+  "SHD": -0.2,
   "Pens": 0.2
  },
  "gameLog": [
@@ -7566,9 +7586,9 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 1.0,
-   "gameScore": 0.22,
+   "gameScore": 0.19,
    "gameScoreParts": {
-    "moneypuck": 0.1,
+    "moneypuck": 0.05,
     "hockeystatcards": 0.33
    }
   }
@@ -7603,5 +7623,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-17T05:30:32-08:00"
+ "updatedAt": "2026-11-18T05:56:54-08:00"
 }

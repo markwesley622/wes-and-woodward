@@ -69,21 +69,21 @@
   "toiPerGame": 1238.0,
   "ixG": 1.32,
   "goalsAboveExpected": 1.68,
-  "gameScore": 8.35,
+  "gameScore": 8.32,
   "fiveOnFive": {
-   "icetimeMinutes": 359.8,
+   "icetimeMinutes": 359.9,
    "onIceXgPct": 0.53,
    "onIceCorsiPct": 0.49,
-   "ixgPer60": 0.167,
-   "pctl_onIceXgPct": 61.6,
-   "pctl_ixgPer60": 47.3,
+   "ixgPer60": 0.165,
+   "pctl_onIceXgPct": 64.2,
+   "pctl_ixgPer60": 43.9,
    "qualifiesForPercentiles": true
   }
  },
  "hsc": {
   "Game score": {
    "value": 0.62,
-   "percentile": 68
+   "percentile": 69
   },
   "Offense": {
    "value": -0.4,
@@ -95,23 +95,23 @@
   },
   "Net": {
    "value": 1.7,
-   "percentile": 80
+   "percentile": 81
   }
  },
  "score": {
-  "value": 52.6,
-  "low": 40.9,
-  "high": 64.1,
-  "isolated": 42.2,
-  "production": 56.7,
+  "value": 52.0,
+  "low": 40.3,
+  "high": 63.4,
+  "isolated": 42.1,
+  "production": 55.8,
   "weightIsolated": 0.323,
-  "sustainable": 46.7,
+  "sustainable": 46.5,
   "results": 36.2,
-  "percentile": 60.0,
+  "percentile": 59.5,
   "goalsBlended": 0.3,
   "goalsSustainable": 0.7,
   "goalsResults": -0.4,
-  "gameScore": 10.72,
+  "gameScore": 10.71,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -139,7 +139,7 @@
   },
   "reliability": 0.186,
   "reliabilityProduction": 0.597,
-  "pool": 670,
+  "pool": 672,
   "minGp": 6,
   "group": "skaters",
   "position": "D",
@@ -210,66 +210,66 @@
    "CF/60": -1.88,
    "CA/60": -1.2
   },
-  "rank": 268,
+  "rank": 272,
   "neighbors": [
    {
-    "rank": 266,
-    "name": "Will Smith",
-    "team": "S.J",
-    "gp": 23,
-    "pos": "C",
-    "value": 52.7,
-    "isolated": 35.2,
-    "production": 60.7,
-    "weight": 0.34,
+    "rank": 270,
+    "name": "Spencer Stastney",
+    "team": "PIT",
+    "gp": 15,
+    "pos": "D",
+    "value": 52.2,
+    "isolated": 62.7,
+    "production": 48.5,
+    "weight": 0.21,
     "isMe": false
    },
    {
-    "rank": 267,
-    "name": "Marat Khusnutdinov",
-    "team": "BOS",
-    "gp": 20,
+    "rank": 271,
+    "name": "Martin Pospisil",
+    "team": "CGY",
+    "gp": 22,
     "pos": "C",
-    "value": 52.7,
-    "isolated": 60.0,
-    "production": 49.8,
-    "weight": 0.23,
+    "value": 52.2,
+    "isolated": 54.3,
+    "production": 50.8,
+    "weight": 0.24,
     "isMe": false
    },
    {
-    "rank": 268,
+    "rank": 272,
     "name": "Justin Faulk",
     "team": "DET",
     "gp": 21,
     "pos": "D",
-    "value": 52.6,
-    "isolated": 42.2,
-    "production": 56.7,
+    "value": 52.0,
+    "isolated": 42.1,
+    "production": 55.8,
     "weight": 0.32,
     "isMe": true
    },
    {
-    "rank": 269,
-    "name": "Zack MacEwen",
-    "team": "TOR",
-    "gp": 16,
-    "pos": "R",
-    "value": 52.6,
-    "isolated": 65.6,
-    "production": 50.1,
-    "weight": 0.12,
+    "rank": 273,
+    "name": "Declan Chisholm",
+    "team": "N.J",
+    "gp": 19,
+    "pos": "D",
+    "value": 51.9,
+    "isolated": 53.0,
+    "production": 50.9,
+    "weight": 0.22,
     "isMe": false
    },
    {
-    "rank": 270,
-    "name": "Dylan Larkin",
-    "team": "DET",
-    "gp": 10,
+    "rank": 274,
+    "name": "Colton Sissons",
+    "team": "TOR",
+    "gp": 19,
     "pos": "C",
-    "value": 52.5,
-    "isolated": 52.0,
-    "production": 51.9,
-    "weight": 0.18,
+    "value": 51.9,
+    "isolated": 73.9,
+    "production": 44.3,
+    "weight": 0.22,
     "isMe": false
    }
   ],
@@ -564,6 +564,16 @@
    "off": 0.316,
    "def": -0.077,
    "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Turcotte",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.04,
+   "def": -0.016,
+   "toi": 59,
    "det": false,
    "me": false
   },
@@ -1764,6 +1774,16 @@
    "off": -0.159,
    "def": -0.001,
    "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Timmins",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.003,
+   "def": -0.144,
+   "toi": 64,
    "det": false,
    "me": false
   },
@@ -7222,19 +7242,35 @@
  ],
  "comps": [
   {
+   "name": "Artem Zub",
+   "team": "OTT",
+   "pos": "D",
+   "gp": 15,
+   "distance": 0.85,
+   "value": 38.4,
+   "goals": -0.2,
+   "components": {
+    "EVO": -0.6,
+    "EVD": 1.2,
+    "PPO": 0.0,
+    "SHD": -0.5,
+    "Pens": -0.3
+   }
+  },
+  {
    "name": "Martin Fehervary",
    "team": "WSH",
    "pos": "D",
-   "gp": 18,
-   "distance": 0.8,
-   "value": 34.8,
-   "goals": -0.6,
+   "gp": 19,
+   "distance": 0.92,
+   "value": 34.1,
+   "goals": -0.7,
    "components": {
-    "EVO": -1.5,
+    "EVO": -1.8,
     "EVD": 1.7,
     "PPO": 0.0,
-    "SHD": -0.6,
-    "Pens": -0.2
+    "SHD": -0.5,
+    "Pens": -0.1
    }
   },
   {
@@ -7242,30 +7278,14 @@
    "team": "NYR",
    "pos": "D",
    "gp": 22,
-   "distance": 1.0,
-   "value": 29.4,
+   "distance": 0.98,
+   "value": 29.6,
    "goals": -1.2,
    "components": {
     "EVO": -1.3,
     "EVD": 0.8,
     "PPO": 0.0,
     "SHD": -0.5,
-    "Pens": -0.2
-   }
-  },
-  {
-   "name": "Jonas Brodin",
-   "team": "MIN",
-   "pos": "D",
-   "gp": 22,
-   "distance": 1.03,
-   "value": 25.9,
-   "goals": -1.7,
-   "components": {
-    "EVO": -2.0,
-    "EVD": 1.1,
-    "PPO": 0.0,
-    "SHD": -0.6,
     "Pens": -0.2
    }
   }
@@ -7752,9 +7772,9 @@
    "gf": 0.0,
    "ga": 1.0,
    "blocks": 5.0,
-   "gameScore": 0.08,
+   "gameScore": 0.13,
    "gameScoreParts": {
-    "moneypuck": -0.425,
+    "moneypuck": -0.325,
     "hockeystatcards": 0.58
    }
   },
@@ -7776,9 +7796,9 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": -0.71,
+   "gameScore": -0.77,
    "gameScoreParts": {
-    "moneypuck": -0.4,
+    "moneypuck": -0.525,
     "hockeystatcards": -1.02
    }
   }
@@ -7813,5 +7833,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-17T05:32:23-08:00"
+ "updatedAt": "2026-11-18T05:58:57-08:00"
 }

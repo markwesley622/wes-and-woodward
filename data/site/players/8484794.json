@@ -75,8 +75,8 @@
    "onIceXgPct": 0.55,
    "onIceCorsiPct": 0.55,
    "ixgPer60": 1.124,
-   "pctl_onIceXgPct": 58.7,
-   "pctl_ixgPer60": 95.7,
+   "pctl_onIceXgPct": 64.7,
+   "pctl_ixgPer60": 95.6,
    "qualifiesForPercentiles": false
   }
  },
@@ -95,22 +95,22 @@
   },
   "Net": {
    "value": 2.4,
-   "percentile": 86
+   "percentile": 85
   }
  },
  "score": {
-  "value": 67.6,
-  "low": 55.6,
-  "high": 77.6,
-  "isolated": 49.5,
-  "production": 71.7,
+  "value": 66.9,
+  "low": 54.8,
+  "high": 77.0,
+  "isolated": 50.2,
+  "production": 70.7,
   "weightIsolated": 0.256,
-  "sustainable": 37.6,
-  "results": 69.1,
-  "percentile": 79.3,
-  "goalsBlended": 1.0,
-  "goalsSustainable": -0.4,
-  "goalsResults": 3.2,
+  "sustainable": 38.4,
+  "results": 69.4,
+  "percentile": 78.7,
+  "goalsBlended": 1.1,
+  "goalsSustainable": -0.3,
+  "goalsResults": 3.3,
   "gameScore": 16.82,
   "blend": {
    "sustainable": 0.6,
@@ -139,7 +139,7 @@
   },
   "reliability": 0.148,
   "reliabilityProduction": 0.526,
-  "pool": 670,
+  "pool": 672,
   "minGp": 6,
   "group": "skaters",
   "position": "F",
@@ -148,19 +148,19 @@
     "key": "EVO",
     "label": "Even-strength offense",
     "sustainable": 0.0,
-    "results": 3.3,
+    "results": 3.4,
     "shrink": 0.18,
     "repeat": 0.465,
-    "counted": 1.3
+    "counted": 1.4
    },
    {
     "key": "EVD",
     "label": "Even-strength defense",
-    "sustainable": 0.6,
+    "sustainable": 0.7,
     "results": 0.4,
     "shrink": 0.16,
     "repeat": 0.432,
-    "counted": 0.5
+    "counted": 0.6
    },
    {
     "key": "PPO",
@@ -191,10 +191,10 @@
    }
   ],
   "raw": {
-   "xGAR": -0.3,
+   "xGAR": -0.2,
    "GAR": 3.3,
    "WAR": 0.5,
-   "xWAR": -0.1,
+   "xWAR": 0.0,
    "toiAll": 325.7
   },
   "rapm": {
@@ -210,66 +210,66 @@
    "CF/60": 2.82,
    "CA/60": -2.16
   },
-  "rank": 139,
+  "rank": 143,
   "neighbors": [
    {
-    "rank": 137,
-    "name": "MacKenzie Weegar",
-    "team": "UTA",
-    "gp": 22,
-    "pos": "D",
-    "value": 67.7,
-    "isolated": 63.9,
-    "production": 68.1,
-    "weight": 0.35,
+    "rank": 141,
+    "name": "Evgeni Malkin",
+    "team": "PIT",
+    "gp": 18,
+    "pos": "C",
+    "value": 66.9,
+    "isolated": 52.2,
+    "production": 70.1,
+    "weight": 0.25,
     "isMe": false
    },
    {
-    "rank": 138,
-    "name": "Kaedan Korczak",
-    "team": "PIT",
-    "gp": 20,
-    "pos": "D",
-    "value": 67.6,
-    "isolated": 67.5,
-    "production": 66.2,
+    "rank": 142,
+    "name": "Alex Laferriere",
+    "team": "L.A",
+    "gp": 19,
+    "pos": "R",
+    "value": 66.9,
+    "isolated": 48.7,
+    "production": 71.9,
     "weight": 0.28,
     "isMe": false
    },
    {
-    "rank": 139,
+    "rank": 143,
     "name": "Michael Brandsegg-Nyg\u00e5rd",
     "team": "DET",
     "gp": 21,
     "pos": "R",
-    "value": 67.6,
-    "isolated": 49.5,
-    "production": 71.7,
+    "value": 66.9,
+    "isolated": 50.2,
+    "production": 70.7,
     "weight": 0.26,
     "isMe": true
    },
    {
-    "rank": 140,
-    "name": "Wyatt Johnston",
-    "team": "DAL",
-    "gp": 18,
-    "pos": "C",
-    "value": 67.4,
-    "isolated": 38.7,
-    "production": 75.2,
-    "weight": 0.27,
+    "rank": 144,
+    "name": "Matvei Michkov",
+    "team": "PHI",
+    "gp": 24,
+    "pos": "R",
+    "value": 66.8,
+    "isolated": 72.8,
+    "production": 62.6,
+    "weight": 0.3,
     "isMe": false
    },
    {
-    "rank": 141,
-    "name": "Matvei Gridin",
-    "team": "CGY",
-    "gp": 21,
-    "pos": "R",
-    "value": 67.4,
-    "isolated": 66.0,
+    "rank": 145,
+    "name": "Nils Hoglander",
+    "team": "NSH",
+    "gp": 22,
+    "pos": "L",
+    "value": 66.8,
+    "isolated": 63.2,
     "production": 66.5,
-    "weight": 0.26,
+    "weight": 0.21,
     "isMe": false
    }
   ],
@@ -564,6 +564,16 @@
    "off": 0.316,
    "def": -0.077,
    "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Turcotte",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.04,
+   "def": -0.016,
+   "toi": 59,
    "det": false,
    "me": false
   },
@@ -1764,6 +1774,16 @@
    "off": -0.159,
    "def": -0.001,
    "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Timmins",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.003,
+   "def": -0.144,
+   "toi": 64,
    "det": false,
    "me": false
   },
@@ -6999,14 +7019,14 @@
    "gp": 21,
    "toi": 326,
    "components": {
-    "EVO": 1.3,
-    "EVD": 0.5,
+    "EVO": 1.4,
+    "EVD": 0.6,
     "PPO": -0.1,
     "SHD": 0.0,
     "Pens": -0.7
    },
-   "total": 1.0,
-   "xGAR": -0.3,
+   "total": 1.2,
+   "xGAR": -0.2,
    "GAR": 3.3
   }
  ],
@@ -7016,9 +7036,9 @@
    "team": "CAR",
    "pos": "L",
    "gp": 12,
-   "distance": 0.57,
-   "value": 41.2,
-   "goals": 0.2,
+   "distance": 0.64,
+   "value": 40.8,
+   "goals": 0.1,
    "components": {
     "EVO": 0.9,
     "EVD": 0.0,
@@ -7031,38 +7051,38 @@
    "name": "Tanner Jeannot",
    "team": "BOS",
    "pos": "L",
-   "gp": 20,
-   "distance": 0.72,
-   "value": 43.1,
-   "goals": 0.4,
+   "gp": 21,
+   "distance": 0.84,
+   "value": 43.9,
+   "goals": 0.5,
    "components": {
-    "EVO": 0.2,
-    "EVD": 0.9,
+    "EVO": 0.1,
+    "EVD": 1.1,
     "PPO": 0.0,
     "SHD": -0.0,
     "Pens": -0.7
    }
   },
   {
-   "name": "Jamie Benn",
-   "team": "DAL",
-   "pos": "L",
-   "gp": 20,
-   "distance": 0.98,
-   "value": 59.0,
-   "goals": 2.1,
+   "name": "Braeden Bowman",
+   "team": "VGK",
+   "pos": "R",
+   "gp": 23,
+   "distance": 0.94,
+   "value": 44.1,
+   "goals": 0.5,
    "components": {
-    "EVO": 1.3,
-    "EVD": 1.3,
-    "PPO": -0.1,
+    "EVO": 0.5,
+    "EVD": 0.1,
+    "PPO": 0.3,
     "SHD": 0.0,
-    "Pens": -0.4
+    "Pens": -0.5
    }
   }
  ],
  "myComponents": {
-  "EVO": 1.3,
-  "EVD": 0.5,
+  "EVO": 1.4,
+  "EVD": 0.6,
   "PPO": -0.1,
   "SHD": 0.0,
   "Pens": -0.7
@@ -7603,5 +7623,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-17T05:29:20-08:00"
+ "updatedAt": "2026-11-18T05:39:01-08:00"
 }

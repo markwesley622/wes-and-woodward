@@ -75,8 +75,8 @@
    "onIceXgPct": 0.53,
    "onIceCorsiPct": 0.5,
    "ixgPer60": 0.151,
-   "pctl_onIceXgPct": 61.6,
-   "pctl_ixgPer60": 40.2,
+   "pctl_onIceXgPct": 64.2,
+   "pctl_ixgPer60": 40.7,
    "qualifiesForPercentiles": false
   }
  },
@@ -86,30 +86,30 @@
    "percentile": 57
   },
   "Offense": {
-   "value": -0.0,
-   "percentile": 63
+   "value": -0.1,
+   "percentile": 62
   },
   "Defense": {
    "value": 0.6,
-   "percentile": 72
+   "percentile": 71
   },
   "Net": {
    "value": 0.5,
-   "percentile": 67
+   "percentile": 68
   }
  },
  "score": {
-  "value": 49.9,
-  "low": 37.0,
-  "high": 62.8,
-  "isolated": 61.4,
-  "production": 46.0,
+  "value": 49.5,
+  "low": 36.6,
+  "high": 62.4,
+  "isolated": 61.5,
+  "production": 45.4,
   "weightIsolated": 0.218,
-  "sustainable": 60.8,
-  "results": 60.4,
-  "percentile": 56.4,
-  "goalsBlended": 2.3,
-  "goalsSustainable": 2.4,
+  "sustainable": 61.2,
+  "results": 60.0,
+  "percentile": 55.8,
+  "goalsBlended": 2.4,
+  "goalsSustainable": 2.5,
   "goalsResults": 2.2,
   "gameScore": 6.75,
   "blend": {
@@ -139,7 +139,7 @@
   },
   "reliability": 0.126,
   "reliabilityProduction": 0.479,
-  "pool": 670,
+  "pool": 672,
   "minGp": 6,
   "group": "skaters",
   "position": "D",
@@ -156,7 +156,7 @@
    {
     "key": "EVD",
     "label": "Even-strength defense",
-    "sustainable": 0.8,
+    "sustainable": 0.9,
     "results": 1.2,
     "shrink": 0.13,
     "repeat": 0.432,
@@ -210,66 +210,66 @@
    "CF/60": -0.57,
    "CA/60": -1.24
   },
-  "rank": 292,
+  "rank": 297,
   "neighbors": [
    {
-    "rank": 290,
-    "name": "Matt Coronato",
-    "team": "CGY",
-    "gp": 21,
-    "pos": "R",
-    "value": 50.2,
-    "isolated": 35.0,
-    "production": 55.7,
-    "weight": 0.28,
+    "rank": 295,
+    "name": "Travis Sanheim",
+    "team": "PHI",
+    "gp": 24,
+    "pos": "D",
+    "value": 49.6,
+    "isolated": 58.1,
+    "production": 42.9,
+    "weight": 0.41,
     "isMe": false
    },
    {
-    "rank": 291,
-    "name": "Jake Neighbours",
+    "rank": 296,
+    "name": "Pavel Buchnevich",
     "team": "STL",
     "gp": 20,
     "pos": "L",
-    "value": 50.1,
-    "isolated": 45.0,
-    "production": 51.1,
-    "weight": 0.25,
+    "value": 49.6,
+    "isolated": 43.4,
+    "production": 51.2,
+    "weight": 0.27,
     "isMe": false
    },
    {
-    "rank": 292,
+    "rank": 297,
     "name": "William Wallinder",
     "team": "DET",
     "gp": 16,
     "pos": "D",
-    "value": 49.9,
-    "isolated": 61.4,
-    "production": 46.0,
+    "value": 49.5,
+    "isolated": 61.5,
+    "production": 45.4,
     "weight": 0.22,
     "isMe": true
    },
    {
-    "rank": 293,
-    "name": "Zach Hyman",
-    "team": "EDM",
-    "gp": 11,
-    "pos": "L",
-    "value": 49.9,
-    "isolated": 54.2,
-    "production": 48.5,
-    "weight": 0.16,
+    "rank": 298,
+    "name": "Noah Ostlund",
+    "team": "BUF",
+    "gp": 21,
+    "pos": "C",
+    "value": 49.4,
+    "isolated": 35.9,
+    "production": 54.5,
+    "weight": 0.29,
     "isMe": false
    },
    {
-    "rank": 294,
-    "name": "Jonathan Lekkerimaki",
-    "team": "VAN",
-    "gp": 23,
-    "pos": "R",
-    "value": 49.9,
-    "isolated": 40.2,
-    "production": 52.9,
-    "weight": 0.27,
+    "rank": 299,
+    "name": "Marat Khusnutdinov",
+    "team": "BOS",
+    "gp": 21,
+    "pos": "C",
+    "value": 49.3,
+    "isolated": 54.3,
+    "production": 47.2,
+    "weight": 0.23,
     "isMe": false
    }
   ],
@@ -564,6 +564,16 @@
    "off": 0.316,
    "def": -0.077,
    "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Turcotte",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.04,
+   "def": -0.016,
+   "toi": 59,
    "det": false,
    "me": false
   },
@@ -1764,6 +1774,16 @@
    "off": -0.159,
    "def": -0.001,
    "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Timmins",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.003,
+   "def": -0.144,
+   "toi": 64,
    "det": false,
    "me": false
   },
@@ -7000,15 +7020,15 @@
    "name": "Ryan McDonagh",
    "team": "T.B",
    "pos": "D",
-   "gp": 20,
-   "distance": 0.49,
-   "value": 53.5,
-   "goals": 1.5,
+   "gp": 21,
+   "distance": 0.67,
+   "value": 49.4,
+   "goals": 1.1,
    "components": {
-    "EVO": 1.1,
+    "EVO": 0.7,
     "EVD": 0.8,
     "PPO": 0.0,
-    "SHD": -0.8,
+    "SHD": -0.7,
     "Pens": 0.3
    }
   },
@@ -7016,32 +7036,32 @@
    "name": "Gustav Forsling",
    "team": "FLA",
    "pos": "D",
-   "gp": 21,
-   "distance": 0.86,
-   "value": 55.5,
-   "goals": 1.7,
+   "gp": 22,
+   "distance": 0.72,
+   "value": 58.4,
+   "goals": 2.0,
    "components": {
-    "EVO": 2.1,
-    "EVD": 0.0,
+    "EVO": 2.2,
+    "EVD": 0.3,
     "PPO": -0.0,
     "SHD": -0.5,
     "Pens": 0.1
    }
   },
   {
-   "name": "Andreas Englund",
-   "team": "DET",
+   "name": "Denton Mateychuk",
+   "team": "CBJ",
    "pos": "D",
-   "gp": 16,
-   "distance": 1.04,
-   "value": 59.8,
-   "goals": 2.1,
+   "gp": 19,
+   "distance": 0.84,
+   "value": 63.4,
+   "goals": 2.6,
    "components": {
-    "EVO": 0.7,
+    "EVO": 1.6,
     "EVD": 1.4,
-    "PPO": 0.0,
-    "SHD": -0.6,
-    "Pens": 0.6
+    "PPO": 0.2,
+    "SHD": -0.5,
+    "Pens": -0.1
    }
   }
  ],
@@ -7468,5 +7488,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-17T05:33:25-08:00"
+ "updatedAt": "2026-11-18T05:59:59-08:00"
 }

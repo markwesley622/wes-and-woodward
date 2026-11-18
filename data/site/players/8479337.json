@@ -69,14 +69,14 @@
   "toiPerGame": 1178.8,
   "ixG": 8.94,
   "goalsAboveExpected": -1.94,
-  "gameScore": 19.22,
+  "gameScore": 19.17,
   "fiveOnFive": {
    "icetimeMinutes": 318.6,
    "onIceXgPct": 0.58,
    "onIceCorsiPct": 0.53,
    "ixgPer60": 0.887,
-   "pctl_onIceXgPct": 76.1,
-   "pctl_ixgPer60": 73.9,
+   "pctl_onIceXgPct": 80.9,
+   "pctl_ixgPer60": 75.0,
    "qualifiesForPercentiles": true
   }
  },
@@ -91,7 +91,7 @@
   },
   "Defense": {
    "value": 1.6,
-   "percentile": 90
+   "percentile": 89
   },
   "Net": {
    "value": 3.8,
@@ -99,19 +99,19 @@
   }
  },
  "score": {
-  "value": 78.2,
-  "low": 69.0,
-  "high": 85.3,
+  "value": 77.3,
+  "low": 67.9,
+  "high": 84.6,
   "isolated": 60.1,
-  "production": 82.8,
+  "production": 81.8,
   "weightIsolated": 0.311,
-  "sustainable": 45.0,
-  "results": 79.8,
-  "percentile": 89.9,
+  "sustainable": 44.8,
+  "results": 79.9,
+  "percentile": 89.3,
   "goalsBlended": 2.2,
   "goalsSustainable": 0.5,
-  "goalsResults": 4.7,
-  "gameScore": 22.75,
+  "goalsResults": 4.8,
+  "gameScore": 22.73,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -139,7 +139,7 @@
   },
   "reliability": 0.179,
   "reliabilityProduction": 0.585,
-  "pool": 670,
+  "pool": 672,
   "minGp": 6,
   "group": "skaters",
   "position": "F",
@@ -157,10 +157,10 @@
     "key": "EVD",
     "label": "Even-strength defense",
     "sustainable": 1.2,
-    "results": 1.3,
+    "results": 1.4,
     "shrink": 0.19,
     "repeat": 0.432,
-    "counted": 1.2
+    "counted": 1.3
    },
    {
     "key": "PPO",
@@ -191,7 +191,7 @@
    }
   ],
   "raw": {
-   "xGAR": 0.5,
+   "xGAR": 0.6,
    "GAR": 4.8,
    "WAR": 0.8,
    "xWAR": 0.1,
@@ -210,66 +210,66 @@
    "CF/60": 1.39,
    "CA/60": -1.31
   },
-  "rank": 68,
+  "rank": 72,
   "neighbors": [
    {
-    "rank": 66,
-    "name": "Brett Pesce",
-    "team": "N.J",
+    "rank": 70,
+    "name": "Mattias Ekholm",
+    "team": "EDM",
+    "gp": 21,
+    "pos": "D",
+    "value": 77.5,
+    "isolated": 68.9,
+    "production": 79.5,
+    "weight": 0.33,
+    "isMe": false
+   },
+   {
+    "rank": 71,
+    "name": "Alex Tuch",
+    "team": "WSH",
     "gp": 19,
-    "pos": "D",
-    "value": 78.6,
-    "isolated": 85.4,
-    "production": 73.2,
-    "weight": 0.3,
+    "pos": "R",
+    "value": 77.4,
+    "isolated": 86.7,
+    "production": 71.0,
+    "weight": 0.28,
     "isMe": false
    },
    {
-    "rank": 67,
-    "name": "Hampus Lindholm",
-    "team": "BOS",
-    "gp": 20,
-    "pos": "D",
-    "value": 78.6,
-    "isolated": 87.3,
-    "production": 71.4,
-    "weight": 0.31,
-    "isMe": false
-   },
-   {
-    "rank": 68,
+    "rank": 72,
     "name": "Alex Debrincat",
     "team": "DET",
     "gp": 21,
     "pos": "R",
-    "value": 78.2,
+    "value": 77.3,
     "isolated": 60.1,
-    "production": 82.8,
+    "production": 81.8,
     "weight": 0.31,
     "isMe": true
    },
    {
-    "rank": 69,
-    "name": "Filip Forsberg",
-    "team": "NSH",
+    "rank": 73,
+    "name": "Casey Mittelstadt",
+    "team": "BOS",
     "gp": 21,
-    "pos": "L",
-    "value": 78.2,
-    "isolated": 61.0,
-    "production": 82.8,
-    "weight": 0.32,
+    "pos": "C",
+    "value": 77.2,
+    "isolated": 83.5,
+    "production": 73.3,
+    "weight": 0.24,
     "isMe": false
    },
    {
-    "rank": 70,
-    "name": "Drake Batherson",
-    "team": "OTT",
-    "gp": 21,
-    "pos": "R",
-    "value": 78.2,
-    "isolated": 77.2,
-    "production": 76.9,
-    "weight": 0.29,
+    "rank": 74,
+    "name": "Artemi Panarin",
+    "team": "L.A",
+    "gp": 17,
+    "pos": "L",
+    "value": 77.0,
+    "isolated": 66.8,
+    "production": 79.0,
+    "weight": 0.28,
     "isMe": false
    }
   ],
@@ -564,6 +564,16 @@
    "off": 0.316,
    "def": -0.077,
    "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Turcotte",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.04,
+   "def": -0.016,
+   "toi": 59,
    "det": false,
    "me": false
   },
@@ -1764,6 +1774,16 @@
    "off": -0.159,
    "def": -0.001,
    "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Timmins",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.003,
+   "def": -0.144,
+   "toi": 64,
    "det": false,
    "me": false
   },
@@ -7120,40 +7140,24 @@
    "toi": 413,
    "components": {
     "EVO": 1.6,
-    "EVD": 1.2,
+    "EVD": 1.3,
     "PPO": -0.8,
     "SHD": 0.0,
     "Pens": 0.2
    },
-   "total": 2.2,
-   "xGAR": 0.5,
+   "total": 2.3,
+   "xGAR": 0.6,
    "GAR": 4.8
   }
  ],
  "comps": [
   {
-   "name": "Alex Laferriere",
-   "team": "L.A",
-   "pos": "R",
-   "gp": 18,
-   "distance": 1.12,
-   "value": 52.3,
-   "goals": 1.3,
-   "components": {
-    "EVO": 0.2,
-    "EVD": 1.0,
-    "PPO": -0.3,
-    "SHD": 0.0,
-    "Pens": 0.4
-   }
-  },
-  {
    "name": "Seth Jarvis",
    "team": "CAR",
    "pos": "R",
    "gp": 10,
-   "distance": 1.12,
-   "value": 68.3,
+   "distance": 1.1,
+   "value": 67.4,
    "goals": 3.1,
    "components": {
     "EVO": 1.5,
@@ -7164,25 +7168,41 @@
    }
   },
   {
+   "name": "Alex Laferriere",
+   "team": "L.A",
+   "pos": "R",
+   "gp": 19,
+   "distance": 1.12,
+   "value": 48.7,
+   "goals": 1.0,
+   "components": {
+    "EVO": -0.0,
+    "EVD": 1.1,
+    "PPO": -0.3,
+    "SHD": 0.0,
+    "Pens": 0.2
+   }
+  },
+  {
    "name": "Bobby Brink",
    "team": "MIN",
    "pos": "R",
-   "gp": 22,
+   "gp": 23,
    "distance": 1.14,
-   "value": 68.8,
-   "goals": 3.2,
+   "value": 66.6,
+   "goals": 3.0,
    "components": {
     "EVO": 1.1,
-    "EVD": 1.8,
+    "EVD": 1.5,
     "PPO": -0.2,
     "SHD": 0.0,
-    "Pens": 0.5
+    "Pens": 0.6
    }
   }
  ],
  "myComponents": {
   "EVO": 1.6,
-  "EVD": 1.2,
+  "EVD": 1.3,
   "PPO": -0.8,
   "SHD": 0.0,
   "Pens": 0.2
@@ -7686,9 +7706,9 @@
    "gf": 0.0,
    "ga": 0.0,
    "blocks": 0.0,
-   "gameScore": 0.12,
+   "gameScore": 0.1,
    "gameScoreParts": {
-    "moneypuck": 0.175,
+    "moneypuck": 0.125,
     "hockeystatcards": 0.07
    }
   }
@@ -7723,5 +7743,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-17T05:30:09-08:00"
+ "updatedAt": "2026-11-18T05:56:26-08:00"
 }

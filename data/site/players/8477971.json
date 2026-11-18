@@ -69,13 +69,13 @@
   "toiPerGame": 815.8,
   "ixG": 0.21,
   "goalsAboveExpected": 0.79,
-  "gameScore": 2.55,
+  "gameScore": 2.6,
   "fiveOnFive": {
    "icetimeMinutes": 197.4,
    "onIceXgPct": 0.53,
    "onIceCorsiPct": 0.5,
    "ixgPer60": 0.064,
-   "pctl_onIceXgPct": 61.6,
+   "pctl_onIceXgPct": 64.2,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -83,14 +83,14 @@
  "hsc": {
   "Game score": {
    "value": 0.31,
-   "percentile": 49
+   "percentile": 48
   },
   "Offense": {
-   "value": -1.4,
-   "percentile": 18
+   "value": -1.5,
+   "percentile": 20
   },
   "Defense": {
-   "value": 1.0,
+   "value": 1.1,
    "percentile": 82
   },
   "Net": {
@@ -99,19 +99,19 @@
   }
  },
  "score": {
-  "value": 42.1,
-  "low": 29.7,
-  "high": 55.6,
-  "isolated": 59.8,
-  "production": 38.1,
+  "value": 41.8,
+  "low": 29.4,
+  "high": 55.3,
+  "isolated": 59.3,
+  "production": 37.8,
   "weightIsolated": 0.181,
-  "sustainable": 64.8,
-  "results": 49.1,
-  "percentile": 43.6,
+  "sustainable": 64.3,
+  "results": 49.0,
+  "percentile": 43.9,
   "goalsBlended": 2.1,
   "goalsSustainable": 2.9,
   "goalsResults": 1.0,
-  "gameScore": 3.74,
+  "gameScore": 3.76,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -139,7 +139,7 @@
   },
   "reliability": 0.104,
   "reliabilityProduction": 0.426,
-  "pool": 670,
+  "pool": 672,
   "minGp": 6,
   "group": "skaters",
   "position": "D",
@@ -210,66 +210,66 @@
    "CF/60": -0.01,
    "CA/60": -1.04
   },
-  "rank": 378,
+  "rank": 377,
   "neighbors": [
    {
-    "rank": 376,
-    "name": "Tyler Bertuzzi",
-    "team": "CHI",
-    "gp": 20,
-    "pos": "L",
-    "value": 42.3,
-    "isolated": 43.3,
-    "production": 41.6,
-    "weight": 0.27,
-    "isMe": false
-   },
-   {
-    "rank": 377,
-    "name": "Warren Foegele",
-    "team": "OTT",
-    "gp": 13,
-    "pos": "L",
+    "rank": 375,
+    "name": "Adam Engstrom",
+    "team": "MTL",
+    "gp": 14,
+    "pos": "D",
     "value": 42.1,
-    "isolated": 47.2,
-    "production": 41.1,
+    "isolated": 53.5,
+    "production": 40.0,
     "weight": 0.14,
     "isMe": false
    },
    {
-    "rank": 378,
+    "rank": 376,
+    "name": "Braeden Bowman",
+    "team": "VGK",
+    "gp": 23,
+    "pos": "R",
+    "value": 41.9,
+    "isolated": 44.1,
+    "production": 40.9,
+    "weight": 0.24,
+    "isMe": false
+   },
+   {
+    "rank": 377,
     "name": "Andreas Englund",
     "team": "DET",
     "gp": 16,
     "pos": "D",
-    "value": 42.1,
-    "isolated": 59.8,
-    "production": 38.1,
+    "value": 41.8,
+    "isolated": 59.3,
+    "production": 37.8,
     "weight": 0.18,
     "isMe": true
    },
    {
-    "rank": 379,
-    "name": "Radek Faksa",
-    "team": "DAL",
-    "gp": 16,
+    "rank": 378,
+    "name": "Morgan Barron",
+    "team": "WPG",
+    "gp": 22,
     "pos": "C",
-    "value": 42.1,
-    "isolated": 47.6,
-    "production": 40.8,
-    "weight": 0.16,
+    "value": 41.7,
+    "isolated": 45.8,
+    "production": 40.2,
+    "weight": 0.25,
     "isMe": false
    },
    {
-    "rank": 380,
-    "name": "Casey Cizikas",
-    "team": "NYI",
-    "gp": 19,
-    "pos": "C",
-    "value": 42.0,
-    "isolated": 49.7,
-    "production": 40.0,
-    "weight": 0.19,
+    "rank": 379,
+    "name": "Warren Foegele",
+    "team": "OTT",
+    "gp": 13,
+    "pos": "L",
+    "value": 41.7,
+    "isolated": 47.0,
+    "production": 40.7,
+    "weight": 0.14,
     "isMe": false
    }
   ],
@@ -564,6 +564,16 @@
    "off": 0.316,
    "def": -0.077,
    "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Turcotte",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.04,
+   "def": -0.016,
+   "toi": 59,
    "det": false,
    "me": false
   },
@@ -1764,6 +1774,16 @@
    "off": -0.159,
    "def": -0.001,
    "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Timmins",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.003,
+   "def": -0.144,
+   "toi": 64,
    "det": false,
    "me": false
   },
@@ -7117,51 +7137,51 @@
  ],
  "comps": [
   {
-   "name": "Zach Whitecloud",
-   "team": "CGY",
+   "name": "Jake Sanderson",
+   "team": "OTT",
    "pos": "D",
-   "gp": 21,
-   "distance": 0.79,
-   "value": 49.1,
-   "goals": 1.0,
+   "gp": 14,
+   "distance": 0.65,
+   "value": 47.0,
+   "goals": 0.8,
    "components": {
-    "EVO": 0.1,
-    "EVD": 0.6,
+    "EVO": -0.1,
+    "EVD": 1.1,
     "PPO": 0.0,
-    "SHD": -0.4,
-    "Pens": 0.7
+    "SHD": -0.6,
+    "Pens": 0.4
    }
   },
   {
    "name": "Ryan McDonagh",
    "team": "T.B",
    "pos": "D",
-   "gp": 20,
-   "distance": 0.83,
-   "value": 53.5,
-   "goals": 1.5,
+   "gp": 21,
+   "distance": 0.78,
+   "value": 49.4,
+   "goals": 1.1,
    "components": {
-    "EVO": 1.1,
+    "EVO": 0.7,
     "EVD": 0.8,
     "PPO": 0.0,
-    "SHD": -0.8,
+    "SHD": -0.7,
     "Pens": 0.3
    }
   },
   {
-   "name": "Jake Sanderson",
-   "team": "OTT",
+   "name": "William Wallinder",
+   "team": "DET",
    "pos": "D",
-   "gp": 13,
-   "distance": 0.91,
-   "value": 43.5,
-   "goals": 0.4,
+   "gp": 16,
+   "distance": 1.0,
+   "value": 61.5,
+   "goals": 2.4,
    "components": {
-    "EVO": 0.0,
-    "EVD": 0.8,
-    "PPO": -0.2,
-    "SHD": -0.6,
-    "Pens": 0.4
+    "EVO": 1.8,
+    "EVD": 1.0,
+    "PPO": 0.0,
+    "SHD": -0.7,
+    "Pens": 0.2
    }
   }
  ],
@@ -7527,9 +7547,9 @@
    "gf": 1.0,
    "ga": 2.0,
    "blocks": 2.0,
-   "gameScore": -0.5,
+   "gameScore": -0.48,
    "gameScoreParts": {
-    "moneypuck": 0.225,
+    "moneypuck": 0.275,
     "hockeystatcards": -1.23
    }
   },
@@ -7570,7 +7590,7 @@
   "worst": {
    "date": "2026-11-12",
    "opponent": "FLA",
-   "value": -0.5
+   "value": -0.48
   },
   "above2": 0,
   "below0": 5
@@ -7588,5 +7608,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-17T05:33:40-08:00"
+ "updatedAt": "2026-11-18T06:00:13-08:00"
 }

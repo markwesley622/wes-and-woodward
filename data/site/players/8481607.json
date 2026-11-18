@@ -75,8 +75,8 @@
    "onIceXgPct": 0.57,
    "onIceCorsiPct": 0.57,
    "ixgPer60": 0.224,
-   "pctl_onIceXgPct": 81.2,
-   "pctl_ixgPer60": 68.8,
+   "pctl_onIceXgPct": 81.3,
+   "pctl_ixgPer60": 68.3,
    "qualifiesForPercentiles": false
   }
  },
@@ -95,19 +95,19 @@
   },
   "Net": {
    "value": 0.7,
-   "percentile": 71
+   "percentile": 70
   }
  },
  "score": {
-  "value": 43.5,
-  "low": 30.7,
-  "high": 57.1,
-  "isolated": 54.2,
-  "production": 41.3,
+  "value": 43.0,
+  "low": 30.3,
+  "high": 56.7,
+  "isolated": 53.9,
+  "production": 40.9,
   "weightIsolated": 0.147,
-  "sustainable": 55.1,
-  "results": 52.0,
-  "percentile": 46.0,
+  "sustainable": 54.7,
+  "results": 51.8,
+  "percentile": 45.8,
   "goalsBlended": 1.5,
   "goalsSustainable": 1.7,
   "goalsResults": 1.3,
@@ -139,7 +139,7 @@
   },
   "reliability": 0.085,
   "reliabilityProduction": 0.371,
-  "pool": 670,
+  "pool": 672,
   "minGp": 6,
   "group": "skaters",
   "position": "D",
@@ -194,7 +194,7 @@
    "xGAR": 1.6,
    "GAR": 1.3,
    "WAR": 0.2,
-   "xWAR": 0.3,
+   "xWAR": 0.2,
    "toiAll": 172.5
   },
   "rapm": {
@@ -210,66 +210,66 @@
    "CF/60": 2.36,
    "CA/60": -0.19
   },
-  "rank": 362,
+  "rank": 364,
   "neighbors": [
    {
-    "rank": 360,
-    "name": "Eeli Tolvanen",
-    "team": "NYR",
-    "gp": 22,
-    "pos": "R",
-    "value": 43.6,
-    "isolated": 45.5,
-    "production": 42.8,
-    "weight": 0.22,
-    "isMe": false
-   },
-   {
-    "rank": 361,
+    "rank": 362,
     "name": "Josh Manson",
     "team": "COL",
     "gp": 13,
     "pos": "D",
-    "value": 43.6,
-    "isolated": 62.3,
-    "production": 39.6,
+    "value": 43.1,
+    "isolated": 61.5,
+    "production": 39.2,
     "weight": 0.16,
     "isMe": false
    },
    {
-    "rank": 362,
-    "name": "Albert Johansson",
-    "team": "DET",
-    "gp": 11,
-    "pos": "D",
-    "value": 43.5,
-    "isolated": 54.2,
-    "production": 41.3,
-    "weight": 0.15,
-    "isMe": true
-   },
-   {
     "rank": 363,
-    "name": "Trevor Moore",
-    "team": "L.A",
+    "name": "Frederick Gaudreau",
+    "team": "SEA",
     "gp": 18,
-    "pos": "L",
-    "value": 43.4,
-    "isolated": 40.9,
-    "production": 43.8,
+    "pos": "C",
+    "value": 43.0,
+    "isolated": 67.1,
+    "production": 35.8,
     "weight": 0.23,
     "isMe": false
    },
    {
     "rank": 364,
-    "name": "Frederick Gaudreau",
-    "team": "SEA",
-    "gp": 18,
+    "name": "Albert Johansson",
+    "team": "DET",
+    "gp": 11,
+    "pos": "D",
+    "value": 43.0,
+    "isolated": 53.9,
+    "production": 40.9,
+    "weight": 0.15,
+    "isMe": true
+   },
+   {
+    "rank": 365,
+    "name": "Sam Rinzel",
+    "team": "CHI",
+    "gp": 20,
+    "pos": "D",
+    "value": 43.0,
+    "isolated": 43.6,
+    "production": 42.5,
+    "weight": 0.28,
+    "isMe": false
+   },
+   {
+    "rank": 366,
+    "name": "Nikita Nesterenko",
+    "team": "ANA",
+    "gp": 20,
     "pos": "C",
-    "value": 43.3,
-    "isolated": 67.1,
-    "production": 36.1,
-    "weight": 0.23,
+    "value": 42.8,
+    "isolated": 49.6,
+    "production": 41.0,
+    "weight": 0.19,
     "isMe": false
    }
   ],
@@ -564,6 +564,16 @@
    "off": 0.316,
    "def": -0.077,
    "toi": 240,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Alex Turcotte",
+   "team": "L.A",
+   "pos": "C",
+   "off": -0.04,
+   "def": -0.016,
+   "toi": 59,
    "det": false,
    "me": false
   },
@@ -1764,6 +1774,16 @@
    "off": -0.159,
    "def": -0.001,
    "toi": 206,
+   "det": false,
+   "me": false
+  },
+  {
+   "name": "Conor Timmins",
+   "team": "BUF",
+   "pos": "D",
+   "off": 0.003,
+   "def": -0.144,
+   "toi": 64,
    "det": false,
    "me": false
   },
@@ -7031,8 +7051,8 @@
    "team": "WSH",
    "pos": "D",
    "gp": 9,
-   "distance": 0.62,
-   "value": 61.8,
+   "distance": 0.6,
+   "value": 61.3,
    "goals": 2.4,
    "components": {
     "EVO": 1.3,
@@ -7047,11 +7067,11 @@
    "team": "NSH",
    "pos": "D",
    "gp": 11,
-   "distance": 0.62,
-   "value": 45.5,
-   "goals": 0.6,
+   "distance": 0.66,
+   "value": 43.9,
+   "goals": 0.5,
    "components": {
-    "EVO": -0.1,
+    "EVO": -0.2,
     "EVD": 0.3,
     "PPO": 0.0,
     "SHD": 0.0,
@@ -7059,19 +7079,19 @@
    }
   },
   {
-   "name": "Parker Wotherspoon",
-   "team": "VGK",
+   "name": "Nick Blankenburg",
+   "team": "TOR",
    "pos": "D",
-   "gp": 9,
-   "distance": 0.66,
-   "value": 49.5,
-   "goals": 1.0,
+   "gp": 6,
+   "distance": 0.73,
+   "value": 42.1,
+   "goals": 0.3,
    "components": {
-    "EVO": -0.1,
-    "EVD": 0.6,
+    "EVO": 0.1,
+    "EVD": -0.2,
     "PPO": 0.0,
-    "SHD": 0.1,
-    "Pens": 0.4
+    "SHD": 0.0,
+    "Pens": 0.3
    }
   }
  ],
@@ -7378,5 +7398,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-17T05:32:35-08:00"
+ "updatedAt": "2026-11-18T05:59:08-08:00"
 }
