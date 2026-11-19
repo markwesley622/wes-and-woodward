@@ -31,7 +31,7 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 17,
+   "gp": 18,
    "g": 4,
    "a": 3,
    "pts": 7,
@@ -72,7 +72,7 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 17,
+     "gp": 18,
      "g": 4,
      "a": 3,
      "pts": 7,
@@ -230,18 +230,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 17,
+  "gp": 18,
   "g": 4,
   "a": 3,
   "pts": 7,
-  "pgp": 0.412,
-  "lineGp": 17,
-  "nhle": 0.16,
-  "nhlePace": 13.4,
+  "pgp": 0.389,
+  "lineGp": 18,
+  "nhle": 0.151,
+  "nhlePace": 12.7,
   "lines": [
    "AHL"
   ],
-  "feature": 0.16
+  "feature": 0.151
  },
  "league": {
   "name": "AHL",
@@ -266,110 +266,110 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 41,
-   "gp": 17,
-   "value": 0.4118,
+   "gp": 18,
+   "value": 0.3889,
    "percentile": 58.5,
-   "percentileAllAges": 52.0,
+   "percentileAllAges": 50.5,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 4.3,
+  "expected": 6.6,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 18.8,
-  "pRegular": 0.16,
+  "p90": 22.7,
+  "pRegular": 0.24,
   "pTopLine": 0.02,
-  "pAboveAvg": 0.02,
-  "pElite": 0.0,
+  "pAboveAvg": 0.04,
+  "pElite": 0.02,
   "poolN": 1122,
   "group": "F",
   "age": 21,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.16,
+  "pCeiling": 0.24,
   "featureBand": [
-   0.153,
-   0.166
+   0.147,
+   0.155
   ],
   "examples": [
    {
-    "name": "Iiro Pakarinen",
-    "year": 2011,
-    "pick": 184,
-    "league": "SM-liiga",
-    "feature": 0.16,
-    "peak": 18.9,
-    "tier": "replacement level",
-    "nhlGp": 134
-   },
-   {
-    "name": "Clark Bishop",
-    "year": 2014,
-    "pick": 127,
-    "league": "AHL",
-    "feature": 0.16,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 53
-   },
-   {
-    "name": "William Bitten",
-    "year": 2016,
-    "pick": 70,
-    "league": "AHL",
-    "feature": 0.16,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 4
-   },
-   {
-    "name": "Manuel Wiederer",
-    "year": 2016,
-    "pick": 150,
-    "league": "AHL",
-    "feature": 0.16,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Mitchell Hoelscher",
-    "year": 2018,
-    "pick": 172,
-    "league": "ECHL",
-    "feature": 0.16,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jerry D'Amigo",
+    "name": "Anton Lander",
     "year": 2009,
-    "pick": 158,
+    "pick": 40,
     "league": "AHL",
-    "feature": 0.161,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 31
+    "feature": 0.151,
+    "peak": 6.4,
+    "tier": "replacement level",
+    "nhlGp": 215
    },
    {
-    "name": "Markus S\u00f8berg",
-    "year": 2013,
-    "pick": 165,
-    "league": "Norway",
-    "feature": 0.161,
+    "name": "Maxim Letunov",
+    "year": 2014,
+    "pick": 52,
+    "league": "NCAA",
+    "feature": 0.151,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 3
+   },
+   {
+    "name": "Brandon Gignac",
+    "year": 2016,
+    "pick": 80,
+    "league": "AHL",
+    "feature": 0.151,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 8
+   },
+   {
+    "name": "Marcus Westf\u00e4lt",
+    "year": 2018,
+    "pick": 205,
+    "league": "HockeyAllsvenskan",
+    "feature": 0.151,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Denis Yan",
-    "year": 2015,
-    "pick": 64,
-    "league": "AHL",
-    "feature": 0.161,
+    "name": "Scott Winkler",
+    "year": 2008,
+    "pick": 89,
+    "league": "NCAA",
+    "feature": 0.15,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matias Sointu",
+    "year": 2008,
+    "pick": 182,
+    "league": "SM-liiga",
+    "feature": 0.15,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Bryan Rust",
+    "year": 2010,
+    "pick": 80,
+    "league": "NCAA",
+    "feature": 0.152,
+    "peak": 94.5,
+    "tier": "elite",
+    "nhlGp": 710
+   },
+   {
+    "name": "Joachim Nermark",
+    "year": 2011,
+    "pick": 93,
+    "league": "HockeyAllsvenskan",
+    "feature": 0.15,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -393,8 +393,8 @@
   "w": 0.0,
   "sinceDraft": 3,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 4.3,
-  "expected": 4.3,
+  "cohortExpected": 6.6,
+  "expected": 6.6,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -407,19 +407,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.16,
-   "gp": 17
+   "feature": 0.151,
+   "gp": 18
   },
-  "delta": -0.029
+  "delta": -0.038
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 17,
+  "gp": 18,
   "season": "2026-2027"
  },
- "rank": 25,
- "score": 4.3,
+ "rank": 21,
+ "score": 6.6,
  "rankStart": 12,
  "rankStartDate": "2026-10-06"
 }

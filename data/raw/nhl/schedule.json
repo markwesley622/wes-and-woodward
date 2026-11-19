@@ -2588,7 +2588,7 @@
    "easternUTCOffset": "-05:00",
    "venueUTCOffset": "-05:00",
    "venueTimezone": "America/Detroit",
-   "gameState": "FUT",
+   "gameState": "OFF",
    "gameScheduleState": "OK",
    "tvBroadcasts": [
     {
@@ -2622,7 +2622,7 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/BOS_dark.svg",
     "awaySplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/BOS/20262027/BOS-radio.m3u8"
+    "score": 4
    },
    "homeTeam": {
     "id": 17,
@@ -2640,12 +2640,33 @@
     "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
     "darkLogo": "https://assets.nhle.com/logos/nhl/svg/DET_dark.svg",
     "homeSplitSquad": false,
-    "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/DET/20262027/DET-radio.m3u8"
+    "score": 1
    },
    "periodDescriptor": {
-    "number": 1,
+    "number": 3,
     "periodType": "REG",
     "maxRegulationPeriods": 3
+   },
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   },
+   "winningGoalie": {
+    "playerId": 8480280,
+    "firstInitial": {
+     "default": "J."
+    },
+    "lastName": {
+     "default": "Swayman"
+    }
+   },
+   "winningGoalScorer": {
+    "playerId": 8478401,
+    "firstInitial": {
+     "default": "P."
+    },
+    "lastName": {
+     "default": "Zacha"
+    }
    },
    "specialEvent": {
     "parentId": 44,
@@ -2654,8 +2675,9 @@
      "fr": "S\u00e9rie des six \u00e9quipes originales"
     }
    },
-   "ticketsLink": "https://www.ticketmaster.com/event/080064EED7D87FD6?brand=redwings&artistid=805938&wt.mc_id=NHL_TEAM_DET_SCHEDULE_GM11&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_DET&utm_content=SCHEDULE_GM11",
-   "ticketsLinkFr": "https://www.ticketmaster.com/event/080064EED7D87FD6?brand=redwings&artistid=805938&wt.mc_id=NHL_TEAM_DET_SCHEDULE_GM11&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_DET&utm_content=SCHEDULE_GM11",
+   "threeMinRecap": "/video/bos-at-det-recap-6408575036112",
+   "threeMinRecapFr": "/fr/video/bos-vs-det-18-11-2026-resume-6408575906112",
+   "condensedGame": "/video/bos-at-det-condensed-game-6408575230112",
    "gameCenterLink": "/gamecenter/bos-vs-det/2026/11/18/2026020344"
   },
   {

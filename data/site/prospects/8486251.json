@@ -31,11 +31,11 @@
   {
    "league": "OHL",
    "team": "Peterborough Petes",
-   "gp": 18,
+   "gp": 19,
    "g": 10,
-   "a": 13,
-   "pts": 23,
-   "pm": 6,
+   "a": 14,
+   "pts": 24,
+   "pm": 7,
    "pim": 17,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "OHL",
      "team": "Peterborough Petes",
-     "gp": 18,
+     "gp": 19,
      "g": 10,
-     "a": 13,
-     "pts": 23,
-     "pm": 6,
+     "a": 14,
+     "pts": 24,
+     "pm": 7,
      "pim": 17,
      "gaa": null,
      "svp": null,
@@ -96,18 +96,18 @@
   "table": "OHL",
   "coef": 0.144,
   "team": "Peterborough Petes",
-  "gp": 18,
+  "gp": 19,
   "g": 10,
-  "a": 13,
-  "pts": 23,
-  "pgp": 1.278,
-  "lineGp": 18,
-  "nhle": 0.184,
-  "nhlePace": 15.5,
+  "a": 14,
+  "pts": 24,
+  "pgp": 1.263,
+  "lineGp": 19,
+  "nhle": 0.182,
+  "nhlePace": 15.3,
   "lines": [
    "OHL"
   ],
-  "feature": 0.184
+  "feature": 0.182
  },
  "league": {
   "name": "OHL",
@@ -132,32 +132,32 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 86,
-   "gp": 18,
-   "value": 1.2778,
+   "gp": 19,
+   "value": 1.2632,
    "percentile": 94.2,
-   "percentileAllAges": 94.1,
+   "percentileAllAges": 93.4,
    "allAgesN": 1875
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 22.3,
+  "expected": 23.8,
   "median": 0.0,
-  "p75": 39.1,
+  "p75": 47.3,
   "p90": 87.1,
-  "pRegular": 0.38,
-  "pTopLine": 0.16,
-  "pAboveAvg": 0.22,
+  "pRegular": 0.4,
+  "pTopLine": 0.18,
+  "pAboveAvg": 0.24,
   "pElite": 0.08,
   "poolN": 1362,
   "group": "F",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "below average",
-  "pCeiling": 0.34,
+  "pCeiling": 0.36,
   "featureBand": [
    0.157,
-   0.21
+   0.206
   ],
   "examples": [
    {
@@ -166,6 +166,16 @@
     "pick": 109,
     "league": "MHL",
     "feature": 0.179,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Michal Tepl\u00fd",
+    "year": 2019,
+    "pick": 105,
+    "league": "WHL",
+    "feature": 0.176,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -181,6 +191,16 @@
     "nhlGp": 3
    },
    {
+    "name": "Lucas Wallmark",
+    "year": 2014,
+    "pick": 97,
+    "league": "SHL",
+    "feature": 0.18,
+    "peak": 39.1,
+    "tier": "below average",
+    "nhlGp": 187
+   },
+   {
     "name": "Michael Bunting",
     "year": 2014,
     "pick": 117,
@@ -191,11 +211,11 @@
     "nhlGp": 418
    },
    {
-    "name": "Michal Tepl\u00fd",
-    "year": 2019,
-    "pick": 105,
+    "name": "Marek Tvrdon",
+    "year": 2011,
+    "pick": 115,
     "league": "WHL",
-    "feature": 0.176,
+    "feature": 0.174,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -211,34 +231,14 @@
     "nhlGp": 155
    },
    {
-    "name": "Lucas Wallmark",
-    "year": 2014,
-    "pick": 97,
-    "league": "SHL",
-    "feature": 0.18,
-    "peak": 39.1,
-    "tier": "below average",
-    "nhlGp": 187
-   },
-   {
-    "name": "Alexander Avtsin",
-    "year": 2009,
-    "pick": 109,
-    "league": "KHL",
-    "feature": 0.196,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Johnny Gaudreau",
-    "year": 2011,
-    "pick": 104,
-    "league": "NCAA",
-    "feature": 0.194,
-    "peak": 98.8,
-    "tier": "elite",
-    "nhlGp": 763
+    "name": "Dmytro Timashov",
+    "year": 2015,
+    "pick": 125,
+    "league": "QMJHL",
+    "feature": 0.179,
+    "peak": 15.1,
+    "tier": "replacement level",
+    "nhlGp": 45
    }
   ]
  },
@@ -259,8 +259,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 22.3,
-  "expected": 17.9,
+  "cohortExpected": 23.8,
+  "expected": 18.6,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -273,19 +273,19 @@
   "to": {
    "season": "2026-2027",
    "league": "OHL",
-   "feature": 0.184,
-   "gp": 18
+   "feature": 0.182,
+   "gp": 19
   },
-  "delta": 0.078
+  "delta": 0.076
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 18,
+  "gp": 19,
   "season": "2026-2027"
  },
- "rank": 12,
- "score": 17.9,
+ "rank": 11,
+ "score": 18.6,
  "rankStart": 18,
  "rankStartDate": "2026-10-06"
 }

@@ -31,10 +31,10 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 17,
-   "g": 6,
+   "gp": 18,
+   "g": 7,
    "a": 10,
-   "pts": 16,
+   "pts": 17,
    "pm": 7,
    "pim": 9,
    "gaa": null,
@@ -89,10 +89,10 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 17,
-     "g": 6,
+     "gp": 18,
+     "g": 7,
      "a": 10,
-     "pts": 16,
+     "pts": 17,
      "pm": 7,
      "pim": 9,
      "gaa": null,
@@ -298,18 +298,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 17,
-  "g": 6,
+  "gp": 18,
+  "g": 7,
   "a": 10,
-  "pts": 16,
-  "pgp": 0.941,
-  "lineGp": 17,
-  "nhle": 0.366,
-  "nhlePace": 30.7,
+  "pts": 17,
+  "pgp": 0.944,
+  "lineGp": 18,
+  "nhle": 0.367,
+  "nhlePace": 30.8,
   "lines": [
    "AHL"
   ],
-  "feature": 0.366
+  "feature": 0.367
  },
  "league": {
   "name": "AHL",
@@ -334,8 +334,8 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 41,
-   "gp": 17,
-   "value": 0.9412,
+   "gp": 18,
+   "value": 0.9444,
    "percentile": 82.9,
    "percentileAllAges": 85.7,
    "allAgesN": 642
@@ -383,16 +383,6 @@
     "nhlGp": 561
    },
    {
-    "name": "Jakob Pelletier",
-    "year": 2019,
-    "pick": 26,
-    "league": "AHL",
-    "feature": 0.363,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 91
-   },
-   {
     "name": "Mattias Janmark",
     "year": 2013,
     "pick": 79,
@@ -411,6 +401,16 @@
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Jakob Pelletier",
+    "year": 2019,
+    "pick": 26,
+    "league": "AHL",
+    "feature": 0.363,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 91
    },
    {
     "name": "Devante Smith-Pelly",
@@ -433,14 +433,14 @@
     "nhlGp": 380
    },
    {
-    "name": "Robin Kov\u00e1cs",
-    "year": 2015,
-    "pick": 62,
-    "league": "SHL",
-    "feature": 0.359,
+    "name": "Nikolai Kovalenko",
+    "year": 2018,
+    "pick": 171,
+    "league": "KHL",
+    "feature": 0.373,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
+    "nhlGp": 57
    }
   ]
  },
@@ -475,15 +475,15 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.366,
-   "gp": 17
+   "feature": 0.367,
+   "gp": 18
   },
-  "delta": 0.136
+  "delta": 0.137
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 17,
+  "gp": 18,
   "season": "2026-2027"
  },
  "rank": 5,

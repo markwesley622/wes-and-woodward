@@ -31,7 +31,7 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 15,
+   "gp": 16,
    "g": 5,
    "a": 13,
    "pts": 18,
@@ -89,7 +89,7 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 15,
+     "gp": 16,
      "g": 5,
      "a": 13,
      "pts": 18,
@@ -152,18 +152,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 15,
+  "gp": 16,
   "g": 5,
   "a": 13,
   "pts": 18,
-  "pgp": 1.2,
-  "lineGp": 15,
-  "nhle": 0.467,
-  "nhlePace": 39.2,
+  "pgp": 1.125,
+  "lineGp": 16,
+  "nhle": 0.438,
+  "nhlePace": 36.8,
   "lines": [
    "AHL"
   ],
-  "feature": 0.467
+  "feature": 0.438
  },
  "league": {
   "name": "AHL",
@@ -188,64 +188,34 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 30,
-   "gp": 15,
-   "value": 1.2,
+   "gp": 16,
+   "value": 1.125,
    "percentile": 93.3,
-   "percentileAllAges": 93.6,
+   "percentileAllAges": 90.5,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 59.7,
+  "expected": 58.6,
   "median": 68.0,
-  "p75": 92.9,
-  "p90": 96.7,
-  "pRegular": 0.86,
+  "p75": 91.4,
+  "p90": 96.0,
+  "pRegular": 0.84,
   "pTopLine": 0.44,
   "pAboveAvg": 0.64,
-  "pElite": 0.3,
+  "pElite": 0.28,
   "poolN": 1305,
   "group": "F",
   "age": 19,
   "pickWeight": 0.5,
   "tier": "elite",
-  "pCeiling": 0.3,
+  "pCeiling": 0.28,
   "featureBand": [
    0.272,
-   0.628
+   0.504
   ],
   "examples": [
-   {
-    "name": "Mikael Granlund",
-    "year": 2010,
-    "pick": 9,
-    "league": "SM-liiga",
-    "feature": 0.489,
-    "peak": 94.0,
-    "tier": "elite",
-    "nhlGp": 962
-   },
-   {
-    "name": "Nikita Filatov",
-    "year": 2008,
-    "pick": 6,
-    "league": "KHL",
-    "feature": 0.458,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 53
-   },
-   {
-    "name": "William Nylander",
-    "year": 2014,
-    "pick": 8,
-    "league": "AHL",
-    "feature": 0.504,
-    "peak": 97.0,
-    "tier": "elite",
-    "nhlGp": 753
-   },
    {
     "name": "Tyler Ennis",
     "year": 2008,
@@ -267,14 +237,24 @@
     "nhlGp": 292
    },
    {
-    "name": "Calle J\u00e4rnkrok",
+    "name": "Nikita Filatov",
+    "year": 2008,
+    "pick": 6,
+    "league": "KHL",
+    "feature": 0.458,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 53
+   },
+   {
+    "name": "Mikael Granlund",
     "year": 2010,
-    "pick": 51,
-    "league": "Elitserien",
-    "feature": 0.441,
-    "peak": 67.2,
-    "tier": "above average",
-    "nhlGp": 774
+    "pick": 9,
+    "league": "SM-liiga",
+    "feature": 0.489,
+    "peak": 94.0,
+    "tier": "elite",
+    "nhlGp": 962
    },
    {
     "name": "Jakub Vr\u00e1na",
@@ -287,6 +267,16 @@
     "nhlGp": 406
    },
    {
+    "name": "Calle J\u00e4rnkrok",
+    "year": 2010,
+    "pick": 51,
+    "league": "Elitserien",
+    "feature": 0.441,
+    "peak": 67.2,
+    "tier": "above average",
+    "nhlGp": 774
+   },
+   {
     "name": "Joel Eriksson Ek",
     "year": 2015,
     "pick": 20,
@@ -295,6 +285,16 @@
     "peak": 83.5,
     "tier": "top-line",
     "nhlGp": 616
+   },
+   {
+    "name": "Teuvo Ter\u00e4v\u00e4inen",
+    "year": 2012,
+    "pick": 18,
+    "league": "Liiga",
+    "feature": 0.378,
+    "peak": 91.4,
+    "tier": "elite",
+    "nhlGp": 829
    }
   ]
  },
@@ -315,8 +315,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 65.9,
-  "cohortExpected": 59.7,
-  "expected": 61.3,
+  "cohortExpected": 58.6,
+  "expected": 60.4,
   "tier": "above average"
  },
  "trajectory": {
@@ -329,19 +329,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.467,
-   "gp": 15
+   "feature": 0.438,
+   "gp": 16
   },
-  "delta": 0.27
+  "delta": 0.241
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 15,
+  "gp": 16,
   "season": "2026-2027"
  },
  "rank": 1,
- "score": 61.3,
+ "score": 60.4,
  "rankStart": 1,
  "rankStartDate": "2026-10-06"
 }

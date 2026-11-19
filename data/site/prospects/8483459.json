@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 17,
+   "gp": 18,
    "g": 5,
    "a": 7,
    "pts": 12,
-   "pm": 2,
+   "pm": 3,
    "pim": 0,
    "gaa": null,
    "svp": null,
@@ -89,11 +89,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 17,
+     "gp": 18,
      "g": 5,
      "a": 7,
      "pts": 12,
-     "pm": 2,
+     "pm": 3,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -218,18 +218,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 17,
+  "gp": 18,
   "g": 5,
   "a": 7,
   "pts": 12,
-  "pgp": 0.706,
-  "lineGp": 17,
-  "nhle": 0.275,
-  "nhlePace": 23.1,
+  "pgp": 0.667,
+  "lineGp": 18,
+  "nhle": 0.259,
+  "nhlePace": 21.8,
   "lines": [
    "AHL"
   ],
-  "feature": 0.275
+  "feature": 0.259
  },
  "league": {
   "name": "AHL",
@@ -254,113 +254,113 @@
    "season": "2026-2027",
    "ageBucket": "U24",
    "cohortN": 52,
-   "gp": 17,
-   "value": 0.7059,
-   "percentile": 71.2,
-   "percentileAllAges": 72.1,
+   "gp": 18,
+   "value": 0.6667,
+   "percentile": 63.5,
+   "percentileAllAges": 64.5,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 15.1,
+  "expected": 13.0,
   "median": 0.0,
-  "p75": 32.3,
-  "p90": 51.7,
-  "pRegular": 0.34,
-  "pTopLine": 0.04,
-  "pAboveAvg": 0.1,
+  "p75": 25.0,
+  "p90": 48.2,
+  "pRegular": 0.32,
+  "pTopLine": 0.02,
+  "pAboveAvg": 0.08,
   "pElite": 0.02,
   "poolN": 1006,
   "group": "F",
   "age": 22,
   "pickWeight": 0.0,
-  "tier": "below average",
-  "pCeiling": 0.28,
+  "tier": "replacement level",
+  "pCeiling": 0.32,
   "featureBand": [
-   0.262,
-   0.288
+   0.248,
+   0.269
   ],
   "examples": [
    {
-    "name": "Samuel Poulin",
-    "year": 2019,
-    "pick": 21,
+    "name": "Dale Weise",
+    "year": 2008,
+    "pick": 111,
     "league": "AHL",
-    "feature": 0.274,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 15
+    "feature": 0.259,
+    "peak": 53.5,
+    "tier": "above average",
+    "nhlGp": 513
    },
    {
-    "name": "Brett Ritchie",
-    "year": 2011,
-    "pick": 44,
-    "league": "AHL",
-    "feature": 0.277,
-    "peak": 32.3,
-    "tier": "below average",
-    "nhlGp": 391
-   },
-   {
-    "name": "Fredrik Karlstr\u00f6m",
-    "year": 2016,
-    "pick": 90,
-    "league": "SHL",
-    "feature": 0.277,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 8
-   },
-   {
-    "name": "Andrei Svetlakov",
-    "year": 2017,
-    "pick": 178,
-    "league": "KHL",
-    "feature": 0.273,
+    "name": "Henrik Bj\u00f6rklund",
+    "year": 2009,
+    "pick": 111,
+    "league": "HockeyAllsvenskan",
+    "feature": 0.259,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Saku M\u00e4enalanen",
-    "year": 2013,
-    "pick": 125,
-    "league": "Liiga",
-    "feature": 0.272,
-    "peak": 3.7,
-    "tier": "replacement level",
-    "nhlGp": 98
+    "name": "Noah Cates",
+    "year": 2017,
+    "pick": 137,
+    "league": "NCAA",
+    "feature": 0.258,
+    "peak": 62.1,
+    "tier": "above average",
+    "nhlGp": 321
    },
    {
-    "name": "Tommy Novak",
-    "year": 2015,
-    "pick": 85,
+    "name": "Angus Crookshank",
+    "year": 2018,
+    "pick": 126,
     "league": "AHL",
-    "feature": 0.272,
-    "peak": 82.8,
-    "tier": "top-line",
-    "nhlGp": 288
-   },
-   {
-    "name": "Alex Turcotte",
-    "year": 2019,
-    "pick": 5,
-    "league": "AHL",
-    "feature": 0.278,
-    "peak": 36.5,
-    "tier": "below average",
-    "nhlGp": 164
-   },
-   {
-    "name": "Graeme Clarke",
-    "year": 2019,
-    "pick": 80,
-    "league": "AHL",
-    "feature": 0.272,
+    "feature": 0.258,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 3
+    "nhlGp": 29
+   },
+   {
+    "name": "Philippe Cornet",
+    "year": 2008,
+    "pick": 133,
+    "league": "AHL",
+    "feature": 0.257,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 2
+   },
+   {
+    "name": "Justin Azevedo",
+    "year": 2008,
+    "pick": 153,
+    "league": "AHL",
+    "feature": 0.261,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matthew Peca",
+    "year": 2011,
+    "pick": 201,
+    "league": "AHL",
+    "feature": 0.257,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 83
+   },
+   {
+    "name": "Emil Galimov",
+    "year": 2013,
+    "pick": 207,
+    "league": "KHL",
+    "feature": 0.257,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -381,8 +381,8 @@
   "w": 0.0,
   "sinceDraft": 4,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 15.1,
-  "expected": 15.1,
+  "cohortExpected": 13.0,
+  "expected": 13.0,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -395,19 +395,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.275,
-   "gp": 17
+   "feature": 0.259,
+   "gp": 18
   },
-  "delta": 0.109
+  "delta": 0.093
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 17,
+  "gp": 18,
   "season": "2026-2027"
  },
- "rank": 13,
- "score": 15.1,
+ "rank": 14,
+ "score": 13.0,
  "rankStart": 20,
  "rankStartDate": "2026-10-06"
 }

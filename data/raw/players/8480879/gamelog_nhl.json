@@ -3,6 +3,12 @@
  "gameTypeId": 2,
  "playerStatsSeasons": [
   {
+   "season": 20262027,
+   "gameTypes": [
+    2
+   ]
+  },
+  {
    "season": 20252026,
    "gameTypes": [
     2
@@ -39,5 +45,33 @@
    ]
   }
  ],
- "gameLog": []
+ "gameLog": [
+  {
+   "gameId": 2026020344,
+   "teamAbbrev": "DET",
+   "homeRoadFlag": "H",
+   "gameDate": "2026-11-18",
+   "goals": 0,
+   "assists": 0,
+   "commonName": {
+    "default": "Red Wings"
+   },
+   "opponentCommonName": {
+    "default": "Bruins"
+   },
+   "points": 0,
+   "plusMinus": 1,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 0,
+   "gameWinningGoals": 0,
+   "otGoals": 0,
+   "shots": 0,
+   "shifts": 18,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "pim": 0,
+   "toi": "13:05",
+   "opponentAbbrev": "BOS"
+  }
+ ]
 }

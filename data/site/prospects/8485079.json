@@ -31,12 +31,12 @@
   {
    "league": "HockeyAllsvenskan",
    "team": "Almtuna IS",
-   "gp": 20,
+   "gp": 21,
    "g": 4,
    "a": 8,
    "pts": 12,
-   "pm": -8,
-   "pim": 4,
+   "pm": -10,
+   "pim": 6,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -106,12 +106,12 @@
     {
      "league": "HockeyAllsvenskan",
      "team": "Almtuna IS",
-     "gp": 20,
+     "gp": 21,
      "g": 4,
      "a": 8,
      "pts": 12,
-     "pm": -8,
-     "pim": 4,
+     "pm": -10,
+     "pim": 6,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -225,19 +225,19 @@
   "table": "Allsvenskan",
   "coef": 0.351,
   "team": "Almtuna IS",
-  "gp": 25,
+  "gp": 26,
   "g": 4,
   "a": 8,
   "pts": 12,
-  "pgp": 0.6,
-  "lineGp": 20,
-  "nhle": 0.191,
-  "nhlePace": 16.0,
+  "pgp": 0.571,
+  "lineGp": 21,
+  "nhle": 0.184,
+  "nhlePace": 15.5,
   "lines": [
    "SHL",
    "HockeyAllsvenskan"
   ],
-  "feature": 0.191
+  "feature": 0.184
  },
  "league": {
   "name": "HockeyAllsvenskan",
@@ -262,113 +262,113 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 11,
-   "gp": 20,
-   "value": 0.6,
+   "gp": 21,
+   "value": 0.5714,
    "percentile": 36.4,
-   "percentileAllAges": 71.4,
+   "percentileAllAges": 69.5,
    "allAgesN": 357
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 18.8,
+  "expected": 13.5,
   "median": 0.0,
-  "p75": 32.3,
-  "p90": 82.6,
-  "pRegular": 0.34,
-  "pTopLine": 0.12,
-  "pAboveAvg": 0.2,
-  "pElite": 0.08,
+  "p75": 10.4,
+  "p90": 62.1,
+  "pRegular": 0.26,
+  "pTopLine": 0.04,
+  "pAboveAvg": 0.18,
+  "pElite": 0.0,
   "poolN": 1236,
   "group": "F",
   "age": 20,
   "pickWeight": 0.0,
-  "tier": "below average",
+  "tier": "replacement level",
   "pCeiling": 0.26,
   "featureBand": [
-   0.186,
-   0.195
+   0.179,
+   0.189
   ],
   "examples": [
    {
-    "name": "David Ullstr\u00f6m",
-    "year": 2008,
-    "pick": 102,
-    "league": "Elitserien",
-    "feature": 0.191,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 49
-   },
-   {
-    "name": "Ond\u0159ej Pal\u00e1t",
-    "year": 2011,
-    "pick": 208,
-    "league": "AHL",
-    "feature": 0.191,
-    "peak": 92.9,
-    "tier": "elite",
-    "nhlGp": 907
-   },
-   {
-    "name": "Adam Erne",
-    "year": 2013,
-    "pick": 33,
-    "league": "AHL",
-    "feature": 0.191,
-    "peak": 51.7,
-    "tier": "above average",
-    "nhlGp": 424
-   },
-   {
-    "name": "Jaret Anderson-Dolan",
-    "year": 2017,
-    "pick": 41,
-    "league": "AHL",
-    "feature": 0.191,
-    "peak": 32.3,
-    "tier": "below average",
-    "nhlGp": 134
-   },
-   {
-    "name": "Kirill Slepets",
-    "year": 2019,
-    "pick": 152,
-    "league": "KHL",
-    "feature": 0.191,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Eero Elo",
-    "year": 2008,
-    "pick": 145,
-    "league": "SM-liiga",
-    "feature": 0.192,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Carter Ashton",
-    "year": 2009,
-    "pick": 29,
-    "league": "AHL",
-    "feature": 0.19,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 54
-   },
-   {
-    "name": "Riley Sheahan",
+    "name": "Christian Thomas",
     "year": 2010,
-    "pick": 21,
+    "pick": 40,
     "league": "AHL",
-    "feature": 0.192,
-    "peak": 68.7,
+    "feature": 0.184,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 27
+   },
+   {
+    "name": "Alex Guptill",
+    "year": 2010,
+    "pick": 77,
+    "league": "NCAA",
+    "feature": 0.184,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matthew Peca",
+    "year": 2011,
+    "pick": 201,
+    "league": "NCAA",
+    "feature": 0.184,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 83
+   },
+   {
+    "name": "Ryan Dzingel",
+    "year": 2011,
+    "pick": 204,
+    "league": "NCAA",
+    "feature": 0.184,
+    "peak": 81.9,
+    "tier": "top-line",
+    "nhlGp": 404
+   },
+   {
+    "name": "Kody Clark",
+    "year": 2018,
+    "pick": 47,
+    "league": "AHL",
+    "feature": 0.184,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Cole Fonstad",
+    "year": 2018,
+    "pick": 128,
+    "league": "WHL",
+    "feature": 0.184,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Sebastian W\u00e4nnstr\u00f6m",
+    "year": 2010,
+    "pick": 44,
+    "league": "Elitserien",
+    "feature": 0.183,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Zach Sanford",
+    "year": 2013,
+    "pick": 61,
+    "league": "NCAA",
+    "feature": 0.185,
+    "peak": 56.8,
     "tier": "above average",
-    "nhlGp": 637
+    "nhlGp": 334
    }
   ]
  },
@@ -389,8 +389,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 18.8,
-  "expected": 18.8,
+  "cohortExpected": 13.5,
+  "expected": 13.5,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -403,19 +403,19 @@
   "to": {
    "season": "2026-2027",
    "league": "HockeyAllsvenskan",
-   "feature": 0.191,
-   "gp": 20
+   "feature": 0.184,
+   "gp": 21
   },
-  "delta": 0.096
+  "delta": 0.089
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 20,
+  "gp": 21,
   "season": "2026-2027"
  },
- "rank": 11,
- "score": 18.8,
+ "rank": 13,
+ "score": 13.5,
  "rankStart": 27,
  "rankStartDate": "2026-10-06"
 }

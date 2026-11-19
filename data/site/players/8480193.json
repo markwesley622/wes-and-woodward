@@ -27,7 +27,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 9,
+  "gp": 10,
   "goals": null,
   "assists": null,
   "points": null,
@@ -38,24 +38,24 @@
   "toiPerGame": null,
   "ppPoints": null,
   "wins": 3,
-  "losses": 3,
+  "losses": 4,
   "otLosses": 2,
-  "gaa": 1.842563,
-  "savePct": 0.930876,
+  "gaa": 1.980077,
+  "savePct": 0.927126,
   "shutouts": 2
  },
  "score": {
-  "value": 78.3,
-  "low": 54.3,
-  "high": 91.7,
-  "gsax": 9.5,
-  "xGoals": 24.5,
-  "goals": 15.0,
-  "minutes": 488,
+  "value": 76.6,
+  "low": 52.2,
+  "high": 90.7,
+  "gsax": 9.1,
+  "xGoals": 27.1,
+  "goals": 18.0,
+  "minutes": 545,
   "pool": 35,
   "rank": null,
   "percentile": 85.7,
-  "reliability": 0.25,
+  "reliability": 0.27,
   "group": "goalies",
   "neighbors": [],
   "method": "A 0-100 rating where 50 is the average NHL goalie with 600+ minutes; built on goals saved above expected (MoneyPuck, all situations), this season only."
@@ -64,15 +64,15 @@
   "playerId": 8480193,
   "name": "Daniil Tarasov",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480193.png",
-  "gamesPlayed": 9,
-  "gamesStarted": 7,
+  "gamesPlayed": 10,
+  "gamesStarted": 8,
   "wins": 3,
-  "losses": 3,
+  "losses": 4,
   "otLosses": 2,
-  "savePct": 0.930876,
-  "gaa": 1.842563,
+  "savePct": 0.927126,
+  "gaa": 1.980077,
   "shutouts": 2,
-  "gsax": 9.5,
+  "gsax": 9.11,
   "pctl_gsax": 85.7,
   "qualifiesForPercentiles": false
  },
@@ -193,6 +193,19 @@
    "savePct": 1.0,
    "shutout": 1,
    "toi": 60.0
+  },
+  {
+   "gameId": 2026020344,
+   "date": "2026-11-18",
+   "opponent": "BOS",
+   "home": true,
+   "started": 1,
+   "decision": "L",
+   "shotsAgainst": 30,
+   "goalsAgainst": 3,
+   "savePct": 0.9,
+   "shutout": 0,
+   "toi": 57.0
   }
  ],
  "gameScore": null,
@@ -203,7 +216,7 @@
  "myComponents": null,
  "hsc": {},
  "note": null,
- "detGames": 9,
+ "detGames": 10,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -216,5 +229,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-18T06:00:01-08:00"
+ "updatedAt": "2026-11-19T05:48:59-08:00"
 }
