@@ -31,7 +31,7 @@
   {
    "league": "OHL",
    "team": "Windsor Spitfires",
-   "gp": 22,
+   "gp": 23,
    "g": 8,
    "a": 8,
    "pts": 16,
@@ -140,7 +140,7 @@
     {
      "league": "OHL",
      "team": "Windsor Spitfires",
-     "gp": 22,
+     "gp": 23,
      "g": 8,
      "a": 8,
      "pts": 16,
@@ -254,18 +254,18 @@
   "table": "OHL",
   "coef": 0.144,
   "team": "Windsor Spitfires",
-  "gp": 22,
+  "gp": 23,
   "g": 8,
   "a": 8,
   "pts": 16,
-  "pgp": 0.727,
-  "lineGp": 22,
-  "nhle": 0.105,
-  "nhlePace": 8.8,
+  "pgp": 0.696,
+  "lineGp": 23,
+  "nhle": 0.1,
+  "nhlePace": 8.4,
   "lines": [
    "OHL"
   ],
-  "feature": 0.105
+  "feature": 0.1
  },
  "league": {
   "name": "OHL",
@@ -290,22 +290,22 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 77,
-   "gp": 22,
-   "value": 0.7273,
+   "gp": 23,
+   "value": 0.6957,
    "percentile": 51.9,
-   "percentileAllAges": 70.5,
+   "percentileAllAges": 68.5,
    "allAgesN": 1875
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 7.3,
+  "expected": 5.2,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 21.7,
+  "p90": 19.8,
   "pRegular": 0.2,
   "pTopLine": 0.02,
-  "pAboveAvg": 0.08,
+  "pAboveAvg": 0.04,
   "pElite": 0.02,
   "poolN": 1305,
   "group": "F",
@@ -314,10 +314,60 @@
   "tier": "replacement level",
   "pCeiling": 0.2,
   "featureBand": [
-   0.09,
-   0.121
+   0.085,
+   0.115
   ],
   "examples": [
+   {
+    "name": "Alexei Toropchenko",
+    "year": 2017,
+    "pick": 113,
+    "league": "OHL",
+    "feature": 0.1,
+    "peak": 21.7,
+    "tier": "replacement level",
+    "nhlGp": 325
+   },
+   {
+    "name": "Kale Kessy",
+    "year": 2011,
+    "pick": 111,
+    "league": "WHL",
+    "feature": 0.101,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Tomas Vincour",
+    "year": 2009,
+    "pick": 129,
+    "league": "AHL",
+    "feature": 0.098,
+    "peak": 19.2,
+    "tier": "replacement level",
+    "nhlGp": 95
+   },
+   {
+    "name": "Christophe Lalancette",
+    "year": 2012,
+    "pick": 109,
+    "league": "QMJHL",
+    "feature": 0.098,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Evan Campbell",
+    "year": 2013,
+    "pick": 128,
+    "league": "BCHL",
+    "feature": 0.104,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
    {
     "name": "Milos Roman",
     "year": 2018,
@@ -339,64 +389,14 @@
     "nhlGp": 0
    },
    {
-    "name": "Evan Campbell",
-    "year": 2013,
-    "pick": 128,
-    "league": "BCHL",
-    "feature": 0.104,
+    "name": "Yegor Spiridonov",
+    "year": 2019,
+    "pick": 108,
+    "league": "VHL",
+    "feature": 0.096,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
-   },
-   {
-    "name": "Michael Clarke",
-    "year": 2012,
-    "pick": 132,
-    "league": "OHL",
-    "feature": 0.106,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Nathan Noel",
-    "year": 2016,
-    "pick": 113,
-    "league": "QMJHL",
-    "feature": 0.109,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Graham Black",
-    "year": 2012,
-    "pick": 135,
-    "league": "WHL",
-    "feature": 0.104,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kale Kessy",
-    "year": 2011,
-    "pick": 111,
-    "league": "WHL",
-    "feature": 0.101,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Alexei Toropchenko",
-    "year": 2017,
-    "pick": 113,
-    "league": "OHL",
-    "feature": 0.1,
-    "peak": 21.7,
-    "tier": "replacement level",
-    "nhlGp": 325
    }
   ]
  },
@@ -417,8 +417,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 7.3,
-  "expected": 8.8,
+  "cohortExpected": 5.2,
+  "expected": 7.2,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -431,19 +431,19 @@
   "to": {
    "season": "2026-2027",
    "league": "OHL",
-   "feature": 0.105,
-   "gp": 22
+   "feature": 0.1,
+   "gp": 23
   },
-  "delta": 0.048
+  "delta": 0.043
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 22,
+  "gp": 23,
   "season": "2026-2027"
  },
  "rank": 18,
- "score": 8.8,
+ "score": 7.2,
  "rankStart": 19,
  "rankStartDate": "2026-10-06"
 }
