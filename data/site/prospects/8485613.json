@@ -48,7 +48,7 @@
   {
    "league": "MHL",
    "team": "MHK Spartak Moskva",
-   "gp": 6,
+   "gp": 7,
    "g": 0,
    "a": 4,
    "pts": 4,
@@ -157,7 +157,7 @@
     {
      "league": "MHL",
      "team": "MHK Spartak Moskva",
-     "gp": 6,
+     "gp": 7,
      "g": 0,
      "a": 4,
      "pts": 4,
@@ -254,19 +254,19 @@
   "table": "VHL",
   "coef": 0.328,
   "team": "Khimik Voskresensk",
-  "gp": 20,
+  "gp": 21,
   "g": 0,
   "a": 1,
   "pts": 1,
   "pgp": 0.071,
   "lineGp": 14,
-  "nhle": 0.045,
-  "nhlePace": 3.8,
+  "nhle": 0.043,
+  "nhlePace": 3.6,
   "lines": [
    "VHL",
    "MHL"
   ],
-  "feature": 0.045
+  "feature": 0.043
  },
  "league": {
   "name": "VHL",
@@ -316,9 +316,19 @@
   "pCeiling": 0.1,
   "featureBand": [
    0.034,
-   0.057
+   0.055
   ],
   "examples": [
+   {
+    "name": "Reece Willcox",
+    "year": 2012,
+    "pick": 141,
+    "league": "NCAA",
+    "feature": 0.042,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
    {
     "name": "Stefan Warg",
     "year": 2008,
@@ -340,14 +350,14 @@
     "nhlGp": 0
    },
    {
-    "name": "Reece Willcox",
-    "year": 2012,
-    "pick": 141,
+    "name": "Kevin Gravel",
+    "year": 2010,
+    "pick": 148,
     "league": "NCAA",
     "feature": 0.042,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "peak": 11.2,
+    "tier": "replacement level",
+    "nhlGp": 139
    },
    {
     "name": "Joe Rogalski",
@@ -360,41 +370,31 @@
     "nhlGp": 0
    },
    {
-    "name": "Patrick Kudla",
-    "year": 2016,
-    "pick": 158,
-    "league": "OJHL",
-    "feature": 0.045,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kevin Gravel",
-    "year": 2010,
-    "pick": 148,
-    "league": "NCAA",
-    "feature": 0.042,
-    "peak": 11.2,
-    "tier": "replacement level",
-    "nhlGp": 139
-   },
-   {
-    "name": "Miska Kukkonen",
+    "name": "Toni Utunen",
     "year": 2018,
-    "pick": 125,
+    "pick": 130,
     "league": "Liiga",
-    "feature": 0.046,
+    "feature": 0.041,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Brian Cooper",
-    "year": 2012,
-    "pick": 127,
+    "name": "Alex Velischek",
+    "year": 2009,
+    "pick": 123,
+    "league": "USHL",
+    "feature": 0.043,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Tyler Inamoto",
+    "year": 2017,
+    "pick": 133,
     "league": "NCAA",
-    "feature": 0.047,
+    "feature": 0.04,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -432,10 +432,10 @@
   "to": {
    "season": "2026-2027",
    "league": "VHL",
-   "feature": 0.045,
+   "feature": 0.043,
    "gp": 14
   },
-  "delta": -0.026
+  "delta": -0.028
  },
  "nhlSample": null,
  "nhlUsage": null,
@@ -443,7 +443,7 @@
   "gp": 14,
   "season": "2026-2027"
  },
- "rank": 26,
+ "rank": 25,
  "score": 4.5,
  "rankStart": 23,
  "rankStartDate": "2026-10-06"

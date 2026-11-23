@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 22,
-  "goals": 7,
+  "gp": 23,
+  "goals": 8,
   "assists": 9,
-  "points": 16,
+  "points": 17,
   "plusMinus": 6,
   "pim": 15,
-  "shots": 77,
-  "shootingPct": 0.090909,
-  "toiPerGame": "19:41",
+  "shots": 83,
+  "shootingPct": 0.096386,
+  "toiPerGame": "19:43",
   "ppPoints": 5,
   "wins": null,
   "losses": null,
@@ -47,10 +47,10 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 22,
-   "goals": 7,
+   "gp": 23,
+   "goals": 8,
    "assists": 9,
-   "points": 16,
+   "points": 17,
    "plusMinus": 6,
    "pim": 15
   }
@@ -60,58 +60,58 @@
   "name": "Alex DeBrincat",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479337.png",
-  "gamesPlayed": 22,
-  "goals": 7,
+  "gamesPlayed": 23,
+  "goals": 8,
   "assists": 9,
-  "points": 16,
-  "shots": 77,
-  "shootingPct": 0.090909,
-  "toiPerGame": 1180.5,
-  "ixG": 9.32,
-  "goalsAboveExpected": -2.32,
-  "gameScore": 20.4,
+  "points": 17,
+  "shots": 83,
+  "shootingPct": 0.096386,
+  "toiPerGame": 1183.2,
+  "ixG": 9.53,
+  "goalsAboveExpected": -1.53,
+  "gameScore": 21.5,
   "fiveOnFive": {
-   "icetimeMinutes": 334.8,
-   "onIceXgPct": 0.58,
-   "onIceCorsiPct": 0.54,
-   "ixgPer60": 0.876,
-   "pctl_onIceXgPct": 83.0,
-   "pctl_ixgPer60": 77.7,
+   "icetimeMinutes": 351.4,
+   "onIceXgPct": 0.57,
+   "onIceCorsiPct": 0.53,
+   "ixgPer60": 0.862,
+   "pctl_onIceXgPct": 76.2,
+   "pctl_ixgPer60": 69.2,
    "qualifiesForPercentiles": true
   }
  },
  "hsc": {
   "Game score": {
-   "value": 1.26,
-   "percentile": 93
+   "value": 1.21,
+   "percentile": 92
   },
   "Offense": {
-   "value": 2.2,
+   "value": 2.4,
    "percentile": 87
   },
   "Defense": {
-   "value": 1.8,
-   "percentile": 92
+   "value": 1.5,
+   "percentile": 88
   },
   "Net": {
-   "value": 4.0,
+   "value": 3.9,
    "percentile": 92
   }
  },
  "score": {
-  "value": 77.9,
-  "low": 68.8,
-  "high": 85.0,
+  "value": 77.4,
+  "low": 68.1,
+  "high": 84.6,
   "isolated": 60.8,
-  "production": 82.6,
+  "production": 81.9,
   "weightIsolated": 0.323,
   "sustainable": 44.7,
   "results": 81.3,
-  "percentile": 89.8,
+  "percentile": 88.8,
   "goalsBlended": 2.4,
   "goalsSustainable": 0.5,
   "goalsResults": 5.2,
-  "gameScore": 24.03,
+  "gameScore": 24.7,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -210,66 +210,66 @@
    "CF/60": 1.95,
    "CA/60": -1.29
   },
-  "rank": 69,
+  "rank": 76,
   "neighbors": [
    {
-    "rank": 67,
-    "name": "Filip Forsberg",
-    "team": "NSH",
+    "rank": 74,
+    "name": "Mitch Marner",
+    "team": "VGK",
     "gp": 22,
-    "pos": "L",
-    "value": 78.5,
-    "isolated": 64.5,
-    "production": 82.4,
+    "pos": "R",
+    "value": 77.8,
+    "isolated": 63.7,
+    "production": 81.7,
     "weight": 0.33,
     "isMe": false
    },
    {
-    "rank": 68,
-    "name": "Casey Mittelstadt",
-    "team": "BOS",
-    "gp": 22,
-    "pos": "C",
-    "value": 78.3,
-    "isolated": 83.0,
-    "production": 75.0,
-    "weight": 0.25,
+    "rank": 75,
+    "name": "Brett Pesce",
+    "team": "N.J",
+    "gp": 20,
+    "pos": "D",
+    "value": 77.7,
+    "isolated": 83.6,
+    "production": 72.6,
+    "weight": 0.32,
     "isMe": false
    },
    {
-    "rank": 69,
+    "rank": 76,
     "name": "Alex Debrincat",
     "team": "DET",
     "gp": 22,
     "pos": "R",
-    "value": 77.9,
+    "value": 77.4,
     "isolated": 60.8,
-    "production": 82.6,
+    "production": 81.9,
     "weight": 0.32,
     "isMe": true
    },
    {
-    "rank": 70,
-    "name": "Justin Barron",
-    "team": "STL",
-    "gp": 19,
-    "pos": "D",
-    "value": 77.9,
-    "isolated": 88.3,
-    "production": 71.5,
-    "weight": 0.25,
+    "rank": 77,
+    "name": "Claude Giroux",
+    "team": "OTT",
+    "gp": 23,
+    "pos": "R",
+    "value": 77.1,
+    "isolated": 82.8,
+    "production": 72.6,
+    "weight": 0.3,
     "isMe": false
    },
    {
-    "rank": 71,
-    "name": "Berkly Catton",
-    "team": "SEA",
-    "gp": 19,
-    "pos": "C",
-    "value": 77.9,
-    "isolated": 88.4,
-    "production": 71.9,
-    "weight": 0.23,
+    "rank": 78,
+    "name": "Jack Quinn",
+    "team": "BUF",
+    "gp": 22,
+    "pos": "R",
+    "value": 76.8,
+    "isolated": 60.7,
+    "production": 81.0,
+    "weight": 0.31,
     "isMe": false
    }
   ],
@@ -7785,12 +7785,36 @@
     "moneypuck": 1.225,
     "hockeystatcards": 1.37
    }
+  },
+  {
+   "gameId": 2026020367,
+   "date": "2026-11-21",
+   "opponent": "NYI",
+   "home": true,
+   "goals": 1,
+   "assists": 0,
+   "points": 1,
+   "plusMinus": 0,
+   "shots": 6,
+   "pim": 0,
+   "toi": 20.7,
+   "ixg": 0.29,
+   "xgf": 0.78,
+   "xga": 1.22,
+   "gf": 1.0,
+   "ga": 1.0,
+   "blocks": 2.0,
+   "gameScore": 0.67,
+   "gameScoreParts": {
+    "moneypuck": 1.1,
+    "hockeystatcards": 0.24
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 1.09,
-  "games": 22,
+  "average": 1.07,
+  "games": 23,
   "best": {
    "date": "2026-10-13",
    "opponent": "NJD",
@@ -7804,7 +7828,7 @@
   "above2": 5,
   "below0": 6
  },
- "detGames": 22,
+ "detGames": 23,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -7817,5 +7841,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:43:24-08:00"
+ "updatedAt": "2026-11-23T06:14:54-08:00"
 }

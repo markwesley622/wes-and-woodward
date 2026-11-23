@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Univ. of Minnesota-Duluth",
-   "gp": 14,
+   "gp": 16,
    "g": 0,
-   "a": 0,
-   "pts": 0,
-   "pm": 7,
+   "a": 1,
+   "pts": 1,
+   "pm": 8,
    "pim": 16,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Minnesota-Duluth",
-     "gp": 14,
+     "gp": 16,
      "g": 0,
-     "a": 0,
-     "pts": 0,
-     "pm": 7,
+     "a": 1,
+     "pts": 1,
+     "pm": 8,
      "pim": 16,
      "gaa": null,
      "svp": null,
@@ -162,18 +162,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Univ. of Minnesota-Duluth",
-  "gp": 14,
+  "gp": 16,
   "g": 0,
-  "a": 0,
-  "pts": 0,
-  "pgp": 0.0,
-  "lineGp": 14,
-  "nhle": 0.0,
-  "nhlePace": 0.0,
+  "a": 1,
+  "pts": 1,
+  "pgp": 0.062,
+  "lineGp": 16,
+  "nhle": 0.012,
+  "nhlePace": 1.0,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.0
+  "feature": 0.012
  },
  "league": {
   "name": "NCAA",
@@ -198,10 +198,10 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 75,
-   "gp": 14,
-   "value": 0.0,
-   "percentile": 0.0,
-   "percentileAllAges": 0.0,
+   "gp": 16,
+   "value": 0.0625,
+   "percentile": 32.0,
+   "percentileAllAges": 32.3,
    "allAgesN": 1198
   }
  },
@@ -223,85 +223,85 @@
   "pCeiling": 0.0,
   "featureBand": [
    0.0,
-   0.023
+   0.024
   ],
   "examples": [
    {
-    "name": "Ryan Button",
-    "year": 2009,
-    "pick": 86,
-    "league": "AHL",
-    "feature": 0.0,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Anton Blomqvist",
-    "year": 2009,
-    "pick": 167,
-    "league": "AHL",
-    "feature": 0.0,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kirill Gotovets",
-    "year": 2009,
-    "pick": 183,
-    "league": "NCAA",
-    "feature": 0.0,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Eddie Wittchow",
-    "year": 2011,
-    "pick": 154,
-    "league": "NCAA",
-    "feature": 0.0,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Nick Walters",
-    "year": 2012,
-    "pick": 116,
-    "league": "CIS",
-    "feature": 0.0,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Adam Ollas Mattsson",
-    "year": 2014,
-    "pick": 175,
-    "league": "AHL",
-    "feature": 0.0,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Linus N\u00e4ss\u00e9n",
-    "year": 2016,
-    "pick": 89,
-    "league": "SHL",
-    "feature": 0.0,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Luke Martin",
-    "year": 2017,
-    "pick": 52,
+    "name": "Steven Delisle",
+    "year": 2008,
+    "pick": 107,
     "league": "ECHL",
-    "feature": 0.0,
+    "feature": 0.013,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Tyler Ganly",
+    "year": 2013,
+    "pick": 156,
+    "league": "ECHL",
+    "feature": 0.011,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Brett Ponich",
+    "year": 2009,
+    "pick": 48,
+    "league": "AHL",
+    "feature": 0.01,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Fredric Larsson",
+    "year": 2012,
+    "pick": 111,
+    "league": "HockeyEttan",
+    "feature": 0.014,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Tanner Faith",
+    "year": 2014,
+    "pick": 139,
+    "league": "USports",
+    "feature": 0.01,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matt Cairns",
+    "year": 2016,
+    "pick": 84,
+    "league": "NCAA",
+    "feature": 0.01,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Mark Shoemaker",
+    "year": 2016,
+    "pick": 180,
+    "league": "USports",
+    "feature": 0.01,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Arvid Henrikson",
+    "year": 2016,
+    "pick": 187,
+    "league": "NCAA",
+    "feature": 0.01,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -339,18 +339,18 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.0,
-   "gp": 14
+   "feature": 0.012,
+   "gp": 16
   },
-  "delta": -0.01
+  "delta": 0.002
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 14,
+  "gp": 16,
   "season": "2026-2027"
  },
- "rank": 33,
+ "rank": 32,
  "score": 0.0,
  "rankStart": 34,
  "rankStartDate": "2026-10-06"

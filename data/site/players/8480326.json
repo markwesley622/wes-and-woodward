@@ -79,15 +79,15 @@
    "onIceXgPct": 0.46,
    "onIceCorsiPct": 0.45,
    "ixgPer60": 0.64,
-   "pctl_onIceXgPct": 12.8,
-   "pctl_ixgPer60": 22.3,
+   "pctl_onIceXgPct": 16.9,
+   "pctl_ixgPer60": 27.7,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
    "value": 0.19,
-   "percentile": 39
+   "percentile": 40
   },
   "Offense": {
    "value": -2.2,
@@ -98,20 +98,20 @@
    "percentile": 76
   },
   "Net": {
-   "value": -1.4,
-   "percentile": 26
+   "value": -1.5,
+   "percentile": 28
   }
  },
  "score": {
-  "value": 35.1,
-  "low": 23.8,
-  "high": 48.4,
+  "value": 34.7,
+  "low": 23.4,
+  "high": 48.0,
   "isolated": 44.5,
-  "production": 33.7,
+  "production": 33.3,
   "weightIsolated": 0.139,
   "sustainable": 44.7,
   "results": 45.0,
-  "percentile": 31.6,
+  "percentile": 30.2,
   "goalsBlended": 0.5,
   "goalsSustainable": 0.5,
   "goalsResults": 0.6,
@@ -214,66 +214,66 @@
    "CF/60": -1.47,
    "CA/60": 0.12
   },
-  "rank": 464,
+  "rank": 473,
   "neighbors": [
    {
-    "rank": 462,
-    "name": "Owen Beck",
-    "team": "MTL",
-    "gp": 9,
-    "pos": "C",
-    "value": 35.4,
-    "isolated": 45.4,
-    "production": 34.7,
-    "weight": 0.07,
-    "isMe": false
-   },
-   {
-    "rank": 463,
-    "name": "Jayden Struble",
-    "team": "NSH",
-    "gp": 18,
-    "pos": "D",
-    "value": 35.2,
+    "rank": 471,
+    "name": "Mathieu Joseph",
+    "team": "EDM",
+    "gp": 24,
+    "pos": "R",
+    "value": 35.0,
     "isolated": 44.5,
-    "production": 32.7,
-    "weight": 0.23,
+    "production": 32.2,
+    "weight": 0.24,
     "isMe": false
    },
    {
-    "rank": 464,
+    "rank": 472,
+    "name": "Connor Clifton",
+    "team": "BOS",
+    "gp": 10,
+    "pos": "D",
+    "value": 34.7,
+    "isolated": 35.4,
+    "production": 34.6,
+    "weight": 0.16,
+    "isMe": false
+   },
+   {
+    "rank": 473,
     "name": "Sheldon Dries",
     "team": "DET",
     "gp": 16,
     "pos": "C",
-    "value": 35.1,
+    "value": 34.7,
     "isolated": 44.5,
-    "production": 33.7,
+    "production": 33.3,
     "weight": 0.14,
     "isMe": true
    },
    {
-    "rank": 465,
-    "name": "Cam Fowler",
-    "team": "STL",
-    "gp": 22,
-    "pos": "D",
-    "value": 35.1,
-    "isolated": 33.1,
-    "production": 36.2,
-    "weight": 0.34,
+    "rank": 474,
+    "name": "Amadeus Lombardi",
+    "team": "N.J",
+    "gp": 17,
+    "pos": "C",
+    "value": 34.5,
+    "isolated": 19.2,
+    "production": 38.2,
+    "weight": 0.16,
     "isMe": false
    },
    {
-    "rank": 466,
-    "name": "Jordan Staal",
-    "team": "CAR",
-    "gp": 8,
-    "pos": "C",
-    "value": 35.0,
-    "isolated": 35.5,
-    "production": 35.0,
-    "weight": 0.11,
+    "rank": 475,
+    "name": "Anthony Beauvillier",
+    "team": "WSH",
+    "gp": 20,
+    "pos": "R",
+    "value": 34.5,
+    "isolated": 33.7,
+    "production": 34.7,
+    "weight": 0.19,
     "isMe": false
    }
   ],
@@ -7632,5 +7632,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-11-20T05:43:38-08:00"
+ "updatedAt": "2026-11-23T06:15:07-08:00"
 }

@@ -31,12 +31,12 @@
   {
    "league": "OHL",
    "team": "Peterborough Petes",
-   "gp": 19,
+   "gp": 21,
    "g": 10,
-   "a": 14,
-   "pts": 24,
+   "a": 15,
+   "pts": 25,
    "pm": 7,
-   "pim": 17,
+   "pim": 22,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -72,12 +72,12 @@
     {
      "league": "OHL",
      "team": "Peterborough Petes",
-     "gp": 19,
+     "gp": 21,
      "g": 10,
-     "a": 14,
-     "pts": 24,
+     "a": 15,
+     "pts": 25,
      "pm": 7,
-     "pim": 17,
+     "pim": 22,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -96,18 +96,18 @@
   "table": "OHL",
   "coef": 0.144,
   "team": "Peterborough Petes",
-  "gp": 19,
+  "gp": 21,
   "g": 10,
-  "a": 14,
-  "pts": 24,
-  "pgp": 1.263,
-  "lineGp": 19,
-  "nhle": 0.182,
-  "nhlePace": 15.3,
+  "a": 15,
+  "pts": 25,
+  "pgp": 1.19,
+  "lineGp": 21,
+  "nhle": 0.171,
+  "nhlePace": 14.4,
   "lines": [
    "OHL"
   ],
-  "feature": 0.182
+  "feature": 0.171
  },
  "league": {
   "name": "OHL",
@@ -132,44 +132,34 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 86,
-   "gp": 19,
-   "value": 1.2632,
-   "percentile": 94.2,
-   "percentileAllAges": 93.4,
+   "gp": 21,
+   "value": 1.1905,
+   "percentile": 93.0,
+   "percentileAllAges": 91.3,
    "allAgesN": 1875
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 23.8,
+  "expected": 18.3,
   "median": 0.0,
-  "p75": 47.3,
-  "p90": 87.1,
-  "pRegular": 0.4,
-  "pTopLine": 0.18,
-  "pAboveAvg": 0.24,
-  "pElite": 0.08,
+  "p75": 37.9,
+  "p90": 74.5,
+  "pRegular": 0.36,
+  "pTopLine": 0.1,
+  "pAboveAvg": 0.18,
+  "pElite": 0.04,
   "poolN": 1362,
   "group": "F",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "below average",
-  "pCeiling": 0.36,
+  "pCeiling": 0.3,
   "featureBand": [
-   0.157,
-   0.206
+   0.143,
+   0.196
   ],
   "examples": [
-   {
-    "name": "Maxim Shalunov",
-    "year": 2011,
-    "pick": 109,
-    "league": "MHL",
-    "feature": 0.179,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
    {
     "name": "Michal Tepl\u00fd",
     "year": 2019,
@@ -181,34 +171,14 @@
     "nhlGp": 0
    },
    {
-    "name": "Justin Shugg",
-    "year": 2010,
-    "pick": 105,
+    "name": "Maxim Sushko",
+    "year": 2017,
+    "pick": 107,
     "league": "OHL",
-    "feature": 0.19,
+    "feature": 0.164,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 3
-   },
-   {
-    "name": "Lucas Wallmark",
-    "year": 2014,
-    "pick": 97,
-    "league": "SHL",
-    "feature": 0.18,
-    "peak": 39.1,
-    "tier": "below average",
-    "nhlGp": 187
-   },
-   {
-    "name": "Michael Bunting",
-    "year": 2014,
-    "pick": 117,
-    "league": "OHL",
-    "feature": 0.187,
-    "peak": 79.2,
-    "tier": "top-line",
-    "nhlGp": 418
+    "nhlGp": 2
    },
    {
     "name": "Marek Tvrdon",
@@ -221,24 +191,54 @@
     "nhlGp": 0
    },
    {
-    "name": "Andrei Loktionov",
-    "year": 2008,
-    "pick": 123,
-    "league": "OHL",
-    "feature": 0.186,
-    "peak": 50.8,
-    "tier": "above average",
-    "nhlGp": 155
+    "name": "Anthony Richard",
+    "year": 2015,
+    "pick": 100,
+    "league": "QMJHL",
+    "feature": 0.169,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 40
    },
    {
-    "name": "Dmytro Timashov",
-    "year": 2015,
-    "pick": 125,
-    "league": "QMJHL",
+    "name": "Noah Gregor",
+    "year": 2016,
+    "pick": 111,
+    "league": "WHL",
+    "feature": 0.165,
+    "peak": 36.1,
+    "tier": "below average",
+    "nhlGp": 330
+   },
+   {
+    "name": "Maxim Shalunov",
+    "year": 2011,
+    "pick": 109,
+    "league": "MHL",
     "feature": 0.179,
-    "peak": 15.1,
-    "tier": "replacement level",
-    "nhlGp": 45
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Chase De Leo",
+    "year": 2014,
+    "pick": 99,
+    "league": "WHL",
+    "feature": 0.168,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 7
+   },
+   {
+    "name": "Adam Ruzicka",
+    "year": 2017,
+    "pick": 109,
+    "league": "OHL",
+    "feature": 0.16,
+    "peak": 47.3,
+    "tier": "below average",
+    "nhlGp": 117
    }
   ]
  },
@@ -259,8 +259,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 23.8,
-  "expected": 18.6,
+  "cohortExpected": 18.3,
+  "expected": 15.9,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -273,19 +273,19 @@
   "to": {
    "season": "2026-2027",
    "league": "OHL",
-   "feature": 0.182,
-   "gp": 19
+   "feature": 0.171,
+   "gp": 21
   },
-  "delta": 0.076
+  "delta": 0.065
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 19,
+  "gp": 21,
   "season": "2026-2027"
  },
  "rank": 11,
- "score": 18.6,
+ "score": 15.9,
  "rankStart": 18,
  "rankStartDate": "2026-10-06"
 }

@@ -31,7 +31,7 @@
   {
    "league": "NCAA",
    "team": "Miami Univ. (Ohio)",
-   "gp": 12,
+   "gp": 14,
    "g": 1,
    "a": 1,
    "pts": 2,
@@ -72,7 +72,7 @@
     {
      "league": "NCAA",
      "team": "Miami Univ. (Ohio)",
-     "gp": 12,
+     "gp": 14,
      "g": 1,
      "a": 1,
      "pts": 2,
@@ -140,18 +140,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Miami Univ. (Ohio)",
-  "gp": 12,
+  "gp": 14,
   "g": 1,
   "a": 1,
   "pts": 2,
-  "pgp": 0.167,
-  "lineGp": 12,
-  "nhle": 0.032,
-  "nhlePace": 2.7,
+  "pgp": 0.143,
+  "lineGp": 14,
+  "nhle": 0.028,
+  "nhlePace": 2.4,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.032
+  "feature": 0.028
  },
  "league": {
   "name": "NCAA",
@@ -176,10 +176,10 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 84,
-   "gp": 12,
-   "value": 0.1667,
+   "gp": 14,
+   "value": 0.1429,
    "percentile": 17.9,
-   "percentileAllAges": 19.5,
+   "percentileAllAges": 19.3,
    "allAgesN": 2159
   }
  },
@@ -200,26 +200,56 @@
   "tier": "replacement level",
   "pCeiling": 0.04,
   "featureBand": [
-   0.022,
-   0.046
+   0.013,
+   0.044
   ],
   "examples": [
    {
-    "name": "Greg Burke",
-    "year": 2008,
-    "pick": 174,
+    "name": "Ben Storm",
+    "year": 2013,
+    "pick": 153,
     "league": "NCAA",
-    "feature": 0.032,
+    "feature": 0.029,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Erik Jinesj\u00f6 Karlsson",
-    "year": 2012,
-    "pick": 99,
-    "league": "SHL",
-    "feature": 0.032,
+    "name": "Jasper Weatherby",
+    "year": 2018,
+    "pick": 102,
+    "league": "NCAA",
+    "feature": 0.027,
+    "peak": 10.6,
+    "tier": "replacement level",
+    "nhlGp": 50
+   },
+   {
+    "name": "Lane MacDermid",
+    "year": 2009,
+    "pick": 112,
+    "league": "AHL",
+    "feature": 0.03,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 21
+   },
+   {
+    "name": "Curtis Hall",
+    "year": 2018,
+    "pick": 119,
+    "league": "AHL",
+    "feature": 0.03,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Timur Ibragimov",
+    "year": 2019,
+    "pick": 164,
+    "league": "AHL",
+    "feature": 0.03,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -245,41 +275,11 @@
     "nhlGp": 0
    },
    {
-    "name": "Maxwell Tardy",
-    "year": 2009,
-    "pick": 202,
+    "name": "Greg Burke",
+    "year": 2008,
+    "pick": 174,
     "league": "NCAA",
-    "feature": 0.033,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Riley Boychuk",
-    "year": 2010,
-    "pick": 208,
-    "league": "AHL",
-    "feature": 0.033,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Lukas Sutter",
-    "year": 2014,
-    "pick": 200,
-    "league": "ECHL",
-    "feature": 0.033,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jared Fiegl",
-    "year": 2014,
-    "pick": 191,
-    "league": "NCAA",
-    "feature": 0.033,
+    "feature": 0.032,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -317,18 +317,18 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.032,
-   "gp": 12
+   "feature": 0.028,
+   "gp": 14
   },
-  "delta": 0.018
+  "delta": 0.014
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 12,
+  "gp": 14,
   "season": "2026-2027"
  },
- "rank": 31,
+ "rank": 28,
  "score": 0.5,
  "rankStart": 30,
  "rankStartDate": "2026-10-06"

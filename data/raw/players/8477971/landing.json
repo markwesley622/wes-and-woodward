@@ -53,7 +53,7 @@
    "subSeason": {
     "assists": 0,
     "gameWinningGoals": 0,
-    "gamesPlayed": 17,
+    "gamesPlayed": 18,
     "goals": 1,
     "otGoals": 0,
     "pim": 7,
@@ -61,15 +61,15 @@
     "points": 1,
     "powerPlayGoals": 0,
     "powerPlayPoints": 0,
-    "shootingPctg": 0.166667,
+    "shootingPctg": 0.142857,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 6
+    "shots": 7
    },
    "career": {
     "assists": 18,
     "gameWinningGoals": 0,
-    "gamesPlayed": 217,
+    "gamesPlayed": 218,
     "goals": 3,
     "otGoals": 0,
     "pim": 197,
@@ -77,19 +77,19 @@
     "points": 21,
     "powerPlayGoals": 0,
     "powerPlayPoints": 0,
-    "shootingPctg": 0.026699999999999998,
+    "shootingPctg": 0.0265,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 112
+    "shots": 113
    }
   }
  },
  "careerTotals": {
   "regularSeason": {
    "assists": 18,
-   "avgToi": "12:38",
+   "avgToi": "12:39",
    "gameWinningGoals": 0,
-   "gamesPlayed": 217,
+   "gamesPlayed": 218,
    "goals": 3,
    "otGoals": 0,
    "pim": 197,
@@ -97,10 +97,10 @@
    "points": 21,
    "powerPlayGoals": 0,
    "powerPlayPoints": 0,
-   "shootingPctg": 0.026699999999999998,
+   "shootingPctg": 0.0265,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 112
+   "shots": 113
   },
   "playoffs": {
    "assists": 1,
@@ -123,6 +123,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-11-21",
+   "gameId": 2026020367,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "NYI",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 21,
+   "shorthandedGoals": 0,
+   "shots": 1,
+   "teamAbbrev": "DET",
+   "toi": "15:50"
+  },
   {
    "assists": 0,
    "gameDate": "2026-11-18",
@@ -194,24 +212,6 @@
    "shots": 0,
    "teamAbbrev": "DET",
    "toi": "13:12"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-11-07",
-   "gameId": 2026020274,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "COL",
-   "pim": 0,
-   "plusMinus": 0,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 22,
-   "shorthandedGoals": 0,
-   "shots": 0,
-   "teamAbbrev": "DET",
-   "toi": "17:03"
   }
  ],
  "seasonTotals": [
@@ -1027,11 +1027,11 @@
   },
   {
    "assists": 0,
-   "avgToi": "13:39",
+   "avgToi": "13:46",
    "faceoffWinningPctg": 0.0,
    "gameTypeId": 2,
    "gameWinningGoals": 0,
-   "gamesPlayed": 17,
+   "gamesPlayed": 18,
    "goals": 1,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
@@ -1042,10 +1042,10 @@
    "powerPlayPoints": 0,
    "season": 20262027,
    "sequence": 1,
-   "shootingPctg": 0.166667,
+   "shootingPctg": 0.142857,
    "shorthandedGoals": 0,
    "shorthandedPoints": 0,
-   "shots": 6,
+   "shots": 7,
    "teamCommonName": {
     "default": "Red Wings"
    },
@@ -1131,6 +1131,16 @@
    "playerSlug": "andrew-copp-8477429"
   },
   {
+   "playerId": 8481523,
+   "lastName": {
+    "default": "Dach"
+   },
+   "firstName": {
+    "default": "Kirby"
+   },
+   "playerSlug": "kirby-dach-8481523"
+  },
+  {
    "playerId": 8479337,
    "lastName": {
     "default": "DeBrincat"
@@ -1139,16 +1149,6 @@
     "default": "Alex"
    },
    "playerSlug": "alex-debrincat-8479337"
-  },
-  {
-   "playerId": 8480326,
-   "lastName": {
-    "default": "Dries"
-   },
-   "firstName": {
-    "default": "Sheldon"
-   },
-   "playerSlug": "sheldon-dries-8480326"
   },
   {
    "playerId": 8477971,
@@ -1239,6 +1239,16 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
+  },
+  {
+   "playerId": 8478470,
+   "lastName": {
+    "default": "Montembeault"
+   },
+   "firstName": {
+    "default": "Samuel"
+   },
+   "playerSlug": "samuel-montembeault-8478470"
   },
   {
    "playerId": 8479992,

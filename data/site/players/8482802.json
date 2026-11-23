@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 15,
+  "gp": 16,
   "goals": 1,
   "assists": 4,
   "points": 5,
-  "plusMinus": -4,
+  "plusMinus": -5,
   "pim": 2,
   "shots": 13,
   "shootingPct": 0.076923,
-  "toiPerGame": "9:37",
+  "toiPerGame": "9:41",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 15,
+   "gp": 16,
    "goals": 1,
    "assists": 4,
    "points": 5,
-   "plusMinus": -4,
+   "plusMinus": -5,
    "pim": 2
   }
  ],
@@ -60,58 +60,58 @@
   "name": "Carter Mazur",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482802.png",
-  "gamesPlayed": 15,
+  "gamesPlayed": 16,
   "goals": 1,
   "assists": 4,
   "points": 5,
   "shots": 13,
   "shootingPct": 0.076923,
-  "toiPerGame": 576.7,
-  "ixG": 1.81,
-  "goalsAboveExpected": -0.81,
-  "gameScore": 2.27,
+  "toiPerGame": 580.6,
+  "ixG": 1.94,
+  "goalsAboveExpected": -0.94,
+  "gameScore": 2.37,
   "fiveOnFive": {
-   "icetimeMinutes": 140.2,
+   "icetimeMinutes": 150.8,
    "onIceXgPct": 0.37,
-   "onIceCorsiPct": 0.44,
+   "onIceCorsiPct": 0.45,
    "ixgPer60": 0.736,
-   "pctl_onIceXgPct": 1.1,
-   "pctl_ixgPer60": 45.7,
+   "pctl_onIceXgPct": 1.5,
+   "pctl_ixgPer60": 49.2,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
-   "value": -0.14,
-   "percentile": 19
+   "value": -0.18,
+   "percentile": 18
   },
   "Offense": {
-   "value": -1.0,
-   "percentile": 32
+   "value": -1.2,
+   "percentile": 26
   },
   "Defense": {
-   "value": -1.6,
-   "percentile": 8
+   "value": -1.7,
+   "percentile": 7
   },
   "Net": {
-   "value": -2.6,
-   "percentile": 11
+   "value": -3.0,
+   "percentile": 9
   }
  },
  "score": {
-  "value": 28.7,
-  "low": 18.8,
-  "high": 41.0,
+  "value": 27.8,
+  "low": 18.2,
+  "high": 40.0,
   "isolated": 27.2,
-  "production": 29.2,
+  "production": 28.2,
   "weightIsolated": 0.125,
   "sustainable": 25.9,
   "results": 33.0,
-  "percentile": 16.1,
+  "percentile": 14.5,
   "goalsBlended": -1.6,
   "goalsSustainable": -2.1,
   "goalsResults": -0.8,
-  "gameScore": 0.07,
+  "gameScore": -0.27,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -210,66 +210,66 @@
    "CF/60": -1.78,
    "CA/60": 0.9
   },
-  "rank": 569,
+  "rank": 580,
   "neighbors": [
    {
-    "rank": 567,
-    "name": "Sammy Blais",
-    "team": "OTT",
-    "gp": 6,
-    "pos": "L",
-    "value": 28.9,
-    "isolated": 39.6,
-    "production": 28.7,
-    "weight": 0.04,
-    "isMe": false
-   },
-   {
-    "rank": 568,
-    "name": "Uvis Balinskis",
-    "team": "FLA",
-    "gp": 12,
+    "rank": 578,
+    "name": "Sam Dickinson",
+    "team": "S.J",
+    "gp": 22,
     "pos": "D",
-    "value": 28.8,
-    "isolated": 27.0,
-    "production": 29.3,
-    "weight": 0.15,
+    "value": 27.8,
+    "isolated": 27.2,
+    "production": 28.6,
+    "weight": 0.32,
     "isMe": false
    },
    {
-    "rank": 569,
+    "rank": 579,
+    "name": "Brady Skjei",
+    "team": "NSH",
+    "gp": 22,
+    "pos": "D",
+    "value": 27.8,
+    "isolated": 22.4,
+    "production": 31.2,
+    "weight": 0.33,
+    "isMe": false
+   },
+   {
+    "rank": 580,
     "name": "Carter Mazur",
     "team": "DET",
     "gp": 15,
     "pos": "L",
-    "value": 28.7,
+    "value": 27.8,
     "isolated": 27.2,
-    "production": 29.2,
+    "production": 28.2,
     "weight": 0.13,
     "isMe": true
    },
    {
-    "rank": 570,
-    "name": "Ryan Hartman",
-    "team": "MIN",
+    "rank": 581,
+    "name": "Filip Hronek",
+    "team": "VAN",
     "gp": 24,
-    "pos": "R",
-    "value": 28.6,
-    "isolated": 24.2,
-    "production": 30.6,
-    "weight": 0.25,
+    "pos": "D",
+    "value": 27.7,
+    "isolated": 27.2,
+    "production": 28.5,
+    "weight": 0.43,
     "isMe": false
    },
    {
-    "rank": 571,
-    "name": "Michael Misa",
-    "team": "S.J",
-    "gp": 24,
-    "pos": "C",
-    "value": 28.5,
-    "isolated": 22.4,
-    "production": 31.5,
-    "weight": 0.28,
+    "rank": 582,
+    "name": "Ryan Lomberg",
+    "team": "CBJ",
+    "gp": 18,
+    "pos": "L",
+    "value": 27.5,
+    "isolated": 31.0,
+    "production": 27.3,
+    "weight": 0.13,
     "isMe": false
    }
   ],
@@ -7512,12 +7512,36 @@
     "moneypuck": -0.5,
     "hockeystatcards": -2.1
    }
+  },
+  {
+   "gameId": 2026020367,
+   "date": "2026-11-21",
+   "opponent": "NYI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 10.7,
+   "ixg": 0.1,
+   "xgf": 0.3,
+   "xga": 0.47,
+   "gf": 0.0,
+   "ga": 1.0,
+   "blocks": 0.0,
+   "gameScore": -0.34,
+   "gameScoreParts": {
+    "moneypuck": 0.1,
+    "hockeystatcards": -0.78
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.0,
-  "games": 15,
+  "average": -0.02,
+  "games": 16,
   "best": {
    "date": "2026-10-31",
    "opponent": "STL",
@@ -7529,9 +7553,9 @@
    "value": -1.73
   },
   "above2": 0,
-  "below0": 7
+  "below0": 8
  },
- "detGames": 15,
+ "detGames": 16,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -7544,5 +7568,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:44:54-08:00"
+ "updatedAt": "2026-11-23T06:47:31-08:00"
 }

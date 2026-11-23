@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 22,
+  "gp": 23,
   "goals": 4,
   "assists": 7,
   "points": 11,
-  "plusMinus": 10,
+  "plusMinus": 11,
   "pim": 14,
-  "shots": 39,
-  "shootingPct": 0.102564,
-  "toiPerGame": "15:29",
+  "shots": 41,
+  "shootingPct": 0.097561,
+  "toiPerGame": "15:22",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 22,
+   "gp": 23,
    "goals": 4,
    "assists": 7,
    "points": 11,
-   "plusMinus": 10,
+   "plusMinus": 11,
    "pim": 14
   }
  ],
@@ -60,23 +60,23 @@
   "name": "Michael Brandsegg-Nyg\u00e5rd",
   "position": "R",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484794.png",
-  "gamesPlayed": 22,
+  "gamesPlayed": 23,
   "goals": 4,
   "assists": 7,
   "points": 11,
-  "shots": 39,
-  "shootingPct": 0.102564,
-  "toiPerGame": 929.3,
-  "ixG": 7.22,
-  "goalsAboveExpected": -3.22,
-  "gameScore": 13.92,
+  "shots": 41,
+  "shootingPct": 0.097561,
+  "toiPerGame": 922.0,
+  "ixG": 7.36,
+  "goalsAboveExpected": -3.36,
+  "gameScore": 14.87,
   "fiveOnFive": {
-   "icetimeMinutes": 305.7,
+   "icetimeMinutes": 317.6,
    "onIceXgPct": 0.54,
-   "onIceCorsiPct": 0.55,
-   "ixgPer60": 1.072,
-   "pctl_onIceXgPct": 59.6,
-   "pctl_ixgPer60": 91.5,
+   "onIceCorsiPct": 0.56,
+   "ixgPer60": 1.058,
+   "pctl_onIceXgPct": 60.8,
+   "pctl_ixgPer60": 92.3,
    "qualifiesForPercentiles": true
   }
  },
@@ -86,32 +86,32 @@
    "percentile": 82
   },
   "Offense": {
-   "value": 1.0,
-   "percentile": 77
+   "value": 1.2,
+   "percentile": 78
   },
   "Defense": {
    "value": 1.2,
-   "percentile": 83
+   "percentile": 82
   },
   "Net": {
-   "value": 2.2,
+   "value": 2.3,
    "percentile": 83
   }
  },
  "score": {
-  "value": 64.5,
-  "low": 52.4,
-  "high": 75.0,
+  "value": 64.7,
+  "low": 52.6,
+  "high": 75.2,
   "isolated": 48.2,
-  "production": 68.6,
+  "production": 68.8,
   "weightIsolated": 0.266,
   "sustainable": 36.2,
   "results": 68.6,
-  "percentile": 76.3,
+  "percentile": 76.1,
   "goalsBlended": 1.0,
   "goalsSustainable": -0.6,
   "goalsResults": 3.3,
-  "gameScore": 16.44,
+  "gameScore": 17.36,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -210,66 +210,66 @@
    "CF/60": 1.94,
    "CA/60": -2.28
   },
-  "rank": 161,
+  "rank": 162,
   "neighbors": [
    {
-    "rank": 159,
-    "name": "Mika Zibanejad",
-    "team": "NYR",
-    "gp": 22,
-    "pos": "C",
-    "value": 65.2,
-    "isolated": 50.0,
-    "production": 70.6,
-    "weight": 0.33,
-    "isMe": false
-   },
-   {
     "rank": 160,
-    "name": "William Nylander",
-    "team": "TOR",
-    "gp": 24,
-    "pos": "R",
-    "value": 65.1,
-    "isolated": 61.7,
-    "production": 65.3,
-    "weight": 0.35,
+    "name": "Matty Beniers",
+    "team": "SEA",
+    "gp": 19,
+    "pos": "C",
+    "value": 65.0,
+    "isolated": 67.9,
+    "production": 62.5,
+    "weight": 0.27,
     "isMe": false
    },
    {
     "rank": 161,
+    "name": "Evgeni Malkin",
+    "team": "PIT",
+    "gp": 19,
+    "pos": "C",
+    "value": 65.0,
+    "isolated": 52.9,
+    "production": 67.6,
+    "weight": 0.26,
+    "isMe": false
+   },
+   {
+    "rank": 162,
     "name": "Michael Brandsegg-Nyg\u00e5rd",
     "team": "DET",
     "gp": 22,
     "pos": "R",
-    "value": 64.5,
+    "value": 64.7,
     "isolated": 48.2,
-    "production": 68.6,
+    "production": 68.8,
     "weight": 0.27,
     "isMe": true
    },
    {
-    "rank": 162,
+    "rank": 163,
+    "name": "Mackie Samoskevich",
+    "team": "SEA",
+    "gp": 18,
+    "pos": "R",
+    "value": 64.7,
+    "isolated": 73.9,
+    "production": 60.4,
+    "weight": 0.23,
+    "isMe": false
+   },
+   {
+    "rank": 164,
     "name": "Troy Stecher",
     "team": "TOR",
     "gp": 24,
     "pos": "D",
-    "value": 64.3,
+    "value": 64.6,
     "isolated": 78.9,
-    "production": 54.0,
+    "production": 54.4,
     "weight": 0.34,
-    "isMe": false
-   },
-   {
-    "rank": 163,
-    "name": "Kaedan Korczak",
-    "team": "PIT",
-    "gp": 21,
-    "pos": "D",
-    "value": 64.1,
-    "isolated": 63.7,
-    "production": 62.9,
-    "weight": 0.29,
     "isMe": false
    }
   ],
@@ -7665,12 +7665,36 @@
     "moneypuck": -0.31,
     "hockeystatcards": -0.44
    }
+  },
+  {
+   "gameId": 2026020367,
+   "date": "2026-11-21",
+   "opponent": "NYI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 1,
+   "shots": 2,
+   "pim": 0,
+   "toi": 12.7,
+   "ixg": 0.17,
+   "xgf": 0.37,
+   "xga": 0.47,
+   "gf": 2.0,
+   "ga": 1.0,
+   "blocks": 0.0,
+   "gameScore": 0.92,
+   "gameScoreParts": {
+    "moneypuck": 0.95,
+    "hockeystatcards": 0.88
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
   "average": 0.75,
-  "games": 22,
+  "games": 23,
   "best": {
    "date": "2026-10-13",
    "opponent": "NJD",
@@ -7684,7 +7708,7 @@
   "above2": 5,
   "below0": 7
  },
- "detGames": 22,
+ "detGames": 23,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -7697,5 +7721,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:42:30-08:00"
+ "updatedAt": "2026-11-23T06:11:25-08:00"
 }

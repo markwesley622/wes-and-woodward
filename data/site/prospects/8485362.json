@@ -31,12 +31,12 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 16,
+   "gp": 18,
    "g": 5,
-   "a": 13,
-   "pts": 18,
+   "a": 14,
+   "pts": 19,
    "pm": 9,
-   "pim": 8,
+   "pim": 12,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -89,12 +89,12 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 16,
+     "gp": 18,
      "g": 5,
-     "a": 13,
-     "pts": 18,
+     "a": 14,
+     "pts": 19,
      "pm": 9,
-     "pim": 8,
+     "pim": 12,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -152,18 +152,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 16,
+  "gp": 18,
   "g": 5,
-  "a": 13,
-  "pts": 18,
-  "pgp": 1.125,
-  "lineGp": 16,
-  "nhle": 0.438,
-  "nhlePace": 36.8,
+  "a": 14,
+  "pts": 19,
+  "pgp": 1.056,
+  "lineGp": 18,
+  "nhle": 0.411,
+  "nhlePace": 34.5,
   "lines": [
    "AHL"
   ],
-  "feature": 0.438
+  "feature": 0.411
  },
  "league": {
   "name": "AHL",
@@ -188,8 +188,8 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 30,
-   "gp": 16,
-   "value": 1.125,
+   "gp": 18,
+   "value": 1.0556,
    "percentile": 93.3,
    "percentileAllAges": 90.5,
    "allAgesN": 642
@@ -217,16 +217,6 @@
   ],
   "examples": [
    {
-    "name": "Tyler Ennis",
-    "year": 2008,
-    "pick": 26,
-    "league": "AHL",
-    "feature": 0.434,
-    "peak": 77.2,
-    "tier": "top-line",
-    "nhlGp": 700
-   },
-   {
     "name": "Sven B\u00e4rtschi",
     "year": 2011,
     "pick": 13,
@@ -237,26 +227,6 @@
     "nhlGp": 292
    },
    {
-    "name": "Nikita Filatov",
-    "year": 2008,
-    "pick": 6,
-    "league": "KHL",
-    "feature": 0.458,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 53
-   },
-   {
-    "name": "Mikael Granlund",
-    "year": 2010,
-    "pick": 9,
-    "league": "SM-liiga",
-    "feature": 0.489,
-    "peak": 94.0,
-    "tier": "elite",
-    "nhlGp": 962
-   },
-   {
     "name": "Jakub Vr\u00e1na",
     "year": 2014,
     "pick": 13,
@@ -265,16 +235,6 @@
     "peak": 82.0,
     "tier": "top-line",
     "nhlGp": 406
-   },
-   {
-    "name": "Calle J\u00e4rnkrok",
-    "year": 2010,
-    "pick": 51,
-    "league": "Elitserien",
-    "feature": 0.441,
-    "peak": 67.2,
-    "tier": "above average",
-    "nhlGp": 774
    },
    {
     "name": "Joel Eriksson Ek",
@@ -295,6 +255,46 @@
     "peak": 91.4,
     "tier": "elite",
     "nhlGp": 829
+   },
+   {
+    "name": "Philip Tomasino",
+    "year": 2019,
+    "pick": 24,
+    "league": "AHL",
+    "feature": 0.391,
+    "peak": 49.2,
+    "tier": "below average",
+    "nhlGp": 218
+   },
+   {
+    "name": "Cole Caufield",
+    "year": 2019,
+    "pick": 15,
+    "league": "NCAA",
+    "feature": 0.36,
+    "peak": 94.3,
+    "tier": "elite",
+    "nhlGp": 370
+   },
+   {
+    "name": "Tyler Ennis",
+    "year": 2008,
+    "pick": 26,
+    "league": "AHL",
+    "feature": 0.434,
+    "peak": 77.2,
+    "tier": "top-line",
+    "nhlGp": 700
+   },
+   {
+    "name": "Nazem Kadri",
+    "year": 2009,
+    "pick": 7,
+    "league": "AHL",
+    "feature": 0.383,
+    "peak": 96.0,
+    "tier": "elite",
+    "nhlGp": 1064
    }
   ]
  },
@@ -329,15 +329,15 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.438,
-   "gp": 16
+   "feature": 0.411,
+   "gp": 18
   },
-  "delta": 0.241
+  "delta": 0.214
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 16,
+  "gp": 18,
   "season": "2026-2027"
  },
  "rank": 1,

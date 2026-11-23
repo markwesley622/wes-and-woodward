@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Univ. of Wisconsin",
-   "gp": 10,
+   "gp": 12,
    "g": 2,
-   "a": 0,
-   "pts": 2,
-   "pm": 10,
+   "a": 1,
+   "pts": 3,
+   "pm": 13,
    "pim": 2,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Wisconsin",
-     "gp": 10,
+     "gp": 12,
      "g": 2,
-     "a": 0,
-     "pts": 2,
-     "pm": 10,
+     "a": 1,
+     "pts": 3,
+     "pm": 13,
      "pim": 2,
      "gaa": null,
      "svp": null,
@@ -162,18 +162,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Univ. of Wisconsin",
-  "gp": 10,
+  "gp": 12,
   "g": 2,
-  "a": 0,
-  "pts": 2,
-  "pgp": 0.2,
-  "lineGp": 10,
-  "nhle": 0.039,
-  "nhlePace": 3.3,
+  "a": 1,
+  "pts": 3,
+  "pgp": 0.25,
+  "lineGp": 12,
+  "nhle": 0.049,
+  "nhlePace": 4.1,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.039
+  "feature": 0.049
  },
  "league": {
   "name": "NCAA",
@@ -198,20 +198,20 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 84,
-   "gp": 10,
-   "value": 0.2,
-   "percentile": 35.7,
-   "percentileAllAges": 36.4,
+   "gp": 12,
+   "value": 0.25,
+   "percentile": 40.5,
+   "percentileAllAges": 39.5,
    "allAgesN": 1198
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 0.3,
+  "expected": 2.6,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
-  "pRegular": 0.02,
+  "pRegular": 0.08,
   "pTopLine": 0.0,
   "pAboveAvg": 0.0,
   "pElite": 0.0,
@@ -220,88 +220,88 @@
   "age": 22,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.02,
+  "pCeiling": 0.08,
   "featureBand": [
-   0.034,
-   0.044
+   0.044,
+   0.054
   ],
   "examples": [
    {
-    "name": "Samuel Noreau",
-    "year": 2011,
-    "pick": 136,
-    "league": "ECHL",
-    "feature": 0.039,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Mike McKee",
-    "year": 2012,
-    "pick": 140,
-    "league": "NCAA",
-    "feature": 0.039,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Wiley Sherman",
-    "year": 2013,
-    "pick": 150,
-    "league": "NCAA",
-    "feature": 0.039,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Drew Daniels",
-    "year": 2008,
-    "pick": 194,
-    "league": "NCAA",
-    "feature": 0.04,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Viktor Ekbom",
-    "year": 2009,
-    "pick": 181,
-    "league": "SM-liiga",
-    "feature": 0.04,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Ronald Boyd",
+    "name": "Jani Hakanp\u00e4\u00e4",
     "year": 2010,
-    "pick": 183,
-    "league": "NCAA",
-    "feature": 0.04,
+    "pick": 104,
+    "league": "AHL",
+    "feature": 0.049,
+    "peak": 24.6,
+    "tier": "replacement level",
+    "nhlGp": 290
+   },
+   {
+    "name": "Anthony Bitetto",
+    "year": 2010,
+    "pick": 168,
+    "league": "AHL",
+    "feature": 0.049,
+    "peak": 13.6,
+    "tier": "replacement level",
+    "nhlGp": 197
+   },
+   {
+    "name": "Patrick Sanvido",
+    "year": 2014,
+    "pick": 195,
+    "league": "USports",
+    "feature": 0.049,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Marcus Karlstr\u00f6m",
-    "year": 2013,
-    "pick": 194,
-    "league": "HockeyEttan",
-    "feature": 0.038,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Chris Martenet",
+    "name": "Connor Hobbs",
     "year": 2015,
-    "pick": 103,
-    "league": "ECHL",
-    "feature": 0.04,
+    "pick": 143,
+    "league": "AHL",
+    "feature": 0.049,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ben Mirageas",
+    "year": 2017,
+    "pick": 77,
+    "league": "NCAA",
+    "feature": 0.049,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Eric Mestery",
+    "year": 2008,
+    "pick": 57,
+    "league": "CIS",
+    "feature": 0.05,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Matt MacKenzie",
+    "year": 2010,
+    "pick": 83,
+    "league": "AHL",
+    "feature": 0.048,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Reid McNeill",
+    "year": 2010,
+    "pick": 170,
+    "league": "AHL",
+    "feature": 0.05,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -325,8 +325,8 @@
   "w": 0.0,
   "sinceDraft": 3,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 0.3,
-  "expected": 0.3,
+  "cohortExpected": 2.6,
+  "expected": 2.6,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -339,19 +339,19 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.039,
-   "gp": 10
+   "feature": 0.049,
+   "gp": 12
   },
-  "delta": -0.008
+  "delta": 0.002
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 10,
+  "gp": 12,
   "season": "2026-2027"
  },
- "rank": 32,
- "score": 0.3,
+ "rank": 27,
+ "score": 2.6,
  "rankStart": 35,
  "rankStartDate": "2026-10-06"
 }

@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 17,
+  "gp": 18,
   "goals": 1,
   "assists": 0,
   "points": 1,
   "plusMinus": 4,
   "pim": 7,
-  "shots": 6,
-  "shootingPct": 0.166667,
-  "toiPerGame": "13:39",
+  "shots": 7,
+  "shootingPct": 0.142857,
+  "toiPerGame": "13:46",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 17,
+   "gp": 18,
    "goals": 1,
    "assists": 0,
    "points": 1,
@@ -60,58 +60,58 @@
   "name": "Andreas Englund",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477971.png",
-  "gamesPlayed": 17,
+  "gamesPlayed": 18,
   "goals": 1,
   "assists": 0,
   "points": 1,
-  "shots": 6,
-  "shootingPct": 0.166667,
-  "toiPerGame": 818.5,
-  "ixG": 0.21,
-  "goalsAboveExpected": 0.79,
-  "gameScore": 2.8,
+  "shots": 7,
+  "shootingPct": 0.142857,
+  "toiPerGame": 825.8,
+  "ixG": 0.22,
+  "goalsAboveExpected": 0.78,
+  "gameScore": 3.03,
   "fiveOnFive": {
-   "icetimeMinutes": 211.6,
-   "onIceXgPct": 0.52,
-   "onIceCorsiPct": 0.5,
-   "ixgPer60": 0.06,
-   "pctl_onIceXgPct": 58.1,
-   "pctl_ixgPer60": 0.8,
+   "icetimeMinutes": 226.0,
+   "onIceXgPct": 0.51,
+   "onIceCorsiPct": 0.51,
+   "ixgPer60": 0.058,
+   "pctl_onIceXgPct": 53.6,
+   "pctl_ixgPer60": 0.7,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
-   "value": 0.29,
-   "percentile": 48
+   "value": 0.25,
+   "percentile": 44
   },
   "Offense": {
-   "value": -1.5,
-   "percentile": 17
+   "value": -1.8,
+   "percentile": 15
   },
   "Defense": {
-   "value": 1.1,
-   "percentile": 82
+   "value": 1.2,
+   "percentile": 83
   },
   "Net": {
-   "value": -0.4,
-   "percentile": 53
+   "value": -0.6,
+   "percentile": 49
   }
  },
  "score": {
-  "value": 42.6,
-  "low": 30.2,
-  "high": 56.0,
+  "value": 41.7,
+  "low": 29.5,
+  "high": 55.2,
   "isolated": 62.0,
-  "production": 37.8,
+  "production": 36.8,
   "weightIsolated": 0.192,
   "sustainable": 65.9,
   "results": 53.2,
-  "percentile": 45.1,
+  "percentile": 43.8,
   "goalsBlended": 2.5,
   "goalsSustainable": 3.2,
   "goalsResults": 1.5,
-  "gameScore": 3.88,
+  "gameScore": 3.76,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -210,66 +210,66 @@
    "CF/60": -0.06,
    "CA/60": -1.21
   },
-  "rank": 372,
+  "rank": 381,
   "neighbors": [
    {
-    "rank": 370,
-    "name": "Albert Johansson",
-    "team": "DET",
-    "gp": 11,
-    "pos": "D",
-    "value": 42.7,
-    "isolated": 54.2,
-    "production": 40.5,
-    "weight": 0.15,
-    "isMe": false
-   },
-   {
-    "rank": 371,
-    "name": "Josh Manson",
-    "team": "COL",
-    "gp": 13,
-    "pos": "D",
-    "value": 42.6,
-    "isolated": 60.5,
-    "production": 38.9,
-    "weight": 0.16,
-    "isMe": false
-   },
-   {
-    "rank": 372,
-    "name": "Andreas Englund",
-    "team": "DET",
-    "gp": 17,
-    "pos": "D",
-    "value": 42.6,
-    "isolated": 62.0,
-    "production": 37.8,
-    "weight": 0.19,
-    "isMe": true
-   },
-   {
-    "rank": 373,
-    "name": "Spencer Stastney",
-    "team": "PIT",
-    "gp": 16,
-    "pos": "D",
-    "value": 42.5,
-    "isolated": 53.6,
-    "production": 39.1,
+    "rank": 379,
+    "name": "Gage Goncalves",
+    "team": "T.B",
+    "gp": 19,
+    "pos": "C",
+    "value": 42.0,
+    "isolated": 44.1,
+    "production": 41.1,
     "weight": 0.23,
     "isMe": false
    },
    {
-    "rank": 374,
-    "name": "Gavin McKenna",
-    "team": "TOR",
-    "gp": 24,
-    "pos": "L",
-    "value": 42.5,
-    "isolated": 40.4,
-    "production": 42.9,
-    "weight": 0.26,
+    "rank": 380,
+    "name": "Josh Manson",
+    "team": "COL",
+    "gp": 13,
+    "pos": "D",
+    "value": 41.9,
+    "isolated": 60.5,
+    "production": 38.1,
+    "weight": 0.16,
+    "isMe": false
+   },
+   {
+    "rank": 381,
+    "name": "Andreas Englund",
+    "team": "DET",
+    "gp": 17,
+    "pos": "D",
+    "value": 41.7,
+    "isolated": 62.0,
+    "production": 36.8,
+    "weight": 0.19,
+    "isMe": true
+   },
+   {
+    "rank": 382,
+    "name": "Mikael Backlund",
+    "team": "CGY",
+    "gp": 21,
+    "pos": "C",
+    "value": 41.7,
+    "isolated": 23.3,
+    "production": 50.4,
+    "weight": 0.3,
+    "isMe": false
+   },
+   {
+    "rank": 383,
+    "name": "Alex Carrier",
+    "team": "MTL",
+    "gp": 23,
+    "pos": "D",
+    "value": 41.7,
+    "isolated": 45.9,
+    "production": 39.2,
+    "weight": 0.35,
     "isMe": false
    }
   ],
@@ -7650,12 +7650,36 @@
     "moneypuck": 0.2,
     "hockeystatcards": 0.04
    }
+  },
+  {
+   "gameId": 2026020367,
+   "date": "2026-11-21",
+   "opponent": "NYI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 0,
+   "toi": 15.8,
+   "ixg": 0.04,
+   "xgf": 0.47,
+   "xga": 0.93,
+   "gf": 0.0,
+   "ga": 0.0,
+   "blocks": 1.0,
+   "gameScore": -0.12,
+   "gameScoreParts": {
+    "moneypuck": 0.225,
+    "hockeystatcards": -0.47
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.23,
-  "games": 17,
+  "average": 0.21,
+  "games": 18,
   "best": {
    "date": "2026-11-02",
    "opponent": "FLA",
@@ -7667,9 +7691,9 @@
    "value": -0.48
   },
   "above2": 0,
-  "below0": 5
+  "below0": 6
  },
- "detGames": 17,
+ "detGames": 18,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -7682,5 +7706,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:47:20-08:00"
+ "updatedAt": "2026-11-23T07:08:36-08:00"
 }

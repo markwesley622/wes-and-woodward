@@ -57,10 +57,10 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 4,
+   "gp": 6,
    "goals": 2,
-   "assists": 4,
-   "points": 6,
+   "assists": 7,
+   "points": 9,
    "plusMinus": 3,
    "pim": 2
   }
@@ -85,7 +85,7 @@
    "onIceXgPct": 0.47,
    "onIceCorsiPct": 0.48,
    "ixgPer60": 0.261,
-   "pctl_onIceXgPct": 16.0,
+   "pctl_onIceXgPct": 21.5,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -97,11 +97,11 @@
   },
   "Offense": {
    "value": -1.8,
-   "percentile": 13
+   "percentile": 15
   },
   "Defense": {
    "value": -0.5,
-   "percentile": 31
+   "percentile": 33
   },
   "Net": {
    "value": -2.3,
@@ -109,15 +109,15 @@
   }
  },
  "score": {
-  "value": 27.2,
-  "low": 17.8,
-  "high": 39.3,
+  "value": 27.1,
+  "low": 17.7,
+  "high": 39.1,
   "isolated": 35.2,
-  "production": 26.5,
+  "production": 26.4,
   "weightIsolated": 0.123,
   "sustainable": 38.4,
   "results": 32.2,
-  "percentile": 13.4,
+  "percentile": 13.0,
   "goalsBlended": -0.5,
   "goalsSustainable": -0.3,
   "goalsResults": -0.9,
@@ -220,66 +220,66 @@
    "CF/60": -1.71,
    "CA/60": -0.02
   },
-  "rank": 587,
+  "rank": 590,
   "neighbors": [
    {
-    "rank": 585,
-    "name": "Nick Perbix",
-    "team": "NSH",
-    "gp": 21,
-    "pos": "D",
-    "value": 27.2,
-    "isolated": 30.0,
-    "production": 26.5,
-    "weight": 0.3,
-    "isMe": false
-   },
-   {
-    "rank": 586,
-    "name": "Nick Paul",
-    "team": "TOR",
-    "gp": 24,
-    "pos": "L",
-    "value": 27.2,
-    "isolated": 18.9,
-    "production": 31.7,
-    "weight": 0.29,
-    "isMe": false
-   },
-   {
-    "rank": 587,
-    "name": "Nate Danielson",
-    "team": "DET",
-    "gp": 13,
-    "pos": "C",
-    "value": 27.2,
-    "isolated": 35.2,
-    "production": 26.5,
-    "weight": 0.12,
-    "isMe": true
-   },
-   {
     "rank": 588,
-    "name": "Ryan McLeod",
-    "team": "BUF",
-    "gp": 19,
+    "name": "Sean Monahan",
+    "team": "CBJ",
+    "gp": 17,
     "pos": "C",
-    "value": 27.2,
-    "isolated": 25.5,
-    "production": 28.1,
-    "weight": 0.23,
+    "value": 27.3,
+    "isolated": 16.4,
+    "production": 31.4,
+    "weight": 0.22,
     "isMe": false
    },
    {
     "rank": 589,
-    "name": "Filip Hronek",
-    "team": "VAN",
-    "gp": 24,
+    "name": "Radko Gudas",
+    "team": "FLA",
+    "gp": 15,
     "pos": "D",
     "value": 27.1,
-    "isolated": 27.2,
-    "production": 27.5,
-    "weight": 0.43,
+    "isolated": 21.6,
+    "production": 28.8,
+    "weight": 0.18,
+    "isMe": false
+   },
+   {
+    "rank": 590,
+    "name": "Nate Danielson",
+    "team": "DET",
+    "gp": 13,
+    "pos": "C",
+    "value": 27.1,
+    "isolated": 35.2,
+    "production": 26.4,
+    "weight": 0.12,
+    "isMe": true
+   },
+   {
+    "rank": 591,
+    "name": "Andrei Kuzmenko",
+    "team": "PIT",
+    "gp": 12,
+    "pos": "L",
+    "value": 27.0,
+    "isolated": 28.3,
+    "production": 27.2,
+    "weight": 0.13,
+    "isMe": false
+   },
+   {
+    "rank": 592,
+    "name": "Filip Chytil",
+    "team": "VAN",
+    "gp": 11,
+    "pos": "C",
+    "value": 26.9,
+    "isolated": 16.8,
+    "production": 30.0,
+    "weight": 0.18,
     "isMe": false
    }
   ],
@@ -7491,5 +7491,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:43:11-08:00"
+ "updatedAt": "2026-11-23T06:14:42-08:00"
 }

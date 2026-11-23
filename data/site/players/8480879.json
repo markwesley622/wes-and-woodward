@@ -85,7 +85,7 @@
    "onIceXgPct": 0.41,
    "onIceCorsiPct": 0.48,
    "ixgPer60": 0.0,
-   "pctl_onIceXgPct": 7.8,
+   "pctl_onIceXgPct": 5.8,
    "pctl_ixgPer60": 0.0,
    "qualifiesForPercentiles": false
   }
@@ -96,28 +96,28 @@
    "percentile": 25
   },
   "Offense": {
-   "value": -0.4,
-   "percentile": 52
+   "value": -0.5,
+   "percentile": 51
   },
   "Defense": {
    "value": -0.2,
-   "percentile": 43
+   "percentile": 44
   },
   "Net": {
    "value": -0.7,
-   "percentile": 48
+   "percentile": 46
   }
  },
  "score": {
-  "value": 29.0,
-  "low": 23.9,
-  "high": 34.8,
+  "value": 28.7,
+  "low": 23.6,
+  "high": 34.5,
   "isolated": 40.1,
-  "production": 29.1,
+  "production": 28.9,
   "weightIsolated": 0.012,
   "sustainable": 40.8,
   "results": 40.6,
-  "percentile": 17.3,
+  "percentile": 16.5,
   "goalsBlended": 0.0,
   "goalsSustainable": 0.0,
   "goalsResults": 0.1,
@@ -7227,5 +7227,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:45:36-08:00"
+ "updatedAt": "2026-11-23T06:57:01-08:00"
 }

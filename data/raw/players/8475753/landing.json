@@ -55,11 +55,11 @@
    "subSeason": {
     "assists": 6,
     "gameWinningGoals": 1,
-    "gamesPlayed": 22,
+    "gamesPlayed": 23,
     "goals": 3,
     "otGoals": 0,
     "pim": 12,
-    "plusMinus": -1,
+    "plusMinus": 0,
     "points": 9,
     "powerPlayGoals": 2,
     "powerPlayPoints": 4,
@@ -71,11 +71,11 @@
    "career": {
     "assists": 358,
     "gameWinningGoals": 37,
-    "gamesPlayed": 1080,
+    "gamesPlayed": 1081,
     "goals": 149,
     "otGoals": 4,
     "pim": 532,
-    "plusMinus": -75,
+    "plusMinus": -74,
     "points": 507,
     "powerPlayGoals": 51,
     "powerPlayPoints": 159,
@@ -92,11 +92,11 @@
    "avgToi": "22:53",
    "faceoffWinningPctg": 0.0,
    "gameWinningGoals": 37,
-   "gamesPlayed": 1080,
+   "gamesPlayed": 1081,
    "goals": 149,
    "otGoals": 4,
    "pim": 532,
-   "plusMinus": -75,
+   "plusMinus": -74,
    "points": 507,
    "powerPlayGoals": 51,
    "powerPlayPoints": 159,
@@ -127,6 +127,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-11-21",
+   "gameId": 2026020367,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "NYI",
+   "pim": 0,
+   "plusMinus": 1,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 31,
+   "shorthandedGoals": 0,
+   "shots": 0,
+   "teamAbbrev": "DET",
+   "toi": "23:49"
+  },
   {
    "assists": 0,
    "gameDate": "2026-11-18",
@@ -198,24 +216,6 @@
    "shots": 2,
    "teamAbbrev": "DET",
    "toi": "21:20"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-11-07",
-   "gameId": 2026020274,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "COL",
-   "pim": 2,
-   "plusMinus": 0,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 30,
-   "shorthandedGoals": 0,
-   "shots": 2,
-   "teamAbbrev": "DET",
-   "toi": "24:14"
   }
  ],
  "seasonTotals": [
@@ -1257,16 +1257,16 @@
   },
   {
    "assists": 6,
-   "avgToi": "20:44",
+   "avgToi": "20:52",
    "faceoffWinningPctg": 0.0,
    "gameTypeId": 2,
    "gameWinningGoals": 1,
-   "gamesPlayed": 22,
+   "gamesPlayed": 23,
    "goals": 3,
    "leagueAbbrev": "NHL",
    "otGoals": 0,
    "pim": 12,
-   "plusMinus": -1,
+   "plusMinus": 0,
    "points": 9,
    "powerPlayGoals": 2,
    "powerPlayPoints": 4,
@@ -1361,6 +1361,16 @@
    "playerSlug": "andrew-copp-8477429"
   },
   {
+   "playerId": 8481523,
+   "lastName": {
+    "default": "Dach"
+   },
+   "firstName": {
+    "default": "Kirby"
+   },
+   "playerSlug": "kirby-dach-8481523"
+  },
+  {
    "playerId": 8479337,
    "lastName": {
     "default": "DeBrincat"
@@ -1369,16 +1379,6 @@
     "default": "Alex"
    },
    "playerSlug": "alex-debrincat-8479337"
-  },
-  {
-   "playerId": 8480326,
-   "lastName": {
-    "default": "Dries"
-   },
-   "firstName": {
-    "default": "Sheldon"
-   },
-   "playerSlug": "sheldon-dries-8480326"
   },
   {
    "playerId": 8477971,
@@ -1469,6 +1469,16 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
+  },
+  {
+   "playerId": 8478470,
+   "lastName": {
+    "default": "Montembeault"
+   },
+   "firstName": {
+    "default": "Samuel"
+   },
+   "playerSlug": "samuel-montembeault-8478470"
   },
   {
    "playerId": 8479992,

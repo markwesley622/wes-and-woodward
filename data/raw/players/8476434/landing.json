@@ -54,20 +54,20 @@
   "season": 20262027,
   "regularSeason": {
    "subSeason": {
-    "gamesPlayed": 13,
-    "goalsAgainstAvg": 3.578095,
-    "losses": 7,
+    "gamesPlayed": 14,
+    "goalsAgainstAvg": 3.542198,
+    "losses": 8,
     "otLosses": 1,
-    "savePctg": 0.861953,
+    "savePctg": 0.861635,
     "shutouts": 0,
     "wins": 4
    },
    "career": {
-    "gamesPlayed": 576,
-    "goalsAgainstAvg": 2.886854,
-    "losses": 246,
+    "gamesPlayed": 577,
+    "goalsAgainstAvg": 2.887258,
+    "losses": 247,
     "otLosses": 68,
-    "savePctg": 0.908546,
+    "savePctg": 0.908483,
     "shutouts": 28,
     "wins": 237
    }
@@ -76,18 +76,18 @@
  "careerTotals": {
   "regularSeason": {
    "assists": 8,
-   "gamesPlayed": 576,
-   "gamesStarted": 564,
+   "gamesPlayed": 577,
+   "gamesStarted": 565,
    "goals": 0,
-   "goalsAgainst": 1572,
-   "goalsAgainstAvg": 2.886854,
-   "losses": 246,
+   "goalsAgainst": 1575,
+   "goalsAgainstAvg": 2.887258,
+   "losses": 247,
    "otLosses": 68,
    "pim": 76,
-   "savePctg": 0.908546,
-   "shotsAgainst": 17178,
+   "savePctg": 0.908483,
+   "shotsAgainst": 17199,
    "shutouts": 28,
-   "timeOnIce": "32672:14",
+   "timeOnIce": "32730:01",
    "wins": 237
   },
   "playoffs": {
@@ -109,6 +109,21 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "decision": "L",
+   "gameDate": "2026-11-21",
+   "gameId": 2026020367,
+   "gameTypeId": 2,
+   "gamesStarted": 1,
+   "goalsAgainst": 3,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "NYI",
+   "penaltyMins": 0,
+   "savePctg": 0.857143,
+   "shotsAgainst": 21,
+   "teamAbbrev": "DET",
+   "toi": "57:47"
+  },
   {
    "decision": "L",
    "gameDate": "2026-11-12",
@@ -167,21 +182,6 @@
    "shotsAgainst": 15,
    "teamAbbrev": "DET",
    "toi": "57:00"
-  },
-  {
-   "decision": "W",
-   "gameDate": "2026-10-29",
-   "gameId": 2026020203,
-   "gameTypeId": 2,
-   "gamesStarted": 1,
-   "goalsAgainst": 1,
-   "homeRoadFlag": "H",
-   "opponentAbbrev": "CHI",
-   "penaltyMins": 0,
-   "savePctg": 0.947368,
-   "shotsAgainst": 19,
-   "teamAbbrev": "DET",
-   "toi": "60:00"
   }
  ],
  "seasonTotals": [
@@ -1099,19 +1099,19 @@
   {
    "assists": 0,
    "gameTypeId": 2,
-   "gamesPlayed": 13,
-   "gamesStarted": 13,
+   "gamesPlayed": 14,
+   "gamesStarted": 14,
    "goals": 0,
-   "goalsAgainst": 41,
-   "goalsAgainstAvg": 3.578095,
+   "goalsAgainst": 44,
+   "goalsAgainstAvg": 3.542198,
    "leagueAbbrev": "NHL",
-   "losses": 7,
+   "losses": 8,
    "otLosses": 1,
    "pim": 0,
-   "savePctg": 0.861953,
+   "savePctg": 0.861635,
    "season": 20262027,
    "sequence": 1,
-   "shotsAgainst": 297,
+   "shotsAgainst": 318,
    "shutouts": 0,
    "teamCommonName": {
     "default": "Red Wings"
@@ -1124,7 +1124,7 @@
     "default": "Detroit",
     "fr": "de Detroit"
    },
-   "timeOnIce": "687:31",
+   "timeOnIce": "745:18",
    "wins": 4
   }
  ],
@@ -1220,6 +1220,16 @@
    "playerSlug": "andrew-copp-8477429"
   },
   {
+   "playerId": 8481523,
+   "lastName": {
+    "default": "Dach"
+   },
+   "firstName": {
+    "default": "Kirby"
+   },
+   "playerSlug": "kirby-dach-8481523"
+  },
+  {
    "playerId": 8479337,
    "lastName": {
     "default": "DeBrincat"
@@ -1228,16 +1238,6 @@
     "default": "Alex"
    },
    "playerSlug": "alex-debrincat-8479337"
-  },
-  {
-   "playerId": 8480326,
-   "lastName": {
-    "default": "Dries"
-   },
-   "firstName": {
-    "default": "Sheldon"
-   },
-   "playerSlug": "sheldon-dries-8480326"
   },
   {
    "playerId": 8477971,
@@ -1328,6 +1328,16 @@
     "default": "Carter"
    },
    "playerSlug": "carter-mazur-8482802"
+  },
+  {
+   "playerId": 8478470,
+   "lastName": {
+    "default": "Montembeault"
+   },
+   "firstName": {
+    "default": "Samuel"
+   },
+   "playerSlug": "samuel-montembeault-8478470"
   },
   {
    "playerId": 8479992,

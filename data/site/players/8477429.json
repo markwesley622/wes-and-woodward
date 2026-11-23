@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 22,
+  "gp": 23,
   "goals": 3,
   "assists": 8,
   "points": 11,
   "plusMinus": -2,
   "pim": 6,
-  "shots": 32,
-  "shootingPct": 0.09375,
-  "toiPerGame": "18:43",
+  "shots": 33,
+  "shootingPct": 0.090909,
+  "toiPerGame": "18:47",
   "ppPoints": 3,
   "wins": null,
   "losses": null,
@@ -47,7 +47,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 22,
+   "gp": 23,
    "goals": 3,
    "assists": 8,
    "points": 11,
@@ -60,58 +60,58 @@
   "name": "Andrew Copp",
   "position": "C",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477429.png",
-  "gamesPlayed": 22,
+  "gamesPlayed": 23,
   "goals": 3,
   "assists": 8,
   "points": 11,
-  "shots": 32,
-  "shootingPct": 0.09375,
-  "toiPerGame": 1123.4,
-  "ixG": 4.16,
-  "goalsAboveExpected": -1.16,
-  "gameScore": 8.71,
+  "shots": 33,
+  "shootingPct": 0.090909,
+  "toiPerGame": 1127.2,
+  "ixG": 4.38,
+  "goalsAboveExpected": -1.38,
+  "gameScore": 8.33,
   "fiveOnFive": {
-   "icetimeMinutes": 309.7,
-   "onIceXgPct": 0.48,
+   "icetimeMinutes": 325.3,
+   "onIceXgPct": 0.46,
    "onIceCorsiPct": 0.47,
-   "ixgPer60": 0.678,
-   "pctl_onIceXgPct": 21.3,
-   "pctl_ixgPer60": 31.9,
+   "ixgPer60": 0.686,
+   "pctl_onIceXgPct": 16.9,
+   "pctl_ixgPer60": 34.6,
    "qualifiesForPercentiles": true
   }
  },
  "hsc": {
   "Game score": {
-   "value": 0.2,
-   "percentile": 40
+   "value": 0.14,
+   "percentile": 37
   },
   "Offense": {
-   "value": -1.1,
-   "percentile": 28
+   "value": -1.2,
+   "percentile": 29
   },
   "Defense": {
-   "value": -0.3,
-   "percentile": 39
+   "value": -0.7,
+   "percentile": 26
   },
   "Net": {
-   "value": -1.4,
-   "percentile": 27
+   "value": -1.9,
+   "percentile": 21
   }
  },
  "score": {
-  "value": 34.8,
-  "low": 24.9,
-  "high": 46.3,
+  "value": 33.0,
+  "low": 23.3,
+  "high": 44.3,
   "isolated": 18.0,
-  "production": 44.4,
+  "production": 41.6,
   "weightIsolated": 0.31,
   "sustainable": 18.2,
   "results": 21.6,
-  "percentile": 30.5,
+  "percentile": 27.0,
   "goalsBlended": -3.1,
   "goalsSustainable": -3.5,
   "goalsResults": -2.4,
-  "gameScore": 6.56,
+  "gameScore": 5.81,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -210,66 +210,66 @@
    "CF/60": -1.75,
    "CA/60": 1.13
   },
-  "rank": 471,
+  "rank": 495,
   "neighbors": [
    {
-    "rank": 469,
-    "name": "Rasmus Andersson",
-    "team": "VGK",
-    "gp": 24,
-    "pos": "D",
-    "value": 34.9,
-    "isolated": 46.8,
-    "production": 29.3,
-    "weight": 0.34,
+    "rank": 493,
+    "name": "Bryan Rust",
+    "team": "PIT",
+    "gp": 7,
+    "pos": "R",
+    "value": 33.1,
+    "isolated": 31.5,
+    "production": 33.4,
+    "weight": 0.11,
     "isMe": false
    },
    {
-    "rank": 470,
-    "name": "Bobby McMann",
-    "team": "SEA",
-    "gp": 19,
-    "pos": "C",
-    "value": 34.9,
-    "isolated": 30.3,
-    "production": 36.6,
-    "weight": 0.25,
+    "rank": 494,
+    "name": "Dmitri Voronkov",
+    "team": "CBJ",
+    "gp": 14,
+    "pos": "L",
+    "value": 33.1,
+    "isolated": 33.6,
+    "production": 33.2,
+    "weight": 0.13,
     "isMe": false
    },
    {
-    "rank": 471,
+    "rank": 495,
     "name": "Andrew Copp",
     "team": "DET",
     "gp": 22,
     "pos": "C",
-    "value": 34.8,
+    "value": 33.0,
     "isolated": 18.0,
-    "production": 44.4,
+    "production": 41.6,
     "weight": 0.31,
     "isMe": true
    },
    {
-    "rank": 472,
-    "name": "Sean Couturier",
-    "team": "PHI",
-    "gp": 25,
-    "pos": "C",
-    "value": 34.7,
-    "isolated": 26.2,
-    "production": 38.9,
-    "weight": 0.31,
+    "rank": 496,
+    "name": "Frederic Brunet",
+    "team": "BOS",
+    "gp": 14,
+    "pos": "D",
+    "value": 32.9,
+    "isolated": 40.6,
+    "production": 31.3,
+    "weight": 0.19,
     "isMe": false
    },
    {
-    "rank": 473,
-    "name": "Andre Lee",
-    "team": "L.A",
-    "gp": 18,
-    "pos": "L",
-    "value": 34.7,
-    "isolated": 42.4,
-    "production": 33.2,
-    "weight": 0.17,
+    "rank": 497,
+    "name": "Garnet Hathaway",
+    "team": "FLA",
+    "gp": 23,
+    "pos": "R",
+    "value": 32.8,
+    "isolated": 57.0,
+    "production": 27.9,
+    "weight": 0.19,
     "isMe": false
    }
   ],
@@ -7830,12 +7830,36 @@
     "moneypuck": 1.06,
     "hockeystatcards": 2.2
    }
+  },
+  {
+   "gameId": 2026020367,
+   "date": "2026-11-21",
+   "opponent": "NYI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 0,
+   "shots": 1,
+   "pim": 0,
+   "toi": 20.2,
+   "ixg": 0.17,
+   "xgf": 0.75,
+   "xga": 1.36,
+   "gf": 1.0,
+   "ga": 1.0,
+   "blocks": 0.0,
+   "gameScore": -0.75,
+   "gameScoreParts": {
+    "moneypuck": -0.385,
+    "hockeystatcards": -1.12
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.3,
-  "games": 22,
+  "average": 0.25,
+  "games": 23,
   "best": {
    "date": "2026-11-18",
    "opponent": "BOS",
@@ -7847,9 +7871,9 @@
    "value": -2.11
   },
   "above2": 0,
-  "below0": 7
+  "below0": 8
  },
- "detGames": 22,
+ "detGames": 23,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -7862,5 +7886,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:43:00-08:00"
+ "updatedAt": "2026-11-23T06:11:56-08:00"
 }

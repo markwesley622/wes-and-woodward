@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 11,
+  "gp": 12,
   "goals": 0,
-  "assists": 1,
-  "points": 1,
-  "plusMinus": 1,
+  "assists": 2,
+  "points": 2,
+  "plusMinus": 0,
   "pim": 2,
   "shots": 14,
   "shootingPct": 0.0,
-  "toiPerGame": "15:41",
+  "toiPerGame": "15:51",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 11,
+   "gp": 12,
    "goals": 0,
-   "assists": 1,
-   "points": 1,
-   "plusMinus": 1,
+   "assists": 2,
+   "points": 2,
+   "plusMinus": 0,
    "pim": 2
   }
  ],
@@ -60,58 +60,58 @@
   "name": "Albert Johansson",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481607.png",
-  "gamesPlayed": 11,
+  "gamesPlayed": 12,
   "goals": 0,
-  "assists": 1,
-  "points": 1,
+  "assists": 2,
+  "points": 2,
   "shots": 14,
   "shootingPct": 0.0,
-  "toiPerGame": 940.7,
+  "toiPerGame": 950.6,
   "ixG": 0.56,
   "goalsAboveExpected": -0.56,
-  "gameScore": 4.85,
+  "gameScore": 5.05,
   "fiveOnFive": {
-   "icetimeMinutes": 147.0,
-   "onIceXgPct": 0.57,
-   "onIceCorsiPct": 0.57,
-   "ixgPer60": 0.224,
-   "pctl_onIceXgPct": 83.7,
-   "pctl_ixgPer60": 66.7,
+   "icetimeMinutes": 164.0,
+   "onIceXgPct": 0.54,
+   "onIceCorsiPct": 0.56,
+   "ixgPer60": 0.201,
+   "pctl_onIceXgPct": 69.6,
+   "pctl_ixgPer60": 58.7,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
-   "value": 0.47,
-   "percentile": 61
+   "value": 0.31,
+   "percentile": 49
   },
   "Offense": {
-   "value": 0.1,
-   "percentile": 66
+   "value": 0.0,
+   "percentile": 65
   },
   "Defense": {
-   "value": 0.7,
-   "percentile": 74
+   "value": 0.3,
+   "percentile": 64
   },
   "Net": {
-   "value": 0.7,
-   "percentile": 71
+   "value": 0.3,
+   "percentile": 66
   }
  },
  "score": {
-  "value": 42.7,
-  "low": 30.1,
-  "high": 56.4,
+  "value": 40.7,
+  "low": 28.3,
+  "high": 54.3,
   "isolated": 54.2,
-  "production": 40.5,
+  "production": 38.2,
   "weightIsolated": 0.147,
   "sustainable": 54.3,
   "results": 53.2,
-  "percentile": 45.4,
+  "percentile": 41.4,
   "goalsBlended": 1.6,
   "goalsSustainable": 1.7,
   "goalsResults": 1.5,
-  "gameScore": 4.99,
+  "gameScore": 4.37,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -210,66 +210,66 @@
    "CF/60": 2.21,
    "CA/60": -0.3
   },
-  "rank": 370,
+  "rank": 397,
   "neighbors": [
    {
-    "rank": 368,
-    "name": "Eeli Tolvanen",
-    "team": "NYR",
-    "gp": 22,
-    "pos": "R",
-    "value": 42.8,
-    "isolated": 45.2,
-    "production": 41.8,
-    "weight": 0.22,
+    "rank": 395,
+    "name": "Jonas Brodin",
+    "team": "MIN",
+    "gp": 24,
+    "pos": "D",
+    "value": 40.9,
+    "isolated": 22.4,
+    "production": 53.9,
+    "weight": 0.38,
     "isMe": false
    },
    {
-    "rank": 369,
-    "name": "Kirby Dach",
-    "team": "MTL",
-    "gp": 21,
-    "pos": "C",
-    "value": 42.8,
-    "isolated": 39.2,
-    "production": 43.4,
-    "weight": 0.2,
+    "rank": 396,
+    "name": "Nick Foligno",
+    "team": "MIN",
+    "gp": 9,
+    "pos": "L",
+    "value": 40.7,
+    "isolated": 50.0,
+    "production": 39.7,
+    "weight": 0.08,
     "isMe": false
    },
    {
-    "rank": 370,
+    "rank": 397,
     "name": "Albert Johansson",
     "team": "DET",
     "gp": 11,
     "pos": "D",
-    "value": 42.7,
+    "value": 40.7,
     "isolated": 54.2,
-    "production": 40.5,
+    "production": 38.2,
     "weight": 0.15,
     "isMe": true
    },
    {
-    "rank": 371,
-    "name": "Josh Manson",
-    "team": "COL",
+    "rank": 398,
+    "name": "Warren Foegele",
+    "team": "OTT",
     "gp": 13,
-    "pos": "D",
-    "value": 42.6,
-    "isolated": 60.5,
-    "production": 38.9,
-    "weight": 0.16,
+    "pos": "L",
+    "value": 40.6,
+    "isolated": 46.4,
+    "production": 39.5,
+    "weight": 0.14,
     "isMe": false
    },
    {
-    "rank": 372,
-    "name": "Andreas Englund",
-    "team": "DET",
-    "gp": 17,
+    "rank": 399,
+    "name": "Artem Zub",
+    "team": "OTT",
+    "gp": 16,
     "pos": "D",
-    "value": 42.6,
-    "isolated": 62.0,
-    "production": 37.8,
-    "weight": 0.19,
+    "value": 40.6,
+    "isolated": 41.3,
+    "production": 40.1,
+    "weight": 0.25,
     "isMe": false
    }
   ],
@@ -7416,26 +7416,50 @@
     "moneypuck": 0.525,
     "hockeystatcards": 0.28
    }
+  },
+  {
+   "gameId": 2026020367,
+   "date": "2026-11-21",
+   "opponent": "NYI",
+   "home": true,
+   "goals": 0,
+   "assists": 1,
+   "points": 1,
+   "plusMinus": -1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 17.6,
+   "ixg": 0.0,
+   "xgf": 0.25,
+   "xga": 0.68,
+   "gf": 1.0,
+   "ga": 2.0,
+   "blocks": 0.0,
+   "gameScore": -0.62,
+   "gameScoreParts": {
+    "moneypuck": 0.2,
+    "hockeystatcards": -1.44
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.45,
-  "games": 11,
+  "average": 0.36,
+  "games": 12,
   "best": {
    "date": "2026-10-22",
    "opponent": "VAN",
    "value": 1.88
   },
   "worst": {
-   "date": "2026-10-15",
-   "opponent": "PHI",
-   "value": -0.48
+   "date": "2026-11-21",
+   "opponent": "NYI",
+   "value": -0.62
   },
   "above2": 0,
-  "below0": 4
+  "below0": 5
  },
- "detGames": 11,
+ "detGames": 12,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -7448,5 +7472,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:46:15-08:00"
+ "updatedAt": "2026-11-23T06:59:30-08:00"
 }

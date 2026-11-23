@@ -31,11 +31,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 22,
+   "gp": 23,
    "g": 2,
-   "a": 3,
-   "pts": 5,
-   "pm": -1,
+   "a": 4,
+   "pts": 6,
+   "pm": 0,
    "pim": 16,
    "gaa": null,
    "svp": null,
@@ -89,11 +89,11 @@
     {
      "league": "NHL",
      "team": "Detroit Red Wings",
-     "gp": 22,
+     "gp": 23,
      "g": 2,
-     "a": 3,
-     "pts": 5,
-     "pm": -1,
+     "a": 4,
+     "pts": 6,
+     "pm": 0,
      "pim": 16,
      "gaa": null,
      "svp": null,
@@ -492,7 +492,7 @@
   "cohortExpected": 25.4,
   "expected": 27.5,
   "tier": "below average",
-  "nhlW": 0.52,
+  "nhlW": 0.53,
   "nhlExpected": 29.4,
   "beforeNhl": 25.4
  },
@@ -512,15 +512,15 @@
   "delta": 0.106
  },
  "nhlSample": {
-  "gp": 22,
-  "pts": 5,
+  "gp": 23,
+  "pts": 6,
   "seasons": [
    20262027
   ],
   "thisSeason": {
-   "gp": 22,
-   "pts": 5,
-   "toi": "13:49",
+   "gp": 23,
+   "pts": 6,
+   "toi": "13:48",
    "savePct": null
   }
  },
@@ -537,26 +537,15 @@
   "poolN": 258,
   "group": "D",
   "age": 22,
-  "gp": 22,
-  "toi": 829,
-  "ppg": 0.227,
-  "ppgShrunk": 0.211,
+  "gp": 23,
+  "toi": 828,
+  "ppg": 0.261,
+  "ppgShrunk": 0.229,
   "toiBand": [
    725,
    975
   ],
   "examples": [
-   {
-    "name": "Caleb Jones",
-    "season": "2019-2020",
-    "age": 22,
-    "gp": 43,
-    "toi": 848,
-    "ppg": 0.21,
-    "peak": 45.5,
-    "tier": "below average",
-    "nhlGp": 255
-   },
    {
     "name": "Madison Bowey",
     "season": "2017-2018",
@@ -567,6 +556,17 @@
     "peak": 58.3,
     "tier": "above average",
     "nhlGp": 158
+   },
+   {
+    "name": "Caleb Jones",
+    "season": "2019-2020",
+    "age": 22,
+    "gp": 43,
+    "toi": 848,
+    "ppg": 0.21,
+    "peak": 45.5,
+    "tier": "below average",
+    "nhlGp": 255
    },
    {
     "name": "Jordan Schmaltz",
@@ -591,6 +591,17 @@
     "nhlGp": 73
    },
    {
+    "name": "Adam Clendening",
+    "season": "2015-2016",
+    "age": 22,
+    "gp": 29,
+    "toi": 888,
+    "ppg": 0.24,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 90
+   },
+   {
     "name": "Christian Jaros",
     "season": "2018-2019",
     "age": 22,
@@ -602,6 +613,17 @@
     "nhlGp": 94
    },
    {
+    "name": "Jake Bean",
+    "season": "2020-2021",
+    "age": 22,
+    "gp": 42,
+    "toi": 872,
+    "ppg": 0.29,
+    "peak": 61.5,
+    "tier": "above average",
+    "nhlGp": 277
+   },
+   {
     "name": "Brett Kulak",
     "season": "2016-2017",
     "age": 22,
@@ -611,31 +633,9 @@
     "peak": 51.5,
     "tier": "above average",
     "nhlGp": 665
-   },
-   {
-    "name": "Gustav Olofsson",
-    "season": "2017-2018",
-    "age": 22,
-    "gp": 41,
-    "toi": 766,
-    "ppg": 0.2,
-    "peak": 24.5,
-    "tier": "replacement level",
-    "nhlGp": 63
-   },
-   {
-    "name": "Adam Clendening",
-    "season": "2015-2016",
-    "age": 22,
-    "gp": 29,
-    "toi": 888,
-    "ppg": 0.24,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 90
    }
   ],
-  "w": 0.52,
+  "w": 0.53,
   "before": 25.4,
   "after": 27.5
  },

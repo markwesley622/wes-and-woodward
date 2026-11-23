@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 18,
+   "gp": 20,
    "g": 4,
    "a": 3,
    "pts": 7,
-   "pm": -6,
+   "pm": -7,
    "pim": 4,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 18,
+     "gp": 20,
      "g": 4,
      "a": 3,
      "pts": 7,
-     "pm": -6,
+     "pm": -7,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -230,18 +230,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 18,
+  "gp": 20,
   "g": 4,
   "a": 3,
   "pts": 7,
-  "pgp": 0.389,
-  "lineGp": 18,
-  "nhle": 0.151,
-  "nhlePace": 12.7,
+  "pgp": 0.35,
+  "lineGp": 20,
+  "nhle": 0.136,
+  "nhlePace": 11.4,
   "lines": [
    "AHL"
   ],
-  "feature": 0.151
+  "feature": 0.136
  },
  "league": {
   "name": "AHL",
@@ -266,113 +266,113 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 41,
-   "gp": 18,
-   "value": 0.3889,
+   "gp": 20,
+   "value": 0.35,
    "percentile": 58.5,
-   "percentileAllAges": 50.5,
+   "percentileAllAges": 49.7,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 6.6,
+  "expected": 4.0,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 22.7,
-  "pRegular": 0.24,
-  "pTopLine": 0.02,
+  "p90": 12.9,
+  "pRegular": 0.12,
+  "pTopLine": 0.0,
   "pAboveAvg": 0.04,
-  "pElite": 0.02,
+  "pElite": 0.0,
   "poolN": 1122,
   "group": "F",
   "age": 21,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.24,
+  "pCeiling": 0.12,
   "featureBand": [
-   0.147,
-   0.155
+   0.13,
+   0.142
   ],
   "examples": [
    {
-    "name": "Anton Lander",
+    "name": "Carl Klingberg",
     "year": 2009,
-    "pick": 40,
+    "pick": 34,
     "league": "AHL",
-    "feature": 0.151,
-    "peak": 6.4,
-    "tier": "replacement level",
-    "nhlGp": 215
+    "feature": 0.136,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 12
    },
    {
-    "name": "Maxim Letunov",
-    "year": 2014,
-    "pick": 52,
+    "name": "Quentin Shore",
+    "year": 2013,
+    "pick": 168,
     "league": "NCAA",
-    "feature": 0.151,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 3
-   },
-   {
-    "name": "Brandon Gignac",
-    "year": 2016,
-    "pick": 80,
-    "league": "AHL",
-    "feature": 0.151,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 8
-   },
-   {
-    "name": "Marcus Westf\u00e4lt",
-    "year": 2018,
-    "pick": 205,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.151,
+    "feature": 0.136,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Scott Winkler",
+    "name": "Spencer Smallman",
+    "year": 2015,
+    "pick": 138,
+    "league": "ECHL",
+    "feature": 0.136,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Nate Condon",
     "year": 2008,
-    "pick": 89,
+    "pick": 200,
     "league": "NCAA",
-    "feature": 0.15,
+    "feature": 0.135,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Matias Sointu",
-    "year": 2008,
-    "pick": 182,
-    "league": "SM-liiga",
-    "feature": 0.15,
+    "name": "Michael Pelech",
+    "year": 2009,
+    "pick": 156,
+    "league": "ECHL",
+    "feature": 0.135,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Bryan Rust",
-    "year": 2010,
-    "pick": 80,
-    "league": "NCAA",
-    "feature": 0.152,
-    "peak": 94.5,
-    "tier": "elite",
-    "nhlGp": 710
-   },
-   {
-    "name": "Joachim Nermark",
+    "name": "Kale Kessy",
     "year": 2011,
-    "pick": 93,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.15,
+    "pick": 111,
+    "league": "AHL",
+    "feature": 0.137,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Dominik Uher",
+    "year": 2011,
+    "pick": 144,
+    "league": "AHL",
+    "feature": 0.137,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 2
+   },
+   {
+    "name": "JC Lipon",
+    "year": 2013,
+    "pick": 91,
+    "league": "AHL",
+    "feature": 0.135,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 9
    }
   ]
  },
@@ -393,8 +393,8 @@
   "w": 0.0,
   "sinceDraft": 3,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 6.6,
-  "expected": 6.6,
+  "cohortExpected": 4.0,
+  "expected": 4.0,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -407,19 +407,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.151,
-   "gp": 18
+   "feature": 0.136,
+   "gp": 20
   },
-  "delta": -0.038
+  "delta": -0.053
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 18,
+  "gp": 20,
   "season": "2026-2027"
  },
- "rank": 21,
- "score": 6.6,
+ "rank": 26,
+ "score": 4.0,
  "rankStart": 12,
  "rankStartDate": "2026-10-06"
 }

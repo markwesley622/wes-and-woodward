@@ -31,12 +31,12 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 18,
+   "gp": 20,
    "g": 5,
    "a": 7,
    "pts": 12,
-   "pm": 3,
-   "pim": 0,
+   "pm": 2,
+   "pim": 15,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -89,12 +89,12 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 18,
+     "gp": 20,
      "g": 5,
      "a": 7,
      "pts": 12,
-     "pm": 3,
-     "pim": 0,
+     "pm": 2,
+     "pim": 15,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -218,18 +218,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 18,
+  "gp": 20,
   "g": 5,
   "a": 7,
   "pts": 12,
-  "pgp": 0.667,
-  "lineGp": 18,
-  "nhle": 0.259,
-  "nhlePace": 21.8,
+  "pgp": 0.6,
+  "lineGp": 20,
+  "nhle": 0.233,
+  "nhlePace": 19.6,
   "lines": [
    "AHL"
   ],
-  "feature": 0.259
+  "feature": 0.233
  },
  "league": {
   "name": "AHL",
@@ -254,113 +254,113 @@
    "season": "2026-2027",
    "ageBucket": "U24",
    "cohortN": 52,
-   "gp": 18,
-   "value": 0.6667,
-   "percentile": 63.5,
-   "percentileAllAges": 64.5,
+   "gp": 20,
+   "value": 0.6,
+   "percentile": 59.6,
+   "percentileAllAges": 62.6,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 13.0,
+  "expected": 7.6,
   "median": 0.0,
-  "p75": 25.0,
-  "p90": 48.2,
-  "pRegular": 0.32,
-  "pTopLine": 0.02,
+  "p75": 0.0,
+  "p90": 37.8,
+  "pRegular": 0.22,
+  "pTopLine": 0.0,
   "pAboveAvg": 0.08,
-  "pElite": 0.02,
+  "pElite": 0.0,
   "poolN": 1006,
   "group": "F",
   "age": 22,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.32,
+  "pCeiling": 0.22,
   "featureBand": [
-   0.248,
-   0.269
+   0.222,
+   0.244
   ],
   "examples": [
    {
-    "name": "Dale Weise",
+    "name": "Joe Colborne",
     "year": 2008,
-    "pick": 111,
+    "pick": 16,
     "league": "AHL",
-    "feature": 0.259,
-    "peak": 53.5,
+    "feature": 0.233,
+    "peak": 71.4,
     "tier": "above average",
-    "nhlGp": 513
+    "nhlGp": 295
    },
    {
-    "name": "Henrik Bj\u00f6rklund",
-    "year": 2009,
-    "pick": 111,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.259,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Noah Cates",
-    "year": 2017,
-    "pick": 137,
-    "league": "NCAA",
-    "feature": 0.258,
-    "peak": 62.1,
-    "tier": "above average",
-    "nhlGp": 321
-   },
-   {
-    "name": "Angus Crookshank",
-    "year": 2018,
-    "pick": 126,
+    "name": "Alex Broadhurst",
+    "year": 2011,
+    "pick": 199,
     "league": "AHL",
-    "feature": 0.258,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 29
-   },
-   {
-    "name": "Philippe Cornet",
-    "year": 2008,
-    "pick": 133,
-    "league": "AHL",
-    "feature": 0.257,
+    "feature": 0.233,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 2
    },
    {
-    "name": "Justin Azevedo",
-    "year": 2008,
-    "pick": 153,
+    "name": "Benoit-Olivier Groulx",
+    "year": 2018,
+    "pick": 54,
     "league": "AHL",
-    "feature": 0.261,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "feature": 0.233,
+    "peak": 0.0,
+    "tier": "replacement level",
+    "nhlGp": 80
    },
    {
-    "name": "Matthew Peca",
+    "name": "Chris Brown",
+    "year": 2009,
+    "pick": 36,
+    "league": "AHL",
+    "feature": 0.234,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 23
+   },
+   {
+    "name": "Corban Knight",
+    "year": 2009,
+    "pick": 135,
+    "league": "NCAA",
+    "feature": 0.232,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 52
+   },
+   {
+    "name": "Chase Balisy",
     "year": 2011,
-    "pick": 201,
+    "pick": 170,
     "league": "AHL",
-    "feature": 0.257,
+    "feature": 0.234,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 83
+    "nhlGp": 8
    },
    {
-    "name": "Emil Galimov",
-    "year": 2013,
-    "pick": 207,
-    "league": "KHL",
-    "feature": 0.257,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "name": "Valtteri Puustinen",
+    "year": 2019,
+    "pick": 203,
+    "league": "AHL",
+    "feature": 0.234,
+    "peak": 37.8,
+    "tier": "below average",
+    "nhlGp": 66
+   },
+   {
+    "name": "Phil Di Giuseppe",
+    "year": 2012,
+    "pick": 38,
+    "league": "AHL",
+    "feature": 0.235,
+    "peak": 19.5,
+    "tier": "replacement level",
+    "nhlGp": 302
    }
   ]
  },
@@ -381,8 +381,8 @@
   "w": 0.0,
   "sinceDraft": 4,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 13.0,
-  "expected": 13.0,
+  "cohortExpected": 7.6,
+  "expected": 7.6,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -395,19 +395,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.259,
-   "gp": 18
+   "feature": 0.233,
+   "gp": 20
   },
-  "delta": 0.093
+  "delta": 0.067
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 18,
+  "gp": 20,
   "season": "2026-2027"
  },
- "rank": 14,
- "score": 13.0,
+ "rank": 16,
+ "score": 7.6,
  "rankStart": 20,
  "rankStartDate": "2026-10-06"
 }

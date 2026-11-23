@@ -57,11 +57,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 10,
-   "goals": 13,
-   "assists": 4,
-   "points": 17,
-   "plusMinus": 5,
+   "gp": 12,
+   "goals": 16,
+   "assists": 5,
+   "points": 21,
+   "plusMinus": 6,
    "pim": 4
   }
  ],
@@ -85,8 +85,8 @@
    "onIceXgPct": 0.44,
    "onIceCorsiPct": 0.42,
    "ixgPer60": 0.725,
-   "pctl_onIceXgPct": 8.5,
-   "pctl_ixgPer60": 42.6,
+   "pctl_onIceXgPct": 12.3,
+   "pctl_ixgPer60": 46.2,
    "qualifiesForPercentiles": false
   }
  },
@@ -97,7 +97,7 @@
   },
   "Offense": {
    "value": -0.7,
-   "percentile": 41
+   "percentile": 42
   },
   "Defense": {
    "value": -0.1,
@@ -105,19 +105,19 @@
   },
   "Net": {
    "value": -0.8,
-   "percentile": 43
+   "percentile": 44
   }
  },
  "score": {
-  "value": 29.4,
-  "low": 21.9,
-  "high": 38.1,
+  "value": 29.1,
+  "low": 21.7,
+  "high": 37.8,
   "isolated": 39.4,
-  "production": 29.3,
+  "production": 29.0,
   "weightIsolated": 0.031,
   "sustainable": 40.8,
   "results": 38.9,
-  "percentile": 18.0,
+  "percentile": 17.7,
   "goalsBlended": -0.0,
   "goalsSustainable": 0.0,
   "goalsResults": -0.1,
@@ -7260,5 +7260,5 @@
   "template": "nhl"
  },
  "art": false,
- "updatedAt": "2026-11-20T05:44:43-08:00"
+ "updatedAt": "2026-11-23T06:47:19-08:00"
 }

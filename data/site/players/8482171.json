@@ -75,8 +75,8 @@
    "onIceXgPct": 0.53,
    "onIceCorsiPct": 0.5,
    "ixgPer60": 0.151,
-   "pctl_onIceXgPct": 63.6,
-   "pctl_ixgPer60": 39.5,
+   "pctl_onIceXgPct": 63.8,
+   "pctl_ixgPer60": 39.9,
    "qualifiesForPercentiles": false
   }
  },
@@ -86,12 +86,12 @@
    "percentile": 59
   },
   "Offense": {
-   "value": -0.0,
+   "value": -0.1,
    "percentile": 63
   },
   "Defense": {
-   "value": 0.6,
-   "percentile": 73
+   "value": 0.7,
+   "percentile": 74
   },
   "Net": {
    "value": 0.6,
@@ -99,15 +99,15 @@
   }
  },
  "score": {
-  "value": 49.1,
-  "low": 36.3,
-  "high": 62.1,
+  "value": 48.3,
+  "low": 35.5,
+  "high": 61.3,
   "isolated": 62.0,
-  "production": 44.9,
+  "production": 43.9,
   "weightIsolated": 0.218,
   "sustainable": 61.4,
   "results": 61.2,
-  "percentile": 55.8,
+  "percentile": 54.6,
   "goalsBlended": 2.5,
   "goalsSustainable": 2.6,
   "goalsResults": 2.4,
@@ -210,66 +210,66 @@
    "CF/60": -0.58,
    "CA/60": -1.28
   },
-  "rank": 300,
+  "rank": 308,
   "neighbors": [
    {
-    "rank": 298,
-    "name": "Tom Wilson",
-    "team": "WSH",
-    "gp": 20,
-    "pos": "R",
-    "value": 49.2,
-    "isolated": 27.5,
-    "production": 57.3,
+    "rank": 306,
+    "name": "Olli Maatta",
+    "team": "MIN",
+    "gp": 18,
+    "pos": "D",
+    "value": 48.4,
+    "isolated": 51.5,
+    "production": 46.7,
     "weight": 0.27,
     "isMe": false
    },
    {
-    "rank": 299,
-    "name": "Gustav Forsling",
-    "team": "FLA",
-    "gp": 22,
+    "rank": 307,
+    "name": "Matt Kiersted",
+    "team": "MIN",
+    "gp": 15,
     "pos": "D",
-    "value": 49.2,
-    "isolated": 57.9,
-    "production": 43.9,
-    "weight": 0.34,
+    "value": 48.3,
+    "isolated": 64.2,
+    "production": 44.7,
+    "weight": 0.16,
     "isMe": false
    },
    {
-    "rank": 300,
+    "rank": 308,
     "name": "William Wallinder",
     "team": "DET",
     "gp": 16,
     "pos": "D",
-    "value": 49.1,
+    "value": 48.3,
     "isolated": 62.0,
-    "production": 44.9,
+    "production": 43.9,
     "weight": 0.22,
     "isMe": true
    },
    {
-    "rank": 301,
-    "name": "Connor Brown",
-    "team": "N.J",
-    "gp": 14,
-    "pos": "R",
-    "value": 49.1,
-    "isolated": 42.9,
-    "production": 49.9,
-    "weight": 0.18,
+    "rank": 309,
+    "name": "Morgan Barron",
+    "team": "WPG",
+    "gp": 23,
+    "pos": "C",
+    "value": 48.0,
+    "isolated": 53.3,
+    "production": 45.6,
+    "weight": 0.26,
     "isMe": false
    },
    {
-    "rank": 302,
-    "name": "Ilya Protas",
-    "team": "WSH",
-    "gp": 20,
-    "pos": "L",
-    "value": 49.0,
-    "isolated": 59.8,
-    "production": 45.8,
-    "weight": 0.19,
+    "rank": 310,
+    "name": "Porter Martone",
+    "team": "PHI",
+    "gp": 25,
+    "pos": "R",
+    "value": 47.9,
+    "isolated": 43.2,
+    "production": 49.0,
+    "weight": 0.28,
     "isMe": false
    }
   ],
@@ -7538,5 +7538,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:47:05-08:00"
+ "updatedAt": "2026-11-23T07:08:19-08:00"
 }

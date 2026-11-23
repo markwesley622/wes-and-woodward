@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Univ. of Minnesota-Duluth",
-   "gp": 14,
-   "g": 1,
-   "a": 4,
-   "pts": 5,
-   "pm": 4,
+   "gp": 16,
+   "g": 3,
+   "a": 8,
+   "pts": 11,
+   "pm": 6,
    "pim": 0,
    "gaa": null,
    "svp": null,
@@ -106,11 +106,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Minnesota-Duluth",
-     "gp": 14,
-     "g": 1,
-     "a": 4,
-     "pts": 5,
-     "pm": 4,
+     "gp": 16,
+     "g": 3,
+     "a": 8,
+     "pts": 11,
+     "pm": 6,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -130,18 +130,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Univ. of Minnesota-Duluth",
-  "gp": 14,
-  "g": 1,
-  "a": 4,
-  "pts": 5,
-  "pgp": 0.357,
-  "lineGp": 14,
-  "nhle": 0.069,
-  "nhlePace": 5.8,
+  "gp": 16,
+  "g": 3,
+  "a": 8,
+  "pts": 11,
+  "pgp": 0.688,
+  "lineGp": 16,
+  "nhle": 0.133,
+  "nhlePace": 11.2,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.069
+  "feature": 0.133
  },
  "league": {
   "name": "NCAA",
@@ -156,113 +156,113 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 18,
-   "gp": 14,
-   "value": 0.3571,
-   "percentile": 38.9,
-   "percentileAllAges": 45.7,
+   "gp": 16,
+   "value": 0.6875,
+   "percentile": 66.7,
+   "percentileAllAges": 71.4,
    "allAgesN": 2159
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 14.4,
-  "median": 0.0,
-  "p75": 31.6,
-  "p90": 56.9,
-  "pRegular": 0.36,
-  "pTopLine": 0.04,
-  "pAboveAvg": 0.1,
-  "pElite": 0.02,
+  "expected": 19.5,
+  "median": 7.5,
+  "p75": 37.4,
+  "p90": 67.2,
+  "pRegular": 0.52,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.14,
+  "pElite": 0.0,
   "poolN": 1362,
   "group": "F",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "below average",
-  "pCeiling": 0.28,
+  "pCeiling": 0.36,
   "featureBand": [
-   0.054,
-   0.11
+   0.108,
+   0.156
   ],
   "examples": [
    {
-    "name": "Connor Brickley",
-    "year": 2010,
+    "name": "Maxime Sauv\u00e9",
+    "year": 2008,
+    "pick": 47,
+    "league": "QMJHL",
+    "feature": 0.134,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
+   },
+   {
+    "name": "Alex Formenton",
+    "year": 2017,
+    "pick": 47,
+    "league": "OHL",
+    "feature": 0.138,
+    "peak": 41.1,
+    "tier": "below average",
+    "nhlGp": 112
+   },
+   {
+    "name": "Zac Dalpe",
+    "year": 2008,
+    "pick": 45,
+    "league": "NCAA",
+    "feature": 0.131,
+    "peak": 7.5,
+    "tier": "replacement level",
+    "nhlGp": 168
+   },
+   {
+    "name": "Rapha\u00ebl Bussi\u00e8res",
+    "year": 2012,
+    "pick": 46,
+    "league": "QMJHL",
+    "feature": 0.128,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ryan MacInnis",
+    "year": 2014,
+    "pick": 43,
+    "league": "OHL",
+    "feature": 0.133,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 27
+   },
+   {
+    "name": "Jordan Greenway",
+    "year": 2015,
     "pick": 50,
     "league": "NCAA",
-    "feature": 0.072,
-    "peak": 21.8,
-    "tier": "replacement level",
-    "nhlGp": 81
+    "feature": 0.129,
+    "peak": 67.2,
+    "tier": "above average",
+    "nhlGp": 478
    },
    {
-    "name": "V\u00e1clav Karab\u00e1\u010dek",
-    "year": 2014,
-    "pick": 49,
-    "league": "QMJHL",
-    "feature": 0.077,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Gabryel Paquin-Boudreau",
-    "year": 2013,
-    "pick": 49,
-    "league": "QMJHL",
-    "feature": 0.059,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kevin Lynch",
+    "name": "Anton R\u00f6din",
     "year": 2009,
-    "pick": 56,
-    "league": "NCAA",
-    "feature": 0.069,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Brett Leason",
-    "year": 2019,
-    "pick": 56,
-    "league": "WHL",
-    "feature": 0.07,
-    "peak": 28.8,
-    "tier": "below average",
-    "nhlGp": 226
-   },
-   {
-    "name": "Alexander Ruuttu",
-    "year": 2011,
-    "pick": 51,
-    "league": "Mestis",
-    "feature": 0.079,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Noah Rod",
-    "year": 2014,
     "pick": 53,
-    "league": "NLA",
-    "feature": 0.078,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Petr Straka",
-    "year": 2010,
-    "pick": 55,
-    "league": "QMJHL",
-    "feature": 0.077,
+    "league": "Elitserien",
+    "feature": 0.133,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 3
+   },
+   {
+    "name": "Daniel Sprong",
+    "year": 2015,
+    "pick": 46,
+    "league": "QMJHL",
+    "feature": 0.141,
+    "peak": 72.7,
+    "tier": "above average",
+    "nhlGp": 374
    }
   ]
  },
@@ -283,8 +283,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 14.4,
-  "expected": 19.1,
+  "cohortExpected": 19.5,
+  "expected": 21.6,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -297,19 +297,19 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.069,
-   "gp": 14
+   "feature": 0.133,
+   "gp": 16
   },
-  "delta": -0.041
+  "delta": 0.023
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 14,
+  "gp": 16,
   "season": "2026-2027"
  },
  "rank": 10,
- "score": 19.1,
+ "score": 21.6,
  "rankStart": 11,
  "rankStartDate": "2026-10-06"
 }

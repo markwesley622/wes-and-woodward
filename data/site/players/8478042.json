@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 22,
+  "gp": 23,
   "goals": 8,
   "assists": 7,
   "points": 15,
-  "plusMinus": -3,
+  "plusMinus": -4,
   "pim": 6,
-  "shots": 62,
-  "shootingPct": 0.129032,
-  "toiPerGame": "18:31",
+  "shots": 64,
+  "shootingPct": 0.125,
+  "toiPerGame": "18:26",
   "ppPoints": 6,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 22,
+   "gp": 23,
    "goals": 8,
    "assists": 7,
    "points": 15,
-   "plusMinus": -3,
+   "plusMinus": -4,
    "pim": 6
   }
  ],
@@ -60,58 +60,58 @@
   "name": "Viktor Arvidsson",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478042.png",
-  "gamesPlayed": 22,
+  "gamesPlayed": 23,
   "goals": 8,
   "assists": 7,
   "points": 15,
-  "shots": 62,
-  "shootingPct": 0.129032,
-  "toiPerGame": 1110.7,
-  "ixG": 10.34,
-  "goalsAboveExpected": -2.34,
-  "gameScore": 15.45,
+  "shots": 64,
+  "shootingPct": 0.125,
+  "toiPerGame": 1106.1,
+  "ixG": 10.38,
+  "goalsAboveExpected": -2.38,
+  "gameScore": 15.3,
   "fiveOnFive": {
-   "icetimeMinutes": 313.2,
+   "icetimeMinutes": 326.4,
    "onIceXgPct": 0.48,
-   "onIceCorsiPct": 0.5,
-   "ixgPer60": 0.87,
-   "pctl_onIceXgPct": 21.3,
-   "pctl_ixgPer60": 74.5,
+   "onIceCorsiPct": 0.49,
+   "ixgPer60": 0.842,
+   "pctl_onIceXgPct": 25.4,
+   "pctl_ixgPer60": 67.7,
    "qualifiesForPercentiles": true
   }
  },
  "hsc": {
   "Game score": {
-   "value": 0.46,
-   "percentile": 61
+   "value": 0.41,
+   "percentile": 57
   },
   "Offense": {
-   "value": 0.7,
-   "percentile": 74
+   "value": 0.4,
+   "percentile": 70
   },
   "Defense": {
    "value": -0.7,
-   "percentile": 24
+   "percentile": 25
   },
   "Net": {
-   "value": -0.1,
-   "percentile": 60
+   "value": -0.3,
+   "percentile": 56
   }
  },
  "score": {
-  "value": 47.9,
-  "low": 36.3,
-  "high": 59.8,
+  "value": 46.1,
+  "low": 34.6,
+  "high": 58.1,
   "isolated": 22.4,
-  "production": 60.0,
+  "production": 57.6,
   "weightIsolated": 0.307,
   "sustainable": 27.2,
   "results": 18.7,
-  "percentile": 54.3,
+  "percentile": 51.6,
   "goalsBlended": -2.3,
   "goalsSustainable": -1.9,
   "goalsResults": -2.9,
-  "gameScore": 12.75,
+  "gameScore": 12.4,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -210,66 +210,66 @@
    "CF/60": 1.03,
    "CA/60": 2.58
   },
-  "rank": 310,
+  "rank": 328,
   "neighbors": [
    {
-    "rank": 308,
-    "name": "Zach Hyman",
-    "team": "EDM",
-    "gp": 13,
-    "pos": "L",
-    "value": 48.2,
-    "isolated": 47.7,
-    "production": 47.8,
-    "weight": 0.19,
-    "isMe": false
-   },
-   {
-    "rank": 309,
-    "name": "Brett Howden",
-    "team": "VGK",
-    "gp": 24,
+    "rank": 326,
+    "name": "Jack Drury",
+    "team": "NSH",
+    "gp": 22,
     "pos": "C",
-    "value": 48.2,
-    "isolated": 48.6,
-    "production": 47.4,
-    "weight": 0.28,
+    "value": 46.4,
+    "isolated": 54.9,
+    "production": 42.5,
+    "weight": 0.29,
     "isMe": false
    },
    {
-    "rank": 310,
+    "rank": 327,
+    "name": "Matthew Poitras",
+    "team": "BOS",
+    "gp": 16,
+    "pos": "C",
+    "value": 46.3,
+    "isolated": 61.4,
+    "production": 43.5,
+    "weight": 0.13,
+    "isMe": false
+   },
+   {
+    "rank": 328,
     "name": "Viktor Arvidsson",
     "team": "DET",
     "gp": 22,
     "pos": "L",
-    "value": 47.9,
+    "value": 46.1,
     "isolated": 22.4,
-    "production": 60.0,
+    "production": 57.6,
     "weight": 0.31,
     "isMe": true
    },
    {
-    "rank": 311,
-    "name": "Declan Chisholm",
-    "team": "N.J",
-    "gp": 20,
-    "pos": "D",
-    "value": 47.9,
-    "isolated": 47.9,
-    "production": 47.3,
+    "rank": 329,
+    "name": "Jean-Gabriel Pageau",
+    "team": "NYI",
+    "gp": 18,
+    "pos": "C",
+    "value": 46.1,
+    "isolated": 41.0,
+    "production": 47.1,
     "weight": 0.23,
     "isMe": false
    },
    {
-    "rank": 312,
-    "name": "Ondrej Palat",
-    "team": "NYI",
-    "gp": 21,
-    "pos": "L",
-    "value": 47.9,
-    "isolated": 56.8,
-    "production": 44.6,
-    "weight": 0.23,
+    "rank": 330,
+    "name": "Declan Carlile",
+    "team": "PIT",
+    "gp": 20,
+    "pos": "D",
+    "value": 46.1,
+    "isolated": 63.6,
+    "production": 38.7,
+    "weight": 0.28,
     "isMe": false
    }
   ],
@@ -7830,12 +7830,36 @@
     "moneypuck": 0.0,
     "hockeystatcards": -3.43
    }
+  },
+  {
+   "gameId": 2026020367,
+   "date": "2026-11-21",
+   "opponent": "NYI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "shots": 2,
+   "pim": 0,
+   "toi": 16.8,
+   "ixg": 0.04,
+   "xgf": 0.49,
+   "xga": 0.45,
+   "gf": 0.0,
+   "ga": 1.0,
+   "blocks": 0.0,
+   "gameScore": -0.35,
+   "gameScoreParts": {
+    "moneypuck": -0.15,
+    "hockeystatcards": -0.55
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.58,
-  "games": 22,
+  "average": 0.54,
+  "games": 23,
   "best": {
    "date": "2026-10-29",
    "opponent": "CHI",
@@ -7847,9 +7871,9 @@
    "value": -1.72
   },
   "above2": 5,
-  "below0": 8
+  "below0": 9
  },
- "detGames": 22,
+ "detGames": 23,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -7862,5 +7886,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:27:13-08:00"
+ "updatedAt": "2026-11-23T05:56:29-08:00"
 }

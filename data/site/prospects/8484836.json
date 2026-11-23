@@ -31,12 +31,12 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 18,
-   "g": 2,
-   "a": 9,
-   "pts": 11,
-   "pm": 1,
-   "pim": 4,
+   "gp": 20,
+   "g": 3,
+   "a": 10,
+   "pts": 13,
+   "pm": 0,
+   "pim": 8,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -72,12 +72,12 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 18,
-     "g": 2,
-     "a": 9,
-     "pts": 11,
-     "pm": 1,
-     "pim": 4,
+     "gp": 20,
+     "g": 3,
+     "a": 10,
+     "pts": 13,
+     "pm": 0,
+     "pim": 8,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -140,18 +140,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 18,
-  "g": 2,
-  "a": 9,
-  "pts": 11,
-  "pgp": 0.611,
-  "lineGp": 18,
-  "nhle": 0.238,
-  "nhlePace": 20.0,
+  "gp": 20,
+  "g": 3,
+  "a": 10,
+  "pts": 13,
+  "pgp": 0.65,
+  "lineGp": 20,
+  "nhle": 0.253,
+  "nhlePace": 21.3,
   "lines": [
    "AHL"
   ],
-  "feature": 0.238
+  "feature": 0.253
  },
  "league": {
   "name": "AHL",
@@ -176,113 +176,113 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 44,
-   "gp": 18,
-   "value": 0.6111,
+   "gp": 20,
+   "value": 0.65,
    "percentile": 56.8,
-   "percentileAllAges": 63.4,
+   "percentileAllAges": 64.3,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 9.7,
+  "expected": 14.0,
   "median": 0.0,
-  "p75": 0.0,
-  "p90": 51.3,
-  "pRegular": 0.24,
+  "p75": 29.4,
+  "p90": 53.5,
+  "pRegular": 0.3,
   "pTopLine": 0.02,
-  "pAboveAvg": 0.1,
+  "pAboveAvg": 0.12,
   "pElite": 0.02,
   "poolN": 1006,
   "group": "F",
   "age": 22,
   "pickWeight": 0.0,
-  "tier": "replacement level",
-  "pCeiling": 0.24,
+  "tier": "below average",
+  "pCeiling": 0.26,
   "featureBand": [
-   0.227,
-   0.248
+   0.242,
+   0.264
   ],
   "examples": [
    {
-    "name": "William Bitten",
-    "year": 2016,
-    "pick": 70,
-    "league": "AHL",
-    "feature": 0.238,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 4
-   },
-   {
-    "name": "Samuel Fagemo",
-    "year": 2019,
-    "pick": 50,
-    "league": "AHL",
-    "feature": 0.238,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 21
-   },
-   {
-    "name": "Craig Cunningham",
-    "year": 2010,
-    "pick": 97,
-    "league": "AHL",
-    "feature": 0.239,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 63
-   },
-   {
-    "name": "Jujhar Khaira",
+    "name": "Jordan Martinook",
     "year": 2012,
-    "pick": 63,
+    "pick": 58,
     "league": "AHL",
-    "feature": 0.237,
-    "peak": 27.9,
+    "feature": 0.253,
+    "peak": 48.2,
     "tier": "below average",
-    "nhlGp": 337
+    "nhlGp": 800
    },
    {
-    "name": "Maxim Mamin",
-    "year": 2016,
-    "pick": 175,
-    "league": "AHL",
-    "feature": 0.237,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 73
-   },
-   {
-    "name": "Jonas R\u00f8ndbjerg",
-    "year": 2017,
-    "pick": 65,
-    "league": "AHL",
-    "feature": 0.239,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 80
-   },
-   {
-    "name": "Akil Thomas",
+    "name": "Dmitry Zavgorodny",
     "year": 2018,
-    "pick": 51,
-    "league": "AHL",
-    "feature": 0.239,
+    "pick": 198,
+    "league": "KHL",
+    "feature": 0.253,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 32
+    "nhlGp": 0
    },
    {
-    "name": "Adam Beckman",
-    "year": 2019,
-    "pick": 75,
-    "league": "AHL",
-    "feature": 0.239,
+    "name": "Matias Sointu",
+    "year": 2008,
+    "pick": 182,
+    "league": "SM-liiga",
+    "feature": 0.252,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 23
+    "nhlGp": 0
+   },
+   {
+    "name": "Carl Klingberg",
+    "year": 2009,
+    "pick": 34,
+    "league": "AHL",
+    "feature": 0.255,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 12
+   },
+   {
+    "name": "Nikolai Prokhorkin",
+    "year": 2012,
+    "pick": 121,
+    "league": "KHL",
+    "feature": 0.251,
+    "peak": 29.4,
+    "tier": "below average",
+    "nhlGp": 43
+   },
+   {
+    "name": "Adam Brooks",
+    "year": 2016,
+    "pick": 92,
+    "league": "AHL",
+    "feature": 0.255,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 43
+   },
+   {
+    "name": "Trey Fix-Wolansky",
+    "year": 2018,
+    "pick": 204,
+    "league": "AHL",
+    "feature": 0.251,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 26
+   },
+   {
+    "name": "Michael Latta",
+    "year": 2009,
+    "pick": 72,
+    "league": "AHL",
+    "feature": 0.25,
+    "peak": 10.0,
+    "tier": "replacement level",
+    "nhlGp": 113
    }
   ]
  },
@@ -303,8 +303,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 9.7,
-  "expected": 9.7,
+  "cohortExpected": 14.0,
+  "expected": 14.0,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -317,19 +317,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.238,
-   "gp": 18
+   "feature": 0.253,
+   "gp": 20
   },
-  "delta": 0.056
+  "delta": 0.071
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 18,
+  "gp": 20,
   "season": "2026-2027"
  },
- "rank": 17,
- "score": 9.7,
+ "rank": 12,
+ "score": 14.0,
  "rankStart": 16,
  "rankStartDate": "2026-10-06"
 }

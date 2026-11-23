@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 15,
+  "gp": 16,
   "goals": 3,
   "assists": 4,
   "points": 7,
-  "plusMinus": -7,
+  "plusMinus": -8,
   "pim": 2,
   "shots": 20,
   "shootingPct": 0.15,
-  "toiPerGame": "15:21",
+  "toiPerGame": "15:17",
   "ppPoints": 1,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 15,
+   "gp": 16,
    "goals": 3,
    "assists": 4,
    "points": 7,
-   "plusMinus": -7,
+   "plusMinus": -8,
    "pim": 2
   }
  ],
@@ -60,58 +60,58 @@
   "name": "J.T. Compher",
   "position": "L",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477456.png",
-  "gamesPlayed": 15,
+  "gamesPlayed": 16,
   "goals": 3,
   "assists": 4,
   "points": 7,
   "shots": 20,
   "shootingPct": 0.15,
-  "toiPerGame": 920.7,
+  "toiPerGame": 917.1,
   "ixG": 1.69,
   "goalsAboveExpected": 1.31,
-  "gameScore": 3.59,
+  "gameScore": 3.96,
   "fiveOnFive": {
-   "icetimeMinutes": 191.2,
+   "icetimeMinutes": 203.7,
    "onIceXgPct": 0.45,
-   "onIceCorsiPct": 0.44,
-   "ixgPer60": 0.455,
-   "pctl_onIceXgPct": 10.6,
-   "pctl_ixgPer60": 4.3,
+   "onIceCorsiPct": 0.46,
+   "ixgPer60": 0.427,
+   "pctl_onIceXgPct": 14.6,
+   "pctl_ixgPer60": 3.8,
    "qualifiesForPercentiles": false
   }
  },
  "hsc": {
   "Game score": {
-   "value": -0.19,
-   "percentile": 17
+   "value": -0.22,
+   "percentile": 16
   },
   "Offense": {
-   "value": -0.9,
-   "percentile": 36
+   "value": -1.2,
+   "percentile": 29
   },
   "Defense": {
    "value": -1.9,
    "percentile": 5
   },
   "Net": {
-   "value": -2.8,
-   "percentile": 9
+   "value": -3.1,
+   "percentile": 8
   }
  },
  "score": {
-  "value": 31.3,
-  "low": 21.0,
-  "high": 43.9,
+  "value": 30.9,
+  "low": 20.6,
+  "high": 43.4,
   "isolated": 39.2,
-  "production": 29.7,
+  "production": 29.3,
   "weightIsolated": 0.19,
   "sustainable": 40.0,
   "results": 39.7,
-  "percentile": 22.3,
+  "percentile": 21.7,
   "goalsBlended": -0.1,
   "goalsSustainable": -0.1,
   "goalsResults": 0.0,
-  "gameScore": 0.35,
+  "gameScore": 0.25,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -210,66 +210,66 @@
    "CF/60": -1.3,
    "CA/60": 0.71
   },
-  "rank": 527,
+  "rank": 531,
   "neighbors": [
    {
-    "rank": 525,
-    "name": "Dakota Mermis",
-    "team": "TOR",
-    "gp": 7,
+    "rank": 529,
+    "name": "Zach Bogosian",
+    "team": "MIN",
+    "gp": 23,
     "pos": "D",
-    "value": 31.5,
-    "isolated": 43.4,
-    "production": 30.6,
-    "weight": 0.08,
+    "value": 30.9,
+    "isolated": 41.1,
+    "production": 27.5,
+    "weight": 0.28,
     "isMe": false
    },
    {
-    "rank": 526,
-    "name": "Jason Dickinson",
-    "team": "EDM",
-    "gp": 15,
+    "rank": 530,
+    "name": "Jack Williams",
+    "team": "CBJ",
+    "gp": 6,
     "pos": "C",
-    "value": 31.4,
-    "isolated": 35.7,
-    "production": 30.8,
-    "weight": 0.16,
+    "value": 30.9,
+    "isolated": 40.1,
+    "production": 30.5,
+    "weight": 0.06,
     "isMe": false
    },
    {
-    "rank": 527,
+    "rank": 531,
     "name": "J.T. Compher",
     "team": "DET",
     "gp": 15,
     "pos": "L",
-    "value": 31.3,
+    "value": 30.9,
     "isolated": 39.2,
-    "production": 29.7,
+    "production": 29.3,
     "weight": 0.19,
     "isMe": true
    },
    {
-    "rank": 528,
-    "name": "Jake Christiansen",
-    "team": "CBJ",
-    "gp": 18,
-    "pos": "D",
-    "value": 31.3,
-    "isolated": 46.4,
-    "production": 27.9,
-    "weight": 0.21,
+    "rank": 532,
+    "name": "Michael Rasmussen",
+    "team": "DET",
+    "gp": 21,
+    "pos": "C",
+    "value": 30.8,
+    "isolated": 28.8,
+    "production": 31.7,
+    "weight": 0.25,
     "isMe": false
    },
    {
-    "rank": 529,
-    "name": "Steven Lorentz",
-    "team": "CBJ",
-    "gp": 6,
+    "rank": 533,
+    "name": "Nico Sturm",
+    "team": "MIN",
+    "gp": 14,
     "pos": "C",
-    "value": 31.3,
-    "isolated": 38.7,
-    "production": 31.1,
-    "weight": 0.05,
+    "value": 30.7,
+    "isolated": 36.8,
+    "production": 30.1,
+    "weight": 0.13,
     "isMe": false
    }
   ],
@@ -7632,12 +7632,36 @@
     "moneypuck": -0.57,
     "hockeystatcards": -4.1
    }
+  },
+  {
+   "gameId": 2026020367,
+   "date": "2026-11-21",
+   "opponent": "NYI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 14.4,
+   "ixg": 0.0,
+   "xgf": 0.31,
+   "xga": 0.47,
+   "gf": 0.0,
+   "ga": 1.0,
+   "blocks": 1.0,
+   "gameScore": -0.1,
+   "gameScoreParts": {
+    "moneypuck": 0.37,
+    "hockeystatcards": -0.57
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
   "average": 0.02,
-  "games": 15,
+  "games": 16,
   "best": {
    "date": "2026-11-03",
    "opponent": "TBL",
@@ -7649,9 +7673,9 @@
    "value": -2.33
   },
   "above2": 1,
-  "below0": 6
+  "below0": 7
  },
- "detGames": 15,
+ "detGames": 16,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -7664,5 +7688,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:42:45-08:00"
+ "updatedAt": "2026-11-23T06:11:41-08:00"
 }

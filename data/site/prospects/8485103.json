@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Colorado College",
-   "gp": 12,
+   "gp": 14,
    "g": 0,
-   "a": 5,
-   "pts": 5,
-   "pm": 5,
+   "a": 6,
+   "pts": 6,
+   "pm": 4,
    "pim": 4,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Colorado College",
-     "gp": 12,
+     "gp": 14,
      "g": 0,
-     "a": 5,
-     "pts": 5,
-     "pm": 5,
+     "a": 6,
+     "pts": 6,
+     "pm": 4,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -140,18 +140,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Colorado College",
-  "gp": 12,
+  "gp": 14,
   "g": 0,
-  "a": 5,
-  "pts": 5,
-  "pgp": 0.417,
-  "lineGp": 12,
-  "nhle": 0.081,
-  "nhlePace": 6.8,
+  "a": 6,
+  "pts": 6,
+  "pgp": 0.429,
+  "lineGp": 14,
+  "nhle": 0.083,
+  "nhlePace": 7.0,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.081
+  "feature": 0.083
  },
  "league": {
   "name": "NCAA",
@@ -176,8 +176,8 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 84,
-   "gp": 12,
-   "value": 0.4167,
+   "gp": 14,
+   "value": 0.4286,
    "percentile": 65.5,
    "percentileAllAges": 68.9,
    "allAgesN": 1198
@@ -185,7 +185,7 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 11.3,
+  "expected": 11.1,
   "median": 0.0,
   "p75": 13.6,
   "p90": 52.7,
@@ -200,86 +200,86 @@
   "tier": "replacement level",
   "pCeiling": 0.28,
   "featureBand": [
-   0.075,
-   0.087
+   0.078,
+   0.089
   ],
   "examples": [
    {
-    "name": "Calle Andersson",
+    "name": "Griffin Reinhart",
     "year": 2012,
-    "pick": 119,
+    "pick": 4,
     "league": "AHL",
-    "feature": 0.081,
+    "feature": 0.083,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
+    "nhlGp": 37
    },
    {
-    "name": "Simon Fernholm",
-    "year": 2012,
-    "pick": 164,
-    "league": "HockeyAllsvenskan",
-    "feature": 0.081,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Petteri Lindbohm",
-    "year": 2012,
-    "pick": 176,
+    "name": "Samuel Morin",
+    "year": 2013,
+    "pick": 11,
     "league": "AHL",
-    "feature": 0.081,
+    "feature": 0.083,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 49
+    "nhlGp": 29
    },
    {
-    "name": "Jonatan Nielsen",
-    "year": 2012,
-    "pick": 194,
-    "league": "HockeyEttan",
-    "feature": 0.081,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Justin Hach\u00e9",
-    "year": 2012,
-    "pick": 208,
-    "league": "AHL",
-    "feature": 0.081,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Tim Berni",
-    "year": 2018,
-    "pick": 159,
-    "league": "AHL",
-    "feature": 0.081,
-    "peak": 0.5,
-    "tier": "replacement level",
-    "nhlGp": 59
-   },
-   {
-    "name": "Cooper Moore",
-    "year": 2019,
-    "pick": 128,
+    "name": "Michael Prapavessis",
+    "year": 2014,
+    "pick": 105,
     "league": "NCAA",
-    "feature": 0.081,
+    "feature": 0.083,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "William Wrenn",
-    "year": 2009,
-    "pick": 43,
-    "league": "ECHL",
-    "feature": 0.08,
+    "name": "J\u00e9r\u00e9my Lauzon",
+    "year": 2015,
+    "pick": 52,
+    "league": "AHL",
+    "feature": 0.083,
+    "peak": 28.4,
+    "tier": "below average",
+    "nhlGp": 387
+   },
+   {
+    "name": "Nicolas Mattinen",
+    "year": 2016,
+    "pick": 179,
+    "league": "USports",
+    "feature": 0.083,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Calle Sj\u00e4lin",
+    "year": 2017,
+    "pick": 145,
+    "league": "SHL",
+    "feature": 0.083,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Radim Salda",
+    "year": 2018,
+    "pick": 206,
+    "league": "Czechia",
+    "feature": 0.083,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Case McCarthy",
+    "year": 2019,
+    "pick": 118,
+    "league": "NCAA",
+    "feature": 0.083,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -303,8 +303,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 11.3,
-  "expected": 11.3,
+  "cohortExpected": 11.1,
+  "expected": 11.1,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -317,19 +317,19 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.081,
-   "gp": 12
+   "feature": 0.083,
+   "gp": 14
   },
-  "delta": 0.006
+  "delta": 0.008
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 12,
+  "gp": 14,
   "season": "2026-2027"
  },
- "rank": 16,
- "score": 11.3,
+ "rank": 14,
+ "score": 11.1,
  "rankStart": 28,
  "rankStartDate": "2026-10-06"
 }

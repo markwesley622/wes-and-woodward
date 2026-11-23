@@ -31,12 +31,12 @@
   {
    "league": "SHL",
    "team": "Timr\u00e5 IK",
-   "gp": 17,
-   "g": 7,
-   "a": 6,
-   "pts": 13,
-   "pm": 1,
-   "pim": 12,
+   "gp": 18,
+   "g": 8,
+   "a": 7,
+   "pts": 15,
+   "pm": 3,
+   "pim": 14,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -123,12 +123,12 @@
     {
      "league": "SHL",
      "team": "Timr\u00e5 IK",
-     "gp": 17,
-     "g": 7,
-     "a": 6,
-     "pts": 13,
-     "pm": 1,
-     "pim": 12,
+     "gp": 18,
+     "g": 8,
+     "a": 7,
+     "pts": 15,
+     "pm": 3,
+     "pim": 14,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -220,18 +220,18 @@
   "table": "SHL",
   "coef": 0.566,
   "team": "Timr\u00e5 IK",
-  "gp": 17,
-  "g": 7,
-  "a": 6,
-  "pts": 13,
-  "pgp": 0.765,
-  "lineGp": 17,
-  "nhle": 0.433,
-  "nhlePace": 36.4,
+  "gp": 18,
+  "g": 8,
+  "a": 7,
+  "pts": 15,
+  "pgp": 0.833,
+  "lineGp": 18,
+  "nhle": 0.472,
+  "nhlePace": 39.6,
   "lines": [
    "SHL"
   ],
-  "feature": 0.433
+  "feature": 0.472
  },
  "league": {
   "name": "SHL",
@@ -256,8 +256,8 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 15,
-   "gp": 17,
-   "value": 0.7647,
+   "gp": 18,
+   "value": 0.8333,
    "percentile": 93.3,
    "percentileAllAges": 94.4,
    "allAgesN": 234
@@ -265,23 +265,23 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 55.9,
-  "median": 66.8,
+  "expected": 54.0,
+  "median": 56.8,
   "p75": 83.5,
-  "p90": 94.3,
-  "pRegular": 0.84,
-  "pTopLine": 0.36,
-  "pAboveAvg": 0.64,
-  "pElite": 0.22,
+  "p90": 95.7,
+  "pRegular": 0.82,
+  "pTopLine": 0.34,
+  "pAboveAvg": 0.6,
+  "pElite": 0.24,
   "poolN": 1305,
   "group": "F",
   "age": 19,
   "pickWeight": 0.5,
   "tier": "top-line",
-  "pCeiling": 0.36,
+  "pCeiling": 0.34,
   "featureBand": [
-   0.292,
-   0.489
+   0.293,
+   0.628
   ],
   "examples": [
    {
@@ -293,6 +293,16 @@
     "peak": 67.2,
     "tier": "above average",
     "nhlGp": 774
+   },
+   {
+    "name": "Pavel Buchnevich",
+    "year": 2013,
+    "pick": 75,
+    "league": "KHL",
+    "feature": 0.45,
+    "peak": 94.3,
+    "tier": "elite",
+    "nhlGp": 676
    },
    {
     "name": "Tyler Ennis",
@@ -313,16 +323,6 @@
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 25
-   },
-   {
-    "name": "Pavel Buchnevich",
-    "year": 2013,
-    "pick": 75,
-    "league": "KHL",
-    "feature": 0.45,
-    "peak": 94.3,
-    "tier": "elite",
-    "nhlGp": 676
    },
    {
     "name": "Johan Larsson",
@@ -355,14 +355,14 @@
     "nhlGp": 387
    },
    {
-    "name": "Marcus Kr\u00fcger",
-    "year": 2009,
-    "pick": 149,
-    "league": "Elitserien",
-    "feature": 0.435,
-    "peak": 41.7,
-    "tier": "below average",
-    "nhlGp": 520
+    "name": "Mikael Granlund",
+    "year": 2010,
+    "pick": 9,
+    "league": "SM-liiga",
+    "feature": 0.489,
+    "peak": 94.0,
+    "tier": "elite",
+    "nhlGp": 962
    }
   ]
  },
@@ -383,8 +383,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 55.9,
-  "expected": 47.8,
+  "cohortExpected": 54.0,
+  "expected": 46.4,
   "tier": "below average"
  },
  "trajectory": {
@@ -397,19 +397,19 @@
   "to": {
    "season": "2026-2027",
    "league": "SHL",
-   "feature": 0.433,
-   "gp": 17
+   "feature": 0.472,
+   "gp": 18
   },
-  "delta": 0.147
+  "delta": 0.186
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 17,
+  "gp": 18,
   "season": "2026-2027"
  },
  "rank": 2,
- "score": 47.8,
+ "score": 46.4,
  "rankStart": 5,
  "rankStartDate": "2026-10-06"
 }

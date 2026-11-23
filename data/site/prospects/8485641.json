@@ -31,12 +31,12 @@
   {
    "league": "QMJHL",
    "team": "Cape Breton Eagles",
-   "gp": 8,
+   "gp": 10,
    "g": 0,
    "a": 1,
    "pts": 1,
-   "pm": 0,
-   "pim": 6,
+   "pm": -1,
+   "pim": 10,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -72,12 +72,12 @@
     {
      "league": "QMJHL",
      "team": "Cape Breton Eagles",
-     "gp": 8,
+     "gp": 10,
      "g": 0,
      "a": 1,
      "pts": 1,
-     "pm": 0,
-     "pim": 6,
+     "pm": -1,
+     "pim": 10,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -112,24 +112,24 @@
   }
  ],
  "anchor": {
-  "season": "2025-2026",
+  "season": "2026-2027",
   "league": "QMJHL",
   "leagueSlug": "qmjhl",
   "table": "QMJHL",
   "coef": 0.113,
   "team": "Cape Breton Eagles",
-  "gp": 38,
-  "g": 4,
-  "a": 4,
-  "pts": 8,
-  "pgp": 0.211,
-  "lineGp": 38,
-  "nhle": 0.024,
-  "nhlePace": 2.0,
+  "gp": 10,
+  "g": 0,
+  "a": 1,
+  "pts": 1,
+  "pgp": 0.1,
+  "lineGp": 10,
+  "nhle": 0.011,
+  "nhlePace": 0.9,
   "lines": [
    "QMJHL"
   ],
-  "feature": 0.024
+  "feature": 0.011
  },
  "league": {
   "name": "QMJHL",
@@ -153,104 +153,104 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 3.7,
+  "expected": 4.2,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
   "pRegular": 0.08,
-  "pTopLine": 0.0,
+  "pTopLine": 0.02,
   "pAboveAvg": 0.06,
   "pElite": 0.0,
-  "poolN": 837,
+  "poolN": 794,
   "group": "D",
-  "age": 18,
-  "pickWeight": 1.0,
+  "age": 19,
+  "pickWeight": 0.5,
   "tier": "replacement level",
   "pCeiling": 0.08,
   "featureBand": [
-   0.014,
-   0.033
+   0.0,
+   0.03
   ],
   "examples": [
-   {
-    "name": "Trent Bourque",
-    "year": 2017,
-    "pick": 175,
-    "league": "OHL",
-    "feature": 0.024,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
    {
     "name": "Braden Birch",
     "year": 2008,
     "pick": 179,
-    "league": "OJHL",
-    "feature": 0.024,
+    "league": "NCAA",
+    "feature": 0.012,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Anthony Bitetto",
+    "name": "Dillon Donnelly",
+    "year": 2011,
+    "pick": 183,
+    "league": "QMJHL",
+    "feature": 0.012,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Teigan Zahn",
     "year": 2010,
-    "pick": 168,
-    "league": "EJHL",
-    "feature": 0.023,
-    "peak": 13.6,
-    "tier": "replacement level",
-    "nhlGp": 197
-   },
-   {
-    "name": "Cliff Watson",
-    "year": 2012,
-    "pick": 168,
-    "league": "USHL",
-    "feature": 0.025,
+    "pick": 186,
+    "league": "WHL",
+    "feature": 0.01,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Patrick Holway",
+    "name": "Tyler Stahl",
+    "year": 2010,
+    "pick": 167,
+    "league": "WHL",
+    "feature": 0.014,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kevin Lind",
+    "year": 2010,
+    "pick": 177,
+    "league": "NCAA",
+    "feature": 0.015,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Barron Smith",
+    "year": 2009,
+    "pick": 188,
+    "league": "OHL",
+    "feature": 0.009,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Andong Song",
     "year": 2015,
-    "pick": 170,
+    "pick": 172,
     "league": "USHL",
-    "feature": 0.026,
+    "feature": 0.005,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Ivan Chukarov",
-    "year": 2015,
-    "pick": 182,
-    "league": "NAHL",
-    "feature": 0.024,
+    "name": "Andrew MacWilliam",
+    "year": 2008,
+    "pick": 188,
+    "league": "NCAA",
+    "feature": 0.014,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Santeri Saari",
-    "year": 2013,
-    "pick": 173,
-    "league": "Mestis",
-    "feature": 0.021,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Nate Clurman",
-    "year": 2016,
-    "pick": 161,
-    "league": "USHS-Prep",
-    "feature": 0.024,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
+    "nhlGp": 12
    }
   ]
  },
@@ -268,36 +268,36 @@
   "group": "D"
  },
  "blend": {
-  "w": 0.5,
-  "sinceDraft": 0,
+  "w": 0.25,
+  "sinceDraft": 1,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 3.7,
-  "expected": 5.3,
+  "cohortExpected": 4.2,
+  "expected": 4.9,
   "tier": "replacement level"
  },
  "trajectory": {
   "from": {
-   "season": "2024-2025",
-   "league": "QMJHL",
-   "feature": 0.008,
-   "gp": 54
-  },
-  "to": {
    "season": "2025-2026",
    "league": "QMJHL",
    "feature": 0.024,
    "gp": 38
   },
-  "delta": 0.016
+  "to": {
+   "season": "2026-2027",
+   "league": "QMJHL",
+   "feature": 0.011,
+   "gp": 10
+  },
+  "delta": -0.013
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 38,
-  "season": "2025-2026"
+  "gp": 10,
+  "season": "2026-2027"
  },
  "rank": 23,
- "score": 5.3,
+ "score": 4.9,
  "rankStart": 24,
  "rankStartDate": "2026-10-06"
 }

@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 22,
+  "gp": 23,
   "goals": 3,
   "assists": 6,
   "points": 9,
-  "plusMinus": -1,
+  "plusMinus": 0,
   "pim": 12,
   "shots": 30,
   "shootingPct": 0.1,
-  "toiPerGame": "20:44",
+  "toiPerGame": "20:52",
   "ppPoints": 4,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 22,
+   "gp": 23,
    "goals": 3,
    "assists": 6,
    "points": 9,
-   "plusMinus": -1,
+   "plusMinus": 0,
    "pim": 12
   }
  ],
@@ -60,23 +60,23 @@
   "name": "Justin Faulk",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475753.png",
-  "gamesPlayed": 22,
+  "gamesPlayed": 23,
   "goals": 3,
   "assists": 6,
   "points": 9,
   "shots": 30,
   "shootingPct": 0.1,
-  "toiPerGame": 1244.4,
+  "toiPerGame": 1252.4,
   "ixG": 1.38,
   "goalsAboveExpected": 1.62,
-  "gameScore": 8.95,
+  "gameScore": 9.7,
   "fiveOnFive": {
-   "icetimeMinutes": 381.5,
-   "onIceXgPct": 0.53,
-   "onIceCorsiPct": 0.5,
-   "ixgPer60": 0.16,
-   "pctl_onIceXgPct": 63.6,
-   "pctl_ixgPer60": 41.1,
+   "icetimeMinutes": 401.8,
+   "onIceXgPct": 0.54,
+   "onIceCorsiPct": 0.51,
+   "ixgPer60": 0.152,
+   "pctl_onIceXgPct": 69.6,
+   "pctl_ixgPer60": 39.9,
    "qualifiesForPercentiles": true
   }
  },
@@ -99,19 +99,19 @@
   }
  },
  "score": {
-  "value": 55.1,
-  "low": 43.5,
-  "high": 66.1,
+  "value": 56.2,
+  "low": 44.6,
+  "high": 67.2,
   "isolated": 45.0,
-  "production": 59.0,
+  "production": 60.6,
   "weightIsolated": 0.336,
   "sustainable": 48.7,
   "results": 39.7,
-  "percentile": 65.3,
+  "percentile": 66.7,
   "goalsBlended": 0.6,
   "goalsSustainable": 1.0,
   "goalsResults": -0.0,
-  "gameScore": 12.35,
+  "gameScore": 13.68,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -210,66 +210,66 @@
    "CF/60": -1.8,
    "CA/60": -1.54
   },
-  "rank": 235,
+  "rank": 226,
   "neighbors": [
    {
-    "rank": 233,
-    "name": "Kris Letang",
-    "team": "PIT",
-    "gp": 21,
-    "pos": "D",
-    "value": 55.1,
-    "isolated": 41.1,
-    "production": 60.5,
-    "weight": 0.32,
-    "isMe": false
-   },
-   {
-    "rank": 234,
-    "name": "Victor Hedman",
-    "team": "T.B",
-    "gp": 21,
-    "pos": "D",
-    "value": 55.1,
-    "isolated": 64.0,
-    "production": 50.9,
-    "weight": 0.26,
-    "isMe": false
-   },
-   {
-    "rank": 235,
-    "name": "Justin Faulk",
-    "team": "DET",
+    "rank": 224,
+    "name": "Alex Kerfoot",
+    "team": "NSH",
     "gp": 22,
-    "pos": "D",
-    "value": 55.1,
-    "isolated": 45.0,
-    "production": 59.0,
-    "weight": 0.34,
-    "isMe": true
-   },
-   {
-    "rank": 236,
-    "name": "T.J. Hughes",
-    "team": "COL",
-    "gp": 23,
-    "pos": "R",
-    "value": 55.0,
-    "isolated": 39.1,
-    "production": 60.0,
+    "pos": "C",
+    "value": 56.3,
+    "isolated": 73.4,
+    "production": 48.1,
     "weight": 0.27,
     "isMe": false
    },
    {
-    "rank": 237,
-    "name": "Jared McCann",
-    "team": "SEA",
-    "gp": 11,
-    "pos": "L",
-    "value": 54.7,
-    "isolated": 60.2,
-    "production": 53.0,
-    "weight": 0.15,
+    "rank": 225,
+    "name": "Ross Colton",
+    "team": "NSH",
+    "gp": 22,
+    "pos": "C",
+    "value": 56.3,
+    "isolated": 65.0,
+    "production": 52.6,
+    "weight": 0.23,
+    "isMe": false
+   },
+   {
+    "rank": 226,
+    "name": "Justin Faulk",
+    "team": "DET",
+    "gp": 22,
+    "pos": "D",
+    "value": 56.2,
+    "isolated": 45.0,
+    "production": 60.6,
+    "weight": 0.34,
+    "isMe": true
+   },
+   {
+    "rank": 227,
+    "name": "Nate Schmidt",
+    "team": "UTA",
+    "gp": 17,
+    "pos": "D",
+    "value": 56.2,
+    "isolated": 69.0,
+    "production": 50.4,
+    "weight": 0.26,
+    "isMe": false
+   },
+   {
+    "rank": 228,
+    "name": "Erik Gustafsson (D)",
+    "team": "L.A",
+    "gp": 15,
+    "pos": "D",
+    "value": 56.1,
+    "isolated": 57.0,
+    "production": 54.9,
+    "weight": 0.24,
     "isMe": false
    }
   ],
@@ -7875,12 +7875,36 @@
     "moneypuck": 0.625,
     "hockeystatcards": 2.66
    }
+  },
+  {
+   "gameId": 2026020367,
+   "date": "2026-11-21",
+   "opponent": "NYI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": 1,
+   "shots": 0,
+   "pim": 0,
+   "toi": 23.8,
+   "ixg": 0.0,
+   "xgf": 0.79,
+   "xga": 0.45,
+   "gf": 2.0,
+   "ga": 1.0,
+   "blocks": 3.0,
+   "gameScore": 1.33,
+   "gameScoreParts": {
+    "moneypuck": 0.75,
+    "hockeystatcards": 1.92
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.56,
-  "games": 22,
+  "average": 0.59,
+  "games": 23,
   "best": {
    "date": "2026-10-06",
    "opponent": "OTT",
@@ -7894,7 +7918,7 @@
   "above2": 1,
   "below0": 7
  },
- "detGames": 22,
+ "detGames": 23,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -7907,5 +7931,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:46:02-08:00"
+ "updatedAt": "2026-11-23T06:59:16-08:00"
 }

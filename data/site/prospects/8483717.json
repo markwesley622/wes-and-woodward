@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Ferris State Univ.",
-   "gp": 10,
+   "gp": 12,
    "g": 2,
    "a": 3,
    "pts": 5,
-   "pm": -4,
+   "pm": -6,
    "pim": 6,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "NCAA",
      "team": "Ferris State Univ.",
-     "gp": 10,
+     "gp": 12,
      "g": 2,
      "a": 3,
      "pts": 5,
-     "pm": -4,
+     "pm": -6,
      "pim": 6,
      "gaa": null,
      "svp": null,
@@ -201,18 +201,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Ferris State Univ.",
-  "gp": 10,
+  "gp": 12,
   "g": 2,
   "a": 3,
   "pts": 5,
-  "pgp": 0.5,
-  "lineGp": 10,
-  "nhle": 0.097,
-  "nhlePace": 8.1,
+  "pgp": 0.417,
+  "lineGp": 12,
+  "nhle": 0.081,
+  "nhlePace": 6.8,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.097
+  "feature": 0.081
  },
  "league": {
   "name": "NCAA",
@@ -237,20 +237,20 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 167,
-   "gp": 10,
-   "value": 0.5,
+   "gp": 12,
+   "value": 0.4167,
    "percentile": 48.5,
-   "percentileAllAges": 48.0,
+   "percentileAllAges": 47.8,
    "allAgesN": 2159
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 1.2,
+  "expected": 0.2,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
-  "pRegular": 0.06,
+  "pRegular": 0.02,
   "pTopLine": 0.0,
   "pAboveAvg": 0.0,
   "pElite": 0.0,
@@ -259,91 +259,91 @@
   "age": 22,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.06,
+  "pCeiling": 0.02,
   "featureBand": [
-   0.093,
-   0.1
+   0.076,
+   0.086
   ],
   "examples": [
    {
-    "name": "David Wohlberg",
-    "year": 2008,
-    "pick": 172,
-    "league": "AHL",
-    "feature": 0.097,
+    "name": "Brady Vail",
+    "year": 2012,
+    "pick": 94,
+    "league": "ECHL",
+    "feature": 0.081,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Ethan Werek",
+    "name": "Alex Schoenborn",
+    "year": 2014,
+    "pick": 72,
+    "league": "ECHL",
+    "feature": 0.081,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Beau Starrett",
+    "year": 2014,
+    "pick": 88,
+    "league": "NCAA",
+    "feature": 0.081,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Josh Nodler",
+    "year": 2019,
+    "pick": 150,
+    "league": "NCAA",
+    "feature": 0.081,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kirill Slepets",
+    "year": 2019,
+    "pick": 152,
+    "league": "Liiga",
+    "feature": 0.081,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Josh Birkholz",
     "year": 2009,
-    "pick": 47,
-    "league": "AHL",
-    "feature": 0.097,
+    "pick": 67,
+    "league": "ECHL",
+    "feature": 0.082,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "David Pacan",
+    "name": "Radoslav Illo",
     "year": 2009,
-    "pick": 177,
+    "pick": 136,
+    "league": "NCAA",
+    "feature": 0.08,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Evan Bloodoff",
+    "year": 2009,
+    "pick": 157,
     "league": "ECHL",
-    "feature": 0.097,
+    "feature": 0.08,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
-   },
-   {
-    "name": "Connor Crisp",
-    "year": 2013,
-    "pick": 71,
-    "league": "ECHL",
-    "feature": 0.097,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Quentin Shore",
-    "year": 2013,
-    "pick": 168,
-    "league": "ECHL",
-    "feature": 0.097,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Riley Tufte",
-    "year": 2016,
-    "pick": 25,
-    "league": "AHL",
-    "feature": 0.097,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 28
-   },
-   {
-    "name": "Tanner Kaspick",
-    "year": 2016,
-    "pick": 119,
-    "league": "AHL",
-    "feature": 0.097,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Michael Pezzetta",
-    "year": 2016,
-    "pick": 160,
-    "league": "AHL",
-    "feature": 0.097,
-    "peak": 14.0,
-    "tier": "replacement level",
-    "nhlGp": 209
    }
   ]
  },
@@ -364,8 +364,8 @@
   "w": 0.0,
   "sinceDraft": 4,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 1.2,
-  "expected": 1.2,
+  "cohortExpected": 0.2,
+  "expected": 0.2,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -378,19 +378,19 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.097,
-   "gp": 10
+   "feature": 0.081,
+   "gp": 12
   },
-  "delta": 0.042
+  "delta": 0.026
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 10,
+  "gp": 12,
   "season": "2026-2027"
  },
- "rank": 28,
- "score": 1.2,
+ "rank": 31,
+ "score": 0.2,
  "rankStart": 33,
  "rankStartDate": "2026-10-06"
 }

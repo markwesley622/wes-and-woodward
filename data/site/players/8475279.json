@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 22,
+  "gp": 23,
   "goals": 0,
   "assists": 2,
   "points": 2,
-  "plusMinus": -5,
-  "pim": 25,
-  "shots": 21,
+  "plusMinus": -6,
+  "pim": 32,
+  "shots": 22,
   "shootingPct": 0.0,
-  "toiPerGame": "20:29",
+  "toiPerGame": "20:28",
   "ppPoints": 0,
   "wins": null,
   "losses": null,
@@ -47,12 +47,12 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 22,
+   "gp": 23,
    "goals": 0,
    "assists": 2,
    "points": 2,
-   "plusMinus": -5,
-   "pim": 25
+   "plusMinus": -6,
+   "pim": 32
   }
  ],
  "moneypuck": {
@@ -60,58 +60,58 @@
   "name": "Ben Chiarot",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475279.png",
-  "gamesPlayed": 22,
+  "gamesPlayed": 23,
   "goals": 0,
   "assists": 2,
   "points": 2,
-  "shots": 21,
+  "shots": 22,
   "shootingPct": 0.0,
-  "toiPerGame": 1229.3,
-  "ixG": 0.62,
-  "goalsAboveExpected": -0.62,
-  "gameScore": 1.83,
+  "toiPerGame": 1227.6,
+  "ixG": 0.69,
+  "goalsAboveExpected": -0.69,
+  "gameScore": 2.0,
   "fiveOnFive": {
-   "icetimeMinutes": 393.2,
+   "icetimeMinutes": 412.5,
    "onIceXgPct": 0.49,
    "onIceCorsiPct": 0.49,
-   "ixgPer60": 0.09,
-   "pctl_onIceXgPct": 40.3,
-   "pctl_ixgPer60": 7.8,
+   "ixgPer60": 0.096,
+   "pctl_onIceXgPct": 39.9,
+   "pctl_ixgPer60": 7.2,
    "qualifiesForPercentiles": true
   }
  },
  "hsc": {
   "Game score": {
-   "value": -0.15,
+   "value": -0.16,
    "percentile": 19
   },
   "Offense": {
    "value": -1.0,
-   "percentile": 32
+   "percentile": 33
   },
   "Defense": {
-   "value": -1.4,
-   "percentile": 11
+   "value": -1.5,
+   "percentile": 10
   },
   "Net": {
-   "value": -2.4,
-   "percentile": 13
+   "value": -2.5,
+   "percentile": 12
   }
  },
  "score": {
-  "value": 26.9,
-  "low": 18.7,
-  "high": 37.0,
+  "value": 26.6,
+  "low": 18.5,
+  "high": 36.6,
   "isolated": 26.6,
-  "production": 27.5,
+  "production": 27.1,
   "weightIsolated": 0.333,
   "sustainable": 29.8,
   "results": 24.9,
-  "percentile": 12.7,
+  "percentile": 11.8,
   "goalsBlended": -1.7,
   "goalsSustainable": -1.5,
   "goalsResults": -1.9,
-  "gameScore": -0.74,
+  "gameScore": -0.86,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -210,66 +210,66 @@
    "CF/60": 0.8,
    "CA/60": 2.52
   },
-  "rank": 592,
+  "rank": 598,
   "neighbors": [
    {
-    "rank": 590,
-    "name": "Andrei Kuzmenko",
-    "team": "PIT",
-    "gp": 12,
-    "pos": "L",
-    "value": 27.0,
-    "isolated": 28.3,
-    "production": 27.1,
-    "weight": 0.13,
-    "isMe": false
-   },
-   {
-    "rank": 591,
-    "name": "Brady Skjei",
-    "team": "NSH",
-    "gp": 22,
-    "pos": "D",
-    "value": 27.0,
-    "isolated": 22.4,
-    "production": 29.9,
-    "weight": 0.33,
-    "isMe": false
-   },
-   {
-    "rank": 592,
-    "name": "Ben Chiarot",
-    "team": "DET",
-    "gp": 22,
-    "pos": "D",
-    "value": 26.9,
-    "isolated": 26.6,
-    "production": 27.5,
-    "weight": 0.33,
-    "isMe": true
-   },
-   {
-    "rank": 593,
+    "rank": 596,
     "name": "Cole Koepke",
     "team": "WPG",
     "gp": 19,
     "pos": "L",
-    "value": 26.8,
+    "value": 26.7,
     "isolated": 37.9,
-    "production": 25.4,
+    "production": 25.3,
     "weight": 0.15,
     "isMe": false
    },
    {
-    "rank": 594,
-    "name": "Radko Gudas",
-    "team": "FLA",
-    "gp": 15,
+    "rank": 597,
+    "name": "Nick Lardis",
+    "team": "CHI",
+    "gp": 6,
+    "pos": "L",
+    "value": 26.6,
+    "isolated": 33.2,
+    "production": 26.6,
+    "weight": 0.06,
+    "isMe": false
+   },
+   {
+    "rank": 598,
+    "name": "Ben Chiarot",
+    "team": "DET",
+    "gp": 22,
     "pos": "D",
-    "value": 26.8,
-    "isolated": 21.6,
-    "production": 28.4,
-    "weight": 0.18,
+    "value": 26.6,
+    "isolated": 26.6,
+    "production": 27.1,
+    "weight": 0.33,
+    "isMe": true
+   },
+   {
+    "rank": 599,
+    "name": "Ryan Lindgren",
+    "team": "SEA",
+    "gp": 6,
+    "pos": "D",
+    "value": 26.6,
+    "isolated": 40.4,
+    "production": 25.9,
+    "weight": 0.07,
+    "isMe": false
+   },
+   {
+    "rank": 600,
+    "name": "Nick Perbix",
+    "team": "NSH",
+    "gp": 21,
+    "pos": "D",
+    "value": 26.5,
+    "isolated": 30.0,
+    "production": 25.6,
+    "weight": 0.3,
     "isMe": false
    }
   ],
@@ -7845,12 +7845,36 @@
     "moneypuck": 0.725,
     "hockeystatcards": 2.35
    }
+  },
+  {
+   "gameId": 2026020367,
+   "date": "2026-11-21",
+   "opponent": "NYI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -1,
+   "shots": 1,
+   "pim": 7,
+   "toi": 19.8,
+   "ixg": 0.08,
+   "xgf": 1.01,
+   "xga": 0.84,
+   "gf": 0.0,
+   "ga": 1.0,
+   "blocks": 2.0,
+   "gameScore": -0.12,
+   "gameScoreParts": {
+    "moneypuck": 0.175,
+    "hockeystatcards": -0.41
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": -0.03,
-  "games": 22,
+  "average": -0.04,
+  "games": 23,
   "best": {
    "date": "2026-10-15",
    "opponent": "PHI",
@@ -7862,9 +7886,9 @@
    "value": -1.58
   },
   "above2": 0,
-  "below0": 12
+  "below0": 13
  },
- "detGames": 22,
+ "detGames": 23,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -7877,5 +7901,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:45:49-08:00"
+ "updatedAt": "2026-11-23T06:57:18-08:00"
 }

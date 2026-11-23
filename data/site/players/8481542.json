@@ -26,15 +26,15 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 22,
+  "gp": 23,
   "goals": 1,
   "assists": 12,
   "points": 13,
-  "plusMinus": -5,
+  "plusMinus": -7,
   "pim": 17,
-  "shots": 40,
-  "shootingPct": 0.025,
-  "toiPerGame": "25:50",
+  "shots": 41,
+  "shootingPct": 0.02439,
+  "toiPerGame": "25:54",
   "ppPoints": 4,
   "wins": null,
   "losses": null,
@@ -47,11 +47,11 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 22,
+   "gp": 23,
    "goals": 1,
    "assists": 12,
    "points": 13,
-   "plusMinus": -5,
+   "plusMinus": -7,
    "pim": 17
   }
  ],
@@ -60,58 +60,58 @@
   "name": "Moritz Seider",
   "position": "D",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481542.png",
-  "gamesPlayed": 22,
+  "gamesPlayed": 23,
   "goals": 1,
   "assists": 12,
   "points": 13,
-  "shots": 40,
-  "shootingPct": 0.025,
-  "toiPerGame": 1549.8,
+  "shots": 41,
+  "shootingPct": 0.02439,
+  "toiPerGame": 1554.2,
   "ixG": 1.9,
   "goalsAboveExpected": -0.9,
-  "gameScore": 13.3,
+  "gameScore": 13.18,
   "fiveOnFive": {
-   "icetimeMinutes": 414.9,
-   "onIceXgPct": 0.48,
-   "onIceCorsiPct": 0.51,
-   "ixgPer60": 0.068,
-   "pctl_onIceXgPct": 34.9,
-   "pctl_ixgPer60": 2.3,
+   "icetimeMinutes": 436.9,
+   "onIceXgPct": 0.47,
+   "onIceCorsiPct": 0.5,
+   "ixgPer60": 0.066,
+   "pctl_onIceXgPct": 28.3,
+   "pctl_ixgPer60": 2.2,
    "qualifiesForPercentiles": true
   }
  },
  "hsc": {
   "Game score": {
-   "value": 0.2,
-   "percentile": 41
+   "value": 0.09,
+   "percentile": 34
   },
   "Offense": {
-   "value": -0.6,
-   "percentile": 47
+   "value": -1.0,
+   "percentile": 36
   },
   "Defense": {
-   "value": -0.2,
-   "percentile": 46
+   "value": -0.4,
+   "percentile": 35
   },
   "Net": {
-   "value": -0.7,
-   "percentile": 46
+   "value": -1.4,
+   "percentile": 30
   }
  },
  "score": {
-  "value": 46.9,
-  "low": 36.3,
-  "high": 57.9,
+  "value": 44.3,
+  "low": 33.9,
+  "high": 55.3,
   "isolated": 41.0,
-  "production": 50.3,
+  "production": 46.1,
   "weightIsolated": 0.398,
   "sustainable": 36.9,
   "results": 49.6,
-  "percentile": 52.4,
+  "percentile": 47.8,
   "goalsBlended": 0.1,
   "goalsSustainable": -0.5,
   "goalsResults": 1.1,
-  "gameScore": 8.88,
+  "gameScore": 7.66,
   "blend": {
    "sustainable": 0.6,
    "results": 0.4
@@ -210,66 +210,66 @@
    "CF/60": 0.19,
    "CA/60": -0.6
   },
-  "rank": 323,
+  "rank": 354,
   "neighbors": [
    {
-    "rank": 321,
-    "name": "Jaccob Slavin",
-    "team": "CAR",
-    "gp": 22,
-    "pos": "D",
-    "value": 47.0,
-    "isolated": 36.0,
-    "production": 52.4,
-    "weight": 0.34,
-    "isMe": false
-   },
-   {
-    "rank": 322,
-    "name": "Jack Drury",
-    "team": "NSH",
-    "gp": 22,
+    "rank": 352,
+    "name": "Kevin Stenlund",
+    "team": "UTA",
+    "gp": 23,
     "pos": "C",
-    "value": 47.0,
-    "isolated": 54.9,
-    "production": 43.3,
-    "weight": 0.29,
+    "value": 44.8,
+    "isolated": 39.1,
+    "production": 46.3,
+    "weight": 0.25,
     "isMe": false
    },
    {
-    "rank": 323,
+    "rank": 353,
+    "name": "Vincent Desharnais",
+    "team": "WSH",
+    "gp": 9,
+    "pos": "D",
+    "value": 44.8,
+    "isolated": 60.7,
+    "production": 41.6,
+    "weight": 0.15,
+    "isMe": false
+   },
+   {
+    "rank": 354,
     "name": "Moritz Seider",
     "team": "DET",
     "gp": 22,
     "pos": "D",
-    "value": 46.9,
+    "value": 44.3,
     "isolated": 41.0,
-    "production": 50.3,
+    "production": 46.1,
     "weight": 0.4,
     "isMe": true
    },
    {
-    "rank": 324,
-    "name": "Max Sasson",
-    "team": "VAN",
-    "gp": 24,
-    "pos": "C",
-    "value": 46.9,
-    "isolated": 63.0,
-    "production": 41.4,
-    "weight": 0.23,
+    "rank": 355,
+    "name": "Zayne Parekh",
+    "team": "CGY",
+    "gp": 23,
+    "pos": "D",
+    "value": 44.2,
+    "isolated": 35.8,
+    "production": 47.8,
+    "weight": 0.32,
     "isMe": false
    },
    {
-    "rank": 325,
-    "name": "Casey Cizikas",
-    "team": "NYI",
-    "gp": 21,
-    "pos": "C",
-    "value": 46.8,
-    "isolated": 52.9,
-    "production": 44.7,
-    "weight": 0.21,
+    "rank": 356,
+    "name": "Kaiden Guhle",
+    "team": "MTL",
+    "gp": 19,
+    "pos": "D",
+    "value": 44.1,
+    "isolated": 55.1,
+    "production": 38.7,
+    "weight": 0.32,
     "isMe": false
    }
   ],
@@ -7725,12 +7725,36 @@
     "moneypuck": -0.35,
     "hockeystatcards": -4.18
    }
+  },
+  {
+   "gameId": 2026020367,
+   "date": "2026-11-21",
+   "opponent": "NYI",
+   "home": true,
+   "goals": 0,
+   "assists": 0,
+   "points": 0,
+   "plusMinus": -2,
+   "shots": 1,
+   "pim": 0,
+   "toi": 27.5,
+   "ixg": 0.03,
+   "xgf": 0.65,
+   "xga": 1.02,
+   "gf": 0.0,
+   "ga": 2.0,
+   "blocks": 4.0,
+   "gameScore": -1.22,
+   "gameScoreParts": {
+    "moneypuck": -0.125,
+    "hockeystatcards": -2.32
+   }
   }
  ],
  "teamGameScore": null,
  "gameScore": {
-  "average": 0.4,
-  "games": 22,
+  "average": 0.33,
+  "games": 23,
   "best": {
    "date": "2026-10-09",
    "opponent": "SEA",
@@ -7742,9 +7766,9 @@
    "value": -2.26
   },
   "above2": 2,
-  "below0": 10
+  "below0": 11
  },
- "detGames": 22,
+ "detGames": 23,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -7757,5 +7781,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-20T05:46:53-08:00"
+ "updatedAt": "2026-11-23T07:01:53-08:00"
 }
