@@ -1,18 +1,18 @@
 {
  "playerId": 8477946,
  "isActive": true,
- "currentTeamId": 17,
- "currentTeamAbbrev": "DET",
+ "currentTeamId": 8,
+ "currentTeamAbbrev": "MTL",
  "fullTeamName": {
-  "default": "Detroit Red Wings",
-  "fr": "Red Wings de Detroit"
+  "default": "Montr\u00e9al Canadiens",
+  "fr": "Canadiens de Montr\u00e9al"
  },
  "teamCommonName": {
-  "default": "Red Wings"
+  "default": "Canadiens"
  },
  "teamPlaceNameWithPreposition": {
-  "default": "Detroit",
-  "fr": "de Detroit"
+  "default": "Montr\u00e9al",
+  "fr": "de Montr\u00e9al"
  },
  "firstName": {
   "default": "Dylan"
@@ -21,10 +21,10 @@
   "default": "Larkin"
  },
  "badges": [],
- "teamLogo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
- "sweaterNumber": 71,
+ "teamLogo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
+ "sweaterNumber": 89,
  "position": "C",
- "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477946.png",
+ "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8477946.png",
  "heroImage": "https://assets.nhle.com/mugs/actionshots/1296x729/8477946.jpg",
  "heightInInches": 73,
  "heightInCentimeters": 185,
@@ -53,57 +53,57 @@
   "season": 20262027,
   "regularSeason": {
    "subSeason": {
-    "assists": 4,
+    "assists": 5,
     "gameWinningGoals": 0,
-    "gamesPlayed": 10,
+    "gamesPlayed": 11,
     "goals": 2,
     "otGoals": 0,
     "pim": 4,
     "plusMinus": 3,
-    "points": 6,
+    "points": 7,
     "powerPlayGoals": 0,
     "powerPlayPoints": 3,
-    "shootingPctg": 0.0625,
+    "shootingPctg": 0.057143,
     "shorthandedGoals": 0,
     "shorthandedPoints": 0,
-    "shots": 32
+    "shots": 35
    },
    "career": {
-    "assists": 371,
+    "assists": 372,
     "gameWinningGoals": 40,
-    "gamesPlayed": 818,
+    "gamesPlayed": 819,
     "goals": 278,
     "otGoals": 13,
     "pim": 503,
     "plusMinus": -97,
-    "points": 649,
+    "points": 650,
     "powerPlayGoals": 86,
     "powerPlayPoints": 179,
-    "shootingPctg": 0.11359999999999999,
+    "shootingPctg": 0.1134,
     "shorthandedGoals": 9,
     "shorthandedPoints": 12,
-    "shots": 2447
+    "shots": 2450
    }
   }
  },
  "careerTotals": {
   "regularSeason": {
-   "assists": 371,
+   "assists": 372,
    "avgToi": "19:33",
-   "faceoffWinningPctg": 0.5275,
+   "faceoffWinningPctg": 0.5276,
    "gameWinningGoals": 40,
-   "gamesPlayed": 818,
+   "gamesPlayed": 819,
    "goals": 278,
    "otGoals": 13,
    "pim": 503,
    "plusMinus": -97,
-   "points": 649,
+   "points": 650,
    "powerPlayGoals": 86,
    "powerPlayPoints": 179,
-   "shootingPctg": 0.11359999999999999,
+   "shootingPctg": 0.1134,
    "shorthandedGoals": 9,
    "shorthandedPoints": 12,
-   "shots": 2447
+   "shots": 2450
   },
   "playoffs": {
    "assists": 0,
@@ -128,6 +128,24 @@
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "assists": 1,
+   "gameDate": "2026-11-23",
+   "gameId": 2026020379,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "LAK",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 1,
+   "powerPlayGoals": 0,
+   "shifts": 22,
+   "shorthandedGoals": 0,
+   "shots": 3,
+   "teamAbbrev": "MTL",
+   "toi": "19:57"
+  },
   {
    "assists": 0,
    "gameDate": "2026-10-26",
@@ -199,24 +217,6 @@
    "shots": 6,
    "teamAbbrev": "DET",
    "toi": "23:02"
-  },
-  {
-   "assists": 0,
-   "gameDate": "2026-10-17",
-   "gameId": 2026020127,
-   "gameTypeId": 2,
-   "goals": 0,
-   "homeRoadFlag": "H",
-   "opponentAbbrev": "SJS",
-   "pim": 0,
-   "plusMinus": 0,
-   "points": 0,
-   "powerPlayGoals": 0,
-   "shifts": 30,
-   "shorthandedGoals": 0,
-   "shots": 1,
-   "teamAbbrev": "DET",
-   "toi": "24:39"
   }
  ],
  "seasonTotals": [
@@ -1026,228 +1026,281 @@
     "default": "Detroit",
     "fr": "de Detroit"
    }
+  },
+  {
+   "assists": 1,
+   "avgToi": "19:57",
+   "faceoffWinningPctg": 0.588235,
+   "gameTypeId": 2,
+   "gameWinningGoals": 0,
+   "gamesPlayed": 1,
+   "goals": 0,
+   "leagueAbbrev": "NHL",
+   "otGoals": 0,
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 1,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 0,
+   "season": 20262027,
+   "sequence": 2,
+   "shootingPctg": 0.0,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "shots": 3,
+   "teamCommonName": {
+    "default": "Canadiens"
+   },
+   "teamName": {
+    "default": "Montr\u00e9al Canadiens",
+    "fr": "Canadiens de Montr\u00e9al"
+   },
+   "teamPlaceNameWithPreposition": {
+    "default": "Montr\u00e9al",
+    "fr": "de Montr\u00e9al"
+   }
   }
  ],
  "currentTeamRoster": [
   {
-   "playerId": 8478891,
+   "playerId": 8476981,
    "lastName": {
-    "default": "Appleton"
+    "default": "Anderson"
    },
    "firstName": {
-    "default": "Mason"
+    "default": "Josh"
    },
-   "playerSlug": "mason-appleton-8478891"
+   "playerSlug": "josh-anderson-8476981"
   },
   {
-   "playerId": 8478042,
+   "playerId": 8483424,
    "lastName": {
-    "default": "Arvidsson"
+    "default": "Beck"
    },
    "firstName": {
-    "default": "Viktor"
+    "default": "Owen"
    },
-   "playerSlug": "viktor-arvidsson-8478042"
+   "playerSlug": "owen-beck-8483424"
   },
   {
-   "playerId": 8480879,
+   "playerId": 8482737,
    "lastName": {
-    "default": "Bernard-Docker"
+    "default": "Bolduc"
+   },
+   "firstName": {
+    "default": "Zachary"
+   },
+   "playerSlug": "zachary-bolduc-8482737"
+  },
+  {
+   "playerId": 8478851,
+   "lastName": {
+    "default": "Carrier"
+   },
+   "firstName": {
+    "default": "Alexandre"
+   },
+   "playerSlug": "alexandre-carrier-8478851"
+  },
+  {
+   "playerId": 8481540,
+   "lastName": {
+    "default": "Caufield"
+   },
+   "firstName": {
+    "default": "Cole"
+   },
+   "playerSlug": "cole-caufield-8481540"
+  },
+  {
+   "playerId": 8476479,
+   "lastName": {
+    "default": "Danault"
+   },
+   "firstName": {
+    "default": "Phillip"
+   },
+   "playerSlug": "phillip-danault-8476479"
+  },
+  {
+   "playerId": 8484984,
+   "lastName": {
+    "default": "Demidov"
+   },
+   "firstName": {
+    "default": "Ivan"
+   },
+   "playerSlug": "ivan-demidov-8484984"
+  },
+  {
+   "playerId": 8482487,
+   "lastName": {
+    "default": "Dobes"
+   },
+   "firstName": {
+    "default": "Jakub"
+   },
+   "playerSlug": "jakub-dobes-8482487"
+  },
+  {
+   "playerId": 8480865,
+   "lastName": {
+    "default": "Dobson"
+   },
+   "firstName": {
+    "default": "Noah"
+   },
+   "playerSlug": "noah-dobson-8480865"
+  },
+  {
+   "playerId": 8483686,
+   "lastName": {
+    "default": "Engstrom"
+   },
+   "firstName": {
+    "default": "Adam"
+   },
+   "playerSlug": "adam-engstrom-8483686"
+  },
+  {
+   "playerId": 8478133,
+   "lastName": {
+    "default": "Evans"
+   },
+   "firstName": {
+    "default": "Jake"
+   },
+   "playerSlug": "jake-evans-8478133"
+  },
+  {
+   "playerId": 8484170,
+   "lastName": {
+    "default": "Fowler"
    },
    "firstName": {
     "default": "Jacob"
    },
-   "playerSlug": "jacob-bernard-docker-8480879"
+   "playerSlug": "jacob-fowler-8484170"
   },
   {
-   "playerId": 8484794,
+   "playerId": 8482087,
    "lastName": {
-    "default": "Brandsegg-Nyg\u00e5rd"
+    "default": "Guhle"
    },
    "firstName": {
-    "default": "Michael"
+    "default": "Kaiden"
    },
-   "playerSlug": "michael-brandsegg-nyg\u00e5rd-8484794"
+   "playerSlug": "kaiden-guhle-8482087"
   },
   {
-   "playerId": 8475279,
+   "playerId": 8483457,
    "lastName": {
-    "default": "Chiarot"
+    "default": "Hutson"
    },
    "firstName": {
-    "default": "Ben"
+    "default": "Lane"
    },
-   "playerSlug": "ben-chiarot-8475279"
+   "playerSlug": "lane-hutson-8483457"
   },
   {
-   "playerId": 8477456,
+   "playerId": 8482775,
    "lastName": {
-    "default": "Compher"
+    "default": "Kapanen"
    },
    "firstName": {
-    "default": "J.T."
+    "default": "Oliver"
    },
-   "playerSlug": "j-t-compher-8477456"
+   "playerSlug": "oliver-kapanen-8482775"
   },
   {
-   "playerId": 8477429,
+   "playerId": 8475184,
    "lastName": {
-    "default": "Copp"
+    "default": "Kreider"
    },
    "firstName": {
-    "default": "Andrew"
+    "default": "Chris"
    },
-   "playerSlug": "andrew-copp-8477429"
+   "playerSlug": "chris-kreider-8475184"
   },
   {
-   "playerId": 8479337,
+   "playerId": 8477946,
    "lastName": {
-    "default": "DeBrincat"
+    "default": "Larkin"
+   },
+   "firstName": {
+    "default": "Dylan"
+   },
+   "playerSlug": "dylan-larkin-8477946"
+  },
+  {
+   "playerId": 8476875,
+   "lastName": {
+    "default": "Matheson"
+   },
+   "firstName": {
+    "default": "Mike"
+   },
+   "playerSlug": "mike-matheson-8476875"
+  },
+  {
+   "playerId": 8481618,
+   "lastName": {
+    "default": "Newhook"
    },
    "firstName": {
     "default": "Alex"
    },
-   "playerSlug": "alex-debrincat-8479337"
+   "playerSlug": "alex-newhook-8481618"
   },
   {
-   "playerId": 8477971,
+   "playerId": 8483515,
    "lastName": {
-    "default": "Englund"
+    "default": "Slafkovsk\u00fd"
    },
    "firstName": {
-    "default": "Andreas"
+    "default": "Juraj"
    },
-   "playerSlug": "andreas-englund-8477971"
+   "playerSlug": "juraj-slafkovsk\u00fd-8483515"
   },
   {
-   "playerId": 8475753,
+   "playerId": 8480018,
    "lastName": {
-    "default": "Faulk"
+    "default": "Suzuki"
    },
    "firstName": {
-    "default": "Justin"
+    "default": "Nick"
    },
-   "playerSlug": "justin-faulk-8475753"
+   "playerSlug": "nick-suzuki-8480018"
   },
   {
-   "playerId": 8484471,
+   "playerId": 8480074,
    "lastName": {
-    "default": "Finnie"
+    "default": "Texier"
    },
    "firstName": {
-    "default": "Emmitt"
+    "default": "Alexandre"
    },
-   "playerSlug": "emmitt-finnie-8484471"
+   "playerSlug": "alexandre-texier-8480074"
   },
   {
-   "playerId": 8476434,
+   "playerId": 8482964,
    "lastName": {
-    "default": "Gibson"
+    "default": "Xhekaj"
    },
    "firstName": {
-    "default": "John"
+    "default": "Arber"
    },
-   "playerSlug": "john-gibson-8476434"
+   "playerSlug": "arber-xhekaj-8482964"
   },
   {
-   "playerId": 8481607,
+   "playerId": 8484403,
    "lastName": {
-    "default": "Johansson"
+    "default": "Xhekaj"
    },
    "firstName": {
-    "default": "Albert"
+    "default": "Florian"
    },
-   "playerSlug": "albert-johansson-8481607"
-  },
-  {
-   "playerId": 8483679,
-   "lastName": {
-    "default": "Johansson"
-   },
-   "firstName": {
-    "default": "Anton"
-   },
-   "playerSlug": "anton-johansson-8483679"
-  },
-  {
-   "playerId": 8483464,
-   "lastName": {
-    "default": "Kasper"
-   },
-   "firstName": {
-    "default": "Marco"
-   },
-   "playerSlug": "marco-kasper-8483464"
-  },
-  {
-   "playerId": 8478434,
-   "lastName": {
-    "default": "Kolesar"
-   },
-   "firstName": {
-    "default": "Keegan"
-   },
-   "playerSlug": "keegan-kolesar-8478434"
-  },
-  {
-   "playerId": 8482802,
-   "lastName": {
-    "default": "Mazur"
-   },
-   "firstName": {
-    "default": "Carter"
-   },
-   "playerSlug": "carter-mazur-8482802"
-  },
-  {
-   "playerId": 8479992,
-   "lastName": {
-    "default": "Rasmussen"
-   },
-   "firstName": {
-    "default": "Michael"
-   },
-   "playerSlug": "michael-rasmussen-8479992"
-  },
-  {
-   "playerId": 8482078,
-   "lastName": {
-    "default": "Raymond"
-   },
-   "firstName": {
-    "default": "Lucas"
-   },
-   "playerSlug": "lucas-raymond-8482078"
-  },
-  {
-   "playerId": 8481542,
-   "lastName": {
-    "default": "Seider"
-   },
-   "firstName": {
-    "default": "Moritz"
-   },
-   "playerSlug": "moritz-seider-8481542"
-  },
-  {
-   "playerId": 8480193,
-   "lastName": {
-    "default": "Tarasov"
-   },
-   "firstName": {
-    "default": "Daniil"
-   },
-   "playerSlug": "daniil-tarasov-8480193"
-  },
-  {
-   "playerId": 8482171,
-   "lastName": {
-    "default": "Wallinder"
-   },
-   "firstName": {
-    "default": "William"
-   },
-   "playerSlug": "william-wallinder-8482171"
+   "playerSlug": "florian-xhekaj-8484403"
   }
  ]
 }
