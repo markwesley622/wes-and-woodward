@@ -31,7 +31,7 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 20,
+   "gp": 21,
    "g": 9,
    "a": 11,
    "pts": 20,
@@ -89,7 +89,7 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 20,
+     "gp": 21,
      "g": 9,
      "a": 11,
      "pts": 20,
@@ -298,18 +298,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 20,
+  "gp": 21,
   "g": 9,
   "a": 11,
   "pts": 20,
-  "pgp": 1.0,
-  "lineGp": 20,
-  "nhle": 0.389,
-  "nhlePace": 32.7,
+  "pgp": 0.952,
+  "lineGp": 21,
+  "nhle": 0.37,
+  "nhlePace": 31.1,
   "lines": [
    "AHL"
   ],
-  "feature": 0.389
+  "feature": 0.37
  },
  "league": {
   "name": "AHL",
@@ -334,8 +334,8 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 41,
-   "gp": 20,
-   "value": 1.0,
+   "gp": 21,
+   "value": 0.9524,
    "percentile": 82.9,
    "percentileAllAges": 85.7,
    "allAgesN": 642
@@ -343,84 +343,84 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 32.5,
-  "median": 29.5,
-  "p75": 58.2,
+  "expected": 30.4,
+  "median": 27.9,
+  "p75": 52.2,
   "p90": 83.7,
   "pRegular": 0.6,
-  "pTopLine": 0.16,
-  "pAboveAvg": 0.3,
+  "pTopLine": 0.12,
+  "pAboveAvg": 0.26,
   "pElite": 0.08,
   "poolN": 1122,
   "group": "F",
   "age": 21,
   "pickWeight": 0.0,
   "tier": "above average",
-  "pCeiling": 0.3,
+  "pCeiling": 0.26,
   "featureBand": [
-   0.338,
-   0.431
+   0.331,
+   0.408
   ],
   "examples": [
    {
-    "name": "Devin Shore",
-    "year": 2012,
-    "pick": 61,
-    "league": "AHL",
-    "feature": 0.389,
-    "peak": 46.7,
-    "tier": "below average",
-    "nhlGp": 498
+    "name": "Mattias Janmark",
+    "year": 2013,
+    "pick": 79,
+    "league": "SHL",
+    "feature": 0.37,
+    "peak": 54.7,
+    "tier": "above average",
+    "nhlGp": 680
    },
    {
-    "name": "Cooper Marody",
-    "year": 2015,
-    "pick": 158,
-    "league": "AHL",
-    "feature": 0.389,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 7
-   },
-   {
-    "name": "Ivan Morozov",
-    "year": 2018,
-    "pick": 61,
-    "league": "KHL",
-    "feature": 0.387,
+    "name": "Filip Cederqvist",
+    "year": 2019,
+    "pick": 143,
+    "league": "SHL",
+    "feature": 0.37,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Yegor Korshkov",
-    "year": 2016,
-    "pick": 31,
+    "name": "Oliver Bjorkstrand",
+    "year": 2013,
+    "pick": 89,
+    "league": "AHL",
+    "feature": 0.367,
+    "peak": 83.7,
+    "tier": "top-line",
+    "nhlGp": 708
+   },
+   {
+    "name": "Nikolai Kovalenko",
+    "year": 2018,
+    "pick": 171,
     "league": "KHL",
-    "feature": 0.386,
+    "feature": 0.373,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 1
+    "nhlGp": 57
    },
    {
-    "name": "Logan Brown",
-    "year": 2016,
-    "pick": 11,
-    "league": "AHL",
-    "feature": 0.394,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 99
-   },
-   {
-    "name": "Troy Terry",
+    "name": "Andrew Mangiapane",
     "year": 2015,
-    "pick": 148,
+    "pick": 166,
     "league": "AHL",
-    "feature": 0.397,
-    "peak": 90.1,
-    "tier": "elite",
-    "nhlGp": 488
+    "feature": 0.365,
+    "peak": 70.3,
+    "tier": "above average",
+    "nhlGp": 561
+   },
+   {
+    "name": "Jakob Pelletier",
+    "year": 2019,
+    "pick": 26,
+    "league": "AHL",
+    "feature": 0.363,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 91
    },
    {
     "name": "Brandon Pirri",
@@ -433,14 +433,14 @@
     "nhlGp": 276
    },
    {
-    "name": "Ryan Spooner",
+    "name": "Devante Smith-Pelly",
     "year": 2010,
-    "pick": 45,
+    "pick": 42,
     "league": "AHL",
-    "feature": 0.401,
-    "peak": 72.2,
-    "tier": "above average",
-    "nhlGp": 325
+    "feature": 0.361,
+    "peak": 29.5,
+    "tier": "below average",
+    "nhlGp": 395
    }
   ]
  },
@@ -461,8 +461,8 @@
   "w": 0.0,
   "sinceDraft": 3,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 32.5,
-  "expected": 32.5,
+  "cohortExpected": 30.4,
+  "expected": 30.4,
   "tier": "below average"
  },
  "trajectory": {
@@ -475,19 +475,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.389,
-   "gp": 20
+   "feature": 0.37,
+   "gp": 21
   },
-  "delta": 0.159
+  "delta": 0.14
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 20,
+  "gp": 21,
   "season": "2026-2027"
  },
- "rank": 5,
- "score": 32.5,
+ "rank": 6,
+ "score": 30.4,
  "rankStart": 9,
  "rankStartDate": "2026-10-06"
 }

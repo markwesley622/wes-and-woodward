@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 11,
+   "gp": 12,
    "g": 2,
    "a": 2,
    "pts": 4,
-   "pm": -1,
+   "pm": -2,
    "pim": 2,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 11,
+     "gp": 12,
      "g": 2,
      "a": 2,
      "pts": 4,
-     "pm": -1,
+     "pm": -2,
      "pim": 2,
      "gaa": null,
      "svp": null,
@@ -162,18 +162,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 11,
+  "gp": 12,
   "g": 2,
   "a": 2,
   "pts": 4,
-  "pgp": 0.364,
-  "lineGp": 11,
-  "nhle": 0.141,
-  "nhlePace": 11.8,
+  "pgp": 0.333,
+  "lineGp": 12,
+  "nhle": 0.13,
+  "nhlePace": 10.9,
   "lines": [
    "AHL"
   ],
-  "feature": 0.141
+  "feature": 0.13
  },
  "league": {
   "name": "AHL",
@@ -198,10 +198,10 @@
    "season": "2026-2027",
    "ageBucket": "U24",
    "cohortN": 52,
-   "gp": 11,
-   "value": 0.3636,
-   "percentile": 44.2,
-   "percentileAllAges": 49.4,
+   "gp": 12,
+   "value": 0.3333,
+   "percentile": 32.7,
+   "percentileAllAges": 39.1,
    "allAgesN": 642
   }
  },
@@ -222,86 +222,86 @@
   "tier": "replacement level",
   "pCeiling": 0.04,
   "featureBand": [
-   0.114,
-   0.166
+   0.104,
+   0.157
   ],
   "examples": [
    {
-    "name": "Mauro J\u00f6rg",
+    "name": "Sebastian W\u00e4nnstr\u00f6m",
     "year": 2010,
-    "pick": 204,
-    "league": "NLA",
-    "feature": 0.141,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Andre Lee",
-    "year": 2019,
-    "pick": 188,
+    "pick": 44,
     "league": "AHL",
-    "feature": 0.14,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 27
-   },
-   {
-    "name": "Jesper Samuelsson",
-    "year": 2008,
-    "pick": 211,
-    "league": "Division 1",
-    "feature": 0.142,
+    "feature": 0.13,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Tyler Steenbergen",
-    "year": 2017,
-    "pick": 128,
-    "league": "Liiga",
-    "feature": 0.139,
+    "name": "Matthew Beattie",
+    "year": 2012,
+    "pick": 207,
+    "league": "Ligue Magnus",
+    "feature": 0.129,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Zach Pochiro",
-    "year": 2013,
-    "pick": 112,
-    "league": "ECHL",
-    "feature": 0.143,
+    "name": "Tyler Shattock",
+    "year": 2009,
+    "pick": 108,
+    "league": "AHL",
+    "feature": 0.128,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Shawn Boudrias",
+    "name": "Scott Timmins",
+    "year": 2009,
+    "pick": 165,
+    "league": "AHL",
+    "feature": 0.133,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 24
+   },
+   {
+    "name": "Aidan McDonough",
+    "year": 2019,
+    "pick": 195,
+    "league": "AHL",
+    "feature": 0.127,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 6
+   },
+   {
+    "name": "Brett Stapley",
     "year": 2018,
-    "pick": 179,
+    "pick": 190,
     "league": "ECHL",
-    "feature": 0.138,
+    "feature": 0.134,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Rob Flick",
-    "year": 2010,
-    "pick": 120,
+    "name": "Sergei Andronov",
+    "year": 2009,
+    "pick": 78,
     "league": "AHL",
-    "feature": 0.144,
+    "feature": 0.125,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "McKade Webster",
-    "year": 2019,
-    "pick": 213,
-    "league": "NCAA",
-    "feature": 0.144,
+    "name": "Mitchell Heard",
+    "year": 2012,
+    "pick": 41,
+    "league": "ECHL",
+    "feature": 0.135,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -339,18 +339,18 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.141,
-   "gp": 11
+   "feature": 0.13,
+   "gp": 12
   },
-  "delta": -0.027
+  "delta": -0.038
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 11,
+  "gp": 12,
   "season": "2026-2027"
  },
- "rank": 29,
+ "rank": 30,
  "score": 0.4,
  "rankStart": 29,
  "rankStartDate": "2026-10-06"

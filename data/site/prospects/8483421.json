@@ -31,10 +31,10 @@
   {
    "league": "NCAA",
    "team": "Univ. of Notre Dame",
-   "gp": 10,
+   "gp": 11,
    "g": 2,
-   "a": 4,
-   "pts": 6,
+   "a": 5,
+   "pts": 7,
    "pm": 5,
    "pim": 33,
    "gaa": null,
@@ -72,10 +72,10 @@
     {
      "league": "NCAA",
      "team": "Univ. of Notre Dame",
-     "gp": 10,
+     "gp": 11,
      "g": 2,
-     "a": 4,
-     "pts": 6,
+     "a": 5,
+     "pts": 7,
      "pm": 5,
      "pim": 33,
      "gaa": null,
@@ -184,18 +184,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Univ. of Notre Dame",
-  "gp": 10,
+  "gp": 11,
   "g": 2,
-  "a": 4,
-  "pts": 6,
-  "pgp": 0.6,
-  "lineGp": 10,
-  "nhle": 0.116,
-  "nhlePace": 9.7,
+  "a": 5,
+  "pts": 7,
+  "pgp": 0.636,
+  "lineGp": 11,
+  "nhle": 0.123,
+  "nhlePace": 10.3,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.116
+  "feature": 0.123
  },
  "league": {
   "name": "NCAA",
@@ -219,11 +219,11 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 0.0,
+  "expected": 2.5,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 0.0,
-  "pRegular": 0.0,
+  "p90": 9.6,
+  "pRegular": 0.1,
   "pTopLine": 0.0,
   "pAboveAvg": 0.0,
   "pElite": 0.0,
@@ -232,91 +232,91 @@
   "age": 22,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.0,
+  "pCeiling": 0.1,
   "featureBand": [
-   0.113,
-   0.12
+   0.118,
+   0.127
   ],
   "examples": [
    {
-    "name": "Jesper Samuelsson",
+    "name": "Nicholas Tremblay",
     "year": 2008,
-    "pick": 211,
-    "league": "Division 1",
-    "feature": 0.116,
+    "pick": 173,
+    "league": "NCAA",
+    "feature": 0.123,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Benjamin Casavant",
-    "year": 2009,
-    "pick": 205,
-    "league": "LNAH",
-    "feature": 0.116,
+    "name": "Brandon Duhaime",
+    "year": 2016,
+    "pick": 106,
+    "league": "AHL",
+    "feature": 0.123,
+    "peak": 18.8,
+    "tier": "replacement level",
+    "nhlGp": 378
+   },
+   {
+    "name": "Michael Eyssimont",
+    "year": 2016,
+    "pick": 142,
+    "league": "AHL",
+    "feature": 0.123,
+    "peak": 27.8,
+    "tier": "below average",
+    "nhlGp": 269
+   },
+   {
+    "name": "Jonathan Davidsson",
+    "year": 2017,
+    "pick": 170,
+    "league": "AHL",
+    "feature": 0.123,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 6
+   },
+   {
+    "name": "Skyler McKenzie",
+    "year": 2017,
+    "pick": 198,
+    "league": "AHL",
+    "feature": 0.123,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Josh Nicholls",
-    "year": 2010,
-    "pick": 182,
-    "league": "ECHL",
-    "feature": 0.116,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Brent Pedersen",
-    "year": 2013,
-    "pick": 126,
-    "league": "USports",
-    "feature": 0.116,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Luka Burzan",
+    "name": "Marcus Kallionkieli",
     "year": 2019,
-    "pick": 171,
-    "league": "ECHL",
-    "feature": 0.116,
+    "pick": 139,
+    "league": "Poland",
+    "feature": 0.123,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Brett Bulmer",
-    "year": 2010,
-    "pick": 39,
+    "name": "James Livingston",
+    "year": 2008,
+    "pick": 70,
     "league": "AHL",
-    "feature": 0.117,
+    "feature": 0.122,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 17
+    "nhlGp": 0
    },
    {
-    "name": "Alex Guptill",
-    "year": 2010,
-    "pick": 77,
+    "name": "Brandon McMillan",
+    "year": 2008,
+    "pick": 85,
     "league": "AHL",
-    "feature": 0.115,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Stephen MacAulay",
-    "year": 2010,
-    "pick": 164,
-    "league": "CIS",
-    "feature": 0.115,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "feature": 0.124,
+    "peak": 33.2,
+    "tier": "below average",
+    "nhlGp": 171
    }
   ]
  },
@@ -337,9 +337,9 @@
   "w": 0.0,
   "sinceDraft": 4,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 0.0,
-  "expected": 0.0,
-  "tier": "did not stick"
+  "cohortExpected": 2.5,
+  "expected": 2.5,
+  "tier": "replacement level"
  },
  "trajectory": {
   "from": {
@@ -351,19 +351,19 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.116,
-   "gp": 10
+   "feature": 0.123,
+   "gp": 11
   },
-  "delta": 0.033
+  "delta": 0.04
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 10,
+  "gp": 11,
   "season": "2026-2027"
  },
- "rank": 34,
- "score": 0.0,
+ "rank": 28,
+ "score": 2.5,
  "rankStart": 32,
  "rankStartDate": "2026-10-06"
 }

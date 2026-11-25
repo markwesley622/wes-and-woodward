@@ -31,11 +31,11 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 20,
+   "gp": 21,
    "g": 3,
    "a": 10,
    "pts": 13,
-   "pm": 0,
+   "pm": -1,
    "pim": 8,
    "gaa": null,
    "svp": null,
@@ -72,11 +72,11 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 20,
+     "gp": 21,
      "g": 3,
      "a": 10,
      "pts": 13,
-     "pm": 0,
+     "pm": -1,
      "pim": 8,
      "gaa": null,
      "svp": null,
@@ -140,18 +140,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 20,
+  "gp": 21,
   "g": 3,
   "a": 10,
   "pts": 13,
-  "pgp": 0.65,
-  "lineGp": 20,
-  "nhle": 0.253,
-  "nhlePace": 21.3,
+  "pgp": 0.619,
+  "lineGp": 21,
+  "nhle": 0.241,
+  "nhlePace": 20.2,
   "lines": [
    "AHL"
   ],
-  "feature": 0.253
+  "feature": 0.241
  },
  "league": {
   "name": "AHL",
@@ -176,113 +176,113 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 44,
-   "gp": 20,
-   "value": 0.65,
+   "gp": 21,
+   "value": 0.619,
    "percentile": 56.8,
-   "percentileAllAges": 64.3,
+   "percentileAllAges": 63.4,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 14.0,
+  "expected": 10.3,
   "median": 0.0,
-  "p75": 29.4,
-  "p90": 53.5,
-  "pRegular": 0.3,
+  "p75": 4.5,
+  "p90": 51.3,
+  "pRegular": 0.28,
   "pTopLine": 0.02,
-  "pAboveAvg": 0.12,
+  "pAboveAvg": 0.1,
   "pElite": 0.02,
   "poolN": 1006,
   "group": "F",
   "age": 22,
   "pickWeight": 0.0,
-  "tier": "below average",
-  "pCeiling": 0.26,
+  "tier": "replacement level",
+  "pCeiling": 0.28,
   "featureBand": [
-   0.242,
-   0.264
+   0.232,
+   0.25
   ],
   "examples": [
    {
-    "name": "Jordan Martinook",
-    "year": 2012,
-    "pick": 58,
-    "league": "AHL",
-    "feature": 0.253,
-    "peak": 48.2,
-    "tier": "below average",
-    "nhlGp": 800
-   },
-   {
-    "name": "Dmitry Zavgorodny",
-    "year": 2018,
-    "pick": 198,
-    "league": "KHL",
-    "feature": 0.253,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Matias Sointu",
-    "year": 2008,
-    "pick": 182,
-    "league": "SM-liiga",
-    "feature": 0.252,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Carl Klingberg",
+    "name": "Mitch Callahan",
     "year": 2009,
-    "pick": 34,
+    "pick": 180,
     "league": "AHL",
-    "feature": 0.255,
+    "feature": 0.241,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 12
+    "nhlGp": 5
    },
    {
-    "name": "Nikolai Prokhorkin",
+    "name": "Joey Hishon",
+    "year": 2010,
+    "pick": 17,
+    "league": "AHL",
+    "feature": 0.242,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 13
+   },
+   {
+    "name": "Bill Arnold",
+    "year": 2010,
+    "pick": 108,
+    "league": "AHL",
+    "feature": 0.242,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
+   },
+   {
+    "name": "Garret Ross",
     "year": 2012,
-    "pick": 121,
-    "league": "KHL",
-    "feature": 0.251,
-    "peak": 29.4,
-    "tier": "below average",
-    "nhlGp": 43
+    "pick": 139,
+    "league": "AHL",
+    "feature": 0.242,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    },
    {
-    "name": "Adam Brooks",
+    "name": "Givani Smith",
     "year": 2016,
-    "pick": 92,
+    "pick": 46,
     "league": "AHL",
-    "feature": 0.255,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 43
-   },
-   {
-    "name": "Trey Fix-Wolansky",
-    "year": 2018,
-    "pick": 204,
-    "league": "AHL",
-    "feature": 0.251,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 26
-   },
-   {
-    "name": "Michael Latta",
-    "year": 2009,
-    "pick": 72,
-    "league": "AHL",
-    "feature": 0.25,
-    "peak": 10.0,
+    "feature": 0.24,
+    "peak": 4.5,
     "tier": "replacement level",
-    "nhlGp": 113
+    "nhlGp": 168
+   },
+   {
+    "name": "Craig Cunningham",
+    "year": 2010,
+    "pick": 97,
+    "league": "AHL",
+    "feature": 0.239,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 63
+   },
+   {
+    "name": "Alexander Kerfoot",
+    "year": 2012,
+    "pick": 150,
+    "league": "NCAA",
+    "feature": 0.243,
+    "peak": 65.8,
+    "tier": "above average",
+    "nhlGp": 641
+   },
+   {
+    "name": "Cliff Pu",
+    "year": 2016,
+    "pick": 69,
+    "league": "AHL",
+    "feature": 0.243,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -303,8 +303,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 14.0,
-  "expected": 14.0,
+  "cohortExpected": 10.3,
+  "expected": 10.3,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -317,19 +317,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.253,
-   "gp": 20
+   "feature": 0.241,
+   "gp": 21
   },
-  "delta": 0.071
+  "delta": 0.059
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 20,
+  "gp": 21,
   "season": "2026-2027"
  },
- "rank": 12,
- "score": 14.0,
+ "rank": 14,
+ "score": 10.3,
  "rankStart": 16,
  "rankStartDate": "2026-10-06"
 }

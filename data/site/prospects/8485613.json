@@ -48,12 +48,12 @@
   {
    "league": "MHL",
    "team": "MHK Spartak Moskva",
-   "gp": 7,
+   "gp": 8,
    "g": 0,
    "a": 4,
    "pts": 4,
    "pm": -3,
-   "pim": 4,
+   "pim": 6,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -157,12 +157,12 @@
     {
      "league": "MHL",
      "team": "MHK Spartak Moskva",
-     "gp": 7,
+     "gp": 8,
      "g": 0,
      "a": 4,
      "pts": 4,
      "pm": -3,
-     "pim": 4,
+     "pim": 6,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -254,19 +254,19 @@
   "table": "VHL",
   "coef": 0.328,
   "team": "Khimik Voskresensk",
-  "gp": 21,
+  "gp": 22,
   "g": 0,
   "a": 1,
   "pts": 1,
   "pgp": 0.071,
   "lineGp": 14,
-  "nhle": 0.043,
-  "nhlePace": 3.6,
+  "nhle": 0.041,
+  "nhlePace": 3.4,
   "lines": [
    "VHL",
    "MHL"
   ],
-  "feature": 0.043
+  "feature": 0.041
  },
  "league": {
   "name": "VHL",
@@ -315,8 +315,8 @@
   "tier": "replacement level",
   "pCeiling": 0.1,
   "featureBand": [
-   0.034,
-   0.055
+   0.03,
+   0.052
   ],
   "examples": [
    {
@@ -325,46 +325,6 @@
     "pick": 141,
     "league": "NCAA",
     "feature": 0.042,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Stefan Warg",
-    "year": 2008,
-    "pick": 143,
-    "league": "WHL",
-    "feature": 0.044,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Troy Vance",
-    "year": 2011,
-    "pick": 135,
-    "league": "QMJHL",
-    "feature": 0.044,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kevin Gravel",
-    "year": 2010,
-    "pick": 148,
-    "league": "NCAA",
-    "feature": 0.042,
-    "peak": 11.2,
-    "tier": "replacement level",
-    "nhlGp": 139
-   },
-   {
-    "name": "Joe Rogalski",
-    "year": 2010,
-    "pick": 152,
-    "league": "OHL",
-    "feature": 0.044,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -380,21 +340,61 @@
     "nhlGp": 0
    },
    {
-    "name": "Alex Velischek",
-    "year": 2009,
-    "pick": 123,
-    "league": "USHL",
-    "feature": 0.043,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
     "name": "Tyler Inamoto",
     "year": 2017,
     "pick": 133,
     "league": "NCAA",
     "feature": 0.04,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kevin Gravel",
+    "year": 2010,
+    "pick": 148,
+    "league": "NCAA",
+    "feature": 0.042,
+    "peak": 11.2,
+    "tier": "replacement level",
+    "nhlGp": 139
+   },
+   {
+    "name": "Anton Cederholm",
+    "year": 2013,
+    "pick": 145,
+    "league": "WHL",
+    "feature": 0.039,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Gabriel Beaupr\u00e9",
+    "year": 2011,
+    "pick": 153,
+    "league": "AHL",
+    "feature": 0.041,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Stefan Warg",
+    "year": 2008,
+    "pick": 143,
+    "league": "WHL",
+    "feature": 0.044,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jacob Golden",
+    "year": 2017,
+    "pick": 147,
+    "league": "OHL",
+    "feature": 0.039,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -432,10 +432,10 @@
   "to": {
    "season": "2026-2027",
    "league": "VHL",
-   "feature": 0.043,
+   "feature": 0.041,
    "gp": 14
   },
-  "delta": -0.028
+  "delta": -0.03
  },
  "nhlSample": null,
  "nhlUsage": null,

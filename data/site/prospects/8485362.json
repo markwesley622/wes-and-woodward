@@ -31,12 +31,12 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 18,
-   "g": 5,
+   "gp": 19,
+   "g": 6,
    "a": 14,
-   "pts": 19,
-   "pm": 9,
-   "pim": 12,
+   "pts": 20,
+   "pm": 8,
+   "pim": 14,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -89,12 +89,12 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 18,
-     "g": 5,
+     "gp": 19,
+     "g": 6,
      "a": 14,
-     "pts": 19,
-     "pm": 9,
-     "pim": 12,
+     "pts": 20,
+     "pm": 8,
+     "pim": 14,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -152,18 +152,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 18,
-  "g": 5,
+  "gp": 19,
+  "g": 6,
   "a": 14,
-  "pts": 19,
-  "pgp": 1.056,
-  "lineGp": 18,
-  "nhle": 0.411,
-  "nhlePace": 34.5,
+  "pts": 20,
+  "pgp": 1.053,
+  "lineGp": 19,
+  "nhle": 0.409,
+  "nhlePace": 34.4,
   "lines": [
    "AHL"
   ],
-  "feature": 0.411
+  "feature": 0.409
  },
  "league": {
   "name": "AHL",
@@ -188,8 +188,8 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 30,
-   "gp": 18,
-   "value": 1.0556,
+   "gp": 19,
+   "value": 1.0526,
    "percentile": 93.3,
    "percentileAllAges": 90.5,
    "allAgesN": 642
@@ -197,11 +197,11 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 58.6,
-  "median": 68.0,
+  "expected": 58.2,
+  "median": 68.5,
   "p75": 91.4,
   "p90": 96.0,
-  "pRegular": 0.84,
+  "pRegular": 0.82,
   "pTopLine": 0.44,
   "pAboveAvg": 0.64,
   "pElite": 0.28,
@@ -277,16 +277,6 @@
     "nhlGp": 370
    },
    {
-    "name": "Tyler Ennis",
-    "year": 2008,
-    "pick": 26,
-    "league": "AHL",
-    "feature": 0.434,
-    "peak": 77.2,
-    "tier": "top-line",
-    "nhlGp": 700
-   },
-   {
     "name": "Nazem Kadri",
     "year": 2009,
     "pick": 7,
@@ -295,6 +285,16 @@
     "peak": 96.0,
     "tier": "elite",
     "nhlGp": 1064
+   },
+   {
+    "name": "Tyler Ennis",
+    "year": 2008,
+    "pick": 26,
+    "league": "AHL",
+    "feature": 0.434,
+    "peak": 77.2,
+    "tier": "top-line",
+    "nhlGp": 700
    }
   ]
  },
@@ -315,8 +315,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 65.9,
-  "cohortExpected": 58.6,
-  "expected": 60.4,
+  "cohortExpected": 58.2,
+  "expected": 60.1,
   "tier": "above average"
  },
  "trajectory": {
@@ -329,19 +329,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.411,
-   "gp": 18
+   "feature": 0.409,
+   "gp": 19
   },
-  "delta": 0.214
+  "delta": 0.212
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 18,
+  "gp": 19,
   "season": "2026-2027"
  },
  "rank": 1,
- "score": 60.4,
+ "score": 60.1,
  "rankStart": 1,
  "rankStartDate": "2026-10-06"
 }
