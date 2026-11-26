@@ -31,12 +31,12 @@
   {
    "league": "HockeyAllsvenskan",
    "team": "Almtuna IS",
-   "gp": 22,
+   "gp": 23,
    "g": 4,
    "a": 8,
    "pts": 12,
    "pm": -11,
-   "pim": 8,
+   "pim": 10,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -106,12 +106,12 @@
     {
      "league": "HockeyAllsvenskan",
      "team": "Almtuna IS",
-     "gp": 22,
+     "gp": 23,
      "g": 4,
      "a": 8,
      "pts": 12,
      "pm": -11,
-     "pim": 8,
+     "pim": 10,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -225,19 +225,19 @@
   "table": "Allsvenskan",
   "coef": 0.351,
   "team": "Almtuna IS",
-  "gp": 27,
+  "gp": 28,
   "g": 4,
   "a": 8,
   "pts": 12,
-  "pgp": 0.545,
-  "lineGp": 22,
-  "nhle": 0.177,
-  "nhlePace": 14.9,
+  "pgp": 0.522,
+  "lineGp": 23,
+  "nhle": 0.171,
+  "nhlePace": 14.4,
   "lines": [
    "SHL",
    "HockeyAllsvenskan"
   ],
-  "feature": 0.177
+  "feature": 0.171
  },
  "league": {
   "name": "HockeyAllsvenskan",
@@ -262,8 +262,8 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 11,
-   "gp": 22,
-   "value": 0.5455,
+   "gp": 23,
+   "value": 0.5217,
    "percentile": 36.4,
    "percentileAllAges": 68.1,
    "allAgesN": 357
@@ -271,104 +271,104 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 9.1,
+  "expected": 7.5,
   "median": 0.0,
-  "p75": 0.0,
-  "p90": 51.3,
-  "pRegular": 0.22,
-  "pTopLine": 0.02,
-  "pAboveAvg": 0.1,
+  "p75": 1.5,
+  "p90": 36.7,
+  "pRegular": 0.26,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.04,
   "pElite": 0.0,
   "poolN": 1236,
   "group": "F",
   "age": 20,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.22,
+  "pCeiling": 0.26,
   "featureBand": [
-   0.173,
-   0.182
+   0.166,
+   0.176
   ],
   "examples": [
    {
-    "name": "Allan McShane",
-    "year": 2018,
-    "pick": 97,
-    "league": "Slovakia",
-    "feature": 0.177,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "name": "Michael Chaput",
+    "year": 2010,
+    "pick": 89,
+    "league": "AHL",
+    "feature": 0.171,
+    "peak": 6.8,
+    "tier": "replacement level",
+    "nhlGp": 182
    },
    {
-    "name": "Nicholas Baptiste",
+    "name": "Tye McGinn",
+    "year": 2010,
+    "pick": 119,
+    "league": "QMJHL",
+    "feature": 0.172,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 89
+   },
+   {
+    "name": "Alan Quine",
     "year": 2013,
-    "pick": 69,
+    "pick": 166,
     "league": "AHL",
-    "feature": 0.176,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 47
+    "feature": 0.172,
+    "peak": 29.1,
+    "tier": "below average",
+    "nhlGp": 106
    },
    {
-    "name": "Giorgio Estephan",
+    "name": "Mason Appleton",
     "year": 2015,
-    "pick": 152,
-    "league": "WHL",
-    "feature": 0.176,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
+    "pick": 168,
+    "league": "NCAA",
+    "feature": 0.172,
+    "peak": 52.2,
+    "tier": "above average",
+    "nhlGp": 467
    },
    {
-    "name": "Dominik Bokk",
+    "name": "Tyler Weiss",
     "year": 2018,
-    "pick": 25,
+    "pick": 109,
+    "league": "NCAA",
+    "feature": 0.172,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Mark Olver",
+    "year": 2008,
+    "pick": 140,
+    "league": "NCAA",
+    "feature": 0.17,
+    "peak": 15.6,
+    "tier": "replacement level",
+    "nhlGp": 74
+   },
+   {
+    "name": "Ryan Rupert",
+    "year": 2012,
+    "pick": 157,
     "league": "AHL",
-    "feature": 0.178,
+    "feature": 0.17,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Ilya Nikolayev",
-    "year": 2019,
-    "pick": 88,
-    "league": "USHL",
-    "feature": 0.178,
+    "name": "Reid Duke",
+    "year": 2014,
+    "pick": 169,
+    "league": "WHL",
+    "feature": 0.17,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
-   },
-   {
-    "name": "Alexander Daryin",
-    "year": 2019,
-    "pick": 107,
-    "league": "MHL",
-    "feature": 0.176,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Matvei Guskov",
-    "year": 2019,
-    "pick": 149,
-    "league": "KHL",
-    "feature": 0.178,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kris Foucault",
-    "year": 2009,
-    "pick": 103,
-    "league": "AHL",
-    "feature": 0.175,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
    }
   ]
  },
@@ -389,8 +389,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 9.1,
-  "expected": 9.1,
+  "cohortExpected": 7.5,
+  "expected": 7.5,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -403,19 +403,19 @@
   "to": {
    "season": "2026-2027",
    "league": "HockeyAllsvenskan",
-   "feature": 0.177,
-   "gp": 22
+   "feature": 0.171,
+   "gp": 23
   },
-  "delta": 0.082
+  "delta": 0.076
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 22,
+  "gp": 23,
   "season": "2026-2027"
  },
- "rank": 16,
- "score": 9.1,
+ "rank": 17,
+ "score": 7.5,
  "rankStart": 27,
  "rankStartDate": "2026-10-06"
 }

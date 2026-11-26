@@ -31,7 +31,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 23,
+   "gp": 24,
    "g": 2,
    "a": 4,
    "pts": 6,
@@ -89,7 +89,7 @@
     {
      "league": "NHL",
      "team": "Detroit Red Wings",
-     "gp": 23,
+     "gp": 24,
      "g": 2,
      "a": 4,
      "pts": 6,
@@ -490,9 +490,9 @@
   "sinceDraft": 3,
   "pedigreeExpected": 12.3,
   "cohortExpected": 25.4,
-  "expected": 27.5,
+  "expected": 27.6,
   "tier": "below average",
-  "nhlW": 0.53,
+  "nhlW": 0.55,
   "nhlExpected": 29.4,
   "beforeNhl": 25.4
  },
@@ -512,15 +512,15 @@
   "delta": 0.106
  },
  "nhlSample": {
-  "gp": 23,
+  "gp": 24,
   "pts": 6,
   "seasons": [
    20262027
   ],
   "thisSeason": {
-   "gp": 23,
+   "gp": 24,
    "pts": 6,
-   "toi": "13:48",
+   "toi": "13:49",
    "savePct": null
   }
  },
@@ -537,10 +537,10 @@
   "poolN": 258,
   "group": "D",
   "age": 22,
-  "gp": 23,
-  "toi": 828,
-  "ppg": 0.261,
-  "ppgShrunk": 0.229,
+  "gp": 24,
+  "toi": 829,
+  "ppg": 0.25,
+  "ppgShrunk": 0.224,
   "toiBand": [
    725,
    975
@@ -613,17 +613,6 @@
     "nhlGp": 94
    },
    {
-    "name": "Jake Bean",
-    "season": "2020-2021",
-    "age": 22,
-    "gp": 42,
-    "toi": 872,
-    "ppg": 0.29,
-    "peak": 61.5,
-    "tier": "above average",
-    "nhlGp": 277
-   },
-   {
     "name": "Brett Kulak",
     "season": "2016-2017",
     "age": 22,
@@ -633,18 +622,29 @@
     "peak": 51.5,
     "tier": "above average",
     "nhlGp": 665
+   },
+   {
+    "name": "Gustav Olofsson",
+    "season": "2017-2018",
+    "age": 22,
+    "gp": 41,
+    "toi": 766,
+    "ppg": 0.2,
+    "peak": 24.5,
+    "tier": "replacement level",
+    "nhlGp": 63
    }
   ],
-  "w": 0.53,
+  "w": 0.55,
   "before": 25.4,
-  "after": 27.5
+  "after": 27.6
  },
  "availability": {
   "gp": 42,
   "season": "2025-2026"
  },
  "rank": 9,
- "score": 27.5,
+ "score": 27.6,
  "rankStart": 10,
  "rankStartDate": "2026-10-06"
 }

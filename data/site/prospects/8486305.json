@@ -31,11 +31,11 @@
   {
    "league": "OHL",
    "team": "Erie Otters",
-   "gp": 19,
+   "gp": 20,
    "g": 8,
    "a": 5,
    "pts": 13,
-   "pm": 0,
+   "pm": -1,
    "pim": 4,
    "gaa": null,
    "svp": null,
@@ -123,11 +123,11 @@
     {
      "league": "OHL",
      "team": "Erie Otters",
-     "gp": 19,
+     "gp": 20,
      "g": 8,
      "a": 5,
      "pts": 13,
-     "pm": 0,
+     "pm": -1,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -164,18 +164,18 @@
   "table": "OHL",
   "coef": 0.144,
   "team": "Erie Otters",
-  "gp": 19,
+  "gp": 20,
   "g": 8,
   "a": 5,
   "pts": 13,
-  "pgp": 0.684,
-  "lineGp": 19,
-  "nhle": 0.099,
-  "nhlePace": 8.3,
+  "pgp": 0.65,
+  "lineGp": 20,
+  "nhle": 0.094,
+  "nhlePace": 7.9,
   "lines": [
    "OHL"
   ],
-  "feature": 0.099
+  "feature": 0.094
  },
  "league": {
   "name": "OHL",
@@ -190,100 +190,40 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 86,
-   "gp": 19,
-   "value": 0.6842,
-   "percentile": 67.4,
-   "percentileAllAges": 68.4,
+   "gp": 20,
+   "value": 0.65,
+   "percentile": 62.8,
+   "percentileAllAges": 65.4,
    "allAgesN": 1875
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 5.1,
+  "expected": 9.5,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 18.9,
-  "pRegular": 0.12,
+  "p90": 38.0,
+  "pRegular": 0.24,
   "pTopLine": 0.02,
-  "pAboveAvg": 0.04,
+  "pAboveAvg": 0.06,
   "pElite": 0.0,
   "poolN": 1362,
   "group": "F",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.12,
+  "pCeiling": 0.24,
   "featureBand": [
-   0.087,
-   0.109
+   0.082,
+   0.106
   ],
   "examples": [
-   {
-    "name": "Miro Aaltonen",
-    "year": 2013,
-    "pick": 177,
-    "league": "SM-liiga",
-    "feature": 0.1,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Maxim Mamin",
-    "year": 2016,
-    "pick": 175,
-    "league": "MHL",
-    "feature": 0.102,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 73
-   },
-   {
-    "name": "Blaine Byron",
-    "year": 2013,
-    "pick": 179,
-    "league": "NCAA",
-    "feature": 0.097,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Radel Fazleyev",
-    "year": 2014,
-    "pick": 168,
-    "league": "WHL",
-    "feature": 0.101,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Cristiano DiGiacinto",
-    "year": 2014,
-    "pick": 170,
-    "league": "OHL",
-    "feature": 0.103,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
    {
     "name": "Lukas Jasek",
     "year": 2015,
     "pick": 174,
     "league": "Czechia",
     "feature": 0.093,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Matthew DeBlouw",
-    "year": 2012,
-    "pick": 186,
-    "league": "NCAA",
-    "feature": 0.097,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -297,6 +237,66 @@
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 89
+   },
+   {
+    "name": "Cole Guttman",
+    "year": 2017,
+    "pick": 180,
+    "league": "USHL",
+    "feature": 0.093,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 41
+   },
+   {
+    "name": "Justin Sch\u00fctz",
+    "year": 2018,
+    "pick": 170,
+    "league": "AlpsHL",
+    "feature": 0.093,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ryan McGregor",
+    "year": 2017,
+    "pick": 172,
+    "league": "OHL",
+    "feature": 0.092,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Brooks Macek",
+    "year": 2010,
+    "pick": 171,
+    "league": "WHL",
+    "feature": 0.092,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Mitch Callahan",
+    "year": 2009,
+    "pick": 180,
+    "league": "WHL",
+    "feature": 0.092,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 5
+   },
+   {
+    "name": "Quentin Shore",
+    "year": 2013,
+    "pick": 168,
+    "league": "NCAA",
+    "feature": 0.095,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -317,8 +317,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 5.1,
-  "expected": 6.3,
+  "cohortExpected": 9.5,
+  "expected": 8.5,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -331,19 +331,19 @@
   "to": {
    "season": "2026-2027",
    "league": "OHL",
-   "feature": 0.099,
-   "gp": 19
+   "feature": 0.094,
+   "gp": 20
   },
-  "delta": 0.047
+  "delta": 0.042
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 19,
+  "gp": 20,
   "season": "2026-2027"
  },
- "rank": 18,
- "score": 6.3,
+ "rank": 14,
+ "score": 8.5,
  "rankStart": 21,
  "rankStartDate": "2026-10-06"
 }

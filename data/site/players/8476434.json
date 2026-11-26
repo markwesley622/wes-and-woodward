@@ -45,44 +45,51 @@
   "shutouts": 0
  },
  "score": {
-  "value": 18.4,
-  "low": 7.3,
-  "high": 39.1,
+  "value": 17.8,
+  "low": 7.1,
+  "high": 38.2,
   "gsax": -7.7,
   "xGoals": 36.3,
   "goals": 44.0,
   "minutes": 745,
-  "pool": 38,
-  "rank": 37,
-  "percentile": 2.6,
+  "pool": 42,
+  "rank": 40,
+  "percentile": 4.8,
   "reliability": 0.33,
   "group": "goalies",
   "neighbors": [
    {
-    "rank": 35,
+    "rank": 38,
+    "name": "Dustin Wolf",
+    "value": 21.8,
+    "gsax": -6.1,
+    "isMe": false
+   },
+   {
+    "rank": 39,
     "name": "Lukas Dostal",
-    "value": 20.6,
+    "value": 20.0,
     "gsax": -6.8,
     "isMe": false
    },
    {
-    "rank": 36,
-    "name": "Karel Vejmelka",
-    "value": 20.1,
-    "gsax": -7.0,
-    "isMe": false
-   },
-   {
-    "rank": 37,
+    "rank": 40,
     "name": "John Gibson",
-    "value": 18.4,
+    "value": 17.8,
     "gsax": -7.7,
     "isMe": true
    },
    {
-    "rank": 38,
+    "rank": 41,
+    "name": "Karel Vejmelka",
+    "value": 17.5,
+    "gsax": -7.9,
+    "isMe": false
+   },
+   {
+    "rank": 42,
     "name": "Jake Allen",
-    "value": 17.3,
+    "value": 16.7,
     "gsax": -8.2,
     "isMe": false
    }
@@ -102,7 +109,7 @@
   "gaa": 3.542198,
   "shutouts": 0,
   "gsax": -7.73,
-  "pctl_gsax": 2.6,
+  "pctl_gsax": 4.8,
   "qualifiesForPercentiles": true
  },
  "gameLog": [
@@ -310,5 +317,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-25T06:58:55-08:00"
+ "updatedAt": "2026-11-26T07:03:06-08:00"
 }

@@ -52,47 +52,62 @@
   "season": 20262027,
   "regularSeason": {
    "subSeason": {
-    "gamesPlayed": 10,
-    "goalsAgainstAvg": 1.980077,
+    "gamesPlayed": 11,
+    "goalsAgainstAvg": 1.883934,
     "losses": 4,
     "otLosses": 2,
-    "savePctg": 0.927126,
+    "savePctg": 0.930403,
     "shutouts": 2,
-    "wins": 3
+    "wins": 4
    },
    "career": {
-    "gamesPlayed": 108,
-    "goalsAgainstAvg": 3.182213,
+    "gamesPlayed": 109,
+    "goalsAgainstAvg": 3.160692,
     "losses": 53,
     "otLosses": 11,
-    "savePctg": 0.899397,
+    "savePctg": 0.899906,
     "shutouts": 3,
-    "wins": 35
+    "wins": 36
    }
   }
  },
  "careerTotals": {
   "regularSeason": {
    "assists": 2,
-   "gamesPlayed": 108,
-   "gamesStarted": 100,
+   "gamesPlayed": 109,
+   "gamesStarted": 101,
    "goals": 0,
-   "goalsAgainst": 317,
-   "goalsAgainstAvg": 3.182213,
+   "goalsAgainst": 318,
+   "goalsAgainstAvg": 3.160692,
    "losses": 53,
    "otLosses": 11,
    "pim": 0,
-   "savePctg": 0.899397,
-   "shotsAgainst": 3151,
+   "savePctg": 0.899906,
+   "shotsAgainst": 3177,
    "shutouts": 3,
-   "timeOnIce": "5976:58",
-   "wins": 35
+   "timeOnIce": "6036:39",
+   "wins": 36
   }
  },
  "shopLink": "#TODO",
  "twitterLink": "#TODO",
  "watchLink": "#TODO",
  "last5Games": [
+  {
+   "decision": "W",
+   "gameDate": "2026-11-25",
+   "gameId": 2026020394,
+   "gameTypeId": 2,
+   "gamesStarted": 1,
+   "goalsAgainst": 1,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "VAN",
+   "penaltyMins": 0,
+   "savePctg": 0.961538,
+   "shotsAgainst": 26,
+   "teamAbbrev": "DET",
+   "toi": "59:41"
+  },
   {
    "decision": "L",
    "gameDate": "2026-11-18",
@@ -152,21 +167,6 @@
    "shotsAgainst": 33,
    "teamAbbrev": "DET",
    "toi": "57:35"
-  },
-  {
-   "decision": "L",
-   "gameDate": "2026-11-03",
-   "gameId": 2026020238,
-   "gameTypeId": 2,
-   "gamesStarted": 0,
-   "goalsAgainst": 1,
-   "homeRoadFlag": "R",
-   "opponentAbbrev": "TBL",
-   "penaltyMins": 0,
-   "savePctg": 0.923077,
-   "shotsAgainst": 13,
-   "teamAbbrev": "DET",
-   "toi": "36:59"
   }
  ],
  "seasonTotals": [
@@ -710,19 +710,19 @@
   {
    "assists": 0,
    "gameTypeId": 2,
-   "gamesPlayed": 10,
-   "gamesStarted": 8,
+   "gamesPlayed": 11,
+   "gamesStarted": 9,
    "goals": 0,
-   "goalsAgainst": 18,
-   "goalsAgainstAvg": 1.980077,
+   "goalsAgainst": 19,
+   "goalsAgainstAvg": 1.883934,
    "leagueAbbrev": "NHL",
    "losses": 4,
    "otLosses": 2,
    "pim": 0,
-   "savePctg": 0.927126,
+   "savePctg": 0.930403,
    "season": 20262027,
    "sequence": 1,
-   "shotsAgainst": 247,
+   "shotsAgainst": 273,
    "shutouts": 2,
    "teamCommonName": {
     "default": "Red Wings"
@@ -735,8 +735,8 @@
     "default": "Detroit",
     "fr": "de Detroit"
    },
-   "timeOnIce": "545:26",
-   "wins": 3
+   "timeOnIce": "605:07",
+   "wins": 4
   }
  ],
  "currentTeamRoster": [

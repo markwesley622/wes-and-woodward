@@ -31,11 +31,11 @@
   {
    "league": "OHL",
    "team": "Windsor Spitfires",
-   "gp": 25,
+   "gp": 26,
    "g": 8,
    "a": 9,
    "pts": 17,
-   "pm": 1,
+   "pm": -3,
    "pim": 8,
    "gaa": null,
    "svp": null,
@@ -140,11 +140,11 @@
     {
      "league": "OHL",
      "team": "Windsor Spitfires",
-     "gp": 25,
+     "gp": 26,
      "g": 8,
      "a": 9,
      "pts": 17,
-     "pm": 1,
+     "pm": -3,
      "pim": 8,
      "gaa": null,
      "svp": null,
@@ -254,18 +254,18 @@
   "table": "OHL",
   "coef": 0.144,
   "team": "Windsor Spitfires",
-  "gp": 25,
+  "gp": 26,
   "g": 8,
   "a": 9,
   "pts": 17,
-  "pgp": 0.68,
-  "lineGp": 25,
-  "nhle": 0.098,
-  "nhlePace": 8.2,
+  "pgp": 0.654,
+  "lineGp": 26,
+  "nhle": 0.094,
+  "nhlePace": 7.9,
   "lines": [
    "OHL"
   ],
-  "feature": 0.098
+  "feature": 0.094
  },
  "league": {
   "name": "OHL",
@@ -290,34 +290,64 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 77,
-   "gp": 25,
-   "value": 0.68,
+   "gp": 26,
+   "value": 0.6538,
    "percentile": 51.9,
-   "percentileAllAges": 68.5,
+   "percentileAllAges": 65.4,
    "allAgesN": 1875
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 4.4,
+  "expected": 2.5,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 19.2,
-  "pRegular": 0.2,
-  "pTopLine": 0.02,
-  "pAboveAvg": 0.02,
-  "pElite": 0.02,
+  "p90": 15.8,
+  "pRegular": 0.16,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.0,
+  "pElite": 0.0,
   "poolN": 1305,
   "group": "F",
   "age": 19,
   "pickWeight": 0.5,
   "tier": "replacement level",
-  "pCeiling": 0.2,
+  "pCeiling": 0.16,
   "featureBand": [
-   0.081,
-   0.115
+   0.077,
+   0.109
   ],
   "examples": [
+   {
+    "name": "Chris Wagner",
+    "year": 2010,
+    "pick": 122,
+    "league": "NCAA",
+    "feature": 0.09,
+    "peak": 15.8,
+    "tier": "replacement level",
+    "nhlGp": 401
+   },
+   {
+    "name": "Yegor Spiridonov",
+    "year": 2019,
+    "pick": 108,
+    "league": "VHL",
+    "feature": 0.096,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Taylor Stefishen",
+    "year": 2008,
+    "pick": 136,
+    "league": "NCAA",
+    "feature": 0.093,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
    {
     "name": "Tomas Vincour",
     "year": 2009,
@@ -349,51 +379,21 @@
     "nhlGp": 325
    },
    {
-    "name": "Kale Kessy",
-    "year": 2011,
-    "pick": 111,
-    "league": "WHL",
-    "feature": 0.101,
+    "name": "Clark Bishop",
+    "year": 2014,
+    "pick": 127,
+    "league": "QMJHL",
+    "feature": 0.088,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 0
+    "nhlGp": 53
    },
    {
-    "name": "Yegor Spiridonov",
-    "year": 2019,
-    "pick": 108,
-    "league": "VHL",
-    "feature": 0.096,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Chris Wagner",
-    "year": 2010,
-    "pick": 122,
-    "league": "NCAA",
-    "feature": 0.09,
-    "peak": 15.8,
-    "tier": "replacement level",
-    "nhlGp": 401
-   },
-   {
-    "name": "Erik Jinesj\u00f6 Karlsson",
-    "year": 2012,
-    "pick": 99,
-    "league": "SHL",
-    "feature": 0.098,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Evan Campbell",
-    "year": 2013,
-    "pick": 128,
+    "name": "Liam Coughlin",
+    "year": 2014,
+    "pick": 130,
     "league": "BCHL",
-    "feature": 0.104,
+    "feature": 0.089,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -417,8 +417,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 4.4,
-  "expected": 6.7,
+  "cohortExpected": 2.5,
+  "expected": 5.2,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -431,19 +431,19 @@
   "to": {
    "season": "2026-2027",
    "league": "OHL",
-   "feature": 0.098,
-   "gp": 25
+   "feature": 0.094,
+   "gp": 26
   },
-  "delta": 0.041
+  "delta": 0.037
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 25,
+  "gp": 26,
   "season": "2026-2027"
  },
- "rank": 17,
- "score": 6.7,
+ "rank": 22,
+ "score": 5.2,
  "rankStart": 19,
  "rankStartDate": "2026-10-06"
 }

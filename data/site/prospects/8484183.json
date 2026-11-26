@@ -31,12 +31,12 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 21,
+   "gp": 22,
    "g": 9,
    "a": 11,
    "pts": 20,
-   "pm": 7,
-   "pim": 9,
+   "pm": 5,
+   "pim": 11,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -89,12 +89,12 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 21,
+     "gp": 22,
      "g": 9,
      "a": 11,
      "pts": 20,
-     "pm": 7,
-     "pim": 9,
+     "pm": 5,
+     "pim": 11,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -298,18 +298,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 21,
+  "gp": 22,
   "g": 9,
   "a": 11,
   "pts": 20,
-  "pgp": 0.952,
-  "lineGp": 21,
-  "nhle": 0.37,
-  "nhlePace": 31.1,
+  "pgp": 0.909,
+  "lineGp": 22,
+  "nhle": 0.354,
+  "nhlePace": 29.7,
   "lines": [
    "AHL"
   ],
-  "feature": 0.37
+  "feature": 0.354
  },
  "league": {
   "name": "AHL",
@@ -334,8 +334,8 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 41,
-   "gp": 21,
-   "value": 0.9524,
+   "gp": 22,
+   "value": 0.9091,
    "percentile": 82.9,
    "percentileAllAges": 85.7,
    "allAgesN": 642
@@ -343,14 +343,14 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 30.4,
-  "median": 27.9,
+  "expected": 29.6,
+  "median": 29.5,
   "p75": 52.2,
-  "p90": 83.7,
+  "p90": 70.3,
   "pRegular": 0.6,
-  "pTopLine": 0.12,
+  "pTopLine": 0.08,
   "pAboveAvg": 0.26,
-  "pElite": 0.08,
+  "pElite": 0.04,
   "poolN": 1122,
   "group": "F",
   "age": 21,
@@ -358,89 +358,89 @@
   "tier": "above average",
   "pCeiling": 0.26,
   "featureBand": [
-   0.331,
-   0.408
+   0.32,
+   0.387
   ],
   "examples": [
    {
-    "name": "Mattias Janmark",
-    "year": 2013,
-    "pick": 79,
-    "league": "SHL",
-    "feature": 0.37,
-    "peak": 54.7,
-    "tier": "above average",
-    "nhlGp": 680
-   },
-   {
-    "name": "Filip Cederqvist",
-    "year": 2019,
-    "pick": 143,
-    "league": "SHL",
-    "feature": 0.37,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Oliver Bjorkstrand",
-    "year": 2013,
-    "pick": 89,
-    "league": "AHL",
-    "feature": 0.367,
-    "peak": 83.7,
-    "tier": "top-line",
-    "nhlGp": 708
-   },
-   {
-    "name": "Nikolai Kovalenko",
-    "year": 2018,
-    "pick": 171,
-    "league": "KHL",
-    "feature": 0.373,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 57
-   },
-   {
-    "name": "Andrew Mangiapane",
-    "year": 2015,
-    "pick": 166,
-    "league": "AHL",
-    "feature": 0.365,
-    "peak": 70.3,
-    "tier": "above average",
-    "nhlGp": 561
-   },
-   {
-    "name": "Jakob Pelletier",
-    "year": 2019,
-    "pick": 26,
-    "league": "AHL",
-    "feature": 0.363,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 91
-   },
-   {
-    "name": "Brandon Pirri",
-    "year": 2009,
-    "pick": 59,
-    "league": "AHL",
-    "feature": 0.379,
-    "peak": 58.2,
-    "tier": "above average",
-    "nhlGp": 276
-   },
-   {
-    "name": "Devante Smith-Pelly",
+    "name": "Calle J\u00e4rnkrok",
     "year": 2010,
-    "pick": 42,
+    "pick": 51,
     "league": "AHL",
-    "feature": 0.361,
-    "peak": 29.5,
+    "feature": 0.353,
+    "peak": 67.2,
+    "tier": "above average",
+    "nhlGp": 774
+   },
+   {
+    "name": "Shane Prince",
+    "year": 2011,
+    "pick": 61,
+    "league": "AHL",
+    "feature": 0.355,
+    "peak": 39.9,
     "tier": "below average",
-    "nhlGp": 395
+    "nhlGp": 128
+   },
+   {
+    "name": "Morgan Barron",
+    "year": 2017,
+    "pick": 174,
+    "league": "AHL",
+    "feature": 0.353,
+    "peak": 32.5,
+    "tier": "below average",
+    "nhlGp": 324
+   },
+   {
+    "name": "Valtteri Puustinen",
+    "year": 2019,
+    "pick": 203,
+    "league": "Liiga",
+    "feature": 0.355,
+    "peak": 37.8,
+    "tier": "below average",
+    "nhlGp": 66
+   },
+   {
+    "name": "Linden Vey",
+    "year": 2009,
+    "pick": 96,
+    "league": "AHL",
+    "feature": 0.352,
+    "peak": 29.7,
+    "tier": "below average",
+    "nhlGp": 138
+   },
+   {
+    "name": "Jonatan Berggren",
+    "year": 2018,
+    "pick": 33,
+    "league": "AHL",
+    "feature": 0.356,
+    "peak": 42.9,
+    "tier": "below average",
+    "nhlGp": 207
+   },
+   {
+    "name": "Jeremy Morin",
+    "year": 2009,
+    "pick": 45,
+    "league": "AHL",
+    "feature": 0.351,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 82
+   },
+   {
+    "name": "Morgan Geekie",
+    "year": 2017,
+    "pick": 67,
+    "league": "AHL",
+    "feature": 0.357,
+    "peak": 83.5,
+    "tier": "top-line",
+    "nhlGp": 418
    }
   ]
  },
@@ -461,8 +461,8 @@
   "w": 0.0,
   "sinceDraft": 3,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 30.4,
-  "expected": 30.4,
+  "cohortExpected": 29.6,
+  "expected": 29.6,
   "tier": "below average"
  },
  "trajectory": {
@@ -475,19 +475,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.37,
-   "gp": 21
+   "feature": 0.354,
+   "gp": 22
   },
-  "delta": 0.14
+  "delta": 0.124
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 21,
+  "gp": 22,
   "season": "2026-2027"
  },
  "rank": 6,
- "score": 30.4,
+ "score": 29.6,
  "rankStart": 9,
  "rankStartDate": "2026-10-06"
 }

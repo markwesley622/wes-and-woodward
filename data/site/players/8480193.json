@@ -27,7 +27,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 10,
+  "gp": 11,
   "goals": null,
   "assists": null,
   "points": null,
@@ -37,44 +37,80 @@
   "shootingPct": null,
   "toiPerGame": null,
   "ppPoints": null,
-  "wins": 3,
+  "wins": 4,
   "losses": 4,
   "otLosses": 2,
-  "gaa": 1.980077,
-  "savePct": 0.927126,
+  "gaa": 1.883934,
+  "savePct": 0.930403,
   "shutouts": 2
  },
  "score": {
-  "value": 76.8,
-  "low": 52.5,
-  "high": 90.8,
-  "gsax": 9.1,
-  "xGoals": 27.1,
-  "goals": 18.0,
-  "minutes": 545,
-  "pool": 38,
-  "rank": null,
-  "percentile": 86.8,
-  "reliability": 0.27,
+  "value": 82.9,
+  "low": 62.2,
+  "high": 93.5,
+  "gsax": 11.5,
+  "xGoals": 30.5,
+  "goals": 19.0,
+  "minutes": 605,
+  "pool": 42,
+  "rank": 3,
+  "percentile": 92.9,
+  "reliability": 0.29,
   "group": "goalies",
-  "neighbors": [],
+  "neighbors": [
+   {
+    "rank": 1,
+    "name": "Jesper Wallstedt",
+    "value": 91.2,
+    "gsax": 16.2,
+    "isMe": false
+   },
+   {
+    "rank": 2,
+    "name": "Jake Oettinger",
+    "value": 87.4,
+    "gsax": 13.7,
+    "isMe": false
+   },
+   {
+    "rank": 3,
+    "name": "Daniil Tarasov",
+    "value": 82.9,
+    "gsax": 11.5,
+    "isMe": true
+   },
+   {
+    "rank": 4,
+    "name": "Linus Ullmark",
+    "value": 82.9,
+    "gsax": 11.5,
+    "isMe": false
+   },
+   {
+    "rank": 5,
+    "name": "Joel Hofer",
+    "value": 81.2,
+    "gsax": 10.8,
+    "isMe": false
+   }
+  ],
   "method": "A 0-100 rating where 50 is the average NHL goalie with 600+ minutes; built on goals saved above expected (MoneyPuck, all situations), this season only."
  },
  "moneypuck": {
   "playerId": 8480193,
   "name": "Daniil Tarasov",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480193.png",
-  "gamesPlayed": 10,
-  "gamesStarted": 8,
-  "wins": 3,
+  "gamesPlayed": 11,
+  "gamesStarted": 9,
+  "wins": 4,
   "losses": 4,
   "otLosses": 2,
-  "savePct": 0.927126,
-  "gaa": 1.980077,
+  "savePct": 0.930403,
+  "gaa": 1.883934,
   "shutouts": 2,
-  "gsax": 9.11,
-  "pctl_gsax": 86.8,
-  "qualifiesForPercentiles": false
+  "gsax": 11.53,
+  "pctl_gsax": 92.9,
+  "qualifiesForPercentiles": true
  },
  "gameLog": [
   {
@@ -206,6 +242,19 @@
    "savePct": 0.9,
    "shutout": 0,
    "toi": 57.0
+  },
+  {
+   "gameId": 2026020394,
+   "date": "2026-11-25",
+   "opponent": "VAN",
+   "home": true,
+   "started": 1,
+   "decision": "W",
+   "shotsAgainst": 26,
+   "goalsAgainst": 1,
+   "savePct": 0.961538,
+   "shutout": 0,
+   "toi": 59.7
   }
  ],
  "gameScore": null,
@@ -216,7 +265,7 @@
  "myComponents": null,
  "hsc": {},
  "note": null,
- "detGames": 10,
+ "detGames": 11,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -229,5 +278,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-25T06:58:57-08:00"
+ "updatedAt": "2026-11-26T07:11:14-08:00"
 }

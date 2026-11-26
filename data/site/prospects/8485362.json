@@ -31,12 +31,12 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 19,
+   "gp": 20,
    "g": 6,
    "a": 14,
    "pts": 20,
    "pm": 8,
-   "pim": 14,
+   "pim": 16,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -89,12 +89,12 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 19,
+     "gp": 20,
      "g": 6,
      "a": 14,
      "pts": 20,
      "pm": 8,
-     "pim": 14,
+     "pim": 16,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -152,18 +152,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 19,
+  "gp": 20,
   "g": 6,
   "a": 14,
   "pts": 20,
-  "pgp": 1.053,
-  "lineGp": 19,
-  "nhle": 0.409,
-  "nhlePace": 34.4,
+  "pgp": 1.0,
+  "lineGp": 20,
+  "nhle": 0.389,
+  "nhlePace": 32.7,
   "lines": [
    "AHL"
   ],
-  "feature": 0.409
+  "feature": 0.389
  },
  "league": {
   "name": "AHL",
@@ -188,22 +188,22 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 30,
-   "gp": 19,
-   "value": 1.0526,
-   "percentile": 93.3,
-   "percentileAllAges": 90.5,
+   "gp": 20,
+   "value": 1.0,
+   "percentile": 90.0,
+   "percentileAllAges": 84.9,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 58.2,
-  "median": 68.5,
-  "p75": 91.4,
-  "p90": 96.0,
+  "expected": 58.8,
+  "median": 70.2,
+  "p75": 90.1,
+  "p90": 95.8,
   "pRegular": 0.82,
-  "pTopLine": 0.44,
-  "pAboveAvg": 0.64,
+  "pTopLine": 0.46,
+  "pAboveAvg": 0.66,
   "pElite": 0.28,
   "poolN": 1305,
   "group": "F",
@@ -212,8 +212,8 @@
   "tier": "elite",
   "pCeiling": 0.28,
   "featureBand": [
-   0.272,
-   0.504
+   0.258,
+   0.489
   ],
   "examples": [
    {
@@ -287,14 +287,14 @@
     "nhlGp": 1064
    },
    {
-    "name": "Tyler Ennis",
-    "year": 2008,
-    "pick": 26,
+    "name": "Marko Dano",
+    "year": 2013,
+    "pick": 27,
     "league": "AHL",
-    "feature": 0.434,
-    "peak": 77.2,
-    "tier": "top-line",
-    "nhlGp": 700
+    "feature": 0.384,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 141
    }
   ]
  },
@@ -315,8 +315,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 65.9,
-  "cohortExpected": 58.2,
-  "expected": 60.1,
+  "cohortExpected": 58.8,
+  "expected": 60.6,
   "tier": "above average"
  },
  "trajectory": {
@@ -329,19 +329,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.409,
-   "gp": 19
+   "feature": 0.389,
+   "gp": 20
   },
-  "delta": 0.212
+  "delta": 0.192
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 19,
+  "gp": 20,
   "season": "2026-2027"
  },
  "rank": 1,
- "score": 60.1,
+ "score": 60.6,
  "rankStart": 1,
  "rankStartDate": "2026-10-06"
 }

@@ -31,12 +31,12 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 21,
+   "gp": 22,
    "g": 3,
    "a": 10,
    "pts": 13,
    "pm": -1,
-   "pim": 8,
+   "pim": 10,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -72,12 +72,12 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 21,
+     "gp": 22,
      "g": 3,
      "a": 10,
      "pts": 13,
      "pm": -1,
-     "pim": 8,
+     "pim": 10,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -140,18 +140,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 21,
+  "gp": 22,
   "g": 3,
   "a": 10,
   "pts": 13,
-  "pgp": 0.619,
-  "lineGp": 21,
-  "nhle": 0.241,
-  "nhlePace": 20.2,
+  "pgp": 0.591,
+  "lineGp": 22,
+  "nhle": 0.23,
+  "nhlePace": 19.3,
   "lines": [
    "AHL"
   ],
-  "feature": 0.241
+  "feature": 0.23
  },
  "league": {
   "name": "AHL",
@@ -176,110 +176,110 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 44,
-   "gp": 21,
-   "value": 0.619,
+   "gp": 22,
+   "value": 0.5909,
    "percentile": 56.8,
-   "percentileAllAges": 63.4,
+   "percentileAllAges": 62.5,
    "allAgesN": 642
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 10.3,
+  "expected": 7.8,
   "median": 0.0,
-  "p75": 4.5,
-  "p90": 51.3,
-  "pRegular": 0.28,
-  "pTopLine": 0.02,
-  "pAboveAvg": 0.1,
-  "pElite": 0.02,
+  "p75": 0.0,
+  "p90": 37.8,
+  "pRegular": 0.26,
+  "pTopLine": 0.0,
+  "pAboveAvg": 0.08,
+  "pElite": 0.0,
   "poolN": 1006,
   "group": "F",
   "age": 22,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.28,
+  "pCeiling": 0.26,
   "featureBand": [
-   0.232,
-   0.25
+   0.22,
+   0.24
   ],
   "examples": [
    {
-    "name": "Mitch Callahan",
-    "year": 2009,
-    "pick": 180,
-    "league": "AHL",
-    "feature": 0.241,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 5
-   },
-   {
-    "name": "Joey Hishon",
-    "year": 2010,
-    "pick": 17,
-    "league": "AHL",
-    "feature": 0.242,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 13
-   },
-   {
-    "name": "Bill Arnold",
-    "year": 2010,
-    "pick": 108,
-    "league": "AHL",
-    "feature": 0.242,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
-   },
-   {
-    "name": "Garret Ross",
-    "year": 2012,
-    "pick": 139,
-    "league": "AHL",
-    "feature": 0.242,
+    "name": "Danny Kristo",
+    "year": 2008,
+    "pick": 56,
+    "league": "NCAA",
+    "feature": 0.23,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Givani Smith",
-    "year": 2016,
-    "pick": 46,
+    "name": "Alexander Volkov",
+    "year": 2017,
+    "pick": 48,
     "league": "AHL",
-    "feature": 0.24,
-    "peak": 4.5,
-    "tier": "replacement level",
-    "nhlGp": 168
-   },
-   {
-    "name": "Craig Cunningham",
-    "year": 2010,
-    "pick": 97,
-    "league": "AHL",
-    "feature": 0.239,
+    "feature": 0.23,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 63
+    "nhlGp": 46
    },
    {
-    "name": "Alexander Kerfoot",
-    "year": 2012,
-    "pick": 150,
-    "league": "NCAA",
-    "feature": 0.243,
-    "peak": 65.8,
-    "tier": "above average",
-    "nhlGp": 641
-   },
-   {
-    "name": "Cliff Pu",
-    "year": 2016,
-    "pick": 69,
+    "name": "Grigori Denisenko",
+    "year": 2018,
+    "pick": 15,
     "league": "AHL",
-    "feature": 0.243,
+    "feature": 0.23,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 33
+   },
+   {
+    "name": "Nikita Korostelyov",
+    "year": 2015,
+    "pick": 185,
+    "league": "KHL",
+    "feature": 0.231,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ryan Suzuki",
+    "year": 2019,
+    "pick": 28,
+    "league": "AHL",
+    "feature": 0.229,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 2
+   },
+   {
+    "name": "Corban Knight",
+    "year": 2009,
+    "pick": 135,
+    "league": "NCAA",
+    "feature": 0.232,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 52
+   },
+   {
+    "name": "Joe Colborne",
+    "year": 2008,
+    "pick": 16,
+    "league": "AHL",
+    "feature": 0.233,
+    "peak": 71.4,
+    "tier": "above average",
+    "nhlGp": 295
+   },
+   {
+    "name": "Mikhail Stefanovich",
+    "year": 2008,
+    "pick": 98,
+    "league": "Belarus",
+    "feature": 0.227,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -303,8 +303,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 13.4,
-  "cohortExpected": 10.3,
-  "expected": 10.3,
+  "cohortExpected": 7.8,
+  "expected": 7.8,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -317,19 +317,19 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.241,
-   "gp": 21
+   "feature": 0.23,
+   "gp": 22
   },
-  "delta": 0.059
+  "delta": 0.048
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 21,
+  "gp": 22,
   "season": "2026-2027"
  },
- "rank": 14,
- "score": 10.3,
+ "rank": 16,
+ "score": 7.8,
  "rankStart": 16,
  "rankStartDate": "2026-10-06"
 }
