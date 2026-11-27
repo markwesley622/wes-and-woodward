@@ -31,12 +31,12 @@
   {
    "league": "SHL",
    "team": "Timr\u00e5 IK",
-   "gp": 18,
+   "gp": 19,
    "g": 8,
-   "a": 7,
-   "pts": 15,
-   "pm": 3,
-   "pim": 14,
+   "a": 8,
+   "pts": 16,
+   "pm": 2,
+   "pim": 16,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -123,12 +123,12 @@
     {
      "league": "SHL",
      "team": "Timr\u00e5 IK",
-     "gp": 18,
+     "gp": 19,
      "g": 8,
-     "a": 7,
-     "pts": 15,
-     "pm": 3,
-     "pim": 14,
+     "a": 8,
+     "pts": 16,
+     "pm": 2,
+     "pim": 16,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -220,18 +220,18 @@
   "table": "SHL",
   "coef": 0.566,
   "team": "Timr\u00e5 IK",
-  "gp": 18,
+  "gp": 19,
   "g": 8,
-  "a": 7,
-  "pts": 15,
-  "pgp": 0.833,
-  "lineGp": 18,
-  "nhle": 0.472,
-  "nhlePace": 39.6,
+  "a": 8,
+  "pts": 16,
+  "pgp": 0.842,
+  "lineGp": 19,
+  "nhle": 0.477,
+  "nhlePace": 40.1,
   "lines": [
    "SHL"
   ],
-  "feature": 0.472
+  "feature": 0.477
  },
  "league": {
   "name": "SHL",
@@ -256,8 +256,8 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 15,
-   "gp": 18,
-   "value": 0.8333,
+   "gp": 19,
+   "value": 0.8421,
    "percentile": 93.3,
    "percentileAllAges": 94.4,
    "allAgesN": 234
@@ -345,16 +345,6 @@
     "nhlGp": 343
    },
    {
-    "name": "Jesper Boqvist",
-    "year": 2017,
-    "pick": 36,
-    "league": "SHL",
-    "feature": 0.388,
-    "peak": 42.6,
-    "tier": "below average",
-    "nhlGp": 387
-   },
-   {
     "name": "Mikael Granlund",
     "year": 2010,
     "pick": 9,
@@ -363,6 +353,16 @@
     "peak": 94.0,
     "tier": "elite",
     "nhlGp": 962
+   },
+   {
+    "name": "Jesper Boqvist",
+    "year": 2017,
+    "pick": 36,
+    "league": "SHL",
+    "feature": 0.388,
+    "peak": 42.6,
+    "tier": "below average",
+    "nhlGp": 387
    }
   ]
  },
@@ -397,15 +397,15 @@
   "to": {
    "season": "2026-2027",
    "league": "SHL",
-   "feature": 0.472,
-   "gp": 18
+   "feature": 0.477,
+   "gp": 19
   },
-  "delta": 0.186
+  "delta": 0.191
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 18,
+  "gp": 19,
   "season": "2026-2027"
  },
  "rank": 2,

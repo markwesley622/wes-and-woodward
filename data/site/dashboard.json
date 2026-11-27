@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T13:12+00:00",
+ "generatedAt": "2026-11-27T13:06+00:00",
  "season": "20262027",
  "seasonLabel": "2026-27",
  "seasonGames": 84,
@@ -33,7 +33,7 @@
   },
   "wildcard": 7,
   "clinch": null,
-  "asOf": "2026-11-25"
+  "asOf": "2026-11-26"
  },
  "deserved": {
   "xgWinPct": 0.4832,
@@ -372,29 +372,29 @@
   "source": "MoneyPuck season simulation",
   "available": true,
   "points": 84.1,
-  "playoffOdds": 0.071,
+  "playoffOdds": 0.0729,
   "divisionOdds": 0.001,
-  "wildcardOdds": 0.053000000000000005,
-  "cupOdds": 0.003,
+  "wildcardOdds": 0.054,
+  "cupOdds": 0.002,
   "lotteryOdds": 0.048,
   "preseasonPoints": 88.6,
   "preseasonPlayoffOdds": 0.2553,
   "nextGame": {
    "WINREG": {
     "points": 1.0,
-    "playoffOdds": 0.0147
+    "playoffOdds": 0.0159
    },
    "WINOT": {
-    "points": 0.9,
-    "playoffOdds": 0.0092
+    "points": 1.0,
+    "playoffOdds": 0.0138
    },
    "LOSSOT": {
-    "points": -0.1,
-    "playoffOdds": -0.0056
+    "points": 0.0,
+    "playoffOdds": -0.0076
    },
    "LOSSREG": {
-    "points": -1.0,
-    "playoffOdds": -0.0151
+    "points": -1.1,
+    "playoffOdds": -0.0152
    }
   }
  },
@@ -410,10 +410,10 @@
    "label": "5v5 expected-goal share",
    "value": 50.0,
    "unit": "%",
-   "rank": 20,
+   "rank": 18,
    "of": 32,
    "note": "MoneyPuck, five-on-five",
-   "rankLabel": "20th of 32"
+   "rankLabel": "18th of 32"
   },
   {
    "key": "xg_share_5v5_adj",

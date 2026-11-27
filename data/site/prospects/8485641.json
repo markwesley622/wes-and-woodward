@@ -31,12 +31,12 @@
   {
    "league": "QMJHL",
    "team": "Cape Breton Eagles",
-   "gp": 10,
+   "gp": 11,
    "g": 0,
-   "a": 1,
-   "pts": 1,
-   "pm": -1,
-   "pim": 10,
+   "a": 2,
+   "pts": 2,
+   "pm": 2,
+   "pim": 14,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -72,12 +72,12 @@
     {
      "league": "QMJHL",
      "team": "Cape Breton Eagles",
-     "gp": 10,
+     "gp": 11,
      "g": 0,
-     "a": 1,
-     "pts": 1,
-     "pm": -1,
-     "pim": 10,
+     "a": 2,
+     "pts": 2,
+     "pm": 2,
+     "pim": 14,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -118,18 +118,18 @@
   "table": "QMJHL",
   "coef": 0.113,
   "team": "Cape Breton Eagles",
-  "gp": 10,
+  "gp": 11,
   "g": 0,
-  "a": 1,
-  "pts": 1,
-  "pgp": 0.1,
-  "lineGp": 10,
-  "nhle": 0.011,
-  "nhlePace": 0.9,
+  "a": 2,
+  "pts": 2,
+  "pgp": 0.182,
+  "lineGp": 11,
+  "nhle": 0.021,
+  "nhlePace": 1.8,
   "lines": [
    "QMJHL"
   ],
-  "feature": 0.011
+  "feature": 0.021
  },
  "league": {
   "name": "QMJHL",
@@ -153,13 +153,13 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 4.2,
+  "expected": 3.4,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
   "pRegular": 0.08,
   "pTopLine": 0.02,
-  "pAboveAvg": 0.06,
+  "pAboveAvg": 0.04,
   "pElite": 0.0,
   "poolN": 794,
   "group": "D",
@@ -168,89 +168,89 @@
   "tier": "replacement level",
   "pCeiling": 0.08,
   "featureBand": [
-   0.0,
-   0.03
+   0.01,
+   0.034
   ],
   "examples": [
    {
-    "name": "Braden Birch",
-    "year": 2008,
-    "pick": 179,
-    "league": "NCAA",
-    "feature": 0.012,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Dillon Donnelly",
-    "year": 2011,
-    "pick": 183,
-    "league": "QMJHL",
-    "feature": 0.012,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Teigan Zahn",
-    "year": 2010,
-    "pick": 186,
-    "league": "WHL",
-    "feature": 0.01,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Tyler Stahl",
-    "year": 2010,
-    "pick": 167,
-    "league": "WHL",
-    "feature": 0.014,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Kevin Lind",
-    "year": 2010,
-    "pick": 177,
-    "league": "NCAA",
-    "feature": 0.015,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Barron Smith",
-    "year": 2009,
-    "pick": 188,
-    "league": "OHL",
-    "feature": 0.009,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Andong Song",
+    "name": "Nick Boka",
     "year": 2015,
-    "pick": 172,
-    "league": "USHL",
-    "feature": 0.005,
+    "pick": 171,
+    "league": "NCAA",
+    "feature": 0.023,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Andrew MacWilliam",
-    "year": 2008,
-    "pick": 188,
-    "league": "NCAA",
-    "feature": 0.014,
+    "name": "Mark Shoemaker",
+    "year": 2016,
+    "pick": 180,
+    "league": "OHL",
+    "feature": 0.022,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 12
+    "nhlGp": 0
+   },
+   {
+    "name": "Adam Parsells",
+    "year": 2015,
+    "pick": 160,
+    "league": "USHL",
+    "feature": 0.021,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Cliff Watson",
+    "year": 2012,
+    "pick": 168,
+    "league": "NCAA",
+    "feature": 0.019,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Rasmus Rissanen",
+    "year": 2009,
+    "pick": 178,
+    "league": "WHL",
+    "feature": 0.023,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 6
+   },
+   {
+    "name": "Ronald Boyd",
+    "year": 2010,
+    "pick": 183,
+    "league": "USHL",
+    "feature": 0.022,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Vincent Desharnais",
+    "year": 2016,
+    "pick": 183,
+    "league": "NCAA",
+    "feature": 0.02,
+    "peak": 8.7,
+    "tier": "replacement level",
+    "nhlGp": 220
+   },
+   {
+    "name": "Riley Bruce",
+    "year": 2015,
+    "pick": 196,
+    "league": "OHL",
+    "feature": 0.021,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -271,8 +271,8 @@
   "w": 0.25,
   "sinceDraft": 1,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 4.2,
-  "expected": 4.9,
+  "cohortExpected": 3.4,
+  "expected": 4.3,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -285,19 +285,19 @@
   "to": {
    "season": "2026-2027",
    "league": "QMJHL",
-   "feature": 0.011,
-   "gp": 10
+   "feature": 0.021,
+   "gp": 11
   },
-  "delta": -0.013
+  "delta": -0.003
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 10,
+  "gp": 11,
   "season": "2026-2027"
  },
- "rank": 24,
- "score": 4.9,
+ "rank": 26,
+ "score": 4.3,
  "rankStart": 24,
  "rankStartDate": "2026-10-06"
 }
