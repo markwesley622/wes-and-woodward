@@ -31,7 +31,7 @@
   {
    "league": "AHL",
    "team": "Grand Rapids Griffins",
-   "gp": 13,
+   "gp": 14,
    "g": 2,
    "a": 2,
    "pts": 4,
@@ -72,7 +72,7 @@
     {
      "league": "AHL",
      "team": "Grand Rapids Griffins",
-     "gp": 13,
+     "gp": 14,
      "g": 2,
      "a": 2,
      "pts": 4,
@@ -162,18 +162,18 @@
   "table": "AHL",
   "coef": 0.389,
   "team": "Grand Rapids Griffins",
-  "gp": 13,
+  "gp": 14,
   "g": 2,
   "a": 2,
   "pts": 4,
-  "pgp": 0.308,
-  "lineGp": 13,
-  "nhle": 0.12,
-  "nhlePace": 10.1,
+  "pgp": 0.286,
+  "lineGp": 14,
+  "nhle": 0.111,
+  "nhlePace": 9.3,
   "lines": [
    "AHL"
   ],
-  "feature": 0.12
+  "feature": 0.111
  },
  "league": {
   "name": "AHL",
@@ -198,10 +198,10 @@
    "season": "2026-2027",
    "ageBucket": "U24",
    "cohortN": 52,
-   "gp": 13,
-   "value": 0.3077,
-   "percentile": 32.7,
-   "percentileAllAges": 39.1,
+   "gp": 14,
+   "value": 0.2857,
+   "percentile": 30.8,
+   "percentileAllAges": 38.0,
    "allAgesN": 642
   }
  },
@@ -222,86 +222,86 @@
   "tier": "replacement level",
   "pCeiling": 0.0,
   "featureBand": [
-   0.097,
-   0.145
+   0.084,
+   0.135
   ],
   "examples": [
    {
-    "name": "Brody Sutter",
-    "year": 2011,
-    "pick": 193,
-    "league": "AHL",
-    "feature": 0.12,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 12
-   },
-   {
-    "name": "Garret Ross",
-    "year": 2012,
-    "pick": 139,
-    "league": "AHL",
-    "feature": 0.12,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Conner Bleackley",
-    "year": 2016,
-    "pick": 144,
-    "league": "ECHL",
-    "feature": 0.121,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Todd Burgess",
-    "year": 2016,
-    "pick": 103,
-    "league": "NCAA",
-    "feature": 0.121,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Greg Meireles",
-    "year": 2019,
-    "pick": 168,
-    "league": "AHL",
-    "feature": 0.119,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Brendan Woods",
-    "year": 2012,
-    "pick": 129,
-    "league": "AHL",
-    "feature": 0.122,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 7
-   },
-   {
-    "name": "Maxime Legault",
+    "name": "Alexander F\u00e4llstr\u00f6m",
     "year": 2009,
-    "pick": 194,
+    "pick": 116,
     "league": "AHL",
-    "feature": 0.117,
+    "feature": 0.111,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Alexandre Mallet",
-    "year": 2012,
-    "pick": 57,
+    "name": "Jakob Stukel",
+    "year": 2016,
+    "pick": 154,
+    "league": "AHL",
+    "feature": 0.111,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Troy Josephs",
+    "year": 2013,
+    "pick": 209,
     "league": "ECHL",
-    "feature": 0.116,
+    "feature": 0.113,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jake Marchment",
+    "year": 2014,
+    "pick": 157,
+    "league": "ECHL",
+    "feature": 0.109,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Bokondji Imama",
+    "year": 2015,
+    "pick": 180,
+    "league": "AHL",
+    "feature": 0.109,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 36
+   },
+   {
+    "name": "Liam Coughlin",
+    "year": 2014,
+    "pick": 130,
+    "league": "NCAA",
+    "feature": 0.114,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Kirill Tyutyayev",
+    "year": 2019,
+    "pick": 190,
+    "league": "ECHL",
+    "feature": 0.114,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Spencer Smallman",
+    "year": 2015,
+    "pick": 138,
+    "league": "AHL",
+    "feature": 0.107,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -339,15 +339,15 @@
   "to": {
    "season": "2026-2027",
    "league": "AHL",
-   "feature": 0.12,
-   "gp": 13
+   "feature": 0.111,
+   "gp": 14
   },
-  "delta": -0.048
+  "delta": -0.057
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 13,
+  "gp": 14,
   "season": "2026-2027"
  },
  "rank": 32,

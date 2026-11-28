@@ -45,52 +45,52 @@
   "shutouts": 2
  },
  "score": {
-  "value": 82.9,
-  "low": 62.2,
-  "high": 93.5,
+  "value": 83.4,
+  "low": 62.9,
+  "high": 93.7,
   "gsax": 11.5,
   "xGoals": 30.5,
   "goals": 19.0,
   "minutes": 605,
-  "pool": 42,
+  "pool": 44,
   "rank": 3,
-  "percentile": 92.9,
+  "percentile": 93.2,
   "reliability": 0.29,
   "group": "goalies",
   "neighbors": [
    {
     "rank": 1,
     "name": "Jesper Wallstedt",
-    "value": 91.2,
-    "gsax": 16.2,
+    "value": 91.6,
+    "gsax": 16.4,
     "isMe": false
    },
    {
     "rank": 2,
     "name": "Jake Oettinger",
-    "value": 87.4,
+    "value": 87.7,
     "gsax": 13.7,
     "isMe": false
    },
    {
     "rank": 3,
     "name": "Daniil Tarasov",
-    "value": 82.9,
+    "value": 83.4,
     "gsax": 11.5,
     "isMe": true
    },
    {
     "rank": 4,
     "name": "Linus Ullmark",
-    "value": 82.9,
+    "value": 83.2,
     "gsax": 11.5,
     "isMe": false
    },
    {
     "rank": 5,
     "name": "Joel Hofer",
-    "value": 81.2,
-    "gsax": 10.8,
+    "value": 81.8,
+    "gsax": 10.9,
     "isMe": false
    }
   ],
@@ -109,7 +109,7 @@
   "gaa": 1.883934,
   "shutouts": 2,
   "gsax": 11.53,
-  "pctl_gsax": 92.9,
+  "pctl_gsax": 93.2,
   "qualifiesForPercentiles": true
  },
  "gameLog": [
@@ -278,5 +278,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-26T07:11:14-08:00"
+ "updatedAt": "2026-11-28T07:08:51-08:00"
 }

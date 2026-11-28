@@ -31,7 +31,7 @@
   {
    "league": "NCAA",
    "team": "Ferris State Univ.",
-   "gp": 12,
+   "gp": 13,
    "g": 2,
    "a": 3,
    "pts": 5,
@@ -72,7 +72,7 @@
     {
      "league": "NCAA",
      "team": "Ferris State Univ.",
-     "gp": 12,
+     "gp": 13,
      "g": 2,
      "a": 3,
      "pts": 5,
@@ -201,18 +201,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Ferris State Univ.",
-  "gp": 12,
+  "gp": 13,
   "g": 2,
   "a": 3,
   "pts": 5,
-  "pgp": 0.417,
-  "lineGp": 12,
-  "nhle": 0.081,
-  "nhlePace": 6.8,
+  "pgp": 0.385,
+  "lineGp": 13,
+  "nhle": 0.075,
+  "nhlePace": 6.3,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.081
+  "feature": 0.075
  },
  "league": {
   "name": "NCAA",
@@ -237,10 +237,10 @@
    "season": "2026-2027",
    "ageBucket": "U23",
    "cohortN": 167,
-   "gp": 12,
-   "value": 0.4167,
-   "percentile": 48.5,
-   "percentileAllAges": 47.8,
+   "gp": 13,
+   "value": 0.3846,
+   "percentile": 44.9,
+   "percentileAllAges": 45.6,
    "allAgesN": 2159
   }
  },
@@ -261,86 +261,86 @@
   "tier": "replacement level",
   "pCeiling": 0.02,
   "featureBand": [
-   0.076,
-   0.086
+   0.069,
+   0.081
   ],
   "examples": [
    {
-    "name": "Brady Vail",
+    "name": "David Toews",
+    "year": 2008,
+    "pick": 66,
+    "league": "ECHL",
+    "feature": 0.075,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Greg Burke",
+    "year": 2008,
+    "pick": 174,
+    "league": "NCAA",
+    "feature": 0.075,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Jared Knight",
+    "year": 2010,
+    "pick": 32,
+    "league": "AHL",
+    "feature": 0.075,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Michael Schumacher",
+    "year": 2011,
+    "pick": 200,
+    "league": "AHL",
+    "feature": 0.075,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "John McCarron",
     "year": 2012,
-    "pick": 94,
-    "league": "ECHL",
-    "feature": 0.081,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Alex Schoenborn",
-    "year": 2014,
-    "pick": 72,
-    "league": "ECHL",
-    "feature": 0.081,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Beau Starrett",
-    "year": 2014,
-    "pick": 88,
+    "pick": 153,
     "league": "NCAA",
-    "feature": 0.081,
+    "feature": 0.075,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Josh Nodler",
-    "year": 2019,
-    "pick": 150,
+    "name": "Ryan Olsen",
+    "year": 2012,
+    "pick": 160,
+    "league": "AHL",
+    "feature": 0.075,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Luke Stevens",
+    "year": 2015,
+    "pick": 126,
     "league": "NCAA",
-    "feature": 0.081,
+    "feature": 0.075,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Kirill Slepets",
-    "year": 2019,
-    "pick": 152,
-    "league": "Liiga",
-    "feature": 0.081,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Josh Birkholz",
-    "year": 2009,
-    "pick": 67,
+    "name": "Nick Pastujov",
+    "year": 2016,
+    "pick": 193,
     "league": "ECHL",
-    "feature": 0.082,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Radoslav Illo",
-    "year": 2009,
-    "pick": 136,
-    "league": "NCAA",
-    "feature": 0.08,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Evan Bloodoff",
-    "year": 2009,
-    "pick": 157,
-    "league": "ECHL",
-    "feature": 0.08,
+    "feature": 0.075,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -378,18 +378,18 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.081,
-   "gp": 12
+   "feature": 0.075,
+   "gp": 13
   },
-  "delta": 0.026
+  "delta": 0.02
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 12,
+  "gp": 13,
   "season": "2026-2027"
  },
- "rank": 31,
+ "rank": 30,
  "score": 0.2,
  "rankStart": 33,
  "rankStartDate": "2026-10-06"

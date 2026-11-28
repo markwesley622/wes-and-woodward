@@ -31,7 +31,7 @@
   {
    "league": "NCAA",
    "team": "Univ. of Notre Dame",
-   "gp": 15,
+   "gp": 16,
    "g": 1,
    "a": 2,
    "pts": 3,
@@ -72,7 +72,7 @@
     {
      "league": "NCAA",
      "team": "Univ. of Notre Dame",
-     "gp": 15,
+     "gp": 16,
      "g": 1,
      "a": 2,
      "pts": 3,
@@ -96,18 +96,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Univ. of Notre Dame",
-  "gp": 15,
+  "gp": 16,
   "g": 1,
   "a": 2,
   "pts": 3,
-  "pgp": 0.2,
-  "lineGp": 15,
-  "nhle": 0.039,
-  "nhlePace": 3.3,
+  "pgp": 0.188,
+  "lineGp": 16,
+  "nhle": 0.036,
+  "nhlePace": 3.0,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.039
+  "feature": 0.036
  },
  "league": {
   "name": "NCAA",
@@ -132,8 +132,8 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 18,
-   "gp": 15,
-   "value": 0.2,
+   "gp": 16,
+   "value": 0.1875,
    "percentile": 11.1,
    "percentileAllAges": 21.4,
    "allAgesN": 2159
@@ -161,6 +161,16 @@
   ],
   "examples": [
    {
+    "name": "Julien Cayer",
+    "year": 2008,
+    "pick": 151,
+    "league": "USHS-Prep",
+    "feature": 0.037,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
     "name": "Garret Ross",
     "year": 2012,
     "pick": 139,
@@ -176,6 +186,26 @@
     "pick": 148,
     "league": "BCHL",
     "feature": 0.041,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Nick Campoli",
+    "year": 2017,
+    "pick": 158,
+    "league": "OJHL",
+    "feature": 0.036,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ben Storm",
+    "year": 2013,
+    "pick": 153,
+    "league": "USHL",
+    "feature": 0.033,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -201,41 +231,11 @@
     "nhlGp": 0
    },
    {
-    "name": "Julien Cayer",
-    "year": 2008,
-    "pick": 151,
-    "league": "USHS-Prep",
-    "feature": 0.037,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Josh Nodler",
-    "year": 2019,
-    "pick": 150,
-    "league": "NCAA",
-    "feature": 0.043,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Jack Dugan",
-    "year": 2017,
-    "pick": 142,
-    "league": "USHS-Prep",
-    "feature": 0.048,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Seth Ambroz",
-    "year": 2011,
+    "name": "Evan Campbell",
+    "year": 2013,
     "pick": 128,
-    "league": "NCAA",
-    "feature": 0.038,
+    "league": "BCHL",
+    "feature": 0.035,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -273,18 +273,18 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.039,
-   "gp": 15
+   "feature": 0.036,
+   "gp": 16
   },
-  "delta": -0.062
+  "delta": -0.065
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 15,
+  "gp": 16,
   "season": "2026-2027"
  },
- "rank": 20,
+ "rank": 22,
  "score": 5.3,
  "rankStart": 17,
  "rankStartDate": "2026-10-06"

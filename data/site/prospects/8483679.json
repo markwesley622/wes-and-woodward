@@ -31,7 +31,7 @@
   {
    "league": "NHL",
    "team": "Detroit Red Wings",
-   "gp": 24,
+   "gp": 25,
    "g": 2,
    "a": 4,
    "pts": 6,
@@ -89,7 +89,7 @@
     {
      "league": "NHL",
      "team": "Detroit Red Wings",
-     "gp": 24,
+     "gp": 25,
      "g": 2,
      "a": 4,
      "pts": 6,
@@ -492,7 +492,7 @@
   "cohortExpected": 25.4,
   "expected": 27.6,
   "tier": "below average",
-  "nhlW": 0.55,
+  "nhlW": 0.56,
   "nhlExpected": 29.4,
   "beforeNhl": 25.4
  },
@@ -512,13 +512,13 @@
   "delta": 0.106
  },
  "nhlSample": {
-  "gp": 24,
+  "gp": 25,
   "pts": 6,
   "seasons": [
    20262027
   ],
   "thisSeason": {
-   "gp": 24,
+   "gp": 25,
    "pts": 6,
    "toi": "13:49",
    "savePct": null
@@ -537,10 +537,10 @@
   "poolN": 258,
   "group": "D",
   "age": 22,
-  "gp": 24,
+  "gp": 25,
   "toi": 829,
-  "ppg": 0.25,
-  "ppgShrunk": 0.224,
+  "ppg": 0.24,
+  "ppgShrunk": 0.219,
   "toiBand": [
    725,
    975
@@ -591,17 +591,6 @@
     "nhlGp": 73
    },
    {
-    "name": "Adam Clendening",
-    "season": "2015-2016",
-    "age": 22,
-    "gp": 29,
-    "toi": 888,
-    "ppg": 0.24,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 90
-   },
-   {
     "name": "Christian Jaros",
     "season": "2018-2019",
     "age": 22,
@@ -611,6 +600,17 @@
     "peak": 13.7,
     "tier": "replacement level",
     "nhlGp": 94
+   },
+   {
+    "name": "Adam Clendening",
+    "season": "2015-2016",
+    "age": 22,
+    "gp": 29,
+    "toi": 888,
+    "ppg": 0.24,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 90
    },
    {
     "name": "Brett Kulak",
@@ -635,7 +635,7 @@
     "nhlGp": 63
    }
   ],
-  "w": 0.55,
+  "w": 0.56,
   "before": 25.4,
   "after": 27.6
  },

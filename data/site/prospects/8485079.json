@@ -31,11 +31,11 @@
   {
    "league": "HockeyAllsvenskan",
    "team": "Almtuna IS",
-   "gp": 23,
+   "gp": 24,
    "g": 4,
    "a": 8,
    "pts": 12,
-   "pm": -11,
+   "pm": -13,
    "pim": 10,
    "gaa": null,
    "svp": null,
@@ -106,11 +106,11 @@
     {
      "league": "HockeyAllsvenskan",
      "team": "Almtuna IS",
-     "gp": 23,
+     "gp": 24,
      "g": 4,
      "a": 8,
      "pts": 12,
-     "pm": -11,
+     "pm": -13,
      "pim": 10,
      "gaa": null,
      "svp": null,
@@ -225,19 +225,19 @@
   "table": "Allsvenskan",
   "coef": 0.351,
   "team": "Almtuna IS",
-  "gp": 28,
+  "gp": 29,
   "g": 4,
   "a": 8,
   "pts": 12,
-  "pgp": 0.522,
-  "lineGp": 23,
-  "nhle": 0.171,
-  "nhlePace": 14.4,
+  "pgp": 0.5,
+  "lineGp": 24,
+  "nhle": 0.165,
+  "nhlePace": 13.9,
   "lines": [
    "SHL",
    "HockeyAllsvenskan"
   ],
-  "feature": 0.171
+  "feature": 0.165
  },
  "league": {
   "name": "HockeyAllsvenskan",
@@ -262,110 +262,110 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 11,
-   "gp": 23,
-   "value": 0.5217,
+   "gp": 24,
+   "value": 0.5,
    "percentile": 36.4,
-   "percentileAllAges": 68.1,
+   "percentileAllAges": 63.6,
    "allAgesN": 357
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 7.5,
+  "expected": 12.4,
   "median": 0.0,
-  "p75": 1.5,
-  "p90": 36.7,
-  "pRegular": 0.26,
-  "pTopLine": 0.0,
-  "pAboveAvg": 0.04,
-  "pElite": 0.0,
+  "p75": 18.1,
+  "p90": 61.8,
+  "pRegular": 0.28,
+  "pTopLine": 0.06,
+  "pAboveAvg": 0.1,
+  "pElite": 0.02,
   "poolN": 1236,
   "group": "F",
   "age": 20,
   "pickWeight": 0.0,
   "tier": "replacement level",
-  "pCeiling": 0.26,
+  "pCeiling": 0.28,
   "featureBand": [
-   0.166,
-   0.176
+   0.16,
+   0.17
   ],
   "examples": [
    {
-    "name": "Michael Chaput",
+    "name": "Patrick Cehlin",
     "year": 2010,
-    "pick": 89,
-    "league": "AHL",
-    "feature": 0.171,
-    "peak": 6.8,
-    "tier": "replacement level",
-    "nhlGp": 182
-   },
-   {
-    "name": "Tye McGinn",
-    "year": 2010,
-    "pick": 119,
-    "league": "QMJHL",
-    "feature": 0.172,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 89
-   },
-   {
-    "name": "Alan Quine",
-    "year": 2013,
-    "pick": 166,
-    "league": "AHL",
-    "feature": 0.172,
-    "peak": 29.1,
-    "tier": "below average",
-    "nhlGp": 106
-   },
-   {
-    "name": "Mason Appleton",
-    "year": 2015,
-    "pick": 168,
-    "league": "NCAA",
-    "feature": 0.172,
-    "peak": 52.2,
-    "tier": "above average",
-    "nhlGp": 467
-   },
-   {
-    "name": "Tyler Weiss",
-    "year": 2018,
-    "pick": 109,
-    "league": "NCAA",
-    "feature": 0.172,
+    "pick": 126,
+    "league": "Elitserien",
+    "feature": 0.165,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Mark Olver",
-    "year": 2008,
-    "pick": 140,
-    "league": "NCAA",
-    "feature": 0.17,
-    "peak": 15.6,
-    "tier": "replacement level",
-    "nhlGp": 74
+    "name": "Alex Friesen",
+    "year": 2010,
+    "pick": 172,
+    "league": "OHL",
+    "feature": 0.165,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
    },
    {
-    "name": "Ryan Rupert",
+    "name": "Taylor Leier",
     "year": 2012,
-    "pick": 157,
+    "pick": 117,
     "league": "AHL",
-    "feature": 0.17,
+    "feature": 0.165,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 55
+   },
+   {
+    "name": "Tim S\u00f6derlund",
+    "year": 2017,
+    "pick": 112,
+    "league": "SHL",
+    "feature": 0.165,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Reid Duke",
-    "year": 2014,
-    "pick": 169,
+    "name": "Mikhail Abramov",
+    "year": 2019,
+    "pick": 115,
+    "league": "AHL",
+    "feature": 0.165,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Mark Kastelic",
+    "year": 2019,
+    "pick": 125,
     "league": "WHL",
-    "feature": 0.17,
+    "feature": 0.165,
+    "peak": 21.2,
+    "tier": "replacement level",
+    "nhlGp": 291
+   },
+   {
+    "name": "Nathan Moon",
+    "year": 2008,
+    "pick": 120,
+    "league": "OHL",
+    "feature": 0.164,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Michael Schumacher",
+    "year": 2011,
+    "pick": 200,
+    "league": "AHL",
+    "feature": 0.164,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -389,8 +389,8 @@
   "w": 0.0,
   "sinceDraft": 2,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 7.5,
-  "expected": 7.5,
+  "cohortExpected": 12.4,
+  "expected": 12.4,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -403,19 +403,19 @@
   "to": {
    "season": "2026-2027",
    "league": "HockeyAllsvenskan",
-   "feature": 0.171,
-   "gp": 23
+   "feature": 0.165,
+   "gp": 24
   },
-  "delta": 0.076
+  "delta": 0.07
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 23,
+  "gp": 24,
   "season": "2026-2027"
  },
- "rank": 17,
- "score": 7.5,
+ "rank": 13,
+ "score": 12.4,
  "rankStart": 27,
  "rankStartDate": "2026-10-06"
 }

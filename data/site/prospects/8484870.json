@@ -31,7 +31,7 @@
   {
    "league": "NCAA",
    "team": "Univ. of Minnesota-Duluth",
-   "gp": 2,
+   "gp": 3,
    "g": 0,
    "a": 2,
    "pts": 2,
@@ -106,7 +106,7 @@
     {
      "league": "NCAA",
      "team": "Univ. of Minnesota-Duluth",
-     "gp": 2,
+     "gp": 3,
      "g": 0,
      "a": 2,
      "pts": 2,
@@ -261,10 +261,12 @@
    "league": "ncaa",
    "season": "2026-2027",
    "ageBucket": "U21",
-   "cohortN": 84,
-   "gp": 2,
-   "percentile": null,
-   "note": "sample too small"
+   "cohortN": 85,
+   "gp": 3,
+   "value": 0.6667,
+   "percentile": 67.1,
+   "percentileAllAges": 65.3,
+   "allAgesN": 2164
   }
  },
  "ceiling": {

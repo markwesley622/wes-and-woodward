@@ -31,11 +31,11 @@
   {
    "league": "QMJHL",
    "team": "Moncton Wildcats",
-   "gp": 24,
+   "gp": 25,
    "g": 5,
    "a": 8,
    "pts": 13,
-   "pm": -6,
+   "pm": -9,
    "pim": 12,
    "gaa": null,
    "svp": null,
@@ -140,11 +140,11 @@
     {
      "league": "QMJHL",
      "team": "Moncton Wildcats",
-     "gp": 24,
+     "gp": 25,
      "g": 5,
      "a": 8,
      "pts": 13,
-     "pm": -6,
+     "pm": -9,
      "pim": 12,
      "gaa": null,
      "svp": null,
@@ -164,18 +164,18 @@
   "table": "QMJHL",
   "coef": 0.113,
   "team": "Moncton Wildcats",
-  "gp": 24,
+  "gp": 25,
   "g": 5,
   "a": 8,
   "pts": 13,
-  "pgp": 0.542,
-  "lineGp": 24,
-  "nhle": 0.061,
-  "nhlePace": 5.1,
+  "pgp": 0.52,
+  "lineGp": 25,
+  "nhle": 0.059,
+  "nhlePace": 5.0,
   "lines": [
    "QMJHL"
   ],
-  "feature": 0.061
+  "feature": 0.059
  },
  "league": {
   "name": "QMJHL",
@@ -190,8 +190,8 @@
    "season": "2026-2027",
    "ageBucket": "U20",
    "cohortN": 37,
-   "gp": 24,
-   "value": 0.5417,
+   "gp": 25,
+   "value": 0.52,
    "percentile": 75.7,
    "percentileAllAges": 83.5,
    "allAgesN": 903
@@ -199,35 +199,25 @@
  },
  "ceiling": {
   "n": 50,
-  "expected": 3.5,
+  "expected": 4.9,
   "median": 0.0,
   "p75": 0.0,
   "p90": 0.0,
-  "pRegular": 0.06,
+  "pRegular": 0.08,
   "pTopLine": 0.0,
-  "pAboveAvg": 0.06,
+  "pAboveAvg": 0.08,
   "pElite": 0.0,
   "poolN": 837,
   "group": "D",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.06,
+  "pCeiling": 0.08,
   "featureBand": [
-   0.05,
-   0.074
+   0.047,
+   0.072
   ],
   "examples": [
-   {
-    "name": "Rushan Rafikov",
-    "year": 2013,
-    "pick": 187,
-    "league": "MHL",
-    "feature": 0.061,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
    {
     "name": "John Gilmour",
     "year": 2013,
@@ -259,11 +249,21 @@
     "nhlGp": 26
    },
    {
-    "name": "Kalle Loponen",
-    "year": 2019,
-    "pick": 204,
-    "league": "OHL",
-    "feature": 0.062,
+    "name": "Kelly Summers",
+    "year": 2014,
+    "pick": 189,
+    "league": "NCAA",
+    "feature": 0.059,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Aaron Harstad",
+    "year": 2011,
+    "pick": 187,
+    "league": "USHL",
+    "feature": 0.059,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -279,24 +279,24 @@
     "nhlGp": 0
    },
    {
-    "name": "Jacob Middleton",
-    "year": 2014,
-    "pick": 210,
-    "league": "OHL",
-    "feature": 0.061,
-    "peak": 55.1,
-    "tier": "above average",
-    "nhlGp": 384
-   },
-   {
-    "name": "Kelly Summers",
-    "year": 2014,
-    "pick": 189,
-    "league": "NCAA",
+    "name": "Santeri Airola",
+    "year": 2019,
+    "pick": 211,
+    "league": "U20 SM-liiga",
     "feature": 0.059,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Phil Kemp",
+    "year": 2017,
+    "pick": 208,
+    "league": "NCAA",
+    "feature": 0.06,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
    }
   ]
  },
@@ -317,8 +317,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 7.0,
-  "cohortExpected": 3.5,
-  "expected": 5.2,
+  "cohortExpected": 4.9,
+  "expected": 6.0,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -331,19 +331,19 @@
   "to": {
    "season": "2026-2027",
    "league": "QMJHL",
-   "feature": 0.061,
-   "gp": 24
+   "feature": 0.059,
+   "gp": 25
   },
-  "delta": 0.024
+  "delta": 0.022
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 24,
+  "gp": 25,
   "season": "2026-2027"
  },
- "rank": 21,
- "score": 5.2,
+ "rank": 18,
+ "score": 6.0,
  "rankStart": 22,
  "rankStartDate": "2026-10-06"
 }

@@ -31,7 +31,7 @@
   {
    "league": "NCAA",
    "team": "Miami Univ. (Ohio)",
-   "gp": 14,
+   "gp": 15,
    "g": 1,
    "a": 1,
    "pts": 2,
@@ -72,7 +72,7 @@
     {
      "league": "NCAA",
      "team": "Miami Univ. (Ohio)",
-     "gp": 14,
+     "gp": 15,
      "g": 1,
      "a": 1,
      "pts": 2,
@@ -140,18 +140,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Miami Univ. (Ohio)",
-  "gp": 14,
+  "gp": 15,
   "g": 1,
   "a": 1,
   "pts": 2,
-  "pgp": 0.143,
-  "lineGp": 14,
-  "nhle": 0.028,
-  "nhlePace": 2.4,
+  "pgp": 0.133,
+  "lineGp": 15,
+  "nhle": 0.026,
+  "nhlePace": 2.2,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.028
+  "feature": 0.026
  },
  "league": {
   "name": "NCAA",
@@ -176,8 +176,8 @@
    "season": "2026-2027",
    "ageBucket": "U21",
    "cohortN": 84,
-   "gp": 14,
-   "value": 0.1429,
+   "gp": 15,
+   "value": 0.1333,
    "percentile": 17.9,
    "percentileAllAges": 19.3,
    "allAgesN": 2159
@@ -200,20 +200,10 @@
   "tier": "replacement level",
   "pCeiling": 0.04,
   "featureBand": [
-   0.013,
+   0.012,
    0.044
   ],
   "examples": [
-   {
-    "name": "Ben Storm",
-    "year": 2013,
-    "pick": 153,
-    "league": "NCAA",
-    "feature": 0.029,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
    {
     "name": "Jasper Weatherby",
     "year": 2018,
@@ -225,61 +215,71 @@
     "nhlGp": 50
    },
    {
-    "name": "Lane MacDermid",
+    "name": "Kyle Neuber",
     "year": 2009,
-    "pick": 112,
-    "league": "AHL",
-    "feature": 0.03,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 21
-   },
-   {
-    "name": "Curtis Hall",
-    "year": 2018,
-    "pick": 119,
-    "league": "AHL",
-    "feature": 0.03,
+    "pick": 197,
+    "league": "OHL",
+    "feature": 0.024,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Timur Ibragimov",
-    "year": 2019,
-    "pick": 164,
-    "league": "AHL",
-    "feature": 0.03,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Mattias Lindstr\u00f6m",
-    "year": 2009,
-    "pick": 88,
+    "name": "Andreas Dahlstr\u00f6m",
+    "year": 2010,
+    "pick": 161,
     "league": "HockeyAllsvenskan",
-    "feature": 0.031,
+    "feature": 0.024,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Radoslav Illo",
+    "name": "Nick Oliver",
     "year": 2009,
-    "pick": 136,
+    "pick": 110,
     "league": "NCAA",
-    "feature": 0.031,
+    "feature": 0.023,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Greg Burke",
-    "year": 2008,
-    "pick": 174,
+    "name": "Brad Navin",
+    "year": 2011,
+    "pick": 197,
     "league": "NCAA",
-    "feature": 0.032,
+    "feature": 0.023,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Derek Mathers",
+    "year": 2011,
+    "pick": 206,
+    "league": "AHL",
+    "feature": 0.023,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ryder Donovan",
+    "year": 2019,
+    "pick": 110,
+    "league": "NCAA",
+    "feature": 0.023,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Ben Storm",
+    "year": 2013,
+    "pick": 153,
+    "league": "NCAA",
+    "feature": 0.029,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -317,18 +317,18 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.028,
-   "gp": 14
+   "feature": 0.026,
+   "gp": 15
   },
-  "delta": 0.014
+  "delta": 0.012
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 14,
+  "gp": 15,
   "season": "2026-2027"
  },
- "rank": 29,
+ "rank": 28,
  "score": 0.5,
  "rankStart": 30,
  "rankStartDate": "2026-10-06"

@@ -27,7 +27,7 @@
  "seasonLine": {
   "league": "NHL",
   "team": null,
-  "gp": 14,
+  "gp": 15,
   "goals": null,
   "assists": null,
   "points": null,
@@ -37,60 +37,60 @@
   "shootingPct": null,
   "toiPerGame": null,
   "ppPoints": null,
-  "wins": 4,
+  "wins": 5,
   "losses": 8,
   "otLosses": 1,
-  "gaa": 3.542198,
-  "savePct": 0.862069,
-  "shutouts": 0
+  "gaa": 3.278281,
+  "savePct": 0.869436,
+  "shutouts": 1
  },
  "score": {
-  "value": 17.8,
-  "low": 7.1,
-  "high": 38.2,
-  "gsax": -7.7,
-  "xGoals": 36.3,
+  "value": 27.7,
+  "low": 12.0,
+  "high": 51.8,
+  "gsax": -4.4,
+  "xGoals": 39.6,
   "goals": 44.0,
-  "minutes": 745,
-  "pool": 42,
-  "rank": 40,
-  "percentile": 4.8,
-  "reliability": 0.33,
+  "minutes": 805,
+  "pool": 44,
+  "rank": 39,
+  "percentile": 11.4,
+  "reliability": 0.35,
   "group": "goalies",
   "neighbors": [
    {
+    "rank": 37,
+    "name": "Darcy Kuemper",
+    "value": 29.2,
+    "gsax": -3.9,
+    "isMe": false
+   },
+   {
     "rank": 38,
-    "name": "Dustin Wolf",
-    "value": 21.8,
-    "gsax": -6.1,
+    "name": "Leevi Merilinen",
+    "value": 29.1,
+    "gsax": -4.0,
     "isMe": false
    },
    {
     "rank": 39,
-    "name": "Lukas Dostal",
-    "value": 20.0,
-    "gsax": -6.8,
-    "isMe": false
-   },
-   {
-    "rank": 40,
     "name": "John Gibson",
-    "value": 17.8,
-    "gsax": -7.7,
+    "value": 27.7,
+    "gsax": -4.4,
     "isMe": true
    },
    {
-    "rank": 41,
-    "name": "Karel Vejmelka",
-    "value": 17.5,
-    "gsax": -7.9,
+    "rank": 40,
+    "name": "Sergei Bobrovsky",
+    "value": 25.4,
+    "gsax": -5.1,
     "isMe": false
    },
    {
-    "rank": 42,
-    "name": "Jake Allen",
-    "value": 16.7,
-    "gsax": -8.2,
+    "rank": 41,
+    "name": "Dustin Wolf",
+    "value": 22.4,
+    "gsax": -6.1,
     "isMe": false
    }
   ],
@@ -100,16 +100,16 @@
   "playerId": 8476434,
   "name": "John Gibson",
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8476434.png",
-  "gamesPlayed": 14,
-  "gamesStarted": 14,
-  "wins": 4,
+  "gamesPlayed": 15,
+  "gamesStarted": 15,
+  "wins": 5,
   "losses": 8,
   "otLosses": 1,
-  "savePct": 0.862069,
-  "gaa": 3.542198,
-  "shutouts": 0,
-  "gsax": -7.73,
-  "pctl_gsax": 4.8,
+  "savePct": 0.869436,
+  "gaa": 3.278281,
+  "shutouts": 1,
+  "gsax": -4.41,
+  "pctl_gsax": 11.4,
   "qualifiesForPercentiles": true
  },
  "gameLog": [
@@ -294,6 +294,19 @@
    "savePct": 0.863636,
    "shutout": 0,
    "toi": 57.8
+  },
+  {
+   "gameId": 2026020407,
+   "date": "2026-11-27",
+   "opponent": "CBJ",
+   "home": false,
+   "started": 1,
+   "decision": "W",
+   "shotsAgainst": 18,
+   "goalsAgainst": 0,
+   "savePct": 1.0,
+   "shutout": 1,
+   "toi": 60.0
   }
  ],
  "gameScore": null,
@@ -304,7 +317,7 @@
  "myComponents": null,
  "hsc": {},
  "note": null,
- "detGames": 14,
+ "detGames": 15,
  "currentTeam": "DET",
  "prospect": false,
  "prospectStatus": {
@@ -317,5 +330,5 @@
   "template": "nhl"
  },
  "art": true,
- "updatedAt": "2026-11-26T07:03:06-08:00"
+ "updatedAt": "2026-11-28T07:08:50-08:00"
 }

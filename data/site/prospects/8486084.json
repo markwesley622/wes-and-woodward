@@ -31,11 +31,11 @@
   {
    "league": "NCAA",
    "team": "Univ. of Minnesota-Duluth",
-   "gp": 16,
+   "gp": 17,
    "g": 3,
    "a": 8,
    "pts": 11,
-   "pm": 6,
+   "pm": 5,
    "pim": 0,
    "gaa": null,
    "svp": null,
@@ -106,11 +106,11 @@
     {
      "league": "NCAA",
      "team": "Univ. of Minnesota-Duluth",
-     "gp": 16,
+     "gp": 17,
      "g": 3,
      "a": 8,
      "pts": 11,
-     "pm": 6,
+     "pm": 5,
      "pim": 0,
      "gaa": null,
      "svp": null,
@@ -130,18 +130,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Univ. of Minnesota-Duluth",
-  "gp": 16,
+  "gp": 17,
   "g": 3,
   "a": 8,
   "pts": 11,
-  "pgp": 0.688,
-  "lineGp": 16,
-  "nhle": 0.133,
-  "nhlePace": 11.2,
+  "pgp": 0.647,
+  "lineGp": 17,
+  "nhle": 0.126,
+  "nhlePace": 10.6,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.133
+  "feature": 0.126
  },
  "league": {
   "name": "NCAA",
@@ -156,20 +156,20 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 18,
-   "gp": 16,
-   "value": 0.6875,
-   "percentile": 66.7,
-   "percentileAllAges": 71.4,
+   "gp": 17,
+   "value": 0.6471,
+   "percentile": 55.6,
+   "percentileAllAges": 65.5,
    "allAgesN": 2159
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 19.5,
-  "median": 7.5,
-  "p75": 37.4,
-  "p90": 67.2,
-  "pRegular": 0.52,
+  "expected": 17.6,
+  "median": 0.0,
+  "p75": 32.3,
+  "p90": 63.3,
+  "pRegular": 0.46,
   "pTopLine": 0.0,
   "pAboveAvg": 0.14,
   "pElite": 0.0,
@@ -178,41 +178,21 @@
   "age": 18,
   "pickWeight": 1.0,
   "tier": "below average",
-  "pCeiling": 0.36,
+  "pCeiling": 0.32,
   "featureBand": [
-   0.108,
-   0.156
+   0.104,
+   0.148
   ],
   "examples": [
    {
-    "name": "Maxime Sauv\u00e9",
-    "year": 2008,
+    "name": "Jansen Harkins",
+    "year": 2015,
     "pick": 47,
-    "league": "QMJHL",
-    "feature": 0.134,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 1
-   },
-   {
-    "name": "Alex Formenton",
-    "year": 2017,
-    "pick": 47,
-    "league": "OHL",
-    "feature": 0.138,
-    "peak": 41.1,
-    "tier": "below average",
-    "nhlGp": 112
-   },
-   {
-    "name": "Zac Dalpe",
-    "year": 2008,
-    "pick": 45,
-    "league": "NCAA",
-    "feature": 0.131,
-    "peak": 7.5,
+    "league": "WHL",
+    "feature": 0.123,
+    "peak": 8.4,
     "tier": "replacement level",
-    "nhlGp": 168
+    "nhlGp": 306
    },
    {
     "name": "Rapha\u00ebl Bussi\u00e8res",
@@ -225,14 +205,14 @@
     "nhlGp": 0
    },
    {
-    "name": "Ryan MacInnis",
+    "name": "Brett Pollock",
     "year": 2014,
-    "pick": 43,
-    "league": "OHL",
-    "feature": 0.133,
+    "pick": 45,
+    "league": "WHL",
+    "feature": 0.125,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 27
+    "nhlGp": 0
    },
    {
     "name": "Jordan Greenway",
@@ -245,24 +225,44 @@
     "nhlGp": 478
    },
    {
-    "name": "Anton R\u00f6din",
-    "year": 2009,
-    "pick": 53,
-    "league": "Elitserien",
-    "feature": 0.133,
+    "name": "Maxime Sauv\u00e9",
+    "year": 2008,
+    "pick": 47,
+    "league": "QMJHL",
+    "feature": 0.134,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 3
+    "nhlGp": 1
    },
    {
-    "name": "Daniel Sprong",
-    "year": 2015,
-    "pick": 46,
-    "league": "QMJHL",
-    "feature": 0.141,
-    "peak": 72.7,
-    "tier": "above average",
-    "nhlGp": 374
+    "name": "Ruslan Iskhakov",
+    "year": 2018,
+    "pick": 43,
+    "league": "NCAA",
+    "feature": 0.127,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 1
+   },
+   {
+    "name": "Zac Dalpe",
+    "year": 2008,
+    "pick": 45,
+    "league": "NCAA",
+    "feature": 0.131,
+    "peak": 7.5,
+    "tier": "replacement level",
+    "nhlGp": 168
+   },
+   {
+    "name": "Brett Ritchie",
+    "year": 2011,
+    "pick": 44,
+    "league": "OHL",
+    "feature": 0.122,
+    "peak": 32.3,
+    "tier": "below average",
+    "nhlGp": 391
    }
   ]
  },
@@ -283,8 +283,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 23.7,
-  "cohortExpected": 19.5,
-  "expected": 21.6,
+  "cohortExpected": 17.6,
+  "expected": 20.6,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -297,19 +297,19 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.133,
-   "gp": 16
+   "feature": 0.126,
+   "gp": 17
   },
-  "delta": 0.023
+  "delta": 0.016
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 16,
+  "gp": 17,
   "season": "2026-2027"
  },
  "rank": 10,
- "score": 21.6,
+ "score": 20.6,
  "rankStart": 11,
  "rankStartDate": "2026-10-06"
 }

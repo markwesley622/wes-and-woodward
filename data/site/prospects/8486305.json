@@ -31,11 +31,11 @@
   {
    "league": "OHL",
    "team": "Erie Otters",
-   "gp": 20,
+   "gp": 21,
    "g": 8,
    "a": 5,
    "pts": 13,
-   "pm": -1,
+   "pm": -3,
    "pim": 4,
    "gaa": null,
    "svp": null,
@@ -123,11 +123,11 @@
     {
      "league": "OHL",
      "team": "Erie Otters",
-     "gp": 20,
+     "gp": 21,
      "g": 8,
      "a": 5,
      "pts": 13,
-     "pm": -1,
+     "pm": -3,
      "pim": 4,
      "gaa": null,
      "svp": null,
@@ -164,18 +164,18 @@
   "table": "OHL",
   "coef": 0.144,
   "team": "Erie Otters",
-  "gp": 20,
+  "gp": 21,
   "g": 8,
   "a": 5,
   "pts": 13,
-  "pgp": 0.65,
-  "lineGp": 20,
-  "nhle": 0.094,
-  "nhlePace": 7.9,
+  "pgp": 0.619,
+  "lineGp": 21,
+  "nhle": 0.089,
+  "nhlePace": 7.5,
   "lines": [
    "OHL"
   ],
-  "feature": 0.094
+  "feature": 0.089
  },
  "league": {
   "name": "OHL",
@@ -190,70 +190,100 @@
    "season": "2026-2027",
    "ageBucket": "U19",
    "cohortN": 86,
-   "gp": 20,
-   "value": 0.65,
-   "percentile": 62.8,
-   "percentileAllAges": 65.4,
+   "gp": 21,
+   "value": 0.619,
+   "percentile": 61.6,
+   "percentileAllAges": 62.7,
    "allAgesN": 1875
   }
  },
  "ceiling": {
   "n": 50,
-  "expected": 9.5,
+  "expected": 6.8,
   "median": 0.0,
   "p75": 0.0,
-  "p90": 38.0,
-  "pRegular": 0.24,
+  "p90": 31.0,
+  "pRegular": 0.18,
   "pTopLine": 0.02,
-  "pAboveAvg": 0.06,
+  "pAboveAvg": 0.04,
   "pElite": 0.0,
   "poolN": 1362,
   "group": "F",
   "age": 18,
   "pickWeight": 1.0,
   "tier": "replacement level",
-  "pCeiling": 0.24,
+  "pCeiling": 0.18,
   "featureBand": [
-   0.082,
-   0.106
+   0.08,
+   0.102
   ],
   "examples": [
    {
-    "name": "Lukas Jasek",
-    "year": 2015,
-    "pick": 174,
-    "league": "Czechia",
-    "feature": 0.093,
+    "name": "Stephen Johnston",
+    "year": 2008,
+    "pick": 181,
+    "league": "OHL",
+    "feature": 0.089,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
    },
    {
-    "name": "Anton Blidh",
-    "year": 2013,
-    "pick": 180,
-    "league": "J20 SuperElit",
-    "feature": 0.094,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 89
-   },
-   {
-    "name": "Cole Guttman",
-    "year": 2017,
-    "pick": 180,
+    "name": "David Cotton",
+    "year": 2015,
+    "pick": 169,
     "league": "USHL",
-    "feature": 0.093,
+    "feature": 0.089,
     "peak": null,
     "tier": "did not stick",
-    "nhlGp": 41
+    "nhlGp": 0
    },
    {
-    "name": "Justin Sch\u00fctz",
-    "year": 2018,
-    "pick": 170,
-    "league": "AlpsHL",
-    "feature": 0.093,
+    "name": "C\u00e9drick Henley",
+    "year": 2010,
+    "pick": 173,
+    "league": "QMJHL",
+    "feature": 0.087,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Victor Olofsson",
+    "year": 2014,
+    "pick": 181,
+    "league": "J20 SuperElit",
+    "feature": 0.088,
+    "peak": 83.9,
+    "tier": "top-line",
+    "nhlGp": 451
+   },
+   {
+    "name": "Dustin Walsh",
+    "year": 2009,
+    "pick": 169,
+    "league": "NCAA",
+    "feature": 0.088,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Drew Czerwonka",
+    "year": 2010,
+    "pick": 166,
+    "league": "WHL",
+    "feature": 0.089,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Julius V\u00e4h\u00e4talo",
+    "year": 2014,
+    "pick": 166,
+    "league": "U20 SM-liiga",
+    "feature": 0.089,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -264,36 +294,6 @@
     "pick": 172,
     "league": "OHL",
     "feature": 0.092,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Brooks Macek",
-    "year": 2010,
-    "pick": 171,
-    "league": "WHL",
-    "feature": 0.092,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Mitch Callahan",
-    "year": 2009,
-    "pick": 180,
-    "league": "WHL",
-    "feature": 0.092,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 5
-   },
-   {
-    "name": "Quentin Shore",
-    "year": 2013,
-    "pick": 168,
-    "league": "NCAA",
-    "feature": 0.095,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -317,8 +317,8 @@
   "w": 0.5,
   "sinceDraft": 0,
   "pedigreeExpected": 7.5,
-  "cohortExpected": 9.5,
-  "expected": 8.5,
+  "cohortExpected": 6.8,
+  "expected": 7.2,
   "tier": "replacement level"
  },
  "trajectory": {
@@ -331,19 +331,19 @@
   "to": {
    "season": "2026-2027",
    "league": "OHL",
-   "feature": 0.094,
-   "gp": 20
+   "feature": 0.089,
+   "gp": 21
   },
-  "delta": 0.042
+  "delta": 0.037
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 20,
+  "gp": 21,
   "season": "2026-2027"
  },
- "rank": 14,
- "score": 8.5,
+ "rank": 17,
+ "score": 7.2,
  "rankStart": 21,
  "rankStartDate": "2026-10-06"
 }

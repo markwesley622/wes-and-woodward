@@ -31,12 +31,12 @@
   {
    "league": "NCAA",
    "team": "Univ. of Minnesota-Duluth",
-   "gp": 16,
+   "gp": 17,
    "g": 0,
    "a": 1,
    "pts": 1,
    "pm": 8,
-   "pim": 16,
+   "pim": 18,
    "gaa": null,
    "svp": null,
    "w": null,
@@ -72,12 +72,12 @@
     {
      "league": "NCAA",
      "team": "Univ. of Minnesota-Duluth",
-     "gp": 16,
+     "gp": 17,
      "g": 0,
      "a": 1,
      "pts": 1,
      "pm": 8,
-     "pim": 16,
+     "pim": 18,
      "gaa": null,
      "svp": null,
      "w": null,
@@ -162,18 +162,18 @@
   "table": "NCAA",
   "coef": 0.194,
   "team": "Univ. of Minnesota-Duluth",
-  "gp": 16,
+  "gp": 17,
   "g": 0,
   "a": 1,
   "pts": 1,
-  "pgp": 0.062,
-  "lineGp": 16,
-  "nhle": 0.012,
-  "nhlePace": 1.0,
+  "pgp": 0.059,
+  "lineGp": 17,
+  "nhle": 0.011,
+  "nhlePace": 0.9,
   "lines": [
    "NCAA"
   ],
-  "feature": 0.012
+  "feature": 0.011
  },
  "league": {
   "name": "NCAA",
@@ -198,8 +198,8 @@
    "season": "2026-2027",
    "ageBucket": "U22",
    "cohortN": 75,
-   "gp": 16,
-   "value": 0.0625,
+   "gp": 17,
+   "value": 0.0588,
    "percentile": 32.0,
    "percentileAllAges": 32.3,
    "allAgesN": 1198
@@ -223,19 +223,9 @@
   "pCeiling": 0.0,
   "featureBand": [
    0.0,
-   0.024
+   0.023
   ],
   "examples": [
-   {
-    "name": "Steven Delisle",
-    "year": 2008,
-    "pick": 107,
-    "league": "ECHL",
-    "feature": 0.013,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
    {
     "name": "Tyler Ganly",
     "year": 2013,
@@ -252,16 +242,6 @@
     "pick": 48,
     "league": "AHL",
     "feature": 0.01,
-    "peak": null,
-    "tier": "did not stick",
-    "nhlGp": 0
-   },
-   {
-    "name": "Fredric Larsson",
-    "year": 2012,
-    "pick": 111,
-    "league": "HockeyEttan",
-    "feature": 0.014,
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
@@ -305,6 +285,26 @@
     "peak": null,
     "tier": "did not stick",
     "nhlGp": 0
+   },
+   {
+    "name": "Steven Delisle",
+    "year": 2008,
+    "pick": 107,
+    "league": "ECHL",
+    "feature": 0.013,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
+   },
+   {
+    "name": "Riley Bruce",
+    "year": 2015,
+    "pick": 196,
+    "league": "USports",
+    "feature": 0.009,
+    "peak": null,
+    "tier": "did not stick",
+    "nhlGp": 0
    }
   ]
  },
@@ -339,15 +339,15 @@
   "to": {
    "season": "2026-2027",
    "league": "NCAA",
-   "feature": 0.012,
-   "gp": 16
+   "feature": 0.011,
+   "gp": 17
   },
-  "delta": 0.002
+  "delta": 0.001
  },
  "nhlSample": null,
  "nhlUsage": null,
  "availability": {
-  "gp": 16,
+  "gp": 17,
   "season": "2026-2027"
  },
  "rank": 33,
